@@ -176,7 +176,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -446,7 +447,7 @@ BODYPARAMETER `<IMicrosoftGraphItemPatent>`: itemPatent
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Descpription of the patent or filing.
   - `[DisplayName <String>]`: Title of the patent or filing.
   - `[IsPending <Boolean?>]`: Indicates the patent is pending.

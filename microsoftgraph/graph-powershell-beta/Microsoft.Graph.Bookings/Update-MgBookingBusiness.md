@@ -630,7 +630,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsot Bookings
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[BusinessHours <IMicrosoftGraphBookingWorkHours[]>]`: The hours of operation for the business.
     - `[Day <String>]`: dayOfWeek
-    - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot[]>]`: A list of start/end times during a day.
+    - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot1[]>]`: A list of start/end times during a day.
       - `[End <String>]`: The time of the day when work stops. For example, 17:00:00.0000000.
       - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
   - `[BusinessType <String>]`: The type of business.
@@ -698,7 +698,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingBusiness>`: Represents a Microsot Bookings
 
 BUSINESSHOURS <IMicrosoftGraphBookingWorkHours\[]>: The hours of operation for the business.
   - `[Day <String>]`: dayOfWeek
-  - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot[]>]`: A list of start/end times during a day.
+  - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot1[]>]`: A list of start/end times during a day.
     - `[End <String>]`: The time of the day when work stops. For example, 17:00:00.0000000.
     - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 
@@ -878,7 +878,7 @@ STAFFMEMBERS <IMicrosoftGraphBookingStaffMember\[]>: All the staff members that 
   - `[UseBusinessHours <Boolean?>]`: True means the staff member's availability is as specified in the businessHours property of the business. False means the availability is determined by the staff member's workingHours property setting.
   - `[WorkingHours <IMicrosoftGraphBookingWorkHours[]>]`: The range of hours each day of the week that the staff member is available for booking. By default, they are initialized to be the same as the businessHours property of the business.
     - `[Day <String>]`: dayOfWeek
-    - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot[]>]`: A list of start/end times during a day.
+    - `[TimeSlots <IMicrosoftGraphBookingWorkTimeSlot1[]>]`: A list of start/end times during a day.
       - `[End <String>]`: The time of the day when work stops. For example, 17:00:00.0000000.
       - `[Start <String>]`: The time of the day when work starts. For example, 08:00:00.0000000.
 

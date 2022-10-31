@@ -171,7 +171,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -381,7 +382,7 @@ BODYPARAMETER `<IMicrosoftGraphPersonAnnualEvent>`: personAnnualEvent
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Date <DateTime?>]`: 
   - `[DisplayName <String>]`: 
   - `[Type <String>]`: personAnnualEventType

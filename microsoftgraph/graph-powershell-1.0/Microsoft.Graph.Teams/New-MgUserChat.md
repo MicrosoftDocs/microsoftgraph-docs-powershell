@@ -409,6 +409,23 @@ BODYPARAMETER `<IMicrosoftGraphChat1>`: chat
       - `[DistributionMethod <String>]`: teamsAppDistributionMethod
       - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
     - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+  - `[LastMessagePreview <IMicrosoftGraphChatMessageInfo>]`: chatMessageInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[CreatedDateTime <DateTime?>]`: Date time object representing the time at which message was created.
+    - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[Device <IMicrosoftGraphIdentity>]`: identity
+      - `[User <IMicrosoftGraphIdentity>]`: identity
+    - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
+    - `[MessageType <String>]`: chatMessageType
   - `[LastUpdatedDateTime <DateTime?>]`: Date and time at which the chat was renamed or list of members were last changed. Read-only.
   - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of all the members in the chat. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -425,9 +442,6 @@ BODYPARAMETER `<IMicrosoftGraphChat1>`: chat
       - `[Name <String>]`: Name of the attachment.
       - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
     - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ChannelId <String>]`: The identity of the channel in which the message was posted.
@@ -437,12 +451,7 @@ BODYPARAMETER `<IMicrosoftGraphChat1>`: chat
     - `[DeletedDateTime <DateTime?>]`: Read only. Timestamp at which the chat message was deleted, or null if not deleted.
     - `[Etag <String>]`: Read-only. Version number of the chat message.
     - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
       - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
       - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
@@ -497,7 +506,7 @@ BODYPARAMETER `<IMicrosoftGraphChat1>`: chat
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
-      - `[UserIdentityType <String>]`: teamworkUserIdentityType
+      - `[UserIdentityType <String>]`: 
   - `[PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>]`: A collection of all the pinned messages in the chat. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Message <IMicrosoftGraphChatMessage1>]`: chatMessage
@@ -514,6 +523,10 @@ BODYPARAMETER `<IMicrosoftGraphChat1>`: chat
     - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
   - `[TenantId <String>]`: The identifier of the tenant in which the chat was created. Read-only.
   - `[Topic <String>]`: (Optional) Subject or topic for the chat. Only available for group chats.
+  - `[Viewpoint <IMicrosoftGraphChatViewpoint>]`: chatViewpoint
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsHidden <Boolean?>]`: Indicates whether the chat is hidden for the current user.
+    - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
   - `[WebUrl <String>]`: The URL for the chat in Microsoft Teams. The URL should be treated as an opaque blob, and not parsed. Read-only.
 
 INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
@@ -584,6 +597,27 @@ INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation\[]>: A collection of all the 
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
+
+LASTMESSAGEPREVIEW `<IMicrosoftGraphChatMessageInfo>`: chatMessageInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[CreatedDateTime <DateTime?>]`: Date time object representing the time at which message was created.
+  - `[EventDetail <IMicrosoftGraphEventMessageDetail>]`: eventMessageDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[From <IMicrosoftGraphChatMessageFromIdentitySet>]`: chatMessageFromIdentitySet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Application <IMicrosoftGraphIdentity>]`: identity
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
+    - `[Device <IMicrosoftGraphIdentity>]`: identity
+    - `[User <IMicrosoftGraphIdentity>]`: identity
+  - `[IsDeleted <Boolean?>]`: If set to true, the original message has been deleted.
+  - `[MessageType <String>]`: chatMessageType
 
 MEMBERS <IMicrosoftGraphConversationMember\[]>: A collection of all the members in the chat. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -677,7 +711,7 @@ ONLINEMEETINGINFO `<IMicrosoftGraphTeamworkOnlineMeetingInfo>`: teamworkOnlineMe
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-    - `[UserIdentityType <String>]`: teamworkUserIdentityType
+    - `[UserIdentityType <String>]`: 
 
 PINNEDMESSAGES <IMicrosoftGraphPinnedChatMessageInfo\[]>: A collection of all the pinned messages in the chat. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -796,6 +830,11 @@ TABS <IMicrosoftGraphTeamsTab\[]>: A collection of all the tabs in the chat. Nul
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
+
+VIEWPOINT `<IMicrosoftGraphChatViewpoint>`: chatViewpoint
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsHidden <Boolean?>]`: Indicates whether the chat is hidden for the current user.
+  - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
 
