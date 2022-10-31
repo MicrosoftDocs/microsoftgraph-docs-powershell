@@ -15,25 +15,25 @@ Create new navigation property ref to allowedGroups for print
 ### CreateExpanded (Default)
 ```
 New-MgPrintPrinterShareAllowedGroupByRef -PrinterShareId <String> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrintPrinterShareAllowedGroupByRef -PrinterShareId <String> -BodyParameter <Hashtable> [-PassThru]
+New-MgPrintPrinterShareAllowedGroupByRef -PrinterShareId <String> -BodyParameter <IReferenceCreate> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity>
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <Hashtable>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPrintPrinterShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity>
+ -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IReferenceCreate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -87,6 +87,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OdataId
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -157,7 +172,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### System.Collections.Hashtable
+### Microsoft.Graph.PowerShell.Models.IReferenceCreate
 ## OUTPUTS
 
 ### System.Boolean

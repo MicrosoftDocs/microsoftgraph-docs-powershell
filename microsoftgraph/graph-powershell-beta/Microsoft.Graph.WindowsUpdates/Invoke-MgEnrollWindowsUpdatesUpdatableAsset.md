@@ -31,12 +31,20 @@ Invoke action enrollAssets
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	UpdateCategory = "String"
+	Assets = @(
+		@{
+			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
+			Id = "String (identifier)"
+		}
+	)
+}
+Invoke-MgEnrollWindowsUpdatesUpdatableAsset -BodyParameter $params
+```
 
 ## PARAMETERS
 

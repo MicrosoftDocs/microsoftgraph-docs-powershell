@@ -204,7 +204,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -399,7 +400,7 @@ ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
 
 BODYPARAMETER `<IMicrosoftGraphCompanyInformation1>`: companyInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: 

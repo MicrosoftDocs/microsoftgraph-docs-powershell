@@ -13,13 +13,13 @@ This will create a new version with the contents of the previous version, but pr
 
 ## SYNTAX
 
-### Restore1 (Default)
+### Restore (Default)
 ```
 Restore-MgGroupDriveItemListItemVersion -DriveId <String> -DriveItemId <String> -GroupId <String>
  -ListItemVersionId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity1
+### RestoreViaIdentity
 ```
 Restore-MgGroupDriveItemListItemVersion -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -38,7 +38,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -53,7 +53,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: RestoreViaIdentity1
+Parameter Sets: RestoreViaIdentity
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ key: id of listItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: Restore1
+Parameter Sets: Restore
 Aliases:
 
 Required: True

@@ -14,14 +14,14 @@ Get paymentTerm from financials
 
 ### Get (Default)
 ```
-Get-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -63,7 +63,7 @@ key: id of customer
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ key: id of customerPayment
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True

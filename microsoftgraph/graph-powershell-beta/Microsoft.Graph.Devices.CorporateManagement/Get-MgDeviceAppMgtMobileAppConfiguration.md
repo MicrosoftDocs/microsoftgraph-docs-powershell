@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtMobileAppConfiguration
 
 ## SYNOPSIS
-Get mobileAppConfigurations from deviceAppManagement
+The Managed Device Mobile Application Configurations.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtMobileAppConfiguration -InputObject <IDevicesCorporateManageme
 ```
 
 ## DESCRIPTION
-Get mobileAppConfigurations from deviceAppManagement
+The Managed Device Mobile Application Configurations.
 
 ## EXAMPLES
 
@@ -235,7 +235,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration1
 ## NOTES
 Please use Get-Help -Online.
 

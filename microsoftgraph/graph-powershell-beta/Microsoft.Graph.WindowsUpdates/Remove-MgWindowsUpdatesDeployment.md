@@ -29,12 +29,11 @@ Delete navigation property deployments for admin
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesDeployment -DeploymentId $deploymentId
+```
 
 ## PARAMETERS
 

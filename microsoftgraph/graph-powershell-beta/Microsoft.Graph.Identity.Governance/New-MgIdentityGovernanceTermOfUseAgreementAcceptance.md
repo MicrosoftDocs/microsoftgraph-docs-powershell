@@ -12,7 +12,7 @@ Create new navigation property to agreementAcceptances for identityGovernance
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded2 (Default)
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance [-AgreementId <String>]
  [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>] [-DeviceDisplayName <String>]
@@ -22,7 +22,7 @@ New-MgIdentityGovernanceTermOfUseAgreementAcceptance [-AgreementId <String>]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance [-AgreementId <String>]
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>]
@@ -32,7 +32,7 @@ New-MgIdentityGovernanceTermOfUseAgreementAcceptance [-AgreementId <String>]
  [-Confirm] [<CommonParameters>]
 ```
 
-### CreateExpanded1
+### CreateExpanded3
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String> [-AdditionalProperties <Hashtable>]
  [-AgreementFileId <String>] [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceOSType <String>]
@@ -41,19 +41,19 @@ New-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String> [-Add
  [-UserPrincipalName <String>] [-AgreementId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create3
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance -AgreementId <String>
  -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create2
 ```
 New-MgIdentityGovernanceTermOfUseAgreementAcceptance -BodyParameter <IMicrosoftGraphAgreementAcceptance>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -71,7 +71,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -86,7 +86,7 @@ The identifier of the agreement file accepted by the user.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -101,7 +101,7 @@ key: id of agreement
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ The identifier of the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded3
 Aliases:
 
 Required: False
@@ -144,7 +144,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphAgreementAcceptance
-Parameter Sets: Create1, CreateViaIdentity, Create
+Parameter Sets: Create3, CreateViaIdentity1, Create2
 Aliases:
 
 Required: True
@@ -159,7 +159,7 @@ The display name of the device used for accepting the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -174,7 +174,7 @@ The unique identifier of the device used for accepting the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -189,7 +189,7 @@ The operating system used to accept the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -204,7 +204,7 @@ The operating system version of the device used to accept the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -221,7 +221,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -232,11 +232,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -252,7 +253,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -268,7 +269,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -283,7 +284,7 @@ agreementAcceptanceState
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -298,7 +299,7 @@ Display name of the user when the acceptance was recorded.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -313,7 +314,7 @@ Email of the user when the acceptance was recorded.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -328,7 +329,7 @@ The identifier of the user who accepted the agreement.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -343,7 +344,7 @@ UPN of the user when the acceptance was recorded.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded, CreateExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded1, CreateExpanded3
 Aliases:
 
 Required: False
@@ -405,7 +406,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
   - `[AgreementId <String>]`: The identifier of the agreement.
   - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
@@ -461,7 +462,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -483,7 +484,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult

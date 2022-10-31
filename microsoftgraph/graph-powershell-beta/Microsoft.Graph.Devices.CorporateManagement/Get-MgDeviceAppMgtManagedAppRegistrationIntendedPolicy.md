@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy
 
 ## SYNOPSIS
-Get intendedPolicies from deviceAppManagement
+Zero or more policies admin intended for the app as of now.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy -InputObject <IDevicesCor
 ```
 
 ## DESCRIPTION
-Get intendedPolicies from deviceAppManagement
+Zero or more policies admin intended for the app as of now.
 
 ## EXAMPLES
 
@@ -250,7 +250,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAppPolicy1
 ## NOTES
 Please use Get-Help -Online.
 

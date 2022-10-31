@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPlannerBucketTask
 
 ## SYNOPSIS
-Retrieve a list of **plannerTask** objects associated to a plannerBucket object.
+Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Retrieve a list of **plannerTask** objects associated to a plannerBucket object.
+Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## EXAMPLES
 
@@ -44,7 +44,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -105,7 +105,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

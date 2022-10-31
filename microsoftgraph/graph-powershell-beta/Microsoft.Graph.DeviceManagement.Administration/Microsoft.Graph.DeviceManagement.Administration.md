@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: c121808f-8f25-4684-83bb-8600aaf814c5
+Module Guid: 97d99958-6bfd-4778-8d73-6142d00f3efd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration
 Help Version: 1.0.0.0
 Locale: en-US
@@ -259,6 +259,12 @@ Represents the set of Microsoft 365 groups and security groups in Azure AD that 
 Returned only on $expand.
 See an example of getting the assignments relationship.
 
+### [Get-MgDeviceManagementVirtualEndpointReport](Get-MgDeviceManagementVirtualEndpointReport.md)
+Cloud PC related reports.
+
+### [Get-MgDeviceManagementVirtualEndpointReportExportJob](Get-MgDeviceManagementVirtualEndpointReportExportJob.md)
+The export jobs created for downloading reports.
+
 ### [Get-MgDeviceManagementVirtualEndpointServicePlan](Get-MgDeviceManagementVirtualEndpointServicePlan.md)
 Cloud PC service plans.
 
@@ -272,7 +278,7 @@ Cloud PC supported regions.
 Cloud PC user settings.
 
 ### [Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](Get-MgDeviceManagementVirtualEndpointUserSettingAssignment.md)
-Represents the set of Microsoft 365 groups and security groups in Azure AD that have cloudPCUserSetting assigned.
+Represents the set of Microsoft 365 groups and security groups in Azure Active Directory that have cloudPCUserSetting assigned.
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
 
@@ -417,6 +423,9 @@ Create a new cloudPcProvisioningPolicy object.
 
 ### [New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Create new navigation property to assignments for deviceManagement
+
+### [New-MgDeviceManagementVirtualEndpointReportExportJob](New-MgDeviceManagementVirtualEndpointReportExportJob.md)
+Create a new cloudPcExportJob object.
 
 ### [New-MgDeviceManagementVirtualEndpointServicePlan](New-MgDeviceManagementVirtualEndpointServicePlan.md)
 Create new navigation property to servicePlans for deviceManagement
@@ -594,6 +603,12 @@ Delete navigation property provisioningPolicies for deviceManagement
 
 ### [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Delete navigation property assignments for deviceManagement
+
+### [Remove-MgDeviceManagementVirtualEndpointReport](Remove-MgDeviceManagementVirtualEndpointReport.md)
+Delete navigation property reports for deviceManagement
+
+### [Remove-MgDeviceManagementVirtualEndpointReportExportJob](Remove-MgDeviceManagementVirtualEndpointReportExportJob.md)
+Delete navigation property exportJobs for deviceManagement
 
 ### [Remove-MgDeviceManagementVirtualEndpointServicePlan](Remove-MgDeviceManagementVirtualEndpointServicePlan.md)
 Delete navigation property servicePlans for deviceManagement
@@ -774,6 +789,12 @@ Update the navigation property provisioningPolicies in deviceManagement
 
 ### [Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Update the navigation property assignments in deviceManagement
+
+### [Update-MgDeviceManagementVirtualEndpointReport](Update-MgDeviceManagementVirtualEndpointReport.md)
+Update the navigation property reports in deviceManagement
+
+### [Update-MgDeviceManagementVirtualEndpointReportExportJob](Update-MgDeviceManagementVirtualEndpointReportExportJob.md)
+Update the navigation property exportJobs in deviceManagement
 
 ### [Update-MgDeviceManagementVirtualEndpointServicePlan](Update-MgDeviceManagementVirtualEndpointServicePlan.md)
 Update the navigation property servicePlans in deviceManagement

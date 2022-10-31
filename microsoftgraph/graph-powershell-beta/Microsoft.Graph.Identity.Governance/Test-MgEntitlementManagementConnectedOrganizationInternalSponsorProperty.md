@@ -20,21 +20,21 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## SYNTAX
 
-### ValidateExpanded (Default)
+### ValidateExpanded1 (Default)
 ```
 Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty -ConnectedOrganizationId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>] [-MailNickname <String>]
  [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Validate
+### Validate1
 ```
 Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty -ConnectedOrganizationId <String>
  -BodyParameter <IPathsXlfvw0IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentityExpanded
+### ValidateViaIdentityExpanded1
 ```
 Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty
  -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
@@ -42,7 +42,7 @@ Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty
  [<CommonParameters>]
 ```
 
-### ValidateViaIdentity
+### ValidateViaIdentity1
 ```
 Test-MgEntitlementManagementConnectedOrganizationInternalSponsorProperty
  -InputObject <IIdentityGovernanceIdentity>
@@ -70,7 +70,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
+Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -86,7 +86,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsXlfvw0IdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdInternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Validate, ValidateViaIdentity
+Parameter Sets: Validate1, ValidateViaIdentity1
 Aliases:
 
 Required: True
@@ -101,7 +101,7 @@ key: id of connectedOrganization
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded, Validate
+Parameter Sets: ValidateExpanded1, Validate1
 Aliases:
 
 Required: True
@@ -116,7 +116,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
+Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
+Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -147,7 +147,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
+Parameter Sets: ValidateViaIdentityExpanded1, ValidateViaIdentity1
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
+Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
+Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -300,7 +300,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[CustomExtensionHandlerId <String>]`: key: id of customExtensionHandler
   - `[CustomTaskExtensionId <String>]`: key: id of customTaskExtension
   - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EndDateTime <DateTime?>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <DateTime?>]`: Usage: endDateTime={endDateTime}
   - `[GovernanceInsightId <String>]`: key: id of governanceInsight
   - `[GovernanceResourceId <String>]`: key: id of governanceResource
   - `[GovernanceRoleAssignmentId <String>]`: key: id of governanceRoleAssignment
@@ -322,7 +322,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlTypeId <String>]`: key: id of programControlType
   - `[ProgramId <String>]`: key: id of program
   - `[RunId <String>]`: key: id of run
-  - `[StartDateTime <DateTime?>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: key: id of taskDefinition
   - `[TaskId <String>]`: key: id of task
   - `[TaskProcessingResultId <String>]`: key: id of taskProcessingResult

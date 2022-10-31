@@ -147,7 +147,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGraphImportdeviceidentitylistPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ImportedDeviceIdentities <IMicrosoftGraphImportedDeviceIdentity[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
     - `[Description <String>]`: The description of the device
     - `[EnrollmentState <EnrollmentState?>]`: enrollmentState
@@ -159,7 +159,7 @@ BODYPARAMETER `<IPaths19M2JbiDevicemanagementImporteddeviceidentitiesMicrosoftGr
   - `[OverwriteImportedDeviceIdentities <Boolean?>]`: 
 
 IMPORTEDDEVICEIDENTITIES <IMicrosoftGraphImportedDeviceIdentity\[]>: .
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Created Date Time of the device
   - `[Description <String>]`: The description of the device
   - `[EnrollmentState <EnrollmentState?>]`: enrollmentState

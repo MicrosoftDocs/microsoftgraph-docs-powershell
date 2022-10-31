@@ -13,26 +13,26 @@ The response provides details about which memberships could and couldn't be crea
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
 Add-MgTeamChannelMember -ChannelId <String> -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
 Add-MgTeamChannelMember -ChannelId <String> -TeamId <String>
  -BodyParameter <IPaths1Rl53M1TeamsTeamIdChannelsChannelIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentityExpanded
 ```
 Add-MgTeamChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity1
+### AddViaIdentity
 ```
 Add-MgTeamChannelMember -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Rl53M1TeamsTeamIdChannelsChannelIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
@@ -45,6 +45,93 @@ The response provides details about which memberships could and couldn't be crea
 
 ## EXAMPLES
 
+### Example 1: Add members in bulk to a team
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	Values = @(
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			Roles = @(
+			)
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			Roles = @(
+				"owner"
+			)
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+		}
+	)
+}
+
+Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the Add-MgTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Add members in bulk and encounter partial failure
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	Values = @(
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			Roles = @(
+			)
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('18a80140-b0fb-4489-b360-2f6efaf225a0')"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			Roles = @(
+				"owner"
+			)
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('86503198-b81b-43fe-81ee-ad45b8848ac9')"
+		}
+	)
+}
+
+Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the Add-MgTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Add members in bulk to a team using user principal name
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+$params = @{
+	Values = @(
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			Roles = @(
+			)
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+		}
+		@{
+			"@odata.type" = "microsoft.graph.aadUserConversationMember"
+			Roles = @(
+				"owner"
+			)
+			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
+		}
+	)
+}
+
+Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+
+This example shows how to use the Add-MgTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -52,7 +139,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,7 +155,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Rl53M1TeamsTeamIdChannelsChannelIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +170,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -99,7 +186,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -114,7 +201,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -130,7 +217,7 @@ To construct, please use Get-Help -Online and see NOTES section for VALUES prope
 
 ```yaml
 Type: IMicrosoftGraphConversationMember[]
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -193,7 +280,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IPaths1Rl53M1TeamsTeamIdChannelsChannelIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Values <IMicrosoftGraphConversationMember[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the user.
     - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
@@ -238,7 +325,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
 VALUES <IMicrosoftGraphConversationMember\[]>: .
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.

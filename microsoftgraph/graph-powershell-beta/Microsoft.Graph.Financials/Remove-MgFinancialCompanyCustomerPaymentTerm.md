@@ -14,14 +14,14 @@ Delete navigation property paymentTerm for financials
 
 ### Delete (Default)
 ```
-Remove-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerPaymentId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgFinancialCompanyCustomerPaymentTerm -CompanyId <String> -CustomerId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity1
@@ -63,7 +63,7 @@ key: id of customer
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ key: id of customerPayment
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True

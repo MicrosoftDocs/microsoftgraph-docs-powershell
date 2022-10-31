@@ -15,7 +15,7 @@ Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceMan
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -AndroidDeviceOwnerEnrollmentProfileId <String>
- [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
  [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
@@ -36,7 +36,7 @@ Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -AndroidDeviceOwner
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -InputObject <IDeviceManagementEnrolmentIdentity>
- [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
+ [-AccountId <String>] [-AdditionalProperties <Hashtable>] [-ConfigureWifi] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
  [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
@@ -119,6 +119,25 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ConfigureWifi
+Boolean that indicates that the Wi-Fi network should be configured during device provisioning.
+When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks.
+When set to FALSE or undefined, other Wi-Fi related properties will be ignored.
+Default value is TRUE.
+Returned by default.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -228,7 +247,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -491,7 +511,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>`: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
   - `[ConfigureWifi <Boolean?>]`: Boolean that indicates that the Wi-Fi network should be configured during device provisioning. When set to TRUE, device provisioning will use Wi-Fi related properties to automatically connect to Wi-Fi networks. When set to FALSE or undefined, other Wi-Fi related properties will be ignored. Default value is TRUE. Returned by default.
   - `[CreatedDateTime <DateTime?>]`: Date time the enrollment profile was created.

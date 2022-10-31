@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppMgtiOSLobAppProvisioningConfigurationUserStatuses
 
 ## SYNOPSIS
-Get userStatuses from deviceAppManagement
+The list of user installation states for this mobile app configuration.
 
 ## SYNTAX
 
@@ -34,7 +34,7 @@ Get-MgDeviceAppMgtiOSLobAppProvisioningConfigurationUserStatuses
 ```
 
 ## DESCRIPTION
-Get userStatuses from deviceAppManagement
+The list of user installation states for this mobile app configuration.
 
 ## EXAMPLES
 

@@ -14,26 +14,26 @@ Create new navigation property ref to teachers for education
 
 ### CreateExpanded (Default)
 ```
-New-MgEducationClassTeacherByRef -EducationClassId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgEducationClassTeacherByRef -EducationClassId <String> [-AdditionalProperties <Hashtable>]
+ [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEducationClassTeacherByRef -EducationClassId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgEducationClassTeacherByRef -EducationClassId <String> -BodyParameter <IReferenceCreate> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> -BodyParameter <IReferenceCreate>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -75,7 +75,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IReferenceCreate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -114,6 +114,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -OdataId
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -169,7 +184,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### System.Collections.Hashtable
+### Microsoft.Graph.PowerShell.Models.IReferenceCreate
 ## OUTPUTS
 
 ### System.Boolean

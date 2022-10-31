@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: b01858fb-e2e9-4f44-b411-be81afe2e044
+Module Guid: 89d60e28-947d-452c-a477-0a533bf7c534
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
@@ -213,9 +213,6 @@ Create new navigation property to multiValueExtendedProperties for users
 ### [New-MgUserMessageSingleValueExtendedProperty](New-MgUserMessageSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for users
 
-### [Remove-MgUserInferenceClassification](Remove-MgUserInferenceClassification.md)
-Delete navigation property inferenceClassification for users
-
 ### [Remove-MgUserInferenceClassificationOverride](Remove-MgUserInferenceClassificationOverride.md)
 Delete navigation property overrides for users
 
@@ -312,9 +309,6 @@ Update the navigation property childFolders in users
 ### [Update-MgUserMailFolderChildFolderMessage](Update-MgUserMailFolderChildFolderMessage.md)
 Update the navigation property messages in users
 
-### [Update-MgUserMailFolderChildFolderMessageAttachment](Update-MgUserMailFolderChildFolderMessageAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserMailFolderChildFolderMessageExtension](Update-MgUserMailFolderChildFolderMessageExtension.md)
 Update the navigation property extensions in users
 
@@ -336,9 +330,6 @@ Update the navigation property singleValueExtendedProperties in users
 ### [Update-MgUserMailFolderMessage](Update-MgUserMailFolderMessage.md)
 Update the navigation property messages in users
 
-### [Update-MgUserMailFolderMessageAttachment](Update-MgUserMailFolderMessageAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserMailFolderMessageExtension](Update-MgUserMailFolderMessageExtension.md)
 Update the navigation property extensions in users
 
@@ -359,9 +350,6 @@ Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserMessage](Update-MgUserMessage.md)
 Update the navigation property messages in users
-
-### [Update-MgUserMessageAttachment](Update-MgUserMessageAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserMessageExtension](Update-MgUserMessageExtension.md)
 Update the navigation property extensions in users

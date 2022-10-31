@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Security
-Module Guid: 0287aecd-e0a1-4ddb-b218-8b2ad37fc84f
+Module Guid: 88b1c6b0-7bf4-42b7-9d5c-992ab12b6c72
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -59,7 +59,7 @@ Notifications for suspicious or potential security issues in a customer's tenant
 Represents an attack simulation training campaign in a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomation](Get-MgSecurityAttackSimulationAutomation.md)
-Represents simulation automations created to run on a tenant.
+Represents simulation automation created to run on a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
 A collection of simulation automation runs.
@@ -187,7 +187,8 @@ Supports $expand.
 Get informationProtection from security
 
 ### [Get-MgSecurityInformationProtectionLabelPolicySetting](Get-MgSecurityInformationProtectionLabelPolicySetting.md)
-Read the Microsoft Purview Information Protection policy settings for the user or organization.
+Read the properties and relationships of an informationProtectionPolicySetting object.
+The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
 ### [Get-MgSecurityInformationProtectionSensitivityLabel](Get-MgSecurityInformationProtectionSensitivityLabel.md)
 Read the Microsoft Purview Information Protection labels for the user or organization.
@@ -428,9 +429,6 @@ Release the non-custodial data source from the case.
 
 ### [Remove-MgSecurityAction](Remove-MgSecurityAction.md)
 Delete navigation property securityActions for security
-
-### [Remove-MgSecurityAlert](Remove-MgSecurityAlert.md)
-Delete navigation property alerts for security
 
 ### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
 Delete navigation property simulations for security

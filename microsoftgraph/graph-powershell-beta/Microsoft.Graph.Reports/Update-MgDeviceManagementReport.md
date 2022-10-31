@@ -16,7 +16,7 @@ Update the navigation property reports in deviceManagement
 ```
 Update-MgDeviceManagementReport [-AdditionalProperties <Hashtable>]
  [-CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]
- [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -85,7 +85,7 @@ Entity representing a job to export a report
 To construct, please use Get-Help -Online and see NOTES section for EXPORTJOBS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExportJob1[]
+Type: IMicrosoftGraphDeviceManagementExportJob[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +97,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -177,9 +178,9 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CachedReportConfigurations <IMicrosoftGraphDeviceManagementCachedReportConfiguration[]>]`: Entity representing the configuration of a cached report
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
     - `[Filter <String>]`: Filters applied on report creation.
     - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed
@@ -189,7 +190,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that
     - `[Select <String[]>]`: Columns selected from the report
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
   - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
     - `[Filter <String>]`: Filters applied on the report
     - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report
@@ -202,7 +203,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementReports1>`: Singleton entity that
     - `[Url <String>]`: Temporary location of the exported report
 
 CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfiguration\[]>: Entity representing the configuration of a cached report
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the cached report expires
   - `[Filter <String>]`: Filters applied on report creation.
   - `[LastRefreshDateTime <DateTime?>]`: Time that the cached report was last refreshed
@@ -213,7 +214,7 @@ CACHEDREPORTCONFIGURATIONS <IMicrosoftGraphDeviceManagementCachedReportConfigura
   - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
 
 EXPORTJOBS <IMicrosoftGraphDeviceManagementExportJob\[]>: Entity representing a job to export a report
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: Time that the exported report expires
   - `[Filter <String>]`: Filters applied on the report
   - `[Format <DeviceManagementReportFileFormat?>]`: Possible values for the file format of a report

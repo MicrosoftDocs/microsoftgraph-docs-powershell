@@ -179,7 +179,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IPathsMtl0Z8OfficeconfigurationClientconfigurationsOfficeclientconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OfficeConfigurationAssignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
@@ -253,7 +253,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
 OFFICECONFIGURATIONASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment\[]>: .
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 

@@ -170,7 +170,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -313,7 +314,7 @@ To create the parameters described below, construct a hash table containing the 
 
 ACCOUNT `<IMicrosoftGraphAccount>`: account
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Blocked <Boolean?>]`: 
   - `[Category <String>]`: 
   - `[DisplayName <String>]`: 
@@ -323,10 +324,10 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
 
 BODYPARAMETER `<IMicrosoftGraphJournal>`: journal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 
@@ -338,7 +339,7 @@ BODYPARAMETER `<IMicrosoftGraphJournal>`: journal
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AccountNumber <String>]`: 
@@ -392,10 +393,10 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[VendorId <String>]`: key: id of vendor
 
 JOURNALLINES <IMicrosoftGraphJournalLine\[]>: .
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 

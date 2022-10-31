@@ -109,7 +109,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -204,7 +205,7 @@ To create the parameters described below, construct a hash table containing the 
 
 BODYPARAMETER `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Content <String>]`: The Group Policy Object file content.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicy was first uploaded.
   - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content

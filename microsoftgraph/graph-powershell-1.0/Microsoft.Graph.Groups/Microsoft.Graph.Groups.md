@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: 9991fdd5-5b23-43d5-baea-e42d4f2b81b6
+Module Guid: 99137112-c275-4ae8-ad64-7e4db5d4b9de
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -537,16 +537,12 @@ This operation limits the size of the attachment you can add to under 3 MB.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgReplyGroupConversationThreadPost](Invoke-MgReplyGroupConversationThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupConversationThreadPostInReplyTo](Invoke-MgReplyGroupConversationThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThread](Invoke-MgReplyGroupThread.md)
 Add an attachment when creating a group post.
@@ -554,16 +550,12 @@ This operation limits the size of the attachment you can add to under 3 MB.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgReplyGroupThreadPost](Invoke-MgReplyGroupThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgSnoozeGroupCalendarEventReminder](Invoke-MgSnoozeGroupCalendarEventReminder.md)
 Postpone a reminder for an event in a user calendar until a new time.
@@ -600,10 +592,7 @@ To get properties that are _not_ returned by default, do a GET operation and spe
 Create new navigation property ref to acceptedSenders for groups
 
 ### [New-MgGroupConversation](New-MgGroupConversation.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Use reply thread or reply post to further post to that conversation.
 
 ### [New-MgGroupConversationThread](New-MgGroupConversationThread.md)
 Create a new thread in the specified conversation.
@@ -611,9 +600,6 @@ A thread and post are created as specified.
 Use reply thread to further post \nto that thread.
 Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
-
-### [New-MgGroupConversationThreadPost](New-MgGroupConversationThreadPost.md)
-Create new navigation property to posts for groups
 
 ### [New-MgGroupConversationThreadPostAttachment](New-MgGroupConversationThreadPostAttachment.md)
 Create new navigation property to attachments for groups
@@ -698,9 +684,6 @@ Create new navigation property ref to owners for groups
 ### [New-MgGroupPermissionGrant](New-MgGroupPermissionGrant.md)
 Create new navigation property to permissionGrants for groups
 
-### [New-MgGroupPhoto](New-MgGroupPhoto.md)
-Create new navigation property to photos for groups
-
 ### [New-MgGroupRejectedSenderByRef](New-MgGroupRejectedSenderByRef.md)
 Create new navigation property ref to rejectedSenders for groups
 
@@ -708,9 +691,6 @@ Create new navigation property ref to rejectedSenders for groups
 Start a new group conversation by first creating a thread.
 A new conversation, conversation thread, and post are created in the group.\nUse reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
-
-### [New-MgGroupThreadPost](New-MgGroupThreadPost.md)
-Create new navigation property to posts for groups
 
 ### [New-MgGroupThreadPostAttachment](New-MgGroupThreadPostAttachment.md)
 Create new navigation property to attachments for groups
@@ -781,9 +761,6 @@ Delete navigation property conversations for groups
 ### [Remove-MgGroupConversationThread](Remove-MgGroupConversationThread.md)
 Delete navigation property threads for groups
 
-### [Remove-MgGroupConversationThreadPost](Remove-MgGroupConversationThreadPost.md)
-Delete navigation property posts for groups
-
 ### [Remove-MgGroupConversationThreadPostAttachment](Remove-MgGroupConversationThreadPostAttachment.md)
 Delete navigation property attachments for groups
 
@@ -835,9 +812,6 @@ Delete ref of navigation property owners for groups
 ### [Remove-MgGroupPermissionGrant](Remove-MgGroupPermissionGrant.md)
 Delete navigation property permissionGrants for groups
 
-### [Remove-MgGroupPhoto](Remove-MgGroupPhoto.md)
-Delete navigation property photo for groups
-
 ### [Remove-MgGroupRejectedSenderByRef](Remove-MgGroupRejectedSenderByRef.md)
 Delete ref of navigation property rejectedSenders for groups
 
@@ -846,9 +820,6 @@ Unfollow a user's site or multiple sites.
 
 ### [Remove-MgGroupThread](Remove-MgGroupThread.md)
 Delete navigation property threads for groups
-
-### [Remove-MgGroupThreadPost](Remove-MgGroupThreadPost.md)
-Delete navigation property posts for groups
 
 ### [Remove-MgGroupThreadPostAttachment](Remove-MgGroupThreadPostAttachment.md)
 Delete navigation property attachments for groups
@@ -1000,10 +971,8 @@ Unpublish a [contentType][] from a content type hub site.
 Unpublish a [contentType][] from a content type hub site.
 
 ### [Update-MgGroup](Update-MgGroup.md)
-Update the properties of a group object.
-
-### [Update-MgGroupConversation](Update-MgGroupConversation.md)
-Update the navigation property conversations in groups
+Add a member to a security or Microsoft 365 group through the **members** navigation property.
+The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 ### [Update-MgGroupConversationThread](Update-MgGroupConversationThread.md)
 Update the navigation property threads in groups
@@ -1011,14 +980,8 @@ Update the navigation property threads in groups
 ### [Update-MgGroupConversationThreadPost](Update-MgGroupConversationThreadPost.md)
 Update the navigation property inReplyTo in groups
 
-### [Update-MgGroupConversationThreadPostAttachment](Update-MgGroupConversationThreadPostAttachment.md)
-Update the navigation property attachments in groups
-
 ### [Update-MgGroupConversationThreadPostExtension](Update-MgGroupConversationThreadPostExtension.md)
 Update the navigation property extensions in groups
-
-### [Update-MgGroupConversationThreadPostInReplyToAttachment](Update-MgGroupConversationThreadPostInReplyToAttachment.md)
-Update the navigation property attachments in groups
 
 ### [Update-MgGroupConversationThreadPostInReplyToExtension](Update-MgGroupConversationThreadPostInReplyToExtension.md)
 Update the navigation property extensions in groups
@@ -1056,14 +1019,8 @@ Update the navigation property threads in groups
 ### [Update-MgGroupThreadPost](Update-MgGroupThreadPost.md)
 Update the navigation property inReplyTo in groups
 
-### [Update-MgGroupThreadPostAttachment](Update-MgGroupThreadPostAttachment.md)
-Update the navigation property attachments in groups
-
 ### [Update-MgGroupThreadPostExtension](Update-MgGroupThreadPostExtension.md)
 Update the navigation property extensions in groups
-
-### [Update-MgGroupThreadPostInReplyToAttachment](Update-MgGroupThreadPostInReplyToAttachment.md)
-Update the navigation property attachments in groups
 
 ### [Update-MgGroupThreadPostInReplyToExtension](Update-MgGroupThreadPostInReplyToExtension.md)
 Update the navigation property extensions in groups

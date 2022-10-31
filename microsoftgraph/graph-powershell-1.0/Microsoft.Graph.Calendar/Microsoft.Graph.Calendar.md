@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: 7da240ca-50a5-46d9-94dd-99b4ddcd6323
+Module Guid: c8a916d9-253c-4931-aff6-eccd080bee49
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -224,9 +224,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgGroupEventInstance](New-MgGroupEventInstance.md)
-Create new navigation property to instances for groups
-
 ### [New-MgGroupEventInstanceAttachment](New-MgGroupEventInstanceAttachment.md)
 Use this API to create a new Attachment.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
@@ -299,9 +296,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgUserEventInstance](New-MgUserEventInstance.md)
-Create new navigation property to instances for users
-
 ### [New-MgUserEventInstanceAttachment](New-MgUserEventInstanceAttachment.md)
 Use this API to create a new Attachment.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
@@ -341,9 +335,6 @@ Delete navigation property attachments for groups
 
 ### [Remove-MgGroupEventExtension](Remove-MgGroupEventExtension.md)
 Delete navigation property extensions for groups
-
-### [Remove-MgGroupEventInstance](Remove-MgGroupEventInstance.md)
-Delete navigation property instances for groups
 
 ### [Remove-MgGroupEventInstanceAttachment](Remove-MgGroupEventInstanceAttachment.md)
 Delete navigation property attachments for groups
@@ -390,9 +381,6 @@ Delete navigation property attachments for users
 ### [Remove-MgUserEventExtension](Remove-MgUserEventExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgUserEventInstance](Remove-MgUserEventInstance.md)
-Delete navigation property instances for users
-
 ### [Remove-MgUserEventInstanceAttachment](Remove-MgUserEventInstanceAttachment.md)
 Delete navigation property attachments for users
 
@@ -423,17 +411,8 @@ Update the navigation property singleValueExtendedProperties in groups
 ### [Update-MgGroupEvent](Update-MgGroupEvent.md)
 Update the navigation property events in groups
 
-### [Update-MgGroupEventAttachment](Update-MgGroupEventAttachment.md)
-Update the navigation property attachments in groups
-
 ### [Update-MgGroupEventExtension](Update-MgGroupEventExtension.md)
 Update the navigation property extensions in groups
-
-### [Update-MgGroupEventInstance](Update-MgGroupEventInstance.md)
-Update the navigation property instances in groups
-
-### [Update-MgGroupEventInstanceAttachment](Update-MgGroupEventInstanceAttachment.md)
-Update the navigation property attachments in groups
 
 ### [Update-MgGroupEventInstanceExtension](Update-MgGroupEventInstanceExtension.md)
 Update the navigation property extensions in groups
@@ -472,17 +451,8 @@ Update the navigation property singleValueExtendedProperties in users
 ### [Update-MgUserEvent](Update-MgUserEvent.md)
 Update the navigation property events in users
 
-### [Update-MgUserEventAttachment](Update-MgUserEventAttachment.md)
-Update the navigation property attachments in users
-
 ### [Update-MgUserEventExtension](Update-MgUserEventExtension.md)
 Update the navigation property extensions in users
-
-### [Update-MgUserEventInstance](Update-MgUserEventInstance.md)
-Update the navigation property instances in users
-
-### [Update-MgUserEventInstanceAttachment](Update-MgUserEventInstanceAttachment.md)
-Update the navigation property attachments in users
 
 ### [Update-MgUserEventInstanceExtension](Update-MgUserEventInstanceExtension.md)
 Update the navigation property extensions in users

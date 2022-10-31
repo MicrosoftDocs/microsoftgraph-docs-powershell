@@ -23,7 +23,7 @@ Export-MgUserPersonalData -UserId <String> [-AdditionalProperties <Hashtable>] [
 ### Export
 ```
 Export-MgUserPersonalData -UserId <String>
- -BodyParameter <IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Export-MgUserPersonalData -InputObject <IUsersActionsIdentity> [-AdditionalPrope
 ### ExportViaIdentity
 ```
 Export-MgUserPersonalData -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
+Type: IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema
 Parameter Sets: Export, ExportViaIdentity
 Aliases:
 
@@ -189,7 +189,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Xhdcw6UsersUserIdMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IComponents1Fpckw4RequestbodiesExportpersonaldatarequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 

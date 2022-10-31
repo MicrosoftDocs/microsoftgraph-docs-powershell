@@ -36,6 +36,15 @@ Get operations from communications
 
 ## EXAMPLES
 
+### Example 1: Using the Get-MgCommunicationCallOperation Cmdlet
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+Get-MgCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
+```
+
+This example shows how to use the Get-MgCommunicationCallOperation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
@@ -48,7 +57,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -155,7 +164,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

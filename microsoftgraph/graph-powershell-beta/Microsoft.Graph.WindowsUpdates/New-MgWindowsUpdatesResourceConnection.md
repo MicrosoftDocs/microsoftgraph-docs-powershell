@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Create new navigation property to resourceConnections for admin
+Create a new operationalInsightsConnection object.
 
 ## SYNTAX
 
@@ -25,16 +25,21 @@ New-MgWindowsUpdatesResourceConnection -BodyParameter <IMicrosoftGraphWindowsUpd
 ```
 
 ## DESCRIPTION
-Create new navigation property to resourceConnections for admin
+Create a new operationalInsightsConnection object.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.operationalInsightsConnection"
+	AzureSubscriptionId = "322ec614-e9c2-4cd5-a55c-5711fdecf02e"
+	AzureResourceGroupName = "target-resource-group"
+	WorkspaceName = "my-workspace"
+}
+New-MgWindowsUpdatesResourceConnection -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -70,7 +75,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String

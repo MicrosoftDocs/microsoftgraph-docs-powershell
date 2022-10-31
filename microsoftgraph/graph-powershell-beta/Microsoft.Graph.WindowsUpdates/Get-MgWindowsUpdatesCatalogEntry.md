@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgWindowsUpdatesCatalogEntry
 
 ## SYNOPSIS
-Get entries from admin
+Lists the content that you can approve for deployment.
+Read-only.
 
 ## SYNTAX
 
@@ -32,16 +33,16 @@ Get-MgWindowsUpdatesCatalogEntry -InputObject <IWindowsUpdatesIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Get entries from admin
+Lists the content that you can approve for deployment.
+Read-only.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesCatalogEntry
+```
 
 ## PARAMETERS
 
