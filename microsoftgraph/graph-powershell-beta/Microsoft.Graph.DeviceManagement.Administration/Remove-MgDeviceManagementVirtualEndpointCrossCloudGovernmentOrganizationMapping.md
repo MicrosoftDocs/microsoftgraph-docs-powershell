@@ -1,24 +1,24 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointreport
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementVirtualEndpointReport
+# Remove-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 
 ## SYNOPSIS
-Delete navigation property reports for deviceManagement
+Delete navigation property crossCloudGovernmentOrganizationMapping for deviceManagement
 
 ## SYNTAX
 
 ```
-Remove-MgDeviceManagementVirtualEndpointReport [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property reports for deviceManagement
+Delete navigation property crossCloudGovernmentOrganizationMapping for deviceManagement
 
 ## EXAMPLES
 

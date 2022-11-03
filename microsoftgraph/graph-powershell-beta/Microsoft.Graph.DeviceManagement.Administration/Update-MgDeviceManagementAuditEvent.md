@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent
@@ -360,7 +360,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
+ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit Actor.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationDisplayName <String>]`: Name of the Application.
   - `[ApplicationId <String>]`: AAD Application Id.
@@ -377,7 +377,7 @@ ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit
     - `[DisplayName <String>]`: Scope Tag Display name.
     - `[RoleScopeTagId <String>]`: Scope Tag Id.
 
-BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties for Audit Event.
+BODYPARAMETER <IMicrosoftGraphAuditEvent>: A class containing the properties for Audit Event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <String>]`: Friendly name of the activity.
@@ -415,7 +415,7 @@ BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties f
     - `[ResourceId <String>]`: Audit resource's Id.
     - `[Type <String>]`: Audit resource's type.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -470,7 +470,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-RESOURCES <IMicrosoftGraphAuditResource\[]>: Resources being modified.
+RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
   - `[AuditResourceType <String>]`: Audit resource's type.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
