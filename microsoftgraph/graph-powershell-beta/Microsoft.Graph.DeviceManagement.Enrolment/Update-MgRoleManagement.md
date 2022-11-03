@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagement
@@ -192,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
+BODYPARAMETER <IMicrosoftGraphRoleManagement1>: roleManagement
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPc <IMicrosoftGraphRbacApplicationMultiple>]`: rbacApplicationMultiple
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -203,7 +203,9 @@ BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
       - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+        - `[AuthenticationContextId <String>]`: 
         - `[Description <String>]`: Description for the action. Supports $filter (eq).
+        - `[IsAuthenticationContextSettable <Boolean?>]`: 
         - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
         - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -428,7 +430,7 @@ BODYPARAMETER `<IMicrosoftGraphRoleManagement1>`: roleManagement
     - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
   - `[EntitlementManagement <IMicrosoftGraphRbacApplication>]`: rbacApplication
 
-CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+CLOUDPC <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -437,7 +439,9 @@ CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
     - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[IsAuthenticationContextSettable <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -480,7 +484,7 @@ CLOUDPC `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
-DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMultiple
+DEVICEMANAGEMENT <IMicrosoftGraphRbacApplicationMultiple>: rbacApplicationMultiple
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -489,7 +493,9 @@ DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMult
     - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[IsAuthenticationContextSettable <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -532,7 +538,7 @@ DEVICEMANAGEMENT `<IMicrosoftGraphRbacApplicationMultiple>`: rbacApplicationMult
     - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for.
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
 
-DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
+DIRECTORY <IMicrosoftGraphRbacApplication>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -541,7 +547,9 @@ DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
     - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[IsAuthenticationContextSettable <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -748,7 +756,7 @@ DIRECTORY `<IMicrosoftGraphRbacApplication>`: rbacApplication
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule1[]>]`: 
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
 
-ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
+ENTITLEMENTMANAGEMENT <IMicrosoftGraphRbacApplication>: rbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -757,7 +765,9 @@ ENTITLEMENTMANAGEMENT `<IMicrosoftGraphRbacApplication>`: rbacApplication
     - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[ActionVerb <String>]`: HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null. Supports $filter (eq) but not for null values.
+      - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
+      - `[IsAuthenticationContextSettable <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
