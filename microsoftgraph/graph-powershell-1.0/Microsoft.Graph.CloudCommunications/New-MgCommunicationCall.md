@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
@@ -690,13 +690,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup[]>: .
+AUDIOROUTINGGROUPS <IMicrosoftGraphAudioRoutingGroup\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Receivers <String[]>]`: 
   - `[RoutingMode <String>]`: 
   - `[Sources <String[]>]`: 
 
-BODYPARAMETER <IMicrosoftGraphCall>: call
+BODYPARAMETER `<IMicrosoftGraphCall>`: call
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]`: 
@@ -796,12 +796,12 @@ BODYPARAMETER <IMicrosoftGraphCall>: call
     - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
     - `[State <String>]`: callTranscriptionState
 
-CALLOPTIONS <IMicrosoftGraphCallOptions>: callOptions
+CALLOPTIONS `<IMicrosoftGraphCallOptions>`: callOptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
   - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
 
-CALLROUTES <IMicrosoftGraphCallRoute[]>: The routing information on how the call was retargeted. Read-only.
+CALLROUTES <IMicrosoftGraphCallRoute\[]>: The routing information on how the call was retargeted. Read-only.
   - `[Final <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -813,16 +813,16 @@ CALLROUTES <IMicrosoftGraphCallRoute[]>: The routing information on how the call
   - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RoutingType <String>]`: routingType
 
-CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
+CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession[]>: .
+CONTENTSHARINGSESSIONS <IMicrosoftGraphContentSharingSession\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>: incomingContext
+INCOMINGCONTEXT `<IMicrosoftGraphIncomingContext>`: incomingContext
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ObservedParticipantId <String>]`: The ID of the participant that is under observation. Read-only.
   - `[OnBehalfOf <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -836,11 +836,11 @@ INCOMINGCONTEXT <IMicrosoftGraphIncomingContext>: incomingContext
   - `[SourceParticipantId <String>]`: The ID of the participant that triggered the incoming call. Read-only.
   - `[Transferor <IMicrosoftGraphIdentitySet>]`: identitySet
 
-MEDIASTATE <IMicrosoftGraphCallMediaState>: callMediaState
+MEDIASTATE `<IMicrosoftGraphCallMediaState>`: callMediaState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Audio <String>]`: mediaState
 
-OPERATIONS <IMicrosoftGraphCommsOperation[]>: .
+OPERATIONS <IMicrosoftGraphCommsOperation\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClientContext <String>]`: Unique Client Context string. Max limit is 256 chars.
   - `[ResultInfo <IMicrosoftGraphResultInfo>]`: resultInfo
@@ -850,7 +850,7 @@ OPERATIONS <IMicrosoftGraphCommsOperation[]>: .
     - `[Subcode <Int32?>]`: The result sub-code.
   - `[Status <String>]`: operationStatus
 
-PARTICIPANTS <IMicrosoftGraphParticipant[]>: .
+PARTICIPANTS <IMicrosoftGraphParticipant\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -881,13 +881,13 @@ PARTICIPANTS <IMicrosoftGraphParticipant[]>: .
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
 
-RESULTINFO <IMicrosoftGraphResultInfo>: resultInfo
+RESULTINFO `<IMicrosoftGraphResultInfo>`: resultInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <Int32?>]`: The result code.
   - `[Message <String>]`: The message.
   - `[Subcode <Int32?>]`: The result sub-code.
 
-SOURCE <IMicrosoftGraphParticipantInfo>: participantInfo
+SOURCE `<IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -903,7 +903,7 @@ SOURCE <IMicrosoftGraphParticipantInfo>: participantInfo
   - `[ParticipantId <String>]`: The participant ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location. Read-only.
 
-TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>: The targets of the call. Required information for creating peer to peer call.
+TARGETS <IMicrosoftGraphInvitationParticipantInfo\[]>: The targets of the call. Required information for creating peer to peer call.
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -917,12 +917,12 @@ TARGETS <IMicrosoftGraphInvitationParticipantInfo[]>: The targets of the call. R
   - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-TONEINFO <IMicrosoftGraphToneInfo>: toneInfo
+TONEINFO `<IMicrosoftGraphToneInfo>`: toneInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SequenceId <Int64?>]`: An incremental identifier used for ordering DTMF events.
   - `[Tone <String>]`: tone
 
-TRANSCRIPTION <IMicrosoftGraphCallTranscriptionInfo>: callTranscriptionInfo
+TRANSCRIPTION `<IMicrosoftGraphCallTranscriptionInfo>`: callTranscriptionInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedDateTime <DateTime?>]`: The state modified time in UTC.
   - `[State <String>]`: callTranscriptionState
