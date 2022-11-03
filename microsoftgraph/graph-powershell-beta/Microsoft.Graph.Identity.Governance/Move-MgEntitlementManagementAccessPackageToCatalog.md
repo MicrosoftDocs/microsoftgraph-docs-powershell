@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/move-mgentitlementmanagementaccesspackagetocatalog
@@ -8,7 +8,8 @@ schema: 2.0.0
 # Move-MgEntitlementManagementAccessPackageToCatalog
 
 ## SYNOPSIS
-Invoke action moveToCatalog
+In Azure AD entitlement management, this action moves the accessPackage to a specified target accessPackageCatalog.
+The resources in the access package must be present in the target catalog.
 
 ## SYNTAX
 
@@ -41,7 +42,8 @@ Move-MgEntitlementManagementAccessPackageToCatalog -InputObject <IIdentityGovern
 ```
 
 ## DESCRIPTION
-Invoke action moveToCatalog
+In Azure AD entitlement management, this action moves the accessPackage to a specified target accessPackageCatalog.
+The resources in the access package must be present in the target catalog.
 
 ## EXAMPLES
 
@@ -189,11 +191,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1A7Wr23IdentitygovernanceEntitlementmanagementAccesspackagesAccesspackageIdMicrosoftGraphMovetocatalogPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CatalogId <String>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
