@@ -82,6 +82,11 @@ The app that is installed.
 ### [Get-MgChatInstalledAppTeamAppDefinition](Get-MgChatInstalledAppTeamAppDefinition.md)
 The details of this version of the app.
 
+### [Get-MgChatLastMessagePreview](Get-MgChatLastMessagePreview.md)
+Preview of the last message sent in the chat.
+Null if no messages have been sent in the chat.
+Currently, only the list chats operation supports this property.
+
 ### [Get-MgChatMember](Get-MgChatMember.md)
 A collection of all the members in the chat.
 Nullable.
@@ -461,6 +466,11 @@ The app that is installed.
 ### [Get-MgUserChatInstalledAppTeamAppDefinition](Get-MgUserChatInstalledAppTeamAppDefinition.md)
 The details of this version of the app.
 
+### [Get-MgUserChatLastMessagePreview](Get-MgUserChatLastMessagePreview.md)
+Preview of the last message sent in the chat.
+Null if no messages have been sent in the chat.
+Currently, only the list chats operation supports this property.
+
 ### [Get-MgUserChatMember](Get-MgUserChatMember.md)
 A collection of all the members in the chat.
 Nullable.
@@ -506,6 +516,9 @@ The apps installed in the personal scope of this user.
 ### [Get-MgUserTeamworkInstalledAppChat](Get-MgUserTeamworkInstalledAppChat.md)
 Retrieve the chat of the specified user and Teams app.
 
+### [Hide-MgChatForUser](Hide-MgChatForUser.md)
+Hide a chat for a user.
+
 ### [Invoke-MgArchiveTeam](Invoke-MgArchiveTeam.md)
 Archive the specified team.
 \nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
@@ -514,11 +527,20 @@ A team is archived once the async operation completes successfully, which may oc
 To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
+### [Invoke-MgGraphChat](Invoke-MgGraphChat.md)
+Unhide a chat for a user.
+
 ### [Invoke-MgHaveTeamChannel](Invoke-MgHaveTeamChannel.md)
 Invoke function doesUserHaveAccess
 
 ### [Invoke-MgHaveTeamPrimaryChannel](Invoke-MgHaveTeamPrimaryChannel.md)
 Invoke function doesUserHaveAccess
+
+### [Invoke-MgMarkChatReadForUser](Invoke-MgMarkChatReadForUser.md)
+Mark a chat as read for a user.
+
+### [Invoke-MgMarkChatUnreadForUser](Invoke-MgMarkChatUnreadForUser.md)
+Mark a chat as unread for a user.
 
 ### [Invoke-MgShareTeamSchedule](Invoke-MgShareTeamSchedule.md)
 Share a schedule time range with schedule members.\nMake the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.\nEach shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
@@ -814,6 +836,9 @@ Delete entity from chats
 ### [Remove-MgChatInstalledApp](Remove-MgChatInstalledApp.md)
 Delete navigation property installedApps for chats
 
+### [Remove-MgChatLastMessagePreview](Remove-MgChatLastMessagePreview.md)
+Delete navigation property lastMessagePreview for chats
+
 ### [Remove-MgChatMember](Remove-MgChatMember.md)
 Delete navigation property members for chats
 
@@ -1023,6 +1048,9 @@ Delete navigation property chats for users
 ### [Remove-MgUserChatInstalledApp](Remove-MgUserChatInstalledApp.md)
 Delete navigation property installedApps for users
 
+### [Remove-MgUserChatLastMessagePreview](Remove-MgUserChatLastMessagePreview.md)
+Delete navigation property lastMessagePreview for users
+
 ### [Remove-MgUserChatMember](Remove-MgUserChatMember.md)
 Delete navigation property members for users
 
@@ -1073,6 +1101,9 @@ Update media content for the navigation property photo in groups
 ### [Set-MgGroupTeamPrimaryChannelFileFolderContent](Set-MgGroupTeamPrimaryChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgGroupTeamSchedule](Set-MgGroupTeamSchedule.md)
+Update the navigation property schedule in groups
+
 ### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
@@ -1081,6 +1112,9 @@ Update media content for the navigation property photo in teams
 
 ### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgTeamSchedule](Set-MgTeamSchedule.md)
+Update the navigation property schedule in teams
 
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 Update the navigation property teamsApps in appCatalogs
@@ -1096,6 +1130,9 @@ Update the properties of a chat object.
 
 ### [Update-MgChatInstalledApp](Update-MgChatInstalledApp.md)
 Upgrade an app installation within a chat.
+
+### [Update-MgChatLastMessagePreview](Update-MgChatLastMessagePreview.md)
+Update the navigation property lastMessagePreview in chats
 
 ### [Update-MgChatMember](Update-MgChatMember.md)
 Update the navigation property members in chats
@@ -1177,9 +1214,6 @@ Update the navigation property sharedWithTeams in groups
 
 ### [Update-MgGroupTeamPrimaryChannelTab](Update-MgGroupTeamPrimaryChannelTab.md)
 Update the navigation property tabs in groups
-
-### [Update-MgGroupTeamSchedule](Update-MgGroupTeamSchedule.md)
-Update the navigation property schedule in groups
 
 ### [Update-MgGroupTeamScheduleOfferShiftRequest](Update-MgGroupTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in groups
@@ -1271,9 +1305,6 @@ Update the navigation property sharedWithTeams in teams
 ### [Update-MgTeamPrimaryChannelTab](Update-MgTeamPrimaryChannelTab.md)
 Update the navigation property tabs in teams
 
-### [Update-MgTeamSchedule](Update-MgTeamSchedule.md)
-Update the navigation property schedule in teams
-
 ### [Update-MgTeamScheduleOfferShiftRequest](Update-MgTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in teams
 
@@ -1315,6 +1346,9 @@ Update the navigation property workforceIntegrations in teamwork
 
 ### [Update-MgUserChat](Update-MgUserChat.md)
 Update the navigation property chats in users
+
+### [Update-MgUserChatLastMessagePreview](Update-MgUserChatLastMessagePreview.md)
+Update the navigation property lastMessagePreview in users
 
 ### [Update-MgUserChatMember](Update-MgUserChatMember.md)
 Update the navigation property members in users
