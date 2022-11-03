@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgdevicemanagementandroidforworkenrollmentprofile
@@ -281,7 +281,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphAndroidForWorkEnrollmentProfile>: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
+BODYPARAMETER `<IMicrosoftGraphAndroidForWorkEnrollmentProfile>`: Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
@@ -298,7 +298,7 @@ BODYPARAMETER <IMicrosoftGraphAndroidForWorkEnrollmentProfile>: Enrollment Profi
   - `[TokenExpirationDateTime <DateTime?>]`: Date time the most recently created token will expire.
   - `[TokenValue <String>]`: Value of the most recently created token for this enrollment profile.
 
-QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
+QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
