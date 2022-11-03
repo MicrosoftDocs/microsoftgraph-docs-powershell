@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: 99137112-c275-4ae8-ad64-7e4db5d4b9de
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -977,9 +977,6 @@ The following table shows the types of members that can be added to either secur
 ### [Update-MgGroupConversationThread](Update-MgGroupConversationThread.md)
 Update the navigation property threads in groups
 
-### [Update-MgGroupConversationThreadPost](Update-MgGroupConversationThreadPost.md)
-Update the navigation property inReplyTo in groups
-
 ### [Update-MgGroupConversationThreadPostExtension](Update-MgGroupConversationThreadPostExtension.md)
 Update the navigation property extensions in groups
 
@@ -1015,9 +1012,6 @@ Update the navigation property photo in groups
 
 ### [Update-MgGroupThread](Update-MgGroupThread.md)
 Update the navigation property threads in groups
-
-### [Update-MgGroupThreadPost](Update-MgGroupThreadPost.md)
-Update the navigation property inReplyTo in groups
 
 ### [Update-MgGroupThreadPostExtension](Update-MgGroupThreadPostExtension.md)
 Update the navigation property extensions in groups
