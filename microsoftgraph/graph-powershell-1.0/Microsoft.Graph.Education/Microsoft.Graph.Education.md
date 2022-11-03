@@ -683,6 +683,9 @@ Update education
 ### [Update-MgEducationSchool](Update-MgEducationSchool.md)
 Update the navigation property schools in education
 
+### [Update-MgEducationSchoolAdministrativeUnit](Update-MgEducationSchoolAdministrativeUnit.md)
+Update the navigation property administrativeUnit in education
+
 ### [Update-MgEducationUser](Update-MgEducationUser.md)
 Update the navigation property users in education
 
