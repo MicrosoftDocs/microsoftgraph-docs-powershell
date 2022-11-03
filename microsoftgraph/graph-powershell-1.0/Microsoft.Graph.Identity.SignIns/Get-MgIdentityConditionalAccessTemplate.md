@@ -1,49 +1,42 @@
 ﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mguserauthenticationwindowhelloforbusinessmethoddeviceregistereduser
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesstemplate
 schema: 2.0.0
 ---
 
-# Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser
+# Get-MgIdentityConditionalAccessTemplate
 
 ## SYNOPSIS
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
-Supports $expand.
+Returns a collection of the specified Conditional Access templates.
 
 ## SYNTAX
 
 ### List1 (Default)
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser -UserId <String>
- -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgIdentityConditionalAccessTemplate [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser -DirectoryObjectId <String>
- -UserId <String> -WindowsHelloForBusinessAuthenticationMethodId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
+Get-MgIdentityConditionalAccessTemplate -ConditionalAccessTemplateId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgUserAuthenticationWindowHelloForBusinessMethodDeviceRegisteredUser
- -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-ConsistencyLevel <String>] [<CommonParameters>]
+Get-MgIdentityConditionalAccessTemplate -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Collection of registered users of the device.
-For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
 Read-only.
 Nullable.
-Supports $expand.
+Returns a collection of the specified Conditional Access templates.
 
 ## EXAMPLES
 
@@ -64,16 +57,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+### -ConditionalAccessTemplateId
+key: id of conditionalAccessTemplate
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get1
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -90,21 +82,6 @@ Parameter Sets: List1
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DirectoryObjectId
-key: id of directoryObject
-
-```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -232,36 +209,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsHelloForBusinessAuthenticationMethodId
-key: id of windowsHelloForBusinessAuthenticationMethod
-
-```yaml
-Type: String
-Parameter Sets: List1, Get1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Skip
 Skip the first n items
 
@@ -285,7 +232,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessTemplate
 ## NOTES
 
 ALIASES
