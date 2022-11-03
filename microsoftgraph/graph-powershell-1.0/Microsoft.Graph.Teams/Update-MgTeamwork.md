@@ -21,7 +21,7 @@ Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-Id <String>]
 
 ### Update
 ```
-Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgTeamwork -BodyParameter <IMicrosoftGraphTeamwork> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ teamwork
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamwork1
+Type: IMicrosoftGraphTeamwork
 Parameter Sets: Update
 Aliases:
 
@@ -146,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamwork
 ## OUTPUTS
 
 ### System.Boolean

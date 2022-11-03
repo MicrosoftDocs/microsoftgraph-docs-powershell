@@ -12,28 +12,28 @@ Mark a chat as read for a user.
 
 ## SYNTAX
 
-### MarkExpanded (Default)
+### MarkExpanded1 (Default)
 ```
 Invoke-MgMarkUserChatReadForUser -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Mark
+### Mark1
 ```
 Invoke-MgMarkUserChatReadForUser -ChatId <String> -UserId <String>
  -BodyParameter <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MarkViaIdentityExpanded
+### MarkViaIdentityExpanded1
 ```
 Invoke-MgMarkUserChatReadForUser -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### MarkViaIdentity
+### MarkViaIdentity1
 ```
 Invoke-MgMarkUserChatReadForUser -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mark, MarkViaIdentity
+Parameter Sets: Mark1, MarkViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded, Mark
+Parameter Sets: MarkExpanded1, Mark1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MarkViaIdentityExpanded, MarkViaIdentity
+Parameter Sets: MarkViaIdentityExpanded1, MarkViaIdentity1
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ To construct, please use Get-Help -Online and see NOTES section for USER propert
 
 ```yaml
 Type: IMicrosoftGraphTeamworkUserIdentity
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded, Mark
+Parameter Sets: MarkExpanded1, Mark1
 Aliases:
 
 Required: True

@@ -232,7 +232,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessTemplate
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessTemplate1
 ## NOTES
 
 ALIASES

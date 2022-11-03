@@ -12,26 +12,26 @@ Unhide a chat for a user.
 
 ## SYNTAX
 
-### GraphExpanded (Default)
+### GraphExpanded1 (Default)
 ```
 Invoke-MgGraphChat -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Graph
+### Graph1
 ```
 Invoke-MgGraphChat -ChatId <String>
  -BodyParameter <IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GraphViaIdentityExpanded
+### GraphViaIdentityExpanded1
 ```
 Invoke-MgGraphChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GraphViaIdentity
+### GraphViaIdentity1
 ```
 Invoke-MgGraphChat -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>
@@ -65,7 +65,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Parameter Sets: GraphExpanded1, GraphViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -81,7 +81,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Graph, GraphViaIdentity
+Parameter Sets: Graph1, GraphViaIdentity1
 Aliases:
 
 Required: True
@@ -96,7 +96,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: GraphExpanded, Graph
+Parameter Sets: GraphExpanded1, Graph1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GraphViaIdentityExpanded, GraphViaIdentity
+Parameter Sets: GraphViaIdentityExpanded1, GraphViaIdentity1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Parameter Sets: GraphExpanded1, GraphViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -157,8 +157,8 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Type: IMicrosoftGraphTeamworkUserIdentity1
+Parameter Sets: GraphExpanded1, GraphViaIdentityExpanded1
 Aliases:
 
 Required: False

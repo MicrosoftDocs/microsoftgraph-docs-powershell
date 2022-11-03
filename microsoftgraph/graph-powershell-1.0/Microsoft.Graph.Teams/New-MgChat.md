@@ -15,11 +15,13 @@ Create a new chat object.
 ### CreateExpanded1 (Default)
 ```
 New-MgChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-CreatedDateTime <DateTime>]
- [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>] [-LastUpdatedDateTime <DateTime>]
+ [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage1[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
- [-TenantId <String>] [-Topic <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -322,6 +324,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -LastMessagePreview
+chatMessageInfo
+To construct, please use Get-Help -Online and see NOTES section for LASTMESSAGEPREVIEW properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphChatMessageInfo
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -LastUpdatedDateTime
 Date and time at which the chat was renamed or list of members were last changed.
 Read-only.
@@ -444,6 +462,22 @@ Only available for group chats.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Viewpoint
+chatViewpoint
+To construct, please use Get-Help -Online and see NOTES section for VIEWPOINT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphChatViewpoint
 Parameter Sets: CreateExpanded1
 Aliases:
 

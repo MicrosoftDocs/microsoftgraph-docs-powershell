@@ -12,27 +12,27 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 
 ## SYNTAX
 
-### CheckinExpanded1 (Default)
+### CheckinExpanded (Default)
 ```
 Invoke-MgCheckinGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Checkin1
+### Checkin
 ```
 Invoke-MgCheckinGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  -BodyParameter <IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckinViaIdentityExpanded1
+### CheckinViaIdentityExpanded
 ```
 Invoke-MgCheckinGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-CheckInAs <String>] [-Comment <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CheckinViaIdentity1
+### CheckinViaIdentity
 ```
 Invoke-MgCheckinGroupDriveItem -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>
@@ -66,7 +66,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
+Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths18Yllh1GroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Checkin1, CheckinViaIdentity1
+Parameter Sets: Checkin, CheckinViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
+Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, CheckinViaIdentityExpanded1
+Parameter Sets: CheckinExpanded, CheckinViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, Checkin1
+Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, Checkin1
+Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
@@ -157,7 +157,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: CheckinExpanded1, Checkin1
+Parameter Sets: CheckinExpanded, Checkin
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IGroupsIdentity
-Parameter Sets: CheckinViaIdentityExpanded1, CheckinViaIdentity1
+Parameter Sets: CheckinViaIdentityExpanded, CheckinViaIdentity
 Aliases:
 
 Required: True
