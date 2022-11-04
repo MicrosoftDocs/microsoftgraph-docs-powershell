@@ -409,7 +409,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolAdministrativeUnitMember|[Get-MgDirectoryAdministrativeUnitMember](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolCompanyAllowedDataLocation||
 |Get-MsolCompanyInformation|[Get-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
-|Get-MsolContact|[Get-MgContract](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontract?view=graph-powershell-1.0&preserve-view=true)|
+|Get-MsolContact|[Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDevice|[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDeviceRegistrationServicePolicy||
 |Get-MsolDirSyncConfiguration||
@@ -437,12 +437,12 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |MSOnline||
 |New-MsolAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolDomain|[New-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
-|New-MsolFederatedDomain||
+|New-MsolFederatedDomain|[New-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolGroup|[New-MgGroup](/powershell/module/microsoft.graph.groups/new-mggroup?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolLicenseOptions||
 |New-MsolServicePrincipal|[New-MgServicePrincipal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolServicePrincipalAddresses||
-|New-MsolServicePrincipalCredential||
+|New-MsolServicePrincipalCredential|[Add-MgServicePrincipalKey](/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolUser|[New-MgUser](/powershell/module/microsoft.graph.users/new-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolWellKnownGroup||
 |Redo-MsolProvisionContact||
@@ -474,7 +474,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-MsolCompanySettings|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolDeviceRegistrationServicePolicy||
 |Set-MsolDirSyncConfiguration||
-|Set-MsolDirSyncEnabled||
+|Set-MsolDirSyncEnabled|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolDirSyncFeature||
 |Set-MsolDomain|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolDomainAuthentication|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
