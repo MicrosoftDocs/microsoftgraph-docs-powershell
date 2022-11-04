@@ -1,55 +1,53 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserinformationprotectionbitlocker
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesstemplate
 schema: 2.0.0
 ---
 
-# Update-MgUserInformationProtectionBitlocker
+# Get-MgIdentityConditionalAccessTemplate
 
 ## SYNOPSIS
-Update the navigation property bitlocker in users
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access templates.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### List1 (Default)
 ```
-Update-MgUserInformationProtectionBitlocker -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgUserInformationProtectionBitlocker -UserId <String> -BodyParameter <IMicrosoftGraphBitlocker>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgIdentityConditionalAccessTemplate [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Get1
 ```
-Update-MgUserInformationProtectionBitlocker -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgIdentityConditionalAccessTemplate -ConditionalAccessTemplateId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### GetViaIdentity1
 ```
-Update-MgUserInformationProtectionBitlocker -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphBitlocker> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgIdentityConditionalAccessTemplate -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property bitlocker in users
+Read-only.
+Nullable.
+Returns a collection of the specified Conditional Access templates.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -All
+List all pages.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -59,29 +57,58 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-bitlocker
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -ConditionalAccessTemplateId
+key: id of conditionalAccessTemplate
 
 ```yaml
-Type: IMicrosoftGraphBitlocker
-Parameter Sets: Update, UpdateViaIdentity
+Type: String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Id
-The unique idenfier for an entity.
-Read-only.
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: List1
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -97,7 +124,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -107,13 +134,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PageSize
+Sets the page size of results.
 
 ```yaml
-Type: SwitchParameter
+Type: Int32
+Parameter Sets: List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: String[]
 Parameter Sets: (All)
-Aliases:
+Aliases: Select
 
 Required: False
 Position: Named
@@ -122,44 +164,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecoveryKeys
-The recovery keys associated with the bitlocker entity.
-To construct, please use Get-Help -Online and see NOTES section for RECOVERYKEYS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphBitlockerRecoveryKey[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
+### -Search
+Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: List1
 Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: cf
 
 Required: False
 Position: Named
@@ -168,14 +179,43 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Sort
+Order items by property values
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: String[]
+Parameter Sets: List1
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases:
 
 Required: False
 Position: Named
@@ -190,10 +230,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessTemplate
 ## NOTES
 
 ALIASES
@@ -202,16 +241,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-BODYPARAMETER `<IMicrosoftGraphBitlocker>`: bitlocker
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
-    - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
-    - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
-    - `[VolumeType <String>]`: volumeType
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
@@ -289,12 +318,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserFlowLanguagePageId <String>]`: key: id of userFlowLanguagePage
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
-
-RECOVERYKEYS <IMicrosoftGraphBitlockerRecoveryKey\[]>: The recovery keys associated with the bitlocker entity.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
-  - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
-  - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
-  - `[VolumeType <String>]`: volumeType
 
 ## RELATED LINKS

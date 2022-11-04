@@ -17,7 +17,7 @@ Update the navigation property devices in teamwork
 Update-MgTeamworkDevice -TeamworkDeviceId <String> [-Activity <IMicrosoftGraphTeamworkDeviceActivity>]
  [-ActivityState <String>] [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
  [-Configuration <IMicrosoftGraphTeamworkDeviceConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity>] [-DeviceType <String>]
+ [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity1>] [-DeviceType <String>]
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
  [-HealthStatus <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Operations <IMicrosoftGraphTeamworkDeviceOperation[]>]
@@ -35,7 +35,7 @@ Update-MgTeamworkDevice -TeamworkDeviceId <String> -BodyParameter <IMicrosoftGra
 Update-MgTeamworkDevice -InputObject <ITeamsIdentity> [-Activity <IMicrosoftGraphTeamworkDeviceActivity>]
  [-ActivityState <String>] [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
  [-Configuration <IMicrosoftGraphTeamworkDeviceConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity>] [-DeviceType <String>]
+ [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity1>] [-DeviceType <String>]
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
  [-HealthStatus <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Operations <IMicrosoftGraphTeamworkDeviceOperation[]>]
@@ -184,7 +184,7 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for CURRENTUSER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
+Type: IMicrosoftGraphTeamworkUserIdentity1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

@@ -15,32 +15,32 @@ Update the navigation property plans in planner
 ### UpdateExpanded (Default)
 ```
 Update-MgPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
- [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
+ [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer1>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <String>] [-Owner <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Details <IMicrosoftGraphPlannerPlanDetails1>] [-Id <String>] [-Owner <String>]
+ [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan> [-PassThru] [-WhatIf]
+Update-MgPlannerPlan -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlan1> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Container <IMicrosoftGraphPlannerPlanContainer>]
+ [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer1>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <String>] [-Owner <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Details <IMicrosoftGraphPlannerPlanDetails1>] [-Id <String>] [-Owner <String>]
+ [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan> [-PassThru]
+Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlan1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -83,7 +83,7 @@ plannerPlan
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan
+Type: IMicrosoftGraphPlannerPlan1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +101,7 @@ Collection of buckets in the plan.
 To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket[]
+Type: IMicrosoftGraphPlannerBucket1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ plannerPlanContainer
 To construct, please use Get-Help -Online and see NOTES section for CONTAINER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanContainer
+Type: IMicrosoftGraphPlannerPlanContainer1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ plannerPlanDetails
 To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanDetails
+Type: IMicrosoftGraphPlannerPlanDetails1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ Collection of tasks in the plan.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask[]
+Type: IMicrosoftGraphPlannerTask1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -325,7 +325,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 

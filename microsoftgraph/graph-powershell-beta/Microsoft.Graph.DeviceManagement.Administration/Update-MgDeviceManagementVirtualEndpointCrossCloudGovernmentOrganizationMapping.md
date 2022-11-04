@@ -1,31 +1,33 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotectionbitlocker
+external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+Module Name: Microsoft.Graph.DeviceManagement.Administration
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping
 schema: 2.0.0
 ---
 
-# Update-MgInformationProtectionBitlocker
+# Update-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 
 ## SYNOPSIS
-Update the navigation property bitlocker in informationProtection
+Update the navigation property crossCloudGovernmentOrganizationMapping in deviceManagement
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgInformationProtectionBitlocker [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrganizationIdsInUsGovCloud <String[]>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgInformationProtectionBitlocker -BodyParameter <IMicrosoftGraphBitlocker> [-PassThru] [-WhatIf]
+Update-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
+ -BodyParameter <IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property bitlocker in informationProtection
+Update the navigation property crossCloudGovernmentOrganizationMapping in deviceManagement
 
 ## EXAMPLES
 
@@ -47,11 +49,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-bitlocker
+cloudPcCrossCloudGovernmentOrganizationMapping
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBitlocker
+Type: IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping
 Parameter Sets: Update
 Aliases:
 
@@ -78,12 +80,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -OrganizationIdsInUsGovCloud
+The tenant ID in the Azure Government cloud corresponding to the GCC tenant in the public cloud.
+Currently, 1:1 mappings are supported, so this collection can only contain one tenant ID.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: String[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -93,13 +96,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecoveryKeys
-The recovery keys associated with the bitlocker entity.
-To construct, please use Get-Help -Online and see NOTES section for RECOVERYKEYS properties and create a hash table.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: IMicrosoftGraphBitlockerRecoveryKey[]
-Parameter Sets: UpdateExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -145,7 +147,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping
 ## OUTPUTS
 
 ### System.Boolean
@@ -158,21 +160,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBitlocker>`: bitlocker
+BODYPARAMETER `<IMicrosoftGraphCloudPcCrossCloudGovernmentOrganizationMapping>`: cloudPcCrossCloudGovernmentOrganizationMapping
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
-    - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
-    - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
-    - `[VolumeType <String>]`: volumeType
-
-RECOVERYKEYS <IMicrosoftGraphBitlockerRecoveryKey\[]>: The recovery keys associated with the bitlocker entity.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The date and time when the key was originally backed up to Azure Active Directory. Not nullable.
-  - `[DeviceId <String>]`: Identifier of the device the BitLocker key is originally backed up from. Supports $filter (eq).
-  - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
-  - `[VolumeType <String>]`: volumeType
+  - `[OrganizationIdsInUsGovCloud <String[]>]`: The tenant ID in the Azure Government cloud corresponding to the GCC tenant in the public cloud. Currently, 1:1 mappings are supported, so this collection can only contain one tenant ID.
 
 ## RELATED LINKS

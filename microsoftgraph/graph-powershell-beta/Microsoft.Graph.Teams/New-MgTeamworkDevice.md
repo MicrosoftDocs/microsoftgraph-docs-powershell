@@ -17,7 +17,7 @@ Create new navigation property to devices for teamwork
 New-MgTeamworkDevice [-Activity <IMicrosoftGraphTeamworkDeviceActivity>] [-ActivityState <String>]
  [-AdditionalProperties <Hashtable>] [-CompanyAssetTag <String>]
  [-Configuration <IMicrosoftGraphTeamworkDeviceConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity>] [-DeviceType <String>]
+ [-CreatedDateTime <DateTime>] [-CurrentUser <IMicrosoftGraphTeamworkUserIdentity1>] [-DeviceType <String>]
  [-HardwareDetail <IMicrosoftGraphTeamworkHardwareDetail>] [-Health <IMicrosoftGraphTeamworkDeviceHealth>]
  [-HealthStatus <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Operations <IMicrosoftGraphTeamworkDeviceOperation[]>]
@@ -165,7 +165,7 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for CURRENTUSER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
+Type: IMicrosoftGraphTeamworkUserIdentity1
 Parameter Sets: CreateExpanded
 Aliases:
 

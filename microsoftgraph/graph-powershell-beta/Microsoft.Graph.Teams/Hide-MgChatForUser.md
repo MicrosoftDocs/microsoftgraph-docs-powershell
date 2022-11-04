@@ -15,7 +15,7 @@ Hide a chat for a user.
 ### HideExpanded (Default)
 ```
 Hide-MgChatForUser -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Hide
@@ -28,7 +28,7 @@ Hide-MgChatForUser -ChatId <String>
 ### HideViaIdentityExpanded
 ```
 Hide-MgChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### HideViaIdentity
@@ -157,7 +157,7 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
+Type: IMicrosoftGraphTeamworkUserIdentity1
 Parameter Sets: HideExpanded, HideViaIdentityExpanded
 Aliases:
 

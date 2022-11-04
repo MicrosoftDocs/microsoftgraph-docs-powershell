@@ -19,8 +19,8 @@ When creating a new invitation you have several options available:
 New-MgInvitation [-AdditionalProperties <Hashtable>] [-Id <String>] [-InviteRedeemUrl <String>]
  [-InviteRedirectUrl <String>] [-InvitedUser <IMicrosoftGraphUser1>] [-InvitedUserDisplayName <String>]
  [-InvitedUserEmailAddress <String>] [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>]
- [-InvitedUserType <String>] [-SendInvitationMessage] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-InvitedUserType <String>] [-ResetRedemption] [-SendInvitationMessage] [-Status <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -219,6 +219,21 @@ Required.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResetRedemption
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 

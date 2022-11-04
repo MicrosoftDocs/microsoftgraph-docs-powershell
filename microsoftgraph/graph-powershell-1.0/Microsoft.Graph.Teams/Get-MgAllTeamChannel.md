@@ -12,20 +12,20 @@ List of channels either hosted in or shared with the team (incoming channels).
 
 ## SYNTAX
 
-### List2 (Default)
+### List (Default)
 ```
 Get-MgAllTeamChannel -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
 Get-MgAllTeamChannel -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgAllTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -43,7 +43,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -58,7 +58,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -74,7 +74,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -104,7 +104,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -120,7 +120,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity2
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -135,7 +135,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -165,7 +165,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -180,7 +180,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -195,7 +195,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -210,7 +210,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -225,7 +225,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List
 Aliases:
 
 Required: False

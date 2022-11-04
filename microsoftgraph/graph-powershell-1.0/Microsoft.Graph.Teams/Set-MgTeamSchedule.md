@@ -1,61 +1,59 @@
 ---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mggroupteamschedule
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/set-mgteamschedule
 schema: 2.0.0
 ---
 
-# Update-MgGroupTeamSchedule
+# Set-MgTeamSchedule
 
 ## SYNOPSIS
-Update the navigation property schedule in groups
+Update the navigation property schedule in teams
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### SetExpanded (Default)
 ```
-Update-MgGroupTeamSchedule -GroupId <String> [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
- [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest1[]>] [-OfferShiftRequestsEnabled]
- [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest1[]>]
- [-OpenShifts <IMicrosoftGraphOpenShift1[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
- [-SchedulingGroups <IMicrosoftGraphSchedulingGroup1[]>] [-Shifts <IMicrosoftGraphShift1[]>]
- [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest1[]>] [-SwapShiftsRequestsEnabled]
- [-TimeCards <IMicrosoftGraphTimeCard[]>] [-TimeClockEnabled]
- [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason1[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest1[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
- [-TimesOff <IMicrosoftGraphTimeOff1[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+Set-MgTeamSchedule -TeamId <String> [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
+ [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
+ [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
+ [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
+ [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
+ [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>] [-SwapShiftsRequestsEnabled]
+ [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
+ [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Update
+### Set
 ```
-Update-MgGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule1> [-PassThru] [-WhatIf]
+Set-MgTeamSchedule -TeamId <String> -BodyParameter <IMicrosoftGraphSchedule> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Enabled] [-Id <String>]
+ [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>] [-OfferShiftRequestsEnabled]
+ [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]
+ [-OpenShifts <IMicrosoftGraphOpenShift[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
+ [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
+ [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>] [-SwapShiftsRequestsEnabled]
+ [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
+ [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
-```
-Update-MgGroupTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Enabled]
- [-Id <String>] [-OfferShiftRequests <IMicrosoftGraphOfferShiftRequest1[]>] [-OfferShiftRequestsEnabled]
- [-OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest1[]>]
- [-OpenShifts <IMicrosoftGraphOpenShift1[]>] [-OpenShiftsEnabled] [-ProvisionStatus <String>]
- [-SchedulingGroups <IMicrosoftGraphSchedulingGroup1[]>] [-Shifts <IMicrosoftGraphShift1[]>]
- [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest1[]>] [-SwapShiftsRequestsEnabled]
- [-TimeCards <IMicrosoftGraphTimeCard[]>] [-TimeClockEnabled]
- [-TimeClockSettings <IMicrosoftGraphTimeClockSettings>] [-TimeOffReasons <IMicrosoftGraphTimeOffReason1[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest1[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
- [-TimesOff <IMicrosoftGraphTimeOff1[]>] [-WorkforceIntegrationIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
 ## DESCRIPTION
-Update the navigation property schedule in groups
+Update the navigation property schedule in teams
 
 ## EXAMPLES
 
@@ -66,7 +64,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -81,8 +79,8 @@ schedule
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchedule1
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMicrosoftGraphSchedule
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
@@ -98,25 +96,10 @@ Required.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -GroupId
-key: id of group
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -129,7 +112,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -145,7 +128,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -160,8 +143,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OFFERSHIFTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOfferShiftRequest1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphOfferShiftRequest[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -176,7 +159,7 @@ Indicates whether offer shift requests are enabled for the schedule.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -191,8 +174,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPENSHIFTCHANGEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOpenShiftChangeRequest1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphOpenShiftChangeRequest[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -207,8 +190,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPENSHIFTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOpenShift1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphOpenShift[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -223,7 +206,7 @@ Indicates whether open shifts are enabled for the schedule.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -253,7 +236,7 @@ operationStatus
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -268,8 +251,8 @@ The logical grouping of users in the schedule (usually by role).
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchedulingGroup1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphSchedulingGroup[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -284,8 +267,8 @@ The shifts in the schedule.
 To construct, please use Get-Help -Online and see NOTES section for SHIFTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShift1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphShift[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -300,8 +283,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SWAPSHIFTSCHANGEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSwapShiftsChangeRequest1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphSwapShiftsChangeRequest[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -316,7 +299,7 @@ Indicates whether swap shifts requests are enabled for the schedule.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -326,16 +309,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TimeCards
-.
-To construct, please use Get-Help -Online and see NOTES section for TIMECARDS properties and create a hash table.
+### -TeamId
+key: id of team
 
 ```yaml
-Type: IMicrosoftGraphTimeCard[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -347,23 +329,7 @@ Indicates whether time clock is enabled for the schedule.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TimeClockSettings
-timeClockSettings
-To construct, please use Get-Help -Online and see NOTES section for TIMECLOCKSETTINGS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphTimeClockSettings
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -378,8 +344,8 @@ The set of reasons for a time off in the schedule.
 To construct, please use Get-Help -Online and see NOTES section for TIMEOFFREASONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffReason1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphTimeOffReason[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -394,8 +360,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TIMEOFFREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffRequest1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphTimeOffRequest[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -410,7 +376,7 @@ Indicates whether time off requests are enabled for the schedule.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -425,8 +391,8 @@ The instances of times off in the schedule.
 To construct, please use Get-Help -Online and see NOTES section for TIMESOFF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOff1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphTimeOff[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -442,7 +408,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -457,7 +423,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -503,7 +469,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
@@ -517,16 +483,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
+BODYPARAMETER `<IMicrosoftGraphSchedule>`: schedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-  - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest1[]>]`: 
+  - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
     - `[ManagerActionMessage <String>]`: 
     - `[SenderMessage <String>]`: 
     - `[State <String>]`: scheduleChangeState
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -534,23 +500,20 @@ BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-    - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-    - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+    - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
+    - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
   - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-  - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest1[]>]`: 
+  - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
     - `[ManagerActionMessage <String>]`: 
     - `[SenderMessage <String>]`: 
     - `[State <String>]`: scheduleChangeState
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[OpenShiftId <String>]`: ID for the open shift.
-  - `[OpenShifts <IMicrosoftGraphOpenShift1[]>]`: 
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
@@ -568,19 +531,16 @@ BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
       - `[StartDateTime <DateTime?>]`: 
       - `[Theme <String>]`: scheduleEntityTheme
       - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-    - `[IsStagedForDeletion <Boolean?>]`: 
     - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
     - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
   - `[OpenShiftsEnabled <Boolean?>]`: Indicates whether open shifts are enabled for the schedule.
   - `[ProvisionStatus <String>]`: operationStatus
-  - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup1[]>]`: The logical grouping of users in the schedule (usually by role).
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>]`: The logical grouping of users in the schedule (usually by role).
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
     - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
-  - `[Shifts <IMicrosoftGraphShift1[]>]`: The shifts in the schedule.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[Shifts <IMicrosoftGraphShift[]>]`: The shifts in the schedule.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
@@ -591,71 +551,33 @@ BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
       - `[Activities <IMicrosoftGraphShiftActivity[]>]`: An incremental part of a shift which can cover details of when and where an employee is during their shift. For example, an assignment or a scheduled break or lunch. Required.
       - `[DisplayName <String>]`: The shift label of the shiftItem.
       - `[Notes <String>]`: The shift notes for the shiftItem.
-    - `[IsStagedForDeletion <Boolean?>]`: 
     - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of. Required.
     - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[UserId <String>]`: ID of the user assigned to the shift. Required.
-  - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest1[]>]`: 
+  - `[SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>]`: 
     - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-    - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-    - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+    - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
+    - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
     - `[ManagerActionMessage <String>]`: 
     - `[SenderMessage <String>]`: 
     - `[State <String>]`: scheduleChangeState
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+    - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
   - `[SwapShiftsRequestsEnabled <Boolean?>]`: Indicates whether swap shifts requests are enabled for the schedule.
-  - `[TimeCards <IMicrosoftGraphTimeCard[]>]`: 
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
-      - `[BreakId <String>]`: ID of the timeCardBreak.
-      - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
-        - `[DateTime <DateTime?>]`: The time the entry is recorded.
-        - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Content <String>]`: The content of the item.
-          - `[ContentType <String>]`: bodyType
-      - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-      - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-    - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-    - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-    - `[ConfirmedBy <String>]`: confirmedBy
-    - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-    - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
-      - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-      - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-    - `[State <String>]`: timeCardState
-    - `[UserId <String>]`: User ID to which  the timeCard belongs.
   - `[TimeClockEnabled <Boolean?>]`: Indicates whether time clock is enabled for the schedule.
-  - `[TimeClockSettings <IMicrosoftGraphTimeClockSettings>]`: timeClockSettings
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-      - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
-      - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
-  - `[TimeOffReasons <IMicrosoftGraphTimeOffReason1[]>]`: The set of reasons for a time off in the schedule.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]`: The set of reasons for a time off in the schedule.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: The name of the timeOffReason. Required.
     - `[IconType <String>]`: timeOffReasonIconType
     - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
-  - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest1[]>]`: 
+  - `[TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>]`: 
     - `[AssignedTo <String>]`: scheduleChangeRequestActor
     - `[ManagerActionMessage <String>]`: 
     - `[SenderMessage <String>]`: 
     - `[State <String>]`: scheduleChangeState
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -663,8 +585,7 @@ BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
     - `[TimeOffReasonId <String>]`: The reason for the time off.
   - `[TimeOffRequestsEnabled <Boolean?>]`: Indicates whether time off requests are enabled for the schedule.
   - `[TimeZone <String>]`: Indicates the time zone of the schedule team using tz database format. Required.
-  - `[TimesOff <IMicrosoftGraphTimeOff1[]>]`: The instances of times off in the schedule.
-    - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[TimesOff <IMicrosoftGraphTimeOff[]>]`: The instances of times off in the schedule.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
@@ -673,7 +594,6 @@ BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
       - `[StartDateTime <DateTime?>]`: 
       - `[Theme <String>]`: scheduleEntityTheme
       - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
-    - `[IsStagedForDeletion <Boolean?>]`: 
     - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
     - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
   - `[WorkforceIntegrationIds <String[]>]`: 
@@ -717,12 +637,12 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest1\[]>: .
+OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest\[]>: .
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
   - `[State <String>]`: scheduleChangeState
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -730,18 +650,17 @@ OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest1\[]>: .
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
+  - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
 
-OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest1\[]>: .
+OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest\[]>: .
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
   - `[State <String>]`: scheduleChangeState
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -749,12 +668,11 @@ OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest1\[]>: .
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OpenShiftId <String>]`: ID for the open shift.
 
-OPENSHIFTS <IMicrosoftGraphOpenShift1\[]>: .
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+OPENSHIFTS <IMicrosoftGraphOpenShift\[]>: .
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -762,7 +680,6 @@ OPENSHIFTS <IMicrosoftGraphOpenShift1\[]>: .
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -779,12 +696,11 @@ OPENSHIFTS <IMicrosoftGraphOpenShift1\[]>: .
     - `[StartDateTime <DateTime?>]`: 
     - `[Theme <String>]`: scheduleEntityTheme
     - `[OpenSlotCount <Int32?>]`: Count of the number of slots for the given open shift.
-  - `[IsStagedForDeletion <Boolean?>]`: 
   - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
   - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
 
-SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup1\[]>: The logical grouping of users in the schedule (usually by role).
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup\[]>: The logical grouping of users in the schedule (usually by role).
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -792,13 +708,12 @@ SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup1\[]>: The logical grouping of u
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
   - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
 
-SHIFTS <IMicrosoftGraphShift1\[]>: The shifts in the schedule.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+SHIFTS <IMicrosoftGraphShift\[]>: The shifts in the schedule.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -806,7 +721,6 @@ SHIFTS <IMicrosoftGraphShift1\[]>: The shifts in the schedule.
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DraftShift <IMicrosoftGraphShiftItem>]`: shiftItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -822,20 +736,19 @@ SHIFTS <IMicrosoftGraphShift1\[]>: The shifts in the schedule.
       - `[Theme <String>]`: scheduleEntityTheme
     - `[DisplayName <String>]`: The shift label of the shiftItem.
     - `[Notes <String>]`: The shift notes for the shiftItem.
-  - `[IsStagedForDeletion <Boolean?>]`: 
   - `[SchedulingGroupId <String>]`: ID of the scheduling group the shift is part of. Required.
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
   - `[UserId <String>]`: ID of the user assigned to the shift. Required.
 
-SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest1\[]>: .
+SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest\[]>: .
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
-  - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
-  - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
+  - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
+  - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
   - `[State <String>]`: scheduleChangeState
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -843,12 +756,11 @@ SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest1\[]>: .
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
+  - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
 
-TIMECARDS <IMicrosoftGraphTimeCard\[]>: .
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+TIMEOFFREASONS <IMicrosoftGraphTimeOffReason\[]>: The set of reasons for a time off in the schedule.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -856,61 +768,17 @@ TIMECARDS <IMicrosoftGraphTimeCard\[]>: .
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
-    - `[BreakId <String>]`: ID of the timeCardBreak.
-    - `[End <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[AtApprovedLocation <Boolean?>]`: Indicates whether the entry was recorded at the approved location.
-      - `[DateTime <DateTime?>]`: The time the entry is recorded.
-      - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Content <String>]`: The content of the item.
-        - `[ContentType <String>]`: bodyType
-    - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-    - `[Start <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-  - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-  - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-  - `[ConfirmedBy <String>]`: confirmedBy
-  - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
-  - `[OriginalEntry <IMicrosoftGraphTimeCardEntry>]`: timeCardEntry
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Breaks <IMicrosoftGraphTimeCardBreak[]>]`: The list of breaks associated with the timeCard.
-    - `[ClockInEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-    - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
-  - `[State <String>]`: timeCardState
-  - `[UserId <String>]`: User ID to which  the timeCard belongs.
-
-TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Altitude <Double?>]`: Optional. The altitude (height), in feet,  above sea level for the item. Read-only.
-    - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
-    - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
-
-TIMEOFFREASONS <IMicrosoftGraphTimeOffReason1\[]>: The set of reasons for a time off in the schedule.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Application <IMicrosoftGraphIdentity>]`: identity
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
-    - `[Device <IMicrosoftGraphIdentity>]`: identity
-    - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the timeOffReason. Required.
   - `[IconType <String>]`: timeOffReasonIconType
   - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
 
-TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest1\[]>: .
+TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest\[]>: .
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
   - `[State <String>]`: scheduleChangeState
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -918,14 +786,13 @@ TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest1\[]>: .
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[TimeOffReasonId <String>]`: The reason for the time off.
 
-TIMESOFF <IMicrosoftGraphTimeOff1\[]>: The instances of times off in the schedule.
-  - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
+TIMESOFF <IMicrosoftGraphTimeOff\[]>: The instances of times off in the schedule.
+  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -933,7 +800,6 @@ TIMESOFF <IMicrosoftGraphTimeOff1\[]>: The instances of times off in the schedul
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DraftTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -941,13 +807,9 @@ TIMESOFF <IMicrosoftGraphTimeOff1\[]>: The instances of times off in the schedul
     - `[StartDateTime <DateTime?>]`: 
     - `[Theme <String>]`: scheduleEntityTheme
     - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
-  - `[IsStagedForDeletion <Boolean?>]`: 
   - `[SharedTimeOff <IMicrosoftGraphTimeOffItem>]`: timeOffItem
   - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
 
 ## RELATED LINKS
-
-## RELATED LINKS
-
 
 ## RELATED LINKS

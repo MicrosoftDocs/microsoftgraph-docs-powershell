@@ -12,28 +12,28 @@ Mark a chat as unread for a user.
 
 ## SYNTAX
 
-### MarkExpanded (Default)
+### MarkExpanded1 (Default)
 ```
 Invoke-MgMarkChatUnreadForUser -ChatId <String> [-AdditionalProperties <Hashtable>]
- [-LastMessageReadDateTime <DateTime>] [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>]
+ [-LastMessageReadDateTime <DateTime>] [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity1>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Mark
+### Mark1
 ```
 Invoke-MgMarkChatUnreadForUser -ChatId <String>
  -BodyParameter <IPathsMra0GcChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MarkViaIdentityExpanded
+### MarkViaIdentityExpanded1
 ```
 Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-LastMessageReadDateTime <DateTime>] [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>]
+ [-LastMessageReadDateTime <DateTime>] [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity1>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MarkViaIdentity
+### MarkViaIdentity1
 ```
 Invoke-MgMarkChatUnreadForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsMra0GcChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema>
@@ -68,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsMra0GcChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mark, MarkViaIdentity
+Parameter Sets: Mark1, MarkViaIdentity1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded, Mark
+Parameter Sets: MarkExpanded1, Mark1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: MarkViaIdentityExpanded, MarkViaIdentity
+Parameter Sets: MarkViaIdentityExpanded1, MarkViaIdentity1
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -175,8 +175,8 @@ teamworkUserIdentity
 To construct, please use Get-Help -Online and see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
-Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
+Type: IMicrosoftGraphTeamworkUserIdentity1
+Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
 Aliases:
 
 Required: False

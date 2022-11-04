@@ -1547,6 +1547,9 @@ Update media content for the navigation property photo in groups
 ### [Set-MgGroupTeamPrimaryChannelFileFolderContent](Set-MgGroupTeamPrimaryChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgGroupTeamSchedule](Set-MgGroupTeamSchedule.md)
+Update the navigation property schedule in groups
+
 ### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
@@ -1567,6 +1570,9 @@ Invoke action setReaction
 
 ### [Set-MgTeamPrimaryChannelMessageReplyReaction](Set-MgTeamPrimaryChannelMessageReplyReaction.md)
 Invoke action setReaction
+
+### [Set-MgTeamSchedule](Set-MgTeamSchedule.md)
+Update the navigation property schedule in teams
 
 ### [Set-MgTeamworkDeletedTeamChannelFileFolderContent](Set-MgTeamworkDeletedTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
@@ -1752,9 +1758,6 @@ Update the navigation property sharedWithTeams in groups
 ### [Update-MgGroupTeamPrimaryChannelTab](Update-MgGroupTeamPrimaryChannelTab.md)
 Update the navigation property tabs in groups
 
-### [Update-MgGroupTeamSchedule](Update-MgGroupTeamSchedule.md)
-Update the navigation property schedule in groups
-
 ### [Update-MgGroupTeamScheduleOfferShiftRequest](Update-MgGroupTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in groups
 
@@ -1850,9 +1853,6 @@ Update the navigation property sharedWithTeams in teams
 
 ### [Update-MgTeamPrimaryChannelTab](Update-MgTeamPrimaryChannelTab.md)
 Update the navigation property tabs in teams
-
-### [Update-MgTeamSchedule](Update-MgTeamSchedule.md)
-Update the navigation property schedule in teams
 
 ### [Update-MgTeamScheduleOfferShiftRequest](Update-MgTeamScheduleOfferShiftRequest.md)
 Update the navigation property offerShiftRequests in teams
