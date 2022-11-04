@@ -32,7 +32,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
     Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
 >[!Caution]
->The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Access to this service must be properly secured and should be limited to as few users as possible.
+>The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Only appropriate users should access apps that have been granted this permission.
 
 ## Step 1: Get the delegated permissions of the resource service principal
 
