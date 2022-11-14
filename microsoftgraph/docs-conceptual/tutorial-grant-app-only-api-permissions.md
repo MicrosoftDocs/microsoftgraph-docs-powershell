@@ -22,6 +22,7 @@ In this tutorial, you'll grant app roles that are exposed by an API to an app. A
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
+1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
 1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 

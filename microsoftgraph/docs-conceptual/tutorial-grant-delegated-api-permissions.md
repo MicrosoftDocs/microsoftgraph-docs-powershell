@@ -22,6 +22,7 @@ In this tutorial, you'll grant delegated permissions that are exposed by an API 
 
 To successfully complete this tutorial, make sure you have the required prerequisites:
 
+1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
 1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
 
@@ -136,7 +137,7 @@ ResourceId  : a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c
 Scope       : Group.Read.All
 ```
 
-### Step 3b [Optional]: Assign more or revoke delegated permissions to the service principal
+### Step 4: Assign more or revoke delegated permissions to the service principal
 
 You can add more or reduce scopes to an already existing oauth2PermissionGrant object.
 
