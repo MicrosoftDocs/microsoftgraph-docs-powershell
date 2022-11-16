@@ -2,7 +2,7 @@
 title: "Grant application permissions programmatically in Azure AD"
 description: "Learn how to grant app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 10/31/2022
+ms.date: 11/16/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -35,7 +35,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 >[!Caution]
 >The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Only appropriate users should access apps that have been granted this permission.
 
-## Step 1: Get the delegated permissions of the resource service principal
+## Step 1: Get the app roles of the resource service principal
 
 Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app ro;es. App roles are defined in the `appRoles` object of a service principal. In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 

@@ -2,7 +2,7 @@
 title: "Grant delegated permissions programmatically in Azure AD"
 description: "Learn how to grant delegated permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 10/31/2022
+ms.date: 11/16/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -149,6 +149,15 @@ $params = @{
   }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
+```
+
+To revoke a delegated permission grant, run:
+
+```powershell
+Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzaQcXqyxtZcxAhSIxeKGE4D0'
+
+When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
+
 ```
 
 ## See also
