@@ -1,36 +1,89 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementgrouppolicydefinitionnextversiondefinitionpreviouversiondefinitionfile
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointshareduseserviceplan
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionFile
+# Get-MgDeviceManagementVirtualEndpointSharedUseServicePlan
 
 ## SYNOPSIS
-The group policy file associated with the definition.
+Get sharedUseServicePlans from deviceManagement
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionFile
- -GroupPolicyDefinitionId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceManagementVirtualEndpointSharedUseServicePlan [-ExpandProperty <String[]>] [-Property <String[]>]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
+ [-All] [-CountVariable <String>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgDeviceManagementVirtualEndpointSharedUseServicePlan -CloudPcSharedUseServicePlanId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPreviouVersionDefinitionFile
+Get-MgDeviceManagementVirtualEndpointSharedUseServicePlan
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The group policy file associated with the definition.
+Get sharedUseServicePlans from deviceManagement
 
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudPcSharedUseServicePlanId
+key: id of cloudPcSharedUseServicePlan
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ExpandProperty
 Expand related entities
@@ -47,15 +100,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -GroupPolicyDefinitionId
-key: id of groupPolicyDefinition
+### -Filter
+Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: List
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -78,6 +131,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Property
 Select properties to be returned
 
@@ -85,6 +153,66 @@ Select properties to be returned
 Type: String[]
 Parameter Sets: (All)
 Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List
+Aliases:
 
 Required: False
 Position: Named
@@ -101,7 +229,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcSharedUseServicePlan
 ## NOTES
 
 ALIASES

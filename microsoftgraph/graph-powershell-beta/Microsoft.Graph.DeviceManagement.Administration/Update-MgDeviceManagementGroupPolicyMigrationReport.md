@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicymigrationreport
@@ -19,8 +19,8 @@ Update-MgDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportI
  [-GroupPolicyCreatedDateTime <DateTime>] [-GroupPolicyLastModifiedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
- [-OuDistinguishedName <String>] [-SupportedSettingsCount <Int32>] [-SupportedSettingsPercent <Int32>]
- [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
+ [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-SupportedSettingsCount <Int32>]
+ [-SupportedSettingsPercent <Int32>] [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
  [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -39,8 +39,8 @@ Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagem
  [-GroupPolicyCreatedDateTime <DateTime>] [-GroupPolicyLastModifiedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
- [-OuDistinguishedName <String>] [-SupportedSettingsCount <Int32>] [-SupportedSettingsPercent <Int32>]
- [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
+ [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-SupportedSettingsCount <Int32>]
+ [-SupportedSettingsPercent <Int32>] [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
  [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -288,6 +288,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RoleScopeTagIds
+The list of scope tags for the configuration.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SupportedSettingsCount
 The number of Group Policy Settings supported by Intune.
 
@@ -414,7 +429,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy migration report.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyMigrationReport>: The Group Policy migration report.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was created.
@@ -447,6 +462,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy mi
   - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was last modified.
   - `[MigrationReadiness <GroupPolicyMigrationReadiness?>]`: Indicates if the Group Policy Object file is covered and ready for Intune migration.
   - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
   - `[SupportedSettingsCount <Int32?>]`: The number of Group Policy Settings supported by Intune.
   - `[SupportedSettingsPercent <Int32?>]`: The Percentage of Group Policy Settings supported by Intune.
   - `[TargetedInActiveDirectory <Boolean?>]`: The Targeted in AD property from GPO Xml Content
@@ -458,7 +474,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy mi
     - `[NodeName <String>]`: Node name of the unsupported extension.
     - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
-GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping\[]>: A list of group policy settings to MDM/Intune mappings.
+GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping[]>: A list of group policy settings to MDM/Intune mappings.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdmxSettingDefinitionId <String>]`: Admx Group Policy Id
   - `[ChildIdList <String[]>]`: List of Child Ids of the group policy setting.
@@ -481,7 +497,7 @@ GROUPPOLICYSETTINGMAPPINGS <IMicrosoftGraphGroupPolicySettingMapping\[]>: A list
   - `[SettingValueDisplayUnits <String>]`: The display units of this group policy setting value
   - `[SettingValueType <String>]`: The value type of this group policy setting.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -494,6 +510,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
   - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSharedUseServicePlanId <String>]`: key: id of cloudPcSharedUseServicePlan
   - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
   - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
@@ -536,7 +553,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension\[]>: A list of unsupported group policy extensions inside the Group Policy Object.
+UNSUPPORTEDGROUPPOLICYEXTENSIONS <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>: A list of unsupported group policy extensions inside the Group Policy Object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
   - `[NamespaceUrl <String>]`: Namespace Url of the unsupported extension.

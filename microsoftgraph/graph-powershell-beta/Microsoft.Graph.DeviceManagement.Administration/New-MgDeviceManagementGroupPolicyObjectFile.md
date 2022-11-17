@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicyobjectfile
@@ -16,7 +16,8 @@ Create new navigation property to groupPolicyObjectFiles for deviceManagement
 ```
 New-MgDeviceManagementGroupPolicyObjectFile [-AdditionalProperties <Hashtable>] [-Content <String>]
  [-CreatedDateTime <DateTime>] [-GroupPolicyObjectId <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-OuDistinguishedName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -154,6 +155,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RoleScopeTagIds
+The list of scope tags for the configuration.
+
+```yaml
+Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -203,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyObjectFile>: The Group Policy Object file uploaded by admin.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Content <String>]`: The Group Policy Object file content.
@@ -211,5 +227,6 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object 
   - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
   - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
   - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
 
 ## RELATED LINKS
