@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementhealthoverview
@@ -64,7 +64,8 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-.
+The unique idenfier for an entity.
+Read-only.
 
 ```yaml
 Type: String
@@ -174,9 +175,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceHealth>`: serviceHealth
+BODYPARAMETER <IMicrosoftGraphServiceHealth>: serviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Issues <IMicrosoftGraphServiceHealthIssue[]>]`: A collection of issues that happened on the service, with detailed information for each issue.
     - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
       - `[Name <String>]`: Name for this key-value pair
@@ -185,7 +186,7 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealth>`: serviceHealth
     - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
     - `[StartDateTime <DateTime?>]`: The start time of the service event.
     - `[Title <String>]`: The title of the service event.
-    - `[Id <String>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Classification <String>]`: serviceHealthClassificationType
     - `[Feature <String>]`: The feature name of the service issue.
     - `[FeatureGroup <String>]`: The feature group name of the service issue.
@@ -204,7 +205,7 @@ BODYPARAMETER `<IMicrosoftGraphServiceHealth>`: serviceHealth
   - `[Service <String>]`: The service name. Use the list healthOverviews operation to get exact string names for services subscribed by the tenant.
   - `[Status <String>]`: serviceHealthStatus
 
-ISSUES <IMicrosoftGraphServiceHealthIssue\[]>: A collection of issues that happened on the service, with detailed information for each issue.
+ISSUES <IMicrosoftGraphServiceHealthIssue[]>: A collection of issues that happened on the service, with detailed information for each issue.
   - `[Details <IMicrosoftGraphKeyValuePair[]>]`: Additional details about service event. This property doesn't support filters.
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
@@ -212,7 +213,7 @@ ISSUES <IMicrosoftGraphServiceHealthIssue\[]>: A collection of issues that happe
   - `[LastModifiedDateTime <DateTime?>]`: The last modified time of the service event.
   - `[StartDateTime <DateTime?>]`: The start time of the service event.
   - `[Title <String>]`: The title of the service event.
-  - `[Id <String>]`: 
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Classification <String>]`: serviceHealthClassificationType
   - `[Feature <String>]`: The feature name of the service issue.
   - `[FeatureGroup <String>]`: The feature group name of the service issue.
