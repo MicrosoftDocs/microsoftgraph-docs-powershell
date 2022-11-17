@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyserviceprincipalcreationpolicy
@@ -289,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipalCreationPolicy
+BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationPolicy>: servicePrincipalCreationPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description for this policy. Required.
   - `[DisplayName <String>]`: Display name for this policy. Required.
@@ -305,7 +305,7 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationPolicy>`: servicePrincipa
   - `[Includes <IMicrosoftGraphServicePrincipalCreationConditionSet[]>]`: 
   - `[IsBuiltIn <Boolean?>]`: 
 
-EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
+EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
@@ -313,7 +313,7 @@ EXCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
+INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
@@ -321,7 +321,7 @@ INCLUDES <IMicrosoftGraphServicePrincipalCreationConditionSet\[]>: .
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

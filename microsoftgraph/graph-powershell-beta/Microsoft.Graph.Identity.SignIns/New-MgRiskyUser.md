@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskyuser
@@ -267,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyUser1>`: riskyUser
+BODYPARAMETER <IMicrosoftGraphRiskyUser1>: riskyUser
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
@@ -286,8 +286,8 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUser1>`: riskyUser
       - `[Detail <String>]`: 
       - `[EventTypes <String[]>]`: 
       - `[RiskEventTypes <String[]>]`: The type of risk event detected.
-    - `[InitiatedBy <String>]`: The id of actor that does the operation.
-    - `[UserId <String>]`: The id of the user.
+    - `[InitiatedBy <String>]`: The ID of actor that does the operation.
+    - `[UserId <String>]`: The ID of the user.
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
   - `[RiskDetail <String>]`: 
@@ -297,7 +297,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyUser1>`: riskyUser
   - `[UserDisplayName <String>]`: Risky user display name.
   - `[UserPrincipalName <String>]`: Risky user principal name.
 
-HISTORY <IMicrosoftGraphRiskyUserHistoryItem1\[]>: .
+HISTORY <IMicrosoftGraphRiskyUserHistoryItem1[]>: .
   - `[History <IMicrosoftGraphRiskyUserHistoryItem1[]>]`: 
   - `[IsDeleted <Boolean?>]`: Indicates whether the user is deleted. Possible values are: true, false.
   - `[IsProcessing <Boolean?>]`: Indicates whether a user's risky state is being processed by the backend.
@@ -313,7 +313,7 @@ HISTORY <IMicrosoftGraphRiskyUserHistoryItem1\[]>: .
     - `[Detail <String>]`: 
     - `[EventTypes <String[]>]`: 
     - `[RiskEventTypes <String[]>]`: The type of risk event detected.
-  - `[InitiatedBy <String>]`: The id of actor that does the operation.
-  - `[UserId <String>]`: The id of the user.
+  - `[InitiatedBy <String>]`: The ID of actor that does the operation.
+  - `[UserId <String>]`: The ID of the user.
 
 ## RELATED LINKS
