@@ -1,31 +1,33 @@
 ﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/remove-mgeducationuserassignmentsubmission
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentupfeedbackresourcefolder
 schema: 2.0.0
 ---
 
-# Remove-MgEducationUserAssignmentSubmission
+# Set-MgEducationClassAssignmentUpFeedbackResourceFolder
 
 ## SYNOPSIS
-Delete navigation property submissions for education
+Create a SharePoint folder to upload feedback files for a given educationSubmission.
+The teacher determines the resources to upload in the feedback resources folder of a submission.
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Set (Default)
 ```
-Remove-MgEducationUserAssignmentSubmission -EducationAssignmentId <String> -EducationSubmissionId <String>
- -EducationUserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgEducationClassAssignmentUpFeedbackResourceFolder -EducationAssignmentId <String>
+ -EducationClassId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### SetViaIdentity
 ```
-Remove-MgEducationUserAssignmentSubmission -InputObject <IEducationIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgEducationClassAssignmentUpFeedbackResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property submissions for education
+Create a SharePoint folder to upload feedback files for a given educationSubmission.
+The teacher determines the resources to upload in the feedback resources folder of a submission.
 
 ## EXAMPLES
 
@@ -36,7 +38,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -46,45 +48,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -EducationSubmissionId
-key: id of educationSubmission
+### -EducationClassId
+key: id of educationClass
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Set
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EducationUserId
-key: id of educationUser
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -97,28 +69,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -161,7 +118,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment1
 ## NOTES
 
 ALIASES
