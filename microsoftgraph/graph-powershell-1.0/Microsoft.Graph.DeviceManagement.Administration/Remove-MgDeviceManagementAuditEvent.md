@@ -1,36 +1,50 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandconditionacceptancestatuses
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementauditevent
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses
+# Remove-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Delete navigation property acceptanceStatuses for deviceManagement
+Delete navigation property auditEvents for deviceManagement
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses -TermsAndConditionsAcceptanceStatusId <String>
- -TermsAndConditionsId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses
- -InputObject <IDeviceManagementAdministrationIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDeviceManagementAuditEvent -AuditEventId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
+### DeleteViaIdentity
+```
+Remove-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Delete navigation property acceptanceStatuses for deviceManagement
+Delete navigation property auditEvents for deviceManagement
 
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -AuditEventId
+key: id of auditEvent
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
@@ -53,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -72,36 +86,6 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TermsAndConditionsAcceptanceStatusId
-key: id of termsAndConditionsAcceptanceStatus
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TermsAndConditionsId
-key: id of termsAndConditions
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -1,43 +1,110 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/remove-mgdevicemanagementtermandconditionacceptancestatuses
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementauditevent
 schema: 2.0.0
 ---
 
-# Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses
+# Get-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Delete navigation property acceptanceStatuses for deviceManagement
+The Audit Events
 
 ## SYNTAX
 
-### Delete1 (Default)
+### List1 (Default)
 ```
-Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses -TermsAndConditionsAcceptanceStatusId <String>
- -TermsAndConditionsId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgDeviceManagementAuditEvent [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### Get
 ```
-Remove-MgDeviceManagementTermAndConditionAcceptanceStatuses
- -InputObject <IDeviceManagementAdministrationIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Get-MgDeviceManagementAuditEvent -AuditEventId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
+### GetViaIdentity
+```
+Get-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Delete navigation property acceptanceStatuses for deviceManagement
+The Audit Events
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -IfMatch
-ETag
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AuditEventId
+key: id of auditEvent
 
 ```yaml
 Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: List1
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
 Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -53,7 +120,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -63,12 +130,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
+### -PageSize
+Sets the page size of results.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: Int32
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -78,43 +145,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -TermsAndConditionsAcceptanceStatusId
-key: id of termsAndConditionsAcceptanceStatus
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TermsAndConditionsId
-key: id of termsAndConditions
-
-```yaml
-Type: String
-Parameter Sets: Delete1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: SwitchParameter
+Type: String[]
 Parameter Sets: (All)
-Aliases: cf
+Aliases: Select
 
 Required: False
 Position: Named
@@ -123,14 +160,58 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Type: String
+Parameter Sets: List1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: String[]
+Parameter Sets: List1
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: List1
+Aliases:
 
 Required: False
 Position: Named
@@ -147,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent1
 ## NOTES
 
 ALIASES

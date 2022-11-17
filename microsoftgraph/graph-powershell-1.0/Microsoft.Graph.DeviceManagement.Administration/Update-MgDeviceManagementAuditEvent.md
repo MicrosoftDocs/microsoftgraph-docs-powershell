@@ -1,61 +1,61 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementioupdatestatuses
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementauditevent
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementIoUpdateStatuses
+# Update-MgDeviceManagementAuditEvent
 
 ## SYNOPSIS
-Update the navigation property iosUpdateStatuses in deviceManagement
+Update the navigation property auditEvents in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementIoUpdateStatuses -IosUpdateDeviceStatusId <String> [-AdditionalProperties <Hashtable>]
- [-ComplianceGracePeriodExpirationDateTime <DateTime>] [-DeviceDisplayName <String>] [-DeviceId <String>]
- [-DeviceModel <String>] [-Id <String>] [-InstallStatus <String>] [-LastReportedDateTime <DateTime>]
- [-OSVersion <String>] [-Status <String>] [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>]
+Update-MgDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>] [-ActivityDateTime <DateTime>]
+ [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
+ [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
+ [-Resources <IMicrosoftGraphAuditResource[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementIoUpdateStatuses -IosUpdateDeviceStatusId <String>
- -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgDeviceManagementIoUpdateStatuses -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-ComplianceGracePeriodExpirationDateTime <DateTime>]
- [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceModel <String>] [-Id <String>]
- [-InstallStatus <String>] [-LastReportedDateTime <DateTime>] [-OSVersion <String>] [-Status <String>]
- [-UserId <String>] [-UserName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity> [-Activity <String>]
+ [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
+ [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
+ [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
+ [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgDeviceManagementIoUpdateStatuses -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphIosUpdateDeviceStatus1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphAuditEvent1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property iosUpdateStatuses in deviceManagement
+Update the navigation property auditEvents in deviceManagement
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -Activity
+Friendly name of the activity.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,13 +65,119 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ActivityDateTime
+The date time in UTC when the activity was performed.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ActivityOperationType
+The HTTP operation type of the activity.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ActivityResult
+The result of the activity.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ActivityType
+The type of activity that was being performed.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Actor
+A class containing the properties for Audit Actor.
+To construct, please use Get-Help -Online and see NOTES section for ACTOR properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAuditActor
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AuditEventId
+key: id of auditEvent
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
-iosUpdateDeviceStatus
+A class containing the properties for Audit Event.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIosUpdateDeviceStatus1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: IMicrosoftGraphAuditEvent1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -81,12 +187,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ComplianceGracePeriodExpirationDateTime
-The DateTime when device compliance grace period expires
+### -Category
+Audit category.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,12 +202,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceDisplayName
-Device name of the DevicePolicyStatus.
+### -ComponentName
+Component name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -111,12 +217,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceId
-The device id that is being reported.
+### -CorrelationId
+The client request Id that is used to correlate activity within the system.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -126,12 +232,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceModel
-The device model that is being reported
+### -DisplayName
+Event display name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +253,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,73 +269,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -InstallStatus
-.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IosUpdateDeviceStatusId
-key: id of iosUpdateDeviceStatus
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -LastReportedDateTime
-Last modified date time of the policy report.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OSVersion
-The device version that is being reported.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -248,57 +294,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Status
-complianceStatus
+### -Resources
+Resources being modified.
+To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-The User id that is being reported.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserName
-The User Name that is being reported
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserPrincipalName
-UserPrincipalName.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: IMicrosoftGraphAuditResource[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -345,7 +347,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent1
 ## OUTPUTS
 
 ### System.Boolean
@@ -358,20 +360,47 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphIosUpdateDeviceStatus1>: iosUpdateDeviceStatus
+ACTOR <IMicrosoftGraphAuditActor>: A class containing the properties for Audit Actor.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ApplicationDisplayName <String>]`: Name of the Application.
+  - `[ApplicationId <String>]`: AAD Application Id.
+  - `[AuditActorType <String>]`: Actor Type.
+  - `[IPAddress <String>]`: IPAddress.
+  - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
+  - `[UserId <String>]`: User Id.
+  - `[UserPermissions <String[]>]`: List of user permissions when the audit was performed.
+  - `[UserPrincipalName <String>]`: User Principal Name (UPN).
+
+BODYPARAMETER <IMicrosoftGraphAuditEvent1>: A class containing the properties for Audit Event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
-  - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
-  - `[DeviceId <String>]`: The device id that is being reported.
-  - `[DeviceModel <String>]`: The device model that is being reported
-  - `[InstallStatus <String>]`: 
-  - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
-  - `[OSVersion <String>]`: The device version that is being reported.
-  - `[Status <String>]`: complianceStatus
-  - `[UserId <String>]`: The User id that is being reported.
-  - `[UserName <String>]`: The User Name that is being reported
-  - `[UserPrincipalName <String>]`: UserPrincipalName.
+  - `[Activity <String>]`: Friendly name of the activity.
+  - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
+  - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
+  - `[ActivityResult <String>]`: The result of the activity.
+  - `[ActivityType <String>]`: The type of activity that was being performed.
+  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ApplicationDisplayName <String>]`: Name of the Application.
+    - `[ApplicationId <String>]`: AAD Application Id.
+    - `[AuditActorType <String>]`: Actor Type.
+    - `[IPAddress <String>]`: IPAddress.
+    - `[ServicePrincipalName <String>]`: Service Principal Name (SPN).
+    - `[UserId <String>]`: User Id.
+    - `[UserPermissions <String[]>]`: List of user permissions when the audit was performed.
+    - `[UserPrincipalName <String>]`: User Principal Name (UPN).
+  - `[Category <String>]`: Audit category.
+  - `[ComponentName <String>]`: Component name.
+  - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
+  - `[DisplayName <String>]`: Event display name.
+  - `[Resources <IMicrosoftGraphAuditResource[]>]`: Resources being modified.
+    - `[AuditResourceType <String>]`: Audit resource's type.
+    - `[DisplayName <String>]`: Display name.
+    - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
+      - `[DisplayName <String>]`: Display name.
+      - `[NewValue <String>]`: New value.
+      - `[OldValue <String>]`: Old value.
+    - `[ResourceId <String>]`: Audit resource's Id.
 
 INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
@@ -428,5 +457,14 @@ INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[TermsAndConditionsId <String>]`: key: id of termsAndConditions
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
+
+RESOURCES <IMicrosoftGraphAuditResource[]>: Resources being modified.
+  - `[AuditResourceType <String>]`: Audit resource's type.
+  - `[DisplayName <String>]`: Display name.
+  - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
+    - `[DisplayName <String>]`: Display name.
+    - `[NewValue <String>]`: New value.
+    - `[OldValue <String>]`: Old value.
+  - `[ResourceId <String>]`: Audit resource's Id.
 
 ## RELATED LINKS
