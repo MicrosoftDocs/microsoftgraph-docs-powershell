@@ -1,44 +1,75 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/confirm-mgdevicemanagementwindowenrollmentautodiscovery
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementauditeventauditactivitytype
 schema: 2.0.0
 ---
 
-# Confirm-MgDeviceManagementWindowEnrollmentAutoDiscovery
+# Get-MgDeviceManagementAuditEventAuditActivityType
 
 ## SYNOPSIS
-Invoke function verifyWindowsEnrollmentAutoDiscovery
+Invoke function getAuditActivityTypes
 
 ## SYNTAX
 
-### Verify1 (Default)
+### Get1 (Default)
 ```
-Confirm-MgDeviceManagementWindowEnrollmentAutoDiscovery -DomainName <String> [<CommonParameters>]
+Get-MgDeviceManagementAuditEventAuditActivityType -Category <String> [-Count] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### VerifyViaIdentity1
+### GetViaIdentity1
 ```
-Confirm-MgDeviceManagementWindowEnrollmentAutoDiscovery -InputObject <IDeviceManagementFunctionsIdentity>
- [<CommonParameters>]
+Get-MgDeviceManagementAuditEventAuditActivityType -InputObject <IDeviceManagementFunctionsIdentity> [-Count]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function verifyWindowsEnrollmentAutoDiscovery
+Invoke function getAuditActivityTypes
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -DomainName
-Usage: domainName='{domainName}'
+### -Category
+Usage: category='{category}'
 
 ```yaml
 Type: String
-Parameter Sets: Verify1
+Parameter Sets: Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Count
+Include count of items
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Filter
+Filter items by property values
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -51,13 +82,58 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
-Parameter Sets: VerifyViaIdentity1
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Search
+Search items by search phrases
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases: Limit
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -69,7 +145,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 ## OUTPUTS
 
-### System.Boolean
+### System.String
 ## NOTES
 
 ALIASES
