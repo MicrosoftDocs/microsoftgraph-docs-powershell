@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplanner
@@ -14,9 +14,9 @@ Update planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlanner [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket1[]>]
- [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlanner [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Id <String>]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -69,7 +69,7 @@ Returns a collection of the specified buckets
 To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket1[]
+Type: IMicrosoftGraphPlannerBucket[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Returns a collection of the specified plans
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan1[]
+Type: IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -136,7 +136,7 @@ Returns a collection of the specified tasks
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask1[]
+Type: IMicrosoftGraphPlannerTask[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlanner1>`: planner
+BODYPARAMETER <IMicrosoftGraphPlanner1>: planner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Returns a collection of the specified buckets
@@ -306,7 +306,7 @@ BODYPARAMETER `<IMicrosoftGraphPlanner1>`: planner
     - `[Title <String>]`: Required. Title of the plan.
   - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Returns a collection of the specified tasks
 
-BUCKETS <IMicrosoftGraphPlannerBucket\[]>: Read-only. Nullable. Returns a collection of the specified buckets
+BUCKETS <IMicrosoftGraphPlannerBucket[]>: Read-only. Nullable. Returns a collection of the specified buckets
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: Name of the bucket.
   - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
@@ -367,7 +367,7 @@ BUCKETS <IMicrosoftGraphPlannerBucket\[]>: Read-only. Nullable. Returns a collec
     - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-PLANS <IMicrosoftGraphPlannerPlan\[]>: Read-only. Nullable. Returns a collection of the specified plans
+PLANS <IMicrosoftGraphPlannerPlan[]>: Read-only. Nullable. Returns a collection of the specified plans
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Collection of buckets in the plan.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -472,7 +472,7 @@ PLANS <IMicrosoftGraphPlannerPlan\[]>: Read-only. Nullable. Returns a collection
   - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Collection of tasks in the plan.
   - `[Title <String>]`: Required. Title of the plan.
 
-TASKS <IMicrosoftGraphPlannerTask\[]>: Read-only. Nullable. Returns a collection of the specified tasks
+TASKS <IMicrosoftGraphPlannerTask[]>: Read-only. Nullable. Returns a collection of the specified tasks
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories

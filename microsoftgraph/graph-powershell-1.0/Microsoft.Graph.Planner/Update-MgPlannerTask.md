@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertask
@@ -16,21 +16,21 @@ Update the navigation property tasks in planner
 ```
 Update-MgPlannerTask -PlannerTaskId <String> [-ActiveChecklistItemCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
- [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>]
+ [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
- [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>] [-ChecklistItemCount <Int32>]
+ [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
  [-CompletedBy <IMicrosoftGraphIdentitySet>] [-CompletedDateTime <DateTime>] [-ConversationThreadId <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Details <IMicrosoftGraphPlannerTaskDetails1>] [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>]
+ [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>]
  [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>] [-PreviewType <String>]
- [-Priority <Int32>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>]
+ [-Priority <Int32>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-ReferenceCount <Int32>] [-StartDateTime <DateTime>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerTask -PlannerTaskId <String> -BodyParameter <IMicrosoftGraphPlannerTask1> [-PassThru] [-WhatIf]
+Update-MgPlannerTask -PlannerTaskId <String> -BodyParameter <IMicrosoftGraphPlannerTask> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,21 +38,21 @@ Update-MgPlannerTask -PlannerTaskId <String> -BodyParameter <IMicrosoftGraphPlan
 ```
 Update-MgPlannerTask -InputObject <IPlannerIdentity> [-ActiveChecklistItemCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
- [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>]
+ [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
- [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>] [-ChecklistItemCount <Int32>]
+ [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
  [-CompletedBy <IMicrosoftGraphIdentitySet>] [-CompletedDateTime <DateTime>] [-ConversationThreadId <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Details <IMicrosoftGraphPlannerTaskDetails1>] [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>]
+ [-Details <IMicrosoftGraphPlannerTaskDetails>] [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>]
  [-OrderHint <String>] [-PercentComplete <Int32>] [-PlanId <String>] [-PreviewType <String>]
- [-Priority <Int32>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>]
+ [-Priority <Int32>] [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-ReferenceCount <Int32>] [-StartDateTime <DateTime>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerTask -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerTask1> [-PassThru]
+Update-MgPlannerTask -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerTask> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -134,7 +134,7 @@ plannerAssignedToTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDTOTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1
+Type: IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ plannerTask
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask1
+Type: IMicrosoftGraphPlannerTask
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -215,7 +215,7 @@ plannerBucketTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for BUCKETTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1
+Type: IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,7 +330,7 @@ plannerTaskDetails
 To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskDetails1
+Type: IMicrosoftGraphPlannerTaskDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -521,7 +521,7 @@ plannerProgressTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for PROGRESSTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1
+Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -615,7 +615,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
@@ -629,14 +629,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDTOTASKBOARDFORMAT `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+ASSIGNEDTOTASKBOARDFORMAT <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>: plannerAssignedToTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTask>`: plannerTask
+BODYPARAMETER <IMicrosoftGraphPlannerTask>: plannerTask
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
@@ -693,12 +693,12 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTask>`: plannerTask
   - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
-BUCKETTASKBOARDFORMAT `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
+BUCKETTASKBOARDFORMAT <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint used to order tasks in the Bucket view of the Task Board. The format is defined as outlined here.
 
-COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+COMPLETEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -707,7 +707,7 @@ COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -716,7 +716,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DETAILS `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+DETAILS <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
@@ -726,7 +726,7 @@ DETAILS `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta
@@ -736,7 +736,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: key: id of plannerTask
   - `[UserId <String>]`: key: id of user
 
-PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
+PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>: plannerProgressTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.

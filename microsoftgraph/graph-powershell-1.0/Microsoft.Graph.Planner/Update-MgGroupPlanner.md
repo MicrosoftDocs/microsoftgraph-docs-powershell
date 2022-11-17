@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mggroupplanner
@@ -15,7 +15,7 @@ Update the navigation property planner in groups
 ### UpdateExpanded1 (Default)
 ```
 Update-MgGroupPlanner -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -27,7 +27,7 @@ Update-MgGroupPlanner -GroupId <String> -BodyParameter <IMicrosoftGraphPlannerGr
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgGroupPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -143,7 +143,7 @@ Returns the plannerPlans owned by the group.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan1[]
+Type: IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -204,7 +204,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerGroup1>`: plannerGroup
+BODYPARAMETER <IMicrosoftGraphPlannerGroup1>: plannerGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Plans <IMicrosoftGraphPlannerPlan[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -312,7 +312,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerGroup1>`: plannerGroup
     - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. Collection of tasks in the plan.
     - `[Title <String>]`: Required. Title of the plan.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta
@@ -322,7 +322,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: key: id of plannerTask
   - `[UserId <String>]`: key: id of user
 
-PLANS <IMicrosoftGraphPlannerPlan\[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
+PLANS <IMicrosoftGraphPlannerPlan[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket[]>]`: Read-only. Nullable. Collection of buckets in the plan.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
