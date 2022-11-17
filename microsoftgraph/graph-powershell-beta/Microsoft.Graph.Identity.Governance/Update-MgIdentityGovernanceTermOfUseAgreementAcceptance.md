@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernancetermofuseagreementacceptance
@@ -203,6 +203,7 @@ Accept wildcard characters: False
 
 ### -DeviceId
 The unique identifier of the device used for accepting the agreement.
+Supports $filter (eq) and eq for null values.
 
 ```yaml
 Type: String
@@ -250,6 +251,7 @@ Accept wildcard characters: False
 The expiration date time of the acceptance.
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Supports $filter (eq, ge, le) and eq for null values.
 
 ```yaml
 Type: DateTime
@@ -373,6 +375,7 @@ Accept wildcard characters: False
 
 ### -UserId
 The identifier of the user who accepted the agreement.
+Supports $filter (eq).
 
 ```yaml
 Type: String
@@ -451,24 +454,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
+BODYPARAMETER <IMicrosoftGraphAgreementAcceptance>: agreementAcceptance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
   - `[AgreementId <String>]`: The identifier of the agreement.
   - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
-  - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement.
+  - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement. Supports $filter (eq) and eq for null values.
   - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
   - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
-  - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ge, le) and eq for null values.
   - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[State <String>]`: agreementAcceptanceState
   - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
   - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-  - `[UserId <String>]`: The identifier of the user who accepted the agreement.
+  - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
   - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest

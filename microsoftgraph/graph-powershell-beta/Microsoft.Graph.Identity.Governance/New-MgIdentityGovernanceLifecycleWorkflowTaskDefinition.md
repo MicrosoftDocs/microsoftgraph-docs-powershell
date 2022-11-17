@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancelifecycleworkflowtaskdefinition
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name of the taskDefinition`.
+The display name of the taskDefinition.Supports $filter(eq, ne) and $orderby.
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -Parameters
-The parameters that must be supplied when creating a workflow task object.
+The parameters that must be supplied when creating a workflow task object.Supports $filter(any).
 To construct, please use Get-Help -Online and see NOTES section for PARAMETERS properties and create a hash table.
 
 ```yaml
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ### -Version
 The version number of the taskDefinition.
-New records are pushed when we add support for new parameters.
+New records are pushed when we add support for new parameters.Supports $filter(ge, gt, le, lt, eq, ne) and $orderby.
 
 ```yaml
 Type: Int32
@@ -221,20 +221,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityGovernanceTaskDefinition>`: taskDefinition
+BODYPARAMETER <IMicrosoftGraphIdentityGovernanceTaskDefinition>: taskDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: lifecycleTaskCategory
   - `[ContinueOnError <Boolean?>]`: 
   - `[Description <String>]`: The description of the taskDefinition.
-  - `[DisplayName <String>]`: The display name of the taskDefinition`.
-  - `[Parameters <IMicrosoftGraphIdentityGovernanceParameter[]>]`: The parameters that must be supplied when creating a workflow task object.
+  - `[DisplayName <String>]`: The display name of the taskDefinition.Supports $filter(eq, ne) and $orderby.
+  - `[Parameters <IMicrosoftGraphIdentityGovernanceParameter[]>]`: The parameters that must be supplied when creating a workflow task object.Supports $filter(any).
     - `[Name <String>]`: The name of the parameter.
     - `[ValueType <String>]`: valueType
     - `[Values <String[]>]`: The values of the parameter.
-  - `[Version <Int32?>]`: The version number of the taskDefinition. New records are pushed when we add support for new parameters.
+  - `[Version <Int32?>]`: The version number of the taskDefinition. New records are pushed when we add support for new parameters.Supports $filter(ge, gt, le, lt, eq, ne) and $orderby.
 
-PARAMETERS <IMicrosoftGraphIdentityGovernanceParameter\[]>: The parameters that must be supplied when creating a workflow task object.
+PARAMETERS <IMicrosoftGraphIdentityGovernanceParameter[]>: The parameters that must be supplied when creating a workflow task object.Supports $filter(any).
   - `[Name <String>]`: The name of the parameter.
   - `[ValueType <String>]`: valueType
   - `[Values <String[]>]`: The values of the parameter.

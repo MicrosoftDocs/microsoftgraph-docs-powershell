@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowtaskreporttaskdefinition
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition
 
 ## SYNOPSIS
-The taskDefinition associated with the related lifecycle workflow task.
+The taskDefinition associated with the related lifecycle workflow task.Supports $filter(eq, ne) and $expand.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskDefinition -InputObject <
 ```
 
 ## DESCRIPTION
-The taskDefinition associated with the related lifecycle workflow task.
+The taskDefinition associated with the related lifecycle workflow task.Supports $filter(eq, ne) and $expand.
 
 ## EXAMPLES
 
@@ -125,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
