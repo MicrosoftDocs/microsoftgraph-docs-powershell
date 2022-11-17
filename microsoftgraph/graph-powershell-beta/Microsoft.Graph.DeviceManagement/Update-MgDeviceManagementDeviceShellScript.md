@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceshellscript
@@ -418,14 +418,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment[]>: The list of group assignments for the device management script.
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptAssignment\[]>: The list of group assignments for the device management script.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER <IMicrosoftGraphDeviceShellScript>: Intune will provide customer the ability to run their Shell scripts on the enrolled Mac OS devices. The script can be run once or periodically.
+BODYPARAMETER `<IMicrosoftGraphDeviceShellScript>`: Intune will provide customer the ability to run their Shell scripts on the enrolled Mac OS devices. The script can be run once or periodically.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceManagementScriptAssignment[]>]`: The list of group assignments for the device management script.
@@ -1578,7 +1578,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceShellScript>: Intune will provide customer t
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4994,7 +4994,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceShellScript>: Intune will provide customer t
     - `[SuccessDeviceCount <Int32?>]`: Success device count for specific user.
     - `[UserPrincipalName <String>]`: User principle name of specific user.
 
-DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of run states for this script across all devices.
+DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState\[]>: List of run states for this script across all devices.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ErrorCode <Int32?>]`: Error code corresponding to erroneous execution of the device management script.
   - `[ErrorDescription <String>]`: Error description corresponding to erroneous execution of the device management script.
@@ -6136,7 +6136,7 @@ DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of ru
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9532,11 +9532,11 @@ DEVICERUNSTATES <IMicrosoftGraphDeviceManagementScriptDeviceState[]>: List of ru
   - `[ResultMessage <String>]`: Details of execution output.
   - `[RunState <RunState?>]`: Indicates the type of execution status of the device management script.
 
-GROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment[]>: The list of group assignments for the device management script.
+GROUPASSIGNMENTS <IMicrosoftGraphDeviceManagementScriptGroupAssignment\[]>: The list of group assignments for the device management script.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[TargetGroupId <String>]`: The Id of the Azure Active Directory group we are targeting the script to.
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -9665,7 +9665,7 @@ INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-RUNSUMMARY <IMicrosoftGraphDeviceManagementScriptRunSummary>: Contains properties for the run summary of a device management script.
+RUNSUMMARY `<IMicrosoftGraphDeviceManagementScriptRunSummary>`: Contains properties for the run summary of a device management script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ErrorDeviceCount <Int32?>]`: Error device count.
@@ -9673,7 +9673,7 @@ RUNSUMMARY <IMicrosoftGraphDeviceManagementScriptRunSummary>: Contains propertie
   - `[SuccessDeviceCount <Int32?>]`: Success device count.
   - `[SuccessUserCount <Int32?>]`: Success user count.
 
-USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState[]>: List of run states for this script across all users.
+USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState\[]>: List of run states for this script across all users.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceRunStates <IMicrosoftGraphDeviceManagementScriptDeviceState[]>]`: List of run states for this script across all devices of specific user.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -10817,7 +10817,7 @@ USERRUNSTATES <IMicrosoftGraphDeviceManagementScriptUserState[]>: List of run st
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
