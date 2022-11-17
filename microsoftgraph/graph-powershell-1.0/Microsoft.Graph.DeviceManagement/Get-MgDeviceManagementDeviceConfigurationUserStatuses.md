@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationuserstatuses
@@ -19,14 +19,14 @@ Get-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <St
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <String>
  -DeviceConfigurationUserStatusId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -75,7 +75,7 @@ key: id of deviceConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -90,7 +90,7 @@ key: id of deviceConfigurationUserStatus
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -136,7 +136,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -254,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdeviceconfigurationuserstatusoverview
@@ -12,7 +12,7 @@ Update the navigation property userStatusOverview in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>] [-ErrorCount <Int32>]
@@ -20,14 +20,14 @@ Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -DeviceConfigurat
  [-PendingCount <Int32>] [-SuccessCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -DeviceConfigurationId <String>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserOverview> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>] [-ErrorCount <Int32>]
@@ -35,7 +35,7 @@ Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <IDe
  [-PendingCount <Int32>] [-SuccessCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatusOverview -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserOverview> [-PassThru] [-WhatIf] [-Confirm]
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserOverview
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ Version of the policy for that overview
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ key: id of deviceConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Number of error Users
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -130,7 +130,7 @@ Number of failed Users
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -162,7 +162,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ Last update time
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ Number of not applicable users
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ Number of pending Users
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -237,7 +237,7 @@ Number of succeeded Users
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -297,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigurationUserOverview
+BODYPARAMETER <IMicrosoftGraphDeviceConfigurationUserOverview>: deviceConfigurationUserOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
@@ -308,7 +308,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationUserOverview>`: deviceConfigur
   - `[PendingCount <Int32?>]`: Number of pending Users
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
