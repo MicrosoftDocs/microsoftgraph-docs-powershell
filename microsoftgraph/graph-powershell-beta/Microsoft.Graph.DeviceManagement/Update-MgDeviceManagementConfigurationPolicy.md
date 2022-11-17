@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicy
@@ -18,9 +18,9 @@ Update-MgDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolic
  [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CreationSource <String>] [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Name <String>] [-Platforms <DeviceManagementConfigurationPlatforms>] [-PriorityMetaData <Hashtable>]
- [-RoleScopeTagIds <String[]>] [-SettingCount <Int32>]
- [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
+ [-Name <String>] [-Platforms <DeviceManagementConfigurationPlatforms>]
+ [-PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>] [-RoleScopeTagIds <String[]>]
+ [-SettingCount <Int32>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
  [-TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,9 +39,9 @@ Update-MgDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIden
  [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CreationSource <String>] [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Name <String>] [-Platforms <DeviceManagementConfigurationPlatforms>] [-PriorityMetaData <Hashtable>]
- [-RoleScopeTagIds <String[]>] [-SettingCount <Int32>]
- [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
+ [-Name <String>] [-Platforms <DeviceManagementConfigurationPlatforms>]
+ [-PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>] [-RoleScopeTagIds <String[]>]
+ [-SettingCount <Int32>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
  [-TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -261,10 +261,11 @@ Accept wildcard characters: False
 ```
 
 ### -PriorityMetaData
-deviceManagementPriorityMetaData
+Priority metadata of the policy.
+To construct, please use Get-Help -Online and see NOTES section for PRIORITYMETADATA properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: IMicrosoftGraphDeviceManagementPriorityMetaData
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -402,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment\[]>: Policy assignments
+ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>: Policy assignments
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
@@ -411,7 +412,7 @@ ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment\[]>: P
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Management Configuration Policy
+BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicy>: Device Management Configuration Policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>]`: Policy assignments
@@ -428,8 +429,9 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Man
   - `[LastModifiedDateTime <DateTime?>]`: Policy last modification date and time
   - `[Name <String>]`: Policy name
   - `[Platforms <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
-  - `[PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>]`: deviceManagementPriorityMetaData
+  - `[PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>]`: Priority metadata of the policy.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Priority <Int32?>]`: Priority of the policy. Valid values 1 to 500
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[SettingCount <Int32?>]`: Number of settings
   - `[Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]`: Policy settings
@@ -475,7 +477,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Man
     - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
     - `[TemplateId <String>]`: Template id
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -604,7 +606,11 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settings
+PRIORITYMETADATA <IMicrosoftGraphDeviceManagementPriorityMetaData>: Priority metadata of the policy.
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Priority <Int32?>]`: Priority of the policy. Valid values 1 to 500
+
+SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting[]>: Policy settings
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -642,7 +648,7 @@ SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settin
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
-TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>`: Policy template reference information
+TEMPLATEREFERENCE <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>: Policy template reference information
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
   - `[TemplateId <String>]`: Template id
