@@ -1,31 +1,31 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mginitiateusermanageddevicemobiledevicemanagementkeyrecovery
 schema: 2.0.0
 ---
 
-# Find-MgUserManagedDevice
+# Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery
 
 ## SYNOPSIS
-Locate a device
+Perform MDM key recovery and TPM attestation
 
 ## SYNTAX
 
-### Locate (Default)
+### Initiate (Default)
 ```
-Find-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery -ManagedDeviceId <String> -UserId <String>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### LocateViaIdentity
+### InitiateViaIdentity
 ```
-Find-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery -InputObject <IUsersActionsIdentity>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Locate a device
+Perform MDM key recovery and TPM attestation
 
 ## EXAMPLES
 
@@ -37,7 +37,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: LocateViaIdentity
+Parameter Sets: InitiateViaIdentity
 Aliases:
 
 Required: True
@@ -52,7 +52,7 @@ key: id of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: Locate
+Parameter Sets: Initiate
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Locate
+Parameter Sets: Initiate
 Aliases:
 
 Required: True

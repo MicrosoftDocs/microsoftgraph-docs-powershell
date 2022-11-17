@@ -1,35 +1,82 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/find-mgusermanageddevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mgusermanageddeviceremotehelpsession
 schema: 2.0.0
 ---
 
-# Find-MgUserManagedDevice
+# Stop-MgUserManagedDeviceRemoteHelpSession
 
 ## SYNOPSIS
-Locate a device
+Remote help - End ACS session, Pubsub session and delete Remote help session
 
 ## SYNTAX
 
-### Locate (Default)
+### EndExpanded (Default)
 ```
-Find-MgUserManagedDevice -ManagedDeviceId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+Stop-MgUserManagedDeviceRemoteHelpSession -ManagedDeviceId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-SessionKey <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### LocateViaIdentity
+### End
 ```
-Find-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Stop-MgUserManagedDeviceRemoteHelpSession -ManagedDeviceId <String> -UserId <String>
+ -BodyParameter <IPaths17G8R7ZUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEndremotehelpsessionPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EndViaIdentityExpanded
+```
+Stop-MgUserManagedDeviceRemoteHelpSession -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-SessionKey <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
+```
+
+### EndViaIdentity
+```
+Stop-MgUserManagedDeviceRemoteHelpSession -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths17G8R7ZUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEndremotehelpsessionPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Locate a device
+Remote help - End ACS session, Pubsub session and delete Remote help session
 
 ## EXAMPLES
 
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: EndExpanded, EndViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths17G8R7ZUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEndremotehelpsessionPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: End, EndViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -InputObject
 Identity Parameter
@@ -37,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: LocateViaIdentity
+Parameter Sets: EndViaIdentityExpanded, EndViaIdentity
 Aliases:
 
 Required: True
@@ -52,7 +99,7 @@ key: id of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: Locate
+Parameter Sets: EndExpanded, End
 Aliases:
 
 Required: True
@@ -77,12 +124,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SessionKey
+.
+
+```yaml
+Type: String
+Parameter Sets: EndExpanded, EndViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Locate
+Parameter Sets: EndExpanded, End
 Aliases:
 
 Required: True
@@ -128,6 +190,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IPaths17G8R7ZUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEndremotehelpsessionPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -140,6 +203,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+BODYPARAMETER <IPaths17G8R7ZUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphEndremotehelpsessionPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[SessionKey <String>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
