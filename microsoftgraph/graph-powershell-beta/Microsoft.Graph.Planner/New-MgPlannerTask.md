@@ -16,21 +16,21 @@ Create a new **plannerTask**.
 ```
 New-MgPlannerTask [-ActiveChecklistItemCount <Int32>] [-AdditionalProperties <Hashtable>]
  [-AppliedCategories <Hashtable>]
- [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
+ [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
- [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
+ [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>] [-ChecklistItemCount <Int32>]
  [-CompletedBy <IMicrosoftGraphIdentitySet>] [-CompletedDateTime <DateTime>] [-ConversationThreadId <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
+ [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails1>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>] [-ReferenceCount <Int32>]
  [-StartDateTime <DateTime>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -110,7 +110,7 @@ plannerAssignedToTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDTOTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+Type: IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -157,7 +157,7 @@ plannerTask
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask
+Type: IMicrosoftGraphPlannerTask1
 Parameter Sets: Create1
 Aliases:
 
@@ -191,7 +191,7 @@ plannerBucketTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for BUCKETTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
+Type: IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -322,7 +322,7 @@ plannerTaskDetails
 To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskDetails
+Type: IMicrosoftGraphPlannerTaskDetails1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -467,7 +467,7 @@ plannerProgressTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for PROGRESSTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
+Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -561,10 +561,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
 ## NOTES
 
 ALIASES

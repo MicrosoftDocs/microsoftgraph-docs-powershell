@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: d92a6d25-f1e1-4c74-800b-c50afe314a78
+Module Guid: 0ffe167e-dabc-4009-84f0-c33da69b794b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -391,6 +391,9 @@ Get impactedResources from directory
 ### [Get-MgDirectoryInboundSharedUserProfile](Get-MgDirectoryInboundSharedUserProfile.md)
 Get inboundSharedUserProfiles from directory
 
+### [Get-MgDirectoryOnPremisSynchronization](Get-MgDirectoryOnPremisSynchronization.md)
+Get onPremisesSynchronization from directory
+
 ### [Get-MgDirectoryOutboundSharedUserProfile](Get-MgDirectoryOutboundSharedUserProfile.md)
 Get outboundSharedUserProfiles from directory
 
@@ -753,6 +756,9 @@ Create new navigation property to impactedResources for directory
 ### [New-MgDirectoryInboundSharedUserProfile](New-MgDirectoryInboundSharedUserProfile.md)
 Create new navigation property to inboundSharedUserProfiles for directory
 
+### [New-MgDirectoryOnPremisSynchronization](New-MgDirectoryOnPremisSynchronization.md)
+Create new navigation property to onPremisesSynchronization for directory
+
 ### [New-MgDirectoryOutboundSharedUserProfile](New-MgDirectoryOutboundSharedUserProfile.md)
 Create new navigation property to outboundSharedUserProfiles for directory
 
@@ -911,6 +917,9 @@ Delete navigation property inboundSharedUserProfiles for directory
 
 ### [Remove-MgDirectoryInboundSharedUserProfilePersonalData](Remove-MgDirectoryInboundSharedUserProfilePersonalData.md)
 Invoke action removePersonalData
+
+### [Remove-MgDirectoryOnPremisSynchronization](Remove-MgDirectoryOnPremisSynchronization.md)
+Delete navigation property onPremisesSynchronization for directory
 
 ### [Remove-MgDirectoryOutboundSharedUserProfile](Remove-MgDirectoryOutboundSharedUserProfile.md)
 Delete navigation property outboundSharedUserProfiles for directory
@@ -1240,6 +1249,9 @@ Update the navigation property impactedResources in directory
 
 ### [Update-MgDirectoryInboundSharedUserProfile](Update-MgDirectoryInboundSharedUserProfile.md)
 Update the navigation property inboundSharedUserProfiles in directory
+
+### [Update-MgDirectoryOnPremisSynchronization](Update-MgDirectoryOnPremisSynchronization.md)
+Update the navigation property onPremisesSynchronization in directory
 
 ### [Update-MgDirectoryOutboundSharedUserProfile](Update-MgDirectoryOutboundSharedUserProfile.md)
 Update the navigation property outboundSharedUserProfiles in directory

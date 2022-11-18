@@ -15,8 +15,8 @@ Create a new plannerRoster object.
 ### CreateExpanded (Default)
 ```
 New-MgPlannerRoster [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -111,7 +111,7 @@ Retrieves the plans contained by the plannerRoster.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: CreateExpanded
 Aliases:
 

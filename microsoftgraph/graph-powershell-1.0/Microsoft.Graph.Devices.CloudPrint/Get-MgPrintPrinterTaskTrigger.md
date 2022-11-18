@@ -261,7 +261,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
 ## NOTES
 
 ALIASES

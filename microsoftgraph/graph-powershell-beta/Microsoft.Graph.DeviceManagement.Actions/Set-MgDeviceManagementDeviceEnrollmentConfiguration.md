@@ -12,7 +12,7 @@ Invoke action assign
 
 ## SYNTAX
 
-### AssignExpanded1 (Default)
+### AssignExpanded (Default)
 ```
 Set-MgDeviceManagementDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String>
  [-AdditionalProperties <Hashtable>]
@@ -20,14 +20,14 @@ Set-MgDeviceManagementDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurati
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Assign1
+### Assign
 ```
 Set-MgDeviceManagementDeviceEnrollmentConfiguration -DeviceEnrollmentConfigurationId <String>
  -BodyParameter <IPathsScqz9HDevicemanagementDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentityExpanded1
+### AssignViaIdentityExpanded
 ```
 Set-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagementActionsIdentity>
  [-AdditionalProperties <Hashtable>]
@@ -35,7 +35,7 @@ Set-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagem
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentity1
+### AssignViaIdentity
 ```
 Set-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsScqz9HDevicemanagementDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema1>
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsScqz9HDevicemanagementDeviceenrollmentconfigurationsDeviceenrollmentconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Assign1, AssignViaIdentity1
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ key: id of deviceEnrollmentConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: AssignExpanded1, Assign1
+Parameter Sets: AssignExpanded, Assign
 Aliases:
 
 Required: True
@@ -101,7 +101,7 @@ To construct, please use Get-Help -Online and see NOTES section for ENROLLMENTCO
 
 ```yaml
 Type: IMicrosoftGraphEnrollmentConfigurationAssignment1[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -117,7 +117,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded1, AssignViaIdentity1
+Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -237,6 +237,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
   - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
+  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
   - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript

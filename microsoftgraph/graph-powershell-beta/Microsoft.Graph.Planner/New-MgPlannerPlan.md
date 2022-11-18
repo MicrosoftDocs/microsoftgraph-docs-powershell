@@ -14,16 +14,16 @@ Create a new **plannerPlan**.
 
 ### CreateExpanded1 (Default)
 ```
-New-MgPlannerPlan [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket[]>]
- [-Container <IMicrosoftGraphPlannerPlanContainer>] [-Contexts <Hashtable>]
+New-MgPlannerPlan [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket1[]>]
+ [-Container <IMicrosoftGraphPlannerPlanContainer1>] [-Contexts <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-Details <IMicrosoftGraphPlannerPlanDetails>] [-Id <String>] [-Owner <String>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Details <IMicrosoftGraphPlannerPlanDetails1>] [-Id <String>] [-Owner <String>]
+ [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,7 +68,7 @@ plannerPlan
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan
+Type: IMicrosoftGraphPlannerPlan1
 Parameter Sets: Create1
 Aliases:
 
@@ -86,7 +86,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket[]
+Type: IMicrosoftGraphPlannerBucket1[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -102,7 +102,7 @@ plannerPlanContainer
 To construct, please use Get-Help -Online and see NOTES section for CONTAINER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanContainer
+Type: IMicrosoftGraphPlannerPlanContainer1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -167,7 +167,7 @@ plannerPlanDetails
 To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanDetails
+Type: IMicrosoftGraphPlannerPlanDetails1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -216,7 +216,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask[]
+Type: IMicrosoftGraphPlannerTask1[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -279,10 +279,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlan1
 ## NOTES
 
 ALIASES

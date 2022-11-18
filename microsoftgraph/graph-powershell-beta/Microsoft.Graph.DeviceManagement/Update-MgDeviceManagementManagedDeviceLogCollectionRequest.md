@@ -15,7 +15,7 @@ Update the navigation property logCollectionRequests in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementManagedDeviceLogCollectionRequest -DeviceLogCollectionResponseId <String>
- -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>] [-ErrorCode <Int64>]
+ -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ErrorCode <Int64>]
  [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
  [-ManagedDeviceId1 <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
  [-Size <Double>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -31,10 +31,10 @@ Update-MgDeviceManagementManagedDeviceLogCollectionRequest -DeviceLogCollectionR
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementManagedDeviceLogCollectionRequest [-ManagedDeviceId <String>]
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-ErrorCode <Int64>]
- [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
- [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>] [-Size <Double>] [-Status <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>]
+ [-ErrorCode <Int64>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
+ [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
+ [-Size <Double>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -91,6 +91,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnrolledByUser
+The User Principal Name (UPN) of the user that enrolled the device
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -346,6 +361,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphDeviceLogCollectionResponse>`: Windows Log Collection request entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[EnrolledByUser <String>]`: The User Principal Name (UPN) of the user that enrolled the device
   - `[ErrorCode <Int64?>]`: The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18
   - `[ExpirationDateTimeUtc <DateTime?>]`: The DateTime of the expiration of the logs
   - `[InitiatedByUserPrincipalName <String>]`: The UPN for who initiated the request

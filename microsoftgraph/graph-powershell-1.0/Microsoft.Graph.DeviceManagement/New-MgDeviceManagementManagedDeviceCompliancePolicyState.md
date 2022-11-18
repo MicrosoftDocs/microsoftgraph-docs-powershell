@@ -12,7 +12,7 @@ Create new navigation property to deviceCompliancePolicyStates for deviceManagem
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementManagedDeviceCompliancePolicyState -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
@@ -21,13 +21,13 @@ New-MgDeviceManagementManagedDeviceCompliancePolicyState -ManagedDeviceId <Strin
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgDeviceManagementManagedDeviceCompliancePolicyState -ManagedDeviceId <String>
  -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
@@ -36,7 +36,7 @@ New-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDeviceMa
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgDeviceManagementManagedDeviceCompliancePolicyState -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicyState
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ The name of the policy for this policyBase
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -101,7 +101,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -117,7 +117,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -132,7 +132,7 @@ key: id of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ Supported platform types for policies.
 
 ```yaml
 Type: PolicyPlatformType
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -162,7 +162,7 @@ Count of how many setting a policy holds
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -178,7 +178,7 @@ To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATE
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicySettingState[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -193,7 +193,7 @@ complianceStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -208,7 +208,7 @@ The version of the policy
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
