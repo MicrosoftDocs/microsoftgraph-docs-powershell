@@ -12,32 +12,32 @@ Update the navigation property auditEvents in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementAuditEvent -AuditEventId <String> [-Activity <String>] [-ActivityDateTime <DateTime>]
  [-ActivityOperationType <String>] [-ActivityResult <String>] [-ActivityType <String>]
- [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>] [-Category <String>]
+ [-Actor <IMicrosoftGraphAuditActor1>] [-AdditionalProperties <Hashtable>] [-Category <String>]
  [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>] [-Id <String>]
- [-Resources <IMicrosoftGraphAuditResource[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Resources <IMicrosoftGraphAuditResource1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgDeviceManagementAuditEvent -AuditEventId <String> -BodyParameter <IMicrosoftGraphAuditEvent>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity> [-Activity <String>]
  [-ActivityDateTime <DateTime>] [-ActivityOperationType <String>] [-ActivityResult <String>]
- [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor>] [-AdditionalProperties <Hashtable>]
+ [-ActivityType <String>] [-Actor <IMicrosoftGraphAuditActor1>] [-AdditionalProperties <Hashtable>]
  [-Category <String>] [-ComponentName <String>] [-CorrelationId <String>] [-DisplayName <String>]
- [-Id <String>] [-Resources <IMicrosoftGraphAuditResource[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Id <String>] [-Resources <IMicrosoftGraphAuditResource1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementAuditEvent -InputObject <IDeviceManagementAdministrationIdentity>
  -BodyParameter <IMicrosoftGraphAuditEvent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -55,7 +55,7 @@ Friendly name of the activity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ The date time in UTC when the activity was performed.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ The HTTP operation type of the activity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ The result of the activity.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ The type of activity that was being performed.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -130,8 +130,8 @@ A class containing the properties for Audit Actor.
 To construct, please use Get-Help -Online and see NOTES section for ACTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditActor
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphAuditActor1
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ key: id of auditEvent
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -177,7 +177,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphAuditEvent
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -192,7 +192,7 @@ Audit category.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -207,7 +207,7 @@ Component name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ The client request Id that is used to correlate activity within the system.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -237,7 +237,7 @@ Event display name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -253,7 +253,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -269,7 +269,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -299,8 +299,8 @@ Resources being modified.
 To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuditResource[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphAuditResource1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -360,7 +360,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTOR `<IMicrosoftGraphAuditActor>`: A class containing the properties for Audit Actor.
+ACTOR `<IMicrosoftGraphAuditActor1>`: A class containing the properties for Audit Actor.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationDisplayName <String>]`: Name of the Application.
   - `[ApplicationId <String>]`: AAD Application Id.
@@ -385,7 +385,7 @@ BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties f
   - `[ActivityOperationType <String>]`: The HTTP operation type of the activity.
   - `[ActivityResult <String>]`: The result of the activity.
   - `[ActivityType <String>]`: The type of activity that was being performed.
-  - `[Actor <IMicrosoftGraphAuditActor>]`: A class containing the properties for Audit Actor.
+  - `[Actor <IMicrosoftGraphAuditActor1>]`: A class containing the properties for Audit Actor.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ApplicationDisplayName <String>]`: Name of the Application.
     - `[ApplicationId <String>]`: AAD Application Id.
@@ -405,7 +405,7 @@ BODYPARAMETER `<IMicrosoftGraphAuditEvent>`: A class containing the properties f
   - `[ComponentName <String>]`: Component name.
   - `[CorrelationId <String>]`: The client request Id that is used to correlate activity within the system.
   - `[DisplayName <String>]`: Event display name.
-  - `[Resources <IMicrosoftGraphAuditResource[]>]`: Resources being modified.
+  - `[Resources <IMicrosoftGraphAuditResource1[]>]`: Resources being modified.
     - `[AuditResourceType <String>]`: Audit resource's type.
     - `[DisplayName <String>]`: Display name.
     - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.
@@ -428,6 +428,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
   - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSharedUseServicePlanId <String>]`: key: id of cloudPcSharedUseServicePlan
   - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
   - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment
@@ -470,7 +471,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-RESOURCES <IMicrosoftGraphAuditResource\[]>: Resources being modified.
+RESOURCES <IMicrosoftGraphAuditResource1\[]>: Resources being modified.
   - `[AuditResourceType <String>]`: Audit resource's type.
   - `[DisplayName <String>]`: Display name.
   - `[ModifiedProperties <IMicrosoftGraphAuditProperty[]>]`: List of modified properties.

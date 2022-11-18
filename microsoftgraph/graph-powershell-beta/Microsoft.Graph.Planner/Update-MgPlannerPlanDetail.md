@@ -21,7 +21,7 @@ Update-MgPlannerPlanDetail -PlannerPlanId <String> [-AdditionalProperties <Hasht
 
 ### Update1
 ```
-Update-MgPlannerPlanDetail -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlanDetails>
+Update-MgPlannerPlanDetail -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlanDetails1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> [-AdditionalPropertie
 
 ### UpdateViaIdentity1
 ```
-Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlanDetails>
+Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlanDetails1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -84,7 +84,7 @@ plannerPlanDetails
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanDetails
+Type: IMicrosoftGraphPlannerPlanDetails1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -239,7 +239,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails1
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 

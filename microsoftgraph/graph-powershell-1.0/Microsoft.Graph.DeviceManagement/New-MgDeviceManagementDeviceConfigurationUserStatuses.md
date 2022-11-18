@@ -12,7 +12,7 @@ Create new navigation property to userStatuses for deviceManagement
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>] [-LastReportedDateTime <DateTime>]
@@ -20,13 +20,13 @@ New-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <St
  [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <String>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>] [-LastReportedDateTime <DateTime>]
@@ -34,7 +34,7 @@ New-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManag
  [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStatus> [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserStatus
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of deviceConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ Devices count for that user.
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -114,7 +114,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -130,7 +130,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Last modified date time of the policy report.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ complianceStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -175,7 +175,7 @@ User name of the DevicePolicyStatus.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -190,7 +190,7 @@ UserPrincipalName.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False

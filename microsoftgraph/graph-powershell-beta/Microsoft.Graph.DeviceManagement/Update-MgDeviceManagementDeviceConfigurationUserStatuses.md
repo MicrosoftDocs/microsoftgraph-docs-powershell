@@ -12,7 +12,7 @@ Update the navigation property userStatuses in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <String>
  -DeviceConfigurationUserStatusId <String> [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>]
@@ -20,14 +20,14 @@ Update-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId 
  [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <String>
  -DeviceConfigurationUserStatusId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStatus>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DevicesCount <Int32>] [-Id <String>] [-LastReportedDateTime <DateTime>]
@@ -35,7 +35,7 @@ Update-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceMa
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphDeviceConfigurationUserStatus> [-PassThru] [-WhatIf] [-Confirm]
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationUserStatus
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ key: id of deviceConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ key: id of deviceConfigurationUserStatus
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Devices count for that user.
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +147,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ Last modified date time of the policy report.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ complianceStatus
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -207,7 +207,7 @@ User name of the DevicePolicyStatus.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ UserPrincipalName.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

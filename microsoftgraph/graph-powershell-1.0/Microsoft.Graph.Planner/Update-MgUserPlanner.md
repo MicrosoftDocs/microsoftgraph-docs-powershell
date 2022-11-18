@@ -15,7 +15,7 @@ Update the navigation property planner in users
 ### UpdateExpanded (Default)
 ```
 Update-MgUserPlanner -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru] [-WhatIf]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgUserPlanner -UserId <String> -BodyParameter <IMicrosoftGraphPlannerUser
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru] [-WhatIf]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -130,7 +130,7 @@ Returns the plannerTasks assigned to the user.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan1[]
+Type: IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Returns the plannerPlans shared with the user.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask1[]
+Type: IMicrosoftGraphPlannerTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

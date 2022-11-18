@@ -25,8 +25,8 @@ Update-MgDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
  [-LastModifiedDateTime <DateTime>] [-LightBackgroundLogo <IMicrosoftGraphMimeContent>]
  [-OnlineSupportSiteName <String>] [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>]
  [-ProfileDescription <String>] [-ProfileName <String>] [-RoleScopeTagIds <String[]>]
- [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowDisplayNameNextToLogo]
- [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
+ [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowConfigurationManagerApps]
+ [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
  [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -49,8 +49,8 @@ Update-MgDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAd
  [-LastModifiedDateTime <DateTime>] [-LightBackgroundLogo <IMicrosoftGraphMimeContent>]
  [-OnlineSupportSiteName <String>] [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>]
  [-ProfileDescription <String>] [-ProfileName <String>] [-RoleScopeTagIds <String[]>]
- [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowDisplayNameNextToLogo]
- [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
+ [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowConfigurationManagerApps]
+ [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
  [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -570,6 +570,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ShowConfigurationManagerApps
+Boolean that indicates if Configuration Manager Apps will be shown in Company Portal
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ShowDisplayNameNextToLogo
 Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
 
@@ -745,6 +760,7 @@ BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains dat
   - `[RoleScopeTagIds <String[]>]`: List of scope tags assigned to the branding profile
   - `[SendDeviceOwnershipChangePushNotification <Boolean?>]`: Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate
   - `[ShowAzureAdEnterpriseApps <Boolean?>]`: Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal
+  - `[ShowConfigurationManagerApps <Boolean?>]`: Boolean that indicates if Configuration Manager Apps will be shown in Company Portal
   - `[ShowDisplayNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
   - `[ShowLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied logo images are shown or not
   - `[ShowOfficeWebApps <Boolean?>]`: Boolean that indicates if Office WebApps will be shown in Company Portal
@@ -773,6 +789,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
   - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSharedUseServicePlanId <String>]`: key: id of cloudPcSharedUseServicePlan
   - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
   - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment

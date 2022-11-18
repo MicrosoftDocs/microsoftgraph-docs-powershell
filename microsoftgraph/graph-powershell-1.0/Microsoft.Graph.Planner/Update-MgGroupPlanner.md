@@ -15,7 +15,7 @@ Update the navigation property planner in groups
 ### UpdateExpanded1 (Default)
 ```
 Update-MgGroupPlanner -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
@@ -27,7 +27,7 @@ Update-MgGroupPlanner -GroupId <String> -BodyParameter <IMicrosoftGraphPlannerGr
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgGroupPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -143,7 +143,7 @@ Returns the plannerPlans owned by the group.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan1[]
+Type: IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

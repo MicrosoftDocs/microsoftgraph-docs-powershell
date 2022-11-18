@@ -1,43 +1,72 @@
 ---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreenabledevicemanagementmanageddevice
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgreorderdevicemanagementconfigurationpolicy
 schema: 2.0.0
 ---
 
-# Invoke-MgReenableDeviceManagementManagedDevice
+# Invoke-MgReorderDeviceManagementConfigurationPolicy
 
 ## SYNOPSIS
-Invoke action reenable
+Invoke action reorder
 
 ## SYNTAX
 
-### Reenable (Default)
+### ReorderExpanded (Default)
 ```
-Invoke-MgReenableDeviceManagementManagedDevice -ManagedDeviceId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReenableViaIdentity
+### Reorder
 ```
-Invoke-MgReenableDeviceManagementManagedDevice -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgReorderDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
+ -BodyParameter <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReorderViaIdentityExpanded
+```
+Invoke-MgReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Priority <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ReorderViaIdentity
+```
+Invoke-MgReorderDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action reenable
+Invoke action reorder
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ReenableViaIdentity
+Type: Hashtable
+Parameter Sets: ReorderExpanded, ReorderViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Reorder, ReorderViaIdentity
 Aliases:
 
 Required: True
@@ -47,12 +76,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedDeviceId
-key: id of managedDevice
+### -DeviceManagementConfigurationPolicyId
+key: id of deviceManagementConfigurationPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Reenable
+Parameter Sets: ReorderExpanded, Reorder
 Aliases:
 
 Required: True
@@ -62,12 +91,43 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: ReorderViaIdentityExpanded, ReorderViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Priority
+.
+
+```yaml
+Type: Int32
+Parameter Sets: ReorderExpanded, ReorderViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -114,6 +174,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.PowerShell.Models.IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -125,6 +186,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+BODYPARAMETER `<IPaths14OmrrbDevicemanagementConfigurationpoliciesDevicemanagementconfigurationpolicyIdMicrosoftGraphReorderPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Priority <Int32?>]`: 
 
 INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
@@ -151,6 +216,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[DeviceManagementConfigurationPolicyId <String>]`: key: id of deviceManagementConfigurationPolicy
   - `[DeviceManagementExchangeConnectorId <String>]`: key: id of deviceManagementExchangeConnector
   - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
+  - `[DeviceManagementPartnerId <String>]`: key: id of deviceManagementPartner
   - `[DeviceManagementResourceAccessProfileBaseId <String>]`: key: id of deviceManagementResourceAccessProfileBase
   - `[DeviceManagementReusablePolicySettingId <String>]`: key: id of deviceManagementReusablePolicySetting
   - `[DeviceManagementScriptId <String>]`: key: id of deviceManagementScript

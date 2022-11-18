@@ -13,13 +13,13 @@ The teacher determines the resources to upload in the feedback resources folder 
 
 ## SYNTAX
 
-### Set (Default)
+### Set1 (Default)
 ```
 Set-MgEducationMeAssignmentUpFeedbackResourceFolder -EducationAssignmentId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### SetViaIdentity1
 ```
 Set-MgEducationMeAssignmentUpFeedbackResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -38,7 +38,7 @@ key: id of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Set
+Parameter Sets: Set1
 Aliases:
 
 Required: True
@@ -54,7 +54,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: SetViaIdentity
+Parameter Sets: SetViaIdentity1
 Aliases:
 
 Required: True

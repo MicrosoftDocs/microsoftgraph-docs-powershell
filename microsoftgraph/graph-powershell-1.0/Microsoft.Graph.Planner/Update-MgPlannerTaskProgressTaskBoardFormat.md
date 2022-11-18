@@ -21,7 +21,7 @@ Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId <String> [-Additional
 ### Update
 ```
 Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId <String>
- -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-Ad
 ### UpdateViaIdentity
 ```
 Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity>
- -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -77,7 +77,7 @@ plannerProgressTaskBoardTaskFormat
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1
+Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -202,7 +202,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 

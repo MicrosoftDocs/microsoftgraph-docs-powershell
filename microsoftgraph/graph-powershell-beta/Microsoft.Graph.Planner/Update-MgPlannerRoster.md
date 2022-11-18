@@ -15,7 +15,7 @@ Update the navigation property rosters in planner
 ### UpdateExpanded (Default)
 ```
 Update-MgPlannerRoster -PlannerRosterId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-PassThru]
+ [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgPlannerRoster -PlannerRosterId <String> -BodyParameter <IMicrosoftGraph
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPlannerRoster -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-PassThru]
+ [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -159,7 +159,7 @@ Retrieves the plans contained by the plannerRoster.
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

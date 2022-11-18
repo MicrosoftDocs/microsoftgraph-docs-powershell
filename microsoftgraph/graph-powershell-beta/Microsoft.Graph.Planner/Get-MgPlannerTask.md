@@ -250,7 +250,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
 ## NOTES
 
 ALIASES

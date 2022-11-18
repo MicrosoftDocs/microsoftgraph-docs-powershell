@@ -14,9 +14,9 @@ Update planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlanner [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket1[]>]
- [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlanner [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerBucket[]>] [-Id <String>]
+ [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -69,7 +69,7 @@ Returns a collection of the specified buckets
 To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket1[]
+Type: IMicrosoftGraphPlannerBucket[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Returns a collection of the specified plans
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan1[]
+Type: IMicrosoftGraphPlannerPlan[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -136,7 +136,7 @@ Returns a collection of the specified tasks
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask1[]
+Type: IMicrosoftGraphPlannerTask[]
 Parameter Sets: UpdateExpanded
 Aliases:
 

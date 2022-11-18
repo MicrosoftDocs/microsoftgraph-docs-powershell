@@ -15,8 +15,7 @@ Invoke action resetPassword
 ### ResetExpanded1 (Default)
 ```
 Reset-MgUserAuthenticationMethodPassword -AuthenticationMethodId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-RequireChangeOnNextSignIn] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Reset1
@@ -29,8 +28,7 @@ Reset-MgUserAuthenticationMethodPassword -AuthenticationMethodId <String> -UserI
 ### ResetViaIdentityExpanded1
 ```
 Reset-MgUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-RequireChangeOnNextSignIn] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-NewPassword <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity1
@@ -124,21 +122,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RequireChangeOnNextSignIn
-.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: ResetExpanded1, ResetViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -UserId
 key: id of user
 
@@ -207,7 +190,6 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NewPassword <String>]`: 
-  - `[RequireChangeOnNextSignIn <Boolean?>]`: 
 
 INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance

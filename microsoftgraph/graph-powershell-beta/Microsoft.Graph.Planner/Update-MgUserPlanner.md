@@ -17,9 +17,9 @@ You can use this operation to add or remove plans from a user's favorite plans l
 ```
 Update-MgUserPlanner -UserId <String> [-AdditionalProperties <Hashtable>]
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
- [-FavoritePlans <IMicrosoftGraphPlannerPlan[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
- [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan[]>]
- [-RosterPlans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru] [-WhatIf]
+ [-FavoritePlans <IMicrosoftGraphPlannerPlan1[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>]
+ [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan1[]>]
+ [-RosterPlans <IMicrosoftGraphPlannerPlan1[]>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,9 +33,9 @@ Update-MgUserPlanner -UserId <String> -BodyParameter <IMicrosoftGraphPlannerUser
 ```
 Update-MgUserPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
- [-FavoritePlans <IMicrosoftGraphPlannerPlan[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan[]>]
- [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan[]>]
- [-RosterPlans <IMicrosoftGraphPlannerPlan[]>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru] [-WhatIf]
+ [-FavoritePlans <IMicrosoftGraphPlannerPlan1[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>]
+ [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan1[]>]
+ [-RosterPlans <IMicrosoftGraphPlannerPlan1[]>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -149,7 +149,7 @@ Returns the plannerPlans that the user marked as favorites.
 To construct, please use Get-Help -Online and see NOTES section for FAVORITEPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -212,7 +212,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -245,7 +245,7 @@ Returns the plannerPlans that have been recently viewed by the user in apps that
 To construct, please use Get-Help -Online and see NOTES section for RECENTPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -263,7 +263,7 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 To construct, please use Get-Help -Online and see NOTES section for ROSTERPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: IMicrosoftGraphPlannerPlan1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -281,7 +281,7 @@ Returns the plannerTasks assigned to the user.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask[]
+Type: IMicrosoftGraphPlannerTask1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

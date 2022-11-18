@@ -19,14 +19,14 @@ Get-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <St
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgDeviceManagementDeviceConfigurationUserStatuses -DeviceConfigurationId <String>
  -DeviceConfigurationUserStatusId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgDeviceManagementDeviceConfigurationUserStatuses -InputObject <IDeviceManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -75,7 +75,7 @@ key: id of deviceConfiguration
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -90,7 +90,7 @@ key: id of deviceConfigurationUserStatus
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -136,7 +136,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True

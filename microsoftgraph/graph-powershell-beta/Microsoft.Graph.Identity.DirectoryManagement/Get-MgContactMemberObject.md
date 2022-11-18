@@ -12,26 +12,26 @@ Invoke action getMemberObjects
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### GetExpanded (Default)
 ```
 Get-MgContactMemberObject -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgContactMemberObject -OrgContactId <String>
  -BodyParameter <IPaths1M18OhpContactsOrgcontactIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded1
+### GetViaIdentityExpanded
 ```
 Get-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1M18OhpContactsOrgcontactIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
@@ -65,7 +65,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -81,7 +81,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1M18OhpContactsOrgcontactIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get1, GetViaIdentity1
+Parameter Sets: Get, GetViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
+Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ key: id of orgContact
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1, Get1
+Parameter Sets: GetExpanded, Get
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -211,6 +211,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
   - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
+  - `[OnPremisesDirectorySynchronizationId <String>]`: key: id of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: key: id of orgContact
   - `[OrganizationId <String>]`: key: id of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization

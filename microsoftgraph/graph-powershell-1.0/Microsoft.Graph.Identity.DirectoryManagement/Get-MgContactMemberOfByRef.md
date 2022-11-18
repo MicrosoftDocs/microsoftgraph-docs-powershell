@@ -12,26 +12,26 @@ Invoke action getMemberObjects
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded1 (Default)
 ```
 Get-MgContactMemberObject -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgContactMemberObject -OrgContactId <String>
  -BodyParameter <IPaths1M18OhpContactsOrgcontactIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### GetViaIdentityExpanded1
 ```
 Get-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1M18OhpContactsOrgcontactIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1M18OhpContactsOrgcontactIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of orgContact
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False

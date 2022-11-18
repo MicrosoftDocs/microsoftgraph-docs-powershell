@@ -15,26 +15,26 @@ Update the navigation property buckets in planner
 ### UpdateExpanded (Default)
 ```
 Update-MgPlannerBucket -PlannerBucketId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Name <String>] [-OrderHint <String>] [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru]
+ [-Name <String>] [-OrderHint <String>] [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerBucket -PlannerBucketId <String> -BodyParameter <IMicrosoftGraphPlannerBucket1> [-PassThru]
+Update-MgPlannerBucket -PlannerBucketId <String> -BodyParameter <IMicrosoftGraphPlannerBucket> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPlannerBucket -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Name <String>] [-OrderHint <String>] [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-PassThru]
+ [-Name <String>] [-OrderHint <String>] [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerBucket -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerBucket1>
+Update-MgPlannerBucket -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerBucket>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -77,7 +77,7 @@ plannerBucket
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket1
+Type: IMicrosoftGraphPlannerBucket
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -203,7 +203,7 @@ The collection of tasks in the bucket.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask1[]
+Type: IMicrosoftGraphPlannerTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +250,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 ## OUTPUTS
 

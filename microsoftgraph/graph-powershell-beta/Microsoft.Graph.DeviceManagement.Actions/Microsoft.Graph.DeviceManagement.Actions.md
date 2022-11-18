@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: dfe9ce46-b565-4e5a-8eb2-5939ad8cdf34
+Module Guid: ee5571a4-1ad7-4252-b2da-e8d0b1dc6cbb
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -214,6 +214,9 @@ Invoke action getDeviceManagementIntentSettingsReport
 ### [Get-MgDeviceManagementReportDeviceNonComplianceReport](Get-MgDeviceManagementReportDeviceNonComplianceReport.md)
 Invoke action getDeviceNonComplianceReport
 
+### [Get-MgDeviceManagementReportEncryptionReportForDevice](Get-MgDeviceManagementReportEncryptionReportForDevice.md)
+Invoke action getEncryptionReportForDevices
+
 ### [Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice](Get-MgDeviceManagementReportEnrollmentConfigurationPolicyByDevice.md)
 Invoke action getEnrollmentConfigurationPoliciesByDevice
 
@@ -234,6 +237,9 @@ Invoke action getHistoricalReport
 
 ### [Get-MgDeviceManagementReportMalwareSummaryReport](Get-MgDeviceManagementReportMalwareSummaryReport.md)
 Invoke action getMalwareSummaryReport
+
+### [Get-MgDeviceManagementReportMobileApplicationManagementAppConfigurationReport](Get-MgDeviceManagementReportMobileApplicationManagementAppConfigurationReport.md)
+Invoke action getMobileApplicationManagementAppConfigurationReport
 
 ### [Get-MgDeviceManagementReportMobileApplicationManagementAppRegistrationSummaryReport](Get-MgDeviceManagementReportMobileApplicationManagementAppRegistrationSummaryReport.md)
 Invoke action getMobileApplicationManagementAppRegistrationSummaryReport
@@ -395,9 +401,6 @@ Invoke action assignedAccessMultiModeProfiles
 ### [Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl](Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl.md)
 Invoke action windowsPrivacyAccessControls
 
-### [Invoke-MgDeviceManagementOrganizationalMessageTenantConsent](Invoke-MgDeviceManagementOrganizationalMessageTenantConsent.md)
-Invoke action postOrganizationalMessageTenantConsent
-
 ### [Invoke-MgDownDeviceManagementComanagedDeviceShut](Invoke-MgDownDeviceManagementComanagedDeviceShut.md)
 Shut down device
 
@@ -446,6 +449,12 @@ Invoke action hasPayloadLinks
 ### [Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment](Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment.md)
 Invoke action hasActiveDeployments
 
+### [Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery.md)
+Perform MDM key recovery and TPM attestation
+
+### [Invoke-MgInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery.md)
+Perform MDM key recovery and TPM attestation
+
 ### [Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser.md)
 Logout shared Apple device active user
 
@@ -473,11 +482,14 @@ Invoke action reenable
 ### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
 Invoke action reenable
 
-### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
-Invoke action reenable
+### [Invoke-MgReorderDeviceManagementConfigurationPolicy](Invoke-MgReorderDeviceManagementConfigurationPolicy.md)
+Invoke action reorder
 
-### [Invoke-MgReenableDeviceManagementManagedDevice](Invoke-MgReenableDeviceManagementManagedDevice.md)
-Invoke action reenable
+### [Invoke-MgReorderDeviceManagementConfigurationPolicy](Invoke-MgReorderDeviceManagementConfigurationPolicy.md)
+Invoke action reorder
+
+### [Invoke-MgReorderDeviceManagementConfigurationPolicy](Invoke-MgReorderDeviceManagementConfigurationPolicy.md)
+Invoke action reorder
 
 ### [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc.md)
 Reprovision a specific Cloud PC.
@@ -514,6 +526,9 @@ Invoke action scheduleActionsForRules
 
 ### [Invoke-MgShareDeviceManagementDepOnboardingSettingForSchoolDataSyncService](Invoke-MgShareDeviceManagementDepOnboardingSettingForSchoolDataSyncService.md)
 Invoke action shareForSchoolDataSyncService
+
+### [Invoke-MgTerminateDeviceManagementPartner](Invoke-MgTerminateDeviceManagementPartner.md)
+Invoke action terminate
 
 ### [Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc](Invoke-MgTroubleshootDeviceManagementVirtualEndpointCloudPc.md)
 Troubleshoot a specific Cloud PC.
@@ -856,6 +871,12 @@ Invoke action triggerDeviceScopeAction
 Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
 
+### [Stop-MgDeviceManagementComanagedDeviceRemoteHelpSession](Stop-MgDeviceManagementComanagedDeviceRemoteHelpSession.md)
+Remote help - End ACS session, Pubsub session and delete Remote help session
+
+### [Stop-MgDeviceManagementManagedDeviceRemoteHelpSession](Stop-MgDeviceManagementManagedDeviceRemoteHelpSession.md)
+Remote help - End ACS session, Pubsub session and delete Remote help session
+
 ### [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod.md)
 End the grace period for a specific Cloud PC.
 The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
@@ -918,9 +939,6 @@ Invoke action updateSettings
 
 ### [Update-MgDeviceManagementManagedDeviceWindowDeviceAccount](Update-MgDeviceManagementManagedDeviceWindowDeviceAccount.md)
 Invoke action updateWindowsDeviceAccount
-
-### [Update-MgDeviceManagementOrganizationalMessageTenantConsent](Update-MgDeviceManagementOrganizationalMessageTenantConsent.md)
-Invoke action updateOrganizationalMessageTenantConsent
 
 ### [Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword](Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword.md)
 Update the Active Directory domain password for a cloudPcOnPremisesConnection object.

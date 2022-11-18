@@ -19,8 +19,8 @@ Update-MgDeviceManagementGroupPolicyMigrationReport -GroupPolicyMigrationReportI
  [-GroupPolicyCreatedDateTime <DateTime>] [-GroupPolicyLastModifiedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
- [-OuDistinguishedName <String>] [-SupportedSettingsCount <Int32>] [-SupportedSettingsPercent <Int32>]
- [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
+ [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-SupportedSettingsCount <Int32>]
+ [-SupportedSettingsPercent <Int32>] [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
  [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -39,8 +39,8 @@ Update-MgDeviceManagementGroupPolicyMigrationReport -InputObject <IDeviceManagem
  [-GroupPolicyCreatedDateTime <DateTime>] [-GroupPolicyLastModifiedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-GroupPolicySettingMappings <IMicrosoftGraphGroupPolicySettingMapping[]>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>] [-MigrationReadiness <GroupPolicyMigrationReadiness>]
- [-OuDistinguishedName <String>] [-SupportedSettingsCount <Int32>] [-SupportedSettingsPercent <Int32>]
- [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
+ [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-SupportedSettingsCount <Int32>]
+ [-SupportedSettingsPercent <Int32>] [-TargetedInActiveDirectory] [-TotalSettingsCount <Int32>]
  [-UnsupportedGroupPolicyExtensions <IMicrosoftGraphUnsupportedGroupPolicyExtension[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -288,6 +288,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RoleScopeTagIds
+The list of scope tags for the configuration.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SupportedSettingsCount
 The number of Group Policy Settings supported by Intune.
 
@@ -447,6 +462,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyMigrationReport>`: The Group Policy mi
   - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyMigrationReport was last modified.
   - `[MigrationReadiness <GroupPolicyMigrationReadiness?>]`: Indicates if the Group Policy Object file is covered and ready for Intune migration.
   - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
   - `[SupportedSettingsCount <Int32?>]`: The number of Group Policy Settings supported by Intune.
   - `[SupportedSettingsPercent <Int32?>]`: The Percentage of Group Policy Settings supported by Intune.
   - `[TargetedInActiveDirectory <Boolean?>]`: The Targeted in AD property from GPO Xml Content
@@ -494,6 +510,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
   - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSharedUseServicePlanId <String>]`: key: id of cloudPcSharedUseServicePlan
   - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
   - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment

@@ -17,7 +17,8 @@ Update the navigation property groupPolicyObjectFiles in deviceManagement
 Update-MgDeviceManagementGroupPolicyObjectFile -GroupPolicyObjectFileId <String>
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-OuDistinguishedName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -31,7 +32,8 @@ Update-MgDeviceManagementGroupPolicyObjectFile -GroupPolicyObjectFileId <String>
 Update-MgDeviceManagementGroupPolicyObjectFile -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Content <String>] [-CreatedDateTime <DateTime>]
  [-GroupPolicyObjectId <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-OuDistinguishedName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OuDistinguishedName <String>] [-RoleScopeTagIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -215,6 +217,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RoleScopeTagIds
+The list of scope tags for the configuration.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -273,6 +290,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object 
   - `[GroupPolicyObjectId <String>]`: The Group Policy Object GUID from GPO Xml content
   - `[LastModifiedDateTime <DateTime?>]`: The date and time at which the GroupPolicyObjectFile was last modified.
   - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
+  - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
 
 INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
@@ -287,6 +305,7 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[CloudPcProvisioningPolicyAssignmentId <String>]`: key: id of cloudPcProvisioningPolicyAssignment
   - `[CloudPcProvisioningPolicyId <String>]`: key: id of cloudPcProvisioningPolicy
   - `[CloudPcServicePlanId <String>]`: key: id of cloudPcServicePlan
+  - `[CloudPcSharedUseServicePlanId <String>]`: key: id of cloudPcSharedUseServicePlan
   - `[CloudPcSnapshotId <String>]`: key: id of cloudPcSnapshot
   - `[CloudPcSupportedRegionId <String>]`: key: id of cloudPcSupportedRegion
   - `[CloudPcUserSettingAssignmentId <String>]`: key: id of cloudPcUserSettingAssignment

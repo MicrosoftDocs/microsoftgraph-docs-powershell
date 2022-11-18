@@ -8,23 +8,23 @@ schema: 2.0.0
 # New-MgPlannerBucket
 
 ## SYNOPSIS
-Use this API to create a new **plannerBucket**.
+Create a new plannerBucket object.
 
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
 ```
 New-MgPlannerBucket [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-OrderHint <String>]
- [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PlanId <String>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Use this API to create a new **plannerBucket**.
+Create a new plannerBucket object.
 
 ## EXAMPLES
 
@@ -64,7 +64,7 @@ plannerBucket
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket
+Type: IMicrosoftGraphPlannerBucket1
 Parameter Sets: Create1
 Aliases:
 
@@ -144,7 +144,7 @@ The collection of tasks in the bucket.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask[]
+Type: IMicrosoftGraphPlannerTask1[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -191,10 +191,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerBucket1
 ## NOTES
 
 ALIASES
