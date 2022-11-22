@@ -24,7 +24,9 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. 
+
+To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All"
@@ -37,7 +39,9 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Get the delegated permissions of the resource service principal
 
-Before you can grant delegated permissions, you must first identify the delegated permissions to grant and the resource service principal that exposes the delegated permissions. Delegated permissions are defined in the `oauth2PermissionScopes` object of a service principal. In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
+Before you can grant delegated permissions, you must first identify the delegated permissions to grant and the resource service principal that exposes the delegated permissions. Delegated permissions are defined in the `oauth2PermissionScopes` object of a service principal. 
+
+In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
 ```powershell
 Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property Oauth2PermissionScopes | Select -ExpandProperty Oauth2PermissionScopes | fl 
@@ -114,7 +118,7 @@ To create a delegated permission grant, you'll need the following information:
 1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object id of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
+In this example, the object Id of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
 $params = @{
@@ -155,10 +159,9 @@ To revoke a delegated permission grant, run:
 
 ```powershell
 Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzaQcXqyxtZcxAhSIxeKGE4D0'
+```
 
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
-
-```
 
 ## See also
 

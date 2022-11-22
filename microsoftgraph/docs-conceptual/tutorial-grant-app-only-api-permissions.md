@@ -24,7 +24,9 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. 
+
+To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
@@ -37,7 +39,9 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Get the app roles of the resource service principal
 
-Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app ro;es. App roles are defined in the `appRoles` object of a service principal. In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
+Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app roles. App roles are defined in the `appRoles` object of a service principal. 
+
+In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
 ```powershell
 Get-MgServicePrincipal -Filter "displayName eq 'Microsoft Graph'" -Property AppRoles | Select -ExpandProperty appRoles |fl
@@ -106,8 +110,6 @@ In this step, you'll assign an app role exposed by your resource app to the serv
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
 1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
 
-The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`.
-
 ```powershell
 $params = @{
   "PrincipalId" ="22c1770d-30df-49e7-a763-f39d2ef9b369"
@@ -118,6 +120,9 @@ $params = @{
 New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '2cab1707-656d-40cc-8522-3178a184e03d' -BodyParameter $params | 
   Format-List Id, AppRoleId, CreatedDateTime, PrincipalDisplayName, PrincipalId, PrincipalType, ResourceDisplayName
 ```
+
+The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`.
+
 
 ```Output
 Id                   : DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0
