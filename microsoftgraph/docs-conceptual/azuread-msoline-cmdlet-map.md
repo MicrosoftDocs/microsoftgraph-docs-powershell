@@ -398,12 +398,12 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Add-MsolScopedRoleMember|[New-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolescopedmember?view=graph-powershell-1.0&preserve-view=true)|
 |Confirm-MsolDomain|[Confirm-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Confirm-MsolEmailVerifiedDomain||
-|Connect-MsolService|Connect-MgGraph|
-|Convert-MsolDomainToFederated||
-|Convert-MsolDomainToStandard||
+|Connect-MsolService|[Connect-MgGraph](authentication-commands.md#using-connect-mggraph)|
+|Convert-MsolDomainToFederated|[New-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration?view=graph-powershell-1.0&preserve-view=true)|
+|Convert-MsolDomainToStandard|[Remove-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdomainfederationconfiguration?view=graph-powershell-1.0&preserve-view=true)|
 |Convert-MsolFederatedUser||
-|Disable-MsolDevice||
-|Enable-MsolDevice||
+|Disable-MsolDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
+|Enable-MsolDevice|[Update-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolAccountSku|[Get-MgSubscribedSku](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolAdministrativeUnit|[Get-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolAdministrativeUnitMember|[Get-MgDirectoryAdministrativeUnitMember](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember?view=graph-powershell-1.0&preserve-view=true)|
