@@ -432,7 +432,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolServicePrincipalCredential|[Get-MgServicePrincipal](/powershell/module/microsoft.graph.applications/get-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolSubscription|[Get-MgSubscribedSKU](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgsubscribedsku?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0&preserve-view=true)|
-|Get-MsolUserByStrongAuthentication||
+|Get-MsolUserByStrongAuthentication|[Get-MgRoleManagementDirectoryRoleAssignmentScheduleRequest](/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdirectoryroleassignmentschedulerequest?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolUserRole|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolAdministrativeUnit|[New-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolDomain|[New-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
