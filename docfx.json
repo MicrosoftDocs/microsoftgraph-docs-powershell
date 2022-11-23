@@ -27,7 +27,8 @@
     "globalMetadata": {
       "breadcrumb_path": "/powershell/samples/breadcrumb/toc.json",
       "extendBreadcrumb": true,
-      "feedback_system": "None"
+      "feedback_system": "Standard",
+      "feedback_product_url": "https://learn.microsoft.com/en-us/answers/topics/297615/microsoft-graph-identity.html"
     },
     "template": [],
     "markdownEngineName": "markdig",
