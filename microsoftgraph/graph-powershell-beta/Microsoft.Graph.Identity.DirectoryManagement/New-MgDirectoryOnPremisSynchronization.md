@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryonpremissynchronization
@@ -161,7 +161,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOnPremisesDirectorySynchronization>`: onPremisesDirectorySynchronization
+BODYPARAMETER <IMicrosoftGraphOnPremisesDirectorySynchronization>: onPremisesDirectorySynchronization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
@@ -194,7 +194,7 @@ BODYPARAMETER `<IMicrosoftGraphOnPremisesDirectorySynchronization>`: onPremisesD
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: 
     - `[UserWritebackEnabled <Boolean?>]`: 
 
-CONFIGURATION `<IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>`: onPremisesDirectorySynchronizationConfiguration
+CONFIGURATION <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>: onPremisesDirectorySynchronizationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccidentalDeletionPrevention <IMicrosoftGraphOnPremisesAccidentalDeletionPrevention>]`: onPremisesAccidentalDeletionPrevention
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -203,7 +203,7 @@ CONFIGURATION `<IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>`
   - `[CustomerRequestedSynchronizationInterval <TimeSpan?>]`: 
   - `[SynchronizationInterval <TimeSpan?>]`: 
 
-FEATURES `<IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>`: onPremisesDirectorySynchronizationFeature
+FEATURES <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>: onPremisesDirectorySynchronizationFeature
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BlockCloudObjectTakeoverThroughHardMatchEnabled <Boolean?>]`: 
   - `[BlockSoftMatchEnabled <Boolean?>]`: 
