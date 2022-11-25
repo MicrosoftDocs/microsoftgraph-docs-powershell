@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mguseronenotenotebook
@@ -422,7 +422,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphNotebook1>: notebook
+BODYPARAMETER `<IMicrosoftGraphNotebook1>`: notebook
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -498,7 +498,7 @@ BODYPARAMETER <IMicrosoftGraphNotebook1>: notebook
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the notebook. Read-only.
   - `[UserRole <String>]`: onenoteUserRole
 
-CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
+CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -507,7 +507,7 @@ CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT <INotesIdentity>: Identity Parameter
+INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[NotebookId <String>]`: key: id of notebook
   - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
@@ -518,7 +518,7 @@ INPUTOBJECT <INotesIdentity>: Identity Parameter
   - `[SiteId <String>]`: key: id of site
   - `[UserId <String>]`: key: id of user
 
-LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
+LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -527,14 +527,14 @@ LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LINKS <IMicrosoftGraphNotebookLinks>: notebookLinks
+LINKS `<IMicrosoftGraphNotebookLinks>`: notebookLinks
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OneNoteClientUrl <IMicrosoftGraphExternalLink>]`: externalLink
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Href <String>]`: The url of the link.
   - `[OneNoteWebUrl <IMicrosoftGraphExternalLink>]`: externalLink
 
-SECTIONGROUPS <IMicrosoftGraphSectionGroup1[]>: The section groups in the notebook. Read-only. Nullable.
+SECTIONGROUPS <IMicrosoftGraphSectionGroup1\[]>: The section groups in the notebook. Read-only. Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -610,7 +610,7 @@ SECTIONGROUPS <IMicrosoftGraphSectionGroup1[]>: The section groups in the notebo
   - `[Sections <IMicrosoftGraphOnenoteSection1[]>]`: The sections in the section group. Read-only. Nullable.
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
-SECTIONS <IMicrosoftGraphOnenoteSection1[]>: The sections in the notebook. Read-only. Nullable.
+SECTIONS <IMicrosoftGraphOnenoteSection1\[]>: The sections in the notebook. Read-only. Nullable.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
