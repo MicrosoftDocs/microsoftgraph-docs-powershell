@@ -78,17 +78,19 @@ Connect-MgGraph -ContextScope Process -ForceRefresh
 
 ### Using passwordless authentication
 
+Passwords are a primary attack vector. Passwordless authentication is a strategy to mitigate attacks where bad actors use social engineering, phishing, and spray attacks to compromise passwords.
+
 Microsoft Graph PowerShell supports the following passwordless authentication methods:
 
-- Windows Hello for Business (WHFB)
-- Fast Identity Online (FIDO2) security keys
-- Phone signin
-- Certificate-Based Authentication (CBA)
+- Windows Hello for Business
+- Fast ID Online (FIDO) v2.0 (FIDO2)
+- Microsoft Authenticator app
+- Certificate-based authentication (CBA)
 
 >[!NOTE]
 > FIDO2 security keys option is only supported on PowerShell 7 and above.
 
-For more information, see [Passwordless Authentication Options for Azure AD](/azure/active-directory/authentication/concept-authentication-passwordless).
+For more information, see [Passwordless authentication options for Azure AD](/azure/active-directory/authentication/concept-authentication-passwordless) and [Azure AD certificate-based authentication](/azure/active-directory/authentication/concept-certificate-based-authentication).
 
 ## Using Disconnect-MgGraph
 
