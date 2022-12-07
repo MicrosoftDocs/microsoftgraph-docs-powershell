@@ -134,7 +134,7 @@ ResourceDisplayName  : Microsoft Graph
 
 ## Step 4: Revoke an app role assignment from a client service principal
 
-To revoke the app roles assigned in step 3, run;
+To revoke the app roles assigned in step 3, run:
 
 ```powershell
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49e7-a763-f39d2ef9b369' -AppRoleAssignmentId 'DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0'

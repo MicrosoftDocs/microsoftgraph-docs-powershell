@@ -111,9 +111,9 @@ SignInAudience : AzureADandPersonalMicrosoftAccount
 
 To create a delegated permission grant, you'll need the following information:
 
-1. **ClientId** - object Id of the client service principal authorized to act on behalf of the user. In this case, the service principal we created in step 2.
+1. **ClientId** - object Id of the client service principal to be authorized to act on behalf of the user. In this case, the service principal we created in step 2.
 1. **ConsentType** - `AllPrincipals` to authorize all users in the tenant or `Principal` for a single user.
-1. **PrincipalId** - Id of the user for *Principal* consents, `null` for *AllPrincipals* consents.
+1. **PrincipalId** - `Null` for *AllPrincipals* consents or Id of the user for *Principal* consents.
 1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
