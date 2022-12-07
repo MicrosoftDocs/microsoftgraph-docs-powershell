@@ -2,7 +2,7 @@
 title: "Grant application permissions programmatically in Azure AD"
 description: "Learn how to grant app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 11/16/2022
+ms.date: 12/07/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -35,7 +35,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Get the app roles of the resource service principal
 
-Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app roles. App roles are defined in the `appRoles` object of a service principal. 
+Before you can grant app roles, you must first identify the app roles to grant and the resource service principal that exposes the app roles. App roles are defined in the `appRoles` object of a service principal.
 
 In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 

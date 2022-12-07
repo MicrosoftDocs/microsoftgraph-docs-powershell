@@ -2,7 +2,7 @@
 title: "Grant delegated permissions programmatically in Azure AD"
 description: "Learn how to grant delegated permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 11/16/2022
+ms.date: 12/07/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
