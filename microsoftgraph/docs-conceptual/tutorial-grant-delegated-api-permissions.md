@@ -24,13 +24,11 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All"
     ```
-
-    Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
 >[!Caution]
 >The `DelegatedPermissionGrant.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Only appropriate users should access apps that have been granted this permission.
@@ -71,9 +69,12 @@ Value                   : Group.Read.All
 AdditionalProperties    : {}
 ```
 
+>[!NOTE]
+>The output has been truncated for readability.
+
 ## Step 2: Create a client service principal
 
-The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
+The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
 ### Register an application with Azure AD
 
@@ -116,7 +117,7 @@ To create a delegated permission grant, you'll need the following information:
 1. **ResourceId** - object Id of the service principal representing the resource app in the tenant.
 1. **Scope** - space-delimited list of permission claim values, for example `User.Read.All`.
 
-In this example, the object Id of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
+In this example, the object Id of the resource service principal is `2cab1707-656d-40cc-8522-3178a184e03d`. You'll grant the `Group.Read.All` scope to the service principal and grant consent on behalf of all users in the tenant.
 
 ```powershell
 $params = @{
@@ -141,7 +142,7 @@ Scope       : Group.Read.All
 
 ### Step 4: Assign more or revoke delegated permissions to the service principal
 
-You can add more or reduce scopes to an already existing oauth2PermissionGrant object.
+You can add more or reduce scopes from an existing oauth2PermissionGrant object.
 
 To add the `User.Read.All` scope to the oauthPermissionGrant object, run:
 

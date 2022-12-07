@@ -24,13 +24,11 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
     ```
-
-    Select **Consent on behalf of your organization** before accepting in the login dialog box.
 
 >[!Caution]
 >The `AppRoleAssignment.ReadWrite.All` permission allows an app or a service to manage permission grants and elevate privileges for any app, user, or group in your organization. Only appropriate users should access apps that have been granted this permission.
@@ -65,9 +63,12 @@ Value                : User.Read.All
 AdditionalProperties : {}
 ```
 
+>[!NOTE]
+>The output has been truncated for readability.
+
 ## Step 2: Create a client service principal
 
-The first step in granting consent is to [create the service principal](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
+The first step in granting consent is to [create the service principal for the app that you'll grant permissions](/powershell/module/microsoft.graph.applications/new-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true). To do so, you'll need the `App Id` of your application.
 
 ### Register an application with Azure AD
 
@@ -104,7 +105,7 @@ SignInAudience : AzureADandPersonalMicrosoftAccount
 
 In this step, you'll assign an app role exposed by your resource app to the service principal we created in step 2. To create an app role assignment, you'll need the following information:
 
-1. **PrincipalId** - object Id of the service principal authorized for direct access.
+1. **PrincipalId** - object Id of the service principal to be authorized for direct access.
 1. **ResourceId** - object Id of the service principal representing the resource app in your tenant.
 1. **AppRoleId** - Id of the app role to be assigned, defined on the service principal representing the resource.
 
@@ -120,7 +121,6 @@ New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId '2cab1707-656d-40cc-
 ```
 
 The `ServicePrincipalId` must always be same as the `ResourceId` which references the service principal that exposes the app roles that you want to assign to the `PrincipalId`.
-
 
 ```Output
 Id                   : DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0
