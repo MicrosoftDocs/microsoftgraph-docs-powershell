@@ -1,10 +1,8 @@
 ---
-title: 'Microsoft Graph PowerShell SDK overview'
-description: Provides a description and getting started information for the Microsoft Graph PowerShell SDK.
-services: active-directory
-
+title: "Microsoft Graph PowerShell SDK overview"
+description: "Learn about the features of Microsoft Graph PowerShell that can help you derive insights and analytics, and build unique, intelligent apps."
 ms.topic: overview
-ms.date: 8/18/2021
+ms.date: 12/09/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -12,7 +10,7 @@ ms.reviewer: maisarissi
 ---
 # Microsoft Graph PowerShell overview
 
-The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. It contains a set of cmdlets that helps you manage identities at scale from automating tasks to managing users in bulk using Azure Active Directory (Azure AD).
+The Microsoft Graph PowerShell SDK acts as an API wrapper for the Microsoft Graph APIs, exposing the entire API set for use in PowerShell. It contains a set of cmdlets that helps you manage identities at scale from automating tasks, to managing users in bulk using Azure Active Directory (Azure AD).
 It will help administer every Azure AD feature that has an API in Microsoft Graph.
 
 The Microsoft Graph PowerShell SDK is the replacement for the Azure AD PowerShell module and is recommended for interacting with Azure AD.
@@ -21,10 +19,15 @@ The Microsoft Graph PowerShell SDK is the replacement for the Azure AD PowerShel
 
 The Microsoft Graph PowerShell SDK provides the following benefits:
 
-- **Access to all Microsoft Graph APIs not just Azure Active Directory**: Microsoft Graph PowerShell SDK  is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, Outlook, etc, all accessed through a single endpoint with a single access token. Azure AD Graph PowerShell is based on Azure AD Graph which is deprecated. To learn more on migrating from Azure AD Graph to Microsoft Graph see [Microsoft Graph or Azure AD Graph](https://developer.microsoft.com/en-us/office/blogs/microsoft-graph-or-azure-ad-graph/).
-- **Cross-platform support and available on PowerShell 7 and above**: Microsoft Graph PowerShell module works with PowerShell 7 and later and on all platforms including Windows, macOS, and Linux. It's also compatible with Windows PowerShell 5.1.
-- **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security that its Azure AD PowerShell Active Directory Authentication Library (ADAL) counterpart.
+- **Access to all Microsoft Graph APIs**: Microsoft Graph PowerShell is based on Microsoft Graph API. The Microsoft Graph API includes, in addition to Azure AD, APIs from other Microsoft services like SharePoint, Exchange, and Outlook, all accessed through a single endpoint with a single access token.
+- **Supports PowerShell 7**: Microsoft Graph PowerShell module works with PowerShell 7 and later. It's also compatible with Windows PowerShell 5.1.
+- **Cross-platform support**: Microsoft Graph PowerShell module works on all platforms including Windows, macOS, and Linux.
+- **Supports modern authentication**: Microsoft Graph PowerShell supports the Microsoft Authentication Library (MSAL) which offers more security. For example, you can use Passwordless sign-in experiences.
+- **Supports external identities**: Users from other Azure AD tenants can authenticate to services in your tenant with Microsoft Graph PowerShell.
+- **Uses least privilege**: Microsoft Graph PowerShell permissions are NOT pre-authorized and users must perform one-time request for app permissions depending on their needs.
+- **Advanced queries**: Microsoft Graph PowerShell supports rich, advanced queries via eventual consistency. For example, you can get a near-instant count of all users using advanced queries.
 - **Open source**: Feature teams and the community can create great PowerShell experiences and share them with everyone.
+- **Receives regular updates**: Microsoft Graph PowerShell commands are updated regularly to support the latest Graph API updates.
 
 ## Upgrade your environment to use the Microsoft Graph PowerShell SDK
 
@@ -41,4 +44,4 @@ To perform basic tasks, use the [Get-started](/graph/powershell/get-started) gui
 ## Next steps
 
 - If you don't have an Azure account, [create a free account](https://azure.microsoft.com/free).
-- If you already have access to an Azure Active Directory tenant, [Install the SDK](/graph/powershell/installation).
+- If you already have access to an Azure AD tenant, [Install the SDK](/graph/powershell/installation).
