@@ -78,12 +78,12 @@ Connect-MgGraph -ContextScope Process -ForceRefresh
 
 ### Using passwordless authentication
 
-Passwords are a primary attack vector. Passwordless authentication is a strategy to mitigate attacks where bad actors use social engineering, phishing, and spray attacks to compromise passwords.
+Passwordless authentication is a method of verifying a user’s identity without the use of a password. Passwords are a primary attack vector and passwordless authentication is a strategy to mitigate attacks where bad actors use social engineering, phishing, and spray attacks to compromise passwords.
 
 Microsoft Graph PowerShell supports the following passwordless authentication methods:
 
 - Windows Hello for Business
-- Fast ID Online (FIDO) v2.0 (FIDO2)
+- Fast ID Online v2.0 (FIDO2)
 - Microsoft Authenticator app
 - Certificate-based authentication (CBA)
 
