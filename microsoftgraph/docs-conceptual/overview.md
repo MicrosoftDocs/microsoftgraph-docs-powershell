@@ -2,7 +2,7 @@
 title: "Microsoft Graph PowerShell SDK overview"
 description: "Learn about the features of Microsoft Graph PowerShell that can help you derive insights and analytics, and build unique, intelligent apps."
 ms.topic: overview
-ms.date: 12/09/2022
+ms.date: 12/13/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
