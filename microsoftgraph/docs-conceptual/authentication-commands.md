@@ -76,6 +76,22 @@ To connect as a different identity other than CurrentUser, specify the `-Context
 Connect-MgGraph -ContextScope Process -ForceRefresh
 ```
 
+### Using passwordless authentication
+
+Passwordless authentication is a method of verifying a user’s identity without the use of a password. Passwords are a primary attack vector and passwordless authentication is a strategy to mitigate attacks where bad actors use social engineering, phishing, and spray attacks to compromise passwords.
+
+Microsoft Graph PowerShell supports the following passwordless authentication methods:
+
+- Windows Hello for Business
+- Fast ID Online v2.0 (FIDO2)
+- Microsoft Authenticator app
+- Certificate-based authentication (CBA)
+
+>[!NOTE]
+> FIDO2 security keys option is only supported on PowerShell 7 and above.
+
+For more information, see [Passwordless authentication options for Azure AD](/azure/active-directory/authentication/concept-authentication-passwordless) and [Azure AD certificate-based authentication](/azure/active-directory/authentication/concept-certificate-based-authentication).
+
 ## Using Disconnect-MgGraph
 
 Once you're signed in, you'll remain signed in until you invoke `Disconnect-MgGraph`. Microsoft Graph PowerShell automatically refreshes the access token for you and sign-in persists across PowerShell sessions because Microsoft Graph PowerShell securely caches the token.
