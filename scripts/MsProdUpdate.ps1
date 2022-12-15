@@ -202,6 +202,14 @@ if ([string]::IsNullOrEmpty($exists)) {
 	Write-Host "Branch already exists"
      git checkout $proposedBranch
 }
+if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
+    Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
+}
+If (-not (Get-Module -ErrorAction Ignore -ListAvailable PowerHTML)) {
+    Write-Verbose "Installing PowerHTML module for the current user..."
+    Install-Module PowerHTML -ErrorAction Stop -Scope CurrentUser -Force
+}
+Import-Module -ErrorAction Stop PowerHTML
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
