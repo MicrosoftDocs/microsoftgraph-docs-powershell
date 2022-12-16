@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguserdriverootlink
@@ -14,28 +14,28 @@ DriveItem resources inherit sharing permissions from their ancestors.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgUserDriveRootLink -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>] [-RetainInheritedPermissions]
  [-Scope <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgUserDriveRootLink -DriveId <String> -UserId <String>
  -BodyParameter <IPathsI8Q6BgUsersUserIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgUserDriveRootLink -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>] [-RetainInheritedPermissions]
  [-Scope <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgUserDriveRootLink -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsI8Q6BgUsersUserIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
@@ -56,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -72,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsI8Q6BgUsersUserIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -87,7 +87,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -118,7 +118,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -208,7 +208,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -268,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsI8Q6BgUsersUserIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsI8Q6BgUsersUserIdDrivesDriveIdRootMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Message <String>]`: 
@@ -277,13 +277,11 @@ BODYPARAMETER `<IPathsI8Q6BgUsersUserIdDrivesDriveIdRootMicrosoftGraphCreatelink
   - `[Scope <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[ChatId <String>]`: key: id of chat
   - `[ChatMessageId <String>]`: key: id of chatMessage

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguserdriverootuploadsession
@@ -190,7 +190,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -203,13 +203,11 @@ BODYPARAMETER `<IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuplo
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
     - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[ChatId <String>]`: key: id of chat
   - `[ChatMessageId <String>]`: key: id of chatMessage
@@ -251,7 +249,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
+ITEM <IMicrosoftGraphDriveItemUploadableProperties>: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
   - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.

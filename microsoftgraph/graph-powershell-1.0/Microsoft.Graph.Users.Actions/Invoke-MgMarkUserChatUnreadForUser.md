@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatunreadforuser
@@ -220,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ca5SfzUsersUserIdChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Ca5SfzUsersUserIdChatsChatIdMicrosoftGraphMarkchatunreadforuserPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastMessageReadDateTime <DateTime?>]`: 
   - `[User <IMicrosoftGraphTeamworkUserIdentity1>]`: teamworkUserIdentity
@@ -229,13 +229,11 @@ BODYPARAMETER `<IPaths1Ca5SfzUsersUserIdChatsChatIdMicrosoftGraphMarkchatunreadf
     - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[ChatId <String>]`: key: id of chat
   - `[ChatMessageId <String>]`: key: id of chatMessage
@@ -277,7 +275,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-USER `<IMicrosoftGraphTeamworkUserIdentity1>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity1>: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
