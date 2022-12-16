@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointprovisioningpolicy
@@ -483,12 +483,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on $expand. See an example of getting the assignments relationship.
+ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>: A defined collection of provisioning policy assignments. Represents the set of Microsoft 365 groups and security groups in Azure AD that have provisioning policy assigned. Returned only on $expand. See an example of getting the assignments relationship.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningPolicy
+BODYPARAMETER <IMicrosoftGraphCloudPcProvisioningPolicy>: cloudPcProvisioningPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AlternateResourceUrl <String>]`: The URL of the alternate resource that links to this provisioning policy. Read-only.
@@ -502,8 +502,10 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
   - `[DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]`: cloudPcDomainJoinConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[OnPremisesConnectionId <String>]`: The Azure network connection ID that matches the virtual network IT admins want the provisioning policy to use when they create Cloud PCs. You can use this property in both domain join types: Azure AD joined or Hybrid Azure AD joined. If you enter an onPremisesConnectionId, leave regionName as empty.
+    - `[RegionGroup <String>]`: cloudPcRegionGroup
     - `[RegionName <String>]`: The supported Azure region where the IT admin wants the provisioning policy to create Cloud PCs. The underlying virtual network will be created and managed by the Windows 365 service. This can only be entered if the IT admin chooses Azure AD joined as the domain join type. If you enter a regionName, leave onPremisesConnectionId as empty.
     - `[Type <String>]`: cloudPcDomainJoinType
+  - `[EnableSingleSignOn <Boolean?>]`: 
   - `[GracePeriodInHours <Int32?>]`: The number of hours to wait before reprovisioning/deprovisioning happens. Read-only.
   - `[ImageDisplayName <String>]`: The display name for the OS image you're provisioning.
   - `[ImageId <String>]`: The ID of the OS image you want to provision on Cloud PCs. The format for a gallery type image is: {publisher_offer_sku}. Supported values for each of the parameters are as follows:publisher: Microsoftwindowsdesktop. offer: windows-ent-cpc. sku: 21h1-ent-cpc-m365, 21h1-ent-cpc-os, 20h2-ent-cpc-m365, 20h2-ent-cpc-os, 20h1-ent-cpc-m365, 20h1-ent-cpc-os, 19h2-ent-cpc-m365 and 19h2-ent-cpc-os.
@@ -520,13 +522,14 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcProvisioningPolicy>`: cloudPcProvisioningP
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 
-DOMAINJOINCONFIGURATION `<IMicrosoftGraphCloudPcDomainJoinConfiguration>`: cloudPcDomainJoinConfiguration
+DOMAINJOINCONFIGURATION <IMicrosoftGraphCloudPcDomainJoinConfiguration>: cloudPcDomainJoinConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OnPremisesConnectionId <String>]`: The Azure network connection ID that matches the virtual network IT admins want the provisioning policy to use when they create Cloud PCs. You can use this property in both domain join types: Azure AD joined or Hybrid Azure AD joined. If you enter an onPremisesConnectionId, leave regionName as empty.
+  - `[RegionGroup <String>]`: cloudPcRegionGroup
   - `[RegionName <String>]`: The supported Azure region where the IT admin wants the provisioning policy to create Cloud PCs. The underlying virtual network will be created and managed by the Windows 365 service. This can only be entered if the IT admin chooses Azure AD joined as the domain join type. If you enter a regionName, leave onPremisesConnectionId as empty.
   - `[Type <String>]`: cloudPcDomainJoinType
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -582,12 +585,12 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-MICROSOFTMANAGEDDESKTOP `<IMicrosoftGraphMicrosoftManagedDesktop>`: microsoftManagedDesktop
+MICROSOFTMANAGEDDESKTOP <IMicrosoftGraphMicrosoftManagedDesktop>: microsoftManagedDesktop
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Profile <String>]`: The name of the Microsoft Managed Desktop profile that the Windows 365 Cloud PC is associated with.
   - `[Type <String>]`: microsoftManagedDesktopType
 
-WINDOWSSETTINGS `<IMicrosoftGraphCloudPcWindowsSettings>`: cloudPcWindowsSettings
+WINDOWSSETTINGS <IMicrosoftGraphCloudPcWindowsSettings>: cloudPcWindowsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Language <String>]`: The Windows language/region tag to use for language pack configuration and localization of the Cloud PC. The default value is en-US, which corresponds to English (United States).
 

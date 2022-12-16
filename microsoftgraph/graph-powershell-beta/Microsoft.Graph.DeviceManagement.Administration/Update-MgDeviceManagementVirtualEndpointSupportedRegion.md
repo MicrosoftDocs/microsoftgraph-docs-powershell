@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointsupportedregion
@@ -15,8 +15,8 @@ Update the navigation property supportedRegions in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementVirtualEndpointSupportedRegion -CloudPcSupportedRegionId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RegionStatus <String>]
- [-SupportedSolution <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RegionGroup <String>]
+ [-RegionStatus <String>] [-SupportedSolution <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -28,8 +28,8 @@ Update-MgDeviceManagementVirtualEndpointSupportedRegion -CloudPcSupportedRegionI
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementVirtualEndpointSupportedRegion -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RegionStatus <String>]
- [-SupportedSolution <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RegionGroup <String>]
+ [-RegionStatus <String>] [-SupportedSolution <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -154,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RegionGroup
+cloudPcRegionGroup
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RegionStatus
 cloudPcSupportedRegionStatus
 
@@ -234,14 +249,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcSupportedRegion>`: cloudPcSupportedRegion
+BODYPARAMETER <IMicrosoftGraphCloudPcSupportedRegion>: cloudPcSupportedRegion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name for the supported region. Read-only.
+  - `[RegionGroup <String>]`: cloudPcRegionGroup
   - `[RegionStatus <String>]`: cloudPcSupportedRegionStatus
   - `[SupportedSolution <String>]`: cloudPcManagementService
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
