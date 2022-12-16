@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrecommendation
@@ -424,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: .
+ACTIONSTEPS <IMicrosoftGraphActionStep[]>: .
   - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: 
@@ -432,7 +432,7 @@ ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: .
   - `[StepNumber <Int64?>]`: 
   - `[Text <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphRecommendation>`: recommendation
+BODYPARAMETER <IMicrosoftGraphRecommendation>: recommendation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActionSteps <IMicrosoftGraphActionStep[]>]`: 
@@ -452,8 +452,8 @@ BODYPARAMETER `<IMicrosoftGraphRecommendation>`: recommendation
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AddedDateTime <DateTime?>]`: 
     - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
-      - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-      - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[ApiUrl <String>]`: 
     - `[DisplayName <String>]`: 
     - `[Owner <String>]`: 
@@ -470,12 +470,12 @@ BODYPARAMETER `<IMicrosoftGraphRecommendation>`: recommendation
   - `[Priority <String>]`: recommendationPriority
   - `[Status <String>]`: recommendationStatus
 
-IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource\[]>: .
+IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: 
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
-    - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-    - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[ApiUrl <String>]`: 
   - `[DisplayName <String>]`: 
   - `[Owner <String>]`: 
@@ -485,7 +485,7 @@ IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource\[]>: .
   - `[ResourceType <String>]`: 
   - `[Status <String>]`: recommendationStatus
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
