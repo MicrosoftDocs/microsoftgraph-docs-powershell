@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/search-mguserdriveitem
@@ -12,14 +12,14 @@ Invoke function search
 
 ## SYNTAX
 
-### Search1 (Default)
+### Search (Default)
 ```
 Search-MgUserDriveItem -DriveId <String> -DriveItemId <String> -Q <String> -UserId <String> [-Count]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### SearchViaIdentity1
+### SearchViaIdentity
 ```
 Search-MgUserDriveItem -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -53,7 +53,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: SearchViaIdentity1
+Parameter Sets: SearchViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ Usage: q='{q}'
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -189,7 +189,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Search1
+Parameter Sets: Search
 Aliases:
 
 Required: True
@@ -232,10 +232,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[ChatId <String>]`: key: id of chat
   - `[ChatMessageId <String>]`: key: id of chatMessage
