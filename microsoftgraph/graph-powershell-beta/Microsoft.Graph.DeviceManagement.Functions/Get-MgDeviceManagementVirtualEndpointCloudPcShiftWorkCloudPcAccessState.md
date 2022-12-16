@@ -1,62 +1,45 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/invoke-mgsummarizedevicemanagementuserexperienceanalyticresourceperformancedeviceresourceperformance
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementvirtualendpointcloudpcshiftworkcloudpcaccessstate
 schema: 2.0.0
 ---
 
-# Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance
+# Get-MgDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState
 
 ## SYNOPSIS
-Invoke function summarizeDeviceResourcePerformance
+Invoke function getShiftWorkCloudPcAccessState
 
 ## SYNTAX
 
-### Summarize (Default)
+### Get (Default)
 ```
-Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance
- -SummarizeBy <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState -CloudPcId <String>
+ [<CommonParameters>]
 ```
 
-### SummarizeViaIdentity
+### GetViaIdentity
 ```
-Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance
- -InputObject <IDeviceManagementFunctionsIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgDeviceManagementVirtualEndpointCloudPcShiftWorkCloudPcAccessState
+ -InputObject <IDeviceManagementFunctionsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function summarizeDeviceResourcePerformance
+Invoke function getShiftWorkCloudPcAccessState
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -Count
-Include count of items
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
+### -CloudPcId
+key: id of cloudPC
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: Get
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -69,103 +52,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementFunctionsIdentity
-Parameter Sets: SummarizeViaIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Search
-Search items by search phrases
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SummarizeBy
-Usage: summarizeBy='{summarizeBy}'
-
-```yaml
-Type: String
-Parameter Sets: Summarize
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -177,7 +70,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsResourcePerformance
+### System.String
 ## NOTES
 
 ALIASES
