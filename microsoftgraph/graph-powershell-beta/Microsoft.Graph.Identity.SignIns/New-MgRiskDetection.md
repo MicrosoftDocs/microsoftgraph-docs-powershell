@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskdetection
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # New-MgRiskDetection
@@ -37,7 +36,7 @@ Create new navigation property to riskDetections for identityProtection
 ## PARAMETERS
 
 ### -Activity
-.
+activityType
 
 ```yaml
 Type: String
@@ -241,7 +240,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskDetail
-.
+riskDetail
 
 ```yaml
 Type: String
@@ -444,10 +443,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskDetection>`: riskDetection
+BODYPARAMETER <IMicrosoftGraphRiskDetection>: riskDetection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Activity <String>]`: 
+  - `[Activity <String>]`: activityType
   - `[ActivityDateTime <DateTime?>]`: Date and time that the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[AdditionalInfo <String>]`: Additional information associated with the risk detection in JSON format.
   - `[CorrelationId <String>]`: Correlation ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.
@@ -466,7 +465,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskDetection>`: riskDetection
       - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
     - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[RequestId <String>]`: Request ID of the sign-in associated with the risk detection. This property is null if the risk detection is not associated with a sign-in.
-  - `[RiskDetail <String>]`: 
+  - `[RiskDetail <String>]`: riskDetail
   - `[RiskEventType <String>]`: The type of risk event detected. The possible values are unlikelyTravel, anonymizedIPAddress, maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials, investigationsThreatIntelligence, generic,adminConfirmedUserCompromised, mcasImpossibleTravel, mcasSuspiciousInboxManipulationRules, investigationsThreatIntelligenceSigninLinked, maliciousIPAddressValidCredentialsBlockedIP, and anomalousUserActivity.  For more information about each value, see riskEventType values.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
@@ -477,7 +476,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskDetection>`: riskDetection
   - `[UserId <String>]`: Unique ID of the user.  The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user.
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[CountryOrRegion <String>]`: Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.

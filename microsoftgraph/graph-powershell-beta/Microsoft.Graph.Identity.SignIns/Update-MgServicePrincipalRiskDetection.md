@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgserviceprincipalriskdetection
@@ -58,7 +58,7 @@ Update the navigation property servicePrincipalRiskDetections in identityProtect
 ## PARAMETERS
 
 ### -Activity
-.
+activityType
 
 ```yaml
 Type: String
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 ```
 
 ### -KeyIds
-The unique identifier (GUID) for the key credential associated with the risk detection.
+The unique identifier for the key credential associated with the risk detection.
 
 ```yaml
 Type: String[]
@@ -325,7 +325,7 @@ Accept wildcard characters: False
 ```
 
 ### -RiskDetail
-.
+riskDetail
 
 ```yaml
 Type: String
@@ -341,8 +341,7 @@ Accept wildcard characters: False
 
 ### -RiskEventType
 The type of risk event detected.
-The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, unknownFutureValue.
-Supports $filter (eq).
+The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
 
 ```yaml
 Type: String
@@ -513,10 +512,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipalRiskDetection
+BODYPARAMETER <IMicrosoftGraphServicePrincipalRiskDetection>: servicePrincipalRiskDetection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Activity <String>]`: 
+  - `[Activity <String>]`: activityType
   - `[ActivityDateTime <DateTime?>]`: Date and time when the risky activity occurred. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[AdditionalInfo <String>]`: Additional information associated with the risk detection. This string value is represented as a JSON object with the quotations escaped.
   - `[AppId <String>]`: The unique identifier for the associated application.
@@ -524,7 +523,7 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipal
   - `[DetectedDateTime <DateTime?>]`: Date and time when the risk was detected. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[DetectionTimingType <String>]`: riskDetectionTimingType
   - `[IPAddress <String>]`: Provides the IP address of the client from where the risk occurred.
-  - `[KeyIds <String[]>]`: The unique identifier (GUID) for the key credential associated with the risk detection.
+  - `[KeyIds <String[]>]`: The unique identifier for the key credential associated with the risk detection.
   - `[LastUpdatedDateTime <DateTime?>]`: Date and time when the risk detection was last updated.
   - `[Location <IMicrosoftGraphSignInLocation>]`: signInLocation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -537,8 +536,8 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipal
       - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
     - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[RequestId <String>]`: Request identifier of the sign-in activity associated with the risk detection. This property is null if the risk detection is not associated with a sign-in activity. Supports $filter (eq).
-  - `[RiskDetail <String>]`: 
-  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are:  investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, unknownFutureValue. Supports $filter (eq).
+  - `[RiskDetail <String>]`: riskDetail
+  - `[RiskEventType <String>]`: The type of risk event detected. The possible values are: investigationsThreatIntelligence, generic, adminConfirmedServicePrincipalCompromised, suspiciousSignins, leakedCredentials, anomalousServicePrincipalActivity, maliciousApplication, suspiciousApplication.
   - `[RiskLevel <String>]`: riskLevel
   - `[RiskState <String>]`: riskState
   - `[ServicePrincipalDisplayName <String>]`: The display name for the service principal.
@@ -546,7 +545,7 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalRiskDetection>`: servicePrincipal
   - `[Source <String>]`: Source of the risk detection. For example, identityProtection.
   - `[TokenIssuerType <String>]`: tokenIssuerType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -623,7 +622,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-LOCATION `<IMicrosoftGraphSignInLocation>`: signInLocation
+LOCATION <IMicrosoftGraphSignInLocation>: signInLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: Provides the city where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
   - `[CountryOrRegion <String>]`: Provides the country code info (2 letter code) where the sign-in originated.  This is calculated using latitude/longitude information from the sign-in activity.
