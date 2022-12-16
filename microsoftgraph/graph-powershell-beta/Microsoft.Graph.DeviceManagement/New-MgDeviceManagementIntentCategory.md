@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementintentcategory
@@ -239,7 +239,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentSettingCategory>`: Entity representing an intent setting category
+BODYPARAMETER <IMicrosoftGraphDeviceManagementIntentSettingCategory>: Entity representing an intent setting category
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The category name
   - `[HasRequiredSetting <Boolean?>]`: The category contains top level required setting
@@ -264,7 +264,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntentSettingCategory>`: Entity r
     - `[DefinitionId <String>]`: The ID of the setting definition for this instance
     - `[ValueJson <String>]`: JSON representation of the value
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -393,7 +393,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition\[]>: The setting definitions this category contains
+SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition[]>: The setting definitions this category contains
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Constraints <IMicrosoftGraphDeviceManagementConstraint[]>]`: Collection of constraints for the setting value
   - `[Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>]`: Collection of dependencies on other settings
@@ -409,7 +409,7 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementSettingDefinition\[]>: The se
   - `[PlaceholderText <String>]`: Placeholder text as an example of valid input
   - `[ValueType <DeviceManangementIntentValueType?>]`: deviceManangementIntentValueType
 
-SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance\[]>: The settings this category contains
+SETTINGS <IMicrosoftGraphDeviceManagementSettingInstance[]>: The settings this category contains
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefinitionId <String>]`: The ID of the setting definition for this instance
   - `[ValueJson <String>]`: JSON representation of the value
