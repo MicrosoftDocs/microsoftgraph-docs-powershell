@@ -1,47 +1,38 @@
 ﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/remove-mgbookingbusiness
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/remove-mgbusinessscenario
 schema: 2.0.0
 ---
 
-# Remove-MgBookingBusiness
+# Remove-MgBusinessScenario
 
 ## SYNOPSIS
-Delete a bookingBusiness object.
+Delete navigation property businessScenarios for solutions
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBookingBusiness -BookingBusinessId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBusinessScenario -BusinessScenarioId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBookingBusiness -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBusinessScenario -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete a bookingBusiness object.
+Delete navigation property businessScenarios for solutions
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgBookingBusiness Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Bookings
-Remove-MgBookingBusiness -BookingBusinessId $bookingBusinessId
-```
-
-This example shows how to use the Remove-MgBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
-### -BookingBusinessId
-key: id of bookingBusiness
+### -BusinessScenarioId
+key: id of businessScenario
 
 ```yaml
 Type: String

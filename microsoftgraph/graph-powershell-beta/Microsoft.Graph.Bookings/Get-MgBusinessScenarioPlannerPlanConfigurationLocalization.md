@@ -1,62 +1,41 @@
 ﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbookingbusinesscustomer
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
 ---
 
-# Get-MgBookingBusinessCustomer
+# Get-MgBusinessScenarioPlannerPlanConfigurationLocalization
 
 ## SYNOPSIS
-All the customers of this business.
-Read-only.
-Nullable.
+Get localizations from solutions
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBookingBusinessCustomer -BookingBusinessId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
+ -PlannerPlanConfigurationLocalizationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-All the customers of this business.
-Read-only.
-Nullable.
+Get localizations from solutions
 
 ## EXAMPLES
-
-### Example 1: Using the Get-MgBookingBusinessCustomer Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId
-```
-
-This example shows how to use the Get-MgBookingBusinessCustomer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Using the Get-MgBookingBusinessCustomer Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId
-```
-
-This example shows how to use the Get-MgBookingBusinessCustomer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -75,27 +54,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BookingBusinessId
-key: id of bookingBusiness
+### -BusinessScenarioId
+key: id of businessScenario
 
 ```yaml
 Type: String
 Parameter Sets: List, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BookingCustomerId
-key: id of bookingCustomer
-
-```yaml
-Type: String
-Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -176,6 +140,21 @@ Parameter Sets: List
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PlannerPlanConfigurationLocalizationId
+key: id of plannerPlanConfigurationLocalization
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -265,7 +244,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingCustomer
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
 ## NOTES
 
 ALIASES
