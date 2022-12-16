@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityincident
@@ -343,7 +343,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTS <IMicrosoftGraphSecurityAlert[]>: .
+ALERTS <IMicrosoftGraphSecurityAlert\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: 
   - `[AlertWebUrl <String>]`: 
@@ -383,7 +383,7 @@ ALERTS <IMicrosoftGraphSecurityAlert[]>: .
   - `[ThreatFamilyName <String>]`: 
   - `[Title <String>]`: 
 
-BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
+BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Alerts <IMicrosoftGraphSecurityAlert[]>]`: 
@@ -439,7 +439,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityIncident>: incident
   - `[Status <String>]`: incidentStatus
   - `[TenantId <String>]`: 
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: .
+COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: .
   - `[Comment <String>]`: 
   - `[CreatedByDisplayName <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: 
