@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgauditlogsignin
 schema: 2.0.0
+ms.prod: "identity-and-access-reports"
 ---
 
 # Get-MgAuditLogSignIn
