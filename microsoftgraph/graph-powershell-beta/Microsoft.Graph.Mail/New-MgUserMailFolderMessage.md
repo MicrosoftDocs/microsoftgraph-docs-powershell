@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessage
 schema: 2.0.0
+ms.prod: "outlook"
 ---
 
 # New-MgUserMailFolderMessage
