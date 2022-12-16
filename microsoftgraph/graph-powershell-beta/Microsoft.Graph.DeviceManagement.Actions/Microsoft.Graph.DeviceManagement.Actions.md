@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: ee5571a4-1ad7-4252-b2da-e8d0b1dc6cbb
+Module Guid: efe9dee6-145c-484e-947c-cbff6498c3cf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -499,6 +499,10 @@ Retire a device
 
 ### [Invoke-MgRetireDeviceManagementManagedDevice](Invoke-MgRetireDeviceManagementManagedDevice.md)
 Retire a device
+
+### [Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation](Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation.md)
+Retry installation for the partner agents which failed to install on the Cloud PC.
+Service side will check which agent installation failed firstly and retry.
 
 ### [Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage.md)
 Reupload a cloudPcDeviceImage object that failed to upload.

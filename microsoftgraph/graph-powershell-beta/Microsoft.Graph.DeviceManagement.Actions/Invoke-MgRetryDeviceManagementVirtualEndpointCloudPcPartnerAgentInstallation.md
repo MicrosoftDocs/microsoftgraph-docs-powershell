@@ -1,78 +1,50 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementmanageddeviceremotehelpsession
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgretrydevicemanagementvirtualendpointcloudpcpartneragentinstallation
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementManagedDeviceRemoteHelpSession
+# Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation
 
 ## SYNOPSIS
-Remote help - Create session with a specific device
+Retry installation for the partner agents which failed to install on the Cloud PC.
+Service side will check which agent installation failed firstly and retry.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Retry (Default)
 ```
-New-MgDeviceManagementManagedDeviceRemoteHelpSession -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-SessionType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgDeviceManagementManagedDeviceRemoteHelpSession -ManagedDeviceId <String>
- -BodyParameter <IPathsBc214LDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreateremotehelpsessionPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation -CloudPcId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### RetryViaIdentity
 ```
-New-MgDeviceManagementManagedDeviceRemoteHelpSession -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-SessionType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementManagedDeviceRemoteHelpSession -InputObject <IDeviceManagementActionsIdentity>
- -BodyParameter <IPathsBc214LDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreateremotehelpsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation
+ -InputObject <IDeviceManagementActionsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remote help - Create session with a specific device
+Retry installation for the partner agents which failed to install on the Cloud PC.
+Service side will check which agent installation failed firstly and retry.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -CloudPcId
+key: id of cloudPC
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPathsBc214LDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreateremotehelpsessionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create, CreateViaIdentity
+Type: String
+Parameter Sets: Retry
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -82,7 +54,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: RetryViaIdentity
 Aliases:
 
 Required: True
@@ -92,27 +64,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedDeviceId
-key: id of managedDevice
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SessionType
-.
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -159,10 +116,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsBc214LDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreateremotehelpsessionPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.String
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -171,10 +127,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-BODYPARAMETER <IPathsBc214LDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCreateremotehelpsessionPostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SessionType <String>]`: 
 
 INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
