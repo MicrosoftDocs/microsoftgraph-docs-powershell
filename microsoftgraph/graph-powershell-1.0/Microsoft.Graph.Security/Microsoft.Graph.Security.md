@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
-Module Guid: c243c0e2-fde3-409c-86c7-9ff5fd49604e
+Module Guid: dcb2bc0b-0467-4b93-8e83-c032bcbac3a5
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -29,6 +29,9 @@ For details, see Tag documents in a review set in eDiscovery.
 Start the process of adding a collection from Microsoft 365 services to a review set.
 After the operation is created, you can get the status of the operation by retrieving the `Location` parameter from the response headers.
 The location provides a URL that will return a Add to review set operation.
+
+### [Clear-MgSecurityCaseEdiscoveryCaseSearchData](Clear-MgSecurityCaseEdiscoveryCaseSearchData.md)
+Invoke action purgeData
 
 ### [Close-MgSecurityCaseEdiscoveryCase](Close-MgSecurityCaseEdiscoveryCase.md)
 Close an eDiscovery case.

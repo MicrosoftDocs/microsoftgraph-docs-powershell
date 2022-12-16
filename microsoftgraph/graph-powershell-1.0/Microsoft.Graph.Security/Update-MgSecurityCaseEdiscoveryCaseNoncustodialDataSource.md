@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritycaseediscoverycasenoncustodialdatasource
@@ -25,7 +25,7 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <Str
 ```
 Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurit
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -72,7 +72,7 @@ ediscoveryNoncustodialDataSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1
+Type: IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -317,7 +317,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
@@ -331,7 +331,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1>`: ediscoveryNoncustodialDataSource
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource>: ediscoveryNoncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -354,9 +354,9 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1>`: edis
     - `[CreatedDateTime <DateTime?>]`: The date and time the dataSource was created.
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
     - `[HoldStatus <String>]`: dataSourceHoldStatus
-  - `[LastIndexOperation <IMicrosoftGraphSecurityEdiscoveryIndexOperation1>]`: ediscoveryIndexOperation
+  - `[LastIndexOperation <IMicrosoftGraphSecurityEdiscoveryIndexOperation>]`: ediscoveryIndexOperation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Action <String>]`: 
+    - `[Action <String>]`: caseAction
     - `[CompletedDateTime <DateTime?>]`: The date and time the operation was completed.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: The date and time the operation was created.
@@ -369,7 +369,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource1>`: edis
     - `[Status <String>]`: caseOperationStatus
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
+DATASOURCE <IMicrosoftGraphSecurityDataSource>: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -384,7 +384,7 @@ DATASOURCE `<IMicrosoftGraphSecurityDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation

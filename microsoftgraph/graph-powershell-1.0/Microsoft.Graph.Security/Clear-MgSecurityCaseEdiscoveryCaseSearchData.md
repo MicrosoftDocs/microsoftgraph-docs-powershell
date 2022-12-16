@@ -1,48 +1,80 @@
 ﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchadditionalsource
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/clear-mgsecuritycaseediscoverycasesearchdata
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource
+# Clear-MgSecurityCaseEdiscoveryCaseSearchData
 
 ## SYNOPSIS
-Delete navigation property additionalSources for security
+Invoke action purgeData
 
 ## SYNTAX
 
-### Delete1 (Default)
+### PurgeExpanded1 (Default)
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -DataSourceId <String> -EdiscoveryCaseId <String>
- -EdiscoverySearchId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
+ [-AdditionalProperties <Hashtable>] [-PurgeAreas <String>] [-PurgeType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### Purge1
 ```
-Remove-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityIdentity> [-IfMatch <String>]
+Clear-MgSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
+ -BodyParameter <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PurgeViaIdentityExpanded1
+```
+Clear-MgSecurityCaseEdiscoveryCaseSearchData -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-PurgeAreas <String>] [-PurgeType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### PurgeViaIdentity1
+```
+Clear-MgSecurityCaseEdiscoveryCaseSearchData -InputObject <ISecurityIdentity>
+ -BodyParameter <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property additionalSources for security
+Invoke action purgeData
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -DataSourceId
-key: id of dataSource
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: Hashtable
+Parameter Sets: PurgeExpanded1, PurgeViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Purge1, PurgeViaIdentity1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
+Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -51,7 +83,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: PurgeExpanded1, Purge1
 Aliases:
 
 Required: True
@@ -66,25 +98,10 @@ key: id of ediscoverySearch
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: PurgeExpanded1, Purge1
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -IfMatch
-ETag
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -97,7 +114,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: PurgeViaIdentityExpanded1, PurgeViaIdentity1
 Aliases:
 
 Required: True
@@ -113,6 +130,36 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PurgeAreas
+purgeAreas
+
+```yaml
+Type: String
+Parameter Sets: PurgeExpanded1, PurgeViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PurgeType
+purgeType
+
+```yaml
+Type: String
+Parameter Sets: PurgeExpanded1, PurgeViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -158,6 +205,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
@@ -170,6 +218,11 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+BODYPARAMETER <IPathsMs4I8WSecurityCasesEdiscoverycasesEdiscoverycaseIdSearchesEdiscoverysearchIdMicrosoftGraphSecurityPurgedataPostRequestbodyContentApplicationJsonSchema>: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PurgeAreas <String>]`: purgeAreas
+  - `[PurgeType <String>]`: purgeType
 
 INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
