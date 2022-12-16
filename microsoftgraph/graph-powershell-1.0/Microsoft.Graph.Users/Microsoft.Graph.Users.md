@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Users
 Module Guid: e42894a4-059c-45ff-ab98-570f22253083
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
