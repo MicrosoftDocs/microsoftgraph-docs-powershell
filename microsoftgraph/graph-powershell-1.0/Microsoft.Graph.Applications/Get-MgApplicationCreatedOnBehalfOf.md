@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationcreatedonbehalfof
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationCreatedOnBehalfOf
 
 ## SYNOPSIS
-Supports $filter (eq when counting empty collections).
+Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
 ## SYNTAX
@@ -26,7 +26,7 @@ Get-MgApplicationCreatedOnBehalfOf -InputObject <IApplicationsIdentity> [-Expand
 ```
 
 ## DESCRIPTION
-Supports $filter (eq when counting empty collections).
+Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
 ## EXAMPLES
@@ -112,7 +112,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: key: id of appRoleAssignment
   - `[ApplicationId <String>]`: key: id of application
