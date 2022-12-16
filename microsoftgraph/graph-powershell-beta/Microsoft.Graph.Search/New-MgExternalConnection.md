@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
-ms.prod: "search"
 ---
 
 # New-MgExternalConnection
@@ -392,12 +391,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITYSETTINGS `<IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
+ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>: activitySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
     - `[Priority <Int32?>]`: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
@@ -476,20 +475,21 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalC
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
     - `[Properties <IMicrosoftGraphExternalConnectorsProperty1[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
-      - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
+      - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
+      - `[IsExactMatchRequired <Boolean?>]`: Specifies if the property will be matched exactly for queries. Exact matching can only be set to true for non-searchable properties of type string or stringCollection. Optional.
       - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.
       - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.  Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience. Optional.
       - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable. Retrievable properties are returned in the result set when items are returned by the search API. Retrievable properties are also available to add to the display template used to render search results. Optional.
       - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable. Only properties of type string or stringCollection can be searchable. Non-searchable properties are not added to the search index. Optional.
       - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl, containerName, containerUrl. Note that you must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: iconUrl, containerName, containerUrl.
-      - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
+      - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
       - `[Type <String>]`: propertyType
   - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
   - `[State <String>]`: connectionState
 
-COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: complianceSettings
+COMPLIANCESETTINGS <IMicrosoftGraphExternalConnectorsComplianceSettings>: complianceSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EDiscoveryResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of two eDiscovery result templates per connection.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets. Maximum 16 characters. Only alphanumeric characters allowed.
@@ -502,11 +502,11 @@ COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: comp
       - `[Values <String[]>]`: A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
-CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
+CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
+GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description of the external group. Optional.
   - `[DisplayName <String>]`: The friendly name of the external group. Optional.
@@ -514,7 +514,7 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Type <String>]`: identityType
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
+ITEMS <IMicrosoftGraphExternalConnectorsExternalItem[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
@@ -536,7 +536,7 @@ ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
+OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -555,26 +555,27 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-QUOTA `<IMicrosoftGraphExternalConnectorsConnectionQuota>`: connectionQuota
+QUOTA <IMicrosoftGraphExternalConnectorsConnectionQuota>: connectionQuota
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
+SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
   - `[Properties <IMicrosoftGraphExternalConnectorsProperty1[]>]`: The properties defined for the items in the connection. The minimum number of properties is one, the maximum is 128.
-    - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
+    - `[Aliases <String[]>]`: A set of aliases or a friendly names for the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string might not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^. Optional.
+    - `[IsExactMatchRequired <Boolean?>]`: Specifies if the property will be matched exactly for queries. Exact matching can only be set to true for non-searchable properties of type string or stringCollection. Optional.
     - `[IsQueryable <Boolean?>]`: Specifies if the property is queryable. Queryable properties can be used in Keyword Query Language (KQL) queries. Optional.
     - `[IsRefinable <Boolean?>]`: Specifies if the property is refinable.  Refinable properties can be used to filter search results in the Search API and add a refiner control in the Microsoft Search user experience. Optional.
     - `[IsRetrievable <Boolean?>]`: Specifies if the property is retrievable. Retrievable properties are returned in the result set when items are returned by the search API. Retrievable properties are also available to add to the display template used to render search results. Optional.
     - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable. Only properties of type string or stringCollection can be searchable. Non-searchable properties are not added to the search index. Optional.
     - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl, containerName, containerUrl. Note that you must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: iconUrl, containerName, containerUrl.
-    - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, each string may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
+    - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
     - `[Type <String>]`: propertyType
 
-SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
+SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets. Maximum 16 characters. Only alphanumeric characters allowed.
