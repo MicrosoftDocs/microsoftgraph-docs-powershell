@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintprintertasktrigger
@@ -15,27 +15,27 @@ Update the navigation property taskTriggers in print
 ### UpdateExpanded1 (Default)
 ```
 Update-MgPrintPrinterTaskTrigger -PrintTaskTriggerId <String> -PrinterId <String>
- [-AdditionalProperties <Hashtable>] [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <String>]
+ [-AdditionalProperties <Hashtable>] [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Event <String>]
  [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgPrintPrinterTaskTrigger -PrintTaskTriggerId <String> -PrinterId <String>
- -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskTrigger1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <String>] [-Id <String>] [-PassThru] [-WhatIf]
+ [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Event <String>] [-Id <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskTrigger1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,7 +65,7 @@ printTaskTrigger
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskTrigger
+Type: IMicrosoftGraphPrintTaskTrigger1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -81,7 +81,7 @@ printTaskDefinition
 To construct, please use Get-Help -Online and see NOTES section for DEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition
+Type: IMicrosoftGraphPrintTaskDefinition1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -221,7 +221,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
 ## OUTPUTS
 
 ### System.Boolean
@@ -234,7 +234,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
+BODYPARAMETER <IMicrosoftGraphPrintTaskTrigger>: printTaskTrigger
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
@@ -258,7 +258,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger>`: printTaskTrigger
       - `[Trigger <IMicrosoftGraphPrintTaskTrigger>]`: printTaskTrigger
   - `[Event <String>]`: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition>: printTaskDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
@@ -282,7 +282,7 @@ DEFINITION `<IMicrosoftGraphPrintTaskDefinition>`: printTaskDefinition
       - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintconnector
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # New-MgPrintConnector
@@ -251,7 +250,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
+BODYPARAMETER <IMicrosoftGraphPrintConnector>: printConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppVersion <String>]`: The connector's version.
@@ -285,11 +284,11 @@ BODYPARAMETER `<IMicrosoftGraphPrintConnector>`: printConnector
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-DEVICEHEALTH `<IMicrosoftGraphDeviceHealth>`: deviceHealth
+DEVICEHEALTH <IMicrosoftGraphDeviceHealth>: deviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastConnectionTime <DateTime?>]`: The last time the device was connected.
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.
