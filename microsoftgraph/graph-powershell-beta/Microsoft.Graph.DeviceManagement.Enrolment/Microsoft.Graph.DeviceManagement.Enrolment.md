@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
-Module Guid: 96a1c14f-d984-4319-b029-7d40d4b673b3
+Module Guid: 34812d3a-0cee-441c-9990-9bb48dfc8bbe
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment
 Help Version: 1.0.0.0
 Locale: en-US
@@ -644,6 +644,7 @@ Create new navigation property to appScopes for roleManagement
 
 ### [New-MgRoleManagementCloudPcRoleDefinition](New-MgRoleManagementCloudPcRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 ### [New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom.md)
@@ -664,6 +665,7 @@ Create new navigation property to appScopes for roleManagement
 
 ### [New-MgRoleManagementDeviceManagementRoleDefinition](New-MgRoleManagementDeviceManagementRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 ### [New-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](New-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom.md)
@@ -698,6 +700,7 @@ See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in event
 
 ### [New-MgRoleManagementDirectoryRoleDefinition](New-MgRoleManagementDirectoryRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 ### [New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom.md)
@@ -745,6 +748,7 @@ See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in event
 
 ### [New-MgRoleManagementEntitlementManagementRoleDefinition](New-MgRoleManagementEntitlementManagementRoleDefinition.md)
 Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 ### [New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](New-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom.md)
