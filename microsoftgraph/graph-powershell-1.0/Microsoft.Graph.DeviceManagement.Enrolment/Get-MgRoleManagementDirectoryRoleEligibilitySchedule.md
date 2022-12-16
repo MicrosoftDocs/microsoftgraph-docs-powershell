@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementdirectoryroleeligibilityschedule
 schema: 2.0.0
+ms.prod: "governance"
 ---
 
 # Get-MgRoleManagementDirectoryRoleEligibilitySchedule
