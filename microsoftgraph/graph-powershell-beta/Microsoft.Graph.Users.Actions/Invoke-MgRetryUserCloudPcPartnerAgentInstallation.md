@@ -1,105 +1,47 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusertaskalltask
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgretryusercloudpcpartneragentinstallation
 schema: 2.0.0
 ---
 
-# Move-MgUserTaskAlltask
+# Invoke-MgRetryUserCloudPcPartnerAgentInstallation
 
 ## SYNOPSIS
-Move a baseTask object from one baseTaskList to another.
+Retry installation for the partner agents which failed to install on the Cloud PC.
+Service side will check which agent installation failed firstly and retry.
 
 ## SYNTAX
 
-### MoveExpanded (Default)
+### Retry (Default)
 ```
-Move-MgUserTaskAlltask -BaseTaskId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DestinationTaskListId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Move
-```
-Move-MgUserTaskAlltask -BaseTaskId <String> -UserId <String>
- -BodyParameter <IPaths1366F6KUsersUserIdTasksAlltasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgRetryUserCloudPcPartnerAgentInstallation -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded
+### RetryViaIdentity
 ```
-Move-MgUserTaskAlltask -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DestinationTaskListId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MoveViaIdentity
-```
-Move-MgUserTaskAlltask -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1366F6KUsersUserIdTasksAlltasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgRetryUserCloudPcPartnerAgentInstallation -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Move a baseTask object from one baseTaskList to another.
+Retry installation for the partner agents which failed to install on the Cloud PC.
+Service side will check which agent installation failed firstly and retry.
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BaseTaskId
-key: id of baseTask
+### -CloudPcId
+key: id of cloudPC
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: Retry
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPaths1366F6KUsersUserIdTasksAlltasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move, MoveViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -DestinationTaskListId
-.
-
-```yaml
-Type: String
-Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -112,7 +54,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Parameter Sets: RetryViaIdentity
 Aliases:
 
 Required: True
@@ -122,12 +64,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -UserId
 key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded, Move
+Parameter Sets: Retry
 Aliases:
 
 Required: True
@@ -173,11 +130,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1366F6KUsersUserIdTasksAlltasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBaseTask
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -187,17 +143,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1366F6KUsersUserIdTasksAlltasksBasetaskIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationTaskListId <String>]`: 
-
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[BaseTaskId <String>]`: key: id of baseTask
-  - `[BaseTaskListId <String>]`: key: id of baseTaskList
   - `[CalendarId <String>]`: key: id of calendar
   - `[ChatId <String>]`: key: id of chat
   - `[ChatMessageId <String>]`: key: id of chatMessage

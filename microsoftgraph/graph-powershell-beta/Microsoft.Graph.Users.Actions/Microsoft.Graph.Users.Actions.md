@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: 347db8c6-0876-410a-919a-5eb168f5d752
+Module Guid: 858d0128-7086-4d5d-b326-c605e352a9a4
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -413,7 +413,8 @@ Using the metadata that exists on an already-labeled piece of information, resol
 The contentInfo input is resolved to informationProtectionContentLabel.
 
 ### [Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel](Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel.md)
-Invoke action extractContentLabel
+Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
+The contentInfo input is resolved to informationProtectionContentLabel.
 
 ### [Invoke-MgFollowUserDriveItem](Invoke-MgFollowUserDriveItem.md)
 Follow a driveItem.
@@ -549,24 +550,24 @@ Alternatively, create a draft to reply-all to a message, and send it later.
 
 ### [Invoke-MgReplyUserMailFolderChildFolderMessage](Invoke-MgReplyUserMailFolderChildFolderMessage.md)
 Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply to a message, and send it later.
 
 ### [Invoke-MgReplyUserMailFolderMessage](Invoke-MgReplyUserMailFolderMessage.md)
 Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply to a message, and send it later.
 
 ### [Invoke-MgReplyUserMessage](Invoke-MgReplyUserMessage.md)
 Reply to the sender of a message using either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
+When using JSON format:\n* Specify either a comment or the **body** property of the `message` parameter.
+Specifying both will return an HTTP `400 Bad Request` error.\n* If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), send the reply to the recipients in **replyTo** and not the recipient in the **from** property.
 When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
 This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply to a message, and send it later.
@@ -579,6 +580,10 @@ Reprovision a specific Cloud PC.
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Retire a device
+
+### [Invoke-MgRetryUserCloudPcPartnerAgentInstallation](Invoke-MgRetryUserCloudPcPartnerAgentInstallation.md)
+Retry installation for the partner agents which failed to install on the Cloud PC.
+Service side will check which agent installation failed firstly and retry.
 
 ### [Invoke-MgRotateUserManagedDeviceBitLockerKey](Invoke-MgRotateUserManagedDeviceBitLockerKey.md)
 Rotate BitLockerKeys
@@ -676,12 +681,6 @@ Invoke action moveDevicesToOU
 ### [Move-MgUserMessage](Move-MgUserMessage.md)
 Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
-
-### [Move-MgUserTaskAlltask](Move-MgUserTaskAlltask.md)
-Move a baseTask object from one baseTaskList to another.
-
-### [Move-MgUserTaskListTask](Move-MgUserTaskListTask.md)
-Move a baseTask object from one baseTaskList to another.
 
 ### [New-MgUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration](New-MgUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration.md)
 Invoke action createEnrollmentNotificationConfiguration
@@ -945,7 +944,7 @@ Reboot a specific Cloud PC.
 Reboot device
 
 ### [Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice](Restore-MgUserAuthenticationWindowHelloForBusinessMethodDevice.md)
-Restore a recently deleted application, group, servicePrincipal, or user object from deleted items.
+Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 If an item was accidentally deleted, you can fully restore the item.
 This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
@@ -1220,13 +1219,19 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Test-MgUserSecurityInformationProtectionSensitivityLabelApplication](Test-MgUserSecurityInformationProtectionSensitivityLabelApplication.md)
-Invoke action evaluateApplication
+Compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
+Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
 ### [Test-MgUserSecurityInformationProtectionSensitivityLabelClassificationResult](Test-MgUserSecurityInformationProtectionSensitivityLabelClassificationResult.md)
-Invoke action evaluateClassificationResults
+Use the classification results to compute the sensitivity label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide the contentInfo, which includes existing content metadata key-value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
 
 ### [Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval](Test-MgUserSecurityInformationProtectionSensitivityLabelRemoval.md)
-Invoke action evaluateRemoval
+Indicate to the consuming application what actions it should take to remove the label information.
+Given contentInfo as an input, which includes existing content metadata key-value pairs, the API returns an informationProtectionAction that contains some combination of one or more of the following:
 
 ### [Unblock-MgUserManagedApp](Unblock-MgUserManagedApp.md)
 Unblocks the managed app user from app check-in.
