@@ -9,7 +9,7 @@ ms.prod: "planner"
 # Update-MgPlannerTaskDetail
 
 ## SYNOPSIS
-Update the properties of **plannertaskdetails** object.
+Update the properties of **plannerTaskDetails** object.
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the properties of **plannertaskdetails** object.
+Update the properties of **plannerTaskDetails** object.
 
 ## EXAMPLES
 

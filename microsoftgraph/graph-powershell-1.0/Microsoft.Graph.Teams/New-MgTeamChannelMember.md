@@ -10,6 +10,7 @@ ms.prod: "microsoft-teams"
 
 ## SYNOPSIS
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## SYNTAX
 
@@ -41,6 +42,7 @@ New-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 
 ## DESCRIPTION
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## EXAMPLES
 

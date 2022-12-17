@@ -12,7 +12,7 @@ ms.prod: "applications"
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
-Supports $expand and $filter (eq and ne when counting empty collections).
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgApplicationOwner -ApplicationId <String> [-ExpandProperty <String[]>] [-Fi
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
-Supports $expand and $filter (eq and ne when counting empty collections).
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
 

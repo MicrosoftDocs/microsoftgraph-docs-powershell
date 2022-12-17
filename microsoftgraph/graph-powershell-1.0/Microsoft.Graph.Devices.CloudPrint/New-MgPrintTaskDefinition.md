@@ -23,7 +23,7 @@ New-MgPrintTaskDefinition [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicr
 
 ### Create
 ```
-New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition1> [-WhatIf] [-Confirm]
+New-MgPrintTaskDefinition -BodyParameter <IMicrosoftGraphPrintTaskDefinition> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -70,7 +70,7 @@ printTaskDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition1
+Type: IMicrosoftGraphPrintTaskDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -182,10 +182,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
 ## NOTES
 
 ALIASES

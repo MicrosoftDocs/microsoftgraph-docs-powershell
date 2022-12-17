@@ -10,7 +10,7 @@ ms.prod: "applications"
 
 ## SYNOPSIS
 Federated identities for applications.
-Supports $expand and $filter (startsWith, and eq, ne when counting empty collections and only with advanced query parameters).
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 ## SYNTAX
 
@@ -35,7 +35,7 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Federated identities for applications.
-Supports $expand and $filter (startsWith, and eq, ne when counting empty collections and only with advanced query parameters).
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 ## EXAMPLES
 

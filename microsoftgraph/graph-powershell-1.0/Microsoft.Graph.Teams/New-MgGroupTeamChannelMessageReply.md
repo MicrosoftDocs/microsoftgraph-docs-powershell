@@ -9,7 +9,7 @@ ms.prod: "microsoft-teams"
 # New-MgGroupTeamChannelMessageReply
 
 ## SYNOPSIS
-Send a new reply to a chatMessage in a specified channel.
+Create a new reply to a chatMessage in a specified channel.
 
 ## SYNTAX
 
@@ -56,7 +56,7 @@ New-MgGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Send a new reply to a chatMessage in a specified channel.
+Create a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

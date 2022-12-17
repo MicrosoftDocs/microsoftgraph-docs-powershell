@@ -639,7 +639,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
-        - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+        - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: 
@@ -662,7 +662,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
               - `[Scope <String>]`: 
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
-            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+            - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
             - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
           - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
@@ -826,7 +826,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
-        - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+        - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: 
@@ -849,7 +849,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
               - `[Scope <String>]`: 
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
-            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+            - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
             - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
           - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
@@ -1014,7 +1014,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
-        - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+        - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: 
@@ -1037,7 +1037,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
               - `[Scope <String>]`: 
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
-            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+            - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
             - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
           - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
@@ -1197,7 +1197,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition1\[]>: Column order information 
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
         - `[Key <String>]`: Key for the key-value pair.
         - `[Value <String>]`: Value for the key-value pair.
-      - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+      - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Relationship <String>]`: 
@@ -1220,7 +1220,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition1\[]>: Column order information 
             - `[Scope <String>]`: 
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
-          - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+          - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
           - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
         - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
       - `[Set <IMicrosoftGraphTermStoreSet>]`: set
@@ -1331,7 +1331,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition1\[]>: The collection of column definiti
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
         - `[Key <String>]`: Key for the key-value pair.
         - `[Value <String>]`: Value for the key-value pair.
-      - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+      - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Relationship <String>]`: 
@@ -1354,7 +1354,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition1\[]>: The collection of column definiti
             - `[Scope <String>]`: 
             - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
           - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
-          - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+          - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
           - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
         - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
       - `[Set <IMicrosoftGraphTermStoreSet>]`: set
@@ -1472,7 +1472,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet1>`: documentSet
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
           - `[Key <String>]`: Key for the key-value pair.
           - `[Value <String>]`: Value for the key-value pair.
-        - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: To indicate which terms are related to the current term as either pinned or reused.
+        - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
           - `[Relationship <String>]`: 
@@ -1495,7 +1495,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet1>`: documentSet
               - `[Scope <String>]`: 
               - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: All sets under the group in a term [store].
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: Custom properties for the set.
-            - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
+            - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
             - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
           - `[ToTerm <IMicrosoftGraphTermStoreTerm>]`: term
         - `[Set <IMicrosoftGraphTermStoreSet>]`: set
@@ -1561,6 +1561,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[GroupId <String>]`: key: id of group
   - `[GroupId1 <String>]`: key: id of group
+  - `[HorizontalSectionColumnId <String>]`: key: id of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: key: id of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
@@ -1586,6 +1588,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[TermId1 <String>]`: key: id of term
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
+  - `[WebPartId <String>]`: key: id of webPart
 
 ORDER `<IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

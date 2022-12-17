@@ -229,6 +229,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcOrganizationSettings>`: cloudPcOrganizatio
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EnableMemAutoEnroll <Boolean?>]`: Specifies whether new Cloud PCs will be automatically enrolled in Microsoft Endpoint Manager(MEM). The default value is false.
+  - `[EnableSingleSignOn <Boolean?>]`: 
   - `[OSVersion <String>]`: cloudPcOperatingSystem
   - `[UserAccountType <String>]`: cloudPcUserAccountType
   - `[WindowsSettings <IMicrosoftGraphCloudPcWindowsSettings>]`: cloudPcWindowsSettings
