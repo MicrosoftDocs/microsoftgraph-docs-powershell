@@ -508,6 +508,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcOnPremisesConnection>`: cloudPcOnPremisesC
   - `[SubscriptionName <String>]`: The name of the target Azure subscription. Read-only.
   - `[Type <String>]`: cloudPcOnPremisesConnectionType
   - `[VirtualNetworkId <String>]`: The ID of the target virtual network. Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}.
+  - `[VirtualNetworkLocation <String>]`: 
 
 HEALTHCHECKSTATUSDETAILS `<IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>`: cloudPcOnPremisesConnectionStatusDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

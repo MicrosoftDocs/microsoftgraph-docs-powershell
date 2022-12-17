@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 schema: 2.0.0
+ms.prod: "identity-and-sign-in"
 ---
 
 # New-MgIdentityConditionalAccessPolicy
@@ -382,7 +383,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy>`: conditionalAccessPolic
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
       - `[IncludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
-    - `[ServicePrincipalRiskLevels <String[]>]`: 
+    - `[ServicePrincipalRiskLevels <String[]>]`: Service principal risk levels included in the policy. Possible values are: low, medium, high, none, unknownFutureValue.
     - `[SignInRiskLevels <String[]>]`: Sign-in risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
     - `[UserRiskLevels <String[]>]`: User risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
     - `[Users <IMicrosoftGraphConditionalAccessUsers>]`: conditionalAccessUsers
@@ -453,7 +454,7 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet>`: conditionalAccessCo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
     - `[IncludePlatforms <String[]>]`: Possible values are: android, iOS, windows, windowsPhone, macOS, linux, all, unknownFutureValue.
-  - `[ServicePrincipalRiskLevels <String[]>]`: 
+  - `[ServicePrincipalRiskLevels <String[]>]`: Service principal risk levels included in the policy. Possible values are: low, medium, high, none, unknownFutureValue.
   - `[SignInRiskLevels <String[]>]`: Sign-in risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
   - `[UserRiskLevels <String[]>]`: User risk levels included in the policy. Possible values are: low, medium, high, hidden, none, unknownFutureValue. Required.
   - `[Users <IMicrosoftGraphConditionalAccessUsers>]`: conditionalAccessUsers

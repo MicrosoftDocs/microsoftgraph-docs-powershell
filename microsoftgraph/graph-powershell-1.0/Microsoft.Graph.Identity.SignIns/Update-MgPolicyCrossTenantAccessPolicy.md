@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
+ms.prod: "identity-and-sign-in"
 ---
 
 # Update-MgPolicyCrossTenantAccessPolicy
@@ -14,7 +15,7 @@ Update the properties of a cross-tenant access policy.
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>]
+Update-MgPolicyCrossTenantAccessPolicy [-AdditionalProperties <Hashtable>] [-AllowedCloudEndpoints <String[]>]
  [-Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Partners <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner[]>] [-PassThru] [-WhatIf] [-Confirm]
@@ -51,6 +52,21 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedCloudEndpoints
+.
+
+```yaml
+Type: String[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -243,6 +259,7 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicy>`: crossTenantAccessPolic
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AllowedCloudEndpoints <String[]>]`: 
   - `[Default <IMicrosoftGraphCrossTenantAccessPolicyConfigurationDefault>]`: crossTenantAccessPolicyConfigurationDefault
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.

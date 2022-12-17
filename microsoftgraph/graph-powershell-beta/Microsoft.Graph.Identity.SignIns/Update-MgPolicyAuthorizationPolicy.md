@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy
 schema: 2.0.0
+ms.prod: "identity-and-sign-in"
 ---
 
 # Update-MgPolicyAuthorizationPolicy
@@ -437,7 +438,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
     - `[IsDefault <Boolean?>]`: 
     - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
       - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+      - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
       - `[ExcludedResourceActions <String[]>]`: 
   - `[DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions1>]`: defaultUserRolePermissions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -454,7 +455,7 @@ DEFAULTUSERROLEOVERRIDES <IMicrosoftGraphDefaultUserRoleOverride\[]>: .
   - `[IsDefault <Boolean?>]`: 
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
     - `[ExcludedResourceActions <String[]>]`: 
 
 DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions1>`: defaultUserRolePermissions

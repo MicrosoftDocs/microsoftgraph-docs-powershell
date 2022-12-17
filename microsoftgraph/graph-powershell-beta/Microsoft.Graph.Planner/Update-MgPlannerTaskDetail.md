@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
 schema: 2.0.0
+ms.prod: "planner"
 ---
 
 # Update-MgPlannerTaskDetail
 
 ## SYNOPSIS
-Update the properties of **plannertaskdetails** object.
+Update the properties of **plannerTaskDetails** object.
 
 ## SYNTAX
 
@@ -39,7 +40,7 @@ Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Update the properties of **plannertaskdetails** object.
+Update the properties of **plannerTaskDetails** object.
 
 ## EXAMPLES
 

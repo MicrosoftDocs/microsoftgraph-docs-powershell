@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationownerbyref
 schema: 2.0.0
+ms.prod: "applications"
 ---
 
 # Get-MgApplicationOwnerByRef
@@ -11,7 +12,7 @@ schema: 2.0.0
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
-Supports $expand and $filter (eq and ne when counting empty collections).
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## SYNTAX
 
@@ -25,7 +26,7 @@ Get-MgApplicationOwnerByRef -ApplicationId <String> [-Filter <String>] [-Search 
 Directory objects that are owners of the application.
 Read-only.
 Nullable.
-Supports $expand and $filter (eq and ne when counting empty collections).
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
 

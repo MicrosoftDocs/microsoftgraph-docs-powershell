@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgchat
 schema: 2.0.0
+ms.prod: "microsoft-teams"
 ---
 
 # Update-MgChat
@@ -591,9 +592,9 @@ BODYPARAMETER `<IMicrosoftGraphChat>`: chat
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
-    - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+    - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       - `[Actions <String>]`: chatMessageActions
-      - `[ModifiedDateTime <DateTime?>]`: 
+      - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
       - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -842,9 +843,9 @@ MESSAGES <IMicrosoftGraphChatMessage\[]>: A collection of all the messages in th
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
         - `[Id <String>]`: Unique identifier for the identity.
-  - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+  - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
     - `[Actions <String>]`: chatMessageActions
-    - `[ModifiedDateTime <DateTime?>]`: 
+    - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
     - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -967,9 +968,9 @@ PINNEDMESSAGES <IMicrosoftGraphPinnedChatMessageInfo1\[]>: A collection of all t
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
           - `[Id <String>]`: Unique identifier for the identity.
-    - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+    - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: List of activity history of a message item, including modification time and actions, such as reactionAdded, reactionRemoved, or reaction changes, on the message.
       - `[Actions <String>]`: chatMessageActions
-      - `[ModifiedDateTime <DateTime?>]`: 
+      - `[ModifiedDateTime <DateTime?>]`: The date and time when the message was modified.
       - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z

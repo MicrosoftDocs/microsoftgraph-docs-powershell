@@ -210,7 +210,7 @@ BODYPARAMETER `<IMicrosoftGraphDefaultUserRoleOverride>`: defaultUserRoleOverrid
   - `[IsDefault <Boolean?>]`: 
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: 
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+    - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
     - `[ExcludedResourceActions <String[]>]`: 
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
@@ -292,7 +292,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
 
 ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: .
   - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
-  - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective.
+  - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS

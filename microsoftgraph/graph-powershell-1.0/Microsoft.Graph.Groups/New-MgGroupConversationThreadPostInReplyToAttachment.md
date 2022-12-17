@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoattachment
 schema: 2.0.0
+ms.prod: "groups"
 ---
 
 # New-MgGroupConversationThreadPostInReplyToAttachment
@@ -322,6 +323,8 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: key: id of extension
   - `[GroupId <String>]`: key: id of group
   - `[GroupLifecyclePolicyId <String>]`: key: id of groupLifecyclePolicy
+  - `[HorizontalSectionColumnId <String>]`: key: id of horizontalSectionColumn
+  - `[HorizontalSectionId <String>]`: key: id of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
@@ -347,5 +350,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: key: id of user
+  - `[WebPartId <String>]`: key: id of webPart
 
 ## RELATED LINKS

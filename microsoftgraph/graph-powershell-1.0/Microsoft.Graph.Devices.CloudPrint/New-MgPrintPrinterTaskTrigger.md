@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # New-MgPrintPrinterTaskTrigger
@@ -16,27 +17,27 @@ Currently, only **one** task trigger can be specified per printer, but this limi
 ### CreateExpanded (Default)
 ```
 New-MgPrintPrinterTaskTrigger -PrinterId <String> [-AdditionalProperties <Hashtable>]
- [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Event <String>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrintPrinterTaskTrigger -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintTaskTrigger1> [-WhatIf]
+New-MgPrintPrinterTaskTrigger -PrinterId <String> -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Event <String>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <String>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintTaskTrigger1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,7 +81,7 @@ printTaskTrigger
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskTrigger1
+Type: IMicrosoftGraphPrintTaskTrigger
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -96,7 +97,7 @@ printTaskDefinition
 To construct, please use Get-Help -Online and see NOTES section for DEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition1
+Type: IMicrosoftGraphPrintTaskDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -206,10 +207,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
 ## NOTES
 
 ALIASES

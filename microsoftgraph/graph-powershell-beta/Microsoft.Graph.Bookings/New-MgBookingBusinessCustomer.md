@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomer
 schema: 2.0.0
+ms.prod: "bookings"
 ---
 
 # New-MgBookingBusinessCustomer
@@ -15,7 +16,7 @@ Create a new bookingCustomer object.
 ### CreateExpanded (Default)
 ```
 New-MgBookingBusinessCustomer -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-DisplayName <String>] [-EmailAddress <String>]
+ [-Addresses <IMicrosoftGraphPhysicalAddress1[]>] [-DisplayName <String>] [-EmailAddress <String>]
  [-Id <String>] [-Phones <IMicrosoftGraphPhone[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +29,7 @@ New-MgBookingBusinessCustomer -BookingBusinessId <String> -BodyParameter <IMicro
 ### CreateViaIdentityExpanded
 ```
 New-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Addresses <IMicrosoftGraphPhysicalAddress[]>] [-DisplayName <String>] [-EmailAddress <String>]
+ [-Addresses <IMicrosoftGraphPhysicalAddress1[]>] [-DisplayName <String>] [-EmailAddress <String>]
  [-Id <String>] [-Phones <IMicrosoftGraphPhone[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -108,7 +109,7 @@ Addresses associated with the customer, including home, business and other addre
 To construct, please use Get-Help -Online and see NOTES section for ADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress[]
+Type: IMicrosoftGraphPhysicalAddress1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +279,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESSES <IMicrosoftGraphPhysicalAddress\[]>: Addresses associated with the customer, including home, business and other addresses.
+ADDRESSES <IMicrosoftGraphPhysicalAddress1\[]>: Addresses associated with the customer, including home, business and other addresses.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[PostOfficeBox <String>]`: The post office box number.
@@ -292,7 +293,7 @@ BODYPARAMETER `<IMicrosoftGraphBookingCustomer>`: Represents a customer of the b
   - `[EmailAddress <String>]`: The email address of the person.
   - `[DisplayName <String>]`: A name for the derived entity, which interfaces with customers.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Addresses <IMicrosoftGraphPhysicalAddress[]>]`: Addresses associated with the customer, including home, business and other addresses.
+  - `[Addresses <IMicrosoftGraphPhysicalAddress1[]>]`: Addresses associated with the customer, including home, business and other addresses.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
     - `[PostOfficeBox <String>]`: The post office box number.
@@ -314,6 +315,9 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingServiceId <String>]`: key: id of bookingService
   - `[BookingStaffMemberBaseId <String>]`: key: id of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: key: id of bookingStaffMember
+  - `[BusinessScenarioId <String>]`: key: id of businessScenario
+  - `[BusinessScenarioTaskId <String>]`: key: id of businessScenarioTask
+  - `[PlannerPlanConfigurationLocalizationId <String>]`: key: id of plannerPlanConfigurationLocalization
 
 PHONES <IMicrosoftGraphPhone\[]>: Phone numbers associated with the customer, including home, business and mobile numbers.
   - `[Number <String>]`: The phone number.

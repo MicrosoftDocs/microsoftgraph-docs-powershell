@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintertasktrigger
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Get-MgPrintPrinterTaskTrigger
@@ -261,7 +262,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
 ## NOTES
 
 ALIASES

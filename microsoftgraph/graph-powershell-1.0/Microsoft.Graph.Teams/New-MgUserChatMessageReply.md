@@ -3,12 +3,13 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchatmessagereply
 schema: 2.0.0
+ms.prod: "microsoft-teams"
 ---
 
 # New-MgUserChatMessageReply
 
 ## SYNOPSIS
-Send a new reply to a chatMessage in a specified channel.
+Create a new reply to a chatMessage in a specified channel.
 
 ## SYNTAX
 
@@ -55,7 +56,7 @@ New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Send a new reply to a chatMessage in a specified channel.
+Create a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 

@@ -304,7 +304,7 @@ BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
     - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
     - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+BODYPARAMETER `<IMicrosoftGraphInformationProtection1>`: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker

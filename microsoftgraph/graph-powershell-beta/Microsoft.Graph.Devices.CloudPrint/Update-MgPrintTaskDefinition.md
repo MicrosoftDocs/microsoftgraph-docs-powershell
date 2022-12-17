@@ -22,7 +22,7 @@ Update-MgPrintTaskDefinition -PrintTaskDefinitionId <String> [-AdditionalPropert
 ### Update1
 ```
 Update-MgPrintTaskDefinition -PrintTaskDefinitionId <String>
- -BodyParameter <IMicrosoftGraphPrintTaskDefinition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskDefinition1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -35,7 +35,7 @@ Update-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity> [-Additio
 ### UpdateViaIdentity1
 ```
 Update-MgPrintTaskDefinition -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintTaskDefinition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskDefinition1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -80,7 +80,7 @@ printTaskDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition
+Type: IMicrosoftGraphPrintTaskDefinition1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -239,7 +239,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition1
 ## OUTPUTS
 
 ### System.Boolean

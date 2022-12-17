@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationfederatedidentitycredential
 schema: 2.0.0
+ms.prod: "applications"
 ---
 
 # Get-MgApplicationFederatedIdentityCredential
 
 ## SYNOPSIS
 Federated identities for applications.
-Supports $expand and $filter (startsWith, and eq, ne when counting empty collections and only with advanced query parameters).
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 ## SYNTAX
 
@@ -34,7 +35,7 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 
 ## DESCRIPTION
 Federated identities for applications.
-Supports $expand and $filter (startsWith, and eq, ne when counting empty collections and only with advanced query parameters).
+Supports $expand and $filter (startsWith, /$count eq 0, /$count ne 0).
 
 ## EXAMPLES
 

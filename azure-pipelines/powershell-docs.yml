@@ -25,6 +25,12 @@ resources:
      name: microsoftgraph/msgraph-sdk-powershell
      ref: dev
 
+   - repository: microsoft-graph-docs
+     type: github
+     endpoint: microsoftgraph
+     name: microsoftgraph/microsoft-graph-docs
+     ref: main
+
 variables:
   buildConfiguration: 'Release'
 
@@ -62,6 +68,14 @@ jobs:
       targetType: 'filePath'
       pwsh: true
       filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+
+  - task: PowerShell@2
+    displayName: 'Update metadata header'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\MsProdUpdate.ps1  
 
   - task: PowerShell@2
     displayName: Pushing to github

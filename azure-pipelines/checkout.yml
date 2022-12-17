@@ -5,6 +5,12 @@ steps:
   submodules: true
   persistCredentials: true
 
+- checkout: microsoft-graph-docs
+  clean: true
+  fetchDepth: 1
+  submodules: true
+  persistCredentials: true
+
 - checkout: self
   clean: true
   fetchDepth: 1

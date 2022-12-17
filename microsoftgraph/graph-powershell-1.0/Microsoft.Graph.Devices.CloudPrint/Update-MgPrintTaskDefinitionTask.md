@@ -15,8 +15,8 @@ Update the navigation property tasks in print
 ### UpdateExpanded (Default)
 ```
 Update-MgPrintTaskDefinitionTask -PrintTaskDefinitionId <String> -PrintTaskId <String>
- [-AdditionalProperties <Hashtable>] [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Id <String>]
- [-ParentUrl <String>] [-Status <IMicrosoftGraphPrintTaskStatus>] [-Trigger <IMicrosoftGraphPrintTaskTrigger1>]
+ [-AdditionalProperties <Hashtable>] [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Id <String>]
+ [-ParentUrl <String>] [-Status <IMicrosoftGraphPrintTaskStatus>] [-Trigger <IMicrosoftGraphPrintTaskTrigger>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,8 +29,8 @@ Update-MgPrintTaskDefinitionTask -PrintTaskDefinitionId <String> -PrintTaskId <S
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrintTaskDefinitionTask -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Id <String>] [-ParentUrl <String>]
- [-Status <IMicrosoftGraphPrintTaskStatus>] [-Trigger <IMicrosoftGraphPrintTaskTrigger1>] [-PassThru] [-WhatIf]
+ [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Id <String>] [-ParentUrl <String>]
+ [-Status <IMicrosoftGraphPrintTaskStatus>] [-Trigger <IMicrosoftGraphPrintTaskTrigger>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -98,7 +98,7 @@ printTaskDefinition
 To construct, please use Get-Help -Online and see NOTES section for DEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition1
+Type: IMicrosoftGraphPrintTaskDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ printTaskTrigger
 To construct, please use Get-Help -Online and see NOTES section for TRIGGER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskTrigger1
+Type: IMicrosoftGraphPrintTaskTrigger
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

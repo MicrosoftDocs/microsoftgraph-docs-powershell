@@ -15,27 +15,27 @@ Update the navigation property taskTriggers in print
 ### UpdateExpanded (Default)
 ```
 Update-MgPrintPrinterTaskTrigger -PrintTaskTriggerId <String> -PrinterId <String>
- [-AdditionalProperties <Hashtable>] [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Event <String>]
+ [-AdditionalProperties <Hashtable>] [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <String>]
  [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrintPrinterTaskTrigger -PrintTaskTriggerId <String> -PrinterId <String>
- -BodyParameter <IMicrosoftGraphPrintTaskTrigger1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Definition <IMicrosoftGraphPrintTaskDefinition1>] [-Event <String>] [-Id <String>] [-PassThru] [-WhatIf]
+ [-Definition <IMicrosoftGraphPrintTaskDefinition>] [-Event <String>] [-Id <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPrintPrinterTaskTrigger -InputObject <IDevicesCloudPrintIdentity>
- -BodyParameter <IMicrosoftGraphPrintTaskTrigger1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrintTaskTrigger> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,7 +65,7 @@ printTaskTrigger
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskTrigger1
+Type: IMicrosoftGraphPrintTaskTrigger
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,7 +81,7 @@ printTaskDefinition
 To construct, please use Get-Help -Online and see NOTES section for DEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition1
+Type: IMicrosoftGraphPrintTaskDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskTrigger
 ## OUTPUTS
 
 ### System.Boolean

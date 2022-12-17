@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskprogresstaskboardformat
 schema: 2.0.0
+ms.prod: "planner"
 ---
 
 # Update-MgPlannerTaskProgressTaskBoardFormat
@@ -121,8 +122,8 @@ Accept wildcard characters: False
 ```
 
 ### -OrderHint
-Hint value used to order the task on the Progress view of the Task Board.
-The format is defined as outlined here.
+Hint value used to order the task on the progress view of the task board.
+For details about the supported format, see Using order hints in Planner.
 
 ```yaml
 Type: String
@@ -219,7 +220,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[OrderHint <String>]`: Hint value used to order the task on the Progress view of the Task Board. The format is defined as outlined here.
+  - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
 
 INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
