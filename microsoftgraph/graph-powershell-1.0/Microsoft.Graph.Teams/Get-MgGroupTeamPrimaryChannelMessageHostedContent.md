@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamprimarychannelmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamPrimaryChannelMessageHostedContent
@@ -36,6 +35,39 @@ Get-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> 
 Content in a message hosted by Microsoft Teams - for example, images or code snippets.
 
 ## EXAMPLES
+
+### Example 1: List hosted content for a channel message
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+```
+
+This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List hosted content for reply to a channel message
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+```
+
+This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: List hosted content for message in a chat
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+```
+
+This example shows how to use the Get-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -269,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
