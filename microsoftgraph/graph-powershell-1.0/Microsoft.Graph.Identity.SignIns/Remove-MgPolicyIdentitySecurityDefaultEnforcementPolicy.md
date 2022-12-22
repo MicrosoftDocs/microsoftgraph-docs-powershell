@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy
@@ -22,6 +21,21 @@ Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-Pa
 Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	IsEnabled = $false
+}
+
+Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
