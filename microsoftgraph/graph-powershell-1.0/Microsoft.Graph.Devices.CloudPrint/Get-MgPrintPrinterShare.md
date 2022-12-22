@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershare
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintPrinterShare
@@ -42,6 +41,17 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Devices.CloudPrint
+
+Get-MgPrintPrinterShare -PrinterId $printerId
+```
+
+This example shows how to use the Get-MgPrintPrinterShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -260,7 +270,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PrintConnectorId <String>]`: key: id of printConnector
   - `[PrintOperationId <String>]`: key: id of printOperation
