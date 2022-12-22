@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthreadpostinreplytoattachment
 schema: 2.0.0
+ms.prod: "groups"
 ---
 
 # New-MgGroupConversationThreadPostInReplyToAttachment
