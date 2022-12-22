@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipaldelegatedpermissionclassification
 schema: 2.0.0
+ms.prod: "applications"
 ---
 
 # Get-MgServicePrincipalDelegatedPermissionClassification
