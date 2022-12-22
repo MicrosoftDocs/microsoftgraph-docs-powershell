@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageattachment
 schema: 2.0.0
-ms.prod: "outlook"
 ---
 
 # New-MgUserMailFolderMessageAttachment
@@ -49,6 +48,18 @@ You can add an attachment to an existing message by posting to its attachments c
 This operation limits the size of the attachment you can add to under 3 MB.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId
+```
+
+This example shows how to use the New-MgUserMailFolderMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -286,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
@@ -295,7 +306,7 @@ BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
   - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
