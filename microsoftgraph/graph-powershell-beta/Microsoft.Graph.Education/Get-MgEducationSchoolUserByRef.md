@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooluserbyref
 schema: 2.0.0
-ms.prod: "education"
 ---
 
 # Get-MgEducationSchoolUserByRef
@@ -23,6 +22,17 @@ Get-MgEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>] [-
 Retrieve a list of users at a school.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId
+```
+
+This example shows how to use the Get-MgEducationSchoolUserByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
