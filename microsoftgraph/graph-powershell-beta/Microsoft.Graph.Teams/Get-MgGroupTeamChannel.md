@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamchannel
 schema: 2.0.0
-ms.prod: "microsoft-teams"
 ---
 
 # Get-MgGroupTeamChannel
@@ -36,6 +35,39 @@ Get-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 The collection of channels and messages associated with the team.
 
 ## EXAMPLES
+
+### Example 1: List all channels
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannel -TeamId $teamId
+```
+
+This example shows how to use the Get-MgGroupTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List all private channels
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'"
+```
+
+This example shows how to use the Get-MgGroupTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: List all shared channels
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
+```
+
+This example shows how to use the Get-MgGroupTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -254,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
