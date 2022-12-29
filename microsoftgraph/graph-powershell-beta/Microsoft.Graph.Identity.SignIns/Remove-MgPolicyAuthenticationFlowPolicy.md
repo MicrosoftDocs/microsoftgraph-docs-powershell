@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyauthenticationflowpolicy
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # Remove-MgPolicyAuthenticationFlowPolicy
@@ -22,6 +21,23 @@ Remove-MgPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-WhatIf
 Delete navigation property authenticationFlowsPolicy for policies
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	SelfServiceSignUp = @{
+		IsEnabled = $true
+	}
+}
+
+Update-MgPolicyAuthenticationFlowPolicy -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgPolicyAuthenticationFlowPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
