@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/new-mgdevicemanagementgrouppolicymigrationreport
@@ -128,7 +128,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>]`: The Group Policy Object file uploaded by admin.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -140,7 +140,7 @@ BODYPARAMETER `<IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoft
     - `[OuDistinguishedName <String>]`: The distinguished name of the OU.
     - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
 
-GROUPPOLICYOBJECTFILE `<IMicrosoftGraphGroupPolicyObjectFile>`: The Group Policy Object file uploaded by admin.
+GROUPPOLICYOBJECTFILE <IMicrosoftGraphGroupPolicyObjectFile>: The Group Policy Object file uploaded by admin.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Content <String>]`: The Group Policy Object file content.
