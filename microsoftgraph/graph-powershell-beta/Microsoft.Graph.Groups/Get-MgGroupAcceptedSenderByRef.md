@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupacceptedsenderbyref
 schema: 2.0.0
-ms.prod: "groups"
 ---
 
 # Get-MgGroupAcceptedSenderByRef
@@ -26,6 +25,17 @@ Users in the accepted senders list can post to conversations of the group (ident
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupAcceptedSender -GroupId $groupId
+```
+
+This example shows how to use the Get-MgGroupAcceptedSenderByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

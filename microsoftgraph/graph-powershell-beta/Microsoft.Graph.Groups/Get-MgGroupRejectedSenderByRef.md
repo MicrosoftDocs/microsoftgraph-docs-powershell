@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggrouprejectedsenderbyref
 schema: 2.0.0
-ms.prod: "groups"
 ---
 
 # Get-MgGroupRejectedSenderByRef
@@ -26,6 +25,17 @@ Users in the rejected senders list cannot post to conversations of the group (id
 Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Groups
+
+Get-MgGroupRejectedSender -GroupId $groupId
+```
+
+This example shows how to use the Get-MgGroupRejectedSenderByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
