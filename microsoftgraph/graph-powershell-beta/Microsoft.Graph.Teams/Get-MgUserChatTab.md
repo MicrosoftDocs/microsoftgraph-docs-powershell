@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserchattab
 schema: 2.0.0
-ms.prod: "microsoft-teams"
 ---
 
 # Get-MgUserChatTab
@@ -38,6 +37,28 @@ A collection of all the tabs in the chat.
 Nullable.
 
 ## EXAMPLES
+
+### Example 1: List all the tabs in the chat along with associated Teams app
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp"
+```
+
+This example shows how to use the Get-MgUserChatTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List all the tabs belonging to a specific app in a chat
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
+```
+
+This example shows how to use the Get-MgUserChatTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -271,7 +292,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
