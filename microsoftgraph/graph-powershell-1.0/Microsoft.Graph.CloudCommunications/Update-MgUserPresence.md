@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mguserpresence
 schema: 2.0.0
-ms.prod: "cloud-communications"
 ---
 
 # Update-MgUserPresence
@@ -42,6 +41,40 @@ Update-MgUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter
 Update the navigation property presence in users
 
 ## EXAMPLES
+
+### Example 1: Get your own presence information
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgUserPresence -UserId $userId
+```
+
+This example shows how to use the Update-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the presence information of another user
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgUserPresence -UserId $userId
+```
+
+This example shows how to use the Update-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the presence information of another user
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationPresence -PresenceId $presenceId
+```
+
+This example shows how to use the Update-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -220,13 +253,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPresence>`: presence
+BODYPARAMETER <IMicrosoftGraphPresence>: presence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive, InAMeeting, Offline, OffWork, OutOfOffice, PresenceUnknown, Presenting, UrgentInterruptionsOnly.
   - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
