@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryimpactedresource
@@ -343,11 +343,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: .
+ADDITIONALDETAILS <IMicrosoftGraphKeyValue\[]>: .
   - `[Key <String>]`: Key.
   - `[Value <String>]`: Value.
 
-BODYPARAMETER <IMicrosoftGraphRecommendationResource>: recommendationResource
+BODYPARAMETER `<IMicrosoftGraphRecommendationResource>`: recommendationResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: 
@@ -363,7 +363,7 @@ BODYPARAMETER <IMicrosoftGraphRecommendationResource>: recommendationResource
   - `[ResourceType <String>]`: 
   - `[Status <String>]`: recommendationStatus
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
