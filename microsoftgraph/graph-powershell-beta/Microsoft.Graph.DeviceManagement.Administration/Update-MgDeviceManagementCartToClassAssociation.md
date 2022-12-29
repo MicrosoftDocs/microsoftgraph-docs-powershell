@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcarttoclassassociation
@@ -295,7 +295,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCartToClassAssociation>`: CartToClassAssociation for associating device carts with classrooms.
+BODYPARAMETER <IMicrosoftGraphCartToClassAssociation>: CartToClassAssociation for associating device carts with classrooms.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClassroomIds <String[]>]`: Identifiers of classrooms to be associated with device carts.
@@ -306,7 +306,7 @@ BODYPARAMETER `<IMicrosoftGraphCartToClassAssociation>`: CartToClassAssociation 
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[Version <Int32?>]`: Version of the CartToClassAssociation.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
