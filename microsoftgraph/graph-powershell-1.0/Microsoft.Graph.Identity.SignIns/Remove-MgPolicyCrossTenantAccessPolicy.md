@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # Remove-MgPolicyCrossTenantAccessPolicy
@@ -22,6 +21,21 @@ Remove-MgPolicyCrossTenantAccessPolicy [-IfMatch <String>] [-PassThru] [-WhatIf]
 Delete navigation property crossTenantAccessPolicy for policies
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	DisplayName = "CrossTenantAccessPolicy"
+}
+
+Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
