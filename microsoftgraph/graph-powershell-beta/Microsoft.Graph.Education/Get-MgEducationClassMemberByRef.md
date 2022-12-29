@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
 schema: 2.0.0
-ms.prod: "education"
 ---
 
 # Get-MgEducationClassMemberByRef
@@ -25,6 +24,17 @@ Retrieves the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Education
+
+Get-MgEducationClassMember -EducationClassId $educationClassId
+```
+
+This example shows how to use the Get-MgEducationClassMemberByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
