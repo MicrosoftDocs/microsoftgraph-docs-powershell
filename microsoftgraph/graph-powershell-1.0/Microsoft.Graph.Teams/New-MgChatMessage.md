@@ -9,8 +9,7 @@ ms.prod: "microsoft-teams"
 # New-MgChatMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Send a new chatMessage in the specified channel or a chat.
 
 ## SYNTAX
 
@@ -57,8 +56,7 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
 
