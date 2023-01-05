@@ -95,7 +95,7 @@
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
 	    "ms.prod": "non-product-specific",
-      "ms.technology": "",
+      "ms.technology": "microsoft-graph-powershell",
       "ms.topic": "reference",
       "ms.author": "twamalwa",
       "author": "finsharp"
