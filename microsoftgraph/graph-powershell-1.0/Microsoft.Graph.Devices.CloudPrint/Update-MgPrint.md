@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/update-mgprint
@@ -240,7 +240,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrint>`: print
+BODYPARAMETER <IMicrosoftGraphPrint>: print
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connectors <IMicrosoftGraphPrintConnector1[]>]`: The list of available print connectors.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -899,7 +899,7 @@ BODYPARAMETER `<IMicrosoftGraphPrint>`: print
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1337,8 +1337,8 @@ BODYPARAMETER `<IMicrosoftGraphPrint>`: print
                         - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                         - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                         - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                        - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
-                        - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                        - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
+                        - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                         - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
                         - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                         - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
@@ -2738,9 +2738,9 @@ BODYPARAMETER `<IMicrosoftGraphPrint>`: print
                     - `[Title <String>]`: Title of the task.
                 - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+                  - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
                   - `[Type <String>]`: 
-                  - `[Url <String>]`: The full canonical URL of the container.
+                  - `[Url <String>]`: The full canonical URL of the container. Optional.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                 - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Details <IMicrosoftGraphPlannerPlanDetails1>]`: plannerPlanDetails
@@ -3009,7 +3009,7 @@ BODYPARAMETER `<IMicrosoftGraphPrint>`: print
   - `[Shares <IMicrosoftGraphPrinterShare1[]>]`: The list of printer shares registered in the tenant.
   - `[TaskDefinitions <IMicrosoftGraphPrintTaskDefinition1[]>]`: List of abstract definition for a task that can be triggered when various events occur within Universal Print.
 
-CONNECTORS <IMicrosoftGraphPrintConnector1\[]>: The list of available print connectors.
+CONNECTORS <IMicrosoftGraphPrintConnector1[]>: The list of available print connectors.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppVersion <String>]`: The connector's version.
   - `[DisplayName <String>]`: The name of the connector.
@@ -3036,7 +3036,7 @@ CONNECTORS <IMicrosoftGraphPrintConnector1\[]>: The list of available print conn
   - `[OperatingSystem <String>]`: The connector machine's operating system version.
   - `[RegisteredDateTime <DateTime?>]`: The DateTimeOffset when the connector was registered.
 
-OPERATIONS <IMicrosoftGraphPrintOperation\[]>: The list of print long running operations.
+OPERATIONS <IMicrosoftGraphPrintOperation[]>: The list of print long running operations.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the operation was created. Read-only.
   - `[Status <IMicrosoftGraphPrintOperationStatus>]`: printOperationStatus
@@ -3044,7 +3044,7 @@ OPERATIONS <IMicrosoftGraphPrintOperation\[]>: The list of print long running op
     - `[Description <String>]`: A human-readable description of the printOperation's current processing state. Read-only.
     - `[State <String>]`: printOperationProcessingState
 
-PRINTERS <IMicrosoftGraphPrinter\[]>: The list of printers registered in the tenant.
+PRINTERS <IMicrosoftGraphPrinter[]>: The list of printers registered in the tenant.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32[]>]`: A list of supported bottom margins(in microns) for the printer.
@@ -3693,7 +3693,7 @@ PRINTERS <IMicrosoftGraphPrinter\[]>: The list of printers registered in the ten
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4131,8 +4131,8 @@ PRINTERS <IMicrosoftGraphPrinter\[]>: The list of printers registered in the ten
                       - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                       - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                       - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
-                      - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
+                      - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                       - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
@@ -5532,9 +5532,9 @@ PRINTERS <IMicrosoftGraphPrinter\[]>: The list of printers registered in the ten
                   - `[Title <String>]`: Title of the task.
               - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+                - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
                 - `[Type <String>]`: 
-                - `[Url <String>]`: The full canonical URL of the container.
+                - `[Url <String>]`: The full canonical URL of the container. Optional.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Details <IMicrosoftGraphPlannerPlanDetails1>]`: plannerPlanDetails
@@ -5792,18 +5792,18 @@ PRINTERS <IMicrosoftGraphPrinter\[]>: The list of printers registered in the ten
     - `[Printer <IMicrosoftGraphPrinter>]`: printer
   - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger1[]>]`: A list of task triggers that are associated with the printer.
 
-SERVICES <IMicrosoftGraphPrintService\[]>: The list of available Universal Print service endpoints.
+SERVICES <IMicrosoftGraphPrintService[]>: The list of available Universal Print service endpoints.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
     - `[Uri <String>]`: The URI that can be used to access the service.
 
-SETTINGS `<IMicrosoftGraphPrintSettings>`: printSettings
+SETTINGS <IMicrosoftGraphPrintSettings>: printSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DocumentConversionEnabled <Boolean?>]`: Specifies whether document conversion is enabled for the tenant. If document conversion is enabled, Universal Print service will automatically convert documents into a format compatible with the printer (xps to pdf) when needed.
 
-SHARES <IMicrosoftGraphPrinterShare1\[]>: The list of printer shares registered in the tenant.
+SHARES <IMicrosoftGraphPrinterShare1[]>: The list of printer shares registered in the tenant.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[BottomMargins <Int32[]>]`: A list of supported bottom margins(in microns) for the printer.
@@ -6429,7 +6429,7 @@ SHARES <IMicrosoftGraphPrinterShare1\[]>: The list of printer shares registered 
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6867,8 +6867,8 @@ SHARES <IMicrosoftGraphPrinterShare1\[]>: The list of printer shares registered 
                     - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                     - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                     - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                    - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
-                    - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                    - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
+                    - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                     - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
                     - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                     - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
@@ -8268,9 +8268,9 @@ SHARES <IMicrosoftGraphPrinterShare1\[]>: The list of printer shares registered 
                 - `[Title <String>]`: Title of the task.
             - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+              - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
               - `[Type <String>]`: 
-              - `[Url <String>]`: The full canonical URL of the container.
+              - `[Url <String>]`: The full canonical URL of the container. Optional.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
             - `[CreatedDateTime <DateTime?>]`: Read-only. Date and time at which the plan is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Details <IMicrosoftGraphPlannerPlanDetails1>]`: plannerPlanDetails
@@ -8552,7 +8552,7 @@ SHARES <IMicrosoftGraphPrinterShare1\[]>: The list of printer shares registered 
     - `[Shares <IMicrosoftGraphPrinterShare1[]>]`: The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.
     - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger1[]>]`: A list of task triggers that are associated with the printer.
 
-TASKDEFINITIONS <IMicrosoftGraphPrintTaskDefinition1\[]>: List of abstract definition for a task that can be triggered when various events occur within Universal Print.
+TASKDEFINITIONS <IMicrosoftGraphPrintTaskDefinition1[]>: List of abstract definition for a task that can be triggered when various events occur within Universal Print.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
