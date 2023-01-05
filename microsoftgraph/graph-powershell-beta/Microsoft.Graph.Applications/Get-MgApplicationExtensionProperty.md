@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationextensionproperty
 schema: 2.0.0
+ms.prod: "extensions"
 ---
 
 # Get-MgApplicationExtensionProperty
