@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail
 schema: 2.0.0
-ms.prod: "planner"
 ---
 
 # Get-MgGroupPlannerPlanDetail
@@ -29,6 +28,28 @@ Get-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <S
 Retrieve the properties and relationships of a **plannerPlanDetails** object.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Planner
+
+$params = @{
+	SharedWith = @{
+		"6463a5ce-2119-4198-9f2a-628761df4a62" = $true
+		"D95e6152-f683-4d78-9ff5-67ad180fea4a" = $false
+	}
+	CategoryDescriptions = @{
+		Category1 = "Indoors"
+		Category3 = $null
+	}
+}
+
+Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params
+```
+
+This example shows how to use the Get-MgGroupPlannerPlanDetail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -126,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

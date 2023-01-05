@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerroster
@@ -171,7 +171,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
+BODYPARAMETER <IMicrosoftGraphPlannerRoster>: plannerRoster
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Members <IMicrosoftGraphPlannerRosterMember[]>]`: Retrieves the members of the plannerRoster.
@@ -262,9 +262,9 @@ BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
         - `[Title <String>]`: Title of the task.
     - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+      - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
       - `[Type <String>]`: 
-      - `[Url <String>]`: The full canonical URL of the container.
+      - `[Url <String>]`: The full canonical URL of the container. Optional.
     - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -310,13 +310,13 @@ BODYPARAMETER `<IMicrosoftGraphPlannerRoster>`: plannerRoster
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
 
-MEMBERS <IMicrosoftGraphPlannerRosterMember\[]>: Retrieves the members of the plannerRoster.
+MEMBERS <IMicrosoftGraphPlannerRosterMember[]>: Retrieves the members of the plannerRoster.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Roles <String[]>]`: Additional roles associated with the PlannerRosterMember, which determines permissions of the member in the plannerRoster. Currently there are no available roles to assign, and every member has full control over the contents of the plannerRoster.
   - `[TenantId <String>]`: Identifier of the tenant the user belongs to. Currently only the users from the same tenant can be added to a plannerRoster.
   - `[UserId <String>]`: Identifier of the user.
 
-PLANS <IMicrosoftGraphPlannerPlan1\[]>: Retrieves the plans contained by the plannerRoster.
+PLANS <IMicrosoftGraphPlannerPlan1[]>: Retrieves the plans contained by the plannerRoster.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -399,9 +399,9 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: Retrieves the plans contained by the pla
       - `[Title <String>]`: Title of the task.
   - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+    - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
     - `[Type <String>]`: 
-    - `[Url <String>]`: The full canonical URL of the container.
+    - `[Url <String>]`: The full canonical URL of the container. Optional.
   - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
