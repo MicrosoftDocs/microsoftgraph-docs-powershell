@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageassignment
@@ -443,7 +443,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
@@ -1549,7 +1549,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2179,9 +2179,9 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
                     - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                     - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                     - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                    - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+                    - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                     - `[NotificationContentType <String>]`: Optional. Desired content-type for Microsoft Graph change notifications for supported resource types. The default content-type is application/json.
-                    - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                    - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                     - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
                     - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                     - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
@@ -4216,9 +4216,9 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
                 - `[Title <String>]`: Title of the task.
             - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+              - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
               - `[Type <String>]`: 
-              - `[Url <String>]`: The full canonical URL of the container.
+              - `[Url <String>]`: The full canonical URL of the container. Optional.
             - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -5178,7 +5178,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSPACKAGEASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`: accessPackageAssignmentPolicy
+ACCESSPACKAGEASSIGNMENTPOLICY <IMicrosoftGraphAccessPackageAssignmentPolicy1>: accessPackageAssignmentPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
@@ -6229,7 +6229,7 @@ ACCESSPACKAGEASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`:
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6859,9 +6859,9 @@ ACCESSPACKAGEASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`:
                       - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                       - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                       - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationContentType <String>]`: Optional. Desired content-type for Microsoft Graph change notifications for supported resource types. The default content-type is application/json.
-                      - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                      - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                       - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
@@ -8896,9 +8896,9 @@ ACCESSPACKAGEASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`:
                   - `[Title <String>]`: Title of the task.
               - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+                - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
                 - `[Type <String>]`: 
-                - `[Url <String>]`: The full canonical URL of the container.
+                - `[Url <String>]`: The full canonical URL of the container. Optional.
               - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -9914,7 +9914,7 @@ ACCESSPACKAGEASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`:
     - `[AllowedRequestors <IMicrosoftGraphUserSet[]>]`: The users who are allowed to request on this policy, which can be singleUser, groupMembers, and connectedOrganizationMembers.
     - `[ScopeType <String>]`: Who can request. One of NoSubjects, SpecificDirectorySubjects, SpecificConnectedOrganizationSubjects, AllConfiguredConnectedOrganizationSubjects, AllExistingConnectedOrganizationSubjects, AllExistingDirectoryMemberUsers, AllExistingDirectorySubjects or AllExternalSubjects.
 
-ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1\[]>: .
+ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11022,7 +11022,7 @@ ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1\
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11652,9 +11652,9 @@ ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1\
                       - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                       - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                       - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationContentType <String>]`: Optional. Desired content-type for Microsoft Graph change notifications for supported resource types. The default content-type is application/json.
-                      - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                      - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                       - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
@@ -13689,9 +13689,9 @@ ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1\
                   - `[Title <String>]`: Title of the task.
               - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+                - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
                 - `[Type <String>]`: 
-                - `[Url <String>]`: The full canonical URL of the container.
+                - `[Url <String>]`: The full canonical URL of the container. Optional.
               - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -14726,7 +14726,7 @@ ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1\
   - `[Requestor <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
   - `[Schedule <IMicrosoftGraphRequestSchedule>]`: requestSchedule
 
-ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentResourceRole\[]>: The resource roles delivered to the target user for this assignment. Read-only. Nullable.
+ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentResourceRole[]>: The resource roles delivered to the target user for this assignment. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignments <IMicrosoftGraphAccessPackageAssignment1[]>]`: The access package assignments resulting in this role assignment. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -15836,7 +15836,7 @@ ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentReso
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16466,9 +16466,9 @@ ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentReso
                         - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                         - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                         - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                        - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+                        - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                         - `[NotificationContentType <String>]`: Optional. Desired content-type for Microsoft Graph change notifications for supported resource types. The default content-type is application/json.
-                        - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                        - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                         - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
                         - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                         - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
@@ -18503,9 +18503,9 @@ ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentReso
                     - `[Title <String>]`: Title of the task.
                 - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+                  - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
                   - `[Type <String>]`: 
-                  - `[Url <String>]`: The full canonical URL of the container.
+                  - `[Url <String>]`: The full canonical URL of the container. Optional.
                 - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -19537,7 +19537,7 @@ ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentReso
   - `[OriginSystem <String>]`: The system where the role assignment is to be created or has been created for an access package assignment, such as SharePointOnline, AadGroup or AadApplication, corresponding to the originSystem property of the accessPackageResourceRole.
   - `[Status <String>]`: The value is PendingFulfillment when the access package assignment has not yet been delivered to the origin system, and Fulfilled when the access package assignment has been delivered to the origin system.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignment
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignment1>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
@@ -20646,7 +20646,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignme
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -21276,9 +21276,9 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignme
                       - `[ExpirationDateTime <DateTime?>]`: Required. Specifies the date and time when the webhook subscription expires. The time is in UTC, and can be an amount of time from subscription creation that varies for the resource subscribed to. For the maximum supported subscription length of time, see the table below.
                       - `[IncludeResourceData <Boolean?>]`: Optional. When set to true, change notifications include resource data (such as content of a chat message).
                       - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
-                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved and missed notifications. This URL must make use of the HTTPS protocol.
+                      - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationContentType <String>]`: Optional. Desired content-type for Microsoft Graph change notifications for supported resource types. The default content-type is application/json.
-                      - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.
+                      - `[NotificationQueryOptions <String>]`: Optional.  OData query options for specifying the value for the targeting resource. Clients receive notifications when the resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
                       - `[NotificationUrl <String>]`: Required. The URL of the endpoint that receives the change notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
@@ -23313,9 +23313,9 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignme
                   - `[Title <String>]`: Title of the task.
               - `[Container <IMicrosoftGraphPlannerPlanContainer1>]`: plannerPlanContainer
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[ContainerId <String>]`: The identifier of the resource that contains the plan.
+                - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
                 - `[Type <String>]`: 
-                - `[Url <String>]`: The full canonical URL of the container.
+                - `[Url <String>]`: The full canonical URL of the container. Optional.
               - `[Contexts <IMicrosoftGraphPlannerPlanContextCollection>]`: plannerPlanContextCollection
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -24349,7 +24349,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignme
   - `[Target <IMicrosoftGraphAccessPackageSubject1>]`: accessPackageSubject
   - `[TargetId <String>]`: The ID of the subject with the assignment. Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -24424,7 +24424,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-SCHEDULE `<IMicrosoftGraphRequestSchedule>`: requestSchedule
+SCHEDULE <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24451,7 +24451,7 @@ SCHEDULE `<IMicrosoftGraphRequestSchedule>`: requestSchedule
       - `[Type <String>]`: recurrenceRangeType
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. In PIM, when the  eligible or active assignment becomes active.
 
-TARGET `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+TARGET <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AltSecId <String>]`: 
