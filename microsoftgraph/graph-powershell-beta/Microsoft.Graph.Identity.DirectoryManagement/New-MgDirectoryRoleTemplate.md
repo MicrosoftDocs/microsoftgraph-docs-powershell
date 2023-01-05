@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryroletemplate
 schema: 2.0.0
-ms.prod: "directory-management"
 ---
 
 # New-MgDirectoryRoleTemplate
@@ -176,7 +175,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRoleTemplate>`: directoryRoleTemplate
+BODYPARAMETER <IMicrosoftGraphDirectoryRoleTemplate>: directoryRoleTemplate
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
