@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyrolemanagementpolicy
 schema: 2.0.0
+ms.prod: "governance"
 ---
 
 # Get-MgPolicyRoleManagementPolicy
