@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatsubmissionemailthreatsubmissionpolicy
@@ -431,7 +431,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmissionPolicy>`: emailThreatSubmissionPolicy
+BODYPARAMETER <IMicrosoftGraphSecurityEmailThreatSubmissionPolicy>: emailThreatSubmissionPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CustomizedNotificationSenderEmailAddress <String>]`: Specifies the email address of the sender from which email notifications will be sent to end users to inform them whether an email is spam, phish or clean. The default value is null. Optional for creation.
@@ -448,7 +448,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmissionPolicy>`: emailThrea
   - `[IsReportToMicrosoftEnabled <Boolean?>]`: If enabled, the email will be sent to Microsoft for analysis. The default value is false. Required for creation.
   - `[IsReviewEmailNotificationEnabled <Boolean?>]`: Indicates whether an email notification is sent to the end user who reported the email when it has been reviewed by the admin. The default value is false. Optional for creation.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
