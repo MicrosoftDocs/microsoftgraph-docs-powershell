@@ -1,15 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategory
 schema: 2.0.0
-ms.prod: "education"
 ---
 
 # Get-MgEducationMeAssignmentCategory
 
 ## SYNOPSIS
 List all the categories associated with an assignment.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## SYNTAX
 
@@ -21,6 +21,7 @@ Get-MgEducationMeAssignmentCategory -EducationAssignmentId <String> [-ExpandProp
 
 ## DESCRIPTION
 List all the categories associated with an assignment.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
 

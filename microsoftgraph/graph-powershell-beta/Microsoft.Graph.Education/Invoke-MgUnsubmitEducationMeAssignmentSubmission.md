@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/invoke-mgunsubmiteducationmeassignmentsubmission
@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Indicate that a student wants to work on the submitted assignment after it was turned in.
+Only teachers, students, and applications with application permissions can perform this operation.
 This method changes the status of the submission from `submitted` to `working`.
 During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
 The teacher will be looking at the working resources list for grading.
@@ -30,6 +31,7 @@ Invoke-MgUnsubmitEducationMeAssignmentSubmission -InputObject <IEducationIdentit
 
 ## DESCRIPTION
 Indicate that a student wants to work on the submitted assignment after it was turned in.
+Only teachers, students, and applications with application permissions can perform this operation.
 This method changes the status of the submission from `submitted` to `working`.
 During the submit process, all the resources are copied from **submittedResources** to  **workingResources**.
 The teacher will be looking at the working resources list for grading.
@@ -145,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
