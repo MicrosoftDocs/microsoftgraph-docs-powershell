@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointreport
@@ -159,29 +159,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcReports>`: cloudPcReports
+BODYPARAMETER <IMicrosoftGraphCloudPcReports>: cloudPcReports
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExportJobs <IMicrosoftGraphCloudPcExportJob[]>]`: The export jobs created for downloading reports.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ExpirationDateTime <DateTime?>]`: The date time when the export job expires.
+    - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
     - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
-    - `[ExportUrl <String>]`: The storage account url of the exported report, it can be used to download the file.
+    - `[ExportUrl <String>]`: The storage account URL of the exported report. It can be used to download the file.
     - `[Filter <String>]`: The filter applied on the report.
     - `[Format <String>]`: The format of the exported report.
     - `[ReportName <String>]`: cloudPcReportName
-    - `[RequestDateTime <DateTime?>]`: The date time when the export job was requested.
+    - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
     - `[Select <String[]>]`: The selected columns of the report.
 
-EXPORTJOBS <IMicrosoftGraphCloudPcExportJob\[]>: The export jobs created for downloading reports.
+EXPORTJOBS <IMicrosoftGraphCloudPcExportJob[]>: The export jobs created for downloading reports.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ExpirationDateTime <DateTime?>]`: The date time when the export job expires.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
   - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
-  - `[ExportUrl <String>]`: The storage account url of the exported report, it can be used to download the file.
+  - `[ExportUrl <String>]`: The storage account URL of the exported report. It can be used to download the file.
   - `[Filter <String>]`: The filter applied on the report.
   - `[Format <String>]`: The format of the exported report.
   - `[ReportName <String>]`: cloudPcReportName
-  - `[RequestDateTime <DateTime?>]`: The date time when the export job was requested.
+  - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
   - `[Select <String[]>]`: The selected columns of the report.
 
 ## RELATED LINKS
