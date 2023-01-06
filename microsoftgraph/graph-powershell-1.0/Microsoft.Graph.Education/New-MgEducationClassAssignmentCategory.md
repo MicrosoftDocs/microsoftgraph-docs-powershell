@@ -10,6 +10,7 @@ ms.prod: "education"
 
 ## SYNOPSIS
 Creates a new educationCategory on an educationClass.
+Only teachers can perform this operation.
 
 ## SYNTAX
 
@@ -64,6 +65,7 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 
 ## DESCRIPTION
 Creates a new educationCategory on an educationClass.
+Only teachers can perform this operation.
 
 ## EXAMPLES
 
