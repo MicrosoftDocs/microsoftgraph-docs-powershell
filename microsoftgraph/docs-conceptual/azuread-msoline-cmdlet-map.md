@@ -158,7 +158,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-AzureADMSPermissionGrantConditionSet<sup>1</sup>|[Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyexclude?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADMSPermissionGrantPolicy|[Remove-MgPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicy?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADMSServicePrincipalDelegatedPermissionClassification|[Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification?view=graph-powershell-1.0&preserve-view=true)|
-|Restore-AzureADMSDeletedDirectoryObject|[Restore-MgDirectoryObject](/powershell/module/microsoft.graph.directoryobjects/restore-mgdirectoryobject?view=graph-powershell-1.0&preserve-view=true)|
+|Restore-AzureADMSDeletedDirectoryObject|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSAdministrativeUnit|[Update-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSApplication|[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSApplicationLogo|[Set-MgApplicationLogo](/powershell/module/microsoft.graph.applications/set-mgapplicationlogo?view=graph-powershell-1.0&preserve-view=true)|
@@ -208,7 +208,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
-|Restore-AzureADDeletedApplication|[Restore-MgApplication](/powershell/module/microsoft.graph.applications/restore-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
+|Restore-AzureADDeletedApplication|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem?view=graph-powershell-1.0&preserve-view=true)|
 
 ### Devices
 
@@ -464,7 +464,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-MsolServicePrincipalCredential||
 |Remove-MsolUser|[Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Reset-MsolStrongAuthenticationMethodByUpn||
-|Restore-MsolUser|[Restore-MgUser](/powershell/module/microsoft.graph.users.actions/restore-mguser?view=graph-powershell-1.0&preserve-view=true)|
+|Restore-MsolUser|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolADFSContext||
 |Set-MsolAdministrativeUnit|[Update-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolCompanyAllowedDataLocation||
