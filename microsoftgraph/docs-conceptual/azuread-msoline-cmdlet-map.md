@@ -463,7 +463,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-MsolServicePrincipalCredential|[Remove-MgServicePrincipalKey](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolUser|[Remove-MgUser](/powershell/module/microsoft.graph.users/remove-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Reset-MsolStrongAuthenticationMethodByUpn||
-|Restore-MsolUser|[Restore-MgUser](/powershell/module/microsoft.graph.users.actions/restore-mguser?view=graph-powershell-1.0&preserve-view=true)|
+|Restore-MsolUser|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolADFSContext||
 |Set-MsolAdministrativeUnit|[Update-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolCompanyAllowedDataLocation||
