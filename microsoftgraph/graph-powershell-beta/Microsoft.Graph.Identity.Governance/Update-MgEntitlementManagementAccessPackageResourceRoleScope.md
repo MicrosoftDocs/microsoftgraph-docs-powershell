@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementaccesspackageresourcerolescope
@@ -304,7 +304,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGERESOURCEROLE `<IMicrosoftGraphAccessPackageResourceRole>`: accessPackageResourceRole
+ACCESSPACKAGERESOURCEROLE <IMicrosoftGraphAccessPackageResourceRole>: accessPackageResourceRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
@@ -360,7 +360,7 @@ ACCESSPACKAGERESOURCEROLE `<IMicrosoftGraphAccessPackageResourceRole>`: accessPa
   - `[OriginId <String>]`: The unique identifier of the resource role in the origin system. For a SharePoint Online site, the originId will be the sequence number of the role in the site.
   - `[OriginSystem <String>]`: The type of the resource in the origin system, such as SharePointOnline, AadApplication or AadGroup.
 
-ACCESSPACKAGERESOURCESCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: accessPackageResourceScope
+ACCESSPACKAGERESOURCESCOPE <IMicrosoftGraphAccessPackageResourceScope>: accessPackageResourceScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
@@ -416,7 +416,7 @@ ACCESSPACKAGERESOURCESCOPE `<IMicrosoftGraphAccessPackageResourceScope>`: access
   - `[RoleOriginId <String>]`: The origin system for the role, if different.
   - `[Url <String>]`: A resource locator for the scope.
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRoleScope>`: accessPackageResourceRoleScope
+BODYPARAMETER <IMicrosoftGraphAccessPackageResourceRoleScope>: accessPackageResourceRoleScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
@@ -480,7 +480,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageResourceRoleScope>`: accessPackageRe
   - `[ModifiedBy <String>]`: 
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
