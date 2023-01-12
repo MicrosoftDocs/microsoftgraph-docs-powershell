@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportdailyprintusagebyuser
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Get-MgReportDailyPrintUsageByUser
