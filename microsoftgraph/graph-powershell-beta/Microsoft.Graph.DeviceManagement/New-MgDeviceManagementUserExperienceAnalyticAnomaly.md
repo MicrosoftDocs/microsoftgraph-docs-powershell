@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticanomaly
@@ -331,7 +331,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experience analytics anomaly entity contains anomaly details.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomaly>: The user experience analytics anomaly entity contains anomaly details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AnomalyFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurrence date and time for the anomaly.
