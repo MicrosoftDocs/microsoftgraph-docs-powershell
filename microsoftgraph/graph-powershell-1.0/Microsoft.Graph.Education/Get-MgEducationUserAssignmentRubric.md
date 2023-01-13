@@ -10,6 +10,7 @@ ms.prod: "education"
 
 ## SYNOPSIS
 Get the educationRubric object attached to an educationAssignment, if one exists.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## SYNTAX
 
@@ -27,6 +28,7 @@ Get-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Get the educationRubric object attached to an educationAssignment, if one exists.
+Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
 

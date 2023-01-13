@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: efe9dee6-145c-484e-947c-cbff6498c3cf
+Module Guid: 4e61386f-e7a1-4cdc-ac51-8508483f4c92
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -818,7 +818,7 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 Set device name of the device.
 
 ### [Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent.md)
-Set a single portal notification status to published by modifying the **isPortalNotificationSent** property to `true` for the user specified in the request.
+Set the status of the specified notification on the Microsoft EndPoint Manager admin center as sent, by modifying the **isPortalNotificationSent** property to `true`.
 
 ### [Set-MgDeviceManagementResourceAccessProfile](Set-MgDeviceManagementResourceAccessProfile.md)
 Invoke action assign
