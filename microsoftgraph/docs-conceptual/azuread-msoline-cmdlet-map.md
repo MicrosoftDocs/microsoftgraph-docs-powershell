@@ -79,7 +79,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |------------|--------------|
 |Get-AzureADApplicationProxyConnector||
 |Get-AzureADApplicationProxyConnectorGroup||
-|Get-AzureADApplicationProxyConnectorGroupMember||
+|Get-AzureADApplicationProxyConnectorGroupMembers||
 |Get-AzureADApplicationProxyConnectorMemberOf||
 |New-AzureADApplicationProxyConnectorGroup||
 |Remove-AzureADApplicationProxyConnectorGroup||
