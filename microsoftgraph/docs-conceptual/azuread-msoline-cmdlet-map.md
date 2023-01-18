@@ -411,7 +411,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-MsolCompanyInformation|[Get-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolContact|[Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact?view=graph-powershell-1.0&preserve-view=true)|
 |Get-MsolDevice|[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
-|Get-MsolDeviceRegistrationServicePolicy||
+|Get-MsolDeviceRegistrationServicePolicy|[Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy?view=graph-powershell-beta&preserve-view=true)|
 |Get-MsolDirSyncConfiguration||
 |Get-MsolDirSyncFeatures||
 |Get-MsolDirSyncProvisioningError|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup?view=graph-powershell-1.0&preserve-view=true), [Get-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontact?view=graph-powershell-1.0&preserve-view=true), [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0&preserve-view=true)|
