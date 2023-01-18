@@ -79,7 +79,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |------------|--------------|
 |Get-AzureADApplicationProxyConnector||
 |Get-AzureADApplicationProxyConnectorGroup||
-|Get-AzureADApplicationProxyConnectorGroupMember||
+|Get-AzureADApplicationProxyConnectorGroupMembers||
 |Get-AzureADApplicationProxyConnectorMemberOf||
 |New-AzureADApplicationProxyConnectorGroup||
 |Remove-AzureADApplicationProxyConnectorGroup||
@@ -158,7 +158,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-AzureADMSPermissionGrantConditionSet<sup>1</sup>|[Remove-MgPolicyPermissionGrantPolicyExclude](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicyexclude?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADMSPermissionGrantPolicy|[Remove-MgPolicyPermissionGrantPolicy](/powershell/module/microsoft.graph.identity.signins/remove-mgpolicypermissiongrantpolicy?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADMSServicePrincipalDelegatedPermissionClassification|[Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipaldelegatedpermissionclassification?view=graph-powershell-1.0&preserve-view=true)|
-|Restore-AzureADMSDeletedDirectoryObject|[Restore-MgDirectoryObject](/powershell/module/microsoft.graph.directoryobjects/restore-mgdirectoryobject?view=graph-powershell-1.0&preserve-view=true)|
+|Restore-AzureADMSDeletedDirectoryObject|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSAdministrativeUnit|[Update-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSApplication|[Update-MgApplication](/powershell/module/microsoft.graph.applications/update-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
 |Set-AzureADMSApplicationLogo|[Set-MgApplicationLogo](/powershell/module/microsoft.graph.applications/set-mgapplicationlogo?view=graph-powershell-1.0&preserve-view=true)|
@@ -195,7 +195,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-AzureADContactManager|[Get-MgContactManager](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADContactMembership|[Get-MgContactMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-AzureADContact|[Remove-MgContact](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontact?view=graph-powershell-1.0&preserve-view=true)|
-|Remove-AzureADContactManager|[Remove-MgContactManagerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgcontactmanagerbyref?view=graph-powershell-1.0&preserve-view=true)|
+|Remove-AzureADContactManager||
 |Select-AzureADGroupIdsContactIsMemberOf|[Get-MgContactMemberOf](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmemberof?view=graph-powershell-1.0&preserve-view=true)|
 
 ### Contracts
@@ -208,14 +208,14 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
-|Restore-AzureADDeletedApplication|[Restore-MgApplication](/powershell/module/microsoft.graph.applications/restore-mgapplication?view=graph-powershell-1.0&preserve-view=true)|
+|Restore-AzureADDeletedApplication|[Restore-MgDirectoryDeletedItem](/powershell/module/microsoft.graph.identity.directorymanagement/restore-mgdirectorydeleteditem?view=graph-powershell-1.0&preserve-view=true)|
 
 ### Devices
 
 |Azure AD cmdlets | Microsoft Graph PowerShell cmdlets|
 |------------|--------------|
 |Add-AzureADDeviceRegisteredOwner|[New-MgDeviceRegisteredOwnerByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregisteredownerbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Add-AzureADDeviceRegisteredUser|[New-MgDeviceRegisteredUserByRef](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceregistereduserbyref?view=graph-powershell-1.0&preserve-view=true)|
+|Add-AzureADDeviceRegisteredUser||
 |Get-AzureADDevice|[Get-MgDevice](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdevice?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADDeviceConfiguration|[Get-MgDeviceManagementDeviceConfiguration](/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfiguration?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADDeviceRegisteredOwner|[Get-MgDeviceRegisteredOwner](/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner?view=graph-powershell-1.0&preserve-view=true)|
