@@ -470,7 +470,8 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-MsolCompanyContactInformation|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolCompanyMultiNationalEnabled||
 |Set-MsolCompanySecurityComplianceContactInformation|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
-|Set-MsolCompanySettings|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
+|Set-MsolCompanySettings <sup>1</sup>|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
+|Set-MsolCompanySettings <sup>1</sup>|[Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolDeviceRegistrationServicePolicy||
 |Set-MsolDirSyncConfiguration||
 |Set-MsolDirSyncEnabled|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
@@ -487,3 +488,5 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-MsolUserPassword|[Reset-MgUserAuthenticationMethodPassword](/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolUserPrincipalName|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Update-MsolFederatedDomain||
+
+<sup>1</sup> This cmdlet has more than one cmdlet mapping in Microsoft Graph PowerShell.
