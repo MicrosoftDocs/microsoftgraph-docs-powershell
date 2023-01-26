@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstoregroupsetchild
@@ -12,25 +12,25 @@ Delete navigation property children for sites
 
 ## SYNTAX
 
-### Delete3 (Default)
+### Delete (Default)
 ```
 Remove-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String> -TermId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### Delete2
+```
+Remove-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String> -TermId <String>
+ -StoreId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ### Delete1
 ```
-Remove-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String> -StoreId <String>
- -TermId <String> -TermId1 <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String> -TermId <String>
+ -StoreId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete
-```
-Remove-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String> -StoreId <String>
- -TermId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity3
+### DeleteViaIdentity2
 ```
 Remove-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -60,7 +60,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete3, Delete1, Delete
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity3, DeleteViaIdentity1, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -121,7 +121,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Delete3, Delete1, Delete
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -136,7 +136,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete3, Delete1, Delete
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Delete1, Delete
+Parameter Sets: Delete2, Delete1
 Aliases:
 
 Required: True
@@ -166,7 +166,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: Delete3, Delete1, Delete
+Parameter Sets: Delete, Delete2, Delete1
 Aliases:
 
 Required: True
@@ -181,7 +181,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete2
 Aliases:
 
 Required: True
@@ -240,7 +240,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

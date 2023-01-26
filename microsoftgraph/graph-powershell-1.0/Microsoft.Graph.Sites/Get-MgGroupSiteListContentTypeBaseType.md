@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mggroupsitelistcontenttypebasetype
@@ -12,7 +12,7 @@ The collection of content types that are ancestors of this content type.
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgGroupSiteListContentTypeBaseType -ContentTypeId <String> -GroupId <String> -ListId <String>
  -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
@@ -20,13 +20,13 @@ Get-MgGroupSiteListContentTypeBaseType -ContentTypeId <String> -GroupId <String>
  [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgGroupSiteListContentTypeBaseType -ContentTypeId <String> -ContentTypeId1 <String> -GroupId <String>
  -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgGroupSiteListContentTypeBaseType -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -44,7 +44,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -59,7 +59,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -74,7 +74,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -90,7 +90,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -120,7 +120,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -135,7 +135,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -166,7 +166,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -181,7 +181,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -211,7 +211,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -226,7 +226,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -241,7 +241,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -256,7 +256,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -271,7 +271,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -299,7 +299,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

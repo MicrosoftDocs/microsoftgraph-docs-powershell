@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoreset
@@ -13,13 +13,13 @@ This relationship can only be used to load a specific term set.
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get (Default)
 ```
 Get-MgSiteTermStoreSet -SetId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgSiteTermStoreSet -SetId <String> -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -32,7 +32,7 @@ Get-MgSiteTermStoreSet -SiteId <String> -StoreId <String> [-ExpandProperty <Stri
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -128,7 +128,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -188,7 +188,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -203,7 +203,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get, List
+Parameter Sets: Get, Get1, List
 Aliases:
 
 Required: True
@@ -233,7 +233,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Get, List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: True
@@ -291,7 +291,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

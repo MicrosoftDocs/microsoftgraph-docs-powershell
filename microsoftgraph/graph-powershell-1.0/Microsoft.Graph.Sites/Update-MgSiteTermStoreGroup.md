@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitetermstoregroup
@@ -12,7 +12,7 @@ Update the navigation property groups in sites
 
 ## SYNTAX
 
-### UpdateExpanded2 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -20,7 +20,7 @@ Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> [-AdditionalPrope
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateExpanded
+### UpdateExpanded1
 ```
 Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -StoreId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
@@ -28,19 +28,19 @@ Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -StoreId <String>
  [-Sets <IMicrosoftGraphTermStoreSet[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update2
-```
-Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreGroup1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
+### Update1
 ```
 Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -StoreId <String>
  -BodyParameter <IMicrosoftGraphTermStoreGroup1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### Update
+```
+Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreGroup1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
 ```
 Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -56,7 +56,7 @@ Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-AdditionalProperties
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity2
+### UpdateViaIdentity1
 ```
 Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreGroup1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -80,7 +80,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,7 +96,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTermStoreGroup1
-Parameter Sets: Update2, Update, UpdateViaIdentity2, UpdateViaIdentity
+Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ Description that gives details on the term usage.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -142,7 +142,7 @@ Name of the group.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -157,7 +157,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, Update2, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -189,7 +189,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded, UpdateViaIdentity2, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -204,7 +204,7 @@ ID of the parent site of this group.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -234,7 +234,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -250,7 +250,7 @@ To construct, please use Get-Help -Online and see NOTES section for SETS propert
 
 ```yaml
 Type: IMicrosoftGraphTermStoreSet[]
-Parameter Sets: UpdateExpanded2, UpdateExpanded, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -265,7 +265,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded2, UpdateExpanded, Update2, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
 Aliases:
 
 Required: True
@@ -280,7 +280,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -340,7 +340,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTermStoreGroup1>`: group
+BODYPARAMETER <IMicrosoftGraphTermStoreGroup1>: group
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Date and time of the group creation. Read-only.
@@ -382,7 +382,7 @@ BODYPARAMETER `<IMicrosoftGraphTermStoreGroup1>`: group
     - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: Indicates which terms have been pinned or reused directly under the set.
     - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -422,7 +422,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-SETS <IMicrosoftGraphTermStoreSet\[]>: All sets under the group in a term [store].
+SETS <IMicrosoftGraphTermStoreSet[]>: All sets under the group in a term [store].
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm[]>]`: Children terms of set in term [store].
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
