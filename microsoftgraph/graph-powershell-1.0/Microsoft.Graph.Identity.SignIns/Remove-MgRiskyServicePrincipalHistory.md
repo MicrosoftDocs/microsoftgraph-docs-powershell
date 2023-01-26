@@ -1,90 +1,42 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationsoftwareoathmethod
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgriskyserviceprincipalhistory
 schema: 2.0.0
 ---
 
-# Update-MgUserAuthenticationSoftwareOathMethod
+# Remove-MgRiskyServicePrincipalHistory
 
 ## SYNOPSIS
-Update the navigation property softwareOathMethods in users
+Delete navigation property history for identityProtection
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### Delete1 (Default)
 ```
-Update-MgUserAuthenticationSoftwareOathMethod -SoftwareOathAuthenticationMethodId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-SecretKey <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgUserAuthenticationSoftwareOathMethod -SoftwareOathAuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSoftwareOathAuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgRiskyServicePrincipalHistory -RiskyServicePrincipalHistoryItemId <String>
+ -RiskyServicePrincipalId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### DeleteViaIdentity1
 ```
-Update-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-SecretKey <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphSoftwareOathAuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property softwareOathMethods in users
+Delete navigation property history for identityProtection
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-softwareOathAuthenticationMethod
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphSoftwareOathAuthenticationMethod
-Parameter Sets: Update, UpdateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Id
-The unique idenfier for an entity.
-Read-only.
+### -IfMatch
+ETag
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -100,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -125,28 +77,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecretKey
-The secret key of the method.
-Always returns null.
+### -RiskyServicePrincipalHistoryItemId
+key: id of riskyServicePrincipalHistoryItem
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SoftwareOathAuthenticationMethodId
-key: id of softwareOathAuthenticationMethod
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -156,12 +92,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
+### -RiskyServicePrincipalId
+key: id of riskyServicePrincipal
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -208,7 +144,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSoftwareOathAuthenticationMethod
 ## OUTPUTS
 
 ### System.Boolean
@@ -221,12 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSoftwareOathAuthenticationMethod>`: softwareOathAuthenticationMethod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[SecretKey <String>]`: The secret key of the method. Always returns null.
-
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

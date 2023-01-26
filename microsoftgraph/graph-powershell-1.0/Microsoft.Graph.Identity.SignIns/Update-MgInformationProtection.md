@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
@@ -15,13 +15,13 @@ Update informationProtection
 ### UpdateExpanded1 (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
- [-Id <String>] [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection1> [-PassThru] [-WhatIf]
+Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -68,7 +68,7 @@ informationProtection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection1
+Type: IMicrosoftGraphInformationProtection
 Parameter Sets: Update1
 Aliases:
 
@@ -76,22 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Id
-The unique idenfier for an entity.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -162,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
 ## OUTPUTS
 
 ### System.Boolean
@@ -175,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
+BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
@@ -185,7 +169,7 @@ BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
     - `[Key <String>]`: The BitLocker recovery key. Returned only on $select. Not nullable.
     - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
+BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -218,7 +202,7 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
+THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: threatCategory
   - `[ContentType <String>]`: threatAssessmentContentType

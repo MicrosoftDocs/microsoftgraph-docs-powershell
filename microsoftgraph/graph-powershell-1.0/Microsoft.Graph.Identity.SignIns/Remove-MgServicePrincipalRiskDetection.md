@@ -1,89 +1,42 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-ms.prod: "identity-and-sign-in"
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationsoftwareoathmethod
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgserviceprincipalriskdetection
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
-# New-MgUserAuthenticationSoftwareOathMethod
+# Remove-MgServicePrincipalRiskDetection
 
 ## SYNOPSIS
-Create new navigation property to softwareOathMethods for users
+Delete navigation property servicePrincipalRiskDetections for identityProtection
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### Delete1 (Default)
 ```
-New-MgUserAuthenticationSoftwareOathMethod -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-SecretKey <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgUserAuthenticationSoftwareOathMethod -UserId <String>
- -BodyParameter <IMicrosoftGraphSoftwareOathAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### DeleteViaIdentity1
 ```
-New-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-SecretKey <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserAuthenticationSoftwareOathMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphSoftwareOathAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to softwareOathMethods for users
+Delete navigation property servicePrincipalRiskDetections for identityProtection
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
-
-```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-softwareOathAuthenticationMethod
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphSoftwareOathAuthenticationMethod
-Parameter Sets: Create, CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Id
-The unique idenfier for an entity.
-Read-only.
+### -IfMatch
+ETag
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -99,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -109,13 +62,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -SecretKey
-The secret key of the method.
-Always returns null.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -125,12 +77,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
+### -ServicePrincipalRiskDetectionId
+key: id of servicePrincipalRiskDetection
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -177,10 +129,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSoftwareOathAuthenticationMethod
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSoftwareOathAuthenticationMethod
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -190,12 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSoftwareOathAuthenticationMethod>`: softwareOathAuthenticationMethod
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[SecretKey <String>]`: The secret key of the method. Always returns null.
-
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
