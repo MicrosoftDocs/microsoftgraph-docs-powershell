@@ -1,108 +1,75 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermailfoldermessage
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgsoftuserchatmessagereplydelete
 schema: 2.0.0
 ---
 
-# Move-MgUserMailFolderMessage
+# Invoke-MgSoftUserChatMessageReplyDelete
 
 ## SYNOPSIS
-Move a message to another folder within the specified user's mailbox.
-This creates a new copy of the message in the destination folder and removes the original message.
+Invoke action softDelete
 
 ## SYNTAX
 
-### MoveExpanded1 (Default)
+### Soft1 (Default)
 ```
-Move-MgUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Move1
-```
-Move-MgUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IPaths1Ph8596UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgSoftUserChatMessageReplyDelete -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
+ -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MoveViaIdentityExpanded1
+### SoftViaIdentity1
 ```
-Move-MgUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MoveViaIdentity1
-```
-Move-MgUserMailFolderMessage -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Ph8596UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgSoftUserChatMessageReplyDelete -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Move a message to another folder within the specified user's mailbox.
-This creates a new copy of the message in the destination folder and removes the original message.
+Invoke action softDelete
 
 ## EXAMPLES
 
-### Example 1: Code snippet
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-
-$params = @{
-	DestinationId = "deleteditems"
-}
-
-# A UPN can also be used as -UserId.
-Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-
-This example shows how to use the Move-MgUserMailFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -ChatId
+key: id of chat
 
 ```yaml
-Type: Hashtable
-Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
+Type: String
+Parameter Sets: Soft1
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+### -ChatMessageId
+key: id of chatMessage
 
 ```yaml
-Type: IPaths1Ph8596UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Move1, MoveViaIdentity1
+Type: String
+Parameter Sets: Soft1
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: True (ByValue)
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DestinationId
-.
+### -ChatMessageId1
+key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded1, MoveViaIdentityExpanded1
+Parameter Sets: Soft1
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -115,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded1, MoveViaIdentity1
+Parameter Sets: SoftViaIdentity1
 Aliases:
 
 Required: True
@@ -125,30 +92,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MailFolderId
-key: id of mailFolder
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: String
-Parameter Sets: MoveExpanded1, Move1
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MessageId
-key: id of message
-
-```yaml
-Type: String
-Parameter Sets: MoveExpanded1, Move1
-Aliases:
-
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -160,7 +112,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MoveExpanded1, Move1
+Parameter Sets: Soft1
 Aliases:
 
 Required: True
@@ -206,11 +158,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Ph8596UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage1
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -219,10 +170,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-BODYPARAMETER <IPaths1Ph8596UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DestinationId <String>]`: 
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
