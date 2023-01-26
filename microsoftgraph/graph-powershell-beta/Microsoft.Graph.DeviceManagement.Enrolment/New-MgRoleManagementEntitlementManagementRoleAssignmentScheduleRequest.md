@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroleassignmentschedulerequest
 schema: 2.0.0
+ms.prod: "governance"
 ---
 
 # New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
