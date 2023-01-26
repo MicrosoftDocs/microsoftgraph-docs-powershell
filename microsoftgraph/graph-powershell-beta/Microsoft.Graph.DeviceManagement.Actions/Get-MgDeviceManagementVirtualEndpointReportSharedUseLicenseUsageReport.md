@@ -1,34 +1,34 @@
 ﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementreportzebrafotadeploymentreport
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreportshareduselicenseusagereport
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementReportZebraFotaDeploymentReport
+# Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport
 
 ## SYNOPSIS
-Invoke action getZebraFotaDeploymentReport
+Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementReportZebraFotaDeploymentReport -OutFile <String> [-AdditionalProperties <Hashtable>]
- [-Filter <String>] [-GroupBy <String[]>] [-Name <String>] [-Property <String[]>] [-Search <String>]
- [-SessionId <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-Filter <String>] [-GroupBy <String[]>] [-Property <String[]>]
+ [-ReportName <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementReportZebraFotaDeploymentReport -OutFile <String>
- -BodyParameter <IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema>
+Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -OutFile <String>
+ -BodyParameter <IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action getZebraFotaDeploymentReport
+Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 ## EXAMPLES
 
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema
+Type: IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -85,21 +85,6 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Name
-.
-
-```yaml
-Type: String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -155,8 +140,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Search
-.
+### -ReportName
+cloudPcReportName
 
 ```yaml
 Type: String
@@ -170,7 +155,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SessionId
+### -Search
 .
 
 ```yaml
@@ -266,7 +251,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -279,15 +264,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths13QvfzrDevicemanagementReportsMicrosoftGraphGetzebrafotadeploymentreportPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 
-  - `[Name <String>]`: 
   - `[OrderBy <String[]>]`: 
+  - `[ReportName <String>]`: cloudPcReportName
   - `[Search <String>]`: 
   - `[Select <String[]>]`: 
-  - `[SessionId <String>]`: 
   - `[Skip <Int32?>]`: 
   - `[Top <Int32?>]`: 
 
