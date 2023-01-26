@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermessagemention
@@ -324,7 +324,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphMention>: mention
+BODYPARAMETER `<IMicrosoftGraphMention>`: mention
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Application <String>]`: The name of the application where the mention is created. Optional. Not used and defaulted as null for message.
@@ -339,12 +339,12 @@ BODYPARAMETER <IMicrosoftGraphMention>: mention
   - `[Mentioned <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[ServerCreatedDateTime <DateTime?>]`: The date and time that the mention is created on the server. Optional. Not used and defaulted as null for message.
 
-CREATEDBY <IMicrosoftGraphEmailAddress>: emailAddress
+CREATEDBY `<IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT <IMailIdentity>: Identity Parameter
+INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
@@ -358,7 +358,7 @@ INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[UserConfigurationId <String>]`: key: id of userConfiguration
   - `[UserId <String>]`: key: id of user
 
-MENTIONED <IMicrosoftGraphEmailAddress>: emailAddress
+MENTIONED `<IMicrosoftGraphEmailAddress>`: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.
