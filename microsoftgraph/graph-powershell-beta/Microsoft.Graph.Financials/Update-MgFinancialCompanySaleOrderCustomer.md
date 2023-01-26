@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Financials-help.xml
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanysaleordercustomer
@@ -568,7 +568,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
+ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -576,7 +576,7 @@ ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-BODYPARAMETER <IMicrosoftGraphCustomer>: customer
+BODYPARAMETER `<IMicrosoftGraphCustomer>`: customer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
@@ -641,7 +641,7 @@ BODYPARAMETER <IMicrosoftGraphCustomer>: customer
   - `[Type <String>]`: 
   - `[Website <String>]`: 
 
-CURRENCY <IMicrosoftGraphCurrency>: currency
+CURRENCY `<IMicrosoftGraphCurrency>`: currency
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AmountDecimalPlaces <String>]`: 
@@ -651,7 +651,7 @@ CURRENCY <IMicrosoftGraphCurrency>: currency
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Symbol <String>]`: 
 
-INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
+INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -689,14 +689,14 @@ INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
   - `[VendorId <String>]`: key: id of vendor
 
-PAYMENTMETHOD <IMicrosoftGraphPaymentMethod>: paymentMethod
+PAYMENTMETHOD `<IMicrosoftGraphPaymentMethod>`: paymentMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
+PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
@@ -707,14 +707,14 @@ PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
   - `[DueDateCalculation <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture[]>: .
+PICTURE <IMicrosoftGraphPicture\[]>: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
   - `[Width <Int32?>]`: 
 
-SHIPMENTMETHOD <IMicrosoftGraphShipmentMethod>: shipmentMethod
+SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Code <String>]`: 
