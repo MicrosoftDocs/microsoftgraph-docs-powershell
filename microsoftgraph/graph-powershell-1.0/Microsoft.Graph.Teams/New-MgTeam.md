@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteam
 schema: 2.0.0
-ms.prod: "microsoft-teams"
 ---
 
 # New-MgTeam
@@ -13,7 +12,7 @@ Create a new team.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel1[]>]
  [-Channels <IMicrosoftGraphChannel1[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
@@ -28,7 +27,7 @@ New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphCha
  [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgTeam -BodyParameter <IMicrosoftGraphTeam1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -294,7 +293,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -310,7 +309,7 @@ To construct, please use Get-Help -Online and see NOTES section for ALLCHANNELS 
 
 ```yaml
 Type: IMicrosoftGraphChannel1[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -326,7 +325,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTeam1
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -342,7 +341,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHANNELS pro
 
 ```yaml
 Type: IMicrosoftGraphChannel1[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -359,7 +358,7 @@ Must match one of a pre-configured set in the tenant's directory.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -374,7 +373,7 @@ Timestamp at which the team was created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -390,7 +389,7 @@ Maximum length: 1024 characters.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -405,7 +404,7 @@ The name of the team.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -421,7 +420,7 @@ To construct, please use Get-Help -Online and see NOTES section for FUNSETTINGS 
 
 ```yaml
 Type: IMicrosoftGraphTeamFunSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -437,7 +436,7 @@ To construct, please use Get-Help -Online and see NOTES section for GROUP proper
 
 ```yaml
 Type: IMicrosoftGraphGroup
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -453,7 +452,7 @@ To construct, please use Get-Help -Online and see NOTES section for GUESTSETTING
 
 ```yaml
 Type: IMicrosoftGraphTeamGuestSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -469,7 +468,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -485,7 +484,7 @@ To construct, please use Get-Help -Online and see NOTES section for INCOMINGCHAN
 
 ```yaml
 Type: IMicrosoftGraphChannel1[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -501,7 +500,7 @@ To construct, please use Get-Help -Online and see NOTES section for INSTALLEDAPP
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppInstallation[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -516,7 +515,7 @@ A unique ID for the team that has been used in a few places such as the audit lo
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -531,7 +530,7 @@ Whether this team is in read-only mode.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -547,7 +546,7 @@ To construct, please use Get-Help -Online and see NOTES section for MEMBERS prop
 
 ```yaml
 Type: IMicrosoftGraphConversationMember[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -563,7 +562,7 @@ To construct, please use Get-Help -Online and see NOTES section for MEMBERSETTIN
 
 ```yaml
 Type: IMicrosoftGraphTeamMemberSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -579,7 +578,7 @@ To construct, please use Get-Help -Online and see NOTES section for MESSAGINGSET
 
 ```yaml
 Type: IMicrosoftGraphTeamMessagingSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -595,7 +594,7 @@ To construct, please use Get-Help -Online and see NOTES section for OPERATIONS p
 
 ```yaml
 Type: IMicrosoftGraphTeamsAsyncOperation[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -611,7 +610,7 @@ To construct, please use Get-Help -Online and see NOTES section for PHOTO proper
 
 ```yaml
 Type: IMicrosoftGraphProfilePhoto
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -627,7 +626,7 @@ To construct, please use Get-Help -Online and see NOTES section for PRIMARYCHANN
 
 ```yaml
 Type: IMicrosoftGraphChannel1
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -643,7 +642,7 @@ To construct, please use Get-Help -Online and see NOTES section for SCHEDULE pro
 
 ```yaml
 Type: IMicrosoftGraphSchedule
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -658,7 +657,7 @@ teamSpecialization
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -674,7 +673,7 @@ To construct, please use Get-Help -Online and see NOTES section for SUMMARY prop
 
 ```yaml
 Type: IMicrosoftGraphTeamSummary
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -690,7 +689,7 @@ To construct, please use Get-Help -Online and see NOTES section for TAGS propert
 
 ```yaml
 Type: IMicrosoftGraphTeamworkTag[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -705,7 +704,7 @@ teamsTemplate
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -720,7 +719,7 @@ The ID of the Azure Active Directory tenant.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -735,7 +734,7 @@ teamVisibilityType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -752,7 +751,7 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -811,7 +810,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or shared with the team (incoming channels).
+ALLCHANNELS <IMicrosoftGraphChannel1[]>: List of channels either hosted in or shared with the team (incoming channels).
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -1237,7 +1236,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3381,7 +3380,7 @@ ALLCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels either hosted in or s
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
+BODYPARAMETER <IMicrosoftGraphTeam1>: team
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllChannels <IMicrosoftGraphChannel1[]>]`: List of channels either hosted in or shared with the team (incoming channels).
@@ -3810,7 +3809,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5952,7 +5951,7 @@ BODYPARAMETER `<IMicrosoftGraphTeam1>`: team
   - `[Visibility <String>]`: teamVisibilityType
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
-CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages associated with the team.
+CHANNELS <IMicrosoftGraphChannel1[]>: The collection of channels and messages associated with the team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -6378,7 +6377,7 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8522,14 +8521,14 @@ CHANNELS <IMicrosoftGraphChannel1\[]>: The collection of channels and messages a
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-FUNSETTINGS `<IMicrosoftGraphTeamFunSettings>`: teamFunSettings
+FUNSETTINGS <IMicrosoftGraphTeamFunSettings>: teamFunSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowCustomMemes <Boolean?>]`: If set to true, enables users to include custom memes.
   - `[AllowGiphy <Boolean?>]`: If set to true, enables Giphy use.
   - `[AllowStickersAndMemes <Boolean?>]`: If set to true, enables users to include stickers and memes.
   - `[GiphyContentRating <String>]`: giphyRatingType
 
-GROUP `<IMicrosoftGraphGroup>`: group
+GROUP <IMicrosoftGraphGroup>: group
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -9004,7 +9003,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11099,12 +11098,12 @@ GROUP `<IMicrosoftGraphGroup>`: group
   - `[UnseenCount <Int32?>]`: Count of conversations that have received new posts since the signed-in user last visited the group. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
   - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
 
-GUESTSETTINGS `<IMicrosoftGraphTeamGuestSettings>`: teamGuestSettings
+GUESTSETTINGS <IMicrosoftGraphTeamGuestSettings>: teamGuestSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowCreateUpdateChannels <Boolean?>]`: If set to true, guests can add and update channels.
   - `[AllowDeleteChannels <Boolean?>]`: If set to true, guests can delete channels.
 
-INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the team.
+INCOMINGCHANNELS <IMicrosoftGraphChannel1[]>: List of channels shared with the team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
   - `[Description <String>]`: Optional textual description for the channel.
@@ -11530,7 +11529,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13674,7 +13673,7 @@ INCOMINGCHANNELS <IMicrosoftGraphChannel1\[]>: List of channels shared with the 
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation\[]>: The apps installed in this team.
+INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation[]>: The apps installed in this team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -13704,13 +13703,13 @@ INSTALLEDAPPS <IMicrosoftGraphTeamsAppInstallation\[]>: The apps installed in th
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
   - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
 
-MEMBERS <IMicrosoftGraphConversationMember\[]>: Members and owners of the team.
+MEMBERS <IMicrosoftGraphConversationMember[]>: Members and owners of the team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
-MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
+MEMBERSETTINGS <IMicrosoftGraphTeamMemberSettings>: teamMemberSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowAddRemoveApps <Boolean?>]`: If set to true, members can add and remove apps.
   - `[AllowCreatePrivateChannels <Boolean?>]`: If set to true, members can add and update private channels.
@@ -13719,7 +13718,7 @@ MEMBERSETTINGS `<IMicrosoftGraphTeamMemberSettings>`: teamMemberSettings
   - `[AllowCreateUpdateRemoveTabs <Boolean?>]`: If set to true, members can add, update, and remove tabs.
   - `[AllowDeleteChannels <Boolean?>]`: If set to true, members can delete channels.
 
-MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSettings
+MESSAGINGSETTINGS <IMicrosoftGraphTeamMessagingSettings>: teamMessagingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowChannelMentions <Boolean?>]`: If set to true, @channel mentions are allowed.
   - `[AllowOwnerDeleteMessages <Boolean?>]`: If set to true, owners can delete any message.
@@ -13727,7 +13726,7 @@ MESSAGINGSETTINGS `<IMicrosoftGraphTeamMessagingSettings>`: teamMessagingSetting
   - `[AllowUserDeleteMessages <Boolean?>]`: If set to true, users can delete their messages.
   - `[AllowUserEditMessages <Boolean?>]`: If set to true, users can edit their messages.
 
-OPERATIONS <IMicrosoftGraphTeamsAsyncOperation\[]>: The async operations that ran or are running on this team.
+OPERATIONS <IMicrosoftGraphTeamsAsyncOperation[]>: The async operations that ran or are running on this team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttemptsCount <Int32?>]`: Number of times the operation was attempted before being marked successful or failed.
   - `[CreatedDateTime <DateTime?>]`: Time when the operation was created.
@@ -13741,13 +13740,13 @@ OPERATIONS <IMicrosoftGraphTeamsAsyncOperation\[]>: The async operations that ra
   - `[TargetResourceId <String>]`: The ID of the object that's created or modified as result of this async operation, typically a team.
   - `[TargetResourceLocation <String>]`: The location of the object that's created or modified as result of this async operation. This URL should be treated as an opaque value and not parsed into its component paths.
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+PHOTO <IMicrosoftGraphProfilePhoto>: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
+PRIMARYCHANNEL <IMicrosoftGraphChannel1>: channel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: Read only. Timestamp at which the channel was created.
@@ -14174,7 +14173,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16318,7 +16317,7 @@ PRIMARYCHANNEL `<IMicrosoftGraphChannel1>`: channel
   - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
-SCHEDULE `<IMicrosoftGraphSchedule>`: schedule
+SCHEDULE <IMicrosoftGraphSchedule>: schedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
@@ -16433,13 +16432,13 @@ SCHEDULE `<IMicrosoftGraphSchedule>`: schedule
     - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
   - `[WorkforceIntegrationIds <String[]>]`: 
 
-SUMMARY `<IMicrosoftGraphTeamSummary>`: teamSummary
+SUMMARY <IMicrosoftGraphTeamSummary>: teamSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GuestsCount <Int32?>]`: 
   - `[MembersCount <Int32?>]`: 
   - `[OwnersCount <Int32?>]`: 
 
-TAGS <IMicrosoftGraphTeamworkTag\[]>: The tags associated with the team.
+TAGS <IMicrosoftGraphTeamworkTag[]>: The tags associated with the team.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description of the tag as it will appear to the user in Microsoft Teams.
   - `[DisplayName <String>]`: The name of the tag as it will appear to the user in Microsoft Teams.
