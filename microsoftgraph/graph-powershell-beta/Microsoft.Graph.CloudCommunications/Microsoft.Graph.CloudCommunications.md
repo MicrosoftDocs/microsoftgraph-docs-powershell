@@ -367,6 +367,10 @@ Read-only.
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
 Set the availability and activity status in a presence session of an application for a user.
 
+### [Set-MgCommunicationPresenceStatusMessage](Set-MgCommunicationPresenceStatusMessage.md)
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
+
 ### [Set-MgCommunicationPresenceUserPreferredPresence](Set-MgCommunicationPresenceUserPreferredPresence.md)
 Set the preferred availability and activity status for a user.
 If the preferred presence of a user is set, the user's presence is the preferred presence.
