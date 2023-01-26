@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: 0216798d-3844-4de8-aee3-794e72574fe1
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
@@ -333,6 +333,9 @@ Invoke function getTeamsTeamActivityDetail
 
 ### [Get-MgReportTeamActivityDistributionCount](Get-MgReportTeamActivityDistributionCount.md)
 Invoke function getTeamsTeamActivityDistributionCounts
+
+### [Get-MgReportTeamCount](Get-MgReportTeamCount.md)
+Invoke function getTeamsTeamCounts
 
 ### [Get-MgReportTeamDeviceUsageDistributionTotalUserCount](Get-MgReportTeamDeviceUsageDistributionTotalUserCount.md)
 Invoke function getTeamsDeviceUsageDistributionTotalUserCounts

@@ -1,30 +1,29 @@
 ﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportteamactivitydistributioncount
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportteamcount
 schema: 2.0.0
 ---
 
-# Get-MgReportTeamActivityDistributionCount
+# Get-MgReportTeamCount
 
 ## SYNOPSIS
-Invoke function getTeamsTeamActivityDistributionCounts
+Invoke function getTeamsTeamCounts
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgReportTeamActivityDistributionCount -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgReportTeamCount -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgReportTeamActivityDistributionCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
- [<CommonParameters>]
+Get-MgReportTeamCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke function getTeamsTeamActivityDistributionCounts
+Invoke function getTeamsTeamCounts
 
 ## EXAMPLES
 
