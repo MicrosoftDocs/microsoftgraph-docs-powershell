@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype
 schema: 2.0.0
+ms.prod: "sites-and-lists"
 ---
 
 # New-MgDriveListContentType
