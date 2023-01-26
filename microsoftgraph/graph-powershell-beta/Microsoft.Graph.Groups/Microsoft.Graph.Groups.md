@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: af5ac06c-bba0-4a1a-bb33-3261e312b67f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -382,6 +382,18 @@ Invoke function getActivitiesByInterval
 
 ### [Get-MgGroupSiteListItemDelta](Get-MgGroupSiteListItemDelta.md)
 Invoke function delta
+
+### [Get-MgGroupSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](Get-MgGroupSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart.md)
+Invoke action getPositionOfWebPart
+
+### [Get-MgGroupSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](Get-MgGroupSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart.md)
+Invoke action getPositionOfWebPart
+
+### [Get-MgGroupSitePageWebPartByPosition](Get-MgGroupSitePageWebPartByPosition.md)
+Invoke action getWebPartsByPosition
+
+### [Get-MgGroupSitePageWebPartPositionOfWebPart](Get-MgGroupSitePageWebPartPositionOfWebPart.md)
+Invoke action getPositionOfWebPart
 
 ### [Get-MgGroupThread](Get-MgGroupThread.md)
 The group's conversation threads.
