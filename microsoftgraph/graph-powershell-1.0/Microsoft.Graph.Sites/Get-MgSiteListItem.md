@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistitem
 schema: 2.0.0
+ms.prod: "sharepoint"
 ---
 
 # Get-MgSiteListItem
