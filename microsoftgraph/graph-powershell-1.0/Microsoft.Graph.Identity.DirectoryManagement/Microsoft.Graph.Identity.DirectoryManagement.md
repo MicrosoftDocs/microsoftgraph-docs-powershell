@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 8d089dda-94a8-468b-a3b9-4a5314802b69
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -404,6 +404,9 @@ Deletes a domain using an asynchronous long-running operation.
 Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
+
+### [Invoke-MgPromoteDomain](Invoke-MgPromoteDomain.md)
+Invoke action promote
 
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
