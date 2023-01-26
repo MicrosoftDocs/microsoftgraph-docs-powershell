@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritycaseediscoverycasereviewsetfile
@@ -16,7 +16,7 @@ Create new navigation property to files for security
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian>] [-DateTime <DateTime>] [-Extension <String>]
+ [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian1>] [-DateTime <DateTime>] [-Extension <String>]
  [-ExtractedTextContentInputFile <String>] [-Id <String>] [-MediaType <String>] [-Name <String>]
  [-OtherProperties <Hashtable>] [-ProcessingStatus <String>] [-SenderOrAuthors <String[]>] [-Size <Int64>]
  [-SourceType <String>] [-SubjectTitle <String>] [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
@@ -33,7 +33,7 @@ New-MgSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -Edisco
 ```
 New-MgSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian>] [-DateTime <DateTime>] [-Extension <String>]
+ [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian1>] [-DateTime <DateTime>] [-Extension <String>]
  [-ExtractedTextContentInputFile <String>] [-Id <String>] [-MediaType <String>] [-Name <String>]
  [-OtherProperties <Hashtable>] [-ProcessingStatus <String>] [-SenderOrAuthors <String[]>] [-Size <Int64>]
  [-SourceType <String>] [-SubjectTitle <String>] [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
@@ -104,7 +104,7 @@ ediscoveryCustodian
 To construct, please use Get-Help -Online and see NOTES section for CUSTODIAN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian
+Type: IMicrosoftGraphSecurityEdiscoveryCustodian1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -408,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryFile>`: ediscoveryFile
+BODYPARAMETER <IMicrosoftGraphSecurityEdiscoveryFile>: ediscoveryFile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <Byte[]>]`: 
   - `[DateTime <DateTime?>]`: 
@@ -1335,7 +1335,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryFile>`: ediscoveryFile
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5056,7 +5056,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEdiscoveryFile>`: ediscoveryFile
     - `[ChildTags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]`: Returns the tags that are a child of a tag.
     - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
-CUSTODIAN `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodian
+CUSTODIAN <IMicrosoftGraphSecurityEdiscoveryCustodian1>: ediscoveryCustodian
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -5967,7 +5967,7 @@ CUSTODIAN `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodian
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9679,7 +9679,7 @@ CUSTODIAN `<IMicrosoftGraphSecurityEdiscoveryCustodian1>`: ediscoveryCustodian
     - `[IncludedSources <String>]`: sourceType
     - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
@@ -9723,7 +9723,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag\[]>: Tags associated with the file.
+TAGS <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>: Tags associated with the file.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
