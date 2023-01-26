@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgmarkuserchatreadforuser
@@ -12,28 +12,28 @@ Mark a chat as read for a user.
 
 ## SYNTAX
 
-### MarkExpanded1 (Default)
+### MarkExpanded (Default)
 ```
 Invoke-MgMarkUserChatReadForUser -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Mark1
+### Mark
 ```
 Invoke-MgMarkUserChatReadForUser -ChatId <String> -UserId <String>
  -BodyParameter <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### MarkViaIdentityExpanded1
+### MarkViaIdentityExpanded
 ```
 Invoke-MgMarkUserChatReadForUser -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### MarkViaIdentity1
+### MarkViaIdentity
 ```
 Invoke-MgMarkUserChatReadForUser -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
+Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Mark1, MarkViaIdentity1
+Parameter Sets: Mark, MarkViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded1, Mark1
+Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: MarkViaIdentityExpanded1, MarkViaIdentity1
+Parameter Sets: MarkViaIdentityExpanded, MarkViaIdentity
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
+Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -145,7 +145,7 @@ To construct, please use Get-Help -Online and see NOTES section for USER propert
 
 ```yaml
 Type: IMicrosoftGraphTeamworkUserIdentity
-Parameter Sets: MarkExpanded1, MarkViaIdentityExpanded1
+Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: MarkExpanded1, Mark1
+Parameter Sets: MarkExpanded, Mark
 Aliases:
 
 Required: True
@@ -220,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TenantId <String>]`: 
   - `[User <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
@@ -229,7 +229,7 @@ BODYPARAMETER `<IPathsBy90K2UsersUserIdChatsChatIdMicrosoftGraphMarkchatreadforu
     - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -275,7 +275,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.

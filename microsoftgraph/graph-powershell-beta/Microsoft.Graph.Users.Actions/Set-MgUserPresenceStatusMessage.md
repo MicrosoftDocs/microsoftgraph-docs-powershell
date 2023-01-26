@@ -1,47 +1,47 @@
 ﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserdriverootsensitivitylabel
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserpresencestatusmessage
 schema: 2.0.0
 ---
 
-# Set-MgUserDriveRootSensitivityLabel
+# Set-MgUserPresenceStatusMessage
 
 ## SYNOPSIS
-Invoke action assignSensitivityLabel
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 ## SYNTAX
 
-### AssignExpanded (Default)
+### SetExpanded (Default)
 ```
-Set-MgUserDriveRootSensitivityLabel -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserPresenceStatusMessage -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Assign
+### Set
 ```
-Set-MgUserDriveRootSensitivityLabel -DriveId <String> -UserId <String>
- -BodyParameter <IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+Set-MgUserPresenceStatusMessage -UserId <String>
+ -BodyParameter <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentityExpanded
+### SetViaIdentityExpanded
 ```
-Set-MgUserDriveRootSensitivityLabel -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-AssignmentMethod <String>] [-JustificationText <String>] [-SensitivityLabelId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgUserPresenceStatusMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssignViaIdentity
+### SetViaIdentity
 ```
-Set-MgUserDriveRootSensitivityLabel -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>
+Set-MgUserPresenceStatusMessage -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action assignSensitivityLabel
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
 
 ## EXAMPLES
 
@@ -52,22 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AssignmentMethod
-sensitivityLabelAssignmentMethod
-
-```yaml
-Type: String
-Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -82,29 +67,14 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Assign, AssignViaIdentity
+Type: IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -DriveId
-key: id of drive
-
-```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -114,28 +84,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -JustificationText
-.
-
-```yaml
-Type: String
-Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -154,12 +109,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SensitivityLabelId
-.
+### -StatusMessage
+presenceStatusMessage
+To construct, please use Get-Help -Online and see NOTES section for STATUSMESSAGE properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
+Type: IMicrosoftGraphPresenceStatusMessage
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -174,7 +130,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: AssignExpanded, Assign
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -220,7 +176,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -234,11 +190,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1Ttx7ZmUsersUserIdDrivesDriveIdRootMicrosoftGraphAssignsensitivitylabelPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER <IPathsDovi6RUsersUserIdPresenceMicrosoftGraphSetstatusmessagePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignmentMethod <String>]`: sensitivityLabelAssignmentMethod
-  - `[JustificationText <String>]`: 
-  - `[SensitivityLabelId <String>]`: 
+  - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Content <String>]`: The content of the item.
+      - `[ContentType <String>]`: bodyType
+    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
 
 INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
@@ -285,5 +249,17 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+
+STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>: presenceStatusMessage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[Message <IMicrosoftGraphItemBody>]`: itemBody
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Content <String>]`: The content of the item.
+    - `[ContentType <String>]`: bodyType
+  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
 
 ## RELATED LINKS
