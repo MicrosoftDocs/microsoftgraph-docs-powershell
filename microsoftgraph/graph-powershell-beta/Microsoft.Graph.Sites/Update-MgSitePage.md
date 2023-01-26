@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitepage
@@ -15,13 +15,16 @@ Update the navigation property pages in sites
 ### UpdateExpanded (Default)
 ```
 Update-MgSitePage -SiteId <String> -SitePageId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <IMicrosoftGraphContentTypeInfo>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser1>] [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayoutType <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-PublishingState <IMicrosoftGraphPublicationFacet>]
- [-Title <String>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CanvasLayout <IMicrosoftGraphCanvasLayout>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser1>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayout <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-PromotionKind <String>]
+ [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Reactions <IMicrosoftGraphReactionsFacet>]
+ [-ShowComments] [-ShowRecommendedPages] [-ThumbnailWebUrl <String>] [-Title <String>]
+ [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,13 +36,16 @@ Update-MgSitePage -SiteId <String> -SitePageId <String> -BodyParameter <IMicroso
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSitePage -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <IMicrosoftGraphContentTypeInfo>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser1>] [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayoutType <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-PublishingState <IMicrosoftGraphPublicationFacet>]
- [-Title <String>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CanvasLayout <IMicrosoftGraphCanvasLayout>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser1>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayout <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-PromotionKind <String>]
+ [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Reactions <IMicrosoftGraphReactionsFacet>]
+ [-ShowComments] [-ShowRecommendedPages] [-ThumbnailWebUrl <String>] [-Title <String>]
+ [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -83,6 +89,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CanvasLayout
+canvasLayout
+To construct, please use Get-Help -Online and see NOTES section for CANVASLAYOUT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCanvasLayout
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -278,8 +300,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PageLayoutType
-.
+### -PageLayout
+pageLayoutType
 
 ```yaml
 Type: String
@@ -324,12 +346,73 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PromotionKind
+pagePromotionType
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublishingState
 publicationFacet
 To construct, please use Get-Help -Online and see NOTES section for PUBLISHINGSTATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublicationFacet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Reactions
+reactionsFacet
+To construct, please use Get-Help -Online and see NOTES section for REACTIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphReactionsFacet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShowComments
+Determines whether or not to show comments at the bottom of the page.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShowRecommendedPages
+Determines whether or not to show recommended pages at the bottom of the page.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -370,11 +453,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ThumbnailWebUrl
+Url of the sitePage's thumbnail image
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Title
 Title of the sitePage.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TitleArea
+titleArea
+To construct, please use Get-Help -Online and see NOTES section for TITLEAREA properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTitleArea
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -467,7 +581,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSitePage>`: sitePage
+BODYPARAMETER <IMicrosoftGraphSitePage>: sitePage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1347,7 +1461,7 @@ BODYPARAMETER `<IMicrosoftGraphSitePage>`: sitePage
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5042,7 +5156,7 @@ BODYPARAMETER `<IMicrosoftGraphSitePage>`: sitePage
     - `[TextAlignment <String>]`: titleAreaTextAlignmentType
   - `[WebParts <IMicrosoftGraphWebPart[]>]`: Collection of webparts on the SharePoint page
 
-CANVASLAYOUT `<IMicrosoftGraphCanvasLayout>`: canvasLayout
+CANVASLAYOUT <IMicrosoftGraphCanvasLayout>: canvasLayout
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[HorizontalSections <IMicrosoftGraphHorizontalSection[]>]`: Collection of horizontal sections on the SharePoint page.
@@ -5060,12 +5174,12 @@ CANVASLAYOUT `<IMicrosoftGraphCanvasLayout>`: canvasLayout
     - `[Emphasis <String>]`: sectionEmphasisType
     - `[Webparts <IMicrosoftGraphWebPart[]>]`: The set of web parts in this section.
 
-CONTENTTYPE `<IMicrosoftGraphContentTypeInfo>`: contentTypeInfo
+CONTENTTYPE <IMicrosoftGraphContentTypeInfo>: contentTypeInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The id of the content type.
   - `[Name <String>]`: The name of the content type.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5074,7 +5188,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBYUSER `<IMicrosoftGraphUser1>`: user
+CREATEDBYUSER <IMicrosoftGraphUser1>: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -5951,7 +6065,7 @@ CREATEDBYUSER `<IMicrosoftGraphUser1>`: user
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9648,7 +9762,7 @@ CREATEDBYUSER `<IMicrosoftGraphUser1>`: user
     - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -9688,7 +9802,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9697,7 +9811,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LASTMODIFIEDBYUSER `<IMicrosoftGraphUser1>`: user
+LASTMODIFIEDBYUSER <IMicrosoftGraphUser1>: user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -10574,7 +10688,7 @@ LASTMODIFIEDBYUSER `<IMicrosoftGraphUser1>`: user
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14271,7 +14385,7 @@ LASTMODIFIEDBYUSER `<IMicrosoftGraphUser1>`: user
     - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+PARENTREFERENCE <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
@@ -14290,18 +14404,18 @@ PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-PUBLISHINGSTATE `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLISHINGSTATE <IMicrosoftGraphPublicationFacet>: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
-REACTIONS `<IMicrosoftGraphReactionsFacet>`: reactionsFacet
+REACTIONS <IMicrosoftGraphReactionsFacet>: reactionsFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CommentCount <Int32?>]`: Count of comments.
   - `[LikeCount <Int32?>]`: Count of likes.
   - `[ShareCount <Int32?>]`: Count of shares.
 
-TITLEAREA `<IMicrosoftGraphTitleArea>`: titleArea
+TITLEAREA <IMicrosoftGraphTitleArea>: titleArea
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AlternativeText <String>]`: Alternative text on the title area.
   - `[EnableGradientEffect <Boolean?>]`: Indicates whether the title area has a gradient effect enabled.
@@ -14326,7 +14440,7 @@ TITLEAREA `<IMicrosoftGraphTitleArea>`: titleArea
   - `[TextAboveTitle <String>]`: The text above title line.
   - `[TextAlignment <String>]`: titleAreaTextAlignmentType
 
-WEBPARTS <IMicrosoftGraphWebPart\[]>: Collection of webparts on the SharePoint page
+WEBPARTS <IMicrosoftGraphWebPart[]>: Collection of webparts on the SharePoint page
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS

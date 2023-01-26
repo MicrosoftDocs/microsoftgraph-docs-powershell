@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetchild
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreSetChild
@@ -13,20 +12,20 @@ Children terms of set in term [store].
 
 ## SYNTAX
 
-### List2 (Default)
+### List3 (Default)
 ```
 Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
+### Get3
 ```
 Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity3
 ```
 Get-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -44,7 +43,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -60,7 +59,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases: CV
 
 Required: False
@@ -90,7 +89,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -106,7 +105,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2
+Parameter Sets: GetViaIdentity3
 Aliases:
 
 Required: True
@@ -121,7 +120,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -151,7 +150,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -166,7 +165,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2
+Parameter Sets: List3, Get3
 Aliases:
 
 Required: True
@@ -181,7 +180,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2
+Parameter Sets: List3, Get3
 Aliases:
 
 Required: True
@@ -196,7 +195,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases: OrderBy
 
 Required: False
@@ -211,7 +210,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get3
 Aliases:
 
 Required: True
@@ -226,7 +225,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases: Limit
 
 Required: False
@@ -241,7 +240,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2
+Parameter Sets: List3
 Aliases:
 
 Required: False
@@ -269,7 +268,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitetermstoregroupsetchild
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgSiteTermStoreGroupSetChild
@@ -13,33 +12,33 @@ Create a new term object.
 
 ## SYNTAX
 
-### CreateExpanded2 (Default)
+### CreateExpanded3 (Default)
 ```
 New-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm1[]>]
  [-CreatedDateTime <DateTime>] [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
  [-Set <IMicrosoftGraphTermStoreSet1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create2
+### Create3
 ```
 New-MgSiteTermStoreGroupSetChild -GroupId <String> -SetId <String> -SiteId <String>
  -BodyParameter <IMicrosoftGraphTermStoreTerm1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded2
+### CreateViaIdentityExpanded3
 ```
 New-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Children <IMicrosoftGraphTermStoreTerm1[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
  [-Set <IMicrosoftGraphTermStoreSet1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity2
+### CreateViaIdentity3
 ```
 New-MgSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreTerm1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -57,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -73,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTermStoreTerm1
-Parameter Sets: Create2, CreateViaIdentity2
+Parameter Sets: Create3, CreateViaIdentity3
 Aliases:
 
 Required: True
@@ -89,7 +88,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHILDREN pro
 
 ```yaml
 Type: IMicrosoftGraphTermStoreTerm1[]
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -105,7 +104,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -121,7 +120,7 @@ To construct, please use Get-Help -Online and see NOTES section for DESCRIPTIONS
 
 ```yaml
 Type: IMicrosoftGraphTermStoreLocalizedDescription[]
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -136,7 +135,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2, Create2
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -152,7 +151,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -168,7 +167,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentity2
+Parameter Sets: CreateViaIdentityExpanded3, CreateViaIdentity3
 Aliases:
 
 Required: True
@@ -184,7 +183,7 @@ To construct, please use Get-Help -Online and see NOTES section for LABELS prope
 
 ```yaml
 Type: IMicrosoftGraphTermStoreLocalizedLabel[]
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -200,7 +199,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -216,7 +215,7 @@ To construct, please use Get-Help -Online and see NOTES section for PROPERTIES p
 
 ```yaml
 Type: IMicrosoftGraphKeyValue[]
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -231,8 +230,8 @@ To indicate which terms are related to the current term as either pinned or reus
 To construct, please use Get-Help -Online and see NOTES section for RELATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation[]
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Type: IMicrosoftGraphTermStoreRelation1[]
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -248,7 +247,7 @@ To construct, please use Get-Help -Online and see NOTES section for SET properti
 
 ```yaml
 Type: IMicrosoftGraphTermStoreSet1
-Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
+Parameter Sets: CreateExpanded3, CreateViaIdentityExpanded3
 Aliases:
 
 Required: False
@@ -263,7 +262,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2, Create2
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -278,7 +277,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded2, Create2
+Parameter Sets: CreateExpanded3, Create3
 Aliases:
 
 Required: True
@@ -338,7 +337,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTermStoreTerm1>`: term
+BODYPARAMETER <IMicrosoftGraphTermStoreTerm1>: term
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
@@ -382,7 +381,7 @@ BODYPARAMETER `<IMicrosoftGraphTermStoreTerm1>`: term
     - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
-CHILDREN <IMicrosoftGraphTermStoreTerm1\[]>: Children of current term.
+CHILDREN <IMicrosoftGraphTermStoreTerm1[]>: Children of current term.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
   - `[CreatedDateTime <DateTime?>]`: Date and time of term creation. Read-only.
@@ -425,11 +424,11 @@ CHILDREN <IMicrosoftGraphTermStoreTerm1\[]>: Children of current term.
     - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
-DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription\[]>: Description about term that is dependent on the languageTag.
+DESCRIPTIONS <IMicrosoftGraphTermStoreLocalizedDescription[]>: Description about term that is dependent on the languageTag.
   - `[Description <String>]`: The description in the localized language.
   - `[LanguageTag <String>]`: The language tag for the label.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
@@ -469,16 +468,16 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-LABELS <IMicrosoftGraphTermStoreLocalizedLabel\[]>: Label metadata for a term.
+LABELS <IMicrosoftGraphTermStoreLocalizedLabel[]>: Label metadata for a term.
   - `[IsDefault <Boolean?>]`: Indicates whether the label is the default label.
   - `[LanguageTag <String>]`: The language tag for the label.
   - `[Name <String>]`: The name of the label.
 
-PROPERTIES <IMicrosoftGraphKeyValue\[]>: Collection of properties on the term.
+PROPERTIES <IMicrosoftGraphKeyValue[]>: Collection of properties on the term.
   - `[Key <String>]`: Key for the key-value pair.
   - `[Value <String>]`: Value for the key-value pair.
 
-RELATIONS <IMicrosoftGraphTermStoreRelation1\[]>: To indicate which terms are related to the current term as either pinned or reused.
+RELATIONS <IMicrosoftGraphTermStoreRelation1[]>: To indicate which terms are related to the current term as either pinned or reused.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -522,7 +521,7 @@ RELATIONS <IMicrosoftGraphTermStoreRelation1\[]>: To indicate which terms are re
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
   - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
 
-SET `<IMicrosoftGraphTermStoreSet1>`: set
+SET <IMicrosoftGraphTermStoreSet1>: set
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].

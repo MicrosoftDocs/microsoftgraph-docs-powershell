@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstoresetchild
@@ -12,13 +12,13 @@ Delete navigation property children for sites
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete3 (Default)
 ```
 Remove-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity3
 ```
 Remove-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity2
+Parameter Sets: DeleteViaIdentity3
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Delete2
+Parameter Sets: Delete3
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete2
+Parameter Sets: Delete3
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: Delete2
+Parameter Sets: Delete3
 Aliases:
 
 Required: True
@@ -171,7 +171,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
