@@ -28,7 +28,7 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    Set-Location "../"
+    #Set-Location "../"
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add $FilePath
