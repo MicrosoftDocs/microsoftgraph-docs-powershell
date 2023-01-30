@@ -31,7 +31,7 @@ function Start-Generator {
     #Set-Location "../"
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
-    git add $FilePath
+    git add .
     git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
