@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticanomaly
 schema: 2.0.0
@@ -20,13 +20,13 @@ New-MgDeviceManagementUserExperienceAnalyticAnomaly [-AdditionalProperties <Hash
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
  [-IssueId <String>] [-Severity <UserExperienceAnalyticsAnomalySeverity>]
- [-State <UserExperienceAnalyticsAnomalyState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <UserExperienceAnalyticsAnomalyState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementUserExperienceAnalyticAnomaly
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +40,7 @@ Create new navigation property to userExperienceAnalyticsAnomaly for deviceManag
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +55,7 @@ Accept wildcard characters: False
 Indicates the first occurrence date and time for the anomaly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 Indicates the latest occurrence date and time for the anomaly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 The name of the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ Indicates the category of the anomaly.
 Eg: anomaly type can be device, application, stop error, driver or other.
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalyType
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsAnomalyType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 The name of the application or module that caused the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 The publisher of the application or module that caused the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 The version of the application or module that caused the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ The user experience analytics anomaly entity contains anomaly details.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAnomaly
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
 Parameter Sets: Create
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly detection model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +208,7 @@ The number of devices impacted by the anomaly.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly detection model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +255,7 @@ Indicates the severity of the anomaly.
 Eg: anomaly severity can be high, medium, low, informational or other.
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalySeverity
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsAnomalySeverity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +271,7 @@ Indicates the state of the anomaly.
 Eg: anomaly severity can be new, active, disabled, removed or other.
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalyState
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsAnomalyState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +286,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -302,7 +302,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -319,9 +319,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
+
 ## NOTES
 
 ALIASES
@@ -331,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experience analytics anomaly entity contains anomaly details.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomaly>: The user experience analytics anomaly entity contains anomaly details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AnomalyFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurrence date and time for the anomaly.
@@ -349,3 +351,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experi
   - `[State <UserExperienceAnalyticsAnomalyState?>]`: Indicates the state of the anomaly. Eg: anomaly severity can be new, active, disabled, removed or other.
 
 ## RELATED LINKS
+

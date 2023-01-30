@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: f3450fe4-eb54-4a55-8ac1-e82e55af0b4a
+Module Guid: e54242a2-b17f-4cfb-99a8-fd64c76674ab
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -47,12 +47,6 @@ Optionally, you can expand the manager's chain up to the root node.
 The groups and directory roles that the user is a member of.
 Read-only.
 Nullable.
-Supports $expand.
-
-### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
 Supports $expand.
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
@@ -130,9 +124,6 @@ A collection of resources linked to the task.
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
 
-### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
 ### [New-MgUser](New-MgUser.md)
 Create a new user.\nThe request body contains the user to create.
 At a minimum, you must specify the required properties for the user.
@@ -140,11 +131,6 @@ You can optionally specify any other writable properties.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create an outlookCategory object in the user's master list of categories.
@@ -171,9 +157,6 @@ Create new navigation property to extensions for users
 Create a linkedResource object to associate a specified task with an item in a partner application.
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
 You can also create a **linkedResource** object while creating a task.
-
-### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete user.

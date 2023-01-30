@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 8d089dda-94a8-468b-a3b9-4a5314802b69
+Module Guid: 35d1337d-6f7e-4b19-b2ea-230a7903cb06
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -112,14 +112,8 @@ This function is transitive.
 ### [Get-MgContactMemberOf](Get-MgContactMemberOf.md)
 Get memberOf from contacts
 
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
 Get transitiveMemberOf from contacts
-
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgContract](Get-MgContract.md)
 Retrieve the properties and relationships of contract object.
@@ -166,9 +160,6 @@ Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-
-### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
 The user that cloud joined the device or registered their personal device.
@@ -419,11 +410,6 @@ Create and register a new device in the organization.
 
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
-
-### [New-MgDeviceExtension](New-MgDeviceExtension.md)
-The collection of open extensions defined for the device.
-Read-only.
-Nullable.
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Create new navigation property ref to registeredOwners for devices

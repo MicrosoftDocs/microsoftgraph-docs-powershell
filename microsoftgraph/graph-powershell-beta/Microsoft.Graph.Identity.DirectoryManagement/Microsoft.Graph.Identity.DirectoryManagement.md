@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 8d089dda-94a8-468b-a3b9-4a5314802b69
+Module Guid: 35d1337d-6f7e-4b19-b2ea-230a7903cb06
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,9 +15,6 @@ Microsoft Graph PowerShell Cmdlets
 Invoke action complete
 
 ### [Complete-MgDirectoryRecommendation](Complete-MgDirectoryRecommendation.md)
-Invoke action complete
-
-### [Complete-MgDirectoryRecommendationImpactedResource](Complete-MgDirectoryRecommendationImpactedResource.md)
 Invoke action complete
 
 ### [Confirm-MgAdministrativeUnitMemberGroup](Confirm-MgAdministrativeUnitMemberGroup.md)
@@ -194,14 +191,8 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgContactTransitiveMemberOf](Get-MgContactTransitiveMemberOf.md)
 Get transitiveMemberOf from contacts
-
-### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgContactTransitiveReport](Get-MgContactTransitiveReport.md)
 The transitive reports for a contact.
@@ -261,9 +252,6 @@ Groups and administrative units that this device is a member of.
 Read-only.
 Nullable.
 Supports $expand.
-
-### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
-Invoke action getMemberObjects
 
 ### [Get-MgDeviceRegisteredOwner](Get-MgDeviceRegisteredOwner.md)
 The user that cloud joined the device or registered their personal device.
@@ -402,9 +390,6 @@ Get tenants from directory
 
 ### [Get-MgDirectoryRecommendation](Get-MgDirectoryRecommendation.md)
 Get recommendations from directory
-
-### [Get-MgDirectoryRecommendationImpactedResource](Get-MgDirectoryRecommendationImpactedResource.md)
-Get impactedResources from directory
 
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
 Retrieve the properties of a directoryRole object.
@@ -656,9 +641,6 @@ Invoke action dismiss
 ### [Invoke-MgDismissDirectoryRecommendation](Invoke-MgDismissDirectoryRecommendation.md)
 Invoke action dismiss
 
-### [Invoke-MgDismissDirectoryRecommendationImpactedResource](Invoke-MgDismissDirectoryRecommendationImpactedResource.md)
-Invoke action dismiss
-
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
 Deletes a domain using an asynchronous operation.
 Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
@@ -672,9 +654,6 @@ Invoke action postpone
 ### [Invoke-MgPostponeDirectoryRecommendation](Invoke-MgPostponeDirectoryRecommendation.md)
 Invoke action postpone
 
-### [Invoke-MgPostponeDirectoryRecommendationImpactedResource](Invoke-MgPostponeDirectoryRecommendationImpactedResource.md)
-Invoke action postpone
-
 ### [Invoke-MgPromoteDomain](Invoke-MgPromoteDomain.md)
 Promote a verified subdomain to the root domain.
 A verified domain has its **isVerified** property set to `true`.
@@ -683,9 +662,6 @@ A verified domain has its **isVerified** property set to `true`.
 Invoke action reactivate
 
 ### [Invoke-MgReactivateDirectoryRecommendation](Invoke-MgReactivateDirectoryRecommendation.md)
-Invoke action reactivate
-
-### [Invoke-MgReactivateDirectoryRecommendationImpactedResource](Invoke-MgReactivateDirectoryRecommendationImpactedResource.md)
 Invoke action reactivate
 
 ### [New-MgAdministrativeUnit](New-MgAdministrativeUnit.md)
@@ -717,11 +693,6 @@ Create new navigation property to commands for devices
 
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
-
-### [New-MgDeviceExtension](New-MgDeviceExtension.md)
-The collection of open extensions defined for the device.
-Read-only.
-Nullable.
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Create new navigation property ref to registeredOwners for devices
@@ -785,9 +756,6 @@ Create new navigation property to tenants for directory
 
 ### [New-MgDirectoryRecommendation](New-MgDirectoryRecommendation.md)
 Create new navigation property to recommendations for directory
-
-### [New-MgDirectoryRecommendationImpactedResource](New-MgDirectoryRecommendationImpactedResource.md)
-Create new navigation property to impactedResources for directory
 
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
 Activate a directory role.
@@ -950,9 +918,6 @@ Invoke action removePersonalData
 
 ### [Remove-MgDirectoryRecommendation](Remove-MgDirectoryRecommendation.md)
 Delete navigation property recommendations for directory
-
-### [Remove-MgDirectoryRecommendationImpactedResource](Remove-MgDirectoryRecommendationImpactedResource.md)
-Delete navigation property impactedResources for directory
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 Delete entity from directoryRoles
@@ -1297,9 +1262,6 @@ Update the navigation property tenants in directory
 
 ### [Update-MgDirectoryRecommendation](Update-MgDirectoryRecommendation.md)
 Update the navigation property recommendations in directory
-
-### [Update-MgDirectoryRecommendationImpactedResource](Update-MgDirectoryRecommendationImpactedResource.md)
-Update the navigation property impactedResources in directory
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 Update entity in directoryRoles

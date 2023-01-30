@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Reports
-Module Guid: 0216798d-3844-4de8-aee3-794e72574fe1
+Module Guid: a915dab6-8721-4b55-b409-6ac39e3d3352
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -43,10 +43,7 @@ Entity representing the configuration of a cached report
 ### [Get-MgDeviceManagementReportExportJob](Get-MgDeviceManagementReportExportJob.md)
 Entity representing a job to export a report
 
-### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
-Represents a detailed summary of an application sign-in.
-
-### [Get-MgReportApplicationSign](Get-MgReportApplicationSign.md)
+### [Get-MgReportApplicationSignInDetailedSummary](Get-MgReportApplicationSignInDetailedSummary.md)
 Represents a detailed summary of an application sign-in.
 
 ### [Get-MgReportAttackSimulationRepeatOffender](Get-MgReportAttackSimulationRepeatOffender.md)
@@ -64,10 +61,7 @@ Container for navigation properties for Azure AD authentication methods resource
 ### [Get-MgReportAuthenticationMethodUserRegistrationDetail](Get-MgReportAuthenticationMethodUserRegistrationDetail.md)
 Represents the state of a user's authentication methods, including which methods are registered and which features the user is registered and capable of (such as multi-factor authentication, self-service password reset, and passwordless authentication).
 
-### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
-Invoke function getAzureADApplicationSignInSummary
-
-### [Get-MgReportAzureAdApplicationSign](Get-MgReportAzureAdApplicationSign.md)
+### [Get-MgReportAzureAdApplicationSignInSummary](Get-MgReportAzureAdApplicationSignInSummary.md)
 Invoke function getAzureADApplicationSignInSummary
 
 ### [Get-MgReportBrowserDistributionUserCount](Get-MgReportBrowserDistributionUserCount.md)

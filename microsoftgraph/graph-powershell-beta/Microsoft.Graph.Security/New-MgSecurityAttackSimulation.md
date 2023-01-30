@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulation
 schema: 2.0.0
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSecurityAttackSimulation
 
 ## SYNOPSIS
-Create new navigation property to simulations for security
+Create an attack simulation campaign for a tenant.
 
 ## SYNTAX
 
@@ -17,19 +17,22 @@ Create new navigation property to simulations for security
 New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsAutomated] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-PayloadDeliveryPlatform <String>]
- [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-DurationInDays <Int32>]
+ [-ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-Id <String>]
+ [-IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-IsAutomated]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
+ [-LaunchDateTime <DateTime>] [-Payload <IMicrosoftGraphPayload>] [-PayloadDeliveryPlatform <String>]
+ [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
+New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to simulations for security
+Create an attack simulation campaign for a tenant.
 
 ## EXAMPLES
 
@@ -39,7 +42,7 @@ Create new navigation property to simulations for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +57,7 @@ Accept wildcard characters: False
 simulationAttackTechnique
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +72,7 @@ Accept wildcard characters: False
 simulationAttackType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 Unique identifier for the attack simulation automation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +103,7 @@ simulation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
 Parameter Sets: Create
 Aliases:
 
@@ -116,7 +119,7 @@ Date and time of completion of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +135,7 @@ emailIdentity
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +150,7 @@ Accept wildcard characters: False
 Date and time of creation of the attack simulation and training campaign.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +165,7 @@ Accept wildcard characters: False
 Description of the attack simulation and training campaign.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +181,38 @@ Display name of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DurationInDays
+Simulation duration in days.
+
+```yaml
+Type: System.Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExcludedAccountTarget
+accountTargetContent
+To construct, please use Get-Help -Online and see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +228,23 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludedAccountTarget
+accountTargetContent
+To construct, please use Get-Help -Online and see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +260,7 @@ Flag that represents if the attack simulation and training campaign was created 
 Supports $filter and $orderby.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +276,7 @@ emailIdentity
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +291,7 @@ Accept wildcard characters: False
 Date and time of the most recent modification of the attack simulation and training campaign.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +307,23 @@ Date and time of the launch/start of the attack simulation and training campaign
 Supports $filter and $orderby.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Payload
+payload
+To construct, please use Get-Help -Online and see NOTES section for PAYLOAD properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPayload
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -272,7 +338,7 @@ Accept wildcard characters: False
 payloadDeliveryPlatform
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -288,7 +354,7 @@ simulationReport
 To construct, please use Get-Help -Online and see NOTES section for REPORT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulationReport
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationReport
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -303,7 +369,7 @@ Accept wildcard characters: False
 simulationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -318,7 +384,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -334,7 +400,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -350,10 +416,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
+
 ## NOTES
 
 ALIASES
@@ -363,7 +431,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSimulation>`: simulation
+BODYPARAMETER <IMicrosoftGraphSimulation1>: simulation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AttackTechnique <String>]`: simulationAttackTechnique
@@ -378,10 +446,54 @@ BODYPARAMETER `<IMicrosoftGraphSimulation>`: simulation
   - `[CreatedDateTime <DateTime?>]`: Date and time of creation of the attack simulation and training campaign.
   - `[Description <String>]`: Description of the attack simulation and training campaign.
   - `[DisplayName <String>]`: Display name of the attack simulation and training campaign. Supports $filter and $orderby.
+  - `[DurationInDays <Int32?>]`: Simulation duration in days.
+  - `[ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>]`: accountTargetContent
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Type <String>]`: accountTargetContentType
+  - `[IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>]`: accountTargetContent
   - `[IsAutomated <Boolean?>]`: Flag that represents if the attack simulation and training campaign was created from a simulation automation flow. Supports $filter and $orderby.
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time of the most recent modification of the attack simulation and training campaign.
   - `[LaunchDateTime <DateTime?>]`: Date and time of the launch/start of the attack simulation and training campaign. Supports $filter and $orderby.
+  - `[Payload <IMicrosoftGraphPayload>]`: payload
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Brand <String>]`: payloadBrand
+    - `[Complexity <String>]`: payloadComplexity
+    - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[CreatedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload.
+    - `[Description <String>]`: Description of the attack simulation and training campaign payload.
+    - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Coachmarks <IMicrosoftGraphPayloadCoachmark[]>]`: Payload coachmark details.
+        - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Length <Int32?>]`: Length of coachmark.
+          - `[Offset <Int32?>]`: Offset of coachmark.
+          - `[Type <String>]`: coachmarkLocationType
+        - `[Description <String>]`: The description about the coachmark.
+        - `[Indicator <String>]`: The coachmark indicator.
+        - `[IsValid <Boolean?>]`: Indicates whether the coachmark is valid or not.
+        - `[Language <String>]`: The coachmark language.
+        - `[Order <String>]`: The coachmark order.
+      - `[Content <String>]`: Payload content details.
+      - `[PhishingUrl <String>]`: The phishing URL used to target a user.
+    - `[DisplayName <String>]`: Display name of the attack simulation and training campaign payload. Supports $filter and $orderby.
+    - `[Industry <String>]`: payloadIndustry
+    - `[IsAutomated <Boolean?>]`: Indicates whether the attack simulation and training campaign payload was created from an automation flow. Supports $filter and $orderby.
+    - `[IsControversial <Boolean?>]`: Indicates whether the payload is controversial.
+    - `[IsCurrentEvent <Boolean?>]`: Indicates whether the payload is from any recent event.
+    - `[Language <String>]`: Payload language.
+    - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[LastModifiedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[PayloadTags <String[]>]`: Free text tags for a payload.
+    - `[Platform <String>]`: payloadDeliveryPlatform
+    - `[PredictedCompromiseRate <Double?>]`: Predicted probability for a payload to phish a targeted user.
+    - `[SimulationAttackType <String>]`: simulationAttackType
+    - `[Source <String>]`: simulationContentSource
+    - `[Status <String>]`: simulationContentStatus
+    - `[Technique <String>]`: simulationAttackTechnique
+    - `[Theme <String>]`: payloadTheme
   - `[PayloadDeliveryPlatform <String>]`: payloadDeliveryPlatform
   - `[Report <IMicrosoftGraphSimulationReport>]`: simulationReport
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -437,19 +549,71 @@ BODYPARAMETER `<IMicrosoftGraphSimulation>`: simulation
         - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
   - `[Status <String>]`: simulationStatus
 
-CREATEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+CREATEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-LASTMODIFIEDBY `<IMicrosoftGraphEmailIdentity>`: emailIdentity
+EXCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>: accountTargetContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: accountTargetContentType
+
+INCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>: accountTargetContent
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Type <String>]`: accountTargetContentType
+
+LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: Email address of the user.
 
-REPORT `<IMicrosoftGraphSimulationReport>`: simulationReport
+PAYLOAD <IMicrosoftGraphPayload>: payload
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Brand <String>]`: payloadBrand
+  - `[Complexity <String>]`: payloadComplexity
+  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
+    - `[Email <String>]`: Email address of the user.
+  - `[CreatedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload.
+  - `[Description <String>]`: Description of the attack simulation and training campaign payload.
+  - `[Detail <IMicrosoftGraphPayloadDetail>]`: payloadDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Coachmarks <IMicrosoftGraphPayloadCoachmark[]>]`: Payload coachmark details.
+      - `[CoachmarkLocation <IMicrosoftGraphCoachmarkLocation>]`: coachmarkLocation
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Length <Int32?>]`: Length of coachmark.
+        - `[Offset <Int32?>]`: Offset of coachmark.
+        - `[Type <String>]`: coachmarkLocationType
+      - `[Description <String>]`: The description about the coachmark.
+      - `[Indicator <String>]`: The coachmark indicator.
+      - `[IsValid <Boolean?>]`: Indicates whether the coachmark is valid or not.
+      - `[Language <String>]`: The coachmark language.
+      - `[Order <String>]`: The coachmark order.
+    - `[Content <String>]`: Payload content details.
+    - `[PhishingUrl <String>]`: The phishing URL used to target a user.
+  - `[DisplayName <String>]`: Display name of the attack simulation and training campaign payload. Supports $filter and $orderby.
+  - `[Industry <String>]`: payloadIndustry
+  - `[IsAutomated <Boolean?>]`: Indicates whether the attack simulation and training campaign payload was created from an automation flow. Supports $filter and $orderby.
+  - `[IsControversial <Boolean?>]`: Indicates whether the payload is controversial.
+  - `[IsCurrentEvent <Boolean?>]`: Indicates whether the payload is from any recent event.
+  - `[Language <String>]`: Payload language.
+  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+  - `[LastModifiedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[PayloadTags <String[]>]`: Free text tags for a payload.
+  - `[Platform <String>]`: payloadDeliveryPlatform
+  - `[PredictedCompromiseRate <Double?>]`: Predicted probability for a payload to phish a targeted user.
+  - `[SimulationAttackType <String>]`: simulationAttackType
+  - `[Source <String>]`: simulationContentSource
+  - `[Status <String>]`: simulationContentStatus
+  - `[Technique <String>]`: simulationAttackTechnique
+  - `[Theme <String>]`: payloadTheme
+
+REPORT <IMicrosoftGraphSimulationReport>: simulationReport
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Overview <IMicrosoftGraphSimulationReportOverview>]`: simulationReportOverview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -504,4 +668,3 @@ REPORT `<IMicrosoftGraphSimulationReport>`: simulationReport
 
 ## RELATED LINKS
 
-## RELATED LINKS

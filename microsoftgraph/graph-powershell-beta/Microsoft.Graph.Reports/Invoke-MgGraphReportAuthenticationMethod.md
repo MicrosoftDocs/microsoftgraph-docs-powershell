@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/invoke-mggraphreportauthenticationmethod
 schema: 2.0.0
@@ -17,24 +17,29 @@ Invoke function usersRegisteredByFeature
 Invoke-MgGraphReportAuthenticationMethod [<CommonParameters>]
 ```
 
-### Graph3
-```
-Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
- [<CommonParameters>]
-```
-
 ### Graph1
 ```
 Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
  [<CommonParameters>]
 ```
 
-### GraphViaIdentity1
+### Graph2
+```
+Invoke-MgGraphReportAuthenticationMethod [<CommonParameters>]
+```
+
+### Graph3
+```
+Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
+ [<CommonParameters>]
+```
+
+### GraphViaIdentity
 ```
 Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
 
-### GraphViaIdentity
+### GraphViaIdentity1
 ```
 Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
@@ -50,8 +55,8 @@ Invoke function usersRegisteredByFeature
 Usage: includedUserRoles='{includedUserRoles}'
 
 ```yaml
-Type: String
-Parameter Sets: Graph3, Graph1
+Type: System.String
+Parameter Sets: Graph1, Graph3
 Aliases:
 
 Required: True
@@ -65,8 +70,8 @@ Accept wildcard characters: False
 Usage: includedUserTypes='{includedUserTypes}'
 
 ```yaml
-Type: String
-Parameter Sets: Graph3, Graph1
+Type: System.String
+Parameter Sets: Graph1, Graph3
 Aliases:
 
 Required: True
@@ -81,8 +86,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GraphViaIdentity1, GraphViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
+Parameter Sets: GraphViaIdentity, GraphViaIdentity1
 Aliases:
 
 Required: True
@@ -98,10 +103,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationFeatureSummary
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationMethodSummary
+
 ## NOTES
 
 ALIASES
@@ -111,7 +119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+INPUTOBJECT <IReportsIdentity>: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: key: id of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: key: id of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
@@ -139,3 +147,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: key: id of userRegistrationDetails
 
 ## RELATED LINKS
+
