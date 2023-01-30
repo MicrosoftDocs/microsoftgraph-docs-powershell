@@ -18,7 +18,7 @@ Update-MgGroupSiteTermStoreGroupSetChild -GroupId <String> -GroupId1 <String> -S
  -TermId <String> [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>]
  [-CreatedDateTime <DateTime>] [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ Update-MgGroupSiteTermStoreGroupSetChild -GroupId <String> -GroupId1 <String> -S
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Update-MgGroupSiteTermStoreGroupSetChild -GroupId <String> -GroupId1 <String> -S
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -71,7 +71,7 @@ Update-MgGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-Additio
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -81,7 +81,7 @@ Update-MgGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-Additio
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -91,7 +91,7 @@ Update-MgGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity> [-Additio
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -329,7 +329,7 @@ To indicate which terms are related to the current term as either pinned or reus
 To construct, please use Get-Help -Online and see NOTES section for RELATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation1[]
+Type: IMicrosoftGraphTermStoreRelation[]
 Parameter Sets: UpdateExpanded1, UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1
 Aliases:
 

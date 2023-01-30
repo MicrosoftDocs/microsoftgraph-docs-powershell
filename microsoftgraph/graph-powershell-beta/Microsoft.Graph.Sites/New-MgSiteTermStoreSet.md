@@ -12,33 +12,33 @@ Create new navigation property to sets for sites
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded2 (Default)
 ```
 New-MgSiteTermStoreSet -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Children <IMicrosoftGraphTermStoreTerm1[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup>] [-Properties <IMicrosoftGraphKeyValue[]>]
- [-Relations <IMicrosoftGraphTermStoreRelation[]>] [-Terms <IMicrosoftGraphTermStoreTerm1[]>] [-WhatIf]
+ [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm1[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create2
 ```
 New-MgSiteTermStoreSet -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreSet1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded2
 ```
 New-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Children <IMicrosoftGraphTermStoreTerm1[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-Id <String>] [-LocalizedNames <IMicrosoftGraphTermStoreLocalizedName[]>]
  [-ParentGroup <IMicrosoftGraphTermStoreGroup>] [-Properties <IMicrosoftGraphKeyValue[]>]
- [-Relations <IMicrosoftGraphTermStoreRelation[]>] [-Terms <IMicrosoftGraphTermStoreTerm1[]>] [-WhatIf]
+ [-Relations <IMicrosoftGraphTermStoreRelation1[]>] [-Terms <IMicrosoftGraphTermStoreTerm1[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity2
 ```
 New-MgSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreSet1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -56,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -72,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTermStoreSet1
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create2, CreateViaIdentity2
 Aliases:
 
 Required: True
@@ -88,7 +88,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHILDREN pro
 
 ```yaml
 Type: IMicrosoftGraphTermStoreTerm1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -104,7 +104,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -119,7 +119,7 @@ Description giving details on the term usage.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -135,7 +135,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -151,7 +151,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded2, CreateViaIdentity2
 Aliases:
 
 Required: True
@@ -167,7 +167,7 @@ To construct, please use Get-Help -Online and see NOTES section for LOCALIZEDNAM
 
 ```yaml
 Type: IMicrosoftGraphTermStoreLocalizedName[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -183,7 +183,7 @@ To construct, please use Get-Help -Online and see NOTES section for PARENTGROUP 
 
 ```yaml
 Type: IMicrosoftGraphTermStoreGroup
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -199,7 +199,7 @@ To construct, please use Get-Help -Online and see NOTES section for PROPERTIES p
 
 ```yaml
 Type: IMicrosoftGraphKeyValue[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -214,8 +214,8 @@ Indicates which terms have been pinned or reused directly under the set.
 To construct, please use Get-Help -Online and see NOTES section for RELATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphTermStoreRelation1[]
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -230,7 +230,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded2, Create2
 Aliases:
 
 Required: True
@@ -246,7 +246,7 @@ To construct, please use Get-Help -Online and see NOTES section for TERMS proper
 
 ```yaml
 Type: IMicrosoftGraphTermStoreTerm1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded2, CreateViaIdentityExpanded2
 Aliases:
 
 Required: False

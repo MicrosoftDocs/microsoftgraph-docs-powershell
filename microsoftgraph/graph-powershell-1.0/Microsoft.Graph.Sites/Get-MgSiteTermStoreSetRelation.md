@@ -13,33 +13,33 @@ Indicates which terms have been pinned or reused directly under the set.
 
 ## SYNTAX
 
-### List2 (Default)
+### List (Default)
 ```
 Get-MgSiteTermStoreSetRelation -SetId <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get2
-```
-Get-MgSiteTermStoreSetRelation -RelationId <String> -SetId <String> -SiteId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get
+### Get1
 ```
 Get-MgSiteTermStoreSetRelation -RelationId <String> -SetId <String> -SiteId <String> -StoreId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List
+### Get
+```
+Get-MgSiteTermStoreSetRelation -RelationId <String> -SetId <String> -SiteId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List1
 ```
 Get-MgSiteTermStoreSetRelation -SetId <String> -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -72,7 +72,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -88,7 +88,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -118,7 +118,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -134,7 +134,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -179,7 +179,7 @@ key: id of relation
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get
+Parameter Sets: Get1, Get
 Aliases:
 
 Required: True
@@ -194,7 +194,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -209,7 +209,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2, Get, List
+Parameter Sets: List, Get1, Get, List1
 Aliases:
 
 Required: True
@@ -224,7 +224,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List2, Get2, Get, List
+Parameter Sets: List, Get1, Get, List1
 Aliases:
 
 Required: True
@@ -239,7 +239,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -254,7 +254,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Get, List
+Parameter Sets: Get1, List1
 Aliases:
 
 Required: True
@@ -269,7 +269,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases: Limit
 
 Required: False
@@ -284,7 +284,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List2, List
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -302,7 +302,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
 ## NOTES
 
 ALIASES

@@ -405,6 +405,9 @@ Prior to calling forceDelete, you must update or remove any references to **Exch
 The following actions are performed as part of this operation: After the domain deletion completes, API operations for the deleted domain will return a HTTP 404 status code.
 To verify deletion of a domain, you can perform a get domain operation.
 
+### [Invoke-MgPromoteDomain](Invoke-MgPromoteDomain.md)
+Invoke action promote
+
 ### [New-MgContact](New-MgContact.md)
 Add new entity to contacts
 

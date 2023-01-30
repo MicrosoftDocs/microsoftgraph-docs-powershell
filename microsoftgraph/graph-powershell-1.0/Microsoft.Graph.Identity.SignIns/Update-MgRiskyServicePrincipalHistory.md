@@ -1,61 +1,66 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mguserauthenticationfido2method
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgriskyserviceprincipalhistory
 schema: 2.0.0
 ---
 
-# Update-MgUserAuthenticationFido2Method
+# Update-MgRiskyServicePrincipalHistory
 
 ## SYNOPSIS
-Update the navigation property fido2Methods in users
+Update the navigation property history in identityProtection
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
-Update-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -UserId <String>
- [-AaGuid <String>] [-AdditionalProperties <Hashtable>] [-AttestationCertificates <String[]>]
- [-AttestationLevel <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Model <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgUserAuthenticationFido2Method -Fido2AuthenticationMethodId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgRiskyServicePrincipalHistory -RiskyServicePrincipalHistoryItemId <String>
+ -RiskyServicePrincipalId <String> [-Activity <IMicrosoftGraphRiskServicePrincipalActivity>]
+ [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
+ [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>] [-InitiatedBy <String>]
+ [-IsEnabled] [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>]
+ [-RiskLevel <String>] [-RiskState <String>] [-ServicePrincipalType <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Update1
 ```
-Update-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [-AaGuid <String>]
- [-AdditionalProperties <Hashtable>] [-AttestationCertificates <String[]>] [-AttestationLevel <String>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Model <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgRiskyServicePrincipalHistory -RiskyServicePrincipalHistoryItemId <String>
+ -RiskyServicePrincipalId <String> -BodyParameter <IMicrosoftGraphRiskyServicePrincipalHistoryItem> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentityExpanded1
 ```
-Update-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphFido2AuthenticationMethod> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity>
+ [-Activity <IMicrosoftGraphRiskServicePrincipalActivity>] [-AdditionalProperties <Hashtable>]
+ [-AppId <String>] [-DisplayName <String>] [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]
+ [-Id <String>] [-InitiatedBy <String>] [-IsEnabled] [-IsProcessing] [-RiskDetail <String>]
+ [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
+ [-ServicePrincipalType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphRiskyServicePrincipalHistoryItem> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property fido2Methods in users
+Update the navigation property history in identityProtection
 
 ## EXAMPLES
 
 ## PARAMETERS
 
-### -AaGuid
-Authenticator Attestation GUID, an identifier that indicates the type (e.g.
-make and model) of the authenticator.
+### -Activity
+riskServicePrincipalActivity
+To construct, please use Get-Help -Online and see NOTES section for ACTIVITY properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphRiskServicePrincipalActivity
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +75,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -80,27 +85,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -AttestationCertificates
-The attestation certificate(s) attached to this security key.
-
-```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttestationLevel
-attestationLevel
+### -AppId
+The globally unique identifier for the associated application (its appId property), if any.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -111,12 +101,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-fido2AuthenticationMethod
+riskyServicePrincipalHistoryItem
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFido2AuthenticationMethod
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -126,27 +116,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -CreatedDateTime
-The timestamp when this key was registered to the user.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
-The display name of the key as given by the user.
+The display name for the service principal.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -156,15 +131,16 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Fido2AuthenticationMethodId
-key: id of fido2AuthenticationMethod
+### -History
+Represents the risk history of Azure AD service principals.
+To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -177,7 +153,22 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InitiatedBy
+The identifier of the actor of the operation.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -193,7 +184,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -203,12 +194,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Model
-The manufacturer-assigned model of the FIDO2 security key.
+### -IsEnabled
+true if the service principal account is enabled; otherwise, false.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsProcessing
+Indicates whether Azure AD is currently processing the service principal's risky state.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -233,15 +239,109 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserId
-key: id of user
+### -RiskDetail
+riskDetail
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RiskLastUpdatedDateTime
+The date and time that the risk state was last updated.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
+Supports $filter (eq).
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RiskLevel
+riskLevel
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RiskState
+riskState
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RiskyServicePrincipalHistoryItemId
+key: id of riskyServicePrincipalHistoryItem
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RiskyServicePrincipalId
+key: id of riskyServicePrincipal
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, Update1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ServicePrincipalType
+Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp).
+This is set by Azure AD internally and is inherited from servicePrincipal.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -285,7 +385,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFido2AuthenticationMethod
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipalHistoryItem
 ## OUTPUTS
 
 ### System.Boolean
@@ -298,15 +398,47 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphFido2AuthenticationMethod>`: fido2AuthenticationMethod
+ACTIVITY `<IMicrosoftGraphRiskServicePrincipalActivity>`: riskServicePrincipalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Detail <String>]`: riskDetail
+  - `[RiskEventTypes <String[]>]`: 
+
+BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipalHistoryItem>`: riskyServicePrincipalHistoryItem
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
+  - `[DisplayName <String>]`: The display name for the service principal.
+  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
+  - `[IsEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
+  - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
+  - `[RiskDetail <String>]`: riskDetail
+  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z. Supports $filter (eq).
+  - `[RiskLevel <String>]`: riskLevel
+  - `[RiskState <String>]`: riskState
+  - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.
-  - `[AttestationCertificates <String[]>]`: The attestation certificate(s) attached to this security key.
-  - `[AttestationLevel <String>]`: attestationLevel
-  - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
-  - `[DisplayName <String>]`: The display name of the key as given by the user.
-  - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
+  - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Detail <String>]`: riskDetail
+    - `[RiskEventTypes <String[]>]`: 
+  - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
+
+HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem\[]>: Represents the risk history of Azure AD service principals.
+  - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
+  - `[DisplayName <String>]`: The display name for the service principal.
+  - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
+  - `[IsEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
+  - `[IsProcessing <Boolean?>]`: Indicates whether Azure AD is currently processing the service principal's risky state.
+  - `[RiskDetail <String>]`: riskDetail
+  - `[RiskLastUpdatedDateTime <DateTime?>]`: The date and time that the risk state was last updated. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z. Supports $filter (eq).
+  - `[RiskLevel <String>]`: riskLevel
+  - `[RiskState <String>]`: riskState
+  - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Activity <IMicrosoftGraphRiskServicePrincipalActivity>]`: riskServicePrincipalActivity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Detail <String>]`: riskDetail
+    - `[RiskEventTypes <String[]>]`: 
+  - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
 INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
@@ -384,5 +516,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserFlowLanguagePageId <String>]`: key: id of userFlowLanguagePage
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+
+## RELATED LINKS
 
 ## RELATED LINKS

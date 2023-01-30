@@ -1,31 +1,31 @@
 ---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mguserauthenticationpasswordmethod
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgserviceprincipalriskdetection
 schema: 2.0.0
 ---
 
-# Remove-MgUserAuthenticationPasswordMethod
+# Remove-MgServicePrincipalRiskDetection
 
 ## SYNOPSIS
-Delete navigation property passwordMethods for users
+Delete navigation property servicePrincipalRiskDetections for identityProtection
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
-Remove-MgUserAuthenticationPasswordMethod -PasswordAuthenticationMethodId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity
-```
-Remove-MgUserAuthenticationPasswordMethod -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>]
+Remove-MgServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId <String> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
+### DeleteViaIdentity1
+```
+Remove-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
 ## DESCRIPTION
-Delete navigation property passwordMethods for users
+Delete navigation property servicePrincipalRiskDetections for identityProtection
 
 ## EXAMPLES
 
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -77,27 +77,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PasswordAuthenticationMethodId
-key: id of passwordAuthenticationMethod
+### -ServicePrincipalRiskDetectionId
+key: id of servicePrincipalRiskDetection
 
 ```yaml
 Type: String
-Parameter Sets: Delete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserId
-key: id of user
-
-```yaml
-Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True

@@ -16,14 +16,14 @@ Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId <String>
  -EdiscoveryCustodianId <String> [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Group <IMicrosoftGraphGroup>] [-HoldStatus <String>]
+ [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Group <IMicrosoftGraphGroup1>] [-HoldStatus <String>]
  [-Id <String>] [-IncludedSources <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId <String>
- -EdiscoveryCustodianId <String> -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource> [-WhatIf]
+ -EdiscoveryCustodianId <String> -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,14 +31,14 @@ New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId <S
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Group <IMicrosoftGraphGroup>] [-HoldStatus <String>] [-Id <String>]
+ [-DisplayName <String>] [-Group <IMicrosoftGraphGroup1>] [-HoldStatus <String>] [-Id <String>]
  [-IncludedSources <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,7 +109,7 @@ unifiedGroupSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUnifiedGroupSource
+Type: IMicrosoftGraphSecurityUnifiedGroupSource1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -202,7 +202,7 @@ group
 To construct, please use Get-Help -Online and see NOTES section for GROUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroup
+Type: IMicrosoftGraphGroup1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -311,11 +311,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource1
 ## NOTES
 
 ALIASES

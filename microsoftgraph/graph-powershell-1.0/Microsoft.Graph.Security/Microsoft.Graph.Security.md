@@ -122,6 +122,13 @@ Returns the tags that are a child of a tag.
 ### [Get-MgSecurityCaseEdiscoveryCaseTagParent](Get-MgSecurityCaseEdiscoveryCaseTagParent.md)
 Returns the parent tag of the specified tag.
 
+### [Get-MgSecurityIncident](Get-MgSecurityIncident.md)
+A collection of incidents in Microsoft 365 Defender, each of which is a set of correlated alerts and associated metadata that reflects the story of an attack.
+
+### [Get-MgSecurityIncidentAlert](Get-MgSecurityIncidentAlert.md)
+The list of related alerts.
+Supports $expand.
+
 ### [Get-MgSecuritySecureScore](Get-MgSecuritySecureScore.md)
 Get secureScores from security
 
@@ -190,6 +197,9 @@ Create a new additional source associated with an eDiscovery search.
 
 ### [New-MgSecurityCaseEdiscoveryCaseTag](New-MgSecurityCaseEdiscoveryCaseTag.md)
 Create a new ediscoveryReviewTag object.
+
+### [New-MgSecurityIncident](New-MgSecurityIncident.md)
+Create new navigation property to incidents for security
 
 ### [New-MgSecuritySecureScore](New-MgSecuritySecureScore.md)
 Create new navigation property to secureScores for security
@@ -265,6 +275,9 @@ Delete navigation property settings for security
 ### [Remove-MgSecurityCaseEdiscoveryCaseTag](Remove-MgSecurityCaseEdiscoveryCaseTag.md)
 Delete navigation property tags for security
 
+### [Remove-MgSecurityIncident](Remove-MgSecurityIncident.md)
+Delete navigation property incidents for security
+
 ### [Remove-MgSecuritySecureScore](Remove-MgSecuritySecureScore.md)
 Delete navigation property secureScores for security
 
@@ -273,6 +286,9 @@ Delete navigation property secureScoreControlProfiles for security
 
 ### [Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault.md)
 Reset a caseSettings object to the default values.
+
+### [Start-MgSecurityHuntingQuery](Start-MgSecurityHuntingQuery.md)
+Invoke action runHuntingQuery
 
 ### [Update-MgSecurityAlert](Update-MgSecurityAlert.md)
 Update the navigation property alerts in security
@@ -330,6 +346,9 @@ Update the properties of an ediscoveryCaseSettings object.
 
 ### [Update-MgSecurityCaseEdiscoveryCaseTag](Update-MgSecurityCaseEdiscoveryCaseTag.md)
 Update the navigation property tags in security
+
+### [Update-MgSecurityIncident](Update-MgSecurityIncident.md)
+Update the navigation property incidents in security
 
 ### [Update-MgSecuritySecureScore](Update-MgSecuritySecureScore.md)
 Update the navigation property secureScores in security

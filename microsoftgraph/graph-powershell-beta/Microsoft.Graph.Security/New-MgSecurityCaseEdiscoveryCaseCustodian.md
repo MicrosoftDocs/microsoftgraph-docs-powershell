@@ -17,15 +17,15 @@ Create a new ediscoveryCustodian object.\nAfter the custodian object is created,
 New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> [-AcknowledgedDateTime <DateTime>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>]
  [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
- [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
+ [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
+ [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource1[]>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,15 +33,15 @@ New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String>
 New-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-AcknowledgedDateTime <DateTime>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Email <String>]
  [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
- [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
+ [-ReleasedDateTime <DateTime>] [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
+ [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource1[]>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -98,7 +98,7 @@ ediscoveryCustodian
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian
+Type: IMicrosoftGraphSecurityEdiscoveryCustodian1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -266,7 +266,7 @@ Data source entity for SharePoint sites associated with the custodian.
 To construct, please use Get-Help -Online and see NOTES section for SITESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySiteSource[]
+Type: IMicrosoftGraphSecuritySiteSource1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -297,7 +297,7 @@ Data source entity for groups associated with the custodian.
 To construct, please use Get-Help -Online and see NOTES section for UNIFIEDGROUPSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUnifiedGroupSource[]
+Type: IMicrosoftGraphSecurityUnifiedGroupSource1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -361,11 +361,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian1
 ## NOTES
 
 ALIASES

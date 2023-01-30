@@ -16,7 +16,7 @@ Update the navigation property files in security
 ```
 Update-MgSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -EdiscoveryFileId <String>
  -EdiscoveryReviewSetId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian>] [-DateTime <DateTime>] [-Extension <String>]
+ [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian1>] [-DateTime <DateTime>] [-Extension <String>]
  [-ExtractedTextContentInputFile <String>] [-Id <String>] [-MediaType <String>] [-Name <String>]
  [-OtherProperties <Hashtable>] [-ProcessingStatus <String>] [-SenderOrAuthors <String[]>] [-Size <Int64>]
  [-SourceType <String>] [-SubjectTitle <String>] [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
@@ -34,7 +34,7 @@ Update-MgSecurityCaseEdiscoveryCaseReviewSetFile -EdiscoveryCaseId <String> -Edi
 ```
 Update-MgSecurityCaseEdiscoveryCaseReviewSetFile -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian>] [-DateTime <DateTime>] [-Extension <String>]
+ [-Custodian <IMicrosoftGraphSecurityEdiscoveryCustodian1>] [-DateTime <DateTime>] [-Extension <String>]
  [-ExtractedTextContentInputFile <String>] [-Id <String>] [-MediaType <String>] [-Name <String>]
  [-OtherProperties <Hashtable>] [-ProcessingStatus <String>] [-SenderOrAuthors <String[]>] [-Size <Int64>]
  [-SourceType <String>] [-SubjectTitle <String>] [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
@@ -105,7 +105,7 @@ ediscoveryCustodian
 To construct, please use Get-Help -Online and see NOTES section for CUSTODIAN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian
+Type: IMicrosoftGraphSecurityEdiscoveryCustodian1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

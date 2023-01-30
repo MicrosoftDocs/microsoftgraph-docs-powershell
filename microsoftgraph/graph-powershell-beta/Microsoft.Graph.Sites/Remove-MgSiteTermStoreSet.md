@@ -12,13 +12,13 @@ Delete navigation property sets for sites
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete2 (Default)
 ```
 Remove-MgSiteTermStoreSet -SetId <String> -SiteId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity2
 ```
 Remove-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete2
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete2
 Aliases:
 
 Required: True

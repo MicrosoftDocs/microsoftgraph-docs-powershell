@@ -548,6 +548,24 @@ The draft version is viewable by only managers, and the shared version is viewab
 For each shift, openshift and timeOff instance in the specified time range, the share action updates the shared version from the draft version, so that in addition to managers, employees can also view the most current information about the item.
 The **notifyTeam** parameter further specifies which employees can view the item.
 
+### [Invoke-MgSoftChatMessageDelete](Invoke-MgSoftChatMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftChatMessageReplyDelete](Invoke-MgSoftChatMessageReplyDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamChannelMessageDelete](Invoke-MgSoftTeamChannelMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamChannelMessageReplyDelete](Invoke-MgSoftTeamChannelMessageReplyDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamPrimaryChannelMessageDelete](Invoke-MgSoftTeamPrimaryChannelMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete](Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete.md)
+Invoke action softDelete
+
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
 Restore an archived team.
 This restores users' ability to send messages and edit the team, abiding by tenant and team settings.
@@ -1115,6 +1133,24 @@ The content stream, if the item represents a file.
 
 ### [Set-MgTeamSchedule](Set-MgTeamSchedule.md)
 Update the navigation property schedule in teams
+
+### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgChatMessageSoftDelete](Undo-MgChatMessageSoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamChannelMessageReplySoftDelete](Undo-MgTeamChannelMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamChannelMessageSoftDelete](Undo-MgTeamChannelMessageSoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamPrimaryChannelMessageReplySoftDelete](Undo-MgTeamPrimaryChannelMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgTeamPrimaryChannelMessageSoftDelete](Undo-MgTeamPrimaryChannelMessageSoftDelete.md)
+Invoke action undoSoftDelete
 
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 Update the navigation property teamsApps in appCatalogs

@@ -15,12 +15,12 @@ Update the navigation property searches in security
 ### UpdateExpanded1 (Default)
 ```
 Update-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
- [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
+ [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
+ [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -29,19 +29,18 @@ Update-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String> -Ediscovery
 ### Update1
 ```
 Update-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String> -EdiscoverySearchId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
+ [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
+ [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -50,8 +49,7 @@ Update-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 ### UpdateViaIdentity1
 ```
 Update-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,7 +107,7 @@ ediscoveryAddToReviewSetOperation
 To construct, please use Get-Help -Online and see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1
+Type: IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -125,7 +123,7 @@ ediscoverySearch
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch1
+Type: IMicrosoftGraphSecurityEdiscoverySearch
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -310,7 +308,7 @@ ediscoveryEstimateOperation
 To construct, please use Get-Help -Online and see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryEstimateOperation1
+Type: IMicrosoftGraphSecurityEdiscoveryEstimateOperation
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -419,7 +417,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 

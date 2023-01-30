@@ -15,12 +15,12 @@ Create a new ediscoverySearch object.
 ### CreateExpanded (Default)
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
- [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]
+ [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>]
+ [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -29,18 +29,18 @@ New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
 ### Create
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation>]
+ [-AddToReviewSetOperation <IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1>]
  [-AdditionalProperties <Hashtable>] [-AdditionalSources <IMicrosoftGraphSecurityDataSource[]>]
  [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustodianSources <IMicrosoftGraphSecurityDataSource[]>] [-DataSourceScopes <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>]
- [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation>]
+ [-LastEstimateStatisticsOperation <IMicrosoftGraphSecurityEdiscoveryEstimateOperation1>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-NoncustodialSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -49,7 +49,7 @@ New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 ### CreateViaIdentity
 ```
 New-MgSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoverySearch1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -117,7 +117,7 @@ ediscoveryAddToReviewSetOperation
 To construct, please use Get-Help -Online and see NOTES section for ADDTOREVIEWSETOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation
+Type: IMicrosoftGraphSecurityEdiscoveryAddToReviewSetOperation1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ ediscoverySearch
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch
+Type: IMicrosoftGraphSecurityEdiscoverySearch1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -303,7 +303,7 @@ ediscoveryEstimateOperation
 To construct, please use Get-Help -Online and see NOTES section for LASTESTIMATESTATISTICSOPERATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryEstimateOperation
+Type: IMicrosoftGraphSecurityEdiscoveryEstimateOperation1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -397,11 +397,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
 ## NOTES
 
 ALIASES

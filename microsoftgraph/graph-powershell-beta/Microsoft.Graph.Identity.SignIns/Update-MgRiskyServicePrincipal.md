@@ -16,7 +16,7 @@ Update the navigation property riskyServicePrincipals in identityProtection
 ```
 Update-MgRiskyServicePrincipal -RiskyServicePrincipalId <String> [-AccountEnabled]
  [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
- [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>] [-IsProcessing]
+ [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>] [-Id <String>] [-IsProcessing]
  [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
  [-ServicePrincipalType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -24,14 +24,14 @@ Update-MgRiskyServicePrincipal -RiskyServicePrincipalId <String> [-AccountEnable
 ### Update
 ```
 Update-MgRiskyServicePrincipal -RiskyServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyServicePrincipal1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-AccountEnabled]
  [-AdditionalProperties <Hashtable>] [-AppId <String>] [-DisplayName <String>]
- [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>] [-Id <String>] [-IsProcessing]
+ [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>] [-Id <String>] [-IsProcessing]
  [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>] [-RiskState <String>]
  [-ServicePrincipalType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,7 +39,7 @@ Update-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity> [-Account
 ### UpdateViaIdentity
 ```
 Update-MgRiskyServicePrincipal -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphRiskyServicePrincipal> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphRiskyServicePrincipal1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,7 +99,7 @@ riskyServicePrincipal
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyServicePrincipal
+Type: IMicrosoftGraphRiskyServicePrincipal1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -130,7 +130,7 @@ Represents the risk history of Azure AD service principals.
 To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem[]
+Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -334,7 +334,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal1
 ## OUTPUTS
 
 ### System.Boolean

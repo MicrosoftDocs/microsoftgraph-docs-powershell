@@ -24,7 +24,7 @@ Update-MgGroupSiteTermStoreGroupSetRelation -GroupId <String> -GroupId1 <String>
 ### Update
 ```
 Update-MgGroupSiteTermStoreGroupSetRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-WhatIf]
+ -SetId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Update-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-Addi
 ### UpdateViaIdentity
 ```
 Update-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ relation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation
+Type: IMicrosoftGraphTermStoreRelation1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -301,7 +301,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 

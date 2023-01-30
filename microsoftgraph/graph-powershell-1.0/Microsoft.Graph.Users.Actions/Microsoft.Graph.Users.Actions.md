@@ -382,6 +382,12 @@ Postpone a reminder for an event in a user calendar until a new time.
 ### [Invoke-MgSnoozeUserEventReminder](Invoke-MgSnoozeUserEventReminder.md)
 Postpone a reminder for an event in a user calendar until a new time.
 
+### [Invoke-MgSoftUserChatMessageDelete](Invoke-MgSoftUserChatMessageDelete.md)
+Invoke action softDelete
+
+### [Invoke-MgSoftUserChatMessageReplyDelete](Invoke-MgSoftUserChatMessageReplyDelete.md)
+Invoke action softDelete
+
 ### [Invoke-MgTranslateUserExchangeId](Invoke-MgTranslateUserExchangeId.md)
 Translate identifiers of Outlook-related resources between formats.
 
@@ -726,6 +732,12 @@ Validate that the mail nickname is unique This API only returns the first valida
 If the properties fail multiple validations, only the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
+
+### [Undo-MgUserChatMessageReplySoftDelete](Undo-MgUserChatMessageReplySoftDelete.md)
+Invoke action undoSoftDelete
+
+### [Undo-MgUserChatMessageSoftDelete](Undo-MgUserChatMessageSoftDelete.md)
+Invoke action undoSoftDelete
 
 ### [Unpublish-MgUserDriveListContentType](Unpublish-MgUserDriveListContentType.md)
 Unpublish a [contentType][] from a content type hub site.

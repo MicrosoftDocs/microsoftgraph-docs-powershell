@@ -18,7 +18,7 @@ Update-MgPrint [-AdditionalProperties <Hashtable>] [-Connectors <IMicrosoftGraph
  [-Operations <IMicrosoftGraphPrintOperation[]>] [-PrinterShares <IMicrosoftGraphPrinterShare[]>]
  [-Printers <IMicrosoftGraphPrinter1[]>] [-Reports <IMicrosoftGraphReportRoot>]
  [-Services <IMicrosoftGraphPrintService1[]>] [-Settings <IMicrosoftGraphPrintSettings>]
- [-Shares <IMicrosoftGraphPrinterShare[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition1[]>]
+ [-Shares <IMicrosoftGraphPrinterShare[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TASKDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition1[]
+Type: IMicrosoftGraphPrintTaskDefinition[]
 Parameter Sets: UpdateExpanded
 Aliases:
 

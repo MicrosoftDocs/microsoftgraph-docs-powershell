@@ -12,7 +12,7 @@ Update the navigation property groups in sites
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded2 (Default)
 ```
 Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -20,13 +20,13 @@ Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> [-AdditionalPrope
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
+### Update2
 ```
 Update-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreGroup>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentityExpanded2
 ```
 Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
@@ -34,7 +34,7 @@ Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-AdditionalProperties
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity2
 ```
 Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreGroup>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTermStoreGroup
-Parameter Sets: Update1, UpdateViaIdentity1
+Parameter Sets: Update2, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -99,7 +99,7 @@ Description that gives details on the term usage.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -114,7 +114,7 @@ Name of the group.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -129,7 +129,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded2, Update2
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentity2
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ ID of the parent site of this group.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ To construct, please use Get-Help -Online and see NOTES section for SETS propert
 
 ```yaml
 Type: IMicrosoftGraphTermStoreSet1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -237,7 +237,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded2, Update2
 Aliases:
 
 Required: True

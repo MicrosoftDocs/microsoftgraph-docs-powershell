@@ -15,13 +15,16 @@ Create a new [sitePage][] in the site pages [list][] in a [site][].
 ### CreateExpanded (Default)
 ```
 New-MgSitePage -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <IMicrosoftGraphContentTypeInfo>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser1>] [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayoutType <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-PublishingState <IMicrosoftGraphPublicationFacet>]
- [-Title <String>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CanvasLayout <IMicrosoftGraphCanvasLayout>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser1>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayout <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-PromotionKind <String>]
+ [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Reactions <IMicrosoftGraphReactionsFacet>]
+ [-ShowComments] [-ShowRecommendedPages] [-ThumbnailWebUrl <String>] [-Title <String>]
+ [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -33,13 +36,16 @@ New-MgSitePage -SiteId <String> -BodyParameter <IMicrosoftGraphSitePage> [-WhatI
 ### CreateViaIdentityExpanded
 ```
 New-MgSitePage -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <IMicrosoftGraphContentTypeInfo>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedByUser <IMicrosoftGraphUser1>] [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayoutType <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-PublishingState <IMicrosoftGraphPublicationFacet>]
- [-Title <String>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-CanvasLayout <IMicrosoftGraphCanvasLayout>] [-ContentType <IMicrosoftGraphContentTypeInfo>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser1>]
+ [-CreatedDateTime <DateTime>] [-Description <String>] [-ETag <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser1>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-PageLayout <String>]
+ [-ParentReference <IMicrosoftGraphItemReference>] [-PromotionKind <String>]
+ [-PublishingState <IMicrosoftGraphPublicationFacet>] [-Reactions <IMicrosoftGraphReactionsFacet>]
+ [-ShowComments] [-ShowRecommendedPages] [-ThumbnailWebUrl <String>] [-Title <String>]
+ [-TitleArea <IMicrosoftGraphTitleArea>] [-WebParts <IMicrosoftGraphWebPart[]>] [-WebUrl <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -116,6 +122,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CanvasLayout
+canvasLayout
+To construct, please use Get-Help -Online and see NOTES section for CANVASLAYOUT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCanvasLayout
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -311,8 +333,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PageLayoutType
-.
+### -PageLayout
+pageLayoutType
 
 ```yaml
 Type: String
@@ -342,12 +364,73 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PromotionKind
+pagePromotionType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PublishingState
 publicationFacet
 To construct, please use Get-Help -Online and see NOTES section for PUBLISHINGSTATE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphPublicationFacet
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Reactions
+reactionsFacet
+To construct, please use Get-Help -Online and see NOTES section for REACTIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphReactionsFacet
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShowComments
+Determines whether or not to show comments at the bottom of the page.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ShowRecommendedPages
+Determines whether or not to show recommended pages at the bottom of the page.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -373,11 +456,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ThumbnailWebUrl
+Url of the sitePage's thumbnail image
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Title
 Title of the sitePage.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TitleArea
+titleArea
+To construct, please use Get-Help -Online and see NOTES section for TITLEAREA properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTitleArea
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

@@ -17,8 +17,8 @@ If the external ID already exists, this API will return the onlineMeeting object
 ```
 Invoke-MgCreateOrGetUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants1>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -32,8 +32,8 @@ Invoke-MgCreateOrGetUserOnlineMeeting -UserId <String>
 ```
 Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants1>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -177,7 +177,7 @@ meetingParticipants
 To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingParticipants1
+Type: IMicrosoftGraphMeetingParticipants
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -273,7 +273,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
 ## NOTES
 
 ALIASES

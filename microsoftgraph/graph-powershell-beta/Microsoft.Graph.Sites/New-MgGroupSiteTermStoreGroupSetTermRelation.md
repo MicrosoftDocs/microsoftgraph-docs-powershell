@@ -24,7 +24,7 @@ New-MgGroupSiteTermStoreGroupSetTermRelation -GroupId <String> -GroupId1 <String
 ### Create
 ```
 New-MgGroupSiteTermStoreGroupSetTermRelation -GroupId <String> -GroupId1 <String> -SetId <String>
- -SiteId <String> -TermId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation> [-WhatIf] [-Confirm]
+ -SiteId <String> -TermId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ New-MgGroupSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity> [-Add
 ### CreateViaIdentity
 ```
 New-MgGroupSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ relation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation
+Type: IMicrosoftGraphTermStoreRelation1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -286,11 +286,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
 ## NOTES
 
 ALIASES

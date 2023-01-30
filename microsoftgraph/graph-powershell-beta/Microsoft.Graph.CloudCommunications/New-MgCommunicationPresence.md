@@ -15,8 +15,8 @@ Create new navigation property to presences for communications
 ### CreateExpanded (Default)
 ```
 New-MgCommunicationPresence [-Activity <String>] [-AdditionalProperties <Hashtable>] [-Availability <String>]
- [-Id <String>] [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Id <String>] [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
+ [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -116,6 +116,22 @@ To construct, please use Get-Help -Online and see NOTES section for OUTOFOFFICES
 
 ```yaml
 Type: IMicrosoftGraphOutOfOfficeSettings
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StatusMessage
+presenceStatusMessage
+To construct, please use Get-Help -Online and see NOTES section for STATUSMESSAGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPresenceStatusMessage
 Parameter Sets: CreateExpanded
 Aliases:
 

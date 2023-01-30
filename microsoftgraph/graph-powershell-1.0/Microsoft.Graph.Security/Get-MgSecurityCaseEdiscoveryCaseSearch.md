@@ -261,7 +261,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoverySearch
 ## NOTES
 
 ALIASES

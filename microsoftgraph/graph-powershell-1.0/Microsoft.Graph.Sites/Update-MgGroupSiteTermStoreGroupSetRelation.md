@@ -33,14 +33,14 @@ Update-MgGroupSiteTermStoreGroupSetRelation -GroupId <String> -GroupId1 <String>
 ### Update2
 ```
 Update-MgGroupSiteTermStoreGroupSetRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -StoreId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation1>
+ -SetId <String> -SiteId <String> -StoreId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgGroupSiteTermStoreGroupSetRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf]
+ -SetId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -63,13 +63,13 @@ Update-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-Addi
 ### UpdateViaIdentity2
 ```
 Update-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgGroupSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStoreRelation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,7 +99,7 @@ relation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation1
+Type: IMicrosoftGraphTermStoreRelation
 Parameter Sets: Update2, Update1, UpdateViaIdentity2, UpdateViaIdentity1
 Aliases:
 
@@ -346,7 +346,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 

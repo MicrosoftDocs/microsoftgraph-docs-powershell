@@ -15,7 +15,7 @@ Create a school.
 
 ### CreateExpanded (Default)
 ```
-New-MgEducationSchool [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress>]
+New-MgEducationSchool [-AdditionalProperties <Hashtable>] [-Address <IMicrosoftGraphPhysicalAddress1>]
  [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit>] [-Classes <IMicrosoftGraphEducationClass[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-Description <String>] [-DisplayName <String>]
  [-ExternalId <String>] [-ExternalPrincipalId <String>] [-ExternalSource <String>]
@@ -85,7 +85,7 @@ physicalAddress
 To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
+Type: IMicrosoftGraphPhysicalAddress1
 Parameter Sets: CreateExpanded
 Aliases:
 

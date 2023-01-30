@@ -15,13 +15,13 @@ Update the navigation property cases in security
 ### UpdateExpanded1 (Default)
 ```
 Update-MgSecurityCase [-AdditionalProperties <Hashtable>]
- [-EdiscoveryCases <IMicrosoftGraphSecurityEdiscoveryCase1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-EdiscoveryCases <IMicrosoftGraphSecurityEdiscoveryCase[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgSecurityCase -BodyParameter <IMicrosoftGraphSecurityCasesRoot1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgSecurityCase -BodyParameter <IMicrosoftGraphSecurityCasesRoot> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ casesRoot
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityCasesRoot1
+Type: IMicrosoftGraphSecurityCasesRoot
 Parameter Sets: Update1
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for EDISCOVERYCASES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCase1[]
+Type: IMicrosoftGraphSecurityEdiscoveryCase[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -146,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityCasesRoot1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityCasesRoot
 ## OUTPUTS
 
 ### System.Boolean

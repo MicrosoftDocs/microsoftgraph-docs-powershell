@@ -13,7 +13,7 @@ Create a new team.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel1[]>]
  [-Channels <IMicrosoftGraphChannel1[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
@@ -28,7 +28,7 @@ New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphCha
  [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgTeam -BodyParameter <IMicrosoftGraphTeam1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -294,7 +294,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -310,7 +310,7 @@ To construct, please use Get-Help -Online and see NOTES section for ALLCHANNELS 
 
 ```yaml
 Type: IMicrosoftGraphChannel1[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -326,7 +326,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTeam1
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -342,7 +342,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHANNELS pro
 
 ```yaml
 Type: IMicrosoftGraphChannel1[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -359,7 +359,7 @@ Must match one of a pre-configured set in the tenant's directory.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -374,7 +374,7 @@ Timestamp at which the team was created.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -390,7 +390,7 @@ Maximum length: 1024 characters.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -405,7 +405,7 @@ The name of the team.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -421,7 +421,7 @@ To construct, please use Get-Help -Online and see NOTES section for FUNSETTINGS 
 
 ```yaml
 Type: IMicrosoftGraphTeamFunSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -437,7 +437,7 @@ To construct, please use Get-Help -Online and see NOTES section for GROUP proper
 
 ```yaml
 Type: IMicrosoftGraphGroup
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -453,7 +453,7 @@ To construct, please use Get-Help -Online and see NOTES section for GUESTSETTING
 
 ```yaml
 Type: IMicrosoftGraphTeamGuestSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -469,7 +469,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -485,7 +485,7 @@ To construct, please use Get-Help -Online and see NOTES section for INCOMINGCHAN
 
 ```yaml
 Type: IMicrosoftGraphChannel1[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -501,7 +501,7 @@ To construct, please use Get-Help -Online and see NOTES section for INSTALLEDAPP
 
 ```yaml
 Type: IMicrosoftGraphTeamsAppInstallation[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -516,7 +516,7 @@ A unique ID for the team that has been used in a few places such as the audit lo
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -531,7 +531,7 @@ Whether this team is in read-only mode.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -547,7 +547,7 @@ To construct, please use Get-Help -Online and see NOTES section for MEMBERS prop
 
 ```yaml
 Type: IMicrosoftGraphConversationMember[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -563,7 +563,7 @@ To construct, please use Get-Help -Online and see NOTES section for MEMBERSETTIN
 
 ```yaml
 Type: IMicrosoftGraphTeamMemberSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -579,7 +579,7 @@ To construct, please use Get-Help -Online and see NOTES section for MESSAGINGSET
 
 ```yaml
 Type: IMicrosoftGraphTeamMessagingSettings
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -595,7 +595,7 @@ To construct, please use Get-Help -Online and see NOTES section for OPERATIONS p
 
 ```yaml
 Type: IMicrosoftGraphTeamsAsyncOperation[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -611,7 +611,7 @@ To construct, please use Get-Help -Online and see NOTES section for PHOTO proper
 
 ```yaml
 Type: IMicrosoftGraphProfilePhoto
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -627,7 +627,7 @@ To construct, please use Get-Help -Online and see NOTES section for PRIMARYCHANN
 
 ```yaml
 Type: IMicrosoftGraphChannel1
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -643,7 +643,7 @@ To construct, please use Get-Help -Online and see NOTES section for SCHEDULE pro
 
 ```yaml
 Type: IMicrosoftGraphSchedule
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -658,7 +658,7 @@ teamSpecialization
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -674,7 +674,7 @@ To construct, please use Get-Help -Online and see NOTES section for SUMMARY prop
 
 ```yaml
 Type: IMicrosoftGraphTeamSummary
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -690,7 +690,7 @@ To construct, please use Get-Help -Online and see NOTES section for TAGS propert
 
 ```yaml
 Type: IMicrosoftGraphTeamworkTag[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -705,7 +705,7 @@ teamsTemplate
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -720,7 +720,7 @@ The ID of the Azure Active Directory tenant.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -735,7 +735,7 @@ teamVisibilityType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -752,7 +752,7 @@ This URL should be treated as an opaque blob, and not parsed.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False

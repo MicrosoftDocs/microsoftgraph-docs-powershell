@@ -21,7 +21,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremisesConnection -CloudPcOnPremisesC
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>]
  [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VirtualNetworkLocation <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -40,7 +40,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremisesConnection
  [-HealthCheckStatusDetails <IMicrosoftGraphCloudPcOnPremisesConnectionStatusDetails>] [-Id <String>] [-InUse]
  [-ManagedBy <String>] [-OrganizationalUnit <String>] [-ResourceGroupId <String>] [-SubnetId <String>]
  [-SubscriptionId <String>] [-SubscriptionName <String>] [-Type <String>] [-VirtualNetworkId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VirtualNetworkLocation <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -415,6 +415,21 @@ Accept wildcard characters: False
 ### -VirtualNetworkId
 The ID of the target virtual network.
 Required format: /subscriptions/{subscription-id}/resourceGroups/{resourceGroupName}/providers/Microsoft.Network/virtualNetworks/{virtualNetworkName}.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -VirtualNetworkLocation
+.
 
 ```yaml
 Type: String

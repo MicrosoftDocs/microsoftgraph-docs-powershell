@@ -16,13 +16,13 @@ Update the navigation property ediscoveryCases in security
 ```
 Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-AdditionalProperties <Hashtable>]
  [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
+ [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian1[]>] [-Description <String>] [-DisplayName <String>]
  [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-LegalHolds <IMicrosoftGraphSecurityEdiscoveryHoldPolicy[]>]
  [-NoncustodialDataSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphSecurityCaseOperation[]>]
- [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet[]>]
- [-Searches <IMicrosoftGraphSecurityEdiscoverySearch[]>]
+ [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet1[]>]
+ [-Searches <IMicrosoftGraphSecurityEdiscoverySearch1[]>]
  [-Settings <IMicrosoftGraphSecurityEdiscoveryCaseSettings>] [-Status <String>]
  [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,20 +30,20 @@ Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String> [-AdditionalPrope
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
  [-ClosedBy <IMicrosoftGraphIdentitySet>] [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
+ [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian1[]>] [-Description <String>] [-DisplayName <String>]
  [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-LegalHolds <IMicrosoftGraphSecurityEdiscoveryHoldPolicy[]>]
  [-NoncustodialDataSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphSecurityCaseOperation[]>]
- [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet[]>]
- [-Searches <IMicrosoftGraphSecurityEdiscoverySearch[]>]
+ [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet1[]>]
+ [-Searches <IMicrosoftGraphSecurityEdiscoverySearch1[]>]
  [-Settings <IMicrosoftGraphSecurityEdiscoveryCaseSettings>] [-Status <String>]
  [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -51,7 +51,7 @@ Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-Additiona
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,7 +94,7 @@ ediscoveryCase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCase
+Type: IMicrosoftGraphSecurityEdiscoveryCase1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -158,7 +158,7 @@ Returns a list of case ediscoveryCustodian objects for this case.
 To construct, please use Get-Help -Online and see NOTES section for CUSTODIANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian[]
+Type: IMicrosoftGraphSecurityEdiscoveryCustodian1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -360,7 +360,7 @@ Returns a list of eDiscoveryReviewSet objects in the case.
 To construct, please use Get-Help -Online and see NOTES section for REVIEWSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewSet[]
+Type: IMicrosoftGraphSecurityEdiscoveryReviewSet1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -376,7 +376,7 @@ Returns a list of eDiscoverySearch objects associated with this case.
 To construct, please use Get-Help -Online and see NOTES section for SEARCHES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch[]
+Type: IMicrosoftGraphSecurityEdiscoverySearch1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -470,7 +470,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 

@@ -23,7 +23,7 @@ New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId <String> -
 ### Create1
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- -BodyParameter <IMicrosoftGraphSecuritySiteSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySiteSource1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -37,7 +37,7 @@ New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityIdent
 ### CreateViaIdentity1
 ```
 New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecuritySiteSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySiteSource1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,7 +81,7 @@ siteSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySiteSource
+Type: IMicrosoftGraphSecuritySiteSource1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -268,11 +268,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource1
 ## NOTES
 
 ALIASES

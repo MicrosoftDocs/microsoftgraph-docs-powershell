@@ -17,7 +17,7 @@ Update the navigation property unifiedGroupSources in security
 Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId <String>
  -EdiscoveryCustodianId <String> -UnifiedGroupSourceId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
- [-Group <IMicrosoftGraphGroup>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>] [-PassThru]
+ [-Group <IMicrosoftGraphGroup1>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -25,7 +25,7 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId <String>
  -EdiscoveryCustodianId <String> -UnifiedGroupSourceId <String>
- -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,14 +33,14 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Group <IMicrosoftGraphGroup>] [-HoldStatus <String>] [-Id <String>]
+ [-DisplayName <String>] [-Group <IMicrosoftGraphGroup1>] [-HoldStatus <String>] [-Id <String>]
  [-IncludedSources <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityUnifiedGroupSource1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -71,7 +71,7 @@ unifiedGroupSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUnifiedGroupSource
+Type: IMicrosoftGraphSecurityUnifiedGroupSource1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -164,7 +164,7 @@ group
 To construct, please use Get-Help -Online and see NOTES section for GROUP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroup
+Type: IMicrosoftGraphGroup1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -303,7 +303,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUnifiedGroupSource1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 

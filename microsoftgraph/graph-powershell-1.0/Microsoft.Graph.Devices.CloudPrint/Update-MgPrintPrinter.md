@@ -20,7 +20,7 @@ Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare1[]>]
- [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
+ [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger1[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProp
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
  [-RegisteredDateTime <DateTime>] [-Shares <IMicrosoftGraphPrinterShare1[]>]
- [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>] [-PassThru]
+ [-Status <IMicrosoftGraphPrinterStatus1>] [-TaskTriggers <IMicrosoftGraphPrintTaskTrigger1[]>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -409,7 +409,7 @@ A list of task triggers that are associated with the printer.
 To construct, please use Get-Help -Online and see NOTES section for TASKTRIGGERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskTrigger[]
+Type: IMicrosoftGraphPrintTaskTrigger1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

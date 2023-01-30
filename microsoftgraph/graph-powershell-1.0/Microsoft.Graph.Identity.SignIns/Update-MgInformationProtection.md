@@ -15,13 +15,13 @@ Update informationProtection
 ### UpdateExpanded1 (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
- [-Id <String>] [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection1> [-PassThru] [-WhatIf]
+Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -68,7 +68,7 @@ informationProtection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection1
+Type: IMicrosoftGraphInformationProtection
 Parameter Sets: Update1
 Aliases:
 
@@ -76,22 +76,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Id
-The unique idenfier for an entity.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -162,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
 ## OUTPUTS
 
 ### System.Boolean

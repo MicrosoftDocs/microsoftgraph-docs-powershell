@@ -12,62 +12,62 @@ Update the navigation property children in sites
 
 ## SYNTAX
 
-### UpdateExpanded3 (Default)
+### UpdateExpanded (Default)
 ```
 Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String>
  [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
+ [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateExpanded2
+```
+Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+ -TermId1 <String> [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>]
+ [-CreatedDateTime <DateTime>] [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
+ [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateExpanded1
 ```
-Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
- -TermId1 <String> [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>]
- [-CreatedDateTime <DateTime>] [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
- [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
- [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateExpanded
-```
-Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
+Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
  [-AdditionalProperties <Hashtable>] [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update3
+### Update2
+```
+Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+ -TermId1 <String> -BodyParameter <IMicrosoftGraphTermStoreTerm> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+ -BodyParameter <IMicrosoftGraphTermStoreTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Update
 ```
 Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String>
  -BodyParameter <IMicrosoftGraphTermStoreTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update1
-```
-Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
- -TermId1 <String> -BodyParameter <IMicrosoftGraphTermStoreTerm> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update
-```
-Update-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
- -BodyParameter <IMicrosoftGraphTermStoreTerm> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded3
+### UpdateViaIdentityExpanded2
 ```
 Update-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -77,7 +77,7 @@ Update-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-AdditionalPropert
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,11 +87,11 @@ Update-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-AdditionalPropert
  [-Children <IMicrosoftGraphTermStoreTerm[]>] [-CreatedDateTime <DateTime>]
  [-Descriptions <IMicrosoftGraphTermStoreLocalizedDescription[]>] [-Id <String>]
  [-Labels <IMicrosoftGraphTermStoreLocalizedLabel[]>] [-LastModifiedDateTime <DateTime>]
- [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation1[]>]
+ [-Properties <IMicrosoftGraphKeyValue[]>] [-Relations <IMicrosoftGraphTermStoreRelation[]>]
  [-Set <IMicrosoftGraphTermStoreSet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity3
+### UpdateViaIdentity2
 ```
 Update-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphTermStoreTerm>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -121,7 +121,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -137,7 +137,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphTermStoreTerm
-Parameter Sets: Update3, Update1, Update, UpdateViaIdentity3, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: Update2, Update1, Update, UpdateViaIdentity2, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -153,7 +153,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHILDREN pro
 
 ```yaml
 Type: IMicrosoftGraphTermStoreTerm[]
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -169,7 +169,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -185,7 +185,7 @@ To construct, please use Get-Help -Online and see NOTES section for DESCRIPTIONS
 
 ```yaml
 Type: IMicrosoftGraphTermStoreLocalizedDescription[]
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -201,7 +201,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -217,7 +217,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity3, UpdateViaIdentity1, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity2, UpdateViaIdentity1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -233,7 +233,7 @@ To construct, please use Get-Help -Online and see NOTES section for LABELS prope
 
 ```yaml
 Type: IMicrosoftGraphTermStoreLocalizedLabel[]
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -249,7 +249,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -280,7 +280,7 @@ To construct, please use Get-Help -Online and see NOTES section for PROPERTIES p
 
 ```yaml
 Type: IMicrosoftGraphKeyValue[]
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -295,8 +295,8 @@ To indicate which terms are related to the current term as either pinned or reus
 To construct, please use Get-Help -Online and see NOTES section for RELATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation1[]
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphTermStoreRelation[]
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -312,7 +312,7 @@ To construct, please use Get-Help -Online and see NOTES section for SET properti
 
 ```yaml
 Type: IMicrosoftGraphTermStoreSet
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, UpdateViaIdentityExpanded2, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -327,7 +327,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, Update3, Update1, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, Update2, Update1, Update
 Aliases:
 
 Required: True
@@ -342,7 +342,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, Update3, Update1, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, Update2, Update1, Update
 Aliases:
 
 Required: True
@@ -357,7 +357,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, Update1, Update
+Parameter Sets: UpdateExpanded2, UpdateExpanded1, Update2, Update1
 Aliases:
 
 Required: True
@@ -372,7 +372,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded1, UpdateExpanded, Update3, Update1, Update
+Parameter Sets: UpdateExpanded, UpdateExpanded2, UpdateExpanded1, Update2, Update1, Update
 Aliases:
 
 Required: True
@@ -387,7 +387,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Parameter Sets: UpdateExpanded2, Update2
 Aliases:
 
 Required: True

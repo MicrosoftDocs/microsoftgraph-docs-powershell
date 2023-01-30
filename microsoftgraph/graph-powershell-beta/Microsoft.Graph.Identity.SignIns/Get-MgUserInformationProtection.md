@@ -100,7 +100,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection1
 ## NOTES
 
 ALIASES

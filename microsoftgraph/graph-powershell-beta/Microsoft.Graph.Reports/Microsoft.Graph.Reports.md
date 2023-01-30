@@ -334,6 +334,9 @@ Invoke function getTeamsTeamActivityDetail
 ### [Get-MgReportTeamActivityDistributionCount](Get-MgReportTeamActivityDistributionCount.md)
 Invoke function getTeamsTeamActivityDistributionCounts
 
+### [Get-MgReportTeamCount](Get-MgReportTeamCount.md)
+Invoke function getTeamsTeamCounts
+
 ### [Get-MgReportTeamDeviceUsageDistributionTotalUserCount](Get-MgReportTeamDeviceUsageDistributionTotalUserCount.md)
 Invoke function getTeamsDeviceUsageDistributionTotalUserCounts
 

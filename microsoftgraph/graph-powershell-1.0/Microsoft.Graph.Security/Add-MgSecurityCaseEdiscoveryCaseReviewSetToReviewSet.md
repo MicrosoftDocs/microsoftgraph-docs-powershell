@@ -18,7 +18,7 @@ The location provides a URL that will return a Add to review set operation.
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-Search <IMicrosoftGraphSecurityEdiscoverySearch1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Add1
@@ -32,7 +32,7 @@ Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId <String> 
 ```
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -InputObject <ISecurityIdentity>
  [-AdditionalDataOptions <String>] [-AdditionalProperties <Hashtable>]
- [-Search <IMicrosoftGraphSecurityEdiscoverySearch1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Search <IMicrosoftGraphSecurityEdiscoverySearch>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity1
@@ -178,7 +178,7 @@ ediscoverySearch
 To construct, please use Get-Help -Online and see NOTES section for SEARCH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch1
+Type: IMicrosoftGraphSecurityEdiscoverySearch
 Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 

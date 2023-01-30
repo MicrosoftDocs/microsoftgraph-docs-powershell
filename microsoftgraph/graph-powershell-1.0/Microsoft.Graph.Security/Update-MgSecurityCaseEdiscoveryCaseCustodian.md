@@ -18,15 +18,15 @@ Update-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> -Ediscov
  [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
- [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource1[]>]
+ [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
+ [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId <String> -EdiscoveryCustodianId <String>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -36,15 +36,15 @@ Update-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
  [-AcknowledgedDateTime <DateTime>] [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>]
  [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>] [-ReleasedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
- [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource1[]>]
+ [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
+ [-UnifiedGroupSources <IMicrosoftGraphSecurityUnifiedGroupSource[]>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCustodian> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -90,7 +90,7 @@ ediscoveryCustodian
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian1
+Type: IMicrosoftGraphSecurityEdiscoveryCustodian
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -288,7 +288,7 @@ Data source entity for SharePoint sites associated with the custodian.
 To construct, please use Get-Help -Online and see NOTES section for SITESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySiteSource1[]
+Type: IMicrosoftGraphSecuritySiteSource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +319,7 @@ Data source entity for groups associated with the custodian.
 To construct, please use Get-Help -Online and see NOTES section for UNIFIEDGROUPSOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUnifiedGroupSource1[]
+Type: IMicrosoftGraphSecurityUnifiedGroupSource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -383,7 +383,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCustodian
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 

@@ -21,7 +21,7 @@ Grant-MgSitePermission -PermissionId <String> -SiteId <String> [-AdditionalPrope
 ### Grant
 ```
 Grant-MgSitePermission -PermissionId <String> -SiteId <String>
- -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Grant-MgSitePermission -InputObject <ISitesIdentity> [-AdditionalProperties <Has
 ### GrantViaIdentity
 ```
 Grant-MgSitePermission -InputObject <ISitesIdentity>
- -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -90,7 +90,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+Type: IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
@@ -214,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
