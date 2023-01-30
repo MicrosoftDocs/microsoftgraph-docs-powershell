@@ -166,7 +166,7 @@ function Get-ExternalDocs-Url {
                  }
              
                  if ($MethodName -eq "DELETE") {
-                     $externalDocUrl = $path[$UriPath].delete.externalDocs.url 
+                     $ExternalDocUrl = $path[$UriPath].delete.externalDocs.url 
                  }
 
                  if ($MethodName -eq "PUT") {
