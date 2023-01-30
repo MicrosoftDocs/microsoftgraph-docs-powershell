@@ -28,7 +28,6 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    #Set-Location "../"
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add .
@@ -47,9 +46,8 @@ function Get-FilesByProfile {
     )
 
 
-    #$ModulesToGenerate | ForEach-Object {
-        #$ModuleName = $_
-        $ModuleName = "Applications"
+    $ModulesToGenerate | ForEach-Object {
+        $ModuleName = $_
         $FullModuleName = "$ModulePrefix.$ModuleName"
         $ModulePath = Join-Path $WorkLoadDocsPath "\$GraphProfilePath\$FullModuleName"
         $OpenApiFile = Join-Path $SDKOpenApiPath "\openApiDocs\v1.0\$ModuleName.yml"
@@ -59,7 +57,7 @@ function Get-FilesByProfile {
             $OpenApiContent = ($YamlContent | ConvertFrom-Yaml)
             Get-Files -GraphProfile $GraphProfile -GraphProfilePath $ModulePath -Module $ModuleName -OpenApiContent $OpenApiContent -ModulePrefix $ModulePrefix
         }
-    #}
+    }
 
 }
 function Get-Files {
@@ -235,7 +233,7 @@ function WebScrapping {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_msprodvaluesTwo"+$date
+$proposedBranch = "weekly_update_help_files_"+$date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
