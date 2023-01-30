@@ -166,8 +166,8 @@ function Get-ExternalDocs-Url {
                  }
   
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
-                    $Url = $ExternalDocUrl.split(" ")
-                    WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $Url[0] -Command $Command -File $File
+                    #$Url = $ExternalDocUrl.split(" ")
+                    WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
                 }
             
             }
