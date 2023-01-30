@@ -53,21 +53,21 @@ jobs:
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\FileCopy.ps1
 
-  - task: PowerShell@2
-    displayName: 'Update Powershell Help'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Update Powershell Help'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-  - task: PowerShell@2
-    displayName: 'Escape disallowed html tags'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Escape disallowed html tags'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
 
   - task: PowerShell@2
     displayName: 'Update metadata header'
@@ -89,7 +89,7 @@ jobs:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "weekly_update_help_files_"+$date
+        $proposedBranch = "weekly_update_help_files_msprodvalues"+$date
         git add .
         git commit -m "Updating help files "+$date
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
