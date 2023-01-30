@@ -29,11 +29,10 @@
     }
   ],
   "notification_subscribers": [
-    "gendungu@microsoft.com"
+    "twamalwa@microsoft.com"
   ],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
-  "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
@@ -44,9 +43,9 @@
     }
   ],
   "branch_target_mapping": {},
-  "need_generate_pdf_url_template": false,
   "targets": {},
   "docs_build_engine": {},
+  "skip_source_output_uploading": false,
   "contribution_branch_mappings": {},
   "dependent_packages": [
     {
@@ -60,6 +59,7 @@
   "monikerPath": [
     "mapping/monikerMapping.json"
   ],
+  "need_generate_pdf_url_template": false,
   "enable_incremental_build": false,
   "need_generate_pdf": false,
   "need_generate_intellisense": false
