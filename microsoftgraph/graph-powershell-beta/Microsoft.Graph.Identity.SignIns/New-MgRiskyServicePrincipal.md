@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipal
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # New-MgRiskyServicePrincipal
@@ -18,12 +17,12 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 New-MgRiskyServicePrincipal [-AccountEnabled] [-AdditionalProperties <Hashtable>] [-AppId <String>]
  [-DisplayName <String>] [-History <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>] [-Id <String>]
  [-IsProcessing] [-RiskDetail <String>] [-RiskLastUpdatedDateTime <DateTime>] [-RiskLevel <String>]
- [-RiskState <String>] [-ServicePrincipalType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RiskState <String>] [-ServicePrincipalType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal1> [-WhatIf] [-Confirm]
+New-MgRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrincipal1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,13 +31,24 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 
 ## EXAMPLES
 
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgRiskyServicePrincipal
+```
+
+This example shows how to use the New-MgRiskyServicePrincipal Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AccountEnabled
 true if the service principal account is enabled; otherwise, false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +63,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +78,7 @@ Accept wildcard characters: False
 The globally unique identifier for the associated application (its appId property), if any.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +94,7 @@ riskyServicePrincipal
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyServicePrincipal1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal1
 Parameter Sets: Create
 Aliases:
 
@@ -99,7 +109,7 @@ Accept wildcard characters: False
 The display name for the service principal.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +125,7 @@ Represents the risk history of Azure AD service principals.
 To construct, please use Get-Help -Online and see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +141,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +156,7 @@ Accept wildcard characters: False
 Indicates whether Azure AD is currently processing the service principal's risky state.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +171,7 @@ Accept wildcard characters: False
 riskDetail
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +189,7 @@ For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 Supports $filter (eq).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +204,7 @@ Accept wildcard characters: False
 riskLevel
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +219,7 @@ Accept wildcard characters: False
 riskState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +235,7 @@ Identifies whether the service principal represents an Application, a ManagedIde
 This is set by Azure AD internally and is inherited from servicePrincipal.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +250,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -256,7 +266,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -273,9 +283,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyServicePrincipal1
+
 ## NOTES
 
 ALIASES
@@ -285,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipal1>`: riskyServicePrincipal
+BODYPARAMETER <IMicrosoftGraphRiskyServicePrincipal1>: riskyServicePrincipal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
@@ -316,7 +328,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipal1>`: riskyServicePrincipal
   - `[RiskState <String>]`: riskState
   - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an Application, a ManagedIdentity, or a legacy application (socialIdp). This is set by Azure AD internally and is inherited from servicePrincipal.
 
-HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem1\[]>: Represents the risk history of Azure AD service principals.
+HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem1[]>: Represents the risk history of Azure AD service principals.
   - `[AccountEnabled <Boolean?>]`: true if the service principal account is enabled; otherwise, false.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
@@ -336,3 +348,4 @@ HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem1\[]>: Represents the ri
   - `[ServicePrincipalId <String>]`: The identifier of the service principal.
 
 ## RELATED LINKS
+

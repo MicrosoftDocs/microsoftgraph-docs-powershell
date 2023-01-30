@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgcleandevicemanagementmanageddevicewindowdevice
 schema: 2.0.0
@@ -15,27 +15,27 @@ Clean Windows device
 ### CleanExpanded (Default)
 ```
 Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Clean
 ```
 Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice -ManagedDeviceId <String>
  -BodyParameter <IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CleanViaIdentityExpanded
-```
-Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CleanViaIdentity
 ```
 Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CleanViaIdentityExpanded
+```
+Invoke-MgCleanDeviceManagementManagedDeviceWindowDevice -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-KeepUserData] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Clean Windows device
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CleanExpanded, CleanViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Clean, CleanViaIdentity
 Aliases:
 
@@ -81,8 +81,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: CleanViaIdentityExpanded, CleanViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: CleanViaIdentity, CleanViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CleanExpanded, CleanViaIdentityExpanded
 Aliases:
 
@@ -111,8 +111,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CleanExpanded, Clean
+Type: System.String
+Parameter Sets: Clean, CleanExpanded
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,10 +174,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -187,11 +190,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ll2DrbDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphCleanwindowsdevicePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeepUserData <Boolean?>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
@@ -226,6 +229,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
   - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
@@ -245,3 +249,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

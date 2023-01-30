@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementrolescopetag
 schema: 2.0.0
@@ -15,28 +15,28 @@ Invoke action assign
 ### AssignExpanded (Default)
 ```
 Set-MgDeviceManagementRoleScopeTag -RoleScopeTagId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgDeviceManagementRoleScopeTag -RoleScopeTagId <String>
  -BodyParameter <IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentityExpanded
-```
-Set-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentityExpanded
+```
+Set-MgDeviceManagementRoleScopeTag -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleScopeTagAutoAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTagAutoAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -98,8 +98,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 key: id of roleScopeTag
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -144,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,10 +161,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleScopeTagAutoAssignment
+
 ## NOTES
 
 ALIASES
@@ -174,14 +177,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphRoleScopeTagAutoAssignment\[]>: .
+ASSIGNMENTS <IMicrosoftGraphRoleScopeTagAutoAssignment[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -190,7 +193,7 @@ BODYPARAMETER `<IPathsNvnleuDevicemanagementRolescopetagsRolescopetagIdMicrosoft
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
@@ -225,6 +228,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
   - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
@@ -244,3 +248,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

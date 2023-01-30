@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignment
 schema: 2.0.0
@@ -15,41 +15,41 @@ Update the navigation property assignments in education
 ### UpdateExpanded (Default)
 ```
 Update-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String>
- [-AddToCalendarAction <String>] [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>]
+ [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AddToCalendarAction <String>]
  [-AllowLateSubmissions] [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-Id <String>] [-Instructions <IMicrosoftGraphEducationItemBody>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEducationClassAssignment -EducationAssignmentId <String> -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEducationClassAssignment -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationAssignment> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgEducationClassAssignment -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-AllowLateSubmissions]
+Update-MgEducationClassAssignment -InputObject <IEducationIdentity> [-AddedStudentAction <String>]
+ [-AdditionalProperties <Hashtable>] [-AddToCalendarAction <String>] [-AllowLateSubmissions]
  [-AllowStudentsToAddResourcesToSubmission] [-AssignTo <Hashtable>]
  [-Categories <IMicrosoftGraphEducationCategory[]>] [-ClassId <String>] [-CloseDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-DueDateTime <DateTime>]
  [-Grading <Hashtable>] [-Id <String>] [-Instructions <IMicrosoftGraphEducationItemBody>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-NotificationChannelUrl <String>]
  [-Resources <IMicrosoftGraphEducationAssignmentResource[]>] [-Rubric <IMicrosoftGraphEducationRubric>]
- [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Status <String>] [-Submissions <IMicrosoftGraphEducationSubmission[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEducationClassAssignment -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -82,7 +82,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 educationAddedStudentAction
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 educationAddToCalendarOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ Identifies whether students can submit after the due date.
 If this property is not specified during create, it defaults to true.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Identifies whether students can add their own resources to a submission or if they can only modify resources added by the teacher.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 educationAssignmentRecipient
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ educationAssignment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignment
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -192,7 +192,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationCategory[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationCategory[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Class which this assignment belongs.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +226,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +242,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +257,7 @@ Accept wildcard characters: False
 Name of the assignment.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +274,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,8 +289,8 @@ Accept wildcard characters: False
 key: id of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -304,8 +304,8 @@ Accept wildcard characters: False
 key: id of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -319,7 +319,7 @@ Accept wildcard characters: False
 educationAssignmentGradeType
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -335,7 +335,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -351,8 +351,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -367,7 +367,7 @@ educationItemBody
 To construct, please use Get-Help -Online and see NOTES section for INSTRUCTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationItemBody
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationItemBody
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -383,7 +383,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -401,7 +401,7 @@ This field only applies to assignments where the assignTo value is educationAssi
 Updating the notificationChannelUrl is not allowed after the assignment has been published.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -416,7 +416,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -434,7 +434,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignmentResource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -450,7 +450,7 @@ educationRubric
 To construct, please use Get-Help -Online and see NOTES section for RUBRIC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationRubric
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationRubric
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -465,7 +465,7 @@ Accept wildcard characters: False
 educationAssignmentStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -483,7 +483,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SUBMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSubmission[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -498,7 +498,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -514,7 +514,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -531,10 +531,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignment
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -544,7 +547,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
+BODYPARAMETER <IMicrosoftGraphEducationAssignment>: educationAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddToCalendarAction <String>]`: educationAddToCalendarOptions
@@ -624,11 +627,11 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
     - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]`: 
     - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-CATEGORIES <IMicrosoftGraphEducationCategory\[]>: When set, enables users to easily find assignments of a given type. Read-only. Nullable.
+CATEGORIES <IMicrosoftGraphEducationCategory[]>: When set, enables users to easily find assignments of a given type. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Unique identifier for the category.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -637,7 +640,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
@@ -651,12 +654,12 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
   - `[EducationUserId <String>]`: key: id of educationUser
 
-INSTRUCTIONS `<IMicrosoftGraphEducationItemBody>`: educationItemBody
+INSTRUCTIONS <IMicrosoftGraphEducationItemBody>: educationItemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: 
   - `[ContentType <String>]`: bodyType
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -665,7 +668,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES <IMicrosoftGraphEducationAssignmentResource\[]>: Learning objects that are associated with this assignment. Only teachers can modify this list. Nullable.
+RESOURCES <IMicrosoftGraphEducationAssignmentResource[]>: Learning objects that are associated with this assignment. Only teachers can modify this list. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -681,7 +684,7 @@ RESOURCES <IMicrosoftGraphEducationAssignmentResource\[]>: Learning objects that
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-RUBRIC `<IMicrosoftGraphEducationRubric>`: educationRubric
+RUBRIC <IMicrosoftGraphEducationRubric>: educationRubric
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -713,7 +716,7 @@ RUBRIC `<IMicrosoftGraphEducationRubric>`: educationRubric
     - `[QualityId <String>]`: The ID of this resource.
     - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
-SUBMISSIONS <IMicrosoftGraphEducationSubmission\[]>: Once published, there is a submission object for each student representing their work and grade. Read-only. Nullable.
+SUBMISSIONS <IMicrosoftGraphEducationSubmission[]>: Once published, there is a submission object for each student representing their work and grade. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -745,4 +748,3 @@ SUBMISSIONS <IMicrosoftGraphEducationSubmission\[]>: Once published, there is a 
 
 ## RELATED LINKS
 
-## RELATED LINKS

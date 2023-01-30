@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementdeviceconfigurationmanageddevicecertificatestate
 schema: 2.0.0
@@ -21,7 +21,7 @@ Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
  [-CertificateRevokeStatus <CertificateRevocationStatus>]
  [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
  [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
- [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -29,7 +29,15 @@ Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
 ```
 Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
  -ManagedAllDeviceCertificateStateId <String> -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,15 +49,7 @@ Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
  [-CertificateRevokeStatus <CertificateRevocationStatus>]
  [-CertificateRevokeStatusLastChangeDateTime <DateTime>] [-CertificateSerialNumber <String>]
  [-CertificateSubjectName <String>] [-CertificateThumbprint <String>] [-Id <String>]
- [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphManagedAllDeviceCertificateState> [-PassThru] [-WhatIf] [-Confirm]
+ [-ManagedDeviceDisplayName <String>] [-UserPrincipalName <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -64,7 +64,7 @@ Update the navigation property deviceConfigurationsAllManagedDeviceCertificateSt
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ managedAllDeviceCertificateState
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAllDeviceCertificateState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 Certificate expiry date
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Enhanced Key Usage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +125,7 @@ Accept wildcard characters: False
 Issuance date
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 Issuer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 Key Usage
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ Accept wildcard characters: False
 Certificate Revocation Status.
 
 ```yaml
-Type: CertificateRevocationStatus
+Type: Microsoft.Graph.PowerShell.Support.CertificateRevocationStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 The time the revoke status was last changed
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +200,7 @@ Accept wildcard characters: False
 Serial number
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ Accept wildcard characters: False
 Certificate subject name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 Thumbprint
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +246,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,8 +262,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -277,8 +277,8 @@ Accept wildcard characters: False
 key: id of managedAllDeviceCertificateState
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 Device display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -322,7 +322,7 @@ Accept wildcard characters: False
 User principal name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +337,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -353,7 +353,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -370,10 +370,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedAllDeviceCertificateState
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -383,7 +386,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDeviceCertificateState
+BODYPARAMETER <IMicrosoftGraphManagedAllDeviceCertificateState>: managedAllDeviceCertificateState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CertificateExpirationDateTime <DateTime?>]`: Certificate expiry date
@@ -399,7 +402,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedAllDeviceCertificateState>`: managedAllDev
   - `[ManagedDeviceDisplayName <String>]`: Device display name
   - `[UserPrincipalName <String>]`: User principal name
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -456,3 +459,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
+

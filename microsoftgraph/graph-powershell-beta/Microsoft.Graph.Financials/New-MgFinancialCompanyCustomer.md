@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/new-mgfinancialcompanycustomer
 schema: 2.0.0
@@ -22,13 +22,19 @@ New-MgFinancialCompanyCustomer -CompanyId <String> [-AdditionalProperties <Hasht
  [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>]
  [-TaxAreaId <String>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgFinancialCompanyCustomer -CompanyId <String> -BodyParameter <IMicrosoftGraphCustomer> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgFinancialCompanyCustomer -CompanyId <String> -BodyParameter <IMicrosoftGraphCustomer> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgFinancialCompanyCustomer -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphCustomer>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -41,13 +47,7 @@ New-MgFinancialCompanyCustomer -InputObject <IFinancialsIdentity> [-AdditionalPr
  [-PhoneNumber <String>] [-Picture <IMicrosoftGraphPicture[]>]
  [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>] [-TaxAreaDisplayName <String>]
  [-TaxAreaId <String>] [-TaxLiable] [-TaxRegistrationNumber <String>] [-Type <String>] [-Website <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgFinancialCompanyCustomer -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphCustomer>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +61,7 @@ Create new navigation property to customers for financials
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +77,7 @@ postalAddressType
 To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPostalAddressType
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPostalAddressType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +108,7 @@ customer
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomer
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomer
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -123,8 +123,8 @@ Accept wildcard characters: False
 key: id of company
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -139,7 +139,7 @@ currency
 To construct, please use Get-Help -Online and see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrency
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCurrency
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +215,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -231,8 +231,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -261,7 +261,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +277,7 @@ paymentMethod
 To construct, please use Get-Help -Online and see NOTES section for PAYMENTMETHOD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentMethod
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentMethod
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -308,7 +308,7 @@ paymentTerm
 To construct, please use Get-Help -Online and see NOTES section for PAYMENTTERM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentTerm
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPaymentTerm
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -323,7 +323,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -338,7 +338,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPicture[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPicture[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -370,7 +370,7 @@ shipmentMethod
 To construct, please use Get-Help -Online and see NOTES section for SHIPMENTMETHOD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShipmentMethod
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShipmentMethod
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -385,7 +385,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -400,7 +400,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -415,7 +415,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -430,7 +430,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -445,7 +445,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -460,7 +460,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -475,7 +475,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -490,7 +490,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -506,7 +506,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -523,10 +523,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomer
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomer
+
 ## NOTES
 
 ALIASES
@@ -536,7 +539,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
+ADDRESS <IMicrosoftGraphPostalAddressType>: postalAddressType
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: 
   - `[CountryLetterCode <String>]`: 
@@ -544,7 +547,7 @@ ADDRESS `<IMicrosoftGraphPostalAddressType>`: postalAddressType
   - `[State <String>]`: 
   - `[Street <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphCustomer>`: customer
+BODYPARAMETER <IMicrosoftGraphCustomer>: customer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
@@ -609,7 +612,7 @@ BODYPARAMETER `<IMicrosoftGraphCustomer>`: customer
   - `[Type <String>]`: 
   - `[Website <String>]`: 
 
-CURRENCY `<IMicrosoftGraphCurrency>`: currency
+CURRENCY <IMicrosoftGraphCurrency>: currency
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AmountDecimalPlaces <String>]`: 
@@ -619,7 +622,7 @@ CURRENCY `<IMicrosoftGraphCurrency>`: currency
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Symbol <String>]`: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -657,14 +660,14 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
   - `[VendorId <String>]`: key: id of vendor
 
-PAYMENTMETHOD `<IMicrosoftGraphPaymentMethod>`: paymentMethod
+PAYMENTMETHOD <IMicrosoftGraphPaymentMethod>: paymentMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
+PAYMENTTERM <IMicrosoftGraphPaymentTerm>: paymentTerm
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
@@ -675,14 +678,14 @@ PAYMENTTERM `<IMicrosoftGraphPaymentTerm>`: paymentTerm
   - `[DueDateCalculation <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture\[]>: .
+PICTURE <IMicrosoftGraphPicture[]>: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: 
   - `[ContentType <String>]`: 
   - `[Height <Int32?>]`: 
   - `[Width <Int32?>]`: 
 
-SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
+SHIPMENTMETHOD <IMicrosoftGraphShipmentMethod>: shipmentMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Code <String>]`: 
@@ -690,3 +693,4 @@ SHIPMENTMETHOD `<IMicrosoftGraphShipmentMethod>`: shipmentMethod
   - `[LastModifiedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
+

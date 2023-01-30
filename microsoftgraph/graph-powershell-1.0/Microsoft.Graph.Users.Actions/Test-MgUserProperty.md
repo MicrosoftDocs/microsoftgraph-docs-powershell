@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserproperty
 schema: 2.0.0
@@ -24,14 +24,14 @@ To learn more about configuring naming policies, see Configure naming policy.
 ### ValidateExpanded1 (Default)
 ```
 Test-MgUserProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>]
- [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate1
 ```
 Test-MgUserProperty
  -BodyParameter <IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -72,7 +72,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded1
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Validate1
 Aliases:
 
@@ -103,7 +103,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,9 +211,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -223,7 +225,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 
@@ -231,3 +233,4 @@ BODYPARAMETER `<IPaths1Tz6Rb9UsersMicrosoftGraphValidatepropertiesPostRequestbod
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
+

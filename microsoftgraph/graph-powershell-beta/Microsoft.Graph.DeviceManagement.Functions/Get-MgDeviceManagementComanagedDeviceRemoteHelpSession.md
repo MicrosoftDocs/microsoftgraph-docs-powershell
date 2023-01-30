@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementcomanageddeviceremotehelpsession
 schema: 2.0.0
@@ -36,7 +36,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: RetrieveViaIdentity
 Aliases:
 
@@ -51,7 +51,7 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Retrieve
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 Usage: sessionKey='{sessionKey}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Retrieve
 Aliases:
 
@@ -83,9 +83,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRetrieveRemoteHelpSessionResponse
+
 ## NOTES
 
 ALIASES
@@ -95,7 +97,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcId <String>]`: key: id of cloudPC
   - `[CloudPcId1 <String>]`: Usage: cloudPcId='{cloudPcId}'
@@ -126,3 +128,4 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+

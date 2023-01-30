@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # New-MgIdentityConditionalAccessPolicy
@@ -20,13 +19,13 @@ New-MgIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>]
  [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls1>] [-Id <String>]
  [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]
- [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy1> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -123,6 +122,7 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 Id                                   CreatedDateTime       Description DisplayName                              ModifiedDateTime State
 --                                   ---------------       ----------- -----------                              ---------------- -----
 61c7530f-5c1d-44b2-a972-4ae658b7a9ac 7/29/2022 10:03:30 AM             Block access to EXO non-trusted regions.                  enabled
+
 ```
 
 This example shows a request to block access to Exchange Online from non-trusted/unknown regions.
@@ -134,7 +134,7 @@ This example assumes that the named location `0824dbaf-6277-4db0-8112-b29fd356f2
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ conditionalAccessPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessPolicy1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
 Parameter Sets: Create
 Aliases:
 
@@ -166,7 +166,7 @@ conditionalAccessConditionSet
 To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessConditionSet1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessConditionSet1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +183,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +198,7 @@ Accept wildcard characters: False
 Not used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 Specifies a display name for the conditionalAccessPolicy object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +229,7 @@ conditionalAccessGrantControls
 To construct, please use Get-Help -Online and see NOTES section for GRANTCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessGrantControls1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessGrantControls1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -245,7 +245,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -278,7 +278,7 @@ conditionalAccessSessionControls
 To construct, please use Get-Help -Online and see NOTES section for SESSIONCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessSessionControls1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessSessionControls1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 conditionalAccessPolicyState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -324,7 +324,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -341,9 +341,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
+
 ## NOTES
 
 ALIASES
@@ -353,7 +355,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPolicy
+BODYPARAMETER <IMicrosoftGraphConditionalAccessPolicy1>: conditionalAccessPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Conditions <IMicrosoftGraphConditionalAccessConditionSet1>]`: conditionalAccessConditionSet
@@ -460,7 +462,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
       - `[Value <Int32?>]`: The number of days or hours.
   - `[State <String>]`: conditionalAccessPolicyState
 
-CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessConditionSet
+CONDITIONS <IMicrosoftGraphConditionalAccessConditionSet1>: conditionalAccessConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphConditionalAccessApplications1>]`: conditionalAccessApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -516,7 +518,7 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessC
     - `[IncludeRoles <String[]>]`: Role IDs in scope of policy unless explicitly excluded, or All.
     - `[IncludeUsers <String[]>]`: User IDs in scope of policy unless explicitly excluded, or None or All or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls1>`: conditionalAccessGrantControls
+GRANTCONTROLS <IMicrosoftGraphConditionalAccessGrantControls1>: conditionalAccessGrantControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -536,7 +538,7 @@ GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls1>`: conditionalAcc
   - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
   - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
 
-SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls1>`: conditionalAccessSessionControls
+SESSIONCONTROLS <IMicrosoftGraphConditionalAccessSessionControls1>: conditionalAccessSessionControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationEnforcedRestrictions <IMicrosoftGraphApplicationEnforcedRestrictionsSessionControl>]`: applicationEnforcedRestrictionsSessionControl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -563,4 +565,3 @@ SESSIONCONTROLS `<IMicrosoftGraphConditionalAccessSessionControls1>`: conditiona
 
 ## RELATED LINKS
 
-## RELATED LINKS

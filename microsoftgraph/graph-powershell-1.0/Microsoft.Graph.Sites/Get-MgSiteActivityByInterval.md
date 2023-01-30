@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsiteactivitybyinterval
 schema: 2.0.0
@@ -12,20 +12,20 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgSiteActivityByInterval -SiteId <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
-Get-MgSiteActivityByInterval -SiteId <String> -EndDateTime <String> -Interval <String> -StartDateTime <String>
+Get-MgSiteActivityByInterval -EndDateTime <String> -Interval <String> -SiteId <String> -StartDateTime <String>
  [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
@@ -48,7 +48,7 @@ Invoke function getActivitiesByInterval
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -63,8 +63,8 @@ Accept wildcard characters: False
 Usage: endDateTime='{endDateTime}'
 
 ```yaml
-Type: String
-Parameter Sets: Get2
+Type: System.String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -94,8 +94,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 Usage: interval='{interval}'
 
 ```yaml
-Type: String
-Parameter Sets: Get2
+Type: System.String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -154,11 +154,26 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get2
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -169,7 +184,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -184,8 +199,8 @@ Accept wildcard characters: False
 Usage: startDateTime='{startDateTime}'
 
 ```yaml
-Type: String
-Parameter Sets: Get2
+Type: System.String
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -199,24 +214,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -231,9 +231,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemActivityStat
+
 ## NOTES
 
 ALIASES
@@ -243,12 +245,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ContentTypeId1 <String>]`: key: id of contentType
+  - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
   - `[DriveId <String>]`: key: id of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
@@ -257,6 +261,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[HorizontalSectionColumnId <String>]`: key: id of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: key: id of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
@@ -269,6 +274,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[PermissionId <String>]`: key: id of permission
   - `[RelationId <String>]`: key: id of relation
   - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
@@ -279,8 +286,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
 ## RELATED LINKS
+

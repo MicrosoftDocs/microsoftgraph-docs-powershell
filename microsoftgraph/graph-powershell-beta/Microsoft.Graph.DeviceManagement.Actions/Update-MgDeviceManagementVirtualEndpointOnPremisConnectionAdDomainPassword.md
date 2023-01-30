@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementvirtualendpointonpremisconnectionaddomainpassword
 schema: 2.0.0
@@ -16,8 +16,8 @@ This API is supported when the type of the **cloudPcOnPremisesConnection** objec
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
- -CloudPcOnPremisesConnectionId <String> [-AdDomainPassword <String>] [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -CloudPcOnPremisesConnectionId <String> [-AdditionalProperties <Hashtable>] [-AdDomainPassword <String>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
@@ -25,14 +25,7 @@ Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
 Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
  -CloudPcOnPremisesConnectionId <String>
  -BodyParameter <IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
- -InputObject <IDeviceManagementActionsIdentity> [-AdDomainPassword <String>]
- [-AdditionalProperties <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -40,7 +33,14 @@ Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
 Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementVirtualEndpointOnPremisConnectionAdDomainPassword
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AdDomainPassword <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -67,7 +67,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -113,8 +113,8 @@ Accept wildcard characters: False
 key: id of cloudPcOnPremisesConnection
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -129,8 +129,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -205,11 +208,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths32P85ZDevicemanagementVirtualendpointOnpremisesconnectionsCloudpconpremisesconnectionIdMicrosoftGraphUpdateaddomainpasswordPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdDomainPassword <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
@@ -244,6 +247,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
   - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
@@ -263,3 +267,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

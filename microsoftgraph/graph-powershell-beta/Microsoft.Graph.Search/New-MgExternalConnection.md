@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnection
 schema: 2.0.0
-ms.prod: "search"
 ---
 
 # New-MgExternalConnection
@@ -25,14 +24,14 @@ New-MgExternalConnection [-ActivitySettings <IMicrosoftGraphExternalConnectorsAc
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]
  [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
- [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-WhatIf] [-Confirm]
+ [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -61,7 +60,7 @@ activitySettings
 To construct, please use Get-Help -Online and see NOTES section for ACTIVITYSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsActivitySettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsActivitySettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -76,7 +75,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -92,7 +91,7 @@ externalConnection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalConnection
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
 Parameter Sets: Create
 Aliases:
 
@@ -108,7 +107,7 @@ complianceSettings
 To construct, please use Get-Help -Online and see NOTES section for COMPLIANCESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsComplianceSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsComplianceSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +123,7 @@ configuration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +139,7 @@ The Teams App ID.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,7 +155,7 @@ Description of the connection displayed in the Microsoft 365 admin center.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +170,7 @@ Accept wildcard characters: False
 contentExperienceType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +186,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for GROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +202,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +219,7 @@ This value is refreshed every 15 minutes.
 If the connection state is draft, then ingestedItemsCount will be null.
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,7 +235,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItem[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +252,7 @@ Maximum length of 128 characters.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +268,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -285,7 +284,7 @@ connectionQuota
 To construct, please use Get-Help -Online and see NOTES section for QUOTA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConnectionQuota
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionQuota
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +300,7 @@ schema
 To construct, please use Get-Help -Online and see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsSchema
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSchema
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -317,7 +316,7 @@ searchSettings
 To construct, please use Get-Help -Online and see NOTES section for SEARCHSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsSearchSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsSearchSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -332,7 +331,7 @@ Accept wildcard characters: False
 connectionState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +346,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -363,7 +362,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -380,9 +379,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternalConnection
+
 ## NOTES
 
 ALIASES
@@ -392,12 +393,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITYSETTINGS `<IMicrosoftGraphExternalConnectorsActivitySettings>`: activitySettings
+ACTIVITYSETTINGS <IMicrosoftGraphExternalConnectorsActivitySettings>: activitySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UrlToItemResolvers <IMicrosoftGraphExternalConnectorsUrlToItemResolverBase[]>]`: Specifies configurations to identify an externalItem based on a shared URL.
     - `[Priority <Int32?>]`: The priority which defines the sequence in which the urlToItemResolverBase instances are evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalConnection
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternalConnection>: externalConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
@@ -470,7 +471,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalC
   - `[Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]`: connectionQuota
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
+    - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
   - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -490,7 +491,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalC
     - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
   - `[State <String>]`: connectionState
 
-COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: complianceSettings
+COMPLIANCESETTINGS <IMicrosoftGraphExternalConnectorsComplianceSettings>: complianceSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EDiscoveryResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of two eDiscovery result templates per connection.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets. Maximum 16 characters. Only alphanumeric characters allowed.
@@ -503,11 +504,11 @@ COMPLIANCESETTINGS `<IMicrosoftGraphExternalConnectorsComplianceSettings>`: comp
       - `[Values <String[]>]`: A collection with one or many strings. The specified string(s) will be matched with the specified property using the specified operation. Required.
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
-CONFIGURATION `<IMicrosoftGraphExternalConnectorsConfiguration>`: configuration
+CONFIGURATION <IMicrosoftGraphExternalConnectorsConfiguration>: configuration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthorizedAppIds <String[]>]`: A collection of application IDs for registered Azure Active Directory apps that are allowed to manage the externalConnection and to index content in the externalConnection.
 
-GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
+GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description of the external group. Optional.
   - `[DisplayName <String>]`: The friendly name of the external group. Optional.
@@ -515,7 +516,7 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Type <String>]`: identityType
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
+ITEMS <IMicrosoftGraphExternalConnectorsExternalItem[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
@@ -537,7 +538,7 @@ ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
   - `[Properties <IMicrosoftGraphExternalConnectorsProperties>]`: properties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
+OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -556,12 +557,12 @@ OPERATIONS <IMicrosoftGraphExternalConnectorsConnectionOperation\[]>: .
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-QUOTA `<IMicrosoftGraphExternalConnectorsConnectionQuota>`: connectionQuota
+QUOTA <IMicrosoftGraphExternalConnectorsConnectionQuota>: connectionQuota
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
+  - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} – {number of items in the connection}, {tenant quota} – {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
+SCHEMA <IMicrosoftGraphExternalConnectorsSchema>: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
@@ -576,7 +577,7 @@ SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
     - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
     - `[Type <String>]`: propertyType
 
-SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettings
+SEARCHSETTINGS <IMicrosoftGraphExternalConnectorsSearchSettings>: searchSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
     - `[Id <String>]`: The text identifier for the display template; for example, contosoTickets. Maximum 16 characters. Only alphanumeric characters allowed.
@@ -591,4 +592,3 @@ SEARCHSETTINGS `<IMicrosoftGraphExternalConnectorsSearchSettings>`: searchSettin
 
 ## RELATED LINKS
 
-## RELATED LINKS

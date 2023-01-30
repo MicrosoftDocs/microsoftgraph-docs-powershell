@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: 133cda79-e602-436a-9aad-833c398723ba
+Module Guid: 527fc1c1-0576-4019-9847-0786ad85f62f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -22,7 +22,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgUserPendingAccessReviewInstanceDecision](Add-MgUserPendingAccessReviewInstanceDecision.md)
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
@@ -168,10 +168,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
-Invoke action disableSmsSignIn
-
-### [Disable-MgUserAuthenticationMethodSmSign](Disable-MgUserAuthenticationMethodSmSign.md)
+### [Disable-MgUserAuthenticationMethodSmsSignIn](Disable-MgUserAuthenticationMethodSmsSignIn.md)
 Invoke action disableSmsSignIn
 
 ### [Disable-MgUserManagedDevice](Disable-MgUserManagedDevice.md)
@@ -180,10 +177,7 @@ Invoke action disable
 ### [Disable-MgUserManagedDeviceLostMode](Disable-MgUserManagedDeviceLostMode.md)
 Disable lost mode
 
-### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
-Invoke action enableSmsSignIn
-
-### [Enable-MgUserAuthenticationMethodSmSign](Enable-MgUserAuthenticationMethodSmSign.md)
+### [Enable-MgUserAuthenticationMethodSmsSignIn](Enable-MgUserAuthenticationMethodSmsSignIn.md)
 Invoke action enableSmsSignIn
 
 ### [Enable-MgUserManagedDeviceLostMode](Enable-MgUserManagedDeviceLostMode.md)
@@ -334,17 +328,11 @@ Invoke action decryptBuffer
 ### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
 Invoke action encryptBuffer
 
-### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
-Invoke action encryptBuffer
+### [Invoke-MgBulkReprovisionUserManagedDeviceCloudPc](Invoke-MgBulkReprovisionUserManagedDeviceCloudPc.md)
+Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
 
-### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
-Invoke action encryptBuffer
-
-### [Invoke-MgBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBulkUserManagedDeviceReprovisionCloudPc.md)
-Invoke action bulkReprovisionCloudPc
-
-### [Invoke-MgBulkUserManagedDeviceRestoreCloudPc](Invoke-MgBulkUserManagedDeviceRestoreCloudPc.md)
-Invoke action bulkRestoreCloudPc
+### [Invoke-MgBulkRestoreUserManagedDeviceCloudPc](Invoke-MgBulkRestoreUserManagedDeviceCloudPc.md)
+Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
 ### [Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus.md)
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
@@ -363,9 +351,6 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ### [Invoke-MgCleanUserManagedDeviceWindowDevice](Invoke-MgCleanUserManagedDeviceWindowDevice.md)
 Clean Windows device
-
-### [Invoke-MgCloudUserManagedDevice](Invoke-MgCloudUserManagedDevice.md)
-Invoke action reprovisionCloudPc
 
 ### [Invoke-MgCreateOrGetUserOnlineMeeting](Invoke-MgCreateOrGetUserOnlineMeeting.md)
 Create an onlineMeeting object with a custom specified external ID.
@@ -575,8 +560,8 @@ Alternatively, create a draft to reply to a message, and send it later.
 ### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
 Reprovision a specific Cloud PC.
 
-### [Invoke-MgReprovisionUserCloudPc](Invoke-MgReprovisionUserCloudPc.md)
-Reprovision a specific Cloud PC.
+### [Invoke-MgReprovisionUserManagedDeviceCloudPc](Invoke-MgReprovisionUserManagedDeviceCloudPc.md)
+Reprovision a Cloud PC with an Intune managed device ID.
 
 ### [Invoke-MgRetireUserManagedDevice](Invoke-MgRetireUserManagedDevice.md)
 Retire a device
@@ -1001,10 +986,7 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 ### [Revoke-MgUserManagedDeviceAppleVppLicense](Revoke-MgUserManagedDeviceAppleVppLicense.md)
 Revoke all Apple Vpp licenses for a device
 
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
-Invoke action revokeSignInSessions
-
-### [Revoke-MgUserSign](Revoke-MgUserSign.md)
+### [Revoke-MgUserSignInSession](Revoke-MgUserSignInSession.md)
 Invoke action revokeSignInSessions
 
 ### [Send-MgUserChatActivityNotification](Send-MgUserChatActivityNotification.md)

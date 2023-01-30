@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointgalleryimage
 schema: 2.0.0
@@ -15,31 +15,33 @@ Update the navigation property galleryImages in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
- [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-Publisher <String>] [-RecommendedSku <String>]
- [-SizeInGb <Int32>] [-Sku <String>] [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>]
+ [-ExpirationDate <DateTime>] [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>]
+ [-Publisher <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
+ [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId <String>
- -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>] [-ExpirationDate <DateTime>]
- [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>] [-Publisher <String>] [-RecommendedSku <String>]
- [-SizeInGb <Int32>] [-Sku <String>] [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcGalleryImage> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementVirtualEndpointGalleryImage -InputObject <IDeviceManagementAdministrationIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EndDate <DateTime>]
+ [-ExpirationDate <DateTime>] [-Id <String>] [-Offer <String>] [-OfferDisplayName <String>]
+ [-Publisher <String>] [-RecommendedSku <String>] [-SizeInGb <Int32>] [-Sku <String>]
+ [-SkuDisplayName <String>] [-StartDate <DateTime>] [-Status <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +55,7 @@ Update the navigation property galleryImages in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +71,7 @@ cloudPcGalleryImage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcGalleryImage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -84,8 +86,8 @@ Accept wildcard characters: False
 key: id of cloudPcGalleryImage
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -100,7 +102,7 @@ The official display name of the gallery image.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +119,7 @@ The Cloud PC will continue to provide short-term support.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +135,7 @@ The date when the image is no longer available.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +151,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,8 +167,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -182,7 +184,7 @@ This value will be passed to Azure to get the image resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +201,7 @@ For example, Windows 10 Enterprise + OS Optimizations.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +216,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -231,7 +233,7 @@ This value will be passed to Azure to get the image resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +249,7 @@ Recommended Cloud PC SKU for this gallery image.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,7 +265,7 @@ The size of this image in gigabytes.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +282,7 @@ This value will be passed to Azure to get the image resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -297,7 +299,7 @@ For example, 2004.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -313,7 +315,7 @@ The date when the image becomes available.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -328,7 +330,7 @@ Accept wildcard characters: False
 cloudPcGalleryImageStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -343,7 +345,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -359,7 +361,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -376,10 +378,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcGalleryImage
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -389,7 +394,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcGalleryImage>`: cloudPcGalleryImage
+BODYPARAMETER <IMicrosoftGraphCloudPcGalleryImage>: cloudPcGalleryImage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The official display name of the gallery image. Read-only.
@@ -405,7 +410,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcGalleryImage>`: cloudPcGalleryImage
   - `[StartDate <DateTime?>]`: The date when the image becomes available. Read-only.
   - `[Status <String>]`: cloudPcGalleryImageStatus
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -462,3 +467,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
+

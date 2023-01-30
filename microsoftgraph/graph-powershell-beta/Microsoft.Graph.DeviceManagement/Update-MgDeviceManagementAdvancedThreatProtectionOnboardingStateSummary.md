@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementadvancedthreatprotectiononboardingstatesummary
 schema: 2.0.0
@@ -18,15 +18,15 @@ Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary [-Additi
  [-AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>] [-ErrorDeviceCount <Int32>] [-Id <String>]
  [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>] [-NotAssignedDeviceCount <Int32>]
- [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-RemediatedDeviceCount <Int32>] [-UnknownDeviceCount <Int32>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary
- -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +40,7 @@ Update the navigation property advancedThreatProtectionOnboardingStateSummary in
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -56,7 +56,7 @@ Not yet documented
 To construct, please use Get-Help -Online and see NOTES section for ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ Windows defender advanced threat protection onboarding state summary across the 
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
 Parameter Sets: Update
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 Number of compliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 Number of conflict devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 Number of error devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 Number of NonCompliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -163,7 +163,7 @@ Accept wildcard characters: False
 Number of not applicable devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ Accept wildcard characters: False
 Number of not assigned devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -193,7 +193,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -208,7 +208,7 @@ Accept wildcard characters: False
 Number of remediated devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ Accept wildcard characters: False
 Number of unknown devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -238,7 +238,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +254,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -271,9 +271,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -283,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState\[]>: Not yet documented
+ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>: Not yet documented
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceId <String>]`: The Device Id that is being reported
@@ -298,7 +300,7 @@ ADVANCEDTHREATPROTECTIONONBOARDINGDEVICESETTINGSTATES <IMicrosoftGraphAdvancedTh
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
-BODYPARAMETER `<IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`: Windows defender advanced threat protection onboarding state summary across the account.
+BODYPARAMETER <IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>: Windows defender advanced threat protection onboarding state summary across the account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStates <IMicrosoftGraphAdvancedThreatProtectionOnboardingDeviceSettingState[]>]`: Not yet documented
@@ -325,3 +327,4 @@ BODYPARAMETER `<IMicrosoftGraphAdvancedThreatProtectionOnboardingStateSummary>`:
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
 ## RELATED LINKS
+

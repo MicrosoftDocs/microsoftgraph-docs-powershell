@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicymigrationreportunsupportedgrouppolicyextension
 schema: 2.0.0
@@ -17,14 +17,21 @@ Create new navigation property to unsupportedGroupPolicyExtensions for deviceMan
 New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> [-AdditionalProperties <Hashtable>] [-ExtensionType <String>]
  [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>] [-SettingScope <GroupPolicySettingScope>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -GroupPolicyMigrationReportId <String> -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -32,14 +39,7 @@ New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
 New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-ExtensionType <String>] [-Id <String>] [-NamespaceUrl <String>] [-NodeName <String>]
- [-SettingScope <GroupPolicySettingScope>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension
- -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphUnsupportedGroupPolicyExtension> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingScope <GroupPolicySettingScope>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Create new navigation property to unsupportedGroupPolicyExtensions for deviceMan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ Unsupported Group Policy Extension.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnsupportedGroupPolicyExtension
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 ExtensionType of the unsupported extension.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of groupPolicyMigrationReport
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,8 +131,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 Namespace Url of the unsupported extension.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Node name of the unsupported extension.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 Scope of the group policy setting.
 
 ```yaml
-Type: GroupPolicySettingScope
+Type: Microsoft.Graph.PowerShell.Support.GroupPolicySettingScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,10 +224,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnsupportedGroupPolicyExtension
+
 ## NOTES
 
 ALIASES
@@ -237,7 +240,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUnsupportedGroupPolicyExtension>`: Unsupported Group Policy Extension.
+BODYPARAMETER <IMicrosoftGraphUnsupportedGroupPolicyExtension>: Unsupported Group Policy Extension.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExtensionType <String>]`: ExtensionType of the unsupported extension.
@@ -245,7 +248,7 @@ BODYPARAMETER `<IMicrosoftGraphUnsupportedGroupPolicyExtension>`: Unsupported Gr
   - `[NodeName <String>]`: Node name of the unsupported extension.
   - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -302,3 +305,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
 ## RELATED LINKS
+

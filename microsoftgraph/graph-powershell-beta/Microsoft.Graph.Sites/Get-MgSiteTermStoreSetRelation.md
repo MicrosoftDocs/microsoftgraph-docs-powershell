@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitetermstoresetrelation
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # Get-MgSiteTermStoreSetRelation
@@ -16,8 +15,8 @@ Indicates which terms have been pinned or reused directly under the set.
 ### List2 (Default)
 ```
 Get-MgSiteTermStoreSetRelation -SetId <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get2
@@ -37,13 +36,24 @@ Indicates which terms have been pinned or reused directly under the set.
 
 ## EXAMPLES
 
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteTermStoreSetRelation -SiteId $siteId -SetId $setId
+```
+
+This example shows how to use the Get-MgSiteTermStoreSetRelation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List2
 Aliases:
 
@@ -59,7 +69,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List2
 Aliases: CV
 
@@ -74,7 +84,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -89,7 +99,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List2
 Aliases:
 
@@ -105,7 +115,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
 Parameter Sets: GetViaIdentity2
 Aliases:
 
@@ -120,7 +130,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List2
 Aliases:
 
@@ -135,7 +145,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -150,7 +160,7 @@ Accept wildcard characters: False
 key: id of relation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get2
 Aliases:
 
@@ -165,7 +175,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List2
 Aliases:
 
@@ -180,8 +190,8 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: String
-Parameter Sets: List2, Get2
+Type: System.String
+Parameter Sets: Get2, List2
 Aliases:
 
 Required: True
@@ -195,11 +205,26 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: List2, Get2
+Type: System.String
+Parameter Sets: Get2, List2
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List2
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -210,7 +235,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List2
 Aliases: OrderBy
 
@@ -225,24 +250,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List2
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List2
-Aliases:
 
 Required: False
 Position: Named
@@ -257,9 +267,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
+
 ## NOTES
 
 ALIASES
@@ -269,12 +281,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ContentTypeId1 <String>]`: key: id of contentType
+  - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
   - `[DriveId <String>]`: key: id of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
@@ -283,6 +297,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[HorizontalSectionColumnId <String>]`: key: id of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: key: id of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
@@ -295,6 +310,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[PermissionId <String>]`: key: id of permission
   - `[RelationId <String>]`: key: id of relation
   - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
@@ -305,8 +322,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
 ## RELATED LINKS
+

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 67eba36f-7aeb-49fe-ac6b-0223fa2d01f8
+Module Guid: a0f99702-3a44-43c4-acc7-5f4b59a0e106
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgApplicationPassword](Add-MgApplicationPassword.md)
@@ -91,10 +91,6 @@ Nullable.
 ### [Get-MgApplicationCreatedOnBehalfOf](Get-MgApplicationCreatedOnBehalfOf.md)
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
-
-### [Get-MgApplicationConnectorGroupByRef](Get-MgApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
 
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
@@ -325,9 +321,6 @@ HTTP Methods: GET Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgServicePrincipalOauth2PermissionGrant](Get-MgServicePrincipalOauth2PermissionGrant.md)
 Delegated permission grants authorizing this service principal to access an API on behalf of a signed-in user.
 Read-only.
@@ -521,7 +514,7 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
 ### [New-MgOnPremisePublishingProfileConnectorGroup](New-MgOnPremisePublishingProfileConnectorGroup.md)
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ### [New-MgOnPremisePublishingProfileConnectorMemberOfByRef](New-MgOnPremisePublishingProfileConnectorMemberOfByRef.md)
 Create new navigation property ref to memberOf for onPremisesPublishingProfiles
@@ -561,9 +554,6 @@ Create new navigation property to endpoints for servicePrincipals
 
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Create new navigation property ref to homeRealmDiscoveryPolicies for servicePrincipals
-
-### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
-Create new navigation property to licenseDetails for servicePrincipals
 
 ### [New-MgServicePrincipalLicenseDetail](New-MgServicePrincipalLicenseDetail.md)
 Create new navigation property to licenseDetails for servicePrincipals
@@ -612,10 +602,6 @@ Delete ref of navigation property appManagementPolicies for applications
 
 ### [Remove-MgApplicationConnectorGroupByRef](Remove-MgApplicationConnectorGroupByRef.md)
 Delete ref of navigation property connectorGroup for applications
-
-### [Remove-MgApplicationConnectorGroupByRef](Remove-MgApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete navigation property extensionProperties for applications
@@ -767,10 +753,6 @@ Optionally clears existing the synchronization state and previous errors.
 
 ### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
 Update the ref of navigation property connectorGroup in applications
-
-### [Set-MgApplicationConnectorGroupByRef](Set-MgApplicationConnectorGroupByRef.md)
-The connectorGroup the application is using with Azure AD Application Proxy.
-Nullable.
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 The main logo for the application.

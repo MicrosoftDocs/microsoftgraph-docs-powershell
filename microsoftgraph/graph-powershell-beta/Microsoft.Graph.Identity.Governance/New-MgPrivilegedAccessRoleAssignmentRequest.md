@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedaccessroleassignmentrequest
 schema: 2.0.0
@@ -20,14 +20,21 @@ New-MgPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId <String> [-Addit
  [-RequestedDateTime <DateTime>] [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-Schedule <IMicrosoftGraphGovernanceSchedule>]
- [-Status <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>]
+ [-Subject <IMicrosoftGraphGovernanceSubject>] [-SubjectId <String>] [-Type <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPrivilegedAccessRoleAssignmentRequest -PrivilegedAccessId <String>
- -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,14 +45,9 @@ New-MgPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanceIde
  [-Resource <IMicrosoftGraphGovernanceResource>] [-ResourceId <String>]
  [-RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>] [-RoleDefinitionId <String>]
  [-Schedule <IMicrosoftGraphGovernanceSchedule>]
- [-Status <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>] [-Subject <IMicrosoftGraphGovernanceSubject>]
- [-SubjectId <String>] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgPrivilegedAccessRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphGovernanceRoleAssignmentRequest> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>]
+ [-Subject <IMicrosoftGraphGovernanceSubject>] [-SubjectId <String>] [-Type <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -182,7 +184,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +201,7 @@ The state of the assignment.
 The possible values are: Eligible (for eligible assignment), Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +217,7 @@ governanceRoleAssignmentRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleAssignmentRequest
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -231,7 +233,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -247,8 +249,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -262,7 +264,7 @@ Accept wildcard characters: False
 If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -277,8 +279,8 @@ Accept wildcard characters: False
 key: id of privilegedAccess
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -292,7 +294,7 @@ Accept wildcard characters: False
 A message provided by users and administrators when create the request about why it is needed.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -310,7 +312,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +328,7 @@ governanceResource
 To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceResource
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceResource
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -343,7 +345,7 @@ The unique identifier of the Azure resource that is associated with the role ass
 Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -359,7 +361,7 @@ governanceRoleDefinition
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -375,7 +377,7 @@ Required.
 The identifier of the Azure role definition that the role assignment request is associated with.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -391,7 +393,7 @@ governanceSchedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceSchedule
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceSchedule
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -407,7 +409,7 @@ governanceRoleAssignmentRequestStatus
 To construct, please use Get-Help -Online and see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleAssignmentRequestStatus
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequestStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -423,7 +425,7 @@ governanceSubject
 To construct, please use Get-Help -Online and see NOTES section for SUBJECT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceSubject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceSubject
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -440,7 +442,7 @@ The unique identifier of the principal or subject that the role assignment reque
 Principals can be users, groups, or service principals.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -457,7 +459,7 @@ Representing the type of the operation on the role assignment.
 The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -472,7 +474,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -488,7 +490,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -505,10 +507,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest
+
 ## NOTES
 
 ALIASES
@@ -518,7 +523,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGovernanceRoleAssignmentRequest>`: governanceRoleAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphGovernanceRoleAssignmentRequest>: governanceRoleAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
@@ -603,7 +608,7 @@ BODYPARAMETER `<IMicrosoftGraphGovernanceRoleAssignmentRequest>`: governanceRole
   - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
   - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -654,6 +659,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: key: id of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: key: id of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleRequest
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
@@ -678,7 +689,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-RESOURCE `<IMicrosoftGraphGovernanceResource>`: governanceResource
+RESOURCE <IMicrosoftGraphGovernanceResource>: governanceResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the resource.
@@ -762,7 +773,7 @@ RESOURCE `<IMicrosoftGraphGovernanceResource>`: governanceResource
   - `[Status <String>]`: The status of a given resource. For example, it could represent whether the resource is locked or not (values: Active/Locked). Note: This property may be extended in the future to support more scenarios.
   - `[Type <String>]`: Required. Resource type. For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphGovernanceRoleDefinition>: governanceRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the role definition.
@@ -845,14 +856,14 @@ ROLEDEFINITION `<IMicrosoftGraphGovernanceRoleDefinition>`: governanceRoleDefini
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: 
 
-SCHEDULE `<IMicrosoftGraphGovernanceSchedule>`: governanceSchedule
+SCHEDULE <IMicrosoftGraphGovernanceSchedule>: governanceSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
   - `[EndDateTime <DateTime?>]`: The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Note: if the value is null, it indicates a permanent assignment.
   - `[StartDateTime <DateTime?>]`: The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
 
-STATUS `<IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>`: governanceRoleAssignmentRequestStatus
+STATUS <IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>: governanceRoleAssignmentRequestStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
   - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
@@ -860,7 +871,7 @@ STATUS `<IMicrosoftGraphGovernanceRoleAssignmentRequestStatus>`: governanceRoleA
     - `[Value <String>]`: Value for the key-value pair.
   - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
 
-SUBJECT `<IMicrosoftGraphGovernanceSubject>`: governanceSubject
+SUBJECT <IMicrosoftGraphGovernanceSubject>: governanceSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the subject.
@@ -870,4 +881,3 @@ SUBJECT `<IMicrosoftGraphGovernanceSubject>`: governanceSubject
 
 ## RELATED LINKS
 
-## RELATED LINKS

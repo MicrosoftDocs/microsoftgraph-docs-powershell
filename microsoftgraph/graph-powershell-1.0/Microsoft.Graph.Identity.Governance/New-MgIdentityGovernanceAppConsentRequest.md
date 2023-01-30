@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceappconsentrequest
 schema: 2.0.0
-ms.prod: "governance"
 ---
 
 # New-MgIdentityGovernanceAppConsentRequest
@@ -17,13 +16,13 @@ Create new navigation property to appConsentRequests for identityGovernance
 ```
 New-MgIdentityGovernanceAppConsentRequest [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>]
  [-AppId <String>] [-Id <String>] [-PendingScopes <IMicrosoftGraphAppConsentRequestScope[]>]
- [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserConsentRequests <IMicrosoftGraphUserConsentRequest[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppConsentRequest> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgIdentityGovernanceAppConsentRequest -BodyParameter <IMicrosoftGraphAppConsentRequest> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +58,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -76,7 +75,7 @@ Required.
 Supports $filter (eq only) and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -93,7 +92,7 @@ Required.
 Supports $filter (eq only) and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -109,7 +108,7 @@ appConsentRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppConsentRequest
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppConsentRequest
 Parameter Sets: Create1
 Aliases:
 
@@ -125,7 +124,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -142,7 +141,7 @@ Required.
 To construct, please use Get-Help -Online and see NOTES section for PENDINGSCOPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppConsentRequestScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppConsentRequestScope[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -159,7 +158,7 @@ Supports $filter (eq).
 To construct, please use Get-Help -Online and see NOTES section for USERCONSENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserConsentRequest[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserConsentRequest[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -174,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,9 +206,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppConsentRequest
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppConsentRequest
+
 ## NOTES
 
 ALIASES
@@ -219,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAppConsentRequest>`: appConsentRequest
+BODYPARAMETER <IMicrosoftGraphAppConsentRequest>: appConsentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDisplayName <String>]`: The display name of the app for which consent is requested. Required. Supports $filter (eq only) and $orderby.
@@ -255,10 +256,10 @@ BODYPARAMETER `<IMicrosoftGraphAppConsentRequest>`: appConsentRequest
         - `[Status <String>]`: The stage status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
     - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
 
-PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope\[]>: A list of pending scopes waiting for approval. Required.
+PENDINGSCOPES <IMicrosoftGraphAppConsentRequestScope[]>: A list of pending scopes waiting for approval. Required.
   - `[DisplayName <String>]`: The name of the scope.
 
-USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest\[]>: A list of pending user consent requests. Supports $filter (eq).
+USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest[]>: A list of pending user consent requests. Supports $filter (eq).
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -288,3 +289,4 @@ USERCONSENTREQUESTS <IMicrosoftGraphUserConsentRequest\[]>: A list of pending us
   - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
+

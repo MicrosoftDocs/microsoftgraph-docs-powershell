@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessagerule
 schema: 2.0.0
-ms.prod: "outlook"
 ---
 
 # New-MgUserMailFolderMessageRule
@@ -19,13 +18,19 @@ New-MgUserMailFolderMessageRule -MailFolderId <String> -UserId <String>
  [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
  [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sequence <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgUserMailFolderMessageRule -MailFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMessageRule> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMessageRule> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessageRule>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -33,13 +38,7 @@ New-MgUserMailFolderMessageRule -MailFolderId <String> -UserId <String>
 New-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-Actions <IMicrosoftGraphMessageRuleActions>]
  [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphMessageRulePredicates>]
  [-DisplayName <String>] [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>]
- [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessageRule>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -85,7 +84,7 @@ messageRuleActions
 To construct, please use Get-Help -Online and see NOTES section for ACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRuleActions
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRuleActions
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -100,7 +99,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -116,7 +115,7 @@ messageRule
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRule
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -132,7 +131,7 @@ messageRulePredicates
 To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRulePredicates
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRulePredicates
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -147,7 +146,7 @@ Accept wildcard characters: False
 The display name of the rule.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -163,7 +162,7 @@ messageRulePredicates
 To construct, please use Get-Help -Online and see NOTES section for EXCEPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRulePredicates
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRulePredicates
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -179,7 +178,7 @@ Indicates whether the rule is in an error condition.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -195,7 +194,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -211,8 +210,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -226,7 +225,7 @@ Accept wildcard characters: False
 Indicates whether the rule is enabled to be applied to messages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -241,7 +240,7 @@ Accept wildcard characters: False
 Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -256,8 +255,8 @@ Accept wildcard characters: False
 key: id of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -271,7 +270,7 @@ Accept wildcard characters: False
 Indicates the order in which the rule is executed, among other rules.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -286,8 +285,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -301,7 +300,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -317,7 +316,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -334,10 +333,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
+
 ## NOTES
 
 ALIASES
@@ -347,7 +349,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
+ACTIONS <IMicrosoftGraphMessageRuleActions>: messageRuleActions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
   - `[CopyToFolder <String>]`: The ID of a folder that a message is to be copied to.
@@ -365,7 +367,7 @@ ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
   - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
+BODYPARAMETER <IMicrosoftGraphMessageRule>: messageRule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
@@ -427,7 +429,7 @@ BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
   - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
 
-CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+CONDITIONS <IMicrosoftGraphMessageRulePredicates>: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -467,7 +469,7 @@ CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+EXCEPTIONS <IMicrosoftGraphMessageRulePredicates>: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -507,7 +509,7 @@ EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
@@ -523,4 +525,3 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

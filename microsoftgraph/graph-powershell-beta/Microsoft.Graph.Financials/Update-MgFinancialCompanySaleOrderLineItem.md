@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanysaleorderlineitem
 schema: 2.0.0
@@ -19,43 +19,44 @@ Update-MgFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId
  [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
  [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
- [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- -SalesOrderId <String> [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked]
- [-DisplayName <String>] [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>]
- [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
- [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
- [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
- [-UnitPrice <Decimal>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- -SalesOrderId <String> -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-WhatIf] [-Confirm]
+ [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderLineId <String>
- -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update1
+```
+Update-MgFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderId <String>
+ -SalesOrderLineId <String> -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgFinancialCompanySaleOrderLineItem -CompanyId <String> -SalesOrderId <String>
+ -SalesOrderLineId <String> [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked]
+ [-DisplayName <String>] [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>]
+ [-ItemCategory <IMicrosoftGraphItemCategory>] [-ItemCategoryCode <String>] [-ItemCategoryId <String>]
+ [-LastModifiedDateTime <DateTime>] [-Number <String>] [-Picture <IMicrosoftGraphPicture[]>]
+ [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>] [-Type <String>] [-UnitCost <Decimal>]
+ [-UnitPrice <Decimal>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
 ```
 Update-MgFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
- [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
- [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
- [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
- [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -65,20 +66,19 @@ Update-MgFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
  [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
  [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
  [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
- [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded1
 ```
 Update-MgFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgFinancialCompanySaleOrderLineItem -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphItem> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-BaseUnitOfMeasureId <String>] [-Blocked] [-DisplayName <String>]
+ [-Gtin <String>] [-Id <String>] [-Inventory <Decimal>] [-ItemCategory <IMicrosoftGraphItemCategory>]
+ [-ItemCategoryCode <String>] [-ItemCategoryId <String>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+ [-Picture <IMicrosoftGraphPicture[]>] [-PriceIncludesTax] [-TaxGroupCode <String>] [-TaxGroupId <String>]
+ [-Type <String>] [-UnitCost <Decimal>] [-UnitPrice <Decimal>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -92,8 +92,8 @@ Update the navigation property item in financials
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -107,8 +107,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -122,8 +122,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -138,8 +138,8 @@ item
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItem
-Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItem
+Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -153,8 +153,8 @@ Accept wildcard characters: False
 key: id of company
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -168,8 +168,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -183,8 +183,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -199,8 +199,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -215,8 +215,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -230,8 +230,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Decimal
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -246,8 +246,8 @@ itemCategory
 To construct, please use Get-Help -Online and see NOTES section for ITEMCATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemCategory
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemCategory
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -261,8 +261,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -276,8 +276,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -291,8 +291,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -306,8 +306,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -321,7 +321,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -337,8 +337,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PICTURE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPicture[]
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPicture[]
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -352,8 +352,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -367,8 +367,8 @@ Accept wildcard characters: False
 key: id of salesOrder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -382,8 +382,8 @@ Accept wildcard characters: False
 key: id of salesOrderLine
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -397,8 +397,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -412,8 +412,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -427,8 +427,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -442,8 +442,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Decimal
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -457,8 +457,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Decimal
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -472,7 +472,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -488,7 +488,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -505,10 +505,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItem
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -518,7 +521,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphItem>`: item
+BODYPARAMETER <IMicrosoftGraphItem>: item
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[BaseUnitOfMeasureId <String>]`: 
@@ -549,7 +552,7 @@ BODYPARAMETER `<IMicrosoftGraphItem>`: item
   - `[UnitCost <Decimal?>]`: 
   - `[UnitPrice <Decimal?>]`: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -587,14 +590,14 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
   - `[VendorId <String>]`: key: id of vendor
 
-ITEMCATEGORY `<IMicrosoftGraphItemCategory>`: itemCategory
+ITEMCATEGORY <IMicrosoftGraphItemCategory>: itemCategory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Code <String>]`: 
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-PICTURE <IMicrosoftGraphPicture\[]>: .
+PICTURE <IMicrosoftGraphPicture[]>: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: 
   - `[ContentType <String>]`: 
@@ -602,3 +605,4 @@ PICTURE <IMicrosoftGraphPicture\[]>: .
   - `[Width <Int32?>]`: 
 
 ## RELATED LINKS
+

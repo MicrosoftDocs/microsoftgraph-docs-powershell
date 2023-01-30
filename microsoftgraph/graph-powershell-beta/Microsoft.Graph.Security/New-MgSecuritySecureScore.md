@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritysecurescore
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgSecuritySecureScore
@@ -19,12 +18,13 @@ New-MgSecuritySecureScore [-ActiveUserCount <Int32>] [-AdditionalProperties <Has
  [-AverageComparativeScores <IMicrosoftGraphAverageComparativeScore[]>] [-AzureTenantId <String>]
  [-ControlScores <IMicrosoftGraphControlScore[]>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>]
  [-EnabledServices <String[]>] [-Id <String>] [-LicensedUserCount <Int32>] [-MaxScore <Double>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Active user count of the given tenant.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Average score by different scopes (for example, average by industry, average by 
 To construct, please use Get-Help -Online and see NOTES section for AVERAGECOMPARATIVESCORES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAverageComparativeScore[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAverageComparativeScore[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 GUID string for tenant ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +111,7 @@ secureScore
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecureScore
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
 Parameter Sets: Create
 Aliases:
 
@@ -127,7 +127,7 @@ Contains tenant scores for a set of controls.
 To construct, please use Get-Help -Online and see NOTES section for CONTROLSCORES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphControlScore[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphControlScore[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 The date when the entity is created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 Tenant current attained score on specified date.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 Microsoft-provided services for the tenant (for example, Exchange online, Skype, Sharepoint).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 Licensed user count of the given tenant.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +218,7 @@ Accept wildcard characters: False
 Tenant maximum possible score on specified date.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +234,7 @@ securityVendorInformation
 To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -265,7 +265,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -282,9 +282,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecureScore
+
 ## NOTES
 
 ALIASES
@@ -294,11 +296,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore\[]>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
+AVERAGECOMPARATIVESCORES <IMicrosoftGraphAverageComparativeScore[]>: Average score by different scopes (for example, average by industry, average by seating) and control category (Identity, Data, Device, Apps, Infrastructure) within the scope.
   - `[AverageScore <Double?>]`: Average score within specified basis.
   - `[Basis <String>]`: Scope type. The possible values are: AllTenants, TotalSeats, IndustryTypes.
 
-BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
+BODYPARAMETER <IMicrosoftGraphSecureScore>: secureScore
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveUserCount <Int32?>]`: Active user count of the given tenant.
@@ -323,13 +325,13 @@ BODYPARAMETER `<IMicrosoftGraphSecureScore>`: secureScore
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-CONTROLSCORES <IMicrosoftGraphControlScore\[]>: Contains tenant scores for a set of controls.
+CONTROLSCORES <IMicrosoftGraphControlScore[]>: Contains tenant scores for a set of controls.
   - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
   - `[ControlName <String>]`: Control unique name.
   - `[Description <String>]`: Description of the control.
   - `[Score <Double?>]`: Tenant achieved score for the control (it varies day by day depending on tenant operations on the control).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
@@ -337,3 +339,4 @@ VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorIn
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+

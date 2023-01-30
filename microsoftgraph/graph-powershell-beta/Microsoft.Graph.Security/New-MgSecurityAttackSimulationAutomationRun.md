@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityattacksimulationautomationrun
 schema: 2.0.0
@@ -16,26 +16,26 @@ Create new navigation property to runs for security
 ```
 New-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
- [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId <String>
- -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>] [-Id <String>] [-SimulationId <String>]
- [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSimulationAutomationRun> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +49,7 @@ Create new navigation property to runs for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +65,7 @@ simulationAutomationRun
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulationAutomationRun
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Date and time when the run ends in an attack simulation automation.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,8 +112,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 key: id of simulationAutomation
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Unique identifier for the attack simulation campaign initiated in the attack simulation automation run.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 Date and time when the run starts in an attack simulation automation.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 simulationAutomationRunStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,10 +220,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulationAutomationRun
+
 ## NOTES
 
 ALIASES
@@ -233,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSimulationAutomationRun>`: simulationAutomationRun
+BODYPARAMETER <IMicrosoftGraphSimulationAutomationRun>: simulationAutomationRun
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: Date and time when the run ends in an attack simulation automation.
@@ -241,8 +244,9 @@ BODYPARAMETER `<IMicrosoftGraphSimulationAutomationRun>`: simulationAutomationRu
   - `[StartDateTime <DateTime?>]`: Date and time when the run starts in an attack simulation automation.
   - `[Status <String>]`: simulationAutomationRunStatus
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
+  - `[AttackSimulationOperationId <String>]`: key: id of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
@@ -266,6 +270,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
   - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
   - `[IncidentId <String>]`: key: id of incident
+  - `[PayloadId <String>]`: key: id of payload
   - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
   - `[RetentionEventId <String>]`: key: id of retentionEvent
   - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
@@ -286,3 +291,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: key: id of userSource
 
 ## RELATED LINKS
+

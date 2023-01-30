@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowlanguage
 schema: 2.0.0
@@ -17,13 +17,20 @@ Update the navigation property languages in identity
 Update-MgIdentityB2XUserFlowLanguage -B2XIdentityUserFlowId <String> -UserFlowLanguageConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]
  [-DisplayName <String>] [-Id <String>] [-IsEnabled] [-OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgIdentityB2XUserFlowLanguage -B2XIdentityUserFlowId <String> -UserFlowLanguageConfigurationId <String>
- -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,14 +39,7 @@ Update-MgIdentityB2XUserFlowLanguage -B2XIdentityUserFlowId <String> -UserFlowLa
 Update-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]
  [-DisplayName <String>] [-Id <String>] [-IsEnabled] [-OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUserFlowLanguageConfiguration> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +53,7 @@ Update the navigation property languages in identity
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,8 +68,8 @@ Accept wildcard characters: False
 key: id of b2xIdentityUserFlow
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ userFlowLanguageConfiguration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowLanguageConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +101,7 @@ This collection does not allow any kind of modification.
 To construct, please use Get-Help -Online and see NOTES section for DEFAULTPAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowLanguagePage[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguagePage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,7 +117,7 @@ The language name to display.
 This property is read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +149,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 Indicates whether the language is enabled within the user flow.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +181,7 @@ This collection only allows to modify the content of the page, any other modific
 To construct, please use Get-Help -Online and see NOTES section for OVERRIDESPAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserFlowLanguagePage[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguagePage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -211,8 +211,8 @@ Accept wildcard characters: False
 key: id of userFlowLanguageConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -226,7 +226,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -242,7 +242,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,10 +259,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguageConfiguration
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -272,7 +275,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserFlowLanguageConfiguration>`: userFlowLanguageConfiguration
+BODYPARAMETER <IMicrosoftGraphUserFlowLanguageConfiguration>: userFlowLanguageConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
@@ -281,10 +284,10 @@ BODYPARAMETER `<IMicrosoftGraphUserFlowLanguageConfiguration>`: userFlowLanguage
   - `[IsEnabled <Boolean?>]`: Indicates whether the language is enabled within the user flow.
   - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
 
-DEFAULTPAGES <IMicrosoftGraphUserFlowLanguagePage\[]>: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
+DEFAULTPAGES <IMicrosoftGraphUserFlowLanguagePage[]>: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -361,7 +364,8 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-OVERRIDESPAGES <IMicrosoftGraphUserFlowLanguagePage\[]>: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
+OVERRIDESPAGES <IMicrosoftGraphUserFlowLanguagePage[]>: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+

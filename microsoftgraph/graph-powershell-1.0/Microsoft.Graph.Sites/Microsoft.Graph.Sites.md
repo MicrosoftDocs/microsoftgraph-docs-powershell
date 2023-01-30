@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 50fb3772-f987-4142-8c23-622f033a1fa2
+Module Guid: 2c4f5811-3da7-472c-bebb-49cbac771660
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgSiteContentTypeToDefaultContentLocation](Copy-MgSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -1050,10 +1050,6 @@ Publishes a [contentType][] present in the content type hub site.
 
 ### [Publish-MgSiteListContentType](Publish-MgSiteListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
-
-### [Remove-MgGroupSite](Remove-MgGroupSite.md)
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
 
 ### [Remove-MgGroupSiteColumn](Remove-MgGroupSiteColumn.md)
 Delete navigation property columns for groups

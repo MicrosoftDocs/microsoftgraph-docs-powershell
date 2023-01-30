@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessageattachment
 schema: 2.0.0
-ms.prod: "service-communications"
 ---
 
 # New-MgServiceAnnouncementMessageAttachment
@@ -15,28 +14,28 @@ Create new navigation property to attachments for admin
 
 ### CreateExpanded (Default)
 ```
-New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId <String>
- -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
+ -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnouncementIdentity>
- -BodyParameter <IMicrosoftGraphServiceAnnouncementAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +43,35 @@ Create new navigation property to attachments for admin
 
 ## EXAMPLES
 
+### Example 1: Get all attachments of a message in a collection
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+
+This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get a zip file of all attachments in stream for a message
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+
+This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +87,7 @@ serviceAnnouncementAttachment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceAnnouncementAttachment
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -81,7 +102,7 @@ Accept wildcard characters: False
 Input File for Content (The attachment content.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +117,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +133,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +149,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +179,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +194,8 @@ Accept wildcard characters: False
 key: id of serviceUpdateMessage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -188,7 +209,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,10 +257,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServiceAnnouncementAttachment
+
 ## NOTES
 
 ALIASES
@@ -249,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncementAttachment
+BODYPARAMETER <IMicrosoftGraphServiceAnnouncementAttachment>: serviceAnnouncementAttachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Content <Byte[]>]`: The attachment content.
@@ -258,10 +282,11 @@ BODYPARAMETER `<IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncem
   - `[Name <String>]`: 
   - `[Size <Int32?>]`: 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: key: id of serviceHealth
   - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyserviceprincipalcreationpolicyexclude
 schema: 2.0.0
@@ -16,28 +16,30 @@ Create new navigation property to excludes for policies
 ```
 New-MgPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationPolicyId <String>
  [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>] [-ApplicationPublisherIds <String[]>]
- [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ApplicationsFromVerifiedPublisherOnly] [-ApplicationTenantIds <String[]>] [-CertifiedApplicationsOnly]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyServicePrincipalCreationPolicyExclude -ServicePrincipalCreationPolicyId <String>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>] [-ApplicationPublisherIds <String[]>]
- [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgPolicyServicePrincipalCreationPolicyExclude -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ApplicationsFromVerifiedPublisherOnly] [-ApplicationTenantIds <String[]>] [-CertifiedApplicationsOnly]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +53,7 @@ Create new navigation property to excludes for policies
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +68,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -96,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +129,7 @@ servicePrincipalCreationConditionSet
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServicePrincipalCreationConditionSet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -142,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +160,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,8 +176,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -189,8 +191,8 @@ Accept wildcard characters: False
 key: id of servicePrincipalCreationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,10 +239,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
+
 ## NOTES
 
 ALIASES
@@ -250,7 +255,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationConditionSet>`: servicePrincipalCreationConditionSet
+BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationConditionSet>: servicePrincipalCreationConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationIds <String[]>]`: 
@@ -259,7 +264,7 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationConditionSet>`: servicePr
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -337,3 +342,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

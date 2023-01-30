@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: af5ac06c-bba0-4a1a-bb33-3261e312b67f
+Module Guid: 885464f2-419c-4f06-8733-c77c7bc3b0b4
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgGroupFavorite](Add-MgGroupFavorite.md)
 Add the group to the list of the current user's favorite groups.
@@ -34,7 +34,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgGroupSiteListContentTypeCopy](Add-MgGroupSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -43,7 +43,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
 Invoke action addGroup
@@ -185,11 +185,6 @@ Nullable.
 The user (or application) that created the group.
 NOTE: This is not set if the user is an administrator.
 Read-only.
-
-### [Get-MgGroupConversationThreadPostSingleValueExtendedProperty](Get-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the post.
-Read-only.
-Nullable.
 
 ### [Get-MgGroupDelta](Get-MgGroupDelta.md)
 Invoke function delta
@@ -534,28 +529,38 @@ Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ### [Invoke-MgReplyGroupConversationThread](Invoke-MgReplyGroupConversationThread.md)
-Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+Add an attachment when creating a group post.
+This operation limits the size of the attachment you can add to under 3 MB.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgReplyGroupConversationThreadPost](Invoke-MgReplyGroupConversationThreadPost.md)
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [Invoke-MgReplyGroupConversationThreadPostInReplyTo](Invoke-MgReplyGroupConversationThreadPostInReplyTo.md)
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [Invoke-MgReplyGroupThread](Invoke-MgReplyGroupThread.md)
-Reply to a thread in a group conversation and add a new post to it.
-You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
+Add an attachment when creating a group post.
+This operation limits the size of the attachment you can add to under 3 MB.
+An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [Invoke-MgReplyGroupThreadPost](Invoke-MgReplyGroupThreadPost.md)
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
-Reply to a post and add a new post to the specified thread in a group conversation.
-You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [Invoke-MgSnoozeGroupCalendarEventReminder](Invoke-MgSnoozeGroupCalendarEventReminder.md)
 Postpone a reminder for an event in a user calendar until a new time.
@@ -784,11 +789,6 @@ Delete navigation property multiValueExtendedProperties for groups
 
 ### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
 Delete navigation property singleValueExtendedProperties for groups
-
-### [Remove-MgGroupConversationThreadPostSingleValueExtendedProperty](Remove-MgGroupConversationThreadPostSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the post.
-Read-only.
-Nullable.
 
 ### [Remove-MgGroupExtension](Remove-MgGroupExtension.md)
 Delete navigation property extensions for groups

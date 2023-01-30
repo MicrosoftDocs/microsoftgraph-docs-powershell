@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupsetting
 schema: 2.0.0
@@ -17,27 +17,28 @@ The template named `Group.Unified` can be used to configure tenant-wide Microsof
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupSetting -GroupId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupSetting -GroupId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-Id <String>] [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupSetting -GroupId <String> -BodyParameter <IMicrosoftGraphDirectorySetting> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupSetting -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>] [-WhatIf] [-Confirm]
+New-MgGroupSetting -GroupId <String> -BodyParameter <IMicrosoftGraphDirectorySetting> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphDirectorySetting> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgGroupSetting -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphDirectorySetting> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgGroupSetting -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-Id <String>] [-TemplateId <String>] [-Values <IMicrosoftGraphSettingValue[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -72,7 +73,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +89,7 @@ directorySetting
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectorySetting
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -104,7 +105,7 @@ Display name of this group of settings, which comes from the associated template
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -119,8 +120,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -135,7 +136,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -151,8 +152,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,7 +168,7 @@ Unique identifier for the template used to create this group of settings.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +184,7 @@ Collection of name-value pairs corresponding to the name and defaultValue proper
 To construct, please use Get-Help -Online and see NOTES section for VALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingValue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingValue[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +199,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +215,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,10 +232,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySetting
+
 ## NOTES
 
 ALIASES
@@ -244,7 +248,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectorySetting>`: directorySetting
+BODYPARAMETER <IMicrosoftGraphDirectorySetting>: directorySetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Display name of this group of settings, which comes from the associated template. Read-only.
@@ -253,7 +257,7 @@ BODYPARAMETER `<IMicrosoftGraphDirectorySetting>`: directorySetting
     - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
     - `[Value <String>]`: Value of the setting.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -289,6 +293,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ProfilePhotoId <String>]`: key: id of profilePhoto
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
@@ -299,8 +304,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-VALUES <IMicrosoftGraphSettingValue\[]>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
+VALUES <IMicrosoftGraphSettingValue[]>: Collection of name-value pairs corresponding to the name and defaultValue properties in the referenced directorySettingTemplates object.
   - `[Name <String>]`: Name of the setting (as defined by the groupSettingTemplate).
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
+

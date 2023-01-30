@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticanomaly
 schema: 2.0.0
@@ -20,13 +20,20 @@ Update-MgDeviceManagementUserExperienceAnalyticAnomaly -UserExperienceAnalyticsA
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
  [-IssueId <String>] [-Severity <UserExperienceAnalyticsAnomalySeverity>]
- [-State <UserExperienceAnalyticsAnomalyState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <UserExperienceAnalyticsAnomalyState>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticAnomaly -UserExperienceAnalyticsAnomalyId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,14 +45,7 @@ Update-MgDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDeviceMana
  [-AnomalyType <UserExperienceAnalyticsAnomalyType>] [-AssetName <String>] [-AssetPublisher <String>]
  [-AssetVersion <String>] [-DetectionModelId <String>] [-DeviceImpactedCount <Int32>] [-Id <String>]
  [-IssueId <String>] [-Severity <UserExperienceAnalyticsAnomalySeverity>]
- [-State <UserExperienceAnalyticsAnomalyState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementUserExperienceAnalyticAnomaly -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomaly> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-State <UserExperienceAnalyticsAnomalyState>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,7 +59,7 @@ Update the navigation property userExperienceAnalyticsAnomaly in deviceManagemen
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 Indicates the first occurrence date and time for the anomaly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Indicates the latest occurrence date and time for the anomaly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 The name of the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Indicates the category of the anomaly.
 Eg: anomaly type can be device, application, stop error, driver or other.
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalyType
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsAnomalyType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +150,7 @@ Accept wildcard characters: False
 The name of the application or module that caused the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +165,7 @@ Accept wildcard characters: False
 The publisher of the application or module that caused the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 The version of the application or module that caused the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ The user experience analytics anomaly entity contains anomaly details.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAnomaly
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly detection model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ The number of devices impacted by the anomaly.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +243,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,8 +259,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly detection model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -305,7 +305,7 @@ Indicates the severity of the anomaly.
 Eg: anomaly severity can be high, medium, low, informational or other.
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalySeverity
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsAnomalySeverity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -321,7 +321,7 @@ Indicates the state of the anomaly.
 Eg: anomaly severity can be new, active, disabled, removed or other.
 
 ```yaml
-Type: UserExperienceAnalyticsAnomalyState
+Type: Microsoft.Graph.PowerShell.Support.UserExperienceAnalyticsAnomalyState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -336,8 +336,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsAnomaly
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -351,7 +351,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -367,7 +367,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -384,10 +384,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomaly
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -397,7 +400,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experience analytics anomaly entity contains anomaly details.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomaly>: The user experience analytics anomaly entity contains anomaly details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AnomalyFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurrence date and time for the anomaly.
@@ -414,7 +417,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomaly>`: The user experi
   - `[Severity <UserExperienceAnalyticsAnomalySeverity?>]`: Indicates the severity of the anomaly. Eg: anomaly severity can be high, medium, low, informational or other.
   - `[State <UserExperienceAnalyticsAnomalyState?>]`: Indicates the state of the anomaly. Eg: anomaly severity can be new, active, disabled, removed or other.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -526,6 +529,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -545,4 +549,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

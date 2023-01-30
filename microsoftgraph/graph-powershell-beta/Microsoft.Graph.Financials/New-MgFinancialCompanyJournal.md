@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Financials
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/new-mgfinancialcompanyjournal
 schema: 2.0.0
@@ -17,13 +17,19 @@ Create new navigation property to journals for financials
 New-MgFinancialCompanyJournal -CompanyId <String> [-Account <IMicrosoftGraphAccount>]
  [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>] [-BalancingAccountNumber <String>]
  [-Code <String>] [-DisplayName <String>] [-Id <String>] [-JournalLines <IMicrosoftGraphJournalLine[]>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgFinancialCompanyJournal -CompanyId <String> -BodyParameter <IMicrosoftGraphJournal> [-WhatIf] [-Confirm]
+New-MgFinancialCompanyJournal -CompanyId <String> -BodyParameter <IMicrosoftGraphJournal> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgFinancialCompanyJournal -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphJournal>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -31,13 +37,7 @@ New-MgFinancialCompanyJournal -CompanyId <String> -BodyParameter <IMicrosoftGrap
 New-MgFinancialCompanyJournal -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
  [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>] [-BalancingAccountNumber <String>]
  [-Code <String>] [-DisplayName <String>] [-Id <String>] [-JournalLines <IMicrosoftGraphJournalLine[]>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgFinancialCompanyJournal -InputObject <IFinancialsIdentity> -BodyParameter <IMicrosoftGraphJournal>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,7 +52,7 @@ account
 To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccount
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ journal
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournal
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournal
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -128,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +143,8 @@ Accept wildcard characters: False
 key: id of company
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +174,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,8 +190,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for JOURNALLINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournalLine[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournalLine[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +221,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +236,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +252,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,10 +269,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournal
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphJournal
+
 ## NOTES
 
 ALIASES
@@ -282,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+ACCOUNT <IMicrosoftGraphAccount>: account
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Blocked <Boolean?>]`: 
@@ -292,7 +295,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   - `[Number <String>]`: 
   - `[SubCategory <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphJournal>`: journal
+BODYPARAMETER <IMicrosoftGraphJournal>: journal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -324,7 +327,7 @@ BODYPARAMETER `<IMicrosoftGraphJournal>`: journal
     - `[PostingDate <DateTime?>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
+INPUTOBJECT <IFinancialsIdentity>: Identity Parameter
   - `[AccountId <String>]`: key: id of account
   - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
   - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
@@ -362,7 +365,7 @@ INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
   - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
   - `[VendorId <String>]`: key: id of vendor
 
-JOURNALLINES <IMicrosoftGraphJournalLine\[]>: .
+JOURNALLINES <IMicrosoftGraphJournalLine[]>: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -386,3 +389,4 @@ JOURNALLINES <IMicrosoftGraphJournalLine\[]>: .
   - `[PostingDate <DateTime?>]`: 
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgacceptgroupcalendarevent
 schema: 2.0.0
@@ -15,27 +15,27 @@ Accept the specified event in a user calendar.
 ### AcceptExpanded (Default)
 ```
 Invoke-MgAcceptGroupCalendarEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Accept
 ```
 Invoke-MgAcceptGroupCalendarEvent -EventId <String> -GroupId <String>
  -BodyParameter <IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AcceptViaIdentityExpanded
-```
-Invoke-MgAcceptGroupCalendarEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgAcceptGroupCalendarEvent -InputObject <IGroupsIdentity>
  -BodyParameter <IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AcceptViaIdentityExpanded
+```
+Invoke-MgAcceptGroupCalendarEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -66,7 +66,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Accept, AcceptViaIdentity
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: String
-Parameter Sets: AcceptExpanded, Accept
+Type: System.String
+Parameter Sets: Accept, AcceptExpanded
 Aliases:
 
 Required: True
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: AcceptExpanded, Accept
+Type: System.String
+Parameter Sets: Accept, AcceptExpanded
 Aliases:
 
 Required: True
@@ -143,8 +143,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: AcceptViaIdentityExpanded, AcceptViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: AcceptViaIdentity, AcceptViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: AcceptExpanded, AcceptViaIdentityExpanded
 Aliases:
 
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,10 +221,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -234,12 +237,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsU86NbuGroupsGroupIdCalendarEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -275,6 +278,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ProfilePhotoId <String>]`: key: id of profilePhoto
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
@@ -286,3 +290,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: key: id of webPart
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgcheckoutgroupdriveitem
 schema: 2.0.0
@@ -14,13 +14,13 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ### Checkout (Default)
 ```
-Invoke-MgCheckoutGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgCheckoutGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckoutViaIdentity
 ```
-Invoke-MgCheckoutGroupDriveItem -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgCheckoutGroupDriveItem -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 key: id of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Checkout
 Aliases:
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 key: id of driveItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Checkout
 Aliases:
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Checkout
 Aliases:
 
@@ -92,7 +92,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 Parameter Sets: CheckoutViaIdentity
 Aliases:
 
@@ -107,7 +107,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -138,7 +138,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -155,9 +155,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -167,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -203,6 +205,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ProfilePhotoId <String>]`: key: id of profilePhoto
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
@@ -214,3 +217,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: key: id of webPart
 
 ## RELATED LINKS
+

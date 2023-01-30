@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupsitepagewebpartbyposition
 schema: 2.0.0
@@ -16,28 +16,28 @@ Invoke action getWebPartsByPosition
 ```
 Get-MgGroupSitePageWebPartByPosition -GroupId <String> -SiteId <String> -SitePageId <String>
  [-AdditionalProperties <Hashtable>] [-ColumnId <Double>] [-HorizontalSectionId <Double>]
- [-IsInVerticalSection] [-WebPartIndex <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-IsInVerticalSection] [-WebPartIndex <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgGroupSitePageWebPartByPosition -GroupId <String> -SiteId <String> -SitePageId <String>
  -BodyParameter <IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgGroupSitePageWebPartByPosition -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-ColumnId <Double>] [-HorizontalSectionId <Double>] [-IsInVerticalSection] [-WebPartIndex <Double>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgGroupSitePageWebPartByPosition -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgGroupSitePageWebPartByPosition -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ColumnId <Double>] [-HorizontalSectionId <Double>] [-IsInVerticalSection] [-WebPartIndex <Double>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Invoke action getWebPartsByPosition
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -97,8 +97,8 @@ Accept wildcard characters: False
 key: id of group
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -128,8 +128,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -158,8 +158,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -173,8 +173,8 @@ Accept wildcard characters: False
 key: id of sitePage
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -188,7 +188,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -203,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -219,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,10 +236,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWebPart
+
 ## NOTES
 
 ALIASES
@@ -249,14 +252,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths3Xxv9NGroupsGroupIdSitesSiteIdPagesSitepageIdMicrosoftGraphGetwebpartsbypositionPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ColumnId <Double?>]`: 
   - `[HorizontalSectionId <Double?>]`: 
   - `[IsInVerticalSection <Boolean?>]`: 
   - `[WebPartIndex <Double?>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
@@ -292,6 +295,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ProfilePhotoId <String>]`: key: id of profilePhoto
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: key: id of site
   - `[SitePageId <String>]`: key: id of sitePage
@@ -303,3 +307,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: key: id of webPart
 
 ## RELATED LINKS
+

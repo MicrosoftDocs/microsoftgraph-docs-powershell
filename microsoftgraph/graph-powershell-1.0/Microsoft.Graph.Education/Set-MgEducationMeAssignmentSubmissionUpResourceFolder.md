@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationmeassignmentsubmissionupresourcefolder
 schema: 2.0.0
@@ -18,12 +18,12 @@ Only a student in the class can determine what files to upload in a given submis
 ### Set1 (Default)
 ```
 Set-MgEducationMeAssignmentSubmissionUpResourceFolder -EducationAssignmentId <String>
- -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -EducationSubmissionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity1
 ```
-Set-MgEducationMeAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Set-MgEducationMeAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,7 +41,7 @@ Only a student in the class can determine what files to upload in a given submis
 key: id of educationAssignment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set1
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 key: id of educationSubmission
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set1
 Aliases:
 
@@ -72,7 +72,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
 Parameter Sets: SetViaIdentity1
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -103,7 +103,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -120,9 +120,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission1
+
 ## NOTES
 
 ALIASES
@@ -132,7 +134,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
@@ -147,3 +149,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: key: id of educationUser
 
 ## RELATED LINKS
+

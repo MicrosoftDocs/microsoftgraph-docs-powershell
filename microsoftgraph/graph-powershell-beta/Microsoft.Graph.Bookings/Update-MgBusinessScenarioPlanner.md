@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplanner
 schema: 2.0.0
@@ -17,13 +17,19 @@ Update the navigation property planner in solutions
 Update-MgBusinessScenarioPlanner -BusinessScenarioId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]
  [-TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]
- [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBusinessScenarioPlanner -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBusinessScenarioPlanner -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -31,13 +37,7 @@ Update-MgBusinessScenarioPlanner -BusinessScenarioId <String>
 Update-MgBusinessScenarioPlanner -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]
  [-TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]
- [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBusinessScenarioPlanner -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Update the navigation property planner in solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +67,7 @@ businessScenarioPlanner
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBusinessScenarioPlanner
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanner
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +82,8 @@ Accept wildcard characters: False
 key: id of businessScenario
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -98,7 +98,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,8 +114,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,7 +145,7 @@ plannerPlanConfiguration
 To construct, please use Get-Help -Online and see NOTES section for PLANCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ plannerTaskConfiguration
 To construct, please use Get-Help -Online and see NOTES section for TASKCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskConfiguration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,11 +173,11 @@ Accept wildcard characters: False
 ```
 
 ### -Tasks
-.
+The Planner tasks for the scenario.
 To construct, please use Get-Help -Online and see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBusinessScenarioTask[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBusinessScenarioTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +208,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,10 +225,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanner
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -238,66 +241,66 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanner
+BODYPARAMETER <IMicrosoftGraphBusinessScenarioPlanner>: businessScenarioPlanner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]`: plannerPlanConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: 
-      - `[ExternalBucketId <String>]`: 
+    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: List the buckets that should be created in the plan.
+      - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[CreatedDateTime <DateTime?>]`: 
-    - `[DefaultLanguage <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[DefaultLanguage <String>]`: The language code for the default language to be used for the names of the objects created for the plan.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-    - `[LastModifiedDateTime <DateTime?>]`: 
-    - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: 
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the plan configuration was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: Localized names for the plan configuration.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: 
-        - `[ExternalBucketId <String>]`: 
-        - `[Name <String>]`: 
-      - `[LanguageTag <String>]`: 
-      - `[PlanTitle <String>]`: 
+      - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
+        - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+        - `[Name <String>]`: Name of the bucket.
+      - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
+      - `[PlanTitle <String>]`: Localized title of the plan.
   - `[TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]`: plannerTaskConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: 
-        - `[DefaultRule <String>]`: 
+      - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: The rules that should be enforced on the tasks when they are being changed outside of the scenario, based on the role of the caller.
+        - `[DefaultRule <String>]`: Default rule that applies when a property or action-specific rule is not provided. Possible values are: Allow, Block
         - `[PropertyRule <IMicrosoftGraphPlannerTaskPropertyRule>]`: plannerTaskPropertyRule
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[RuleKind <String>]`: plannerRuleKind
           - `[AppliedCategories <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[DefaultRules <String[]>]`: 
-            - `[Overrides <IMicrosoftGraphPlannerRuleOverride[]>]`: 
-              - `[Name <String>]`: 
-              - `[Rules <String[]>]`: 
+            - `[DefaultRules <String[]>]`: The default rules that apply if no override matches to the current data.
+            - `[Overrides <IMicrosoftGraphPlannerRuleOverride[]>]`: Overrides that specify different rules for specific data associated with the field.
+              - `[Name <String>]`: Name of the override. Allowed override values will be dependent on the property affected by the rule.
+              - `[Rules <String[]>]`: Overridden rules. These are used as rules for the override instead of the default rules.
           - `[Assignments <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
           - `[CheckLists <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-          - `[Delete <String[]>]`: 
-          - `[DueDate <String[]>]`: 
-          - `[Move <String[]>]`: 
-          - `[Notes <String[]>]`: 
-          - `[Order <String[]>]`: 
-          - `[PercentComplete <String[]>]`: 
-          - `[PreviewType <String[]>]`: 
-          - `[Priority <String[]>]`: 
+          - `[Delete <String[]>]`: Rules and restrictions for deleting the task. Accepted values are allow and block.
+          - `[DueDate <String[]>]`: Rules and restrictions for changing the due date of the task. Accepted values are allow and block.
+          - `[Move <String[]>]`: Rules and restrictions for moving the task between buckets or plans. Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
+          - `[Notes <String[]>]`: Rules and restrictions for changing the notes of the task. Accepted values are allow and block.
+          - `[Order <String[]>]`: Rules and restrictions for changing the order of the task. Accepted values are allow and block.
+          - `[PercentComplete <String[]>]`: Rules and restrictions for changing the completion percentage of the task. Accepted values are allow, setToComplete, setToNotStarted, setToInProgress, and block.
+          - `[PreviewType <String[]>]`: Rules and restrictions for changing the preview type of the task. Accepted values are allow and block.
+          - `[Priority <String[]>]`: Rules and restrictions for changing the priority of the task. Accepted values are allow and block.
           - `[References <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-          - `[StartDate <String[]>]`: 
-          - `[Title <String[]>]`: 
+          - `[StartDate <String[]>]`: Rules and restrictions for changing the start date of the task. Accepted values are allow and block.
+          - `[Title <String[]>]`: Rules and restrictions for changing the title of the task. Accepted values are allow and block.
         - `[Role <IMicrosoftGraphPlannerTaskConfigurationRoleBase>]`: plannerTaskConfigurationRoleBase
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[RoleKind <String>]`: plannerUserRoleKind
-  - `[Tasks <IMicrosoftGraphBusinessScenarioTask[]>]`: 
+  - `[Tasks <IMicrosoftGraphBusinessScenarioTask[]>]`: The Planner tasks for the scenario.
     - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
     - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -363,16 +366,16 @@ BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanne
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[BusinessScenarioProperties <IMicrosoftGraphBusinessScenarioProperties>]`: businessScenarioProperties
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ExternalBucketId <String>]`: 
-      - `[ExternalContextId <String>]`: 
-      - `[ExternalObjectId <String>]`: 
-      - `[ExternalObjectVersion <String>]`: 
-      - `[WebUrl <String>]`: 
+      - `[ExternalBucketId <String>]`: The identifier for the bucketDefinition configured in the plannerPlanConfiguration for the scenario. The task will be placed in the corresponding plannerBucket in the target plan. Required.
+      - `[ExternalContextId <String>]`: The identifier for the context of the task. Context is an application controlled value, and tasks can be queried by their externalContextId. Optional.
+      - `[ExternalObjectId <String>]`: Application-specific identifier for the task. Every task for the same scenario must have a unique identifier specified for this property. Required.
+      - `[ExternalObjectVersion <String>]`: Application-specific version of the task. Optional.
+      - `[WebUrl <String>]`: The URL to the application-specific experience for this task. Optional.
     - `[Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>]`: businessScenarioTaskTargetBase
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
@@ -386,65 +389,65 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BusinessScenarioTaskId <String>]`: key: id of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: key: id of plannerPlanConfigurationLocalization
 
-PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
+PLANCONFIGURATION <IMicrosoftGraphPlannerPlanConfiguration>: plannerPlanConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: 
-    - `[ExternalBucketId <String>]`: 
+  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: List the buckets that should be created in the plan.
+    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DefaultLanguage <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[DefaultLanguage <String>]`: The language code for the default language to be used for the names of the objects created for the plan.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the plan configuration was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: Localized names for the plan configuration.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: 
-      - `[ExternalBucketId <String>]`: 
-      - `[Name <String>]`: 
-    - `[LanguageTag <String>]`: 
-    - `[PlanTitle <String>]`: 
+    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
+      - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+      - `[Name <String>]`: Name of the bucket.
+    - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
+    - `[PlanTitle <String>]`: Localized title of the plan.
 
-TASKCONFIGURATION `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+TASKCONFIGURATION <IMicrosoftGraphPlannerTaskConfiguration>: plannerTaskConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: 
-      - `[DefaultRule <String>]`: 
+    - `[Rules <IMicrosoftGraphPlannerTaskRoleBasedRule[]>]`: The rules that should be enforced on the tasks when they are being changed outside of the scenario, based on the role of the caller.
+      - `[DefaultRule <String>]`: Default rule that applies when a property or action-specific rule is not provided. Possible values are: Allow, Block
       - `[PropertyRule <IMicrosoftGraphPlannerTaskPropertyRule>]`: plannerTaskPropertyRule
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RuleKind <String>]`: plannerRuleKind
         - `[AppliedCategories <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DefaultRules <String[]>]`: 
-          - `[Overrides <IMicrosoftGraphPlannerRuleOverride[]>]`: 
-            - `[Name <String>]`: 
-            - `[Rules <String[]>]`: 
+          - `[DefaultRules <String[]>]`: The default rules that apply if no override matches to the current data.
+          - `[Overrides <IMicrosoftGraphPlannerRuleOverride[]>]`: Overrides that specify different rules for specific data associated with the field.
+            - `[Name <String>]`: Name of the override. Allowed override values will be dependent on the property affected by the rule.
+            - `[Rules <String[]>]`: Overridden rules. These are used as rules for the override instead of the default rules.
         - `[Assignments <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
         - `[CheckLists <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[Delete <String[]>]`: 
-        - `[DueDate <String[]>]`: 
-        - `[Move <String[]>]`: 
-        - `[Notes <String[]>]`: 
-        - `[Order <String[]>]`: 
-        - `[PercentComplete <String[]>]`: 
-        - `[PreviewType <String[]>]`: 
-        - `[Priority <String[]>]`: 
+        - `[Delete <String[]>]`: Rules and restrictions for deleting the task. Accepted values are allow and block.
+        - `[DueDate <String[]>]`: Rules and restrictions for changing the due date of the task. Accepted values are allow and block.
+        - `[Move <String[]>]`: Rules and restrictions for moving the task between buckets or plans. Accepted values are allow, moveBetweenPlans, moveBetweenBuckets, and block.
+        - `[Notes <String[]>]`: Rules and restrictions for changing the notes of the task. Accepted values are allow and block.
+        - `[Order <String[]>]`: Rules and restrictions for changing the order of the task. Accepted values are allow and block.
+        - `[PercentComplete <String[]>]`: Rules and restrictions for changing the completion percentage of the task. Accepted values are allow, setToComplete, setToNotStarted, setToInProgress, and block.
+        - `[PreviewType <String[]>]`: Rules and restrictions for changing the preview type of the task. Accepted values are allow and block.
+        - `[Priority <String[]>]`: Rules and restrictions for changing the priority of the task. Accepted values are allow and block.
         - `[References <IMicrosoftGraphPlannerFieldRules>]`: plannerFieldRules
-        - `[StartDate <String[]>]`: 
-        - `[Title <String[]>]`: 
+        - `[StartDate <String[]>]`: Rules and restrictions for changing the start date of the task. Accepted values are allow and block.
+        - `[Title <String[]>]`: Rules and restrictions for changing the title of the task. Accepted values are allow and block.
       - `[Role <IMicrosoftGraphPlannerTaskConfigurationRoleBase>]`: plannerTaskConfigurationRoleBase
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RoleKind <String>]`: plannerUserRoleKind
 
-TASKS <IMicrosoftGraphBusinessScenarioTask\[]>: .
+TASKS <IMicrosoftGraphBusinessScenarioTask[]>: The Planner tasks for the scenario.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -467,8 +470,8 @@ TASKS <IMicrosoftGraphBusinessScenarioTask\[]>: .
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CompletedDateTime <DateTime?>]`: Read-only. Date and time at which the 'percentComplete' of the task is set to '100'. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -517,15 +520,14 @@ TASKS <IMicrosoftGraphBusinessScenarioTask\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BusinessScenarioProperties <IMicrosoftGraphBusinessScenarioProperties>]`: businessScenarioProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExternalBucketId <String>]`: 
-    - `[ExternalContextId <String>]`: 
-    - `[ExternalObjectId <String>]`: 
-    - `[ExternalObjectVersion <String>]`: 
-    - `[WebUrl <String>]`: 
+    - `[ExternalBucketId <String>]`: The identifier for the bucketDefinition configured in the plannerPlanConfiguration for the scenario. The task will be placed in the corresponding plannerBucket in the target plan. Required.
+    - `[ExternalContextId <String>]`: The identifier for the context of the task. Context is an application controlled value, and tasks can be queried by their externalContextId. Optional.
+    - `[ExternalObjectId <String>]`: Application-specific identifier for the task. Every task for the same scenario must have a unique identifier specified for this property. Required.
+    - `[ExternalObjectVersion <String>]`: Application-specific version of the task. Optional.
+    - `[WebUrl <String>]`: The URL to the application-specific experience for this task. Optional.
   - `[Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>]`: businessScenarioTaskTargetBase
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
 
-## RELATED LINKS

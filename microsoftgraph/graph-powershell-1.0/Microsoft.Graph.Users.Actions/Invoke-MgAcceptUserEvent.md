@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptuserevent
 schema: 2.0.0
@@ -15,27 +15,27 @@ Accept the specified event in a user calendar.
 ### AcceptExpanded1 (Default)
 ```
 Invoke-MgAcceptUserEvent -EventId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Accept1
 ```
 Invoke-MgAcceptUserEvent -EventId <String> -UserId <String>
  -BodyParameter <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AcceptViaIdentityExpanded1
-```
-Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-SendResponse] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity1
 ```
 Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AcceptViaIdentityExpanded1
+```
+Invoke-MgAcceptUserEvent -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-SendResponse] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Accept1, AcceptViaIdentity1
 Aliases:
 
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
@@ -109,8 +109,8 @@ Accept wildcard characters: False
 key: id of event
 
 ```yaml
-Type: String
-Parameter Sets: AcceptExpanded1, Accept1
+Type: System.String
+Parameter Sets: Accept1, AcceptExpanded1
 Aliases:
 
 Required: True
@@ -125,8 +125,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: AcceptViaIdentityExpanded1, AcceptViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: AcceptViaIdentity1, AcceptViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: AcceptExpanded1, AcceptViaIdentityExpanded1
 Aliases:
 
@@ -170,8 +170,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: AcceptExpanded1, Accept1
+Type: System.String
+Parameter Sets: Accept1, AcceptExpanded1
 Aliases:
 
 Required: True
@@ -185,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -201,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -218,10 +218,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -231,12 +234,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1SpvidmUsersUserIdEventsEventIdMicrosoftGraphAcceptPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[SendResponse <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -283,3 +286,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

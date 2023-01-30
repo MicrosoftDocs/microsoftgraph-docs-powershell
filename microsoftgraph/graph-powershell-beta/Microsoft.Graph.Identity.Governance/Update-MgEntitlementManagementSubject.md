@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsubject
 schema: 2.0.0
@@ -18,13 +18,19 @@ Update-MgEntitlementManagementSubject -AccessPackageSubjectId <String> [-Additio
  [-AltSecId <String>] [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]
  [-ConnectedOrganizationId <String>] [-DisplayName <String>] [-Email <String>] [-Id <String>]
  [-ObjectId <String>] [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>]
- [-SubjectLifecycle <String>] [-Type <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SubjectLifecycle <String>] [-Type <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgEntitlementManagementSubject -AccessPackageSubjectId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,13 +40,7 @@ Update-MgEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
- [-Type <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Type <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,8 +54,8 @@ Update the navigation property subjects in identityGovernance
 key: id of accessPackageSubject
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -69,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -116,7 +116,7 @@ connectedOrganization
 To construct, please use Get-Help -Online and see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +131,7 @@ Accept wildcard characters: False
 The identifier of the connected organization of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 The display name of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 The email address of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,8 +193,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -209,7 +209,7 @@ The object identifier of the subject.
 null if the subject is not yet a user in the tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +224,7 @@ Accept wildcard characters: False
 A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +239,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 The principal name, if known, of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 accessPackageSubjectLifecycle
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 The resource type of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +299,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +315,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -332,10 +332,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -345,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+BODYPARAMETER <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AltSecId <String>]`: 
@@ -373,7 +376,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
 
-CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization1>`: connectedOrganization
+CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization1>: connectedOrganization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
@@ -389,7 +392,7 @@ CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization1>`: connectedOrgani
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[State <String>]`: connectedOrganizationState
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -440,6 +443,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: key: id of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: key: id of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleRequest
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
@@ -466,4 +475,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

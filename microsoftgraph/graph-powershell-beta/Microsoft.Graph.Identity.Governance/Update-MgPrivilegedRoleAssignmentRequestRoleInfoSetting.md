@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedroleassignmentrequestroleinfosetting
 schema: 2.0.0
@@ -19,14 +19,20 @@ Update-MgPrivilegedRoleAssignmentRequestRoleInfoSetting -PrivilegedRoleAssignmen
  [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation] [-ApproverIds <String[]>]
  [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin]
  [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
- [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-PassThru] [-WhatIf] [-Confirm]
+ [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPrivilegedRoleAssignmentRequestRoleInfoSetting -PrivilegedRoleAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,14 +41,8 @@ Update-MgPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdentityG
  [-AdditionalProperties <Hashtable>] [-ApprovalOnElevation] [-ApproverIds <String[]>]
  [-ElevationDuration <TimeSpan>] [-Id <String>] [-IsMfaOnElevationConfigurable] [-LastGlobalAdmin]
  [-MaxElavationDuration <TimeSpan>] [-MfaOnElevation] [-MinElevationDuration <TimeSpan>]
- [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-PassThru] [-WhatIf] [-Confirm]
+ [-NotificationToUserOnElevation] [-TicketingInfoOnElevation] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,7 +57,7 @@ A privilegedRoleSettings object will be returned.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ true if the approval is required when activate the role.
 false if the approval is not required when activate the role.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +88,7 @@ Accept wildcard characters: False
 List of Approval ids, if approval is required for activation.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ privilegedRoleSettings
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -119,7 +119,7 @@ Accept wildcard characters: False
 The duration when the role is activated.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,8 +151,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,7 +167,7 @@ true if mfaOnElevation is configurable.
 false if mfaOnElevation is not configurable.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 Internal used only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Maximal duration for the activated role.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ true if MFA is required to activate the role.
 false if MFA is not required to activate the role.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 Minimal duration for the activated role.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +244,7 @@ true if send notification to the end user when the role is activated.
 false if do not send notification when the role is activated.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +259,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -274,8 +274,8 @@ Accept wildcard characters: False
 key: id of privilegedRoleAssignmentRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -290,7 +290,7 @@ true if the ticketing information is required when activate the role.
 false if the ticketing information is not required when activate the role.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -305,7 +305,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -321,7 +321,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -338,10 +338,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSettings
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -351,7 +354,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
+BODYPARAMETER <IMicrosoftGraphPrivilegedRoleSettings>: privilegedRoleSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
@@ -365,7 +368,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleSettings>`: privilegedRoleSettings
   - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
   - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -416,6 +419,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: key: id of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: key: id of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleRequest
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
@@ -441,3 +450,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
 ## RELATED LINKS
+

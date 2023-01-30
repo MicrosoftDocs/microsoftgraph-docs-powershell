@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
+external help file:
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolder
 schema: 2.0.0
@@ -17,15 +17,22 @@ Update the navigation property contactFolders in users
 Update-MgUserContactFolder -ContactFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChildFolders <IMicrosoftGraphContactFolder1[]>] [-Contacts <IMicrosoftGraphContact1[]>]
  [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-WellKnownName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WellKnownName <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgUserContactFolder -ContactFolderId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContactFolder1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContactFolder1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgUserContactFolder -InputObject <IPersonalContactsIdentity>
+ -BodyParameter <IMicrosoftGraphContactFolder1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
@@ -33,15 +40,10 @@ Update-MgUserContactFolder -ContactFolderId <String> -UserId <String>
 Update-MgUserContactFolder -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
  [-ChildFolders <IMicrosoftGraphContactFolder1[]>] [-Contacts <IMicrosoftGraphContact1[]>]
  [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-WellKnownName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgUserContactFolder -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContactFolder1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WellKnownName <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +71,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -85,7 +87,7 @@ contactFolder
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -104,7 +106,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for CHILDFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -119,8 +121,8 @@ Accept wildcard characters: False
 key: id of contactFolder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -138,7 +140,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for CONTACTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -153,7 +155,7 @@ Accept wildcard characters: False
 The folder's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -169,7 +171,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -185,8 +187,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+Parameter Sets: UpdateViaIdentity1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -203,7 +205,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -218,7 +220,7 @@ Accept wildcard characters: False
 The ID of the folder's parent folder.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -233,7 +235,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -251,7 +253,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -266,8 +268,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -282,7 +284,7 @@ The name of the folder if the folder is a recognized folder.
 Currently contacts is the only recognized contacts folder.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -297,7 +299,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -313,7 +315,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -330,10 +332,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder1
+
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -343,7 +348,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
+BODYPARAMETER <IMicrosoftGraphContactFolder1>: contactFolder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
@@ -429,7 +434,7 @@ BODYPARAMETER `<IMicrosoftGraphContactFolder1>`: contactFolder
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[WellKnownName <String>]`: The name of the folder if the folder is a recognized folder. Currently contacts is the only recognized contacts folder.
 
-CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
+CHILDFOLDERS <IMicrosoftGraphContactFolder1[]>: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ChildFolders <IMicrosoftGraphContactFolder1[]>]`: The collection of child folders in the folder. Navigation property. Read-only. Nullable.
   - `[Contacts <IMicrosoftGraphContact1[]>]`: The contacts in the folder. Navigation property. Read-only. Nullable.
@@ -514,7 +519,7 @@ CHILDFOLDERS <IMicrosoftGraphContactFolder1\[]>: The collection of child folders
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[WellKnownName <String>]`: The name of the folder if the folder is a recognized folder. Currently contacts is the only recognized contacts folder.
 
-CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation property. Read-only. Nullable.
+CONTACTS <IMicrosoftGraphContact1[]>: The contacts in the folder. Navigation property. Read-only. Nullable.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -591,7 +596,7 @@ CONTACTS <IMicrosoftGraphContact1\[]>: The contacts in the folder. Navigation pr
   - `[YomiGivenName <String>]`: 
   - `[YomiSurname <String>]`: 
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+INPUTOBJECT <IPersonalContactsIdentity>: Identity Parameter
   - `[ContactFolderId <String>]`: key: id of contactFolder
   - `[ContactFolderId1 <String>]`: key: id of contactFolder
   - `[ContactId <String>]`: key: id of contact
@@ -600,14 +605,13 @@ INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the contactFolder. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
 
-## RELATED LINKS

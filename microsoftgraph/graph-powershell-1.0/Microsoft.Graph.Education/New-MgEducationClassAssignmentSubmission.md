@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentsubmission
 schema: 2.0.0
-ms.prod: "education"
 ---
 
 # New-MgEducationClassAssignmentSubmission
@@ -21,13 +20,19 @@ New-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -Educat
  [-Resources <IMicrosoftGraphEducationSubmissionResource[]>] [-ReturnedBy <IMicrosoftGraphIdentitySet>]
  [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationSubmission1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationSubmission1> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationSubmission1> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -37,13 +42,7 @@ New-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-Add
  [-Recipient <Hashtable>] [-Resources <IMicrosoftGraphEducationSubmissionResource[]>]
  [-ReturnedBy <IMicrosoftGraphIdentitySet>] [-Status <String>] [-SubmittedBy <IMicrosoftGraphIdentitySet>]
  [-SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]
- [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSubmission1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnsubmittedBy <IMicrosoftGraphIdentitySet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -79,7 +78,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +94,7 @@ educationSubmission
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSubmission1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -110,8 +109,8 @@ Accept wildcard characters: False
 key: id of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -125,8 +124,8 @@ Accept wildcard characters: False
 key: id of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -141,7 +140,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -157,8 +156,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IEducationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -173,7 +172,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for OUTCOMES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationOutcome[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationOutcome[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +188,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for REASSIGNEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +203,7 @@ Accept wildcard characters: False
 educationSubmissionRecipient
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +219,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSubmissionResource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +235,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for RETURNEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +250,7 @@ Accept wildcard characters: False
 educationSubmissionStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +266,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for SUBMITTEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -283,7 +282,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SUBMITTEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSubmissionResource[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmissionResource[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +298,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for UNSUBMITTEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -314,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -330,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -347,10 +346,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission1
+
 ## NOTES
 
 ALIASES
@@ -360,7 +362,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationSubmission1>`: educationSubmission
+BODYPARAMETER <IMicrosoftGraphEducationSubmission1>: educationSubmission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
@@ -391,7 +393,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationSubmission1>`: educationSubmission
   - `[SubmittedResources <IMicrosoftGraphEducationSubmissionResource[]>]`: 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: key: id of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: key: id of educationAssignmentResource
   - `[EducationCategoryId <String>]`: key: id of educationCategory
@@ -405,7 +407,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationProfileId <String>]`: key: id of educationSynchronizationProfile
   - `[EducationUserId <String>]`: key: id of educationUser
 
-OUTCOMES <IMicrosoftGraphEducationOutcome\[]>: .
+OUTCOMES <IMicrosoftGraphEducationOutcome[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -417,7 +419,7 @@ OUTCOMES <IMicrosoftGraphEducationOutcome\[]>: .
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: The moment in time when the resource was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 
-REASSIGNEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+REASSIGNEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -426,7 +428,7 @@ REASSIGNEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-RESOURCES <IMicrosoftGraphEducationSubmissionResource\[]>: .
+RESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -442,7 +444,7 @@ RESOURCES <IMicrosoftGraphEducationSubmissionResource\[]>: .
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-RETURNEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+RETURNEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -451,7 +453,7 @@ RETURNEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBMITTEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+SUBMITTEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -460,7 +462,7 @@ SUBMITTEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource\[]>: .
+SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentResourceUrl <String>]`: Pointer to the assignment from which this resource was copied. If this is null, the student uploaded the resource.
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
@@ -476,7 +478,7 @@ SUBMITTEDRESOURCES <IMicrosoftGraphEducationSubmissionResource\[]>: .
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-UNSUBMITTEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+UNSUBMITTEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -487,4 +489,3 @@ UNSUBMITTEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
 
 ## RELATED LINKS
 
-## RELATED LINKS

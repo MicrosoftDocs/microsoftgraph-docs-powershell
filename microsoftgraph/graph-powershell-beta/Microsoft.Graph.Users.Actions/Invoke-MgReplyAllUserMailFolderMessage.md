@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreplyallusermailfoldermessage
 schema: 2.0.0
@@ -21,27 +21,28 @@ Alternatively, create a draft to reply-all to a message, and send it later.
 ```
 Invoke-MgReplyAllUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Reply1
 ```
 Invoke-MgReplyAllUserMailFolderMessage -MailFolderId <String> -MessageId <String> -UserId <String>
  -BodyParameter <IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ReplyViaIdentityExpanded1
-```
-Invoke-MgReplyAllUserMailFolderMessage -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReplyViaIdentity1
 ```
 Invoke-MgReplyAllUserMailFolderMessage -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ReplyViaIdentityExpanded1
+```
+Invoke-MgReplyAllUserMailFolderMessage -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -76,7 +77,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
@@ -92,7 +93,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Reply1, ReplyViaIdentity1
 Aliases:
 
@@ -107,7 +108,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
@@ -123,8 +124,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: ReplyViaIdentityExpanded1, ReplyViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: ReplyViaIdentity1, ReplyViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -138,8 +139,8 @@ Accept wildcard characters: False
 key: id of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded1, Reply1
+Type: System.String
+Parameter Sets: Reply1, ReplyExpanded1
 Aliases:
 
 Required: True
@@ -154,7 +155,7 @@ message
 To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
 Parameter Sets: ReplyExpanded1, ReplyViaIdentityExpanded1
 Aliases:
 
@@ -169,8 +170,8 @@ Accept wildcard characters: False
 key: id of message
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded1, Reply1
+Type: System.String
+Parameter Sets: Reply1, ReplyExpanded1
 Aliases:
 
 Required: True
@@ -184,7 +185,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -199,8 +200,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: ReplyExpanded1, Reply1
+Type: System.String
+Parameter Sets: Reply1, ReplyExpanded1
 Aliases:
 
 Required: True
@@ -214,7 +215,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -230,7 +231,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -247,10 +248,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -260,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphReplyallPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[Message <IMicrosoftGraphMessage>]`: message
@@ -344,7 +348,7 @@ BODYPARAMETER `<IPaths16Mdb34UsersUserIdMailfoldersMailfolderIdMessagesMessageId
     - `[UnsubscribeEnabled <Boolean?>]`: 
     - `[WebLink <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -390,7 +394,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-MESSAGE `<IMicrosoftGraphMessage>`: message
+MESSAGE <IMicrosoftGraphMessage>: message
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -473,4 +477,3 @@ MESSAGE `<IMicrosoftGraphMessage>`: message
 
 ## RELATED LINKS
 
-## RELATED LINKS

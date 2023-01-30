@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgchatpinnedmessage
 schema: 2.0.0
-ms.prod: "microsoft-teams"
 ---
 
 # New-MgChatPinnedMessage
@@ -17,25 +16,25 @@ This API cannot create a new chat; you must use the list chats method to retriev
 ### CreateExpanded1 (Default)
 ```
 New-MgChatPinnedMessage -ChatId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Message <IMicrosoftGraphChatMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Message <IMicrosoftGraphChatMessage1>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgChatPinnedMessage -ChatId <String> -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Message <IMicrosoftGraphChatMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgChatPinnedMessage -ChatId <String> -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
 New-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded1
+```
+New-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Message <IMicrosoftGraphChatMessage1>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -62,7 +61,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -78,7 +77,7 @@ pinnedChatMessageInfo
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPinnedChatMessageInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -93,8 +92,8 @@ Accept wildcard characters: False
 key: id of chat
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -109,7 +108,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -125,8 +124,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -141,7 +140,7 @@ chatMessage
 To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -156,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +188,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo
+
 ## NOTES
 
 ALIASES
@@ -202,7 +204,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo>`: pinnedChatMessageInfo
+BODYPARAMETER <IMicrosoftGraphPinnedChatMessageInfo>: pinnedChatMessageInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Message <IMicrosoftGraphChatMessage1>]`: chatMessage
@@ -214,6 +216,7 @@ BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo>`: pinnedChatMessageInfo
       - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
       - `[Id <String>]`: Read-only. Unique id of the attachment.
       - `[Name <String>]`: Name of the attachment.
+      - `[TeamsAppId <String>]`: 
       - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
     - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -246,7 +249,7 @@ BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo>`: pinnedChatMessageInfo
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
     - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+      - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
       - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -284,7 +287,7 @@ BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo>`: pinnedChatMessageInfo
     - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
     - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat
@@ -323,7 +326,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
 
-MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
+MESSAGE <IMicrosoftGraphChatMessage1>: chatMessage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
@@ -332,6 +335,7 @@ MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
     - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
     - `[Id <String>]`: Read-only. Unique id of the attachment.
     - `[Name <String>]`: Name of the attachment.
+    - `[TeamsAppId <String>]`: 
     - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -364,7 +368,7 @@ MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -404,4 +408,3 @@ MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
 
 ## RELATED LINKS
 
-## RELATED LINKS

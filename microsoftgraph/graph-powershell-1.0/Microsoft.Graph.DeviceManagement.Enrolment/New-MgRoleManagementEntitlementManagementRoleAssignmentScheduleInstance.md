@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroleassignmentscheduleinstance
 schema: 2.0.0
-ms.prod: "governance"
 ---
 
 # New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
@@ -22,13 +21,13 @@ New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
  [-Id <String>] [-MemberType <String>] [-Principal <IMicrosoftGraphDirectoryObject>] [-PrincipalId <String>]
  [-RoleAssignmentOriginId <String>] [-RoleAssignmentScheduleId <String>]
  [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition1>] [-RoleDefinitionId <String>]
- [-StartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
 New-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstance
- -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -55,7 +54,7 @@ unifiedRoleEligibilityScheduleInstance
 To construct, please use Get-Help -Online and see NOTES section for ACTIVATEDUSING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -70,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -86,7 +85,7 @@ appScope
 To construct, please use Get-Help -Online and see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppScope
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -105,7 +104,7 @@ Use / for tenant-wide app scopes.
 Use directoryScopeId to limit the scope to particular directory objects, for example, administrative units.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -121,7 +120,7 @@ Type of the assignment which can either be Assigned or Activated.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -137,7 +136,7 @@ unifiedRoleAssignmentScheduleInstance
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
 Parameter Sets: Create1
 Aliases:
 
@@ -153,7 +152,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -172,7 +171,7 @@ Use / for tenant-wide scope.
 Use appScopeId to limit the scope to an application only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -187,7 +186,7 @@ Accept wildcard characters: False
 The end date of the schedule instance.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -203,7 +202,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -221,7 +220,7 @@ It can further imply whether the unifiedRoleAssignmentSchedule can be managed by
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -237,7 +236,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -252,7 +251,7 @@ Accept wildcard characters: False
 Identifier of the principal that has been granted the role assignment or that's eligible for a role.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -268,7 +267,7 @@ The identifier of the role assignment in Azure AD.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -284,7 +283,7 @@ The identifier of the unifiedRoleAssignmentSchedule object from which this insta
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -300,7 +299,7 @@ unifiedRoleDefinition
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition1
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -315,7 +314,7 @@ Accept wildcard characters: False
 Identifier of the unifiedRoleDefinition object that is being assigned to the principal or that the principal is eligible for.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -330,7 +329,7 @@ Accept wildcard characters: False
 When this instance starts.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -345,7 +344,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -361,7 +360,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -378,9 +377,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance
+
 ## NOTES
 
 ALIASES
@@ -390,7 +391,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>`: unifiedRoleEligibilityScheduleInstance
+ACTIVATEDUSING <IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>: unifiedRoleEligibilityScheduleInstance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -427,13 +428,13 @@ ACTIVATEDUSING `<IMicrosoftGraphUnifiedRoleEligibilityScheduleInstance>`: unifie
   - `[RoleEligibilityScheduleId <String>]`: The identifier of the unifiedRoleEligibilitySchedule object from which this instance was created. Supports $filter (eq, ne).
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
   - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>`: unifiedRoleAssignmentScheduleInstance
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>: unifiedRoleAssignmentScheduleInstance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -487,17 +488,17 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleAssignmentScheduleInstance>`: unifiedR
   - `[RoleAssignmentScheduleId <String>]`: The identifier of the unifiedRoleAssignmentSchedule object from which this instance was created. Supports $filter (eq, ne).
   - `[StartDateTime <DateTime?>]`: When this instance starts.
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition1>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition1>: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
@@ -515,4 +516,3 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition1>`: unifiedRoleDefinition
 
 ## RELATED LINKS
 
-## RELATED LINKS

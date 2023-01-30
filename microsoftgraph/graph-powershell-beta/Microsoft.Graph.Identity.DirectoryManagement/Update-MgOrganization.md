@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization
 schema: 2.0.0
-ms.prod: "directory-management"
 ---
 
 # Update-MgOrganization
@@ -27,18 +26,24 @@ Update-MgOrganization -OrganizationId <String> [-AdditionalProperties <Hashtable
  [-DirectorySizeQuota <IMicrosoftGraphDirectorySizeQuota>] [-DisplayName <String>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMultipleDataLocationsForServicesEnabled]
  [-MarketingNotificationEmails <String[]>] [-MobileDeviceManagementAuthority <MdmAuthority>]
- [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-PostalCode <String>]
- [-PreferredLanguage <String>] [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-PartnerTenantType <String>]
+ [-PostalCode <String>] [-PreferredLanguage <String>] [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>] [-SecurityComplianceNotificationMails <String[]>]
  [-SecurityComplianceNotificationPhones <String[]>] [-Settings <IMicrosoftGraphOrganizationSettings>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>]
- [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgOrganization -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganization> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphOrganization> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -53,18 +58,12 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-Addi
  [-DirectorySizeQuota <IMicrosoftGraphDirectorySizeQuota>] [-DisplayName <String>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-Id <String>] [-IsMultipleDataLocationsForServicesEnabled]
  [-MarketingNotificationEmails <String[]>] [-MobileDeviceManagementAuthority <MdmAuthority>]
- [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-PostalCode <String>]
- [-PreferredLanguage <String>] [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
+ [-OnPremisesLastSyncDateTime <DateTime>] [-OnPremisesSyncEnabled] [-PartnerTenantType <String>]
+ [-PostalCode <String>] [-PreferredLanguage <String>] [-PrivacyProfile <IMicrosoftGraphPrivacyProfile>]
  [-ProvisionedPlans <IMicrosoftGraphProvisionedPlan[]>] [-SecurityComplianceNotificationMails <String[]>]
  [-SecurityComplianceNotificationPhones <String[]>] [-Settings <IMicrosoftGraphOrganizationSettings>]
  [-State <String>] [-Street <String>] [-TechnicalNotificationMails <String[]>]
- [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganization> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedDomains <IMicrosoftGraphVerifiedDomain[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -107,7 +106,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +123,7 @@ Not nullable.
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAssignedPlan[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAssignedPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +139,7 @@ organization
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganization
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -156,7 +155,7 @@ organizationalBranding
 To construct, please use Get-Help -Online and see NOTES section for BRANDING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationalBranding1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationalBranding1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +171,7 @@ Telephone number for the organization.
 Although this is a string collection, only one number can be set for this property.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +188,7 @@ Only a single instance of certificateBasedAuthConfiguration can be created in th
 To construct, please use Get-Help -Online and see NOTES section for CERTIFICATEBASEDAUTHCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCertificateBasedAuthConfiguration[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCertificateBasedAuthConfiguration[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +204,7 @@ Certificate connector settings.
 To construct, please use Get-Help -Online and see NOTES section for CERTIFICATECONNECTORSETTING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCertificateConnectorSetting
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCertificateConnectorSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +219,7 @@ Accept wildcard characters: False
 City name of the address for the organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +234,7 @@ Accept wildcard characters: False
 Country/region name of the address for the organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +249,7 @@ Accept wildcard characters: False
 Country or region abbreviation for the organization in ISO 3166-2 format.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +268,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +283,7 @@ Accept wildcard characters: False
 Two-letter ISO 3166 country code indicating the default service usage location of an organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +299,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +315,7 @@ directorySizeQuota
 To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSIZEQUOTA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectorySizeQuota
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectorySizeQuota
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -331,7 +330,7 @@ Accept wildcard characters: False
 The display name for the tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -348,7 +347,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -364,7 +363,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -380,8 +379,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -397,7 +396,7 @@ Read-only.
 For more information, see OneDrive Online Multi-Geo.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -412,7 +411,7 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -427,7 +426,7 @@ Accept wildcard characters: False
 Mobile device management authority.
 
 ```yaml
-Type: MdmAuthority
+Type: Microsoft.Graph.PowerShell.Support.MdmAuthority
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -444,7 +443,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -460,7 +459,7 @@ true if this object is synced from an on-premises directory; false if this objec
 null if this object has never been synced from an on-premises directory (default).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -475,11 +474,26 @@ Accept wildcard characters: False
 key: id of organization
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PartnerTenantType
+partnerTenantType
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -490,7 +504,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -505,7 +519,7 @@ Accept wildcard characters: False
 Postal code of the address for the organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -521,7 +535,7 @@ The preferred language for the organization.
 Should follow ISO 639-1 Code; for example en.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -537,7 +551,7 @@ privacyProfile
 To construct, please use Get-Help -Online and see NOTES section for PRIVACYPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivacyProfile
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivacyProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -553,7 +567,7 @@ Not nullable.
 To construct, please use Get-Help -Online and see NOTES section for PROVISIONEDPLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProvisionedPlan[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphProvisionedPlan[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -568,7 +582,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -583,7 +597,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -599,7 +613,7 @@ organizationSettings
 To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganizationSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -614,7 +628,7 @@ Accept wildcard characters: False
 State name of the address for the organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -629,7 +643,7 @@ Accept wildcard characters: False
 Street name of the address for organization.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -644,7 +658,7 @@ Accept wildcard characters: False
 Not nullable.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -661,7 +675,7 @@ Not nullable.
 To construct, please use Get-Help -Online and see NOTES section for VERIFIEDDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVerifiedDomain[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVerifiedDomain[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -676,7 +690,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -692,7 +706,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -709,10 +723,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOrganization
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -722,13 +739,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan\[]>: The collection of service plans associated with the tenant. Not nullable.
+ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan[]>: The collection of service plans associated with the tenant. Not nullable.
   - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
   - `[Service <String>]`: The name of the service; for example, exchange.
   - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-BODYPARAMETER `<IMicrosoftGraphOrganization>`: organization
+BODYPARAMETER <IMicrosoftGraphOrganization>: organization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -848,6 +865,7 @@ BODYPARAMETER `<IMicrosoftGraphOrganization>`: organization
   - `[MobileDeviceManagementAuthority <MdmAuthority?>]`: Mobile device management authority.
   - `[OnPremisesLastSyncDateTime <DateTime?>]`: The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced; Nullable. null if this object has never been synced from an on-premises directory (default).
+  - `[PartnerTenantType <String>]`: partnerTenantType
   - `[PostalCode <String>]`: Postal code of the address for the organization.
   - `[PreferredLanguage <String>]`: The preferred language for the organization. Should follow ISO 639-1 Code; for example en.
   - `[PrivacyProfile <IMicrosoftGraphPrivacyProfile>]`: privacyProfile
@@ -893,7 +911,7 @@ BODYPARAMETER `<IMicrosoftGraphOrganization>`: organization
     - `[Name <String>]`: The domain name; for example, contoso.onmicrosoft.com.
     - `[Type <String>]`: For example, Managed.
 
-BRANDING `<IMicrosoftGraphOrganizationalBranding1>`: organizationalBranding
+BRANDING <IMicrosoftGraphOrganizationalBranding1>: organizationalBranding
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BackgroundColor <String>]`: Color that appears in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
@@ -970,7 +988,7 @@ BRANDING `<IMicrosoftGraphOrganizationalBranding1>`: organizationalBranding
     - `[UsernameHintText <String>]`: A string that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration\[]>: Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
+CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration[]>: Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]`: Collection of certificate authorities which creates a trusted certificate chain.
     - `[Certificate <Byte[]>]`: Required. The base64 encoded string representing the public certificate.
@@ -980,7 +998,7 @@ CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfigurat
     - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value. Read-only.
     - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value. Read-only.
 
-CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Certificate connector settings.
+CERTIFICATECONNECTORSETTING <IMicrosoftGraphCertificateConnectorSetting>: Certificate connector settings.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CertExpiryTime <DateTime?>]`: Certificate expire time
   - `[ConnectorVersion <String>]`: Version of certificate connector
@@ -989,15 +1007,15 @@ CERTIFICATECONNECTORSETTING `<IMicrosoftGraphCertificateConnectorSetting>`: Cert
   - `[LastUploadVersion <Int64?>]`: Version of last uploaded certificate connector
   - `[Status <Int32?>]`: Certificate connector status
 
-DIRECTORYSIZEQUOTA `<IMicrosoftGraphDirectorySizeQuota>`: directorySizeQuota
+DIRECTORYSIZEQUOTA <IMicrosoftGraphDirectorySizeQuota>: directorySizeQuota
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Total <Int32?>]`: Total amount of the directory quota.
   - `[Used <Int32?>]`: Used amount of the directory quota.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the organization resource. Nullable.
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the organization resource. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
@@ -1015,6 +1033,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: key: id of extension
   - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
+  - `[ImpactedResourceId <String>]`: key: id of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OnPremisesDirectorySynchronizationId <String>]`: key: id of onPremisesDirectorySynchronization
@@ -1024,7 +1043,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
   - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
@@ -1033,17 +1051,17 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: key: id of usageRight
   - `[UserId <String>]`: key: id of user
 
-PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
+PRIVACYPROFILE <IMicrosoftGraphPrivacyProfile>: privacyProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContactEmail <String>]`: A valid smtp email address for the privacy statement contact. Not required.
   - `[StatementUrl <String>]`: A valid URL format that begins with http:// or https://. Maximum length is 255 characters. The URL that directs to the company's privacy statement. Not required.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan\[]>: Not nullable.
+PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan[]>: Not nullable.
   - `[CapabilityStatus <String>]`: For example, 'Enabled'.
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
-SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
+SETTINGS <IMicrosoftGraphOrganizationSettings>: organizationSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ContactInsights <IMicrosoftGraphInsightsSettings>]`: insightsSettings
@@ -1067,7 +1085,7 @@ SETTINGS `<IMicrosoftGraphOrganizationSettings>`: organizationSettings
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[DirectoryPropertyName <String>]`: Identifies a profileCardProperty resource in Get, Update, or Delete operations. Allows an administrator to surface hidden Azure Active Directory (Azure AD) properties on the Microsoft 365 profile card within their tenant. When present, the Azure AD field referenced in this field will be visible to all users in your tenant on the contact pane of the profile card. Allowed values for this field are: UserPrincipalName, Fax, StreetAddress, PostalCode, StateOrProvince, Alias, CustomAttribute1,  CustomAttribute2, CustomAttribute3, CustomAttribute4, CustomAttribute5, CustomAttribute6, CustomAttribute7, CustomAttribute8, CustomAttribute9, CustomAttribute10, CustomAttribute11, CustomAttribute12, CustomAttribute13, CustomAttribute14, CustomAttribute15.
 
-VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain\[]>: The collection of domains associated with this tenant. Not nullable.
+VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain[]>: The collection of domains associated with this tenant. Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.
@@ -1076,4 +1094,3 @@ VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain\[]>: The collection of domains as
 
 ## RELATED LINKS
 
-## RELATED LINKS

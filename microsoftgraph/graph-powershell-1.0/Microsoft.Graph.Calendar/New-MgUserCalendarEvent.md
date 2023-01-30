@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
+external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusercalendarevent
 schema: 2.0.0
-ms.prod: "outlook"
 ---
 
 # New-MgUserCalendarEvent
@@ -17,13 +16,13 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 ### CreateExpanded1 (Default)
 ```
 New-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
- [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
- [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
- [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
+ [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-HasAttachments] [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
+ [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting]
+ [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
  [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
@@ -33,25 +32,31 @@ New-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-AdditionalProper
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WebLink <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgUserCalendarEvent -CalendarId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgUserCalendarEvent -CalendarId <String> -UserId <String> -BodyParameter <IMicrosoftGraphEvent1>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity1
+```
+New-MgUserCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent1> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserCalendarEvent -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>] [-Attendees <IMicrosoftGraphAttendee[]>]
- [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>] [-Calendar <IMicrosoftGraphCalendar>]
- [-Categories <String[]>] [-ChangeKey <String>] [-CreatedDateTime <DateTime>]
- [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>] [-HasAttachments]
- [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
- [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting] [-IsOrganizer]
- [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
+ [-AllowNewTimeProposals] [-Attachments <IMicrosoftGraphAttachment[]>]
+ [-Attendees <IMicrosoftGraphAttendee[]>] [-Body <IMicrosoftGraphItemBody>] [-BodyPreview <String>]
+ [-Calendar <IMicrosoftGraphCalendar>] [-Categories <String[]>] [-ChangeKey <String>]
+ [-CreatedDateTime <DateTime>] [-End <IMicrosoftGraphDateTimeZone>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-HasAttachments] [-HideAttendees] [-ICalUId <String>] [-Id <String>] [-Importance <String>]
+ [-Instances <IMicrosoftGraphEvent1[]>] [-IsAllDay] [-IsCancelled] [-IsDraft] [-IsOnlineMeeting]
+ [-IsOrganizer] [-IsReminderOn] [-LastModifiedDateTime <DateTime>] [-Location <IMicrosoftGraphLocation>]
  [-Locations <IMicrosoftGraphLocation[]>]
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
  [-OnlineMeeting <IMicrosoftGraphOnlineMeetingInfo>] [-OnlineMeetingProvider <String>]
@@ -61,13 +66,7 @@ New-MgUserCalendarEvent -InputObject <ICalendarIdentity> [-AdditionalProperties 
  [-ResponseStatus <IMicrosoftGraphResponseStatus>] [-Sensitivity <String>] [-SeriesMasterId <String>]
  [-ShowAs <String>] [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
  [-Start <IMicrosoftGraphDateTimeZone>] [-Subject <String>] [-TransactionId <String>] [-Type <String>]
- [-WebLink <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphEvent1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-WebLink <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -159,7 +158,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -176,7 +175,7 @@ Optional.
 Default is true.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -195,7 +194,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -211,7 +210,7 @@ The collection of attendees for the event.
 To construct, please use Get-Help -Online and see NOTES section for ATTENDEES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttendee[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttendee[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -227,7 +226,7 @@ itemBody
 To construct, please use Get-Help -Online and see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -243,7 +242,7 @@ event
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -259,7 +258,7 @@ The preview of the message associated with the event.
 It is in text format.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -275,7 +274,7 @@ calendar
 To construct, please use Get-Help -Online and see NOTES section for CALENDAR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCalendar
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -290,8 +289,8 @@ Accept wildcard characters: False
 key: id of calendar
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -305,7 +304,7 @@ Accept wildcard characters: False
 The categories associated with the item
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -323,7 +322,7 @@ This allows Exchange to apply changes to the correct version of the object.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -339,7 +338,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -355,7 +354,7 @@ dateTimeTimeZone
 To construct, please use Get-Help -Online and see NOTES section for END properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -372,7 +371,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtension[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -387,7 +386,7 @@ Accept wildcard characters: False
 Set to true if the event has attachments.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -403,7 +402,7 @@ When set to true, each attendee only sees themselves in the meeting request and 
 Default is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -420,7 +419,7 @@ This ID is different for each occurrence in a recurring series.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -436,7 +435,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -451,7 +450,7 @@ Accept wildcard characters: False
 importance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -467,8 +466,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -487,7 +486,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEvent1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -502,7 +501,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -517,7 +516,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -532,7 +531,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -547,7 +546,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -562,7 +561,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -577,7 +576,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -593,7 +592,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -609,7 +608,7 @@ location
 To construct, please use Get-Help -Online and see NOTES section for LOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocation
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -625,7 +624,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for LOCATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocation[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -643,7 +642,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -659,7 +658,7 @@ onlineMeetingInfo
 To construct, please use Get-Help -Online and see NOTES section for ONLINEMEETING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnlineMeetingInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeetingInfo
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -674,7 +673,7 @@ Accept wildcard characters: False
 onlineMeetingProviderType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -689,7 +688,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -705,7 +704,7 @@ recipient
 To construct, please use Get-Help -Online and see NOTES section for ORGANIZER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecipient
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -720,7 +719,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -735,7 +734,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -750,7 +749,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -766,7 +765,7 @@ patternedRecurrence
 To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPatternedRecurrence
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPatternedRecurrence
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -781,7 +780,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -796,7 +795,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -812,7 +811,7 @@ responseStatus
 To construct, please use Get-Help -Online and see NOTES section for RESPONSESTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResponseStatus
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResponseStatus
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -827,7 +826,7 @@ Accept wildcard characters: False
 sensitivity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -842,7 +841,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -857,7 +856,7 @@ Accept wildcard characters: False
 freeBusyStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -875,7 +874,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -891,7 +890,7 @@ dateTimeTimeZone
 To construct, please use Get-Help -Online and see NOTES section for START properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -906,7 +905,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -921,7 +920,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -936,7 +935,7 @@ Accept wildcard characters: False
 eventType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -951,8 +950,8 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded1
 Aliases:
 
 Required: True
@@ -966,7 +965,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -981,7 +980,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -997,7 +996,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1014,10 +1013,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvent1
+
 ## NOTES
 
 ALIASES
@@ -1027,7 +1029,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTS <IMicrosoftGraphAttachment\[]>: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
+ATTACHMENTS <IMicrosoftGraphAttachment[]>: The collection of FileAttachment, ItemAttachment, and referenceAttachment attachments for the event. Navigation property. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
@@ -1035,7 +1037,7 @@ ATTACHMENTS <IMicrosoftGraphAttachment\[]>: The collection of FileAttachment, It
   - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-ATTENDEES <IMicrosoftGraphAttendee\[]>: The collection of attendees for the event.
+ATTENDEES <IMicrosoftGraphAttendee[]>: The collection of attendees for the event.
   - `[Type <String>]`: attendeeType
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1053,12 +1055,12 @@ ATTENDEES <IMicrosoftGraphAttendee\[]>: The collection of attendees for the even
     - `[Response <String>]`: responseType
     - `[Time <DateTime?>]`: The date and time when the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-BODY `<IMicrosoftGraphItemBody>`: itemBody
+BODY <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-BODYPARAMETER `<IMicrosoftGraphEvent1>`: event
+BODYPARAMETER <IMicrosoftGraphEvent1>: event
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
@@ -1215,7 +1217,7 @@ BODYPARAMETER `<IMicrosoftGraphEvent1>`: event
   - `[Type <String>]`: eventType
   - `[WebLink <String>]`: 
 
-CALENDAR `<IMicrosoftGraphCalendar>`: calendar
+CALENDAR <IMicrosoftGraphCalendar>: calendar
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedOnlineMeetingProviders <String[]>]`: Represent the online meeting service providers that can be used to create online meetings in this calendar. Possible values are: unknown, skypeForBusiness, skypeForConsumer, teamsForBusiness.
@@ -1371,15 +1373,15 @@ CALENDAR `<IMicrosoftGraphCalendar>`: calendar
   - `[Owner <IMicrosoftGraphEmailAddress>]`: emailAddress
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the calendar. Read-only. Nullable.
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+END <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the event. Nullable.
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the event. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+INPUTOBJECT <ICalendarIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[CalendarGroupId <String>]`: key: id of calendarGroup
   - `[CalendarId <String>]`: key: id of calendar
@@ -1394,7 +1396,7 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: key: id of user
 
-INSTANCES <IMicrosoftGraphEvent1\[]>: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
+INSTANCES <IMicrosoftGraphEvent1[]>: The occurrences of a recurring series, if the event is a series master. This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series. Navigation property. Read-only. Nullable.
   - `[Categories <String[]>]`: The categories associated with the item
   - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
@@ -1550,7 +1552,7 @@ INSTANCES <IMicrosoftGraphEvent1\[]>: The occurrences of a recurring series, if 
   - `[Type <String>]`: eventType
   - `[WebLink <String>]`: 
 
-LOCATION `<IMicrosoftGraphLocation>`: location
+LOCATION <IMicrosoftGraphLocation>: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1573,7 +1575,7 @@ LOCATION `<IMicrosoftGraphLocation>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-LOCATIONS <IMicrosoftGraphLocation\[]>: .
+LOCATIONS <IMicrosoftGraphLocation[]>: .
   - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
@@ -1595,11 +1597,11 @@ LOCATIONS <IMicrosoftGraphLocation\[]>: .
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
+MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>: The collection of multi-value extended properties defined for the event. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-ONLINEMEETING `<IMicrosoftGraphOnlineMeetingInfo>`: onlineMeetingInfo
+ONLINEMEETING <IMicrosoftGraphOnlineMeetingInfo>: onlineMeetingInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConferenceId <String>]`: The ID of the conference.
   - `[JoinUrl <String>]`: The external link that launches the online meeting. This is a URL that clients will launch into a browser and will redirect the user to join the meeting.
@@ -1612,14 +1614,14 @@ ONLINEMEETING `<IMicrosoftGraphOnlineMeetingInfo>`: onlineMeetingInfo
   - `[TollFreeNumbers <String[]>]`: The toll free numbers that can be used to join the conference.
   - `[TollNumber <String>]`: The toll number that can be used to join the conference.
 
-ORGANIZER `<IMicrosoftGraphRecipient>`: recipient
+ORGANIZER <IMicrosoftGraphRecipient>: recipient
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.
     - `[Name <String>]`: The display name of the person or entity.
 
-RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
+RECURRENCE <IMicrosoftGraphPatternedRecurrence>: patternedRecurrence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1638,20 +1640,19 @@ RECURRENCE `<IMicrosoftGraphPatternedRecurrence>`: patternedRecurrence
     - `[StartDate <DateTime?>]`: The date to start applying the recurrence pattern. The first occurrence of the meeting may be this date or later, depending on the recurrence pattern of the event. Must be the same value as the start property of the recurring event. Required.
     - `[Type <String>]`: recurrenceRangeType
 
-RESPONSESTATUS `<IMicrosoftGraphResponseStatus>`: responseStatus
+RESPONSESTATUS <IMicrosoftGraphResponseStatus>: responseStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Response <String>]`: responseType
   - `[Time <DateTime?>]`: The date and time when the response was returned. It uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the event. Read-only. Nullable.
+SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>: The collection of single-value extended properties defined for the event. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+START <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
 
-## RELATED LINKS

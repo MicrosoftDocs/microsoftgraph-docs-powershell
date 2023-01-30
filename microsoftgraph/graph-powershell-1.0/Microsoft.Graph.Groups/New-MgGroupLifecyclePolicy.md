@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy
 schema: 2.0.0
-ms.prod: "groups"
 ---
 
 # New-MgGroupLifecyclePolicy
@@ -16,13 +15,13 @@ Creates a new groupLifecyclePolicy.
 ### CreateExpanded1 (Default)
 ```
 New-MgGroupLifecyclePolicy [-AdditionalProperties <Hashtable>] [-AlternateNotificationEmails <String>]
- [-GroupLifetimeInDays <Int32>] [-Id <String>] [-ManagedGroupTypes <String>] [-WhatIf] [-Confirm]
+ [-GroupLifetimeInDays <Int32>] [-Id <String>] [-ManagedGroupTypes <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-WhatIf] [-Confirm]
+New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -51,7 +50,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -67,7 +66,7 @@ List of email address to send notifications for groups without owners.
 Multiple email address can be defined by separating email address with a semicolon.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -83,7 +82,7 @@ groupLifecyclePolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupLifecyclePolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
 Parameter Sets: Create1
 Aliases:
 
@@ -99,7 +98,7 @@ Number of days before a group expires and needs to be renewed.
 Once renewed, the group expiration is extended by the number of days defined.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -115,7 +114,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -131,7 +130,7 @@ The group type for which the expiration policy applies.
 Possible values are All, Selected or None.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -146,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+
 ## NOTES
 
 ALIASES
@@ -191,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupLifecyclePolicy>`: groupLifecyclePolicy
+BODYPARAMETER <IMicrosoftGraphGroupLifecyclePolicy>: groupLifecyclePolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AlternateNotificationEmails <String>]`: List of email address to send notifications for groups without owners. Multiple email address can be defined by separating email address with a semicolon.
@@ -199,3 +200,4 @@ BODYPARAMETER `<IMicrosoftGraphGroupLifecyclePolicy>`: groupLifecyclePolicy
   - `[ManagedGroupTypes <String>]`: The group type for which the expiration policy applies. Possible values are All, Selected or None.
 
 ## RELATED LINKS
+

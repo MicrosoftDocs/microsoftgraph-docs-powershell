@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticnotautopilotreadydevice
 schema: 2.0.0
@@ -18,31 +18,32 @@ Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
  -UserExperienceAnalyticsNotAutopilotReadyDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdJoinType <String>] [-AzureAdRegistered]
  [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>]
- [-SerialNumber <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
  -UserExperienceAnalyticsNotAutopilotReadyDeviceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned] [-AutoPilotRegistered]
- [-AzureAdJoinType <String>] [-AzureAdRegistered] [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>]
- [-Manufacturer <String>] [-Model <String>] [-SerialNumber <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
+ -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-AutoPilotProfileAssigned]
+ [-AutoPilotRegistered] [-AzureAdJoinType <String>] [-AzureAdRegistered] [-DeviceName <String>] [-Id <String>]
+ [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>] [-SerialNumber <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +57,7 @@ Update the navigation property userExperienceAnalyticsNotAutopilotReadyDevice in
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +72,7 @@ Accept wildcard characters: False
 The intune device's autopilotProfileAssigned.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +87,7 @@ Accept wildcard characters: False
 The intune device's autopilotRegistered.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +102,7 @@ Accept wildcard characters: False
 The intune device's azure Ad joinType.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +117,7 @@ Accept wildcard characters: False
 The intune device's azureAdRegistered.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +133,7 @@ The user experience analytics Device not windows autopilot ready.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 The intune device's name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +164,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,8 +180,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -194,7 +195,7 @@ Accept wildcard characters: False
 The intune device's managed by.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +210,7 @@ Accept wildcard characters: False
 The intune device's manufacturer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +225,7 @@ Accept wildcard characters: False
 The intune device's model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +240,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -254,7 +255,7 @@ Accept wildcard characters: False
 The intune device's serial number.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,8 +270,8 @@ Accept wildcard characters: False
 key: id of userExperienceAnalyticsNotAutopilotReadyDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -284,7 +285,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -300,7 +301,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -317,10 +318,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -330,7 +334,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>`: The user experience analytics Device not windows autopilot ready.
+BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>: The user experience analytics Device not windows autopilot ready.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AutoPilotProfileAssigned <Boolean?>]`: The intune device's autopilotProfileAssigned.
@@ -343,7 +347,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice>`:
   - `[Model <String>]`: The intune device's model.
   - `[SerialNumber <String>]`: The intune device's serial number.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -455,6 +459,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -474,4 +479,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevicemobileappconfigurationstate
 schema: 2.0.0
@@ -18,30 +18,31 @@ New-MgUserManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String> -Us
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
- [-UserId1 <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId1 <String>] [-UserPrincipalName <String>] [-Version <Int32>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgUserManagedDeviceMobileAppConfigurationState -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserManagedDeviceMobileAppConfigurationState [-UserId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedDeviceMobileAppConfigurationState> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgUserManagedDeviceMobileAppConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
+ [-UserId <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ [-SettingStates <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>] [-State <String>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +56,7 @@ Create new navigation property to managedDeviceMobileAppConfigurationStates for 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +72,7 @@ Managed Device Mobile App Configuration State for a given device.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceMobileAppConfigurationState
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -86,7 +87,7 @@ Accept wildcard characters: False
 The name of the policy for this policyBase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +103,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -118,8 +119,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -133,8 +134,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -148,7 +149,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.PowerShell.Support.PolicyPlatformType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +164,7 @@ Accept wildcard characters: False
 Count of how many setting a policy holds
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +180,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +195,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -209,23 +210,11 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -236,7 +225,7 @@ Accept wildcard characters: False
 User unique identifier, must be Guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -251,7 +240,7 @@ Accept wildcard characters: False
 User Principal Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +255,7 @@ Accept wildcard characters: False
 The version of the policy
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -297,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -314,10 +303,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfigurationState
+
 ## NOTES
 
 ALIASES
@@ -327,7 +319,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphManagedDeviceMobileAppConfigurationState>`: Managed Device Mobile App Configuration State for a given device.
+BODYPARAMETER <IMicrosoftGraphManagedDeviceMobileAppConfigurationState>: Managed Device Mobile App Configuration State for a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
@@ -355,7 +347,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDeviceMobileAppConfigurationState>`: Manag
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -406,7 +398,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[PolicySetItemId <String>]`: key: id of policySetItem
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
   - `[Status <String>]`: Usage: status='{status}'
   - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
   - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
@@ -424,7 +415,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState\[]>: .
+SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState[]>: .
   - `[CurrentValue <String>]`: Current value of setting on device
   - `[ErrorCode <Int64?>]`: Error code for the setting
   - `[ErrorDescription <String>]`: Error description
@@ -443,3 +434,4 @@ SETTINGSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationSettingState\[]
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
+

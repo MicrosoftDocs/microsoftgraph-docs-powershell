@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest
 schema: 2.0.0
@@ -16,21 +16,29 @@ Update the navigation property roleEligibilityScheduleRequests in roleManagement
 ```
 Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
  -UnifiedRoleEligibilityScheduleRequestId <String> [-Action <String>] [-AdditionalProperties <Hashtable>]
- [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-ApprovalId <String>]
+ [-ApprovalId <String>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustomData <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>]
  [-Id <String>] [-IsValidationOnly] [-Justification <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>] [-TargetScheduleId <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
  -UnifiedRoleEligibilityScheduleRequestId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
+ -InputObject <IDeviceManagementEnrolmentIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,22 +46,14 @@ Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 ```
 Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
  -InputObject <IDeviceManagementEnrolmentIdentity> [-Action <String>] [-AdditionalProperties <Hashtable>]
- [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>] [-ApprovalId <String>]
+ [-ApprovalId <String>] [-AppScope <IMicrosoftGraphAppScope>] [-AppScopeId <String>]
  [-CompletedDateTime <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CustomData <String>] [-DirectoryScope <IMicrosoftGraphDirectoryObject>] [-DirectoryScopeId <String>]
  [-Id <String>] [-IsValidationOnly] [-Justification <String>] [-Principal <IMicrosoftGraphDirectoryObject>]
  [-PrincipalId <String>] [-RoleDefinition <IMicrosoftGraphUnifiedRoleDefinition>] [-RoleDefinitionId <String>]
  [-ScheduleInfo <IMicrosoftGraphRequestSchedule>] [-Status <String>]
  [-TargetSchedule <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>] [-TargetScheduleId <String>]
- [-TicketInfo <IMicrosoftGraphTicketInfo>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
- -InputObject <IDeviceManagementEnrolmentIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TicketInfo <IMicrosoftGraphTicketInfo>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ The possible values are: AdminAssign: For administrators to assign eligible role
 AdminUpdate: For administrators to change existing role eligibilities.AdminExtend: For administrators to extend expiring role eligibilities.AdminRenew: For administrators to renew expired eligibilities.UserAdd: For users to activate their eligible assignments.UserRemove: For users to deactivate their active eligible assignments.UserExtend: For users to request to extend their expiring eligible assignments.UserRenew: For users to request to renew their expired eligible assignments.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 The identifier of the approval of the request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ appScope
 To construct, please use Get-Help -Online and see NOTES section for APPSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppScope
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppScope
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +135,7 @@ Use directoryScopeId to limit the scope to particular directory objects, for exa
 Supports $filter (eq, ne, and on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +151,7 @@ unifiedRoleEligibilityScheduleRequest
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -166,7 +166,7 @@ Accept wildcard characters: False
 The request completion date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ identitySet
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 The request creation date time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ Free text field to define any custom data for the request.
 Not used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +229,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for DIRECTORYSCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -249,7 +249,7 @@ Use appScopeId to limit the scope to an application only.
 Supports $filter (eq, ne, and on null values).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +265,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -281,8 +281,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrolmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -297,7 +297,7 @@ Determines whether the call is a validation or an actual call.
 Only set this property if you want to check whether an activation is subject to additional rules like MFA before actually submitting the request.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -312,7 +312,7 @@ Accept wildcard characters: False
 A message provided by users and administrators when create they create the unifiedRoleEligibilityScheduleRequest object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -327,7 +327,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -343,7 +343,7 @@ directoryObject
 To construct, please use Get-Help -Online and see NOTES section for PRINCIPAL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -361,7 +361,7 @@ You can grant only active assignments service principals.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -377,7 +377,7 @@ unifiedRoleDefinition
 To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -393,7 +393,7 @@ Identifier of the unifiedRoleDefinition object that is being assigned to the pri
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -409,7 +409,7 @@ requestSchedule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRequestSchedule
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRequestSchedule
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -427,7 +427,7 @@ The possible values are: Canceled, Denied, Failed, Granted, PendingAdminDecision
 Not nullable.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -443,7 +443,7 @@ unifiedRoleEligibilitySchedule
 To construct, please use Get-Help -Online and see NOTES section for TARGETSCHEDULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleEligibilitySchedule1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilitySchedule1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -459,7 +459,7 @@ Identifier of the schedule object that's linked to the eligibility request.
 Supports $filter (eq, ne).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -475,7 +475,7 @@ ticketInfo
 To construct, please use Get-Help -Online and see NOTES section for TICKETINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTicketInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTicketInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -490,8 +490,8 @@ Accept wildcard characters: False
 key: id of unifiedRoleEligibilityScheduleRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -505,7 +505,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -521,7 +521,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -538,10 +538,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementEnrolmentIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -551,13 +554,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPSCOPE `<IMicrosoftGraphAppScope>`: appScope
+APPSCOPE <IMicrosoftGraphAppScope>: appScope
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. Read-only.
   - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1>`: unifiedRoleEligibilityScheduleRequest
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1>: unifiedRoleEligibilityScheduleRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApprovalId <String>]`: The identifier of the approval of the request.
   - `[CompletedDateTime <DateTime?>]`: The request completion date time.
@@ -654,7 +657,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleEligibilityScheduleRequest1>`: unified
     - `[TicketNumber <String>]`: The ticket number.
     - `[TicketSystem <String>]`: The description of the ticket system.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -663,12 +666,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DIRECTORYSCOPE `<IMicrosoftGraphDirectoryObject>`: directoryObject
+DIRECTORYSCOPE <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -705,12 +708,12 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-PRINCIPAL `<IMicrosoftGraphDirectoryObject>`: directoryObject
+PRINCIPAL <IMicrosoftGraphDirectoryObject>: directoryObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
+ROLEDEFINITION <IMicrosoftGraphUnifiedRoleDefinition>: unifiedRoleDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
@@ -726,7 +729,7 @@ ROLEDEFINITION `<IMicrosoftGraphUnifiedRoleDefinition>`: unifiedRoleDefinition
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
-SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
+SCHEDULEINFO <IMicrosoftGraphRequestSchedule>: requestSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -753,7 +756,7 @@ SCHEDULEINFO `<IMicrosoftGraphRequestSchedule>`: requestSchedule
       - `[Type <String>]`: recurrenceRangeType
   - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
-TARGETSCHEDULE `<IMicrosoftGraphUnifiedRoleEligibilitySchedule1>`: unifiedRoleEligibilitySchedule
+TARGETSCHEDULE <IMicrosoftGraphUnifiedRoleEligibilitySchedule1>: unifiedRoleEligibilitySchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -817,11 +820,10 @@ TARGETSCHEDULE `<IMicrosoftGraphUnifiedRoleEligibilitySchedule1>`: unifiedRoleEl
         - `[Type <String>]`: recurrenceRangeType
     - `[StartDateTime <DateTime?>]`: When the  eligible or active assignment becomes active.
 
-TICKETINFO `<IMicrosoftGraphTicketInfo>`: ticketInfo
+TICKETINFO <IMicrosoftGraphTicketInfo>: ticketInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TicketNumber <String>]`: The ticket number.
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
 
-## RELATED LINKS

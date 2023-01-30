@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/add-mgcomplianceediscoverycasereviewsetquerytag
 schema: 2.0.0
@@ -16,7 +16,7 @@ Apply tags to documents that match the specified reviewSetQuery.
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
  -ReviewSetQueryId <String> [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
- [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Apply
@@ -24,21 +24,21 @@ Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <S
 Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -CaseId <String> -ReviewSetId <String>
  -ReviewSetQueryId <String>
  -BodyParameter <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ApplyViaIdentityExpanded
-```
-Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
- [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
  -BodyParameter <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ApplyViaIdentityExpanded
+```
+Add-MgComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]
+ [-TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,7 +68,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Apply, ApplyViaIdentity
 Aliases:
 
@@ -99,8 +99,8 @@ Accept wildcard characters: False
 key: id of case
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply
+Type: System.String
+Parameter Sets: Apply, ApplyExpanded
 Aliases:
 
 Required: True
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+Parameter Sets: ApplyViaIdentity, ApplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 key: id of reviewSet
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply
+Type: System.String
+Parameter Sets: Apply, ApplyExpanded
 Aliases:
 
 Required: True
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 key: id of reviewSetQuery
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply
+Type: System.String
+Parameter Sets: Apply, ApplyExpanded
 Aliases:
 
 Required: True
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TAGSTOADD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryTag[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for TAGSTOREMOVE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryTag[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryTag[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,10 +240,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -253,7 +256,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdQueriesReviewsetqueryIdMicrosoftGraphEdiscoveryApplytagsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TagsToAdd <IMicrosoftGraphEdiscoveryTag[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -263,8 +266,8 @@ BODYPARAMETER `<IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[Description <String>]`: The description for the tag.
@@ -273,7 +276,7 @@ BODYPARAMETER `<IPathsWh2810ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
     - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
   - `[TagsToRemove <IMicrosoftGraphEdiscoveryTag[]>]`: 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: key: id of case
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CustodianId <String>]`: key: id of custodian
@@ -289,7 +292,7 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: key: id of unifiedGroupSource
   - `[UserSourceId <String>]`: key: id of userSource
 
-TAGSTOADD <IMicrosoftGraphEdiscoveryTag\[]>: .
+TAGSTOADD <IMicrosoftGraphEdiscoveryTag[]>: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
@@ -297,8 +300,8 @@ TAGSTOADD <IMicrosoftGraphEdiscoveryTag\[]>: .
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <String>]`: The description for the tag.
@@ -306,7 +309,7 @@ TAGSTOADD <IMicrosoftGraphEdiscoveryTag\[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the tag was last modified.
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
-TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag\[]>: .
+TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag[]>: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ChildSelectability <String>]`: childSelectability
   - `[ChildTags <IMicrosoftGraphEdiscoveryTag[]>]`: Returns the tags that are a child of a tag.
@@ -314,8 +317,8 @@ TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag\[]>: .
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Description <String>]`: The description for the tag.
@@ -324,3 +327,4 @@ TAGSTOREMOVE <IMicrosoftGraphEdiscoveryTag\[]>: .
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+

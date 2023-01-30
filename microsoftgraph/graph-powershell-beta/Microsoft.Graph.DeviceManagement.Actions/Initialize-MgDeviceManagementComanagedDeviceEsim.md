@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/initialize-mgdevicemanagementcomanageddeviceesim
 schema: 2.0.0
@@ -15,28 +15,28 @@ Activate eSIM on the device.
 ### ActivateExpanded (Default)
 ```
 Initialize-MgDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-CarrierUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CarrierUrl <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Activate
 ```
 Initialize-MgDeviceManagementComanagedDeviceEsim -ManagedDeviceId <String>
  -BodyParameter <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ActivateViaIdentityExpanded
-```
-Initialize-MgDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
 Initialize-MgDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ActivateViaIdentityExpanded
+```
+Initialize-MgDeviceManagementComanagedDeviceEsim -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-CarrierUrl <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,7 +50,7 @@ Activate eSIM on the device.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Activate, ActivateViaIdentity
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
 
@@ -97,8 +97,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ActivateViaIdentityExpanded, ActivateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: ActivateViaIdentity, ActivateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -112,8 +112,8 @@ Accept wildcard characters: False
 key: id of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: ActivateExpanded, Activate
+Type: System.String
+Parameter Sets: Activate, ActivateExpanded
 Aliases:
 
 Required: True
@@ -127,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +158,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,10 +175,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -188,11 +191,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsV0Rv5SDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphActivatedeviceesimPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CarrierUrl <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
@@ -227,6 +230,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
   - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
@@ -246,3 +250,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
 ## RELATED LINKS
+

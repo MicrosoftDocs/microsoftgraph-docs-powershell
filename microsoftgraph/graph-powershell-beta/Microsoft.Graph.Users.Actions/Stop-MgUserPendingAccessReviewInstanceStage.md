@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mguserpendingaccessreviewinstancestage
 schema: 2.0.0
@@ -18,13 +18,13 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 ### Stop (Default)
 ```
 Stop-MgUserPendingAccessReviewInstanceStage -AccessReviewInstanceId <String> -AccessReviewStageId <String>
- -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
-Stop-MgUserPendingAccessReviewInstanceStage -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Stop-MgUserPendingAccessReviewInstanceStage -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,7 +41,7 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 key: id of accessReviewInstance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -56,7 +56,7 @@ Accept wildcard characters: False
 key: id of accessReviewStage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -72,7 +72,7 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: StopViaIdentity
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 key: id of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -133,7 +133,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -150,9 +150,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -162,7 +164,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -209,3 +211,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

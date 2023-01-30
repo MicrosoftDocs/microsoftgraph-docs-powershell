@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicytemplate
 schema: 2.0.0
@@ -21,14 +21,21 @@ Update-MgDeviceManagementConfigurationPolicyTemplate -DeviceManagementConfigurat
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
- [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-PassThru] [-WhatIf] [-Confirm]
+ [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementConfigurationPolicyTemplate -DeviceManagementConfigurationPolicyTemplateId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,14 +48,7 @@ Update-MgDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManage
  [-Platforms <DeviceManagementConfigurationPlatforms>]
  [-SettingTemplates <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
- [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementConfigurationPolicyTemplate -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate> [-PassThru] [-WhatIf] [-Confirm]
+ [-TemplateFamily <DeviceManagementConfigurationTemplateFamily>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -63,7 +63,7 @@ Update the navigation property configurationPolicyTemplates in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,7 +78,7 @@ Accept wildcard characters: False
 Allow unmanaged setting templates
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +93,7 @@ Accept wildcard characters: False
 Template base identifier
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +109,7 @@ Device Management Configuration Policy Template
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 Template description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,8 +139,8 @@ Accept wildcard characters: False
 key: id of deviceManagementConfigurationPolicyTemplate
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 Template display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 Description of template version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +185,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,8 +201,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 Describes current lifecycle state of a template
 
 ```yaml
-Type: DeviceManagementTemplateLifecycleState
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementTemplateLifecycleState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -246,7 +246,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: DeviceManagementConfigurationPlatforms
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementConfigurationPlatforms
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +262,7 @@ Setting templates
 To construct, please use Get-Help -Online and see NOTES section for SETTINGTEMPLATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +277,7 @@ Accept wildcard characters: False
 Describes which technology this setting can be deployed with
 
 ```yaml
-Type: DeviceManagementConfigurationTechnologies
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementConfigurationTechnologies
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +292,7 @@ Accept wildcard characters: False
 Describes the TemplateFamily for the Template entity
 
 ```yaml
-Type: DeviceManagementConfigurationTemplateFamily
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementConfigurationTemplateFamily
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -307,7 +307,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -323,7 +323,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -340,10 +340,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -353,7 +356,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: Device Management Configuration Policy Template
+BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>: Device Management Configuration Policy Template
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowUnmanagedSettings <Boolean?>]`: Allow unmanaged setting templates
@@ -402,7 +405,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplate>`: De
   - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -514,6 +517,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -531,7 +535,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[]>: Setting templates
+SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate[]>: Setting templates
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -570,4 +574,3 @@ SETTINGTEMPLATES <IMicrosoftGraphDeviceManagementConfigurationSettingTemplate\[]
 
 ## RELATED LINKS
 
-## RELATED LINKS

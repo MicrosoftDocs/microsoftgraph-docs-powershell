@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicecompliancepolicy
 schema: 2.0.0
@@ -18,19 +18,25 @@ Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <Strin
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>]
- [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]
- [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>]
- [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>] [-Version <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>]
+ [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>] [-Version <Int32>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementDeviceCompliancePolicy -DeviceCompliancePolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,19 +45,13 @@ Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementI
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]
  [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]
- [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>]
- [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
+ [-DeviceStatuses <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>]
+ [-DeviceStatusOverview <IMicrosoftGraphDeviceComplianceDeviceOverview1>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
  [-ScheduledActionsForRule <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]
- [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>]
- [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>] [-Version <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementDeviceCompliancePolicy -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserStatuses <IMicrosoftGraphDeviceComplianceUserStatus[]>]
+ [-UserStatusOverview <IMicrosoftGraphDeviceComplianceUserOverview1>] [-Version <Int32>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -65,7 +65,7 @@ Update the navigation property deviceCompliancePolicies in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ The collection of assignments for this compliance policy.
 To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyAssignment1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyAssignment1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ Compliance policies are platform specific and individual per-platform compliance
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicy1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 DateTime the object was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Admin provided description of the Device Configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +144,8 @@ Accept wildcard characters: False
 key: id of deviceCompliancePolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Compliance Setting State Device Summary
 To construct, please use Get-Help -Online and see NOTES section for DEVICESETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSettingStateDeviceSummary[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSettingStateDeviceSummary[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +176,7 @@ List of DeviceComplianceDeviceStatus.
 To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceDeviceStatus1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceStatus1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ deviceComplianceDeviceOverview
 To construct, please use Get-Help -Online and see NOTES section for DEVICESTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceDeviceOverview1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceDeviceOverview1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 Admin provided name of the device configuration.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,7 +223,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,8 +239,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 DateTime the object was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +269,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -284,7 +284,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +300,7 @@ The list of scheduled action for this rule
 To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONSFORRULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -316,7 +316,7 @@ List of DeviceComplianceUserStatus.
 To construct, please use Get-Help -Online and see NOTES section for USERSTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceUserStatus[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserStatus[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -332,7 +332,7 @@ deviceComplianceUserOverview
 To construct, please use Get-Help -Online and see NOTES section for USERSTATUSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceUserOverview1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceComplianceUserOverview1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -347,7 +347,7 @@ Accept wildcard characters: False
 Version of the device configuration.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -362,7 +362,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -378,7 +378,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -395,10 +395,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy1
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -408,7 +411,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment1\[]>: The collection of assignments for this compliance policy.
+ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>: The collection of assignments for this compliance policy.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
@@ -417,7 +420,7 @@ ASSIGNMENTS <IMicrosoftGraphDeviceCompliancePolicyAssignment1\[]>: The collectio
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicy1>`: This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. 
+BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicy1>: This is the base class for Compliance policy. Compliance policies are platform specific and individual per-platform compliance policies inherit from here. 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment1[]>]`: The collection of assignments for this compliance policy.
@@ -495,7 +498,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicy1>`: This is the base class
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary\[]>: Compliance Setting State Device Summary
+DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary[]>: Compliance Setting State Device Summary
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
   - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
@@ -507,7 +510,7 @@ DEVICESETTINGSTATESUMMARIES <IMicrosoftGraphSettingStateDeviceSummary\[]>: Compl
   - `[SettingName <String>]`: Name of the setting
   - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
 
-DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus1\[]>: List of DeviceComplianceDeviceStatus.
+DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus1[]>: List of DeviceComplianceDeviceStatus.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
@@ -518,7 +521,7 @@ DEVICESTATUSES <IMicrosoftGraphDeviceComplianceDeviceStatus1\[]>: List of Device
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceDeviceOverview1>`: deviceComplianceDeviceOverview
+DEVICESTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceDeviceOverview1>: deviceComplianceDeviceOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
@@ -531,7 +534,7 @@ DEVICESTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceDeviceOverview1>`: deviceC
   - `[PendingCount <Int32?>]`: Number of pending devices
   - `[SuccessCount <Int32?>]`: Number of succeeded devices
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -643,6 +646,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -660,7 +664,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule1\[]>: The list of scheduled action for this rule
+SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>: The list of scheduled action for this rule
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
   - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
@@ -670,7 +674,7 @@ SCHEDULEDACTIONSFORRULE <IMicrosoftGraphDeviceComplianceScheduledActionForRule1\
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus\[]>: List of DeviceComplianceUserStatus.
+USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus[]>: List of DeviceComplianceUserStatus.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DevicesCount <Int32?>]`: Devices count for that user.
   - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
@@ -678,7 +682,7 @@ USERSTATUSES <IMicrosoftGraphDeviceComplianceUserStatus\[]>: List of DeviceCompl
   - `[UserDisplayName <String>]`: User name of the DevicePolicyStatus.
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceUserOverview1>`: deviceComplianceUserOverview
+USERSTATUSOVERVIEW <IMicrosoftGraphDeviceComplianceUserOverview1>: deviceComplianceUserOverview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
@@ -692,4 +696,3 @@ USERSTATUSOVERVIEW `<IMicrosoftGraphDeviceComplianceUserOverview1>`: deviceCompl
 
 ## RELATED LINKS
 
-## RELATED LINKS

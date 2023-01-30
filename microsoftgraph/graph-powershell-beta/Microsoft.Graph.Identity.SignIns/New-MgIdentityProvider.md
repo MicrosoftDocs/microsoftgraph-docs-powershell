@@ -1,9 +1,8 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # New-MgIdentityProvider
@@ -17,13 +16,13 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityProvider [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgIdentityProvider [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-WhatIf] [-Confirm]
+New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -130,7 +129,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +145,7 @@ identityProviderBase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
 Parameter Sets: Create
 Aliases:
 
@@ -161,7 +160,7 @@ Accept wildcard characters: False
 The display name of the identity provider.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +176,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,9 +224,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityProviderBase
+
 ## NOTES
 
 ALIASES
@@ -237,9 +238,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityProviderBase>`: identityProviderBase
+BODYPARAMETER <IMicrosoftGraphIdentityProviderBase>: identityProviderBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
+

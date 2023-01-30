@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mginvitecommunicationcallparticipant
 schema: 2.0.0
@@ -8,15 +8,18 @@ schema: 2.0.0
 # Invoke-MgInviteCommunicationCallParticipant
 
 ## SYNOPSIS
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## SYNTAX
 
 ### InviteExpanded1 (Default)
 ```
 Invoke-MgInviteCommunicationCallParticipant -CallId <String> [-AdditionalProperties <Hashtable>]
- [-ClientContext <String>] [-Participants <IMicrosoftGraphInvitationParticipantInfo1[]>] [-WhatIf] [-Confirm]
+ [-ClientContext <String>] [-Participants <IMicrosoftGraphInvitationParticipantInfo1[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,26 +27,29 @@ Invoke-MgInviteCommunicationCallParticipant -CallId <String> [-AdditionalPropert
 ```
 Invoke-MgInviteCommunicationCallParticipant -CallId <String>
  -BodyParameter <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### InviteViaIdentityExpanded1
-```
-Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
- [-Participants <IMicrosoftGraphInvitationParticipantInfo1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InviteViaIdentity1
 ```
 Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### InviteViaIdentityExpanded1
+```
+Invoke-MgInviteCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>]
+ [-Participants <IMicrosoftGraphInvitationParticipantInfo1[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
 
@@ -246,7 +252,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
@@ -262,7 +268,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Invite1, InviteViaIdentity1
 Aliases:
 
@@ -277,8 +283,8 @@ Accept wildcard characters: False
 key: id of call
 
 ```yaml
-Type: String
-Parameter Sets: InviteExpanded1, Invite1
+Type: System.String
+Parameter Sets: Invite1, InviteExpanded1
 Aliases:
 
 Required: True
@@ -292,7 +298,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
@@ -308,8 +314,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: InviteViaIdentityExpanded1, InviteViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: InviteViaIdentity1, InviteViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -324,7 +330,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo1[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo1[]
 Parameter Sets: InviteExpanded1, InviteViaIdentityExpanded1
 Aliases:
 
@@ -339,7 +345,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -355,7 +361,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -372,10 +378,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInviteParticipantsOperation1
+
 ## NOTES
 
 ALIASES
@@ -385,7 +394,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraphInvitePostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
   - `[Participants <IMicrosoftGraphInvitationParticipantInfo1[]>]`: 
@@ -403,7 +412,7 @@ BODYPARAMETER `<IPaths1Bh76WaCommunicationsCallsCallIdParticipantsMicrosoftGraph
     - `[RemoveFromDefaultAudioRoutingGroup <Boolean?>]`: Optional. Whether to remove them from the main mixer.
     - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -419,7 +428,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo1\[]>: .
+PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo1[]>: .
   - `[EndpointType <String>]`: endpointType
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.
   - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -435,3 +444,4 @@ PARTICIPANTS <IMicrosoftGraphInvitationParticipantInfo1\[]>: .
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitetermstoresetrelation
 schema: 2.0.0
@@ -17,27 +17,27 @@ Update the navigation property relations in sites
 Update-MgSiteTermStoreSetRelation -RelationId <String> -SetId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-FromTerm <IMicrosoftGraphTermStoreTerm1>] [-Id <String>]
  [-Relationship <String>] [-Set <IMicrosoftGraphTermStoreSet1>] [-ToTerm <IMicrosoftGraphTermStoreTerm1>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update2
 ```
 Update-MgSiteTermStoreSetRelation -RelationId <String> -SetId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity2
+```
+Update-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded2
 ```
 Update-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-FromTerm <IMicrosoftGraphTermStoreTerm1>] [-Id <String>] [-Relationship <String>]
- [-Set <IMicrosoftGraphTermStoreSet1>] [-ToTerm <IMicrosoftGraphTermStoreTerm1>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity2
-```
-Update-MgSiteTermStoreSetRelation -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphTermStoreRelation1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Set <IMicrosoftGraphTermStoreSet1>] [-ToTerm <IMicrosoftGraphTermStoreTerm1>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +51,7 @@ Update the navigation property relations in sites
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
@@ -67,7 +67,7 @@ relation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreRelation1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
 Parameter Sets: Update2, UpdateViaIdentity2
 Aliases:
 
@@ -83,7 +83,7 @@ term
 To construct, please use Get-Help -Online and see NOTES section for FROMTERM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreTerm1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
 Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
@@ -99,7 +99,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
@@ -115,8 +115,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded2, UpdateViaIdentity2
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: UpdateViaIdentity2, UpdateViaIdentityExpanded2
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,8 +145,8 @@ Accept wildcard characters: False
 key: id of relation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Type: System.String
+Parameter Sets: Update2, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
@@ -176,7 +176,7 @@ set
 To construct, please use Get-Help -Online and see NOTES section for SET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreSet1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet1
 Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
@@ -191,8 +191,8 @@ Accept wildcard characters: False
 key: id of set
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Type: System.String
+Parameter Sets: Update2, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -206,8 +206,8 @@ Accept wildcard characters: False
 key: id of site
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Type: System.String
+Parameter Sets: Update2, UpdateExpanded2
 Aliases:
 
 Required: True
@@ -222,7 +222,7 @@ term
 To construct, please use Get-Help -Online and see NOTES section for TOTERM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermStoreTerm1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreTerm1
 Parameter Sets: UpdateExpanded2, UpdateViaIdentityExpanded2
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,10 +270,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
+
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -283,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTermStoreRelation1>`: relation
+BODYPARAMETER <IMicrosoftGraphTermStoreRelation1>: relation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[FromTerm <IMicrosoftGraphTermStoreTerm1>]`: term
@@ -328,7 +331,7 @@ BODYPARAMETER `<IMicrosoftGraphTermStoreRelation1>`: relation
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
   - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
 
-FROMTERM `<IMicrosoftGraphTermStoreTerm1>`: term
+FROMTERM <IMicrosoftGraphTermStoreTerm1>: term
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
@@ -372,12 +375,14 @@ FROMTERM `<IMicrosoftGraphTermStoreTerm1>`: term
     - `[ToTerm <IMicrosoftGraphTermStoreTerm1>]`: term
   - `[Set <IMicrosoftGraphTermStoreSet1>]`: set
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ContentTypeId1 <String>]`: key: id of contentType
+  - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
   - `[DriveId <String>]`: key: id of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
@@ -386,6 +391,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[HorizontalSectionColumnId <String>]`: key: id of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: key: id of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
@@ -398,6 +404,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[PermissionId <String>]`: key: id of permission
   - `[RelationId <String>]`: key: id of relation
   - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
@@ -408,11 +416,13 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-SET `<IMicrosoftGraphTermStoreSet1>`: set
+SET <IMicrosoftGraphTermStoreSet1>: set
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children terms of set in term [store].
@@ -455,7 +465,7 @@ SET `<IMicrosoftGraphTermStoreSet1>`: set
   - `[Relations <IMicrosoftGraphTermStoreRelation1[]>]`: Indicates which terms have been pinned or reused directly under the set.
   - `[Terms <IMicrosoftGraphTermStoreTerm1[]>]`: All the terms under the set.
 
-TOTERM `<IMicrosoftGraphTermStoreTerm1>`: term
+TOTERM <IMicrosoftGraphTermStoreTerm1>: term
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Children <IMicrosoftGraphTermStoreTerm1[]>]`: Children of current term.
@@ -501,4 +511,3 @@ TOTERM `<IMicrosoftGraphTermStoreTerm1>`: term
 
 ## RELATED LINKS
 
-## RELATED LINKS

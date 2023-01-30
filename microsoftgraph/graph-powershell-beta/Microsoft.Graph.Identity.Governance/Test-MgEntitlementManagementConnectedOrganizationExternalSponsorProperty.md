@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/test-mgentitlementmanagementconnectedorganizationexternalsponsorproperty
 schema: 2.0.0
@@ -24,22 +24,14 @@ However, you can validate both the mail nickname and the display name and receiv
 ```
 Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty -ConnectedOrganizationId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-EntityType <String>] [-MailNickname <String>]
- [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate1
 ```
 Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty -ConnectedOrganizationId <String>
  -BodyParameter <IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ValidateViaIdentityExpanded1
-```
-Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity1
@@ -47,7 +39,15 @@ Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty
 Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ValidateViaIdentityExpanded1
+```
+Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ However, you can validate both the mail nickname and the display name and receiv
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate1, ValidateViaIdentity1
 Aliases:
 
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 key: id of connectedOrganization
 
 ```yaml
-Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Type: System.String
+Parameter Sets: Validate1, ValidateExpanded1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
@@ -146,8 +146,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: ValidateViaIdentityExpanded1, ValidateViaIdentity1
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: ValidateViaIdentity1, ValidateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -239,10 +239,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -252,14 +255,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Q3Hv6BIdentitygovernanceEntitlementmanagementConnectedorganizationsConnectedorganizationIdExternalsponsorsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 
   - `[MailNickname <String>]`: 
   - `[OnBehalfOfUserId <String>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -310,6 +313,12 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[IncompatibleAccessPackageId <String>]`: Usage: incompatibleAccessPackageId='{incompatibleAccessPackageId}'
   - `[On <String>]`: Usage: on='{on}'
+  - `[PrivilegedAccessGroupAssignmentScheduleId <String>]`: key: id of privilegedAccessGroupAssignmentSchedule
+  - `[PrivilegedAccessGroupAssignmentScheduleInstanceId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleInstance
+  - `[PrivilegedAccessGroupAssignmentScheduleRequestId <String>]`: key: id of privilegedAccessGroupAssignmentScheduleRequest
+  - `[PrivilegedAccessGroupEligibilityScheduleId <String>]`: key: id of privilegedAccessGroupEligibilitySchedule
+  - `[PrivilegedAccessGroupEligibilityScheduleInstanceId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleInstance
+  - `[PrivilegedAccessGroupEligibilityScheduleRequestId <String>]`: key: id of privilegedAccessGroupEligibilityScheduleRequest
   - `[PrivilegedAccessId <String>]`: key: id of privilegedAccess
   - `[PrivilegedApprovalId <String>]`: key: id of privilegedApproval
   - `[PrivilegedOperationEventId <String>]`: key: id of privilegedOperationEvent
@@ -335,3 +344,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
 ## RELATED LINKS
+

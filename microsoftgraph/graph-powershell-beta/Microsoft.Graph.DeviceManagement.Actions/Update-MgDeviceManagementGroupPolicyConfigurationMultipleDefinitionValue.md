@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/update-mgdevicemanagementgrouppolicyconfigurationmultipledefinitionvalue
 schema: 2.0.0
@@ -16,23 +16,15 @@ Invoke action updateDefinitionValues
 ```
 Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue -GroupPolicyConfigurationId <String>
  [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-AdditionalProperties <Hashtable>]
- [-DeletedIds <String[]>] [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DeletedIds <String[]>] [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue -GroupPolicyConfigurationId <String>
  -BodyParameter <IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
- -InputObject <IDeviceManagementActionsIdentity> [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
- [-AdditionalProperties <Hashtable>] [-DeletedIds <String[]>]
- [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -40,7 +32,16 @@ Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
 Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue
+ -InputObject <IDeviceManagementActionsIdentity> [-Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>]
+ [-AdditionalProperties <Hashtable>] [-DeletedIds <String[]>]
+ [-Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +56,7 @@ Invoke action updateDefinitionValues
 To construct, please use Get-Help -Online and see NOTES section for ADDED properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionValue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionValue[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +71,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -86,7 +87,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +102,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,8 +117,8 @@ Accept wildcard characters: False
 key: id of groupPolicyConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -132,8 +133,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -147,7 +148,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -163,7 +164,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for UPDATED properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionValue[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionValue[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +179,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +195,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,10 +212,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -224,7 +228,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
+ADDED <IMicrosoftGraphGroupPolicyDefinitionValue[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
@@ -283,7 +287,7 @@ ADDED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
     - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-BODYPARAMETER `<IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolicyconfigurationIdMicrosoftGraphUpdatedefinitionvaluesPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Added <IMicrosoftGraphGroupPolicyDefinitionValue[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -346,7 +350,7 @@ BODYPARAMETER `<IPaths1A7K11RDevicemanagementGrouppolicyconfigurationsGrouppolic
   - `[DeletedIds <String[]>]`: 
   - `[Updated <IMicrosoftGraphGroupPolicyDefinitionValue[]>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: key: id of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
@@ -381,6 +385,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[EmbeddedSimActivationCodePoolId <String>]`: key: id of embeddedSIMActivationCodePool
   - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
+  - `[GroupPolicyMigrationReportId <String>]`: key: id of groupPolicyMigrationReport
   - `[GroupPolicyUploadedDefinitionFileId <String>]`: key: id of groupPolicyUploadedDefinitionFile
   - `[IntuneBrandingProfileId <String>]`: key: id of intuneBrandingProfile
   - `[ManagedDeviceId <String>]`: key: id of managedDevice
@@ -399,7 +404,7 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: key: id of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: key: id of zebraFotaDeployment
 
-UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
+UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
@@ -460,4 +465,3 @@ UPDATED <IMicrosoftGraphGroupPolicyDefinitionValue\[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

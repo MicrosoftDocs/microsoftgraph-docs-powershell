@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementsubject
 schema: 2.0.0
@@ -18,12 +18,12 @@ New-MgEntitlementManagementSubject [-AdditionalProperties <Hashtable>] [-AltSecI
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
- [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-WhatIf] [-Confirm]
+New-MgEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,7 +38,7 @@ Create new navigation property to subjects for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +69,7 @@ accessPackageSubject
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +85,7 @@ connectedOrganization
 To construct, please use Get-Help -Online and see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConnectedOrganization1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 The identifier of the connected organization of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 The display name of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 The email address of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +146,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ The object identifier of the subject.
 null if the subject is not yet a user in the tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +177,7 @@ Accept wildcard characters: False
 A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +192,7 @@ Accept wildcard characters: False
 The principal name, if known, of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +207,7 @@ Accept wildcard characters: False
 accessPackageSubjectLifecycle
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 The resource type of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,9 +270,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+
 ## NOTES
 
 ALIASES
@@ -282,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+BODYPARAMETER <IMicrosoftGraphAccessPackageSubject1>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AltSecId <String>]`: 
@@ -310,7 +312,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
 
-CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization1>`: connectedOrganization
+CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization1>: connectedOrganization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
@@ -327,3 +329,4 @@ CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization1>`: connectedOrgani
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
+

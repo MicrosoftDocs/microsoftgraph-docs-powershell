@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementcompliancepolicyscheduledactionforrulescheduledactionconfiguration
 schema: 2.0.0
@@ -19,7 +19,7 @@ Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionCo
  -DeviceManagementComplianceScheduledActionForRuleId <String>
  [-ActionType <DeviceManagementComplianceActionType>] [-AdditionalProperties <Hashtable>]
  [-GracePeriodHours <Int32>] [-Id <String>] [-NotificationMessageCcList <String[]>]
- [-NotificationTemplateId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotificationTemplateId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
@@ -27,16 +27,7 @@ Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionCo
 Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
  -DeviceManagementComplianceActionItemId <String> -DeviceManagementCompliancePolicyId <String>
  -DeviceManagementComplianceScheduledActionForRuleId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementComplianceActionItem> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
- -InputObject <IDeviceManagementIdentity> [-ActionType <DeviceManagementComplianceActionType>]
- [-AdditionalProperties <Hashtable>] [-GracePeriodHours <Int32>] [-Id <String>]
- [-NotificationMessageCcList <String[]>] [-NotificationTemplateId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementComplianceActionItem> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -44,7 +35,16 @@ Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionCo
 ```
 Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphDeviceManagementComplianceActionItem>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration
+ -InputObject <IDeviceManagementIdentity> [-ActionType <DeviceManagementComplianceActionType>]
+ [-AdditionalProperties <Hashtable>] [-GracePeriodHours <Int32>] [-Id <String>]
+ [-NotificationMessageCcList <String[]>] [-NotificationTemplateId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,7 +58,7 @@ Update the navigation property scheduledActionConfigurations in deviceManagement
 Scheduled Action Type Enum
 
 ```yaml
-Type: DeviceManagementComplianceActionType
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementComplianceActionType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -73,7 +73,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Scheduled Action for Rule
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementComplianceActionItem
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceActionItem
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -104,8 +104,8 @@ Accept wildcard characters: False
 key: id of deviceManagementComplianceActionItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -119,8 +119,8 @@ Accept wildcard characters: False
 key: id of deviceManagementCompliancePolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -134,8 +134,8 @@ Accept wildcard characters: False
 key: id of deviceManagementComplianceScheduledActionForRule
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -150,7 +150,7 @@ Number of hours to wait till the action will be enforced.
 Valid values 0 to 8760
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +182,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -198,7 +198,7 @@ A list of group IDs to speicify who to CC this notification message to.
 This collection can contain a maximum of 100 elements.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ Accept wildcard characters: False
 What notification Message template to use
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -243,7 +243,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -259,7 +259,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -276,10 +276,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceActionItem
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -289,7 +292,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementComplianceActionItem>`: Scheduled Action for Rule
+BODYPARAMETER <IMicrosoftGraphDeviceManagementComplianceActionItem>: Scheduled Action for Rule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActionType <DeviceManagementComplianceActionType?>]`: Scheduled Action Type Enum
@@ -297,7 +300,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementComplianceActionItem>`: Scheduled
   - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
   - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -409,6 +412,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -428,4 +432,3 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue
 schema: 2.0.0
@@ -18,15 +18,22 @@ New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
  -GroupPolicyConfigurationId <String> -GroupPolicyDefinitionValueId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Presentation <IMicrosoftGraphGroupPolicyPresentation>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Presentation <IMicrosoftGraphGroupPolicyPresentation>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
  -GroupPolicyConfigurationId <String> -GroupPolicyDefinitionValueId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyPresentationValue> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyPresentationValue> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
+ -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyPresentationValue>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,15 +41,8 @@ New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
 New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-DefinitionValue <IMicrosoftGraphGroupPolicyDefinitionValue>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-Presentation <IMicrosoftGraphGroupPolicyPresentation>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue
- -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyPresentationValue>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Presentation <IMicrosoftGraphGroupPolicyPresentation>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +56,7 @@ Create new navigation property to presentationValues for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +72,7 @@ The base presentation value entity that stores the value for a single group poli
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyPresentationValue
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentationValue
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 The date and time the object was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ The definition value entity stores the value for a single group policy definitio
 To construct, please use Get-Help -Online and see NOTES section for DEFINITIONVALUE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionValue
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionValue
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -118,8 +118,8 @@ Accept wildcard characters: False
 key: id of groupPolicyConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -133,8 +133,8 @@ Accept wildcard characters: False
 key: id of groupPolicyDefinitionValue
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -165,8 +165,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -180,7 +180,7 @@ Accept wildcard characters: False
 The date and time the object was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +196,7 @@ The base entity for the display presentation of any of the additional options in
 To construct, please use Get-Help -Online and see NOTES section for PRESENTATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyPresentation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +211,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -227,7 +227,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -244,10 +244,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentationValue
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentationValue
+
 ## NOTES
 
 ALIASES
@@ -257,7 +260,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyPresentationValue>`: The base presentation value entity that stores the value for a single group policy presentation.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyPresentationValue>: The base presentation value entity that stores the value for a single group policy presentation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
@@ -318,7 +321,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyPresentationValue>`: The base presenta
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
   - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-DEFINITIONVALUE `<IMicrosoftGraphGroupPolicyDefinitionValue>`: The definition value entity stores the value for a single group policy definition.
+DEFINITIONVALUE <IMicrosoftGraphGroupPolicyDefinitionValue>: The definition value entity stores the value for a single group policy definition.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
@@ -378,7 +381,7 @@ DEFINITIONVALUE `<IMicrosoftGraphGroupPolicyDefinitionValue>`: The definition va
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
     - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -490,6 +493,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -507,7 +511,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-PRESENTATION `<IMicrosoftGraphGroupPolicyPresentation>`: The base entity for the display presentation of any of the additional options in a group policy definition.
+PRESENTATION <IMicrosoftGraphGroupPolicyPresentation>: The base entity for the display presentation of any of the additional options in a group policy definition.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
@@ -557,4 +561,3 @@ PRESENTATION `<IMicrosoftGraphGroupPolicyPresentation>`: The base entity for the
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationonlinemeetingregistration
 schema: 2.0.0
@@ -19,13 +19,19 @@ Update-MgCommunicationOnlineMeetingRegistration -OnlineMeetingId <String> [-Addi
  [-Description <String>] [-EndDateTime <DateTime>] [-Id <String>]
  [-Registrants <IMicrosoftGraphMeetingRegistrantBase[]>] [-RegistrationPageViewCount <Int32>]
  [-RegistrationPageWebUrl <String>] [-Speakers <IMicrosoftGraphMeetingSpeaker[]>] [-StartDateTime <DateTime>]
- [-Subject <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Subject <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationOnlineMeetingRegistration -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphMeetingRegistration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistration> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphMeetingRegistration> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,13 +42,7 @@ Update-MgCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicatio
  [-EndDateTime <DateTime>] [-Id <String>] [-Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]
  [-RegistrationPageViewCount <Int32>] [-RegistrationPageWebUrl <String>]
  [-Speakers <IMicrosoftGraphMeetingSpeaker[]>] [-StartDateTime <DateTime>] [-Subject <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgCommunicationOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingRegistration> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -56,7 +56,7 @@ Update the details of a meetingRegistration object assciated with an onlineMeeti
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 meetingAudience
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ meetingRegistration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingRegistration
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingRegistration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -103,7 +103,7 @@ Custom registration questions.
 To construct, please use Get-Help -Online and see NOTES section for CUSTOMQUESTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingRegistrationQuestion[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 The description of the meeting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +133,7 @@ Accept wildcard characters: False
 The meeting end time in UTC.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +149,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,8 +165,8 @@ Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -180,8 +180,8 @@ Accept wildcard characters: False
 key: id of onlineMeeting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -195,7 +195,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -211,7 +211,7 @@ Registrants of the online meeting.
 To construct, please use Get-Help -Online and see NOTES section for REGISTRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingRegistrantBase[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingRegistrantBase[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +227,7 @@ The number of times the registration page has been visited.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +243,7 @@ The URL of the registration page.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +259,7 @@ The meeting speaker's information.
 To construct, please use Get-Help -Online and see NOTES section for SPEAKERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingSpeaker[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingSpeaker[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +274,7 @@ Accept wildcard characters: False
 The meeting start time in UTC.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +289,7 @@ Accept wildcard characters: False
 The subject of the meeting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +304,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -320,7 +320,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -337,10 +337,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMeetingRegistration
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -350,7 +353,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
+BODYPARAMETER <IMicrosoftGraphMeetingRegistration>: meetingRegistration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedRegistrant <String>]`: meetingAudience
   - `[Registrants <IMicrosoftGraphMeetingRegistrantBase[]>]`: Registrants of the online meeting.
@@ -373,14 +376,14 @@ BODYPARAMETER `<IMicrosoftGraphMeetingRegistration>`: meetingRegistration
   - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
   - `[Subject <String>]`: The subject of the meeting.
 
-CUSTOMQUESTIONS <IMicrosoftGraphMeetingRegistrationQuestion\[]>: Custom registration questions.
+CUSTOMQUESTIONS <IMicrosoftGraphMeetingRegistrationQuestion[]>: Custom registration questions.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AnswerInputType <String>]`: answerInputType
   - `[AnswerOptions <String[]>]`: Answer options when answerInputType is radioButton.
   - `[DisplayName <String>]`: Display name of the custom registration question.
   - `[IsRequired <Boolean?>]`: Indicates whether the question is required. Default value is false.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
   - `[CallId <String>]`: key: id of call
@@ -396,12 +399,13 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[SessionId <String>]`: key: id of session
   - `[UserId <String>]`: key: id of user
 
-REGISTRANTS <IMicrosoftGraphMeetingRegistrantBase\[]>: Registrants of the online meeting.
+REGISTRANTS <IMicrosoftGraphMeetingRegistrantBase[]>: Registrants of the online meeting.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[JoinWebUrl <String>]`: A unique web URL for the registrant to join the meeting. Read-only.
 
-SPEAKERS <IMicrosoftGraphMeetingSpeaker\[]>: The meeting speaker's information.
+SPEAKERS <IMicrosoftGraphMeetingSpeaker[]>: The meeting speaker's information.
   - `[Bio <String>]`: Bio of the speaker.
   - `[DisplayName <String>]`: Display name of the speaker.
 
 ## RELATED LINKS
+
