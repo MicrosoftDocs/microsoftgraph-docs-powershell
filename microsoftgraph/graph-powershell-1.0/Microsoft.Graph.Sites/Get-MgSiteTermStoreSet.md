@@ -13,13 +13,13 @@ This relationship can only be used to load a specific term set.
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get (Default)
 ```
 Get-MgSiteTermStoreSet -SetId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgSiteTermStoreSet -SetId <String> -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -32,7 +32,7 @@ Get-MgSiteTermStoreSet -SiteId <String> -StoreId <String> [-ExpandProperty <Stri
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -128,7 +128,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -188,7 +188,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -203,7 +203,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get2, Get, List
+Parameter Sets: Get, Get1, List
 Aliases:
 
 Required: True
@@ -233,7 +233,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Get, List
+Parameter Sets: Get1, List
 Aliases:
 
 Required: True

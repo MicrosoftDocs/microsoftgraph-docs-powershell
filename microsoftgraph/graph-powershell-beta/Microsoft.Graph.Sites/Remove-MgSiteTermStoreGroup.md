@@ -12,13 +12,13 @@ Delete navigation property groups for sites
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete2 (Default)
 ```
 Remove-MgSiteTermStoreGroup -GroupId <String> -SiteId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity2
 ```
 Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete2
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete2
 Aliases:
 
 Required: True

@@ -1083,6 +1083,10 @@ Set device name of the device.
 ### [Set-MgUserPresence](Set-MgUserPresence.md)
 Set the availability and activity status in a presence session of an application for a user.
 
+### [Set-MgUserPresenceStatusMessage](Set-MgUserPresenceStatusMessage.md)
+Set a presence status message for a user.
+An optional expiration date and time can be supplied.
+
 ### [Set-MgUserPresenceUserPreferredPresence](Set-MgUserPresenceUserPreferredPresence.md)
 Set the preferred availability and activity status for a user.
 If the preferred presence of a user is set, the user's presence is the preferred presence.

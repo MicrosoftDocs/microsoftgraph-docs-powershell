@@ -16,20 +16,20 @@ Create a new ediscoveryCase object.
 ```
 New-MgSecurityCaseEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>]
  [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
- [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian1[]>] [-Description <String>] [-DisplayName <String>]
+ [-Custodians <IMicrosoftGraphSecurityEdiscoveryCustodian[]>] [-Description <String>] [-DisplayName <String>]
  [-ExternalId <String>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>]
  [-NoncustodialDataSources <IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]>]
  [-Operations <IMicrosoftGraphSecurityCaseOperation[]>]
- [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet1[]>]
- [-Searches <IMicrosoftGraphSecurityEdiscoverySearch1[]>]
+ [-ReviewSets <IMicrosoftGraphSecurityEdiscoveryReviewSet[]>]
+ [-Searches <IMicrosoftGraphSecurityEdiscoverySearch[]>]
  [-Settings <IMicrosoftGraphSecurityEdiscoveryCaseSettings>] [-Status <String>]
  [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag1[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgSecurityCaseEdiscoveryCase -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase1> [-WhatIf] [-Confirm]
+New-MgSecurityCaseEdiscoveryCase -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -74,7 +74,7 @@ ediscoveryCase
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCase1
+Type: IMicrosoftGraphSecurityEdiscoveryCase
 Parameter Sets: Create1
 Aliases:
 
@@ -138,7 +138,7 @@ Returns a list of case ediscoveryCustodian objects for this case.
 To construct, please use Get-Help -Online and see NOTES section for CUSTODIANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryCustodian1[]
+Type: IMicrosoftGraphSecurityEdiscoveryCustodian[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -278,7 +278,7 @@ Returns a list of eDiscoveryReviewSet objects in the case.
 To construct, please use Get-Help -Online and see NOTES section for REVIEWSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewSet1[]
+Type: IMicrosoftGraphSecurityEdiscoveryReviewSet[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -294,7 +294,7 @@ Returns a list of eDiscoverySearch objects associated with this case.
 To construct, please use Get-Help -Online and see NOTES section for SEARCHES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoverySearch1[]
+Type: IMicrosoftGraphSecurityEdiscoverySearch[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -388,10 +388,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCase
 ## NOTES
 
 ALIASES

@@ -18,7 +18,7 @@ Update-MgSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId <String> -Ediscov
  [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
  [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
+ [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update-MgSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Errors <String[]>]
  [-Id <String>] [-IsEnabled] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-SiteSources <IMicrosoftGraphSecuritySiteSource[]>] [-Status <String>]
+ [-SiteSources <IMicrosoftGraphSecuritySiteSource1[]>] [-Status <String>]
  [-UserSources <IMicrosoftGraphSecurityUserSource[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -305,7 +305,7 @@ Data sources that represent SharePoint sites.
 To construct, please use Get-Help -Online and see NOTES section for SITESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySiteSource[]
+Type: IMicrosoftGraphSecuritySiteSource1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

@@ -17,7 +17,7 @@ Update print
 Update-MgPrint [-AdditionalProperties <Hashtable>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
  [-Operations <IMicrosoftGraphPrintOperation[]>] [-Printers <IMicrosoftGraphPrinter[]>]
  [-Services <IMicrosoftGraphPrintService[]>] [-Settings <IMicrosoftGraphPrintSettings>]
- [-Shares <IMicrosoftGraphPrinterShare1[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition[]>]
+ [-Shares <IMicrosoftGraphPrinterShare1[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition1[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -180,7 +180,7 @@ List of abstract definition for a task that can be triggered when various events
 To construct, please use Get-Help -Online and see NOTES section for TASKDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintTaskDefinition[]
+Type: IMicrosoftGraphPrintTaskDefinition1[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 

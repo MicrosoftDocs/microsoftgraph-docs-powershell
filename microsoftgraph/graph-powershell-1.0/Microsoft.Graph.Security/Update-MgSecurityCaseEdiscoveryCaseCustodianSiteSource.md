@@ -24,7 +24,7 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId <String
 ### Update
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId <String>
- -EdiscoveryCustodianId <String> -SiteSourceId <String> -BodyParameter <IMicrosoftGraphSecuritySiteSource1>
+ -EdiscoveryCustodianId <String> -SiteSourceId <String> -BodyParameter <IMicrosoftGraphSecuritySiteSource>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -39,7 +39,7 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityId
 ### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecuritySiteSource1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSecuritySiteSource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -69,7 +69,7 @@ siteSource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySiteSource1
+Type: IMicrosoftGraphSecuritySiteSource
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -286,7 +286,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecuritySiteSource
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 

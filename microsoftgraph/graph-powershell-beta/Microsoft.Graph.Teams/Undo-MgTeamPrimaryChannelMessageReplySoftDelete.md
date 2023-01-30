@@ -12,13 +12,13 @@ Undo soft deletion of a single message or a message reply in a channel or a chat
 
 ## SYNTAX
 
-### Undo (Default)
+### Undo1 (Default)
 ```
 Undo-MgTeamPrimaryChannelMessageReplySoftDelete -ChatMessageId <String> -ChatMessageId1 <String>
  -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UndoViaIdentity
+### UndoViaIdentity1
 ```
 Undo-MgTeamPrimaryChannelMessageReplySoftDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Undo
+Parameter Sets: Undo1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Undo
+Parameter Sets: Undo1
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UndoViaIdentity
+Parameter Sets: UndoViaIdentity1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of team
 
 ```yaml
 Type: String
-Parameter Sets: Undo
+Parameter Sets: Undo1
 Aliases:
 
 Required: True

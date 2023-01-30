@@ -3,6 +3,7 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/remove-mgsitetermstore
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # Remove-MgSiteTermStore
@@ -12,19 +13,19 @@ Delete navigation property termStore for sites
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete (Default)
 ```
 Remove-MgSiteTermStore -SiteId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Delete
+### Delete1
 ```
 Remove-MgSiteTermStore -SiteId <String> -StoreId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity1
 ```
 Remove-MgSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -64,7 +65,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -94,7 +95,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -109,7 +110,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True

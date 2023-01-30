@@ -12,19 +12,19 @@ Delete navigation property sets for sites
 
 ## SYNTAX
 
-### Delete2 (Default)
+### Delete (Default)
 ```
 Remove-MgSiteTermStoreGroupSet -GroupId <String> -SetId <String> -SiteId <String> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete
+### Delete1
 ```
 Remove-MgSiteTermStoreGroupSet -GroupId <String> -SetId <String> -SiteId <String> -StoreId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### DeleteViaIdentity1
 ```
 Remove-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -79,7 +79,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -109,7 +109,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Delete2, Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -139,7 +139,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True

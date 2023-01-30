@@ -13,46 +13,46 @@ Children terms of set in term [store].
 
 ## SYNTAX
 
-### List3 (Default)
+### List (Default)
 ```
 Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List1
+### List2
 ```
-Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
+Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List
+### List1
 ```
 Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get3
+### Get2
+```
+Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+ -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> -StoreId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get
 ```
 Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -TermId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get1
-```
-Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
- -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgSiteTermStoreSetChild -SetId <String> -SiteId <String> -StoreId <String> -TermId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity3
+### GetViaIdentity2
 ```
 Get-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -91,7 +91,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases:
 
 Required: False
@@ -107,7 +107,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases: CV
 
 Required: False
@@ -137,7 +137,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases:
 
 Required: False
@@ -153,7 +153,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity2, GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -168,7 +168,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases:
 
 Required: False
@@ -198,7 +198,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases:
 
 Required: False
@@ -213,7 +213,7 @@ key: id of set
 
 ```yaml
 Type: String
-Parameter Sets: List3, List1, List, Get3, Get1, Get
+Parameter Sets: List, List2, List1, Get2, Get1, Get
 Aliases:
 
 Required: True
@@ -228,7 +228,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List3, List1, List, Get3, Get1, Get
+Parameter Sets: List, List2, List1, Get2, Get1, Get
 Aliases:
 
 Required: True
@@ -243,7 +243,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases: OrderBy
 
 Required: False
@@ -258,7 +258,7 @@ key: id of store
 
 ```yaml
 Type: String
-Parameter Sets: List1, List, Get1, Get
+Parameter Sets: List2, List1, Get2, Get1
 Aliases:
 
 Required: True
@@ -273,7 +273,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get3, Get1, Get
+Parameter Sets: List2, Get2, Get1, Get
 Aliases:
 
 Required: True
@@ -288,7 +288,7 @@ key: id of term
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -303,7 +303,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases: Limit
 
 Required: False
@@ -318,7 +318,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List3, List1, List
+Parameter Sets: List, List2, List1
 Aliases:
 
 Required: False

@@ -383,6 +383,18 @@ Invoke function getActivitiesByInterval
 ### [Get-MgGroupSiteListItemDelta](Get-MgGroupSiteListItemDelta.md)
 Invoke function delta
 
+### [Get-MgGroupSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart](Get-MgGroupSitePageCanvaLayoutHorizontalSectionColumnWebpartPositionOfWebPart.md)
+Invoke action getPositionOfWebPart
+
+### [Get-MgGroupSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](Get-MgGroupSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart.md)
+Invoke action getPositionOfWebPart
+
+### [Get-MgGroupSitePageWebPartByPosition](Get-MgGroupSitePageWebPartByPosition.md)
+Invoke action getWebPartsByPosition
+
+### [Get-MgGroupSitePageWebPartPositionOfWebPart](Get-MgGroupSitePageWebPartPositionOfWebPart.md)
+Invoke action getPositionOfWebPart
+
 ### [Get-MgGroupThread](Get-MgGroupThread.md)
 The group's conversation threads.
 Nullable.

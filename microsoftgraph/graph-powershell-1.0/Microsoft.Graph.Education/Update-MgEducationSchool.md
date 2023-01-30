@@ -15,7 +15,7 @@ Update the navigation property schools in education
 ### UpdateExpanded1 (Default)
 ```
 Update-MgEducationSchool -EducationSchoolId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress1>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit1>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit1>]
  [-Classes <IMicrosoftGraphEducationClass1[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <String>] [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>]
  [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>]
@@ -33,7 +33,7 @@ Update-MgEducationSchool -EducationSchoolId <String> -BodyParameter <IMicrosoftG
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgEducationSchool -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress1>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit1>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-AdministrativeUnit <IMicrosoftGraphAdministrativeUnit1>]
  [-Classes <IMicrosoftGraphEducationClass1[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <String>] [-DisplayName <String>] [-ExternalId <String>] [-ExternalPrincipalId <String>]
  [-ExternalSource <String>] [-ExternalSourceDetail <String>] [-Fax <String>] [-HighestGrade <String>]
@@ -88,7 +88,7 @@ physicalAddress
 To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress1
+Type: IMicrosoftGraphPhysicalAddress
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

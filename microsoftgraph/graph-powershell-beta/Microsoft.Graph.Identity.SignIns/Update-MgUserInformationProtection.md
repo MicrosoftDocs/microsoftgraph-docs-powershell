@@ -26,7 +26,7 @@ Update-MgUserInformationProtection -UserId <String> [-AdditionalProperties <Hash
 
 ### Update
 ```
-Update-MgUserInformationProtection -UserId <String> -BodyParameter <IMicrosoftGraphInformationProtection>
+Update-MgUserInformationProtection -UserId <String> -BodyParameter <IMicrosoftGraphInformationProtection1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -45,7 +45,7 @@ Update-MgUserInformationProtection -InputObject <IIdentitySignInsIdentity> [-Add
 ### UpdateViaIdentity
 ```
 Update-MgUserInformationProtection -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphInformationProtection> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphInformationProtection1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -91,7 +91,7 @@ informationProtection
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationProtection
+Type: IMicrosoftGraphInformationProtection1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -281,7 +281,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection1
 ## OUTPUTS
 
 ### System.Boolean
