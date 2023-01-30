@@ -227,7 +227,7 @@ function WebScrapping {
         } 
     }
     #Remove double qoutes from ms prod
-    $MsprodContent = $MsprodContent.Trim('"');
+    $MsprodContent = $MsprodContent.Replace("`"","")
     $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
     (Get-Content $File) | 
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
@@ -235,7 +235,7 @@ function WebScrapping {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_msprodvaluesOne"+$date
+$proposedBranch = "weekly_update_help_files_msprodvaluesTwo"+$date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
