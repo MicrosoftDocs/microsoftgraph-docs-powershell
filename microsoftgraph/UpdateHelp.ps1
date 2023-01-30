@@ -45,6 +45,11 @@ function Update-GraphHelp {
         $graphProfile = $_
         Update-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    Set-Location "../"
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add $FilePath
+    git commit -m "Updated markdown help" 
 }
 
 function Update-GraphHelpByProfile {
@@ -83,11 +88,6 @@ function Update-GraphModuleHelp {
     Import-Module $moduleImportName -Force -Global
     Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
-    #Set-Location microsoftgraph-docs-powershell
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add $moduleDocsPath
-    git commit -m "Docs Generation for $ModuleName-$GraphVersion"
 }
 
 # Install PlatyPS
@@ -101,7 +101,7 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-Set-Location microsoftgraph-docs-powershell
+#Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_update_help_files_"+$date
 $exists = git branch -l $proposedBranch

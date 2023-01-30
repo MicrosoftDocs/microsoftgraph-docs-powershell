@@ -28,6 +28,11 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    Set-Location "../"
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add $FilePath
+    git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
     Param(
@@ -222,13 +227,8 @@ function WebScrapping {
     (Get-Content $File) | 
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
     Out-File $File
-
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add $File
-    git commit -m "Meta data update for $Command" 	
 }
-Set-Location microsoftgraph-docs-powershell
+#Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_update_help_files_"+$date
 $exists = git branch -l $proposedBranch

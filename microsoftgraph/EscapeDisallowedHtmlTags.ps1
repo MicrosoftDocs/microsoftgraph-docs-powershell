@@ -22,6 +22,12 @@ function Escape-Angle-Brackets {
         $graphProfile = $_
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    
+    Set-Location "../"
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add $FilePath
+    git commit -m "Escaped disallowed html tags" 	
 }
 function Get-FilesByProfile{
  Param(
@@ -211,11 +217,6 @@ function Special-Escape{
 	 }
 	#$location = Get-Location
 	#Set-Location microsoftgraph-docs-powershell
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-	$location = Get-Location
-    git add $FilePath
-    git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 	
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line
@@ -248,7 +249,7 @@ try{
 }	
 return "NA"	
 }
-Set-Location microsoftgraph-docs-powershell
+#Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_update_help_files_"+$date
 $exists = git branch -l $proposedBranch
