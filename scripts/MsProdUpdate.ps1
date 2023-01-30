@@ -28,7 +28,7 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    Set-Location "../"
+    #Set-Location "../"
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add $FilePath
@@ -233,9 +233,9 @@ function WebScrapping {
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
     Out-File $File
 }
-Set-Location microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_msprodvalues"+$date
+$proposedBranch = "weekly_update_help_files_msprodvaluesOne"+$date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
