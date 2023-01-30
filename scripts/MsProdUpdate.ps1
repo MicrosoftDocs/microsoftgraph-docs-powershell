@@ -94,6 +94,7 @@ function Get-Files {
                         #Extract URI path
                         $Uripaths = Find-MgGraphCommand -Command $Command
                         $UriPath = $null
+                        if (-not([string]::IsNullOrEmpty($Uripaths))) {
                         if ($Uripaths.APIVersion.Contains($ProfileGraph)) {
                             if ($Uripaths.Length -gt 1) {
                                 $UriPath = $UriPaths.URI[0].ToString() 
@@ -106,6 +107,7 @@ function Get-Files {
                             $Method = $UriPaths.Method
                             Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method
                         }
+                    }
                     }
                     #Start-Sleep -Seconds 10
                 }
