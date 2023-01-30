@@ -98,8 +98,8 @@ function Get-Files {
                             } 
                         }
                         if ($UriPath) {
-                  
-                            Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File
+                            $Method = $UriPaths.Method
+                            Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method
                         }
                     }
                     #Start-Sleep -Seconds 10
@@ -124,6 +124,7 @@ function Get-ExternalDocs-Url {
         [ValidateNotNullOrEmpty()]
         [string] $Command = "Get-MgUser",
         [Hashtable] $OpenApiContent,
+        [System.Object] $Method = "GET",
         [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md"
     )
    
@@ -131,10 +132,40 @@ function Get-ExternalDocs-Url {
     
         if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
             foreach ($Path in $OpenApiContent.paths) {
-                #Write-Host $path.Keys
+                $MethodName = $Method | Out-String
                 $ExternalDocUrl = $Path[$UriPath].values.externalDocs.url
-               
-                if ($ExternalDocUrl) {
+                 
+                if([string]::IsNullOrEmpty($ExternalDocUrl)) {
+                    $PathSplit = $UriPath.Split("/")
+                    $PathToAppend = $PathSplit[$PathSplit.Count - 1]
+                    if($PathToAppend.StartsWith("{") -or $PathToAppend.StartsWith("$")){
+                     #skip
+                    }else{
+                    $PathRebuild = "/"+$PathSplit[0]
+                    for($i = 1; $i -lt $PathSplit.Count - 1; $i++){
+                     $PathRebuild += $PathSplit[$i]+"/" 
+                    }
+                    $RebuiltPath =  $PathRebuild + "microsoft.graph." +$PathToAppend
+                    $ExternalDocUrl = $path[$RebuiltPath].get.externalDocs.url
+                 }
+                 }
+                 if ($MethodName -eq "POST") {
+                     $ExternalDocUrl = $path[$UriPath].post.externalDocs.url 
+                 }
+             
+                 if ($MethodName -eq "PATCH") {
+                     $ExternalDocUrl = $path[$UriPath].patch.externalDocs.url 
+                 }
+             
+                 if ($MethodName -eq "DELETE") {
+                     $externalDocUrl = $path[$UriPath].delete.externalDocs.url 
+                 }
+
+                 if ($MethodName -eq "PUT") {
+                     $ExternalDocUrl = $path[$UriPath].put.externalDocs.url 
+                 }
+  
+                if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                     $Url = $ExternalDocUrl.split(" ")
                     WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $Url[0] -Command $Command -File $File
                 }
