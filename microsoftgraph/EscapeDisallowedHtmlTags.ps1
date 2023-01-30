@@ -23,10 +23,9 @@ function Escape-Angle-Brackets {
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
     
-    Set-Location "../"
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
-    git add $FilePath
+    git add .
     git commit -m "Escaped disallowed html tags" 	
 }
 function Get-FilesByProfile{
@@ -249,7 +248,7 @@ try{
 }	
 return "NA"	
 }
-#Set-Location microsoftgraph-docs-powershell
+Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_update_help_files_"+$date
 $exists = git branch -l $proposedBranch
