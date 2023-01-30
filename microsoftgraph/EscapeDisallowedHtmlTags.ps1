@@ -196,7 +196,8 @@ function Special-Escape{
     $s.Add("2", "<number>")
     $s.Add("3", "<at id='{index}'>") 
     $s.Add("4", "<application-client-id>")
-    $s.Add("5", "<data-id>") 
+    $s.Add("5", "<data-id>")
+    $s.Add("6", "<id>") 
 	try{
     $s.Values | ForEach-Object {  
     $string = $_
