@@ -3,11 +3,10 @@ external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mguser
 schema: 2.0.0
-ms.prod: "users"
+ms.prod: users
 ---
 
 # Get-MgUser
-
 ## SYNOPSIS
 Retrieve the properties and relationships of user object.
 
