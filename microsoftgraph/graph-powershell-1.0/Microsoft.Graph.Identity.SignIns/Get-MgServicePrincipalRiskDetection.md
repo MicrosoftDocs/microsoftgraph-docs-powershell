@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgserviceprincipalriskdetection
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # Get-MgServicePrincipalRiskDetection
@@ -36,6 +35,28 @@ Get-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity> [-Ex
 Represents information about detected at-risk service principals in an Azure AD tenant.
 
 ## EXAMPLES
+
+### Example 1: List risk detections
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgServicePrincipalRiskDetection
+```
+
+This example shows how to use the Get-MgServicePrincipalRiskDetection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List risk detections and filter the results
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgServicePrincipalRiskDetection -Filter "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
+```
+
+This example shows how to use the Get-MgServicePrincipalRiskDetection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -239,7 +260,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

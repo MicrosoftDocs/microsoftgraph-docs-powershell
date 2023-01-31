@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
@@ -748,7 +748,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLEPUSHNOTIFICATIONCERTIFICATE `<IMicrosoftGraphApplePushNotificationCertificate>`: Apple push notification certificate.
+APPLEPUSHNOTIFICATIONCERTIFICATE <IMicrosoftGraphApplePushNotificationCertificate>: Apple push notification certificate.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppleIdentifier <String>]`: Apple Id of the account used to create the MDM push certificate.
@@ -759,7 +759,7 @@ APPLEPUSHNOTIFICATIONCERTIFICATE `<IMicrosoftGraphApplePushNotificationCertifica
   - `[LastModifiedDateTime <DateTime?>]`: Last modified date and time for Apple push notification certificate.
   - `[TopicIdentifier <String>]`: Topic Id.
 
-AUDITEVENTS <IMicrosoftGraphAuditEvent\[]>: The Audit Events
+AUDITEVENTS <IMicrosoftGraphAuditEvent[]>: The Audit Events
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Activity <String>]`: Friendly name of the activity.
   - `[ActivityDateTime <DateTime?>]`: The date time in UTC when the activity was performed.
@@ -789,7 +789,7 @@ AUDITEVENTS <IMicrosoftGraphAuditEvent\[]>: The Audit Events
       - `[OldValue <String>]`: Old value.
     - `[ResourceId <String>]`: Audit resource's Id.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as a container for all device management functionality.
+BODYPARAMETER <IMicrosoftGraphDeviceManagement>: Singleton entity that acts as a container for all device management functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplePushNotificationCertificate <IMicrosoftGraphApplePushNotificationCertificate>]`: Apple push notification certificate.
@@ -1092,8 +1092,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
             - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
           - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-            - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-            - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+            - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
             - `[StatusDetail <String>]`: Details about the status of the operation.
@@ -1352,6 +1352,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
               - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
               - `[Id <String>]`: Read-only. Unique id of the attachment.
               - `[Name <String>]`: Name of the attachment.
+              - `[TeamsAppId <String>]`: 
               - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
@@ -1373,7 +1374,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2258,8 +2259,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
               - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
               - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
             - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long-running operations on the list.
-              - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-              - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+              - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
               - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
               - `[Status <String>]`: longRunningOperationStatus
               - `[StatusDetail <String>]`: Details about the status of the operation.
@@ -2461,7 +2462,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
         - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
         - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Returned only on $select. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
           - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
-          - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
+          - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter. 64 character limit.
           - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
         - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Returned only on $select. Supports $filter (eq, not, ge, le, startsWith).
         - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
@@ -2630,7 +2631,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
             - `[HideFromAddressLists <Boolean?>]`: True if the group is not displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
             - `[HideFromOutlookClients <Boolean?>]`: True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
             - `[IsArchived <Boolean?>]`: When a group is associated with a team this property determines whether the team is in read-only mode.To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
-            - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
+            - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
             - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
             - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2937,9 +2938,9 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
           - `[Specialization <String>]`: teamSpecialization
           - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[GuestsCount <Int32?>]`: 
-            - `[MembersCount <Int32?>]`: 
-            - `[OwnersCount <Int32?>]`: 
+            - `[GuestsCount <Int32?>]`: Count of guests in a team.
+            - `[MembersCount <Int32?>]`: Count of members in a team.
+            - `[OwnersCount <Int32?>]`: Count of owners in a team.
           - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[Description <String>]`: The description of the tag as it will appear to the user in Microsoft Teams.
@@ -3240,6 +3241,11 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
           - `[IsBroadcast <Boolean?>]`: Indicates if this is a Teams live event.
           - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
           - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
+          - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
+            - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
+            - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
           - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
           - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3269,7 +3275,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
         - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. Returned only on $select. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
         - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
+          - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
           - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
@@ -3851,7 +3857,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagement>`: Singleton entity that acts as
     - `[DeviceCount <Int32?>]`: Device Count
     - `[Url <String>]`: Website url
 
-COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner\[]>: The list of Compliance Management Partners configured by the tenant.
+COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner[]>: The list of Compliance Management Partners configured by the tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Android devices through partner.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
@@ -3865,7 +3871,7 @@ COMPLIANCEMANAGEMENTPARTNERS <IMicrosoftGraphComplianceManagementPartner\[]>: Th
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
   - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
 
-CONDITIONALACCESSSETTINGS `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
+CONDITIONALACCESSSETTINGS <IMicrosoftGraphOnPremisesConditionalAccessSettings>: Singleton entity which represents the Exchange OnPremises Conditional Access Settings for a tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Enabled <Boolean?>]`: Indicates if on premises conditional access is enabled for this organization
@@ -3873,7 +3879,7 @@ CONDITIONALACCESSSETTINGS `<IMicrosoftGraphOnPremisesConditionalAccessSettings>`
   - `[IncludedGroups <String[]>]`: User groups that will be targeted by on premises conditional access. All users in these groups will be required to have mobile device managed and compliant for mail access.
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associated with a device.
+DETECTEDAPPS <IMicrosoftGraphDetectedApp[]>: The list of detected apps associated with a device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
   - `[DisplayName <String>]`: Name of the discovered application. Read-only
@@ -4114,8 +4120,8 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
           - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
         - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+          - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
           - `[Status <String>]`: longRunningOperationStatus
           - `[StatusDetail <String>]`: Details about the status of the operation.
@@ -4374,6 +4380,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
             - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
             - `[Id <String>]`: Read-only. Unique id of the attachment.
             - `[Name <String>]`: Name of the attachment.
+            - `[TeamsAppId <String>]`: 
             - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
@@ -4395,7 +4402,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5280,8 +5287,8 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
             - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
             - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
           - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long-running operations on the list.
-            - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-            - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+            - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
             - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
             - `[Status <String>]`: longRunningOperationStatus
             - `[StatusDetail <String>]`: Details about the status of the operation.
@@ -5483,7 +5490,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
       - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
       - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Returned only on $select. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
         - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
-        - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
+        - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter. 64 character limit.
         - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
       - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Returned only on $select. Supports $filter (eq, not, ge, le, startsWith).
       - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
@@ -5652,7 +5659,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
           - `[HideFromAddressLists <Boolean?>]`: True if the group is not displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
           - `[HideFromOutlookClients <Boolean?>]`: True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
           - `[IsArchived <Boolean?>]`: When a group is associated with a team this property determines whether the team is in read-only mode.To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
-          - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
+          - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
           - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
           - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5959,9 +5966,9 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
         - `[Specialization <String>]`: teamSpecialization
         - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[GuestsCount <Int32?>]`: 
-          - `[MembersCount <Int32?>]`: 
-          - `[OwnersCount <Int32?>]`: 
+          - `[GuestsCount <Int32?>]`: Count of guests in a team.
+          - `[MembersCount <Int32?>]`: Count of members in a team.
+          - `[OwnersCount <Int32?>]`: Count of owners in a team.
         - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[Description <String>]`: The description of the tag as it will appear to the user in Microsoft Teams.
@@ -6262,6 +6269,11 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
         - `[IsBroadcast <Boolean?>]`: Indicates if this is a Teams live event.
         - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
         - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
+        - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
+          - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
+          - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
         - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
         - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6291,7 +6303,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
       - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. Returned only on $select. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
       - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
+        - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
         - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
@@ -6450,12 +6462,12 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp\[]>: The list of detected apps associat
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
-DEVICECATEGORIES <IMicrosoftGraphDeviceCategory\[]>: The list of device categories with the tenant.
+DEVICECATEGORIES <IMicrosoftGraphDeviceCategory[]>: The list of device categories with the tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
 
-DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy\[]>: The device compliance policies.
+DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy[]>: The device compliance policies.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceCompliancePolicyAssignment[]>]`: The collection of assignments for this compliance policy.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6523,7 +6535,7 @@ DEVICECOMPLIANCEPOLICIES <IMicrosoftGraphDeviceCompliancePolicy\[]>: The device 
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY `<IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>`: deviceCompliancePolicyDeviceStateSummary
+DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY <IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary>: deviceCompliancePolicyDeviceStateSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
@@ -6536,7 +6548,7 @@ DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY `<IMicrosoftGraphDeviceCompliancePolicy
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary\[]>: The summary states of compliance policy settings for this account.
+DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]>: The summary states of compliance policy settings for this account.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
   - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
@@ -6562,7 +6574,7 @@ DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES <IMicrosoftGraphDeviceCompliancePoli
   - `[SettingName <String>]`: Name of the setting.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECONFIGURATIONDEVICESTATESUMMARIES `<IMicrosoftGraphDeviceConfigurationDeviceStateSummary>`: deviceConfigurationDeviceStateSummary
+DEVICECONFIGURATIONDEVICESTATESUMMARIES <IMicrosoftGraphDeviceConfigurationDeviceStateSummary>: deviceConfigurationDeviceStateSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
@@ -6573,7 +6585,7 @@ DEVICECONFIGURATIONDEVICESTATESUMMARIES `<IMicrosoftGraphDeviceConfigurationDevi
   - `[RemediatedDeviceCount <Int32?>]`: Number of remediated devices
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration\[]>: The device configurations.
+DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration[]>: The device configurations.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6632,7 +6644,7 @@ DEVICECONFIGURATIONS <IMicrosoftGraphDeviceConfiguration\[]>: The device configu
     - `[UserPrincipalName <String>]`: UserPrincipalName.
   - `[Version <Int32?>]`: Version of the device configuration.
 
-DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration\[]>: The list of device enrollment configurations
+DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration[]>: The list of device enrollment configurations
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphEnrollmentConfigurationAssignment[]>]`: The list of group assignments for the device configuration profile
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6645,7 +6657,7 @@ DEVICEENROLLMENTCONFIGURATIONS <IMicrosoftGraphDeviceEnrollmentConfiguration\[]>
   - `[Priority <Int32?>]`: Priority is used when a user exists in multiple groups that are assigned enrollment configuration. Users are subject only to the configuration with the lowest priority value.
   - `[Version <Int32?>]`: The version of the device enrollment configuration
 
-DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner\[]>: The list of Device Management Partners configured by the tenant.
+DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner[]>: The list of Device Management Partners configured by the tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Partner display name
   - `[IsConfigured <Boolean?>]`: Whether device management partner is configured or not
@@ -6656,7 +6668,7 @@ DEVICEMANAGEMENTPARTNERS <IMicrosoftGraphDeviceManagementPartner\[]>: The list o
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector\[]>: The list of Exchange Connectors configured by the tenant.
+EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector[]>: The list of Exchange Connectors configured by the tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
   - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
@@ -6668,7 +6680,7 @@ EXCHANGECONNECTORS <IMicrosoftGraphDeviceManagementExchangeConnector\[]>: The li
   - `[Status <DeviceManagementExchangeConnectorStatus?>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
-IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity\[]>: Collection of imported Windows autopilot devices.
+IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]>: Collection of imported Windows autopilot devices.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedUserPrincipalName <String>]`: UPN of the user the device will be assigned
   - `[GroupTag <String>]`: Group Tag of the Windows autopilot device.
@@ -6683,7 +6695,7 @@ IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphImportedWindowsAutopilo
     - `[DeviceImportStatus <ImportedWindowsAutopilotDeviceIdentityImportStatus?>]`: importedWindowsAutopilotDeviceIdentityImportStatus
     - `[DeviceRegistrationId <String>]`: Device Registration ID for successfully added device reported by Device Directory Service(DDS).
 
-INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
+INTUNEBRAND <IMicrosoftGraphIntuneBrand>: intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the end user web portal.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContactItEmailAddress <String>]`: Email address of the person/organization responsible for IT support.
   - `[ContactItName <String>]`: Name of the person/organization responsible for IT support.
@@ -6707,7 +6719,7 @@ INTUNEBRAND `<IMicrosoftGraphIntuneBrand>`: intuneBrand contains data which is u
     - `[G <Int32?>]`: Green value
     - `[R <Int32?>]`: Red value
 
-IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus\[]>: The IOS software update installation statuses for this account.
+IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus[]>: The IOS software update installation statuses for this account.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
@@ -6721,7 +6733,7 @@ IOSUPDATESTATUSES <IMicrosoftGraphIosUpdateDeviceStatus\[]>: The IOS software up
   - `[UserName <String>]`: The User Name that is being reported
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
-MANAGEDDEVICEOVERVIEW `<IMicrosoftGraphManagedDeviceOverview>`: Summary data for managed devices
+MANAGEDDEVICEOVERVIEW <IMicrosoftGraphManagedDeviceOverview>: Summary data for managed devices
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceExchangeAccessStateSummary <IMicrosoftGraphDeviceExchangeAccessStateSummary>]`: Device Exchange Access State summary
@@ -6749,7 +6761,7 @@ MANAGEDDEVICEOVERVIEW `<IMicrosoftGraphManagedDeviceOverview>`: Summary data for
   - `[EnrolledDeviceCount <Int32?>]`: Total enrolled device count. Does not include PC devices managed via Intune PC Agent
   - `[MdmEnrolledCount <Int32?>]`: The number of devices enrolled in MDM
 
-MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
+MANAGEDDEVICES <IMicrosoftGraphManagedDevice[]>: The list of managed devices.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
   - `[ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]`: configuration Manager client enabled features
@@ -6986,8 +6998,8 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
         - `[PhoneAppVersion <String>]`: Numerical version of this instance of the Authenticator app.
       - `[Operations <IMicrosoftGraphLongRunningOperation[]>]`: Represents the status of a long-running operation.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-        - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+        - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+        - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
         - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
         - `[Status <String>]`: longRunningOperationStatus
         - `[StatusDetail <String>]`: Details about the status of the operation.
@@ -7246,6 +7258,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
           - `[Id <String>]`: Read-only. Unique id of the attachment.
           - `[Name <String>]`: Name of the attachment.
+          - `[TeamsAppId <String>]`: 
           - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
@@ -7267,7 +7280,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8152,8 +8165,8 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
           - `[Hidden <Boolean?>]`: If true, indicates that the list is not normally visible in the SharePoint user experience.
           - `[Template <String>]`: An enumerated value that represents the base list template used in creating the list. Possible values include documentLibrary, genericList, task, survey, announcements, contacts, and more.
         - `[Operations <IMicrosoftGraphRichLongRunningOperation[]>]`: The collection of long-running operations on the list.
-          - `[CreatedDateTime <DateTime?>]`: The start time of the operation.
-          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation.
+          - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
           - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
           - `[Status <String>]`: longRunningOperationStatus
           - `[StatusDetail <String>]`: Details about the status of the operation.
@@ -8355,7 +8368,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
     - `[HireDate <DateTime?>]`: The hire date of the user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Returned only on $select.  Note: This property is specific to SharePoint Online. We recommend using the native employeeHireDate property to set and update hire date values using Microsoft Graph APIs.
     - `[Identities <IMicrosoftGraphObjectIdentity[]>]`: Represents the identities that can be used to sign in to this user account. An identity can be provided by Microsoft (also known as a local account), by organizations, or by social identity providers such as Facebook, Google, and Microsoft, and tied to a user account. May contain multiple items with the same signInType value. Returned only on $select. Supports $filter (eq) including on null values, only where the signInType is not userPrincipalName.
       - `[Issuer <String>]`: Specifies the issuer of the identity, for example facebook.com.For local accounts (where signInType is not federated), this property is the local B2C tenant default domain name, for example contoso.onmicrosoft.com.For external users from other Azure AD organization, this will be the domain of the federated organization, for example contoso.com.Supports $filter. 512 character limit.
-      - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must be a valid local part of an email addressSupports $filter. 100 character limit.
+      - `[IssuerAssignedId <String>]`: Specifies the unique identifier assigned to the user by the issuer. The combination of issuer and issuerAssignedId must be unique within the organization. Represents the sign-in name for the user, when signInType is set to emailAddress or userName (also known as local accounts).When signInType is set to: emailAddress, (or a custom string that starts with emailAddress like emailAddress1) issuerAssignedId must be a valid email addressuserName, issuerAssignedId must begin with alphabetical character or number, and can only contain alphanumeric characters and the following symbols: - or Supports $filter. 64 character limit.
       - `[SignInType <String>]`: Specifies the user sign-in types in your directory, such as emailAddress, userName, federated, or userPrincipalName. federated represents a unique identifier for a user from an issuer, that can be in any format chosen by the issuer. Setting or updating a userPrincipalName identity will update the value of the userPrincipalName property on the user object. The validations performed on the userPrincipalName property on the user object, for example, verified domains and acceptable characters, will be performed when setting or updating a userPrincipalName identity. Additional validation is enforced on issuerAssignedId when the sign-in type is set to emailAddress or userName. This property can also be set to any custom string.
     - `[ImAddresses <String[]>]`: The instant message voice over IP (VOIP) session initiation protocol (SIP) addresses for the user. Read-only. Returned only on $select. Supports $filter (eq, not, ge, le, startsWith).
     - `[InferenceClassification <IMicrosoftGraphInferenceClassification>]`: inferenceClassification
@@ -8524,7 +8537,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
         - `[HideFromAddressLists <Boolean?>]`: True if the group is not displayed in certain parts of the Outlook UI: the Address Book, address lists for selecting message recipients, and the Browse Groups dialog for searching groups; otherwise, false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[HideFromOutlookClients <Boolean?>]`: True if the group is not displayed in Outlook clients, such as Outlook for Windows and Outlook on the web; otherwise, false. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[IsArchived <Boolean?>]`: When a group is associated with a team this property determines whether the team is in read-only mode.To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
-        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsReturned by default. Supports $filter (eq, ne, not).
+        - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role or not. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true, visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
         - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8831,9 +8844,9 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
       - `[Specialization <String>]`: teamSpecialization
       - `[Summary <IMicrosoftGraphTeamSummary>]`: teamSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[GuestsCount <Int32?>]`: 
-        - `[MembersCount <Int32?>]`: 
-        - `[OwnersCount <Int32?>]`: 
+        - `[GuestsCount <Int32?>]`: Count of guests in a team.
+        - `[MembersCount <Int32?>]`: Count of members in a team.
+        - `[OwnersCount <Int32?>]`: Count of owners in a team.
       - `[Tags <IMicrosoftGraphTeamworkTag[]>]`: The tags associated with the team.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Description <String>]`: The description of the tag as it will appear to the user in Microsoft Teams.
@@ -9134,6 +9147,11 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
       - `[IsBroadcast <Boolean?>]`: Indicates if this is a Teams live event.
       - `[IsEntryExitAnnounced <Boolean?>]`: Indicates whether to announce when callers join or leave.
       - `[JoinInformation <IMicrosoftGraphItemBody>]`: itemBody
+      - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
+        - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
+        - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
       - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
       - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9163,7 +9181,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
     - `[PasswordPolicies <String>]`: Specifies password policies for the user. This value is an enumeration with one possible value being DisableStrongPassword, which allows weaker passwords than the default policy to be specified. DisablePasswordExpiration can also be specified. The two may be specified together; for example: DisablePasswordExpiration, DisableStrongPassword. Returned only on $select. For more information on the default password policies, see Azure AD pasword policies. Supports $filter (ne, not, and eq on null values).
     - `[PasswordProfile <IMicrosoftGraphPasswordProfile>]`: passwordProfile
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false. If not set, default is false. NOTE:  For Azure B2C tenants, set to false and instead use custom policies and user flows to force password reset at first sign in. See Force password reset at first logon.
+      - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
       - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
@@ -9318,7 +9336,7 @@ MANAGEDDEVICES <IMicrosoftGraphManagedDevice\[]>: The list of managed devices.
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the user. The UPN is an Internet-style login name for the user based on the Internet standard RFC 822. By convention, this should map to the user's email name. The general format is alias@domain, where domain must be present in the tenant's collection of verified domains. This property is required when a user is created. The verified domains for the tenant can be accessed from the verifiedDomains property of organization.NOTE: This property cannot contain accent characters. Only the following characters are allowed A - Z, a - z, 0 - 9, ' . - _ ! # ^ ~. For the complete list of allowed characters, see username policies. Returned by default. Supports $filter (eq, ne, not, ge, le, in, startsWith, endsWith) and $orderBy.
     - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
-MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector\[]>: The list of Mobile threat Defense connectors configured by the tenant.
+MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector[]>: The list of Mobile threat Defense connectors configured by the tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
   - `[AndroidEnabled <Boolean?>]`: For Android, set whether data from the data sync partner should be used during compliance evaluations
@@ -9329,7 +9347,7 @@ MOBILETHREATDEFENSECONNECTORS <IMicrosoftGraphMobileThreatDefenseConnector\[]>: 
   - `[PartnerUnresponsivenessThresholdInDays <Int32?>]`: Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
   - `[PartnerUnsupportedOSVersionBlocked <Boolean?>]`: Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
 
-NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate\[]>: The Notification Message Templates.
+NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate[]>: The Notification Message Templates.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BrandingOptions <NotificationTemplateBrandingOptions?>]`: Branding Options for the Message Template. Branding is defined in the Intune Admin Console.
   - `[DefaultLocale <String>]`: The default locale to fallback onto when the requested locale is not available.
@@ -9343,14 +9361,14 @@ NOTIFICATIONMESSAGETEMPLATES <IMicrosoftGraphNotificationMessageTemplate\[]>: Th
     - `[MessageTemplate <String>]`: The Message Template content.
     - `[Subject <String>]`: The Message Template Subject.
 
-REMOTEASSISTANCEPARTNERS <IMicrosoftGraphRemoteAssistancePartner\[]>: The remote assist partners.
+REMOTEASSISTANCEPARTNERS <IMicrosoftGraphRemoteAssistancePartner[]>: The remote assist partners.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[OnboardingStatus <RemoteAssistanceOnboardingStatus?>]`: The current TeamViewer connector status
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
-REPORTS `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts as a container for all reports functionality.
+REPORTS <IMicrosoftGraphDeviceManagementReports>: Singleton entity that acts as a container for all reports functionality.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExportJobs <IMicrosoftGraphDeviceManagementExportJob[]>]`: Entity representing a job to export a report
@@ -9366,13 +9384,13 @@ REPORTS `<IMicrosoftGraphDeviceManagementReports>`: Singleton entity that acts a
     - `[Status <DeviceManagementReportStatus?>]`: Possible statuses associated with a generated report
     - `[Url <String>]`: Temporary location of the exported report
 
-RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation\[]>: The Resource Operations.
+RESOURCEOPERATIONS <IMicrosoftGraphResourceOperation[]>: The Resource Operations.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActionName <String>]`: Type of action this operation is going to perform. The actionName should be concise and limited to as few words as possible.
   - `[Description <String>]`: Description of the resource operation. The description is used in mouse-over text for the operation when shown in the Azure Portal.
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
-ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment\[]>: The Role Assignments.
+ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>: The Role Assignments.
   - `[Description <String>]`: Description of the Role Assignment.
   - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
   - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
@@ -9395,7 +9413,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphDeviceAndAppManagementRoleAssignment\[]>: The Ro
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Members <String[]>]`: The list of ids of role member security groups. These are IDs from Azure Active Directory.
 
-ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition\[]>: The Role Definitions.
+ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition[]>: The Role Definitions.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Description of the Role definition.
   - `[DisplayName <String>]`: Display Name of the Role definition.
@@ -9411,13 +9429,13 @@ ROLEDEFINITIONS <IMicrosoftGraphRoleDefinition\[]>: The Role Definitions.
       - `[AllowedResourceActions <String[]>]`: Allowed Actions
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
-SETTINGS `<IMicrosoftGraphDeviceManagementSettings>`: deviceManagementSettings
+SETTINGS <IMicrosoftGraphDeviceManagementSettings>: deviceManagementSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceComplianceCheckinThresholdDays <Int32?>]`: The number of days a device is allowed to go without checking in to remain compliant.
   - `[IsScheduledActionEnabled <Boolean?>]`: Is feature enabled or not for scheduled action for rule.
   - `[SecureByDefault <Boolean?>]`: Device should be noncompliant when there is no compliance policy targeted when this is true
 
-SOFTWAREUPDATESTATUSSUMMARY `<IMicrosoftGraphSoftwareUpdateStatusSummary>`: softwareUpdateStatusSummary
+SOFTWAREUPDATESTATUSSUMMARY <IMicrosoftGraphSoftwareUpdateStatusSummary>: softwareUpdateStatusSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices.
@@ -9436,7 +9454,7 @@ SOFTWAREUPDATESTATUSSUMMARY `<IMicrosoftGraphSoftwareUpdateStatusSummary>`: soft
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices.
   - `[UnknownUserCount <Int32?>]`: Number of unknown users.
 
-TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner\[]>: The telecom expense management partners.
+TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner[]>: The telecom expense management partners.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppAuthorized <Boolean?>]`: Whether the partner's AAD app has been authorized to access Intune.
   - `[DisplayName <String>]`: Display name of the TEM partner.
@@ -9444,7 +9462,7 @@ TELECOMEXPENSEMANAGEMENTPARTNERS <IMicrosoftGraphTelecomExpenseManagementPartner
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[Url <String>]`: URL of the TEM partner's administrative control panel, where an administrator can configure their TEM service.
 
-TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions\[]>: The terms and conditions associated with device management of the company.
+TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions[]>: The terms and conditions associated with device management of the company.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
   - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]`: The list of acceptance statuses for this T&C policy.
@@ -9466,12 +9484,12 @@ TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions\[]>: The terms and conditi
   - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
-TROUBLESHOOTINGEVENTS <IMicrosoftGraphDeviceManagementTroubleshootingEvent\[]>: The list of troubleshooting events for the tenant.
+TROUBLESHOOTINGEVENTS <IMicrosoftGraphDeviceManagementTroubleshootingEvent[]>: The list of troubleshooting events for the tenant.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CorrelationId <String>]`: Id used for tracing the failure in the service.
   - `[EventDateTime <DateTime?>]`: Time when the event occurred .
 
-WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity\[]>: The Windows autopilot device identities contained collection.
+WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity[]>: The Windows autopilot device identities contained collection.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddressableUserName <String>]`: Addressable user name.
   - `[AzureActiveDirectoryDeviceId <String>]`: AAD Device ID - to be deprecated
@@ -9490,13 +9508,13 @@ WINDOWSAUTOPILOTDEVICEIDENTITIES <IMicrosoftGraphWindowsAutopilotDeviceIdentity\
   - `[SystemFamily <String>]`: System Family
   - `[UserPrincipalName <String>]`: User Principal Name.
 
-WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary\[]>: The windows information protection app learning summaries.
+WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>: The windows information protection app learning summaries.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicationName <String>]`: Application Name
   - `[ApplicationType <ApplicationType?>]`: Possible types of Application
   - `[DeviceCount <Int32?>]`: Device Count
 
-WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary\[]>: The windows information protection network learning summaries.
+WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]>: The windows information protection network learning summaries.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceCount <Int32?>]`: Device Count
   - `[Url <String>]`: Website url

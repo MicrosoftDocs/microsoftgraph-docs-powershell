@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgriskyserviceprincipalhistory
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
 ---
 
 # New-MgRiskyServicePrincipalHistory
@@ -49,6 +48,17 @@ New-MgRiskyServicePrincipalHistory -InputObject <IIdentitySignInsIdentity>
 Create new navigation property to history for identityProtection
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgRiskyServicePrincipalHistory -RiskyServicePrincipalId $riskyServicePrincipalId
+```
+
+This example shows how to use the New-MgRiskyServicePrincipalHistory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -366,12 +376,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIVITY `<IMicrosoftGraphRiskServicePrincipalActivity>`: riskServicePrincipalActivity
+ACTIVITY <IMicrosoftGraphRiskServicePrincipalActivity>: riskServicePrincipalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Detail <String>]`: riskDetail
   - `[RiskEventTypes <String[]>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipalHistoryItem>`: riskyServicePrincipalHistoryItem
+BODYPARAMETER <IMicrosoftGraphRiskyServicePrincipalHistoryItem>: riskyServicePrincipalHistoryItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
@@ -390,7 +400,7 @@ BODYPARAMETER `<IMicrosoftGraphRiskyServicePrincipalHistoryItem>`: riskyServiceP
     - `[RiskEventTypes <String[]>]`: 
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
-HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem\[]>: Represents the risk history of Azure AD service principals.
+HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>: Represents the risk history of Azure AD service principals.
   - `[AppId <String>]`: The globally unique identifier for the associated application (its appId property), if any.
   - `[DisplayName <String>]`: The display name for the service principal.
   - `[History <IMicrosoftGraphRiskyServicePrincipalHistoryItem[]>]`: Represents the risk history of Azure AD service principals.
@@ -408,7 +418,7 @@ HISTORY <IMicrosoftGraphRiskyServicePrincipalHistoryItem\[]>: Represents the ris
     - `[RiskEventTypes <String[]>]`: 
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration

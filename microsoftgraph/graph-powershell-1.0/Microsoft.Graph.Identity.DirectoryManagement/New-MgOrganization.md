@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganization
 schema: 2.0.0
-ms.prod: "directory-management"
 ---
 
 # New-MgOrganization
@@ -38,6 +37,17 @@ New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization1> [-WhatIf] [-Con
 Add new entity to organization
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgOrganization
+```
+
+This example shows how to use the New-MgOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -551,13 +561,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan\[]>: The collection of service plans associated with the tenant. Not nullable.
+ASSIGNEDPLANS <IMicrosoftGraphAssignedPlan[]>: The collection of service plans associated with the tenant. Not nullable.
   - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[CapabilityStatus <String>]`: Condition of the capability assignment. The possible values are Enabled, Warning, Suspended, Deleted, LockedOut. See a detailed description of each value.
   - `[Service <String>]`: The name of the service; for example, exchange.
   - `[ServicePlanId <String>]`: A GUID that identifies the service plan. For a complete list of GUIDs and their equivalent friendly service names, see Product names and service plan identifiers for licensing.
 
-BODYPARAMETER `<IMicrosoftGraphOrganization1>`: organization
+BODYPARAMETER <IMicrosoftGraphOrganization1>: organization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -605,6 +615,7 @@ BODYPARAMETER `<IMicrosoftGraphOrganization1>`: organization
   - `[Country <String>]`: Country/region name of the address for the organization.
   - `[CountryLetterCode <String>]`: Country or region abbreviation for the organization in ISO 3166-2 format.
   - `[CreatedDateTime <DateTime?>]`: Timestamp of when the organization was created. The value cannot be modified and is automatically populated when the organization is created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[DefaultUsageLocation <String>]`: Two-letter ISO 3166 country code indicating the default service usage location of an organization.
   - `[DisplayName <String>]`: The display name for the tenant.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the organization. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -612,6 +623,7 @@ BODYPARAMETER `<IMicrosoftGraphOrganization1>`: organization
   - `[MobileDeviceManagementAuthority <MdmAuthority?>]`: Mobile device management authority.
   - `[OnPremisesLastSyncDateTime <DateTime?>]`: The time and date at which the tenant was last synced with the on-premises directory. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[OnPremisesSyncEnabled <Boolean?>]`: true if this object is synced from an on-premises directory; false if this object was originally synced from an on-premises directory but is no longer synced. Nullable. null if this object has never been synced from an on-premises directory (default).
+  - `[PartnerTenantType <String>]`: partnerTenantType
   - `[PostalCode <String>]`: Postal code of the address for the organization.
   - `[PreferredLanguage <String>]`: The preferred language for the organization. Should follow ISO 639-1 Code; for example, en.
   - `[PrivacyProfile <IMicrosoftGraphPrivacyProfile>]`: privacyProfile
@@ -635,7 +647,7 @@ BODYPARAMETER `<IMicrosoftGraphOrganization1>`: organization
     - `[Name <String>]`: The domain name; for example, contoso.onmicrosoft.com.
     - `[Type <String>]`: For example, Managed.
 
-BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
+BRANDING <IMicrosoftGraphOrganizationalBranding>: organizationalBranding
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BackgroundColor <String>]`: Color that will appear in place of the background image in low-bandwidth connections. We recommend that you use the primary color of your banner logo or your organization color. Specify this in hexadecimal format, for example, white is #FFFFFF.
   - `[BackgroundImage <Byte[]>]`: Image that appears as the background of the sign-in page. The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels. A smaller image will reduce bandwidth requirements and make the page load faster.
@@ -661,7 +673,7 @@ BRANDING `<IMicrosoftGraphOrganizationalBranding>`: organizationalBranding
     - `[UsernameHintText <String>]`: String that shows as the hint in the username textbox on the sign-in screen. This text must be a Unicode, without links or code, and can't exceed 64 characters.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration\[]>: Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
+CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfiguration[]>: Navigation property to manage certificate-based authentication configuration. Only a single instance of certificateBasedAuthConfiguration can be created in the collection.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CertificateAuthorities <IMicrosoftGraphCertificateAuthority[]>]`: Collection of certificate authorities which creates a trusted certificate chain.
     - `[Certificate <Byte[]>]`: Required. The base64 encoded string representing the public certificate.
@@ -671,20 +683,20 @@ CERTIFICATEBASEDAUTHCONFIGURATION <IMicrosoftGraphCertificateBasedAuthConfigurat
     - `[Issuer <String>]`: The issuer of the certificate, calculated from the certificate value. Read-only.
     - `[IssuerSki <String>]`: The subject key identifier of the certificate, calculated from the certificate value. Read-only.
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the organization. Read-only. Nullable.
+EXTENSIONS <IMicrosoftGraphExtension[]>: The collection of open extensions defined for the organization. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-PRIVACYPROFILE `<IMicrosoftGraphPrivacyProfile>`: privacyProfile
+PRIVACYPROFILE <IMicrosoftGraphPrivacyProfile>: privacyProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContactEmail <String>]`: A valid smtp email address for the privacy statement contact. Not required.
   - `[StatementUrl <String>]`: A valid URL format that begins with http:// or https://. Maximum length is 255 characters. The URL that directs to the company's privacy statement. Not required.
 
-PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan\[]>: Not nullable.
+PROVISIONEDPLANS <IMicrosoftGraphProvisionedPlan[]>: Not nullable.
   - `[CapabilityStatus <String>]`: For example, 'Enabled'.
   - `[ProvisioningStatus <String>]`: For example, 'Success'.
   - `[Service <String>]`: The name of the service; for example, 'AccessControlS2S'
 
-VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain\[]>: The collection of domains associated with this tenant. Not nullable.
+VERIFIEDDOMAINS <IMicrosoftGraphVerifiedDomain[]>: The collection of domains associated with this tenant. Not nullable.
   - `[Capabilities <String>]`: For example, Email, OfficeCommunicationsOnline.
   - `[IsDefault <Boolean?>]`: true if this is the default domain associated with the tenant; otherwise, false.
   - `[IsInitial <Boolean?>]`: true if this is the initial domain associated with the tenant; otherwise, false.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidmanagedstoreappconfigurationschema
@@ -245,7 +245,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>`: Schema describing an Android application's custom configurations.
+BODYPARAMETER <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>: Schema describing an Android application's custom configurations.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
@@ -261,11 +261,11 @@ BODYPARAMETER `<IMicrosoftGraphAndroidManagedStoreAppConfigurationSchema>`: Sche
     - `[ParentIndex <Int32?>]`: Index of parent schema item to track nested schema items
     - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
     - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-      - `[Name <String>]`: Name for this key-value pair
-      - `[Value <String>]`: Value for this key-value pair
+      - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
   - `[SchemaItems <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>]`: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -377,6 +377,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
+  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -394,7 +395,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
+NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema. It contains a flat list of all configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
@@ -406,10 +407,10 @@ NESTEDSCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\
   - `[ParentIndex <Int32?>]`: Index of parent schema item to track nested schema items
   - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
   - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
-SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
+SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema. It only contains the root-level configuration.
   - `[DataType <String>]`: Data type for a configuration item inside an Android application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
@@ -421,8 +422,8 @@ SCHEMAITEMS <IMicrosoftGraphAndroidManagedStoreAppConfigurationSchemaItem\[]>: C
   - `[ParentIndex <Int32?>]`: Index of parent schema item to track nested schema items
   - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
   - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
+    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
 
 ## RELATED LINKS
 

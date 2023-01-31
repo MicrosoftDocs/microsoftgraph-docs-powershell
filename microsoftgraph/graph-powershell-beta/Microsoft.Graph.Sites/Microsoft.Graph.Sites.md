@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
-Module Guid: 50fb3772-f987-4142-8c23-622f033a1fa2
+Module Guid: 2c4f5811-3da7-472c-bebb-49cbac771660
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -55,7 +55,8 @@ Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
-The collection of the sub-sites under this site.
+The list of SharePoint sites in this group.
+Access the default site with /sites/root.
 
 ### [Get-MgGroupSiteAnalytic](Get-MgGroupSiteAnalytic.md)
 Analytics about the view activities that took place in this site.
@@ -221,8 +222,7 @@ Children of current term.
 To indicate which terms are related to the current term as either pinned or reused.
 
 ### [Get-MgGroupSubSite](Get-MgGroupSubSite.md)
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
+The collection of the sub-sites under this site.
 
 ### [Get-MgSite](Get-MgSite.md)
 Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
@@ -191,7 +191,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
+ACRONYMS <IMicrosoftGraphSearchAcronym[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -208,7 +208,7 @@ ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft S
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
+BODYPARAMETER <IMicrosoftGraphSearchEntity>: searchEntity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Acronyms <IMicrosoftGraphSearchAcronym[]>]`: Administrative answer in Microsoft Search results to define common acronyms in a organization.
@@ -266,12 +266,12 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[GroupIds <String[]>]`: List of security groups able to view this qna.
     - `[IsSuggested <Boolean?>]`: True if this qna was suggested to the admin by a user or was mined and suggested by Microsoft. Read-only.
     - `[Keywords <IMicrosoftGraphSearchAnswerKeyword>]`: answerKeyword
-    - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. See supported language tags for the list of possible values.
+    - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. For the list of possible values, see supported language tags.
     - `[Platforms <DevicePlatformType[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
     - `[State <String>]`: answerState
     - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
 
-BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
+BOOKMARKS <IMicrosoftGraphSearchBookmark[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -306,7 +306,7 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft
     - `[Platform <DevicePlatformType?>]`: Supported platform types.
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
+QNAS <IMicrosoftGraphSearchQna[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -329,7 +329,7 @@ QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search re
     - `[Keywords <String[]>]`: A collection of keywords used to trigger the search answer.
     - `[MatchSimilarKeywords <Boolean?>]`: If true, indicates that the search term contains similar words to the keywords that should trigger the search answer.
     - `[ReservedKeywords <String[]>]`: Unique keywords that will guarantee the search answer is triggered.
-  - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. See supported language tags for the list of possible values.
+  - `[LanguageTags <String[]>]`: A list of language names that are geographically specific and that this QnA can be viewed in. Each language tag value follows the pattern {language}-{region}. As an example, en-us is English as used in the United States. For the list of possible values, see supported language tags.
   - `[Platforms <DevicePlatformType[]>]`: List of devices and operating systems able to view this qna. Possible values are: unknown, android, androidForWork, ios, macOS, windowsPhone81, windowsPhone81AndLater, windows10AndLater, androidWorkProfile, androidASOP.
   - `[State <String>]`: answerState
   - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.

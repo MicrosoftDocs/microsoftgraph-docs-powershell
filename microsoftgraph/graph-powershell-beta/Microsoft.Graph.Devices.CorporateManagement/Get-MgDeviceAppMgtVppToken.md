@@ -1,38 +1,38 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtvpptoken
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey
 schema: 2.0.0
 ---
 
-# Get-MgDeviceAppMgtVppToken
+# Get-MgDeviceAppMgtSideLoadingKey
 
 ## SYNOPSIS
-List of Vpp tokens for this organization.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDeviceAppMgtVppToken [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgDeviceAppMgtSideLoadingKey [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceAppMgtVppToken -VppTokenId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgDeviceAppMgtSideLoadingKey -SideLoadingKeyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceAppMgtVppToken -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppMgtSideLoadingKey -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-List of Vpp tokens for this organization.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## EXAMPLES
 
@@ -167,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SideLoadingKeyId
+key: id of sideLoadingKey
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -197,21 +212,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -VppTokenId
-key: id of vppToken
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Skip
 Skip the first n items
 
@@ -235,11 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVppToken2
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSideLoadingKey
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtvpptoken](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtvpptoken)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey)
 

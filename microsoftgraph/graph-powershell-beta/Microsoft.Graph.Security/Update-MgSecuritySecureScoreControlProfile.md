@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritysecurescorecontrolprofile
@@ -148,7 +148,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComplianceInformation
-.
+The collection of compliance information associated with secure score control
 To construct, please use Get-Help -Online and see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
 
 ```yaml
@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlStateUpdates
-.
+Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
 To construct, please use Get-Help -Online and see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
 
 ```yaml
@@ -408,7 +408,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-Title of the control.
+.
 
 ```yaml
 Type: String
@@ -503,19 +503,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlProfile
+BODYPARAMETER <IMicrosoftGraphSecureScoreControlProfile>: secureScoreControlProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActionType <String>]`: Control action type (Config, Review, Behavior).
   - `[ActionUrl <String>]`: URL to where the control can be actioned.
   - `[AzureTenantId <String>]`: GUID string for tenant ID.
-  - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: 
+  - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: The collection of compliance information associated with secure score control
     - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
       - `[Name <String>]`: Certification control name
       - `[Url <String>]`: URL for the Microsoft Service Trust Portal
     - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
   - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
-  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: 
+  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
     - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
     - `[Comment <String>]`: Provides optional comment about the control.
     - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
@@ -531,7 +531,7 @@ BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlPr
   - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Azure AD).
   - `[Threats <String[]>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
   - `[Tier <String>]`: 
-  - `[Title <String>]`: Title of the control.
+  - `[Title <String>]`: 
   - `[UserImpact <String>]`: 
   - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -540,21 +540,22 @@ BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlPr
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation\[]>: .
+COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation[]>: The collection of compliance information associated with secure score control
   - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
     - `[Name <String>]`: Certification control name
     - `[Url <String>]`: URL for the Microsoft Service Trust Portal
   - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
 
-CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate\[]>: .
+CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate[]>: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
   - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
   - `[Comment <String>]`: Provides optional comment about the control.
   - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
   - `[UpdatedBy <String>]`: ID of the user who updated tenant state.
   - `[UpdatedDateTime <DateTime?>]`: Time at which the control state was updated.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
+  - `[AttackSimulationOperationId <String>]`: key: id of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: key: id of authoredNote
   - `[CaseOperationId <String>]`: key: id of caseOperation
   - `[CloudAppSecurityProfileId <String>]`: key: id of cloudAppSecurityProfile
@@ -578,6 +579,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[HostSecurityProfileId <String>]`: key: id of hostSecurityProfile
   - `[IPSecurityProfileId <String>]`: key: id of ipSecurityProfile
   - `[IncidentId <String>]`: key: id of incident
+  - `[PayloadId <String>]`: key: id of payload
   - `[ProviderTenantSettingId <String>]`: key: id of providerTenantSetting
   - `[RetentionEventId <String>]`: key: id of retentionEvent
   - `[RetentionEventTypeId <String>]`: key: id of retentionEventType
@@ -597,7 +599,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[UserSecurityProfileId <String>]`: key: id of userSecurityProfile
   - `[UserSourceId <String>]`: key: id of userSource
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required

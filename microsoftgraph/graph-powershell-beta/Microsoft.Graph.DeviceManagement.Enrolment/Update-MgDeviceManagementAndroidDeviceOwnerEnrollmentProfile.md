@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementandroiddeviceownerenrollmentprofile
@@ -509,7 +509,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>`: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
+BODYPARAMETER <IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>: Enrollment Profile used to enroll Android Enterprise devices using Google's Cloud Management.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountId <String>]`: Tenant GUID the enrollment profile belongs to.
@@ -521,6 +521,7 @@ BODYPARAMETER `<IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>`: Enrollment
   - `[EnrollmentMode <AndroidDeviceOwnerEnrollmentMode?>]`: The enrollment mode for an enrollment profile.
   - `[EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType?>]`: The enrollment token type for an enrollment profile.
   - `[EnrollmentTokenUsageCount <Int32?>]`: Total number of AOSP devices that have enrolled using the current token.
+  - `[IsTeamsDeviceProfile <Boolean?>]`: Boolean indicating if this profile is an Android AOSP for Teams device profile.
   - `[LastModifiedDateTime <DateTime?>]`: Date time the enrollment profile was last modified.
   - `[QrCodeContent <String>]`: String used to generate a QR code for the token.
   - `[QrCodeImage <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
@@ -536,7 +537,7 @@ BODYPARAMETER `<IMicrosoftGraphAndroidDeviceOwnerEnrollmentProfile>`: Enrollment
   - `[WifiSecurityType <AospWifiSecurityType?>]`: This enum represents Wi-Fi Security Types for Android Device Owner AOSP Scenarios.
   - `[WifiSsid <String>]`: String that contains the wi-fi login ssid
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -573,7 +574,7 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-QRCODEIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+QRCODEIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.

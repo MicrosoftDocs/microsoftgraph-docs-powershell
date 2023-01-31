@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplannerplanconfiguration
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBusinessScenarioPlannerPlanConfiguration
 
 ## SYNOPSIS
-Update the navigation property planConfiguration in solutions
+Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
 ## SYNTAX
 
@@ -45,7 +45,7 @@ Update-MgBusinessScenarioPlannerPlanConfiguration -InputObject <IBookingsIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property planConfiguration in solutions
+Update the properties of a plannerPlanConfiguration object for a businessScenario.
 
 ## EXAMPLES
 
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -Buckets
-.
+List the buckets that should be created in the plan.
 To construct, please use Get-Help -Online and see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
@@ -130,7 +130,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time when the plan configuration was created.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -145,7 +147,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultLanguage
-.
+The language code for the default language to be used for the names of the objects created for the plan.
 
 ```yaml
 Type: String
@@ -208,7 +210,9 @@ Accept wildcard characters: False
 ```
 
 ### -LastModifiedDateTime
-.
+The date and time when the plan configuration was last modified.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -223,7 +227,7 @@ Accept wildcard characters: False
 ```
 
 ### -Localizations
-.
+Localized names for the plan configuration.
 To construct, please use Get-Help -Online and see NOTES section for LOCALIZATIONS properties and create a hash table.
 
 ```yaml
@@ -303,44 +307,44 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
+BODYPARAMETER <IMicrosoftGraphPlannerPlanConfiguration>: plannerPlanConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: 
-    - `[ExternalBucketId <String>]`: 
+  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: List the buckets that should be created in the plan.
+    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DefaultLanguage <String>]`: 
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the plan configuration was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[DefaultLanguage <String>]`: The language code for the default language to be used for the names of the objects created for the plan.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the plan configuration was last modified. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Localizations <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>]`: Localized names for the plan configuration.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: 
-      - `[ExternalBucketId <String>]`: 
-      - `[Name <String>]`: 
-    - `[LanguageTag <String>]`: 
-    - `[PlanTitle <String>]`: 
+    - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
+      - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+      - `[Name <String>]`: Name of the bucket.
+    - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
+    - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition\[]>: .
-  - `[ExternalBucketId <String>]`: 
+BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>: List the buckets that should be created in the plan.
+  - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
@@ -354,21 +358,21 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BusinessScenarioTaskId <String>]`: key: id of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: key: id of plannerPlanConfigurationLocalization
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization\[]>: .
+LOCALIZATIONS <IMicrosoftGraphPlannerPlanConfigurationLocalization[]>: Localized names for the plan configuration.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: 
-    - `[ExternalBucketId <String>]`: 
-    - `[Name <String>]`: 
-  - `[LanguageTag <String>]`: 
-  - `[PlanTitle <String>]`: 
+  - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
+    - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
+    - `[Name <String>]`: Name of the bucket.
+  - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
+  - `[PlanTitle <String>]`: Localized title of the plan.
 
 ## RELATED LINKS

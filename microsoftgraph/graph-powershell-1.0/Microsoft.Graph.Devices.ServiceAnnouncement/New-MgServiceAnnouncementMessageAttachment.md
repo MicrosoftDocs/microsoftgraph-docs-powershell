@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementmessageattachment
 schema: 2.0.0
-ms.prod: "service-communications"
 ---
 
 # New-MgServiceAnnouncementMessageAttachment
@@ -43,6 +42,28 @@ New-MgServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceAnnounce
 Create new navigation property to attachments for admin
 
 ## EXAMPLES
+
+### Example 1: Get all attachments of a message in a collection
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+
+This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get a zip file of all attachments in stream for a message
+```powershell
+Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
+
+Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
+```
+
+This example shows how to use the New-MgServiceAnnouncementMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -249,7 +270,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncementAttachment
+BODYPARAMETER <IMicrosoftGraphServiceAnnouncementAttachment>: serviceAnnouncementAttachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Content <Byte[]>]`: The attachment content.
@@ -258,7 +279,7 @@ BODYPARAMETER `<IMicrosoftGraphServiceAnnouncementAttachment>`: serviceAnnouncem
   - `[Name <String>]`: 
   - `[Size <Int32?>]`: 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: key: id of serviceHealth
   - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
