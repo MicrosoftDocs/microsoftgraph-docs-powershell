@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksection
 schema: 2.0.0
-ms.prod: "onenote"
+ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteNotebookSection
@@ -49,6 +49,18 @@ New-MgGroupOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <
 Create a new onenoteSection in the specified notebook.
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Notes
+
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId
+```
+
+This example shows how to use the New-MgGroupOnenoteNotebookSection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

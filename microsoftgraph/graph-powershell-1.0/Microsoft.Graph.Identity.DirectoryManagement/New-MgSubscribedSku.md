@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgsubscribedsku
 schema: 2.0.0
-ms.prod: "directory-management"
+ms.prod: directory-management
 ---
 
 # New-MgSubscribedSku
@@ -30,6 +30,17 @@ New-MgSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Co
 Add new entity to subscribedSkus
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
+
+Get-MgSubscribedSku
+```
+
+This example shows how to use the New-MgSubscribedSku Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

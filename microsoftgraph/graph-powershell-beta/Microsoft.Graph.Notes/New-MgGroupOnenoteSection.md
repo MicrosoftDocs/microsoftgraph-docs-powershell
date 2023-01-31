@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mggrouponenotesection
 schema: 2.0.0
-ms.prod: "onenote"
+ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteSection
@@ -49,6 +49,18 @@ New-MgGroupOnenoteSection -InputObject <INotesIdentity> -BodyParameter <IMicroso
 Create new navigation property to sections for groups
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Notes
+
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteSection -UserId $userId
+```
+
+This example shows how to use the New-MgGroupOnenoteSection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

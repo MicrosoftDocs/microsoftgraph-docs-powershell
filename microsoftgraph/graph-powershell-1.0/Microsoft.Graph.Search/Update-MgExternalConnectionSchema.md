@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionschema
 schema: 2.0.0
-ms.prod: "search"
+ms.prod: search
 ---
 
 # Update-MgExternalConnectionSchema
@@ -45,6 +45,17 @@ Update-MgExternalConnectionSchema -InputObject <ISearchIdentity>
 Update the navigation property schema in external
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Search
+
+Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
+```
+
+This example shows how to use the Update-MgExternalConnectionSchema Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

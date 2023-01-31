@@ -573,7 +573,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
-  - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+  - `[ColumnPositions <IMicrosoftGraphColumnDefinition[]>]`: Column order information in a content type.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -636,7 +636,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
     - `[PropagateChanges <Boolean?>]`: If 'true', changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
     - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
-    - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+    - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The id of the content type.
@@ -706,7 +706,7 @@ BASE `<IMicrosoftGraphContentType>`: contentType
         - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
-  - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
+  - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions for this contentType.
   - `[Description <String>]`: The descriptive text for the item.
   - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -716,9 +716,9 @@ BASE `<IMicrosoftGraphContentType>`: contentType
       - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
       - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
     - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-    - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
   - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
@@ -760,7 +760,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
-  - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+  - `[ColumnPositions <IMicrosoftGraphColumnDefinition[]>]`: Column order information in a content type.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -823,7 +823,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
     - `[PropagateChanges <Boolean?>]`: If 'true', changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
     - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
-    - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+    - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The id of the content type.
@@ -893,7 +893,7 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
         - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
-  - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
+  - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions for this contentType.
   - `[Description <String>]`: The descriptive text for the item.
   - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -903,9 +903,9 @@ BASETYPES <IMicrosoftGraphContentType\[]>: The collection of content types that 
       - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
       - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
     - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-    - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
   - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
@@ -948,7 +948,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
   - `[ColumnLinks <IMicrosoftGraphColumnLink[]>]`: The collection of columns that are required by this content type.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Name <String>]`: The name of the column  in this content type.
-  - `[ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]`: Column order information in a content type.
+  - `[ColumnPositions <IMicrosoftGraphColumnDefinition[]>]`: Column order information in a content type.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1011,7 +1011,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
     - `[PropagateChanges <Boolean?>]`: If 'true', changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
     - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
-    - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+    - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The id of the content type.
@@ -1081,7 +1081,7 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
         - `[DisplayName <String>]`: If present, the value of this field contains the displayName string that has been set for the language present in the languageTag field.
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
-  - `[Columns <IMicrosoftGraphColumnDefinition1[]>]`: The collection of column definitions for this contentType.
+  - `[Columns <IMicrosoftGraphColumnDefinition[]>]`: The collection of column definitions for this contentType.
   - `[Description <String>]`: The descriptive text for the item.
   - `[DocumentSet <IMicrosoftGraphDocumentSet1>]`: documentSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1091,9 +1091,9 @@ BODYPARAMETER `<IMicrosoftGraphContentType>`: contentType
       - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
       - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
     - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-    - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[SharedColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+    - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
   - `[DocumentTemplate <IMicrosoftGraphDocumentSetContent>]`: documentSetContent
   - `[Group <String>]`: The name of the group this content type belongs to. Helps organize related content types.
@@ -1131,7 +1131,7 @@ COLUMNLINKS <IMicrosoftGraphColumnLink\[]>: The collection of columns that are r
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: The name of the column  in this content type.
 
-COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition1\[]>: Column order information in a content type.
+COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition\[]>: Column order information in a content type.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1194,7 +1194,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition1\[]>: Column order information 
   - `[PropagateChanges <Boolean?>]`: If 'true', changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
   - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
-  - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+  - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The id of the content type.
@@ -1265,7 +1265,7 @@ COLUMNPOSITIONS <IMicrosoftGraphColumnDefinition1\[]>: Column order information 
       - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
     - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
-COLUMNS <IMicrosoftGraphColumnDefinition1\[]>: The collection of column definitions for this contentType.
+COLUMNS <IMicrosoftGraphColumnDefinition\[]>: The collection of column definitions for this contentType.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1328,7 +1328,7 @@ COLUMNS <IMicrosoftGraphColumnDefinition1\[]>: The collection of column definiti
   - `[PropagateChanges <Boolean?>]`: If 'true', changes to this column will be propagated to lists that implement the column.
   - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
   - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
-  - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+  - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The id of the content type.
@@ -1409,7 +1409,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet1>`: documentSet
     - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set.
     - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
   - `[PropagateWelcomePageChanges <Boolean?>]`: Specifies whether to push welcome page changes to inherited content types.
-  - `[SharedColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+  - `[SharedColumns <IMicrosoftGraphColumnDefinition[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Boolean <IMicrosoftGraphBooleanColumn>]`: booleanColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1472,7 +1472,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet1>`: documentSet
     - `[PropagateChanges <Boolean?>]`: If 'true', changes to this column will be propagated to lists that implement the column.
     - `[ReadOnly <Boolean?>]`: Specifies whether the column values can be modified.
     - `[Required <Boolean?>]`: Specifies whether the column value isn't optional.
-    - `[SourceColumn <IMicrosoftGraphColumnDefinition1>]`: columnDefinition
+    - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[Term <IMicrosoftGraphTermColumn1>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1540,7 +1540,7 @@ DOCUMENTSET `<IMicrosoftGraphDocumentSet1>`: documentSet
         - `[LanguageTag <String>]`: Provides the language culture-code and friendly name of the language that the displayName field has been provided in.
       - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
   - `[ShouldPrefixNameToFile <Boolean?>]`: Indicates whether to add the name of the document set to each file name.
-  - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition1[]>]`: 
+  - `[WelcomePageColumns <IMicrosoftGraphColumnDefinition[]>]`: 
   - `[WelcomePageUrl <String>]`: Welcome page absolute URL.
 
 DOCUMENTTEMPLATE `<IMicrosoftGraphDocumentSetContent>`: documentSetContent
@@ -1573,10 +1573,12 @@ INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
 
 INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
+  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ContentTypeId1 <String>]`: key: id of contentType
+  - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
   - `[DocumentSetVersionId <String>]`: key: id of documentSetVersion
   - `[DriveId <String>]`: key: id of drive
   - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
@@ -1585,6 +1587,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[HorizontalSectionColumnId <String>]`: key: id of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: key: id of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
+  - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: key: id of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
@@ -1597,6 +1600,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[PermissionId <String>]`: key: id of permission
   - `[RelationId <String>]`: key: id of relation
   - `[RichLongRunningOperationId <String>]`: key: id of richLongRunningOperation
+  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
   - `[SetId <String>]`: key: id of set
   - `[SetId1 <String>]`: key: id of set
   - `[SiteId <String>]`: key: id of site
@@ -1607,6 +1612,8 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SubscriptionId <String>]`: key: id of subscription
   - `[TermId <String>]`: key: id of term
   - `[TermId1 <String>]`: key: id of term
+  - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart

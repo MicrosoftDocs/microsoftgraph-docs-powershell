@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mgplace
 schema: 2.0.0
-ms.prod: "outlook"
+ms.prod: calendar
 ---
 
 # Remove-MgPlace
@@ -28,6 +28,26 @@ Remove-MgPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] 
 Delete entity from places
 
 ## EXAMPLES
+
+### Example 1: Code snippet
+```powershell
+Import-Module Microsoft.Graph.Calendar
+
+$params = @{
+	"@odata.type" = "microsoft.graph.room"
+	Nickname = "Conf Room"
+	Building = "1"
+	Label = "100"
+	Capacity = 
+	IsWheelChairAccessible = $false
+}
+
+Update-MgPlace -PlaceId $placeId -BodyParameter $params
+```
+
+This example shows how to use the Remove-MgPlace Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

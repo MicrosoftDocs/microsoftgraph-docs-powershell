@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchatmessage
 schema: 2.0.0
-ms.prod: "microsoft-teams"
+ms.prod: microsoft-teams
 ---
 
 # New-MgUserChatMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 ## SYNTAX
 
@@ -56,7 +57,8 @@ New-MgUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
 
 ## EXAMPLES
 
@@ -622,6 +624,7 @@ ATTACHMENTS <IMicrosoftGraphChatMessageAttachment\[]>: References to attached ob
   - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
   - `[Id <String>]`: Read-only. Unique id of the attachment.
   - `[Name <String>]`: Name of the attachment.
+  - `[TeamsAppId <String>]`: 
   - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
 
 BODY `<IMicrosoftGraphItemBody>`: itemBody
@@ -638,6 +641,7 @@ BODYPARAMETER `<IMicrosoftGraphChatMessage1>`: chatMessage
     - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
     - `[Id <String>]`: Read-only. Unique id of the attachment.
     - `[Name <String>]`: Name of the attachment.
+    - `[TeamsAppId <String>]`: 
     - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -806,6 +810,7 @@ REPLIES <IMicrosoftGraphChatMessage1\[]>: Replies for a specified message. Suppo
     - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
     - `[Id <String>]`: Read-only. Unique id of the attachment.
     - `[Name <String>]`: Name of the attachment.
+    - `[TeamsAppId <String>]`: 
     - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
   - `[Body <IMicrosoftGraphItemBody>]`: itemBody
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: "cloud-communications"
+ms.prod: cloud-communications
 ---
 
 # New-MgUserOnlineMeeting
@@ -650,6 +650,11 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting>`: onlineMeeting
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
+  - `[JoinMeetingIdSettings <IMicrosoftGraphJoinMeetingIdSettings>]`: joinMeetingIdSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
+    - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
+    - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
   - `[JoinWebUrl <String>]`: The join URL of the online meeting. Read-only.
   - `[LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]`: lobbyBypassSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -710,6 +715,12 @@ JOININFORMATION `<IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
+
+JOINMEETINGIDSETTINGS `<IMicrosoftGraphJoinMeetingIdSettings>`: joinMeetingIdSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsPasscodeRequired <Boolean?>]`: Indicates whether a passcode is required to join a meeting when using joinMeetingId. Optional.
+  - `[JoinMeetingId <String>]`: The meeting ID to be used to join a meeting. Optional. Read-only.
+  - `[Passcode <String>]`: The passcode to join a meeting.  Optional. Read-only.
 
 LOBBYBYPASSSETTINGS `<IMicrosoftGraphLobbyBypassSettings>`: lobbyBypassSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

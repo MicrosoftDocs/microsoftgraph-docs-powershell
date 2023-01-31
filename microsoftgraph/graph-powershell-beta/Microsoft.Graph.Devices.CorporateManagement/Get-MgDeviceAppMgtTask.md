@@ -1,38 +1,38 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttask
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey
 schema: 2.0.0
 ---
 
-# Get-MgDeviceAppMgtTask
+# Get-MgDeviceAppMgtSideLoadingKey
 
 ## SYNOPSIS
-Device app management tasks.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDeviceAppMgtTask [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+Get-MgDeviceAppMgtSideLoadingKey [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceAppMgtTask -DeviceAppManagementTaskId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgDeviceAppMgtSideLoadingKey -SideLoadingKeyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceAppMgtTask -InputObject <IDevicesCorporateManagementIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppMgtSideLoadingKey -InputObject <IDevicesCorporateManagementIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Device app management tasks.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## EXAMPLES
 
@@ -70,21 +70,6 @@ Parameter Sets: List
 Aliases: CV
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceAppManagementTaskId
-key: id of deviceAppManagementTask
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -182,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SideLoadingKeyId
+key: id of sideLoadingKey
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -235,11 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSideLoadingKey
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttask](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttask)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey)
 

@@ -350,6 +350,10 @@ BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
     - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
+  - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
+    - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -413,5 +417,10 @@ RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
     - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
   - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RecordingStatus <String>]`: recordingStatus
+
+RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
+  - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS

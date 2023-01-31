@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertaskassignedtotaskboardformat
 schema: 2.0.0
-ms.prod: "planner"
+ms.prod: planner
 ---
 
 # Get-MgPlannerTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of a **plannerAssignedToTaskBoardTaskFormat** object.
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Get-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.
+Retrieve the properties and relationships of a **plannerAssignedToTaskBoardTaskFormat** object.
 
 ## EXAMPLES
 

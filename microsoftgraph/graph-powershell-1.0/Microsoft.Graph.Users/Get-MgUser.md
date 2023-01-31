@@ -7,6 +7,7 @@ ms.prod: users
 ---
 
 # Get-MgUser
+
 ## SYNOPSIS
 Retrieve the properties and relationships of user object.
 

@@ -102,7 +102,6 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 recommendation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphRecommendation
@@ -432,45 +431,7 @@ ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: .
   - `[StepNumber <Int64?>]`: 
   - `[Text <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphRecommendation>`: recommendation
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ActionSteps <IMicrosoftGraphActionStep[]>]`: 
-    - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: 
-      - `[Url <String>]`: 
-    - `[StepNumber <Int64?>]`: 
-    - `[Text <String>]`: 
-  - `[Benefits <String>]`: 
-  - `[Category <String>]`: recommendationCategory
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[DisplayName <String>]`: 
-  - `[ImpactStartDateTime <DateTime?>]`: 
-  - `[ImpactType <String>]`: 
-  - `[ImpactedResources <IMicrosoftGraphRecommendationResource[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[AddedDateTime <DateTime?>]`: 
-    - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
-      - `[Key <String>]`: Key.
-      - `[Value <String>]`: Value.
-    - `[ApiUrl <String>]`: 
-    - `[DisplayName <String>]`: 
-    - `[Owner <String>]`: 
-    - `[PortalUrl <String>]`: 
-    - `[Rank <Int32?>]`: 
-    - `[RecommendationId <String>]`: 
-    - `[ResourceType <String>]`: 
-    - `[Status <String>]`: recommendationStatus
-  - `[Insights <String>]`: 
-  - `[LastCheckedDateTime <DateTime?>]`: 
-  - `[LastModifiedBy <String>]`: 
-  - `[LastModifiedDateTime <DateTime?>]`: 
-  - `[PostponeUntilDateTime <DateTime?>]`: 
-  - `[Priority <String>]`: recommendationPriority
-  - `[Status <String>]`: recommendationStatus
-
-IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource\[]>: .
+IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: 
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
@@ -478,12 +439,16 @@ IMPACTEDRESOURCES <IMicrosoftGraphRecommendationResource\[]>: .
     - `[Value <String>]`: Value.
   - `[ApiUrl <String>]`: 
   - `[DisplayName <String>]`: 
+  - `[LastModifiedBy <String>]`: 
+  - `[LastModifiedDateTime <String>]`: 
   - `[Owner <String>]`: 
   - `[PortalUrl <String>]`: 
+  - `[PostponeUntilDateTime <DateTime?>]`: 
   - `[Rank <Int32?>]`: 
   - `[RecommendationId <String>]`: 
   - `[ResourceType <String>]`: 
   - `[Status <String>]`: recommendationStatus
+  - `[SubjectId <String>]`: 
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
@@ -503,6 +468,7 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: key: id of extension
   - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
   - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
+  - `[ImpactedResourceId <String>]`: key: id of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
   - `[OnPremisesDirectorySynchronizationId <String>]`: key: id of onPremisesDirectorySynchronization
@@ -512,7 +478,6 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
   - `[RecommendationId <String>]`: key: id of recommendation
-  - `[RecommendationResourceId <String>]`: key: id of recommendationResource
   - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
