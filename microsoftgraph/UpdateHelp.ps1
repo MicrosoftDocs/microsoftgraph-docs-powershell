@@ -45,6 +45,10 @@ function Update-GraphHelp {
         $graphProfile = $_
         Update-GraphHelpByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updated markdown help" 
 }
 
 function Update-GraphHelpByProfile {
@@ -83,11 +87,6 @@ function Update-GraphModuleHelp {
     Import-Module $moduleImportName -Force -Global
     Select-MgProfile $GraphProfile
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
-    #Set-Location microsoftgraph-docs-powershell
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add $moduleDocsPath
-    git commit -m "Docs Generation for $ModuleName-$GraphVersion"
 }
 
 # Install PlatyPS

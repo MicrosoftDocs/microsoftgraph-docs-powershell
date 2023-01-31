@@ -1,41 +1,38 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwdacsupplementalpolicyassignment
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey
 schema: 2.0.0
 ---
 
-# Get-MgDeviceAppMgtWdacSupplementalPolicyAssignment
+# Get-MgDeviceAppMgtSideLoadingKey
 
 ## SYNOPSIS
-The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDeviceAppMgtWdacSupplementalPolicyAssignment
- -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgDeviceAppMgtSideLoadingKey [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceAppMgtWdacSupplementalPolicyAssignment
- -WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>
- -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgDeviceAppMgtSideLoadingKey -SideLoadingKeyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceAppMgtWdacSupplementalPolicyAssignment -InputObject <IDevicesCorporateManagementIdentity>
+Get-MgDeviceAppMgtSideLoadingKey -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## EXAMPLES
 
@@ -170,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SideLoadingKeyId
+key: id of sideLoadingKey
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -200,36 +212,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WindowsDefenderApplicationControlSupplementalPolicyAssignmentId
-key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsDefenderApplicationControlSupplementalPolicyId
-key: id of windowsDefenderApplicationControlSupplementalPolicy
-
-```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Skip
 Skip the first n items
 
@@ -253,11 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSideLoadingKey
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwdacsupplementalpolicyassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwdacsupplementalpolicyassignment)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey)
 

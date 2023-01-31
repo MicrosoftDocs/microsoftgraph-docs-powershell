@@ -22,6 +22,11 @@ function Escape-Angle-Brackets {
         $graphProfile = $_
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $GraphMapping[$graphProfile] -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Escaped disallowed html tags" 	
 }
 function Get-FilesByProfile{
  Param(
@@ -196,7 +201,8 @@ function Special-Escape{
     $s.Add("2", "<number>")
     $s.Add("3", "<at id='{index}'>") 
     $s.Add("4", "<application-client-id>")
-    $s.Add("5", "<data-id>") 
+    $s.Add("5", "<data-id>")
+    $s.Add("6", "<id>") 
 	try{
     $s.Values | ForEach-Object {  
     $string = $_
@@ -210,11 +216,6 @@ function Special-Escape{
 	 }
 	#$location = Get-Location
 	#Set-Location microsoftgraph-docs-powershell
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-	$location = Get-Location
-    git add $FilePath
-    git commit -m "Docs cleanup for $ModuleName-$GraphProfile" 	
 	}catch{
 	Write-Host "`nError Message: " $_.Exception.Message
 	Write-Host "`nError in Line: " $_.InvocationInfo.Line

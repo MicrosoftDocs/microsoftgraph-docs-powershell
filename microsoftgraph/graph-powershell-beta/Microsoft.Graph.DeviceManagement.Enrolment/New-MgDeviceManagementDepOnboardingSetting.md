@@ -394,6 +394,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[DeviceNameTemplate <String>]`: Sets a literal or name pattern.
     - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
     - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
+    - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
     - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
     - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
     - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -402,7 +403,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[RestoreBlocked <Boolean?>]`: Indicates if Restore setup pane is blocked
     - `[ScreenTimeScreenDisabled <Boolean?>]`: Indicates if screen timeout setup is disabled
     - `[SiriDisabled <Boolean?>]`: Indicates if siri setup pane is disabled
-    - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
+    - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
     - `[SupportDepartment <String>]`: Support department information
     - `[SupportPhoneNumber <String>]`: Support phone number
     - `[TermsAndConditionsDisabled <Boolean?>]`: Indicates if 'Terms and Conditions' setup pane is disabled
@@ -441,7 +442,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[TemporarySessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
     - `[UpdateCompleteScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
     - `[UserSessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
-    - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-shared-ios
+    - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/en-us/mem/intune/enrollment/device-enrollment-shared-ios
     - `[WatchMigrationScreenDisabled <Boolean?>]`: Indicates if the watch migration screen is disabled
     - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -453,6 +454,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[DeviceNameTemplate <String>]`: Sets a literal or name pattern.
     - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
     - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
+    - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
     - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
     - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
     - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -461,7 +463,7 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[RestoreBlocked <Boolean?>]`: Indicates if Restore setup pane is blocked
     - `[ScreenTimeScreenDisabled <Boolean?>]`: Indicates if screen timeout setup is disabled
     - `[SiriDisabled <Boolean?>]`: Indicates if siri setup pane is disabled
-    - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
+    - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
     - `[SupportDepartment <String>]`: Support department information
     - `[SupportPhoneNumber <String>]`: Support phone number
     - `[TermsAndConditionsDisabled <Boolean?>]`: Indicates if 'Terms and Conditions' setup pane is disabled
@@ -536,6 +538,7 @@ DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepI
   - `[DeviceNameTemplate <String>]`: Sets a literal or name pattern.
   - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
   - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
+  - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
   - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
   - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
   - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -544,7 +547,7 @@ DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepI
   - `[RestoreBlocked <Boolean?>]`: Indicates if Restore setup pane is blocked
   - `[ScreenTimeScreenDisabled <Boolean?>]`: Indicates if screen timeout setup is disabled
   - `[SiriDisabled <Boolean?>]`: Indicates if siri setup pane is disabled
-  - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
+  - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
   - `[SupportDepartment <String>]`: Support department information
   - `[SupportPhoneNumber <String>]`: Support phone number
   - `[TermsAndConditionsDisabled <Boolean?>]`: Indicates if 'Terms and Conditions' setup pane is disabled
@@ -583,7 +586,7 @@ DEFAULTIOSENROLLMENTPROFILE `<IMicrosoftGraphDepIosEnrollmentProfile>`: The DepI
   - `[TemporarySessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
   - `[UpdateCompleteScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[UserSessionTimeoutInSeconds <Int32?>]`: Indicates timeout of temporary session
-  - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/mem/intune/enrollment/device-enrollment-shared-ios
+  - `[UserlessSharedAadModeEnabled <Boolean?>]`: Indicates that this apple device is designated to support 'shared device mode' scenarios. This is distinct from the 'shared iPad' scenario. See https://learn.microsoft.com/en-us/mem/intune/enrollment/device-enrollment-shared-ios
   - `[WatchMigrationScreenDisabled <Boolean?>]`: Indicates if the watch migration screen is disabled
   - `[WelcomeScreenDisabled <Boolean?>]`: Indicates if Weclome screen is disabled
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -596,6 +599,7 @@ DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The 
   - `[DeviceNameTemplate <String>]`: Sets a literal or name pattern.
   - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
   - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
+  - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
   - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
   - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
   - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -604,7 +608,7 @@ DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The 
   - `[RestoreBlocked <Boolean?>]`: Indicates if Restore setup pane is blocked
   - `[ScreenTimeScreenDisabled <Boolean?>]`: Indicates if screen timeout setup is disabled
   - `[SiriDisabled <Boolean?>]`: Indicates if siri setup pane is disabled
-  - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
+  - `[SupervisedModeEnabled <Boolean?>]`: Supervised mode, True to enable, false otherwise. See https://learn.microsoft.com/en-us/intune/deploy-use/enroll-devices-in-microsoft-intune for additional information.
   - `[SupportDepartment <String>]`: Support department information
   - `[SupportPhoneNumber <String>]`: Support phone number
   - `[TermsAndConditionsDisabled <Boolean?>]`: Indicates if 'Terms and Conditions' setup pane is disabled

@@ -28,6 +28,10 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
     Param(
@@ -89,17 +93,19 @@ function Get-Files {
                         #Extract URI path
                         $Uripaths = Find-MgGraphCommand -Command $Command
                         $UriPath = $null
-                        if ($Uripaths.APIVersion.Contains($ProfileGraph)) {
-                            if ($Uripaths.Length -gt 1) {
-                                $UriPath = $UriPaths.URI[0].ToString() 
+                        if (-not([string]::IsNullOrEmpty($Uripaths))) {
+                            if ($Uripaths.APIVersion.Contains($ProfileGraph)) {
+                                if ($Uripaths.Length -gt 1) {
+                                    $UriPath = $UriPaths.URI[0].ToString() 
+                                }
+                                else {
+                                    $UriPath = $UriPaths.URI.ToString() 
+                                } 
                             }
-                            else {
-                                $UriPath = $UriPaths.URI.ToString() 
-                            } 
-                        }
-                        if ($UriPath) {
-                  
-                            Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File
+                            if ($UriPath) {
+                                $Method = $UriPaths.Method
+                                Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method
+                            }
                         }
                     }
                     #Start-Sleep -Seconds 10
@@ -124,6 +130,7 @@ function Get-ExternalDocs-Url {
         [ValidateNotNullOrEmpty()]
         [string] $Command = "Get-MgUser",
         [Hashtable] $OpenApiContent,
+        [System.Object] $Method = "GET",
         [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md"
     )
    
@@ -131,12 +138,43 @@ function Get-ExternalDocs-Url {
     
         if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
             foreach ($Path in $OpenApiContent.paths) {
-                #Write-Host $path.Keys
+                $MethodName = $Method | Out-String
                 $ExternalDocUrl = $Path[$UriPath].values.externalDocs.url
-               
-                if ($ExternalDocUrl) {
-                    $Url = $ExternalDocUrl.split(" ")
-                    WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $Url[0] -Command $Command -File $File
+                 
+                if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
+                    $PathSplit = $UriPath.Split("/")
+                    $PathToAppend = $PathSplit[$PathSplit.Count - 1]
+                    if ($PathToAppend.StartsWith("{") -or $PathToAppend.StartsWith("$")) {
+                        #skip
+                    }
+                    else {
+                        $PathRebuild = "/" + $PathSplit[0]
+                        for ($i = 1; $i -lt $PathSplit.Count - 1; $i++) {
+                            $PathRebuild += $PathSplit[$i] + "/" 
+                        }
+                        $RebuiltPath = $PathRebuild + "microsoft.graph." + $PathToAppend
+                        $ExternalDocUrl = $path[$RebuiltPath].get.externalDocs.url
+                    }
+                }
+                if ($MethodName -eq "POST") {
+                    $ExternalDocUrl = $path[$UriPath].post.externalDocs.url 
+                }
+             
+                if ($MethodName -eq "PATCH") {
+                    $ExternalDocUrl = $path[$UriPath].patch.externalDocs.url 
+                }
+             
+                if ($MethodName -eq "DELETE") {
+                    $ExternalDocUrl = $path[$UriPath].delete.externalDocs.url 
+                }
+
+                if ($MethodName -eq "PUT") {
+                    $ExternalDocUrl = $path[$UriPath].put.externalDocs.url 
+                }
+  
+                if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
+                    #$Url = $ExternalDocUrl.split(" ")
+                    WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
                 }
             
             }
@@ -187,25 +225,24 @@ function WebScrapping {
             $MsprodContent = $Content  
         } 
     }
+    #Remove single and double qoutes from ms prod
+    $MsprodContent = $MsprodContent.Replace("`"", "")
+    $MsprodContent = $MsprodContent.Replace("'", "")
     $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
     (Get-Content $File) | 
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
     Out-File $File
-
-    git config --global user.email "timwamalwa@gmail.com"
-    git config --global user.name "Timothy Wamalwa"
-    git add $File
-    git commit -m "Meta data update for $Command" 	
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
+$proposedBranch = "weekly_update_help_files_" + $date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
+}
+else {
+    Write-Host "Branch already exists"
+    git checkout $proposedBranch
 }
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force

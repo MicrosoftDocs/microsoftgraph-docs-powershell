@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mguseronlinemeeting
 schema: 2.0.0
-ms.prod: "cloud-communications"
+ms.prod: cloud-communications
 ---
 
 # New-MgUserOnlineMeeting
@@ -877,6 +877,10 @@ BODYPARAMETER `<IMicrosoftGraphOnlineMeeting1>`: onlineMeeting
     - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
+  - `[WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>]`: watermarkProtectionValues
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsEnabledForContentSharing <Boolean?>]`: 
+    - `[IsEnabledForVideo <Boolean?>]`: 
 
 BROADCASTSETTINGS `<IMicrosoftGraphBroadcastMeetingSettings>`: broadcastMeetingSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1008,6 +1012,11 @@ VIRTUALAPPOINTMENT `<IMicrosoftGraphVirtualAppointment>`: virtualAppointment
   - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
+
+WATERMARKPROTECTION `<IMicrosoftGraphWatermarkProtectionValues>`: watermarkProtectionValues
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IsEnabledForContentSharing <Boolean?>]`: 
+  - `[IsEnabledForVideo <Boolean?>]`: 
 
 ## RELATED LINKS
 

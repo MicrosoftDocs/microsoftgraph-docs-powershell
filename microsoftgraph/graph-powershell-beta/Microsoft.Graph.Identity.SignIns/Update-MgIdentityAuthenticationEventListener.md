@@ -266,9 +266,6 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEven
       - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]`: 
         - `[AppId <String>]`: 
   - `[Priority <Int32?>]`: 
-  - `[Tags <IMicrosoftGraphKeyValuePair[]>]`: 
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
 
 CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -354,9 +351,5 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserFlowLanguagePageId <String>]`: key: id of userFlowLanguagePage
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
-
-TAGS <IMicrosoftGraphKeyValuePair\[]>: .
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS

@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgserviceprincipalriskdetection
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
+ms.prod: identity-and-sign-in
 ---
 
 # New-MgServicePrincipalRiskDetection
@@ -34,6 +34,28 @@ New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrinci
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
 ## EXAMPLES
+
+### Example 1: List risk detections
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgServicePrincipalRiskDetection
+```
+
+This example shows how to use the New-MgServicePrincipalRiskDetection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List risk detections and filter the results
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+Get-MgServicePrincipalRiskDetection -Filter "riskEventType eq 'investigationsThreatIntelligence' or riskLevel eq 'medium'"
+```
+
+This example shows how to use the New-MgServicePrincipalRiskDetection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

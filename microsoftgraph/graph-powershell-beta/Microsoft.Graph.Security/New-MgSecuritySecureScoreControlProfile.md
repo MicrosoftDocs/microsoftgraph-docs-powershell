@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -ComplianceInformation
-.
+The collection of compliance information associated with secure score control
 To construct, please use Get-Help -Online and see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
 
 ```yaml
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ControlStateUpdates
-.
+Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
 To construct, please use Get-Help -Online and see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
 
 ```yaml
@@ -340,7 +340,7 @@ Accept wildcard characters: False
 ```
 
 ### -Title
-Title of the control.
+.
 
 ```yaml
 Type: String
@@ -440,13 +440,13 @@ BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlPr
   - `[ActionType <String>]`: Control action type (Config, Review, Behavior).
   - `[ActionUrl <String>]`: URL to where the control can be actioned.
   - `[AzureTenantId <String>]`: GUID string for tenant ID.
-  - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: 
+  - `[ComplianceInformation <IMicrosoftGraphComplianceInformation[]>]`: The collection of compliance information associated with secure score control
     - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
       - `[Name <String>]`: Certification control name
       - `[Url <String>]`: URL for the Microsoft Service Trust Portal
     - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
   - `[ControlCategory <String>]`: Control action category (Identity, Data, Device, Apps, Infrastructure).
-  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: 
+  - `[ControlStateUpdates <IMicrosoftGraphSecureScoreControlStateUpdate[]>]`: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
     - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
     - `[Comment <String>]`: Provides optional comment about the control.
     - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).
@@ -462,7 +462,7 @@ BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlPr
   - `[Service <String>]`: Service that owns the control (Exchange, Sharepoint, Azure AD).
   - `[Threats <String[]>]`: List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,
   - `[Tier <String>]`: 
-  - `[Title <String>]`: Title of the control.
+  - `[Title <String>]`: 
   - `[UserImpact <String>]`: 
   - `[VendorInformation <IMicrosoftGraphSecurityVendorInformation>]`: securityVendorInformation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -471,13 +471,13 @@ BODYPARAMETER `<IMicrosoftGraphSecureScoreControlProfile>`: secureScoreControlPr
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation\[]>: .
+COMPLIANCEINFORMATION <IMicrosoftGraphComplianceInformation\[]>: The collection of compliance information associated with secure score control
   - `[CertificationControls <IMicrosoftGraphCertificationControl[]>]`: Collection of the certification controls associated with certification
     - `[Name <String>]`: Certification control name
     - `[Url <String>]`: URL for the Microsoft Service Trust Portal
   - `[CertificationName <String>]`: Compliance certification name (for example, ISO 27018:2014, GDPR, FedRAMP, NIST 800-171)
 
-CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate\[]>: .
+CONTROLSTATEUPDATES <IMicrosoftGraphSecureScoreControlStateUpdate\[]>: Flag to indicate where the tenant has marked a control (ignored, thirdParty, reviewed) (supports update).
   - `[AssignedTo <String>]`: Assigns the control to the user who will take the action.
   - `[Comment <String>]`: Provides optional comment about the control.
   - `[State <String>]`: State of the control, which can be modified via a PATCH command (for example, ignored, thirdParty).

@@ -1,39 +1,38 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationapp
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey
 schema: 2.0.0
 ---
 
-# Get-MgDeviceAppMgtTargetedManagedAppConfigurationApp
+# Get-MgDeviceAppMgtSideLoadingKey
 
 ## SYNOPSIS
-List of apps to which the policy is deployed.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDeviceAppMgtTargetedManagedAppConfigurationApp -TargetedManagedAppConfigurationId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgDeviceAppMgtSideLoadingKey [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceAppMgtTargetedManagedAppConfigurationApp -ManagedMobileAppId <String>
- -TargetedManagedAppConfigurationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgDeviceAppMgtSideLoadingKey -SideLoadingKeyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceAppMgtTargetedManagedAppConfigurationApp -InputObject <IDevicesCorporateManagementIdentity>
+Get-MgDeviceAppMgtSideLoadingKey -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-List of apps to which the policy is deployed.
+Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
 
 ## EXAMPLES
 
@@ -123,21 +122,6 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ManagedMobileAppId
-key: id of managedMobileApp
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PageSize
 Sets the page size of results.
 
@@ -183,6 +167,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SideLoadingKeyId
+key: id of sideLoadingKey
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Sort
 Order items by property values
 
@@ -192,21 +191,6 @@ Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TargetedManagedAppConfigurationId
-key: id of targetedManagedAppConfiguration
-
-```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -251,11 +235,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedMobileApp
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSideLoadingKey
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationapp](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationapp)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey)
 

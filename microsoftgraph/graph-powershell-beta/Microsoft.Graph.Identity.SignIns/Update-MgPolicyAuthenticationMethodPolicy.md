@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy
 schema: 2.0.0
-ms.prod: "identity-and-sign-in"
+ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyAuthenticationMethodPolicy
@@ -112,7 +112,6 @@ Accept wildcard characters: False
 
 ### -Description
 A description of the policy.
-Read-only.
 
 ```yaml
 Type: String
@@ -128,7 +127,6 @@ Accept wildcard characters: False
 
 ### -DisplayName
 The name of the policy.
-Read-only.
 
 ```yaml
 Type: String
@@ -160,7 +158,6 @@ Accept wildcard characters: False
 
 ### -LastModifiedDateTime
 The date and time of the last update to the policy.
-Read-only.
 
 ```yaml
 Type: DateTime
@@ -191,7 +188,6 @@ Accept wildcard characters: False
 
 ### -PolicyVersion
 The version of the policy in use.
-Read-only.
 
 ```yaml
 Type: String
@@ -206,7 +202,7 @@ Accept wildcard characters: False
 ```
 
 ### -ReconfirmationInDays
-.
+Days before the user will be asked to reconfirm their method.
 
 ```yaml
 Type: Int32
@@ -285,28 +281,33 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTHENTICATIONMETHODCONFIGURATIONS <IMicrosoftGraphAuthenticationMethodConfiguration\[]>: Represents the settings for each authentication method. Automatically expanded on GET /policies/authenticationMethodsPolicy.
+AUTHENTICATIONMETHODCONFIGURATIONS <IMicrosoftGraphAuthenticationMethodConfiguration1\[]>: Represents the settings for each authentication method. Automatically expanded on GET /policies/authenticationMethodsPolicy.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Groups of users that are excluded from a policy.
+    - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
+    - `[TargetType <String>]`: authenticationMethodTargetType
   - `[State <String>]`: authenticationMethodState
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodsPolicy>`: authenticationMethodsPolicy
+BODYPARAMETER `<IMicrosoftGraphAuthenticationMethodsPolicy1>`: authenticationMethodsPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]`: Represents the settings for each authentication method. Automatically expanded on GET /policies/authenticationMethodsPolicy.
+  - `[AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration1[]>]`: Represents the settings for each authentication method. Automatically expanded on GET /policies/authenticationMethodsPolicy.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Groups of users that are excluded from a policy.
+      - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
+      - `[TargetType <String>]`: authenticationMethodTargetType
     - `[State <String>]`: authenticationMethodState
-  - `[Description <String>]`: A description of the policy. Read-only.
-  - `[DisplayName <String>]`: The name of the policy. Read-only.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time of the last update to the policy. Read-only.
-  - `[PolicyVersion <String>]`: The version of the policy in use. Read-only.
-  - `[ReconfirmationInDays <Int32?>]`: 
+  - `[Description <String>]`: A description of the policy.
+  - `[DisplayName <String>]`: The name of the policy.
+  - `[LastModifiedDateTime <DateTime?>]`: The date and time of the last update to the policy.
+  - `[PolicyMigrationState <String>]`: authenticationMethodsPolicyMigrationState
+  - `[PolicyVersion <String>]`: The version of the policy in use.
+  - `[ReconfirmationInDays <Int32?>]`: Days before the user will be asked to reconfirm their method.
   - `[RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>]`: registrationEnforcement
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AuthenticationMethodsRegistrationCampaign <IMicrosoftGraphAuthenticationMethodsRegistrationCampaign>]`: authenticationMethodsRegistrationCampaign
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Users and groups of users that are excluded from being prompted to set up the authentication method.
-        - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
-        - `[TargetType <String>]`: authenticationMethodTargetType
       - `[IncludeTargets <IMicrosoftGraphAuthenticationMethodsRegistrationCampaignIncludeTarget[]>]`: Users and groups of users that are prompted to set up the authentication method.
         - `[Id <String>]`: The object identifier of an Azure Active Directory user or group.
         - `[TargetType <String>]`: authenticationMethodTargetType

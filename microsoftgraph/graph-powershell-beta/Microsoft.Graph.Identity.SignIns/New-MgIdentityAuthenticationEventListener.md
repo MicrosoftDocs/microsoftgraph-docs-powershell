@@ -202,9 +202,6 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEven
       - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]`: 
         - `[AppId <String>]`: 
   - `[Priority <Int32?>]`: 
-  - `[Tags <IMicrosoftGraphKeyValuePair[]>]`: 
-    - `[Name <String>]`: Name for this key-value pair
-    - `[Value <String>]`: Value for this key-value pair
 
 CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -213,9 +210,5 @@ CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
     - `[IncludeAllApplications <Boolean?>]`: 
     - `[IncludeApplications <IMicrosoftGraphAuthenticationConditionApplication[]>]`: 
       - `[AppId <String>]`: 
-
-TAGS <IMicrosoftGraphKeyValuePair\[]>: .
-  - `[Name <String>]`: Name for this key-value pair
-  - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
