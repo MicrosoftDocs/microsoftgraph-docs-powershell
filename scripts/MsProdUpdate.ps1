@@ -94,19 +94,19 @@ function Get-Files {
                         $Uripaths = Find-MgGraphCommand -Command $Command
                         $UriPath = $null
                         if (-not([string]::IsNullOrEmpty($Uripaths))) {
-                        if ($Uripaths.APIVersion.Contains($ProfileGraph)) {
-                            if ($Uripaths.Length -gt 1) {
-                                $UriPath = $UriPaths.URI[0].ToString() 
+                            if ($Uripaths.APIVersion.Contains($ProfileGraph)) {
+                                if ($Uripaths.Length -gt 1) {
+                                    $UriPath = $UriPaths.URI[0].ToString() 
+                                }
+                                else {
+                                    $UriPath = $UriPaths.URI.ToString() 
+                                } 
                             }
-                            else {
-                                $UriPath = $UriPaths.URI.ToString() 
-                            } 
+                            if ($UriPath) {
+                                $Method = $UriPaths.Method
+                                Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method
+                            }
                         }
-                        if ($UriPath) {
-                            $Method = $UriPaths.Method
-                            Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method
-                        }
-                    }
                     }
                     #Start-Sleep -Seconds 10
                 }
@@ -141,35 +141,36 @@ function Get-ExternalDocs-Url {
                 $MethodName = $Method | Out-String
                 $ExternalDocUrl = $Path[$UriPath].values.externalDocs.url
                  
-                if([string]::IsNullOrEmpty($ExternalDocUrl)) {
+                if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
                     $PathSplit = $UriPath.Split("/")
                     $PathToAppend = $PathSplit[$PathSplit.Count - 1]
-                    if($PathToAppend.StartsWith("{") -or $PathToAppend.StartsWith("$")){
-                     #skip
-                    }else{
-                    $PathRebuild = "/"+$PathSplit[0]
-                    for($i = 1; $i -lt $PathSplit.Count - 1; $i++){
-                     $PathRebuild += $PathSplit[$i]+"/" 
+                    if ($PathToAppend.StartsWith("{") -or $PathToAppend.StartsWith("$")) {
+                        #skip
                     }
-                    $RebuiltPath =  $PathRebuild + "microsoft.graph." +$PathToAppend
-                    $ExternalDocUrl = $path[$RebuiltPath].get.externalDocs.url
-                 }
-                 }
-                 if ($MethodName -eq "POST") {
-                     $ExternalDocUrl = $path[$UriPath].post.externalDocs.url 
-                 }
+                    else {
+                        $PathRebuild = "/" + $PathSplit[0]
+                        for ($i = 1; $i -lt $PathSplit.Count - 1; $i++) {
+                            $PathRebuild += $PathSplit[$i] + "/" 
+                        }
+                        $RebuiltPath = $PathRebuild + "microsoft.graph." + $PathToAppend
+                        $ExternalDocUrl = $path[$RebuiltPath].get.externalDocs.url
+                    }
+                }
+                if ($MethodName -eq "POST") {
+                    $ExternalDocUrl = $path[$UriPath].post.externalDocs.url 
+                }
              
-                 if ($MethodName -eq "PATCH") {
-                     $ExternalDocUrl = $path[$UriPath].patch.externalDocs.url 
-                 }
+                if ($MethodName -eq "PATCH") {
+                    $ExternalDocUrl = $path[$UriPath].patch.externalDocs.url 
+                }
              
-                 if ($MethodName -eq "DELETE") {
-                     $ExternalDocUrl = $path[$UriPath].delete.externalDocs.url 
-                 }
+                if ($MethodName -eq "DELETE") {
+                    $ExternalDocUrl = $path[$UriPath].delete.externalDocs.url 
+                }
 
-                 if ($MethodName -eq "PUT") {
-                     $ExternalDocUrl = $path[$UriPath].put.externalDocs.url 
-                 }
+                if ($MethodName -eq "PUT") {
+                    $ExternalDocUrl = $path[$UriPath].put.externalDocs.url 
+                }
   
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                     #$Url = $ExternalDocUrl.split(" ")
@@ -225,8 +226,8 @@ function WebScrapping {
         } 
     }
     #Remove single and double qoutes from ms prod
-    $MsprodContent = $MsprodContent.Replace("`"","")
-    $MsprodContent = $MsprodContent.Replace("'","")
+    $MsprodContent = $MsprodContent.Replace("`"", "")
+    $MsprodContent = $MsprodContent.Replace("'", "")
     $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
     (Get-Content $File) | 
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
@@ -234,13 +235,14 @@ function WebScrapping {
 }
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
+$proposedBranch = "weekly_update_help_files_" + $date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
+}
+else {
+    Write-Host "Branch already exists"
+    git checkout $proposedBranch
 }
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
