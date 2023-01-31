@@ -3,17 +3,19 @@ title: "Using Find-MgGraphCommand cmdlet"
 description: "Learn how to use the Find-MgGraphCommand to aid in discoverability of cmdlets."
 
 ms.topic: how-to
-ms.date: 01/11/2022
+ms.date: 01/31/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
+reviewer: maisarissi
 ---
 
 # Using Find-MgGraphCommand cmdlet
 
-Find-MgGraphCommand aims to make it easy for you to discover which API path a command calls by providing a URI or a command name.
+Find-MgGraphCommand aims to make it easier for you to discover which API path a command calls, by providing a URI or a command name.
 
-The Find-MgGraphCommand allows to;
+The Find-MgGraphCommand allows to:
+
 - Pass a Microsoft Graph URL (relative and absolute) and get an equivalent Microsoft Graph PowerShell command.
 - Pass a command and get the URL it calls.
 - Pass a command or URI wildcard (.*) to find all commands that match it.
@@ -58,8 +60,8 @@ Update-MgUser Users  PATCH  /users/{user-id}                     {DeviceManageme
 ```
 
 >[!Note]
->1. For -ApiVersion parameter, there are two possible values: `v1.0` and `Beta`.
->1. The -Method parameter is only available when using URI to find commands and allows the HTTPs methods such as GET, POST, PUT, PATCH and DELETE.
+>1. For **-ApiVersion** parameter, there are two possible values: `v1.0` and `Beta`.
+>1. The **-Method** parameter is only available when using URI to find commands and allows the HTTPs methods such as GET, POST, PUT, PATCH and DELETE.
 >1. The output shown in this article has been shortened for readability.
 
 ## Find Microsoft Graph PowerShell commands by command name
@@ -126,18 +128,21 @@ Find-MgGraphCommand -Command .*searchstring.* [-ApiVersion <String>] [<CommonPar
 #### Example 1: Search for commands using a command wildcard
 
 ```powershell
-Find-MgGraphCommand -Command .*TeamTag.* -APIVersion 'Beta'
+Find-MgGraphCommand -Command .*UserToDo.* -APIVersion 'v1.0'
 ```
 
 ```Output
- APIVersion: beta
+   APIVersion: v1.0
 
-Command                Module Method URI                                                                   OutputType                       Permissions Variants
--------                ------ ------ ---                                                                   ----------                       ----------- --------
-Get-MgTeamTag          Teams  GET    /teams/{team-id}/tags                                                 IMicrosoftGraphTeamworkTag       {}          {List}
-Get-MgTeamTag          Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}                                IMicrosoftGraphTeamworkTag       {}          {Get, GetViaIdentity}
-Get-MgTeamTagMember    Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}/members                        IMicrosoftGraphTeamworkTagMember {}          {List}
-Get-MgTeamTagMember    Teams  GET    /teams/{team-id}/tags/{teamworkTag-id}/members/{teamworkTagMember-id} IMicrosoftGraphTeamworkTagMember {}          {Get, GetViaIdentity}
+Command                                        Module          Method URI
+-------                                        ------          ------ ---
+Get-MgUserTodoList                             Users           GET    /users/{user-id}/todo/lists
+Get-MgUserTodoList                             Users           GET    /users/{user-id}/todo/lists/{todoTaskList-id}
+Get-MgUserTodoListDelta                        Users.Functions GET    /users/{user-id}/todo/lists/delta
+Get-MgUserTodoListExtension                    Users           GET    /users/{user-id}/todo/lists/{todoTaskList-id}/extensions
+Get-MgUserTodoListExtension                    Users           GET    /users/{user-id}/todo/lists/{todoTaskList-id}/extensions/{extension-id}
+Get-MgUserTodoListTask                         Users           GET    /users/{user-id}/todo/lists/{todoTaskList-id}/tasks
+Get-MgUserTodoListTask                         Users           GET    /users/{user-id}/todo/lists/{todoTaskList-id}/tasks/{todoTask-id}
 ```
 
 ## Find Microsoft Graph PowerShell commands using a URI wildcard
