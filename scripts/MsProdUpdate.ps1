@@ -224,8 +224,9 @@ function WebScrapping {
             $MsprodContent = $Content  
         } 
     }
-    #Remove double qoutes from ms prod
+    #Remove single and double qoutes from ms prod
     $MsprodContent = $MsprodContent.Replace("`"","")
+    $MsprodContent = $MsprodContent.Replace("'","")
     $MetaDataText = "schema: 2.0.0`r`n$MsprodContent"
     (Get-Content $File) | 
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
