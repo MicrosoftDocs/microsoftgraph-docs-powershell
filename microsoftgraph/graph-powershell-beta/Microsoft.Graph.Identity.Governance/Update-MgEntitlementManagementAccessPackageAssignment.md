@@ -4400,7 +4400,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage>`: accessPackage
                 - `[Scaling <String>]`: printScaling
               - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
               - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-              - `[DisplayName <String>]`: 
+              - `[DisplayName <String>]`: The name of the print job.
               - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -9085,7 +9085,7 @@ ACCESSPACKAGEASSIGNMENTPOLICY `<IMicrosoftGraphAccessPackageAssignmentPolicy1>`:
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -13883,7 +13883,7 @@ ACCESSPACKAGEASSIGNMENTREQUESTS <IMicrosoftGraphAccessPackageAssignmentRequest1\
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -18702,7 +18702,7 @@ ACCESSPACKAGEASSIGNMENTRESOURCEROLES <IMicrosoftGraphAccessPackageAssignmentReso
                     - `[Scaling <String>]`: printScaling
                   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                  - `[DisplayName <String>]`: 
+                  - `[DisplayName <String>]`: The name of the print job.
                   - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                     - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -23517,7 +23517,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignment1>`: accessPackageAssignme
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration

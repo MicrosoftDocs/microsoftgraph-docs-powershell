@@ -3717,7 +3717,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamwork1>`: teamwork
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -8515,7 +8515,7 @@ DELETEDTEAMS <IMicrosoftGraphDeletedTeam\[]>: A collection of deleted teams.
                 - `[Scaling <String>]`: printScaling
               - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
               - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-              - `[DisplayName <String>]`: 
+              - `[DisplayName <String>]`: The name of the print job.
               - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -13090,7 +13090,7 @@ TEAMTEMPLATES <IMicrosoftGraphTeamTemplate\[]>: The templates associated with a 
                     - `[Scaling <String>]`: printScaling
                   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                   - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                  - `[DisplayName <String>]`: 
+                  - `[DisplayName <String>]`: The name of the print job.
                   - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                     - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration

@@ -4530,7 +4530,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationClass>`: educationClass
                 - `[Scaling <String>]`: printScaling
               - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
               - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-              - `[DisplayName <String>]`: 
+              - `[DisplayName <String>]`: The name of the print job.
               - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -9221,7 +9221,7 @@ GROUP `<IMicrosoftGraphGroup>`: group
               - `[Scaling <String>]`: printScaling
             - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
             - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-            - `[DisplayName <String>]`: 
+            - `[DisplayName <String>]`: The name of the print job.
             - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -13921,7 +13921,7 @@ MEMBERS <IMicrosoftGraphEducationUser\[]>: All users in the class. Nullable.
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -18711,7 +18711,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool\[]>: All schools that this class is asso
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
@@ -23471,7 +23471,7 @@ TEACHERS <IMicrosoftGraphEducationUser\[]>: All teachers in the class. Nullable.
                   - `[Scaling <String>]`: printScaling
                 - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
                 - `[CreatedDateTime <DateTime?>]`: The DateTimeOffset when the job was created. Read-only.
-                - `[DisplayName <String>]`: 
+                - `[DisplayName <String>]`: The name of the print job.
                 - `[Documents <IMicrosoftGraphPrintDocument[]>]`: 
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[Configuration <IMicrosoftGraphPrinterDocumentConfiguration>]`: printerDocumentConfiguration
