@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgdevicemanagementautopilotevent
@@ -83,7 +83,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountSetupStatus
-windowsAutopilotDeploymentState
+Deployment states for Autopilot devices
 
 ```yaml
 Type: String
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentState
-windowsAutopilotDeploymentState
+Deployment states for Autopilot devices
 
 ```yaml
 Type: String
@@ -294,7 +294,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceSetupStatus
-windowsAutopilotDeploymentState
+Deployment states for Autopilot devices
 
 ```yaml
 Type: String
@@ -616,22 +616,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an Autopilot flow event.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementAutopilotEvent>: Represents an Autopilot flow event.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
-  - `[AccountSetupStatus <String>]`: windowsAutopilotDeploymentState
+  - `[AccountSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
   - `[DeploymentEndDateTime <DateTime?>]`: Deployment end time.
   - `[DeploymentStartDateTime <DateTime?>]`: Deployment start time.
-  - `[DeploymentState <String>]`: windowsAutopilotDeploymentState
+  - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
   - `[DeviceId <String>]`: Device id associated with the object
   - `[DevicePreparationDuration <TimeSpan?>]`: Time spent in device enrollment.
   - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
   - `[DeviceSerialNumber <String>]`: Device serial number.
   - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
-  - `[DeviceSetupStatus <String>]`: windowsAutopilotDeploymentState
+  - `[DeviceSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
   - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
   - `[EnrollmentState <EnrollmentState?>]`: 
@@ -654,7 +654,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an A
   - `[Windows10EnrollmentCompletionPageConfigurationId <String>]`: Enrollment Status Page profile ID
   - `[WindowsAutopilotDeploymentProfileDisplayName <String>]`: Autopilot profile name.
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: key: id of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: key: id of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: key: id of appScope
@@ -691,7 +691,7 @@ INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: key: id of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: key: id of windowsFeatureUpdateProfile
 
-POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail\[]>: Policy and application status details for this device.
+POLICYSTATUSDETAILS <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>: Policy and application status details for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ComplianceStatus <String>]`: deviceManagementAutopilotPolicyComplianceStatus
   - `[DisplayName <String>]`: The friendly name of the policy.

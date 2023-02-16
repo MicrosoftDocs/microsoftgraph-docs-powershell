@@ -1,15 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Update the properties of **plannerBucketTaskBoardTaskFormat** object.
+Update the navigation property bucketTaskBoardFormat in planner
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of **plannerBucketTaskBoardTaskFormat** object.
+Update the navigation property bucketTaskBoardFormat in planner
 
 ## EXAMPLES
 
@@ -217,12 +216,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>`: plannerBucketTaskBoardTaskFormat
+BODYPARAMETER <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>: plannerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board. For details about the supported format, see Using order hints in Planner.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

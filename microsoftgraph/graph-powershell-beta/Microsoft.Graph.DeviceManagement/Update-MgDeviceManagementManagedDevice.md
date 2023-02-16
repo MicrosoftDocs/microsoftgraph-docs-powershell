@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice
@@ -835,11 +835,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails\[]>: Managed device mobile app configuration states for this device.
+ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>: Managed device mobile app configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[PayloadId <String>]`: PayloadId on which filter has been applied.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre-enrolled through Intune
+BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]`: Managed device mobile app configuration states for this device.
@@ -861,8 +861,8 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
     - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: Any additional information about the Cloud PC status.
-        - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-        - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+        - `[Name <String>]`: Name for this key-value pair
+        - `[Value <String>]`: Value for this key-value pair
       - `[Code <String>]`: The code associated with the Cloud PC status.
       - `[Message <String>]`: The status message.
   - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -986,6 +986,25 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
     - `[TpmVersion <String>]`: The security version number of the Boot Application
     - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
     - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
+  - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
+    - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
+    - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
+    - `[DeviceId <String>]`: The Intune device Id
+    - `[DeviceName <String>]`: Display name of the device
+    - `[ExpectedStateUpdateDateTime <DateTime?>]`: The next timestamp of when the device health script is expected to execute
+    - `[Id <String>]`: Key of the device health script policy state is a concatenation of the MT sideCar policy Id and Intune device Id
+    - `[LastStateUpdateDateTime <DateTime?>]`: The last timestamp of when the device health script executed
+    - `[LastSyncDateTime <DateTime?>]`: The last time that Intune Managment Extension synced with Intune
+    - `[OSVersion <String>]`: Value of the OS Version in string
+    - `[PolicyId <String>]`: The MT sideCar policy Id
+    - `[PolicyName <String>]`: Display name of the device health script
+    - `[PostRemediationDetectionScriptError <String>]`: Error from the detection script after remediation
+    - `[PostRemediationDetectionScriptOutput <String>]`: Detection script output after remediation
+    - `[PreRemediationDetectionScriptError <String>]`: Error from the detection script before remediation
+    - `[PreRemediationDetectionScriptOutput <String>]`: Output of the detection script before remediation
+    - `[RemediationScriptError <String>]`: Error output of the remediation script
+    - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
+    - `[UserName <String>]`: Name of the user whom ran the device health script
   - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
   - `[DeviceType <DeviceType?>]`: Device type.
   - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
@@ -1573,13 +1592,12 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
       - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]`: Represents the email addresses registered to a user for authentication.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[EmailAddress <String>]`: The email address registered to this user.
-      - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod1[]>]`: Represents the FIDO2 security keys registered to a user for authentication.
+      - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]`: Represents the FIDO2 security keys registered to a user for authentication.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.
         - `[AttestationCertificates <String[]>]`: The attestation certificate(s) attached to this security key.
         - `[AttestationLevel <String>]`: attestationLevel
         - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
-        - `[CreationDateTime <DateTime?>]`: 
         - `[DisplayName <String>]`: The display name of the key as given by the user.
         - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
       - `[Methods <IMicrosoftGraphAuthenticationMethod[]>]`: Represents all authentication methods registered to a user.
@@ -1700,13 +1718,11 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
       - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[SecretKey <String>]`: The secret key of the method. Always returns null.
-      - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+      - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod1[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
-        - `[IsUsable <Boolean?>]`: The state of the authentication method that indicates whether it's currently usable by the user.
         - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use. If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
         - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime. Must be between 10 and 43200 inclusive (equivalent to 30 days).
-        - `[MethodUsabilityReason <String>]`: Details about the usability state (isUsable). Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, OneTimeUsed.
         - `[StartDateTime <DateTime?>]`: The date and time when the Temporary Access Pass becomes available to use and when isUsable is true is enforced.
         - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate. Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
       - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
@@ -1954,7 +1970,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
           - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
           - `[Id <String>]`: Read-only. Unique id of the attachment.
           - `[Name <String>]`: Name of the attachment.
-          - `[TeamsAppId <String>]`: 
+          - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.
           - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
@@ -1976,7 +1992,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2248,9 +2264,9 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
       - `[Name <String>]`: The name of the item. Read-write.
       - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-        - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-        - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
+        - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+        - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+        - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
         - `[Name <String>]`: The name of the item being referenced. Read-only.
         - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
         - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
@@ -2263,7 +2279,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
           - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
           - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
           - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-        - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+        - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
       - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The list of recent activities that took place under this drive.
@@ -3594,7 +3610,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[CreationSourceKind <String>]`: plannerCreationSourceKind
             - `[Name <String>]`: Name of the bucket.
-            - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+            - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
             - `[PlanId <String>]`: Plan ID to which the bucket belongs.
             - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3654,6 +3670,18 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+              - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[NextInSeriesTaskId <String>]`: 
+                - `[OccurrenceId <Int32?>]`: 
+                - `[PreviousInSeriesTaskId <String>]`: 
+                - `[RecurrenceStartDateTime <DateTime?>]`: 
+                - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[NextOccurrenceDateTime <DateTime?>]`: 
+                  - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+                  - `[PatternStartDateTime <DateTime?>]`: 
+                - `[SeriesId <String>]`: 
               - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
               - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
               - `[Title <String>]`: Title of the task.
@@ -3704,6 +3732,11 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
             - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Owner <String>]`: 
+          - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+            - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+            - `[Type <String>]`: 
+            - `[Url <String>]`: The full canonical URL of the container. Optional.
+            - `[AccessLevel <String>]`: plannerPlanAccessLevel
           - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
           - `[Title <String>]`: Required. Title of the plan.
       - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see OneDrive Online Multi-Geo. Nullable. Returned by default.
@@ -4219,9 +4252,9 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]`: The collection property of AppLogUploadRequest.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
+        - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
         - `[CustomLogFolders <String[]>]`: List of log folders.
-        - `[ErrorMessage <String>]`: Error message if any during the upload process
+        - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
         - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
       - `[ApplicationId <String>]`: Intune application identifier.
       - `[History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>]`: Intune Mobile Application Troubleshooting History Item
@@ -4265,6 +4298,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
       - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+      - `[AllowParticipantsToChangeName <Boolean?>]`: 
       - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
       - `[AllowedPresenters <String>]`: onlineMeetingPresenters
       - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -4332,13 +4366,13 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
       - `[MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport1>]`: meetingAttendanceReport
       - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+        - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
           - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-          - `[Role <String>]`: 
+          - `[Role <String>]`: onlineMeetingRole
           - `[Upn <String>]`: User principal name of the participant.
-        - `[Contributors <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
-        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
-        - `[Producers <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
+        - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+        - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+        - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
       - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
       - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
       - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -4363,6 +4397,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
           - `[DisplayName <String>]`: Display name of the speaker.
         - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
         - `[Subject <String>]`: The subject of the meeting.
+      - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the online meeting.
       - `[Transcripts <IMicrosoftGraphCallTranscript[]>]`: The transcripts of an online meeting. Read-only.
@@ -5329,15 +5364,15 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-            - `[Content <Byte[]>]`: 
-            - `[ExpirationDateTime <DateTime?>]`: 
-            - `[NextExpectedRanges <String[]>]`: 
-          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
+            - `[Content <Byte[]>]`: The content streams that are uploaded.
+            - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+            - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+          - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-            - `[ContentType <String>]`: 
-            - `[LastModifiedDateTime <DateTime?>]`: 
-            - `[Name <String>]`: 
-            - `[Size <Int32?>]`: 
+            - `[ContentType <String>]`: The MIME type.
+            - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+            - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+            - `[Size <Int32?>]`: The length of the attachment in bytes.
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -5351,7 +5386,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
           - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
           - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
           - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-          - `[HasAttachments <Boolean?>]`: 
+          - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
           - `[Importance <String>]`: importance
           - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
           - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -5417,13 +5452,13 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
     - `[SignatureVersion <String>]`: Current malware definitions version
     - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
-CHROMEOSDEVICEINFO <IMicrosoftGraphChromeOSDeviceProperty\[]>: List of properties of the ChromeOS Device.
+CHROMEOSDEVICEINFO <IMicrosoftGraphChromeOSDeviceProperty[]>: List of properties of the ChromeOS Device.
   - `[Name <String>]`: Name of the property
   - `[Updatable <Boolean?>]`: Whether this property is updatable
   - `[Value <String>]`: Value of the property
   - `[ValueType <String>]`: Type of the value
 
-CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult\[]>: .
+CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult[]>: .
   - `[ActionName <String>]`: The specified action. Supported values in the Microsoft Endpoint Manager portal are: Reprovision, Resize, Restore. Supported values in enterprise Cloud PC devices are: Reboot, Rename, Reprovision, Troubleshoot.
   - `[ActionState <String>]`: actionState
   - `[CloudPcId <String>]`: The ID of the Cloud PC device on which the remote action is performed. Read-only.
@@ -5433,12 +5468,12 @@ CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult\[]>: .
   - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: Any additional information about the Cloud PC status.
-      - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-      - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[Code <String>]`: The code associated with the Cloud PC status.
     - `[Message <String>]`: The status message.
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>`: configuration Manager client enabled features
+CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>: configuration Manager client enabled features
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
   - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
@@ -5449,19 +5484,19 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
 
-CONFIGURATIONMANAGERCLIENTHEALTHSTATE `<IMicrosoftGraphConfigurationManagerClientHealthState>`: Configuration manager client health state
+CONFIGURATIONMANAGERCLIENTHEALTHSTATE <IMicrosoftGraphConfigurationManagerClientHealthState>: Configuration manager client health state
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ErrorCode <Int32?>]`: Error code for failed state.
   - `[LastSyncDateTime <DateTime?>]`: Datetime for last sync with configuration manager management point.
   - `[State <ConfigurationManagerClientState?>]`: Configuration manager client state
 
-CONFIGURATIONMANAGERCLIENTINFORMATION `<IMicrosoftGraphConfigurationManagerClientInformation>`: Configuration Manager client information synced from SCCM
+CONFIGURATIONMANAGERCLIENTINFORMATION <IMicrosoftGraphConfigurationManagerClientInformation>: Configuration Manager client information synced from SCCM
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
   - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
   - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently installed on the device
+DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: All applications currently installed on the device
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
   - `[DisplayName <String>]`: Name of the discovered application. Read-only
@@ -5486,8 +5521,8 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
       - `[StatusDetails <IMicrosoftGraphCloudPcStatusDetails>]`: cloudPcStatusDetails
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[AdditionalInformation <IMicrosoftGraphKeyValuePair[]>]`: Any additional information about the Cloud PC status.
-          - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-          - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+          - `[Name <String>]`: Name for this key-value pair
+          - `[Value <String>]`: Value for this key-value pair
         - `[Code <String>]`: The code associated with the Cloud PC status.
         - `[Message <String>]`: The status message.
     - `[ComplianceState <ComplianceState?>]`: Compliance state.
@@ -5603,6 +5638,25 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
       - `[TpmVersion <String>]`: The security version number of the Boot Application
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
+    - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
+      - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
+      - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
+      - `[DeviceId <String>]`: The Intune device Id
+      - `[DeviceName <String>]`: Display name of the device
+      - `[ExpectedStateUpdateDateTime <DateTime?>]`: The next timestamp of when the device health script is expected to execute
+      - `[Id <String>]`: Key of the device health script policy state is a concatenation of the MT sideCar policy Id and Intune device Id
+      - `[LastStateUpdateDateTime <DateTime?>]`: The last timestamp of when the device health script executed
+      - `[LastSyncDateTime <DateTime?>]`: The last time that Intune Managment Extension synced with Intune
+      - `[OSVersion <String>]`: Value of the OS Version in string
+      - `[PolicyId <String>]`: The MT sideCar policy Id
+      - `[PolicyName <String>]`: Display name of the device health script
+      - `[PostRemediationDetectionScriptError <String>]`: Error from the detection script after remediation
+      - `[PostRemediationDetectionScriptOutput <String>]`: Detection script output after remediation
+      - `[PreRemediationDetectionScriptError <String>]`: Error from the detection script before remediation
+      - `[PreRemediationDetectionScriptOutput <String>]`: Output of the detection script before remediation
+      - `[RemediationScriptError <String>]`: Error output of the remediation script
+      - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
+      - `[UserName <String>]`: Name of the user whom ran the device health script
     - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
     - `[DeviceType <DeviceType?>]`: Device type.
     - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
@@ -6190,13 +6244,12 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
         - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]`: Represents the email addresses registered to a user for authentication.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[EmailAddress <String>]`: The email address registered to this user.
-        - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod1[]>]`: Represents the FIDO2 security keys registered to a user for authentication.
+        - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]`: Represents the FIDO2 security keys registered to a user for authentication.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.
           - `[AttestationCertificates <String[]>]`: The attestation certificate(s) attached to this security key.
           - `[AttestationLevel <String>]`: attestationLevel
           - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
-          - `[CreationDateTime <DateTime?>]`: 
           - `[DisplayName <String>]`: The display name of the key as given by the user.
           - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
         - `[Methods <IMicrosoftGraphAuthenticationMethod[]>]`: Represents all authentication methods registered to a user.
@@ -6317,13 +6370,11 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
         - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[SecretKey <String>]`: The secret key of the method. Always returns null.
-        - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+        - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod1[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
-          - `[IsUsable <Boolean?>]`: The state of the authentication method that indicates whether it's currently usable by the user.
           - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use. If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
           - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime. Must be between 10 and 43200 inclusive (equivalent to 30 days).
-          - `[MethodUsabilityReason <String>]`: Details about the usability state (isUsable). Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, OneTimeUsed.
           - `[StartDateTime <DateTime?>]`: The date and time when the Temporary Access Pass becomes available to use and when isUsable is true is enforced.
           - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate. Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
         - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
@@ -6571,7 +6622,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
             - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
             - `[Id <String>]`: Read-only. Unique id of the attachment.
             - `[Name <String>]`: Name of the attachment.
-            - `[TeamsAppId <String>]`: 
+            - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.
             - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
           - `[Body <IMicrosoftGraphItemBody>]`: itemBody
           - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
@@ -6593,7 +6644,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6865,9 +6916,9 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
         - `[Name <String>]`: The name of the item. Read-write.
         - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-          - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-          - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
+          - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+          - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+          - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
           - `[Name <String>]`: The name of the item being referenced. Read-only.
           - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
           - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
@@ -6880,7 +6931,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
             - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
             - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
             - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-          - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+          - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
         - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The list of recent activities that took place under this drive.
@@ -8211,7 +8262,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[CreationSourceKind <String>]`: plannerCreationSourceKind
               - `[Name <String>]`: Name of the bucket.
-              - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+              - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
               - `[PlanId <String>]`: Plan ID to which the bucket belongs.
               - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -8271,6 +8322,18 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                   - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+                - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[NextInSeriesTaskId <String>]`: 
+                  - `[OccurrenceId <Int32?>]`: 
+                  - `[PreviousInSeriesTaskId <String>]`: 
+                  - `[RecurrenceStartDateTime <DateTime?>]`: 
+                  - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[NextOccurrenceDateTime <DateTime?>]`: 
+                    - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+                    - `[PatternStartDateTime <DateTime?>]`: 
+                  - `[SeriesId <String>]`: 
                 - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
                 - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
                 - `[Title <String>]`: Title of the task.
@@ -8321,6 +8384,11 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
               - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Owner <String>]`: 
+            - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+              - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+              - `[Type <String>]`: 
+              - `[Url <String>]`: The full canonical URL of the container. Optional.
+              - `[AccessLevel <String>]`: plannerPlanAccessLevel
             - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
             - `[Title <String>]`: Required. Title of the plan.
         - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see OneDrive Online Multi-Geo. Nullable. Returned by default.
@@ -8836,9 +8904,9 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]`: The collection property of AppLogUploadRequest.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
+          - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
           - `[CustomLogFolders <String[]>]`: List of log folders.
-          - `[ErrorMessage <String>]`: Error message if any during the upload process
+          - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
           - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
         - `[ApplicationId <String>]`: Intune application identifier.
         - `[History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>]`: Intune Mobile Application Troubleshooting History Item
@@ -8882,6 +8950,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
         - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+        - `[AllowParticipantsToChangeName <Boolean?>]`: 
         - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
         - `[AllowedPresenters <String>]`: onlineMeetingPresenters
         - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -8949,13 +9018,13 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
         - `[MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport1>]`: meetingAttendanceReport
         - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+          - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
             - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-            - `[Role <String>]`: 
+            - `[Role <String>]`: onlineMeetingRole
             - `[Upn <String>]`: User principal name of the participant.
-          - `[Contributors <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
-          - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
-          - `[Producers <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
+          - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+          - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+          - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
         - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
         - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
         - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -8980,6 +9049,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
             - `[DisplayName <String>]`: Display name of the speaker.
           - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
           - `[Subject <String>]`: The subject of the meeting.
+        - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
         - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
         - `[Subject <String>]`: The subject of the online meeting.
         - `[Transcripts <IMicrosoftGraphCallTranscript[]>]`: The transcripts of an online meeting. Read-only.
@@ -9946,15 +10016,15 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-              - `[Content <Byte[]>]`: 
-              - `[ExpirationDateTime <DateTime?>]`: 
-              - `[NextExpectedRanges <String[]>]`: 
-            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
+              - `[Content <Byte[]>]`: The content streams that are uploaded.
+              - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+              - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+            - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-              - `[ContentType <String>]`: 
-              - `[LastModifiedDateTime <DateTime?>]`: 
-              - `[Name <String>]`: 
-              - `[Size <Int32?>]`: 
+              - `[ContentType <String>]`: The MIME type.
+              - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+              - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+              - `[Size <Int32?>]`: The length of the attachment in bytes.
             - `[Body <IMicrosoftGraphItemBody>]`: itemBody
             - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -9968,7 +10038,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
             - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
             - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
             - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-            - `[HasAttachments <Boolean?>]`: 
+            - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
             - `[Importance <String>]`: importance
             - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
             - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -10038,14 +10108,14 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
-DEVICECATEGORY `<IMicrosoftGraphDeviceCategory1>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+DEVICECATEGORY <IMicrosoftGraphDeviceCategory1>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1\[]>: Device compliance policy states for this device.
+DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1[]>: Device compliance policy states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -10072,7 +10142,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1\[]>: D
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1\[]>: Device configuration states for this device.
+DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1[]>: Device configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -10099,7 +10169,7 @@ DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1\[]>: Device 
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
+DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: deviceHealthAttestationState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
   - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
@@ -10134,7 +10204,27 @@ DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: de
   - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
-HARDWAREINFORMATION `<IMicrosoftGraphHardwareInformation>`: Hardware information of a given device.
+DEVICEHEALTHSCRIPTSTATES <IMicrosoftGraphDeviceHealthScriptPolicyState[]>: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
+  - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
+  - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
+  - `[DeviceId <String>]`: The Intune device Id
+  - `[DeviceName <String>]`: Display name of the device
+  - `[ExpectedStateUpdateDateTime <DateTime?>]`: The next timestamp of when the device health script is expected to execute
+  - `[Id <String>]`: Key of the device health script policy state is a concatenation of the MT sideCar policy Id and Intune device Id
+  - `[LastStateUpdateDateTime <DateTime?>]`: The last timestamp of when the device health script executed
+  - `[LastSyncDateTime <DateTime?>]`: The last time that Intune Managment Extension synced with Intune
+  - `[OSVersion <String>]`: Value of the OS Version in string
+  - `[PolicyId <String>]`: The MT sideCar policy Id
+  - `[PolicyName <String>]`: Display name of the device health script
+  - `[PostRemediationDetectionScriptError <String>]`: Error from the detection script after remediation
+  - `[PostRemediationDetectionScriptOutput <String>]`: Detection script output after remediation
+  - `[PreRemediationDetectionScriptError <String>]`: Error from the detection script before remediation
+  - `[PreRemediationDetectionScriptOutput <String>]`: Output of the detection script before remediation
+  - `[RemediationScriptError <String>]`: Error output of the remediation script
+  - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
+  - `[UserName <String>]`: Name of the user whom ran the device health script
+
+HARDWAREINFORMATION <IMicrosoftGraphHardwareInformation>: Hardware information of a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
   - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
@@ -10181,7 +10271,7 @@ HARDWAREINFORMATION `<IMicrosoftGraphHardwareInformation>`: Hardware information
   - `[WifiMac <String>]`: WiFi MAC address of the device
   - `[WiredIPv4Addresses <String[]>]`: A list of wired IPv4 addresses. The update frequency (the maximum delay for the change of property value to be synchronized from the device to the cloud storage) of this property is daily. Note this property is currently supported only on devices running on Windows.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -10210,6 +10300,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceHealthScriptAssignmentId <String>]`: key: id of deviceHealthScriptAssignment
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
+  - `[DeviceId <String>]`: key: deviceId of deviceHealthScriptPolicyState
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementComplianceActionItemId <String>]`: key: id of deviceManagementComplianceActionItem
   - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
@@ -10249,6 +10340,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
   - `[GroupPolicyDefinitionValueId <String>]`: key: id of groupPolicyDefinitionValue
   - `[GroupPolicyPresentationValueId <String>]`: key: id of groupPolicyPresentationValue
+  - `[Id <String>]`: key: id of deviceHealthScriptPolicyState
   - `[LocalizedNotificationMessageId <String>]`: key: id of localizedNotificationMessage
   - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: key: id of macOSSoftwareUpdateAccountSummary
   - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: key: id of macOSSoftwareUpdateCategorySummary
@@ -10264,6 +10356,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
+  - `[PolicyId <String>]`: key: policyId of deviceHealthScriptPolicyState
   - `[RemoteActionAuditId <String>]`: key: id of remoteActionAudit
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
@@ -10293,7 +10386,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
+  - `[UserExperienceAnalyticsDeviceTimelineEventId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvent
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -10311,7 +10404,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse\[]>: List of log collection requests
+LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse[]>: List of log collection requests
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EnrolledByUser <String>]`: The User Principal Name (UPN) of the user that enrolled the device
   - `[ErrorCode <Int64?>]`: The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18
@@ -10323,7 +10416,7 @@ LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse\[]>: List of l
   - `[Size <Double?>]`: The size of the logs. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[Status <String>]`: The status of the log collection request
 
-MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationState\[]>: Managed device mobile app configuration states for this device.
+MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationState[]>: Managed device mobile app configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -10350,7 +10443,7 @@ MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileApp
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState\[]>: Security baseline states for this device.
+SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState[]>: Security baseline states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the security baseline
   - `[SecurityBaselineTemplateId <String>]`: The security baseline template id
@@ -10373,7 +10466,7 @@ SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState\[]>: Security basel
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
   - `[UserPrincipalName <String>]`: User Principal Name
 
-USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed device.
+USERS <IMicrosoftGraphUser1[]>: The primary users associated with the managed device.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
@@ -10791,8 +10884,8 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
             - `[Value <Int64?>]`: Value.
           - `[TroubleshootingUrl <String>]`: In the event of an error, the URL with the troubleshooting steps for the issue.
         - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: Settings associated with the job. Some settings are inherited from the template.
-          - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-          - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+          - `[Name <String>]`: Name for this key-value pair
+          - `[Value <String>]`: Value for this key-value pair
         - `[TemplateId <String>]`: Identifier of the synchronization template this job is based on.
       - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: Represents a collection of credentials to access provisioned cloud applications.
         - `[Key <String>]`: synchronizationSecret
@@ -10846,13 +10939,12 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[EmailMethods <IMicrosoftGraphEmailAuthenticationMethod[]>]`: Represents the email addresses registered to a user for authentication.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[EmailAddress <String>]`: The email address registered to this user.
-    - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod1[]>]`: Represents the FIDO2 security keys registered to a user for authentication.
+    - `[Fido2Methods <IMicrosoftGraphFido2AuthenticationMethod[]>]`: Represents the FIDO2 security keys registered to a user for authentication.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AaGuid <String>]`: Authenticator Attestation GUID, an identifier that indicates the type (e.g. make and model) of the authenticator.
       - `[AttestationCertificates <String[]>]`: The attestation certificate(s) attached to this security key.
       - `[AttestationLevel <String>]`: attestationLevel
       - `[CreatedDateTime <DateTime?>]`: The timestamp when this key was registered to the user.
-      - `[CreationDateTime <DateTime?>]`: 
       - `[DisplayName <String>]`: The display name of the key as given by the user.
       - `[Model <String>]`: The manufacturer-assigned model of the FIDO2 security key.
     - `[Methods <IMicrosoftGraphAuthenticationMethod[]>]`: Represents all authentication methods registered to a user.
@@ -10973,13 +11065,11 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[SoftwareOathMethods <IMicrosoftGraphSoftwareOathAuthenticationMethod[]>]`: The software OATH TOTP applications registered to a user for authentication.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[SecretKey <String>]`: The secret key of the method. Always returns null.
-    - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
+    - `[TemporaryAccessPassMethods <IMicrosoftGraphTemporaryAccessPassAuthenticationMethod1[]>]`: Represents a Temporary Access Pass registered to a user for authentication through time-limited passcodes.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[CreatedDateTime <DateTime?>]`: The date and time when the Temporary Access Pass was created.
-      - `[IsUsable <Boolean?>]`: The state of the authentication method that indicates whether it's currently usable by the user.
       - `[IsUsableOnce <Boolean?>]`: Determines whether the pass is limited to a one-time use. If true, the pass can be used once; if false, the pass can be used multiple times within the Temporary Access Pass lifetime.
       - `[LifetimeInMinutes <Int32?>]`: The lifetime of the Temporary Access Pass in minutes starting at startDateTime. Must be between 10 and 43200 inclusive (equivalent to 30 days).
-      - `[MethodUsabilityReason <String>]`: Details about the usability state (isUsable). Reasons can include: EnabledByPolicy, DisabledByPolicy, Expired, NotYetValid, OneTimeUsed.
       - `[StartDateTime <DateTime?>]`: The date and time when the Temporary Access Pass becomes available to use and when isUsable is true is enforced.
       - `[TemporaryAccessPass <String>]`: The Temporary Access Pass used to authenticate. Returned only on creation of a new temporaryAccessPassAuthenticationMethod object; Hidden in subsequent read operations and returned as null with GET.
     - `[WindowsHelloForBusinessMethods <IMicrosoftGraphWindowsHelloForBusinessAuthenticationMethod1[]>]`: Represents the Windows Hello for Business authentication method registered to a user for authentication.
@@ -11227,7 +11317,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
         - `[ContentUrl <String>]`: URL for the content of the attachment. Supported protocols: http, https, file and data.
         - `[Id <String>]`: Read-only. Unique id of the attachment.
         - `[Name <String>]`: Name of the attachment.
-        - `[TeamsAppId <String>]`: 
+        - `[TeamsAppId <String>]`: The ID of the Teams app that is associated with the attachment. The property is specifically used to attribute a Teams message card to the specified app.
         - `[ThumbnailUrl <String>]`: URL to a thumbnail image that the channel can use if it supports using an alternative, smaller form of content or contentUrl. For example, if you set contentType to application/word and set contentUrl to the location of the Word document, you might include a thumbnail image that represents the document. The channel could display the thumbnail image instead of the document. When the user clicks the image, the channel would open the document.
       - `[Body <IMicrosoftGraphItemBody>]`: itemBody
       - `[ChannelIdentity <IMicrosoftGraphChannelIdentity>]`: channelIdentity
@@ -11249,7 +11339,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11533,9 +11623,9 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[Name <String>]`: The name of the item. Read-write.
     - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DriveId <String>]`: Unique identifier of the drive instance that contains the item. Read-only.
-      - `[DriveType <String>]`: Identifies the type of drive. See [drive][] resource for values.
-      - `[Id <String>]`: Unique identifier of the item in the drive. Read-only.
+      - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+      - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+      - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
       - `[Name <String>]`: The name of the item being referenced. Read-only.
       - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
       - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
@@ -11548,7 +11638,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
         - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
         - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
         - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
-      - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
+      - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
     - `[WebUrl <String>]`: URL that displays the resource in the browser. Read-only.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Activities <IMicrosoftGraphItemActivityOld[]>]`: The list of recent activities that took place under this drive.
@@ -12879,7 +12969,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[CreationSourceKind <String>]`: plannerCreationSourceKind
           - `[Name <String>]`: Name of the bucket.
-          - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+          - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
           - `[PlanId <String>]`: Plan ID to which the bucket belongs.
           - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -12939,6 +13029,18 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+            - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[NextInSeriesTaskId <String>]`: 
+              - `[OccurrenceId <Int32?>]`: 
+              - `[PreviousInSeriesTaskId <String>]`: 
+              - `[RecurrenceStartDateTime <DateTime?>]`: 
+              - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[NextOccurrenceDateTime <DateTime?>]`: 
+                - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+                - `[PatternStartDateTime <DateTime?>]`: 
+              - `[SeriesId <String>]`: 
             - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
             - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
             - `[Title <String>]`: Title of the task.
@@ -12989,6 +13091,11 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
           - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Owner <String>]`: 
+        - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+          - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+          - `[Type <String>]`: 
+          - `[Url <String>]`: The full canonical URL of the container. Optional.
+          - `[AccessLevel <String>]`: plannerPlanAccessLevel
         - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
         - `[Title <String>]`: Required. Title of the plan.
     - `[PreferredDataLocation <String>]`: The preferred data location for the Microsoft 365 group. By default, the group inherits the group creator's preferred data location. To set this property, the calling user must be assigned one of the following Azure AD roles:  Global Administrator  User Account Administrator Directory Writer  Exchange Administrator  SharePoint Administrator  For more information about this property, see OneDrive Online Multi-Geo. Nullable. Returned by default.
@@ -13610,6 +13717,25 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
       - `[TpmVersion <String>]`: The security version number of the Boot Application
       - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
       - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
+    - `[DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]`: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
+      - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
+      - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
+      - `[DeviceId <String>]`: The Intune device Id
+      - `[DeviceName <String>]`: Display name of the device
+      - `[ExpectedStateUpdateDateTime <DateTime?>]`: The next timestamp of when the device health script is expected to execute
+      - `[Id <String>]`: Key of the device health script policy state is a concatenation of the MT sideCar policy Id and Intune device Id
+      - `[LastStateUpdateDateTime <DateTime?>]`: The last timestamp of when the device health script executed
+      - `[LastSyncDateTime <DateTime?>]`: The last time that Intune Managment Extension synced with Intune
+      - `[OSVersion <String>]`: Value of the OS Version in string
+      - `[PolicyId <String>]`: The MT sideCar policy Id
+      - `[PolicyName <String>]`: Display name of the device health script
+      - `[PostRemediationDetectionScriptError <String>]`: Error from the detection script after remediation
+      - `[PostRemediationDetectionScriptOutput <String>]`: Detection script output after remediation
+      - `[PreRemediationDetectionScriptError <String>]`: Error from the detection script before remediation
+      - `[PreRemediationDetectionScriptOutput <String>]`: Output of the detection script before remediation
+      - `[RemediationScriptError <String>]`: Error output of the remediation script
+      - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
+      - `[UserName <String>]`: Name of the user whom ran the device health script
     - `[DeviceRegistrationState <DeviceRegistrationState?>]`: Device registration status.
     - `[DeviceType <DeviceType?>]`: Device type.
     - `[ExchangeAccessState <DeviceManagementExchangeAccessState?>]`: Device Exchange Access State.
@@ -13788,9 +13914,9 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]`: The collection property of AppLogUploadRequest.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a terminal state
+      - `[CompletedDateTime <DateTime?>]`: Time at which the upload log request reached a completed state if not completed yet NULL will be returned.
       - `[CustomLogFolders <String[]>]`: List of log folders.
-      - `[ErrorMessage <String>]`: Error message if any during the upload process
+      - `[ErrorMessage <String>]`: Indicates error message if any during the upload process.
       - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
     - `[ApplicationId <String>]`: Intune application identifier.
     - `[History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>]`: Intune Mobile Application Troubleshooting History Item
@@ -13834,6 +13960,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
     - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
+    - `[AllowParticipantsToChangeName <Boolean?>]`: 
     - `[AllowTeamworkReactions <Boolean?>]`: Indicates if Teams reactions are enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
@@ -13901,13 +14028,13 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport1>]`: meetingAttendanceReport
     - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+      - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
         - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[Role <String>]`: 
+        - `[Role <String>]`: onlineMeetingRole
         - `[Upn <String>]`: User principal name of the participant.
-      - `[Contributors <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
-      - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
-      - `[Producers <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
+      - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+      - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+      - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
     - `[RecordAutomatically <Boolean?>]`: Indicates whether to record the meeting automatically.
     - `[Recording <Byte[]>]`: The content stream of the recording of a Teams live event. Read-only.
     - `[Registration <IMicrosoftGraphMeetingRegistration>]`: meetingRegistration
@@ -13932,6 +14059,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
         - `[DisplayName <String>]`: Display name of the speaker.
       - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
       - `[Subject <String>]`: The subject of the meeting.
+    - `[ShareMeetingChatHistoryDefault <String>]`: meetingChatHistoryDefaultMode
     - `[StartDateTime <DateTime?>]`: The meeting start time in UTC.
     - `[Subject <String>]`: The subject of the online meeting.
     - `[Transcripts <IMicrosoftGraphCallTranscript[]>]`: The transcripts of an online meeting. Read-only.
@@ -14898,15 +15026,15 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[AttachmentSessions <IMicrosoftGraphAttachmentSession[]>]`: 
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[Content <Byte[]>]`: 
-          - `[ExpirationDateTime <DateTime?>]`: 
-          - `[NextExpectedRanges <String[]>]`: 
-        - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: 
+          - `[Content <Byte[]>]`: The content streams that are uploaded.
+          - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
+          - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
+        - `[Attachments <IMicrosoftGraphAttachmentBase[]>]`: A collection of file attachments for the task.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[ContentType <String>]`: 
-          - `[LastModifiedDateTime <DateTime?>]`: 
-          - `[Name <String>]`: 
-          - `[Size <Int32?>]`: 
+          - `[ContentType <String>]`: The MIME type.
+          - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+          - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
+          - `[Size <Int32?>]`: The length of the attachment in bytes.
         - `[Body <IMicrosoftGraphItemBody>]`: itemBody
         - `[BodyLastModifiedDateTime <DateTime?>]`: The date and time when the task body was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
         - `[Categories <String[]>]`: The categories associated with the task. Each category corresponds to the displayName property of an outlookCategory that the user has defined.
@@ -14920,7 +15048,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
         - `[CreatedDateTime <DateTime?>]`: The date and time when the task was created. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
         - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
         - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the task. Nullable.
-        - `[HasAttachments <Boolean?>]`: 
+        - `[HasAttachments <Boolean?>]`: Indicates whether the task has attachments.
         - `[Importance <String>]`: importance
         - `[IsReminderOn <Boolean?>]`: Set to true if an alert is set to remind the user of the task.
         - `[LastModifiedDateTime <DateTime?>]`: The date and time when the task was last modified. By default, it is in UTC. You can provide a custom time zone in the request header. The property value uses ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2020 would look like this: '2020-01-01T00:00:00Z'.
@@ -14951,7 +15079,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
-WINDOWSPROTECTIONSTATE `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+WINDOWSPROTECTIONSTATE <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AntiMalwareVersion <String>]`: Current anti malware version

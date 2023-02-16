@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointreportexportjob
@@ -8,7 +8,9 @@ schema: 2.0.0
 # New-MgDeviceManagementVirtualEndpointReportExportJob
 
 ## SYNOPSIS
-Create a new cloudPcExportJob object.
+Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
+Use the GET cloudPcExportJob operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
+When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
 
 ## SYNTAX
 
@@ -27,7 +29,9 @@ New-MgDeviceManagementVirtualEndpointReportExportJob -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Create a new cloudPcExportJob object.
+Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
+Use the GET cloudPcExportJob operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
+When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
 
 ## EXAMPLES
 
@@ -250,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
+BODYPARAMETER <IMicrosoftGraphCloudPcExportJob>: cloudPcExportJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.

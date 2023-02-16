@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworkappconfigurationschema
@@ -223,7 +223,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema describing an Android for Work application's custom configurations.
+BODYPARAMETER <IMicrosoftGraphAndroidForWorkAppConfigurationSchema>: Schema describing an Android for Work application's custom configurations.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ExampleJson <Byte[]>]`: UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app
@@ -237,10 +237,10 @@ BODYPARAMETER `<IMicrosoftGraphAndroidForWorkAppConfigurationSchema>`: Schema de
     - `[DisplayName <String>]`: Human readable name
     - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
     - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-      - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-      - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -269,6 +269,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceHealthScriptAssignmentId <String>]`: key: id of deviceHealthScriptAssignment
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
+  - `[DeviceId <String>]`: key: deviceId of deviceHealthScriptPolicyState
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementComplianceActionItemId <String>]`: key: id of deviceManagementComplianceActionItem
   - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
@@ -308,6 +309,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
   - `[GroupPolicyDefinitionValueId <String>]`: key: id of groupPolicyDefinitionValue
   - `[GroupPolicyPresentationValueId <String>]`: key: id of groupPolicyPresentationValue
+  - `[Id <String>]`: key: id of deviceHealthScriptPolicyState
   - `[LocalizedNotificationMessageId <String>]`: key: id of localizedNotificationMessage
   - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: key: id of macOSSoftwareUpdateAccountSummary
   - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: key: id of macOSSoftwareUpdateCategorySummary
@@ -323,6 +325,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
+  - `[PolicyId <String>]`: key: policyId of deviceHealthScriptPolicyState
   - `[RemoteActionAuditId <String>]`: key: id of remoteActionAudit
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
@@ -352,7 +355,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
+  - `[UserExperienceAnalyticsDeviceTimelineEventId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvent
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -370,7 +373,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[]>: Collection of items each representing a named configuration option in the schema
+SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>: Collection of items each representing a named configuration option in the schema
   - `[DataType <String>]`: Data type for a configuration item inside an Android for Work application's custom configuration schema
   - `[DefaultBoolValue <Boolean?>]`: Default value for boolean type items, if specified by the app developer
   - `[DefaultIntValue <Int32?>]`: Default value for integer type items, if specified by the app developer
@@ -380,8 +383,8 @@ SCHEMAITEMS <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem\[]>: Collec
   - `[DisplayName <String>]`: Human readable name
   - `[SchemaItemKey <String>]`: Unique key the application uses to identify the item
   - `[Selections <IMicrosoftGraphKeyValuePair[]>]`: List of human readable name/value pairs for the valid values that can be set for this item (Choice and Multiselect items only)
-    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
 

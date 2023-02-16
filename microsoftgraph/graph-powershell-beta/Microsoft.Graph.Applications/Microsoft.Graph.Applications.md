@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
-Module Guid: a0f99702-3a44-43c4-acc7-5f4b59a0e106
+Module Guid: d9036b88-60a8-4fcd-9635-0b024f35b22f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -521,7 +521,7 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
 ### [New-MgOnPremisePublishingProfileConnectorGroup](New-MgOnPremisePublishingProfileConnectorGroup.md)
-Create a connectorGroup object.
+Create a new connectorGroup.
 
 ### [New-MgOnPremisePublishingProfileConnectorMemberOfByRef](New-MgOnPremisePublishingProfileConnectorMemberOfByRef.md)
 Create new navigation property ref to memberOf for onPremisesPublishingProfiles

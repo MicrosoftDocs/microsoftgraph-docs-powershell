@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementgrouppolicyconfigurationdefinitionvaluepresentationvalue
@@ -257,7 +257,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyPresentationValue>`: The base presentation value entity that stores the value for a single group policy presentation.
+BODYPARAMETER <IMicrosoftGraphGroupPolicyPresentationValue>: The base presentation value entity that stores the value for a single group policy presentation.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date and time the object was created.
@@ -318,7 +318,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyPresentationValue>`: The base presenta
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
   - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-DEFINITIONVALUE `<IMicrosoftGraphGroupPolicyDefinitionValue>`: The definition value entity stores the value for a single group policy definition.
+DEFINITIONVALUE <IMicrosoftGraphGroupPolicyDefinitionValue>: The definition value entity stores the value for a single group policy definition.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConfigurationType <GroupPolicyConfigurationType?>]`: Group Policy Configuration Type
@@ -378,7 +378,7 @@ DEFINITIONVALUE `<IMicrosoftGraphGroupPolicyDefinitionValue>`: The definition va
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the object was last modified.
     - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -407,6 +407,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[DeviceHealthScriptAssignmentId <String>]`: key: id of deviceHealthScriptAssignment
   - `[DeviceHealthScriptDeviceStateId <String>]`: key: id of deviceHealthScriptDeviceState
   - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
+  - `[DeviceId <String>]`: key: deviceId of deviceHealthScriptPolicyState
   - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
   - `[DeviceManagementComplianceActionItemId <String>]`: key: id of deviceManagementComplianceActionItem
   - `[DeviceManagementCompliancePolicyId <String>]`: key: id of deviceManagementCompliancePolicy
@@ -446,6 +447,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[GroupPolicyConfigurationId <String>]`: key: id of groupPolicyConfiguration
   - `[GroupPolicyDefinitionValueId <String>]`: key: id of groupPolicyDefinitionValue
   - `[GroupPolicyPresentationValueId <String>]`: key: id of groupPolicyPresentationValue
+  - `[Id <String>]`: key: id of deviceHealthScriptPolicyState
   - `[LocalizedNotificationMessageId <String>]`: key: id of localizedNotificationMessage
   - `[MacOSSoftwareUpdateAccountSummaryId <String>]`: key: id of macOSSoftwareUpdateAccountSummary
   - `[MacOSSoftwareUpdateCategorySummaryId <String>]`: key: id of macOSSoftwareUpdateCategorySummary
@@ -461,6 +463,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: key: id of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: key: id of notificationMessageTemplate
+  - `[PolicyId <String>]`: key: policyId of deviceHealthScriptPolicyState
   - `[RemoteActionAuditId <String>]`: key: id of remoteActionAudit
   - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
@@ -490,7 +493,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[UserExperienceAnalyticsDeviceStartupHistoryId <String>]`: key: id of userExperienceAnalyticsDeviceStartupHistory
   - `[UserExperienceAnalyticsDeviceStartupProcessId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcess
   - `[UserExperienceAnalyticsDeviceStartupProcessPerformanceId <String>]`: key: id of userExperienceAnalyticsDeviceStartupProcessPerformance
-  - `[UserExperienceAnalyticsDeviceTimelineEventsId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvents
+  - `[UserExperienceAnalyticsDeviceTimelineEventId <String>]`: key: id of userExperienceAnalyticsDeviceTimelineEvent
   - `[UserExperienceAnalyticsDeviceWithoutCloudIdentityId <String>]`: key: id of userExperienceAnalyticsDeviceWithoutCloudIdentity
   - `[UserExperienceAnalyticsImpactingProcessId <String>]`: key: id of userExperienceAnalyticsImpactingProcess
   - `[UserExperienceAnalyticsMetricHistoryId <String>]`: key: id of userExperienceAnalyticsMetricHistory
@@ -508,7 +511,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-PRESENTATION `<IMicrosoftGraphGroupPolicyPresentation>`: The base entity for the display presentation of any of the additional options in a group policy definition.
+PRESENTATION <IMicrosoftGraphGroupPolicyPresentation>: The base entity for the display presentation of any of the additional options in a group policy definition.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.

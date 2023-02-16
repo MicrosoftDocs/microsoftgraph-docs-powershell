@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreportshareduselicenseusagereport
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport
 
 ## SYNOPSIS
-Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
+Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -OutFile 
 ```
 
 ## DESCRIPTION
-Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
+Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 ## EXAMPLES
 
@@ -264,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsWyfb0MDevicemanagementVirtualendpointReportsMicrosoftGraphGetshareduselicenseusagereportPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

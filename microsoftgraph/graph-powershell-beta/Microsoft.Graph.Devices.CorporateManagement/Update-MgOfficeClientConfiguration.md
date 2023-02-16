@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgofficeclientconfiguration
@@ -319,12 +319,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment\[]>: The list of group assignments for the policy.
+ASSIGNMENTS <IMicrosoftGraphOfficeClientConfigurationAssignment[]>: The list of group assignments for the policy.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphOfficeConfigurationAssignmentTarget>]`: officeConfigurationAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphOfficeClientConfiguration>`: officeClientConfiguration
+BODYPARAMETER <IMicrosoftGraphOfficeClientConfiguration>: officeClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphOfficeClientConfigurationAssignment[]>]`: The list of group assignments for the policy.
@@ -351,7 +351,7 @@ BODYPARAMETER `<IMicrosoftGraphOfficeClientConfiguration>`: officeClientConfigur
     - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.
   - `[UserPreferencePayload <Byte[]>]`: Preference settings JSON string in binary format, these values can be overridden by the user.
 
-CHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus\[]>: List of office Client check-in status.
+CHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus[]>: List of office Client check-in status.
   - `[AppliedPolicies <String[]>]`: List of policies delivered to the device as last checkin.
   - `[CheckinDateTime <DateTime?>]`: Last device check-in time in UTC.
   - `[DeviceName <String>]`: Device name trying to check-in.
@@ -362,7 +362,7 @@ CHECKINSTATUSES <IMicrosoftGraphOfficeClientCheckinStatus\[]>: List of office Cl
   - `[UserPrincipalName <String>]`: User principal name using the device.
   - `[WasSuccessful <Boolean?>]`: If the last checkin was successful.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDevicesCorporateManagementIdentity>: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
@@ -380,6 +380,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
   - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
   - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
+  - `[Id <String>]`: key: id of deviceHealthScriptPolicyState
   - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
   - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
   - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
@@ -408,6 +409,7 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
   - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
   - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
+  - `[PolicyId <String>]`: key: policyId of deviceHealthScriptPolicyState
   - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
   - `[PolicySetId <String>]`: key: id of policySet
   - `[PolicySetItemId <String>]`: key: id of policySetItem
@@ -430,9 +432,11 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: key: id of windowsManagedAppProtection
 
-USERCHECKINSUMMARY `<IMicrosoftGraphOfficeUserCheckinSummary>`: officeUserCheckinSummary
+USERCHECKINSUMMARY <IMicrosoftGraphOfficeUserCheckinSummary>: officeUserCheckinSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[FailedUserCount <Int32?>]`: Total failed user check ins for the last 3 months.
   - `[SucceededUserCount <Int32?>]`: Total successful user check ins for the last 3 months.
+
+## RELATED LINKS
 
 ## RELATED LINKS
