@@ -34,7 +34,7 @@ Create new navigation property to impactedResources for directory
 ## PARAMETERS
 
 ### -AddedDateTime
-.
+The date and time when the impactedResource object was initially associated with the recommendation.
 
 ```yaml
 Type: DateTime
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -AdditionalDetails
-.
+Additional information unique to the impactedResource to help contextualize the recommendation.
 To construct, please use Get-Help -Online and see NOTES section for ADDITIONALDETAILS properties and create a hash table.
 
 ```yaml
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApiUrl
-.
+The URL link to the corresponding Azure AD resource.
 
 ```yaml
 Type: String
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+Friendly name of the Azure AD resource.
 
 ```yaml
 Type: String
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -Owner
-.
+The user responsible for maintaining the resource.
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -PortalUrl
-.
+The URL link to the corresponding Azure AD portal page of the resource.
 
 ```yaml
 Type: String
@@ -172,7 +172,8 @@ Accept wildcard characters: False
 ```
 
 ### -Rank
-.
+Indicates the importance of the resource.
+A resource with a rank equal to 1 is of the highest importance.
 
 ```yaml
 Type: Int32
@@ -187,7 +188,7 @@ Accept wildcard characters: False
 ```
 
 ### -RecommendationId
-.
+The unique identifier of the recommendation that the resource is associated with.
 
 ```yaml
 Type: String
@@ -202,7 +203,8 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceType
-.
+Indicates the type of Azure AD resource.
+Examples include user, application.
 
 ```yaml
 Type: String
@@ -280,28 +282,28 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALDETAILS <IMicrosoftGraphKeyValue\[]>: .
-  - `[Key <String>]`: Key.
-  - `[Value <String>]`: Value.
+ADDITIONALDETAILS <IMicrosoftGraphKeyValue\[]>: Additional information unique to the impactedResource to help contextualize the recommendation.
+  - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+  - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
 
 BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AddedDateTime <DateTime?>]`: 
-  - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: 
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
-  - `[ApiUrl <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[LastModifiedBy <String>]`: 
-  - `[LastModifiedDateTime <String>]`: 
-  - `[Owner <String>]`: 
-  - `[PortalUrl <String>]`: 
-  - `[PostponeUntilDateTime <DateTime?>]`: 
-  - `[Rank <Int32?>]`: 
-  - `[RecommendationId <String>]`: 
-  - `[ResourceType <String>]`: 
+  - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
+  - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+    - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+  - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
+  - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
+  - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
+  - `[LastModifiedDateTime <String>]`: The date and time when the status was last updated.
+  - `[Owner <String>]`: The user responsible for maintaining the resource.
+  - `[PortalUrl <String>]`: The URL link to the corresponding Azure AD portal page of the resource.
+  - `[PostponeUntilDateTime <DateTime?>]`: The future date and time when the status of a postponed impactedResource will be active again.
+  - `[Rank <Int32?>]`: Indicates the importance of the resource. A resource with a rank equal to 1 is of the highest importance.
+  - `[RecommendationId <String>]`: The unique identifier of the recommendation that the resource is associated with.
+  - `[ResourceType <String>]`: Indicates the type of Azure AD resource. Examples include user, application.
   - `[Status <String>]`: recommendationStatus
-  - `[SubjectId <String>]`: 
+  - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
 ## RELATED LINKS

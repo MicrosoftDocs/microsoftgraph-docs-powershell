@@ -9,7 +9,7 @@ ms.prod: planner
 # Update-MgPlannerTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
-Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.
+Update the navigation property assignedToTaskBoardFormat in planner
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of **plannerAssignedToTaskBoardTaskFormat** object.
+Update the navigation property assignedToTaskBoardFormat in planner
 
 ## EXAMPLES
 

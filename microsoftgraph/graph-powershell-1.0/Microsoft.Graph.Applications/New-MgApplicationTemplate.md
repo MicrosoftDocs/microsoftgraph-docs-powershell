@@ -1,6 +1,7 @@
 ---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
+ms.prod: applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationtemplate
 schema: 2.0.0
 ms.prod: applications

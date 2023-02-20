@@ -58,7 +58,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccountSetupStatus
-windowsAutopilotDeploymentState
+Deployment states for Autopilot devices
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentState
-windowsAutopilotDeploymentState
+Deployment states for Autopilot devices
 
 ```yaml
 Type: String
@@ -254,7 +254,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceSetupStatus
-windowsAutopilotDeploymentState
+Deployment states for Autopilot devices
 
 ```yaml
 Type: String
@@ -548,18 +548,18 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementAutopilotEvent>`: Represents an A
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccountSetupDuration <TimeSpan?>]`: Time spent in user ESP.
-  - `[AccountSetupStatus <String>]`: windowsAutopilotDeploymentState
+  - `[AccountSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[DeploymentDuration <TimeSpan?>]`: Autopilot deployment duration including enrollment.
   - `[DeploymentEndDateTime <DateTime?>]`: Deployment end time.
   - `[DeploymentStartDateTime <DateTime?>]`: Deployment start time.
-  - `[DeploymentState <String>]`: windowsAutopilotDeploymentState
+  - `[DeploymentState <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[DeploymentTotalDuration <TimeSpan?>]`: Total deployment duration from enrollment to Desktop screen.
   - `[DeviceId <String>]`: Device id associated with the object
   - `[DevicePreparationDuration <TimeSpan?>]`: Time spent in device enrollment.
   - `[DeviceRegisteredDateTime <DateTime?>]`: Device registration date.
   - `[DeviceSerialNumber <String>]`: Device serial number.
   - `[DeviceSetupDuration <TimeSpan?>]`: Time spent in device ESP.
-  - `[DeviceSetupStatus <String>]`: windowsAutopilotDeploymentState
+  - `[DeviceSetupStatus <WindowsAutopilotDeploymentState?>]`: Deployment states for Autopilot devices
   - `[EnrollmentFailureDetails <String>]`: Enrollment failure details.
   - `[EnrollmentStartDateTime <DateTime?>]`: Device enrollment start date.
   - `[EnrollmentState <EnrollmentState?>]`: 

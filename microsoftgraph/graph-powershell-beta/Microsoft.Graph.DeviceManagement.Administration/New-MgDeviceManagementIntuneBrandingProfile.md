@@ -670,6 +670,7 @@ BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains dat
   - `[CustomCantSeePrivacyMessage <String>]`: Text comments regarding what the admin doesn't have access to on the device
   - `[CustomPrivacyMessage <String>]`: Text comments regarding what the admin doesn't have access to on the device
   - `[DisableClientTelemetry <Boolean?>]`: Applies to telemetry sent from all clients to the Intune service. When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.
+  - `[DisableDeviceCategorySelection <Boolean?>]`: Boolean that indicates if Device Category Selection will be shown in Company Portal
   - `[DisplayName <String>]`: Company/organization name that is displayed to end users
   - `[EnrollmentAvailability <EnrollmentAvailabilityOptions?>]`: Options available for enrollment flow customization
   - `[IsDefaultProfile <Boolean?>]`: Boolean that represents whether the profile is used as default or not

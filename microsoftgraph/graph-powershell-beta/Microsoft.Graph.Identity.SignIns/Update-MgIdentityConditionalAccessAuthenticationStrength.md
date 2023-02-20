@@ -206,6 +206,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStren
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
     - `[DisplayName <String>]`: The display name of this mode
+  - `[Combinations <String[]>]`: 
   - `[Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>]`: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.

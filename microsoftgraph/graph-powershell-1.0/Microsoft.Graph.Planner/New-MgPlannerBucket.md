@@ -109,7 +109,7 @@ Accept wildcard characters: False
 
 ### -OrderHint
 Hint used to order items of this type in a list view.
-The format is defined as outlined here.
+For details about the supported format, see Using order hints in Planner.
 
 ```yaml
 Type: String
@@ -209,7 +209,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerBucket>`: plannerBucket
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: Name of the bucket.
-  - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+  - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
   - `[PlanId <String>]`: Plan ID to which the bucket belongs.
   - `[Tasks <IMicrosoftGraphPlannerTask[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.

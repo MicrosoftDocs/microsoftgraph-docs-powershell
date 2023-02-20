@@ -187,9 +187,6 @@ BODYPARAMETER `<IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentAppl
     - `[Query <IMicrosoftGraphSearchQuery1>]`: searchQuery
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[QueryString <String>]`: The search query containing the search terms. Required.
-      - `[QueryString1 <IMicrosoftGraphSearchQueryString2>]`: searchQueryString
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Query <String>]`: Contains the actual search terms of the request.
       - `[QueryTemplate <String>]`: Provides a way to decorate the query string. Supports both KQL and query variables. Optional.
     - `[QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]`: searchAlterationOptions
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -234,9 +231,6 @@ REQUESTS <IMicrosoftGraphSearchRequest\[]>: .
   - `[Query <IMicrosoftGraphSearchQuery1>]`: searchQuery
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[QueryString <String>]`: The search query containing the search terms. Required.
-    - `[QueryString1 <IMicrosoftGraphSearchQueryString2>]`: searchQueryString
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Query <String>]`: Contains the actual search terms of the request.
     - `[QueryTemplate <String>]`: Provides a way to decorate the query string. Supports both KQL and query variables. Optional.
   - `[QueryAlterationOptions <IMicrosoftGraphSearchAlterationOptions>]`: searchAlterationOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

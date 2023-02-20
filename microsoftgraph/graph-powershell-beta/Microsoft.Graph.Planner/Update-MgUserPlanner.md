@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgUserPlanner
 
 ## SYNOPSIS
-Update the properties of a plannerUser object.
-You can use this operation to add or remove plans from a user's favorite plans list, and to indicate which plans the user has recently viewed.
+Update the navigation property planner in users
 
 ## SYNTAX
 
@@ -46,8 +45,7 @@ Update-MgUserPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Update the properties of a plannerUser object.
-You can use this operation to add or remove plans from a user's favorite plans list, and to indicate which plans the user has recently viewed.
+Update the navigation property planner in users
 
 ## EXAMPLES
 
@@ -375,7 +373,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[CreationSourceKind <String>]`: plannerCreationSourceKind
       - `[Name <String>]`: Name of the bucket.
-      - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+      - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
       - `[PlanId <String>]`: Plan ID to which the bucket belongs.
       - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -445,6 +443,26 @@ BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+        - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[NextInSeriesTaskId <String>]`: 
+          - `[OccurrenceId <Int32?>]`: 
+          - `[PreviousInSeriesTaskId <String>]`: 
+          - `[RecurrenceStartDateTime <DateTime?>]`: 
+          - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[NextOccurrenceDateTime <DateTime?>]`: 
+            - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+              - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+              - `[FirstDayOfWeek <String>]`: dayOfWeek
+              - `[Index <String>]`: weekIndex
+              - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+              - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+              - `[Type <String>]`: recurrencePatternType
+            - `[PatternStartDateTime <DateTime?>]`: 
+          - `[SeriesId <String>]`: 
         - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
         - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
         - `[Title <String>]`: Title of the task.
@@ -495,6 +513,11 @@ BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
       - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Owner <String>]`: 
+    - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+      - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+      - `[Type <String>]`: 
+      - `[Url <String>]`: The full canonical URL of the container. Optional.
+      - `[AccessLevel <String>]`: plannerPlanAccessLevel
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
   - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: 
@@ -512,7 +535,7 @@ FAVORITEPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreationSourceKind <String>]`: plannerCreationSourceKind
     - `[Name <String>]`: Name of the bucket.
-    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
     - `[PlanId <String>]`: Plan ID to which the bucket belongs.
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -582,6 +605,26 @@ FAVORITEPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+      - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[NextInSeriesTaskId <String>]`: 
+        - `[OccurrenceId <Int32?>]`: 
+        - `[PreviousInSeriesTaskId <String>]`: 
+        - `[RecurrenceStartDateTime <DateTime?>]`: 
+        - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[NextOccurrenceDateTime <DateTime?>]`: 
+          - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[FirstDayOfWeek <String>]`: dayOfWeek
+            - `[Index <String>]`: weekIndex
+            - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+            - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+            - `[Type <String>]`: recurrencePatternType
+          - `[PatternStartDateTime <DateTime?>]`: 
+        - `[SeriesId <String>]`: 
       - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
       - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Title <String>]`: Title of the task.
@@ -632,6 +675,11 @@ FAVORITEPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <String>]`: 
+  - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+    - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+    - `[Type <String>]`: 
+    - `[Url <String>]`: The full canonical URL of the container. Optional.
+    - `[AccessLevel <String>]`: plannerPlanAccessLevel
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
@@ -653,7 +701,7 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: .
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreationSourceKind <String>]`: plannerCreationSourceKind
     - `[Name <String>]`: Name of the bucket.
-    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
     - `[PlanId <String>]`: Plan ID to which the bucket belongs.
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -723,6 +771,26 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: .
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+      - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[NextInSeriesTaskId <String>]`: 
+        - `[OccurrenceId <Int32?>]`: 
+        - `[PreviousInSeriesTaskId <String>]`: 
+        - `[RecurrenceStartDateTime <DateTime?>]`: 
+        - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[NextOccurrenceDateTime <DateTime?>]`: 
+          - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[FirstDayOfWeek <String>]`: dayOfWeek
+            - `[Index <String>]`: weekIndex
+            - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+            - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+            - `[Type <String>]`: recurrencePatternType
+          - `[PatternStartDateTime <DateTime?>]`: 
+        - `[SeriesId <String>]`: 
       - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
       - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Title <String>]`: Title of the task.
@@ -773,6 +841,11 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: .
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <String>]`: 
+  - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+    - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+    - `[Type <String>]`: 
+    - `[Url <String>]`: The full canonical URL of the container. Optional.
+    - `[AccessLevel <String>]`: plannerPlanAccessLevel
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
@@ -784,7 +857,7 @@ RECENTPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreationSourceKind <String>]`: plannerCreationSourceKind
     - `[Name <String>]`: Name of the bucket.
-    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
     - `[PlanId <String>]`: Plan ID to which the bucket belongs.
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -854,6 +927,26 @@ RECENTPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+      - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[NextInSeriesTaskId <String>]`: 
+        - `[OccurrenceId <Int32?>]`: 
+        - `[PreviousInSeriesTaskId <String>]`: 
+        - `[RecurrenceStartDateTime <DateTime?>]`: 
+        - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[NextOccurrenceDateTime <DateTime?>]`: 
+          - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[FirstDayOfWeek <String>]`: dayOfWeek
+            - `[Index <String>]`: weekIndex
+            - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+            - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+            - `[Type <String>]`: recurrencePatternType
+          - `[PatternStartDateTime <DateTime?>]`: 
+        - `[SeriesId <String>]`: 
       - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
       - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Title <String>]`: Title of the task.
@@ -904,6 +997,11 @@ RECENTPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <String>]`: 
+  - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+    - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+    - `[Type <String>]`: 
+    - `[Url <String>]`: The full canonical URL of the container. Optional.
+    - `[AccessLevel <String>]`: plannerPlanAccessLevel
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
@@ -915,7 +1013,7 @@ ROSTERPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[CreationSourceKind <String>]`: plannerCreationSourceKind
     - `[Name <String>]`: Name of the bucket.
-    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. The format is defined as outlined here.
+    - `[OrderHint <String>]`: Hint used to order items of this type in a list view. For details about the supported format, see Using order hints in Planner.
     - `[PlanId <String>]`: Plan ID to which the bucket belongs.
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. The collection of tasks in the bucket.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -985,6 +1083,26 @@ ROSTERPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+      - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[NextInSeriesTaskId <String>]`: 
+        - `[OccurrenceId <Int32?>]`: 
+        - `[PreviousInSeriesTaskId <String>]`: 
+        - `[RecurrenceStartDateTime <DateTime?>]`: 
+        - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[NextOccurrenceDateTime <DateTime?>]`: 
+          - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+            - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+            - `[FirstDayOfWeek <String>]`: dayOfWeek
+            - `[Index <String>]`: weekIndex
+            - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+            - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+            - `[Type <String>]`: recurrencePatternType
+          - `[PatternStartDateTime <DateTime?>]`: 
+        - `[SeriesId <String>]`: 
       - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
       - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Title <String>]`: Title of the task.
@@ -1035,6 +1153,11 @@ ROSTERPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
     - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Owner <String>]`: 
+  - `[SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]`: 
+    - `[ContainerId <String>]`: The identifier of the resource that contains the plan. Optional.
+    - `[Type <String>]`: 
+    - `[Url <String>]`: The full canonical URL of the container. Optional.
+    - `[AccessLevel <String>]`: plannerPlanAccessLevel
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
@@ -1106,6 +1229,26 @@ TASKS <IMicrosoftGraphPlannerTask1\[]>: Read-only. Nullable. Returns the planner
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
+  - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[NextInSeriesTaskId <String>]`: 
+    - `[OccurrenceId <Int32?>]`: 
+    - `[PreviousInSeriesTaskId <String>]`: 
+    - `[RecurrenceStartDateTime <DateTime?>]`: 
+    - `[Schedule <IMicrosoftGraphPlannerRecurrenceSchedule>]`: plannerRecurrenceSchedule
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[NextOccurrenceDateTime <DateTime?>]`: 
+      - `[Pattern <IMicrosoftGraphRecurrencePattern>]`: recurrencePattern
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DayOfMonth <Int32?>]`: The day of the month on which the event occurs. Required if type is absoluteMonthly or absoluteYearly.
+        - `[DaysOfWeek <String[]>]`: A collection of the days of the week on which the event occurs. The possible values are: sunday, monday, tuesday, wednesday, thursday, friday, saturday. If type is relativeMonthly or relativeYearly, and daysOfWeek specifies more than one day, the event falls on the first day that satisfies the pattern.  Required if type is weekly, relativeMonthly, or relativeYearly.
+        - `[FirstDayOfWeek <String>]`: dayOfWeek
+        - `[Index <String>]`: weekIndex
+        - `[Interval <Int32?>]`: The number of units between occurrences, where units can be in days, weeks, months, or years, depending on the type. Required.
+        - `[Month <Int32?>]`: The month in which the event occurs.  This is a number from 1 to 12.
+        - `[Type <String>]`: recurrencePatternType
+      - `[PatternStartDateTime <DateTime?>]`: 
+    - `[SeriesId <String>]`: 
   - `[ReferenceCount <Int32?>]`: Number of external references that exist on the task.
   - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.

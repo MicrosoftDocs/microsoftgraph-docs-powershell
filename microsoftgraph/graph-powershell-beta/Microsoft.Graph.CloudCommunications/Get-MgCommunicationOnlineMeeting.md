@@ -428,7 +428,7 @@ BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorg
   - `[ExternalId <String>]`: 
   - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -437,11 +437,11 @@ BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorg
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: 
+      - `[Role <String>]`: onlineMeetingRole
       - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
-    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
+    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+    - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
@@ -469,7 +469,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
 
 PARTICIPANTS `<IMicrosoftGraphMeetingParticipants1>`: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo1[]>]`: Information of the meeting attendees.
+  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -478,10 +478,10 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants1>`: meetingParticipants
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: 
+    - `[Role <String>]`: onlineMeetingRole
     - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
-  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo1>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo1[]>]`: 
+  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
+  - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
 
 ## RELATED LINKS

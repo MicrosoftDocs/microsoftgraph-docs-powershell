@@ -10,6 +10,7 @@ ms.prod: microsoft-teams
 
 ## SYNOPSIS
 Create a new shift instance in a schedule.
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## SYNTAX
 
@@ -43,6 +44,7 @@ New-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 
 ## DESCRIPTION
 Create a new shift instance in a schedule.
+The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
 

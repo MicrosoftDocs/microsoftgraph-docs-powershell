@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: aaa31421-6471-4b4a-9a65-c0b982cd2a3a
+Module Guid: 2841c60f-1057-467f-8007-ab1645279169
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -308,7 +308,7 @@ Get the daily aggregated remote connection reports, such as round trip time, ava
 Get the remote connection history records of a Cloud PC during a given period.
 
 ### [Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport](Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport.md)
-Get the shared use license usage reports, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
+Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
 ### [Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport](Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport.md)
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.

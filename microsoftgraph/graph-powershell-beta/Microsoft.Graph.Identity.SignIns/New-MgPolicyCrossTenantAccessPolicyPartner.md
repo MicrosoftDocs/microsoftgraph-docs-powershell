@@ -348,6 +348,9 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1>`: c
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure AD tenant to easily identify the policy. Optional.
     - `[TenantId <String>]`: Tenant identifier for the partner Azure AD organization. Read-only.
+    - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant. If set to false, any current user synchronization from the source tenant to the target tenant will stop. There is no impact on existing users that have already been synchronized.
   - `[InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>]`: crossTenantAccessPolicyInboundTrust
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Azure AD organizations are trusted.
@@ -368,6 +371,9 @@ IDENTITYSYNCHRONIZATION `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`:
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure AD tenant to easily identify the policy. Optional.
   - `[TenantId <String>]`: Tenant identifier for the partner Azure AD organization. Read-only.
+  - `[UserSyncInbound <IMicrosoftGraphCrossTenantUserSyncInbound>]`: crossTenantUserSyncInbound
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant. If set to false, any current user synchronization from the source tenant to the target tenant will stop. There is no impact on existing users that have already been synchronized.
 
 INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
