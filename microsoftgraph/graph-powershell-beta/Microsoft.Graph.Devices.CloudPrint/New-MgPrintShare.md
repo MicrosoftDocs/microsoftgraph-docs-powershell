@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintshare
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # New-MgPrintShare
@@ -17,10 +16,10 @@ Create a new **printerShare** for the specified printer.
 ```
 New-MgPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
  [-AllowedGroups <IMicrosoftGraphGroup1[]>] [-AllowedUsers <IMicrosoftGraphUser1[]>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-CreatedDateTime <DateTime>]
+ [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
  [-Defaults <IMicrosoftGraphPrinterDefaults>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
  [-Jobs <IMicrosoftGraphPrintJob[]>] [-Location <IMicrosoftGraphPrinterLocation>] [-Manufacturer <String>]
- [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter1>]
+ [-Model <String>] [-Name <String>] [-Printer <IMicrosoftGraphPrinter>]
  [-Status <IMicrosoftGraphPrinterStatus>] [-ViewPoint <IMicrosoftGraphPrinterShareViewpoint>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -134,7 +133,7 @@ printerCapabilities
 To construct, please use Get-Help -Online and see NOTES section for CAPABILITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterCapabilities1
+Type: IMicrosoftGraphPrinterCapabilities
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -305,7 +304,7 @@ printer
 To construct, please use Get-Help -Online and see NOTES section for PRINTER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinter1
+Type: IMicrosoftGraphPrinter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -397,7 +396,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLOWEDGROUPS <IMicrosoftGraphGroup1\[]>: The groups whose users have access to print using the printer.
+ALLOWEDGROUPS <IMicrosoftGraphGroup1[]>: The groups whose users have access to print using the printer.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
@@ -1341,7 +1340,7 @@ ALLOWEDGROUPS <IMicrosoftGraphGroup1\[]>: The groups whose users have access to 
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5009,7 +5008,7 @@ ALLOWEDGROUPS <IMicrosoftGraphGroup1\[]>: The groups whose users have access to 
     - `[IsEnabled <Boolean?>]`: Indicates whether writeback of cloud groups to on-premise Active Directory is enabled. Default value is true for Microsoft 365 groups and false for security groups.
     - `[OnPremisesGroupType <String>]`: Indicates the target on-premise group type the cloud object will be written back as. Nullable. The possible values are: universalDistributionGroup, universalSecurityGroup, universalMailEnabledSecurityGroup.If the cloud group is a unified (Microsoft 365) group, this property can be one of the following: universalDistributionGroup, universalSecurityGroup, universalMailEnabledSecurityGroup. Azure AD security groups can be written back as universalSecurityGroup. If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property is not explicitly configured: Microsoft 365 groups will be written back as universalDistributionGroup by defaultSecurity groups will be written back as universalSecurityGroup by default
 
-ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using the printer.
+ALLOWEDUSERS <IMicrosoftGraphUser1[]>: The users who have access to print using the printer.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
@@ -5882,7 +5881,7 @@ ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9622,7 +9621,7 @@ ALLOWEDUSERS <IMicrosoftGraphUser1\[]>: The users who have access to print using
     - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
-BODYPARAMETER `<IMicrosoftGraphPrinterShare>`: printerShare
+BODYPARAMETER <IMicrosoftGraphPrinterShare>: printerShare
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10778,7 +10777,7 @@ BODYPARAMETER `<IMicrosoftGraphPrinterShare>`: printerShare
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14235,7 +14234,7 @@ BODYPARAMETER `<IMicrosoftGraphPrinterShare>`: printerShare
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[LastUsedDateTime <DateTime?>]`: Date and time when the printer was last used by the signed-in user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
-CAPABILITIES `<IMicrosoftGraphPrinterCapabilities>`: printerCapabilities
+CAPABILITIES <IMicrosoftGraphPrinterCapabilities>: printerCapabilities
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BottomMargins <Int32[]>]`: A list of supported bottom margins(in microns) for the printer.
   - `[Collation <Boolean?>]`: True if the printer supports collating when printing muliple copies of a multi-page document; false otherwise.
@@ -14282,7 +14281,7 @@ CAPABILITIES `<IMicrosoftGraphPrinterCapabilities>`: printerCapabilities
   - `[SupportsFitPdfToPage <Boolean?>]`: True if the printer supports scaling PDF pages to match the print media size; false otherwise.
   - `[TopMargins <Int32[]>]`: A list of supported top margins(in microns) for the printer.
 
-DEFAULTS `<IMicrosoftGraphPrinterDefaults>`: printerDefaults
+DEFAULTS <IMicrosoftGraphPrinterDefaults>: printerDefaults
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ColorMode <String>]`: 
   - `[ContentType <String>]`: The default content (MIME) type to use when processing documents.
@@ -14308,7 +14307,7 @@ DEFAULTS `<IMicrosoftGraphPrinterDefaults>`: printerDefaults
   - `[Quality <String>]`: printQuality
   - `[Scaling <String>]`: printScaling
 
-JOBS <IMicrosoftGraphPrintJob\[]>: .
+JOBS <IMicrosoftGraphPrintJob[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AcknowledgedDateTime <DateTime?>]`: 
   - `[CompletedDateTime <DateTime?>]`: 
@@ -14416,7 +14415,7 @@ JOBS <IMicrosoftGraphPrintJob\[]>: .
       - `[Definition <IMicrosoftGraphPrintTaskDefinition>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
-LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
+LOCATION <IMicrosoftGraphPrinterLocation>: printerLocation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AltitudeInMeters <Int32?>]`: The altitude, in meters, that the printer is located at.
   - `[Building <String>]`: The building that the printer is located in.
@@ -14438,7 +14437,7 @@ LOCATION `<IMicrosoftGraphPrinterLocation>`: printerLocation
   - `[Subdivision <String[]>]`: The subdivision that the printer is located in. The elements should be in hierarchical order.
   - `[Subunit <String[]>]`: 
 
-PRINTER `<IMicrosoftGraphPrinter>`: printer
+PRINTER <IMicrosoftGraphPrinter>: printer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Capabilities <IMicrosoftGraphPrinterCapabilities>]`: printerCapabilities
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15624,7 +15623,7 @@ PRINTER `<IMicrosoftGraphPrinter>`: printer
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19051,7 +19050,7 @@ PRINTER `<IMicrosoftGraphPrinter>`: printer
   - `[Shares <IMicrosoftGraphPrinterShare[]>]`: The list of printerShares that are associated with the printer. Currently, only one printerShare can be associated with the printer. Read-only. Nullable.
   - `[TaskTriggers <IMicrosoftGraphPrintTaskTrigger[]>]`: A list of task triggers that are associated with the printer.
 
-STATUS `<IMicrosoftGraphPrinterStatus>`: printerStatus
+STATUS <IMicrosoftGraphPrinterStatus>: printerStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: A human-readable description of the printer's current processing state. Read-only.
   - `[Details <String[]>]`: The list of details describing why the printer is in the current state. Valid values are described in the following table. Read-only.
@@ -19060,7 +19059,7 @@ STATUS `<IMicrosoftGraphPrinterStatus>`: printerStatus
   - `[ProcessingStateReasons <String[]>]`: 
   - `[State <String>]`: printerProcessingState
 
-VIEWPOINT `<IMicrosoftGraphPrinterShareViewpoint>`: printerShareViewpoint
+VIEWPOINT <IMicrosoftGraphPrinterShareViewpoint>: printerShareViewpoint
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastUsedDateTime <DateTime?>]`: Date and time when the printer was last used by the signed-in user. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 

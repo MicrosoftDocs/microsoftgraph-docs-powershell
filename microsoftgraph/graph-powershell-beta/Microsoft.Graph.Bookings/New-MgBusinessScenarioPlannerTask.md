@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbusinessscenarioplannertask
@@ -25,9 +25,10 @@ New-MgBusinessScenarioPlannerTask -BusinessScenarioId <String> [-ActiveChecklist
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
- [-StartDateTime <DateTime>] [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -49,9 +50,10 @@ New-MgBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ActiveCheck
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
- [-StartDateTime <DateTime>] [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -532,6 +534,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Recurrence
+plannerTaskRecurrence
+To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPlannerTaskRecurrence
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -ReferenceCount
 Number of external references that exist on the task.
 
@@ -645,14 +663,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDTOTASKBOARDFORMAT `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
+ASSIGNEDTOTASKBOARDFORMAT <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>: plannerAssignedToTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenarioTask>`: businessScenarioTask
+BODYPARAMETER <IMicrosoftGraphBusinessScenarioTask>: businessScenarioTask
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
@@ -755,12 +773,12 @@ BODYPARAMETER `<IMicrosoftGraphBusinessScenarioTask>`: businessScenarioTask
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
-BUCKETTASKBOARDFORMAT `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
+BUCKETTASKBOARDFORMAT <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board. For details about the supported format, see Using order hints in Planner.
 
-BUSINESSSCENARIOPROPERTIES `<IMicrosoftGraphBusinessScenarioProperties>`: businessScenarioProperties
+BUSINESSSCENARIOPROPERTIES <IMicrosoftGraphBusinessScenarioProperties>: businessScenarioProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExternalBucketId <String>]`: The identifier for the bucketDefinition configured in the plannerPlanConfiguration for the scenario. The task will be placed in the corresponding plannerBucket in the target plan. Required.
   - `[ExternalContextId <String>]`: The identifier for the context of the task. Context is an application controlled value, and tasks can be queried by their externalContextId. Optional.
@@ -768,7 +786,7 @@ BUSINESSSCENARIOPROPERTIES `<IMicrosoftGraphBusinessScenarioProperties>`: busine
   - `[ExternalObjectVersion <String>]`: Application-specific version of the task. Optional.
   - `[WebUrl <String>]`: The URL to the application-specific experience for this task. Optional.
 
-COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+COMPLETEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -777,7 +795,7 @@ COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+CREATEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -786,7 +804,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
+CREATIONSOURCE <IMicrosoftGraphPlannerTaskCreation>: plannerTaskCreation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreationSourceKind <String>]`: plannerCreationSourceKind
   - `[TeamsPublicationInfo <IMicrosoftGraphPlannerTeamsPublicationInfo>]`: plannerTeamsPublicationInfo
@@ -799,7 +817,7 @@ CREATIONSOURCE `<IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
     - `[PublishingTeamId <String>]`: The identifier of the team that initiated the publication process. Read-only.
     - `[PublishingTeamName <String>]`: The display name of the team that initiated the publication process. This display name is for reference only, and might not represent the most up-to-date name of the team. Read-only.
 
-DETAILS `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
+DETAILS <IMicrosoftGraphPlannerTaskDetails>: plannerTaskDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
@@ -813,7 +831,7 @@ DETAILS `<IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
@@ -827,12 +845,12 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BusinessScenarioTaskId <String>]`: key: id of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: key: id of plannerPlanConfigurationLocalization
 
-PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
+PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>: plannerProgressTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
 
-RECURRENCE `<IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
+RECURRENCE <IMicrosoftGraphPlannerTaskRecurrence>: plannerTaskRecurrence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NextInSeriesTaskId <String>]`: 
   - `[OccurrenceId <Int32?>]`: 
@@ -853,7 +871,7 @@ RECURRENCE `<IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
     - `[PatternStartDateTime <DateTime?>]`: 
   - `[SeriesId <String>]`: 
 
-TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTargetBase
+TARGET <IMicrosoftGraphBusinessScenarioTaskTargetBase>: businessScenarioTaskTargetBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 

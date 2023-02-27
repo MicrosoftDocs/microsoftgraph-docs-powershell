@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/grant-mgsitepermission
@@ -12,26 +12,26 @@ Grant users access to a link represented by a [permission][].
 
 ## SYNTAX
 
-### GrantExpanded1 (Default)
+### GrantExpanded (Default)
 ```
 Grant-MgSitePermission -PermissionId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Grant1
+### Grant
 ```
 Grant-MgSitePermission -PermissionId <String> -SiteId <String>
  -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded1
+### GrantViaIdentityExpanded
 ```
 Grant-MgSitePermission -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentity1
+### GrantViaIdentity
 ```
 Grant-MgSitePermission -InputObject <ISitesIdentity>
  -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
@@ -75,7 +75,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -91,7 +91,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Grant1, GrantViaIdentity1
+Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GrantViaIdentityExpanded1, GrantViaIdentity1
+Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -122,7 +122,7 @@ key: id of permission
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -138,7 +138,7 @@ To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS p
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -168,7 +168,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -228,7 +228,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
@@ -236,7 +236,7 @@ BODYPARAMETER `<IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGra
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
   - `[Roles <String[]>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
@@ -283,7 +283,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

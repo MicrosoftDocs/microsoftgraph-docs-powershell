@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryimpactedresource
@@ -14,17 +14,18 @@ Update the navigation property impactedResources in directory
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDirectoryImpactedResource -RecommendationResourceId <String> [-AddedDateTime <DateTime>]
+Update-MgDirectoryImpactedResource -ImpactedResourceId <String> [-AddedDateTime <DateTime>]
  [-AdditionalDetails <IMicrosoftGraphKeyValue[]>] [-AdditionalProperties <Hashtable>] [-ApiUrl <String>]
- [-DisplayName <String>] [-Id <String>] [-Owner <String>] [-PortalUrl <String>] [-Rank <Int32>]
- [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <String>] [-LastModifiedDateTime <String>]
+ [-Owner <String>] [-PortalUrl <String>] [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>]
+ [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-SubjectId <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectoryImpactedResource -RecommendationResourceId <String>
- -BodyParameter <IMicrosoftGraphRecommendationResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDirectoryImpactedResource -ImpactedResourceId <String>
+ -BodyParameter <IMicrosoftGraphImpactedResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,14 +33,15 @@ Update-MgDirectoryImpactedResource -RecommendationResourceId <String>
 Update-MgDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
  [-AddedDateTime <DateTime>] [-AdditionalDetails <IMicrosoftGraphKeyValue[]>]
  [-AdditionalProperties <Hashtable>] [-ApiUrl <String>] [-DisplayName <String>] [-Id <String>]
- [-Owner <String>] [-PortalUrl <String>] [-Rank <Int32>] [-RecommendationId <String>] [-ResourceType <String>]
- [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <String>] [-LastModifiedDateTime <String>] [-Owner <String>] [-PortalUrl <String>]
+ [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>] [-RecommendationId <String>] [-ResourceType <String>]
+ [-Status <String>] [-SubjectId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphRecommendationResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphImpactedResource> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -115,7 +117,7 @@ impactedResource
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendationResource
+Type: IMicrosoftGraphImpactedResource
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -157,6 +159,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ImpactedResourceId
+key: id of impactedResource
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -170,6 +187,36 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -LastModifiedBy
+Name of the user or service that last updated the status.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+The date and time when the status was last updated.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -218,6 +265,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -PostponeUntilDateTime
+The future date and time when the status of a postponed impactedResource will be active again.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Rank
 Indicates the importance of the resource.
 A resource with a rank equal to 1 is of the highest importance.
@@ -249,21 +311,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RecommendationResourceId
-key: id of recommendationResource
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ResourceType
 Indicates the type of Azure AD resource.
 Examples include user, application.
@@ -282,6 +329,22 @@ Accept wildcard characters: False
 
 ### -Status
 recommendationStatus
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SubjectId
+The related unique identifier, depending on the resourceType.
+For example, this property is set to the applicationId if the resourceType is an application.
 
 ```yaml
 Type: String
@@ -332,7 +395,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendationResource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImpactedResource
 ## OUTPUTS
 
 ### System.Boolean
@@ -345,11 +408,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALDETAILS <IMicrosoftGraphKeyValue\[]>: Additional information unique to the impactedResource to help contextualize the recommendation.
+ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>: Additional information unique to the impactedResource to help contextualize the recommendation.
   - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
   - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+BODYPARAMETER <IMicrosoftGraphImpactedResource>: impactedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
@@ -369,7 +432,7 @@ BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
   - `[Status <String>]`: recommendationStatus
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet

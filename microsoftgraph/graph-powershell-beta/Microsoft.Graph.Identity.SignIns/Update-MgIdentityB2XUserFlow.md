@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflow
@@ -12,7 +12,7 @@ Update the navigation property b2xUserFlows in identity
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgIdentityB2XUserFlow -B2XIdentityUserFlowId <String> [-AdditionalProperties <Hashtable>]
  [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration1>] [-Id <String>]
@@ -23,13 +23,13 @@ Update-MgIdentityB2XUserFlow -B2XIdentityUserFlowId <String> [-AdditionalPropert
  [-UserFlowTypeVersion <Single>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgIdentityB2XUserFlow -B2XIdentityUserFlowId <String>
  -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
  [-ApiConnectorConfiguration <IMicrosoftGraphUserFlowApiConnectorConfiguration1>] [-Id <String>]
@@ -40,7 +40,7 @@ Update-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-Additiona
  [-UserFlowTypeVersion <Single>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -58,7 +58,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -74,7 +74,7 @@ To construct, please use Get-Help -Online and see NOTES section for APICONNECTOR
 
 ```yaml
 Type: IMicrosoftGraphUserFlowApiConnectorConfiguration1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -89,7 +89,7 @@ key: id of b2xIdentityUserFlow
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -105,7 +105,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphB2XIdentityUserFlow1
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -121,7 +121,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -137,7 +137,7 @@ To construct, please use Get-Help -Online and see NOTES section for IDENTITYPROV
 
 ```yaml
 Type: IMicrosoftGraphIdentityProvider[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -153,7 +153,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -171,7 +171,7 @@ To construct, please use Get-Help -Online and see NOTES section for LANGUAGES pr
 
 ```yaml
 Type: IMicrosoftGraphUserFlowLanguageConfiguration[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -202,7 +202,7 @@ To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUT
 
 ```yaml
 Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -218,7 +218,7 @@ To construct, please use Get-Help -Online and see NOTES section for USERFLOWIDEN
 
 ```yaml
 Type: IMicrosoftGraphIdentityProviderBase[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -233,7 +233,7 @@ userFlowType
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -248,7 +248,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Single
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -308,7 +308,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration1>`: userFlowApiConnectorConfiguration
+APICONNECTORCONFIGURATION <IMicrosoftGraphUserFlowApiConnectorConfiguration1>: userFlowApiConnectorConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PostAttributeCollection <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -320,7 +320,7 @@ APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration1>`:
   - `[PostFederationSignup <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
   - `[PreTokenIssuance <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
 
-BODYPARAMETER `<IMicrosoftGraphB2XIdentityUserFlow1>`: b2xIdentityUserFlow
+BODYPARAMETER <IMicrosoftGraphB2XIdentityUserFlow1>: b2xIdentityUserFlow
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserFlowType <String>]`: userFlowType
   - `[UserFlowTypeVersion <Single?>]`: 
@@ -370,14 +370,14 @@ BODYPARAMETER `<IMicrosoftGraphB2XIdentityUserFlow1>`: b2xIdentityUserFlow
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
 
-IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider\[]>: The identity providers included in the user flow.
+IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider[]>: The identity providers included in the user flow.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClientId <String>]`: The client ID for the application. This is the client ID obtained when registering the application with the identity provider. Required. Not nullable.
   - `[ClientSecret <String>]`: The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return ****.  Required. Not nullable.
   - `[Name <String>]`: The display name of the identity provider. Not nullable.
   - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat, OpenIDConnect. Not nullable.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
@@ -451,7 +451,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
 
-LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration\[]>: The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign up user flow. You cannot create custom languages in self-service sign up user flows.
+LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration[]>: The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign up user flow. You cannot create custom languages in self-service sign up user flows.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -459,7 +459,7 @@ LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration\[]>: The languages suppo
   - `[IsEnabled <Boolean?>]`: Indicates whether the language is enabled within the user flow.
   - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
 
-USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment\[]>: The user attribute assignments included in the user flow.
+USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>: The user attribute assignments included in the user flow.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
   - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user cannot complete sign-up without providing a value.
@@ -477,7 +477,7 @@ USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment\[]>
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 
-USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase\[]>: .
+USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgreauthorizeuserdriverootsubscription
@@ -12,13 +12,13 @@ Invoke action reauthorize
 
 ## SYNTAX
 
-### Reauthorize1 (Default)
+### Reauthorize (Default)
 ```
 Invoke-MgReauthorizeUserDriveRootSubscription -DriveId <String> -SubscriptionId <String> -UserId <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReauthorizeViaIdentity1
+### ReauthorizeViaIdentity
 ```
 Invoke-MgReauthorizeUserDriveRootSubscription -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -52,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ReauthorizeViaIdentity1
+Parameter Sets: ReauthorizeViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ key: id of subscription
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

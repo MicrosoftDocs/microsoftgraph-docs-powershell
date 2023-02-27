@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsiteactivitybyinterval
@@ -12,26 +12,26 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgSiteActivityByInterval -SiteId <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
 Get-MgSiteActivityByInterval -SiteId <String> -EndDateTime <String> -Interval <String> -StartDateTime <String>
  [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
@@ -64,7 +64,7 @@ Usage: endDateTime='{endDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -95,7 +95,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Usage: interval='{interval}'
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -155,7 +155,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get2
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -185,7 +185,7 @@ Usage: startDateTime='{startDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -243,7 +243,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition

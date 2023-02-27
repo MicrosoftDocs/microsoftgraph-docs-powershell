@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbusinessscenarioplanner
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanner
+BODYPARAMETER <IMicrosoftGraphBusinessScenarioPlanner>: businessScenarioPlanner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]`: plannerPlanConfiguration
@@ -392,7 +392,7 @@ BODYPARAMETER `<IMicrosoftGraphBusinessScenarioPlanner>`: businessScenarioPlanne
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency
@@ -406,7 +406,7 @@ INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BusinessScenarioTaskId <String>]`: key: id of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: key: id of plannerPlanConfigurationLocalization
 
-PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfiguration
+PLANCONFIGURATION <IMicrosoftGraphPlannerPlanConfiguration>: plannerPlanConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketDefinition[]>]`: List the buckets that should be created in the plan.
@@ -431,7 +431,7 @@ PLANCONFIGURATION `<IMicrosoftGraphPlannerPlanConfiguration>`: plannerPlanConfig
     - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
     - `[PlanTitle <String>]`: Localized title of the plan.
 
-TASKCONFIGURATION `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfiguration
+TASKCONFIGURATION <IMicrosoftGraphPlannerTaskConfiguration>: plannerTaskConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EditPolicy <IMicrosoftGraphPlannerTaskPolicy>]`: plannerTaskPolicy
@@ -464,7 +464,7 @@ TASKCONFIGURATION `<IMicrosoftGraphPlannerTaskConfiguration>`: plannerTaskConfig
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[RoleKind <String>]`: plannerUserRoleKind
 
-TASKS <IMicrosoftGraphBusinessScenarioTask\[]>: The Planner tasks for the scenario.
+TASKS <IMicrosoftGraphBusinessScenarioTask[]>: The Planner tasks for the scenario.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

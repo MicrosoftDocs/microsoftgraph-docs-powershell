@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride
 schema: 2.0.0
-ms.prod: mail
 ---
 
 # New-MgUserInferenceClassificationOverride
@@ -226,7 +225,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInferenceClassificationOverride>`: inferenceClassificationOverride
+BODYPARAMETER <IMicrosoftGraphInferenceClassificationOverride>: inferenceClassificationOverride
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClassifyAs <String>]`: inferenceClassificationType
@@ -235,7 +234,7 @@ BODYPARAMETER `<IMicrosoftGraphInferenceClassificationOverride>`: inferenceClass
     - `[Address <String>]`: The email address of the person or entity.
     - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+INPUTOBJECT <IMailIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ExtensionId <String>]`: key: id of extension
   - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
@@ -249,7 +248,7 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[UserConfigurationId <String>]`: key: id of userConfiguration
   - `[UserId <String>]`: key: id of user
 
-SENDEREMAILADDRESS `<IMicrosoftGraphEmailAddress>`: emailAddress
+SENDEREMAILADDRESS <IMicrosoftGraphEmailAddress>: emailAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Address <String>]`: The email address of the person or entity.
   - `[Name <String>]`: The display name of the person or entity.

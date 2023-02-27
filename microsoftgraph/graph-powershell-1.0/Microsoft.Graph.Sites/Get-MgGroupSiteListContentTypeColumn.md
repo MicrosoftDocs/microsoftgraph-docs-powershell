@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mggroupsitelistcontenttypecolumn
@@ -20,13 +20,13 @@ Get-MgGroupSiteListContentTypeColumn -ContentTypeId <String> -GroupId <String> -
  [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgGroupSiteListContentTypeColumn -ColumnDefinitionId <String> -ContentTypeId <String> -GroupId <String>
  -ListId <String> -SiteId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -59,7 +59,7 @@ key: id of columnDefinition
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -74,7 +74,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -135,7 +135,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -166,7 +166,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -226,7 +226,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -289,7 +289,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
 ## NOTES
 
 ALIASES
@@ -299,7 +299,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition

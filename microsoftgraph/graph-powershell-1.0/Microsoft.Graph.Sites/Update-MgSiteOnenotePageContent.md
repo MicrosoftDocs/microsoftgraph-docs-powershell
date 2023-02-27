@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsiteonenotepagecontent
@@ -12,28 +12,28 @@ Invoke action onenotePatchContent
 
 ## SYNTAX
 
-### PatchExpanded1 (Default)
+### PatchExpanded (Default)
 ```
 Update-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Patch1
+### Patch
 ```
 Update-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String>
  -BodyParameter <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PatchViaIdentityExpanded1
+### PatchViaIdentityExpanded
 ```
 Update-MgSiteOnenotePageContent -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### PatchViaIdentity1
+### PatchViaIdentity
 ```
 Update-MgSiteOnenotePageContent -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PatchExpanded1, PatchViaIdentityExpanded1
+Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Patch1, PatchViaIdentity1
+Parameter Sets: Patch, PatchViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for COMMANDS pro
 
 ```yaml
 Type: IMicrosoftGraphOnenotePatchContentCommand[]
-Parameter Sets: PatchExpanded1, PatchViaIdentityExpanded1
+Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: PatchViaIdentityExpanded1, PatchViaIdentity1
+Parameter Sets: PatchViaIdentityExpanded, PatchViaIdentity
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ key: id of onenotePage
 
 ```yaml
 Type: String
-Parameter Sets: PatchExpanded1, Patch1
+Parameter Sets: PatchExpanded, Patch
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: PatchExpanded1, Patch1
+Parameter Sets: PatchExpanded, Patch
 Aliases:
 
 Required: True
@@ -205,21 +205,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]`: 
     - `[Action <String>]`: onenotePatchActionType
     - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     - `[Position <String>]`: onenotePatchInsertPosition
-    - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+    - `[Target <String>]`: The element to update. Must be the #<data-id> or the generated <id> of the element, or the body or title keyword.
 
-COMMANDS <IMicrosoftGraphOnenotePatchContentCommand\[]>: .
+COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>: .
   - `[Action <String>]`: onenotePatchActionType
   - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
   - `[Position <String>]`: onenotePatchInsertPosition
-  - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+  - `[Target <String>]`: The element to update. Must be the #<data-id> or the generated <id> of the element, or the body or title keyword.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition

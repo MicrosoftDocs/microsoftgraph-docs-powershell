@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mguserplanner
@@ -14,7 +14,7 @@ Update the navigation property planner in users
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgUserPlanner -UserId <String> [-AdditionalProperties <Hashtable>]
+Update-MgUserPlanner -UserId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
  [-FavoritePlans <IMicrosoftGraphPlannerPlan1[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>]
  [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan1[]>]
@@ -24,13 +24,13 @@ Update-MgUserPlanner -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update1
 ```
-Update-MgUserPlanner -UserId <String> -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserPlanner -UserId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
  [-FavoritePlans <IMicrosoftGraphPlannerPlan1[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>]
  [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan1[]>]
@@ -40,8 +40,8 @@ Update-MgUserPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Has
 
 ### UpdateViaIdentity1
 ```
-Update-MgUserPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -168,6 +168,21 @@ Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag value.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -355,10 +370,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALL <IMicrosoftGraphPlannerDelta\[]>: .
+ALL <IMicrosoftGraphPlannerDelta[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
+BODYPARAMETER <IMicrosoftGraphPlannerUser>: plannerUser
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[All <IMicrosoftGraphPlannerDelta[]>]`: 
@@ -527,7 +542,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerUser>`: plannerUser
   - `[RosterPlans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans contained by the plannerRosters the user is a member.
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Read-only. Nullable. Returns the plannerTasks assigned to the user.
 
-FAVORITEPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the plannerPlans that the user marked as favorites.
+FAVORITEPLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerPlans that the user marked as favorites.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -683,7 +698,7 @@ FAVORITEPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta
@@ -693,7 +708,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: key: id of plannerTask
   - `[UserId <String>]`: key: id of user
 
-PLANS <IMicrosoftGraphPlannerPlan1\[]>: .
+PLANS <IMicrosoftGraphPlannerPlan1[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -849,7 +864,7 @@ PLANS <IMicrosoftGraphPlannerPlan1\[]>: .
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
-RECENTPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
+RECENTPLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1005,7 +1020,7 @@ RECENTPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
-ROSTERPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the plannerPlans contained by the plannerRosters the user is a member.
+ROSTERPLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerPlans contained by the plannerRosters the user is a member.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1161,7 +1176,7 @@ ROSTERPLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the p
   - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
   - `[Title <String>]`: Required. Title of the plan.
 
-TASKS <IMicrosoftGraphPlannerTask1\[]>: Read-only. Nullable. Returns the plannerTasks assigned to the user.
+TASKS <IMicrosoftGraphPlannerTask1[]>: Read-only. Nullable. Returns the plannerTasks assigned to the user.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories

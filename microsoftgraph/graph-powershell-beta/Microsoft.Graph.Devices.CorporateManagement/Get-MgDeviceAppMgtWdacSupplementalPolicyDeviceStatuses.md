@@ -1,38 +1,41 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwdacsupplementalpolicydevicestatuses
 schema: 2.0.0
 ---
 
-# Get-MgDeviceAppMgtSideLoadingKey
+# Get-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses
 
 ## SYNOPSIS
-Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
+The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgDeviceAppMgtSideLoadingKey [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses
+ -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceAppMgtSideLoadingKey -SideLoadingKeyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses
+ -WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>
+ -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceAppMgtSideLoadingKey -InputObject <IDevicesCorporateManagementIdentity>
+Get-MgDeviceAppMgtWdacSupplementalPolicyDeviceStatuses -InputObject <IDevicesCorporateManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Side Loading Keys that are required for the Windows 8 and 8.1 Apps installation.
+The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
 
 ## EXAMPLES
 
@@ -167,21 +170,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SideLoadingKeyId
-key: id of sideLoadingKey
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Sort
 Order items by property values
 
@@ -212,6 +200,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId
+key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsDefenderApplicationControlSupplementalPolicyId
+key: id of windowsDefenderApplicationControlSupplementalPolicy
+
+```yaml
+Type: String
+Parameter Sets: List, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Skip
 Skip the first n items
 
@@ -235,11 +253,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSideLoadingKey
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtsideloadingkey)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwdacsupplementalpolicydevicestatuses](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtwdacsupplementalpolicydevicestatuses)
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementpartner
@@ -15,13 +15,11 @@ Create new navigation property to deviceManagementPartners for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
+ [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment1[]>] [-Id <String>]
  [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
- [-WhenPartnerDevicesWillBeMarkedAsNonCompliant <DateTime>]
  [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
- [-WhenPartnerDevicesWillBeRemoved <DateTime>] [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -88,7 +86,7 @@ User groups that specifies whether enrollment is through partner.
 To construct, please use Get-Help -Online and see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPartnerAssignment[]
+Type: IMicrosoftGraphDeviceManagementPartnerAssignment1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,40 +188,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -WhenPartnerDevicesWillBeMarkedAsNonCompliant
-DateTime in UTC when PartnerDevices will be marked as NonCompliant.
-This will become obselete soon.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime
 DateTime in UTC when PartnerDevices will be marked as NonCompliant
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhenPartnerDevicesWillBeRemoved
-DateTime in UTC when PartnerDevices will be removed.
-This will become obselete soon.
 
 ```yaml
 Type: DateTime
@@ -301,7 +267,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner>`: Entity which represents a connection to device management partner.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner>: Entity which represents a connection to device management partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Partner display name
@@ -318,7 +284,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner>`: Entity which represent
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment1\[]>: User groups that specifies whether enrollment is through partner.
+GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment1[]>: User groups that specifies whether enrollment is through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.

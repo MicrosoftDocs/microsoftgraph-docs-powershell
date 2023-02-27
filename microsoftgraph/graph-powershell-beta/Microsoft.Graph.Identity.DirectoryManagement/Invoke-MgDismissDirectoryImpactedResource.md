@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/invoke-mgdismissdirectoryimpactedresource
@@ -14,14 +14,14 @@ Invoke action dismiss
 
 ### DismissExpanded (Default)
 ```
-Invoke-MgDismissDirectoryImpactedResource -RecommendationResourceId <String>
- [-AdditionalProperties <Hashtable>] [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgDismissDirectoryImpactedResource -ImpactedResourceId <String> [-AdditionalProperties <Hashtable>]
+ [-DismissReason <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Dismiss
 ```
-Invoke-MgDismissDirectoryImpactedResource -RecommendationResourceId <String>
- -BodyParameter <IPathsIhacpeDirectoryImpactedresourcesRecommendationresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgDismissDirectoryImpactedResource -ImpactedResourceId <String>
+ -BodyParameter <IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Invoke-MgDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryManage
 ### DismissViaIdentity
 ```
 Invoke-MgDismissDirectoryImpactedResource -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IPathsIhacpeDirectoryImpactedresourcesRecommendationresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -65,7 +65,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsIhacpeDirectoryImpactedresourcesRecommendationresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+Type: IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Dismiss, DismissViaIdentity
 Aliases:
 
@@ -91,6 +91,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ImpactedResourceId
+key: id of impactedResource
+
+```yaml
+Type: String
+Parameter Sets: DismissExpanded, Dismiss
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -104,21 +119,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -RecommendationResourceId
-key: id of recommendationResource
-
-```yaml
-Type: String
-Parameter Sets: DismissExpanded, Dismiss
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -159,10 +159,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsIhacpeDirectoryImpactedresourcesRecommendationresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendationResource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImpactedResource
 ## NOTES
 
 ALIASES
@@ -172,11 +172,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths930Y3QDirectoryImpactedresourcesImpactedresourceIdMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DismissReason <String>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet
