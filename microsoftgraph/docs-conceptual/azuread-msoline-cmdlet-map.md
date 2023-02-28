@@ -358,7 +358,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Get-AzureADUserAppRoleAssignment|[Get-MgUserAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mguserapproleassignment?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADUserCreatedObject|[Get-MgUserCreatedObject](/powershell/module/microsoft.graph.users/get-mgusercreatedobject?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADUserDirectReport|[Get-MgUserDirectReport](/powershell/module/microsoft.graph.users/get-mguserdirectreport?view=graph-powershell-1.0&preserve-view=true)|
-|Get-AzureADUserExtension|[Get-MgUserExtension](/powershell/module/microsoft.graph.users/get-mguserextension?view=graph-powershell-1.0&preserve-view=true)|
+|Get-AzureADUserExtension|[Get-MgUser](powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADUserLicenseDetail|[Get-MgUserLicenseDetail](/powershell/module/microsoft.graph.users/get-mguserlicensedetail?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADUserManager|[Get-MgUserManager](/powershell/module/microsoft.graph.users/get-mgusermanager?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADUserMembership|[Get-MgUserMemberOf](/powershell/module/microsoft.graph.users/get-mgusermemberof?view=graph-powershell-1.0&preserve-view=true)|
