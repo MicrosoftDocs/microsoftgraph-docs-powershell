@@ -8,7 +8,9 @@ name: "Powershell Update Help Files PR"
 on:
   push:
     branches: 
-      - 'weekly_update_help_files_*'
+      - 'weekly_test_*'
+permissions:
+   pull-requests: write
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,7 +38,7 @@ jobs:
         REVIEWERS: timayabi2020
         ASSIGNEDTO: timayabi2020
         LABELS: generated
-        BASE: main
+        BASE: github_action_failure
         HEAD: ${{steps.create_branch.outputs.branch}}
       run: |
         curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
