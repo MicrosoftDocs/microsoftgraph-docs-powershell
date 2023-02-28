@@ -11,7 +11,7 @@ on:
       - 'weekly_test_*'
 permissions:
    pull-requests: write
-
+   
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   updateHelpsDocsPR:
@@ -38,7 +38,7 @@ jobs:
         REVIEWERS: timayabi2020
         ASSIGNEDTO: timayabi2020
         LABELS: generated
-        BASE: github_action_failure
+        BASE: main
         HEAD: ${{steps.create_branch.outputs.branch}}
       run: |
         curl -fsSL https://github.com/github/hub/raw/master/script/get | bash -s 2.14.1
