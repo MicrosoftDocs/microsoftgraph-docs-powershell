@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 288856c3-9dc9-40e7-a767-f103af5e896d
+Module Guid: 819c49a4-be4a-41dc-8f47-f1c92e98587d
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -295,7 +295,7 @@ The request will include a reference to the accessPackage that will contain this
 
 ### [New-MgEntitlementManagementAssignmentRequest](New-MgEntitlementManagementAssignmentRequest.md)
 In Azure AD Entitlement Management, create a new accessPackageAssignmentRequest object.
-This operation is used to assign a user to an access package, or to remove an access package assignment.
+This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
 ### [New-MgEntitlementManagementCatalog](New-MgEntitlementManagementCatalog.md)
 Create a new accessPackageCatalog object.

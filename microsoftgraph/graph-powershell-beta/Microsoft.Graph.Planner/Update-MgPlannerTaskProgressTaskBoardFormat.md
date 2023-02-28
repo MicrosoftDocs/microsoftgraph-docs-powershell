@@ -9,7 +9,7 @@ ms.prod: planner
 # Update-MgPlannerTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Update the properties of **plannerProgressTaskBoardTaskFormat** object.
+Update the navigation property progressTaskBoardFormat in planner
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of **plannerProgressTaskBoardTaskFormat** object.
+Update the navigation property progressTaskBoardFormat in planner
 
 ## EXAMPLES
 

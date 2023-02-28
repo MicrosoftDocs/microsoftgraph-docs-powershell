@@ -229,6 +229,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
   - `[DisplayName <String>]`: The name for the service plan. Read-only.
   - `[RamInGb <Int32?>]`: The size of the RAM in GB. Read-only.
   - `[StorageInGb <Int32?>]`: The size of the OS Disk in GB. Read-only.
+  - `[SupportedSolution <String>]`: cloudPcManagementService
   - `[Type <String>]`: cloudPcServicePlanType
   - `[UserProfileInGb <Int32?>]`: The size of the user profile disk in GB. Read-only.
   - `[VCpuCount <Int32?>]`: The number of vCPUs. Read-only.

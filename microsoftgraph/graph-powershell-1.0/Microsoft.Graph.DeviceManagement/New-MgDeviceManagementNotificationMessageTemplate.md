@@ -223,6 +223,7 @@ BODYPARAMETER `<IMicrosoftGraphNotificationMessageTemplate>`: Notification messa
     - `[Locale <String>]`: The Locale for which this message is destined.
     - `[MessageTemplate <String>]`: The Message Template content.
     - `[Subject <String>]`: The Message Template Subject.
+  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
 
 LOCALIZEDNOTIFICATIONMESSAGES <IMicrosoftGraphLocalizedNotificationMessage\[]>: The list of localized messages for this Notification Message Template.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.

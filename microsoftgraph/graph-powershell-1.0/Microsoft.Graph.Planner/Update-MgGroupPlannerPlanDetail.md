@@ -9,7 +9,7 @@ ms.prod: planner
 # Update-MgGroupPlannerPlanDetail
 
 ## SYNOPSIS
-Update the properties of **plannerplandetails** object.
+Update the navigation property details in groups
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of **plannerplandetails** object.
+Update the navigation property details in groups
 
 ## EXAMPLES
 

@@ -9,7 +9,7 @@ ms.prod: planner
 # Update-MgPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Update the properties of **plannerBucketTaskBoardTaskFormat** object.
+Update the navigation property bucketTaskBoardFormat in planner
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of **plannerBucketTaskBoardTaskFormat** object.
+Update the navigation property bucketTaskBoardFormat in planner
 
 ## EXAMPLES
 

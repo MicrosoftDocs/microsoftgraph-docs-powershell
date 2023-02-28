@@ -372,7 +372,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner>`: Entity which represent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Partner display name
-  - `[GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>]`: User groups that specifies whether enrollment is through partner.
+  - `[GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment1[]>]`: User groups that specifies whether enrollment is through partner.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
@@ -382,12 +382,10 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner>`: Entity which represent
   - `[PartnerAppType <DeviceManagementPartnerAppType?>]`: Partner App Type.
   - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
   - `[SingleTenantAppId <String>]`: Partner Single tenant App id
-  - `[WhenPartnerDevicesWillBeMarkedAsNonCompliant <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant. This will become obselete soon.
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
-  - `[WhenPartnerDevicesWillBeRemoved <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed. This will become obselete soon.
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment\[]>: User groups that specifies whether enrollment is through partner.
+GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment1\[]>: User groups that specifies whether enrollment is through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
