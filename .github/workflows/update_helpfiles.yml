@@ -8,7 +8,7 @@ name: "Powershell Update Help Files PR"
 on:
   push:
     branches: 
-      - 'weekly_test_*'
+      - 'weekly_update_help_files_*'
 permissions:
    pull-requests: write
    
