@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbusinessscenarioplannerplanconfigurationlocalization
@@ -219,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphPlannerPlanConfigurationLocalization>: plannerPlanConfigurationLocalization
+BODYPARAMETER `<IMicrosoftGraphPlannerPlanConfigurationLocalization>`: plannerPlanConfigurationLocalization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]`: Localized names for configured buckets in the plan configuration.
@@ -228,11 +228,11 @@ BODYPARAMETER <IMicrosoftGraphPlannerPlanConfigurationLocalization>: plannerPlan
   - `[LanguageTag <String>]`: The language code associated with the localized names in this object.
   - `[PlanTitle <String>]`: Localized title of the plan.
 
-BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>: Localized names for configured buckets in the plan configuration.
+BUCKETS <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization\[]>: Localized names for configured buckets in the plan configuration.
   - `[ExternalBucketId <String>]`: Application-specified identifier of the bucket.
   - `[Name <String>]`: Name of the bucket.
 
-INPUTOBJECT <IBookingsIdentity>: Identity Parameter
+INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: key: id of bookingAppointment
   - `[BookingBusinessId <String>]`: key: id of bookingBusiness
   - `[BookingCurrencyId <String>]`: key: id of bookingCurrency

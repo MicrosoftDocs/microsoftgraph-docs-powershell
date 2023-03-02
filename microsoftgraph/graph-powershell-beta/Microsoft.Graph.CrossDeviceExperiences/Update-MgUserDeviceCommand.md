@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
 Module Name: Microsoft.Graph.CrossDeviceExperiences
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguserdevicecommand
@@ -356,7 +356,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCommand>: command
+BODYPARAMETER `<IMicrosoftGraphCommand>`: command
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppServiceName <String>]`: 
@@ -372,7 +372,7 @@ BODYPARAMETER <IMicrosoftGraphCommand>: command
   - `[Status <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT <ICrossDeviceExperiencesIdentity>: Identity Parameter
+INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: key: id of activityHistoryItem
   - `[CommandId <String>]`: key: id of command
   - `[DeviceId <String>]`: key: id of device
