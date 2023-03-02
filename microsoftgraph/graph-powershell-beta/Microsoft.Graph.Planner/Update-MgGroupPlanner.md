@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mggroupplanner
@@ -14,26 +14,26 @@ Update the navigation property planner in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupPlanner -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+Update-MgGroupPlanner -GroupId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupPlanner -GroupId <String> -BodyParameter <IMicrosoftGraphPlannerGroup> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgGroupPlanner -GroupId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerGroup>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerGroup> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerGroup> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag value.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -204,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerGroup>`: plannerGroup
+BODYPARAMETER <IMicrosoftGraphPlannerGroup>: plannerGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Plans <IMicrosoftGraphPlannerPlan1[]>]`: Read-only. Nullable. Returns the plannerPlans owned by the group.
@@ -363,7 +378,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerGroup>`: plannerGroup
     - `[Tasks <IMicrosoftGraphPlannerTask1[]>]`: Collection of tasks in the plan. Read-only. Nullable.
     - `[Title <String>]`: Required. Title of the plan.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta
@@ -373,7 +388,7 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: key: id of plannerTask
   - `[UserId <String>]`: key: id of user
 
-PLANS <IMicrosoftGraphPlannerPlan1\[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
+PLANS <IMicrosoftGraphPlannerPlan1[]>: Read-only. Nullable. Returns the plannerPlans owned by the group.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Buckets <IMicrosoftGraphPlannerBucket1[]>]`: Collection of buckets in the plan. Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.

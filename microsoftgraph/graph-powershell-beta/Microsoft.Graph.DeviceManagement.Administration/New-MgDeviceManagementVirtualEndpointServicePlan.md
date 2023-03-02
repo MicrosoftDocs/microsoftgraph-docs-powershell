@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementvirtualendpointserviceplan
@@ -15,8 +15,8 @@ Create new navigation property to servicePlans for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointServicePlan [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>] [-Type <String>] [-UserProfileInGb <Int32>]
- [-VCpuCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>] [-SupportedSolution <String>] [-Type <String>]
+ [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -127,6 +127,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SupportedSolution
+cloudPcManagementService
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Type
 cloudPcServicePlanType
 
@@ -223,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcServicePlan>`: cloudPcServicePlan
+BODYPARAMETER <IMicrosoftGraphCloudPcServicePlan>: cloudPcServicePlan
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name for the service plan. Read-only.

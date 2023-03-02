@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrecommendation
@@ -15,18 +15,17 @@ Create new navigation property to recommendations for directory
 ### CreateExpanded (Default)
 ```
 New-MgDirectoryRecommendation [-ActionSteps <IMicrosoftGraphActionStep[]>] [-AdditionalProperties <Hashtable>]
- [-Benefits <String>] [-Category <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
- [-ImpactedResources <IMicrosoftGraphRecommendationResource[]>] [-Insights <String>]
+ [-Benefits <String>] [-Category <String>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>]
+ [-DisplayName <String>] [-FeatureAreas <String[]>] [-Id <String>] [-ImpactStartDateTime <DateTime>]
+ [-ImpactType <String>] [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
- [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-Status <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
+ [-RemediationImpact <String>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryRecommendation -BodyParameter <IMicrosoftGraphRecommendation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgDirectoryRecommendation -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -87,7 +86,7 @@ Accept wildcard characters: False
 recommendation
 
 ```yaml
-Type: IMicrosoftGraphRecommendation
+Type: Hashtable
 Parameter Sets: Create
 Aliases:
 
@@ -128,11 +127,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CurrentScore
+The number of points the tenant has attained.
+Only applies to recommendations with category set to identitySecureScore.
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The title of the recommendation.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FeatureAreas
+The directory feature that the recommendation is related to.
+
+```yaml
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +194,7 @@ The list of directory objects associated with the recommendation.
 To construct, please use Get-Help -Online and see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendationResource[]
+Type: IMicrosoftGraphImpactedResource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,6 +298,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MaxScore
+The maximum number of points attainable.
+Only applies to recommendations with category set to identitySecureScore.
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PostponeUntilDateTime
 The future date and time when the status of a postponed recommendation will be active again.
 
@@ -285,6 +331,37 @@ Accept wildcard characters: False
 
 ### -Priority
 recommendationPriority
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecommendationType
+recommendationType
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RemediationImpact
+Description of the impact on users of the remediation.
+Only applies to recommendations with category set to identitySecureScore.
 
 ```yaml
 Type: String
@@ -349,7 +426,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
@@ -362,7 +439,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: List of actions to take to complete a recommendation.
+ACTIONSTEPS <IMicrosoftGraphActionStep[]>: List of actions to take to complete a recommendation.
   - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Brief title for the page that the links directs to.
@@ -370,7 +447,7 @@ ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: List of actions to take to complete 
   - `[StepNumber <Int64?>]`: Indicates the position for this action in the order of the collection of actions to be taken.
   - `[Text <String>]`: Friendly description of the action to take.
 
-IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource\[]>: The list of directory objects associated with the recommendation.
+IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource[]>: The list of directory objects associated with the recommendation.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.

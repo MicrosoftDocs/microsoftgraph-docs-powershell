@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mgusercalendarschedule
@@ -12,28 +12,28 @@ Get the free/busy availability information for a collection of users, distributi
 
 ## SYNTAX
 
-### GetExpanded3 (Default)
+### GetExpanded1 (Default)
 ```
 Get-MgUserCalendarSchedule -CalendarId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
  [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get3
+### Get1
 ```
 Get-MgUserCalendarSchedule -CalendarId <String> -UserId <String>
  -BodyParameter <IPathsQue4OrUsersUserIdCalendarsCalendarIdMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded3
+### GetViaIdentityExpanded1
 ```
 Get-MgUserCalendarSchedule -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
  [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity1
 ```
 Get-MgUserCalendarSchedule -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsQue4OrUsersUserIdCalendarsCalendarIdMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
@@ -80,7 +80,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded3, GetViaIdentityExpanded3
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded3, GetViaIdentityExpanded3
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -111,7 +111,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsQue4OrUsersUserIdCalendarsCalendarIdMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get3, GetViaIdentity3
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ key: id of calendar
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded3, Get3
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ To construct, please use Get-Help -Online and see NOTES section for ENDTIME prop
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded3, GetViaIdentityExpanded3
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -158,7 +158,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: GetViaIdentityExpanded3, GetViaIdentity3
+Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -173,7 +173,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded3, GetViaIdentityExpanded3
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -189,7 +189,7 @@ To construct, please use Get-Help -Online and see NOTES section for STARTTIME pr
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded3, GetViaIdentityExpanded3
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -204,7 +204,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded3, Get3
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -264,7 +264,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQue4OrUsersUserIdCalendarsCalendarIdMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQue4OrUsersUserIdCalendarsCalendarIdMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AvailabilityViewInterval <Int32?>]`: 
   - `[EndTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
@@ -274,12 +274,12 @@ BODYPARAMETER `<IPathsQue4OrUsersUserIdCalendarsCalendarIdMicrosoftGraphGetsched
   - `[Schedules <String[]>]`: 
   - `[StartTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-ENDTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+ENDTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -322,7 +322,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-STARTTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+STARTTIME <IMicrosoftGraphDateTimeZone>: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopy
@@ -12,26 +12,26 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ## SYNTAX
 
-### AddExpanded (Default)
+### AddExpanded1 (Default)
 ```
 Add-MgDriveListContentTypeCopy -DriveId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add
+### Add1
 ```
 Add-MgDriveListContentTypeCopy -DriveId <String>
  -BodyParameter <IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded
+### AddViaIdentityExpanded1
 ```
 Add-MgDriveListContentTypeCopy -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity
+### AddViaIdentity1
 ```
 Add-MgDriveListContentTypeCopy -InputObject <IFilesIdentity>
  -BodyParameter <IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add, AddViaIdentity
+Parameter Sets: Add1, AddViaIdentity1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -96,7 +96,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded, Add
+Parameter Sets: AddExpanded1, Add1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
 Aliases:
 
 Required: True
@@ -172,11 +172,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

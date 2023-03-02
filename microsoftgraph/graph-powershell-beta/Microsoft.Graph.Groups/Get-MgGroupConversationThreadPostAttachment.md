@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/get-mggroupconversationthreadpostattachment
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # Get-MgGroupConversationThreadPostAttachment
@@ -16,7 +15,7 @@ Supports $expand.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgGroupConversationThreadPostAttachment -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
@@ -63,7 +62,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -93,7 +92,7 @@ key: id of conversation
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -108,7 +107,7 @@ key: id of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -124,7 +123,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -154,7 +153,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -169,7 +168,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -200,7 +199,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -215,7 +214,7 @@ key: id of post
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get1
 Aliases:
 
 Required: True
@@ -245,7 +244,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -260,7 +259,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -275,7 +274,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -303,7 +302,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation

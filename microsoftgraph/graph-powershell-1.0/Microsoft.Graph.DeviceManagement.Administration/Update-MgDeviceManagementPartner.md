@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementpartner
@@ -15,9 +15,11 @@ Update the navigation property deviceManagementPartners in deviceManagement
 ### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementPartner -DeviceManagementPartnerId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-IsConfigured] [-LastHeartbeatDateTime <DateTime>]
- [-PartnerAppType <DeviceManagementPartnerAppType>] [-PartnerState <DeviceManagementPartnerTenantState>]
- [-SingleTenantAppId <String>] [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
+ [-DisplayName <String>]
+ [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
+ [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
+ [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
  [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -30,8 +32,9 @@ Update-MgDeviceManagementPartner -DeviceManagementPartnerId <String>
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgDeviceManagementPartner -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-IsConfigured]
- [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
+ [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
  [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
  [-WhenPartnerDevicesWillBeRemovedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -101,6 +104,22 @@ Partner display name
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GroupsRequiringPartnerEnrollment
+User groups that specifies whether enrollment is through partner.
+To construct, please use Get-Help -Online and see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceManagementPartnerAssignment[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -313,7 +332,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner1>`: Entity which represents a connection to device management partner.
+BODYPARAMETER <IMicrosoftGraphDeviceManagementPartner1>: Entity which represents a connection to device management partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: Partner display name
@@ -328,11 +347,11 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementPartner1>`: Entity which represen
   - `[WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be marked as NonCompliant
   - `[WhenPartnerDevicesWillBeRemovedDateTime <DateTime?>]`: DateTime in UTC when PartnerDevices will be removed
 
-GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment\[]>: User groups that specifies whether enrollment is through partner.
+GROUPSREQUIRINGPARTNERENROLLMENT <IMicrosoftGraphDeviceManagementPartnerAssignment[]>: User groups that specifies whether enrollment is through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent

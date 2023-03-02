@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevice
@@ -12,7 +12,7 @@ Update the navigation property managedDevices in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]
@@ -27,6 +27,7 @@ Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalPro
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
  [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
+ [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
  [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
@@ -43,13 +44,13 @@ Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> [-AdditionalPro
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgDeviceManagementManagedDevice -ManagedDeviceId <String> -BodyParameter <IMicrosoftGraphManagedDevice1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>]
@@ -65,6 +66,7 @@ Update-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
  [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
+ [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
  [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
@@ -81,7 +83,7 @@ Update-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementManagedDevice -InputObject <IDeviceManagementIdentity>
  -BodyParameter <IMicrosoftGraphManagedDevice1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -99,7 +101,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +117,7 @@ To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTFI
 
 ```yaml
 Type: IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -131,7 +133,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphManagedDevice1
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -146,7 +148,7 @@ Chassis type.
 
 ```yaml
 Type: ChassisType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -162,7 +164,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHROMEOSDEVI
 
 ```yaml
 Type: IMicrosoftGraphChromeOSDeviceProperty[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -178,7 +180,7 @@ To construct, please use Get-Help -Online and see NOTES section for CLOUDPCREMOT
 
 ```yaml
 Type: IMicrosoftGraphCloudPcRemoteActionResult[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -193,7 +195,7 @@ Compliance state.
 
 ```yaml
 Type: ComplianceState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -209,7 +211,7 @@ To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIO
 
 ```yaml
 Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -225,7 +227,7 @@ To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIO
 
 ```yaml
 Type: IMicrosoftGraphConfigurationManagerClientHealthState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -241,7 +243,7 @@ To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIO
 
 ```yaml
 Type: IMicrosoftGraphConfigurationManagerClientInformation
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -257,7 +259,7 @@ To construct, please use Get-Help -Online and see NOTES section for DETECTEDAPPS
 
 ```yaml
 Type: IMicrosoftGraphDetectedApp1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -276,7 +278,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGO
 
 ```yaml
 Type: IMicrosoftGraphDeviceCategory1
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -292,7 +294,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLI
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicyState1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -308,7 +310,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIG
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationState1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -323,7 +325,7 @@ Possible ways of adding a mobile device to management.
 
 ```yaml
 Type: DeviceEnrollmentType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -341,7 +343,7 @@ The default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -357,7 +359,25 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTH
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthAttestationState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceHealthScriptStates
+Results of device health scripts that ran for this device.
+Default is empty list.
+This property is read-only.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHSCRIPTSTATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceHealthScriptPolicyState[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -372,7 +392,7 @@ Device registration status.
 
 ```yaml
 Type: DeviceRegistrationState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -387,7 +407,7 @@ Device type.
 
 ```yaml
 Type: DeviceType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -402,7 +422,7 @@ Device Exchange Access State.
 
 ```yaml
 Type: DeviceManagementExchangeAccessState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -417,7 +437,7 @@ Device Exchange Access State Reason.
 
 ```yaml
 Type: DeviceManagementExchangeAccessStateReason
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -433,7 +453,7 @@ To construct, please use Get-Help -Online and see NOTES section for HARDWAREINFO
 
 ```yaml
 Type: IMicrosoftGraphHardwareInformation
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -449,7 +469,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -465,7 +485,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -480,7 +500,7 @@ Device enrollment join type.
 
 ```yaml
 Type: JoinType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -496,7 +516,7 @@ To construct, please use Get-Help -Online and see NOTES section for LOGCOLLECTIO
 
 ```yaml
 Type: IMicrosoftGraphDeviceLogCollectionResponse[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -511,7 +531,7 @@ State of lost mode, indicating if lost mode is enabled or disabled
 
 ```yaml
 Type: LostModeState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -526,7 +546,7 @@ key: id of managedDevice
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -542,7 +562,7 @@ To construct, please use Get-Help -Online and see NOTES section for MANAGEDDEVIC
 
 ```yaml
 Type: IMicrosoftGraphManagedDeviceMobileAppConfigurationState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -558,7 +578,7 @@ Can be overwritten to a user friendly name.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -573,7 +593,7 @@ Owner type of device.
 
 ```yaml
 Type: ManagedDeviceOwnerType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -588,7 +608,7 @@ Management agent type.
 
 ```yaml
 Type: ManagementAgentType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -603,7 +623,7 @@ Device management features.
 
 ```yaml
 Type: ManagedDeviceManagementFeatures
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -618,7 +638,7 @@ Management state of device in Microsoft Intune.
 
 ```yaml
 Type: ManagementState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -637,7 +657,7 @@ $Search is not supported.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -652,7 +672,7 @@ Owner type of device.
 
 ```yaml
 Type: OwnerType
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -667,7 +687,7 @@ Available health states for the Device Health API
 
 ```yaml
 Type: ManagedDevicePartnerReportedHealthState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -697,7 +717,7 @@ Processor architecture
 
 ```yaml
 Type: ManagedDeviceArchitecture
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -712,7 +732,7 @@ List of Scope Tag IDs for this Device instance.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -728,7 +748,7 @@ To construct, please use Get-Help -Online and see NOTES section for SECURITYBASE
 
 ```yaml
 Type: IMicrosoftGraphSecurityBaselineState[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -743,7 +763,7 @@ Device sku family
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -759,7 +779,7 @@ To construct, please use Get-Help -Online and see NOTES section for USERS proper
 
 ```yaml
 Type: IMicrosoftGraphUser1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -775,7 +795,7 @@ To construct, please use Get-Help -Online and see NOTES section for WINDOWSPROTE
 
 ```yaml
 Type: IMicrosoftGraphWindowsProtectionState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -835,11 +855,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails\[]>: Managed device mobile app configuration states for this device.
+ASSIGNMENTFILTEREVALUATIONSTATUSDETAILS <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>: Managed device mobile app configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[PayloadId <String>]`: PayloadId on which filter has been applied.
 
-BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre-enrolled through Intune
+BODYPARAMETER <IMicrosoftGraphManagedDevice1>: Devices that are managed or pre-enrolled through Intune
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentFilterEvaluationStatusDetails <IMicrosoftGraphAssignmentFilterEvaluationStatusDetails[]>]`: Managed device mobile app configuration states for this device.
@@ -1992,7 +2012,7 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5452,13 +5472,13 @@ BODYPARAMETER `<IMicrosoftGraphManagedDevice1>`: Devices that are managed or pre
     - `[SignatureVersion <String>]`: Current malware definitions version
     - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
 
-CHROMEOSDEVICEINFO <IMicrosoftGraphChromeOSDeviceProperty\[]>: List of properties of the ChromeOS Device.
+CHROMEOSDEVICEINFO <IMicrosoftGraphChromeOSDeviceProperty[]>: List of properties of the ChromeOS Device.
   - `[Name <String>]`: Name of the property
   - `[Updatable <Boolean?>]`: Whether this property is updatable
   - `[Value <String>]`: Value of the property
   - `[ValueType <String>]`: Type of the value
 
-CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult\[]>: .
+CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult[]>: .
   - `[ActionName <String>]`: The specified action. Supported values in the Microsoft Endpoint Manager portal are: Reprovision, Resize, Restore. Supported values in enterprise Cloud PC devices are: Reboot, Rename, Reprovision, Troubleshoot.
   - `[ActionState <String>]`: actionState
   - `[CloudPcId <String>]`: The ID of the Cloud PC device on which the remote action is performed. Read-only.
@@ -5473,7 +5493,7 @@ CLOUDPCREMOTEACTIONRESULTS <IMicrosoftGraphCloudPcRemoteActionResult\[]>: .
     - `[Code <String>]`: The code associated with the Cloud PC status.
     - `[Message <String>]`: The status message.
 
-CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>`: configuration Manager client enabled features
+CONFIGURATIONMANAGERCLIENTENABLEDFEATURES <IMicrosoftGraphConfigurationManagerClientEnabledFeatures1>: configuration Manager client enabled features
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompliancePolicy <Boolean?>]`: Whether compliance policy is managed by Intune
   - `[DeviceConfiguration <Boolean?>]`: Whether device configuration is managed by Intune
@@ -5484,19 +5504,19 @@ CONFIGURATIONMANAGERCLIENTENABLEDFEATURES `<IMicrosoftGraphConfigurationManagerC
   - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
   - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
 
-CONFIGURATIONMANAGERCLIENTHEALTHSTATE `<IMicrosoftGraphConfigurationManagerClientHealthState>`: Configuration manager client health state
+CONFIGURATIONMANAGERCLIENTHEALTHSTATE <IMicrosoftGraphConfigurationManagerClientHealthState>: Configuration manager client health state
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ErrorCode <Int32?>]`: Error code for failed state.
   - `[LastSyncDateTime <DateTime?>]`: Datetime for last sync with configuration manager management point.
   - `[State <ConfigurationManagerClientState?>]`: Configuration manager client state
 
-CONFIGURATIONMANAGERCLIENTINFORMATION `<IMicrosoftGraphConfigurationManagerClientInformation>`: Configuration Manager client information synced from SCCM
+CONFIGURATIONMANAGERCLIENTINFORMATION <IMicrosoftGraphConfigurationManagerClientInformation>: Configuration Manager client information synced from SCCM
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientIdentifier <String>]`: Configuration Manager Client Id from SCCM
   - `[ClientVersion <String>]`: Configuration Manager Client version from SCCM
   - `[IsBlocked <Boolean?>]`: Configuration Manager Client blocked status from SCCM
 
-DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently installed on the device
+DETECTEDAPPS <IMicrosoftGraphDetectedApp1[]>: All applications currently installed on the device
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeviceCount <Int32?>]`: The number of devices that have installed this application
   - `[DisplayName <String>]`: Name of the discovered application. Read-only
@@ -6644,7 +6664,7 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10108,14 +10128,14 @@ DETECTEDAPPS <IMicrosoftGraphDetectedApp1\[]>: All applications currently instal
   - `[SizeInByte <Int64?>]`: Discovered application size in bytes. Read-only
   - `[Version <String>]`: Version of the discovered application. Read-only
 
-DEVICECATEGORY `<IMicrosoftGraphDeviceCategory1>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+DEVICECATEGORY <IMicrosoftGraphDeviceCategory1>: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
 
-DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1\[]>: Device compliance policy states for this device.
+DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1[]>: Device compliance policy states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -10142,7 +10162,7 @@ DEVICECOMPLIANCEPOLICYSTATES <IMicrosoftGraphDeviceCompliancePolicyState1\[]>: D
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1\[]>: Device configuration states for this device.
+DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1[]>: Device configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -10169,7 +10189,7 @@ DEVICECONFIGURATIONSTATES <IMicrosoftGraphDeviceConfigurationState1\[]>: Device 
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: deviceHealthAttestationState
+DEVICEHEALTHATTESTATIONSTATE <IMicrosoftGraphDeviceHealthAttestationState>: deviceHealthAttestationState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttestationIdentityKey <String>]`: TWhen an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate.
   - `[BitLockerStatus <String>]`: On or Off of BitLocker Drive Encryption
@@ -10204,7 +10224,7 @@ DEVICEHEALTHATTESTATIONSTATE `<IMicrosoftGraphDeviceHealthAttestationState>`: de
   - `[VirtualSecureMode <String>]`: VSM is a container that protects high value assets from a compromised kernel
   - `[WindowsPe <String>]`: Operating system running with limited services that is used to prepare a computer for Windows
 
-DEVICEHEALTHSCRIPTSTATES <IMicrosoftGraphDeviceHealthScriptPolicyState\[]>: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
+DEVICEHEALTHSCRIPTSTATES <IMicrosoftGraphDeviceHealthScriptPolicyState[]>: Results of device health scripts that ran for this device. Default is empty list. This property is read-only.
   - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
   - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
   - `[DeviceId <String>]`: The Intune device Id
@@ -10224,7 +10244,7 @@ DEVICEHEALTHSCRIPTSTATES <IMicrosoftGraphDeviceHealthScriptPolicyState\[]>: Resu
   - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
   - `[UserName <String>]`: Name of the user whom ran the device health script
 
-HARDWAREINFORMATION `<IMicrosoftGraphHardwareInformation>`: Hardware information of a given device.
+HARDWAREINFORMATION <IMicrosoftGraphHardwareInformation>: Hardware information of a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BatteryChargeCycles <Int32?>]`: The number of charge cycles the device's current battery has gone through. Valid values 0 to 2147483647
   - `[BatteryHealthPercentage <Int32?>]`: The device's current battery's health percentage. Valid values 0 to 100
@@ -10271,7 +10291,7 @@ HARDWAREINFORMATION `<IMicrosoftGraphHardwareInformation>`: Hardware information
   - `[WifiMac <String>]`: WiFi MAC address of the device
   - `[WiredIPv4Addresses <String[]>]`: A list of wired IPv4 addresses. The update frequency (the maximum delay for the change of property value to be synchronized from the device to the cloud storage) of this property is daily. Note this property is currently supported only on devices running on Windows.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: key: id of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: key: id of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: key: id of androidManagedStoreAppConfigurationSchema
@@ -10404,7 +10424,7 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: key: id of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: key: id of windowsMalwareInformation
 
-LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse\[]>: List of log collection requests
+LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse[]>: List of log collection requests
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[EnrolledByUser <String>]`: The User Principal Name (UPN) of the user that enrolled the device
   - `[ErrorCode <Int64?>]`: The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18
@@ -10416,7 +10436,7 @@ LOGCOLLECTIONREQUESTS <IMicrosoftGraphDeviceLogCollectionResponse\[]>: List of l
   - `[Size <Double?>]`: The size of the logs. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[Status <String>]`: The status of the log collection request
 
-MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationState\[]>: Managed device mobile app configuration states for this device.
+MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileAppConfigurationState[]>: Managed device mobile app configuration states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
@@ -10443,7 +10463,7 @@ MANAGEDDEVICEMOBILEAPPCONFIGURATIONSTATES <IMicrosoftGraphManagedDeviceMobileApp
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState\[]>: Security baseline states for this device.
+SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState[]>: Security baseline states for this device.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the security baseline
   - `[SecurityBaselineTemplateId <String>]`: The security baseline template id
@@ -10466,7 +10486,7 @@ SECURITYBASELINESTATES <IMicrosoftGraphSecurityBaselineState\[]>: Security basel
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
   - `[UserPrincipalName <String>]`: User Principal Name
 
-USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed device.
+USERS <IMicrosoftGraphUser1[]>: The primary users associated with the managed device.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
@@ -11339,7 +11359,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
       - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
       - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
       - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+        - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
         - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
         - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15079,7 +15099,7 @@ USERS <IMicrosoftGraphUser1\[]>: The primary users associated with the managed d
     - `[LastCheckInDateTime <DateTime?>]`: Last checkin time of the device.
     - `[UserId <String>]`: UserId associated with this device registration record.
 
-WINDOWSPROTECTIONSTATE `<IMicrosoftGraphWindowsProtectionState>`: Device protection status entity.
+WINDOWSPROTECTIONSTATE <IMicrosoftGraphWindowsProtectionState>: Device protection status entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AntiMalwareVersion <String>]`: Current anti malware version

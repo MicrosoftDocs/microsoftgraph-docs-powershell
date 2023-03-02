@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
@@ -14,8 +14,8 @@ Update the properties of a teamsAppSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-IsChatResourceSpecificConsentEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-AllowUserRequestsForAppAccess]
+ [-Id <String>] [-IsChatResourceSpecificConsentEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -49,6 +49,21 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowUserRequestsForAppAccess
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -172,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
+BODYPARAMETER <IMicrosoftGraphTeamsAppSettings>: teamsAppSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowUserRequestsForAppAccess <Boolean?>]`: 

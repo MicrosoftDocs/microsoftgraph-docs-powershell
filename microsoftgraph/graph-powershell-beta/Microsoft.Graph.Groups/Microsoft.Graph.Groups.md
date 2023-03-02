@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: ff835420-1489-4281-8bc7-9a7bd0cb7771
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -70,6 +70,9 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ### [Confirm-MgGroupPermissionGrantMemberObject](Confirm-MgGroupPermissionGrantMemberObject.md)
 Invoke action checkMemberObjects
+
+### [Confirm-MgGroupSiteInformationProtectionSignature](Confirm-MgGroupSiteInformationProtectionSignature.md)
+Invoke action verifySignature
 
 ### [Copy-MgGroupDriveItem](Copy-MgGroupDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -491,6 +494,12 @@ Tentatively accept the specified event in a user calendar.
 If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
+### [Invoke-MgBufferGroupSiteInformationProtectionDecrypt](Invoke-MgBufferGroupSiteInformationProtectionDecrypt.md)
+Invoke action decryptBuffer
+
+### [Invoke-MgBufferGroupSiteInformationProtectionEncrypt](Invoke-MgBufferGroupSiteInformationProtectionEncrypt.md)
+Invoke action encryptBuffer
+
 ### [Invoke-MgCalendarGroupCalendar](Invoke-MgCalendarGroupCalendar.md)
 Invoke function allowedCalendarSharingRoles
 
@@ -527,6 +536,10 @@ Invoke action extractSensitivityLabels
 
 ### [Invoke-MgExtractGroupDriveRootSensitivityLabel](Invoke-MgExtractGroupDriveRootSensitivityLabel.md)
 Invoke action extractSensitivityLabels
+
+### [Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel](Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel.md)
+Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
+The contentInfo input is resolved to informationProtectionContentLabel.
 
 ### [Invoke-MgFollowGroupDriveItem](Invoke-MgFollowGroupDriveItem.md)
 Follow a driveItem.
@@ -636,6 +649,9 @@ Create an open extension (openTypeExtension object) and add custom properties in
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
+
+### [Invoke-MgSignGroupSiteInformationProtectionDigest](Invoke-MgSignGroupSiteInformationProtectionDigest.md)
+Invoke action signDigest
 
 ### [Invoke-MgSnoozeGroupCalendarEventReminder](Invoke-MgSnoozeGroupCalendarEventReminder.md)
 Postpone a reminder for an event in a user calendar until a new time.
@@ -1119,6 +1135,30 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### [Test-MgGroupSiteContentTypePublished](Test-MgGroupSiteContentTypePublished.md)
 Invoke function isPublished
+
+### [Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy](Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy.md)
+Invoke action evaluate
+
+### [Test-MgGroupSiteInformationProtectionPolicyLabelApplication](Test-MgGroupSiteInformationProtectionPolicyLabelApplication.md)
+Compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
+Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
+
+### [Test-MgGroupSiteInformationProtectionPolicyLabelClassificationResult](Test-MgGroupSiteInformationProtectionPolicyLabelClassificationResult.md)
+Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
+This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
+To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
+The API returns an informationProtectionAction that contains one of more of the following:
+
+### [Test-MgGroupSiteInformationProtectionPolicyLabelRemoval](Test-MgGroupSiteInformationProtectionPolicyLabelRemoval.md)
+Indicate to the consuming application what actions it should take to remove the label information.
+Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
+
+### [Test-MgGroupSiteInformationProtectionSensitivityLabel](Test-MgGroupSiteInformationProtectionSensitivityLabel.md)
+Invoke action evaluate
+
+### [Test-MgGroupSiteInformationProtectionSensitivityLabelSublabel](Test-MgGroupSiteInformationProtectionSensitivityLabelSublabel.md)
+Invoke action evaluate
 
 ### [Test-MgGroupSiteListContentTypePublished](Test-MgGroupSiteListContentTypePublished.md)
 Invoke function isPublished

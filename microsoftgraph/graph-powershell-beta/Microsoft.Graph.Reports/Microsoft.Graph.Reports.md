@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Reports
 Module Guid: 2b2056ec-fd05-48c2-8cb0-fbbc7b8e8837
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports
@@ -129,6 +129,15 @@ Invoke function getEmailAppUsageUserDetail
 
 ### [Get-MgReportEmailAppUsageVersionUserCount](Get-MgReportEmailAppUsageVersionUserCount.md)
 Invoke function getEmailAppUsageVersionsUserCounts
+
+### [Get-MgReportFormUserActivityCount](Get-MgReportFormUserActivityCount.md)
+Invoke function getFormsUserActivityCounts
+
+### [Get-MgReportFormUserActivityUserCount](Get-MgReportFormUserActivityUserCount.md)
+Invoke function getFormsUserActivityUserCounts
+
+### [Get-MgReportFormUserActivityUserDetail](Get-MgReportFormUserActivityUserDetail.md)
+Invoke function getFormsUserActivityUserDetail
 
 ### [Get-MgReportGroupArchivedPrintJob](Get-MgReportGroupArchivedPrintJob.md)
 Invoke function getGroupArchivedPrintJobs

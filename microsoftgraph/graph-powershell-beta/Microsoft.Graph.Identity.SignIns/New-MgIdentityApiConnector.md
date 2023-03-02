@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityApiConnector
@@ -13,13 +12,13 @@ Create a new identityApiConnector object.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgIdentityApiConnector [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -91,7 +90,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -106,7 +105,7 @@ apiAuthenticationConfigurationBase
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -122,7 +121,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphIdentityApiConnector
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -137,7 +136,7 @@ The name of the API connector.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -153,7 +152,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -168,7 +167,7 @@ The URL of the API endpoint to call.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -227,7 +226,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityApiConnector>`: identityApiConnector
+BODYPARAMETER <IMicrosoftGraphIdentityApiConnector>: identityApiConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationConfiguration <IMicrosoftGraphApiAuthenticationConfigurationBase>]`: apiAuthenticationConfigurationBase

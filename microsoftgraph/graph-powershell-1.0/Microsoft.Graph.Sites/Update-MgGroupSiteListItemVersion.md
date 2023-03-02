@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsitelistitemversion
@@ -12,7 +12,7 @@ Update the navigation property versions in groups
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListItemId <String>
  -ListItemVersionId <String> -SiteId <String> [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>]
@@ -20,14 +20,14 @@ Update-MgGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListItemId
  [-Publication <IMicrosoftGraphPublicationFacet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgGroupSiteListItemVersion -GroupId <String> -ListId <String> -ListItemId <String>
  -ListItemVersionId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphListItemVersion> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Fields <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
@@ -35,7 +35,7 @@ Update-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> [-AdditionalProp
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphListItemVersion>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -53,7 +53,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -69,7 +69,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphListItemVersion
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ fieldValueSet
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -99,7 +99,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -131,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIED
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -163,7 +163,7 @@ Read-only.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -178,7 +178,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -193,7 +193,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -208,7 +208,7 @@ key: id of listItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -239,7 +239,7 @@ To construct, please use Get-Help -Online and see NOTES section for PUBLICATION 
 
 ```yaml
 Type: IMicrosoftGraphPublicationFacet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -254,7 +254,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -314,7 +314,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
+BODYPARAMETER <IMicrosoftGraphListItemVersion>: listItemVersion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -334,7 +334,7 @@ BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
@@ -381,7 +381,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -390,7 +390,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+PUBLICATION <IMicrosoftGraphPublicationFacet>: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.

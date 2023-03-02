@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasenoncustodialdatasourcehold
@@ -14,39 +14,39 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## SYNTAX
 
-### ApplyExpanded (Default)
+### ApplyExpanded1 (Default)
 ```
 Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Apply2
+```
+Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
+ -BodyParameter <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Apply1
 ```
 Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
- -BodyParameter <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Apply
-```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ApplyViaIdentityExpanded
+### ApplyViaIdentityExpanded1
 ```
 Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ApplyViaIdentity1
+### ApplyViaIdentity2
 ```
 Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ApplyViaIdentity
+### ApplyViaIdentity1
 ```
 Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -84,7 +84,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
+Parameter Sets: ApplyExpanded1, ApplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Apply1, ApplyViaIdentity1
+Parameter Sets: Apply2, ApplyViaIdentity2
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: ApplyExpanded, Apply1, Apply
+Parameter Sets: ApplyExpanded1, Apply2, Apply1
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ key: id of ediscoveryNoncustodialDataSource
 
 ```yaml
 Type: String
-Parameter Sets: Apply
+Parameter Sets: Apply1
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
+Parameter Sets: ApplyExpanded1, ApplyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity1, ApplyViaIdentity
+Parameter Sets: ApplyViaIdentityExpanded1, ApplyViaIdentity2, ApplyViaIdentity1
 Aliases:
 
 Required: True
@@ -236,11 +236,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AttackSimulationOperationId <String>]`: key: id of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: key: id of authoredNote

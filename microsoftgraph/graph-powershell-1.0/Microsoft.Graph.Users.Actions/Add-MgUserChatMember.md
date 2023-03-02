@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/add-mguserchatmember
@@ -13,26 +13,26 @@ The response provides details about which memberships could and couldn't be crea
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
 Add-MgUserChatMember -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
 Add-MgUserChatMember -ChatId <String> -UserId <String>
  -BodyParameter <IPaths1Uoy9ZaUsersUserIdChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentityExpanded
 ```
 Add-MgUserChatMember -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Values <IMicrosoftGraphConversationMember[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity1
+### AddViaIdentity
 ```
 Add-MgUserChatMember -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Uoy9ZaUsersUserIdChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>
@@ -139,7 +139,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -155,7 +155,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Uoy9ZaUsersUserIdChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -170,7 +170,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -186,7 +186,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -201,7 +201,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -217,7 +217,7 @@ To construct, please use Get-Help -Online and see NOTES section for VALUES prope
 
 ```yaml
 Type: IMicrosoftGraphConversationMember[]
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -277,7 +277,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Uoy9ZaUsersUserIdChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Uoy9ZaUsersUserIdChatsChatIdMembersMicrosoftGraphAddPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Values <IMicrosoftGraphConversationMember[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -285,7 +285,7 @@ BODYPARAMETER `<IPaths1Uoy9ZaUsersUserIdChatsChatIdMembersMicrosoftGraphAddPostR
     - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -328,7 +328,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-VALUES <IMicrosoftGraphConversationMember\[]>: .
+VALUES <IMicrosoftGraphConversationMember[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.

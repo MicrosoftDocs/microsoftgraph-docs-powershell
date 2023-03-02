@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgPlannerPlanDetail
@@ -15,28 +14,28 @@ Update the navigation property details in planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlannerPlanDetail -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
+Update-MgPlannerPlanDetail -PlannerPlanId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtable>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerPlanDetail -PlannerPlanId <String> -BodyParameter <IMicrosoftGraphPlannerPlanDetails>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlannerPlanDetail -PlannerPlanId <String> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>] [-Id <String>] [-SharedWith <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
+ [-AdditionalProperties <Hashtable>] [-CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]
+ [-Id <String>] [-SharedWith <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerPlanDetails>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerPlanDetails> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -122,6 +121,21 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag value.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -239,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
+BODYPARAMETER <IMicrosoftGraphPlannerPlanDetails>: plannerPlanDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CategoryDescriptions <IMicrosoftGraphPlannerCategoryDescriptions>]`: plannerCategoryDescriptions
@@ -272,7 +286,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerPlanDetails>`: plannerPlanDetails
   - `[SharedWith <IMicrosoftGraphPlannerUserIds>]`: plannerUserIds
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCategoryDescriptions
+CATEGORYDESCRIPTIONS <IMicrosoftGraphPlannerCategoryDescriptions>: plannerCategoryDescriptions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category1 <String>]`: The label associated with Category 1
   - `[Category10 <String>]`: The label associated with Category 10
@@ -300,7 +314,7 @@ CATEGORYDESCRIPTIONS `<IMicrosoftGraphPlannerCategoryDescriptions>`: plannerCate
   - `[Category8 <String>]`: The label associated with Category 8
   - `[Category9 <String>]`: The label associated with Category 9
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

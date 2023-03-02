@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskbuckettaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Update-MgPlannerTaskBucketTaskBoardFormat
@@ -15,26 +14,28 @@ Update the navigation property bucketTaskBoardFormat in planner
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-OrderHint <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId <String> -IfMatch <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHint <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId <String>
+Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId <String> -IfMatch <String>
  -BodyParameter <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-OrderHint <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMatch <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHint <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity>
+Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMatch <String>
  -BodyParameter <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -99,6 +100,21 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag value.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -217,12 +233,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
+BODYPARAMETER <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>: plannerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board. For details about the supported format, see Using order hints in Planner.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
   - `[GroupId <String>]`: key: id of group
   - `[PlannerBucketId <String>]`: key: id of plannerBucket
   - `[PlannerDeltaId <String>]`: key: id of plannerDelta

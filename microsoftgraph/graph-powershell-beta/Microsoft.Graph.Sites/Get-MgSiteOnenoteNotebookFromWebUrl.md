@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsiteonenotenotebookfromweburl
@@ -13,26 +13,26 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded1 (Default)
 ```
 Get-MgSiteOnenoteNotebookFromWebUrl -SiteId <String> [-AdditionalProperties <Hashtable>] [-WebUrl <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgSiteOnenoteNotebookFromWebUrl -SiteId <String>
  -BodyParameter <IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### GetViaIdentityExpanded1
 ```
 Get-MgSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgSiteOnenoteNotebookFromWebUrl -InputObject <ISitesIdentity>
  -BodyParameter <IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>
@@ -68,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Parameter Sets: Get1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Parameter Sets: GetViaIdentityExpanded1, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: GetExpanded1, Get1
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded1, GetViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -190,11 +190,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsUkf43DSitesSiteIdOnenoteNotebooksMicrosoftGraphGetnotebookfromweburlPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[WebUrl <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition

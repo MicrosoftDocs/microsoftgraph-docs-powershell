@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/grant-mguserdriverootpermission
@@ -12,27 +12,27 @@ Grant users access to a link represented by a [permission][].
 
 ## SYNTAX
 
-### GrantExpanded1 (Default)
+### GrantExpanded (Default)
 ```
 Grant-MgUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Grant1
+### Grant
 ```
 Grant-MgUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded1
+### GrantViaIdentityExpanded
 ```
 Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentity1
+### GrantViaIdentity
 ```
 Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
@@ -76,7 +76,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -92,7 +92,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Grant1, GrantViaIdentity1
+Parameter Sets: Grant, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -123,7 +123,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: GrantViaIdentityExpanded1, GrantViaIdentity1
+Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
 Aliases:
 
 Required: True
@@ -138,7 +138,7 @@ key: id of permission
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -154,7 +154,7 @@ To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS p
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
+Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -184,7 +184,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded1, Grant1
+Parameter Sets: GrantExpanded, Grant
 Aliases:
 
 Required: True
@@ -244,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Recipients <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
@@ -252,7 +252,7 @@ BODYPARAMETER `<IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdM
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
   - `[Roles <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
@@ -295,7 +295,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: key: id of todoTaskList
   - `[UserId <String>]`: key: id of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

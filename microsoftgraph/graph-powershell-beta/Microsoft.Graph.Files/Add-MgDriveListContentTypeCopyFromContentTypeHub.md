@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopyfromcontenttypehub
@@ -15,26 +15,26 @@ For more information, see getCompatibleHubContentTypes and the blog post Syntex 
 
 ## SYNTAX
 
-### AddExpanded (Default)
+### AddExpanded1 (Default)
 ```
 Add-MgDriveListContentTypeCopyFromContentTypeHub -DriveId <String> [-AdditionalProperties <Hashtable>]
  [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add
+### Add1
 ```
 Add-MgDriveListContentTypeCopyFromContentTypeHub -DriveId <String>
  -BodyParameter <IPaths12O5S2JDrivesDriveIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded
+### AddViaIdentityExpanded1
 ```
 Add-MgDriveListContentTypeCopyFromContentTypeHub -InputObject <IFilesIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity
+### AddViaIdentity1
 ```
 Add-MgDriveListContentTypeCopyFromContentTypeHub -InputObject <IFilesIdentity>
  -BodyParameter <IPaths12O5S2JDrivesDriveIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
@@ -56,7 +56,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -72,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths12O5S2JDrivesDriveIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add, AddViaIdentity
+Parameter Sets: Add1, AddViaIdentity1
 Aliases:
 
 Required: True
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -102,7 +102,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded, Add
+Parameter Sets: AddExpanded1, Add1
 Aliases:
 
 Required: True
@@ -118,7 +118,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
 Aliases:
 
 Required: True
@@ -178,11 +178,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths12O5S2JDrivesDriveIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths12O5S2JDrivesDriveIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentTypeId <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

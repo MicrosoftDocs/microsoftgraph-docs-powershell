@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/copy-mgdrivelistcontenttypetodefaultcontentlocation
@@ -13,28 +13,28 @@ The file can then be added as a default file or template via a POST operation.
 
 ## SYNTAX
 
-### CopyExpanded (Default)
+### CopyExpanded1 (Default)
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Copy
+### Copy1
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded
+### CopyViaIdentityExpanded1
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentity
+### CopyViaIdentity1
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity>
  -BodyParameter <IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy, CopyViaIdentity
+Parameter Sets: Copy1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, Copy
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, Copy
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ To construct, please use Get-Help -Online and see NOTES section for SOURCEFILE p
 
 ```yaml
 Type: IMicrosoftGraphItemReference
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationFileName <String>]`: 
   - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
@@ -244,7 +244,7 @@ BODYPARAMETER `<IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoft
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType
@@ -270,7 +270,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: key: id of user
 
-SOURCEFILE `<IMicrosoftGraphItemReference>`: itemReference
+SOURCEFILE <IMicrosoftGraphItemReference>: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
   - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.

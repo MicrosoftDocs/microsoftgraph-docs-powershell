@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycaseoperation
@@ -12,13 +12,13 @@ Delete navigation property operations for security
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgSecurityCaseEdiscoveryCaseOperation -CaseOperationId <String> -EdiscoveryCaseId <String>
  [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of caseOperation
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: key: id of alert
   - `[AttackSimulationOperationId <String>]`: key: id of attackSimulationOperation
   - `[AuthoredNoteId <String>]`: key: id of authoredNote

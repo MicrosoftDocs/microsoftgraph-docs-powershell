@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 81b10cc5-55bd-4d74-b961-37560f368cdf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
@@ -63,6 +63,12 @@ Represents simulation automation created to run on a tenant.
 
 ### [Get-MgSecurityAttackSimulationAutomationRun](Get-MgSecurityAttackSimulationAutomationRun.md)
 A collection of simulation automation runs.
+
+### [Get-MgSecurityAttackSimulationOperation](Get-MgSecurityAttackSimulationOperation.md)
+Represents an attack simulation training operation.
+
+### [Get-MgSecurityAttackSimulationPayload](Get-MgSecurityAttackSimulationPayload.md)
+Represents an attack simulation training campaign payload in a tenant.
 
 ### [Get-MgSecurityCase](Get-MgSecurityCase.md)
 Get cases from security
@@ -306,6 +312,12 @@ Create new navigation property to simulationAutomations for security
 ### [New-MgSecurityAttackSimulationAutomationRun](New-MgSecurityAttackSimulationAutomationRun.md)
 Create new navigation property to runs for security
 
+### [New-MgSecurityAttackSimulationOperation](New-MgSecurityAttackSimulationOperation.md)
+Create new navigation property to operations for security
+
+### [New-MgSecurityAttackSimulationPayload](New-MgSecurityAttackSimulationPayload.md)
+Create new navigation property to payloads for security
+
 ### [New-MgSecurityCaseEdiscoveryCase](New-MgSecurityCaseEdiscoveryCase.md)
 Create a new ediscoveryCase object.
 
@@ -439,6 +451,12 @@ Delete navigation property simulationAutomations for security
 
 ### [Remove-MgSecurityAttackSimulationAutomationRun](Remove-MgSecurityAttackSimulationAutomationRun.md)
 Delete navigation property runs for security
+
+### [Remove-MgSecurityAttackSimulationOperation](Remove-MgSecurityAttackSimulationOperation.md)
+Delete navigation property operations for security
+
+### [Remove-MgSecurityAttackSimulationPayload](Remove-MgSecurityAttackSimulationPayload.md)
+Delete navigation property payloads for security
 
 ### [Remove-MgSecurityCase](Remove-MgSecurityCase.md)
 Delete navigation property cases for security
@@ -647,6 +665,12 @@ Update the navigation property simulationAutomations in security
 
 ### [Update-MgSecurityAttackSimulationAutomationRun](Update-MgSecurityAttackSimulationAutomationRun.md)
 Update the navigation property runs in security
+
+### [Update-MgSecurityAttackSimulationOperation](Update-MgSecurityAttackSimulationOperation.md)
+Update the navigation property operations in security
+
+### [Update-MgSecurityAttackSimulationPayload](Update-MgSecurityAttackSimulationPayload.md)
+Update the navigation property payloads in security
 
 ### [Update-MgSecurityCase](Update-MgSecurityCase.md)
 Update the navigation property cases in security

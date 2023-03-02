@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrecommendation
@@ -16,35 +16,36 @@ Update the navigation property recommendations in directory
 ```
 Update-MgDirectoryRecommendation -RecommendationId <String> [-ActionSteps <IMicrosoftGraphActionStep[]>]
  [-AdditionalProperties <Hashtable>] [-Benefits <String>] [-Category <String>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
- [-ImpactedResources <IMicrosoftGraphRecommendationResource[]>] [-Insights <String>]
+ [-CurrentScore <Double>] [-DisplayName <String>] [-FeatureAreas <String[]>] [-Id <String>]
+ [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
+ [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
- [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
+ [-RemediationImpact <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectoryRecommendation -RecommendationId <String> -BodyParameter <IMicrosoftGraphRecommendation>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDirectoryRecommendation -RecommendationId <String> -BodyParameter <Hashtable> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
  [-ActionSteps <IMicrosoftGraphActionStep[]>] [-AdditionalProperties <Hashtable>] [-Benefits <String>]
- [-Category <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
- [-ImpactedResources <IMicrosoftGraphRecommendationResource[]>] [-Insights <String>]
+ [-Category <String>] [-CreatedDateTime <DateTime>] [-CurrentScore <Double>] [-DisplayName <String>]
+ [-FeatureAreas <String[]>] [-Id <String>] [-ImpactStartDateTime <DateTime>] [-ImpactType <String>]
+ [-ImpactedResources <IMicrosoftGraphImpactedResource[]>] [-Insights <String>]
  [-LastCheckedDateTime <DateTime>] [-LastModifiedBy <String>] [-LastModifiedDateTime <DateTime>]
- [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-MaxScore <Double>] [-PostponeUntilDateTime <DateTime>] [-Priority <String>] [-RecommendationType <String>]
+ [-RemediationImpact <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphRecommendation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -105,7 +106,7 @@ Accept wildcard characters: False
 recommendation
 
 ```yaml
-Type: IMicrosoftGraphRecommendation
+Type: Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -146,11 +147,42 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -CurrentScore
+The number of points the tenant has attained.
+Only applies to recommendations with category set to identitySecureScore.
+
+```yaml
+Type: Double
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DisplayName
 The title of the recommendation.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -FeatureAreas
+The directory feature that the recommendation is related to.
+
+```yaml
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +214,7 @@ The list of directory objects associated with the recommendation.
 To construct, please use Get-Help -Online and see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendationResource[]
+Type: IMicrosoftGraphImpactedResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -302,6 +334,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -MaxScore
+The maximum number of points attainable.
+Only applies to recommendations with category set to identitySecureScore.
+
+```yaml
+Type: Double
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PassThru
 Returns true when the command succeeds
 
@@ -362,6 +410,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RecommendationType
+recommendationType
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RemediationImpact
+Description of the impact on users of the remediation.
+Only applies to recommendations with category set to identitySecureScore.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 recommendationStatus
 
@@ -414,7 +493,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendation
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
@@ -427,7 +506,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: List of actions to take to complete a recommendation.
+ACTIONSTEPS <IMicrosoftGraphActionStep[]>: List of actions to take to complete a recommendation.
   - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: Brief title for the page that the links directs to.
@@ -435,7 +514,7 @@ ACTIONSTEPS <IMicrosoftGraphActionStep\[]>: List of actions to take to complete 
   - `[StepNumber <Int64?>]`: Indicates the position for this action in the order of the collection of actions to be taken.
   - `[Text <String>]`: Friendly description of the action to take.
 
-IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource\[]>: The list of directory objects associated with the recommendation.
+IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource[]>: The list of directory objects associated with the recommendation.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
@@ -454,7 +533,7 @@ IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource\[]>: The list of directory ob
   - `[Status <String>]`: recommendationStatus
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
   - `[AllowedValueId <String>]`: key: id of allowedValue
   - `[AttributeSetId <String>]`: key: id of attributeSet

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgrecentdrive
@@ -12,13 +12,13 @@ Invoke function recent
 
 ## SYNTAX
 
-### Recent (Default)
+### Recent1 (Default)
 ```
 Invoke-MgRecentDrive -DriveId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
  [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### RecentViaIdentity
+### RecentViaIdentity1
 ```
 Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
@@ -51,7 +51,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Recent
+Parameter Sets: Recent1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: RecentViaIdentity
+Parameter Sets: RecentViaIdentity1
 Aliases:
 
 Required: True
@@ -185,7 +185,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
   - `[ColumnLinkId <String>]`: key: id of columnLink
   - `[ContentTypeId <String>]`: key: id of contentType

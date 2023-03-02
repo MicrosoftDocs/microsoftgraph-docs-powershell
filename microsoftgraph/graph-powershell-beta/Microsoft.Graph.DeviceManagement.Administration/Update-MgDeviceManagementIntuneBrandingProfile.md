@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementintunebrandingprofile
@@ -19,15 +19,16 @@ Update-MgDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
  [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
- [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisplayName <String>]
- [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>] [-IsDefaultProfile]
- [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled] [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-LightBackgroundLogo <IMicrosoftGraphMimeContent>]
- [-OnlineSupportSiteName <String>] [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>]
- [-ProfileDescription <String>] [-ProfileName <String>] [-RoleScopeTagIds <String[]>]
- [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowConfigurationManagerApps]
- [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
- [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisableDeviceCategorySelection]
+ [-DisplayName <String>] [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>]
+ [-IsDefaultProfile] [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
+ [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
+ [-LightBackgroundLogo <IMicrosoftGraphMimeContent>] [-OnlineSupportSiteName <String>]
+ [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>] [-ProfileName <String>]
+ [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
+ [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
+ [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -43,15 +44,16 @@ Update-MgDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAd
  [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
  [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
  [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
- [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisplayName <String>]
- [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>] [-IsDefaultProfile]
- [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled] [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>]
- [-LastModifiedDateTime <DateTime>] [-LightBackgroundLogo <IMicrosoftGraphMimeContent>]
- [-OnlineSupportSiteName <String>] [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>]
- [-ProfileDescription <String>] [-ProfileName <String>] [-RoleScopeTagIds <String[]>]
- [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps] [-ShowConfigurationManagerApps]
- [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>]
- [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisableDeviceCategorySelection]
+ [-DisplayName <String>] [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>]
+ [-IsDefaultProfile] [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
+ [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
+ [-LightBackgroundLogo <IMicrosoftGraphMimeContent>] [-OnlineSupportSiteName <String>]
+ [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>] [-ProfileName <String>]
+ [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
+ [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
+ [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -253,6 +255,21 @@ Accept wildcard characters: False
 ### -DisableClientTelemetry
 Applies to telemetry sent from all clients to the Intune service.
 When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisableDeviceCategorySelection
+Boolean that indicates if Device Category Selection will be shown in Company Portal
 
 ```yaml
 Type: SwitchParameter
@@ -712,14 +729,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment\[]>: The list of group assignments for the branding profile
+ASSIGNMENTS <IMicrosoftGraphIntuneBrandingProfileAssignment[]>: The list of group assignments for the branding profile
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
+BODYPARAMETER <IMicrosoftGraphIntuneBrandingProfile>: This entity contains data which is used in customizing the tenant level appearance of the Company Portal applications as well as the end user web portal.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]`: The list of group assignments for the branding profile
@@ -772,12 +789,12 @@ BODYPARAMETER `<IMicrosoftGraphIntuneBrandingProfile>`: This entity contains dat
     - `[R <Int32?>]`: Red value
   - `[ThemeColorLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
 
-COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction\[]>: Collection of blocked actions on the company portal as per platform and device ownership types.
+COMPANYPORTALBLOCKEDACTIONS <IMicrosoftGraphCompanyPortalBlockedAction[]>: Collection of blocked actions on the company portal as per platform and device ownership types.
   - `[Action <CompanyPortalAction?>]`: Action on a device that can be executed in the Company Portal
   - `[OwnerType <OwnerType?>]`: Owner type of device.
   - `[Platform <DevicePlatformType?>]`: Supported platform types.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementAdministrationIdentity>: Identity Parameter
   - `[AuditEventId <String>]`: key: id of auditEvent
   - `[CartToClassAssociationId <String>]`: key: id of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: key: id of cloudPcAuditEvent
@@ -833,23 +850,23 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UnsupportedGroupPolicyExtensionId <String>]`: key: id of unsupportedGroupPolicyExtension
   - `[UserPfxCertificateId <String>]`: key: id of userPFXCertificate
 
-LANDINGPAGECUSTOMIZEDIMAGE `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+LANDINGPAGECUSTOMIZEDIMAGE <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
-LIGHTBACKGROUNDLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+LIGHTBACKGROUNDLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
-THEMECOLOR `<IMicrosoftGraphRgbColor>`: Color in RGB.
+THEMECOLOR <IMicrosoftGraphRgbColor>: Color in RGB.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[B <Int32?>]`: Blue value
   - `[G <Int32?>]`: Green value
   - `[R <Int32?>]`: Red value
 
-THEMECOLORLOGO `<IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
+THEMECOLORLOGO <IMicrosoftGraphMimeContent>: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: Indicates the content mime type.
   - `[Value <Byte[]>]`: The byte array that contains the actual content.

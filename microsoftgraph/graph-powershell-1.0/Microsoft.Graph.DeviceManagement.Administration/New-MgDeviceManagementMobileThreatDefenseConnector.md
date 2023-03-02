@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
@@ -15,10 +15,13 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 ### CreateExpanded1 (Default)
 ```
 New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
- [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-Id <String>]
- [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-LastHeartbeatDateTime <DateTime>]
+ [-AllowPartnerToCollectIosApplicationMetadata] [-AllowPartnerToCollectIosPersonalApplicationMetadata]
+ [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled]
+ [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
+ [-LastHeartbeatDateTime <DateTime>] [-MicrosoftDefenderForEndpointAttachEnabled]
  [-PartnerState <MobileThreatPartnerTenantState>] [-PartnerUnresponsivenessThresholdInDays <Int32>]
- [-PartnerUnsupportedOSVersionBlocked] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerUnsupportedOSVersionBlocked] [-WindowsDeviceBlockedOnMissingPartnerData] [-WindowsEnabled] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -49,6 +52,40 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -AllowPartnerToCollectIosApplicationMetadata
+When TRUE, indicates the data sync partner may collect metadata about installed applications from Intune for IOS devices.
+When FALSE, indicates the data sync partner may not collect metadata about installed applications from Intune for IOS devices.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowPartnerToCollectIosPersonalApplicationMetadata
+When TRUE, indicates the data sync partner may collect metadata about personally installed applications from Intune for IOS devices.
+When FALSE, indicates the data sync partner may not collect metadata about personally installed applications from Intune for IOS devices.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -AndroidDeviceBlockedOnMissingPartnerData
 For Android, set whether Intune must receive data from the data sync partner prior to marking a device compliant
 
@@ -66,6 +103,24 @@ Accept wildcard characters: False
 
 ### -AndroidEnabled
 For Android, set whether data from the data sync partner should be used during compliance evaluations
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AndroidMobileApplicationManagementEnabled
+When TRUE, inidicates that data from the data sync partner can be used during Mobile Application Management (MAM) evaluations for Android devices.
+When FALSE, inidicates that data from the data sync partner should not be used during Mobile Application Management (MAM) evaluations for Android devices.
+Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
+Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
@@ -141,11 +196,46 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -IosMobileApplicationManagementEnabled
+When TRUE, inidicates that data from the data sync partner can be used during Mobile Application Management (MAM) evaluations for IOS devices.
+When FALSE, inidicates that data from the data sync partner should not be used during Mobile Application Management (MAM) evaluations for IOS devices.
+Only one partner per platform may be enabled for Mobile Application Management (MAM) evaluation.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -LastHeartbeatDateTime
 DateTime of last Heartbeat recieved from the Data Sync Partner
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MicrosoftDefenderForEndpointAttachEnabled
+When TRUE, inidicates that configuration profile management via Microsoft Defender for Endpoint is enabled.
+When FALSE, inidicates that configuration profile management via Microsoft Defender for Endpoint is disabled.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -188,6 +278,40 @@ Accept wildcard characters: False
 
 ### -PartnerUnsupportedOSVersionBlocked
 Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Data Sync Partner
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsDeviceBlockedOnMissingPartnerData
+When TRUE, inidicates that Intune must receive data from the data sync partner prior to marking a device compliant for Windows.
+When FALSE, inidicates that Intune may make a device compliant without receiving data from the data sync partner for Windows.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsEnabled
+When TRUE, inidicates that data from the data sync partner can be used during compliance evaluations for Windows.
+When FALSE, inidicates that data from the data sync partner should not be used during compliance evaluations for Windows.
+Default value is FALSE.
 
 ```yaml
 Type: SwitchParameter
@@ -250,7 +374,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector1>`: Entity which represents a connection to Mobile threat defense partner.
+BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector1>: Entity which represents a connection to Mobile threat defense partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: When TRUE, indicates the data sync partner may collect metadata about installed applications from Intune for IOS devices. When FALSE, indicates the data sync partner may not collect metadata about installed applications from Intune for IOS devices. Default value is FALSE.
