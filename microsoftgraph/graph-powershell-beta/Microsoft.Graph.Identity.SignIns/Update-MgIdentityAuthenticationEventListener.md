@@ -16,8 +16,8 @@ Update the navigation property authenticationEventListeners in identity
 ```
 Update-MgIdentityAuthenticationEventListener -AuthenticationEventListenerId <String>
  [-AdditionalProperties <Hashtable>] [-AuthenticationEventsFlowId <String>]
- [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>] [-Priority <Int32>]
- [-Tags <IMicrosoftGraphKeyValuePair[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>] [-Priority <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,8 +31,8 @@ Update-MgIdentityAuthenticationEventListener -AuthenticationEventListenerId <Str
 ```
 Update-MgIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-AuthenticationEventsFlowId <String>]
- [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>] [-Priority <Int32>]
- [-Tags <IMicrosoftGraphKeyValuePair[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>] [-Priority <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -178,22 +178,6 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Tags
-.
-To construct, please use Get-Help -Online and see NOTES section for TAGS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphKeyValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

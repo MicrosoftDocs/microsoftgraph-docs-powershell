@@ -17,9 +17,9 @@ Create a new customTaskExtension object.
 New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension [-AdditionalProperties <Hashtable>]
  [-AuthenticationConfiguration <Hashtable>]
  [-CallbackConfiguration <IMicrosoftGraphCustomExtensionCallbackConfiguration>]
- [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser>]
+ [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser1>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser>]
+ [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser1>]
  [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -152,7 +152,7 @@ user
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser
+Type: IMicrosoftGraphUser1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -244,7 +244,7 @@ user
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser
+Type: IMicrosoftGraphUser1
 Parameter Sets: CreateExpanded
 Aliases:
 

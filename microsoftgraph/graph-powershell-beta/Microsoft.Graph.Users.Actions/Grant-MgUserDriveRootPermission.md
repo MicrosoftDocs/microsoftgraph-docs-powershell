@@ -12,27 +12,27 @@ Grant users access to a link represented by a [permission][].
 
 ## SYNTAX
 
-### GrantExpanded (Default)
+### GrantExpanded1 (Default)
 ```
 Grant-MgUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Grant
+### Grant1
 ```
 Grant-MgUserDriveRootPermission -DriveId <String> -PermissionId <String> -UserId <String>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded
+### GrantViaIdentityExpanded1
 ```
 Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentity
+### GrantViaIdentity1
 ```
 Grant-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema>
@@ -76,7 +76,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -92,7 +92,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsQisc3SUsersUserIdDrivesDriveIdRootPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Grant, GrantViaIdentity
+Parameter Sets: Grant1, GrantViaIdentity1
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded, Grant
+Parameter Sets: GrantExpanded1, Grant1
 Aliases:
 
 Required: True
@@ -123,7 +123,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
+Parameter Sets: GrantViaIdentityExpanded1, GrantViaIdentity1
 Aliases:
 
 Required: True
@@ -138,7 +138,7 @@ key: id of permission
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded, Grant
+Parameter Sets: GrantExpanded1, Grant1
 Aliases:
 
 Required: True
@@ -154,7 +154,7 @@ To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS p
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -184,7 +184,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded, Grant
+Parameter Sets: GrantExpanded1, Grant1
 Aliases:
 
 Required: True

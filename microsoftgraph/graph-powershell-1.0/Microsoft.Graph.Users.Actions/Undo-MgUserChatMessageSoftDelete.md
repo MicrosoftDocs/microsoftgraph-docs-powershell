@@ -12,13 +12,13 @@ Invoke action undoSoftDelete
 
 ## SYNTAX
 
-### Undo1 (Default)
+### Undo (Default)
 ```
 Undo-MgUserChatMessageSoftDelete -ChatId <String> -ChatMessageId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UndoViaIdentity1
+### UndoViaIdentity
 ```
 Undo-MgUserChatMessageSoftDelete -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: UndoViaIdentity1
+Parameter Sets: UndoViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Undo1
+Parameter Sets: Undo
 Aliases:
 
 Required: True

@@ -13,7 +13,7 @@ Get identityProviders from identity
 
 ## SYNTAX
 
-### List (Default)
+### List2 (Default)
 ```
 Get-MgIdentityB2XUserFlowIdentityProvider -B2XIdentityUserFlowId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -27,13 +27,13 @@ Get-MgIdentityB2XUserFlowIdentityProvider -B2XIdentityUserFlowId <String> [-Expa
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgIdentityB2XUserFlowIdentityProvider -B2XIdentityUserFlowId <String> -IdentityProviderId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgIdentityB2XUserFlowIdentityProvider -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -60,7 +60,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -75,7 +75,7 @@ key: id of b2xIdentityUserFlow
 
 ```yaml
 Type: String
-Parameter Sets: List, List3, Get
+Parameter Sets: List2, List3, Get1
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases: CV
 
 Required: False
@@ -121,7 +121,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -136,7 +136,7 @@ key: id of identityProvider
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -152,7 +152,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -167,7 +167,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -197,7 +197,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False
@@ -212,7 +212,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases: OrderBy
 
 Required: False
@@ -227,7 +227,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases: Limit
 
 Required: False
@@ -242,7 +242,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List3
+Parameter Sets: List2, List3
 Aliases:
 
 Required: False

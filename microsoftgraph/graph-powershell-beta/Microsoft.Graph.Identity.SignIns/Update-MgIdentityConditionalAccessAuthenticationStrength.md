@@ -16,8 +16,8 @@ Update the navigation property authenticationStrengths in identity
 ```
 Update-MgIdentityConditionalAccessAuthenticationStrength [-AdditionalProperties <Hashtable>]
  [-AuthenticationCombinations <String[]>]
- [-AuthenticationMethodModes <IMicrosoftGraphAuthenticationMethodModeDetail[]>] [-Id <String>]
- [-Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AuthenticationMethodModes <IMicrosoftGraphAuthenticationMethodModeDetail[]>] [-Combinations <String[]>]
+ [-Id <String>] [-Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -94,6 +94,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Combinations
+.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

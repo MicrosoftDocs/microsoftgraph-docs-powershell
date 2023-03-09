@@ -16,7 +16,7 @@ Create a new entitlement management accessPackageAssignment
 ```
 New-MgEntitlementManagementAccessPackageAssignment -AccessPackageId <String> -AssignmentPolicyId <String>
  -RequiredUserId <String[]> [-ExistingAssignment <MicrosoftGraphAccessPackageAssignment[]>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Justification <String>] [-StartDate <String>] [-WhatIf]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>] [-Justification <String>] [-StartDate <String>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -24,7 +24,7 @@ New-MgEntitlementManagementAccessPackageAssignment -AccessPackageId <String> -As
 ```
 New-MgEntitlementManagementAccessPackageAssignment -AccessPackageId <String> -AssignmentPolicyId <String>
  [-ExistingAssignment <MicrosoftGraphAccessPackageAssignment[]>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Justification <String>] [-StartDate <String>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>] [-Justification <String>] [-StartDate <String>]
  -RequiredGroupMember <PSObject[]> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -55,7 +55,7 @@ To construct, see NOTES section for ANSWERS properties and create a hash table.
 To construct, please use Get-Help -Online and see NOTES section for ANSWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAnswer[]
+Type: IMicrosoftGraphAccessPackageAnswer1[]
 Parameter Sets: (All)
 Aliases:
 

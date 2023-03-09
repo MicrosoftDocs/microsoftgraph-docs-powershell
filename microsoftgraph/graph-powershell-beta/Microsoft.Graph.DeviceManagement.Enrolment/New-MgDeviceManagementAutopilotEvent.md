@@ -14,14 +14,15 @@ Create new navigation property to autopilotEvents for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <String>]
- [-AdditionalProperties <Hashtable>] [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>]
- [-DeploymentStartDateTime <DateTime>] [-DeploymentState <String>] [-DeploymentTotalDuration <TimeSpan>]
+New-MgDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
+ [-AccountSetupStatus <WindowsAutopilotDeploymentState>] [-AdditionalProperties <Hashtable>]
+ [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
+ [-DeploymentState <WindowsAutopilotDeploymentState>] [-DeploymentTotalDuration <TimeSpan>]
  [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>]
- [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>] [-DeviceSetupStatus <String>]
- [-EnrollmentFailureDetails <String>] [-EnrollmentStartDateTime <DateTime>]
- [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>] [-EventDateTime <DateTime>] [-Id <String>]
- [-ManagedDeviceName <String>] [-OSVersion <String>]
+ [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
+ [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
+ [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
+ [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
  [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
  [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
@@ -61,7 +62,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: String
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +153,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: String
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +258,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: String
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -20,7 +20,7 @@ New-MgEntitlementManagementAccessPackageAssignmentPolicy [-AccessPackage <IMicro
  [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
- [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion[]>]
+ [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion1[]>]
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphRequestorSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -359,7 +359,7 @@ Questions that are posed to the requestor.
 To construct, please use Get-Help -Online and see NOTES section for QUESTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageQuestion[]
+Type: IMicrosoftGraphAccessPackageQuestion1[]
 Parameter Sets: CreateExpanded
 Aliases:
 

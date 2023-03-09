@@ -12,13 +12,13 @@ Upgrade an app installation within a chat.
 
 ## SYNTAX
 
-### Upgrade (Default)
+### Upgrade1 (Default)
 ```
 Update-MgUserChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpgradeViaIdentity
+### UpgradeViaIdentity1
 ```
 Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -47,7 +47,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: Upgrade1
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: UpgradeViaIdentity
+Parameter Sets: UpgradeViaIdentity1
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ key: id of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: Upgrade1
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: Upgrade1
 Aliases:
 
 Required: True

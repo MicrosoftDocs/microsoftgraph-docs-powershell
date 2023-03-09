@@ -254,9 +254,6 @@ Maximum of 20 objects can be added to an application.
 ### [New-MgApplicationOwnerByRef](New-MgApplicationOwnerByRef.md)
 Create new navigation property ref to owners for applications
 
-### [New-MgApplicationTemplate](New-MgApplicationTemplate.md)
-Add new entity to applicationTemplates
-
 ### [New-MgApplicationTokenIssuancePolicyByRef](New-MgApplicationTokenIssuancePolicyByRef.md)
 Create new navigation property ref to tokenIssuancePolicies for applications
 
@@ -331,9 +328,6 @@ Delete ref of navigation property owners for applications
 
 ### [Remove-MgApplicationPassword](Remove-MgApplicationPassword.md)
 Remove a password from an application.
-
-### [Remove-MgApplicationTemplate](Remove-MgApplicationTemplate.md)
-Delete entity from applicationTemplates
 
 ### [Remove-MgApplicationTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyByRef.md)
 Delete ref of navigation property tokenIssuancePolicies for applications
@@ -419,9 +413,6 @@ Update the navigation property extensionProperties in applications
 
 ### [Update-MgApplicationFederatedIdentityCredential](Update-MgApplicationFederatedIdentityCredential.md)
 Update the navigation property federatedIdentityCredentials in applications
-
-### [Update-MgApplicationTemplate](Update-MgApplicationTemplate.md)
-Update entity in applicationTemplates
 
 ### [Update-MgGroupAppRoleAssignment](Update-MgGroupAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in groups

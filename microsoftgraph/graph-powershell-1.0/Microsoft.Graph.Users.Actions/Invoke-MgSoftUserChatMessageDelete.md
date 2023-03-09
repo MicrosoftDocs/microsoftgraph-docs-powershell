@@ -12,13 +12,13 @@ Invoke action softDelete
 
 ## SYNTAX
 
-### Soft1 (Default)
+### Soft (Default)
 ```
 Invoke-MgSoftUserChatMessageDelete -ChatId <String> -ChatMessageId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SoftViaIdentity1
+### SoftViaIdentity
 ```
 Invoke-MgSoftUserChatMessageDelete -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: Soft1
+Parameter Sets: Soft
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Soft1
+Parameter Sets: Soft
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: SoftViaIdentity1
+Parameter Sets: SoftViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Soft1
+Parameter Sets: Soft
 Aliases:
 
 Required: True

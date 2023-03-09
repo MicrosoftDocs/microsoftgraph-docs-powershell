@@ -12,12 +12,12 @@ Invoke function isPublished
 
 ## SYNTAX
 
-### Is (Default)
+### Is1 (Default)
 ```
 Test-MgDriveListContentTypePublished -ContentTypeId <String> -DriveId <String> [<CommonParameters>]
 ```
 
-### IsViaIdentity
+### IsViaIdentity1
 ```
 Test-MgDriveListContentTypePublished -InputObject <IFilesIdentity> [<CommonParameters>]
 ```
@@ -34,7 +34,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Is
+Parameter Sets: Is1
 Aliases:
 
 Required: True
@@ -49,7 +49,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Is
+Parameter Sets: Is1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: IsViaIdentity
+Parameter Sets: IsViaIdentity1
 Aliases:
 
 Required: True

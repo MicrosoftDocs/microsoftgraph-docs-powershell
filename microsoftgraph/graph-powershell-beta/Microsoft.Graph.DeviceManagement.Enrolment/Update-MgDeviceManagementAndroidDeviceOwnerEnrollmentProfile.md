@@ -19,7 +19,7 @@ Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -AndroidDeviceOwner
  [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
  [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
+ [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
  [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>]
  [-WifiSecurityType <AospWifiSecurityType>] [-WifiSsid <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -40,7 +40,7 @@ Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile -InputObject <IDevi
  [-Description <String>] [-DisplayName <String>] [-EnrolledDeviceCount <Int32>]
  [-EnrollmentMode <AndroidDeviceOwnerEnrollmentMode>]
  [-EnrollmentTokenType <AndroidDeviceOwnerEnrollmentTokenType>] [-EnrollmentTokenUsageCount <Int32>]
- [-Id <String>] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
+ [-Id <String>] [-IsTeamsDeviceProfile] [-LastModifiedDateTime <DateTime>] [-QrCodeContent <String>]
  [-QrCodeImage <IMicrosoftGraphMimeContent>] [-RoleScopeTagIds <String[]>] [-TokenCreationDateTime <DateTime>]
  [-TokenExpirationDateTime <DateTime>] [-TokenValue <String>] [-WifiHidden] [-WifiPassword <String>]
  [-WifiSecurityType <AospWifiSecurityType>] [-WifiSsid <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -275,6 +275,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IsTeamsDeviceProfile
+Boolean indicating if this profile is an Android AOSP for Teams device profile.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

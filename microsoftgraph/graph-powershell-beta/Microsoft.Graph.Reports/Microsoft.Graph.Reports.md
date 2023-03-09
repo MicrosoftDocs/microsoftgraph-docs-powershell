@@ -130,6 +130,15 @@ Invoke function getEmailAppUsageUserDetail
 ### [Get-MgReportEmailAppUsageVersionUserCount](Get-MgReportEmailAppUsageVersionUserCount.md)
 Invoke function getEmailAppUsageVersionsUserCounts
 
+### [Get-MgReportFormUserActivityCount](Get-MgReportFormUserActivityCount.md)
+Invoke function getFormsUserActivityCounts
+
+### [Get-MgReportFormUserActivityUserCount](Get-MgReportFormUserActivityUserCount.md)
+Invoke function getFormsUserActivityUserCounts
+
+### [Get-MgReportFormUserActivityUserDetail](Get-MgReportFormUserActivityUserDetail.md)
+Invoke function getFormsUserActivityUserDetail
+
 ### [Get-MgReportGroupArchivedPrintJob](Get-MgReportGroupArchivedPrintJob.md)
 Invoke function getGroupArchivedPrintJobs
 

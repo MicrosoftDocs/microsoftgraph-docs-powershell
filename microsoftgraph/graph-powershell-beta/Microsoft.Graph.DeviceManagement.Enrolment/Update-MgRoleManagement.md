@@ -16,8 +16,8 @@ Update roleManagement
 ```
 Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-CloudPc <IMicrosoftGraphRbacApplicationMultiple>]
  [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
- [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-Exchange <IMicrosoftGraphUnifiedRbacApplication>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -118,6 +118,22 @@ To construct, please use Get-Help -Online and see NOTES section for ENTITLEMENTM
 
 ```yaml
 Type: IMicrosoftGraphRbacApplication
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Exchange
+unifiedRbacApplication
+To construct, please use Get-Help -Online and see NOTES section for EXCHANGE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUnifiedRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 

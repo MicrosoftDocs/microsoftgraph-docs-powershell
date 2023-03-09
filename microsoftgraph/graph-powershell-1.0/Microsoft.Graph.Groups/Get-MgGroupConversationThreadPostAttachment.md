@@ -15,7 +15,7 @@ Supports $expand.
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgGroupConversationThreadPostAttachment -ConversationId <String> -ConversationThreadId <String>
  -GroupId <String> -PostId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
@@ -61,7 +61,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -91,7 +91,7 @@ key: id of conversation
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get
 Aliases:
 
 Required: True
@@ -106,7 +106,7 @@ key: id of conversationThread
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get
 Aliases:
 
 Required: True
@@ -122,7 +122,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -152,7 +152,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -167,7 +167,7 @@ key: id of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get
 Aliases:
 
 Required: True
@@ -198,7 +198,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -213,7 +213,7 @@ key: id of post
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get
 Aliases:
 
 Required: True
@@ -243,7 +243,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -258,7 +258,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -273,7 +273,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False

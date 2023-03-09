@@ -16,11 +16,11 @@ Update entity in sites
 ### UpdateExpanded1 (Default)
 ```
 Update-MgSite -SiteId <String> [-AdditionalProperties <Hashtable>] [-Analytics <IMicrosoftGraphItemAnalytics1>]
- [-Columns <IMicrosoftGraphColumnDefinition1[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>]
  [-Drives <IMicrosoftGraphDrive[]>] [-ETag <String>] [-Error <IMicrosoftGraphPublicError>]
- [-ExternalColumns <IMicrosoftGraphColumnDefinition1[]>] [-Id <String>] [-Items <IMicrosoftGraphBaseItem1[]>]
+ [-ExternalColumns <IMicrosoftGraphColumnDefinition[]>] [-Id <String>] [-Items <IMicrosoftGraphBaseItem[]>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedByUser <IMicrosoftGraphUser>]
  [-LastModifiedDateTime <DateTime>] [-Lists <IMicrosoftGraphList1[]>] [-Name <String>]
  [-Onenote <IMicrosoftGraphOnenote1>] [-Operations <IMicrosoftGraphRichLongRunningOperation[]>]
@@ -40,12 +40,12 @@ Update-MgSite -SiteId <String> -BodyParameter <IMicrosoftGraphSite> [-PassThru] 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgSite -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Analytics <IMicrosoftGraphItemAnalytics1>] [-Columns <IMicrosoftGraphColumnDefinition1[]>]
+ [-Analytics <IMicrosoftGraphItemAnalytics1>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
  [-ContentTypes <IMicrosoftGraphContentType[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-Drives <IMicrosoftGraphDrive[]>] [-ETag <String>]
- [-Error <IMicrosoftGraphPublicError>] [-ExternalColumns <IMicrosoftGraphColumnDefinition1[]>] [-Id <String>]
- [-Items <IMicrosoftGraphBaseItem1[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-Error <IMicrosoftGraphPublicError>] [-ExternalColumns <IMicrosoftGraphColumnDefinition[]>] [-Id <String>]
+ [-Items <IMicrosoftGraphBaseItem[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedByUser <IMicrosoftGraphUser>] [-LastModifiedDateTime <DateTime>]
  [-Lists <IMicrosoftGraphList1[]>] [-Name <String>] [-Onenote <IMicrosoftGraphOnenote1>]
  [-Operations <IMicrosoftGraphRichLongRunningOperation[]>] [-ParentReference <IMicrosoftGraphItemReference>]
@@ -132,7 +132,7 @@ The collection of column definitions reusable across lists under this site.
 To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1[]
+Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -308,7 +308,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for EXTERNALCOLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1[]
+Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -357,7 +357,7 @@ This collection can't be enumerated.
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBaseItem1[]
+Type: IMicrosoftGraphBaseItem[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

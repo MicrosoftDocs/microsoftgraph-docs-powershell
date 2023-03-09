@@ -32,11 +32,12 @@ Update-MgUser -UserId <String> [-AboutMe <String>] [-AccountEnabled]
  [-DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]
  [-DirectReports <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive1>]
  [-Drives <IMicrosoftGraphDrive1[]>] [-EmployeeHireDate <DateTime>] [-EmployeeId <String>]
- [-EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>] [-EmployeeType <String>]
- [-Events <IMicrosoftGraphEvent1[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-ExternalUserState <String>]
- [-ExternalUserStateChangeDateTime <DateTime>] [-FaxNumber <String>] [-FollowedSites <IMicrosoftGraphSite1[]>]
- [-GivenName <String>] [-HireDate <DateTime>] [-Id <String>] [-Identities <IMicrosoftGraphObjectIdentity[]>]
- [-ImAddresses <String[]>] [-InferenceClassification <IMicrosoftGraphInferenceClassification>]
+ [-EmployeeLeaveDateTime <DateTime>] [-EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]
+ [-EmployeeType <String>] [-Events <IMicrosoftGraphEvent1[]>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-ExternalUserState <String>] [-ExternalUserStateChangeDateTime <DateTime>] [-FaxNumber <String>]
+ [-FollowedSites <IMicrosoftGraphSite1[]>] [-GivenName <String>] [-HireDate <DateTime>] [-Id <String>]
+ [-Identities <IMicrosoftGraphObjectIdentity[]>] [-ImAddresses <String[]>]
+ [-InferenceClassification <IMicrosoftGraphInferenceClassification>]
  [-Insights <IMicrosoftGraphOfficeGraphInsights>] [-Interests <String[]>] [-IsResourceAccount]
  [-JobTitle <String>] [-JoinedTeams <IMicrosoftGraphTeam1[]>] [-LastPasswordChangeDateTime <DateTime>]
  [-LegalAgeGroupClassification <String>] [-LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]
@@ -95,11 +96,12 @@ Update-MgUser -InputObject <IUsersIdentity> [-AboutMe <String>] [-AccountEnabled
  [-DeviceManagementTroubleshootingEvents <IMicrosoftGraphDeviceManagementTroubleshootingEvent1[]>]
  [-DirectReports <IMicrosoftGraphDirectoryObject[]>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive1>]
  [-Drives <IMicrosoftGraphDrive1[]>] [-EmployeeHireDate <DateTime>] [-EmployeeId <String>]
- [-EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>] [-EmployeeType <String>]
- [-Events <IMicrosoftGraphEvent1[]>] [-Extensions <IMicrosoftGraphExtension[]>] [-ExternalUserState <String>]
- [-ExternalUserStateChangeDateTime <DateTime>] [-FaxNumber <String>] [-FollowedSites <IMicrosoftGraphSite1[]>]
- [-GivenName <String>] [-HireDate <DateTime>] [-Id <String>] [-Identities <IMicrosoftGraphObjectIdentity[]>]
- [-ImAddresses <String[]>] [-InferenceClassification <IMicrosoftGraphInferenceClassification>]
+ [-EmployeeLeaveDateTime <DateTime>] [-EmployeeOrgData <IMicrosoftGraphEmployeeOrgData>]
+ [-EmployeeType <String>] [-Events <IMicrosoftGraphEvent1[]>] [-Extensions <IMicrosoftGraphExtension[]>]
+ [-ExternalUserState <String>] [-ExternalUserStateChangeDateTime <DateTime>] [-FaxNumber <String>]
+ [-FollowedSites <IMicrosoftGraphSite1[]>] [-GivenName <String>] [-HireDate <DateTime>] [-Id <String>]
+ [-Identities <IMicrosoftGraphObjectIdentity[]>] [-ImAddresses <String[]>]
+ [-InferenceClassification <IMicrosoftGraphInferenceClassification>]
  [-Insights <IMicrosoftGraphOfficeGraphInsights>] [-Interests <String[]>] [-IsResourceAccount]
  [-JobTitle <String>] [-JoinedTeams <IMicrosoftGraphTeam1[]>] [-LastPasswordChangeDateTime <DateTime>]
  [-LegalAgeGroupClassification <String>] [-LicenseAssignmentStates <IMicrosoftGraphLicenseAssignmentState[]>]
@@ -823,6 +825,21 @@ Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EmployeeLeaveDateTime
+.
+
+```yaml
+Type: DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

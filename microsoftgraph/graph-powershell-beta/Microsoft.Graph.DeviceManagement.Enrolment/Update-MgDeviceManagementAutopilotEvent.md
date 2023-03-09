@@ -15,11 +15,12 @@ Update the navigation property autopilotEvents in deviceManagement
 ### UpdateExpanded (Default)
 ```
 Update-MgDeviceManagementAutopilotEvent -DeviceManagementAutopilotEventId <String>
- [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <String>] [-AdditionalProperties <Hashtable>]
- [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
- [-DeploymentState <String>] [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>]
- [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>]
- [-DeviceSetupDuration <TimeSpan>] [-DeviceSetupStatus <String>] [-EnrollmentFailureDetails <String>]
+ [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <WindowsAutopilotDeploymentState>]
+ [-AdditionalProperties <Hashtable>] [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>]
+ [-DeploymentStartDateTime <DateTime>] [-DeploymentState <WindowsAutopilotDeploymentState>]
+ [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>]
+ [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
+ [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
  [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
  [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
  [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
@@ -39,11 +40,12 @@ Update-MgDeviceManagementAutopilotEvent -DeviceManagementAutopilotEventId <Strin
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrolmentIdentity>
- [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <String>] [-AdditionalProperties <Hashtable>]
- [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>] [-DeploymentStartDateTime <DateTime>]
- [-DeploymentState <String>] [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>]
- [-DevicePreparationDuration <TimeSpan>] [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>]
- [-DeviceSetupDuration <TimeSpan>] [-DeviceSetupStatus <String>] [-EnrollmentFailureDetails <String>]
+ [-AccountSetupDuration <TimeSpan>] [-AccountSetupStatus <WindowsAutopilotDeploymentState>]
+ [-AdditionalProperties <Hashtable>] [-DeploymentDuration <TimeSpan>] [-DeploymentEndDateTime <DateTime>]
+ [-DeploymentStartDateTime <DateTime>] [-DeploymentState <WindowsAutopilotDeploymentState>]
+ [-DeploymentTotalDuration <TimeSpan>] [-DeviceId <String>] [-DevicePreparationDuration <TimeSpan>]
+ [-DeviceRegisteredDateTime <DateTime>] [-DeviceSerialNumber <String>] [-DeviceSetupDuration <TimeSpan>]
+ [-DeviceSetupStatus <WindowsAutopilotDeploymentState>] [-EnrollmentFailureDetails <String>]
  [-EnrollmentStartDateTime <DateTime>] [-EnrollmentState <EnrollmentState>] [-EnrollmentType <String>]
  [-EventDateTime <DateTime>] [-Id <String>] [-ManagedDeviceName <String>] [-OSVersion <String>]
  [-PolicyStatusDetails <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]>]
@@ -86,7 +88,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: String
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +179,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: String
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -297,7 +299,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: String
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

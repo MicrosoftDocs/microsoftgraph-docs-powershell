@@ -17,8 +17,9 @@ This operation is used to assign a user to an access package, update the assignm
 ### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage1>]
- [-AdditionalProperties <Hashtable>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
- [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
+ [-AdditionalProperties <Hashtable>] [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+ [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
  [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -137,6 +138,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Answers
+Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+To construct, please use Get-Help -Online and see NOTES section for ANSWERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageAnswer[]
 Parameter Sets: CreateExpanded
 Aliases:
 

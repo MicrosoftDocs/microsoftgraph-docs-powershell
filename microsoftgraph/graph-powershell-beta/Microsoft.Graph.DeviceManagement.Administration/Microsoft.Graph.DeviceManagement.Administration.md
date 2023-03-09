@@ -438,6 +438,9 @@ When the property becomes `completed`, the report has finished downloading in th
 ### [New-MgDeviceManagementVirtualEndpointServicePlan](New-MgDeviceManagementVirtualEndpointServicePlan.md)
 Create new navigation property to servicePlans for deviceManagement
 
+### [New-MgDeviceManagementVirtualEndpointSharedUseServicePlan](New-MgDeviceManagementVirtualEndpointSharedUseServicePlan.md)
+Create new navigation property to sharedUseServicePlans for deviceManagement
+
 ### [New-MgDeviceManagementVirtualEndpointSnapshot](New-MgDeviceManagementVirtualEndpointSnapshot.md)
 Create new navigation property to snapshots for deviceManagement
 
@@ -623,6 +626,9 @@ Delete navigation property exportJobs for deviceManagement
 
 ### [Remove-MgDeviceManagementVirtualEndpointServicePlan](Remove-MgDeviceManagementVirtualEndpointServicePlan.md)
 Delete navigation property servicePlans for deviceManagement
+
+### [Remove-MgDeviceManagementVirtualEndpointSharedUseServicePlan](Remove-MgDeviceManagementVirtualEndpointSharedUseServicePlan.md)
+Delete navigation property sharedUseServicePlans for deviceManagement
 
 ### [Remove-MgDeviceManagementVirtualEndpointSnapshot](Remove-MgDeviceManagementVirtualEndpointSnapshot.md)
 Delete navigation property snapshots for deviceManagement
@@ -812,6 +818,9 @@ Update the navigation property exportJobs in deviceManagement
 
 ### [Update-MgDeviceManagementVirtualEndpointServicePlan](Update-MgDeviceManagementVirtualEndpointServicePlan.md)
 Update the navigation property servicePlans in deviceManagement
+
+### [Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan](Update-MgDeviceManagementVirtualEndpointSharedUseServicePlan.md)
+Update the navigation property sharedUseServicePlans in deviceManagement
 
 ### [Update-MgDeviceManagementVirtualEndpointSnapshot](Update-MgDeviceManagementVirtualEndpointSnapshot.md)
 Update the navigation property snapshots in deviceManagement

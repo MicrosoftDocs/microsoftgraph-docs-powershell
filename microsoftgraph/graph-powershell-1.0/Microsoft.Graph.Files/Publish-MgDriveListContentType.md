@@ -12,13 +12,13 @@ Publishes a [contentType][] present in the content type hub site.
 
 ## SYNTAX
 
-### Publish1 (Default)
+### Publish (Default)
 ```
 Publish-MgDriveListContentType -ContentTypeId <String> -DriveId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### PublishViaIdentity1
+### PublishViaIdentity
 ```
 Publish-MgDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Publish1
+Parameter Sets: Publish
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Publish1
+Parameter Sets: Publish
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: PublishViaIdentity1
+Parameter Sets: PublishViaIdentity
 Aliases:
 
 Required: True

@@ -17,7 +17,8 @@ Update the navigation property participants in communications
 Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo1>]
  [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream1[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,7 +33,8 @@ Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
 Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo1>]
  [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream1[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -255,6 +257,22 @@ To construct, please use Get-Help -Online and see NOTES section for RECORDINGINF
 
 ```yaml
 Type: IMicrosoftGraphRecordingInfo1
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RestrictedExperience
+onlineMeetingRestricted
+To construct, please use Get-Help -Online and see NOTES section for RESTRICTEDEXPERIENCE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphOnlineMeetingRestricted
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

@@ -18,8 +18,9 @@ Update-MgPlannerPlan -PlannerPlanId <String> [-AdditionalProperties <Hashtable>]
  [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer1>]
  [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails1>]
- [-Id <String>] [-Owner <String>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Owner <String>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
+ [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update1
@@ -34,8 +35,9 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> [-AdditionalProperties <Has
  [-Buckets <IMicrosoftGraphPlannerBucket1[]>] [-Container <IMicrosoftGraphPlannerPlanContainer1>]
  [-Contexts <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails1>]
- [-Id <String>] [-Owner <String>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Owner <String>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
+ [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity1
@@ -280,6 +282,22 @@ Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SharedWithContainers
+.
+To construct, please use Get-Help -Online and see NOTES section for SHAREDWITHCONTAINERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPlannerSharedWithContainer[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

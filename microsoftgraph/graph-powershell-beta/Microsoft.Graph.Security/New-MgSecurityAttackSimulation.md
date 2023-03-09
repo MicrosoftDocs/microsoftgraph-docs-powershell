@@ -17,14 +17,17 @@ Create an attack simulation campaign for a tenant.
 New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsAutomated] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
- [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-PayloadDeliveryPlatform <String>]
+ [-DisplayName <String>] [-DurationInDays <Int32>]
+ [-ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-Id <String>]
+ [-IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-IsAutomated]
+ [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
+ [-LaunchDateTime <DateTime>] [-Payload <IMicrosoftGraphPayload>] [-PayloadDeliveryPlatform <String>]
  [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
+New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -100,7 +103,7 @@ simulation
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulation
+Type: IMicrosoftGraphSimulation1
 Parameter Sets: Create
 Aliases:
 
@@ -189,12 +192,59 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -DurationInDays
+Simulation duration in days.
+
+```yaml
+Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExcludedAccountTarget
+accountTargetContent
+To construct, please use Get-Help -Online and see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccountTargetContent
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique idenfier for an entity.
 Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludedAccountTarget
+accountTargetContent
+To construct, please use Get-Help -Online and see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,6 +308,22 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Payload
+payload
+To construct, please use Get-Help -Online and see NOTES section for PAYLOAD properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPayload
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -350,10 +416,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
 ## NOTES
 
 ALIASES

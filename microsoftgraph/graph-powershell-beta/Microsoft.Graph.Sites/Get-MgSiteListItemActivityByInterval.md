@@ -12,7 +12,7 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get (Default)
+### Get2 (Default)
 ```
 Get-MgSiteListItemActivityByInterval -EndDateTime <String> -Interval <String> -ListId <String>
  -ListItemId <String> -SiteId <String> -StartDateTime <String> [-Count] [-Filter <String>]
@@ -20,7 +20,7 @@ Get-MgSiteListItemActivityByInterval -EndDateTime <String> -Interval <String> -L
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgSiteListItemActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -54,7 +54,7 @@ Usage: endDateTime='{endDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity2
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ Usage: interval='{interval}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -205,7 +205,7 @@ Usage: startDateTime='{startDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True

@@ -23,7 +23,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssig
 Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssignmentRequestId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment1>] [-AdditionalProperties <Hashtable>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionHandlerInstances <IMicrosoftGraphCustomExtensionHandlerInstance[]>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
@@ -43,7 +43,7 @@ Update-MgEntitlementManagementAccessPackageAssignmentRequest -AccessPackageAssig
 Update-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment1>] [-AdditionalProperties <Hashtable>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionHandlerInstances <IMicrosoftGraphCustomExtensionHandlerInstance[]>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
@@ -138,7 +138,7 @@ Answers provided by the requestor to accessPackageQuestions asked of them at the
 To construct, please use Get-Help -Online and see NOTES section for ANSWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAnswer[]
+Type: IMicrosoftGraphAccessPackageAnswer1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

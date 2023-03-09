@@ -17,7 +17,8 @@ Create a new cloudPcProvisioningPolicy object.
 New-MgDeviceManagementVirtualEndpointProvisioningPolicy [-AdditionalProperties <Hashtable>]
  [-AlternateResourceUrl <String>] [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>]
  [-CloudPcGroupDisplayName <String>] [-Description <String>] [-DisplayName <String>]
- [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>] [-EnableSingleSignOn]
+ [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
+ [-DomainJoinConfigurations <IMicrosoftGraphCloudPcDomainJoinConfiguration[]>] [-EnableSingleSignOn]
  [-GracePeriodInHours <Int32>] [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>]
  [-ImageType <String>] [-LocalAdminEnabled] [-ManagedBy <String>]
  [-MicrosoftManagedDesktop <IMicrosoftGraphMicrosoftManagedDesktop>] [-OnPremisesConnectionId <String>]
@@ -182,6 +183,22 @@ To construct, please use Get-Help -Online and see NOTES section for DOMAINJOINCO
 
 ```yaml
 Type: IMicrosoftGraphCloudPcDomainJoinConfiguration
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DomainJoinConfigurations
+.
+To construct, please use Get-Help -Online and see NOTES section for DOMAINJOINCONFIGURATIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCloudPcDomainJoinConfiguration[]
 Parameter Sets: CreateExpanded
 Aliases:
 

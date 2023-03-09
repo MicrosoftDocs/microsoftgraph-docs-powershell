@@ -15,29 +15,31 @@ Update the navigation property authenticationMethodConfigurations in policies
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
- -AuthenticationMethodConfigurationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AuthenticationMethodConfigurationId <String> [-AdditionalProperties <Hashtable>]
+ [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>] [-State <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
  -AuthenticationMethodConfigurationId <String>
- -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
- -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>] [-State <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>] [-State <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
- -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration>
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -181,7 +183,7 @@ authenticationMethodConfiguration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodConfiguration
+Type: IMicrosoftGraphAuthenticationMethodConfiguration1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -189,6 +191,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ExcludeTargets
+Groups of users that are excluded from a policy.
+To construct, please use Get-Help -Online and see NOTES section for EXCLUDETARGETS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphExcludeTarget[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -291,7 +309,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration1
 ## OUTPUTS
 
 ### System.Boolean

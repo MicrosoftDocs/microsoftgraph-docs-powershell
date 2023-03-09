@@ -18,7 +18,7 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 ### ActivateExpanded (Default)
 ```
 Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String> [-AdditionalProperties <Hashtable>]
- [-Subjects <IMicrosoftGraphUser[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Subjects <IMicrosoftGraphUser1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Activate
@@ -31,7 +31,7 @@ Initialize-MgIdentityGovernanceLifecycleWorkflow -WorkflowId <String>
 ### ActivateViaIdentityExpanded
 ```
 Initialize-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-Subjects <IMicrosoftGraphUser1[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for SUBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser[]
+Type: IMicrosoftGraphUser1[]
 Parameter Sets: ActivateExpanded, ActivateViaIdentityExpanded
 Aliases:
 

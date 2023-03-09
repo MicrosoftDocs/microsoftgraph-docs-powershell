@@ -24,7 +24,7 @@ Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplat
 ### Update1
 ```
 Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId <String>
- -BodyParameter <IMicrosoftGraphNotificationMessageTemplate1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ Update-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManage
 ### UpdateViaIdentity1
 ```
 Update-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphNotificationMessageTemplate1> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphNotificationMessageTemplate> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -73,7 +73,7 @@ Use the notificationMessageTemplate object to create your own custom notificatio
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNotificationMessageTemplate1
+Type: IMicrosoftGraphNotificationMessageTemplate
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -275,7 +275,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate
 ## OUTPUTS
 
 ### System.Boolean
