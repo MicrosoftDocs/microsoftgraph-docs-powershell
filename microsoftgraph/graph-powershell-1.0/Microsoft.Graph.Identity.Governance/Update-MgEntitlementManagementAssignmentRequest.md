@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementassignmentrequest
@@ -22,8 +22,8 @@ Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ```
 Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
  [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,8 +39,8 @@ Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ```
 Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
  [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -101,6 +101,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Answers
+Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+To construct, please use Get-Help -Online and see NOTES section for ANSWERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageAnswer[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -354,7 +370,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
+ACCESSPACKAGE <IMicrosoftGraphAccessPackage1>: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackagesIncompatibleWith <IMicrosoftGraphAccessPackage1[]>]`: The access packages that are incompatible with this package. Read-only.
@@ -914,7 +930,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -3017,7 +3033,7 @@ ACCESSPACKAGE `<IMicrosoftGraphAccessPackage1>`: accessPackage
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ANSWERS <IMicrosoftGraphAccessPackageAnswer\[]>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+ANSWERS <IMicrosoftGraphAccessPackageAnswer[]>: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
   - `[AnsweredQuestion <IMicrosoftGraphAccessPackageQuestion>]`: accessPackageQuestion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3030,7 +3046,7 @@ ANSWERS <IMicrosoftGraphAccessPackageAnswer\[]>: Answers provided by the request
     - `[Text <String>]`: The text of the question to show to the requestor.
   - `[DisplayValue <String>]`: The localized display value shown to the requestor and approvers.
 
-ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment>`: accessPackageAssignment
+ASSIGNMENT <IMicrosoftGraphAccessPackageAssignment>: accessPackageAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -3593,7 +3609,7 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment>`: accessPackageAssignment
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5721,7 +5737,7 @@ ASSIGNMENT `<IMicrosoftGraphAccessPackageAssignment>`: accessPackageAssignment
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectType <String>]`: accessPackageSubjectType
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest>`: accessPackageAssignmentRequest
+BODYPARAMETER <IMicrosoftGraphAccessPackageAssignmentRequest>: accessPackageAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage1>]`: accessPackage
@@ -6284,7 +6300,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest>`: accessPackageAs
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8426,7 +8442,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageAssignmentRequest>`: accessPackageAs
   - `[State <String>]`: accessPackageRequestState
   - `[Status <String>]`: More information on the request processing status. Read-only.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -8508,7 +8524,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-REQUESTOR `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
+REQUESTOR <IMicrosoftGraphAccessPackageSubject>: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
@@ -8531,7 +8547,7 @@ REQUESTOR `<IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectType <String>]`: accessPackageSubjectType
 
-SCHEDULE `<IMicrosoftGraphEntitlementManagementSchedule>`: entitlementManagementSchedule
+SCHEDULE <IMicrosoftGraphEntitlementManagementSchedule>: entitlementManagementSchedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expiration <IMicrosoftGraphExpirationPattern>]`: expirationPattern
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

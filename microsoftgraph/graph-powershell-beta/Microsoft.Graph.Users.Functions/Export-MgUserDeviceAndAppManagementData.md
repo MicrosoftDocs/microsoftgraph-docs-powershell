@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Functions-help.xml
 Module Name: Microsoft.Graph.Users.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/export-mguserdeviceandappmanagementdata
@@ -12,24 +12,24 @@ Invoke function exportDeviceAndAppManagementData
 
 ## SYNTAX
 
-### Export (Default)
+### Export2 (Default)
 ```
 Export-MgUserDeviceAndAppManagementData -UserId <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### Export1
+### Export3
 ```
 Export-MgUserDeviceAndAppManagementData -UserId <String> -Skip <Int32> -Top <Int32> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
-### ExportViaIdentity1
+### ExportViaIdentity3
 ```
 Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### ExportViaIdentity
+### ExportViaIdentity2
 ```
 Export-MgUserDeviceAndAppManagementData -InputObject <IUsersFunctionsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -48,7 +48,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersFunctionsIdentity
-Parameter Sets: ExportViaIdentity1, ExportViaIdentity
+Parameter Sets: ExportViaIdentity3, ExportViaIdentity2
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ Usage: top={top}
 
 ```yaml
 Type: Int32
-Parameter Sets: Export1
+Parameter Sets: Export3
 Aliases: Limit
 
 Required: True
@@ -108,7 +108,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Export, Export1
+Parameter Sets: Export2, Export3
 Aliases:
 
 Required: True
@@ -123,7 +123,7 @@ Usage: skip={skip}
 
 ```yaml
 Type: Int32
-Parameter Sets: Export1
+Parameter Sets: Export3
 Aliases:
 
 Required: True
@@ -151,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersFunctionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AppConsentRequestId <String>]`: key: id of appConsentRequest
   - `[CalendarId <String>]`: key: id of calendar

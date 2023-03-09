@@ -11,6 +11,9 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users.Functions Cmdlets
+### [Export-MgUserDeviceAndAppManagementData](Export-MgUserDeviceAndAppManagementData.md)
+Invoke function exportDeviceAndAppManagementData
+
 ### [Get-MgAllUserChatMessage](Get-MgAllUserChatMessage.md)
 Invoke function getAllMessages
 
@@ -115,6 +118,9 @@ Gets diagnostics validation status for a given user.
 
 ### [Get-MgUserManagedAppPolicy](Get-MgUserManagedAppPolicy.md)
 Gets app restrictions for a given user.
+
+### [Get-MgUserManagedDeviceWithAppFailure](Get-MgUserManagedDeviceWithAppFailure.md)
+Retrieves the list of devices with failed apps
 
 ### [Get-MgUserMessageDelta](Get-MgUserMessageDelta.md)
 Get a set of messages that have been added, deleted, or updated in a specified folder.

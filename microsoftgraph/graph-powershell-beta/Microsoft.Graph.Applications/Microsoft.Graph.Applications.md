@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
 Module Guid: d9036b88-60a8-4fcd-9635-0b024f35b22f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
@@ -478,9 +478,6 @@ Create new navigation property to templates for applications
 ### [New-MgApplicationSynchronizationTemplateSchemaDirectory](New-MgApplicationSynchronizationTemplateSchemaDirectory.md)
 Create new navigation property to directories for applications
 
-### [New-MgApplicationTemplate](New-MgApplicationTemplate.md)
-Add new entity to applicationTemplates
-
 ### [New-MgApplicationTokenIssuancePolicyByRef](New-MgApplicationTokenIssuancePolicyByRef.md)
 Create new navigation property ref to tokenIssuancePolicies for applications
 
@@ -654,9 +651,6 @@ Delete navigation property schema for applications
 
 ### [Remove-MgApplicationSynchronizationTemplateSchemaDirectory](Remove-MgApplicationSynchronizationTemplateSchemaDirectory.md)
 Delete navigation property directories for applications
-
-### [Remove-MgApplicationTemplate](Remove-MgApplicationTemplate.md)
-Delete entity from applicationTemplates
 
 ### [Remove-MgApplicationTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyByRef.md)
 Delete ref of navigation property tokenIssuancePolicies for applications
@@ -872,9 +866,6 @@ Update the navigation property schema in applications
 
 ### [Update-MgApplicationSynchronizationTemplateSchemaDirectory](Update-MgApplicationSynchronizationTemplateSchemaDirectory.md)
 Update the navigation property directories in applications
-
-### [Update-MgApplicationTemplate](Update-MgApplicationTemplate.md)
-Update entity in applicationTemplates
 
 ### [Update-MgGroupAppRoleAssignment](Update-MgGroupAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in groups

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/update-mguserchatinstalledapp
@@ -12,13 +12,13 @@ Upgrade an app installation within a chat.
 
 ## SYNTAX
 
-### Upgrade1 (Default)
+### Upgrade (Default)
 ```
 Update-MgUserChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> -UserId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpgradeViaIdentity1
+### UpgradeViaIdentity
 ```
 Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -47,7 +47,7 @@ key: id of chat
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade1
+Parameter Sets: Upgrade
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: UpgradeViaIdentity1
+Parameter Sets: UpgradeViaIdentity
 Aliases:
 
 Required: True
@@ -93,7 +93,7 @@ key: id of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade1
+Parameter Sets: Upgrade
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade1
+Parameter Sets: Upgrade
 Aliases:
 
 Required: True
@@ -167,7 +167,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: key: id of accessReviewInstance
   - `[AccessReviewStageId <String>]`: key: id of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest

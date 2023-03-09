@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityauthenticationeventlistener
@@ -16,7 +16,7 @@ Create new navigation property to authenticationEventListeners for identity
 ```
 New-MgIdentityAuthenticationEventListener [-AdditionalProperties <Hashtable>]
  [-AuthenticationEventsFlowId <String>] [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>]
- [-Priority <Int32>] [-Tags <IMicrosoftGraphKeyValuePair[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Priority <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -125,22 +125,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Tags
-.
-To construct, please use Get-Help -Online and see NOTES section for TAGS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -190,7 +174,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEventListener
+BODYPARAMETER <IMicrosoftGraphAuthenticationEventListener>: authenticationEventListener
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationEventsFlowId <String>]`: 
@@ -203,7 +187,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationEventListener>`: authenticationEven
         - `[AppId <String>]`: 
   - `[Priority <Int32?>]`: 
 
-CONDITIONS `<IMicrosoftGraphAuthenticationConditions>`: authenticationConditions
+CONDITIONS <IMicrosoftGraphAuthenticationConditions>: authenticationConditions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphAuthenticationConditionsApplications>]`: authenticationConditionsApplications
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

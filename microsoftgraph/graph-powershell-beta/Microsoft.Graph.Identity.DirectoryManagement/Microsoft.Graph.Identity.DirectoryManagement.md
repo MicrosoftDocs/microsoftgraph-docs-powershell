@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: ee247273-b836-4a7b-b508-32f60c1c3958
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -15,9 +15,6 @@ Microsoft Graph PowerShell Cmdlets
 Invoke action complete
 
 ### [Complete-MgDirectoryRecommendation](Complete-MgDirectoryRecommendation.md)
-Invoke action complete
-
-### [Complete-MgDirectoryRecommendationImpactedResource](Complete-MgDirectoryRecommendationImpactedResource.md)
 Invoke action complete
 
 ### [Confirm-MgAdministrativeUnitMemberGroup](Confirm-MgAdministrativeUnitMemberGroup.md)
@@ -403,9 +400,6 @@ Get tenants from directory
 ### [Get-MgDirectoryRecommendation](Get-MgDirectoryRecommendation.md)
 List of recommended improvements to improve tenant posture.
 
-### [Get-MgDirectoryRecommendationImpactedResource](Get-MgDirectoryRecommendationImpactedResource.md)
-Get impactedResources from directory
-
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
 Retrieve the properties of a directoryRole object.
 You can use both the object ID and template ID of the **directoryRole** with this API.
@@ -656,9 +650,6 @@ Invoke action dismiss
 ### [Invoke-MgDismissDirectoryRecommendation](Invoke-MgDismissDirectoryRecommendation.md)
 Invoke action dismiss
 
-### [Invoke-MgDismissDirectoryRecommendationImpactedResource](Invoke-MgDismissDirectoryRecommendationImpactedResource.md)
-Invoke action dismiss
-
 ### [Invoke-MgForceDomainDelete](Invoke-MgForceDomainDelete.md)
 Deletes a domain using an asynchronous operation.
 Prior to calling forceDelete, you must update or remove any references to **Exchange** as the provisioning service.
@@ -672,9 +663,6 @@ Invoke action postpone
 ### [Invoke-MgPostponeDirectoryRecommendation](Invoke-MgPostponeDirectoryRecommendation.md)
 Invoke action postpone
 
-### [Invoke-MgPostponeDirectoryRecommendationImpactedResource](Invoke-MgPostponeDirectoryRecommendationImpactedResource.md)
-Invoke action postpone
-
 ### [Invoke-MgPromoteDomain](Invoke-MgPromoteDomain.md)
 Promote a verified subdomain to the root domain.
 A verified domain has its **isVerified** property set to `true`.
@@ -683,9 +671,6 @@ A verified domain has its **isVerified** property set to `true`.
 Invoke action reactivate
 
 ### [Invoke-MgReactivateDirectoryRecommendation](Invoke-MgReactivateDirectoryRecommendation.md)
-Invoke action reactivate
-
-### [Invoke-MgReactivateDirectoryRecommendationImpactedResource](Invoke-MgReactivateDirectoryRecommendationImpactedResource.md)
 Invoke action reactivate
 
 ### [New-MgAdministrativeUnit](New-MgAdministrativeUnit.md)
@@ -785,9 +770,6 @@ Create new navigation property to tenants for directory
 
 ### [New-MgDirectoryRecommendation](New-MgDirectoryRecommendation.md)
 Create new navigation property to recommendations for directory
-
-### [New-MgDirectoryRecommendationImpactedResource](New-MgDirectoryRecommendationImpactedResource.md)
-Create new navigation property to impactedResources for directory
 
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
 Activate a directory role.
@@ -950,9 +932,6 @@ Invoke action removePersonalData
 
 ### [Remove-MgDirectoryRecommendation](Remove-MgDirectoryRecommendation.md)
 Delete navigation property recommendations for directory
-
-### [Remove-MgDirectoryRecommendationImpactedResource](Remove-MgDirectoryRecommendationImpactedResource.md)
-Delete navigation property impactedResources for directory
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 Delete entity from directoryRoles
@@ -1297,9 +1276,6 @@ Update the navigation property tenants in directory
 
 ### [Update-MgDirectoryRecommendation](Update-MgDirectoryRecommendation.md)
 Update the navigation property recommendations in directory
-
-### [Update-MgDirectoryRecommendationImpactedResource](Update-MgDirectoryRecommendationImpactedResource.md)
-Update the navigation property impactedResources in directory
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 Update entity in directoryRoles

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 Module Guid: 2841c60f-1057-467f-8007-ab1645279169
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
@@ -11,6 +11,9 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.DeviceManagement.Actions Cmdlets
+### [Add-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](Add-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp.md)
+Invoke action addApps
+
 ### [Add-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile](Add-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile.md)
 Invoke action addLanguageFiles
 
@@ -213,6 +216,9 @@ Invoke action getDeviceManagementIntentSettingsReport
 
 ### [Get-MgDeviceManagementReportDeviceNonComplianceReport](Get-MgDeviceManagementReportDeviceNonComplianceReport.md)
 Invoke action getDeviceNonComplianceReport
+
+### [Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport](Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport.md)
+Invoke action getDevicesWithoutCompliancePolicyReport
 
 ### [Get-MgDeviceManagementReportEncryptionReportForDevice](Get-MgDeviceManagementReportEncryptionReportForDevice.md)
 Invoke action getEncryptionReportForDevices
@@ -455,8 +461,14 @@ Invoke action hasActiveDeployments
 ### [Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery.md)
 Perform MDM key recovery and TPM attestation
 
+### [Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation.md)
+Perform On Demand Proactive Remediation
+
 ### [Invoke-MgInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery](Invoke-MgInitiateDeviceManagementManagedDeviceMobileDeviceManagementKeyRecovery.md)
 Perform MDM key recovery and TPM attestation
+
+### [Invoke-MgInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation](Invoke-MgInitiateDeviceManagementManagedDeviceOnDemandProactiveRemediation.md)
+Perform On Demand Proactive Remediation
 
 ### [Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser](Invoke-MgLogoutDeviceManagementComanagedDeviceSharedAppleDeviceActiveUser.md)
 Logout shared Apple device active user
@@ -937,6 +949,9 @@ Update the Proprietary Device Health Script
 
 ### [Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue](Update-MgDeviceManagementGroupPolicyConfigurationMultipleDefinitionValue.md)
 Invoke action updateDefinitionValues
+
+### [Update-MgDeviceManagementGroupPolicyMigrationReportScopeTag](Update-MgDeviceManagementGroupPolicyMigrationReportScopeTag.md)
+Invoke action updateScopeTags
 
 ### [Update-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile](Update-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile.md)
 Invoke action updateLanguageFiles
