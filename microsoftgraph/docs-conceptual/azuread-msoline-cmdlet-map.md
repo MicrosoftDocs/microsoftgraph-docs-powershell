@@ -444,9 +444,9 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |New-MsolServicePrincipalCredential|[Add-MgServicePrincipalKey](/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolUser|[New-MgUser](/powershell/module/microsoft.graph.users/new-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |New-MsolWellKnownGroup||
-|Redo-MsolProvisionContact||
-|Redo-MsolProvisionGroup||
-|Redo-MsolProvisionUser||
+|Redo-MsolProvisionContact|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup?view=graph-powershell-1.0&preserve-view=true)|
+|Redo-MsolProvisionGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup?view=graph-powershell-1.0&preserve-view=true)|
+|Redo-MsolProvisionUser|[Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolAdministrativeUnit|[Remove-MgDirectoryAdministrativeUnit](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunit?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolAdministrativeUnitMember|[Remove-MgDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryadministrativeunitscopedrolemember?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolApplicationPassword|[Remove-MgApplicationPassword](/powershell/module/microsoft.graph.applications/remove-mgapplicationpassword?view=graph-powershell-1.0&preserve-view=true)|
@@ -457,7 +457,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Remove-MsolForeignGroupFromRole||
 |Remove-MsolGroup|[Remove-MgGroup](/powershell/module/microsoft.graph.groups/remove-mggroup?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolGroupMember|[Remove-MgGroupMemberByRef](/powershell/module/microsoft.graph.groups/remove-mggroupmemberbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Remove-MsolRoleMember||
+|Remove-MsolRoleMember|[Remove-MgDirectoryRoleMemberByRef](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberbyref?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolScopedRoleMember|[Remove-MgDirectoryRoleScopedMember](/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolescopedmember?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolServicePrincipal|[Remove-MgServicePrincipal](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true)|
 |Remove-MsolServicePrincipalCredential|[Remove-MgServicePrincipalKey](/powershell/module/microsoft.graph.applications/remove-mgserviceprincipalkey?view=graph-powershell-1.0&preserve-view=true)|
@@ -472,7 +472,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-MsolCompanySecurityComplianceContactInformation|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolCompanySettings <sup>1</sup>|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolCompanySettings <sup>1</sup>|[Update-MgPolicyAuthorizationPolicy](/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthorizationpolicy?view=graph-powershell-1.0&preserve-view=true)|
-|Set-MsolDeviceRegistrationServicePolicy||
+|Set-MsolDeviceRegistrationServicePolicy|[Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy?view=graph-powershell-beta&preserve-view=true)|
 |Set-MsolDirSyncConfiguration||
 |Set-MsolDirSyncEnabled|[Update-MgOrganization](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganization?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolDirSyncFeature||
@@ -481,7 +481,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |Set-MsolDomainFederationSettings|[New-MgDomainFederationConfiguration](/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolGroup|[Update-MgGroup](/powershell/module/microsoft.graph.groups/update-mggroup?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolPartnerInformation||
-|Set-MsolPasswordPolicy||
+|Set-MsolPasswordPolicy|[Update-MgDomain](/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdomain?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolServicePrincipal|[Update-MgServicePrincipal](/powershell/module/microsoft.graph.applications/update-mgserviceprincipal?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolUser|[Update-MgUser](/powershell/module/microsoft.graph.users/update-mguser?view=graph-powershell-1.0&preserve-view=true)|
 |Set-MsolUserLicense|[Set-MgUserLicense](/powershell/module/microsoft.graph.users.actions/set-mguserlicense?view=graph-powershell-1.0&preserve-view=true)|
