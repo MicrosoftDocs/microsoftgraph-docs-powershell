@@ -19,7 +19,7 @@ If you're creating a private channel, you can add a maximum of 200 members.
 ### CreateExpanded (Default)
 ```
 New-MgTeamChannel -TeamId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem1>]
+ [-Description <String>] [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem>]
  [-Id <String>] [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>]
  [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage1[]>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
@@ -36,7 +36,7 @@ New-MgTeamChannel -TeamId <String> -BodyParameter <IMicrosoftGraphChannel1> [-Wh
 ```
 New-MgTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
+ [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
  [-Messages <IMicrosoftGraphChatMessage1[]>] [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo[]>]
  [-Tabs <IMicrosoftGraphTeamsTab[]>] [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
@@ -258,7 +258,7 @@ driveItem
 To construct, please use Get-Help -Online and see NOTES section for FILESFOLDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveItem1
+Type: IMicrosoftGraphDriveItem
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

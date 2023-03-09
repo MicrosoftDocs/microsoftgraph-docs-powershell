@@ -15,8 +15,8 @@ Update the navigation property onlineMeetings in users
 ### UpdateExpanded (Default)
 ```
 Update-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowTeamworkReactions]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowParticipantsToChangeName]
+ [-AllowTeamworkReactions] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport1[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
@@ -26,9 +26,10 @@ Update-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String> [-Addition
  [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport1>]
  [-Participants <IMicrosoftGraphMeetingParticipants1>] [-RecordAutomatically] [-RecordingInputFile <String>]
- [-Registration <IMicrosoftGraphMeetingRegistration>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Registration <IMicrosoftGraphMeetingRegistration>] [-ShareMeetingChatHistoryDefault <String>]
+ [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
+ [-VideoTeleconferenceId <String>] [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>]
+ [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -41,8 +42,8 @@ Update-MgUserOnlineMeeting -OnlineMeetingId <String> -UserId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowTeamworkReactions]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AllowAttendeeToEnableCamera] [-AllowAttendeeToEnableMic] [-AllowParticipantsToChangeName]
+ [-AllowTeamworkReactions] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport1[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
@@ -52,9 +53,10 @@ Update-MgUserOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-Additio
  [-JoinUrl <String>] [-JoinWebUrl <String>] [-LobbyBypassSettings <IMicrosoftGraphLobbyBypassSettings>]
  [-MeetingAttendanceReport <IMicrosoftGraphMeetingAttendanceReport1>]
  [-Participants <IMicrosoftGraphMeetingParticipants1>] [-RecordAutomatically] [-RecordingInputFile <String>]
- [-Registration <IMicrosoftGraphMeetingRegistration>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-Transcripts <IMicrosoftGraphCallTranscript[]>] [-VideoTeleconferenceId <String>]
- [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Registration <IMicrosoftGraphMeetingRegistration>] [-ShareMeetingChatHistoryDefault <String>]
+ [-StartDateTime <DateTime>] [-Subject <String>] [-Transcripts <IMicrosoftGraphCallTranscript[]>]
+ [-VideoTeleconferenceId <String>] [-VirtualAppointment <IMicrosoftGraphVirtualAppointment>]
+ [-WatermarkProtection <IMicrosoftGraphWatermarkProtectionValues>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -151,6 +153,21 @@ onlineMeetingPresenters
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowParticipantsToChangeName
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -617,6 +634,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ShareMeetingChatHistoryDefault
+meetingChatHistoryDefaultMode
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -StartDateTime
 The meeting start time in UTC.
 
@@ -701,6 +733,22 @@ To construct, please use Get-Help -Online and see NOTES section for VIRTUALAPPOI
 
 ```yaml
 Type: IMicrosoftGraphVirtualAppointment
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WatermarkProtection
+watermarkProtectionValues
+To construct, please use Get-Help -Online and see NOTES section for WATERMARKPROTECTION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWatermarkProtectionValues
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

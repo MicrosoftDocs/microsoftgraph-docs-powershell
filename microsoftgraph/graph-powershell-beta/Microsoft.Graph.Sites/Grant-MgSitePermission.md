@@ -12,26 +12,26 @@ Grant users access to a link represented by a [permission][].
 
 ## SYNTAX
 
-### GrantExpanded (Default)
+### GrantExpanded1 (Default)
 ```
 Grant-MgSitePermission -PermissionId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Grant
+### Grant1
 ```
 Grant-MgSitePermission -PermissionId <String> -SiteId <String>
  -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentityExpanded
+### GrantViaIdentityExpanded1
 ```
 Grant-MgSitePermission -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-Roles <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GrantViaIdentity
+### GrantViaIdentity1
 ```
 Grant-MgSitePermission -InputObject <ISitesIdentity>
  -BodyParameter <IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1>
@@ -75,7 +75,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -91,7 +91,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths141Mc2FSitesSiteIdPermissionsPermissionIdMicrosoftGraphGrantPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Grant, GrantViaIdentity
+Parameter Sets: Grant1, GrantViaIdentity1
 Aliases:
 
 Required: True
@@ -107,7 +107,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GrantViaIdentityExpanded, GrantViaIdentity
+Parameter Sets: GrantViaIdentityExpanded1, GrantViaIdentity1
 Aliases:
 
 Required: True
@@ -122,7 +122,7 @@ key: id of permission
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded, Grant
+Parameter Sets: GrantExpanded1, Grant1
 Aliases:
 
 Required: True
@@ -138,7 +138,7 @@ To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS p
 
 ```yaml
 Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GrantExpanded, GrantViaIdentityExpanded
+Parameter Sets: GrantExpanded1, GrantViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -168,7 +168,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: GrantExpanded, Grant
+Parameter Sets: GrantExpanded1, Grant1
 Aliases:
 
 Required: True

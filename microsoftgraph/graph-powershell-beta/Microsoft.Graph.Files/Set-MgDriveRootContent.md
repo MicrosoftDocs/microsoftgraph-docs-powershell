@@ -12,13 +12,13 @@ The content stream, if the item represents a file.
 
 ## SYNTAX
 
-### Set (Default)
+### Set1 (Default)
 ```
 Set-MgDriveRootContent -DriveId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### SetViaIdentity1
 ```
 Set-MgDriveRootContent -InputObject <IFilesIdentity> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -51,7 +51,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Set
+Parameter Sets: Set1
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: SetViaIdentity
+Parameter Sets: SetViaIdentity1
 Aliases:
 
 Required: True

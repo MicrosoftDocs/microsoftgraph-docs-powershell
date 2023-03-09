@@ -14,8 +14,7 @@ Invoke action complete
 
 ### Complete (Default)
 ```
-Complete-MgDirectoryImpactedResource -RecommendationResourceId <String> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Complete-MgDirectoryImpactedResource -ImpactedResourceId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
@@ -31,6 +30,21 @@ Invoke action complete
 
 ## PARAMETERS
 
+### -ImpactedResourceId
+key: id of impactedResource
+
+```yaml
+Type: String
+Parameter Sets: Complete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -InputObject
 Identity Parameter
 To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
@@ -44,21 +58,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -RecommendationResourceId
-key: id of recommendationResource
-
-```yaml
-Type: String
-Parameter Sets: Complete
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -101,7 +100,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRecommendationResource
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImpactedResource
 ## NOTES
 
 ALIASES

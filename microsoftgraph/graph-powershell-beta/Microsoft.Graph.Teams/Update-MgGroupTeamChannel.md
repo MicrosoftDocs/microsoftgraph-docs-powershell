@@ -16,7 +16,7 @@ Update the navigation property channels in groups
 ```
 Update-MgGroupTeamChannel -ChannelId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
+ [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
  [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
@@ -34,7 +34,7 @@ Update-MgGroupTeamChannel -ChannelId <String> -GroupId <String> -BodyParameter <
 ```
 Update-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
+ [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
  [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
@@ -169,7 +169,7 @@ driveItem
 To construct, please use Get-Help -Online and see NOTES section for FILESFOLDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveItem
+Type: IMicrosoftGraphDriveItem1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

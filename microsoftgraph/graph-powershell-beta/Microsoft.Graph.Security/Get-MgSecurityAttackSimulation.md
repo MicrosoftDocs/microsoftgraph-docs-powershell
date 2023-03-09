@@ -242,8 +242,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationRoot
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttackSimulationRoot1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSimulation1
 ## NOTES
 
 ALIASES

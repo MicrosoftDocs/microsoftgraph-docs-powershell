@@ -16,8 +16,8 @@ Update the navigation property servicePlans in deviceManagement
 ```
 Update-MgDeviceManagementVirtualEndpointServicePlan -CloudPcServicePlanId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RamInGb <Int32>]
- [-StorageInGb <Int32>] [-Type <String>] [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-StorageInGb <Int32>] [-SupportedSolution <String>] [-Type <String>] [-UserProfileInGb <Int32>]
+ [-VCpuCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -30,8 +30,8 @@ Update-MgDeviceManagementVirtualEndpointServicePlan -CloudPcServicePlanId <Strin
 ```
 Update-MgDeviceManagementVirtualEndpointServicePlan -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-RamInGb <Int32>]
- [-StorageInGb <Int32>] [-Type <String>] [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-StorageInGb <Int32>] [-SupportedSolution <String>] [-Type <String>] [-UserProfileInGb <Int32>]
+ [-VCpuCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -178,6 +178,21 @@ Read-only.
 
 ```yaml
 Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SupportedSolution
+cloudPcManagementService
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

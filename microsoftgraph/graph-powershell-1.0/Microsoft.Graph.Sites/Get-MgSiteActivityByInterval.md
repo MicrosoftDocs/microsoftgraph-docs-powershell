@@ -12,26 +12,26 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgSiteActivityByInterval -SiteId <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### Get2
+### Get1
 ```
 Get-MgSiteActivityByInterval -SiteId <String> -EndDateTime <String> -Interval <String> -StartDateTime <String>
  [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
  [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgSiteActivityByInterval -InputObject <ISitesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
@@ -64,7 +64,7 @@ Usage: endDateTime='{endDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -95,7 +95,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity2, GetViaIdentity1
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Usage: interval='{interval}'
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -155,7 +155,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1, Get2
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -185,7 +185,7 @@ Usage: startDateTime='{startDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get1
 Aliases:
 
 Required: True

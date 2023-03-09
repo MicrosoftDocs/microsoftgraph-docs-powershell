@@ -12,27 +12,27 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## SYNTAX
 
-### AssociateExpanded (Default)
+### AssociateExpanded1 (Default)
 ```
 Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Associate
+### Associate1
 ```
 Join-MgDriveListContentTypeWithHubSite -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssociateViaIdentityExpanded
+### AssociateViaIdentityExpanded1
 ```
 Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssociateViaIdentity
+### AssociateViaIdentity1
 ```
 Join-MgDriveListContentTypeWithHubSite -InputObject <IFilesIdentity>
  -BodyParameter <IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
@@ -51,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsWa4CdpDrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Associate, AssociateViaIdentity
+Parameter Sets: Associate1, AssociateViaIdentity1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded, Associate
+Parameter Sets: AssociateExpanded1, Associate1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded, Associate
+Parameter Sets: AssociateExpanded1, Associate1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -128,7 +128,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
+Parameter Sets: AssociateViaIdentityExpanded1, AssociateViaIdentity1
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
+Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
 Aliases:
 
 Required: False

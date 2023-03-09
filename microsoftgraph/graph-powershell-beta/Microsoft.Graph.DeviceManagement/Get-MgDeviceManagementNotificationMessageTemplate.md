@@ -228,7 +228,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate
 ## NOTES
 
 ALIASES

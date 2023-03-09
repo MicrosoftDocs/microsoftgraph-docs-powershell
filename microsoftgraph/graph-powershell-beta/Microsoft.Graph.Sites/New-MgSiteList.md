@@ -16,7 +16,7 @@ Create a new [list][] in a [site][].
 ### CreateExpanded (Default)
 ```
 New-MgSiteList -SiteId <String> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition1[]>]
  [-ContentTypes <IMicrosoftGraphContentType1[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedByUser <IMicrosoftGraphUser1>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive1>] [-ETag <String>] [-Id <String>]
@@ -36,7 +36,7 @@ New-MgSiteList -SiteId <String> -BodyParameter <IMicrosoftGraphList> [-WhatIf] [
 ### CreateViaIdentityExpanded
 ```
 New-MgSiteList -InputObject <ISitesIdentity> [-Activities <IMicrosoftGraphItemActivityOld[]>]
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphColumnDefinition1[]>]
  [-ContentTypes <IMicrosoftGraphContentType1[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedByUser <IMicrosoftGraphUser1>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive1>] [-ETag <String>] [-Id <String>]
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition[]
+Type: IMicrosoftGraphColumnDefinition1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

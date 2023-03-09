@@ -17,8 +17,8 @@ Update the navigation property notificationMessageTemplates in deviceManagement
 Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplateId <String>
  [-AdditionalProperties <Hashtable>] [-BrandingOptions <NotificationTemplateBrandingOptions>]
  [-DefaultLocale <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -33,8 +33,8 @@ Update-MgDeviceManagementNotificationMessageTemplate -NotificationMessageTemplat
 Update-MgDeviceManagementNotificationMessageTemplate -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-BrandingOptions <NotificationTemplateBrandingOptions>]
  [-DefaultLocale <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -214,6 +214,21 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleScopeTagIds
+List of Scope Tags for this Entity instance.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

@@ -12,13 +12,13 @@ Unpublish a [contentType][] from a content type hub site.
 
 ## SYNTAX
 
-### Unpublish1 (Default)
+### Unpublish (Default)
 ```
 Unpublish-MgDriveListContentType -ContentTypeId <String> -DriveId <String> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### UnpublishViaIdentity1
+### UnpublishViaIdentity
 ```
 Unpublish-MgDriveListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Unpublish1
+Parameter Sets: Unpublish
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Unpublish1
+Parameter Sets: Unpublish
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: UnpublishViaIdentity1
+Parameter Sets: UnpublishViaIdentity
 Aliases:
 
 Required: True

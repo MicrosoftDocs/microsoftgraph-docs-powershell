@@ -12,28 +12,28 @@ Invoke action onenotePatchContent
 
 ## SYNTAX
 
-### PatchExpanded (Default)
+### PatchExpanded1 (Default)
 ```
 Update-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Patch
+### Patch1
 ```
 Update-MgSiteOnenotePageContent -OnenotePageId <String> -SiteId <String>
  -BodyParameter <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### PatchViaIdentityExpanded
+### PatchViaIdentityExpanded1
 ```
 Update-MgSiteOnenotePageContent -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### PatchViaIdentity
+### PatchViaIdentity1
 ```
 Update-MgSiteOnenotePageContent -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
+Parameter Sets: PatchExpanded1, PatchViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1L1LpfrSitesSiteIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Patch, PatchViaIdentity
+Parameter Sets: Patch1, PatchViaIdentity1
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for COMMANDS pro
 
 ```yaml
 Type: IMicrosoftGraphOnenotePatchContentCommand[]
-Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
+Parameter Sets: PatchExpanded1, PatchViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: PatchViaIdentityExpanded, PatchViaIdentity
+Parameter Sets: PatchViaIdentityExpanded1, PatchViaIdentity1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ key: id of onenotePage
 
 ```yaml
 Type: String
-Parameter Sets: PatchExpanded, Patch
+Parameter Sets: PatchExpanded1, Patch1
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: PatchExpanded, Patch
+Parameter Sets: PatchExpanded1, Patch1
 Aliases:
 
 Required: True

@@ -14,7 +14,8 @@ Create new navigation property to deviceManagementPartners for deviceManagement
 
 ### CreateExpanded1 (Default)
 ```
-New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+New-MgDeviceManagementPartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-GroupsRequiringPartnerEnrollment <IMicrosoftGraphDeviceManagementPartnerAssignment[]>] [-Id <String>]
  [-IsConfigured] [-LastHeartbeatDateTime <DateTime>] [-PartnerAppType <DeviceManagementPartnerAppType>]
  [-PartnerState <DeviceManagementPartnerTenantState>] [-SingleTenantAppId <String>]
  [-WhenPartnerDevicesWillBeMarkedAsNonCompliantDateTime <DateTime>]
@@ -70,6 +71,22 @@ Partner display name
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -GroupsRequiringPartnerEnrollment
+User groups that specifies whether enrollment is through partner.
+To construct, please use Get-Help -Online and see NOTES section for GROUPSREQUIRINGPARTNERENROLLMENT properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceManagementPartnerAssignment[]
 Parameter Sets: CreateExpanded1
 Aliases:
 

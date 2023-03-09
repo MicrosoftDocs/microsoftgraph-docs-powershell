@@ -15,13 +15,14 @@ Create new navigation property to authenticationMethodConfigurations for policie
 ### CreateExpanded (Default)
 ```
 New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ExcludeTargets <IMicrosoftGraphExcludeTarget[]>] [-Id <String>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
- -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationMethodConfiguration1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,7 +52,7 @@ authenticationMethodConfiguration
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodConfiguration
+Type: IMicrosoftGraphAuthenticationMethodConfiguration1
 Parameter Sets: Create
 Aliases:
 
@@ -59,6 +60,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -ExcludeTargets
+Groups of users that are excluded from a policy.
+To construct, please use Get-Help -Online and see NOTES section for EXCLUDETARGETS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphExcludeTarget[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -129,10 +146,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration1
 ## NOTES
 
 ALIASES

@@ -25,9 +25,10 @@ New-MgBusinessScenarioPlannerTask -BusinessScenarioId <String> [-ActiveChecklist
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
- [-StartDateTime <DateTime>] [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -49,9 +50,10 @@ New-MgBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ActiveCheck
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
- [-StartDateTime <DateTime>] [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -522,6 +524,22 @@ To construct, please use Get-Help -Online and see NOTES section for PROGRESSTASK
 
 ```yaml
 Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Recurrence
+plannerTaskRecurrence
+To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPlannerTaskRecurrence
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

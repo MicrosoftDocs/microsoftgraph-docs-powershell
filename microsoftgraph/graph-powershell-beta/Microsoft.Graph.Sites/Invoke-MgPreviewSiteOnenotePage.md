@@ -12,12 +12,12 @@ Invoke function preview
 
 ## SYNTAX
 
-### Preview (Default)
+### Preview1 (Default)
 ```
 Invoke-MgPreviewSiteOnenotePage -OnenotePageId <String> -SiteId <String> [<CommonParameters>]
 ```
 
-### PreviewViaIdentity
+### PreviewViaIdentity1
 ```
 Invoke-MgPreviewSiteOnenotePage -InputObject <ISitesIdentity> [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: PreviewViaIdentity
+Parameter Sets: PreviewViaIdentity1
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ key: id of onenotePage
 
 ```yaml
 Type: String
-Parameter Sets: Preview
+Parameter Sets: Preview1
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Preview
+Parameter Sets: Preview1
 Aliases:
 
 Required: True

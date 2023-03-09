@@ -12,13 +12,13 @@ Get content for the navigation property versions from drives
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
 Get-MgDriveItemVersionContent -DriveId <String> -DriveItemId <String> -DriveItemVersionId <String>
  -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -65,7 +65,7 @@ key: id of driveItemVersion
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True

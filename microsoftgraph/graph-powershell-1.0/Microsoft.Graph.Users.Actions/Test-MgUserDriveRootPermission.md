@@ -12,26 +12,26 @@ Invoke action validatePermission
 
 ## SYNTAX
 
-### ValidateExpanded1 (Default)
+### ValidateExpanded (Default)
 ```
 Test-MgUserDriveRootPermission -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Validate1
+### Validate
 ```
 Test-MgUserDriveRootPermission -DriveId <String> -UserId <String>
  -BodyParameter <IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentityExpanded1
+### ValidateViaIdentityExpanded
 ```
 Test-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ValidateViaIdentity1
+### ValidateViaIdentity
 ```
 Test-MgUserDriveRootPermission -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
@@ -50,7 +50,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsUsk7RsUsersUserIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Validate1, ValidateViaIdentity1
+Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -96,7 +96,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: ValidateViaIdentityExpanded1, ValidateViaIdentity1
+Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, ValidateViaIdentityExpanded1
+Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -157,7 +157,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: ValidateExpanded1, Validate1
+Parameter Sets: ValidateExpanded, Validate
 Aliases:
 
 Required: True

@@ -12,28 +12,28 @@ Get the free/busy availability information for a collection of users, distributi
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### GetExpanded2 (Default)
 ```
 Get-MgUserDefaultCalendarSchedule -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
  [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get
+### Get2
 ```
 Get-MgUserDefaultCalendarSchedule -UserId <String>
  -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded
+### GetViaIdentityExpanded2
 ```
 Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
  [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
@@ -77,7 +77,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -92,7 +92,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -108,7 +108,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
+Parameter Sets: Get2, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -124,7 +124,7 @@ To construct, please use Get-Help -Online and see NOTES section for ENDTIME prop
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -140,7 +140,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Parameter Sets: GetViaIdentityExpanded2, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -155,7 +155,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -171,7 +171,7 @@ To construct, please use Get-Help -Online and see NOTES section for STARTTIME pr
 
 ```yaml
 Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
+Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
 Aliases:
 
 Required: False
@@ -186,7 +186,7 @@ key: id of user
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded, Get
+Parameter Sets: GetExpanded2, Get2
 Aliases:
 
 Required: True

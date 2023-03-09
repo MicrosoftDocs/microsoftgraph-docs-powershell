@@ -16,10 +16,10 @@ Update the navigation property shares in print
 ```
 Update-MgPrintShare -PrinterShareId <String> [-AdditionalProperties <Hashtable>] [-AllowAllUsers]
  [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
+ [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-CreatedDateTime <DateTime>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
  [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
- [-Model <String>] [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru]
+ [-Model <String>] [-Printer <IMicrosoftGraphPrinter1>] [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -33,10 +33,10 @@ Update-MgPrintShare -PrinterShareId <String> -BodyParameter <IMicrosoftGraphPrin
 ```
 Update-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup[]>] [-AllowedUsers <IMicrosoftGraphUser[]>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-CreatedDateTime <DateTime>]
+ [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-CreatedDateTime <DateTime>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-Id <String>] [-IsAcceptingJobs]
  [-Jobs <IMicrosoftGraphPrintJob1[]>] [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>]
- [-Model <String>] [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru]
+ [-Model <String>] [-Printer <IMicrosoftGraphPrinter1>] [-Status <IMicrosoftGraphPrinterStatus1>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -151,7 +151,7 @@ printerCapabilities
 To construct, please use Get-Help -Online and see NOTES section for CAPABILITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterCapabilities
+Type: IMicrosoftGraphPrinterCapabilities1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -338,7 +338,7 @@ printer
 To construct, please use Get-Help -Online and see NOTES section for PRINTER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinter
+Type: IMicrosoftGraphPrinter1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

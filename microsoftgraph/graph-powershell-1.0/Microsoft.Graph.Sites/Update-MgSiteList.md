@@ -15,7 +15,7 @@ Update the navigation property lists in sites
 ### UpdateExpanded1 (Default)
 ```
 Update-MgSiteList -ListId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-Columns <IMicrosoftGraphColumnDefinition1[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
  [-Id <String>] [-Items <IMicrosoftGraphListItem1[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
@@ -35,7 +35,7 @@ Update-MgSiteList -ListId <String> -SiteId <String> -BodyParameter <IMicrosoftGr
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgSiteList -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
- [-Columns <IMicrosoftGraphColumnDefinition1[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-ContentTypes <IMicrosoftGraphContentType[]>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedByUser <IMicrosoftGraphUser>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Drive <IMicrosoftGraphDrive>] [-ETag <String>]
  [-Id <String>] [-Items <IMicrosoftGraphListItem1[]>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
@@ -95,7 +95,7 @@ The collection of field definitions for this list.
 To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1[]
+Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

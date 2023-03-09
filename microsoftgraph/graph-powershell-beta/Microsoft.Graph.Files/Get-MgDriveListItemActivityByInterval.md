@@ -12,14 +12,14 @@ Invoke function getActivitiesByInterval
 
 ## SYNTAX
 
-### Get (Default)
+### Get2 (Default)
 ```
 Get-MgDriveListItemActivityByInterval -DriveId <String> -EndDateTime <String> -Interval <String>
  -ListItemId <String> -StartDateTime <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgDriveListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -53,7 +53,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -68,7 +68,7 @@ Usage: endDateTime='{endDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity2
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ Usage: interval='{interval}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -129,7 +129,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -189,7 +189,7 @@ Usage: startDateTime='{startDateTime}'
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True

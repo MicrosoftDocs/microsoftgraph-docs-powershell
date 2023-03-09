@@ -22,7 +22,7 @@ Hide-MgUserChatForUser -ChatId <String> -UserId <String> [-AdditionalProperties 
 ### Hide
 ```
 Hide-MgUserChatForUser -ChatId <String> -UserId <String>
- -BodyParameter <IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Hide-MgUserChatForUser -InputObject <IUsersActionsIdentity> [-AdditionalProperti
 ### HideViaIdentity
 ```
 Hide-MgUserChatForUser -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>
+ -BodyParameter <IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
+Type: IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1
 Parameter Sets: Hide, HideViaIdentity
 Aliases:
 
@@ -206,7 +206,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths39855TUsersUserIdChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 

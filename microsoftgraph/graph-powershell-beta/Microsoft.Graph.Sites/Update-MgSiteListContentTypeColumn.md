@@ -23,7 +23,7 @@ Update-MgSiteListContentTypeColumn -ColumnDefinitionId <String> -ContentTypeId <
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
- [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
+ [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition1>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
  [-Validation <IMicrosoftGraphColumnValidation>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -32,7 +32,7 @@ Update-MgSiteListContentTypeColumn -ColumnDefinitionId <String> -ContentTypeId <
 ### Update
 ```
 Update-MgSiteListContentTypeColumn -ColumnDefinitionId <String> -ContentTypeId <String> -ListId <String>
- -SiteId <String> -BodyParameter <IMicrosoftGraphColumnDefinition> [-PassThru] [-WhatIf] [-Confirm]
+ -SiteId <String> -BodyParameter <IMicrosoftGraphColumnDefinition1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -46,7 +46,7 @@ Update-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> [-AdditionalPro
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
- [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
+ [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition1>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
  [-Validation <IMicrosoftGraphColumnValidation>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -55,7 +55,7 @@ Update-MgSiteListContentTypeColumn -InputObject <ISitesIdentity> [-AdditionalPro
 ### UpdateViaIdentity
 ```
 Update-MgSiteListContentTypeColumn -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphColumnDefinition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphColumnDefinition1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -85,7 +85,7 @@ columnDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition
+Type: IMicrosoftGraphColumnDefinition1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -595,7 +595,7 @@ columnDefinition
 To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition
+Type: IMicrosoftGraphColumnDefinition1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -736,7 +736,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 

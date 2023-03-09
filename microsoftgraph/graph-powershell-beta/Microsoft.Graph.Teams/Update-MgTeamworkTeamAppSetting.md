@@ -14,8 +14,8 @@ Update the properties of a teamsAppSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-IsChatResourceSpecificConsentEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-AllowUserRequestsForAppAccess]
+ [-Id <String>] [-IsChatResourceSpecificConsentEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -42,6 +42,21 @@ Update-MgTeamworkTeamAppSetting -BodyParameter $params
 This example shows how to use the Update-MgTeamworkTeamAppSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
+### Example 2: Allow Teams users to request admins for access to certain Teams Apps
+
+```powershell
+Import-Module Microsoft.Graph.Teams
+$params = @{
+	"@odata.type" = "#microsoft.graph.teamsAppSettings"
+	AllowUserRequestsForAppAccess = "true"
+}
+
+Update-MgTeamworkTeamAppSetting -BodyParameter $params
+```
+
+This example shows how to use the Update-MgTeamworkTeamAppSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -49,6 +64,21 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowUserRequestsForAppAccess
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 

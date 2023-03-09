@@ -17,9 +17,9 @@ Update the navigation property customTaskExtensions in identityGovernance
 Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId <String>
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-CallbackConfiguration <IMicrosoftGraphCustomExtensionCallbackConfiguration>]
- [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser>]
+ [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser1>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser>]
+ [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser1>]
  [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,9 +35,9 @@ Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExten
 Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
  [-CallbackConfiguration <IMicrosoftGraphCustomExtensionCallbackConfiguration>]
- [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser>]
+ [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-CreatedBy <IMicrosoftGraphUser1>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
- [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser>]
+ [-EndpointConfiguration <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphUser1>]
  [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -170,7 +170,7 @@ user
 To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser
+Type: IMicrosoftGraphUser1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +293,7 @@ user
 To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUser
+Type: IMicrosoftGraphUser1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

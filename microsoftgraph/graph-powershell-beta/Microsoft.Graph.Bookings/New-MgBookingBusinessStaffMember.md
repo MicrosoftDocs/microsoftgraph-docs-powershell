@@ -17,9 +17,9 @@ Create a new staff member in the specified bookingBusiness.
 ```
 New-MgBookingBusinessStaffMember -BookingBusinessId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled] [-Role <String>] [-TimeZone <String>]
- [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours1[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled] [-MembershipStatus <String>]
+ [-Role <String>] [-TimeZone <String>] [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours1[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -32,9 +32,9 @@ New-MgBookingBusinessStaffMember -BookingBusinessId <String> -BodyParameter <IMi
 ```
 New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityIsAffectedByPersonalCalendar] [-ColorIndex <Int32>] [-DisplayName <String>]
- [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled] [-Role <String>] [-TimeZone <String>]
- [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours1[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-EmailAddress <String>] [-Id <String>] [-IsEmailNotificationEnabled] [-MembershipStatus <String>]
+ [-Role <String>] [-TimeZone <String>] [-UseBusinessHours] [-WorkingHours <IMicrosoftGraphBookingWorkHours1[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -282,6 +282,21 @@ True indicates that a staff member will be notified via email when a booking ass
 
 ```yaml
 Type: SwitchParameter
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MembershipStatus
+bookingStaffMembershipStatus
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

@@ -25,9 +25,10 @@ Update-MgBusinessScenarioPlannerTask -BusinessScenarioId <String> -BusinessScena
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
- [-StartDateTime <DateTime>] [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -49,9 +50,10 @@ Update-MgBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ActiveCh
  [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>] [-ReferenceCount <Int32>]
- [-StartDateTime <DateTime>] [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
+ [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -552,6 +554,22 @@ To construct, please use Get-Help -Online and see NOTES section for PROGRESSTASK
 
 ```yaml
 Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Recurrence
+plannerTaskRecurrence
+To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPlannerTaskRecurrence
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

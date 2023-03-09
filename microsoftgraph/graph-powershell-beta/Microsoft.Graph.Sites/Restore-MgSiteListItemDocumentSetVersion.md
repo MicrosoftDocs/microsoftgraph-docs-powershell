@@ -12,13 +12,13 @@ Restore a document set version.
 
 ## SYNTAX
 
-### Restore (Default)
+### Restore1 (Default)
 ```
 Restore-MgSiteListItemDocumentSetVersion -DocumentSetVersionId <String> -ListId <String> -ListItemId <String>
  -SiteId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RestoreViaIdentity
+### RestoreViaIdentity1
 ```
 Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -45,7 +45,7 @@ key: id of documentSetVersion
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -61,7 +61,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: RestoreViaIdentity
+Parameter Sets: RestoreViaIdentity1
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True
@@ -121,7 +121,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Restore
+Parameter Sets: Restore1
 Aliases:
 
 Required: True

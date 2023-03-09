@@ -31,6 +31,7 @@ Update-MgApplication -ApplicationId <String> [-AddIns <IMicrosoftGraphAddIn[]>]
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <String>]
+ [-RequestSignatureVerification <IMicrosoftGraphRequestSignatureVerification>]
  [-RequiredResourceAccess <IMicrosoftGraphRequiredResourceAccess[]>] [-SamlMetadataUrl <String>]
  [-ServiceManagementReference <String>] [-SignInAudience <String>] [-Spa <IMicrosoftGraphSpaApplication>]
  [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
@@ -64,6 +65,7 @@ Update-MgApplication -InputObject <IApplicationsIdentity> [-AddIns <IMicrosoftGr
  [-ParentalControlSettings <IMicrosoftGraphParentalControlSettings>]
  [-PasswordCredentials <IMicrosoftGraphPasswordCredential[]>]
  [-PublicClient <IMicrosoftGraphPublicClientApplication>] [-PublisherDomain <String>]
+ [-RequestSignatureVerification <IMicrosoftGraphRequestSignatureVerification>]
  [-RequiredResourceAccess <IMicrosoftGraphRequiredResourceAccess[]>] [-SamlMetadataUrl <String>]
  [-ServiceManagementReference <String>] [-SignInAudience <String>] [-Spa <IMicrosoftGraphSpaApplication>]
  [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
@@ -700,6 +702,22 @@ Supports $filter (eq, ne, ge, le, startsWith).
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RequestSignatureVerification
+requestSignatureVerification
+To construct, please use Get-Help -Online and see NOTES section for REQUESTSIGNATUREVERIFICATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRequestSignatureVerification
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

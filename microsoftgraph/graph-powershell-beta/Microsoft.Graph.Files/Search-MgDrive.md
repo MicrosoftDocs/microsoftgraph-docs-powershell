@@ -12,13 +12,13 @@ Invoke function search
 
 ## SYNTAX
 
-### Search (Default)
+### Search1 (Default)
 ```
 Search-MgDrive -DriveId <String> -Q <String> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### SearchViaIdentity
+### SearchViaIdentity1
 ```
 Search-MgDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
@@ -51,7 +51,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Search
+Parameter Sets: Search1
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: SearchViaIdentity
+Parameter Sets: SearchViaIdentity1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ Usage: q='{q}'
 
 ```yaml
 Type: String
-Parameter Sets: Search
+Parameter Sets: Search1
 Aliases:
 
 Required: True

@@ -17,8 +17,8 @@ Create new navigation property to notificationMessageTemplates for deviceManagem
 New-MgDeviceManagementNotificationMessageTemplate [-AdditionalProperties <Hashtable>]
  [-BrandingOptions <NotificationTemplateBrandingOptions>] [-DefaultLocale <String>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LocalizedNotificationMessages <IMicrosoftGraphLocalizedNotificationMessage[]>] [-RoleScopeTagIds <String[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -150,6 +150,21 @@ To construct, please use Get-Help -Online and see NOTES section for LOCALIZEDNOT
 
 ```yaml
 Type: IMicrosoftGraphLocalizedNotificationMessage[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleScopeTagIds
+List of Scope Tags for this Entity instance.
+
+```yaml
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -16,7 +16,7 @@ Create new navigation property to channels for teamwork
 ```
 New-MgTeamworkDeletedTeamChannel -DeletedTeamId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
+ [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
  [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
@@ -34,7 +34,7 @@ New-MgTeamworkDeletedTeamChannel -DeletedTeamId <String> -BodyParameter <IMicros
 ```
 New-MgTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
- [-FilesFolder <IMicrosoftGraphDriveItem>] [-Id <String>] [-IsFavoriteByDefault]
+ [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
  [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
@@ -169,7 +169,7 @@ driveItem
 To construct, please use Get-Help -Online and see NOTES section for FILESFOLDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveItem
+Type: IMicrosoftGraphDriveItem1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

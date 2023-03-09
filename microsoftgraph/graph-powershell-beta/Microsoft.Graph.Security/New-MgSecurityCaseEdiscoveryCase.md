@@ -12,7 +12,7 @@ Create a new ediscoveryCase object.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgSecurityCaseEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedBy <IMicrosoftGraphIdentitySet>]
  [-ClosedDateTime <DateTime>] [-CreatedDateTime <DateTime>]
@@ -27,7 +27,7 @@ New-MgSecurityCaseEdiscoveryCase [-AdditionalProperties <Hashtable>] [-ClosedBy 
  [-Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgSecurityCaseEdiscoveryCase -BodyParameter <IMicrosoftGraphSecurityEdiscoveryCase1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -59,7 +59,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -75,7 +75,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryCase1
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ To construct, please use Get-Help -Online and see NOTES section for CLOSEDBY pro
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -108,7 +108,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -123,7 +123,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -139,7 +139,7 @@ To construct, please use Get-Help -Online and see NOTES section for CUSTODIANS p
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryCustodian1[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -154,7 +154,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -184,7 +184,7 @@ The external case number for customer reference.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -200,7 +200,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -216,7 +216,7 @@ To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIED
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -231,7 +231,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -247,7 +247,7 @@ To construct, please use Get-Help -Online and see NOTES section for LEGALHOLDS p
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryHoldPolicy[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -263,7 +263,7 @@ To construct, please use Get-Help -Online and see NOTES section for NONCUSTODIAL
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryNoncustodialDataSource[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -279,7 +279,7 @@ To construct, please use Get-Help -Online and see NOTES section for OPERATIONS p
 
 ```yaml
 Type: IMicrosoftGraphSecurityCaseOperation[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -295,7 +295,7 @@ To construct, please use Get-Help -Online and see NOTES section for REVIEWSETS p
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryReviewSet1[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -311,7 +311,7 @@ To construct, please use Get-Help -Online and see NOTES section for SEARCHES pro
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoverySearch1[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -327,7 +327,7 @@ To construct, please use Get-Help -Online and see NOTES section for SETTINGS pro
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryCaseSettings
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -342,7 +342,7 @@ caseStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -358,7 +358,7 @@ To construct, please use Get-Help -Online and see NOTES section for TAGS propert
 
 ```yaml
 Type: IMicrosoftGraphSecurityEdiscoveryReviewTag[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False

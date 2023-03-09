@@ -12,7 +12,7 @@ Create new navigation property to managedDevices for deviceManagement
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementManagedDevice [-AdditionalProperties <Hashtable>] [-ComplianceState <ComplianceState>]
  [-ConfigurationManagerClientEnabledFeatures <IMicrosoftGraphConfigurationManagerClientEnabledFeatures>]
@@ -30,7 +30,7 @@ New-MgDeviceManagementManagedDevice [-AdditionalProperties <Hashtable>] [-Compli
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDeviceManagementManagedDevice -BodyParameter <IMicrosoftGraphManagedDevice> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -48,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -64,7 +64,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphManagedDevice
-Parameter Sets: Create1
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -79,7 +79,7 @@ Compliance state.
 
 ```yaml
 Type: ComplianceState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -95,7 +95,7 @@ To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIO
 
 ```yaml
 Type: IMicrosoftGraphConfigurationManagerClientEnabledFeatures
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -114,7 +114,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICECATEGO
 
 ```yaml
 Type: IMicrosoftGraphDeviceCategory
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -130,7 +130,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLI
 
 ```yaml
 Type: IMicrosoftGraphDeviceCompliancePolicyState[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -146,7 +146,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIG
 
 ```yaml
 Type: IMicrosoftGraphDeviceConfigurationState[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ Possible ways of adding a mobile device to management.
 
 ```yaml
 Type: DeviceEnrollmentType
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -177,7 +177,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTH
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthAttestationState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -192,7 +192,7 @@ Device registration status.
 
 ```yaml
 Type: DeviceRegistrationState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -207,7 +207,7 @@ Device Exchange Access State.
 
 ```yaml
 Type: DeviceManagementExchangeAccessState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -222,7 +222,7 @@ Device Exchange Access State Reason.
 
 ```yaml
 Type: DeviceManagementExchangeAccessStateReason
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -238,7 +238,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -254,7 +254,7 @@ Can be overwritten to a user friendly name.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -269,7 +269,7 @@ Owner type of device.
 
 ```yaml
 Type: ManagedDeviceOwnerType
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -284,7 +284,7 @@ Management agent type.
 
 ```yaml
 Type: ManagementAgentType
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -303,7 +303,7 @@ $Search is not supported.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -318,7 +318,7 @@ Available health states for the Device Health API
 
 ```yaml
 Type: ManagedDevicePartnerReportedHealthState
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -334,7 +334,7 @@ To construct, please use Get-Help -Online and see NOTES section for USERS proper
 
 ```yaml
 Type: IMicrosoftGraphUser[]
-Parameter Sets: CreateExpanded1
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False

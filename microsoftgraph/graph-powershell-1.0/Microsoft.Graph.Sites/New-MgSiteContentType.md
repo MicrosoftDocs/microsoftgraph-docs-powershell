@@ -17,8 +17,8 @@ Create a new [contentType][] in a [site][].
 ```
 New-MgSiteContentType -SiteId <String> [-AdditionalProperties <Hashtable>] [-AssociatedHubsUrls <String[]>]
  [-Base <IMicrosoftGraphContentType>] [-BaseTypes <IMicrosoftGraphContentType[]>]
- [-ColumnLinks <IMicrosoftGraphColumnLink[]>] [-ColumnPositions <IMicrosoftGraphColumnDefinition1[]>]
- [-Columns <IMicrosoftGraphColumnDefinition1[]>] [-Description <String>]
+ [-ColumnLinks <IMicrosoftGraphColumnLink[]>] [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>]
+ [-Columns <IMicrosoftGraphColumnDefinition[]>] [-Description <String>]
  [-DocumentSet <IMicrosoftGraphDocumentSet1>] [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>]
  [-Group <String>] [-Hidden] [-Id <String>] [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn]
  [-Name <String>] [-Order <IMicrosoftGraphContentTypeOrder>] [-ParentId <String>] [-PropagateChanges]
@@ -36,7 +36,7 @@ New-MgSiteContentType -SiteId <String> -BodyParameter <IMicrosoftGraphContentTyp
 New-MgSiteContentType -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType>]
  [-BaseTypes <IMicrosoftGraphContentType[]>] [-ColumnLinks <IMicrosoftGraphColumnLink[]>]
- [-ColumnPositions <IMicrosoftGraphColumnDefinition1[]>] [-Columns <IMicrosoftGraphColumnDefinition1[]>]
+ [-ColumnPositions <IMicrosoftGraphColumnDefinition[]>] [-Columns <IMicrosoftGraphColumnDefinition[]>]
  [-Description <String>] [-DocumentSet <IMicrosoftGraphDocumentSet1>]
  [-DocumentTemplate <IMicrosoftGraphDocumentSetContent>] [-Group <String>] [-Hidden] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-IsBuiltIn] [-Name <String>]
@@ -176,7 +176,7 @@ Column order information in a content type.
 To construct, please use Get-Help -Online and see NOTES section for COLUMNPOSITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1[]
+Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -192,7 +192,7 @@ The collection of column definitions for this contentType.
 To construct, please use Get-Help -Online and see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1[]
+Type: IMicrosoftGraphColumnDefinition[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

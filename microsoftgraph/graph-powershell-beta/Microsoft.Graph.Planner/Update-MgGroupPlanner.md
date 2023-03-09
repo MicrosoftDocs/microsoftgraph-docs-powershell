@@ -14,26 +14,26 @@ Update the navigation property planner in groups
 
 ### UpdateExpanded (Default)
 ```
-Update-MgGroupPlanner -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+Update-MgGroupPlanner -GroupId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgGroupPlanner -GroupId <String> -BodyParameter <IMicrosoftGraphPlannerGroup> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgGroupPlanner -GroupId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerGroup>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgGroupPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerGroup> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgGroupPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerGroup> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -99,6 +99,21 @@ Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag value.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

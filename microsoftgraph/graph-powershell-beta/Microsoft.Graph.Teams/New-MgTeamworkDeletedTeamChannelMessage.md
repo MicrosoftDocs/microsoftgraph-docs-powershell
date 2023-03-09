@@ -15,7 +15,7 @@ Send a new chatMessage in the specified channel or a chat.
 ### CreateExpanded (Default)
 ```
 New-MgTeamworkDeletedTeamChannelMessage -ChannelId <String> -DeletedTeamId <String>
- [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment1[]>]
+ [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
  [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>]
  [-From <Hashtable>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>]
@@ -37,7 +37,7 @@ New-MgTeamworkDeletedTeamChannelMessage -ChannelId <String> -DeletedTeamId <Stri
 ### CreateViaIdentityExpanded
 ```
 New-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphChatMessageAttachment1[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
  [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId <String>] [-CreatedDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
@@ -83,7 +83,7 @@ References to attached objects like files, tabs, meetings etc.
 To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageAttachment1[]
+Type: IMicrosoftGraphChatMessageAttachment[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

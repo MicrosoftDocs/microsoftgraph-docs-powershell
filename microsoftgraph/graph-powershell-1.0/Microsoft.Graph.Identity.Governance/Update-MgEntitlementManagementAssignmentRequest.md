@@ -22,8 +22,8 @@ Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ```
 Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId <String>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
  [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -39,8 +39,8 @@ Update-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestI
 ```
 Update-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackage <IMicrosoftGraphAccessPackage1>] [-AdditionalProperties <Hashtable>]
- [-Assignment <IMicrosoftGraphAccessPackageAssignment>] [-CompletedDateTime <DateTime>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-Assignment <IMicrosoftGraphAccessPackageAssignment>]
+ [-CompletedDateTime <DateTime>] [-CreatedDateTime <DateTime>] [-Id <String>] [-RequestType <String>]
  [-Requestor <IMicrosoftGraphAccessPackageSubject>] [-Schedule <IMicrosoftGraphEntitlementManagementSchedule>]
  [-State <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -101,6 +101,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Answers
+Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
+To construct, please use Get-Help -Online and see NOTES section for ANSWERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageAnswer[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

@@ -12,13 +12,13 @@ The content stream, if the item represents a file.
 
 ## SYNTAX
 
-### Get (Default)
+### Get1 (Default)
 ```
 Get-MgSiteListItemDriveItemContent -ListId <String> -ListItemId <String> -SiteId <String> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgSiteListItemDriveItemContent -InputObject <ISitesIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
@@ -37,7 +37,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -52,7 +52,7 @@ key: id of list
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ key: id of listItem
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -112,7 +112,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True

@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Deployments created using the deployment service.
-Read-only.
 
 ## SYNTAX
 
@@ -34,7 +33,6 @@ Get-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-ExpandPr
 
 ## DESCRIPTION
 Deployments created using the deployment service.
-Read-only.
 
 ## EXAMPLES
 

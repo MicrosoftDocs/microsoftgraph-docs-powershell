@@ -13,20 +13,20 @@ The collection of the sub-sites under this site.
 
 ## SYNTAX
 
-### List1 (Default)
+### List2 (Default)
 ```
 Get-MgSubSite [-SiteId <String>] [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
  [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get2
 ```
 Get-MgSubSite [-SiteId <String>] -SiteId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity2
 ```
 Get-MgSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -53,7 +53,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases:
 
 Required: False
@@ -69,7 +69,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases: CV
 
 Required: False
@@ -99,7 +99,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity2
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases:
 
 Required: False
@@ -160,7 +160,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases:
 
 Required: False
@@ -175,7 +175,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List2, Get2
 Aliases:
 
 Required: False
@@ -190,7 +190,7 @@ key: id of site
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -205,7 +205,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases: OrderBy
 
 Required: False
@@ -220,7 +220,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases: Limit
 
 Required: False
@@ -235,7 +235,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List2
 Aliases:
 
 Required: False

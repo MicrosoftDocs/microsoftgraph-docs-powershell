@@ -12,13 +12,13 @@ The content stream, if the item represents a file.
 
 ## SYNTAX
 
-### Get (Default)
+### Get1 (Default)
 ```
 Get-MgDriveRootChildContent -DriveId <String> -DriveItemId <String> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgDriveRootChildContent -InputObject <IFilesIdentity> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
@@ -35,7 +35,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -50,7 +50,7 @@ key: id of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True

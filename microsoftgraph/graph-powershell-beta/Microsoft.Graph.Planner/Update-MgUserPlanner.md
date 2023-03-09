@@ -14,7 +14,7 @@ Update the navigation property planner in users
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgUserPlanner -UserId <String> [-AdditionalProperties <Hashtable>]
+Update-MgUserPlanner -UserId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
  [-FavoritePlans <IMicrosoftGraphPlannerPlan1[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>]
  [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan1[]>]
@@ -24,13 +24,13 @@ Update-MgUserPlanner -UserId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update1
 ```
-Update-MgUserPlanner -UserId <String> -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserPlanner -UserId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
-Update-MgUserPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-All <IMicrosoftGraphPlannerDelta[]>] [-FavoritePlanReferences <Hashtable>]
  [-FavoritePlans <IMicrosoftGraphPlannerPlan1[]>] [-Id <String>] [-Plans <IMicrosoftGraphPlannerPlan1[]>]
  [-RecentPlanReferences <Hashtable>] [-RecentPlans <IMicrosoftGraphPlannerPlan1[]>]
@@ -40,8 +40,8 @@ Update-MgUserPlanner -InputObject <IPlannerIdentity> [-AdditionalProperties <Has
 
 ### UpdateViaIdentity1
 ```
-Update-MgUserPlanner -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserPlanner -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerUser> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -168,6 +168,21 @@ Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag value.
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

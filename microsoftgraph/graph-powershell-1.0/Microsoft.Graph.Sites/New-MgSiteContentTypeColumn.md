@@ -23,7 +23,7 @@ New-MgSiteContentTypeColumn -ContentTypeId <String> -SiteId <String> [-Additiona
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
- [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition1>]
+ [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn1>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
  [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -32,7 +32,7 @@ New-MgSiteContentTypeColumn -ContentTypeId <String> -SiteId <String> [-Additiona
 ### Create1
 ```
 New-MgSiteContentTypeColumn -ContentTypeId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphColumnDefinition1> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphColumnDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -45,7 +45,7 @@ New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-AdditionalProperties
  [-HyperlinkOrPicture <IMicrosoftGraphHyperlinkOrPictureColumn>] [-Id <String>] [-Indexed] [-IsDeletable]
  [-IsReorderable] [-IsSealed] [-Lookup <IMicrosoftGraphLookupColumn>] [-Name <String>]
  [-Number <IMicrosoftGraphNumberColumn>] [-PersonOrGroup <IMicrosoftGraphPersonOrGroupColumn>]
- [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition1>]
+ [-PropagateChanges] [-ReadOnly] [-Required] [-SourceColumn <IMicrosoftGraphColumnDefinition>]
  [-SourceContentType <IMicrosoftGraphContentTypeInfo>] [-Term <IMicrosoftGraphTermColumn1>]
  [-Text <IMicrosoftGraphTextColumn>] [-Thumbnail <Hashtable>] [-Type <String>]
  [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -53,7 +53,7 @@ New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-AdditionalProperties
 
 ### CreateViaIdentity1
 ```
-New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition1>
+New-MgSiteContentTypeColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -96,7 +96,7 @@ columnDefinition
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1
+Type: IMicrosoftGraphColumnDefinition
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -561,7 +561,7 @@ columnDefinition
 To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphColumnDefinition1
+Type: IMicrosoftGraphColumnDefinition
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -702,11 +702,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphColumnDefinition
 ## NOTES
 
 ALIASES

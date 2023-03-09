@@ -13,28 +13,28 @@ The file can then be added as a default file or template via a POST operation.
 
 ## SYNTAX
 
-### CopyExpanded (Default)
+### CopyExpanded1 (Default)
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Copy
+### Copy1
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded
+### CopyViaIdentityExpanded1
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity>
  [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
  [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CopyViaIdentity
+### CopyViaIdentity1
 ```
 Copy-MgDriveListContentTypeToDefaultContentLocation -InputObject <IFilesIdentity>
  -BodyParameter <IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
@@ -54,7 +54,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths18D2Wr5DrivesDriveIdListContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy, CopyViaIdentity
+Parameter Sets: Copy1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -85,7 +85,7 @@ key: id of contentType
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, Copy
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ key: id of drive
 
 ```yaml
 Type: String
-Parameter Sets: CopyExpanded, Copy
+Parameter Sets: CopyExpanded1, Copy1
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ To construct, please use Get-Help -Online and see NOTES section for SOURCEFILE p
 
 ```yaml
 Type: IMicrosoftGraphItemReference
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
 Aliases:
 
 Required: False

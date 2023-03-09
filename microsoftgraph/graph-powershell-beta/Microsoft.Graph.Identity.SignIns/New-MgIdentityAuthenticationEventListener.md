@@ -16,7 +16,7 @@ Create new navigation property to authenticationEventListeners for identity
 ```
 New-MgIdentityAuthenticationEventListener [-AdditionalProperties <Hashtable>]
  [-AuthenticationEventsFlowId <String>] [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>]
- [-Priority <Int32>] [-Tags <IMicrosoftGraphKeyValuePair[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Priority <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -115,22 +115,6 @@ Accept wildcard characters: False
 
 ```yaml
 Type: Int32
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Tags
-.
-To construct, please use Get-Help -Online and see NOTES section for TAGS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 

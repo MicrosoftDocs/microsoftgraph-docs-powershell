@@ -14,39 +14,39 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## SYNTAX
 
-### RemoveExpanded1 (Default)
+### RemoveExpanded (Default)
 ```
 Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Remove3
+### Remove1
 ```
 Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  -BodyParameter <IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Remove2
+### Remove
 ```
 Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentityExpanded1
+### RemoveViaIdentityExpanded
 ```
 Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity3
+### RemoveViaIdentity1
 ```
 Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
  -BodyParameter <IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity2
+### RemoveViaIdentity
 ```
 Remove-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -84,7 +84,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths101Xa3PSecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityRemoveholdPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Remove3, RemoveViaIdentity3
+Parameter Sets: Remove1, RemoveViaIdentity1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded1, Remove3, Remove2
+Parameter Sets: RemoveExpanded, Remove1, Remove
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ key: id of ediscoveryNoncustodialDataSource
 
 ```yaml
 Type: String
-Parameter Sets: Remove2
+Parameter Sets: Remove
 Aliases:
 
 Required: True
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: RemoveExpanded1, RemoveViaIdentityExpanded1
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,7 +161,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: RemoveViaIdentityExpanded1, RemoveViaIdentity3, RemoveViaIdentity2
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity1, RemoveViaIdentity
 Aliases:
 
 Required: True

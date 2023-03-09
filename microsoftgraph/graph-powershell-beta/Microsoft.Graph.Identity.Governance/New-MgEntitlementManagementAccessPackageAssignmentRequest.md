@@ -15,7 +15,7 @@ This operation is used to assign a user to an access package, or to remove an ac
 
 ### CreateRequestAdminAdd (Default)
 ```
-New-MgEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+New-MgEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>]
  [-Justification <String>] [-RequestType <String>] -AccessPackageId <String> -AssignmentPolicyId <String>
  -TargetId <String> [-StartDate <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -30,7 +30,7 @@ New-MgEntitlementManagementAccessPackageAssignmentRequest
 ```
 New-MgEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment1>] [-AdditionalProperties <Hashtable>]
- [-Answers <IMicrosoftGraphAccessPackageAnswer[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
+ [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
  [-CustomExtensionHandlerInstances <IMicrosoftGraphCustomExtensionHandlerInstance[]>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
@@ -40,7 +40,7 @@ New-MgEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicr
 
 ### CreateRequestAdminAddExternal
 ```
-New-MgEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer[]>]
+New-MgEntitlementManagementAccessPackageAssignmentRequest [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>]
  [-Justification <String>] [-RequestType <String>] -AccessPackageId <String> -AssignmentPolicyId <String>
  [-StartDate <String>] -TargetEmail <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -156,7 +156,7 @@ Answers provided by the requestor to accessPackageQuestions asked of them at the
 To construct, please use Get-Help -Online and see NOTES section for ANSWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAnswer[]
+Type: IMicrosoftGraphAccessPackageAnswer1[]
 Parameter Sets: CreateRequestAdminAdd, CreateExpanded, CreateRequestAdminAddExternal
 Aliases:
 

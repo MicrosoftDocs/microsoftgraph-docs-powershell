@@ -16,10 +16,12 @@ Create a new partner configuration in a cross-tenant access policy.
 ### CreateExpanded (Default)
 ```
 New-MgPolicyCrossTenantAccessPolicyPartner [-AdditionalProperties <Hashtable>]
+ [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
+ [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
  [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider] [-TenantId <String>]
  [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -78,6 +80,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutomaticUserConsentSettings
+inboundOutboundPolicyConfiguration
+To construct, please use Get-Help -Online and see NOTES section for AUTOMATICUSERCONSENTSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphInboundOutboundPolicyConfiguration
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,6 +183,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -IdentitySynchronization
+crossTenantIdentitySyncPolicyPartner
+To construct, please use Get-Help -Online and see NOTES section for IDENTITYSYNCHRONIZATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

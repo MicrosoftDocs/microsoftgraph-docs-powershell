@@ -15,7 +15,7 @@ Update the navigation property replies in users
 ### UpdateExpanded1 (Default)
 ```
 Update-MgUserChatMessageReply -ChatId <String> -ChatMessageId <String> -ChatMessageId1 <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment1[]>]
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
  [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId1 <String>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>]
  [-From <Hashtable>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>]
@@ -31,7 +31,7 @@ Update-MgUserChatMessageReply -ChatId <String> -ChatMessageId <String> -ChatMess
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgUserChatMessageReply [-ChatId <String>] -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment1[]>]
+ [-AdditionalProperties <Hashtable>] [-Attachments <IMicrosoftGraphChatMessageAttachment[]>]
  [-Body <IMicrosoftGraphItemBody>] [-ChannelIdentity <IMicrosoftGraphChannelIdentity>]
  [-CreatedDateTime <DateTime>] [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>]
  [-From <Hashtable>] [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>]
@@ -84,7 +84,7 @@ References to attached objects like files, tabs, meetings etc.
 To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageAttachment1[]
+Type: IMicrosoftGraphChatMessageAttachment[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

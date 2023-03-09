@@ -17,7 +17,7 @@ This API cannot create a new chat; you must use the list chats method to retriev
 ### CreateExpanded1 (Default)
 ```
 New-MgUserChatMessage -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphChatMessageAttachment1[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
  [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-ChatId1 <String>] [-CreatedDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
@@ -33,7 +33,7 @@ New-MgUserChatMessage -ChatId <String> -UserId <String> [-AdditionalProperties <
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserChatMessage [-ChatId <String>] -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Attachments <IMicrosoftGraphChatMessageAttachment1[]>] [-Body <IMicrosoftGraphItemBody>]
+ [-Attachments <IMicrosoftGraphChatMessageAttachment[]>] [-Body <IMicrosoftGraphItemBody>]
  [-ChannelIdentity <IMicrosoftGraphChannelIdentity>] [-CreatedDateTime <DateTime>]
  [-DeletedDateTime <DateTime>] [-Etag <String>] [-EventDetail <Hashtable>] [-From <Hashtable>]
  [-HostedContents <IMicrosoftGraphChatMessageHostedContent[]>] [-Id <String>] [-Importance <String>]
@@ -119,7 +119,7 @@ References to attached objects like files, tabs, meetings etc.
 To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageAttachment1[]
+Type: IMicrosoftGraphChatMessageAttachment[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

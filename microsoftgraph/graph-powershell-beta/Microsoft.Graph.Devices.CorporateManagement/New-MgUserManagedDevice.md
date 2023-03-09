@@ -27,6 +27,7 @@ New-MgUserManagedDevice -UserId <String> [-AdditionalProperties <Hashtable>]
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
  [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
+ [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
  [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
@@ -64,6 +65,7 @@ New-MgUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [-Add
  [-DeviceConfigurationStates <IMicrosoftGraphDeviceConfigurationState1[]>]
  [-DeviceEnrollmentType <DeviceEnrollmentType>] [-DeviceFirmwareConfigurationInterfaceManaged]
  [-DeviceHealthAttestationState <IMicrosoftGraphDeviceHealthAttestationState>]
+ [-DeviceHealthScriptStates <IMicrosoftGraphDeviceHealthScriptPolicyState[]>]
  [-DeviceRegistrationState <DeviceRegistrationState>] [-DeviceType <DeviceType>]
  [-ExchangeAccessState <DeviceManagementExchangeAccessState>]
  [-ExchangeAccessStateReason <DeviceManagementExchangeAccessStateReason>]
@@ -356,6 +358,24 @@ To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTH
 
 ```yaml
 Type: IMicrosoftGraphDeviceHealthAttestationState
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceHealthScriptStates
+Results of device health scripts that ran for this device.
+Default is empty list.
+This property is read-only.
+To construct, please use Get-Help -Online and see NOTES section for DEVICEHEALTHSCRIPTSTATES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeviceHealthScriptPolicyState[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

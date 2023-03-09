@@ -15,8 +15,8 @@ Create new navigation property to servicePlans for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointServicePlan [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>] [-Type <String>] [-UserProfileInGb <Int32>]
- [-VCpuCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-RamInGb <Int32>] [-StorageInGb <Int32>] [-SupportedSolution <String>] [-Type <String>]
+ [-UserProfileInGb <Int32>] [-VCpuCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -117,6 +117,21 @@ Read-only.
 
 ```yaml
 Type: Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SupportedSolution
+cloudPcManagementService
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 

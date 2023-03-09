@@ -16,16 +16,16 @@ Update the properties of an authenticationMethodsPolicy object.
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>]
- [-AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration[]>]
+ [-AuthenticationMethodConfigurations <IMicrosoftGraphAuthenticationMethodConfiguration1[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
+ [-PolicyMigrationState <String>] [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
  [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy>
+Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthenticationMethodsPolicy1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -83,7 +83,7 @@ Automatically expanded on GET /policies/authenticationMethodsPolicy.
 To construct, please use Get-Help -Online and see NOTES section for AUTHENTICATIONMETHODCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodConfiguration[]
+Type: IMicrosoftGraphAuthenticationMethodConfiguration1[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +99,7 @@ authenticationMethodsPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationMethodsPolicy
+Type: IMicrosoftGraphAuthenticationMethodsPolicy1
 Parameter Sets: Update
 Aliases:
 
@@ -177,6 +177,21 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PolicyMigrationState
+authenticationMethodsPolicyMigrationState
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -268,7 +283,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodsPolicy1
 ## OUTPUTS
 
 ### System.Boolean

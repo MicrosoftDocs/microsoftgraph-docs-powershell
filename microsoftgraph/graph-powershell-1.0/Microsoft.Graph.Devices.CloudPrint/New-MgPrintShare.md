@@ -16,11 +16,11 @@ Create a new **printerShare** for the specified printer.
 ### CreateExpanded (Default)
 ```
 New-MgPrintShare [-AdditionalProperties <Hashtable>] [-AllowAllUsers] [-AllowedGroups <IMicrosoftGraphGroup[]>]
- [-AllowedUsers <IMicrosoftGraphUser[]>] [-Capabilities <IMicrosoftGraphPrinterCapabilities>]
+ [-AllowedUsers <IMicrosoftGraphUser[]>] [-Capabilities <IMicrosoftGraphPrinterCapabilities1>]
  [-CreatedDateTime <DateTime>] [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>]
  [-Id <String>] [-IsAcceptingJobs] [-Jobs <IMicrosoftGraphPrintJob1[]>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
- [-Printer <IMicrosoftGraphPrinter>] [-Status <IMicrosoftGraphPrinterStatus1>] [-WhatIf] [-Confirm]
+ [-Printer <IMicrosoftGraphPrinter1>] [-Status <IMicrosoftGraphPrinterStatus1>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -134,7 +134,7 @@ printerCapabilities
 To construct, please use Get-Help -Online and see NOTES section for CAPABILITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterCapabilities
+Type: IMicrosoftGraphPrinterCapabilities1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +290,7 @@ printer
 To construct, please use Get-Help -Online and see NOTES section for PRINTER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinter
+Type: IMicrosoftGraphPrinter1
 Parameter Sets: CreateExpanded
 Aliases:
 

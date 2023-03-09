@@ -12,13 +12,13 @@ Trigger an indexOperation
 
 ## SYNTAX
 
-### Update1 (Default)
+### Update (Default)
 ```
 Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
 Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -InputObject <ISecurityIdentity> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +45,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -60,7 +60,7 @@ key: id of ediscoveryNoncustodialDataSource
 
 ```yaml
 Type: String
-Parameter Sets: Update1
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentity1
+Parameter Sets: UpdateViaIdentity
 Aliases:
 
 Required: True

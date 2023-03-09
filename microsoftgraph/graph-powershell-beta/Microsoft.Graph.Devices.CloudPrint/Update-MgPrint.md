@@ -16,7 +16,7 @@ Update print
 ```
 Update-MgPrint [-AdditionalProperties <Hashtable>] [-Connectors <IMicrosoftGraphPrintConnector[]>]
  [-Operations <IMicrosoftGraphPrintOperation[]>] [-PrinterShares <IMicrosoftGraphPrinterShare[]>]
- [-Printers <IMicrosoftGraphPrinter1[]>] [-Reports <IMicrosoftGraphReportRoot>]
+ [-Printers <IMicrosoftGraphPrinter[]>] [-Reports <IMicrosoftGraphReportRoot>]
  [-Services <IMicrosoftGraphPrintService1[]>] [-Settings <IMicrosoftGraphPrintSettings>]
  [-Shares <IMicrosoftGraphPrinterShare[]>] [-TaskDefinitions <IMicrosoftGraphPrintTaskDefinition[]>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -24,7 +24,7 @@ Update-MgPrint [-AdditionalProperties <Hashtable>] [-Connectors <IMicrosoftGraph
 
 ### Update
 ```
-Update-MgPrint -BodyParameter <IMicrosoftGraphPrint1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPrint -BodyParameter <IMicrosoftGraphPrint> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,7 +54,7 @@ print
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrint1
+Type: IMicrosoftGraphPrint
 Parameter Sets: Update
 Aliases:
 
@@ -117,7 +117,7 @@ The list of printers registered in the tenant.
 To construct, please use Get-Help -Online and see NOTES section for PRINTERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinter1[]
+Type: IMicrosoftGraphPrinter[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -260,7 +260,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrint1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrint
 ## OUTPUTS
 
 ### System.Boolean

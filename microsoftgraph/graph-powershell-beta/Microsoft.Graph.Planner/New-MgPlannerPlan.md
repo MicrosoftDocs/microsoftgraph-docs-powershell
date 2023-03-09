@@ -19,8 +19,8 @@ New-MgPlannerPlan [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraph
  [-Container <IMicrosoftGraphPlannerPlanContainer1>] [-Contexts <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails1>]
- [-Id <String>] [-Owner <String>] [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Owner <String>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
+ [-Tasks <IMicrosoftGraphPlannerTask1[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -217,6 +217,22 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SharedWithContainers
+.
+To construct, please use Get-Help -Online and see NOTES section for SHAREDWITHCONTAINERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPlannerSharedWithContainer[]
 Parameter Sets: CreateExpanded1
 Aliases:
 

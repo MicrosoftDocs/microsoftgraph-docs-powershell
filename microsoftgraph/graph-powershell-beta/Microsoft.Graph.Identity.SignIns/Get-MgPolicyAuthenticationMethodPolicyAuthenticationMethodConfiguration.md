@@ -294,7 +294,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationMethodConfiguration1
 ## NOTES
 
 ALIASES

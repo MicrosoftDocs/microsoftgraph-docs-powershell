@@ -15,7 +15,7 @@ Update the navigation property printers in print
 ### UpdateExpanded1 (Default)
 ```
 Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
+ [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
@@ -26,14 +26,14 @@ Update-MgPrintPrinter -PrinterId <String> [-AdditionalProperties <Hashtable>]
 
 ### Update1
 ```
-Update-MgPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter> [-PassThru] [-WhatIf]
+Update-MgPrintPrinter -PrinterId <String> -BodyParameter <IMicrosoftGraphPrinter1> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-Capabilities <IMicrosoftGraphPrinterCapabilities>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
+ [-Capabilities <IMicrosoftGraphPrinterCapabilities1>] [-Connectors <IMicrosoftGraphPrintConnector1[]>]
  [-Defaults <IMicrosoftGraphPrinterDefaults1>] [-DisplayName <String>] [-HasPhysicalDevice] [-Id <String>]
  [-IsAcceptingJobs] [-IsShared] [-Jobs <IMicrosoftGraphPrintJob1[]>] [-LastSeenDateTime <DateTime>]
  [-Location <IMicrosoftGraphPrinterLocation1>] [-Manufacturer <String>] [-Model <String>]
@@ -44,7 +44,7 @@ Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProp
 
 ### UpdateViaIdentity1
 ```
-Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinter>
+Update-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrinter1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -92,7 +92,7 @@ printer
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinter
+Type: IMicrosoftGraphPrinter1
 Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
@@ -108,7 +108,7 @@ printerCapabilities
 To construct, please use Get-Help -Online and see NOTES section for CAPABILITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrinterCapabilities
+Type: IMicrosoftGraphPrinterCapabilities1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
@@ -457,7 +457,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter1
 ## OUTPUTS
 
 ### System.Boolean
