@@ -205,7 +205,7 @@ To create the parameters described below, construct a hash table containing the 
 BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AllowUserRequestsForAppAccess <Boolean?>]`: 
+  - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether Teams users are allowed to request admins access to certain Teams apps.
   - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.
 
 ## RELATED LINKS
