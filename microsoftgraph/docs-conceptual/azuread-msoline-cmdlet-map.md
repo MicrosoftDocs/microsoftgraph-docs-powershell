@@ -283,7 +283,7 @@ The following is the categorization of the Azure AD cmdlets. Select a category t
 |------------|--------------|
 |Add-AzureADGroupMember|[New-MgGroupMember](/powershell/module/microsoft.graph.groups/new-mggroupmember?view=graph-powershell-1.0&preserve-view=true)|
 |Add-AzureADGroupOwner|[New-MgGroupOwnerByRef](/powershell/module/microsoft.graph.groups/new-mggroupownerbyref?view=graph-powershell-1.0&preserve-view=true)|
-|Add-AzureADMSLifecyclePolicyGroup|[New-MgGroupLifecyclePolicy](/powershell/module/microsoft.graph.groups/new-mggrouplifecyclepolicy?view=graph-powershell-1.0&preserve-view=true)|
+|Add-AzureADMSLifecyclePolicyGroup|[Add-MgGroupToLifecyclePolicy](/powershell/module/microsoft.graph.groups/add-mggrouptolifecyclepolicy?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADGroup|[Get-MgGroup](/powershell/module/microsoft.graph.groups/get-mggroup?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADGroupAppRoleAssignment|[Get-MgGroupAppRoleAssignment](/powershell/module/microsoft.graph.applications/get-mggroupapproleassignment?view=graph-powershell-1.0&preserve-view=true)|
 |Get-AzureADGroupMember|[Get-MgGroupMember](/powershell/module/microsoft.graph.groups/get-mggroupmember?view=graph-powershell-1.0&preserve-view=true)|
