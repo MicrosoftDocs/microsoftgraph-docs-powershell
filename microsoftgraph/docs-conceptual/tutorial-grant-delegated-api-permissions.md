@@ -1,22 +1,22 @@
 ---
-title: "Grant delegated permissions programmatically in Azure AD"
-description: "Learn how to grant delegated permissions programmatically in Azure AD using Microsoft Graph PowerShell"
+title: "Grant and revoke delegated permissions programmatically in Azure AD"
+description: "Learn how to grant and revoke delegated permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 12/07/2022
+ms.date: 03/17/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor
 ---
 
-# Tutorial: Grant delegated permissions in Azure AD
+# Tutorial: Grant and revoke delegated permissions in Azure AD
 
 When you grant API permissions to a client app in Azure AD, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
 >[!Caution]
 >Be Careful! Permissions created programmatically are not subject to review or confirmation. They take effect immediately.
 
-In this tutorial, you'll grant delegated permissions that are exposed by an API to an app. Delegated permissions, also called scopes or OAuth2 permissions, allow an app to call an API on behalf of a signed-in user.
+In this tutorial, you'll grant and revoke delegated permissions that are exposed by an API to an app. Delegated permissions, also called scopes or OAuth2 permissions, allow an app to call an API on behalf of a signed-in user.
 
 ## Prerequisites
 
@@ -24,7 +24,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
+1. Microsoft Graph PowerShell using a user with privileges to create applications in the tenant and the appropriate permissions. For this tutorial, the `Application.Read.All` and `DelegatedPermissionGrant.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "DelegatedPermissionGrant.ReadWrite.All"
@@ -35,7 +35,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 ## Step 1: Get the delegated permissions of the resource service principal
 
-Before you can grant delegated permissions, you must first identify the delegated permissions to grant and the resource service principal that exposes the delegated permissions. Delegated permissions are defined in the `oauth2PermissionScopes` object of a service principal. 
+Before you can grant delegated permissions, you must first identify the delegated permissions to grant and the resource service principal that exposes the delegated permissions. Delegated permissions are defined in the `oauth2PermissionScopes` object of a service principal.
 
 In this article, you'll use the `Microsoft Graph` service principal in the tenant as your resource service principal.
 
@@ -107,7 +107,7 @@ AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
-## Step 3: Grant delegated permission to the client service principal
+## Step 3: Grant delegated permissions to the client enterprise application
 
 To create a delegated permission grant, you'll need the following information:
 
@@ -139,10 +139,25 @@ PrincipalId :
 ResourceId  : a67ad0d0-a7d1-4adb-8cd9-bcdd0c866d3c
 Scope       : Group.Read.All
 ```
+To confirm the delegated permissions assigned to the service principal on behalf of the user, you run the following command.
 
-### Step 4: Assign more or revoke delegated permissions to the service principal
+```powershell
+Get-MgOauth2PermissionGrant -Filter "clientId eq '22c1770d-30df-49e7-a763-f39d2ef9b369' and consentType eq 'AllPrincipals'"
+```
 
-You can add more or reduce scopes from an existing oauth2PermissionGrant object.
+```Output
+ClientId             : 22c1770d-30df-49e7-a763-f39d2ef9b369
+ConsentType          : AllPrincipals
+Id                   : DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw
+PrincipalId          :
+ResourceId           : 2cab1707-656d-40cc-8522-3178a184e03d
+Scope                : Group.Read.All,User.Read.All
+AdditionalProperties : {}
+```
+
+### Step 4: Grant more delegated permissions to the enterprise application
+
+You can add more permissions to an existing oauth2PermissionGrant object.
 
 To add the `User.Read.All` scope to the oauthPermissionGrant object, run:
 
@@ -154,10 +169,24 @@ $params = @{
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
 ```
 
-To revoke a delegated permission grant, run:
+### Step 5: Revoke delegated permissions granted to an enterprise application
+
+If a service principal has been granted multiple delegated permission grants, you can choose to revok either specific gants or all grants.
+
+- To revoke one or more grants, update  oauthPermissionGrant object and specify only the delegated permissions to retain in the **scope** parameter. For example, to revoke the `User.read.All` permission, run:
 
 ```powershell
-Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzaQcXqyxtZcxAhSIxeKGE4D0'
+$params = @{
+  Scope = "Group.Read.All"
+  }
+
+Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw' -BodyParameter $params
+```
+
+- To revoke all grants, use `Remove-MgOauth2PermissionGrant`.
+
+```powershell
+Remove-MgOauth2PermissionGrant -OAuth2PermissionGrantId 'DXfBIt8w50mnY_OdLvmzadDQeqbRp9tKjNm83QyGbTw'
 ```
 
 When a delegated permission grant is deleted, the access it granted is revoked. Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted oAuth2PermissionGrant.
@@ -165,3 +194,4 @@ When a delegated permission grant is deleted, the access it granted is revoked. 
 ## See also
 
 - [Tutorial: Grant application permissions programmatically in Azure AD](tutorial-grant-app-only-api-permissions.md)
+- [Grant or revoke API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?tabs=http&pivots=grant-delegated-permissions)

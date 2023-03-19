@@ -1,15 +1,15 @@
 ---
 title: "Grant application permissions programmatically in Azure AD"
-description: "Learn how to grant app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
+description: "Learn how to grant and revoke app-only permissions programmatically in Azure AD using Microsoft Graph PowerShell"
 ms.topic: tutorial
-ms.date: 12/07/2022
+ms.date: 03/17/2022
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
 ms.reviewer: jawoods, phsignor 
 ---
 
-# Tutorial: Grant app roles in Azure AD
+# Tutorial: Grant and revoke app roles in Azure AD
 
 When you grant API permissions to a client app in Azure AD, the permission grants are recorded as objects that can be accessed, updated, or deleted like other objects. Using Microsoft Graph PowerShell cmdlets to directly create permission grants is a programmatic alternative to [interactive consent](/azure/active-directory/manage-apps/consent-and-permissions-overview). This can be useful for automation scenarios, bulk management, or other custom operations in your organization.
 
@@ -24,7 +24,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 
 1. A working Azure AD tenant.
 1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
+1. Microsoft Graph PowerShell using a user with privileges to create applications in the tenant and the appropriate permissions. For this tutorial, the `Application.Read.All` and `AppRoleAssignment.ReadWrite.All` delegated permissions are required. To set the permissions in Microsoft Graph PowerShell, run:
 
     ```powershell
     Connect-MgGraph -Scopes "Application.ReadWrite.All", "AppRoleAssignment.ReadWrite.All"
@@ -101,7 +101,7 @@ AppId          : 05210c44-437f-4a40-bd38-b5b4eaf251ef
 SignInAudience : AzureADandPersonalMicrosoftAccount
 ```
 
-## Step 3: Assign an app role to the client service principal
+## Step 3: Assign an app role to the client enterprise application
 
 In this step, you'll assign an app role exposed by your resource app to the service principal we created in step 2. To create an app role assignment, you'll need the following information:
 
@@ -132,7 +132,7 @@ PrincipalType        : ServicePrincipal
 ResourceDisplayName  : Microsoft Graph
 ```
 
-## Step 4: Revoke an app role assignment from a client service principal
+## Step 4: Revoke an app role assignment from a client enterprise application
 
 To revoke the app roles assigned in step 3, run:
 
@@ -143,3 +143,4 @@ Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49
 ## See also
 
 - [Tutorial: Grant delegated permissions programmatically in Azure AD](tutorial-grant-delegated-api-permissions.md)
+- [Grant or revoke API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?branch=pr-en-us-20614&tabs=http&pivots=grant-application-permissions)
