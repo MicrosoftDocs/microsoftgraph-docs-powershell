@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mggroupsiteinformationprotection
@@ -309,7 +309,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
+BITLOCKER `<IMicrosoftGraphBitlocker>`: bitlocker
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecoveryKeys <IMicrosoftGraphBitlockerRecoveryKey[]>]`: The recovery keys associated with the bitlocker entity.
@@ -319,7 +319,7 @@ BITLOCKER <IMicrosoftGraphBitlocker>: bitlocker
     - `[Key <String>]`: The BitLocker recovery key.
     - `[VolumeType <String>]`: volumeType
 
-BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
+BODYPARAMETER `<IMicrosoftGraphInformationProtection>`: informationProtection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Bitlocker <IMicrosoftGraphBitlocker>]`: bitlocker
@@ -405,11 +405,11 @@ BODYPARAMETER <IMicrosoftGraphInformationProtection>: informationProtection
       - `[ResultType <String>]`: threatAssessmentResultType
     - `[Status <String>]`: threatAssessmentStatus
 
-DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy[]>: .
+DATALOSSPREVENTIONPOLICIES <IMicrosoftGraphDataLossPreventionPolicy\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: 
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
@@ -456,7 +456,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
+POLICY `<IMicrosoftGraphInformationProtectionPolicy>`: informationProtectionPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Labels <IMicrosoftGraphInformationProtectionLabel[]>]`: 
@@ -478,7 +478,7 @@ POLICY <IMicrosoftGraphInformationProtectionPolicy>: informationProtectionPolicy
     - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
     - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel[]>: .
+SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
@@ -500,7 +500,7 @@ SENSITIVITYLABELS <IMicrosoftGraphSensitivityLabel[]>: .
   - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
   - `[ToolTip <String>]`: 
 
-SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>: sensitivityPolicySettings
+SENSITIVITYPOLICYSETTINGS `<IMicrosoftGraphSensitivityPolicySettings>`: sensitivityPolicySettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
@@ -508,7 +508,7 @@ SENSITIVITYPOLICYSETTINGS <IMicrosoftGraphSensitivityPolicySettings>: sensitivit
   - `[HelpWebUrl <String>]`: 
   - `[IsMandatory <Boolean?>]`: 
 
-THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest[]>: .
+THREATASSESSMENTREQUESTS <IMicrosoftGraphThreatAssessmentRequest\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: threatCategory
   - `[ContentType <String>]`: threatAssessmentContentType
