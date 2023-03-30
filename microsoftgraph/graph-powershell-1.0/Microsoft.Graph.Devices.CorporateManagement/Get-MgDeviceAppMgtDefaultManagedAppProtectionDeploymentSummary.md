@@ -40,7 +40,7 @@ PS C:\> {{ Add example code here }}
 ## PARAMETERS
 
 ### -DefaultManagedAppProtectionId
-key: id of defaultManagedAppProtection
+The unique identifier of defaultManagedAppProtection
 
 ```yaml
 Type: String

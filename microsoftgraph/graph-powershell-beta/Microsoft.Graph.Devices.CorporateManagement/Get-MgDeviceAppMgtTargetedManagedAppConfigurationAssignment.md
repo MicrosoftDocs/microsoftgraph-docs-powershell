@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedManagedAppConfigurationId
-key: id of targetedManagedAppConfiguration
+The unique identifier of targetedManagedAppConfiguration
 
 ```yaml
 Type: String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedManagedAppPolicyAssignmentId
-key: id of targetedManagedAppPolicyAssignment
+The unique identifier of targetedManagedAppPolicyAssignment
 
 ```yaml
 Type: String

@@ -88,7 +88,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentId
-key: id of deployment
+The unique identifier of deployment
 
 ```yaml
 Type: String
@@ -164,7 +164,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdatableAssetId
-key: id of updatableAsset
+The unique identifier of updatableAsset
 
 ```yaml
 Type: String

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelemail
@@ -15,13 +15,13 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ## SYNTAX
 
-### Provision (Default)
+### Provision1 (Default)
 ```
 New-MgTeamworkDeletedTeamChannelEmail -ChannelId <String> -DeletedTeamId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### ProvisionViaIdentity
+### ProvisionViaIdentity1
 ```
 New-MgTeamworkDeletedTeamChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -41,7 +41,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Provision
+Parameter Sets: Provision1
 Aliases:
 
 Required: True
@@ -56,7 +56,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Provision
+Parameter Sets: Provision1
 Aliases:
 
 Required: True
@@ -72,7 +72,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: ProvisionViaIdentity
+Parameter Sets: ProvisionViaIdentity1
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
   - `[ChannelId <String>]`: key: id of channel
   - `[ChatId <String>]`: key: id of chat

@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnterpriseCodeSigningCertificateId
-key: id of enterpriseCodeSigningCertificate
+The unique identifier of enterpriseCodeSigningCertificate
 
 ```yaml
 Type: String

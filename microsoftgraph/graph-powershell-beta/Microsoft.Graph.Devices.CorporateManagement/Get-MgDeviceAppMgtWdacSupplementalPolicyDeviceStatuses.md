@@ -201,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId
-key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
+The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
 
 ```yaml
 Type: String
@@ -216,7 +216,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsDefenderApplicationControlSupplementalPolicyId
-key: id of windowsDefenderApplicationControlSupplementalPolicy
+The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
 
 ```yaml
 Type: String

@@ -200,7 +200,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsInformationProtectionDeviceRegistrationId
-key: id of windowsInformationProtectionDeviceRegistration
+The unique identifier of windowsInformationProtectionDeviceRegistration
 
 ```yaml
 Type: String

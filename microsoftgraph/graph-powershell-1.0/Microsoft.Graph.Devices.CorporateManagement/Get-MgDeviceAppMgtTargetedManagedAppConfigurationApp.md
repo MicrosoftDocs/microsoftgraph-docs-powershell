@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedMobileAppId
-key: id of managedMobileApp
+The unique identifier of managedMobileApp
 
 ```yaml
 Type: String
@@ -199,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedManagedAppConfigurationId
-key: id of targetedManagedAppConfiguration
+The unique identifier of targetedManagedAppConfiguration
 
 ```yaml
 Type: String

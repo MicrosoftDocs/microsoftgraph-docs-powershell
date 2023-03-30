@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedAppStatusId
-key: id of managedAppStatus
+The unique identifier of managedAppStatus
 
 ```yaml
 Type: String

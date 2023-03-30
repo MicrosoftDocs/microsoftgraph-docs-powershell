@@ -126,7 +126,7 @@ Accept wildcard characters: False
 ```
 
 ### -IosLobAppProvisioningConfigurationId
-key: id of iosLobAppProvisioningConfiguration
+The unique identifier of iosLobAppProvisioningConfiguration
 
 ```yaml
 Type: String
@@ -141,7 +141,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceMobileAppConfigurationDeviceStatusId
-key: id of managedDeviceMobileAppConfigurationDeviceStatus
+The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
 
 ```yaml
 Type: String

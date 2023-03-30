@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserCalendarEvent
@@ -17,9 +16,9 @@ To get expanded event instances, you can get the calendar view, or \nget the ins
 ## SYNTAX
 
 ```
-Get-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-Filter <String>] [-Property <String[]>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -153,6 +152,21 @@ By default, this variable will be set in the global scope.
 Type: String
 Parameter Sets: (All)
 Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named

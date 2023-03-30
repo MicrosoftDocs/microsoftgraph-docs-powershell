@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: 2dfa0d84-d075-48f6-84c3-2265c4974e2a
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar
@@ -92,10 +92,6 @@ Nullable.
 The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
-
-### [Get-MgPlace](Get-MgPlace.md)
-Get the properties and relationships of a place object specified by either its ID or email address.
-The **place** object can be one of the following types: Both **room** and **roomList** are derived from the place object.
 
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
 The user's calendars.
@@ -245,9 +241,6 @@ Create new navigation property to multiValueExtendedProperties for groups
 
 ### [New-MgGroupEventSingleValueExtendedProperty](New-MgGroupEventSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for groups
-
-### [New-MgPlace](New-MgPlace.md)
-Add new entity to places
 
 ### [New-MgUserCalendar](New-MgUserCalendar.md)
 Create a new calendar for a user.

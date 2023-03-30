@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -IosManagedAppProtectionId
-key: id of iosManagedAppProtection
+The unique identifier of iosManagedAppProtection
 
 ```yaml
 Type: String

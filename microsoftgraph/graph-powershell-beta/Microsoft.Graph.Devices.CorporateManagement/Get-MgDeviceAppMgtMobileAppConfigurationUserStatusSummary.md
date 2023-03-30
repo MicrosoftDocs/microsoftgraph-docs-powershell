@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceMobileAppConfigurationId
-key: id of managedDeviceMobileAppConfiguration
+The unique identifier of managedDeviceMobileAppConfiguration
 
 ```yaml
 Type: String

@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserjoinedteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgUserJoinedTeam
@@ -209,7 +208,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
 ## NOTES
 
 ALIASES

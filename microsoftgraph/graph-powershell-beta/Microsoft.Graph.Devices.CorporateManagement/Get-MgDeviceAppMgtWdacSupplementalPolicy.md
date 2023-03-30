@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsDefenderApplicationControlSupplementalPolicyId
-key: id of windowsDefenderApplicationControlSupplementalPolicy
+The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
 
 ```yaml
 Type: String

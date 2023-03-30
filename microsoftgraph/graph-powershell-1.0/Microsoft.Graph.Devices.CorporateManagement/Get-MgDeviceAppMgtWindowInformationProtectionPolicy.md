@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsInformationProtectionPolicyId
-key: id of windowsInformationProtectionPolicy
+The unique identifier of windowsInformationProtectionPolicy
 
 ```yaml
 Type: String

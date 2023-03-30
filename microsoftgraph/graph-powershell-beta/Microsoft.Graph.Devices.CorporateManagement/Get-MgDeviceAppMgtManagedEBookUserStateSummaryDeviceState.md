@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceInstallStateId
-key: id of deviceInstallState
+The unique identifier of deviceInstallState
 
 ```yaml
 Type: String
@@ -140,7 +140,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedEBookId
-key: id of managedEBook
+The unique identifier of managedEBook
 
 ```yaml
 Type: String
@@ -230,7 +230,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserInstallStateSummaryId
-key: id of userInstallStateSummary
+The unique identifier of userInstallStateSummary
 
 ```yaml
 Type: String

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: ee247273-b836-4a7b-b508-32f60c1c3958
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -637,9 +637,6 @@ Get a specific commercial subscription that an organization has acquired.
 The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
-
-### [Initialize-MgOrganizationService](Initialize-MgOrganizationService.md)
-Activate a service for an organization.
 
 ### [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](Invoke-MgAvailableDirectoryFederationConfigurationProviderType.md)
 Invoke function availableProviderTypes

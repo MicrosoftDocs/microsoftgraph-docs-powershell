@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsInformationProtectionWipeActionId
-key: id of windowsInformationProtectionWipeAction
+The unique identifier of windowsInformationProtectionWipeAction
 
 ```yaml
 Type: String

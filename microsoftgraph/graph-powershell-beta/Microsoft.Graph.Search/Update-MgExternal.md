@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
@@ -15,13 +15,13 @@ Update external
 ### UpdateExpanded (Default)
 ```
 Update-MgExternal [-AdditionalProperties <Hashtable>]
- [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]
+ [-IndustryData <IMicrosoftGraphIndustryDataRoot>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ external
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternal
+Type: IMicrosoftGraphExternalConnectorsExternal1
 Parameter Sets: Update
 Aliases:
 
@@ -69,6 +69,22 @@ To construct, please use Get-Help -Online and see NOTES section for CONNECTIONS 
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalConnection[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IndustryData
+industryDataRoot
+To construct, please use Get-Help -Online and see NOTES section for INDUSTRYDATA properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIndustryDataRoot
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal1
 ## OUTPUTS
 
 ### System.Boolean
@@ -143,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal>: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -237,7 +253,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
       - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
     - `[State <String>]`: connectionState
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
+CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

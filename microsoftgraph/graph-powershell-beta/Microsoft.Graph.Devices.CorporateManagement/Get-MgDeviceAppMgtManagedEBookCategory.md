@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedEBookCategoryId
-key: id of managedEBookCategory
+The unique identifier of managedEBookCategory
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedEBookId
-key: id of managedEBook
+The unique identifier of managedEBook
 
 ```yaml
 Type: String

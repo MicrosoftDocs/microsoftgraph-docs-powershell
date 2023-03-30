@@ -179,7 +179,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdatePolicyId
-key: id of updatePolicy
+The unique identifier of updatePolicy
 
 ```yaml
 Type: String
