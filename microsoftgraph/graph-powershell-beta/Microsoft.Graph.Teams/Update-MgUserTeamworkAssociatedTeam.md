@@ -15,7 +15,7 @@ Update the navigation property associatedTeams in users
 ### UpdateExpanded1 (Default)
 ```
 Update-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam1>]
  [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <Stri
 ### UpdateViaIdentityExpanded1
 ```
 Update-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-PassThru]
+ [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -157,7 +157,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for TEAM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam
+Type: IMicrosoftGraphTeam1
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

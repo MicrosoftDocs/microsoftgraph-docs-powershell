@@ -90,7 +90,7 @@ Accept wildcard characters: False
 ```
 
 ### -ResourceConnectionId
-key: id of resourceConnection
+The unique identifier of resourceConnection
 
 ```yaml
 Type: String

@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IosManagedAppProtectionId
-key: id of iosManagedAppProtection
+The unique identifier of iosManagedAppProtection
 
 ```yaml
 Type: String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedMobileAppId
-key: id of managedMobileApp
+The unique identifier of managedMobileApp
 
 ```yaml
 Type: String

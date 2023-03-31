@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedAppRegistrationId
-key: id of managedAppRegistration
+The unique identifier of managedAppRegistration
 
 ```yaml
 Type: String

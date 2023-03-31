@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedEBookId
-key: id of managedEBook
+The unique identifier of managedEBook
 
 ```yaml
 Type: String

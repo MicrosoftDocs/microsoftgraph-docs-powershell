@@ -15,14 +15,14 @@ Create new navigation property to onPremisesSynchronization for directory
 ### CreateExpanded (Default)
 ```
 New-MgDirectoryOnPremisSynchronization [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]
+ [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1>]
  [-Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>] [-Id <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryOnPremisSynchronization -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization>
+New-MgDirectoryOnPremisSynchronization -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -53,7 +53,7 @@ onPremisesDirectorySynchronization
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronization
+Type: IMicrosoftGraphOnPremisesDirectorySynchronization1
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +69,7 @@ onPremisesDirectorySynchronizationConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration
+Type: IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,10 +148,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization1
 ## NOTES
 
 ALIASES

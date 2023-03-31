@@ -13,13 +13,13 @@ Search results are provided in the response.
 
 ## SYNTAX
 
-### QueryExpanded (Default)
+### QueryExpanded1 (Default)
 ```
-Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgQuerySearch [-AdditionalProperties <Hashtable>] [-Requests <IMicrosoftGraphSearchRequest1[]>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Query
+### Query1
 ```
 Invoke-MgQuerySearch
  -BodyParameter <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema> [-WhatIf]
@@ -69,7 +69,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: QueryExpanded
+Parameter Sets: QueryExpanded1
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Query
+Parameter Sets: Query1
 Aliases:
 
 Required: True
@@ -100,8 +100,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for REQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchRequest[]
-Parameter Sets: QueryExpanded
+Type: IMicrosoftGraphSearchRequest1[]
+Parameter Sets: QueryExpanded1
 Aliases:
 
 Required: False
@@ -150,7 +150,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchResponse
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchResponse1
 ## NOTES
 
 ALIASES

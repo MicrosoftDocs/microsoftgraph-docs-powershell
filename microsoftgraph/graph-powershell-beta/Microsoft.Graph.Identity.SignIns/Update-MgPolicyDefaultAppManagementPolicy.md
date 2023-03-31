@@ -23,8 +23,8 @@ Update-MgPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
 
 ### Update
 ```
-Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy1>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -118,7 +118,7 @@ tenantAppManagementPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTenantAppManagementPolicy
+Type: IMicrosoftGraphTenantAppManagementPolicy1
 Parameter Sets: Update
 Aliases:
 
@@ -276,7 +276,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy1
 ## OUTPUTS
 
 ### System.Boolean

@@ -22,7 +22,7 @@ New-MgPolicyAppManagementPolicy [-AdditionalProperties <Hashtable>]
 
 ### Create
 ```
-New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPolicy> [-WhatIf] [-Confirm]
+New-MgPolicyAppManagementPolicy -BodyParameter <IMicrosoftGraphAppManagementPolicy1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -69,7 +69,7 @@ appManagementPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementPolicy
+Type: IMicrosoftGraphAppManagementPolicy1
 Parameter Sets: Create
 Aliases:
 
@@ -211,10 +211,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy1
 ## NOTES
 
 ALIASES

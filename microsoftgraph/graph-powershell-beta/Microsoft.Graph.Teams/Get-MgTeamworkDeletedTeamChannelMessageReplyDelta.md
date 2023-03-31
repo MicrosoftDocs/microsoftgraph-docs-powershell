@@ -12,14 +12,14 @@ Invoke function delta
 
 ## SYNTAX
 
-### Delta (Default)
+### Delta1 (Default)
 ```
 Get-MgTeamworkDeletedTeamChannelMessageReplyDelta -ChannelId <String> -ChatMessageId <String>
  -DeletedTeamId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity
+### DeltaViaIdentity1
 ```
 Get-MgTeamworkDeletedTeamChannelMessageReplyDelta -InputObject <ITeamsIdentity> [-Count] [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -38,7 +38,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Delta
+Parameter Sets: Delta1
 Aliases:
 
 Required: True
@@ -53,7 +53,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Delta
+Parameter Sets: Delta1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Delta
+Parameter Sets: Delta1
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: DeltaViaIdentity
+Parameter Sets: DeltaViaIdentity1
 Aliases:
 
 Required: True
@@ -207,7 +207,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
 ## NOTES
 
 ALIASES

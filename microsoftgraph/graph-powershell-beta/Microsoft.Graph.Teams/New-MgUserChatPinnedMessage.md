@@ -17,7 +17,7 @@ This API cannot create a new chat; you must use the list chats method to retriev
 ### CreateExpanded1 (Default)
 ```
 New-MgUserChatPinnedMessage -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-Message <IMicrosoftGraphChatMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Message <IMicrosoftGraphChatMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -29,7 +29,7 @@ New-MgUserChatPinnedMessage -ChatId <String> -UserId <String>
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Message <IMicrosoftGraphChatMessage>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Message <IMicrosoftGraphChatMessage1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -151,7 +151,7 @@ chatMessage
 To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage
+Type: IMicrosoftGraphChatMessage1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

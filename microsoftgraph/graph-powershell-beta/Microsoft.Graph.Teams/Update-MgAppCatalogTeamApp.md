@@ -22,7 +22,7 @@ Update-MgAppCatalogTeamApp -TeamsAppId <String> [-AdditionalProperties <Hashtabl
 
 ### Update
 ```
-Update-MgAppCatalogTeamApp -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamsApp> [-PassThru] [-WhatIf]
+Update-MgAppCatalogTeamApp -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamsApp1> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -36,7 +36,7 @@ Update-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-AdditionalProperties 
 
 ### UpdateViaIdentity
 ```
-Update-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsApp> [-PassThru]
+Update-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsApp1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -83,7 +83,7 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -237,7 +237,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 

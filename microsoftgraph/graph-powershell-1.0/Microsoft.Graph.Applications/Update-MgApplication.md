@@ -17,11 +17,12 @@ Update the properties of an application object.
 ```
 Update-MgApplication -ApplicationId <String> [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
- [-Certification <IMicrosoftGraphCertification>] [-CreatedDateTime <DateTime>]
- [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <String>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
- [-DisplayName <String>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-ApplicationTemplateId <String>] [-Certification <IMicrosoftGraphCertification>]
+ [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
+ [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisabledByMicrosoftStatus <String>] [-DisplayName <String>]
+ [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <String>] [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]
  [-Id <String>] [-IdentifierUris <String[]>] [-Info <IMicrosoftGraphInformationalUrl>]
@@ -51,11 +52,12 @@ Update-MgApplication -ApplicationId <String> -BodyParameter <IMicrosoftGraphAppl
 ```
 Update-MgApplication -InputObject <IApplicationsIdentity> [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
- [-Certification <IMicrosoftGraphCertification>] [-CreatedDateTime <DateTime>]
- [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>] [-DefaultRedirectUri <String>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
- [-DisplayName <String>] [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-ApplicationTemplateId <String>] [-Certification <IMicrosoftGraphCertification>]
+ [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
+ [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisabledByMicrosoftStatus <String>] [-DisplayName <String>]
+ [-ExtensionProperties <IMicrosoftGraphExtensionProperty[]>]
  [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
  [-GroupMembershipClaims <String>] [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>]
  [-Id <String>] [-IdentifierUris <String[]>] [-Info <IMicrosoftGraphInformationalUrl>]
@@ -185,6 +187,22 @@ Supports $filter (eq, not, ne).
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppManagementPolicies
+.
+To construct, please use Get-Help -Online and see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 

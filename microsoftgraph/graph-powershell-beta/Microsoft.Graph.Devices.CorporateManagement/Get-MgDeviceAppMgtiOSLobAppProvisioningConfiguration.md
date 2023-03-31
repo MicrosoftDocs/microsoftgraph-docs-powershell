@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -IosLobAppProvisioningConfigurationId
-key: id of iosLobAppProvisioningConfiguration
+The unique identifier of iosLobAppProvisioningConfiguration
 
 ```yaml
 Type: String

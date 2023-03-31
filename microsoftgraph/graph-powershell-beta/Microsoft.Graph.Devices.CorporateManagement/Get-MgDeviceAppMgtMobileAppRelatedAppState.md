@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppId
-key: id of mobileApp
+The unique identifier of mobileApp
 
 ```yaml
 Type: String

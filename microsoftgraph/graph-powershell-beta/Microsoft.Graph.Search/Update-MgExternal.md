@@ -15,13 +15,13 @@ Update external
 ### UpdateExpanded (Default)
 ```
 Update-MgExternal [-AdditionalProperties <Hashtable>]
- [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]
+ [-IndustryData <IMicrosoftGraphIndustryDataRoot>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgExternal -BodyParameter <IMicrosoftGraphExternalConnectorsExternal1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -52,7 +52,7 @@ external
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternal
+Type: IMicrosoftGraphExternalConnectorsExternal1
 Parameter Sets: Update
 Aliases:
 
@@ -69,6 +69,22 @@ To construct, please use Get-Help -Online and see NOTES section for CONNECTIONS 
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalConnection[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IndustryData
+industryDataRoot
+To construct, please use Get-Help -Online and see NOTES section for INDUSTRYDATA properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphIndustryDataRoot
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal1
 ## OUTPUTS
 
 ### System.Boolean

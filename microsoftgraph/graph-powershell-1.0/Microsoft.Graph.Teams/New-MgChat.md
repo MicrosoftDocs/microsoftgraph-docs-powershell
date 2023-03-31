@@ -18,7 +18,7 @@ Create a new chat object.
 New-MgChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-CreatedDateTime <DateTime>]
  [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage1[]>]
+ [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
@@ -27,7 +27,7 @@ New-MgChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-CreatedDat
 
 ### Create1
 ```
-New-MgChat -BodyParameter <IMicrosoftGraphChat1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -250,7 +250,7 @@ chat
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat1
+Type: IMicrosoftGraphChat
 Parameter Sets: Create1
 Aliases:
 
@@ -380,7 +380,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage1[]
+Type: IMicrosoftGraphChatMessage[]
 Parameter Sets: CreateExpanded1
 Aliases:
 
@@ -542,10 +542,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
 ## NOTES
 
 ALIASES

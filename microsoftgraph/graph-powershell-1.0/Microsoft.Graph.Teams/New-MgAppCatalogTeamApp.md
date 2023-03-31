@@ -24,7 +24,7 @@ New-MgAppCatalogTeamApp [-AdditionalProperties <Hashtable>]
 
 ### Create1
 ```
-New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -81,7 +81,7 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp1
+Type: IMicrosoftGraphTeamsApp
 Parameter Sets: Create1
 Aliases:
 
@@ -189,10 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsApp
 ## NOTES
 
 ALIASES

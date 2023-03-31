@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceMobileAppConfigurationDeviceStatusId
-key: id of managedDeviceMobileAppConfigurationDeviceStatus
+The unique identifier of managedDeviceMobileAppConfigurationDeviceStatus
 
 ```yaml
 Type: String
@@ -139,7 +139,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedDeviceMobileAppConfigurationId
-key: id of managedDeviceMobileAppConfiguration
+The unique identifier of managedDeviceMobileAppConfiguration
 
 ```yaml
 Type: String

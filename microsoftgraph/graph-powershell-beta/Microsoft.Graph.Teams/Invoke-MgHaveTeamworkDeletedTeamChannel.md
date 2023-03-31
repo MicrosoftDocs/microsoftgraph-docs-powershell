@@ -12,13 +12,13 @@ Invoke function doesUserHaveAccess
 
 ## SYNTAX
 
-### Have (Default)
+### Have1 (Default)
 ```
 Invoke-MgHaveTeamworkDeletedTeamChannel -ChannelId <String> -DeletedTeamId <String> [-TenantId <String>]
  [-UserId <String>] [-UserPrincipalName <String>] [<CommonParameters>]
 ```
 
-### HaveViaIdentity
+### HaveViaIdentity1
 ```
 Invoke-MgHaveTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Have
+Parameter Sets: Have1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Have
+Parameter Sets: Have1
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: HaveViaIdentity
+Parameter Sets: HaveViaIdentity1
 Aliases:
 
 Required: True

@@ -12,13 +12,13 @@ Delete a single message or a message reply in a channel or a chat.
 
 ## SYNTAX
 
-### Soft (Default)
+### Soft1 (Default)
 ```
 Invoke-MgSoftTeamworkDeletedTeamChannelMessageReplyDelete -ChannelId <String> -ChatMessageId <String>
  -ChatMessageId1 <String> -DeletedTeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SoftViaIdentity
+### SoftViaIdentity1
 ```
 Invoke-MgSoftTeamworkDeletedTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Soft
+Parameter Sets: Soft1
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Soft
+Parameter Sets: Soft1
 Aliases:
 
 Required: True
@@ -66,7 +66,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Soft
+Parameter Sets: Soft1
 Aliases:
 
 Required: True
@@ -81,7 +81,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Soft
+Parameter Sets: Soft1
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: SoftViaIdentity
+Parameter Sets: SoftViaIdentity1
 Aliases:
 
 Required: True

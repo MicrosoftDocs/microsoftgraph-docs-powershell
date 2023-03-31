@@ -14,15 +14,16 @@ Create new navigation property to subjectRightsRequests for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecuritySubjectRightsRequest [-AdditionalProperties <Hashtable>] [-AssignedTo <IMicrosoftGraphIdentity>]
- [-ClosedDateTime <DateTime>] [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
- [-CreatedDateTime <DateTime>] [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>]
- [-Description <String>] [-DisplayName <String>] [-ExternalId <String>]
- [-History <IMicrosoftGraphSubjectRightsRequestHistory1[]>] [-Id <String>] [-IncludeAllVersions]
- [-IncludeAuthoredContent] [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>]
- [-InternalDueDateTime <DateTime>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Mailboxlocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>]
- [-PauseAfterEstimate] [-Regulations <String[]>] [-Sitelocations <Hashtable>]
+New-MgSecuritySubjectRightsRequest [-AdditionalProperties <Hashtable>] [-Approvers <IMicrosoftGraphUser[]>]
+ [-AssignedTo <IMicrosoftGraphIdentity>] [-ClosedDateTime <DateTime>] [-Collaborators <IMicrosoftGraphUser[]>]
+ [-ContentQuery <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DataSubject <IMicrosoftGraphDataSubject>] [-DataSubjectType <String>] [-Description <String>]
+ [-DisplayName <String>] [-ExternalId <String>] [-History <IMicrosoftGraphSubjectRightsRequestHistory1[]>]
+ [-Id <String>] [-IncludeAllVersions] [-IncludeAuthoredContent]
+ [-Insight <IMicrosoftGraphSubjectRightsRequestDetail>] [-InternalDueDateTime <DateTime>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-Mailboxlocations <Hashtable>] [-Notes <IMicrosoftGraphAuthoredNote[]>] [-PauseAfterEstimate]
+ [-Regulations <String[]>] [-Sitelocations <Hashtable>]
  [-Stages <IMicrosoftGraphSubjectRightsRequestStageDetail[]>] [-Status <String>] [-Team <IMicrosoftGraphTeam>]
  [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -45,6 +46,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Approvers
+.
+To construct, please use Get-Help -Online and see NOTES section for APPROVERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -94,6 +111,22 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Collaborators
+.
+To construct, please use Get-Help -Online and see NOTES section for COLLABORATORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser[]
 Parameter Sets: CreateExpanded
 Aliases:
 

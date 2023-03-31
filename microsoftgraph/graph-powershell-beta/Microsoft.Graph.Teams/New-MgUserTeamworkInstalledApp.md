@@ -16,7 +16,7 @@ Install an app in the personal scope of the specified user.
 ### CreateExpanded1 (Default)
 ```
 New-MgUserTeamworkInstalledApp -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Chat <IMicrosoftGraphChat>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>]
+ [-Chat <IMicrosoftGraphChat1>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>]
  [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgUserTeamworkInstalledApp -UserId <String> -BodyParameter <IMicrosoftGraphU
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Chat <IMicrosoftGraphChat>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>]
+ [-Chat <IMicrosoftGraphChat1>] [-Id <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>]
  [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -94,7 +94,7 @@ chat
 To construct, please use Get-Help -Online and see NOTES section for CHAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat
+Type: IMicrosoftGraphChat1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -142,7 +142,7 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

@@ -638,9 +638,6 @@ The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
 
-### [Initialize-MgOrganizationService](Initialize-MgOrganizationService.md)
-Activate a service for an organization.
-
 ### [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](Invoke-MgAvailableDirectoryFederationConfigurationProviderType.md)
 Invoke function availableProviderTypes
 

@@ -17,7 +17,7 @@ Update the navigation property chats in users
 Update-MgUserChat -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ChatType <String>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage1[]>]
+ [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
@@ -26,7 +26,7 @@ Update-MgUserChat -ChatId <String> -UserId <String> [-AdditionalProperties <Hash
 
 ### Update
 ```
-Update-MgUserChat -ChatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChat1> [-PassThru] [-WhatIf]
+Update-MgUserChat -ChatId <String> -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -35,7 +35,7 @@ Update-MgUserChat -ChatId <String> -UserId <String> -BodyParameter <IMicrosoftGr
 Update-MgUserChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-ChatType <String>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage1[]>]
+ [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
@@ -44,7 +44,7 @@ Update-MgUserChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtabl
 
 ### UpdateViaIdentity
 ```
-Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat1> [-PassThru] [-WhatIf]
+Update-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -75,7 +75,7 @@ chat
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat1
+Type: IMicrosoftGraphChat
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -236,7 +236,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage1[]
+Type: IMicrosoftGraphChatMessage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -428,7 +428,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 

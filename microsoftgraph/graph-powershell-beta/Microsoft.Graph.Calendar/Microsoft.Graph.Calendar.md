@@ -181,10 +181,6 @@ The collection of single-value extended properties defined for the event.
 Read-only.
 Nullable.
 
-### [Get-MgPlace](Get-MgPlace.md)
-Get the properties and relationships of a place object specified by either its ID or email address.
-The **place** object can be one of the following types: The **room**, **workspace**, and **roomList** resources are derived from the **place** object.
-
 ### [Get-MgUserCalendar](Get-MgUserCalendar.md)
 The user's calendars.
 Read-only.
@@ -469,9 +465,6 @@ Create new navigation property to multiValueExtendedProperties for groups
 
 ### [New-MgGroupEventSingleValueExtendedProperty](New-MgGroupEventSingleValueExtendedProperty.md)
 Create new navigation property to singleValueExtendedProperties for groups
-
-### [New-MgPlace](New-MgPlace.md)
-Add new entity to places
 
 ### [New-MgUserCalendar](New-MgUserCalendar.md)
 Create a new calendar for a user.

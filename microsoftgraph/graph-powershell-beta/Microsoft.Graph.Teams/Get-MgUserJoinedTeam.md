@@ -209,7 +209,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
 ## NOTES
 
 ALIASES

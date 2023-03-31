@@ -16,7 +16,7 @@ Create a new application object.
 ### CreateExpanded (Default)
 ```
 New-MgApplication [-AdditionalProperties <Hashtable>] [-Api <IMicrosoftGraphApiApplication1>] [-AppId <String>]
- [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy1[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-Certification <IMicrosoftGraphCertification>] [-ConnectorGroup <IMicrosoftGraphConnectorGroup>]
  [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
  [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
@@ -123,7 +123,7 @@ The appManagementPolicy applied to this application.
 To construct, please use Get-Help -Online and see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementPolicy[]
+Type: IMicrosoftGraphAppManagementPolicy1[]
 Parameter Sets: CreateExpanded
 Aliases:
 

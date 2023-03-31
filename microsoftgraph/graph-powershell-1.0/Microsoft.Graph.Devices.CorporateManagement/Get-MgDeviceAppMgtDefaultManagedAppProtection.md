@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DefaultManagedAppProtectionId
-key: id of defaultManagedAppProtection
+The unique identifier of defaultManagedAppProtection
 
 ```yaml
 Type: String

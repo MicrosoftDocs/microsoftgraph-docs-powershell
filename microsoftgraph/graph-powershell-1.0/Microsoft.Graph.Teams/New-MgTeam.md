@@ -15,22 +15,22 @@ Create a new team.
 
 ### CreateExpanded (Default)
 ```
-New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel1[]>]
- [-Channels <IMicrosoftGraphChannel1[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
+New-MgTeam [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel[]>]
+ [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-FunSettings <IMicrosoftGraphTeamFunSettings>]
  [-Group <IMicrosoftGraphGroup>] [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
- [-IncomingChannels <IMicrosoftGraphChannel1[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-IncomingChannels <IMicrosoftGraphChannel[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PrimaryChannel <IMicrosoftGraphChannel1>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
+ [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
  [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTeam -BodyParameter <IMicrosoftGraphTeam1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgTeam -BodyParameter <IMicrosoftGraphTeam> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -309,7 +309,7 @@ List of channels either hosted in or shared with the team (incoming channels).
 To construct, please use Get-Help -Online and see NOTES section for ALLCHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: IMicrosoftGraphChannel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -325,7 +325,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam1
+Type: IMicrosoftGraphTeam
 Parameter Sets: Create
 Aliases:
 
@@ -341,7 +341,7 @@ The collection of channels and messages associated with the team.
 To construct, please use Get-Help -Online and see NOTES section for CHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: IMicrosoftGraphChannel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -484,7 +484,7 @@ List of channels shared with the team.
 To construct, please use Get-Help -Online and see NOTES section for INCOMINGCHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: IMicrosoftGraphChannel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -626,7 +626,7 @@ channel
 To construct, please use Get-Help -Online and see NOTES section for PRIMARYCHANNEL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1
+Type: IMicrosoftGraphChannel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -798,10 +798,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
 ## NOTES
 
 ALIASES

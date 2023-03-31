@@ -18,7 +18,7 @@ Create new navigation property to chats for users
 New-MgUserChat -UserId <String> [-AdditionalProperties <Hashtable>] [-ChatType <String>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation1[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
+ [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage1[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo1>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
@@ -29,7 +29,7 @@ New-MgUserChat -UserId <String> [-AdditionalProperties <Hashtable>] [-ChatType <
 
 ### Create1
 ```
-New-MgUserChat -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgUserChat -UserId <String> -BodyParameter <IMicrosoftGraphChat1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded1
@@ -37,7 +37,7 @@ New-MgUserChat -UserId <String> -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [
 New-MgUserChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-ChatType <String>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation1[]>]
  [-LastMessagePreview <IMicrosoftGraphChatMessageInfo>] [-LastUpdatedDateTime <DateTime>]
- [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage[]>]
+ [-Members <IMicrosoftGraphConversationMember[]>] [-Messages <IMicrosoftGraphChatMessage1[]>]
  [-OnlineMeetingInfo <IMicrosoftGraphTeamworkOnlineMeetingInfo1>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation1[]>]
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
@@ -48,7 +48,7 @@ New-MgUserChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
 
 ### CreateViaIdentity1
 ```
-New-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm]
+New-MgUserChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChat1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -123,7 +123,7 @@ chat
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat
+Type: IMicrosoftGraphChat1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -269,7 +269,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: IMicrosoftGraphChatMessage1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -479,11 +479,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
 ## NOTES
 
 ALIASES

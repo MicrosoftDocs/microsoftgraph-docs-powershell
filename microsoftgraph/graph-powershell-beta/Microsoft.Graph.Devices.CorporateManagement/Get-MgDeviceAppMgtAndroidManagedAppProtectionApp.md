@@ -61,7 +61,7 @@ Accept wildcard characters: False
 ```
 
 ### -AndroidManagedAppProtectionId
-key: id of androidManagedAppProtection
+The unique identifier of androidManagedAppProtection
 
 ```yaml
 Type: String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedMobileAppId
-key: id of managedMobileApp
+The unique identifier of managedMobileApp
 
 ```yaml
 Type: String

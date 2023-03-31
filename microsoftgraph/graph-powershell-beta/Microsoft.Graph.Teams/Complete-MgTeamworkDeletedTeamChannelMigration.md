@@ -15,13 +15,13 @@ You can add members to the team after the request returns a successful response.
 
 ## SYNTAX
 
-### Complete (Default)
+### Complete1 (Default)
 ```
 Complete-MgTeamworkDeletedTeamChannelMigration -ChannelId <String> -DeletedTeamId <String> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CompleteViaIdentity
+### CompleteViaIdentity1
 ```
 Complete-MgTeamworkDeletedTeamChannelMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -42,7 +42,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Complete
+Parameter Sets: Complete1
 Aliases:
 
 Required: True
@@ -57,7 +57,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Complete
+Parameter Sets: Complete1
 Aliases:
 
 Required: True
@@ -73,7 +73,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CompleteViaIdentity
+Parameter Sets: CompleteViaIdentity1
 Aliases:
 
 Required: True

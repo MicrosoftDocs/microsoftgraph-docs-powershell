@@ -17,7 +17,7 @@ Create new navigation property to sharedWithTeams for teams
 ```
 New-MgTeamPrimaryChannelSharedWithTeam -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
- [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -30,7 +30,7 @@ New-MgTeamPrimaryChannelSharedWithTeam -TeamId <String>
 ```
 New-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
- [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -171,7 +171,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for TEAM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam
+Type: IMicrosoftGraphTeam1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 

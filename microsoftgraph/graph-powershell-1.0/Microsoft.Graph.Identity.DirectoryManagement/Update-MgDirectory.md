@@ -17,7 +17,8 @@ Update directory
 Update-MgDirectory [-AdditionalProperties <Hashtable>]
  [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
- [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>] [-PassThru] [-WhatIf]
+ [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
+ [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -121,6 +122,22 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OnPremisesSynchronization
+A container for on-premises directory synchronization functionalities that are available for the organization.
+To construct, please use Get-Help -Online and see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphOnPremisesDirectorySynchronization[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 

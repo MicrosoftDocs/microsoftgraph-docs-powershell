@@ -20,9 +20,7 @@ New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashta
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>]
- [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -213,37 +211,6 @@ Partner state of this tenant.
 
 ```yaml
 Type: DeviceManagementPartnerTenantState
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsEnrollmentAssignments
-User groups which enroll Windows devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for WINDOWSENROLLMENTASSIGNMENTS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment1[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsOnboarded
-Partner onboarded for Windows devices.
-
-```yaml
-Type: SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 

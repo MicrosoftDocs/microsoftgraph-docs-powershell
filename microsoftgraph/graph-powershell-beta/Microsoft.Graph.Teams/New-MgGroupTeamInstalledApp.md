@@ -16,7 +16,7 @@ Install an app to the specified team.
 ### CreateExpanded (Default)
 ```
 New-MgGroupTeamInstalledApp -GroupId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -29,7 +29,7 @@ New-MgGroupTeamInstalledApp -GroupId <String> -BodyParameter <IMicrosoftGraphTea
 ### CreateViaIdentityExpanded
 ```
 New-MgGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -162,7 +162,7 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

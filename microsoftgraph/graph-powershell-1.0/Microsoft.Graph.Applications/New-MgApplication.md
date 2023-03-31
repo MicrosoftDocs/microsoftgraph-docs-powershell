@@ -16,7 +16,8 @@ Create a new application object.
 ### CreateExpanded1 (Default)
 ```
 New-MgApplication [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>]
- [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>] [-AppRoles <IMicrosoftGraphAppRole[]>]
+ [-Api <IMicrosoftGraphApiApplication>] [-AppId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-ApplicationTemplateId <String>] [-Certification <IMicrosoftGraphCertification>]
  [-CreatedDateTime <DateTime>] [-CreatedOnBehalfOf <IMicrosoftGraphDirectoryObject>]
  [-DefaultRedirectUri <String>] [-DeletedDateTime <DateTime>] [-Description <String>]
@@ -140,6 +141,22 @@ Supports $filter (eq, not, ne).
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppManagementPolicies
+.
+To construct, please use Get-Help -Online and see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: CreateExpanded1
 Aliases:
 

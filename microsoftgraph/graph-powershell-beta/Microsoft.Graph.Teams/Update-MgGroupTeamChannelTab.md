@@ -17,7 +17,7 @@ Update the navigation property tabs in groups
 Update-MgGroupTeamChannelTab -ChannelId <String> -GroupId <String> -TeamsTabId <String>
  [-AdditionalProperties <Hashtable>] [-Configuration <IMicrosoftGraphTeamsTabConfiguration>]
  [-DisplayName <String>] [-Id <String>] [-MessageId <String>] [-SortOrderIndex <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
+ [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppId <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -31,7 +31,7 @@ Update-MgGroupTeamChannelTab -ChannelId <String> -GroupId <String> -TeamsTabId <
 ```
 Update-MgGroupTeamChannelTab -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Configuration <IMicrosoftGraphTeamsTabConfiguration>] [-DisplayName <String>] [-Id <String>]
- [-MessageId <String>] [-SortOrderIndex <String>] [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppId <String>]
+ [-MessageId <String>] [-SortOrderIndex <String>] [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppId <String>]
  [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -222,7 +222,7 @@ teamsApp
 To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp
+Type: IMicrosoftGraphTeamsApp1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

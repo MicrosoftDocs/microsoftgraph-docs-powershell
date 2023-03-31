@@ -23,7 +23,7 @@ Update-MgGroupTeamPrimaryChannelMessage -ChatMessageId <String> -GroupId <String
  [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
- [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
+ [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -31,7 +31,7 @@ Update-MgGroupTeamPrimaryChannelMessage -ChatMessageId <String> -GroupId <String
 ### Update
 ```
 Update-MgGroupTeamPrimaryChannelMessage -ChatMessageId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphChatMessage> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChatMessage1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -45,7 +45,7 @@ Update-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-Addition
  [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
- [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
+ [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -53,7 +53,7 @@ Update-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-Addition
 ### UpdateViaIdentity
 ```
 Update-MgGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphChatMessage> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChatMessage1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -115,7 +115,7 @@ chatMessage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage
+Type: IMicrosoftGraphChatMessage1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -493,7 +493,7 @@ Supports $expand for channel messages.
 To construct, please use Get-Help -Online and see NOTES section for REPLIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: IMicrosoftGraphChatMessage1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -604,7 +604,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 

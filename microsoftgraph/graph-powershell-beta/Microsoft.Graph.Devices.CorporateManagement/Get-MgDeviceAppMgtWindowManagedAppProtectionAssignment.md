@@ -184,7 +184,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedManagedAppPolicyAssignmentId
-key: id of targetedManagedAppPolicyAssignment
+The unique identifier of targetedManagedAppPolicyAssignment
 
 ```yaml
 Type: String
@@ -214,7 +214,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsManagedAppProtectionId
-key: id of windowsManagedAppProtection
+The unique identifier of windowsManagedAppProtection
 
 ```yaml
 Type: String

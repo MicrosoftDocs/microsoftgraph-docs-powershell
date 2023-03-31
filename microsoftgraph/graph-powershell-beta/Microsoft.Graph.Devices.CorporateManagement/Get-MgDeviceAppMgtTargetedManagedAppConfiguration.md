@@ -183,7 +183,7 @@ Accept wildcard characters: False
 ```
 
 ### -TargetedManagedAppConfigurationId
-key: id of targetedManagedAppConfiguration
+The unique identifier of targetedManagedAppConfiguration
 
 ```yaml
 Type: String

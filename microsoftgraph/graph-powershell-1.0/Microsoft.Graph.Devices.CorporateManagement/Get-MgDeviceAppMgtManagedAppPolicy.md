@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedAppPolicyId
-key: id of managedAppPolicy
+The unique identifier of managedAppPolicy
 
 ```yaml
 Type: String

@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -VppTokenId
-key: id of vppToken
+The unique identifier of vppToken
 
 ```yaml
 Type: String

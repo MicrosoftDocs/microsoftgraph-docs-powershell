@@ -24,7 +24,7 @@ New-MgUserChatMessageReply -ChatId <String> -ChatMessageId <String> -UserId <Str
  [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
- [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
+ [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -40,7 +40,7 @@ New-MgUserChatMessageReply [-ChatId <String>] -InputObject <ITeamsIdentity> [-Ad
  [-Mentions <IMicrosoftGraphChatMessageMention1[]>] [-MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
- [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
+ [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage1[]>]
  [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -48,12 +48,12 @@ New-MgUserChatMessageReply [-ChatId <String>] -InputObject <ITeamsIdentity> [-Ad
 ### Create1
 ```
 New-MgUserChatMessageReply -ChatId <String> -ChatMessageId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphChatMessage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChatMessage1> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
 ```
-New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage> [-WhatIf]
+New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -127,7 +127,7 @@ chatMessage
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage
+Type: IMicrosoftGraphChatMessage1
 Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
@@ -502,7 +502,7 @@ Supports $expand for channel messages.
 To construct, please use Get-Help -Online and see NOTES section for REPLIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: IMicrosoftGraphChatMessage1[]
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -628,11 +628,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
 ## NOTES
 
 ALIASES

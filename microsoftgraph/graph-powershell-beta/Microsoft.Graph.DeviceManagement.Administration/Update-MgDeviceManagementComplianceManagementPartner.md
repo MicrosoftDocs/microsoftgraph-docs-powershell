@@ -21,9 +21,7 @@ Update-MgDeviceManagementComplianceManagementPartner -ComplianceManagementPartne
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>]
- [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -42,9 +40,7 @@ Update-MgDeviceManagementComplianceManagementPartner -InputObject <IDeviceManage
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>]
- [-WindowsEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment1[]>] [-WindowsOnboarded]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -283,37 +279,6 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsEnrollmentAssignments
-User groups which enroll Windows devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for WINDOWSENROLLMENTASSIGNMENTS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WindowsOnboarded
-Partner onboarded for Windows devices.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False

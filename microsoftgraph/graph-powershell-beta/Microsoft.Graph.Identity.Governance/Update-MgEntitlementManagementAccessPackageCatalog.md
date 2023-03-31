@@ -15,6 +15,7 @@ Update the navigation property accessPackageCatalogs in identityGovernance
 ### UpdateExpanded (Default)
 ```
 Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <String>
+ [-AccessPackageCustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
  [-AccessPackageResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
  [-AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]
@@ -34,6 +35,7 @@ Update-MgEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId <Stri
 ### UpdateViaIdentityExpanded
 ```
 Update-MgEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGovernanceIdentity>
+ [-AccessPackageCustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
  [-AccessPackageResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
  [-AccessPackageResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
  [-AccessPackageResources <IMicrosoftGraphAccessPackageResource[]>]
@@ -78,6 +80,22 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AccessPackageCustomWorkflowExtensions
+The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
+To construct, please use Get-Help -Online and see NOTES section for ACCESSPACKAGECUSTOMWORKFLOWEXTENSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomCalloutExtension[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -14,7 +14,7 @@ Update teamwork
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>]
+Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-DeletedTeams <IMicrosoftGraphDeletedTeam1[]>]
  [-Devices <IMicrosoftGraphTeamworkDevice[]>] [-Id <String>] [-TeamTemplates <IMicrosoftGraphTeamTemplate[]>]
  [-TeamsAppSettings <IMicrosoftGraphTeamsAppSettings>]
  [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration1[]>] [-PassThru] [-WhatIf] [-Confirm]
@@ -70,7 +70,7 @@ A collection of deleted teams.
 To construct, please use Get-Help -Online and see NOTES section for DELETEDTEAMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeletedTeam[]
+Type: IMicrosoftGraphDeletedTeam1[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 

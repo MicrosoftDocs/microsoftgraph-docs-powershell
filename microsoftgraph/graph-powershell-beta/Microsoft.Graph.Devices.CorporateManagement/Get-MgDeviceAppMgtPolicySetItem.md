@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicySetId
-key: id of policySet
+The unique identifier of policySet
 
 ```yaml
 Type: String
@@ -153,7 +153,7 @@ Accept wildcard characters: False
 ```
 
 ### -PolicySetItemId
-key: id of policySetItem
+The unique identifier of policySetItem
 
 ```yaml
 Type: String

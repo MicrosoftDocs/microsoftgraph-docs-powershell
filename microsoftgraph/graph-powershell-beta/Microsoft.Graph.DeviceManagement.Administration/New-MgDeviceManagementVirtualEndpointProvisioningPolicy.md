@@ -16,8 +16,8 @@ Create a new cloudPcProvisioningPolicy object.
 ```
 New-MgDeviceManagementVirtualEndpointProvisioningPolicy [-AdditionalProperties <Hashtable>]
  [-AlternateResourceUrl <String>] [-Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>]
- [-CloudPcGroupDisplayName <String>] [-Description <String>] [-DisplayName <String>]
- [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
+ [-CloudPcGroupDisplayName <String>] [-CloudPcNamingTemplate <String>] [-Description <String>]
+ [-DisplayName <String>] [-DomainJoinConfiguration <IMicrosoftGraphCloudPcDomainJoinConfiguration>]
  [-DomainJoinConfigurations <IMicrosoftGraphCloudPcDomainJoinConfiguration[]>] [-EnableSingleSignOn]
  [-GracePeriodInHours <Int32>] [-Id <String>] [-ImageDisplayName <String>] [-ImageId <String>]
  [-ImageType <String>] [-LocalAdminEnabled] [-ManagedBy <String>]
@@ -134,6 +134,21 @@ Accept wildcard characters: False
 ### -CloudPcGroupDisplayName
 The display name of the Cloud PC group that the Cloud PCs reside in.
 Read-only.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CloudPcNamingTemplate
+.
 
 ```yaml
 Type: String

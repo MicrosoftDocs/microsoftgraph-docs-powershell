@@ -62,7 +62,7 @@ Accept wildcard characters: False
 ```
 
 ### -CatalogEntryId
-key: id of catalogEntry
+The unique identifier of catalogEntry
 
 ```yaml
 Type: String

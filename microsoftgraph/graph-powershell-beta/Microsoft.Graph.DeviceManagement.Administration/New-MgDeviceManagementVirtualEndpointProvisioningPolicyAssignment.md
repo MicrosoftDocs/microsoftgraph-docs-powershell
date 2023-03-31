@@ -15,8 +15,8 @@ Create new navigation property to assignments for deviceManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment -CloudPcProvisioningPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AssignedUsers <IMicrosoftGraphUser[]>] [-Id <String>]
+ [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -28,8 +28,9 @@ New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment -CloudPcProvis
 ### CreateViaIdentityExpanded
 ```
 New-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <Hashtable>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
+ [-AssignedUsers <IMicrosoftGraphUser[]>] [-Id <String>] [-Target <Hashtable>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -51,6 +52,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssignedUsers
+.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDUSERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

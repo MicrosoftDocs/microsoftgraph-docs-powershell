@@ -277,7 +277,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChat1
 ## NOTES
 
 ALIASES

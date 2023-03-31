@@ -18,7 +18,7 @@ New-MgUserManagedDeviceLogCollectionResponse -ManagedDeviceId <String> -UserId <
  [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ErrorCode <Int64>]
  [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
  [-ManagedDeviceId1 <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-Size <Double>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -27,7 +27,7 @@ New-MgUserManagedDeviceLogCollectionResponse [-ManagedDeviceId <String>]
  -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-EnrolledByUser <String>] [-ErrorCode <Int64>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
  [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-Size <Double>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -261,11 +261,27 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -SizeInKb
+The size of the logs in KB.
+Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+
+```yaml
+Type: Double
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Status
 The status of the log collection request
 
 ```yaml
-Type: String
+Type: AppLogUploadState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

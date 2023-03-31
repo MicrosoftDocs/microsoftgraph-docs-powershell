@@ -163,7 +163,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeploymentId
-key: id of deployment
+The unique identifier of deployment
 
 ```yaml
 Type: String

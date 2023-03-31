@@ -250,9 +250,6 @@ Hide a chat for a user.
 ### [Initialize-MgUserManagedDeviceEsim](Initialize-MgUserManagedDeviceEsim.md)
 Activate eSIM on the device.
 
-### [Initialize-MgUserServicePlan](Initialize-MgUserServicePlan.md)
-Activate a service plan with a given `servicePlanId` and `skuId` for a given user.
-
 ### [Invoke-MgAcceptUserEvent](Invoke-MgAcceptUserEvent.md)
 Accept the specified event in a user calendar.
 

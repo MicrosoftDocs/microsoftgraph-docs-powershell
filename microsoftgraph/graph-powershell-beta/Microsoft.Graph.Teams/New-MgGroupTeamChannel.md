@@ -21,7 +21,7 @@ You can add a maximum of 200 members when you create a private channel.
 New-MgGroupTeamChannel -GroupId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Email <String>] [-FilesFolder <IMicrosoftGraphDriveItem1>]
  [-Id <String>] [-IsFavoriteByDefault] [-Members <IMicrosoftGraphConversationMember[]>]
- [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage[]>]
+ [-MembershipType <String>] [-Messages <IMicrosoftGraphChatMessage1[]>]
  [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab1[]>] [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
@@ -30,7 +30,7 @@ New-MgGroupTeamChannel -GroupId <String> [-AdditionalProperties <Hashtable>] [-C
 
 ### Create
 ```
-New-MgGroupTeamChannel -GroupId <String> -BodyParameter <IMicrosoftGraphChannel> [-WhatIf] [-Confirm]
+New-MgGroupTeamChannel -GroupId <String> -BodyParameter <IMicrosoftGraphChannel1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -40,7 +40,7 @@ New-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Has
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
  [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
- [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
+ [-Messages <IMicrosoftGraphChatMessage1[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab1[]>] [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -48,7 +48,7 @@ New-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-AdditionalProperties <Has
 
 ### CreateViaIdentity
 ```
-New-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel> [-WhatIf]
+New-MgGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -115,7 +115,7 @@ channel
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel
+Type: IMicrosoftGraphChannel1
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -307,7 +307,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: IMicrosoftGraphChatMessage1[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -452,11 +452,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1
 ## NOTES
 
 ALIASES

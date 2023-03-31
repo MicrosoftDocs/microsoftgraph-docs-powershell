@@ -15,7 +15,7 @@ Update the navigation property pinnedMessages in chats
 ### UpdateExpanded (Default)
 ```
 Update-MgChatPinnedMessage -ChatId <String> -PinnedChatMessageInfoId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Message <IMicrosoftGraphChatMessage>] [-PassThru]
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Message <IMicrosoftGraphChatMessage1>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -28,7 +28,7 @@ Update-MgChatPinnedMessage -ChatId <String> -PinnedChatMessageInfoId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Message <IMicrosoftGraphChatMessage>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Message <IMicrosoftGraphChatMessage1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -127,7 +127,7 @@ chatMessage
 To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage
+Type: IMicrosoftGraphChatMessage1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

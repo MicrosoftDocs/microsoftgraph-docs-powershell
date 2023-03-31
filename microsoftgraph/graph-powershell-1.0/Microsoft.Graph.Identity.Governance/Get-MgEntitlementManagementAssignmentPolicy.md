@@ -22,14 +22,14 @@ Get-MgEntitlementManagementAssignmentPolicy [-ExpandProperty <String[]>] [-Prope
 
 ### Get
 ```
-Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -74,7 +74,7 @@ key: id of accessPackageAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ key: id of accessPackageAssignmentPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True

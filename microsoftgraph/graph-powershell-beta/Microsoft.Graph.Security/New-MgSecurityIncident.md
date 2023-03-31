@@ -14,16 +14,18 @@ Create new navigation property to incidents for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftGraphSecurityAlert[]>]
+New-MgSecurityIncident [-AdditionalProperties <Hashtable>] [-Alerts <IMicrosoftGraphSecurityAlert1[]>]
  [-AssignedTo <String>] [-Classification <String>] [-Comments <IMicrosoftGraphSecurityAlertComment[]>]
- [-CreatedDateTime <DateTime>] [-CustomTags <String[]>] [-Determination <String>] [-DisplayName <String>]
- [-Id <String>] [-IncidentWebUrl <String>] [-LastUpdateDateTime <DateTime>] [-RedirectIncidentId <String>]
- [-Severity <String>] [-Status <String>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CreatedDateTime <DateTime>] [-CustomTags <String[]>] [-Description <String>] [-Determination <String>]
+ [-DisplayName <String>] [-Id <String>] [-IncidentWebUrl <String>] [-LastUpdateDateTime <DateTime>]
+ [-RecommendedActions <String>] [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]
+ [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>] [-SystemTags <String[]>]
+ [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident> [-WhatIf] [-Confirm]
+New-MgSecurityIncident -BodyParameter <IMicrosoftGraphSecurityIncident1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -55,7 +57,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlert[]
+Type: IMicrosoftGraphSecurityAlert1[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +89,7 @@ incident
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIncident
+Type: IMicrosoftGraphSecurityIncident1
 Parameter Sets: Create
 Aliases:
 
@@ -149,6 +151,21 @@ Array of custom tags associated with an incident.
 
 ```yaml
 Type: String[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Description
+.
+
+```yaml
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,6 +252,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RecommendedActions
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecommendedHuntingQueries
+.
+To construct, please use Get-Help -Online and see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityRecommendedHuntingQuery[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedirectIncidentId
 Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
@@ -271,6 +319,21 @@ incidentStatus
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SystemTags
+.
+
+```yaml
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -332,10 +395,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident1
 ## NOTES
 
 ALIASES

@@ -12,27 +12,27 @@ Update the navigation property deletedTeams in teamwork
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgTeamworkDeletedTeam -DeletedTeamId <String> [-AdditionalProperties <Hashtable>]
- [-Channels <IMicrosoftGraphChannel[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Channels <IMicrosoftGraphChannel1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
-Update-MgTeamworkDeletedTeam -DeletedTeamId <String> -BodyParameter <IMicrosoftGraphDeletedTeam> [-PassThru]
+Update-MgTeamworkDeletedTeam -DeletedTeamId <String> -BodyParameter <IMicrosoftGraphDeletedTeam1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Channels <IMicrosoftGraphChannel[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Channels <IMicrosoftGraphChannel1[]>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
-Update-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphDeletedTeam>
+Update-MgTeamworkDeletedTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphDeletedTeam1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -48,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -63,8 +63,8 @@ deletedTeam
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeletedTeam
-Parameter Sets: Update, UpdateViaIdentity
+Type: IMicrosoftGraphDeletedTeam1
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -79,8 +79,8 @@ The channels those are either shared with this deleted team or created in this d
 To construct, please use Get-Help -Online and see NOTES section for CHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: IMicrosoftGraphChannel1[]
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -95,7 +95,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -111,7 +111,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -127,7 +127,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -188,7 +188,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedTeam
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedTeam1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 

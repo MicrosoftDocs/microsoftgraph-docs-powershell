@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppId
-key: id of mobileApp
+The unique identifier of mobileApp
 
 ```yaml
 Type: String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppInstallStatusId
-key: id of mobileAppInstallStatus
+The unique identifier of mobileAppInstallStatus
 
 ```yaml
 Type: String
@@ -228,7 +228,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserAppInstallStatusId
-key: id of userAppInstallStatus
+The unique identifier of userAppInstallStatus
 
 ```yaml
 Type: String

@@ -243,7 +243,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy1
 ## NOTES
 
 ALIASES
