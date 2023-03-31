@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceAppManagementTaskId
-key: id of deviceAppManagementTask
+The unique identifier of deviceAppManagementTask
 
 ```yaml
 Type: String

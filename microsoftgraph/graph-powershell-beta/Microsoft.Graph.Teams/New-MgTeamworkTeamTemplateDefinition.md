@@ -18,7 +18,8 @@ New-MgTeamworkTeamTemplateDefinition -TeamTemplateId <String> [-AdditionalProper
  [-Audience <String>] [-Categories <String[]>] [-Description <String>] [-DisplayName <String>]
  [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>] [-PublisherName <String>]
- [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam1>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -33,7 +34,8 @@ New-MgTeamworkTeamTemplateDefinition -InputObject <ITeamsIdentity> [-AdditionalP
  [-Audience <String>] [-Categories <String[]>] [-Description <String>] [-DisplayName <String>]
  [-IconUrl <String>] [-Id <String>] [-LanguageTag <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-ParentTemplateId <String>] [-PublisherName <String>]
- [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ShortDescription <String>] [-TeamDefinition <IMicrosoftGraphTeam1>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -283,7 +285,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for TEAMDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam
+Type: IMicrosoftGraphTeam1
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 

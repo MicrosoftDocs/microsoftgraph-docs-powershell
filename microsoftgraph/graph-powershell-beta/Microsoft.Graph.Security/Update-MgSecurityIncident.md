@@ -15,32 +15,36 @@ Update the navigation property incidents in security
 ### UpdateExpanded (Default)
 ```
 Update-MgSecurityIncident -IncidentId <String> [-AdditionalProperties <Hashtable>]
- [-Alerts <IMicrosoftGraphSecurityAlert[]>] [-AssignedTo <String>] [-Classification <String>]
+ [-Alerts <IMicrosoftGraphSecurityAlert1[]>] [-AssignedTo <String>] [-Classification <String>]
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-CustomTags <String[]>]
- [-Determination <String>] [-DisplayName <String>] [-Id <String>] [-IncidentWebUrl <String>]
- [-LastUpdateDateTime <DateTime>] [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>]
- [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-Determination <String>] [-DisplayName <String>] [-Id <String>]
+ [-IncidentWebUrl <String>] [-LastUpdateDateTime <DateTime>] [-RecommendedActions <String>]
+ [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>] [-RedirectIncidentId <String>]
+ [-Severity <String>] [-Status <String>] [-SystemTags <String[]>] [-TenantId <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityIncident -IncidentId <String> -BodyParameter <IMicrosoftGraphSecurityIncident> [-PassThru]
+Update-MgSecurityIncident -IncidentId <String> -BodyParameter <IMicrosoftGraphSecurityIncident1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgSecurityIncident -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
- [-Alerts <IMicrosoftGraphSecurityAlert[]>] [-AssignedTo <String>] [-Classification <String>]
+ [-Alerts <IMicrosoftGraphSecurityAlert1[]>] [-AssignedTo <String>] [-Classification <String>]
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-CustomTags <String[]>]
- [-Determination <String>] [-DisplayName <String>] [-Id <String>] [-IncidentWebUrl <String>]
- [-LastUpdateDateTime <DateTime>] [-RedirectIncidentId <String>] [-Severity <String>] [-Status <String>]
- [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-Determination <String>] [-DisplayName <String>] [-Id <String>]
+ [-IncidentWebUrl <String>] [-LastUpdateDateTime <DateTime>] [-RecommendedActions <String>]
+ [-RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>] [-RedirectIncidentId <String>]
+ [-Severity <String>] [-Status <String>] [-SystemTags <String[]>] [-TenantId <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityIncident>
+Update-MgSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityIncident1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -88,7 +92,7 @@ Supports $expand.
 To construct, please use Get-Help -Online and see NOTES section for ALERTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlert[]
+Type: IMicrosoftGraphSecurityAlert1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +124,7 @@ incident
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIncident
+Type: IMicrosoftGraphSecurityIncident1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -182,6 +186,21 @@ Array of custom tags associated with an incident.
 
 ```yaml
 Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Description
+.
+
+```yaml
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -314,6 +333,37 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RecommendedActions
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RecommendedHuntingQueries
+.
+To construct, please use Get-Help -Online and see NOTES section for RECOMMENDEDHUNTINGQUERIES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityRecommendedHuntingQuery[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RedirectIncidentId
 Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents.
 In such a case, the status property is redirected.
@@ -350,6 +400,21 @@ incidentStatus
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -SystemTags
+.
+
+```yaml
+Type: String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -411,7 +476,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIncident1
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
 ## OUTPUTS
 

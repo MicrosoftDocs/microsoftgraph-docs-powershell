@@ -39,7 +39,7 @@ PS C:\> {{ Add example code here }}
 ## PARAMETERS
 
 ### -ComplianceChangeId
-key: id of complianceChange
+The unique identifier of complianceChange
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdatePolicyId
-key: id of updatePolicy
+The unique identifier of updatePolicy
 
 ```yaml
 Type: String

@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -UpdatableAssetId
-key: id of updatableAsset
+The unique identifier of updatableAsset
 
 ```yaml
 Type: String

@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppAssignmentId
-key: id of mobileAppAssignment
+The unique identifier of mobileAppAssignment
 
 ```yaml
 Type: String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppId
-key: id of mobileApp
+The unique identifier of mobileApp
 
 ```yaml
 Type: String

@@ -12,15 +12,16 @@ Create new navigation property to deletedTeams for teamwork
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
-New-MgTeamworkDeletedTeam [-AdditionalProperties <Hashtable>] [-Channels <IMicrosoftGraphChannel[]>]
+New-MgTeamworkDeletedTeam [-AdditionalProperties <Hashtable>] [-Channels <IMicrosoftGraphChannel1[]>]
  [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
-New-MgTeamworkDeletedTeam -BodyParameter <IMicrosoftGraphDeletedTeam> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgTeamworkDeletedTeam -BodyParameter <IMicrosoftGraphDeletedTeam1> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,7 +36,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -50,8 +51,8 @@ deletedTeam
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeletedTeam
-Parameter Sets: Create
+Type: IMicrosoftGraphDeletedTeam1
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -66,8 +67,8 @@ The channels those are either shared with this deleted team or created in this d
 To construct, please use Get-Help -Online and see NOTES section for CHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel[]
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphChannel1[]
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -83,7 +84,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -129,10 +130,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedTeam
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedTeam1
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedTeam
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeletedTeam1
 ## NOTES
 
 ALIASES

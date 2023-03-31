@@ -13,7 +13,7 @@ Create a new externalConnection.
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgExternalConnection [-ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]
  [-AdditionalProperties <Hashtable>]
@@ -21,15 +21,15 @@ New-MgExternalConnection [-ActivitySettings <IMicrosoftGraphExternalConnectorsAc
  [-Configuration <IMicrosoftGraphExternalConnectorsConfiguration>] [-ConnectorId <String>]
  [-Description <String>] [-EnabledContentExperiences <String>]
  [-Groups <IMicrosoftGraphExternalConnectorsExternalGroup[]>] [-Id <String>] [-IngestedItemsCount <Int64>]
- [-Items <IMicrosoftGraphExternalConnectorsExternalItem[]>] [-Name <String>]
+ [-Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>] [-Name <String>]
  [-Operations <IMicrosoftGraphExternalConnectorsConnectionOperation[]>]
  [-Quota <IMicrosoftGraphExternalConnectorsConnectionQuota>]
- [-Schema <IMicrosoftGraphExternalConnectorsSchema>]
+ [-Schema <IMicrosoftGraphExternalConnectorsSchema1>]
  [-SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>] [-State <String>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExternalConnection> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -62,7 +62,7 @@ To construct, please use Get-Help -Online and see NOTES section for ACTIVITYSETT
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsActivitySettings
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -77,7 +77,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -93,7 +93,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalConnection
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -109,7 +109,7 @@ To construct, please use Get-Help -Online and see NOTES section for COMPLIANCESE
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsComplianceSettings
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -125,7 +125,7 @@ To construct, please use Get-Help -Online and see NOTES section for CONFIGURATIO
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsConfiguration
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -141,7 +141,7 @@ Optional.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -157,7 +157,7 @@ Optional.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -172,7 +172,7 @@ contentExperienceType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -188,7 +188,7 @@ To construct, please use Get-Help -Online and see NOTES section for GROUPS prope
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsExternalGroup[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -204,7 +204,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -221,7 +221,7 @@ If the connection state is draft, then ingestedItemsCount will be null.
 
 ```yaml
 Type: Int64
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -236,8 +236,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for ITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsExternalItem[]
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsExternalItem1[]
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -254,7 +254,7 @@ Required.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -270,7 +270,7 @@ To construct, please use Get-Help -Online and see NOTES section for OPERATIONS p
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsConnectionOperation[]
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -286,7 +286,7 @@ To construct, please use Get-Help -Online and see NOTES section for QUOTA proper
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsConnectionQuota
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -301,8 +301,8 @@ schema
 To construct, please use Get-Help -Online and see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsSchema
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphExternalConnectorsSchema1
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -318,7 +318,7 @@ To construct, please use Get-Help -Online and see NOTES section for SEARCHSETTIN
 
 ```yaml
 Type: IMicrosoftGraphExternalConnectorsSearchSettings
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -333,7 +333,7 @@ connectionState
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False

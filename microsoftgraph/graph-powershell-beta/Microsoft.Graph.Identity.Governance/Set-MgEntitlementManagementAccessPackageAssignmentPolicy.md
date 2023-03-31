@@ -18,7 +18,8 @@ Set-MgEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmen
  [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
  [-AccessPackageId <String>] [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>]
  [-AdditionalProperties <Hashtable>] [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
- [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>] [-Description <String>]
+ [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>]
+ [-CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion1[]>]
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
@@ -38,7 +39,8 @@ Set-MgEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIdentity
  [-AccessPackage <IMicrosoftGraphAccessPackage>] [-AccessPackageCatalog <IMicrosoftGraphAccessPackageCatalog1>]
  [-AccessPackageId <String>] [-AccessReviewSettings <IMicrosoftGraphAssignmentReviewSettings>]
  [-AdditionalProperties <Hashtable>] [-CanExtend] [-CreatedBy <String>] [-CreatedDateTime <DateTime>]
- [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>] [-Description <String>]
+ [-CustomExtensionHandlers <IMicrosoftGraphCustomExtensionHandler[]>]
+ [-CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>] [-ExpirationDateTime <DateTime>] [-Id <String>]
  [-ModifiedBy <String>] [-ModifiedDateTime <DateTime>] [-Questions <IMicrosoftGraphAccessPackageQuestion1[]>]
  [-RequestApprovalSettings <IMicrosoftGraphApprovalSettings>]
@@ -328,6 +330,23 @@ To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENS
 
 ```yaml
 Type: IMicrosoftGraphCustomExtensionHandler[]
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomExtensionStageSettings
+The collection of stages when to execute one or more custom access package workflow extensions.
+Supports $expand.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENSIONSTAGESETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomExtensionStageSetting[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 

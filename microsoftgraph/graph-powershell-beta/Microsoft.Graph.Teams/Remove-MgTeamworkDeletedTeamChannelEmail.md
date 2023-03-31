@@ -13,13 +13,13 @@ You can remove an email address only if it was provisioned using the provisionEm
 
 ## SYNTAX
 
-### Remove (Default)
+### Remove1 (Default)
 ```
 Remove-MgTeamworkDeletedTeamChannelEmail -ChannelId <String> -DeletedTeamId <String> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentity
+### RemoveViaIdentity1
 ```
 Remove-MgTeamworkDeletedTeamChannelEmail -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -38,7 +38,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: Remove
+Parameter Sets: Remove1
 Aliases:
 
 Required: True
@@ -53,7 +53,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Remove
+Parameter Sets: Remove1
 Aliases:
 
 Required: True
@@ -69,7 +69,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: RemoveViaIdentity
+Parameter Sets: RemoveViaIdentity1
 Aliases:
 
 Required: True

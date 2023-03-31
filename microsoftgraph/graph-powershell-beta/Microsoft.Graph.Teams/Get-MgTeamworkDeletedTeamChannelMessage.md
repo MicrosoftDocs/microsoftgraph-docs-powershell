@@ -14,32 +14,32 @@ Nullable.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get3 (Default)
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -DeletedTeamId <String> [-Property <String[]>] [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### List
+### List1
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -ChannelId <String> -DeletedTeamId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get2
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -DeletedTeamId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity3
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-Property <String[]>] [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -59,7 +59,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -74,7 +74,7 @@ key: id of channel
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get2
 Aliases:
 
 Required: True
@@ -89,7 +89,7 @@ key: id of chatMessage
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get2
 Aliases:
 
 Required: True
@@ -104,7 +104,7 @@ Include count of items
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: Get1, GetViaIdentity1
+Parameter Sets: Get3, GetViaIdentity3
 Aliases:
 
 Required: False
@@ -120,7 +120,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -135,7 +135,7 @@ key: id of deletedTeam
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List, Get
+Parameter Sets: Get3, List1, Get2
 Aliases:
 
 Required: True
@@ -150,7 +150,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: List, Get, GetViaIdentity
+Parameter Sets: List1, Get2, GetViaIdentity2
 Aliases: Expand
 
 Required: False
@@ -165,7 +165,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List, GetViaIdentity1
+Parameter Sets: Get3, List1, GetViaIdentity3
 Aliases:
 
 Required: False
@@ -181,7 +181,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Parameter Sets: GetViaIdentity3, GetViaIdentity2
 Aliases:
 
 Required: True
@@ -196,7 +196,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -226,7 +226,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: Get1, List, GetViaIdentity1
+Parameter Sets: Get3, List1, GetViaIdentity3
 Aliases:
 
 Required: False
@@ -241,7 +241,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: Get1, List, GetViaIdentity1
+Parameter Sets: Get3, List1, GetViaIdentity3
 Aliases: OrderBy
 
 Required: False
@@ -256,7 +256,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: Get1, List, GetViaIdentity1
+Parameter Sets: Get3, List1, GetViaIdentity3
 Aliases: Limit
 
 Required: False
@@ -271,7 +271,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: Get1, List, GetViaIdentity1
+Parameter Sets: Get3, List1, GetViaIdentity3
 Aliases:
 
 Required: False
@@ -289,7 +289,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
 ## NOTES
 
 ALIASES

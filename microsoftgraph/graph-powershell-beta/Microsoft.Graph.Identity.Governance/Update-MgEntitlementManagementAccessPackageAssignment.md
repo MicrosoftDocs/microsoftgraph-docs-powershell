@@ -26,8 +26,9 @@ Update-MgEntitlementManagementAccessPackageAssignment -AccessPackageAssignmentId
  [-AccessPackageAssignmentRequests <IMicrosoftGraphAccessPackageAssignmentRequest1[]>]
  [-AccessPackageAssignmentResourceRoles <IMicrosoftGraphAccessPackageAssignmentResourceRole[]>]
  [-AccessPackageId <String>] [-AdditionalProperties <Hashtable>] [-AssignmentPolicyId <String>]
- [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>] [-ExpiredDateTime <DateTime>]
- [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
+ [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>]
+ [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
+ [-ExpiredDateTime <DateTime>] [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-Target <IMicrosoftGraphAccessPackageSubject1>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -46,8 +47,9 @@ Update-MgEntitlementManagementAccessPackageAssignment -InputObject <IIdentityGov
  [-AccessPackageAssignmentRequests <IMicrosoftGraphAccessPackageAssignmentRequest1[]>]
  [-AccessPackageAssignmentResourceRoles <IMicrosoftGraphAccessPackageAssignmentResourceRole[]>]
  [-AccessPackageId <String>] [-AdditionalProperties <Hashtable>] [-AssignmentPolicyId <String>]
- [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>] [-ExpiredDateTime <DateTime>]
- [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
+ [-AssignmentState <String>] [-AssignmentStatus <String>] [-CatalogId <String>]
+ [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
+ [-ExpiredDateTime <DateTime>] [-Id <String>] [-IsExtended] [-Schedule <IMicrosoftGraphRequestSchedule>]
  [-Target <IMicrosoftGraphAccessPackageSubject1>] [-TargetId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -256,6 +258,22 @@ Read-only.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomExtensionCalloutInstances
+Information about all the custom extension calls that were made during the access package assignment workflow.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENSIONCALLOUTINSTANCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomExtensionCalloutInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

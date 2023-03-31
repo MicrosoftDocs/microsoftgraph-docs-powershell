@@ -16,7 +16,7 @@ Update the properties of an authorizationPolicy object.
 ### UpdateExpanded1 (Default)
 ```
 Update-MgPolicyAuthorizationPolicy [-AdditionalProperties <Hashtable>]
- [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>]
+ [-AllowEmailVerifiedUsersToJoinOrganization] [-AllowInvitesFrom <String>] [-AllowUserConsentForRiskyApps]
  [-AllowedToSignUpEmailBasedSubscriptions] [-AllowedToUseSspr] [-BlockMsolPowerShell]
  [-DefaultUserRolePermissions <IMicrosoftGraphDefaultUserRolePermissions>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-GuestUserRoleId <String>] [-Id <String>] [-PassThru]
@@ -107,6 +107,21 @@ Aliases:
 Required: False
 Position: Named
 Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowUserConsentForRiskyApps
+.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```

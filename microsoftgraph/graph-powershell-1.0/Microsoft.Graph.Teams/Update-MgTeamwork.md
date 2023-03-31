@@ -14,9 +14,9 @@ Update teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgTeamwork [-AdditionalProperties <Hashtable>] [-DeletedTeams <IMicrosoftGraphDeletedTeam[]>]
+ [-Id <String>] [-WorkforceIntegrations <IMicrosoftGraphWorkforceIntegration[]>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -60,6 +60,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DeletedTeams
+The deleted team.
+To construct, please use Get-Help -Online and see NOTES section for DELETEDTEAMS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDeletedTeam[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

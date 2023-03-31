@@ -19,7 +19,7 @@ Update-MgGroupTeamPrimaryChannel -GroupId <String> [-AdditionalProperties <Hasht
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
  [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
- [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
+ [-Messages <IMicrosoftGraphChatMessage1[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab1[]>] [-TenantId <String>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -27,7 +27,7 @@ Update-MgGroupTeamPrimaryChannel -GroupId <String> [-AdditionalProperties <Hasht
 
 ### Update
 ```
-Update-MgGroupTeamPrimaryChannel -GroupId <String> -BodyParameter <IMicrosoftGraphChannel> [-PassThru]
+Update-MgGroupTeamPrimaryChannel -GroupId <String> -BodyParameter <IMicrosoftGraphChannel1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -37,7 +37,7 @@ Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-AdditionalPrope
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Email <String>]
  [-FilesFolder <IMicrosoftGraphDriveItem1>] [-Id <String>] [-IsFavoriteByDefault]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MembershipType <String>]
- [-Messages <IMicrosoftGraphChatMessage[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
+ [-Messages <IMicrosoftGraphChatMessage1[]>] [-ModerationSettings <IMicrosoftGraphChannelModerationSettings>]
  [-SharedWithTeams <IMicrosoftGraphSharedWithChannelTeamInfo1[]>] [-Summary <IMicrosoftGraphChannelSummary>]
  [-Tabs <IMicrosoftGraphTeamsTab1[]>] [-TenantId <String>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -45,7 +45,7 @@ Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-AdditionalPrope
 
 ### UpdateViaIdentity
 ```
-Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel>
+Update-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChannel1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -87,7 +87,7 @@ channel
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel
+Type: IMicrosoftGraphChannel1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -279,7 +279,7 @@ Nullable.
 To construct, please use Get-Help -Online and see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: IMicrosoftGraphChatMessage1[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -439,7 +439,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChannel1
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 

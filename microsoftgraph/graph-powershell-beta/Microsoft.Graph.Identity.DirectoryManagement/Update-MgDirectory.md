@@ -22,7 +22,7 @@ Update-MgDirectory [-AdditionalProperties <Hashtable>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>]
  [-InboundSharedUserProfiles <IMicrosoftGraphInboundSharedUserProfile[]>]
- [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
+ [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization1[]>]
  [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
  [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-PassThru] [-WhatIf] [-Confirm]
@@ -224,7 +224,7 @@ A container for on-premises directory synchronization functionalities that are a
 To construct, please use Get-Help -Online and see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronization[]
+Type: IMicrosoftGraphOnPremisesDirectorySynchronization1[]
 Parameter Sets: UpdateExpanded
 Aliases:
 

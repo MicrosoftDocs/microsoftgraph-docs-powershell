@@ -16,7 +16,7 @@ Update the navigation property onPremisesSynchronization in directory
 ```
 Update-MgDirectoryOnPremisSynchronization -OnPremisesDirectorySynchronizationId <String>
  [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]
+ [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1>]
  [-Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>] [-Id <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -24,7 +24,7 @@ Update-MgDirectoryOnPremisSynchronization -OnPremisesDirectorySynchronizationId 
 ### Update
 ```
 Update-MgDirectoryOnPremisSynchronization -OnPremisesDirectorySynchronizationId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,7 +32,7 @@ Update-MgDirectoryOnPremisSynchronization -OnPremisesDirectorySynchronizationId 
 ```
 Update-MgDirectoryOnPremisSynchronization -InputObject <IIdentityDirectoryManagementIdentity>
  [-AdditionalProperties <Hashtable>]
- [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]
+ [-Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1>]
  [-Features <IMicrosoftGraphOnPremisesDirectorySynchronizationFeature>] [-Id <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
@@ -40,7 +40,7 @@ Update-MgDirectoryOnPremisSynchronization -InputObject <IIdentityDirectoryManage
 ### UpdateViaIdentity
 ```
 Update-MgDirectoryOnPremisSynchronization -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphOnPremisesDirectorySynchronization1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -71,7 +71,7 @@ onPremisesDirectorySynchronization
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronization
+Type: IMicrosoftGraphOnPremisesDirectorySynchronization1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -87,7 +87,7 @@ onPremisesDirectorySynchronizationConfiguration
 To construct, please use Get-Help -Online and see NOTES section for CONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration
+Type: IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +213,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization1
 ## OUTPUTS
 
 ### System.Boolean

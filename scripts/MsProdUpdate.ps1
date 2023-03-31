@@ -6,7 +6,8 @@ Param(
     [string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
     [string] $SDKOpenApiPath = ("..\msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph"),
-    [string] $GraphDocsPath = ("..\microsoft-graph-docs")
+    [string] $GraphDocsPath = ("..\microsoft-graph-docs"),
+    [string] $MissingMsProdHeaderPath = ("..\microsoftgraph-docs-powershell\missingexternaldocsurl")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -104,7 +105,7 @@ function Get-Files {
                             }
                             if ($UriPath) {
                                 $Method = $UriPaths.Method
-                                Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method
+                                Get-ExternalDocs-Url -GraphProfile $GraphProfile -Url -UriPath $UriPath -Command $Command -OpenApiContent $OpenApiContent -File $File -Method $Method -Module $Module
                             }
                         }
                     }
@@ -131,7 +132,8 @@ function Get-ExternalDocs-Url {
         [string] $Command = "Get-MgUser",
         [Hashtable] $OpenApiContent,
         [System.Object] $Method = "GET",
-        [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md"
+        [string] $File = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users\Get-MgUser.md",
+        [string] $Module = "Users"
     )
    
     if ($UriPath) {
@@ -175,6 +177,25 @@ function Get-ExternalDocs-Url {
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                     #$Url = $ExternalDocUrl.split(" ")
                     WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
+                }else{
+                    #Add report for missing external docs url 
+                    #Version UriPath Command #Module
+                    $MissingMetaData = "$MissingMsProdHeaderPath\$Module\$Module.csv"
+                    #Create folder if it doesn't exist
+                    if (-not (Test-Path $Folder)) {
+                        "Graph profile, Command, UriPath" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
+                    }
+
+                    #Check if module already exists
+                    $File = Get-Content $MissingMetaData
+                    $containsWord = $file | % { $_ -match "$GraphProfile, $Command, $UriPath" }
+                    if ($containsWord -contains $true) {
+                        #Skip adding to csv
+                    }
+                    else {
+                        "$GraphProfile, $Command, $UriPath" | Out-File -FilePath $MissingMetaData -Append -Encoding ASCII
+                    }
+                    
                 }
             
             }

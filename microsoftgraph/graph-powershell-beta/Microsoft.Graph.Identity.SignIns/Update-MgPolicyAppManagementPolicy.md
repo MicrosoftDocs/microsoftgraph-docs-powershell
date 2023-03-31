@@ -24,7 +24,7 @@ Update-MgPolicyAppManagementPolicy -AppManagementPolicyId <String> [-AdditionalP
 ### Update
 ```
 Update-MgPolicyAppManagementPolicy -AppManagementPolicyId <String>
- -BodyParameter <IMicrosoftGraphAppManagementPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppManagementPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -39,7 +39,7 @@ Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Add
 ### UpdateViaIdentity
 ```
 Update-MgPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphAppManagementPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAppManagementPolicy1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -100,7 +100,7 @@ appManagementPolicy
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementPolicy
+Type: IMicrosoftGraphAppManagementPolicy1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -274,7 +274,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy1
 ## OUTPUTS
 
 ### System.Boolean

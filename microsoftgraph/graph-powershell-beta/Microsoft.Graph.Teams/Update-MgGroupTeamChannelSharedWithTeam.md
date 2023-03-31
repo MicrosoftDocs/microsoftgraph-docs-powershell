@@ -17,7 +17,7 @@ Update the navigation property sharedWithTeams in groups
 Update-MgGroupTeamChannelSharedWithTeam -ChannelId <String> -GroupId <String>
  -SharedWithChannelTeamInfoId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
- [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,7 +31,7 @@ Update-MgGroupTeamChannelSharedWithTeam -ChannelId <String> -GroupId <String>
 ```
 Update-MgGroupTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedMembers <IMicrosoftGraphConversationMember[]>] [-DisplayName <String>] [-Id <String>] [-IsHostTeam]
- [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -222,7 +222,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for TEAM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam
+Type: IMicrosoftGraphTeam1
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

@@ -40,7 +40,7 @@ PS C:\> {{ Add example code here }}
 ## PARAMETERS
 
 ### -AndroidManagedAppProtectionId
-key: id of androidManagedAppProtection
+The unique identifier of androidManagedAppProtection
 
 ```yaml
 Type: String

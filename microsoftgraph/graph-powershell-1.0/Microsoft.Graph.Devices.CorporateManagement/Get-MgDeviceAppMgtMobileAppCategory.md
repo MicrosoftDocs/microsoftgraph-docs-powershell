@@ -142,7 +142,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppCategoryId
-key: id of mobileAppCategory
+The unique identifier of mobileAppCategory
 
 ```yaml
 Type: String
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobileAppId
-key: id of mobileApp
+The unique identifier of mobileApp
 
 ```yaml
 Type: String

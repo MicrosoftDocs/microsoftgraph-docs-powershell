@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -MdmWindowsInformationProtectionPolicyId
-key: id of mdmWindowsInformationProtectionPolicy
+The unique identifier of mdmWindowsInformationProtectionPolicy
 
 ```yaml
 Type: String

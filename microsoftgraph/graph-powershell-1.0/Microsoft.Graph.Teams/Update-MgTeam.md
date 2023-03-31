@@ -15,15 +15,15 @@ Update the properties of the specified team.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel1[]>]
- [-Channels <IMicrosoftGraphChannel1[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
+Update-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-AllChannels <IMicrosoftGraphChannel[]>]
+ [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-FunSettings <IMicrosoftGraphTeamFunSettings>]
  [-Group <IMicrosoftGraphGroup>] [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
- [-IncomingChannels <IMicrosoftGraphChannel1[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-IncomingChannels <IMicrosoftGraphChannel[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PrimaryChannel <IMicrosoftGraphChannel1>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
+ [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
  [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -31,22 +31,22 @@ Update-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-AllChannels
 
 ### Update
 ```
-Update-MgTeam -TeamId <String> -BodyParameter <IMicrosoftGraphTeam1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgTeam -TeamId <String> -BodyParameter <IMicrosoftGraphTeam> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllChannels <IMicrosoftGraphChannel1[]>] [-Channels <IMicrosoftGraphChannel1[]>] [-Classification <String>]
+ [-AllChannels <IMicrosoftGraphChannel[]>] [-Channels <IMicrosoftGraphChannel[]>] [-Classification <String>]
  [-CreatedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>]
  [-FunSettings <IMicrosoftGraphTeamFunSettings>] [-Group <IMicrosoftGraphGroup>]
  [-GuestSettings <IMicrosoftGraphTeamGuestSettings>] [-Id <String>]
- [-IncomingChannels <IMicrosoftGraphChannel1[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
+ [-IncomingChannels <IMicrosoftGraphChannel[]>] [-InstalledApps <IMicrosoftGraphTeamsAppInstallation[]>]
  [-InternalId <String>] [-IsArchived] [-MemberSettings <IMicrosoftGraphTeamMemberSettings>]
  [-Members <IMicrosoftGraphConversationMember[]>] [-MessagingSettings <IMicrosoftGraphTeamMessagingSettings>]
  [-Operations <IMicrosoftGraphTeamsAsyncOperation[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PrimaryChannel <IMicrosoftGraphChannel1>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
+ [-PrimaryChannel <IMicrosoftGraphChannel>] [-Schedule <IMicrosoftGraphSchedule>] [-Specialization <String>]
  [-Summary <IMicrosoftGraphTeamSummary>] [-Tags <IMicrosoftGraphTeamworkTag[]>] [-Template <Hashtable>]
  [-TenantId <String>] [-Visibility <String>] [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -54,7 +54,7 @@ Update-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
 
 ### UpdateViaIdentity
 ```
-Update-MgTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam1> [-PassThru] [-WhatIf]
+Update-MgTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
@@ -107,7 +107,7 @@ List of channels either hosted in or shared with the team (incoming channels).
 To construct, please use Get-Help -Online and see NOTES section for ALLCHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: IMicrosoftGraphChannel[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +123,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam1
+Type: IMicrosoftGraphTeam
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -139,7 +139,7 @@ The collection of channels and messages associated with the team.
 To construct, please use Get-Help -Online and see NOTES section for CHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: IMicrosoftGraphChannel[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +282,7 @@ List of channels shared with the team.
 To construct, please use Get-Help -Online and see NOTES section for INCOMINGCHANNELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1[]
+Type: IMicrosoftGraphChannel[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -455,7 +455,7 @@ channel
 To construct, please use Get-Help -Online and see NOTES section for PRIMARYCHANNEL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannel1
+Type: IMicrosoftGraphChannel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -642,7 +642,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeam
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 ## OUTPUTS
 

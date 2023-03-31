@@ -16,8 +16,8 @@ Create new navigation property to onlineMeetings for communications
 ### CreateExpanded2 (Default)
 ```
 New-MgCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>] [-AllowAttendeeToEnableCamera]
- [-AllowAttendeeToEnableMic] [-AllowParticipantsToChangeName] [-AllowTeamworkReactions]
- [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
+ [-AllowAttendeeToEnableMic] [-AllowMeetingChat <String>] [-AllowParticipantsToChangeName]
+ [-AllowTeamworkReactions] [-AllowedPresenters <String>] [-AlternativeRecordingInputFile <String>]
  [-AnonymizeIdentityForRoles <String[]>] [-AttendanceReports <IMicrosoftGraphMeetingAttendanceReport1[]>]
  [-AttendeeReportInputFile <String>] [-AudioConferencing <IMicrosoftGraphAudioConferencing>]
  [-BroadcastSettings <IMicrosoftGraphBroadcastMeetingSettings>] [-Capabilities <String[]>]
@@ -140,6 +140,21 @@ Accept wildcard characters: False
 
 ### -AllowedPresenters
 onlineMeetingPresenters
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded2
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowMeetingChat
+meetingChatMode
 
 ```yaml
 Type: String

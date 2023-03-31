@@ -31,6 +31,7 @@ New-MgEntitlementManagementAccessPackageAssignmentRequest
 New-MgEntitlementManagementAccessPackageAssignmentRequest [-AccessPackage <IMicrosoftGraphAccessPackage>]
  [-AccessPackageAssignment <IMicrosoftGraphAccessPackageAssignment1>] [-AdditionalProperties <Hashtable>]
  [-Answers <IMicrosoftGraphAccessPackageAnswer1[]>] [-CompletedDate <DateTime>] [-CreatedDateTime <DateTime>]
+ [-CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]
  [-CustomExtensionHandlerInstances <IMicrosoftGraphCustomExtensionHandlerInstance[]>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-IsValidationOnly] [-Justification <String>]
  [-RequestState <String>] [-RequestStatus <String>] [-RequestType <String>]
@@ -222,6 +223,22 @@ Read-only.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CustomExtensionCalloutInstances
+Information about all the custom extension calls that were made during the access package assignment request workflow.
+To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENSIONCALLOUTINSTANCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCustomExtensionCalloutInstance[]
 Parameter Sets: CreateExpanded
 Aliases:
 

@@ -123,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedAppOperationId
-key: id of managedAppOperation
+The unique identifier of managedAppOperation
 
 ```yaml
 Type: String
@@ -138,7 +138,7 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedAppRegistrationId
-key: id of managedAppRegistration
+The unique identifier of managedAppRegistration
 
 ```yaml
 Type: String

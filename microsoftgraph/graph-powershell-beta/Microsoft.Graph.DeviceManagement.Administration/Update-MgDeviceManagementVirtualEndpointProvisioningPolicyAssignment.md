@@ -16,8 +16,8 @@ Update the navigation property assignments in deviceManagement
 ```
 Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
  -CloudPcProvisioningPolicyAssignmentId <String> -CloudPcProvisioningPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Target <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AssignedUsers <IMicrosoftGraphUser[]>] [-Id <String>]
+ [-Target <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,8 +31,9 @@ Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
 ### UpdateViaIdentityExpanded
 ```
 Update-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
+ [-AssignedUsers <IMicrosoftGraphUser[]>] [-Id <String>] [-Target <Hashtable>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -55,6 +56,22 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AssignedUsers
+.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDUSERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphUser[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

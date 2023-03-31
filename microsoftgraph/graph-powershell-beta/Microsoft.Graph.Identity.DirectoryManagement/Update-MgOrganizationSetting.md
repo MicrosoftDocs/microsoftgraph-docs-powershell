@@ -19,8 +19,8 @@ Update-MgOrganizationSetting -OrganizationId <String> [-AdditionalProperties <Ha
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
- [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -36,8 +36,8 @@ Update-MgOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
  [-ItemInsights <IMicrosoftGraphInsightsSettings>]
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
- [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -217,6 +217,22 @@ To construct, please use Get-Help -Online and see NOTES section for PROFILECARDP
 
 ```yaml
 Type: IMicrosoftGraphProfileCardProperty[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Pronouns
+pronounsSettings
+To construct, please use Get-Help -Online and see NOTES section for PRONOUNS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphPronounsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

@@ -38,7 +38,7 @@ Remove-MgWindowsUpdatesDeployment -DeploymentId $deploymentId
 ## PARAMETERS
 
 ### -DeploymentId
-key: id of deployment
+The unique identifier of deployment
 
 ```yaml
 Type: String

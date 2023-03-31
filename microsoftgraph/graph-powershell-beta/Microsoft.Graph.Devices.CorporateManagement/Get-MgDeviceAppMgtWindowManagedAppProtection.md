@@ -198,7 +198,7 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsManagedAppProtectionId
-key: id of windowsManagedAppProtection
+The unique identifier of windowsManagedAppProtection
 
 ```yaml
 Type: String

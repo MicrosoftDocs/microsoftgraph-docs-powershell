@@ -20,7 +20,7 @@ Get-MgIdentityB2XUserFlowIdentityProvider -B2XIdentityUserFlowId <String> [-Expa
  [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### List1
+### List2
 ```
 Get-MgIdentityB2XUserFlowIdentityProvider -B2XIdentityUserFlowId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -60,7 +60,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -75,7 +75,7 @@ key: id of b2xIdentityUserFlow
 
 ```yaml
 Type: String
-Parameter Sets: List, List1, Get
+Parameter Sets: List, List2, Get
 Aliases:
 
 Required: True
@@ -91,7 +91,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases: CV
 
 Required: False
@@ -121,7 +121,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -167,7 +167,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -197,7 +197,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases:
 
 Required: False
@@ -212,7 +212,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases: OrderBy
 
 Required: False
@@ -227,7 +227,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases: Limit
 
 Required: False
@@ -242,7 +242,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, List1
+Parameter Sets: List, List2
 Aliases:
 
 Required: False

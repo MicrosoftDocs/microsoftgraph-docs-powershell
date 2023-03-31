@@ -16,7 +16,7 @@ Create new navigation property to associatedTeams for users
 ### CreateExpanded1 (Default)
 ```
 New-MgUserTeamworkAssociatedTeam -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -28,8 +28,8 @@ New-MgUserTeamworkAssociatedTeam -UserId <String> -BodyParameter <Hashtable> [-W
 ### CreateViaIdentityExpanded1
 ```
 New-MgUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam>] [-TenantId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Team <IMicrosoftGraphTeam1>] [-TenantId <String>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -139,7 +139,7 @@ team
 To construct, please use Get-Help -Online and see NOTES section for TEAM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeam
+Type: IMicrosoftGraphTeam1
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
