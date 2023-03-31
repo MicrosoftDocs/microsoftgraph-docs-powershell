@@ -1,0 +1,5 @@
+graph-powershell-1.0/Microsoft.Graph.Calendar/New-MgPlace.md
+graph-powershell-beta/Microsoft.Graph.Calendar/Get-MgPlace.md
+graph-powershell-beta/Microsoft.Graph.Calendar/New-MgPlace.md
+graph-powershell-beta/Microsoft.Graph.Identity.DirectoryManagement/Initialize-MgOrganizationService.md
+graph-powershell-beta/Microsoft.Graph.Users.Actions/Initialize-MgUserServicePlan.md
