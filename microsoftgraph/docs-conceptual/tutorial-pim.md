@@ -3,7 +3,7 @@ title: "Assign Azure AD roles in Privileged Identity Management using Microsoft 
 description: "Learn how to create eligible and active role assignments in Azure AD Privileged Identity Management using Microsoft Graph PowerShell"
 
 ms.topic: tutorial
-ms.date: 3/31/2022
+ms.date: 3/30/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -12,7 +12,7 @@ ms.reviewer: mandardalvi
 
 # Tutorial: Assign Azure AD roles in Privileged Identity Management using Microsoft Graph PowerShell
 
-In Azure Active Directory (Azure AD), a global administrator can make permanent Azure AD admin role assignments.
+In Azure Active Directory (Azure AD), a Global Administrator can make permanent Azure AD admin role assignments.
 
 The Azure AD Privileged Identity Management (PIM) service allows role administrators to make time-bound admin role assignments. Additionally, privileged role administrators can make users eligible for Azure AD admin roles. An eligible administrator can activate the role when they need the role, and the permissions expire once the eligible administrator is done.
 
@@ -26,13 +26,7 @@ To successfully complete this tutorial, make sure you have the required prerequi
 1. To use the Azure AD Privileged Identity Management, you must have one of the following licenses:
     - Azure AD Premium P2
     - Enterprise Mobility + Security (EMS) E5 license
-1. Privileged Identity Management is available in the beta version of Microsoft Graph PowerShell. Run the following command to set your profile to beta.
-
-      ```powershell
-      Select-MgProfile -Name 'beta'
-      ```
-
-1. Microsoft Graph PowerShell using a global administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
+1. Microsoft Graph PowerShell using a Global Administrator role and the appropriate permissions. For this tutorial, the `RoleManagement.ReadWrite.Directory` delegated permission is required. To set the permissions in Microsoft Graph PowerShell, run;
 
     ```powershell
     Connect-MgGraph -Scopes "RoleManagement.ReadWrite.Directory"
@@ -64,14 +58,14 @@ d29e358a-a443-4d83-98b3-499a5405bb5b Requestor1       Requestor1@Contoso.onmicro
 In PIM, there are two types of role assignments:
 
 - **Eligible role assignments** - The user doesn't have access to permissions defined for that role. They can potentially activate it to get access to all the permissions.
-- **Active role assignments** - When a role is active, the user has access to all permissions defined for that role for the defined duration.
+- **Active role assignments** - When a role is active, the user has access to all permissions defined for that role, for the defined duration.
 
 To create an eligible role assignment, you need the following values:
 
 |Value|Description|
 |-----|------|
 |**PrincipalId** | Identifier of the principal to which the assignment is being granted, for example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.|
-|**RoleDefinitionID** | Identifier of the UnifiedRoleDefinition the assignment is for. It's read only|
+|**RoleDefinitionID** | Identifier of the **UnifiedRoleDefinition** the assignment is for. It's read only|
 |**DirectoryScopeId** | Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.|
 |**Action** |The type of operation on the role assignment. The possible values are: </br>&#8226;`AdminAssign`: for administrators to assign roles to users or groups.</br>&#8226; `AdminRemove`: for administrators to remove users or groups from roles.</br>&#8226; `AdminUpdate`: for administrators to change existing role assignments.</br>&#8226; `AdminExtend`: for administrators to extend expiring assignments.</br>&#8226; `AdminRenew`: for administrators to renew expired assignments.</br>&#8226; `SelfActivate`: for users to activate their assignments.</br>&#8226; `SelfDeactivate`: for users to deactivate their active assignments. </br>&#8226; `SelfExtend`: for users to request to extend their expiring assignments. </br>&#8226; `SelfRenew`: for users to request to renew their expired assignments.|
 |**Justification** | A message provided by users and administrators when creating the request about why it's needed.|
@@ -94,7 +88,7 @@ $params = @{
    }
 
 New-MgRoleManagementDirectoryRoleEligibilityScheduleRequest -BodyParameter $params | 
-  Format-List Id, Status, Action, AppScopeId, DirectoryScopeId, RoleDefinitionId IsValidationOnly, Justification, PrincipalId, CompletedDateTime, CreatedDateTime
+  Format-List Id, Status, Action, AppScopeId, DirectoryScopeId, RoleDefinitionId, IsValidationOnly, Justification, PrincipalId, CompletedDateTime, CreatedDateTime
 ```
 
 ```Output
@@ -252,7 +246,7 @@ To deactivate an active role assignment, you need the following values:
 |Value|Description|
 |----|-----|
 |**PrincipalId** | Identifier of the principal to which the assignment is being granted, for example, a user or a group. For groups, they must be assignable to roles. That is, the **IsAssignableToRole** property of the group is set to `true`.|
-|**RoleDefinitionID** | Identifier of the UnifiedRoleDefinition the assignment is for. It's read only. UnifiedRoleDefinition is a collection of permissions listing the operations, such as read, write, and delete that can be performed by an RBAC provider, as part of Microsoft 365 RBAC role management.|
+|**RoleDefinitionID** | Identifier of the UnifiedRoleDefinition the assignment is for. It's read only. **UnifiedRoleDefinition** is a collection of permissions listing the operations, such as read, write, and delete that can be performed by an RBAC provider, as part of Microsoft 365 RBAC role management.|
 |**DirectoryScopeId** | Identifier of the directory object representing the scope of the assignment. Use `/` for tenant-wide scope. Use `AppScopeId` to limit the scope to an application only.|
 |**Action** | Set it to `SelfDeactivate`.|
 |**Justification** | A message provided by users and administrators when creating the request about why it's needed.|
@@ -328,3 +322,7 @@ CompletedDateTime :
 CreatedDateTime   : 3/31/2022 3:42:31 PM
 TargetScheduleId  :
 ```
+
+## See also
+
+- [Manage PIM policies using Microsoft Graph PowerShell](how-to-manage-pim-policies.md)
