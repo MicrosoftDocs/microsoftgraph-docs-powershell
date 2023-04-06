@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementcatalogaccesspackageassignmentpolicyquestion
@@ -284,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageQuestion>`: accessPackageQuestion
+BODYPARAMETER <IMicrosoftGraphAccessPackageQuestion>: accessPackageQuestion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsAnswerEditable <Boolean?>]`: Specifies whether the requestor is allowed to edit answers to questions for an assignment by posting an update to accessPackageAssignmentRequest.
@@ -295,7 +295,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageQuestion>`: accessPackageQuestion
   - `[Sequence <Int32?>]`: Relative position of this question when displaying a list of questions to the requestor.
   - `[Text <String>]`: The text of the question to show to the requestor.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: key: id of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: key: id of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: key: id of accessPackageAssignmentRequest
@@ -377,7 +377,7 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: key: id of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: key: versionNumber of workflowVersion
 
-LOCALIZATIONS <IMicrosoftGraphAccessPackageLocalizedText\[]>: The text of the question represented in a format for a specific locale.
+LOCALIZATIONS <IMicrosoftGraphAccessPackageLocalizedText[]>: The text of the question represented in a format for a specific locale.
   - `[LanguageCode <String>]`: The language code that text is in. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2. Required.
   - `[Text <String>]`: The question in the specific language. Required.
 

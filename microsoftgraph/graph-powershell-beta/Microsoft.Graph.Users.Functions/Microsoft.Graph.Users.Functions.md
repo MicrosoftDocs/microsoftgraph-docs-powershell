@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Functions
 Module Guid: ae4d97ce-584e-4ad3-ba83-509ba5695241
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions
@@ -39,6 +39,9 @@ The following table lists the differences between the **delta** function on even
 Invoke function delta
 
 ### [Get-MgUserChatMessageReplyDelta](Get-MgUserChatMessageReplyDelta.md)
+Invoke function delta
+
+### [Get-MgUserChatPermissionGrantDelta](Get-MgUserChatPermissionGrantDelta.md)
 Invoke function delta
 
 ### [Get-MgUserCloudPcConnectivityHistory](Get-MgUserCloudPcConnectivityHistory.md)

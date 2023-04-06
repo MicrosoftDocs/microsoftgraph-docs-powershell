@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
 Module Guid: ec060e8a-a328-428d-8349-7db0b54b021f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
@@ -189,6 +189,9 @@ A collection of permissions granted to apps for the chat.
 ### [Get-MgChatPermissionGrantById](Get-MgChatPermissionGrantById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgChatPermissionGrantDelta](Get-MgChatPermissionGrantDelta.md)
+Invoke function delta
 
 ### [Get-MgChatPermissionGrantMemberGroup](Get-MgChatPermissionGrantMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -462,6 +465,9 @@ A collection of permissions granted to apps to access the team.
 ### [Get-MgTeamPermissionGrantById](Get-MgTeamPermissionGrantById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgTeamPermissionGrantDelta](Get-MgTeamPermissionGrantDelta.md)
+Invoke function delta
 
 ### [Get-MgTeamPermissionGrantMemberGroup](Get-MgTeamPermissionGrantMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.

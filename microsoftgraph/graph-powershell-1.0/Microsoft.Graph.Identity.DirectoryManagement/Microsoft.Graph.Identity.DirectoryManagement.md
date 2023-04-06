@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: ee247273-b836-4a7b-b508-32f60c1c3958
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -128,6 +128,9 @@ Retrieve the properties and relationships of contract object.
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgContractDelta](Get-MgContractDelta.md)
+Invoke function delta
+
 ### [Get-MgContractMemberGroup](Get-MgContractMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -235,6 +238,9 @@ The following entities support extension properties:\n+ user\n+ group\n+ adminis
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgDirectoryDeletedItemDelta](Get-MgDirectoryDeletedItemDelta.md)
+Invoke function delta
+
 ### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -246,6 +252,9 @@ This function is transitive.
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+
+### [Get-MgDirectoryOnPremisSynchronization](Get-MgDirectoryOnPremisSynchronization.md)
+A container for on-premises directory synchronization functionalities that are available for the organization.
 
 ### [Get-MgDirectoryRole](Get-MgDirectoryRole.md)
 Retrieve the properties of a directoryRole object.
@@ -295,6 +304,9 @@ Retrieve the properties and relationships of a directoryroletemplate object.
 ### [Get-MgDirectoryRoleTemplateById](Get-MgDirectoryRoleTemplateById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -448,6 +460,9 @@ Create new navigation property to deletedItems for directory
 ### [New-MgDirectoryFederationConfiguration](New-MgDirectoryFederationConfiguration.md)
 Create new navigation property to federationConfigurations for directory
 
+### [New-MgDirectoryOnPremisSynchronization](New-MgDirectoryOnPremisSynchronization.md)
+Create new navigation property to onPremisesSynchronization for directory
+
 ### [New-MgDirectoryRole](New-MgDirectoryRole.md)
 Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
@@ -532,6 +547,9 @@ Delete navigation property deletedItems for directory
 
 ### [Remove-MgDirectoryFederationConfiguration](Remove-MgDirectoryFederationConfiguration.md)
 Delete navigation property federationConfigurations for directory
+
+### [Remove-MgDirectoryOnPremisSynchronization](Remove-MgDirectoryOnPremisSynchronization.md)
+Delete navigation property onPremisesSynchronization for directory
 
 ### [Remove-MgDirectoryRole](Remove-MgDirectoryRole.md)
 Delete entity from directoryRoles
@@ -730,6 +748,9 @@ Update the navigation property deletedItems in directory
 
 ### [Update-MgDirectoryFederationConfiguration](Update-MgDirectoryFederationConfiguration.md)
 Update the navigation property federationConfigurations in directory
+
+### [Update-MgDirectoryOnPremisSynchronization](Update-MgDirectoryOnPremisSynchronization.md)
+Update the navigation property onPremisesSynchronization in directory
 
 ### [Update-MgDirectoryRole](Update-MgDirectoryRole.md)
 Update entity in directoryRoles

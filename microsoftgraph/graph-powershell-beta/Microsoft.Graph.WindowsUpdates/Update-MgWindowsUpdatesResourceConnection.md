@@ -1,46 +1,43 @@
----
+﻿---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesresourceconnection
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatespolicyaudiencemember
 schema: 2.0.0
 ---
 
-# Update-MgWindowsUpdatesResourceConnection
+# Update-MgWindowsUpdatesPolicyAudienceMember
 
 ## SYNOPSIS
-Update the navigation property resourceConnections in admin
+Update the navigation property members in admin
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgWindowsUpdatesResourceConnection -ResourceConnectionId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgWindowsUpdatesPolicyAudienceMember -UpdatableAssetId <String> -UpdatePolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgWindowsUpdatesResourceConnection -ResourceConnectionId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesResourceConnection> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgWindowsUpdatesPolicyAudienceMember -UpdatableAssetId <String> -UpdatePolicyId <String>
+ -BodyParameter <Hashtable> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesResourceConnection> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity> -BodyParameter <Hashtable>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property resourceConnections in admin
+Update the navigation property members in admin
 
 ## EXAMPLES
 
@@ -69,11 +66,10 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-resourceConnection
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+updatableAsset
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesResourceConnection
+Type: Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -131,8 +127,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceConnectionId
-The unique identifier of resourceConnection
+### -UpdatableAssetId
+The unique identifier of updatableAsset
 
 ```yaml
 Type: String
@@ -146,15 +142,15 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -State
-resourceConnectionState
+### -UpdatePolicyId
+The unique identifier of updatePolicy
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -197,8 +193,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
 ### System.Boolean
@@ -207,5 +203,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesresourceconnection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesresourceconnection)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatespolicyaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatespolicyaudiencemember)
 

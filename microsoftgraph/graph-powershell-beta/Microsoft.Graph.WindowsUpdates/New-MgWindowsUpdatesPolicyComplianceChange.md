@@ -1,46 +1,43 @@
----
+﻿---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicycompliancechange
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudiencemember
 schema: 2.0.0
 ---
 
-# New-MgWindowsUpdatesPolicyComplianceChange
+# New-MgWindowsUpdatesPolicyAudienceMember
 
 ## SYNOPSIS
-Create a new contentApproval object.
+Create new navigation property to members for admin
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked] [-RevokedDateTime <DateTime>]
- [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesPolicyAudienceMember -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesPolicyAudienceMember -UpdatePolicyId <String> -BodyParameter <Hashtable> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked]
- [-RevokedDateTime <DateTime>] [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity> -BodyParameter <Hashtable>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a new contentApproval object.
+Create new navigation property to members for admin
 
 ## EXAMPLES
 
@@ -69,11 +66,10 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-complianceChange
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+updatableAsset
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesComplianceChange
+Type: Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -81,21 +77,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time when a compliance change was created.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -128,53 +109,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -IsRevoked
-True indicates that a compliance change is revoked, preventing further application.
-Revoking a compliance change is a final action.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -RevokedDateTime
-The date and time when the compliance change was revoked.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UpdatePolicy
-updatePolicy
-To construct, please use Get-Help -Online and see NOTES section for UPDATEPOLICY properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatePolicy
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -229,15 +163,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### System.Collections.Hashtable
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
+### System.String
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicycompliancechange](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicycompliancechange)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudiencemember)
 

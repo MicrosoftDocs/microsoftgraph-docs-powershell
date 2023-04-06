@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
 Module Guid: d9036b88-60a8-4fcd-9635-0b024f35b22f
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
@@ -67,6 +67,12 @@ Invoke action checkMemberObjects
 
 ### [Get-MgApplication](Get-MgApplication.md)
 Get the properties and relationships of an application object.
+
+### [Get-MgApplicationAppManagementPolicy](Get-MgApplicationAppManagementPolicy.md)
+Get appManagementPolicies from applications
+
+### [Get-MgApplicationAppManagementPolicyByRef](Get-MgApplicationAppManagementPolicyByRef.md)
+Get ref of appManagementPolicies from applications
 
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
 Return the directory objects specified in a list of IDs.
@@ -140,6 +146,9 @@ Supports $expand.
 
 ### [Get-MgServicePrincipal](Get-MgServicePrincipal.md)
 Retrieve the properties and relationships of a servicePrincipal object.
+
+### [Get-MgServicePrincipalAppManagementPolicy](Get-MgServicePrincipalAppManagementPolicy.md)
+Get appManagementPolicies from servicePrincipals
 
 ### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
 App role assignments for this app or service, granted to users, groups, and other service principals.
@@ -243,6 +252,9 @@ Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2
 ### [New-MgApplication](New-MgApplication.md)
 Create a new application object.
 
+### [New-MgApplicationAppManagementPolicyByRef](New-MgApplicationAppManagementPolicyByRef.md)
+Create new navigation property ref to appManagementPolicies for applications
+
 ### [New-MgApplicationExtensionProperty](New-MgApplicationExtensionProperty.md)
 Create a new directory extension definition, represented by an extensionProperty object.
 
@@ -308,6 +320,9 @@ To grant an app role assignment to a user, you need three identifiers:
 Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
+
+### [Remove-MgApplicationAppManagementPolicyByRef](Remove-MgApplicationAppManagementPolicyByRef.md)
+Delete ref of navigation property appManagementPolicies for applications
 
 ### [Remove-MgApplication](Remove-MgApplication.md)
 Delete entity from applications

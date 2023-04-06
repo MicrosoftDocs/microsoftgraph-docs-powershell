@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: c4469390-e5d2-44ba-be0b-37cf80a60894
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
@@ -122,6 +122,12 @@ The policy that controls the idle time out for web sessions for applications.
 ### [Get-MgPolicyAdminConsentRequestPolicy](Get-MgPolicyAdminConsentRequestPolicy.md)
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
+### [Get-MgPolicyAppManagementPolicy](Get-MgPolicyAppManagementPolicy.md)
+Get appManagementPolicies from policies
+
+### [Get-MgPolicyAppManagementPolicyApplyTo](Get-MgPolicyAppManagementPolicyApplyTo.md)
+Get appliesTo from policies
+
 ### [Get-MgPolicyAuthenticationFlowPolicy](Get-MgPolicyAuthenticationFlowPolicy.md)
 Read the properties and relationships of an authenticationFlowsPolicy object.
 
@@ -148,6 +154,9 @@ This default configuration may be the service default assigned by Azure AD (**is
 ### [Get-MgPolicyCrossTenantAccessPolicyPartner](Get-MgPolicyCrossTenantAccessPolicyPartner.md)
 Defines partner-specific configurations for external Azure Active Directory organizations.
 
+### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
+Get defaultAppManagementPolicy from policies
+
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
 
@@ -166,6 +175,9 @@ Some common uses for this function are to:
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToByRef](Get-MgPolicyFeatureRolloutPolicyApplyToByRef.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
+
+### [Get-MgPolicyFeatureRolloutPolicyApplyToDelta](Get-MgPolicyFeatureRolloutPolicyApplyToDelta.md)
+Invoke function delta
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 The policy to control Azure AD authentication behavior for federated users.
@@ -346,6 +358,9 @@ A delegated permission grant authorizes a client service principal (representing
 ### [New-MgPolicyActivityBasedTimeoutPolicy](New-MgPolicyActivityBasedTimeoutPolicy.md)
 Create a new activityBasedTimeoutPolicy object.
 
+### [New-MgPolicyAppManagementPolicy](New-MgPolicyAppManagementPolicy.md)
+Create new navigation property to appManagementPolicies for policies
+
 ### [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Create new navigation property to authenticationMethodConfigurations for policies
 
@@ -493,6 +508,9 @@ Delete navigation property activityBasedTimeoutPolicies for policies
 ### [Remove-MgPolicyAdminConsentRequestPolicy](Remove-MgPolicyAdminConsentRequestPolicy.md)
 Delete navigation property adminConsentRequestPolicy for policies
 
+### [Remove-MgPolicyAppManagementPolicy](Remove-MgPolicyAppManagementPolicy.md)
+Delete navigation property appManagementPolicies for policies
+
 ### [Remove-MgPolicyAuthenticationFlowPolicy](Remove-MgPolicyAuthenticationFlowPolicy.md)
 Delete navigation property authenticationFlowsPolicy for policies
 
@@ -516,6 +534,9 @@ Delete navigation property default for policies
 
 ### [Remove-MgPolicyCrossTenantAccessPolicyPartner](Remove-MgPolicyCrossTenantAccessPolicyPartner.md)
 Delete navigation property partners for policies
+
+### [Remove-MgPolicyDefaultAppManagementPolicy](Remove-MgPolicyDefaultAppManagementPolicy.md)
+Delete navigation property defaultAppManagementPolicy for policies
 
 ### [Remove-MgPolicyFeatureRolloutPolicy](Remove-MgPolicyFeatureRolloutPolicy.md)
 Delete navigation property featureRolloutPolicies for policies
@@ -677,6 +698,9 @@ Update the navigation property activityBasedTimeoutPolicies in policies
 ### [Update-MgPolicyAdminConsentRequestPolicy](Update-MgPolicyAdminConsentRequestPolicy.md)
 Update the properties of an adminConsentRequestPolicy object.
 
+### [Update-MgPolicyAppManagementPolicy](Update-MgPolicyAppManagementPolicy.md)
+Update the navigation property appManagementPolicies in policies
+
 ### [Update-MgPolicyAuthenticationFlowPolicy](Update-MgPolicyAuthenticationFlowPolicy.md)
 Update the **selfServiceSignUp** property of an authenticationFlowsPolicy object.
 The properties **id**, **type**, and **description** cannot be modified.
@@ -701,6 +725,9 @@ Update the default configuration of a cross-tenant access policy.
 
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
 Update the navigation property partners in policies
+
+### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
+Update the navigation property defaultAppManagementPolicy in policies
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
 Update the navigation property featureRolloutPolicies in policies

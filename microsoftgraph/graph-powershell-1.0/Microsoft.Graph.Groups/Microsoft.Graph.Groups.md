@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
 Module Guid: ff835420-1489-4281-8bc7-9a7bd0cb7771
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
@@ -305,6 +305,9 @@ The following entities support extension properties:\n+ user\n+ group\n+ adminis
 ### [Get-MgGroupPermissionGrantById](Get-MgGroupPermissionGrantById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgGroupPermissionGrantDelta](Get-MgGroupPermissionGrantDelta.md)
+Invoke function delta
 
 ### [Get-MgGroupPermissionGrantMemberGroup](Get-MgGroupPermissionGrantMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.

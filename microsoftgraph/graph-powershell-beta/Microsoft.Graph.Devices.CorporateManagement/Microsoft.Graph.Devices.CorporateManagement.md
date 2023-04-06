@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 Module Guid: 7c96d5fb-e0c2-4c96-b262-227030bac7ff
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
@@ -323,6 +323,9 @@ Create new navigation property to deviceCompliancePolicyStates for users
 ### [New-MgUserManagedDeviceConfigurationState](New-MgUserManagedDeviceConfigurationState.md)
 Create new navigation property to deviceConfigurationStates for users
 
+### [New-MgUserManagedDeviceHealthScriptState](New-MgUserManagedDeviceHealthScriptState.md)
+Create new navigation property to deviceHealthScriptStates for users
+
 ### [New-MgUserManagedDeviceLogCollectionResponse](New-MgUserManagedDeviceLogCollectionResponse.md)
 Create new navigation property to logCollectionRequests for users
 
@@ -568,6 +571,9 @@ Delete navigation property deviceCompliancePolicyStates for users
 
 ### [Remove-MgUserManagedDeviceConfigurationState](Remove-MgUserManagedDeviceConfigurationState.md)
 Delete navigation property deviceConfigurationStates for users
+
+### [Remove-MgUserManagedDeviceHealthScriptState](Remove-MgUserManagedDeviceHealthScriptState.md)
+Delete navigation property deviceHealthScriptStates for users
 
 ### [Remove-MgUserManagedDeviceLogCollectionResponse](Remove-MgUserManagedDeviceLogCollectionResponse.md)
 Delete navigation property logCollectionRequests for users
@@ -949,6 +955,9 @@ Update the navigation property deviceCompliancePolicyStates in users
 
 ### [Update-MgUserManagedDeviceConfigurationState](Update-MgUserManagedDeviceConfigurationState.md)
 Update the navigation property deviceConfigurationStates in users
+
+### [Update-MgUserManagedDeviceHealthScriptState](Update-MgUserManagedDeviceHealthScriptState.md)
+Update the navigation property deviceHealthScriptStates in users
 
 ### [Update-MgUserManagedDeviceLogCollectionResponse](Update-MgUserManagedDeviceLogCollectionResponse.md)
 Update the navigation property logCollectionRequests in users

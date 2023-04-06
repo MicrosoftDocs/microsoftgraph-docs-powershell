@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: ee247273-b836-4a7b-b508-32f60c1c3958
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
@@ -214,6 +214,9 @@ Retrieve the properties and relationships of contract object.
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgContractDelta](Get-MgContractDelta.md)
+Invoke function delta
+
 ### [Get-MgContractMemberGroup](Get-MgContractMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -351,6 +354,9 @@ Get deletedItems from directory
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgDirectoryDeletedItemDelta](Get-MgDirectoryDeletedItemDelta.md)
+Invoke function delta
+
 ### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -375,6 +381,9 @@ Some common uses for this function are to:
 ### [Get-MgDirectoryFeatureRolloutPolicyApplyToByRef](Get-MgDirectoryFeatureRolloutPolicyApplyToByRef.md)
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
+
+### [Get-MgDirectoryFeatureRolloutPolicyApplyToDelta](Get-MgDirectoryFeatureRolloutPolicyApplyToDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject](Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject.md)
 Invoke action getUserOwnedObjects
@@ -446,6 +455,9 @@ Retrieve the properties and relationships of a directoryroletemplate object.
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
+Invoke function delta
+
 ### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -469,6 +481,9 @@ This operation allows retrieval of the properties of the **directorySettingTempl
 ### [Get-MgDirectorySettingTemplateById](Get-MgDirectorySettingTemplateById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgDirectorySettingTemplateDelta](Get-MgDirectorySettingTemplateDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectorySettingTemplateMemberGroup](Get-MgDirectorySettingTemplateMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -626,6 +641,10 @@ To learn how to customize privacy for people insights in an organization, see Cu
 ### [Get-MgOrganizationSettingProfileCardProperty](Get-MgOrganizationSettingProfileCardProperty.md)
 Contains a collection of the properties an administrator has defined as visible on the Microsoft 365 profile card.
 Get organization settings returns the properties configured for profile cards for the organization.
+
+### [Get-MgOrganizationSettingPronoun](Get-MgOrganizationSettingPronoun.md)
+Get the properties of the pronounsSettings resource for an organization.
+For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ### [Get-MgOrganizationUserOwnedObject](Get-MgOrganizationUserOwnedObject.md)
 Invoke action getUserOwnedObjects
@@ -997,6 +1016,9 @@ Delete navigation property peopleInsights for organization
 ### [Remove-MgOrganizationSettingProfileCardProperty](Remove-MgOrganizationSettingProfileCardProperty.md)
 Delete navigation property profileCardProperties for organization
 
+### [Remove-MgOrganizationSettingPronoun](Remove-MgOrganizationSettingPronoun.md)
+Delete navigation property pronouns for organization
+
 ### [Remove-MgSubscribedSku](Remove-MgSubscribedSku.md)
 Delete entity from subscribedSkus
 
@@ -1344,6 +1366,10 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 
 ### [Update-MgOrganizationSettingProfileCardProperty](Update-MgOrganizationSettingProfileCardProperty.md)
 Update the navigation property profileCardProperties in organization
+
+### [Update-MgOrganizationSettingPronoun](Update-MgOrganizationSettingPronoun.md)
+Update the properties of a pronounsSettings in an organization.
+For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ### [Update-MgSubscribedSku](Update-MgSubscribedSku.md)
 Update entity in subscribedSkus

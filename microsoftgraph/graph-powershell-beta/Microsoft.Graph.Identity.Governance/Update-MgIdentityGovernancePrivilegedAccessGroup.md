@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgidentitygovernanceprivilegedaccessgroup
@@ -244,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance\[]>: .
+ASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance[]>: .
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1201,7 +1201,7 @@ ASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSched
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4880,7 +4880,7 @@ ASSIGNMENTSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSched
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
   - `[PrincipalId <String>]`: 
 
-ASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleRequest\[]>: .
+ASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleRequest[]>: .
   - `[Action <String>]`: scheduleRequestActions
   - `[IsValidationOnly <Boolean?>]`: 
   - `[Justification <String>]`: 
@@ -5859,7 +5859,7 @@ ASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedu
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9537,7 +9537,7 @@ ASSIGNMENTSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedu
   - `[TargetSchedule <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule>]`: privilegedAccessGroupEligibilitySchedule
   - `[TargetScheduleId <String>]`: 
 
-ASSIGNMENTSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedule\[]>: .
+ASSIGNMENTSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedule[]>: .
   - `[CreatedDateTime <DateTime?>]`: 
   - `[CreatedUsing <String>]`: 
   - `[ModifiedDateTime <DateTime?>]`: 
@@ -10507,7 +10507,7 @@ ASSIGNMENTSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedule\[]>:
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14185,7 +14185,7 @@ ASSIGNMENTSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupAssignmentSchedule\[]>:
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
   - `[PrincipalId <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedAccessGroup>`: privilegedAccessGroup
+BODYPARAMETER <IMicrosoftGraphPrivilegedAccessGroup>: privilegedAccessGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignmentScheduleInstances <IMicrosoftGraphPrivilegedAccessGroupAssignmentScheduleInstance[]>]`: 
@@ -15145,7 +15145,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccessGroup>`: privilegedAccessGroup
                 - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
                 - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
                 - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -18906,7 +18906,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccessGroup>`: privilegedAccessGroup
     - `[TargetScheduleId <String>]`: 
   - `[EligibilitySchedules <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule[]>]`: 
 
-ELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance\[]>: .
+ELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleInstance[]>: .
   - `[EndDateTime <DateTime?>]`: 
   - `[StartDateTime <DateTime?>]`: 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -19857,7 +19857,7 @@ ELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupEligibilitySch
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -23529,7 +23529,7 @@ ELIGIBILITYSCHEDULEINSTANCES <IMicrosoftGraphPrivilegedAccessGroupEligibilitySch
   - `[Principal <IMicrosoftGraphDirectoryObject>]`: directoryObject
   - `[PrincipalId <String>]`: 
 
-ELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest\[]>: .
+ELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupEligibilityScheduleRequest[]>: .
   - `[Action <String>]`: scheduleRequestActions
   - `[IsValidationOnly <Boolean?>]`: 
   - `[Justification <String>]`: 
@@ -24499,7 +24499,7 @@ ELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupEligibilitySche
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -28185,7 +28185,7 @@ ELIGIBILITYSCHEDULEREQUESTS <IMicrosoftGraphPrivilegedAccessGroupEligibilitySche
     - `[PrincipalId <String>]`: 
   - `[TargetScheduleId <String>]`: 
 
-ELIGIBILITYSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule\[]>: .
+ELIGIBILITYSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule[]>: .
   - `[CreatedDateTime <DateTime?>]`: 
   - `[CreatedUsing <String>]`: 
   - `[ModifiedDateTime <DateTime?>]`: 
@@ -29146,7 +29146,7 @@ ELIGIBILITYSCHEDULES <IMicrosoftGraphPrivilegedAccessGroupEligibilitySchedule\[]
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.

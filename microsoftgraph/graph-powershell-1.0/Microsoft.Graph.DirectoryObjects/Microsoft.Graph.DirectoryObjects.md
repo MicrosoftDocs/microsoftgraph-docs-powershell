@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.DirectoryObjects
 Module Guid: df9d5e6f-3d64-4db1-8da4-9cf0ee966bdd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects
@@ -31,6 +31,9 @@ The following entities support extension properties:\n+ user\n+ group\n+ adminis
 ### [Get-MgDirectoryObjectById](Get-MgDirectoryObjectById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+### [Get-MgDirectoryObjectDelta](Get-MgDirectoryObjectDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectoryObjectMemberGroup](Get-MgDirectoryObjectMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.

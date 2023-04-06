@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsiteinformationprotectionpolicylabel
@@ -297,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInformationProtectionLabel>`: informationProtectionLabel
+BODYPARAMETER <IMicrosoftGraphInformationProtectionLabel>: informationProtectionLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Color <String>]`: The color that the UI should display for the label, if configured.
@@ -317,7 +317,7 @@ BODYPARAMETER `<IMicrosoftGraphInformationProtectionLabel>`: informationProtecti
   - `[Sensitivity <Int32?>]`: The sensitivity value of the label, where lower is less sensitive.
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
@@ -364,7 +364,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-PARENT `<IMicrosoftGraphParentLabelDetails>`: parentLabelDetails
+PARENT <IMicrosoftGraphParentLabelDetails>: parentLabelDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Color <String>]`: The color that the user interface should display for the label, if configured.
   - `[Description <String>]`: The admin-defined description for the label.

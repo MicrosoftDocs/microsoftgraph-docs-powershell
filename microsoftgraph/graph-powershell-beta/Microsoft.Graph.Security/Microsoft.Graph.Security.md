@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 81b10cc5-55bd-4d74-b961-37560f368cdf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
@@ -229,6 +229,12 @@ Get secureScoreControlProfiles from security
 
 ### [Get-MgSecuritySubjectRightsRequest](Get-MgSecuritySubjectRightsRequest.md)
 Get subjectRightsRequests from security
+
+### [Get-MgSecuritySubjectRightsRequestApprover](Get-MgSecuritySubjectRightsRequestApprover.md)
+Get approvers from security
+
+### [Get-MgSecuritySubjectRightsRequestCollaborator](Get-MgSecuritySubjectRightsRequestCollaborator.md)
+Get collaborators from security
 
 ### [Get-MgSecuritySubjectRightsRequestFinalAttachment](Get-MgSecuritySubjectRightsRequestFinalAttachment.md)
 Invoke function getFinalAttachment

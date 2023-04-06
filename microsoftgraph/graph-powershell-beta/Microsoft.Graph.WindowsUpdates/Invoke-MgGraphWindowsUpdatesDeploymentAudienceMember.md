@@ -1,47 +1,47 @@
----
+﻿---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mggraphwindowsupdatesdeploymentaudiencemember
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgenrollwindowsupdatespolicyaudiencememberassetbyid
 schema: 2.0.0
 ---
 
-# Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember
+# Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById
 
 ## SYNOPSIS
-Invoke action unenrollAssetsById
+Invoke action enrollAssetsById
 
 ## SYNTAX
 
-### GraphExpanded (Default)
+### EnrollExpanded (Default)
 ```
-Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-MemberEntityType <String>] [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Graph
-```
-Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember -DeploymentId <String>
- -BodyParameter <IPaths1T38YsrAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GraphViaIdentityExpanded
-```
-Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
+Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById -UpdatePolicyId <String>
  [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-UpdateCategory <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### GraphViaIdentity
+### Enroll
 ```
-Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPaths1T38YsrAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
+Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById -UpdatePolicyId <String>
+ -BodyParameter <IPaths1CrxilqAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EnrollViaIdentityExpanded
+```
+Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-UpdateCategory <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EnrollViaIdentity
+```
+Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPaths1CrxilqAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action unenrollAssetsById
+Invoke action enrollAssetsById
 
 ## EXAMPLES
 
@@ -59,7 +59,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Parameter Sets: EnrollExpanded, EnrollViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -74,8 +74,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1T38YsrAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Graph, GraphViaIdentity
+Type: IPaths1CrxilqAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Enroll, EnrollViaIdentity
 Aliases:
 
 Required: True
@@ -85,27 +85,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -DeploymentId
-The unique identifier of deployment
-
-```yaml
-Type: String
-Parameter Sets: GraphExpanded, Graph
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Ids
 .
 
 ```yaml
 Type: String[]
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Parameter Sets: EnrollExpanded, EnrollViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -121,7 +106,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IWindowsUpdatesIdentity
-Parameter Sets: GraphViaIdentityExpanded, GraphViaIdentity
+Parameter Sets: EnrollViaIdentityExpanded, EnrollViaIdentity
 Aliases:
 
 Required: True
@@ -136,7 +121,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Parameter Sets: EnrollExpanded, EnrollViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -166,10 +151,25 @@ updateCategory
 
 ```yaml
 Type: String
-Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
+Parameter Sets: EnrollExpanded, EnrollViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpdatePolicyId
+The unique identifier of updatePolicy
+
+```yaml
+Type: String
+Parameter Sets: EnrollExpanded, Enroll
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -212,7 +212,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1T38YsrAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsbyidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPaths1CrxilqAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesEnrollassetsbyidPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -222,5 +222,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mggraphwindowsupdatesdeploymentaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mggraphwindowsupdatesdeploymentaudiencemember)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgenrollwindowsupdatespolicyaudiencememberassetbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgenrollwindowsupdatespolicyaudiencememberassetbyid)
 
