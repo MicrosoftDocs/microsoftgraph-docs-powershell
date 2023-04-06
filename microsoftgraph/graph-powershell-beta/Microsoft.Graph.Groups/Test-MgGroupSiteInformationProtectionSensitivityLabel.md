@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupsiteinformationprotectionsensitivitylabel
@@ -208,7 +208,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsSgpj29GroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsSgpj29GroupsGroupIdSitesSiteIdInformationprotectionSensitivitylabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -222,12 +222,12 @@ BODYPARAMETER <IPathsSgpj29GroupsGroupIdSitesSiteIdInformationprotectionSensitiv
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 
 
-CURRENTLABEL <IMicrosoftGraphCurrentLabel>: currentLabel
+CURRENTLABEL `<IMicrosoftGraphCurrentLabel>`: currentLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationMode <String>]`: applicationMode
   - `[Id <String>]`: 
 
-DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>: .
+DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType\[]>: .
   - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute[]>]`: 
     - `[Confidence <Int32?>]`: 
     - `[Count <Int32?>]`: 
@@ -235,7 +235,7 @@ DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>: .
   - `[Count <Int32?>]`: 
   - `[Id <String>]`: 
 
-INPUTOBJECT <IGroupsIdentity>: Identity Parameter
+INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: key: id of attachment
   - `[ContentTypeId <String>]`: key: id of contentType
   - `[ConversationId <String>]`: key: id of conversation
