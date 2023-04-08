@@ -180,9 +180,14 @@ function Get-ExternalDocs-Url {
                 }else{
                     #Add report for missing external docs url 
                     #Version UriPath Command #Module
-                    $MissingMetaData = "$MissingMsProdHeaderPath\$Module\$Module.csv"
+                    $Folder = "$MissingMsProdHeaderPath\$Module"
                     #Create folder if it doesn't exist
-                    if (-not (Test-Path $Folder)) {
+					if (-not (Test-Path $Folder)) {
+                        New-Item -ItemType Directory -Force -Path $Folder
+                    }
+                    #Create file if it doesn't exist
+                    $MissingMetaData = "$Folder\$Module.csv"
+                    if (-not (Test-Path $MissingMetaData)) {
                         "Graph profile, Command, UriPath" | Out-File -FilePath  $MissingMetaData -Encoding ASCII
                     }
 
