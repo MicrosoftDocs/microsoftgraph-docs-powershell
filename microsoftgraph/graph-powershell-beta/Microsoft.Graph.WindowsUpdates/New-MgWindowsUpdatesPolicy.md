@@ -1,35 +1,47 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicy
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudiencememberasset
 schema: 2.0.0
 ---
 
-# New-MgWindowsUpdatesPolicy
+# Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset
 
 ## SYNOPSIS
-Create a new updatePolicy object.
+Invoke action unenrollAssets
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### UnenrollExpanded (Default)
 ```
-New-MgWindowsUpdatesPolicy [-AdditionalProperties <Hashtable>]
- [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>]
- [-ComplianceChangeRules <IMicrosoftGraphWindowsUpdatesComplianceChangeRule[]>]
- [-ComplianceChanges <IMicrosoftGraphWindowsUpdatesComplianceChange[]>] [-CreatedDateTime <DateTime>]
- [-DeploymentSettings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>] [-Id <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -UpdatePolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Unenroll
 ```
-New-MgWindowsUpdatesPolicy -BodyParameter <IMicrosoftGraphWindowsUpdatesUpdatePolicy> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -UpdatePolicyId <String>
+ -BodyParameter <IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UnenrollViaIdentityExpanded
+```
+Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UnenrollViaIdentity
+```
+Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a new updatePolicy object.
+Invoke action unenrollAssets
 
 ## EXAMPLES
 
@@ -47,7 +59,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: UnenrollExpanded, UnenrollViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -57,13 +69,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Audience
-deploymentAudience
-To construct, please use Get-Help -Online and see NOTES section for AUDIENCE properties and create a hash table.
+### -Assets
+.
+To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesDeploymentAudience
-Parameter Sets: CreateExpanded
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UnenrollExpanded, UnenrollViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -74,12 +86,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-updatePolicy
+.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatePolicy
-Parameter Sets: Create
+Type: IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Unenroll, UnenrollViaIdentity
 Aliases:
 
 Required: True
@@ -89,81 +101,61 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ComplianceChangeRules
-Rules for governing the automatic creation of compliance changes.
-To construct, please use Get-Help -Online and see NOTES section for COMPLIANCECHANGERULES properties and create a hash table.
+### -InputObject
+Identity Parameter
+To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesComplianceChangeRule[]
-Parameter Sets: CreateExpanded
+Type: IWindowsUpdatesIdentity
+Parameter Sets: UnenrollViaIdentityExpanded, UnenrollViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PassThru
+Returns true when the command succeeds
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: None
+Default value: False
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ComplianceChanges
-Compliance changes like content approvals which result in the automatic creation of deployments using the audience and deploymentSettings of the policy.
-To construct, please use Get-Help -Online and see NOTES section for COMPLIANCECHANGES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsUpdatesComplianceChange[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time when the update policy was created.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeploymentSettings
-deploymentSettings
-To construct, please use Get-Help -Online and see NOTES section for DEPLOYMENTSETTINGS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsUpdatesDeploymentSettings
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-The unique identifier for an entity.
-Read-only.
+### -UpdateCategory
+updateCategory
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: UnenrollExpanded, UnenrollViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpdatePolicyId
+The unique identifier of updatePolicy
+
+```yaml
+Type: String
+Parameter Sets: UnenrollExpanded, Unenroll
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -206,14 +198,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatePolicy
+### Microsoft.Graph.PowerShell.Models.IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatePolicy
+### System.Boolean
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicy)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudiencememberasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudiencememberasset)
 

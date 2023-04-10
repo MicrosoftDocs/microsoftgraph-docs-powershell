@@ -12,18 +12,18 @@ Represents an attack simulation training campaign in a tenant.
 
 ## SYNTAX
 
-### Get3 (Default)
+### Get (Default)
 ```
 Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### Get
+### Get3
 ```
 Get-MgSecurityAttackSimulation -SimulationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -119,7 +119,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -179,7 +179,7 @@ key: id of simulation
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get3
 Aliases:
 
 Required: True

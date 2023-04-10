@@ -95,6 +95,9 @@ Invoke function getRemediationSummary
 ### [Get-MgDeviceManagementEffectivePermission](Get-MgDeviceManagementEffectivePermission.md)
 Invoke function getEffectivePermissions
 
+### [Get-MgDeviceManagementIntentCustomizedSetting](Get-MgDeviceManagementIntentCustomizedSetting.md)
+Invoke function getCustomizedSettings
+
 ### [Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult](Get-MgDeviceManagementManagedDeviceCloudPcRemoteActionResult.md)
 Invoke function getCloudPcRemoteActionResults
 

@@ -281,6 +281,9 @@ Some common uses for this function are to:
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
+### [Get-MgPolicyFeatureRolloutPolicyApplyToDelta](Get-MgPolicyFeatureRolloutPolicyApplyToDelta.md)
+Invoke function delta
+
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject](Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject.md)
 Invoke action getUserOwnedObjects
 

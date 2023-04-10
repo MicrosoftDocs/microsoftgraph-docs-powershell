@@ -17,6 +17,12 @@ Invoke action addApps
 ### [Add-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile](Add-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile.md)
 Invoke action addLanguageFiles
 
+### [Add-MgDeviceManagementVirtualEndpointProvisioningPolicy](Add-MgDeviceManagementVirtualEndpointProvisioningPolicy.md)
+Invoke action apply
+
+### [Add-MgDeviceManagementVirtualEndpointProvisioningPolicyConfig](Add-MgDeviceManagementVirtualEndpointProvisioningPolicyConfig.md)
+Invoke action applyConfig
+
 ### [Approve-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](Approve-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp.md)
 Invoke action approveApps
 
@@ -216,6 +222,15 @@ Invoke action getDeviceManagementIntentSettingsReport
 
 ### [Get-MgDeviceManagementReportDeviceNonComplianceReport](Get-MgDeviceManagementReportDeviceNonComplianceReport.md)
 Invoke action getDeviceNonComplianceReport
+
+### [Get-MgDeviceManagementReportDevicePolicyComplianceReport](Get-MgDeviceManagementReportDevicePolicyComplianceReport.md)
+Invoke action getDevicePoliciesComplianceReport
+
+### [Get-MgDeviceManagementReportDevicePolicySettingComplianceReport](Get-MgDeviceManagementReportDevicePolicySettingComplianceReport.md)
+Invoke action getDevicePolicySettingsComplianceReport
+
+### [Get-MgDeviceManagementReportDeviceStatusBySettingReport](Get-MgDeviceManagementReportDeviceStatusBySettingReport.md)
+Invoke action getDevicesStatusBySettingReport
 
 ### [Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport](Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport.md)
 Invoke action getDevicesWithoutCompliancePolicyReport
@@ -528,11 +543,17 @@ Rotate BitLockerKeys
 ### [Invoke-MgRotateDeviceManagementComanagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementComanagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
 
+### [Invoke-MgRotateDeviceManagementComanagedDeviceLocalAdminPassword](Invoke-MgRotateDeviceManagementComanagedDeviceLocalAdminPassword.md)
+Initiates a manual rotation for the local admin password on the device
+
 ### [Invoke-MgRotateDeviceManagementManagedDeviceBitLockerKey](Invoke-MgRotateDeviceManagementManagedDeviceBitLockerKey.md)
 Rotate BitLockerKeys
 
 ### [Invoke-MgRotateDeviceManagementManagedDeviceFileVaultKey](Invoke-MgRotateDeviceManagementManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
+
+### [Invoke-MgRotateDeviceManagementManagedDeviceLocalAdminPassword](Invoke-MgRotateDeviceManagementManagedDeviceLocalAdminPassword.md)
+Initiates a manual rotation for the local admin password on the device
 
 ### [Invoke-MgScanDeviceManagementComanagedDeviceWindowDefender](Invoke-MgScanDeviceManagementComanagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
@@ -886,6 +907,9 @@ Trigger action on ConfigurationManager client
 ### [Start-MgDeviceManagementUserExperienceAnalyticDeviceScopeAction](Start-MgDeviceManagementUserExperienceAnalyticDeviceScopeAction.md)
 Invoke action triggerDeviceScopeAction
 
+### [Start-MgDeviceManagementVirtualEndpointCloudPc](Start-MgDeviceManagementVirtualEndpointCloudPc.md)
+Invoke action start
+
 ### [Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck](Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck.md)
 Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
@@ -895,6 +919,9 @@ Remote help - End ACS session, Pubsub session and delete Remote help session
 
 ### [Stop-MgDeviceManagementManagedDeviceRemoteHelpSession](Stop-MgDeviceManagementManagedDeviceRemoteHelpSession.md)
 Remote help - End ACS session, Pubsub session and delete Remote help session
+
+### [Stop-MgDeviceManagementVirtualEndpointCloudPc](Stop-MgDeviceManagementVirtualEndpointCloudPc.md)
+Invoke action stop
 
 ### [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod.md)
 End the grace period for a specific Cloud PC.

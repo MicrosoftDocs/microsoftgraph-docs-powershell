@@ -32,6 +32,9 @@ The following entities support extension properties:\n+ user\n+ group\n+ adminis
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+### [Get-MgDirectoryObjectDelta](Get-MgDirectoryObjectDelta.md)
+Invoke function delta
+
 ### [Get-MgDirectoryObjectMemberGroup](Get-MgDirectoryObjectMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.

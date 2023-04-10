@@ -41,6 +41,9 @@ Invoke function delta
 ### [Get-MgUserChatMessageReplyDelta](Get-MgUserChatMessageReplyDelta.md)
 Invoke function delta
 
+### [Get-MgUserChatPermissionGrantDelta](Get-MgUserChatPermissionGrantDelta.md)
+Invoke function delta
+
 ### [Get-MgUserCloudPcConnectivityHistory](Get-MgUserCloudPcConnectivityHistory.md)
 Invoke function getCloudPcConnectivityHistory
 

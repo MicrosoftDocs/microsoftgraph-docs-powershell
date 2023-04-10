@@ -230,6 +230,12 @@ Get secureScoreControlProfiles from security
 ### [Get-MgSecuritySubjectRightsRequest](Get-MgSecuritySubjectRightsRequest.md)
 Get subjectRightsRequests from security
 
+### [Get-MgSecuritySubjectRightsRequestApprover](Get-MgSecuritySubjectRightsRequestApprover.md)
+Get approvers from security
+
+### [Get-MgSecuritySubjectRightsRequestCollaborator](Get-MgSecuritySubjectRightsRequestCollaborator.md)
+Get collaborators from security
+
 ### [Get-MgSecuritySubjectRightsRequestFinalAttachment](Get-MgSecuritySubjectRightsRequestFinalAttachment.md)
 Invoke function getFinalAttachment
 
