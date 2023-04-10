@@ -14,28 +14,28 @@ Invoke function delta
 
 ### Delta2 (Default)
 ```
-Get-MgGroupDriveItemDelta -DriveId <String> -DriveItemId <String> -GroupId <String> [-Count] [-Filter <String>]
+Get-MgGroupDriveItemDelta -DriveId <String> -DriveItemId <String> -GroupId <String> [-Filter <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Delta3
 ```
-Get-MgGroupDriveItemDelta -DriveId <String> -DriveItemId <String> -GroupId <String> -Token <String> [-Count]
+Get-MgGroupDriveItemDelta -DriveId <String> -DriveItemId <String> -GroupId <String> -Token <String>
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity3
 ```
-Get-MgGroupDriveItemDelta -InputObject <IGroupsIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgGroupDriveItemDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity2
 ```
-Get-MgGroupDriveItemDelta -InputObject <IGroupsIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgGroupDriveItemDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,44 @@ Invoke function delta
 
 ## PARAMETERS
 
+### -All
+List all pages.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: Delta2, Delta3
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Count
 Include count of items
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: (All)
+Parameter Sets: DeltaViaIdentity3, DeltaViaIdentity2
 Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: String
+Parameter Sets: Delta2, Delta3
+Aliases: CV
 
 Required: False
 Position: Named
@@ -133,6 +164,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -PageSize
+Sets the page size of results.
+
+```yaml
+Type: Int32
+Parameter Sets: Delta2, Delta3
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

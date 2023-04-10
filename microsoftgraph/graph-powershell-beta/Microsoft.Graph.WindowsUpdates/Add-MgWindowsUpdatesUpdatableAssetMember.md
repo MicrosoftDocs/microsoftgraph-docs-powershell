@@ -1,69 +1,58 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesupdatableassetmember
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatespolicyaudiencememberbyid
 schema: 2.0.0
 ---
 
-# Add-MgWindowsUpdatesUpdatableAssetMember
+# Add-MgWindowsUpdatesPolicyAudienceMemberById
 
 ## SYNOPSIS
-Add members to an updatableAssetGroup.
-You can add azureADDevice resources as members, but may not add **updatableAssetGroup** resources as members.
-Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
-You can also use the method addMembersById to add members.
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
 ## SYNTAX
 
 ### AddExpanded (Default)
 ```
-Add-MgWindowsUpdatesUpdatableAssetMember -UpdatableAssetId <String> [-AdditionalProperties <Hashtable>]
- [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Add-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Add
 ```
-Add-MgWindowsUpdatesUpdatableAssetMember -UpdatableAssetId <String>
- -BodyParameter <IPathsH2EvdrAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>
+Add-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
+ -BodyParameter <IPathsB49Il7AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentityExpanded
 ```
-Add-MgWindowsUpdatesUpdatableAssetMember -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
-Add-MgWindowsUpdatesUpdatableAssetMember -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPathsH2EvdrAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>
+Add-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPathsB49Il7AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Add members to an updatableAssetGroup.
-You can add azureADDevice resources as members, but may not add **updatableAssetGroup** resources as members.
-Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
-You can also use the method addMembersById to add members.
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
-Import-Module Microsoft.Graph.WindowsUpdates
-$params = @{
-	Assets = @(
-		@{
-			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
-			Id = "String (identifier)"
-		}
-	)
-}
-Add-MgWindowsUpdatesUpdatableAssetMember -UpdatableAssetId $updatableAssetId -BodyParameter $params
-```
+
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -82,28 +71,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Assets
-.
-To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
-Parameter Sets: AddExpanded, AddViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -BodyParameter
 .
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsH2EvdrAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
+Type: IPathsB49Il7AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -111,6 +84,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Ids
+.
+
+```yaml
+Type: String[]
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -127,6 +115,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MemberEntityType
+.
+
+```yaml
+Type: String
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -147,6 +150,21 @@ Accept wildcard characters: False
 
 ### -UpdatableAssetId
 The unique identifier of updatableAsset
+
+```yaml
+Type: String
+Parameter Sets: AddExpanded, Add
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpdatePolicyId
+The unique identifier of updatePolicy
 
 ```yaml
 Type: String
@@ -196,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsH2EvdrAdminWindowsUpdatesUpdatableassetsUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsB49Il7AdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersbyidPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -206,5 +224,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesupdatableassetmember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesupdatableassetmember)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatespolicyaudiencememberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatespolicyaudiencememberbyid)
 

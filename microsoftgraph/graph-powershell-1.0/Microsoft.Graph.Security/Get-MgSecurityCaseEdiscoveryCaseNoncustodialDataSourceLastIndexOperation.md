@@ -12,14 +12,14 @@ Operation entity that represents the latest indexing for the non-custodial data 
 
 ## SYNTAX
 
-### Get (Default)
+### Get1 (Default)
 ```
 Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceLastIndexOperation -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
@@ -37,7 +37,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -52,7 +52,7 @@ key: id of ediscoveryNoncustodialDataSource
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -83,7 +83,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True

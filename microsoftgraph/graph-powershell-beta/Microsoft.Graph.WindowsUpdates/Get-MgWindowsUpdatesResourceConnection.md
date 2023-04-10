@@ -1,64 +1,47 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesresourceconnection
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicyaudiencemember
 schema: 2.0.0
 ---
 
-# Get-MgWindowsUpdatesResourceConnection
+# Get-MgWindowsUpdatesPolicyAudienceMember
 
 ## SYNOPSIS
-Service connections to external resources such as analytics workspaces.
+Specifies the assets to include in the audience.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgWindowsUpdatesResourceConnection [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgWindowsUpdatesPolicyAudienceMember -UpdatePolicyId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgWindowsUpdatesPolicyAudienceMember -UpdatableAssetId <String> -UpdatePolicyId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
+Get-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Service connections to external resources such as analytics workspaces.
+Specifies the assets to include in the audience.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
-```
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-### EXAMPLE 3
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Get-MgWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
-```
-
-### EXAMPLE 4
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Get-MgWindowsUpdatesResourceConnection
-```
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -169,21 +152,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ResourceConnectionId
-The unique identifier of resourceConnection
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Search
 Search items by search phrases
 
@@ -229,6 +197,36 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -UpdatableAssetId
+The unique identifier of updatableAsset
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UpdatePolicyId
+The unique identifier of updatePolicy
+
+```yaml
+Type: String
+Parameter Sets: List, Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Skip
 Skip the first n items
 
@@ -252,11 +250,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesResourceConnection
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatableAsset
+### System.String
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesresourceconnection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesresourceconnection)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicyaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicyaudiencemember)
 

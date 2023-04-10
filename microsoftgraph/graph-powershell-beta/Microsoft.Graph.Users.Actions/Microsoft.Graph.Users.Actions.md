@@ -540,6 +540,9 @@ Rotate BitLockerKeys
 ### [Invoke-MgRotateUserManagedDeviceFileVaultKey](Invoke-MgRotateUserManagedDeviceFileVaultKey.md)
 Invoke action rotateFileVaultKey
 
+### [Invoke-MgRotateUserManagedDeviceLocalAdminPassword](Invoke-MgRotateUserManagedDeviceLocalAdminPassword.md)
+Initiates a manual rotation for the local admin password on the device
+
 ### [Invoke-MgScanUserManagedDeviceWindowDefender](Invoke-MgScanUserManagedDeviceWindowDefender.md)
 Invoke action windowsDefenderScan
 
@@ -1040,8 +1043,14 @@ Read more about presence sessions and their time-out and expiration.
 ### [Skip-MgUserManagedDeviceActivationLock](Skip-MgUserManagedDeviceActivationLock.md)
 Bypass activation lock
 
+### [Start-MgUserCloudPc](Start-MgUserCloudPc.md)
+Invoke action start
+
 ### [Start-MgUserManagedDeviceConfigurationManagerAction](Start-MgUserManagedDeviceConfigurationManagerAction.md)
 Trigger action on ConfigurationManager client
+
+### [Stop-MgUserCloudPc](Stop-MgUserCloudPc.md)
+Invoke action stop
 
 ### [Stop-MgUserCloudPcGracePeriod](Stop-MgUserCloudPcGracePeriod.md)
 End the grace period for a specific Cloud PC.

@@ -12,13 +12,13 @@ Release the non-custodial data source from the case.
 
 ## SYNTAX
 
-### Release (Default)
+### Release1 (Default)
 ```
 Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId <String>
  -EdiscoveryNoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReleaseViaIdentity
+### ReleaseViaIdentity1
 ```
 Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityIdentity> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +45,7 @@ key: id of ediscoveryCase
 
 ```yaml
 Type: String
-Parameter Sets: Release
+Parameter Sets: Release1
 Aliases:
 
 Required: True
@@ -60,7 +60,7 @@ key: id of ediscoveryNoncustodialDataSource
 
 ```yaml
 Type: String
-Parameter Sets: Release
+Parameter Sets: Release1
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: ReleaseViaIdentity
+Parameter Sets: ReleaseViaIdentity1
 Aliases:
 
 Required: True

@@ -11,156 +11,235 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.WindowsUpdates Cmdlets
-### [Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById](Add-MgWindowsUpdatesDeploymentAudienceExclusionMemberById.md)
-Add members of the same type to an updatableAssetGroup.
-You can also use the method addMembers to add members.
-
-### [Add-MgWindowsUpdatesDeploymentAudienceMember](Add-MgWindowsUpdatesDeploymentAudienceMember.md)
+### [Add-MgWindowsUpdatesPolicyAudienceExclusionMember](Add-MgWindowsUpdatesPolicyAudienceExclusionMember.md)
 Add members to an updatableAssetGroup.
 You can add azureADDevice resources as members, but may not add **updatableAssetGroup** resources as members.
 Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
 You can also use the method addMembersById to add members.
 
-### [Add-MgWindowsUpdatesDeploymentAudienceMemberById](Add-MgWindowsUpdatesDeploymentAudienceMemberById.md)
+### [Add-MgWindowsUpdatesPolicyAudienceExclusionMemberById](Add-MgWindowsUpdatesPolicyAudienceExclusionMemberById.md)
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
-### [Add-MgWindowsUpdatesUpdatableAssetMember](Add-MgWindowsUpdatesUpdatableAssetMember.md)
+### [Add-MgWindowsUpdatesPolicyAudienceMember](Add-MgWindowsUpdatesPolicyAudienceMember.md)
 Add members to an updatableAssetGroup.
 You can add azureADDevice resources as members, but may not add **updatableAssetGroup** resources as members.
 Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
 You can also use the method addMembersById to add members.
 
-### [Add-MgWindowsUpdatesUpdatableAssetMemberById](Add-MgWindowsUpdatesUpdatableAssetMemberById.md)
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
-### [Get-MgWindowsUpdatesCatalogEntry](Get-MgWindowsUpdatesCatalogEntry.md)
-Lists the content that you can approve for deployment.
-Read-only.
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
-### [Get-MgWindowsUpdatesDeployment](Get-MgWindowsUpdatesDeployment.md)
-Deployments created using the deployment service.
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
 
-### [Get-MgWindowsUpdatesDeploymentAudienceExclusion](Get-MgWindowsUpdatesDeploymentAudienceExclusion.md)
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
+
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
+
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
+
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
+
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
+
+### [Add-MgWindowsUpdatesPolicyAudienceMemberById](Add-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Add members of the same type to an updatableAssetGroup.
+You can also use the method addMembers to add members.
+
+### [Get-MgWindowsUpdatesPolicyAudienceExclusion](Get-MgWindowsUpdatesPolicyAudienceExclusion.md)
 Specifies the assets to exclude from the audience.
 
-### [Get-MgWindowsUpdatesDeploymentAudienceMember](Get-MgWindowsUpdatesDeploymentAudienceMember.md)
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
 Specifies the assets to include in the audience.
 
-### [Get-MgWindowsUpdatesPolicy](Get-MgWindowsUpdatesPolicy.md)
-A collection of policies for approving the deployment of different content to an audience over time.
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
+Specifies the assets to include in the audience.
 
-### [Get-MgWindowsUpdatesPolicyAudience](Get-MgWindowsUpdatesPolicyAudience.md)
-Specifies the audience to target.
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
+Specifies the assets to include in the audience.
 
-### [Get-MgWindowsUpdatesPolicyComplianceChange](Get-MgWindowsUpdatesPolicyComplianceChange.md)
-Compliance changes like content approvals which result in the automatic creation of deployments using the audience and deploymentSettings of the policy.
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
+Specifies the assets to include in the audience.
 
-### [Get-MgWindowsUpdatesPolicyComplianceChangeUpdatePolicy](Get-MgWindowsUpdatesPolicyComplianceChangeUpdatePolicy.md)
-The policy this compliance change is a member of.
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
+Specifies the assets to include in the audience.
 
-### [Get-MgWindowsUpdatesResourceConnection](Get-MgWindowsUpdatesResourceConnection.md)
-Service connections to external resources such as analytics workspaces.
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
+Specifies the assets to include in the audience.
 
-### [Get-MgWindowsUpdatesUpdatableAsset](Get-MgWindowsUpdatesUpdatableAsset.md)
-Assets registered with the deployment service that can receive updates.
+### [Get-MgWindowsUpdatesPolicyAudienceMember](Get-MgWindowsUpdatesPolicyAudienceMember.md)
+Specifies the assets to include in the audience.
 
-### [Invoke-MgEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById](Invoke-MgEnrollWindowsUpdatesDeploymentAudienceExclusionAssetById.md)
-Invoke action enrollAssetsById
-
-### [Invoke-MgEnrollWindowsUpdatesDeploymentAudienceMemberAssetById](Invoke-MgEnrollWindowsUpdatesDeploymentAudienceMemberAssetById.md)
-Invoke action enrollAssetsById
-
-### [Invoke-MgEnrollWindowsUpdatesUpdatableAsset](Invoke-MgEnrollWindowsUpdatesUpdatableAsset.md)
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAsset](Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAsset.md)
 Invoke action enrollAssets
 
-### [Invoke-MgEnrollWindowsUpdatesUpdatableAssetById](Invoke-MgEnrollWindowsUpdatesUpdatableAssetById.md)
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAssetById](Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAssetById.md)
 Invoke action enrollAssetsById
 
-### [Invoke-MgGraphWindowsUpdatesDeploymentAudienceExclusion](Invoke-MgGraphWindowsUpdatesDeploymentAudienceExclusion.md)
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAsset](Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAsset.md)
+Invoke action enrollAssets
+
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById](Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById.md)
+Invoke action enrollAssetsById
+
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById](Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById.md)
+Invoke action enrollAssetsById
+
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById](Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById.md)
+Invoke action enrollAssetsById
+
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById](Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById.md)
+Invoke action enrollAssetsById
+
+### [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById](Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById.md)
+Invoke action enrollAssetsById
+
+### [Invoke-MgGraphWindowsUpdatesPolicyAudienceExclusion](Invoke-MgGraphWindowsUpdatesPolicyAudienceExclusion.md)
 Invoke action unenrollAssetsById
 
-### [Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember](Invoke-MgGraphWindowsUpdatesDeploymentAudienceMember.md)
+### [Invoke-MgGraphWindowsUpdatesPolicyAudienceMember](Invoke-MgGraphWindowsUpdatesPolicyAudienceMember.md)
 Invoke action unenrollAssetsById
 
-### [Invoke-MgGraphWindowsUpdatesUpdatableAsset](Invoke-MgGraphWindowsUpdatesUpdatableAsset.md)
+### [Invoke-MgGraphWindowsUpdatesPolicyAudienceMember](Invoke-MgGraphWindowsUpdatesPolicyAudienceMember.md)
 Invoke action unenrollAssetsById
 
-### [Invoke-MgUnenrollWindowsUpdatesUpdatableAsset](Invoke-MgUnenrollWindowsUpdatesUpdatableAsset.md)
+### [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset](Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset.md)
 Invoke action unenrollAssets
 
-### [New-MgWindowsUpdatesDeployment](New-MgWindowsUpdatesDeployment.md)
-Create a new deployment object.
+### [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset](Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset.md)
+Invoke action unenrollAssets
 
-### [New-MgWindowsUpdatesPolicy](New-MgWindowsUpdatesPolicy.md)
-Create a new updatePolicy object.
+### [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset](Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset.md)
+Invoke action unenrollAssets
 
-### [New-MgWindowsUpdatesPolicyComplianceChange](New-MgWindowsUpdatesPolicyComplianceChange.md)
-Create a new contentApproval object.
+### [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset](Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset.md)
+Invoke action unenrollAssets
 
-### [New-MgWindowsUpdatesResourceConnection](New-MgWindowsUpdatesResourceConnection.md)
-Create a new operationalInsightsConnection object.
+### [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset](Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset.md)
+Invoke action unenrollAssets
 
-### [New-MgWindowsUpdatesUpdatableAsset](New-MgWindowsUpdatesUpdatableAsset.md)
-Create a new updatableAssetGroup object.
-The **updatableAssetGroup** resource inherits from updatableAsset.
+### [New-MgWindowsUpdatesPolicyAudienceExclusion](New-MgWindowsUpdatesPolicyAudienceExclusion.md)
+Create new navigation property to exclusions for admin
 
-### [Remove-MgWindowsUpdatesDeployment](Remove-MgWindowsUpdatesDeployment.md)
-Delete navigation property deployments for admin
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesDeploymentAudienceExclusionMemberById](Remove-MgWindowsUpdatesDeploymentAudienceExclusionMemberById.md)
-Remove members of the same type from an updatableAssetGroup.
-You can also use the method removeMembers to remove members.
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesDeploymentAudienceMemberById](Remove-MgWindowsUpdatesDeploymentAudienceMemberById.md)
-Remove members of the same type from an updatableAssetGroup.
-You can also use the method removeMembers to remove members.
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesPolicy](Remove-MgWindowsUpdatesPolicy.md)
-Delete navigation property updatePolicies for admin
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesPolicyComplianceChange](Remove-MgWindowsUpdatesPolicyComplianceChange.md)
-Delete navigation property complianceChanges for admin
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesResourceConnection](Remove-MgWindowsUpdatesResourceConnection.md)
-Delete navigation property resourceConnections for admin
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesUpdatableAsset](Remove-MgWindowsUpdatesUpdatableAsset.md)
-Delete navigation property updatableAssets for admin
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
 
-### [Remove-MgWindowsUpdatesUpdatableAssetMember](Remove-MgWindowsUpdatesUpdatableAssetMember.md)
+### [New-MgWindowsUpdatesPolicyAudienceMember](New-MgWindowsUpdatesPolicyAudienceMember.md)
+Create new navigation property to members for admin
+
+### [Remove-MgWindowsUpdatesPolicyAudience](Remove-MgWindowsUpdatesPolicyAudience.md)
+Delete navigation property audience for admin
+
+### [Remove-MgWindowsUpdatesPolicyAudienceExclusion](Remove-MgWindowsUpdatesPolicyAudienceExclusion.md)
+Delete navigation property exclusions for admin
+
+### [Remove-MgWindowsUpdatesPolicyAudienceExclusionMember](Remove-MgWindowsUpdatesPolicyAudienceExclusionMember.md)
 Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
 
-### [Remove-MgWindowsUpdatesUpdatableAssetMemberById](Remove-MgWindowsUpdatesUpdatableAssetMemberById.md)
+### [Remove-MgWindowsUpdatesPolicyAudienceExclusionMemberById](Remove-MgWindowsUpdatesPolicyAudienceExclusionMemberById.md)
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
 
-### [Update-MgWindowsUpdatesDeployment](Update-MgWindowsUpdatesDeployment.md)
-Update the navigation property deployments in admin
+### [Remove-MgWindowsUpdatesPolicyAudienceMember](Remove-MgWindowsUpdatesPolicyAudienceMember.md)
+Delete navigation property members for admin
 
-### [Update-MgWindowsUpdatesDeploymentAudience](Update-MgWindowsUpdatesDeploymentAudience.md)
-Update the members and exclusions collections of a deploymentAudience.
-Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object, if it does not already exist.
-If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
-If all **updatableAsset** objects are the same type, you can also use the method updateAudienceById to update the **deploymentAudience**.
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
-### [Update-MgWindowsUpdatesDeploymentAudienceById](Update-MgWindowsUpdatesDeploymentAudienceById.md)
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Remove-MgWindowsUpdatesPolicyAudienceMemberById](Remove-MgWindowsUpdatesPolicyAudienceMemberById.md)
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
+
+### [Update-MgWindowsUpdatesPolicyAudience](Update-MgWindowsUpdatesPolicyAudience.md)
+Update the navigation property audience in admin
+
+### [Update-MgWindowsUpdatesPolicyAudienceById](Update-MgWindowsUpdatesPolicyAudienceById.md)
 Update the members and exclusions collections of a deploymentAudience with updatableAsset resources of the same type.
 Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object if it does not already exist.
 If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
 You can also use the method updateAudience to update the **deploymentAudience**.
 
-### [Update-MgWindowsUpdatesPolicy](Update-MgWindowsUpdatesPolicy.md)
-Update the navigation property updatePolicies in admin
+### [Update-MgWindowsUpdatesPolicyAudienceExclusion](Update-MgWindowsUpdatesPolicyAudienceExclusion.md)
+Update the navigation property exclusions in admin
 
-### [Update-MgWindowsUpdatesPolicyComplianceChange](Update-MgWindowsUpdatesPolicyComplianceChange.md)
-Update the navigation property complianceChanges in admin
+### [Update-MgWindowsUpdatesPolicyAudienceMember](Update-MgWindowsUpdatesPolicyAudienceMember.md)
+Update the navigation property members in admin
 
-### [Update-MgWindowsUpdatesResourceConnection](Update-MgWindowsUpdatesResourceConnection.md)
-Update the navigation property resourceConnections in admin
+### [Update-MgWindowsUpdatesPolicyAudienceMember](Update-MgWindowsUpdatesPolicyAudienceMember.md)
+Update the navigation property members in admin
 
-### [Update-MgWindowsUpdatesUpdatableAsset](Update-MgWindowsUpdatesUpdatableAsset.md)
-Update the navigation property updatableAssets in admin
+### [Update-MgWindowsUpdatesPolicyAudienceMember](Update-MgWindowsUpdatesPolicyAudienceMember.md)
+Update the navigation property members in admin
+
+### [Update-MgWindowsUpdatesPolicyAudienceMember](Update-MgWindowsUpdatesPolicyAudienceMember.md)
+Update the navigation property members in admin
 

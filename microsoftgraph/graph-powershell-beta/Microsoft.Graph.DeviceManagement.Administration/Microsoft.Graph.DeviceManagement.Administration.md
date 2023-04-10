@@ -262,6 +262,9 @@ Represents the set of Microsoft 365 groups and security groups in Azure AD that 
 Returned only on $expand.
 See an example of getting the assignments relationship.
 
+### [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser](Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignmentAssignedUser.md)
+Get assignedUsers from deviceManagement
+
 ### [Get-MgDeviceManagementVirtualEndpointReport](Get-MgDeviceManagementVirtualEndpointReport.md)
 Cloud PC related reports.
 

@@ -1,85 +1,58 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeployment
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid
 schema: 2.0.0
 ---
 
-# Update-MgWindowsUpdatesDeployment
+# Remove-MgWindowsUpdatesPolicyAudienceMemberById
 
 ## SYNOPSIS
-Update the navigation property deployments in admin
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### RemoveExpanded (Default)
 ```
-Update-MgWindowsUpdatesDeployment -DeploymentId <String> [-AdditionalProperties <Hashtable>]
- [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>] [-Content <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Settings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]
- [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Remove
 ```
-Update-MgWindowsUpdatesDeployment -DeploymentId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-AdditionalProperties <Hashtable>]
- [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>] [-Content <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
- [-Settings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]
- [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
+ -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### RemoveViaIdentityExpanded
 ```
-Update-MgWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### RemoveViaIdentity
+```
+Remove-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property deployments in admin
+Remove members of the same type from an updatableAssetGroup.
+You can also use the method removeMembers to remove members.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-$params = @{
-	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	State = @{
-		"@odata.type" = "microsoft.graph.windowsUpdates.deploymentState"
-		RequestedValue = "paused"
-	}
-}
-Update-MgWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
 ```
 
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-$params = @{
-	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
-	Settings = @{
-		"@odata.type" = "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
-		Monitoring = @{
-			MonitoringRules = @(
-				@{
-					Signal = "rollback"
-					Threshold = 5
-					Action = "pauseDeployment"
-				}
-			)
-		}
-	}
-}
-Update-MgWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
-```
+{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -88,23 +61,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Audience
-deploymentAudience
-To construct, please use Get-Help -Online and see NOTES section for AUDIENCE properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphWindowsUpdatesDeploymentAudience
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,12 +72,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-deployment
+.
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesDeployment
-Parameter Sets: Update, UpdateViaIdentity
+Type: IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -130,60 +87,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Content
-deployableContent
+### -Ids
+.
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The date and time the deployment was created.
-Returned by default.
-Read-only.
-
-```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeploymentId
-The unique identifier of deployment
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Id
-The unique identifier for an entity.
-Read-only.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String[]
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -199,7 +108,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IWindowsUpdatesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
 Aliases:
 
 Required: True
@@ -209,14 +118,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LastModifiedDateTime
-The date and time the deployment was last modified.
-Returned by default.
-Read-only.
+### -MemberEntityType
+.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -241,32 +148,30 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Settings
-deploymentSettings
-To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+### -UpdatableAssetId
+The unique identifier of updatableAsset
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesDeploymentSettings
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -State
-deploymentState
-To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
+### -UpdatePolicyId
+The unique identifier of updatePolicy
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesDeploymentState
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: RemoveExpanded, Remove
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -309,7 +214,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
+### Microsoft.Graph.PowerShell.Models.IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -319,5 +224,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeployment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeployment)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid)
 

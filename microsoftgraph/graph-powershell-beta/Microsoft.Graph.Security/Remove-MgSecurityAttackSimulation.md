@@ -12,18 +12,18 @@ Delete navigation property simulations for security
 
 ## SYNTAX
 
-### Delete3 (Default)
+### Delete (Default)
 ```
 Remove-MgSecurityAttackSimulation [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Delete1
+### Delete3
 ```
 Remove-MgSecurityAttackSimulation -SimulationId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgSecurityAttackSimulation -InputObject <ISecurityIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -57,7 +57,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -87,7 +87,7 @@ key: id of simulation
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete3
 Aliases:
 
 Required: True
