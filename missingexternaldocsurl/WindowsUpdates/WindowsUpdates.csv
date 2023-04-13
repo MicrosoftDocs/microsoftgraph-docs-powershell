@@ -1,0 +1,23 @@
+Graph profile, Command, UriPath
+v1.0-beta, Add-MgWindowsUpdatesDeploymentAudienceMember, /admin/windows/updates/deployments/{deployment-id}/audience/members/{updatableAsset-id}/addMembers
+v1.0-beta, Add-MgWindowsUpdatesDeploymentAudienceMemberById, /admin/windows/updates/deployments/{deployment-id}/audience/members/{updatableAsset-id}/addMembersById
+v1.0-beta, Add-MgWindowsUpdatesUpdatableAssetMember, /admin/windows/updates/updatableAssets/{updatableAsset-id}/addMembers
+v1.0-beta, Add-MgWindowsUpdatesUpdatableAssetMemberById, /admin/windows/updates/updatableAssets/{updatableAsset-id}/addMembersById
+v1.0-beta, Get-MgWindowsUpdatesCatalogEntry, /admin/windows/updates/catalog/entries/{catalogEntry-id}
+v1.0-beta, Get-MgWindowsUpdatesDeployment, /admin/windows/updates/deployments/{deployment-id}
+v1.0-beta, Get-MgWindowsUpdatesDeploymentAudienceExclusion, /admin/windows/updates/deployments/{deployment-id}/audience/exclusions/{updatableAsset-id}
+v1.0-beta, Get-MgWindowsUpdatesDeploymentAudienceMember, /admin/windows/updates/deployments/{deployment-id}/audience/members/{updatableAsset-id}
+v1.0-beta, Get-MgWindowsUpdatesUpdatableAsset, /admin/windows/updates/updatableAssets/{updatableAsset-id}
+v1.0-beta, Invoke-MgEnrollWindowsUpdatesUpdatableAsset, /admin/windows/updates/updatableAssets/enrollAssets
+v1.0-beta, Invoke-MgEnrollWindowsUpdatesUpdatableAssetById, /admin/windows/updates/updatableAssets/enrollAssetsById
+v1.0-beta, Invoke-MgUnenrollWindowsUpdatesUpdatableAsset, /admin/windows/updates/updatableAssets/unenrollAssets
+v1.0-beta, New-MgWindowsUpdatesDeployment, /admin/windows/updates/deployments
+v1.0-beta, New-MgWindowsUpdatesUpdatableAsset, /admin/windows/updates/updatableAssets
+v1.0-beta, Remove-MgWindowsUpdatesDeployment, /admin/windows/updates/deployments/{deployment-id}
+v1.0-beta, Remove-MgWindowsUpdatesUpdatableAsset, /admin/windows/updates/updatableAssets/{updatableAsset-id}
+v1.0-beta, Remove-MgWindowsUpdatesUpdatableAssetMember, /admin/windows/updates/updatableAssets/{updatableAsset-id}/removeMembers
+v1.0-beta, Remove-MgWindowsUpdatesUpdatableAssetMemberById, /admin/windows/updates/updatableAssets/{updatableAsset-id}/removeMembersById
+v1.0-beta, Update-MgWindowsUpdatesDeployment, /admin/windows/updates/deployments/{deployment-id}
+v1.0-beta, Update-MgWindowsUpdatesDeploymentAudience, /admin/windows/updates/deployments/{deployment-id}/audience/updateAudience
+v1.0-beta, Update-MgWindowsUpdatesDeploymentAudienceById, /admin/windows/updates/deployments/{deployment-id}/audience/updateAudienceById
+v1.0-beta, Update-MgWindowsUpdatesUpdatableAsset, /admin/windows/updates/updatableAssets/{updatableAsset-id}

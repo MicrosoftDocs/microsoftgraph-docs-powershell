@@ -1,0 +1,19 @@
+Graph profile, Command, UriPath
+v1.0, Confirm-MgDirectoryObjectMemberGroup, /directoryObjects/{directoryObject-id}/checkMemberGroups
+v1.0, Confirm-MgDirectoryObjectMemberObject, /directoryObjects/{directoryObject-id}/checkMemberObjects
+v1.0, Get-MgDirectoryObject, /directoryObjects
+v1.0, Get-MgDirectoryObjectAvailableExtensionProperty, /directoryObjects/getAvailableExtensionProperties
+v1.0, Get-MgDirectoryObjectById, /directoryObjects/getByIds
+v1.0, Get-MgDirectoryObjectMemberGroup, /directoryObjects/{directoryObject-id}/getMemberGroups
+v1.0, Get-MgDirectoryObjectMemberObject, /directoryObjects/{directoryObject-id}/getMemberObjects
+v1.0, New-MgDirectoryObject, /directoryObjects
+v1.0, Test-MgDirectoryObjectProperty, /directoryObjects/validateProperties
+v1.0-beta, Confirm-MgDirectoryObjectMemberGroup, /directoryObjects/{directoryObject-id}/checkMemberGroups
+v1.0-beta, Confirm-MgDirectoryObjectMemberObject, /directoryObjects/{directoryObject-id}/checkMemberObjects
+v1.0-beta, Get-MgDirectoryObject, /directoryObjects
+v1.0-beta, Get-MgDirectoryObjectById, /directoryObjects/getByIds
+v1.0-beta, Get-MgDirectoryObjectMemberGroup, /directoryObjects/{directoryObject-id}/getMemberGroups
+v1.0-beta, Get-MgDirectoryObjectMemberObject, /directoryObjects/{directoryObject-id}/getMemberObjects
+v1.0-beta, Get-MgDirectoryObjectUserOwnedObject, /directoryObjects/getUserOwnedObjects
+v1.0-beta, New-MgDirectoryObject, /directoryObjects
+v1.0-beta, Test-MgDirectoryObjectProperty, /directoryObjects/validateProperties
