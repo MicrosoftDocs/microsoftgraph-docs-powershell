@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsiteinformationprotectionsensitivitylabelsublabel
@@ -408,16 +408,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy\[]>: .
+ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy[]>: .
   - `[Id <String>]`: 
   - `[Name <String>]`: 
 
-AUTOLABELING `<IMicrosoftGraphAutoLabeling>`: autoLabeling
+AUTOLABELING <IMicrosoftGraphAutoLabeling>: autoLabeling
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Message <String>]`: 
   - `[SensitiveTypeIds <String[]>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
+BODYPARAMETER <IMicrosoftGraphSensitivityLabel>: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
@@ -440,7 +440,7 @@ BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
   - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
   - `[ToolTip <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: key: id of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: key: id of columnDefinition
@@ -487,10 +487,10 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
   - `[WebPartId <String>]`: key: id of webPart
 
-LABELACTIONS <IMicrosoftGraphLabelActionBase\[]>: .
+LABELACTIONS <IMicrosoftGraphLabelActionBase[]>: .
   - `[Name <String>]`: 
 
-SUBLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
+SUBLABELS <IMicrosoftGraphSensitivityLabel[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode

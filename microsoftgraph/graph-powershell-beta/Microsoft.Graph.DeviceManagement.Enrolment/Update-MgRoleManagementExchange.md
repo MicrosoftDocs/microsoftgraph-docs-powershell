@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagementexchange
@@ -210,7 +210,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
+BODYPARAMETER <IMicrosoftGraphUnifiedRbacApplication>: unifiedRbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
@@ -267,7 +267,7 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
   - `[RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>]`: 
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment1[]>]`: 
 
-RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace\[]>: .
+RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: Name of the resource namespace. Typically, the same name as the id property, such as microsoft.aad.b2c. Required. Supports $filter (eq, startsWith).
   - `[ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>]`: Operations that an authorized principal are allowed to perform.
@@ -285,7 +285,7 @@ RESOURCENAMESPACES <IMicrosoftGraphUnifiedRbacResourceNamespace\[]>: .
       - `[Type <String>]`: 
     - `[ResourceScopeId <String>]`: Not implemented.
 
-ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment1\[]>: .
+ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment1[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -320,7 +320,7 @@ ROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment1\[]>: .
     - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
 
-ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition\[]>: .
+ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: The description for the unifiedRoleDefinition. Read-only when isBuiltIn is true.
   - `[DisplayName <String>]`: The display name for the unifiedRoleDefinition. Read-only when isBuiltIn is true. Required.  Supports $filter (eq and startsWith operators only).
@@ -335,7 +335,7 @@ ROLEDEFINITIONS <IMicrosoftGraphUnifiedRoleDefinition\[]>: .
   - `[TemplateId <String>]`: Custom template identifier that can be set when isBuiltIn is false. This identifier is typically used if one needs an identifier to be the same across different directories. Read-only when isBuiltIn is true.
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
-TRANSITIVEROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment1\[]>: .
+TRANSITIVEROLEASSIGNMENTS <IMicrosoftGraphUnifiedRoleAssignment1[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppScope <IMicrosoftGraphAppScope>]`: appScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

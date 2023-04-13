@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 81b10cc5-55bd-4d74-b961-37560f368cdf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
@@ -39,6 +39,9 @@ For details, see Close a case.
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
 Get alerts from security
+
+### [Get-MgSecurityAlertV2](Get-MgSecurityAlertV2.md)
+A collection of alerts in Microsoft 365 Defender.
 
 ### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
 Get attackSimulation from security
@@ -153,6 +156,9 @@ For details, see Reopen a closed case.
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
 Create new navigation property to alerts for security
 
+### [New-MgSecurityAlertV2](New-MgSecurityAlertV2.md)
+Create new navigation property to alerts_v2 for security
+
 ### [New-MgSecurityAttackSimulation](New-MgSecurityAttackSimulation.md)
 Create new navigation property to simulations for security
 
@@ -213,6 +219,9 @@ For details, see Release a custodian from a case.
 
 ### [Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](Publish-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource.md)
 Release the non-custodial data source from the case.
+
+### [Remove-MgSecurityAlertV2](Remove-MgSecurityAlertV2.md)
+Delete navigation property alerts_v2 for security
 
 ### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
 Delete navigation property attackSimulation for security
@@ -292,6 +301,9 @@ Invoke action runHuntingQuery
 
 ### [Update-MgSecurityAlert](Update-MgSecurityAlert.md)
 Update the navigation property alerts in security
+
+### [Update-MgSecurityAlertV2](Update-MgSecurityAlertV2.md)
+Update the navigation property alerts_v2 in security
 
 ### [Update-MgSecurityAttackSimulationAutomation](Update-MgSecurityAttackSimulationAutomation.md)
 Update the navigation property simulationAutomations in security

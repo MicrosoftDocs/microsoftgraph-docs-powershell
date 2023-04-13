@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 81b10cc5-55bd-4d74-b961-37560f368cdf
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security
@@ -54,6 +54,9 @@ Get securityActions from security
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
 Notifications for suspicious or potential security issues in a customer's tenant.
+
+### [Get-MgSecurityAlertV2](Get-MgSecurityAlertV2.md)
+A collection of alerts in Microsoft 365 Defender.
 
 ### [Get-MgSecurityAttackSimulation](Get-MgSecurityAttackSimulation.md)
 Represents an attack simulation training campaign in a tenant.
@@ -309,6 +312,9 @@ Create a new securityAction object.
 ### [New-MgSecurityAlert](New-MgSecurityAlert.md)
 Create new navigation property to alerts for security
 
+### [New-MgSecurityAlertV2](New-MgSecurityAlertV2.md)
+Create new navigation property to alerts_v2 for security
+
 ### [New-MgSecurityAttackSimulation](New-MgSecurityAttackSimulation.md)
 Create an attack simulation campaign for a tenant.
 
@@ -448,6 +454,9 @@ Release the non-custodial data source from the case.
 
 ### [Remove-MgSecurityAction](Remove-MgSecurityAction.md)
 Delete navigation property securityActions for security
+
+### [Remove-MgSecurityAlertV2](Remove-MgSecurityAlertV2.md)
+Delete navigation property alerts_v2 for security
 
 ### [Remove-MgSecurityAttackSimulation](Remove-MgSecurityAttackSimulation.md)
 Delete navigation property simulations for security
@@ -665,6 +674,9 @@ Update the navigation property alerts in security
 
 ### [Update-MgSecurityAlertMultiple](Update-MgSecurityAlertMultiple.md)
 Update multiple alerts in one request instead of multiple requests.
+
+### [Update-MgSecurityAlertV2](Update-MgSecurityAlertV2.md)
+Update the navigation property alerts_v2 in security
 
 ### [Update-MgSecurityAttackSimulationAutomation](Update-MgSecurityAttackSimulationAutomation.md)
 Update the navigation property simulationAutomations in security
