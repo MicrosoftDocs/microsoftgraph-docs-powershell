@@ -1,0 +1,23 @@
+Graph profile, Command, UriPath
+v1.0, Get-MgUserActivity, /users/{user-id}/activities
+v1.0, Get-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems
+v1.0, Get-MgUserActivityHistoryItemActivity, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}/activity
+v1.0, New-MgUserActivity, /users/{user-id}/activities
+v1.0, New-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems
+v1.0, Remove-MgUserActivity, /users/{user-id}/activities/{userActivity-id}
+v1.0, Remove-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
+v1.0, Update-MgUserActivity, /users/{user-id}/activities/{userActivity-id}
+v1.0, Update-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
+v1.0-beta, Get-MgUserActivity, /users/{user-id}/activities
+v1.0-beta, Get-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems
+v1.0-beta, Get-MgUserActivityHistoryItemActivity, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}/activity
+v1.0-beta, Get-MgUserDevice, /users/{user-id}/devices/{device-id}
+v1.0-beta, New-MgUserActivity, /users/{user-id}/activities
+v1.0-beta, New-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems
+v1.0-beta, New-MgUserDevice, /users/{user-id}/devices
+v1.0-beta, Remove-MgUserActivity, /users/{user-id}/activities/{userActivity-id}
+v1.0-beta, Remove-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
+v1.0-beta, Remove-MgUserDevice, /users/{user-id}/devices/{device-id}
+v1.0-beta, Update-MgUserActivity, /users/{user-id}/activities/{userActivity-id}
+v1.0-beta, Update-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
+v1.0-beta, Update-MgUserDevice, /users/{user-id}/devices/{device-id}
