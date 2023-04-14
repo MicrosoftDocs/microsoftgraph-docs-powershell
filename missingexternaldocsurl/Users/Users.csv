@@ -1,0 +1,3 @@
+Graph profile, Command, UriPath
+v1.0, Get-MgUserExtension, /users/{user-id}/extensions
+v1.0-beta, Get-MgUserExtension, /users/{user-id}/extensions

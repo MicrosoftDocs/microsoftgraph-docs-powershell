@@ -1,0 +1,22 @@
+Graph profile, Command, UriPath
+v1.0, Get-MgCompliance, /compliance
+v1.0, Update-MgCompliance, /compliance
+v1.0-beta, Close-MgComplianceEdiscoveryCase, /compliance/ediscovery/cases/{case-id}/close
+v1.0-beta, Get-MgCompliance, /compliance
+v1.0-beta, Get-MgComplianceEdiscovery, /compliance/ediscovery
+v1.0-beta, Get-MgComplianceEdiscoveryCase, /compliance/ediscovery/cases/{case-id}
+v1.0-beta, Get-MgComplianceEdiscoveryCaseReviewSet, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}
+v1.0-beta, Get-MgComplianceEdiscoveryCaseReviewSetQuery, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}/queries/{reviewSetQuery-id}
+v1.0-beta, Invoke-MgReopenComplianceEdiscoveryCase, /compliance/ediscovery/cases/{case-id}/reopen
+v1.0-beta, New-MgComplianceEdiscoveryCase, /compliance/ediscovery/cases
+v1.0-beta, New-MgComplianceEdiscoveryCaseReviewSet, /compliance/ediscovery/cases/{case-id}/reviewSets
+v1.0-beta, New-MgComplianceEdiscoveryCaseReviewSetQuery, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}/queries
+v1.0-beta, Remove-MgComplianceEdiscovery, /compliance/ediscovery
+v1.0-beta, Remove-MgComplianceEdiscoveryCase, /compliance/ediscovery/cases/{case-id}
+v1.0-beta, Remove-MgComplianceEdiscoveryCaseReviewSet, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}
+v1.0-beta, Remove-MgComplianceEdiscoveryCaseReviewSetQuery, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}/queries/{reviewSetQuery-id}
+v1.0-beta, Update-MgCompliance, /compliance
+v1.0-beta, Update-MgComplianceEdiscovery, /compliance/ediscovery
+v1.0-beta, Update-MgComplianceEdiscoveryCase, /compliance/ediscovery/cases/{case-id}
+v1.0-beta, Update-MgComplianceEdiscoveryCaseReviewSet, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}
+v1.0-beta, Update-MgComplianceEdiscoveryCaseReviewSetQuery, /compliance/ediscovery/cases/{case-id}/reviewSets/{reviewSet-id}/queries/{reviewSetQuery-id}
