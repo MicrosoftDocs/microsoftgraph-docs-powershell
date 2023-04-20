@@ -54,3 +54,9 @@ v1.0-beta, Invoke-MgSupportedUserOutlookLanguage, /users/{user-id}/outlook/suppo
 v1.0-beta, Invoke-MgTimeUserOutlook, /users/{user-id}/outlook/supportedTimeZones
 v1.0-beta, Invoke-MgViewUserReminder, /users/{user-id}/reminderView(StartDateTime='{StartDateTime}',EndDateTime='{EndDateTime}')
 v1.0-beta, Test-MgUserManagedAppUserBlocked, /users/{user-id}/isManagedAppUserBlocked
+v1.0, Get-MgUserOnenoteRecentNotebook, /users/{user-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0, Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles, /users/{user-id}/calendar/allowedCalendarSharingRoles(User='{User}')
+v1.0, Invoke-MgViewUserReminder, /users/{user-id}/reminderView(StartDateTime='{StartDateTime}',EndDateTime='{EndDateTime}')
+v1.0-beta, Get-MgUserOnenoteRecentNotebook, /users/{user-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0-beta, Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles, /users/{user-id}/calendar/allowedCalendarSharingRoles(User='{User}')
+v1.0-beta, Invoke-MgViewUserReminder, /users/{user-id}/reminderView(StartDateTime='{StartDateTime}',EndDateTime='{EndDateTime}')

@@ -160,3 +160,5 @@ v1.0-beta, Update-MgShareListItemVersionField, /shares/{sharedDriveItem-id}/list
 v1.0-beta, Update-MgShareListSubscription, /shares/{sharedDriveItem-id}/list/subscriptions/{subscription-id}
 v1.0-beta, Update-MgSharePermission, /shares/{sharedDriveItem-id}/permission
 v1.0-beta, Update-MgUserDrive, /users/{user-id}/drives/{drive-id}
+v1.0, Search-MgDrive, /drives/{drive-id}/search(q='{q}')
+v1.0-beta, Search-MgDrive, /drives/{drive-id}/search(q='{q}')
