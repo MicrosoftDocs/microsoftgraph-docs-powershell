@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Search
-Module Guid: 0b30ee40-14fc-4ef3-a51b-73a7d5c11861
+Module Guid: 4874deb6-4400-4810-a62e-13e559e3d9b9
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -128,8 +128,8 @@ Create new navigation property to operations for external
 Create a new industryDataConnector object.
 
 ### [New-MgExternalIndustryDataInboundFlow](New-MgExternalIndustryDataInboundFlow.md)
-Create a new inboundFileFlow object.
-The following prerequisite resources are required when you create an **inboundFileFlow**:
+Create a new inboundFlow object.
+The following prerequisite resources are required when you create an **inboundFlow**:
 
 ### [New-MgExternalIndustryDataOperation](New-MgExternalIndustryDataOperation.md)
 Create new navigation property to operations for external

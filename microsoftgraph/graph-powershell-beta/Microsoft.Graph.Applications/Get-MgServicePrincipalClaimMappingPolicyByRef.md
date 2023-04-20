@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgserviceprincipalclaimmappingpolicybyref
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # Get-MgServicePrincipalClaimMappingPolicyByRef
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalId
-key: id of servicePrincipal
+The unique identifier of servicePrincipal
 
 ```yaml
 Type: String

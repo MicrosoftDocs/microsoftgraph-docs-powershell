@@ -1,47 +1,82 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicyaudiencemember
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesupdatableasset
 schema: 2.0.0
 ---
 
-# Get-MgWindowsUpdatesPolicyAudienceMember
+# Get-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Specifies the assets to include in the audience.
+Assets registered with the deployment service that can receive updates.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgWindowsUpdatesPolicyAudienceMember -UpdatePolicyId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgWindowsUpdatesUpdatableAsset [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgWindowsUpdatesPolicyAudienceMember -UpdatableAssetId <String> -UpdatePolicyId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
+Get-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Specifies the assets to include in the audience.
+Assets registered with the deployment service that can receive updates.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
+
+### EXAMPLE 4
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.azureADDevice')"
+```
+
+### EXAMPLE 5
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset
+```
+
+### EXAMPLE 6
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -OutFile $outFileId
+```
+
+### EXAMPLE 7
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Get-MgWindowsUpdatesUpdatableAsset -Filter "isof('microsoft.graph.windowsUpdates.updatableAssetGroup')"
+```
 
 ## PARAMETERS
 
@@ -212,21 +247,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UpdatePolicyId
-The unique identifier of updatePolicy
-
-```yaml
-Type: String
-Parameter Sets: List, Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Skip
 Skip the first n items
 
@@ -257,5 +277,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicyaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicyaudiencemember)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatesupdatableasset)
 

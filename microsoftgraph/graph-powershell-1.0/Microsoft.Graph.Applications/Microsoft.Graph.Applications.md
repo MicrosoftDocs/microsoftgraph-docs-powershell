@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
-Module Guid: d9036b88-60a8-4fcd-9635-0b024f35b22f
+Module Guid: 668b514f-45a8-42f0-962e-312899c6dfe1
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -69,10 +69,10 @@ Invoke action checkMemberObjects
 Get the properties and relationships of an application object.
 
 ### [Get-MgApplicationAppManagementPolicy](Get-MgApplicationAppManagementPolicy.md)
-Get appManagementPolicies from applications
+The appManagementPolicy applied to this application.
 
 ### [Get-MgApplicationAppManagementPolicyByRef](Get-MgApplicationAppManagementPolicyByRef.md)
-Get ref of appManagementPolicies from applications
+The appManagementPolicy applied to this application.
 
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
 Return the directory objects specified in a list of IDs.
@@ -148,7 +148,7 @@ Supports $expand.
 Retrieve the properties and relationships of a servicePrincipal object.
 
 ### [Get-MgServicePrincipalAppManagementPolicy](Get-MgServicePrincipalAppManagementPolicy.md)
-Get appManagementPolicies from servicePrincipals
+The appManagementPolicy applied to this application.
 
 ### [Get-MgServicePrincipalAppRoleAssignedTo](Get-MgServicePrincipalAppRoleAssignedTo.md)
 App role assignments for this app or service, granted to users, groups, and other service principals.

@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Applications
-Module Guid: d9036b88-60a8-4fcd-9635-0b024f35b22f
+Module Guid: 668b514f-45a8-42f0-962e-312899c6dfe1
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -135,7 +135,7 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ### [Get-MgApplicationSynchronization](Get-MgApplicationSynchronization.md)
-Get synchronization from applications
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
 ### [Get-MgApplicationSynchronizationAccessToken](Get-MgApplicationSynchronizationAccessToken.md)
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
@@ -174,7 +174,8 @@ List the tokenLifetimePolicy objects that are assigned to an application or serv
 List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal..
 
 ### [Get-MgApplicationUserOwnedObject](Get-MgApplicationUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgGroupAppRoleAssignment](Get-MgGroupAppRoleAssignment.md)
 Represents the app roles a group has been granted for an application.
@@ -357,7 +358,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 Get a list of single sign-on credentials using a password for a user or group.
 
 ### [Get-MgServicePrincipalSynchronization](Get-MgServicePrincipalSynchronization.md)
-Get synchronization from servicePrincipals
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
 ### [Get-MgServicePrincipalSynchronizationAccessToken](Get-MgServicePrincipalSynchronizationAccessToken.md)
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
@@ -392,7 +393,8 @@ Supports $expand.
 Get transitiveMemberOf from servicePrincipals
 
 ### [Get-MgServicePrincipalUserOwnedObject](Get-MgServicePrincipalUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
 Represents the app roles a user has been granted for an application.
@@ -468,6 +470,7 @@ Call Start job to start synchronization.
 ### [New-MgApplicationSynchronizationJobOnDemand](New-MgApplicationSynchronizationJobOnDemand.md)
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
+No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
 ### [New-MgApplicationSynchronizationJobSchemaDirectory](New-MgApplicationSynchronizationJobSchemaDirectory.md)
 Create new navigation property to directories for applications
@@ -482,7 +485,7 @@ Create new navigation property to directories for applications
 Create new navigation property ref to tokenIssuancePolicies for applications
 
 ### [New-MgApplicationTokenLifetimePolicyByRef](New-MgApplicationTokenLifetimePolicyByRef.md)
-Assign a tokenLifetimePolicy to an application or servicePrincipal.
+Create new navigation property ref to tokenLifetimePolicies for applications
 
 ### [New-MgGroupAppRoleAssignment](New-MgGroupAppRoleAssignment.md)
 Use this API to assign an app role to a security group.
@@ -579,6 +582,7 @@ Call Start job to start synchronization.
 ### [New-MgServicePrincipalSynchronizationJobOnDemand](New-MgServicePrincipalSynchronizationJobOnDemand.md)
 Select a user and provision the account on-demand.
 The rate limit for this API is 5 requests per 10 seconds.
+No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
 ### [New-MgServicePrincipalSynchronizationJobSchemaDirectory](New-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
 Create new navigation property to directories for servicePrincipals

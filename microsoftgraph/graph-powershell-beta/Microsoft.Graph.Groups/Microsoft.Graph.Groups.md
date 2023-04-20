@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Groups
-Module Guid: ff835420-1489-4281-8bc7-9a7bd0cb7771
+Module Guid: a7b304c6-0a02-4887-b401-0dd97eb07684
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -343,7 +343,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgGroupPermissionGrantUserOwnedObject](Get-MgGroupPermissionGrantUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgGroupPhoto](Get-MgGroupPhoto.md)
 The group's profile photo.
@@ -467,7 +468,8 @@ The groups that a group is a member of, either directly and through nested membe
 Nullable.
 
 ### [Get-MgGroupUserOwnedObject](Get-MgGroupUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgUserJoinedGroup](Get-MgUserJoinedGroup.md)
 Get joinedGroups from users

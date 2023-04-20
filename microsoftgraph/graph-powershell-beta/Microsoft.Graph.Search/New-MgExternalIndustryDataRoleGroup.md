@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalindustrydatarolegroup
@@ -28,13 +28,6 @@ New-MgExternalIndustryDataRoleGroup -BodyParameter <IMicrosoftGraphIndustryDataR
 Create new navigation property to roleGroups for external
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -157,9 +150,36 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataRoleGroup
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphIndustryDataRoleGroup>: roleGroup
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[DisplayName <String>]`: The name of the role group.
+  - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
+    - `[Code <String>]`: The code of the desired referenceDefinition entry.
+    - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+      - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+      - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+      - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
+
+ROLES <IMicrosoftGraphIndustryDataRoleReferenceValue[]>: The set of roles included in the role group.
+  - `[Code <String>]`: The code of the desired referenceDefinition entry.
+  - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
+    - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
+    - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
+    - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalindustrydatarolegroup](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalindustrydatarolegroup)
-

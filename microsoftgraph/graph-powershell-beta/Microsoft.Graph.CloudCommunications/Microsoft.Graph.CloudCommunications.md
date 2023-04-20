@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: 66e008c9-7e43-4042-a1f7-fb9598449159
+Module Guid: e4b40999-3c1f-4d1d-87aa-9d800112875b
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -48,7 +48,8 @@ Read-only.
 Nullable.
 
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
-Get onlineMeetings from communications
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ### [Get-MgCommunicationOnlineMeetingAlternativeRecording](Get-MgCommunicationOnlineMeetingAlternativeRecording.md)
 The content stream of the alternative recording of a Microsoft Teams live event.
@@ -71,7 +72,7 @@ The content stream of the recording of a Teams live event.
 Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingRegistration](Get-MgCommunicationOnlineMeetingRegistration.md)
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ### [Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion](Get-MgCommunicationOnlineMeetingRegistrationCustomQuestion.md)
 Custom registration questions.
@@ -81,7 +82,7 @@ The transcripts of an online meeting.
 Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingTranscriptContent](Get-MgCommunicationOnlineMeetingTranscriptContent.md)
-A field representing the content of the transcript.
+A field that represents the content of the transcript.
 Read-only.
 
 ### [Get-MgCommunicationOnlineMeetingVirtualAppointment](Get-MgCommunicationOnlineMeetingVirtualAppointment.md)
@@ -117,7 +118,7 @@ The content stream of the recording of a Teams live event.
 Read-only.
 
 ### [Get-MgUserOnlineMeetingRegistration](Get-MgUserOnlineMeetingRegistration.md)
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ### [Get-MgUserOnlineMeetingRegistrationCustomQuestion](Get-MgUserOnlineMeetingRegistrationCustomQuestion.md)
 Custom registration questions.
@@ -127,15 +128,14 @@ The transcripts of an online meeting.
 Read-only.
 
 ### [Get-MgUserOnlineMeetingTranscriptContent](Get-MgUserOnlineMeetingTranscriptContent.md)
-A field representing the content of the transcript.
+A field that represents the content of the transcript.
 Read-only.
 
 ### [Get-MgUserOnlineMeetingVirtualAppointment](Get-MgUserOnlineMeetingVirtualAppointment.md)
 Get virtualAppointment from users
 
 ### [Get-MgUserPresence](Get-MgUserPresence.md)
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
+Get a user's presence information.
 
 ### [Invoke-MgAnswerCommunicationCall](Invoke-MgAnswerCommunicationCall.md)
 Enable a bot to answer an incoming call.
@@ -146,12 +146,14 @@ The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ### [Invoke-MgCreateOrGetCommunicationOnlineMeeting](Invoke-MgCreateOrGetCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Create new navigation property to onlineMeetings for communications
 
 ### [Invoke-MgInviteCommunicationCallParticipant](Invoke-MgInviteCommunicationCallParticipant.md)
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ### [Invoke-MgKeepCommunicationCallAlive](Invoke-MgKeepCommunicationCallAlive.md)
 Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.
@@ -248,7 +250,8 @@ Create new navigation property to participants for communications
 Create new navigation property to sessions for communications
 
 ### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
-Create new navigation property to onlineMeetings for communications
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ### [New-MgCommunicationOnlineMeetingAttendanceReport](New-MgCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -362,7 +365,7 @@ The content stream of the recording of a Teams live event.
 Read-only.
 
 ### [Set-MgCommunicationOnlineMeetingTranscriptContent](Set-MgCommunicationOnlineMeetingTranscriptContent.md)
-A field representing the content of the transcript.
+A field that represents the content of the transcript.
 Read-only.
 
 ### [Set-MgCommunicationPresence](Set-MgCommunicationPresence.md)
@@ -393,7 +396,7 @@ The content stream of the recording of a Teams live event.
 Read-only.
 
 ### [Set-MgUserOnlineMeetingTranscriptContent](Set-MgUserOnlineMeetingTranscriptContent.md)
-A field representing the content of the transcript.
+A field that represents the content of the transcript.
 Read-only.
 
 ### [Start-MgCommunicationCallParticipantHoldMusic](Start-MgCommunicationCallParticipantHoldMusic.md)

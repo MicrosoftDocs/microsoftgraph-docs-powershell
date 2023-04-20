@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowidentityproviderbyref
@@ -41,7 +41,7 @@ Accept wildcard characters: False
 ```
 
 ### -B2XIdentityUserFlowId
-key: id of b2xIdentityUserFlow
+The unique identifier of b2xIdentityUserFlow
 
 ```yaml
 Type: String

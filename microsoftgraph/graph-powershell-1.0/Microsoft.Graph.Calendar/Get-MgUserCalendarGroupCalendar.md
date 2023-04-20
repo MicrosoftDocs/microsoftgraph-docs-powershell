@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendargroupcalendar
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserCalendarGroupCalendar
@@ -52,7 +51,7 @@ Accept wildcard characters: False
 ```
 
 ### -CalendarGroupId
-key: id of calendarGroup
+The unique identifier of calendarGroup
 
 ```yaml
 Type: String
@@ -158,7 +157,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-key: id of user
+The unique identifier of user
 
 ```yaml
 Type: String

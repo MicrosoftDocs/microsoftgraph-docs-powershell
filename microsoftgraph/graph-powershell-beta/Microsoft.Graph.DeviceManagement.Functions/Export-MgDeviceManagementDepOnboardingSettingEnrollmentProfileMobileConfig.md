@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Functions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/export-mgdevicemanagementdeponboardingsettingenrollmentprofilemobileconfig
@@ -32,7 +32,7 @@ Exports the mobile configuration
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
-key: id of depOnboardingSetting
+The unique identifier of depOnboardingSetting
 
 ```yaml
 Type: String
@@ -47,7 +47,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnrollmentProfileId
-key: id of enrollmentProfile
+The unique identifier of enrollmentProfile
 
 ```yaml
 Type: String
@@ -95,29 +95,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementFunctionsIdentity>: Identity Parameter
   - `[Category <String>]`: Usage: category='{category}'
-  - `[CloudPcId <String>]`: key: id of cloudPC
+  - `[CloudPcId <String>]`: The unique identifier of cloudPC
   - `[CloudPcId1 <String>]`: Usage: cloudPcId='{cloudPcId}'
-  - `[DepOnboardingSettingId <String>]`: key: id of depOnboardingSetting
-  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: key: id of deviceAndAppManagementAssignmentFilter
-  - `[DeviceConfigurationId <String>]`: key: id of deviceConfiguration
-  - `[DeviceHealthScriptId <String>]`: key: id of deviceHealthScript
-  - `[DeviceManagementIntentId <String>]`: key: id of deviceManagementIntent
-  - `[DeviceManagementTemplateId <String>]`: key: id of deviceManagementTemplate
-  - `[DeviceManagementTemplateId1 <String>]`: key: id of deviceManagementTemplate
+  - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
+  - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
+  - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
+  - `[DeviceHealthScriptId <String>]`: The unique identifier of deviceHealthScript
+  - `[DeviceManagementIntentId <String>]`: The unique identifier of deviceManagementIntent
+  - `[DeviceManagementTemplateId <String>]`: The unique identifier of deviceManagementTemplate
+  - `[DeviceManagementTemplateId1 <String>]`: The unique identifier of deviceManagementTemplate
   - `[DomainName <String>]`: Usage: domainName='{domainName}'
-  - `[EnrollmentProfileId <String>]`: key: id of enrollmentProfile
+  - `[EnrollmentProfileId <String>]`: The unique identifier of enrollmentProfile
   - `[EnrollmentType <String>]`: Usage: enrollmentType='{enrollmentType}'
   - `[ExpiringBeforeDateTime <String>]`: Usage: expiringBeforeDateTime='{expiringBeforeDateTime}'
+  - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[Ids <String[]>]`: Usage: ids={ids}
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
+  - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[Platform <DevicePlatformType?>]`: Usage: platform='{platform}'
   - `[PolicyId <String>]`: Usage: policyId='{policyId}'
   - `[Resource <String>]`: Usage: resource='{resource}'
-  - `[ResourceOperationId <String>]`: key: id of resourceOperation
+  - `[ResourceOperationId <String>]`: The unique identifier of resourceOperation
   - `[Scope <String>]`: Usage: scope='{scope}'
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
   - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
   - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'

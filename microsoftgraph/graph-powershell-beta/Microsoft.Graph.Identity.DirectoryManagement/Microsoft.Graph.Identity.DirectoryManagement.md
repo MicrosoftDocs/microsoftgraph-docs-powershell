@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: ee247273-b836-4a7b-b508-32f60c1c3958
+Module Guid: f4b4c495-c680-4076-8636-abdd2ffadce2
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -121,7 +121,7 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 Invoke action checkMemberObjects
 
 ### [Export-MgDirectoryInboundSharedUserProfilePersonalData](Export-MgDirectoryInboundSharedUserProfilePersonalData.md)
-Invoke action exportPersonalData
+Create a request to export the personal data for an inboundSharedUserProfile.
 
 ### [Get-MgAdministrativeUnit](Get-MgAdministrativeUnit.md)
 Retrieve the properties and relationships of an administrativeUnit object.
@@ -157,7 +157,8 @@ Invoke action getMemberObjects
 Scoped-role members of this administrative unit.
 
 ### [Get-MgAdministrativeUnitUserOwnedObject](Get-MgAdministrativeUnitUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgContact](Get-MgContact.md)
 Get the properties and relationships of an organizational contact object.
@@ -205,7 +206,8 @@ The transitive reports for a contact.
 Read-only.
 
 ### [Get-MgContactUserOwnedObject](Get-MgContactUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgContract](Get-MgContract.md)
 Retrieve the properties and relationships of contract object.
@@ -225,7 +227,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgContractUserOwnedObject](Get-MgContractUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDevice](Get-MgDevice.md)
 Get the properties and relationships of a device object.
@@ -297,7 +300,8 @@ Supports $expand.
 Represents the usage rights a device has been granted.
 
 ### [Get-MgDeviceUserOwnedObject](Get-MgDeviceUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
@@ -335,7 +339,8 @@ Invoke action getMemberObjects
 Scoped-role members of this administrative unit.
 
 ### [Get-MgDirectoryAdministrativeUnitUserOwnedObject](Get-MgDirectoryAdministrativeUnitUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryAttributeSet](Get-MgDirectoryAttributeSet.md)
 Group of related custom security attribute definitions.
@@ -365,7 +370,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgDirectoryDeletedItemUserOwnedObject](Get-MgDirectoryDeletedItemUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryFeatureRolloutPolicy](Get-MgDirectoryFeatureRolloutPolicy.md)
 Get featureRolloutPolicies from directory
@@ -386,7 +392,8 @@ Specifies a list of directoryObjects that feature is enabled for.
 Invoke function delta
 
 ### [Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject](Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
@@ -395,7 +402,8 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 Get impactedResources from directory
 
 ### [Get-MgDirectoryInboundSharedUserProfile](Get-MgDirectoryInboundSharedUserProfile.md)
-Get inboundSharedUserProfiles from directory
+A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant.
+Nullable.
 
 ### [Get-MgDirectoryOnPremisSynchronization](Get-MgDirectoryOnPremisSynchronization.md)
 A container for on-premises directory synchronization functionalities that are available for the organization.
@@ -404,7 +412,8 @@ A container for on-premises directory synchronization functionalities that are a
 Get outboundSharedUserProfiles from directory
 
 ### [Get-MgDirectoryOutboundSharedUserProfileTenant](Get-MgDirectoryOutboundSharedUserProfileTenant.md)
-Get tenants from directory
+The collection of external Azure AD tenants that the user has shared profile data with.
+Read-only.
 
 ### [Get-MgDirectoryRecommendation](Get-MgDirectoryRecommendation.md)
 List of recommended improvements to improve tenant posture.
@@ -466,10 +475,12 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgDirectoryRoleTemplateUserOwnedObject](Get-MgDirectoryRoleTemplateUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryRoleUserOwnedObject](Get-MgDirectoryRoleUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectorySetting](Get-MgDirectorySetting.md)
 Retrieve the properties of a specific directory setting object.
@@ -493,7 +504,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgDirectorySettingTemplateUserOwnedObject](Get-MgDirectorySettingTemplateUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectorySharedEmailDomain](Get-MgDirectorySharedEmailDomain.md)
 Get sharedEmailDomains from directory
@@ -647,7 +659,8 @@ Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ### [Get-MgOrganizationUserOwnedObject](Get-MgOrganizationUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get a specific commercial subscription that an organization has acquired.
@@ -932,7 +945,7 @@ Delete navigation property impactedResources for directory
 Delete navigation property inboundSharedUserProfiles for directory
 
 ### [Remove-MgDirectoryInboundSharedUserProfilePersonalData](Remove-MgDirectoryInboundSharedUserProfilePersonalData.md)
-Invoke action removePersonalData
+Create a request to remove the personal data for an inboundSharedUserProfile.
 
 ### [Remove-MgDirectoryOnPremisSynchronization](Remove-MgDirectoryOnPremisSynchronization.md)
 Delete navigation property onPremisesSynchronization for directory
@@ -944,7 +957,7 @@ Delete navigation property outboundSharedUserProfiles for directory
 Delete navigation property tenants for directory
 
 ### [Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData](Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData.md)
-Invoke action removePersonalData
+Create a request to remove the personal data for an outboundSharedUserProfile.
 
 ### [Remove-MgDirectoryRecommendation](Remove-MgDirectoryRecommendation.md)
 Delete navigation property recommendations for directory

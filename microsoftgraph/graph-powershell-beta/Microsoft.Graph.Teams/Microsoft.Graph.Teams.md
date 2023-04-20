@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Teams
-Module Guid: ec060e8a-a328-428d-8349-7db0b54b021f
+Module Guid: cb4f7f62-38b6-4c96-8505-7f901aaf4bbd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -201,7 +201,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgChatPermissionGrantUserOwnedObject](Get-MgChatPermissionGrantUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgChatPinnedMessage](Get-MgChatPinnedMessage.md)
 A collection of all the pinned messages in the chat.
@@ -381,10 +382,10 @@ The template this team was created from.
 See available templates.
 
 ### [Get-MgGroupTeamTemplateDefinition](Get-MgGroupTeamTemplateDefinition.md)
-Get templateDefinition from groups
+Generic representation of a team template definition for a team with a specific structure and configuration.
 
 ### [Get-MgTeam](Get-MgTeam.md)
-Retrieve the properties and relationships of the specified team.
+Get entity from teams by key
 
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
 The collection of channels and messages associated with the team.
@@ -477,7 +478,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgTeamPermissionGrantUserOwnedObject](Get-MgTeamPermissionGrantUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgTeamPhoto](Get-MgTeamPhoto.md)
 The team photo.
@@ -579,7 +581,7 @@ The template this team was created from.
 See available templates.
 
 ### [Get-MgTeamTemplateDefinition](Get-MgTeamTemplateDefinition.md)
-Get templateDefinition from teams
+Generic representation of a team template definition for a team with a specific structure and configuration.
 
 ### [Get-MgTeamwork](Get-MgTeamwork.md)
 Get teamwork
@@ -792,28 +794,28 @@ For each shift, openshift and timeOff instance in the specified time range, the 
 The **notifyTeam** parameter further specifies which employees can view the item.
 
 ### [Invoke-MgSoftChatMessageDelete](Invoke-MgSoftChatMessageDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftChatMessageReplyDelete](Invoke-MgSoftChatMessageReplyDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftTeamChannelMessageDelete](Invoke-MgSoftTeamChannelMessageDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftTeamChannelMessageReplyDelete](Invoke-MgSoftTeamChannelMessageReplyDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftTeamPrimaryChannelMessageDelete](Invoke-MgSoftTeamPrimaryChannelMessageDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete](Invoke-MgSoftTeamPrimaryChannelMessageReplyDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete](Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftTeamworkDeletedTeamChannelMessageReplyDelete](Invoke-MgSoftTeamworkDeletedTeamChannelMessageReplyDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgUnarchiveTeam](Invoke-MgUnarchiveTeam.md)
 Restore an archived team.
@@ -1632,28 +1634,28 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgChatMessageSoftDelete](Undo-MgChatMessageSoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgTeamChannelMessageReplySoftDelete](Undo-MgTeamChannelMessageReplySoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgTeamChannelMessageSoftDelete](Undo-MgTeamChannelMessageSoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgTeamPrimaryChannelMessageReplySoftDelete](Undo-MgTeamPrimaryChannelMessageReplySoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgTeamPrimaryChannelMessageSoftDelete](Undo-MgTeamPrimaryChannelMessageSoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgTeamworkDeletedTeamChannelMessageReplySoftDelete](Undo-MgTeamworkDeletedTeamChannelMessageReplySoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgTeamworkDeletedTeamChannelMessageSoftDelete](Undo-MgTeamworkDeletedTeamChannelMessageSoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Update-MgAppCatalogTeamApp](Update-MgAppCatalogTeamApp.md)
 Update the navigation property teamsApps in appCatalogs

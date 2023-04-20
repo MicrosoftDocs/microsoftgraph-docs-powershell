@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentcontent
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
 # Set-MgServiceAnnouncementMessageAttachmentContent
@@ -119,7 +118,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceAnnouncementAttachmentId
-key: id of serviceAnnouncementAttachment
+The unique identifier of serviceAnnouncementAttachment
 
 ```yaml
 Type: String
@@ -134,7 +133,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceUpdateMessageId
-key: id of serviceUpdateMessage
+The unique identifier of serviceUpdateMessage
 
 ```yaml
 Type: String
@@ -198,10 +197,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
-  - `[ServiceAnnouncementAttachmentId <String>]`: key: id of serviceAnnouncementAttachment
-  - `[ServiceHealthId <String>]`: key: id of serviceHealth
-  - `[ServiceHealthIssueId <String>]`: key: id of serviceHealthIssue
-  - `[ServiceUpdateMessageId <String>]`: key: id of serviceUpdateMessage
+INPUTOBJECT <IDevicesServiceAnnouncementIdentity>: Identity Parameter
+  - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
+  - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
+  - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
+  - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
