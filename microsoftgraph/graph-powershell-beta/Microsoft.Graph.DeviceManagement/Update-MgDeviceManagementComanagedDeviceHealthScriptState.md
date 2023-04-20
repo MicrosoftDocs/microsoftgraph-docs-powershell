@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementcomanageddevicehealthscriptstate
@@ -537,7 +537,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptPolicyState>: Contains properties for policy run state of the device health script.
+BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptPolicyState>`: Contains properties for policy run state of the device health script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignmentFilterIds <String[]>]`: A list of the assignment filter ids used for health script applicability evaluation
   - `[DetectionState <RunState?>]`: Indicates the type of execution status of the device management script.
@@ -558,7 +558,7 @@ BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptPolicyState>: Contains propertie
   - `[RemediationState <RemediationState?>]`: Indicates the type of execution status of the device management script.
   - `[UserName <String>]`: Name of the user whom ran the device health script
 
-INPUTOBJECT <IDeviceManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
