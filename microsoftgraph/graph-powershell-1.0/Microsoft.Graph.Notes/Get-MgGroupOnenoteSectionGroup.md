@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotesectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteSectionGroup
@@ -124,7 +123,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-key: id of group
+The unique identifier of group
 
 ```yaml
 Type: String
@@ -200,7 +199,7 @@ Accept wildcard characters: False
 ```
 
 ### -SectionGroupId
-key: id of sectionGroup
+The unique identifier of sectionGroup
 
 ```yaml
 Type: String
@@ -277,15 +276,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[NotebookId <String>]`: key: id of notebook
-  - `[OnenoteOperationId <String>]`: key: id of onenoteOperation
-  - `[OnenotePageId <String>]`: key: id of onenotePage
-  - `[OnenoteResourceId <String>]`: key: id of onenoteResource
-  - `[OnenoteSectionId <String>]`: key: id of onenoteSection
-  - `[SectionGroupId <String>]`: key: id of sectionGroup
-  - `[SiteId <String>]`: key: id of site
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <INotesIdentity>: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
+  - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
+  - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SiteId <String>]`: The unique identifier of site
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

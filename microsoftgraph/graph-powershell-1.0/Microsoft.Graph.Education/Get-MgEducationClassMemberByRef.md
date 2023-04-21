@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationclassmemberbyref
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationClassMemberByRef
@@ -69,7 +68,7 @@ Accept wildcard characters: False
 ```
 
 ### -EducationClassId
-key: id of educationClass
+The unique identifier of educationClass
 
 ```yaml
 Type: String

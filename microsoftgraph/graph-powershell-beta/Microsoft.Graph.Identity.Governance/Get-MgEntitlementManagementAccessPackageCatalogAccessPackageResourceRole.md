@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagecatalogaccesspackageresourcerole
@@ -55,7 +55,7 @@ This example extends the filter in example 1 to return access roles whose displa
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
-key: id of accessPackageCatalog
+The unique identifier of accessPackageCatalog
 
 ```yaml
 Type: String

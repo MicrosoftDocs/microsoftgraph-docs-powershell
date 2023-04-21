@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflow
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -B2XIdentityUserFlowId
-key: id of b2xIdentityUserFlow
+The unique identifier of b2xIdentityUserFlow
 
 ```yaml
 Type: String
@@ -308,7 +308,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration1>`: userFlowApiConnectorConfiguration
+APICONNECTORCONFIGURATION <IMicrosoftGraphUserFlowApiConnectorConfiguration1>: userFlowApiConnectorConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PostAttributeCollection <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -320,7 +320,7 @@ APICONNECTORCONFIGURATION `<IMicrosoftGraphUserFlowApiConnectorConfiguration1>`:
   - `[PostFederationSignup <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
   - `[PreTokenIssuance <IMicrosoftGraphIdentityApiConnector>]`: identityApiConnector
 
-BODYPARAMETER `<IMicrosoftGraphB2XIdentityUserFlow1>`: b2xIdentityUserFlow
+BODYPARAMETER <IMicrosoftGraphB2XIdentityUserFlow1>: b2xIdentityUserFlow
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserFlowType <String>]`: userFlowType
   - `[UserFlowTypeVersion <Single?>]`: 
@@ -370,88 +370,88 @@ BODYPARAMETER `<IMicrosoftGraphB2XIdentityUserFlow1>`: b2xIdentityUserFlow
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
 
-IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider\[]>: The identity providers included in the user flow.
+IDENTITYPROVIDERS <IMicrosoftGraphIdentityProvider[]>: The identity providers included in the user flow.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ClientId <String>]`: The client ID for the application. This is the client ID obtained when registering the application with the identity provider. Required. Not nullable.
   - `[ClientSecret <String>]`: The client secret for the application. This is the client secret obtained when registering the application with the identity provider. This is write-only. A read operation will return ****.  Required. Not nullable.
   - `[Name <String>]`: The display name of the identity provider. Not nullable.
   - `[Type <String>]`: The identity provider type is a required field. For B2B scenario: Google, Facebook. For B2C scenario: Microsoft, Google, Amazon, LinkedIn, Facebook, GitHub, Twitter, Weibo, QQ, WeChat, OpenIDConnect. Not nullable.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
-  - `[ActivityBasedTimeoutPolicyId <String>]`: key: id of activityBasedTimeoutPolicy
-  - `[AppManagementPolicyId <String>]`: key: id of appManagementPolicy
-  - `[AuthenticationCombinationConfigurationId <String>]`: key: id of authenticationCombinationConfiguration
-  - `[AuthenticationContextClassReferenceId <String>]`: key: id of authenticationContextClassReference
-  - `[AuthenticationEventListenerId <String>]`: key: id of authenticationEventListener
-  - `[AuthenticationMethodConfigurationId <String>]`: key: id of authenticationMethodConfiguration
-  - `[AuthenticationMethodId <String>]`: key: id of authenticationMethod
-  - `[AuthenticationMethodModeDetailId <String>]`: key: id of authenticationMethodModeDetail
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+  - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
+  - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
+  - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
+  - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
+  - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
+  - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
+  - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
+  - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
   - `[AuthenticationMethodModes <String[]>]`: Usage: authenticationMethodModes={authenticationMethodModes}
-  - `[AuthenticationStrengthPolicyId <String>]`: key: id of authenticationStrengthPolicy
-  - `[AuthorizationPolicyId <String>]`: key: id of authorizationPolicy
-  - `[B2CIdentityUserFlowId <String>]`: key: id of b2cIdentityUserFlow
-  - `[B2XIdentityUserFlowId <String>]`: key: id of b2xIdentityUserFlow
-  - `[BitlockerRecoveryKeyId <String>]`: key: id of bitlockerRecoveryKey
-  - `[CertificateBasedAuthConfigurationId <String>]`: key: id of certificateBasedAuthConfiguration
-  - `[ClaimsMappingPolicyId <String>]`: key: id of claimsMappingPolicy
-  - `[ConditionalAccessPolicyId <String>]`: key: id of conditionalAccessPolicy
-  - `[ConditionalAccessTemplateId <String>]`: key: id of conditionalAccessTemplate
-  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: key: tenantId of crossTenantAccessPolicyConfigurationPartner
-  - `[CustomAuthenticationExtensionId <String>]`: key: id of customAuthenticationExtension
-  - `[DataLossPreventionPolicyId <String>]`: key: id of dataLossPreventionPolicy
-  - `[DataPolicyOperationId <String>]`: key: id of dataPolicyOperation
-  - `[DefaultUserRoleOverrideId <String>]`: key: id of defaultUserRoleOverride
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[EmailAuthenticationMethodId <String>]`: key: id of emailAuthenticationMethod
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[Fido2AuthenticationMethodId <String>]`: key: id of fido2AuthenticationMethod
-  - `[GroupId <String>]`: key: id of group
-  - `[HomeRealmDiscoveryPolicyId <String>]`: key: id of homeRealmDiscoveryPolicy
-  - `[IdentityApiConnectorId <String>]`: key: id of identityApiConnector
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[IdentityProviderId <String>]`: key: id of identityProvider
-  - `[IdentityUserFlowAttributeAssignmentId <String>]`: key: id of identityUserFlowAttributeAssignment
-  - `[IdentityUserFlowAttributeId <String>]`: key: id of identityUserFlowAttribute
-  - `[IdentityUserFlowId <String>]`: key: id of identityUserFlow
-  - `[InformationProtectionLabelId <String>]`: key: id of informationProtectionLabel
-  - `[LongRunningOperationId <String>]`: key: id of longRunningOperation
-  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of microsoftAuthenticatorAuthenticationMethod
-  - `[MobilityManagementPolicyId <String>]`: key: id of mobilityManagementPolicy
-  - `[NamedLocationId <String>]`: key: id of namedLocation
-  - `[OAuth2PermissionGrantId <String>]`: key: id of oAuth2PermissionGrant
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[PasswordAuthenticationMethodId <String>]`: key: id of passwordAuthenticationMethod
-  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: key: id of passwordlessMicrosoftAuthenticatorAuthenticationMethod
-  - `[PermissionGrantConditionSetId <String>]`: key: id of permissionGrantConditionSet
-  - `[PermissionGrantPolicyId <String>]`: key: id of permissionGrantPolicy
-  - `[PhoneAuthenticationMethodId <String>]`: key: id of phoneAuthenticationMethod
-  - `[RiskDetectionId <String>]`: key: id of riskDetection
-  - `[RiskyServicePrincipalHistoryItemId <String>]`: key: id of riskyServicePrincipalHistoryItem
-  - `[RiskyServicePrincipalId <String>]`: key: id of riskyServicePrincipal
-  - `[RiskyUserHistoryItemId <String>]`: key: id of riskyUserHistoryItem
-  - `[RiskyUserId <String>]`: key: id of riskyUser
-  - `[SensitivityLabelId <String>]`: key: id of sensitivityLabel
-  - `[SensitivityLabelId1 <String>]`: key: id of sensitivityLabel
-  - `[ServicePrincipalCreationConditionSetId <String>]`: key: id of servicePrincipalCreationConditionSet
-  - `[ServicePrincipalCreationPolicyId <String>]`: key: id of servicePrincipalCreationPolicy
-  - `[ServicePrincipalRiskDetectionId <String>]`: key: id of servicePrincipalRiskDetection
-  - `[SoftwareOathAuthenticationMethodId <String>]`: key: id of softwareOathAuthenticationMethod
-  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: key: id of temporaryAccessPassAuthenticationMethod
-  - `[ThreatAssessmentRequestId <String>]`: key: id of threatAssessmentRequest
-  - `[ThreatAssessmentResultId <String>]`: key: id of threatAssessmentResult
-  - `[TokenIssuancePolicyId <String>]`: key: id of tokenIssuancePolicy
-  - `[TokenLifetimePolicyId <String>]`: key: id of tokenLifetimePolicy
-  - `[TrustFrameworkKeySetId <String>]`: key: id of trustFrameworkKeySet
-  - `[TrustFrameworkPolicyId <String>]`: key: id of trustFrameworkPolicy
-  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: key: id of unifiedRoleManagementPolicyAssignment
-  - `[UnifiedRoleManagementPolicyId <String>]`: key: id of unifiedRoleManagementPolicy
-  - `[UnifiedRoleManagementPolicyRuleId <String>]`: key: id of unifiedRoleManagementPolicyRule
-  - `[UserFlowLanguageConfigurationId <String>]`: key: id of userFlowLanguageConfiguration
-  - `[UserFlowLanguagePageId <String>]`: key: id of userFlowLanguagePage
-  - `[UserId <String>]`: key: id of user
-  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: key: id of windowsHelloForBusinessAuthenticationMethod
+  - `[AuthenticationStrengthPolicyId <String>]`: The unique identifier of authenticationStrengthPolicy
+  - `[AuthorizationPolicyId <String>]`: The unique identifier of authorizationPolicy
+  - `[B2CIdentityUserFlowId <String>]`: The unique identifier of b2cIdentityUserFlow
+  - `[B2XIdentityUserFlowId <String>]`: The unique identifier of b2xIdentityUserFlow
+  - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
+  - `[CertificateBasedAuthConfigurationId <String>]`: The unique identifier of certificateBasedAuthConfiguration
+  - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
+  - `[ConditionalAccessPolicyId <String>]`: The unique identifier of conditionalAccessPolicy
+  - `[ConditionalAccessTemplateId <String>]`: The unique identifier of conditionalAccessTemplate
+  - `[CrossTenantAccessPolicyConfigurationPartnerTenantId <String>]`: The unique identifier of crossTenantAccessPolicyConfigurationPartner
+  - `[CustomAuthenticationExtensionId <String>]`: The unique identifier of customAuthenticationExtension
+  - `[DataLossPreventionPolicyId <String>]`: The unique identifier of dataLossPreventionPolicy
+  - `[DataPolicyOperationId <String>]`: The unique identifier of dataPolicyOperation
+  - `[DefaultUserRoleOverrideId <String>]`: The unique identifier of defaultUserRoleOverride
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[EmailAuthenticationMethodId <String>]`: The unique identifier of emailAuthenticationMethod
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[Fido2AuthenticationMethodId <String>]`: The unique identifier of fido2AuthenticationMethod
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
+  - `[IdentityApiConnectorId <String>]`: The unique identifier of identityApiConnector
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[IdentityProviderId <String>]`: The unique identifier of identityProvider
+  - `[IdentityUserFlowAttributeAssignmentId <String>]`: The unique identifier of identityUserFlowAttributeAssignment
+  - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
+  - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
+  - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
+  - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
+  - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
+  - `[NamedLocationId <String>]`: The unique identifier of namedLocation
+  - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[PasswordAuthenticationMethodId <String>]`: The unique identifier of passwordAuthenticationMethod
+  - `[PasswordlessMicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of passwordlessMicrosoftAuthenticatorAuthenticationMethod
+  - `[PermissionGrantConditionSetId <String>]`: The unique identifier of permissionGrantConditionSet
+  - `[PermissionGrantPolicyId <String>]`: The unique identifier of permissionGrantPolicy
+  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
+  - `[RiskDetectionId <String>]`: The unique identifier of riskDetection
+  - `[RiskyServicePrincipalHistoryItemId <String>]`: The unique identifier of riskyServicePrincipalHistoryItem
+  - `[RiskyServicePrincipalId <String>]`: The unique identifier of riskyServicePrincipal
+  - `[RiskyUserHistoryItemId <String>]`: The unique identifier of riskyUserHistoryItem
+  - `[RiskyUserId <String>]`: The unique identifier of riskyUser
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
+  - `[ServicePrincipalCreationConditionSetId <String>]`: The unique identifier of servicePrincipalCreationConditionSet
+  - `[ServicePrincipalCreationPolicyId <String>]`: The unique identifier of servicePrincipalCreationPolicy
+  - `[ServicePrincipalRiskDetectionId <String>]`: The unique identifier of servicePrincipalRiskDetection
+  - `[SoftwareOathAuthenticationMethodId <String>]`: The unique identifier of softwareOathAuthenticationMethod
+  - `[TemporaryAccessPassAuthenticationMethodId <String>]`: The unique identifier of temporaryAccessPassAuthenticationMethod
+  - `[ThreatAssessmentRequestId <String>]`: The unique identifier of threatAssessmentRequest
+  - `[ThreatAssessmentResultId <String>]`: The unique identifier of threatAssessmentResult
+  - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
+  - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
+  - `[TrustFrameworkKeySetId <String>]`: The unique identifier of trustFrameworkKeySet
+  - `[TrustFrameworkPolicyId <String>]`: The unique identifier of trustFrameworkPolicy
+  - `[UnifiedRoleManagementPolicyAssignmentId <String>]`: The unique identifier of unifiedRoleManagementPolicyAssignment
+  - `[UnifiedRoleManagementPolicyId <String>]`: The unique identifier of unifiedRoleManagementPolicy
+  - `[UnifiedRoleManagementPolicyRuleId <String>]`: The unique identifier of unifiedRoleManagementPolicyRule
+  - `[UserFlowLanguageConfigurationId <String>]`: The unique identifier of userFlowLanguageConfiguration
+  - `[UserFlowLanguagePageId <String>]`: The unique identifier of userFlowLanguagePage
+  - `[UserId <String>]`: The unique identifier of user
+  - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration\[]>: The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign up user flow. You cannot create custom languages in self-service sign up user flows.
+LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration[]>: The languages supported for customization within the user flow. Language customization is enabled by default in self-service sign up user flow. You cannot create custom languages in self-service sign up user flows.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DefaultPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the default content to display in a user flow for a specified language. This collection does not allow any kind of modification.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -459,7 +459,7 @@ LANGUAGES <IMicrosoftGraphUserFlowLanguageConfiguration\[]>: The languages suppo
   - `[IsEnabled <Boolean?>]`: Indicates whether the language is enabled within the user flow.
   - `[OverridesPages <IMicrosoftGraphUserFlowLanguagePage[]>]`: Collection of pages with the overrides messages to display in a user flow for a specified language. This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
 
-USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment\[]>: The user attribute assignments included in the user flow.
+USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment[]>: The user attribute assignments included in the user flow.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
   - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user cannot complete sign-up without providing a value.
@@ -477,7 +477,7 @@ USERATTRIBUTEASSIGNMENTS <IMicrosoftGraphIdentityUserFlowAttributeAssignment\[]>
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 
-USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase\[]>: .
+USERFLOWIDENTITYPROVIDERS <IMicrosoftGraphIdentityProviderBase[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 

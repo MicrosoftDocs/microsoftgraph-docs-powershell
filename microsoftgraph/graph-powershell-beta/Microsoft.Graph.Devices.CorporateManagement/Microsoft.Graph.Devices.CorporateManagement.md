@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 7c96d5fb-e0c2-4c96-b262-227030bac7ff
+Module Guid: 6e9cc2a6-9d98-4491-a790-5ae7a4a07198
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -112,6 +112,12 @@ Invoke action hasPayloadLinks
 
 ### [Invoke-MgHasDeviceAppMgtTargetedManagedAppConfigurationPayloadLink](Invoke-MgHasDeviceAppMgtTargetedManagedAppConfigurationPayloadLink.md)
 Invoke action hasPayloadLinks
+
+### [Invoke-MgLobDeviceAppMgtGetMobileApp](Invoke-MgLobDeviceAppMgtGetMobileApp.md)
+Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
+
+### [Invoke-MgLobDeviceAppMgtListMobileApp](Invoke-MgLobDeviceAppMgtListMobileApp.md)
+Get the items of type microsoft.graph.managedMobileLobApp in the microsoft.graph.mobileApp collection
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps

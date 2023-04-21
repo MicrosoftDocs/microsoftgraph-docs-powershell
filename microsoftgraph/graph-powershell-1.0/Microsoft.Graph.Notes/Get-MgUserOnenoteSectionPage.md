@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectionpage
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnenoteSectionId
-key: id of onenoteSection
+The unique identifier of onenoteSection
 
 ```yaml
 Type: String
@@ -181,7 +181,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-key: id of user
+The unique identifier of user
 
 ```yaml
 Type: String
@@ -217,7 +217,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePage
 ## NOTES
 
 ALIASES

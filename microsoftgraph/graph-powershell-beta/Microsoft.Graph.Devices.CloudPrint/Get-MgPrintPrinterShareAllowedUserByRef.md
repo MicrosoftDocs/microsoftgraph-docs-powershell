@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintersharealloweduserbyref
@@ -87,7 +87,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrinterShareId
-key: id of printerShare
+The unique identifier of printerShare
 
 ```yaml
 Type: String

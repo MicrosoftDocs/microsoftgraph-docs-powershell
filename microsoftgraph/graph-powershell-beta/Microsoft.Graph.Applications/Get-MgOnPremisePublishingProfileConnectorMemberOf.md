@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofileconnectormemberof
@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -ConnectorId
-key: id of connector
+The unique identifier of connector
 
 ```yaml
 Type: String
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesPublishingProfileId
-key: id of onPremisesPublishingProfile
+The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String

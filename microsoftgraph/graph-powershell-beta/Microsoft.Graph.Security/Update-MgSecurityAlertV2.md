@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertv2
@@ -12,7 +12,7 @@ Update the navigation property alerts_v2 in security
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgSecurityAlertV2 -AlertId <String> [-ActorDisplayName <String>] [-AdditionalProperties <Hashtable>]
  [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
@@ -26,13 +26,13 @@ Update-MgSecurityAlertV2 -AlertId <String> [-ActorDisplayName <String>] [-Additi
  [-ThreatFamilyName <String>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgSecurityAlertV2 -AlertId <String> -BodyParameter <IMicrosoftGraphSecurityAlert1> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ActorDisplayName <String>]
  [-AdditionalProperties <Hashtable>] [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>]
@@ -46,7 +46,7 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> [-ActorDisplayName <St
  [-ThreatFamilyName <String>] [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicrosoftGraphSecurityAlert1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -57,13 +57,6 @@ Update the navigation property alerts_v2 in security
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -71,7 +64,7 @@ The adversary or activity group that is associated with this alert.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -86,7 +79,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -101,7 +94,7 @@ The unique identifier of alert
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -116,7 +109,7 @@ URL for the alert page in the Microsoft 365 Defender portal.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -131,7 +124,7 @@ Owner of the alert, or null if no owner is assigned.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -147,7 +140,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphSecurityAlert1
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -163,7 +156,7 @@ Aligned with the MITRE ATT&CK framework.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -178,7 +171,7 @@ alertClassification
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -194,7 +187,7 @@ To construct, please use Get-Help -Online and see NOTES section for COMMENTS pro
 
 ```yaml
 Type: IMicrosoftGraphSecurityAlertComment[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -209,7 +202,7 @@ Time when Microsoft 365 Defender created the alert.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -224,7 +217,7 @@ String value describing each alert.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -239,7 +232,7 @@ detectionSource
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -254,7 +247,7 @@ The ID of the detector that triggered the alert.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -269,7 +262,7 @@ alertDetermination
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -285,7 +278,7 @@ To construct, please use Get-Help -Online and see NOTES section for EVIDENCE pro
 
 ```yaml
 Type: IMicrosoftGraphSecurityAlertEvidence1[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -300,7 +293,7 @@ The earliest activity associated with the alert.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -316,7 +309,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -331,7 +324,7 @@ Unique identifier to represent the incident this alert resource is associated wi
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -346,7 +339,7 @@ URL for the incident page in the Microsoft 365 Defender portal.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -362,7 +355,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -377,7 +370,7 @@ The oldest activity associated with the alert.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -392,7 +385,7 @@ Time when the alert was last updated at Microsoft 365 Defender.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -407,7 +400,7 @@ The attack techniques, as aligned with the MITRE ATT&CK framework.
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -427,7 +420,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -437,7 +430,7 @@ The ID of the alert as it appears in the security provider product that generate
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -452,7 +445,7 @@ Recommended response and remediation actions to take in the event this alert was
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -467,7 +460,7 @@ Time when the alert was resolved.
 
 ```yaml
 Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -482,7 +475,7 @@ serviceSource
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -497,7 +490,7 @@ alertSeverity
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -512,7 +505,7 @@ alertStatus
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -527,7 +520,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -542,7 +535,7 @@ The Azure Active Directory tenant the alert was created in.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -557,7 +550,7 @@ The threat associated with this alert.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -572,7 +565,7 @@ Threat family associated with this alert.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -587,7 +580,7 @@ Brief identifying string value describing the alert.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -639,9 +632,125 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER <IMicrosoftGraphSecurityAlert1>: alert
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
+  - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+  - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
+  - `[Category <String>]`: The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.
+  - `[Classification <String>]`: alertClassification
+  - `[Comments <IMicrosoftGraphSecurityAlertComment[]>]`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+    - `[Comment <String>]`: The comment text.
+    - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
+    - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+  - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+  - `[Description <String>]`: String value describing each alert.
+  - `[DetectionSource <String>]`: detectionSource
+  - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
+  - `[Determination <String>]`: alertDetermination
+  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>]`: Collection of evidence related to the alert.
+    - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
+    - `[RemediationStatus <String>]`: evidenceRemediationStatus
+    - `[RemediationStatusDetails <String>]`: Details about the remediation status.
+    - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role 'Attacker'.
+    - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.
+    - `[Verdict <String>]`: evidenceVerdict
+  - `[FirstActivityDateTime <DateTime?>]`: The earliest activity associated with the alert.
+  - `[IncidentId <String>]`: Unique identifier to represent the incident this alert resource is associated with.
+  - `[IncidentWebUrl <String>]`: URL for the incident page in the Microsoft 365 Defender portal.
+  - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
+  - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
+  - `[MitreTechniques <String[]>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
+  - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
+  - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
+  - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
+  - `[ServiceSource <String>]`: serviceSource
+  - `[Severity <String>]`: alertSeverity
+  - `[Status <String>]`: alertStatus
+  - `[SystemTags <String[]>]`: 
+  - `[TenantId <String>]`: The Azure Active Directory tenant the alert was created in.
+  - `[ThreatDisplayName <String>]`: The threat associated with this alert.
+  - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
+  - `[Title <String>]`: Brief identifying string value describing the alert.
+
+COMMENTS <IMicrosoftGraphSecurityAlertComment[]>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+  - `[Comment <String>]`: The comment text.
+  - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
+  - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+
+EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1[]>: Collection of evidence related to the alert.
+  - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
+  - `[RemediationStatus <String>]`: evidenceRemediationStatus
+  - `[RemediationStatusDetails <String>]`: Details about the remediation status.
+  - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role 'Attacker'.
+  - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.
+  - `[Verdict <String>]`: evidenceVerdict
+
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+  - `[AlertId <String>]`: The unique identifier of alert
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
+  - `[AttackSimulationOperationId <String>]`: The unique identifier of attackSimulationOperation
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
+  - `[CaseOperationId <String>]`: The unique identifier of caseOperation
+  - `[CloudAppSecurityProfileId <String>]`: The unique identifier of cloudAppSecurityProfile
+  - `[DataSourceId <String>]`: The unique identifier of dataSource
+  - `[DispositionReviewStageId <String>]`: The unique identifier of dispositionReviewStage
+  - `[DomainSecurityProfileId <String>]`: The unique identifier of domainSecurityProfile
+  - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
+  - `[EdiscoveryCustodianId <String>]`: The unique identifier of ediscoveryCustodian
+  - `[EdiscoveryFileId <String>]`: The unique identifier of ediscoveryFile
+  - `[EdiscoveryHoldPolicyId <String>]`: The unique identifier of ediscoveryHoldPolicy
+  - `[EdiscoveryNoncustodialDataSourceId <String>]`: The unique identifier of ediscoveryNoncustodialDataSource
+  - `[EdiscoveryReviewSetId <String>]`: The unique identifier of ediscoveryReviewSet
+  - `[EdiscoveryReviewSetQueryId <String>]`: The unique identifier of ediscoveryReviewSetQuery
+  - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
+  - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[EmailThreatSubmissionId <String>]`: The unique identifier of emailThreatSubmission
+  - `[EmailThreatSubmissionPolicyId <String>]`: The unique identifier of emailThreatSubmissionPolicy
+  - `[FileSecurityProfileId <String>]`: The unique identifier of fileSecurityProfile
+  - `[FileThreatSubmissionId <String>]`: The unique identifier of fileThreatSubmission
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostSecurityProfileId <String>]`: The unique identifier of hostSecurityProfile
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
+  - `[IPSecurityProfileId <String>]`: The unique identifier of ipSecurityProfile
+  - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
+  - `[PayloadId <String>]`: The unique identifier of payload
+  - `[ProviderTenantSettingId <String>]`: The unique identifier of providerTenantSetting
+  - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
+  - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
+  - `[RetentionLabelId <String>]`: The unique identifier of retentionLabel
+  - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
+  - `[SecureScoreId <String>]`: The unique identifier of secureScore
+  - `[SecurityActionId <String>]`: The unique identifier of securityAction
+  - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
+  - `[SimulationAutomationId <String>]`: The unique identifier of simulationAutomation
+  - `[SimulationAutomationRunId <String>]`: The unique identifier of simulationAutomationRun
+  - `[SimulationId <String>]`: The unique identifier of simulation
+  - `[SiteSourceId <String>]`: The unique identifier of siteSource
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
+  - `[TiIndicatorId <String>]`: The unique identifier of tiIndicator
+  - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UrlThreatSubmissionId <String>]`: The unique identifier of urlThreatSubmission
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserSecurityProfileId <String>]`: The unique identifier of userSecurityProfile
+  - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertv2](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertv2)
-

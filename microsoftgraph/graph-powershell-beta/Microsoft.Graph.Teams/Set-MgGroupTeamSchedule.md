@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/set-mggroupteamschedule
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-key: id of group
+The unique identifier of group
 
 ```yaml
 Type: String
@@ -517,7 +517,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
+BODYPARAMETER <IMicrosoftGraphSchedule1>: schedule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
@@ -678,46 +678,46 @@ BODYPARAMETER `<IMicrosoftGraphSchedule1>`: schedule
     - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
   - `[WorkforceIntegrationIds <String[]>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: key: id of teamTemplate
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
+  - `[ChannelId <String>]`: The unique identifier of channel
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
+  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
+  - `[OpenShiftId <String>]`: The unique identifier of openShift
+  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
+  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
+  - `[ShiftId <String>]`: The unique identifier of shift
+  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
+  - `[TeamId <String>]`: The unique identifier of team
+  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
+  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
+  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
+  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
+  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
+  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
+  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
+  - `[TimeOffId <String>]`: The unique identifier of timeOff
+  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
+  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
+  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest1\[]>: .
+OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest1[]>: .
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
@@ -736,7 +736,7 @@ OFFERSHIFTREQUESTS <IMicrosoftGraphOfferShiftRequest1\[]>: .
   - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
   - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
 
-OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest1\[]>: .
+OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest1[]>: .
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
@@ -753,7 +753,7 @@ OPENSHIFTCHANGEREQUESTS <IMicrosoftGraphOpenShiftChangeRequest1\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[OpenShiftId <String>]`: ID for the open shift.
 
-OPENSHIFTS <IMicrosoftGraphOpenShift1\[]>: .
+OPENSHIFTS <IMicrosoftGraphOpenShift1[]>: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -783,7 +783,7 @@ OPENSHIFTS <IMicrosoftGraphOpenShift1\[]>: .
   - `[SchedulingGroupId <String>]`: ID for the scheduling group that the open shift belongs to.
   - `[SharedOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
 
-SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup1\[]>: The logical grouping of users in the schedule (usually by role).
+SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup1[]>: The logical grouping of users in the schedule (usually by role).
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -797,7 +797,7 @@ SCHEDULINGGROUPS <IMicrosoftGraphSchedulingGroup1\[]>: The logical grouping of u
   - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
   - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
 
-SHIFTS <IMicrosoftGraphShift1\[]>: The shifts in the schedule.
+SHIFTS <IMicrosoftGraphShift1[]>: The shifts in the schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -827,7 +827,7 @@ SHIFTS <IMicrosoftGraphShift1\[]>: The shifts in the schedule.
   - `[SharedShift <IMicrosoftGraphShiftItem>]`: shiftItem
   - `[UserId <String>]`: ID of the user assigned to the shift. Required.
 
-SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest1\[]>: .
+SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest1[]>: .
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
   - `[RecipientUserId <String>]`: User id of the recipient of the offer shift request.
   - `[SenderShiftId <String>]`: User id of the sender of the offer shift request.
@@ -847,7 +847,7 @@ SWAPSHIFTSCHANGEREQUESTS <IMicrosoftGraphSwapShiftsChangeRequest1\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecipientShiftId <String>]`: Shift ID for the recipient user with whom the request is to swap.
 
-TIMECARDS <IMicrosoftGraphTimeCard\[]>: .
+TIMECARDS <IMicrosoftGraphTimeCard[]>: .
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -882,7 +882,7 @@ TIMECARDS <IMicrosoftGraphTimeCard\[]>: .
   - `[State <String>]`: timeCardState
   - `[UserId <String>]`: User ID to which  the timeCard belongs.
 
-TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
+TIMECLOCKSETTINGS <IMicrosoftGraphTimeClockSettings>: timeClockSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApprovedLocation <IMicrosoftGraphGeoCoordinates>]`: geoCoordinates
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -890,7 +890,7 @@ TIMECLOCKSETTINGS `<IMicrosoftGraphTimeClockSettings>`: timeClockSettings
     - `[Latitude <Double?>]`: Optional. The latitude, in decimal, for the item. Read-only.
     - `[Longitude <Double?>]`: Optional. The longitude, in decimal, for the item. Read-only.
 
-TIMEOFFREASONS <IMicrosoftGraphTimeOffReason1\[]>: The set of reasons for a time off in the schedule.
+TIMEOFFREASONS <IMicrosoftGraphTimeOffReason1[]>: The set of reasons for a time off in the schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -905,7 +905,7 @@ TIMEOFFREASONS <IMicrosoftGraphTimeOffReason1\[]>: The set of reasons for a time
   - `[IconType <String>]`: timeOffReasonIconType
   - `[IsActive <Boolean?>]`: Indicates whether the timeOffReason can be used when creating new entities or updating existing ones. Required.
 
-TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest1\[]>: .
+TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest1[]>: .
   - `[AssignedTo <String>]`: scheduleChangeRequestActor
   - `[ManagerActionMessage <String>]`: 
   - `[SenderMessage <String>]`: 
@@ -924,7 +924,7 @@ TIMEOFFREQUESTS <IMicrosoftGraphTimeOffRequest1\[]>: .
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[TimeOffReasonId <String>]`: The reason for the time off.
 
-TIMESOFF <IMicrosoftGraphTimeOff1\[]>: The instances of times off in the schedule.
+TIMESOFF <IMicrosoftGraphTimeOff1[]>: The instances of times off in the schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity

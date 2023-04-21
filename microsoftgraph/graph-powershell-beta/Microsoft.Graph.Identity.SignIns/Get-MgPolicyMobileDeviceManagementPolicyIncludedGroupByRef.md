@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobiledevicemanagementpolicyincludedgroupbyref
@@ -72,7 +72,7 @@ Accept wildcard characters: False
 ```
 
 ### -MobilityManagementPolicyId
-key: id of mobilityManagementPolicy
+The unique identifier of mobilityManagementPolicy
 
 ```yaml
 Type: String

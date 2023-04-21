@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyfeaturerolloutpolicyapplytobyref
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -FeatureRolloutPolicyId
-key: id of featureRolloutPolicy
+The unique identifier of featureRolloutPolicy
 
 ```yaml
 Type: String

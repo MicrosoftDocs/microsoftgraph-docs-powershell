@@ -1,26 +1,26 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeeting
 
 ## SYNOPSIS
-Get onlineMeetings from communications
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## SYNTAX
 
-### GetExpanded1 (Default)
+### GetExpanded (Default)
 ```
 Get-MgCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-EndDateTime <DateTime>] [-ExternalId <String>] [-Participants <IMicrosoftGraphMeetingParticipants1>]
  [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get2
+### Get3
 ```
 Get-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -39,7 +39,7 @@ Get-MgCommunicationOnlineMeeting [-ExpandProperty <String[]>] [-Property <String
  [-CountVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Get3
+### Get
 ```
 Get-MgCommunicationOnlineMeeting
  -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>
@@ -47,7 +47,8 @@ Get-MgCommunicationOnlineMeeting
 ```
 
 ## DESCRIPTION
-Get onlineMeetings from communications
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ## EXAMPLES
 
@@ -67,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -98,7 +99,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Get3
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -114,7 +115,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHATINFO pro
 
 ```yaml
 Type: IMicrosoftGraphChatInfo
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -145,7 +146,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -160,7 +161,7 @@ Expand related entities
 
 ```yaml
 Type: String[]
-Parameter Sets: Get2, GetViaIdentity1, List1
+Parameter Sets: Get3, GetViaIdentity1, List1
 Aliases: Expand
 
 Required: False
@@ -175,7 +176,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -217,11 +218,11 @@ Accept wildcard characters: False
 ```
 
 ### -OnlineMeetingId
-key: id of onlineMeeting
+The unique identifier of onlineMeeting
 
 ```yaml
 Type: String
-Parameter Sets: Get2
+Parameter Sets: Get3
 Aliases:
 
 Required: True
@@ -252,7 +253,7 @@ To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS
 
 ```yaml
 Type: IMicrosoftGraphMeetingParticipants1
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -267,7 +268,7 @@ Select properties to be returned
 
 ```yaml
 Type: String[]
-Parameter Sets: Get2, GetViaIdentity1, List1
+Parameter Sets: Get3, GetViaIdentity1, List1
 Aliases: Select
 
 Required: False
@@ -312,7 +313,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: DateTime
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -327,7 +328,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: GetExpanded1
+Parameter Sets: GetExpanded
 Aliases:
 
 Required: False
@@ -417,7 +418,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -445,29 +446,31 @@ BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorg
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+CHATINFO <IMicrosoftGraphChatInfo>: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
-  - `[CallTranscriptId <String>]`: key: id of callTranscript
-  - `[CommsOperationId <String>]`: key: id of commsOperation
-  - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
-  - `[ParticipantId <String>]`: key: id of participant
-  - `[PresenceId <String>]`: key: id of presence
-  - `[SessionId <String>]`: key: id of session
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS `<IMicrosoftGraphMeetingParticipants1>`: meetingParticipants
+PARTICIPANTS <IMicrosoftGraphMeetingParticipants1>: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet

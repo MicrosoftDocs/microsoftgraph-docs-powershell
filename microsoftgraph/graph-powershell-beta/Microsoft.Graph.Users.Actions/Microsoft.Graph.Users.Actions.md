@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: d579c3ad-f66b-4a27-935c-53e0d9dd108e
+Module Guid: 8c5f92c2-f3ff-4e78-8aba-69ed3f3e54f4
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -55,13 +55,28 @@ Read more about presence sessions and their time-out and expiration.
 Clear the preferred availability and activity status for a user.
 
 ### [Complete-MgUserOutlookTask](Complete-MgUserOutlookTask.md)
-Invoke action complete
+Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
+If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.
+The **completedDateTime** property represents the date when the task is finished.
+The time portion of **completedDateTime** is set to midnight UTC by default.
+By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ### [Complete-MgUserOutlookTaskFolderTask](Complete-MgUserOutlookTaskFolderTask.md)
-Invoke action complete
+Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
+If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.
+The **completedDateTime** property represents the date when the task is finished.
+The time portion of **completedDateTime** is set to midnight UTC by default.
+By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ### [Complete-MgUserOutlookTaskGroupTaskFolderTask](Complete-MgUserOutlookTaskGroupTaskFolderTask.md)
-Invoke action complete
+Complete an Outlook task which sets the **completedDateTime** property to the current date, and the **status** property to `completed`.
+If you are completing a task in a recurring series, in the response, the task collection will contain the completed task in the series, and the next task in the series.
+The **completedDateTime** property represents the date when the task is finished.
+The time portion of **completedDateTime** is set to midnight UTC by default.
+By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC.
+You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ### [Confirm-MgUserChatPermissionGrantMemberGroup](Confirm-MgUserChatPermissionGrantMemberGroup.md)
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -193,7 +208,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgUserChatPermissionGrantUserOwnedObject](Get-MgUserChatPermissionGrantUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgUserDefaultCalendarSchedule](Get-MgUserDefaultCalendarSchedule.md)
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
@@ -210,14 +226,16 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgUserDeviceUserOwnedObject](Get-MgUserDeviceUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgUserJoinedGroupById](Get-MgUserJoinedGroupById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ### [Get-MgUserJoinedGroupUserOwnedObject](Get-MgUserJoinedGroupUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgUserMailTip](Get-MgUserMailTip.md)
 Get the MailTips of one or more recipients as available to the signed-in user.
@@ -236,7 +254,8 @@ Retrieve the properties and relationships of a notebook object by using its URL 
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ### [Get-MgUserOwnedObjectByType](Get-MgUserOwnedObjectByType.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Grant-MgUserDriveItemPermission](Grant-MgUserDriveItemPermission.md)
 Grant users access to a link represented by a [permission][].
@@ -285,6 +304,9 @@ Invoke action encryptBuffer
 
 ### [Invoke-MgBufferUserInformationProtectionEncrypt](Invoke-MgBufferUserInformationProtectionEncrypt.md)
 Invoke action encryptBuffer
+
+### [Invoke-MgBulkUserCloudPcResize](Invoke-MgBulkUserCloudPcResize.md)
+Invoke action bulkResize
 
 ### [Invoke-MgBulkUserManagedDeviceReprovisionCloudPc](Invoke-MgBulkUserManagedDeviceReprovisionCloudPc.md)
 Invoke action bulkReprovisionCloudPc
@@ -445,6 +467,24 @@ Mark a chat as read for a user.
 ### [Invoke-MgMarkUserChatUnreadForUser](Invoke-MgMarkUserChatUnreadForUser.md)
 Mark a chat as unread for a user.
 
+### [Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk](Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk.md)
+Invoke action markAsJunk
+
+### [Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk](Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk.md)
+Invoke action markAsNotJunk
+
+### [Invoke-MgMarkUserMailFolderMessageAsJunk](Invoke-MgMarkUserMailFolderMessageAsJunk.md)
+Invoke action markAsJunk
+
+### [Invoke-MgMarkUserMailFolderMessageAsNotJunk](Invoke-MgMarkUserMailFolderMessageAsNotJunk.md)
+Invoke action markAsNotJunk
+
+### [Invoke-MgMarkUserMessageAsJunk](Invoke-MgMarkUserMessageAsJunk.md)
+Invoke action markAsJunk
+
+### [Invoke-MgMarkUserMessageAsNotJunk](Invoke-MgMarkUserMessageAsNotJunk.md)
+Invoke action markAsNotJunk
+
 ### [Invoke-MgOverrideUserManagedDeviceComplianceState](Invoke-MgOverrideUserManagedDeviceComplianceState.md)
 Invoke action overrideComplianceState
 
@@ -534,6 +574,9 @@ Retire a device
 Retry installation for the partner agents which failed to install on the Cloud PC.
 Service side will check which agent installation failed firstly and retry.
 
+### [Invoke-MgRetryUserServiceProvisioning](Invoke-MgRetryUserServiceProvisioning.md)
+Invoke action retryServiceProvisioning
+
 ### [Invoke-MgRotateUserManagedDeviceBitLockerKey](Invoke-MgRotateUserManagedDeviceBitLockerKey.md)
 Rotate BitLockerKeys
 
@@ -556,10 +599,10 @@ Postpone a reminder for an event in a user calendar until a new time.
 Postpone a reminder for an event in a user calendar until a new time.
 
 ### [Invoke-MgSoftUserChatMessageDelete](Invoke-MgSoftUserChatMessageDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgSoftUserChatMessageReplyDelete](Invoke-MgSoftUserChatMessageReplyDelete.md)
-Delete a single message or a message reply in a channel or a chat.
+Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Invoke-MgTranslateUserExchangeId](Invoke-MgTranslateUserExchangeId.md)
 Translate identifiers of Outlook-related resources between formats.
@@ -1044,13 +1087,27 @@ Read more about presence sessions and their time-out and expiration.
 Bypass activation lock
 
 ### [Start-MgUserCloudPc](Start-MgUserCloudPc.md)
-Invoke action start
+Start a specific Cloud PC for a user.
+Currently, only Windows 365 Frontline Cloud PCs are supported.
+
+### [Start-MgUserCloudPcOff](Start-MgUserCloudPcOff.md)
+Power off a Windows 365 Frontline Cloud PC.
+This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
+After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
+Only IT admin users can perform this action.
+
+### [Start-MgUserCloudPcOn](Start-MgUserCloudPcOn.md)
+Power on a Windows 365 Frontline Cloud PC.
+This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
+After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
+Only IT admin users can perform this action.
 
 ### [Start-MgUserManagedDeviceConfigurationManagerAction](Start-MgUserManagedDeviceConfigurationManagerAction.md)
 Trigger action on ConfigurationManager client
 
 ### [Stop-MgUserCloudPc](Stop-MgUserCloudPc.md)
-Invoke action stop
+Stop a specific Cloud PC for a user.
+Currently, only Windows 365 Frontline Cloud PCs are supported.
 
 ### [Stop-MgUserCloudPcGracePeriod](Stop-MgUserCloudPcGracePeriod.md)
 End the grace period for a specific Cloud PC.
@@ -1100,6 +1157,9 @@ Validate the custom banned words policy\n3.
 Validate the mail nickname is unique This API returns with the first failure encountered.
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
+
+### [Test-MgUserCloudPcBulkResize](Test-MgUserCloudPcBulkResize.md)
+Invoke action validateBulkResize
 
 ### [Test-MgUserDeviceProperty](Test-MgUserDeviceProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -1192,10 +1252,10 @@ Given contentInfo as an input, which includes existing content metadata key-valu
 Unblocks the managed app user from app check-in.
 
 ### [Undo-MgUserChatMessageReplySoftDelete](Undo-MgUserChatMessageReplySoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Undo-MgUserChatMessageSoftDelete](Undo-MgUserChatMessageSoftDelete.md)
-Undo soft deletion of a single message or a message reply in a channel or a chat.
+Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 ### [Unpublish-MgUserDriveListContentType](Unpublish-MgUserDriveListContentType.md)
 Unpublish a [contentType][] from a content type hub site.

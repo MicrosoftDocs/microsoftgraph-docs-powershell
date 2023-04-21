@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgonpremisepublishingprofilepublishedresourceagentgroupbyref
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesPublishingProfileId
-key: id of onPremisesPublishingProfile
+The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 ```
 
 ### -PublishedResourceId
-key: id of publishedResource
+The unique identifier of publishedResource
 
 ```yaml
 Type: String

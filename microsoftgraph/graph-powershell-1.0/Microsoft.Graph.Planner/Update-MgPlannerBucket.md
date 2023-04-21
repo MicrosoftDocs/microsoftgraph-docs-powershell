@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannerbucket
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlannerBucketId
-key: id of plannerBucket
+The unique identifier of plannerBucket
 
 ```yaml
 Type: String
@@ -279,7 +279,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerBucket>`: plannerBucket
+BODYPARAMETER <IMicrosoftGraphPlannerBucket>: plannerBucket
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: Name of the bucket.
@@ -341,17 +341,17 @@ BODYPARAMETER `<IMicrosoftGraphPlannerBucket>`: plannerBucket
     - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Title <String>]`: Title of the task.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IPlannerIdentity>: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+  - `[UserId <String>]`: The unique identifier of user
 
-TASKS <IMicrosoftGraphPlannerTask\[]>: Read-only. Nullable. The collection of tasks in the bucket.
+TASKS <IMicrosoftGraphPlannerTask[]>: Read-only. Nullable. The collection of tasks in the bucket.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories

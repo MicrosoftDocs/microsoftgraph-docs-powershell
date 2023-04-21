@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertmultiple
@@ -12,13 +12,13 @@ Update multiple alerts in one request instead of multiple requests.
 
 ## SYNTAX
 
-### UpdateExpanded2 (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgSecurityAlertMultiple [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphAlert[]>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Update2
+### Update1
 ```
 Update-MgSecurityAlertMultiple
  -BodyParameter <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>
@@ -71,7 +71,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded2
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -87,7 +87,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Update2
+Parameter Sets: Update1
 Aliases:
 
 Required: True
@@ -103,7 +103,7 @@ To construct, please use Get-Help -Online and see NOTES section for VALUE proper
 
 ```yaml
 Type: IMicrosoftGraphAlert[]
-Parameter Sets: UpdateExpanded2
+Parameter Sets: UpdateExpanded1
 Aliases:
 
 Required: False
@@ -162,7 +162,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <IMicrosoftGraphAlert[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -326,7 +326,7 @@ BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequest
       - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
       - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-VALUE <IMicrosoftGraphAlert\[]>: .
+VALUE <IMicrosoftGraphAlert[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
   - `[AlertDetections <IMicrosoftGraphAlertDetection[]>]`: 

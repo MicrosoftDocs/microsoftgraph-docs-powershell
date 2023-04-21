@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancerolemanagementalert
@@ -32,13 +32,6 @@ New-MgIdentityGovernanceRoleManagementAlert -BodyParameter <IMicrosoftGraphUnifi
 Create new navigation property to alerts for identityGovernance
 
 ## EXAMPLES
-
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
 
 ## PARAMETERS
 
@@ -162,7 +155,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: 0
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -177,7 +170,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -283,9 +276,84 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlert
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+ALERTCONFIGURATION <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>: unifiedRoleManagementAlertConfiguration
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[HowToPrevent <String>]`: 
+    - `[IsConfigurable <Boolean?>]`: 
+    - `[IsRemediatable <Boolean?>]`: 
+    - `[MitigationSteps <String>]`: 
+    - `[ScopeId <String>]`: 
+    - `[ScopeType <String>]`: 
+    - `[SecurityImpact <String>]`: 
+    - `[SeverityLevel <String>]`: alertSeverity
+  - `[AlertDefinitionId <String>]`: 
+  - `[IsEnabled <Boolean?>]`: 
+  - `[ScopeId <String>]`: 
+  - `[ScopeType <String>]`: 
+
+ALERTDEFINITION <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>: unifiedRoleManagementAlertDefinition
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[HowToPrevent <String>]`: 
+  - `[IsConfigurable <Boolean?>]`: 
+  - `[IsRemediatable <Boolean?>]`: 
+  - `[MitigationSteps <String>]`: 
+  - `[ScopeId <String>]`: 
+  - `[ScopeType <String>]`: 
+  - `[SecurityImpact <String>]`: 
+  - `[SeverityLevel <String>]`: alertSeverity
+
+ALERTINCIDENTS <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>: .
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+
+BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlert>: unifiedRoleManagementAlert
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[AlertConfiguration <IMicrosoftGraphUnifiedRoleManagementAlertConfiguration>]`: unifiedRoleManagementAlertConfiguration
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Description <String>]`: 
+      - `[DisplayName <String>]`: 
+      - `[HowToPrevent <String>]`: 
+      - `[IsConfigurable <Boolean?>]`: 
+      - `[IsRemediatable <Boolean?>]`: 
+      - `[MitigationSteps <String>]`: 
+      - `[ScopeId <String>]`: 
+      - `[ScopeType <String>]`: 
+      - `[SecurityImpact <String>]`: 
+      - `[SeverityLevel <String>]`: alertSeverity
+    - `[AlertDefinitionId <String>]`: 
+    - `[IsEnabled <Boolean?>]`: 
+    - `[ScopeId <String>]`: 
+    - `[ScopeType <String>]`: 
+  - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
+  - `[AlertDefinitionId <String>]`: 
+  - `[AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[IncidentCount <Int32?>]`: 
+  - `[IsActive <Boolean?>]`: 
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[LastScannedDateTime <DateTime?>]`: 
+  - `[ScopeId <String>]`: 
+  - `[ScopeType <String>]`: 
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancerolemanagementalert](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancerolemanagementalert)
-

@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: ee247273-b836-4a7b-b508-32f60c1c3958
+Module Guid: fe4092f6-40ba-4e59-b7e6-aa82ad85c9d0
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -121,7 +121,7 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 Invoke action checkMemberObjects
 
 ### [Export-MgDirectoryInboundSharedUserProfilePersonalData](Export-MgDirectoryInboundSharedUserProfilePersonalData.md)
-Invoke action exportPersonalData
+Create a request to export the personal data for an inboundSharedUserProfile.
 
 ### [Get-MgAdministrativeUnit](Get-MgAdministrativeUnit.md)
 Retrieve the properties and relationships of an administrativeUnit object.
@@ -157,7 +157,8 @@ Invoke action getMemberObjects
 Scoped-role members of this administrative unit.
 
 ### [Get-MgAdministrativeUnitUserOwnedObject](Get-MgAdministrativeUnitUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgContact](Get-MgContact.md)
 Get the properties and relationships of an organizational contact object.
@@ -205,7 +206,8 @@ The transitive reports for a contact.
 Read-only.
 
 ### [Get-MgContactUserOwnedObject](Get-MgContactUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgContract](Get-MgContract.md)
 Retrieve the properties and relationships of contract object.
@@ -225,7 +227,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgContractUserOwnedObject](Get-MgContractUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDevice](Get-MgDevice.md)
 Get the properties and relationships of a device object.
@@ -288,6 +291,13 @@ Read-only.
 Nullable.
 Supports $expand.
 
+### [Get-MgDeviceRegisteredUserByRef](Get-MgDeviceRegisteredUserByRef.md)
+Collection of registered users of the device.
+For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
+Read-only.
+Nullable.
+Supports $expand.
+
 ### [Get-MgDeviceTransitiveMemberOf](Get-MgDeviceTransitiveMemberOf.md)
 Groups and administrative units that this device is a member of.
 This operation is transitive.
@@ -297,7 +307,8 @@ Supports $expand.
 Represents the usage rights a device has been granted.
 
 ### [Get-MgDeviceUserOwnedObject](Get-MgDeviceUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectory](Get-MgDirectory.md)
 Get directory
@@ -335,7 +346,8 @@ Invoke action getMemberObjects
 Scoped-role members of this administrative unit.
 
 ### [Get-MgDirectoryAdministrativeUnitUserOwnedObject](Get-MgDirectoryAdministrativeUnitUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryAttributeSet](Get-MgDirectoryAttributeSet.md)
 Group of related custom security attribute definitions.
@@ -365,7 +377,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgDirectoryDeletedItemUserOwnedObject](Get-MgDirectoryDeletedItemUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryFeatureRolloutPolicy](Get-MgDirectoryFeatureRolloutPolicy.md)
 Get featureRolloutPolicies from directory
@@ -386,7 +399,8 @@ Specifies a list of directoryObjects that feature is enabled for.
 Invoke function delta
 
 ### [Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject](Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryFederationConfiguration](Get-MgDirectoryFederationConfiguration.md)
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
@@ -395,7 +409,8 @@ Configure domain federation with organizations whose identity provider (IdP) sup
 Get impactedResources from directory
 
 ### [Get-MgDirectoryInboundSharedUserProfile](Get-MgDirectoryInboundSharedUserProfile.md)
-Get inboundSharedUserProfiles from directory
+A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant.
+Nullable.
 
 ### [Get-MgDirectoryOnPremisSynchronization](Get-MgDirectoryOnPremisSynchronization.md)
 A container for on-premises directory synchronization functionalities that are available for the organization.
@@ -404,7 +419,8 @@ A container for on-premises directory synchronization functionalities that are a
 Get outboundSharedUserProfiles from directory
 
 ### [Get-MgDirectoryOutboundSharedUserProfileTenant](Get-MgDirectoryOutboundSharedUserProfileTenant.md)
-Get tenants from directory
+The collection of external Azure AD tenants that the user has shared profile data with.
+Read-only.
 
 ### [Get-MgDirectoryRecommendation](Get-MgDirectoryRecommendation.md)
 List of recommended improvements to improve tenant posture.
@@ -466,10 +482,12 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgDirectoryRoleTemplateUserOwnedObject](Get-MgDirectoryRoleTemplateUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectoryRoleUserOwnedObject](Get-MgDirectoryRoleUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectorySetting](Get-MgDirectorySetting.md)
 Retrieve the properties of a specific directory setting object.
@@ -493,7 +511,8 @@ This function is transitive.
 Invoke action getMemberObjects
 
 ### [Get-MgDirectorySettingTemplateUserOwnedObject](Get-MgDirectorySettingTemplateUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgDirectorySharedEmailDomain](Get-MgDirectorySharedEmailDomain.md)
 Get sharedEmailDomains from directory
@@ -647,7 +666,8 @@ Get the properties of the pronounsSettings resource for an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
 ### [Get-MgOrganizationUserOwnedObject](Get-MgOrganizationUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgSubscribedSku](Get-MgSubscribedSku.md)
 Get a specific commercial subscription that an organization has acquired.
@@ -657,8 +677,200 @@ The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
 
+### [Group-MgAdministrativeUnitGetMemberAs](Group-MgAdministrativeUnitGetMemberAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgAdministrativeUnitListMemberAs](Group-MgAdministrativeUnitListMemberAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgContactGetMemberOfAs](Group-MgContactGetMemberOfAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgContactGetTransitiveMemberOfAs](Group-MgContactGetTransitiveMemberOfAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgContactListMemberOfAs](Group-MgContactListMemberOfAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgContactListTransitiveMemberOfAs](Group-MgContactListTransitiveMemberOfAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgDeviceGetMemberOfAs](Group-MgDeviceGetMemberOfAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgDeviceGetTransitiveMemberOfAs](Group-MgDeviceGetTransitiveMemberOfAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgDeviceListMemberOfAs](Group-MgDeviceListMemberOfAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgDeviceListTransitiveMemberOfAs](Group-MgDeviceListTransitiveMemberOfAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgDirectoryAdministrativeUnitGetMemberAs](Group-MgDirectoryAdministrativeUnitGetMemberAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgDirectoryAdministrativeUnitListMemberAs](Group-MgDirectoryAdministrativeUnitListMemberAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgDirectoryGetDeletedItemAs](Group-MgDirectoryGetDeletedItemAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgDirectoryListDeletedItemAs](Group-MgDirectoryListDeletedItemAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Group-MgDirectoryRoleGetMemberAs](Group-MgDirectoryRoleGetMemberAs.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Group-MgDirectoryRoleListMemberAs](Group-MgDirectoryRoleListMemberAs.md)
+Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsAdministrativeUnitGetMemberApplication](Invoke-MgAsAdministrativeUnitGetMemberApplication.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+### [Invoke-MgAsAdministrativeUnitGetMemberDevice](Invoke-MgAsAdministrativeUnitGetMemberDevice.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+### [Invoke-MgAsAdministrativeUnitGetMemberUser](Invoke-MgAsAdministrativeUnitGetMemberUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsAdministrativeUnitListMemberApplication](Invoke-MgAsAdministrativeUnitListMemberApplication.md)
+Get the items of type microsoft.graph.application in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsAdministrativeUnitListMemberDevice](Invoke-MgAsAdministrativeUnitListMemberDevice.md)
+Get the items of type microsoft.graph.device in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsAdministrativeUnitListMemberUser](Invoke-MgAsAdministrativeUnitListMemberUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsContactGetDirectReportUser](Invoke-MgAsContactGetDirectReportUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsContactGetMemberOfAdministrativeUnit](Invoke-MgAsContactGetMemberOfAdministrativeUnit.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+
+### [Invoke-MgAsContactGetTransitiveMemberOfAdministrativeUnit](Invoke-MgAsContactGetTransitiveMemberOfAdministrativeUnit.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+
+### [Invoke-MgAsContactListDirectReportUser](Invoke-MgAsContactListDirectReportUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsContactListMemberOfAdministrativeUnit](Invoke-MgAsContactListMemberOfAdministrativeUnit.md)
+Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsContactListTransitiveMemberOfAdministrativeUnit](Invoke-MgAsContactListTransitiveMemberOfAdministrativeUnit.md)
+Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDeviceGetMemberOfAdministrativeUnit](Invoke-MgAsDeviceGetMemberOfAdministrativeUnit.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+
+### [Invoke-MgAsDeviceGetRegisteredOwnerEndpoint](Invoke-MgAsDeviceGetRegisteredOwnerEndpoint.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+
+### [Invoke-MgAsDeviceGetRegisteredOwnerUser](Invoke-MgAsDeviceGetRegisteredOwnerUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsDeviceGetRegisteredUser](Invoke-MgAsDeviceGetRegisteredUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsDeviceGetRegisteredUserEndpoint](Invoke-MgAsDeviceGetRegisteredUserEndpoint.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+
+### [Invoke-MgAsDeviceGetTransitiveMemberOfAdministrativeUnit](Invoke-MgAsDeviceGetTransitiveMemberOfAdministrativeUnit.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+
+### [Invoke-MgAsDeviceListMemberOfAdministrativeUnit](Invoke-MgAsDeviceListMemberOfAdministrativeUnit.md)
+Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDeviceListRegisteredOwnerEndpoint](Invoke-MgAsDeviceListRegisteredOwnerEndpoint.md)
+Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDeviceListRegisteredOwnerUser](Invoke-MgAsDeviceListRegisteredOwnerUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDeviceListRegisteredUser](Invoke-MgAsDeviceListRegisteredUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDeviceListRegisteredUserEndpoint](Invoke-MgAsDeviceListRegisteredUserEndpoint.md)
+Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDeviceListTransitiveMemberOfAdministrativeUnit](Invoke-MgAsDeviceListTransitiveMemberOfAdministrativeUnit.md)
+Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryAdministrativeUnitGetMemberApplication](Invoke-MgAsDirectoryAdministrativeUnitGetMemberApplication.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+### [Invoke-MgAsDirectoryAdministrativeUnitGetMemberDevice](Invoke-MgAsDirectoryAdministrativeUnitGetMemberDevice.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+### [Invoke-MgAsDirectoryAdministrativeUnitGetMemberUser](Invoke-MgAsDirectoryAdministrativeUnitGetMemberUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsDirectoryAdministrativeUnitListMemberApplication](Invoke-MgAsDirectoryAdministrativeUnitListMemberApplication.md)
+Get the items of type microsoft.graph.application in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryAdministrativeUnitListMemberDevice](Invoke-MgAsDirectoryAdministrativeUnitListMemberDevice.md)
+Get the items of type microsoft.graph.device in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryAdministrativeUnitListMemberUser](Invoke-MgAsDirectoryAdministrativeUnitListMemberUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryGetDeletedItemApplication](Invoke-MgAsDirectoryGetDeletedItemApplication.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+### [Invoke-MgAsDirectoryGetDeletedItemUser](Invoke-MgAsDirectoryGetDeletedItemUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsDirectoryListDeletedItemApplication](Invoke-MgAsDirectoryListDeletedItemApplication.md)
+Get the items of type microsoft.graph.application in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryListDeletedItemUser](Invoke-MgAsDirectoryListDeletedItemUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryRoleGetMemberApplication](Invoke-MgAsDirectoryRoleGetMemberApplication.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+### [Invoke-MgAsDirectoryRoleGetMemberDevice](Invoke-MgAsDirectoryRoleGetMemberDevice.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+### [Invoke-MgAsDirectoryRoleGetMemberUser](Invoke-MgAsDirectoryRoleGetMemberUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Invoke-MgAsDirectoryRoleListMemberApplication](Invoke-MgAsDirectoryRoleListMemberApplication.md)
+Get the items of type microsoft.graph.application in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryRoleListMemberDevice](Invoke-MgAsDirectoryRoleListMemberDevice.md)
+Get the items of type microsoft.graph.device in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgAsDirectoryRoleListMemberUser](Invoke-MgAsDirectoryRoleListMemberUser.md)
+Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
+
 ### [Invoke-MgAvailableDirectoryFederationConfigurationProviderType](Invoke-MgAvailableDirectoryFederationConfigurationProviderType.md)
 Invoke function availableProviderTypes
+
+### [Invoke-MgContactAdministrativeUnitGetMemberAsOrg](Invoke-MgContactAdministrativeUnitGetMemberAsOrg.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
+
+### [Invoke-MgContactAdministrativeUnitListMemberAsOrg](Invoke-MgContactAdministrativeUnitListMemberAsOrg.md)
+Get the items of type microsoft.graph.orgContact in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgContactDirectoryAdministrativeUnitGetMemberAsOrg](Invoke-MgContactDirectoryAdministrativeUnitGetMemberAsOrg.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
+
+### [Invoke-MgContactDirectoryAdministrativeUnitListMemberAsOrg](Invoke-MgContactDirectoryAdministrativeUnitListMemberAsOrg.md)
+Get the items of type microsoft.graph.orgContact in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgContactDirectoryRoleGetMemberAsOrg](Invoke-MgContactDirectoryRoleGetMemberAsOrg.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
+
+### [Invoke-MgContactDirectoryRoleListMemberAsOrg](Invoke-MgContactDirectoryRoleListMemberAsOrg.md)
+Get the items of type microsoft.graph.orgContact in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgContactGetDirectReportAsOrg](Invoke-MgContactGetDirectReportAsOrg.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
+
+### [Invoke-MgContactListDirectReportAsOrg](Invoke-MgContactListDirectReportAsOrg.md)
+Get the items of type microsoft.graph.orgContact in the microsoft.graph.directoryObject collection
 
 ### [Invoke-MgDismissDirectoryImpactedResource](Invoke-MgDismissDirectoryImpactedResource.md)
 Invoke action dismiss
@@ -688,6 +900,36 @@ Invoke action reactivate
 
 ### [Invoke-MgReactivateDirectoryRecommendation](Invoke-MgReactivateDirectoryRecommendation.md)
 Invoke action reactivate
+
+### [Invoke-MgServiceAdministrativeUnitGetMember](Invoke-MgServiceAdministrativeUnitGetMember.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Invoke-MgServiceAdministrativeUnitListMember](Invoke-MgServiceAdministrativeUnitListMember.md)
+Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgServiceDeviceGetRegisteredOwner](Invoke-MgServiceDeviceGetRegisteredOwner.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Invoke-MgServiceDeviceGetRegisteredUser](Invoke-MgServiceDeviceGetRegisteredUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Invoke-MgServiceDeviceListRegisteredOwner](Invoke-MgServiceDeviceListRegisteredOwner.md)
+Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgServiceDeviceListRegisteredUser](Invoke-MgServiceDeviceListRegisteredUser.md)
+Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgServiceDirectoryAdministrativeUnitGetMember](Invoke-MgServiceDirectoryAdministrativeUnitGetMember.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Invoke-MgServiceDirectoryAdministrativeUnitListMember](Invoke-MgServiceDirectoryAdministrativeUnitListMember.md)
+Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+
+### [Invoke-MgServiceDirectoryRoleGetMember](Invoke-MgServiceDirectoryRoleGetMember.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Invoke-MgServiceDirectoryRoleListMember](Invoke-MgServiceDirectoryRoleListMember.md)
+Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
 
 ### [New-MgAdministrativeUnit](New-MgAdministrativeUnit.md)
 Use this API to create a new administrativeUnit.
@@ -726,6 +968,9 @@ Nullable.
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Create new navigation property ref to registeredOwners for devices
+
+### [New-MgDeviceRegisteredUserByRef](New-MgDeviceRegisteredUserByRef.md)
+Create new navigation property ref to registeredUsers for devices
 
 ### [New-MgDeviceUsageRights](New-MgDeviceUsageRights.md)
 Create new navigation property to usageRights for devices
@@ -889,6 +1134,9 @@ Delete navigation property extensions for devices
 ### [Remove-MgDeviceRegisteredOwnerByRef](Remove-MgDeviceRegisteredOwnerByRef.md)
 Delete ref of navigation property registeredOwners for devices
 
+### [Remove-MgDeviceRegisteredUserByRef](Remove-MgDeviceRegisteredUserByRef.md)
+Delete ref of navigation property registeredUsers for devices
+
 ### [Remove-MgDeviceUsageRights](Remove-MgDeviceUsageRights.md)
 Delete navigation property usageRights for devices
 
@@ -932,7 +1180,7 @@ Delete navigation property impactedResources for directory
 Delete navigation property inboundSharedUserProfiles for directory
 
 ### [Remove-MgDirectoryInboundSharedUserProfilePersonalData](Remove-MgDirectoryInboundSharedUserProfilePersonalData.md)
-Invoke action removePersonalData
+Create a request to remove the personal data for an inboundSharedUserProfile.
 
 ### [Remove-MgDirectoryOnPremisSynchronization](Remove-MgDirectoryOnPremisSynchronization.md)
 Delete navigation property onPremisesSynchronization for directory
@@ -944,7 +1192,7 @@ Delete navigation property outboundSharedUserProfiles for directory
 Delete navigation property tenants for directory
 
 ### [Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData](Remove-MgDirectoryOutboundSharedUserProfileTenantPersonalData.md)
-Invoke action removePersonalData
+Create a request to remove the personal data for an outboundSharedUserProfile.
 
 ### [Remove-MgDirectoryRecommendation](Remove-MgDirectoryRecommendation.md)
 Delete navigation property recommendations for directory

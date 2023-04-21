@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/new-mgprintprintertasktrigger
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # New-MgPrintPrinterTaskTrigger
@@ -156,7 +155,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrinterId
-key: id of printer
+The unique identifier of printer
 
 ```yaml
 Type: String
@@ -220,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger1>`: printTaskTrigger
+BODYPARAMETER <IMicrosoftGraphPrintTaskTrigger1>: printTaskTrigger
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphPrintTaskDefinition1>]`: printTaskDefinition
@@ -244,7 +243,7 @@ BODYPARAMETER `<IMicrosoftGraphPrintTaskTrigger1>`: printTaskTrigger
       - `[Trigger <IMicrosoftGraphPrintTaskTrigger1>]`: printTaskTrigger
   - `[Event <String>]`: printEvent
 
-DEFINITION `<IMicrosoftGraphPrintTaskDefinition1>`: printTaskDefinition
+DEFINITION <IMicrosoftGraphPrintTaskDefinition1>: printTaskDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphAppIdentity>]`: appIdentity
@@ -268,17 +267,17 @@ DEFINITION `<IMicrosoftGraphPrintTaskDefinition1>`: printTaskDefinition
       - `[Definition <IMicrosoftGraphPrintTaskDefinition1>]`: printTaskDefinition
       - `[Event <String>]`: printEvent
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[PrintConnectorId <String>]`: key: id of printConnector
-  - `[PrintOperationId <String>]`: key: id of printOperation
-  - `[PrintServiceEndpointId <String>]`: key: id of printServiceEndpoint
-  - `[PrintServiceId <String>]`: key: id of printService
-  - `[PrintTaskDefinitionId <String>]`: key: id of printTaskDefinition
-  - `[PrintTaskId <String>]`: key: id of printTask
-  - `[PrintTaskTriggerId <String>]`: key: id of printTaskTrigger
-  - `[PrinterId <String>]`: key: id of printer
-  - `[PrinterShareId <String>]`: key: id of printerShare
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <IDevicesCloudPrintIdentity>: Identity Parameter
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintOperationId <String>]`: The unique identifier of printOperation
+  - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
+  - `[PrintServiceId <String>]`: The unique identifier of printService
+  - `[PrintTaskDefinitionId <String>]`: The unique identifier of printTaskDefinition
+  - `[PrintTaskId <String>]`: The unique identifier of printTask
+  - `[PrintTaskTriggerId <String>]`: The unique identifier of printTaskTrigger
+  - `[PrinterId <String>]`: The unique identifier of printer
+  - `[PrinterShareId <String>]`: The unique identifier of printerShare
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

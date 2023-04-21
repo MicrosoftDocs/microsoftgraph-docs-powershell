@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mgsiteonenotenotebooksection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgSiteOnenoteNotebookSection
@@ -100,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotebookId
-key: id of notebook
+The unique identifier of notebook
 
 ```yaml
 Type: String
@@ -160,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteId
-key: id of site
+The unique identifier of site
 
 ```yaml
 Type: String

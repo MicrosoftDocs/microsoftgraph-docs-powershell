@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.Governance
-Module Guid: 819c49a4-be4a-41dc-8f47-f1c92e98587d
+Module Guid: 3e429bbf-4765-4d7b-a20d-3f239eb30df7
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -194,7 +194,8 @@ The external sponsors are a set of users who can approve requests on behalf of o
 Invoke function delta
 
 ### [Get-MgEntitlementManagementConnectedOrganizationExternalSponsorUserOwnedObject](Get-MgEntitlementManagementConnectedOrganizationExternalSponsorUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsor](Get-MgEntitlementManagementConnectedOrganizationInternalSponsor.md)
 Retrieve a list of a connectedOrganization's internal sponsors.
@@ -212,7 +213,8 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 Invoke function delta
 
 ### [Get-MgEntitlementManagementConnectedOrganizationInternalSponsorUserOwnedObject](Get-MgEntitlementManagementConnectedOrganizationInternalSponsorUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgEntitlementManagementSetting](Get-MgEntitlementManagementSetting.md)
 Retrieve the properties of an entitlementManagementSettings object.
@@ -346,13 +348,13 @@ Deleted workflows that end up in the deletedItemsContainer.
 The unique identifier of the Azure AD identity that last modified the workflow object.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
-Get runs from identityGovernance
+Workflow runs.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
 Represents the aggregation of task execution data for tasks within a workflow object.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowUserProcessingResult.md)
-Get userProcessingResults from identityGovernance
+Per-user workflow execution results.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion.md)
 The workflow versions that are available.
@@ -361,7 +363,7 @@ The workflow versions that are available.
 The unique identifier of the Azure AD identity that last modified the workflow object.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRun](Get-MgIdentityGovernanceLifecycleWorkflowRun.md)
-Get runs from identityGovernance
+Workflow runs.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 The related taskProcessingResults.
@@ -422,7 +424,7 @@ The unique identifier of the Azure AD user targeted for the task execution.Suppo
 The related workflow task
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResult.md)
-Get userProcessingResults from identityGovernance
+Per-user workflow execution results.
 
 ### [Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](Get-MgIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject.md)
 The unique identifier of the AAD user targeted for the taskProcessingResult.Supports $filter(eq, ne) and $expand.
@@ -990,6 +992,9 @@ In Azure AD entitlement management, create a new accessPackageAssignmentPolicy o
 ### [New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
 Create new navigation property to customExtensionHandlers for identityGovernance
 
+### [New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting.md)
+Create new navigation property to customExtensionStageSettings for identityGovernance
+
 ### [New-MgEntitlementManagementAccessPackageAssignmentRequest](New-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 In Azure AD Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, or to remove an access package assignment.
@@ -1281,6 +1286,9 @@ Delete navigation property accessPackageAssignmentPolicies for identityGovernanc
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
 Delete navigation property customExtensionHandlers for identityGovernance
+
+### [Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](Remove-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting.md)
+Delete navigation property customExtensionStageSettings for identityGovernance
 
 ### [Remove-MgEntitlementManagementAccessPackageAssignmentRequest](Remove-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Delete navigation property accessPackageAssignmentRequests for identityGovernance
@@ -1605,19 +1613,22 @@ You can only restore a workflow that was deleted within the last 30 days before 
 
 ### [Resume-MgEntitlementManagementAccessPackageAssignmentRequest](Resume-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 In Azure AD entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
-It is performed on an accessPackageAssignmentRequest object whose **requestStatus** is in a \`WaitingForCallback\` state.
+It is performed on an accessPackageAssignmentRequest object whose **requestStatus** is in a `WaitingForCallback` state.
 
 ### [Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Resume-MgIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 Resume a task processing result that's `inProgress`.
-An Azure Logic Apps system-assigned managed identity calls this API.
+In the default case an Azure Logic Apps system-assigned managed identity calls this API.
+For more information read about Lifecycle Workflows extensibility approach.
 
 ### [Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
 Resume a task processing result that's `inProgress`.
-An Azure Logic Apps system-assigned managed identity calls this API.
+In the default case an Azure Logic Apps system-assigned managed identity calls this API.
+For more information read about Lifecycle Workflows extensibility approach.
 
 ### [Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Resume-MgIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
 Resume a task processing result that's `inProgress`.
-An Azure Logic Apps system-assigned managed identity calls this API.
+In the default case an Azure Logic Apps system-assigned managed identity calls this API.
+For more information read about Lifecycle Workflows extensibility approach.
 
 ### [Select-MgEntitlementManagementAccessPackage](Select-MgEntitlementManagementAccessPackage.md)
 Select matching entitlement management accessPackage
@@ -1784,6 +1795,9 @@ Update the navigation property steps in identityGovernance
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](Update-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler.md)
 Update the navigation property customExtensionHandlers in identityGovernance
+
+### [Update-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](Update-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting.md)
+Update the navigation property customExtensionStageSettings in identityGovernance
 
 ### [Update-MgEntitlementManagementAccessPackageAssignmentRequest](Update-MgEntitlementManagementAccessPackageAssignmentRequest.md)
 Invoke action reprocess

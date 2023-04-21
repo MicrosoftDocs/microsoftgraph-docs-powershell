@@ -1,67 +1,134 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudience
 schema: 2.0.0
 ---
 
-# Remove-MgWindowsUpdatesPolicyAudienceMemberById
+# Update-MgWindowsUpdatesDeploymentAudience
 
 ## SYNOPSIS
-Remove members of the same type from an updatableAssetGroup.
-You can also use the method removeMembers to remove members.
+Update the members and exclusions collections of a deploymentAudience.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object, if it does not already exist.
+If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
+If all **updatableAsset** objects are the same type, you can also use the method updateAudienceById to update the **deploymentAudience**.
 
 ## SYNTAX
 
-### RemoveExpanded (Default)
+### UpdateExpanded (Default)
 ```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgWindowsUpdatesDeploymentAudience -DeploymentId <String>
+ [-AddExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-AddMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-AdditionalProperties <Hashtable>]
+ [-RemoveExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### Remove
+### Update
 ```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
- -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
+Update-MgWindowsUpdatesDeploymentAudience -DeploymentId <String>
+ -BodyParameter <IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### RemoveViaIdentityExpanded
+### UpdateViaIdentityExpanded
 ```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgWindowsUpdatesDeploymentAudience -InputObject <IWindowsUpdatesIdentity>
+ [-AddExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-AddMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-AdditionalProperties <Hashtable>]
+ [-RemoveExclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
+ [-RemoveMembers <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### RemoveViaIdentity
+### UpdateViaIdentity
 ```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
+Update-MgWindowsUpdatesDeploymentAudience -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remove members of the same type from an updatableAssetGroup.
-You can also use the method removeMembers to remove members.
+Update the members and exclusions collections of a deploymentAudience.
+Adding an azureADDevice to the members or exclusions collections of a deployment audience automatically creates an Azure AD device object, if it does not already exist.
+If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
+If all **updatableAsset** objects are the same type, you can also use the method updateAudienceById to update the **deploymentAudience**.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	AddMembers = @(
+		@{
+			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
+			Id = "String (identifier)"
+		}
+	)
+	RemoveMembers = @(
+		@{
+			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
+			Id = "String (identifier)"
+		}
+	)
+	AddExclusions = @(
+		@{
+			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
+			Id = "String (identifier)"
+		}
+	)
+	RemoveExclusions = @(
+		@{
+			"@odata.type" = "#microsoft.graph.windowsUpdates.azureADDevice"
+			Id = "String (identifier)"
+		}
+	)
+}
+Update-MgWindowsUpdatesDeploymentAudience -DeploymentId $deploymentId -BodyParameter $params
 ```
 
-{{ Add example description here }}
-
 ## PARAMETERS
+
+### -AddExclusions
+.
+To construct, please use Get-Help -Online and see NOTES section for ADDEXCLUSIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AddMembers
+.
+To construct, please use Get-Help -Online and see NOTES section for ADDMEMBERS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -76,8 +143,8 @@ Accept wildcard characters: False
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Remove, RemoveViaIdentity
+Type: IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -87,15 +154,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Ids
-.
+### -DeploymentId
+The unique identifier of deployment
 
 ```yaml
-Type: String[]
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -108,28 +175,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IWindowsUpdatesIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -MemberEntityType
-.
-
-```yaml
-Type: String
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -148,30 +200,32 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UpdatableAssetId
-The unique identifier of updatableAsset
+### -RemoveExclusions
+.
+To construct, please use Get-Help -Online and see NOTES section for REMOVEEXCLUSIONS properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UpdatePolicyId
-The unique identifier of updatePolicy
+### -RemoveMembers
+.
+To construct, please use Get-Help -Online and see NOTES section for REMOVEMEMBERS properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -214,7 +268,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.PowerShell.Models.IPathsGxoqhAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMicrosoftGraphWindowsupdatesUpdateaudiencePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -224,5 +278,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudience](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/update-mgwindowsupdatesdeploymentaudience)
 

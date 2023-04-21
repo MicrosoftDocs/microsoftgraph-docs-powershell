@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerbuckettask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerBucketTask
@@ -112,7 +111,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlannerBucketId
-key: id of plannerBucket
+The unique identifier of plannerBucket
 
 ```yaml
 Type: String

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentcategorybyref
@@ -59,7 +59,7 @@ Accept wildcard characters: False
 ```
 
 ### -EducationAssignmentId
-key: id of educationAssignment
+The unique identifier of educationAssignment
 
 ```yaml
 Type: String

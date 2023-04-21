@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcallparticipant
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgCommunicationCallParticipant
@@ -18,8 +17,9 @@ Create new navigation property to participants for communications
 New-MgCommunicationCallParticipant -CallId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Info <IMicrosoftGraphParticipantInfo1>] [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted]
  [-MediaStreams <IMicrosoftGraphMediaStream1[]>] [-Metadata <String>]
- [-RecordingInfo <IMicrosoftGraphRecordingInfo1>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RecordingInfo <IMicrosoftGraphRecordingInfo1>] [-RemovedState <IMicrosoftGraphRemovedState>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Create1
@@ -34,7 +34,8 @@ New-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo1>]
  [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream1[]>]
  [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>]
- [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RemovedState <IMicrosoftGraphRemovedState>] [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]
+ [-RosterSequenceNumber <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity1
@@ -93,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -CallId
-key: id of call
+The unique identifier of call
 
 ```yaml
 Type: String
@@ -247,12 +248,43 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -RemovedState
+removedState
+To construct, please use Get-Help -Online and see NOTES section for REMOVEDSTATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphRemovedState
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -RestrictedExperience
 onlineMeetingRestricted
 To construct, please use Get-Help -Online and see NOTES section for RESTRICTEDEXPERIENCE properties and create a hash table.
 
 ```yaml
 Type: IMicrosoftGraphOnlineMeetingRestricted
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RosterSequenceNumber
+.
+
+```yaml
+Type: Int64
 Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
@@ -313,7 +345,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
+BODYPARAMETER <IMicrosoftGraphParticipant1>: participant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Info <IMicrosoftGraphParticipantInfo1>]`: participantInfo
@@ -348,12 +380,16 @@ BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
     - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
+  - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Reason <String>]`: 
   - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
     - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
+  - `[RosterSequenceNumber <Int64?>]`: 
 
-INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
+INFO <IMicrosoftGraphParticipantInfo1>: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -371,30 +407,32 @@ INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
-  - `[AttendanceRecordId <String>]`: key: id of attendanceRecord
-  - `[AudioRoutingGroupId <String>]`: key: id of audioRoutingGroup
-  - `[CallId <String>]`: key: id of call
-  - `[CallRecordId <String>]`: key: id of callRecord
-  - `[CallTranscriptId <String>]`: key: id of callTranscript
-  - `[CommsOperationId <String>]`: key: id of commsOperation
-  - `[ContentSharingSessionId <String>]`: key: id of contentSharingSession
-  - `[MeetingAttendanceReportId <String>]`: key: id of meetingAttendanceReport
-  - `[MeetingRegistrationQuestionId <String>]`: key: id of meetingRegistrationQuestion
-  - `[OnlineMeetingId <String>]`: key: id of onlineMeeting
-  - `[ParticipantId <String>]`: key: id of participant
-  - `[PresenceId <String>]`: key: id of presence
-  - `[SessionId <String>]`: key: id of session
-  - `[UserId <String>]`: key: id of user
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
 
-MEDIASTREAMS <IMicrosoftGraphMediaStream1\[]>: The list of media streams.
+MEDIASTREAMS <IMicrosoftGraphMediaStream1[]>: The list of media streams.
   - `[Direction <String>]`: mediaDirection
   - `[Label <String>]`: The media stream label.
   - `[MediaType <String>]`: 
   - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
   - `[SourceId <String>]`: The source ID.
 
-RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
+RECORDINGINFO <IMicrosoftGraphRecordingInfo1>: recordingInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -416,7 +454,11 @@ RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
   - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RecordingStatus <String>]`: recordingStatus
 
-RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
+REMOVEDSTATE <IMicrosoftGraphRemovedState>: removedState
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Reason <String>]`: 
+
+RESTRICTEDEXPERIENCE <IMicrosoftGraphOnlineMeetingRestricted>: onlineMeetingRestricted
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason

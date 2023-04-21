@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/get-mgapplicationappmanagementpolicybyref
@@ -41,7 +41,7 @@ Accept wildcard characters: False
 ```
 
 ### -ApplicationId
-key: id of application
+The unique identifier of application
 
 ```yaml
 Type: String

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Teams
-Module Guid: ec060e8a-a328-428d-8349-7db0b54b021f
+Module Guid: cb4f7f62-38b6-4c96-8505-7f901aaf4bbd
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -50,8 +50,8 @@ After a **completeMigration** request is made, you cannot import additional mess
 You can add members to the team after the request returns a successful response.
 
 ### [Complete-MgTeamworkDeletedTeamChannelMigration](Complete-MgTeamworkDeletedTeamChannelMigration.md)
-Complete the message migration process by removing \`migration mode\` from a channel in a team.
-\`Migration mode\` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
+Complete the message migration process by removing `migration mode` from a channel in a team.
+`Migration mode` is a special state that prevents certain operations, like sending messages and adding members, during the data migration process.
 After a **completeMigration** request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
@@ -290,7 +290,7 @@ The template this team was created from.
 See available templates.
 
 ### [Get-MgTeam](Get-MgTeam.md)
-Retrieve the properties and relationships of the specified team.
+Get entity from teams by key
 
 ### [Get-MgTeamChannel](Get-MgTeamChannel.md)
 The collection of channels and messages associated with the team.
@@ -692,6 +692,7 @@ If you're creating a private channel, you can add a maximum of 200 members.
 
 ### [New-MgGroupTeamChannelMember](New-MgGroupTeamChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgGroupTeamChannelMessage](New-MgGroupTeamChannelMessage.md)
 Send a new chatMessage in the specified channel.
@@ -722,6 +723,7 @@ Create new navigation property to operations for groups
 
 ### [New-MgGroupTeamPrimaryChannelMember](New-MgGroupTeamPrimaryChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgGroupTeamPrimaryChannelMessage](New-MgGroupTeamPrimaryChannelMessage.md)
 Send a new chatMessage in the specified channel.
@@ -792,6 +794,7 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ### [New-MgTeamChannelMember](New-MgTeamChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamChannelMessage](New-MgTeamChannelMessage.md)
 Send a new chatMessage in the specified channel.
@@ -828,6 +831,7 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ### [New-MgTeamPrimaryChannelMember](New-MgTeamPrimaryChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamPrimaryChannelMessage](New-MgTeamPrimaryChannelMessage.md)
 Send a new chatMessage in the specified channel.
@@ -895,6 +899,7 @@ To remove the email address of a **channel**, use the removeEmail method.
 
 ### [New-MgTeamworkDeletedTeamChannelMember](New-MgTeamworkDeletedTeamChannelMember.md)
 Add a conversationMember to a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgTeamworkDeletedTeamChannelMessage](New-MgTeamworkDeletedTeamChannelMessage.md)
 Send a new chatMessage in the specified channel.
@@ -1254,8 +1259,23 @@ For more details about sending notifications and the requirements for doing so, 
 ### [Send-MgTeamworkActivityNotificationToRecipient](Send-MgTeamworkActivityNotificationToRecipient.md)
 Invoke action sendActivityNotificationToRecipients
 
+### [Set-MgChatMessageHostedContent](Set-MgChatMessageHostedContent.md)
+Update media content for the navigation property hostedContents in chats
+
+### [Set-MgChatMessageReplyHostedContent](Set-MgChatMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in chats
+
+### [Set-MgGroupTeam](Set-MgGroupTeam.md)
+Update the navigation property team in groups
+
 ### [Set-MgGroupTeamChannelFileFolderContent](Set-MgGroupTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgGroupTeamChannelMessageHostedContent](Set-MgGroupTeamChannelMessageHostedContent.md)
+Update media content for the navigation property hostedContents in groups
+
+### [Set-MgGroupTeamChannelMessageReplyHostedContent](Set-MgGroupTeamChannelMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in groups
 
 ### [Set-MgGroupTeamPhotoContent](Set-MgGroupTeamPhotoContent.md)
 Update media content for the navigation property photo in groups
@@ -1263,11 +1283,23 @@ Update media content for the navigation property photo in groups
 ### [Set-MgGroupTeamPrimaryChannelFileFolderContent](Set-MgGroupTeamPrimaryChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgGroupTeamPrimaryChannelMessageHostedContent](Set-MgGroupTeamPrimaryChannelMessageHostedContent.md)
+Update media content for the navigation property hostedContents in groups
+
+### [Set-MgGroupTeamPrimaryChannelMessageReplyHostedContent](Set-MgGroupTeamPrimaryChannelMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in groups
+
 ### [Set-MgGroupTeamSchedule](Set-MgGroupTeamSchedule.md)
 Update the navigation property schedule in groups
 
 ### [Set-MgTeamChannelFileFolderContent](Set-MgTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgTeamChannelMessageHostedContent](Set-MgTeamChannelMessageHostedContent.md)
+Update media content for the navigation property hostedContents in teams
+
+### [Set-MgTeamChannelMessageReplyHostedContent](Set-MgTeamChannelMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in teams
 
 ### [Set-MgTeamPhotoContent](Set-MgTeamPhotoContent.md)
 Update media content for the navigation property photo in teams
@@ -1275,11 +1307,29 @@ Update media content for the navigation property photo in teams
 ### [Set-MgTeamPrimaryChannelFileFolderContent](Set-MgTeamPrimaryChannelFileFolderContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgTeamPrimaryChannelMessageHostedContent](Set-MgTeamPrimaryChannelMessageHostedContent.md)
+Update media content for the navigation property hostedContents in teams
+
+### [Set-MgTeamPrimaryChannelMessageReplyHostedContent](Set-MgTeamPrimaryChannelMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in teams
+
 ### [Set-MgTeamSchedule](Set-MgTeamSchedule.md)
 Update the navigation property schedule in teams
 
 ### [Set-MgTeamworkDeletedTeamChannelFileFolderContent](Set-MgTeamworkDeletedTeamChannelFileFolderContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgTeamworkDeletedTeamChannelMessageHostedContent](Set-MgTeamworkDeletedTeamChannelMessageHostedContent.md)
+Update media content for the navigation property hostedContents in teamwork
+
+### [Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in teamwork
+
+### [Set-MgUserChatMessageHostedContent](Set-MgUserChatMessageHostedContent.md)
+Update media content for the navigation property hostedContents in users
+
+### [Set-MgUserChatMessageReplyHostedContent](Set-MgUserChatMessageReplyHostedContent.md)
+Update media content for the navigation property hostedContents in users
 
 ### [Undo-MgChatMessageReplySoftDelete](Undo-MgChatMessageReplySoftDelete.md)
 Invoke action undoSoftDelete
@@ -1340,12 +1390,6 @@ Update the navigation property pinnedMessages in chats
 
 ### [Update-MgChatTab](Update-MgChatTab.md)
 Update the navigation property tabs in chats
-
-### [Update-MgGroupTeam](Update-MgGroupTeam.md)
-Create a new team under a group.
-In order to create a team, the group must have a least one owner.
-If the group was created less than 15 minutes ago, it's possible for the Create team call to fail with a 404 error code due to replication delays.
-\nThe recommended pattern is to retry the Create team call three times, with a 10 second delay between calls.
 
 ### [Update-MgGroupTeamChannel](Update-MgGroupTeamChannel.md)
 Update the navigation property channels in groups

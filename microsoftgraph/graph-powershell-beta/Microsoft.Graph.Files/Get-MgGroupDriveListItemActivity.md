@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mggroupdrivelistitemactivity
@@ -57,7 +57,7 @@ Accept wildcard characters: False
 ```
 
 ### -DriveId
-key: id of drive
+The unique identifier of drive
 
 ```yaml
 Type: String
@@ -102,7 +102,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-key: id of group
+The unique identifier of group
 
 ```yaml
 Type: String
@@ -117,7 +117,7 @@ Accept wildcard characters: False
 ```
 
 ### -ListItemId
-key: id of listItem
+The unique identifier of listItem
 
 ```yaml
 Type: String

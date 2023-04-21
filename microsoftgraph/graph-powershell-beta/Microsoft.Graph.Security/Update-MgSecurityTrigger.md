@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytrigger
@@ -159,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
+BODYPARAMETER <IMicrosoftGraphSecurityTriggersRoot>: triggersRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RetentionEvents <IMicrosoftGraphSecurityRetentionEvent[]>]`: 
@@ -181,7 +181,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
       - `[Status <String>]`: eventPropagationStatus
       - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
     - `[EventQueries <IMicrosoftGraphSecurityEventQuery[]>]`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
-      - `[Query <String>]`: 
+      - `[Query <String>]`: Represents unique identification for the  query. 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
       - `[QueryType <String>]`: queryType
     - `[EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>]`: retentionEventStatus
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -215,7 +215,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggersRoot>`: triggersRoot
       - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent\[]>: .
+RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -234,7 +234,7 @@ RETENTIONEVENTS <IMicrosoftGraphSecurityRetentionEvent\[]>: .
     - `[Status <String>]`: eventPropagationStatus
     - `[StatusInformation <String>]`: Additional information about the status of the event creation request.
   - `[EventQueries <IMicrosoftGraphSecurityEventQuery[]>]`: Represents the workload (SharePoint Online, OneDrive for Business, Exchange Online) and identification information associated with a retention event.
-    - `[Query <String>]`: 
+    - `[Query <String>]`: Represents unique identification for the  query. 'Asset ID' for SharePoint Online and OneDrive for Business, 'keywords' for Exchange Online.
     - `[QueryType <String>]`: queryType
   - `[EventStatus <IMicrosoftGraphSecurityRetentionEventStatus>]`: retentionEventStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

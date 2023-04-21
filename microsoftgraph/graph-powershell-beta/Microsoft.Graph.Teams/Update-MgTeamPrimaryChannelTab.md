@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamprimarychanneltab
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 ```
 
 ### -TeamId
-key: id of team
+The unique identifier of team
 
 ```yaml
 Type: String
@@ -233,7 +233,7 @@ Accept wildcard characters: False
 ```
 
 ### -TeamsTabId
-key: id of teamsTab
+The unique identifier of teamsTab
 
 ```yaml
 Type: String
@@ -313,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsTab1>`: teamsTab
+BODYPARAMETER <IMicrosoftGraphTeamsTab1>: teamsTab
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Configuration <IMicrosoftGraphTeamsTabConfiguration>]`: teamsTabConfiguration
@@ -325,12 +325,19 @@ BODYPARAMETER `<IMicrosoftGraphTeamsTab1>`: teamsTab
   - `[DisplayName <String>]`: Name of the tab.
   - `[MessageId <String>]`: 
   - `[SortOrderIndex <String>]`: Index of the order used for sorting tabs.
-  - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
+  - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
+      - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
+            - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
+            - `[PermissionValue <String>]`: The name of the resource-specific permission.
       - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
       - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -366,58 +373,65 @@ BODYPARAMETER `<IMicrosoftGraphTeamsTab1>`: teamsTab
   - `[TeamsAppId <String>]`: 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
-CONFIGURATION `<IMicrosoftGraphTeamsTabConfiguration>`: teamsTabConfiguration
+CONFIGURATION <IMicrosoftGraphTeamsTabConfiguration>: teamsTabConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentUrl <String>]`: Url used for rendering tab contents in Teams. Required.
   - `[EntityId <String>]`: Identifier for the entity hosted by the tab provider.
   - `[RemoveUrl <String>]`: Url called by Teams client when a Tab is removed using the Teams Client.
   - `[WebsiteUrl <String>]`: Url for showing tab contents outside of Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
-  - `[AssociatedTeamInfoId <String>]`: key: id of associatedTeamInfo
-  - `[ChannelId <String>]`: key: id of channel
-  - `[ChatId <String>]`: key: id of chat
-  - `[ChatMessageHostedContentId <String>]`: key: id of chatMessageHostedContent
-  - `[ChatMessageId <String>]`: key: id of chatMessage
-  - `[ChatMessageId1 <String>]`: key: id of chatMessage
-  - `[ConversationMemberId <String>]`: key: id of conversationMember
-  - `[DeletedTeamId <String>]`: key: id of deletedTeam
-  - `[GroupId <String>]`: key: id of group
-  - `[OfferShiftRequestId <String>]`: key: id of offerShiftRequest
-  - `[OpenShiftChangeRequestId <String>]`: key: id of openShiftChangeRequest
-  - `[OpenShiftId <String>]`: key: id of openShift
-  - `[PinnedChatMessageInfoId <String>]`: key: id of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: key: id of resourceSpecificPermissionGrant
-  - `[SchedulingGroupId <String>]`: key: id of schedulingGroup
-  - `[SharedWithChannelTeamInfoId <String>]`: key: id of sharedWithChannelTeamInfo
-  - `[ShiftId <String>]`: key: id of shift
-  - `[SwapShiftsChangeRequestId <String>]`: key: id of swapShiftsChangeRequest
-  - `[TeamId <String>]`: key: id of team
-  - `[TeamTemplateDefinitionId <String>]`: key: id of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: key: id of teamTemplate
-  - `[TeamsAppDefinitionId <String>]`: key: id of teamsAppDefinition
-  - `[TeamsAppId <String>]`: key: id of teamsApp
-  - `[TeamsAppInstallationId <String>]`: key: id of teamsAppInstallation
-  - `[TeamsAsyncOperationId <String>]`: key: id of teamsAsyncOperation
-  - `[TeamsTabId <String>]`: key: id of teamsTab
-  - `[TeamworkDeviceId <String>]`: key: id of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: key: id of teamworkDeviceOperation
-  - `[TeamworkTagId <String>]`: key: id of teamworkTag
-  - `[TeamworkTagMemberId <String>]`: key: id of teamworkTagMember
-  - `[TimeCardId <String>]`: key: id of timeCard
-  - `[TimeOffId <String>]`: key: id of timeOff
-  - `[TimeOffReasonId <String>]`: key: id of timeOffReason
-  - `[TimeOffRequestId <String>]`: key: id of timeOffRequest
-  - `[UserId <String>]`: key: id of user
-  - `[UserScopeTeamsAppInstallationId <String>]`: key: id of userScopeTeamsAppInstallation
-  - `[WorkforceIntegrationId <String>]`: key: id of workforceIntegration
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
+  - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
+  - `[ChannelId <String>]`: The unique identifier of channel
+  - `[ChatId <String>]`: The unique identifier of chat
+  - `[ChatMessageHostedContentId <String>]`: The unique identifier of chatMessageHostedContent
+  - `[ChatMessageId <String>]`: The unique identifier of chatMessage
+  - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
+  - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
+  - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
+  - `[OpenShiftId <String>]`: The unique identifier of openShift
+  - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
+  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
+  - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
+  - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
+  - `[ShiftId <String>]`: The unique identifier of shift
+  - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
+  - `[TeamId <String>]`: The unique identifier of team
+  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
+  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
+  - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
+  - `[TeamsAppId <String>]`: The unique identifier of teamsApp
+  - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
+  - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
+  - `[TeamsTabId <String>]`: The unique identifier of teamsTab
+  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
+  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
+  - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
+  - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
+  - `[TimeCardId <String>]`: The unique identifier of timeCard
+  - `[TimeOffId <String>]`: The unique identifier of timeOff
+  - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
+  - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
+  - `[UserId <String>]`: The unique identifier of user
+  - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
+  - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp>`: teamsApp
+TEAMSAPP <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
+    - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
+          - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
+          - `[PermissionValue <String>]`: The name of the resource-specific permission.
     - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
     - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

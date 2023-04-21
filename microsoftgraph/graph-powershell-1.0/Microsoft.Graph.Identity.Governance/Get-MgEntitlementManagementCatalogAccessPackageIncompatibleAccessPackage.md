@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogaccesspackageincompatibleaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementCatalogAccessPackageIncompatibleAccessPackage
@@ -39,7 +38,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
-key: id of accessPackageCatalog
+The unique identifier of accessPackageCatalog
 
 ```yaml
 Type: String
@@ -54,7 +53,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccessPackageId
-key: id of accessPackage
+The unique identifier of accessPackage
 
 ```yaml
 Type: String

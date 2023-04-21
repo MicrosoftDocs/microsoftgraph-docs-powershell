@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.DeviceManagement.Actions
-Module Guid: 2841c60f-1057-467f-8007-ab1645279169
+Module Guid: d8cf5cd1-cee0-4598-b950-6c27ad0bc746
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -229,8 +229,23 @@ Invoke action getDevicePoliciesComplianceReport
 ### [Get-MgDeviceManagementReportDevicePolicySettingComplianceReport](Get-MgDeviceManagementReportDevicePolicySettingComplianceReport.md)
 Invoke action getDevicePolicySettingsComplianceReport
 
+### [Get-MgDeviceManagementReportDeviceStatusByCompliacePolicyReport](Get-MgDeviceManagementReportDeviceStatusByCompliacePolicyReport.md)
+Invoke action getDeviceStatusByCompliacePolicyReport
+
+### [Get-MgDeviceManagementReportDeviceStatusByCompliancePolicySettingReport](Get-MgDeviceManagementReportDeviceStatusByCompliancePolicySettingReport.md)
+Invoke action getDeviceStatusByCompliancePolicySettingReport
+
+### [Get-MgDeviceManagementReportDeviceStatusByPolicyPlatformComplianceReport](Get-MgDeviceManagementReportDeviceStatusByPolicyPlatformComplianceReport.md)
+Invoke action getDevicesStatusByPolicyPlatformComplianceReport
+
 ### [Get-MgDeviceManagementReportDeviceStatusBySettingReport](Get-MgDeviceManagementReportDeviceStatusBySettingReport.md)
 Invoke action getDevicesStatusBySettingReport
+
+### [Get-MgDeviceManagementReportDeviceStatusSummaryByCompliacePolicyReport](Get-MgDeviceManagementReportDeviceStatusSummaryByCompliacePolicyReport.md)
+Invoke action getDeviceStatusSummaryByCompliacePolicyReport
+
+### [Get-MgDeviceManagementReportDeviceStatusSummaryByCompliancePolicySettingReport](Get-MgDeviceManagementReportDeviceStatusSummaryByCompliancePolicySettingReport.md)
+Invoke action getDeviceStatusSummaryByCompliancePolicySettingsReport
 
 ### [Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport](Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport.md)
 Invoke action getDevicesWithoutCompliancePolicyReport
@@ -380,8 +395,11 @@ Invoke action bulkRestoreCloudPc
 ### [Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus.md)
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
-### [Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus](Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus.md)
-Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
+### [Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize](Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize.md)
+Invoke action bulkResize
+
+### [Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize](Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize.md)
+Invoke action bulkResize
 
 ### [Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc](Invoke-MgBulkDeviceManagementManagedDeviceRestoreCloudPc.md)
 Invoke action bulkRestoreCloudPc
@@ -910,6 +928,12 @@ Invoke action triggerDeviceScopeAction
 ### [Start-MgDeviceManagementVirtualEndpointCloudPc](Start-MgDeviceManagementVirtualEndpointCloudPc.md)
 Invoke action start
 
+### [Start-MgDeviceManagementVirtualEndpointCloudPcOff](Start-MgDeviceManagementVirtualEndpointCloudPcOff.md)
+Invoke action powerOff
+
+### [Start-MgDeviceManagementVirtualEndpointCloudPcOn](Start-MgDeviceManagementVirtualEndpointCloudPcOn.md)
+Invoke action powerOn
+
 ### [Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck](Start-MgDeviceManagementVirtualEndpointOnPremisConnectionHealthCheck.md)
 Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
@@ -964,6 +988,9 @@ Invoke action validateFilter
 
 ### [Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript](Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript.md)
 Invoke action validateComplianceScript
+
+### [Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize.md)
+Invoke action validateBulkResize
 
 ### [Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment](Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment.md)
 Invoke action updateDeviceProfileAssignment

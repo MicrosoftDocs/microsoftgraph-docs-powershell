@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritylabel
@@ -159,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
+BODYPARAMETER <IMicrosoftGraphSecurityLabelsRoot>: labelsRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>]`: 
@@ -201,7 +201,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityLabelsRoot>`: labelsRoot
       - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
     - `[RetentionTrigger <String>]`: retentionTrigger
 
-RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel\[]>: .
+RETENTIONLABELS <IMicrosoftGraphSecurityRetentionLabel[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActionAfterRetentionPeriod <String>]`: actionAfterRetentionPeriod
   - `[BehaviorDuringRetentionPeriod <String>]`: behaviorDuringRetentionPeriod

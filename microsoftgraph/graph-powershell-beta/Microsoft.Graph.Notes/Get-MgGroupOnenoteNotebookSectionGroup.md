@@ -1,9 +1,8 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteNotebookSectionGroup
@@ -100,7 +99,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-key: id of group
+The unique identifier of group
 
 ```yaml
 Type: String
@@ -115,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotebookId
-key: id of notebook
+The unique identifier of notebook
 
 ```yaml
 Type: String
