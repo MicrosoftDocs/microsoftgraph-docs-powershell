@@ -261,3 +261,11 @@ v1.0-beta, New-MgGroupDriveRootListItemLink, /groups/{group-id}/drives/{drive-id
 v1.0-beta, New-MgGroupDriveRootUploadSession, /groups/{group-id}/drives/{drive-id}/root/createUploadSession
 v1.0-beta, New-MgGroupEndpoint, /groups/{group-id}/endpoints
 v1.0-beta, New-MgGroupExtension, /groups/{group-id}/extensions
+v1.0, Get-MgGroupOnenoteRecentNotebook, /groups/{group-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0, Get-MgGroupPhotoContent, /groups/{group-id}/photo/$value
+v1.0, Get-MgGroupSiteByPath, /groups/{group-id}/sites/{site-id}/getByPath(path='{path}')
+v1.0, Invoke-MgCalendarGroupCalendar, /groups/{group-id}/calendar/allowedCalendarSharingRoles(User='{User}')
+v1.0-beta, Get-MgGroupOnenoteRecentNotebook, /groups/{group-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0-beta, Get-MgGroupPhotoContent, /groups/{group-id}/photo/$value
+v1.0-beta, Get-MgGroupSiteByPath, /groups/{group-id}/sites/{site-id}/getByPath(path='{path}')
+v1.0-beta, Invoke-MgCalendarGroupCalendar, /groups/{group-id}/calendar/allowedCalendarSharingRoles(User='{User}')
