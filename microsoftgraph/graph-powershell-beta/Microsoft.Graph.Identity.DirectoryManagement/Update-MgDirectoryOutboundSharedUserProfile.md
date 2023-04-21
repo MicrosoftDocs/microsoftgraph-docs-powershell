@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryoutboundshareduserprofile
@@ -207,13 +207,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphOutboundSharedUserProfile>: outboundSharedUserProfile
+BODYPARAMETER `<IMicrosoftGraphOutboundSharedUserProfile>`: outboundSharedUserProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Tenants <IMicrosoftGraphTenantReference[]>]`: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
     - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
   - `[UserId <String>]`: The object id of the external user. Read-only.
 
-INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -249,7 +249,7 @@ INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-TENANTS <IMicrosoftGraphTenantReference[]>: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
+TENANTS <IMicrosoftGraphTenantReference\[]>: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
   - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
 
 ## RELATED LINKS
