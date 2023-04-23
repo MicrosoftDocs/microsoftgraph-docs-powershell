@@ -1,0 +1,9 @@
+{
+    "redirections": [
+        {
+            "source_path": "microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Calendar/Get-MgPlace.md",
+            "redirect_url": "https://learn.microsoft.com/en-us/powershell/microsoftgraph/?view=graph-powershell-1.0",
+            "redirect_document_id": false
+        }
+    ]
+}
