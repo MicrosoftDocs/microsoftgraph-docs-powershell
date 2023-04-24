@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: c4469390-e5d2-44ba-be0b-37cf80a60894
+Module Guid: a5d5e286-2857-4000-a7df-dec17542a3c3
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -285,7 +285,8 @@ Specifies a list of directoryObjects that feature is enabled for.
 Invoke function delta
 
 ### [Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject](Get-MgPolicyFeatureRolloutPolicyApplyToUserOwnedObject.md)
-Invoke action getUserOwnedObjects
+Retrieve a list of recently deleted application and group objects owned by the specified user.
+This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 The policy to control Azure AD authentication behavior for federated users.
@@ -1301,7 +1302,7 @@ Update the default configuration of a cross-tenant access policy.
 Update the navigation property partners in policies
 
 ### [Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Create a cross-tenant user synchronization policy for a partner-specific configuration.
+Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.

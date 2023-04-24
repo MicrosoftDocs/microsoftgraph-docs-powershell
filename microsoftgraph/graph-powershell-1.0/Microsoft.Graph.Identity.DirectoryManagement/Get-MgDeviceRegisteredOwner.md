@@ -93,7 +93,7 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-key: id of device
+The unique identifier of device
 
 ```yaml
 Type: String

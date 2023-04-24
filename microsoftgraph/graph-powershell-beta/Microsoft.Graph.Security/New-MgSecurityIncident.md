@@ -408,7 +408,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTS <IMicrosoftGraphSecurityAlert\[]>: The list of related alerts. Supports $expand.
+ALERTS <IMicrosoftGraphSecurityAlert1\[]>: The list of related alerts. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
@@ -443,15 +443,16 @@ ALERTS <IMicrosoftGraphSecurityAlert\[]>: The list of related alerts. Supports $
   - `[ServiceSource <String>]`: serviceSource
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: alertStatus
+  - `[SystemTags <String[]>]`: 
   - `[TenantId <String>]`: The Azure Active Directory tenant the alert was created in.
   - `[ThreatDisplayName <String>]`: The threat associated with this alert.
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
+BODYPARAMETER `<IMicrosoftGraphSecurityIncident1>`: incident
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Alerts <IMicrosoftGraphSecurityAlert[]>]`: The list of related alerts. Supports $expand.
+  - `[Alerts <IMicrosoftGraphSecurityAlert1[]>]`: The list of related alerts. Supports $expand.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
     - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
@@ -486,6 +487,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
     - `[ServiceSource <String>]`: serviceSource
     - `[Severity <String>]`: alertSeverity
     - `[Status <String>]`: alertStatus
+    - `[SystemTags <String[]>]`: 
     - `[TenantId <String>]`: The Azure Active Directory tenant the alert was created in.
     - `[ThreatDisplayName <String>]`: The threat associated with this alert.
     - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
@@ -495,18 +497,26 @@ BODYPARAMETER `<IMicrosoftGraphSecurityIncident>`: incident
   - `[Comments <IMicrosoftGraphSecurityAlertComment[]>]`: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[CreatedDateTime <DateTime?>]`: Time when the incident was first created.
   - `[CustomTags <String[]>]`: Array of custom tags associated with an incident.
+  - `[Description <String>]`: 
   - `[Determination <String>]`: alertDetermination
   - `[DisplayName <String>]`: The incident name.
   - `[IncidentWebUrl <String>]`: The URL for the incident page in the Microsoft 365 Defender portal.
   - `[LastUpdateDateTime <DateTime?>]`: Time when the incident was last updated.
+  - `[RecommendedActions <String>]`: 
+  - `[RecommendedHuntingQueries <IMicrosoftGraphSecurityRecommendedHuntingQuery[]>]`: 
+    - `[KqlText <String>]`: 
   - `[RedirectIncidentId <String>]`: Only populated in case an incident is grouped together with another incident, as part of the logic that processes incidents. In such a case, the status property is redirected.
   - `[Severity <String>]`: alertSeverity
   - `[Status <String>]`: incidentStatus
+  - `[SystemTags <String[]>]`: 
   - `[TenantId <String>]`: The Azure Active Directory tenant in which the alert was created.
 
 COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team when the incident is managed.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+
+RECOMMENDEDHUNTINGQUERIES <IMicrosoftGraphSecurityRecommendedHuntingQuery\[]>: .
+  - `[KqlText <String>]`: 
 
 ## RELATED LINKS

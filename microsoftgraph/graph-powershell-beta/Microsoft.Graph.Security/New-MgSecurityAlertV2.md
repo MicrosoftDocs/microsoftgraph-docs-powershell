@@ -36,13 +36,6 @@ Create new navigation property to alerts_v2 for security
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
-```
-
-{{ Add example description here }}
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -571,9 +564,67 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert1
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+BODYPARAMETER `<IMicrosoftGraphSecurityAlert1>`: alert
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
+  - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
+  - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
+  - `[Category <String>]`: The attack kill-chain category that the alert belongs to. Aligned with the MITRE ATT&CK framework.
+  - `[Classification <String>]`: alertClassification
+  - `[Comments <IMicrosoftGraphSecurityAlertComment[]>]`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+    - `[Comment <String>]`: The comment text.
+    - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
+    - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+  - `[CreatedDateTime <DateTime?>]`: Time when Microsoft 365 Defender created the alert.
+  - `[Description <String>]`: String value describing each alert.
+  - `[DetectionSource <String>]`: detectionSource
+  - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
+  - `[Determination <String>]`: alertDetermination
+  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>]`: Collection of evidence related to the alert.
+    - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
+    - `[RemediationStatus <String>]`: evidenceRemediationStatus
+    - `[RemediationStatusDetails <String>]`: Details about the remediation status.
+    - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role 'Attacker'.
+    - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.
+    - `[Verdict <String>]`: evidenceVerdict
+  - `[FirstActivityDateTime <DateTime?>]`: The earliest activity associated with the alert.
+  - `[IncidentId <String>]`: Unique identifier to represent the incident this alert resource is associated with.
+  - `[IncidentWebUrl <String>]`: URL for the incident page in the Microsoft 365 Defender portal.
+  - `[LastActivityDateTime <DateTime?>]`: The oldest activity associated with the alert.
+  - `[LastUpdateDateTime <DateTime?>]`: Time when the alert was last updated at Microsoft 365 Defender.
+  - `[MitreTechniques <String[]>]`: The attack techniques, as aligned with the MITRE ATT&CK framework.
+  - `[ProviderAlertId <String>]`: The ID of the alert as it appears in the security provider product that generated the alert.
+  - `[RecommendedActions <String>]`: Recommended response and remediation actions to take in the event this alert was generated.
+  - `[ResolvedDateTime <DateTime?>]`: Time when the alert was resolved.
+  - `[ServiceSource <String>]`: serviceSource
+  - `[Severity <String>]`: alertSeverity
+  - `[Status <String>]`: alertStatus
+  - `[SystemTags <String[]>]`: 
+  - `[TenantId <String>]`: The Azure Active Directory tenant the alert was created in.
+  - `[ThreatDisplayName <String>]`: The threat associated with this alert.
+  - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
+  - `[Title <String>]`: Brief identifying string value describing the alert.
+
+COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+  - `[Comment <String>]`: The comment text.
+  - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
+  - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
+
+EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1\[]>: Collection of evidence related to the alert.
+  - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
+  - `[RemediationStatus <String>]`: evidenceRemediationStatus
+  - `[RemediationStatusDetails <String>]`: Details about the remediation status.
+  - `[Roles <String[]>]`: The role/s that an evidence entity represents in an alert, e.g., an IP address that is associated with an attacker will have the evidence role 'Attacker'.
+  - `[Tags <String[]>]`: Array of custom tags associated with an evidence instance, for example to denote a group of devices, high value assets, etc.
+  - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityalertv2](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityalertv2)
-

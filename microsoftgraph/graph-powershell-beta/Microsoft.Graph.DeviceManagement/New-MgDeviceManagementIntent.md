@@ -20,9 +20,9 @@ New-MgDeviceManagementIntent [-AdditionalProperties <Hashtable>]
  [-DeviceSettingStateSummaries <IMicrosoftGraphDeviceManagementIntentDeviceSettingStateSummary[]>]
  [-DeviceStateSummary <IMicrosoftGraphDeviceManagementIntentDeviceStateSummary>]
  [-DeviceStates <IMicrosoftGraphDeviceManagementIntentDeviceState[]>] [-DisplayName <String>] [-Id <String>]
- [-IsAssigned] [-LastModifiedDateTime <DateTime>] [-RoleScopeTagIds <String[]>]
- [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>] [-TemplateId <String>]
- [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]
+ [-IsAssigned] [-IsMigratingToConfigurationPolicy] [-LastModifiedDateTime <DateTime>]
+ [-RoleScopeTagIds <String[]>] [-Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
+ [-TemplateId <String>] [-UserStateSummary <IMicrosoftGraphDeviceManagementIntentUserStateSummary>]
  [-UserStates <IMicrosoftGraphDeviceManagementIntentUserState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -198,6 +198,21 @@ Accept wildcard characters: False
 
 ### -IsAssigned
 Signifies whether or not the intent is assigned to users
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsMigratingToConfigurationPolicy
+Signifies whether or not the intent is being migrated to the configurationPolicies endpoint
 
 ```yaml
 Type: SwitchParameter
@@ -421,6 +436,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementIntent>`: Entity that represents 
     - `[UserPrincipalName <String>]`: The user principal name that is being reported on a device
   - `[DisplayName <String>]`: The user given display name
   - `[IsAssigned <Boolean?>]`: Signifies whether or not the intent is assigned to users
+  - `[IsMigratingToConfigurationPolicy <Boolean?>]`: Signifies whether or not the intent is being migrated to the configurationPolicies endpoint
   - `[LastModifiedDateTime <DateTime?>]`: When the intent was last modified
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[Settings <IMicrosoftGraphDeviceManagementSettingInstance[]>]`: Collection of all settings to be applied

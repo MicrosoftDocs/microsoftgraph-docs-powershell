@@ -99,7 +99,7 @@ Accept wildcard characters: False
 ### -ExpirationDateTime
 The date and time when the snapshot expires.
 The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time.
-For example, midnight UTC on Jan 1, 2014 appears as'2014-01-01T00:00:00Z'.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -230,7 +230,9 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcSnapshot>`: cloudPcSnapshot
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CloudPcId <String>]`: The unique identifier for the Cloud PC.
   - `[CreatedDateTime <DateTime?>]`: The date and time at which the snapshot was taken. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[ExpirationDateTime <DateTime?>]`: The date and time when the snapshot expires. The time is shown in ISO 8601 format and Coordinated Universal Time (UTC) time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastRestoredDateTime <DateTime?>]`: The date and time at which the snapshot was last used to restore the Cloud PC device. The timestamp is shown in ISO 8601 format and Coordinated Universal Time (UTC). For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[SnapshotType <String>]`: cloudPcSnapshotType
   - `[Status <String>]`: cloudPcSnapshotStatus
 
 ## RELATED LINKS

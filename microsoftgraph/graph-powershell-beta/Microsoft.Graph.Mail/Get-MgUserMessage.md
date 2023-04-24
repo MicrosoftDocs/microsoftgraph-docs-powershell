@@ -3,7 +3,7 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermessage
 schema: 2.0.0
-ms.prod: outlook
+ms.prod: extensions
 ---
 
 # Get-MgUserMessage
@@ -17,18 +17,21 @@ Nullable.
 
 ### List (Default)
 ```
-Get-MgUserMessage -UserId <String> [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgUserMessage -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
+ [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgUserMessage -MessageId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserMessage -MessageId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMessage -InputObject <IMailIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgUserMessage -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -151,6 +154,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ExpandProperty
+Expand related entities
+
+```yaml
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Filter
 Filter items by property values
 
@@ -183,7 +201,7 @@ Accept wildcard characters: False
 ```
 
 ### -MessageId
-key: id of message
+The unique identifier of message
 
 ```yaml
 Type: String
@@ -273,7 +291,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-key: id of user
+The unique identifier of user
 
 ```yaml
 Type: String
@@ -321,17 +339,17 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT `<IMailIdentity>`: Identity Parameter
-  - `[AttachmentId <String>]`: key: id of attachment
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[InferenceClassificationOverrideId <String>]`: key: id of inferenceClassificationOverride
-  - `[MailFolderId <String>]`: key: id of mailFolder
-  - `[MailFolderId1 <String>]`: key: id of mailFolder
-  - `[MentionId <String>]`: key: id of mention
-  - `[MessageId <String>]`: key: id of message
-  - `[MessageRuleId <String>]`: key: id of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: key: id of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: key: id of singleValueLegacyExtendedProperty
-  - `[UserConfigurationId <String>]`: key: id of userConfiguration
-  - `[UserId <String>]`: key: id of user
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MentionId <String>]`: The unique identifier of mention
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
+  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
+  - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

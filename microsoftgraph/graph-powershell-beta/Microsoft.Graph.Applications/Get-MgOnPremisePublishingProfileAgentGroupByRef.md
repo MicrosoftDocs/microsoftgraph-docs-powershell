@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesAgentGroupId
-key: id of onPremisesAgentGroup
+The unique identifier of onPremisesAgentGroup
 
 ```yaml
 Type: String
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesAgentId
-key: id of onPremisesAgent
+The unique identifier of onPremisesAgent
 
 ```yaml
 Type: String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesPublishingProfileId
-key: id of onPremisesPublishingProfile
+The unique identifier of onPremisesPublishingProfile
 
 ```yaml
 Type: String

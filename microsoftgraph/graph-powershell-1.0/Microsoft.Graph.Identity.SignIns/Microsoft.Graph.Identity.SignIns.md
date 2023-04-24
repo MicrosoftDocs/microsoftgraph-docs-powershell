@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: c4469390-e5d2-44ba-be0b-37cf80a60894
+Module Guid: a5d5e286-2857-4000-a7df-dec17542a3c3
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -123,7 +123,7 @@ The policy that controls the idle time out for web sessions for applications.
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ### [Get-MgPolicyAppManagementPolicy](Get-MgPolicyAppManagementPolicy.md)
-Get appManagementPolicies from policies
+The policies that enforce app management restrictions for specific applications and service principals, overriding the defaultAppManagementPolicy.
 
 ### [Get-MgPolicyAppManagementPolicyApplyTo](Get-MgPolicyAppManagementPolicyApplyTo.md)
 Get appliesTo from policies
@@ -155,7 +155,7 @@ This default configuration may be the service default assigned by Azure AD (**is
 Defines partner-specific configurations for external Azure Active Directory organizations.
 
 ### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
-Get defaultAppManagementPolicy from policies
+Read the properties of a tenantAppManagementPolicy object.
 
 ### [Get-MgPolicyFeatureRolloutPolicy](Get-MgPolicyFeatureRolloutPolicy.md)
 The feature rollout policy associated with a directory object.
@@ -359,7 +359,7 @@ A delegated permission grant authorizes a client service principal (representing
 Create a new activityBasedTimeoutPolicy object.
 
 ### [New-MgPolicyAppManagementPolicy](New-MgPolicyAppManagementPolicy.md)
-Create new navigation property to appManagementPolicies for policies
+Create an appManagementPolicy object.
 
 ### [New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration.md)
 Create new navigation property to authenticationMethodConfigurations for policies
@@ -727,7 +727,7 @@ Update the default configuration of a cross-tenant access policy.
 Update the navigation property partners in policies
 
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
-Update the navigation property defaultAppManagementPolicy in policies
+Update the properties of a tenantAppManagementPolicy object.
 
 ### [Update-MgPolicyFeatureRolloutPolicy](Update-MgPolicyFeatureRolloutPolicy.md)
 Update the navigation property featureRolloutPolicies in policies

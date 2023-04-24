@@ -69,7 +69,7 @@ Accept wildcard characters: False
 ```
 
 ### -EducationClassId
-key: id of educationClass
+The unique identifier of educationClass
 
 ```yaml
 Type: String

@@ -330,3 +330,15 @@ v1.0-beta, Update-MgOrganizationSettingMicrosoftApplicationDataAccess, /organiza
 v1.0-beta, Update-MgOrganizationSettingPersonInsight, /organization/{organization-id}/settings/peopleInsights
 v1.0-beta, Update-MgOrganizationSettingProfileCardProperty, /organization/{organization-id}/settings/profileCardProperties/{profileCardProperty-id}
 v1.0-beta, Update-MgUserScopedRoleMemberOf, /users/{user-id}/scopedRoleMemberOf/{scopedRoleMembership-id}
+v1.0, Remove-MgDeviceRegisteredOwnerByRef, /devices/{device-id}/registeredOwners/{directoryObject-id}/$ref
+v1.0, Remove-MgDirectoryAdministrativeUnitMemberByRef, /directory/administrativeUnits/{administrativeUnit-id}/members/{directoryObject-id}/$ref
+v1.0, Remove-MgDirectoryRoleMemberByRef, /directoryRoles/{directoryRole-id}/members/{directoryObject-id}/$ref
+v1.0-beta, Get-MgAdministrativeUnitMemberByRef, /administrativeUnits/{administrativeUnit-id}/members/$ref
+v1.0-beta, Get-MgDirectoryFeatureRolloutPolicyApplyToByRef, /directory/featureRolloutPolicies/{featureRolloutPolicy-id}/appliesTo/$ref
+v1.0-beta, New-MgAdministrativeUnitMemberByRef, /administrativeUnits/{administrativeUnit-id}/members/$ref
+v1.0-beta, New-MgDirectoryFeatureRolloutPolicyApplyToByRef, /directory/featureRolloutPolicies/{featureRolloutPolicy-id}/appliesTo/$ref
+v1.0-beta, Remove-MgAdministrativeUnitMemberByRef, /administrativeUnits/{administrativeUnit-id}/members/{directoryObject-id}/$ref
+v1.0-beta, Remove-MgDeviceRegisteredOwnerByRef, /devices/{device-id}/registeredOwners/{directoryObject-id}/$ref
+v1.0-beta, Remove-MgDirectoryAdministrativeUnitMemberByRef, /directory/administrativeUnits/{administrativeUnit-id}/members/{directoryObject-id}/$ref
+v1.0-beta, Remove-MgDirectoryFeatureRolloutPolicyApplyToByRef, /directory/featureRolloutPolicies/{featureRolloutPolicy-id}/appliesTo/{directoryObject-id}/$ref
+v1.0-beta, Remove-MgDirectoryRoleMemberByRef, /directoryRoles/{directoryRole-id}/members/{directoryObject-id}/$ref

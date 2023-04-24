@@ -112,7 +112,7 @@ Accept wildcard characters: False
 ```
 
 ### -PlannerBucketId
-key: id of plannerBucket
+The unique identifier of plannerBucket
 
 ```yaml
 Type: String

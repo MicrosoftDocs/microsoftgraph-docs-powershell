@@ -81,3 +81,5 @@ v1.0-beta, Update-MgCommunicationCallRecordSession, /communications/callRecords/
 v1.0-beta, Update-MgCommunicationOnlineMeeting, /communications/onlineMeetings/{onlineMeeting-id}
 v1.0-beta, Update-MgCommunicationPresence, /communications/presences/{presence-id}
 v1.0-beta, Update-MgUserOnlineMeeting, /users/{user-id}/onlineMeetings/{onlineMeeting-id}
+v1.0, New-MgCommunicationOnlineMeeting, /communications/onlineMeetings/createOrGet
+v1.0-beta, New-MgCommunicationOnlineMeeting, /communications/onlineMeetings/createOrGet
