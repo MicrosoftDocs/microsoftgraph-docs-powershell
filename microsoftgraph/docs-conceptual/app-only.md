@@ -5,7 +5,7 @@ description: "Learn how to use app-only authentication to enable non-interactive
 author: jasonjoh
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 04/19/2023
+ms.date: 04/25/2023
 ms.author: jasonjoh
 ---
 
@@ -22,12 +22,12 @@ Let's configure app-only access for a simple script to list users and groups in 
 
 Before you can use app-only access with the Microsoft Graph PowerShell SDK, make sure you have the required prerequisites:
 
-1. Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
-1. A certificate to use as a credential for the application. This certificate can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
+- Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
+- A certificate to use as a credential for the application. This certificate can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
     1. Have an X.509 certificate installed in your user's trusted store on the machine where you'll run the script.
     1. Export the certificate's public key in .cer, .pem, or .crt format.
     1. Get the value of the certificate subject or its thumbprint.
-1. [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
+- [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
 
 ### Register the application
 
