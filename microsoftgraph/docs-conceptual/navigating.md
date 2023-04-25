@@ -5,7 +5,7 @@ description: "The Microsoft Graph PowerShell SDK contains a large number of comm
 author: jasonjoh
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 04/25/2023
 ms.author: jasonjoh
 ---
 
@@ -39,7 +39,7 @@ Let's look at some examples. The [getSchedule](/graph/api/calendar-getschedule?v
 
 ### Command nouns
 
-By now you may have noticed that all nouns in the SDK's commands start with `Mg`. This prefix helps to avoid naming conflicts with other PowerShell modules. With that in mind, it should make sense that commands like `Get-MgUser` are used to get a user. And following PowerShell convention, even though the noun is singular, those same commands can return multiple results if no specific instance is requested.
+By now you may have noticed that all nouns in the SDK's commands start with `Mg`. This prefix helps to avoid naming conflicts with other PowerShell modules. With that in mind, it should make sense that a command like `Get-MgUser` is used to get a user. Following PowerShell convention, even though the noun is singular, those same commands can return multiple results if no specific instance is requested.
 
 But what about commands like `Get-MgUserMessage` or `Get-MgUserMailFolderMessage`? Both of these commands get a [message](/graph/api/resources/message?view=graph-rest-1.0&preserve-view=true) object, so why not `Get-MgMessage`? The answer comes from the [get message API](/graph/api/message-get?view=graph-rest-1.0&preserve-view=true).
 
@@ -54,7 +54,7 @@ The paths match to the nouns. For the first form, you start with `users`, then `
 
 Another way of looking at this command is asking what owns or contains what. The user owns mail folders, and mail folders contain messages. Add the prefix and you get `Get-MgUserMailFolderMessage`.
 
-Use [Using Find-MgGraphCommand cmdlet](find-mg-graph-command.md) to discover which API path a command calls by providing a URI or a command name.
+Use [Find-MgGraphCommand](find-mg-graph-command.md) to discover which API path a command calls by providing a URI or a command name.
 
 ### Listing parameters
 
