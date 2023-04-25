@@ -5,7 +5,7 @@ description: "Learn how to install the Microsoft Graph PowerShell SDK with Power
 author: msewaweru
 manager: CelesteDG
 ms.topic: how-to
-ms.date: 04/25/2022
+ms.date: 04/25/2023
 ms.author: eunicewaweru
 ---
 
@@ -21,7 +21,7 @@ The following prerequisites are required to use the Microsoft Graph PowerShell S
 
 - Upgrade to [PowerShell 5.1 or later](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
 - Install [.NET Framework 4.7.2 or later](/dotnet/framework/install/)
-- Update **PowerShellGet** to the latest version using `Install-Module PowerShellGet -Force`
+- Update **PowerShellGet** to the latest version using `Install-Module PowerShellGet`
 - The PowerShell script execution policy must be set to `remote signed` or `less restrictive`. Use `Get-ExecutionPolicy` to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 To set the execution policy, run:
 
