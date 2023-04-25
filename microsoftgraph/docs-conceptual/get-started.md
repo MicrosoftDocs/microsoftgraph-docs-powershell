@@ -5,17 +5,17 @@ description: "Get started with the Microsoft Graph PowerShell SDK by using it pe
 author: jasonjoh
 manager: CelesteDG
 ms.topic: quickstart
-ms.date: 04/07/2022
+ms.date: 04/25/2023
 ms.author: jasonjoh
 ---
 
 # Get started with the Microsoft Graph PowerShell SDK
 
-In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already [installed the SDK](installation.md), do so before following this guide.
+In this guide, you'll use the Microsoft Graph PowerShell SDK to perform some basic tasks. If you haven't already, [install the SDK](installation.md) before following this guide.
 
 ## API version
 
-By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). You can change the profile by using the `Select-MgProfile` command.
+By default, the SDK uses the [Microsoft Graph REST API v1.0](/graph/api/overview?view=graph-rest-1.0&preserve-view=true). Cmdlets are available for the API version that is selected. You can change the profile by using the `Select-MgProfile` command.
 
 ```powershell
 Select-MgProfile -Name "beta"
@@ -31,14 +31,14 @@ For details on using app-only access for unattended scenarios, see [Use app-only
 
 Each API in the Microsoft Graph is protected by one or more permission scopes. The user logging in must consent to one of the required scopes for the APIs you plan to use. In this example, we'll use the following APIs.
 
-- [List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) to find the user ID of the logged-in user
+- [List users](/graph/api/user-list?view=graph-rest-1.0&preserve-view=true) to find the user ID of the logged-in user.
 - [List joinedTeams](/graph/api/user-list-joinedteams?view=graph-rest-1.0&preserve-view=true) to get the Teams the user is a member of.
 - [List channels](/graph/api/channel-list?view=graph-rest-1.0&preserve-view=true) to get the channels in a Team.
-- [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team channel.
+- [Send message](/graph/api/channel-post-messages?view=graph-rest-1.0&preserve-view=true) to send a message to a Team's channel.
 
 The `User.Read.All` permission scope will enable the first two calls, and the `Group.ReadWrite.All` scope will enable the rest. These permissions require an admin account.
 
-### Using Find-MgGraphCommand to find required permissions
+#### Using Find-MgGraphCommand to find required permissions
 
 The `Find-MgGraphCommand` cmdlet can be used to discover the required permissions for another cmdlet. For example, to see all permissions that can be used to call `Get-MgUser`, run;
 
@@ -81,7 +81,7 @@ Now that you're signed in, you can start making calls to Microsoft Graph.
 
 ### Get the signed-in user
 
-In this section, you'll locate the signed-in user and get their user ID. You'll need that to use as a parameter to the other commands you'll use later. Start by running the following command.
+In this section, you'll locate the signed-in user and get their user Id. You'll need the user Id as a parameter to the other commands you'll run later. Start by running the following command.
 
 ```powershell
 Get-MgUser
@@ -103,7 +103,7 @@ ce73bdb5-bf12-405e-ab85-40122fdd6eb7 Brian Johnson (TAILSPIN) BrianJ@contoso.onm
 df1347a3-7ce7-4b4d-8aab-7c65b5c907b9 Cameron White                                                  CameronW@contoso…
 ```
 
-You can use an [OData filter](/graph/query-parameters#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
+You can use an [OData filter](use-query-parameters.md#filter-parameter) to help locate the specific user you want. Run the following command, replacing `Megan Bowen` with the display name of the user you signed in with.
 
 ```powershell
 $user = Get-MgUser -Filter "displayName eq 'Megan Bowen'"
@@ -117,7 +117,7 @@ $user.DisplayName
 
 ### List the user's joined teams
 
-Now use the user's ID as a parameter to the `Get-MgUserJoinedTeam` command.
+Now use the user's Id as a parameter to the `Get-MgUserJoinedTeam` command.
 
 ```powershell
 Get-MgUserJoinedTeam -UserId $user.Id
@@ -127,7 +127,7 @@ Just like the `Get-MgUser` command, this command gives a list of teams. Select o
 
 ### List team channels
 
-Now use the team's ID as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
+Now use the team's Id as a parameter to the `Get-MgTeamChannel` command, following a similar pattern of listing all channels, then filtering the list to get the specific channel you want.
 
 ```powershell
 Get-MgTeamChannel -TeamId $team.Id
@@ -136,13 +136,13 @@ $channel = Get-MgTeamChannel -TeamId ID_FROM_PREVIOUS_STEP -Filter "displayName 
 
 ### Send a message
 
-Now that you have both the Team ID and the channel ID, you can post a message to the channel. Use the following command to send the message.
+Now that you have both the Team Id and the channel Id, you can post a message to the channel. Use the following command to send the message.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" }
 ```
 
-This command differs from the previous commands you used. Instead of querying data, it's actually creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/api/resources/chatmessage). The `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
+This command differs from the previous commands you used. Instead of querying data, it's creating something. In Microsoft Graph, this command translates to an HTTP `POST`, and it requires an object in the body of that post. In this case, the object is a [chatMessage](/graph/api/resources/chatmessage). The `-Body` parameter to the command maps to the `body` property on `chatMessage`. Other properties are mapped in a similar way, so you can change the message you send. For example, to send an urgent message use the following command.
 
 ```powershell
 New-MgTeamChannelMessage -TeamId $team.Id -ChannelId $channel.Id -Body @{ Content="Hello World" } -Importance "urgent"
