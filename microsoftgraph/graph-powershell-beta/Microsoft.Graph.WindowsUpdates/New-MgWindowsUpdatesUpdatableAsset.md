@@ -1,52 +1,43 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudiencemember
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesupdatableasset
 schema: 2.0.0
 ---
 
-# New-MgWindowsUpdatesPolicyAudienceMember
+# New-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Create new navigation property to members for admin
+Create a new updatableAssetGroup object.
+The **updatableAssetGroup** resource inherits from updatableAsset.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgWindowsUpdatesPolicyAudienceMember -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesUpdatableAsset [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgWindowsUpdatesPolicyAudienceMember -UpdatePolicyId <String> -BodyParameter <Hashtable> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgWindowsUpdatesPolicyAudienceMember -InputObject <IWindowsUpdatesIdentity> -BodyParameter <Hashtable>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesUpdatableAsset -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to members for admin
+Create a new updatableAssetGroup object.
+The **updatableAssetGroup** resource inherits from updatableAsset.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.updatableAssetGroup"
+}
+New-MgWindowsUpdatesUpdatableAsset -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -55,7 +46,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -70,7 +61,7 @@ updatableAsset
 
 ```yaml
 Type: Hashtable
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -86,41 +77,10 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: IWindowsUpdatesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -UpdatePolicyId
-The unique identifier of updatePolicy
-
-```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -163,7 +123,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ### System.Collections.Hashtable
 ## OUTPUTS
 
@@ -173,5 +132,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicyaudiencemember)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesupdatableasset)
 

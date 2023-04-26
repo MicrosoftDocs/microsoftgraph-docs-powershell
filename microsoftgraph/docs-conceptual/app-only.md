@@ -5,7 +5,7 @@ description: "Learn how to use app-only authentication to enable non-interactive
 author: jasonjoh
 manager: CelesteDG
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 04/25/2023
 ms.author: jasonjoh
 ---
 
@@ -18,16 +18,16 @@ The PowerShell SDK supports two types of authentication: [delegated access](/gra
 
 Let's configure app-only access for a simple script to list users and groups in your Microsoft 365 tenant.
 
-## Configuration
+## Prerequisites
 
-Before you can use app-only access with the SDK, you need the following.
+Before you can use app-only access with the Microsoft Graph PowerShell SDK, make sure you have the required prerequisites:
 
+- Microsoft Graph PowerShell SDK is installed. Follow the [Install the Microsoft Graph PowerShell SDK](installation.md) guide to install the SDK.
 - A certificate to use as a credential for the application. This certificate can be a self-signed certificate or a certificate from an authority. Refer to the [See also](#see-also) section for guidance on how to create a self-signed certificate.
+    1. Have an X.509 certificate installed in your user's trusted store on the machine where you'll run the script.
+    1. Export the certificate's public key in .cer, .pem, or .crt format.
+    1. Get the value of the certificate subject or its thumbprint.
 - [Register an application](/azure/active-directory/develop/app-objects-and-service-principals) in Azure AD, configure it with the permission scopes your scenario requires, and share the public key for your certificate.
-
-### Certificate
-
-You'll need an X.509 certificate installed in your user's trusted store on the machine where you'll run the script. You'll also need the certificate's public key exported in .cer, .pem, or .crt format. You'll need the value of the certificate subject or its thumbprint.
 
 ### Register the application
 
@@ -50,13 +50,14 @@ You can register the application either in the [Azure Active Directory portal](h
 
     ![A screenshot of the Register an application page](./images/register-app.png)
 
-1. Select **Register**. On the **Graph PowerShell Script** page, copy the values of the **Application (client) ID** and **Directory (tenant) ID** and save them.
+1. Select **Register**.
+1. On the **Graph PowerShell Script** page, copy the values of the **Application (client) ID** and **Directory (tenant) ID** and save them.
 
     ![A screenshot of the application ID of the new app registration](./images/aad-application-id.png)
 
-1. Select **API Permissions** under **Manage**. Choose **Add a permission**.
+1. Select **API Permissions** under **Manage**. Select **Add a permission**.
 
-1. Select **Microsoft Graph**, then **Application Permissions**. Add **User.Read.All** and **Group.Read.All**, then select **Add permissions**.
+1. Select **Microsoft Graph** then select **Application Permissions**. Check **User.Read.All** and **Group.Read.All**, then select **Add permissions**.
 
 1. In the **Configured permissions**, remove the delegated **User.Read** permission under **Microsoft Graph** by selecting the **...** to the right of the permission and selecting **Remove permission**. Select **Yes, remove** to confirm.
 
@@ -64,15 +65,12 @@ You can register the application either in the [Azure Active Directory portal](h
 
     ![A screenshot of the configured permissions for the webhook with admin consent granted](./images/configured-permissions.png)
 
-1. Select **Certificates & secrets** under **Manage**. Select the **Upload certificate** button. Browse to your certificate's public key file and select **Add**.
+1. Select **Certificates & secrets** under **Manage**. Select **Upload certificate**  under **Certificates**. Browse to your certificate's public key file and select **Add**.
 
 # [PowerShell](#tab/powershell)
 <!-- markdownlint-enable MD025 -->
 
-> [!NOTE]
-> You must have the Microsoft Graph PowerShell SDK [installed](installation.md) before following these steps.
-
-You may be wondering: "I can use the PowerShell SDK to register an app, so that I can use the PowerShell SDK?" Yes! In this case, you're using the PowerShell SDK with delegated access, logging in as an administrator, and creating the app registration. Then, using that app registration, you're able to use the PowerShell SDK with app-only access, allowing for unattended scripts.
+You may be wondering: "Can I use the PowerShell SDK to register an app, so that I can use the PowerShell SDK?" Yes! In this case, you're using the PowerShell SDK with delegated access, logging in as an administrator, and creating the app registration. Using that app registration, you can use the Microsoft Graph PowerShell SDK with app-only access, allowing for unattended scripts.
 
 1. Use a text editor to create a new file named **RegisterAppOnly.ps1**. Paste the following code into the file.
 

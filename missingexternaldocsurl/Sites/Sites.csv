@@ -285,3 +285,9 @@ v1.0-beta, Update-MgSiteTermStoreSetRelation, /sites/{site-id}/termStore/sets/{s
 v1.0-beta, Update-MgSiteTermStoreSetTerm, /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}
 v1.0-beta, Update-MgSiteTermStoreSetTermChild, /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/children/{term-id1}
 v1.0-beta, Update-MgSiteTermStoreSetTermRelation, /sites/{site-id}/termStore/sets/{set-id}/terms/{term-id}/relations/{relation-id}
+v1.0, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
+v1.0, Get-MgSiteDrive, /sites/{site-id}/drives
+v1.0, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0-beta, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
+v1.0-beta, Get-MgSiteDrive, /sites/{site-id}/drives
+v1.0-beta, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})

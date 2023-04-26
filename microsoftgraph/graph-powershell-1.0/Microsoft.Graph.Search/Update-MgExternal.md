@@ -143,7 +143,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
+BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal>`: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection1[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -158,9 +158,9 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
       - `[Members <IMicrosoftGraphExternalConnectorsIdentity[]>]`: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Type <String>]`: identityType
-    - `[Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>]`: 
+    - `[Items <IMicrosoftGraphExternalConnectorsExternalItem[]>]`: 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+      - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
         - `[AccessType <String>]`: accessType
         - `[Type <String>]`: aclType
         - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup
@@ -189,7 +189,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
         - `[Message <String>]`: A non-localized message for the developer.
         - `[Target <String>]`: The target of the error.
       - `[Status <String>]`: connectionOperationStatus
-    - `[Schema <IMicrosoftGraphExternalConnectorsSchema1>]`: schema
+    - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem. Required.
@@ -217,9 +217,9 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection1\[]>: .
     - `[Members <IMicrosoftGraphExternalConnectorsIdentity[]>]`: A member added to an externalGroup. You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Type <String>]`: identityType
-  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>]`: 
+  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+    - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
       - `[AccessType <String>]`: accessType
       - `[Type <String>]`: aclType
       - `[Value <String>]`: The unique identifer of the identity. In case of Azure Active Directory identities, value is set to the object identifier of the user, group or tenant for types user, group and everyone (and everyoneExceptGuests) respectively. In case of external groups value is set to the ID of the externalGroup
@@ -248,7 +248,7 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection1\[]>: .
       - `[Message <String>]`: A non-localized message for the developer.
       - `[Target <String>]`: The target of the error.
     - `[Status <String>]`: connectionOperationStatus
-  - `[Schema <IMicrosoftGraphExternalConnectorsSchema1>]`: schema
+  - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[BaseType <String>]`: Must be set to microsoft.graph.externalConnector.externalItem. Required.

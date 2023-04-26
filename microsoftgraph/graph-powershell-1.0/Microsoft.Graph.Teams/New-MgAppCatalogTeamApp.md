@@ -223,7 +223,7 @@ APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition\[]>: The details for each vers
   - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsApp1>`: teamsApp
+BODYPARAMETER `<IMicrosoftGraphTeamsApp>`: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.

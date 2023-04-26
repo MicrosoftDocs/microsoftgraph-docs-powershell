@@ -13,13 +13,13 @@ Delete navigation property details for groups
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgGroupPlannerPlanDetail -GroupId <String> -PlannerPlanId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -55,11 +55,11 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ## PARAMETERS
 
 ### -GroupId
-key: id of group
+The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -90,7 +90,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IPlannerIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -116,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### -PlannerPlanId
-key: id of plannerPlan
+The unique identifier of plannerPlan
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -180,13 +180,13 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
-  - `[GroupId <String>]`: key: id of group
-  - `[PlannerBucketId <String>]`: key: id of plannerBucket
-  - `[PlannerDeltaId <String>]`: key: id of plannerDelta
-  - `[PlannerPlanId <String>]`: key: id of plannerPlan
-  - `[PlannerRosterId <String>]`: key: id of plannerRoster
-  - `[PlannerRosterMemberId <String>]`: key: id of plannerRosterMember
-  - `[PlannerTaskId <String>]`: key: id of plannerTask
-  - `[UserId <String>]`: key: id of user
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
+  - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
+  - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
+  - `[PlannerRosterId <String>]`: The unique identifier of plannerRoster
+  - `[PlannerRosterMemberId <String>]`: The unique identifier of plannerRosterMember
+  - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

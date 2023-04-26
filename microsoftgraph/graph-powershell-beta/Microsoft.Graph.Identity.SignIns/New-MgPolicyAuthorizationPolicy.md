@@ -379,6 +379,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthorizationPolicy1>`: authorizationPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
     - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
+    - `[AllowedToCreateTenants <Boolean?>]`: Indicates whether the default user role can create tenants.
     - `[AllowedToReadBitlockerKeysForOwnedDevice <Boolean?>]`: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
     - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
   - `[EnabledPreviewFeatures <String[]>]`: List of features enabled for private preview on the tenant.
@@ -397,6 +398,7 @@ DEFAULTUSERROLEPERMISSIONS `<IMicrosoftGraphDefaultUserRolePermissions1>`: defau
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedToCreateApps <Boolean?>]`: Indicates whether the default user role can create applications.
   - `[AllowedToCreateSecurityGroups <Boolean?>]`: Indicates whether the default user role can create security groups.
+  - `[AllowedToCreateTenants <Boolean?>]`: Indicates whether the default user role can create tenants.
   - `[AllowedToReadBitlockerKeysForOwnedDevice <Boolean?>]`: Indicates whether the registered owners of a device can read their own BitLocker recovery keys with default user role.
   - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
 

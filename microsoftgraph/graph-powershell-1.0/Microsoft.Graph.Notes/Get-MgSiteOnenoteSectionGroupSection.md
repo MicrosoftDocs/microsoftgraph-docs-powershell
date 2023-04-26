@@ -145,7 +145,7 @@ Accept wildcard characters: False
 ```
 
 ### -SectionGroupId
-key: id of sectionGroup
+The unique identifier of sectionGroup
 
 ```yaml
 Type: String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteId
-key: id of site
+The unique identifier of site
 
 ```yaml
 Type: String

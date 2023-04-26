@@ -15,20 +15,20 @@ Supports $expand.
 
 ## SYNTAX
 
-### List (Default)
+### List1 (Default)
 ```
 Get-MgDeviceTransitiveMemberOf -DeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgDeviceTransitiveMemberOf -DeviceId <String> -DirectoryObjectId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgDeviceTransitiveMemberOf -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-ConsistencyLevel <String>] [<CommonParameters>]
@@ -57,7 +57,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -89,7 +89,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -100,11 +100,11 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-key: id of device
+The unique identifier of device
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: List1, Get1
 Aliases:
 
 Required: True
@@ -115,11 +115,11 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryObjectId
-key: id of directoryObject
+The unique identifier of directoryObject
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -149,7 +149,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -165,7 +165,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -180,7 +180,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -210,7 +210,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -225,7 +225,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: OrderBy
 
 Required: False
@@ -240,7 +240,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: Limit
 
 Required: False
@@ -255,7 +255,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -284,39 +284,39 @@ To create the parameters described below, construct a hash table containing the 
 
 
 INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
-  - `[AdministrativeUnitId <String>]`: key: id of administrativeUnit
-  - `[AllowedValueId <String>]`: key: id of allowedValue
-  - `[AttributeSetId <String>]`: key: id of attributeSet
-  - `[CommandId <String>]`: key: id of command
-  - `[ContractId <String>]`: key: id of contract
-  - `[CustomSecurityAttributeDefinitionId <String>]`: key: id of customSecurityAttributeDefinition
-  - `[DeviceId <String>]`: key: id of device
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
-  - `[DirectoryRoleId <String>]`: key: id of directoryRole
-  - `[DirectoryRoleTemplateId <String>]`: key: id of directoryRoleTemplate
-  - `[DirectorySettingId <String>]`: key: id of directorySetting
-  - `[DirectorySettingTemplateId <String>]`: key: id of directorySettingTemplate
-  - `[DomainDnsRecordId <String>]`: key: id of domainDnsRecord
-  - `[DomainId <String>]`: key: id of domain
-  - `[ExtensionId <String>]`: key: id of extension
-  - `[FeatureRolloutPolicyId <String>]`: key: id of featureRolloutPolicy
-  - `[IdentityProviderBaseId <String>]`: key: id of identityProviderBase
-  - `[ImpactedResourceId <String>]`: key: id of impactedResource
-  - `[InboundSharedUserProfileUserId <String>]`: key: userId of inboundSharedUserProfile
-  - `[InternalDomainFederationId <String>]`: key: id of internalDomainFederation
-  - `[OnPremisesDirectorySynchronizationId <String>]`: key: id of onPremisesDirectorySynchronization
-  - `[OrgContactId <String>]`: key: id of orgContact
-  - `[OrganizationId <String>]`: key: id of organization
-  - `[OrganizationalBrandingLocalizationId <String>]`: key: id of organizationalBrandingLocalization
-  - `[OutboundSharedUserProfileUserId <String>]`: key: userId of outboundSharedUserProfile
-  - `[ProfileCardPropertyId <String>]`: key: id of profileCardProperty
-  - `[RecommendationId <String>]`: key: id of recommendation
-  - `[ScopedRoleMembershipId <String>]`: key: id of scopedRoleMembership
-  - `[SharedEmailDomainId <String>]`: key: id of sharedEmailDomain
-  - `[SharedEmailDomainInvitationId <String>]`: key: id of sharedEmailDomainInvitation
-  - `[SubscribedSkuId <String>]`: key: id of subscribedSku
-  - `[TenantReferenceTenantId <String>]`: key: tenantId of tenantReference
-  - `[UsageRightId <String>]`: key: id of usageRight
-  - `[UserId <String>]`: key: id of user
+  - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
+  - `[AllowedValueId <String>]`: The unique identifier of allowedValue
+  - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CommandId <String>]`: The unique identifier of command
+  - `[ContractId <String>]`: The unique identifier of contract
+  - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
+  - `[DeviceId <String>]`: The unique identifier of device
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
+  - `[DirectoryRoleId <String>]`: The unique identifier of directoryRole
+  - `[DirectoryRoleTemplateId <String>]`: The unique identifier of directoryRoleTemplate
+  - `[DirectorySettingId <String>]`: The unique identifier of directorySetting
+  - `[DirectorySettingTemplateId <String>]`: The unique identifier of directorySettingTemplate
+  - `[DomainDnsRecordId <String>]`: The unique identifier of domainDnsRecord
+  - `[DomainId <String>]`: The unique identifier of domain
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[FeatureRolloutPolicyId <String>]`: The unique identifier of featureRolloutPolicy
+  - `[IdentityProviderBaseId <String>]`: The unique identifier of identityProviderBase
+  - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
+  - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
+  - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
+  - `[OrgContactId <String>]`: The unique identifier of orgContact
+  - `[OrganizationId <String>]`: The unique identifier of organization
+  - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
+  - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
+  - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
+  - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
+  - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
+  - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[UsageRightId <String>]`: The unique identifier of usageRight
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

@@ -1,98 +1,60 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset
 schema: 2.0.0
 ---
 
-# Remove-MgWindowsUpdatesPolicyAudienceMemberById
+# Remove-MgWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Remove members of the same type from an updatableAssetGroup.
-You can also use the method removeMembers to remove members.
+Delete navigation property updatableAssets for admin
 
 ## SYNTAX
 
-### RemoveExpanded (Default)
+### Delete (Default)
 ```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### Remove
+### DeleteViaIdentity
 ```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -UpdatableAssetId <String> -UpdatePolicyId <String>
- -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentityExpanded
-```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentity
-```
-Remove-MgWindowsUpdatesPolicyAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Remove members of the same type from an updatableAssetGroup.
-You can also use the method removeMembers to remove members.
+Delete navigation property updatableAssets for admin
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
 
-{{ Add example description here }}
+### EXAMPLE 2
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
+
+### EXAMPLE 3
+```
+Import-Module Microsoft.Graph.WindowsUpdates
+Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+```
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -IfMatch
+ETag
 
 ```yaml
-Type: Hashtable
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -BodyParameter
-.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Remove, RemoveViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -Ids
-.
-
-```yaml
-Type: String[]
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -108,28 +70,13 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IWindowsUpdatesIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -MemberEntityType
-.
-
-```yaml
-Type: String
-Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -153,22 +100,7 @@ The unique identifier of updatableAsset
 
 ```yaml
 Type: String
-Parameter Sets: RemoveExpanded, Remove
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UpdatePolicyId
-The unique identifier of updatePolicy
-
-```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -214,7 +146,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths9QtqoxAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
 ## OUTPUTS
 
@@ -224,5 +155,5 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatespolicyaudiencememberbyid)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset)
 

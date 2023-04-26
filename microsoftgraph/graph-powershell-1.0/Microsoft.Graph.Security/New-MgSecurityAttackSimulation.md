@@ -12,7 +12,7 @@ Create new navigation property to simulations for security
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechnique <String>]
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
@@ -22,7 +22,7 @@ New-MgSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackTechn
  [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -40,7 +40,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -55,7 +55,7 @@ simulationAttackTechnique
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -70,7 +70,7 @@ simulationAttackType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -85,7 +85,7 @@ Unique identifier for the attack simulation automation.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -101,7 +101,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphSimulation
-Parameter Sets: Create
+Parameter Sets: Create1
 Aliases:
 
 Required: True
@@ -117,7 +117,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -133,7 +133,7 @@ To construct, please use Get-Help -Online and see NOTES section for CREATEDBY pr
 
 ```yaml
 Type: IMicrosoftGraphEmailIdentity
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -148,7 +148,7 @@ Date and time of creation of the attack simulation and training campaign.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -163,7 +163,7 @@ Description of the attack simulation and training campaign.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -179,7 +179,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -195,7 +195,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -211,7 +211,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -227,7 +227,7 @@ To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIED
 
 ```yaml
 Type: IMicrosoftGraphEmailIdentity
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -242,7 +242,7 @@ Date and time of the most recent modification of the attack simulation and train
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -258,7 +258,7 @@ Supports $filter and $orderby.
 
 ```yaml
 Type: DateTime
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -273,7 +273,7 @@ payloadDeliveryPlatform
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -289,7 +289,7 @@ To construct, please use Get-Help -Online and see NOTES section for REPORT prope
 
 ```yaml
 Type: IMicrosoftGraphSimulationReport
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False
@@ -304,7 +304,7 @@ simulationStatus
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
+Parameter Sets: CreateExpanded1
 Aliases:
 
 Required: False

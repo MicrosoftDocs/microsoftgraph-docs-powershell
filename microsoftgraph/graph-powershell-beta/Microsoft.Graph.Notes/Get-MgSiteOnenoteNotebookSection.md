@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotebookId
-key: id of notebook
+The unique identifier of notebook
 
 ```yaml
 Type: String
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 ```
 
 ### -SiteId
-key: id of site
+The unique identifier of site
 
 ```yaml
 Type: String

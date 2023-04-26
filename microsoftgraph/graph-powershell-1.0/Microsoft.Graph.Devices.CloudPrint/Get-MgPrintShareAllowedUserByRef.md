@@ -86,7 +86,7 @@ Accept wildcard characters: False
 ```
 
 ### -PrinterShareId
-key: id of printerShare
+The unique identifier of printerShare
 
 ```yaml
 Type: String

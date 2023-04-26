@@ -1,56 +1,65 @@
 ---
 external help file: Microsoft.Graph.WindowsUpdates-help.xml
 Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudiencememberasset
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesdeployment
 schema: 2.0.0
 ---
 
-# Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset
+# New-MgWindowsUpdatesDeployment
 
 ## SYNOPSIS
-Invoke action unenrollAssets
+Create a new deployment object.
 
 ## SYNTAX
 
-### UnenrollExpanded (Default)
+### CreateExpanded (Default)
 ```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -UpdatePolicyId <String>
- [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
- [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Unenroll
-```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -UpdatePolicyId <String>
- -BodyParameter <IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesDeployment [-AdditionalProperties <Hashtable>]
+ [-Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>] [-Content <Hashtable>]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
+ [-Settings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]
+ [-State <IMicrosoftGraphWindowsUpdatesDeploymentState>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UnenrollViaIdentityExpanded
+### Create
 ```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]
- [-UpdateCategory <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UnenrollViaIdentity
-```
-Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgWindowsUpdatesDeployment -BodyParameter <IMicrosoftGraphWindowsUpdatesDeployment> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action unenrollAssets
+Create a new deployment object.
 
 ## EXAMPLES
 
-### Example 1
-```powershell
-PS C:\> {{ Add example code here }}
+### EXAMPLE 1
 ```
-
-{{ Add example description here }}
+Import-Module Microsoft.Graph.WindowsUpdates
+$params = @{
+	"@odata.type" = "#microsoft.graph.windowsUpdates.deployment"
+	Content = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.featureUpdateReference"
+		Version = "20H2"
+	}
+	Settings = @{
+		"@odata.type" = "microsoft.graph.windowsUpdates.windowsDeploymentSettings"
+		Rollout = @{
+			DevicesPerOffer = 100
+		}
+		Monitoring = @{
+			MonitoringRules = @(
+				@{
+					"@odata.type" = "#microsoft.graph.windowsUpdates.monitoringRule"
+					Signal = "rollback"
+					Threshold = 5
+					Action = "pauseDeployment"
+				}
+			)
+		}
+	}
+}
+New-MgWindowsUpdatesDeployment -BodyParameter $params
+```
 
 ## PARAMETERS
 
@@ -59,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UnenrollExpanded, UnenrollViaIdentityExpanded
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -69,13 +78,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Assets
-.
-To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
+### -Audience
+deploymentAudience
+To construct, please use Get-Help -Online and see NOTES section for AUDIENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
-Parameter Sets: UnenrollExpanded, UnenrollViaIdentityExpanded
+Type: IMicrosoftGraphWindowsUpdatesDeploymentAudience
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -86,12 +95,12 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-.
+deployment
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Unenroll, UnenrollViaIdentity
+Type: IMicrosoftGraphWindowsUpdatesDeployment
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -101,43 +110,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -InputObject
-Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+### -Content
+deployableContent
 
 ```yaml
-Type: IWindowsUpdatesIdentity
-Parameter Sets: UnenrollViaIdentityExpanded, UnenrollViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UpdateCategory
-updateCategory
-
-```yaml
-Type: String
-Parameter Sets: UnenrollExpanded, UnenrollViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -147,15 +125,82 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UpdatePolicyId
-The unique identifier of updatePolicy
+### -CreatedDateTime
+The date and time the deployment was created.
+Returned by default.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The unique identifier for an entity.
+Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UnenrollExpanded, Unenroll
+Parameter Sets: CreateExpanded
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+The date and time the deployment was last modified.
+Returned by default.
+Read-only.
+
+```yaml
+Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Settings
+deploymentSettings
+To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesDeploymentSettings
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -State
+deploymentState
+To construct, please use Get-Help -Online and see NOTES section for STATE properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsUpdatesDeploymentState
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -198,15 +243,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths13W0KifAdminWindowsUpdatesUpdatepoliciesUpdatepolicyIdAudienceMembersMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesDeployment
 ## NOTES
 Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudiencememberasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatespolicyaudiencememberasset)
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesdeployment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatesdeployment)
 

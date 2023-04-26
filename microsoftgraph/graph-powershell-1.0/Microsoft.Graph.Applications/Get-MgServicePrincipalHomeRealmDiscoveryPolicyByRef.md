@@ -114,7 +114,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServicePrincipalId
-key: id of servicePrincipal
+The unique identifier of servicePrincipal
 
 ```yaml
 Type: String

@@ -430,9 +430,9 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalC
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Type <String>]`: identityType
   - `[IngestedItemsCount <Int64?>]`: The number of items ingested into a connection. This value is refreshed every 15 minutes. If the connection state is draft, then ingestedItemsCount will be null.
-  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem[]>]`: 
+  - `[Items <IMicrosoftGraphExternalConnectorsExternalItem1[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+    - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
       - `[AccessType <String>]`: accessType
       - `[IdentitySource <String>]`: identitySourceType
       - `[Type <String>]`: aclType
@@ -471,7 +471,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternalConnection>`: externalC
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
-  - `[Schema <IMicrosoftGraphExternalConnectorsSchema>]`: schema
+  - `[Schema <IMicrosoftGraphExternalConnectorsSchema1>]`: schema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.
@@ -515,9 +515,9 @@ GROUPS <IMicrosoftGraphExternalConnectorsExternalGroup\[]>: .
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Type <String>]`: identityType
 
-ITEMS <IMicrosoftGraphExternalConnectorsExternalItem\[]>: .
+ITEMS <IMicrosoftGraphExternalConnectorsExternalItem1\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Acl <IMicrosoftGraphExternalConnectorsAcl[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
+  - `[Acl <IMicrosoftGraphExternalConnectorsAcl1[]>]`: An array of access control entries. Each entry specifies the access granted to a user or group. Required.
     - `[AccessType <String>]`: accessType
     - `[IdentitySource <String>]`: identitySourceType
     - `[Type <String>]`: aclType
@@ -561,7 +561,7 @@ QUOTA `<IMicrosoftGraphExternalConnectorsConnectionQuota>`: connectionQuota
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ItemsRemaining <Int64?>]`: The minimum of two values, one representing the items remaining in the connection and the other remaining items at tenant-level. The following equation represents the formula used to calculate the minimum number: min ({max capacity in the connection} - {number of items in the connection}, {tenant quota} - {number of items indexed in all connections}). If the connection is not monetized, such as in a preview connector or preview content experience, then this property is simply the number of remaining items in the connection.
 
-SCHEMA `<IMicrosoftGraphExternalConnectorsSchema>`: schema
+SCHEMA `<IMicrosoftGraphExternalConnectorsSchema1>`: schema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[BaseType <String>]`: Must be set to microsoft.graph.externalItem. Required.

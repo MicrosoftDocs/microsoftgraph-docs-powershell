@@ -100,7 +100,7 @@ Accept wildcard characters: False
 ```
 
 ### -GroupId
-key: id of group
+The unique identifier of group
 
 ```yaml
 Type: String
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 ```
 
 ### -NotebookId
-key: id of notebook
+The unique identifier of notebook
 
 ```yaml
 Type: String

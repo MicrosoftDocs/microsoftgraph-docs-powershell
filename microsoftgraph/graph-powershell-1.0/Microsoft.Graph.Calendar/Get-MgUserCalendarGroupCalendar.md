@@ -52,7 +52,7 @@ Accept wildcard characters: False
 ```
 
 ### -CalendarGroupId
-key: id of calendarGroup
+The unique identifier of calendarGroup
 
 ```yaml
 Type: String
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-key: id of user
+The unique identifier of user
 
 ```yaml
 Type: String

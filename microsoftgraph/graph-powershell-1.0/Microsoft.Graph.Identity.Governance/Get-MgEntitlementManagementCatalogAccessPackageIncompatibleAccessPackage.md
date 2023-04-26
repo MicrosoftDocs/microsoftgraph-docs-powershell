@@ -39,7 +39,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
-key: id of accessPackageCatalog
+The unique identifier of accessPackageCatalog
 
 ```yaml
 Type: String
@@ -54,7 +54,7 @@ Accept wildcard characters: False
 ```
 
 ### -AccessPackageId
-key: id of accessPackage
+The unique identifier of accessPackage
 
 ```yaml
 Type: String
