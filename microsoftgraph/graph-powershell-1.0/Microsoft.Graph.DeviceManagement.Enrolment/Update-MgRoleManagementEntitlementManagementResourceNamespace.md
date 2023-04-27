@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/update-mgrolemanagemententitlementmanagementresourcenamespace
@@ -223,7 +223,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphUnifiedRbacResourceNamespace>: unifiedRbacResourceNamespace
+BODYPARAMETER `<IMicrosoftGraphUnifiedRbacResourceNamespace>`: unifiedRbacResourceNamespace
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Name <String>]`: 
@@ -236,7 +236,7 @@ BODYPARAMETER <IMicrosoftGraphUnifiedRbacResourceNamespace>: unifiedRbacResource
     - `[Name <String>]`: 
     - `[ResourceScopeId <String>]`: 
 
-INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: The unique identifier of appScope
@@ -273,7 +273,7 @@ INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[WindowsFeatureUpdateProfileAssignmentId <String>]`: The unique identifier of windowsFeatureUpdateProfileAssignment
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
-RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction[]>: .
+RESOURCEACTIONS <IMicrosoftGraphUnifiedRbacResourceAction\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActionVerb <String>]`: 
   - `[AuthenticationContextId <String>]`: 

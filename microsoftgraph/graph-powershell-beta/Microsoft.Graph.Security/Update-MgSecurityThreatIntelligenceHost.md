@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost
@@ -326,7 +326,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphSecurityHost>: host
+BODYPARAMETER `<IMicrosoftGraphSecurityHost>`: host
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Components <IMicrosoftGraphSecurityHostComponent[]>]`: The hostComponents that are associated with this host.
@@ -375,7 +375,7 @@ BODYPARAMETER <IMicrosoftGraphSecurityHost>: host
     - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Value <String>]`: The identification value for the hostTracker.
 
-COMPONENTS <IMicrosoftGraphSecurityHostComponent[]>: The hostComponents that are associated with this host.
+COMPONENTS <IMicrosoftGraphSecurityHostComponent\[]>: The hostComponents that are associated with this host.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -424,7 +424,7 @@ COMPONENTS <IMicrosoftGraphSecurityHostComponent[]>: The hostComponents that are
   - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
   - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
 
-COOKIES <IMicrosoftGraphSecurityHostCookie[]>: The hostCookies that are associated with this host.
+COOKIES <IMicrosoftGraphSecurityHostCookie\[]>: The hostCookies that are associated with this host.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Domain <String>]`: The URI for which the cookie is valid.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -473,7 +473,7 @@ COOKIES <IMicrosoftGraphSecurityHostCookie[]>: The hostCookies that are associat
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Name <String>]`: The name of the cookie, for example, JSESSIONID or SEARCH_NAMESITE.
 
-INPUTOBJECT <ISecurityIdentity>: Identity Parameter
+INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -531,7 +531,7 @@ INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-PASSIVEDNS <IMicrosoftGraphSecurityPassiveDnsRecord[]>: Passive DNS retrieval about this host.
+PASSIVEDNS <IMicrosoftGraphSecurityPassiveDnsRecord\[]>: Passive DNS retrieval about this host.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -580,7 +580,7 @@ PASSIVEDNS <IMicrosoftGraphSecurityPassiveDnsRecord[]>: Passive DNS retrieval ab
       - `[Value <String>]`: The identification value for the hostTracker.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
-PASSIVEDNSREVERSE <IMicrosoftGraphSecurityPassiveDnsRecord[]>: Reverse passive DNS retrieval about this host.
+PASSIVEDNSREVERSE <IMicrosoftGraphSecurityPassiveDnsRecord\[]>: Reverse passive DNS retrieval about this host.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -629,7 +629,7 @@ PASSIVEDNSREVERSE <IMicrosoftGraphSecurityPassiveDnsRecord[]>: Reverse passive D
       - `[Value <String>]`: The identification value for the hostTracker.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
-REPUTATION <IMicrosoftGraphSecurityHostReputation>: hostReputation
+REPUTATION `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Classification <String>]`: hostReputationClassification
@@ -640,7 +640,7 @@ REPUTATION <IMicrosoftGraphSecurityHostReputation>: hostReputation
     - `[Severity <String>]`: hostReputationRuleSeverity
   - `[Score <Int32?>]`: The calculated score (0-100) of the requested host. A higher value indicates that this host is more likely to be suspicious or malicious.
 
-TRACKERS <IMicrosoftGraphSecurityHostTracker[]>: The hostTrackers that are associated with this host.
+TRACKERS <IMicrosoftGraphSecurityHostTracker\[]>: The hostTrackers that are associated with this host.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Host <IMicrosoftGraphSecurityHost>]`: host
