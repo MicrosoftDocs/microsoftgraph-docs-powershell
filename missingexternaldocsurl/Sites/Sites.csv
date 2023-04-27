@@ -291,3 +291,7 @@ v1.0, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNote
 v1.0-beta, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
 v1.0-beta, Get-MgSiteDrive, /sites/{site-id}/drives
 v1.0-beta, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0-beta, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
+v1.0-beta, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0, Get-MgSiteByPath, /sites/{site-id}/getByPath(path='{path}')
+v1.0, Get-MgSiteRecentNotebook, /sites/{site-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})

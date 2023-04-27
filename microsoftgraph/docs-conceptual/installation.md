@@ -2,11 +2,11 @@
 title: "Install the Microsoft Graph PowerShell SDK"
 description: "Learn how to install the Microsoft Graph PowerShell SDK with PowerShellGet."
 
-author: jasonjoh
+author: msewaweru
 manager: CelesteDG
 ms.topic: how-to
-ms.date: 04/07/2022
-ms.author: jasonjoh
+ms.date: 04/25/2023
+ms.author: eunicewaweru
 ---
 
 # Install the Microsoft Graph PowerShell SDK
@@ -21,9 +21,9 @@ The following prerequisites are required to use the Microsoft Graph PowerShell S
 
 - Upgrade to [PowerShell 5.1 or later](/powershell/scripting/windows-powershell/install/installing-windows-powershell#upgrading-existing-windows-powershell)
 - Install [.NET Framework 4.7.2 or later](/dotnet/framework/install/)
-- Update **PowerShellGet** to the latest version using `Install-Module PowerShellGet -Force`
+- Update **PowerShellGet** to the latest version using `Install-Module PowerShellGet`
 - The PowerShell script execution policy must be set to `remote signed` or `less restrictive`. Use `Get-ExecutionPolicy` to determine the current execution policy. For more information, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
-To set the execution policy, run;
+To set the execution policy, run:
 
     ```powershell
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -49,7 +49,7 @@ Optionally, you can change the scope of the installation using the `-Scope` para
 Install-Module Microsoft.Graph -Scope AllUsers
 ```
 
-Installing the SDK in one version of PowerShell does not install it for the other. Be sure to run the installation command inside the version of PowerShell you intend to use it in.
+Installing the SDK in one version of PowerShell does not install it for the other. Run the installation command inside the version of PowerShell you intend to use it in.
 
 ### Verify installation
 
@@ -59,7 +59,7 @@ After the installation is completed, you can verify the installed version with t
 Get-InstalledModule Microsoft.Graph
 ```
 
-To verify the installed sub-modules and their versions, run;
+To verify the installed sub-modules and their versions, run:
 
 ```powershell
 Get-InstalledModule
