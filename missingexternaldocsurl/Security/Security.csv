@@ -51,3 +51,15 @@ v1.0-beta, Update-MgSecuritySecureScoreControlProfile, /security/secureScoreCont
 v1.0-beta, Update-MgSecurityTiIndicator, /security/tiIndicators/{tiIndicator-id}
 v1.0-beta, Update-MgSecurityTiIndicatorMultiple, /security/tiIndicators/updateTiIndicators
 v1.0-beta, Update-MgSecurityUserSecurityProfile, /security/userSecurityProfiles/{userSecurityProfile-id}
+v1.0, Get-MgSecurityAlert, /security/alerts
+v1.0, Get-MgSecuritySecureScore, /security/secureScores
+v1.0, Get-MgSecuritySecureScoreControlProfile, /security/secureScoreControlProfiles
+v1.0, New-MgSecurityAlert, /security/alerts
+v1.0, New-MgSecuritySecureScore, /security/secureScores
+v1.0, New-MgSecuritySecureScoreControlProfile, /security/secureScoreControlProfiles
+v1.0-beta, Get-MgSecurityAlert, /security/alerts
+v1.0-beta, Get-MgSecuritySecureScore, /security/secureScores
+v1.0-beta, Get-MgSecuritySecureScoreControlProfile, /security/secureScoreControlProfiles
+v1.0-beta, New-MgSecurityAlert, /security/alerts
+v1.0-beta, New-MgSecuritySecureScore, /security/secureScores
+v1.0-beta, New-MgSecuritySecureScoreControlProfile, /security/secureScoreControlProfiles
