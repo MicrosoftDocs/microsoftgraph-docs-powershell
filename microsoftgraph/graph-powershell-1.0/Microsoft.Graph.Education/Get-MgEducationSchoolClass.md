@@ -1,15 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschoolclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationSchoolClass
 
 ## SYNOPSIS
-Get the educationClass resources owned by an educationSchool.
+Classes taught at the school.
+Nullable.
 
 ## SYNTAX
 
@@ -20,7 +20,8 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get the educationClass resources owned by an educationSchool.
+Classes taught at the school.
+Nullable.
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/unpublish-mgbookingbusiness
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Unpublish-MgBookingBusiness
 
 ## SYNOPSIS
-Make the scheduling page of this business not available to external customers.
-Set the **isPublished** property to false, and **publicUrl** property to null.
+Prevents the general public from seeing the scheduling page of this business.
 
 ## SYNTAX
 
@@ -25,8 +24,7 @@ Unpublish-MgBookingBusiness -InputObject <IBookingsIdentity> [-PassThru] [-WhatI
 ```
 
 ## DESCRIPTION
-Make the scheduling page of this business not available to external customers.
-Set the **isPublished** property to false, and **publicUrl** property to null.
+Prevents the general public from seeing the scheduling page of this business.
 
 ## EXAMPLES
 
@@ -136,7 +134,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+INPUTOBJECT <IBookingsIdentity>: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency

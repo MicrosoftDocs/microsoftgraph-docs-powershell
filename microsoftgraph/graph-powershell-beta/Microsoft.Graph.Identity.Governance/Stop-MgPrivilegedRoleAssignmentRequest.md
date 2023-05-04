@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/stop-mgprivilegedroleassignmentrequest
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Stop-MgPrivilegedRoleAssignmentRequest
 
 ## SYNOPSIS
-Cancel a privilegedRoleAssignmentRequest.
+Invoke action cancel
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Stop-MgPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIdentity
 ```
 
 ## DESCRIPTION
-Cancel a privilegedRoleAssignmentRequest.
+Invoke action cancel
 
 ## EXAMPLES
 
@@ -120,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

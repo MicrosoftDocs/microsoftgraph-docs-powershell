@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgunmutecommunicationcall
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Invoke-MgUnmuteCommunicationCall
 
 ## SYNOPSIS
-Allow the application to unmute itself.
-This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
-For more information about how to handle unmute operations, see unmuteParticipantOperation.
+Invoke action unmute
 
 ## SYNTAX
 
@@ -41,9 +39,7 @@ Invoke-MgUnmuteCommunicationCall -InputObject <ICloudCommunicationsIdentity>
 ```
 
 ## DESCRIPTION
-Allow the application to unmute itself.
-This is a server unmute, meaning that the server will start sending audio packets for this participant to other participants again.
-For more information about how to handle unmute operations, see unmuteParticipantOperation.
+Invoke action unmute
 
 ## EXAMPLES
 
@@ -188,11 +184,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1X7BvttCommunicationsCallsCallIdMicrosoftGraphUnmutePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call

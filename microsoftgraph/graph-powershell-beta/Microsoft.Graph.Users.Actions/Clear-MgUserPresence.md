@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/clear-mguserpresence
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Clear-MgUserPresence
 
 ## SYNOPSIS
-Clear a presence session of an application for a user.
-If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
-Read more about presence sessions and their time-out and expiration.
+Invoke action clearPresence
 
 ## SYNTAX
 
@@ -41,9 +39,7 @@ Clear-MgUserPresence -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Clear a presence session of an application for a user.
-If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
-Read more about presence sessions and their time-out and expiration.
+Invoke action clearPresence
 
 ## EXAMPLES
 
@@ -203,11 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTdagveUsersUserIdPresenceMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTdagveUsersUserIdPresenceMicrosoftGraphClearpresencePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SessionId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

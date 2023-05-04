@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogaccesspackageapplicablepolicyrequirement
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement
 
 ## SYNOPSIS
-In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
-Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+Invoke action getApplicablePolicyRequirements
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Get-MgEntitlementManagementCatalogAccessPackageApplicablePolicyRequirement
 ```
 
 ## DESCRIPTION
-In Azure AD entitlement management, this action retrieves a list of accessPackageAssignmentRequestRequirements objects that the currently signed-in user can use to create an accessPackageAssignmentRequest.
-Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
+Invoke action getApplicablePolicyRequirements
 
 ## EXAMPLES
 
@@ -128,7 +126,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

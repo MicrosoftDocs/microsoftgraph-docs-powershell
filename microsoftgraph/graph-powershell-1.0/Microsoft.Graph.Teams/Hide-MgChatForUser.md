@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/hide-mgchatforuser
@@ -8,30 +8,30 @@ schema: 2.0.0
 # Hide-MgChatForUser
 
 ## SYNOPSIS
-Hide a chat for a user.
+Invoke action hideForUser
 
 ## SYNTAX
 
-### HideExpanded (Default)
+### HideExpanded1 (Default)
 ```
 Hide-MgChatForUser -ChatId <String> [-AdditionalProperties <Hashtable>]
  [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Hide
+### Hide1
 ```
 Hide-MgChatForUser -ChatId <String>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### HideViaIdentityExpanded
+### HideViaIdentityExpanded1
 ```
 Hide-MgChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### HideViaIdentity
+### HideViaIdentity1
 ```
 Hide-MgChatForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>
@@ -39,7 +39,7 @@ Hide-MgChatForUser -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Hide a chat for a user.
+Invoke action hideForUser
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: HideExpanded, HideViaIdentityExpanded
+Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Hide, HideViaIdentity
+Parameter Sets: Hide1, HideViaIdentity1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ The unique identifier of chat
 
 ```yaml
 Type: String
-Parameter Sets: HideExpanded, Hide
+Parameter Sets: HideExpanded1, Hide1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: HideViaIdentityExpanded, HideViaIdentity
+Parameter Sets: HideViaIdentityExpanded1, HideViaIdentity1
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ To construct, please use Get-Help -Online and see NOTES section for USER propert
 
 ```yaml
 Type: IMicrosoftGraphTeamworkUserIdentity
-Parameter Sets: HideExpanded, HideViaIdentityExpanded
+Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -206,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>`: .
+BODYPARAMETER <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[User <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -214,7 +214,7 @@ BODYPARAMETER `<IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbody
     - `[Id <String>]`: Unique identifier for the identity.
     - `[UserIdentityType <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -253,7 +253,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-USER `<IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
+USER <IMicrosoftGraphTeamworkUserIdentity>: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.

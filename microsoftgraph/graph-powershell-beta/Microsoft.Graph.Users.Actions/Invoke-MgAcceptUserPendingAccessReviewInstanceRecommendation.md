@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgacceptuserpendingaccessreviewinstancerecommendation
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation
 
 ## SYNOPSIS
-Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
-Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
-If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
+Invoke action acceptRecommendations
 
 ## SYNTAX
 
@@ -27,9 +25,7 @@ Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation -InputObject <IUser
 ```
 
 ## DESCRIPTION
-Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
-Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
-If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
+Invoke action acceptRecommendations
 
 ## EXAMPLES
 
@@ -155,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehostreputation
@@ -236,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
+BODYPARAMETER <IMicrosoftGraphSecurityHostReputation>: hostReputation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Classification <String>]`: hostReputationClassification
@@ -247,7 +247,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityHostReputation>`: hostReputation
     - `[Severity <String>]`: hostReputationRuleSeverity
   - `[Score <Int32?>]`: The calculated score (0-100) of the requested host. A higher value indicates that this host is more likely to be suspicious or malicious.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -305,7 +305,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-RULES <IMicrosoftGraphSecurityHostReputationRule\[]>: A collection of rules that have been used to calculate the classification and score.
+RULES <IMicrosoftGraphSecurityHostReputationRule[]>: A collection of rules that have been used to calculate the classification and score.
   - `[Description <String>]`: The description of the rule that gives more context.
   - `[Name <String>]`: The name of the rule.
   - `[RelatedDetailsUrl <String>]`: Link to a web page with details related to this rule.

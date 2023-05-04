@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/resume-mgidentitygovernancelifecycleworkflowtaskreporttaskprocessingresult
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 
 ## SYNOPSIS
-Resume a task processing result that's `inProgress`.
-In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+Invoke action resume
 
 ## SYNTAX
 
@@ -47,9 +45,7 @@ Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 ```
 
 ## DESCRIPTION
-Resume a task processing result that's `inProgress`.
-In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+Invoke action resume
 
 ## EXAMPLES
 
@@ -258,7 +254,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1B3Rfy2IdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdTaskreportsTaskreportIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1B3Rfy2IdentitygovernanceLifecycleworkflowsWorkflowsWorkflowIdTaskreportsTaskreportIdTaskprocessingresultsTaskprocessingresultIdMicrosoftGraphIdentitygovernanceResumePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Data <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>]`: customTaskExtensionCallbackData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -266,11 +262,11 @@ BODYPARAMETER `<IPaths1B3Rfy2IdentitygovernanceLifecycleworkflowsWorkflowsWorkfl
   - `[Source <String>]`: 
   - `[Type <String>]`: 
 
-DATA `<IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>`: customTaskExtensionCallbackData
+DATA <IMicrosoftGraphIdentityGovernanceCustomTaskExtensionCallbackData>: customTaskExtensionCallbackData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OperationStatus <String>]`: customTaskExtensionOperationStatus
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

@@ -1,15 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamscheduletimeoffrequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamScheduleTimeOffRequest
 
 ## SYNOPSIS
-Get timeOffRequests from groups
+The time off requests in the schedule.
 
 ## SYNTAX
 
@@ -32,7 +31,7 @@ Get-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <
 ```
 
 ## DESCRIPTION
-Get timeOffRequests from groups
+The time off requests in the schedule.
 
 ## EXAMPLES
 
@@ -249,7 +248,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

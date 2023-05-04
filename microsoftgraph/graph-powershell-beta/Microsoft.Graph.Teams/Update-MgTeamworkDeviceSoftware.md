@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdevicesoftware
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgTeamworkDeviceSoftware
 
 ## SYNOPSIS
-Update the software for a Microsoft Teams-enabled device.
-This API triggers a long-running operation.
+Invoke action updateSoftware
 
 ## SYNTAX
 
@@ -40,8 +39,7 @@ Update-MgTeamworkDeviceSoftware -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update the software for a Microsoft Teams-enabled device.
-This API triggers a long-running operation.
+Invoke action updateSoftware
 
 ## EXAMPLES
 
@@ -217,12 +215,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Ci0GnkTeamworkDevicesTeamworkdeviceIdMicrosoftGraphUpdatesoftwarePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SoftwareType <String>]`: teamworkSoftwareType
   - `[SoftwareVersion <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

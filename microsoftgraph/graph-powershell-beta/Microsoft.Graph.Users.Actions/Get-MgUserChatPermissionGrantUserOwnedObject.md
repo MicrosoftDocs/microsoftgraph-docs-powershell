@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserchatpermissiongrantuserownedobject
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgUserChatPermissionGrantUserOwnedObject
 
 ## SYNOPSIS
-Retrieve a list of recently deleted application and group objects owned by the specified user.
-This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+Invoke action getUserOwnedObjects
 
 ## SYNTAX
 
@@ -41,8 +40,7 @@ Get-MgUserChatPermissionGrantUserOwnedObject -InputObject <IUsersActionsIdentity
 ```
 
 ## DESCRIPTION
-Retrieve a list of recently deleted application and group objects owned by the specified user.
-This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+Invoke action getUserOwnedObjects
 
 ## EXAMPLES
 
@@ -217,12 +215,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsAawmnnUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsAawmnnUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: 
   - `[UserId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

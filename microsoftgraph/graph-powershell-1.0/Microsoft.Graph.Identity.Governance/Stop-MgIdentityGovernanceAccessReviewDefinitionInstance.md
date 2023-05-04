@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/stop-mgidentitygovernanceaccessreviewdefinitioninstance
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Stop-MgIdentityGovernanceAccessReviewDefinitionInstance
 
 ## SYNOPSIS
-Stop a currently active accessReviewInstance.
-After the access review instance stops, the instance status is marked as `Completed`, the reviewers can no longer give input, and the access review decisions are applied.
-Stopping an instance will not stop future instances.
-To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
+Invoke action stop
 
 ## SYNTAX
 
@@ -28,10 +25,7 @@ Stop-MgIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Stop a currently active accessReviewInstance.
-After the access review instance stops, the instance status is marked as `Completed`, the reviewers can no longer give input, and the access review decisions are applied.
-Stopping an instance will not stop future instances.
-To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
+Invoke action stop
 
 ## EXAMPLES
 
@@ -156,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

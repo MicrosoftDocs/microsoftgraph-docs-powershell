@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyaccessreviewpolicy
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAccessReviewPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of an accessReviewPolicy object.
+The policy that contains directory-level access review settings.
 
 ## SYNTAX
 
@@ -17,7 +17,7 @@ Get-MgPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessReviewPolicy object.
+The policy that contains directory-level access review settings.
 
 ## EXAMPLES
 

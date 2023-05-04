@@ -1,15 +1,15 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooluser
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationSchoolUser
 
 ## SYNOPSIS
-Get the educationUser resources associated with an educationSchool.
+Users in the school.
+Nullable.
 
 ## SYNTAX
 
@@ -20,7 +20,8 @@ Get-MgEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Get the educationUser resources associated with an educationSchool.
+Users in the school.
+Nullable.
 
 ## EXAMPLES
 

@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationexternalsponsorbyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef
 
 ## SYNOPSIS
-Retrieve a list of a connectedOrganization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get ref of externalSponsors from identityGovernance
 
 ## SYNTAX
 
@@ -21,8 +19,7 @@ Get-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedO
 ```
 
 ## DESCRIPTION
-Retrieve a list of a connectedOrganization's external sponsors.
-The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get ref of externalSponsors from identityGovernance
 
 ## EXAMPLES
 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeviceactivity
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgTeamworkDeviceActivity
 
 ## SYNOPSIS
-Get the activity status of a Microsoft Teams-enabled device.
+The activity properties that change based on the device usage.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ExpandProperty <Str
 ```
 
 ## DESCRIPTION
-Get the activity status of a Microsoft Teams-enabled device.
+The activity properties that change based on the device usage.
 
 ## EXAMPLES
 
@@ -119,7 +119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

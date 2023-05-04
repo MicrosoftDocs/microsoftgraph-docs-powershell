@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreporttotalaggregatedremoteconnectionreport
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
 
 ## SYNOPSIS
-Get the total aggregated remote connection usage of a Cloud PC during a given time span.
+Invoke action getTotalAggregatedRemoteConnectionReports
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport
 ```
 
 ## DESCRIPTION
-Get the total aggregated remote connection usage of a Cloud PC during a given time span.
+Invoke action getTotalAggregatedRemoteConnectionReports
 
 ## EXAMPLES
 
@@ -249,7 +249,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths6MqafvDevicemanagementVirtualendpointReportsMicrosoftGraphGettotalaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgsoftteamworkdeletedteamchannelmessagedelete
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete
 
 ## SYNOPSIS
-Delete a single chatMessage or a chat message reply in a channel or a chat.
+Invoke action softDelete
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgSoftTeamworkDeletedTeamChannelMessageDelete -InputObject <ITeamsIdentit
 ```
 
 ## DESCRIPTION
-Delete a single chatMessage or a chat message reply in a channel or a chat.
+Invoke action softDelete
 
 ## EXAMPLES
 
@@ -156,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

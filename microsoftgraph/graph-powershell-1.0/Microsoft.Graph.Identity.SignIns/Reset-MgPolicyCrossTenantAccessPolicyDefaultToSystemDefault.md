@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/reset-mgpolicycrosstenantaccesspolicydefaulttosystemdefault
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault
 
 ## SYNOPSIS
-Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
+Invoke action resetToSystemDefault
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Reset-MgPolicyCrossTenantAccessPolicyDefaultToSystemDefault [-PassThru] [-WhatIf
 ```
 
 ## DESCRIPTION
-Reset any changes made to the default configuration in a cross-tenant access policy back to the system default.
+Invoke action resetToSystemDefault
 
 ## EXAMPLES
 

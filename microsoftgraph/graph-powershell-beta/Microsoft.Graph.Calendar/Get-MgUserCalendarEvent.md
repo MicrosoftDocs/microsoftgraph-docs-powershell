@@ -1,18 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mgusercalendarevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserCalendarEvent
 
 ## SYNOPSIS
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+The events in the calendar.
+Navigation property.
+Read-only.
 
 ## SYNTAX
 
@@ -23,10 +21,9 @@ Get-MgUserCalendarEvent -CalendarId <String> -UserId <String> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+The events in the calendar.
+Navigation property.
+Read-only.
 
 ## EXAMPLES
 

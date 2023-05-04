@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyDeviceRegistrationPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a deviceRegistrationPolicy object.
-Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+Get deviceRegistrationPolicy from policies
 
 ## SYNTAX
 
@@ -18,8 +17,7 @@ Get-MgPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <St
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a deviceRegistrationPolicy object.
-Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+Get deviceRegistrationPolicy from policies
 
 ## EXAMPLES
 

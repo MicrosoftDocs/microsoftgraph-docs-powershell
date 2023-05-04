@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mguserlicense
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Set-MgUserLicense
 
 ## SYNOPSIS
-Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings.
-For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
-You can also enable and disable specific plans associated with a subscription.
-To learn more about subscriptions and licenses, see this Technet article.
-To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+Invoke action assignLicense
 
 ## SYNTAX
 
@@ -43,11 +39,7 @@ Set-MgUserLicense -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Add or remove licenses for the user to enable or disable their use of Microsoft cloud offerings.
-For example, an organization can have a Microsoft 365 Enterprise E3 subscription with 100 licenses, and this request assigns one of those licenses to a specific user.
-You can also enable and disable specific plans associated with a subscription.
-To learn more about subscriptions and licenses, see this Technet article.
-To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+Invoke action assignLicense
 
 ## EXAMPLES
 
@@ -317,18 +309,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDLICENSES <IMicrosoftGraphAssignedLicense\[]>: .
+ADDLICENSES <IMicrosoftGraphAssignedLicense[]>: .
   - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
   - `[SkuId <String>]`: The unique identifier for the SKU.
 
-BODYPARAMETER `<IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AddLicenses <IMicrosoftGraphAssignedLicense[]>]`: 
     - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
     - `[SkuId <String>]`: The unique identifier for the SKU.
   - `[RemoveLicenses <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

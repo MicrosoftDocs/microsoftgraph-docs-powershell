@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicymobileappmanagementpolicyincludedgroup
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyMobileAppManagementPolicyIncludedGroup
 
 ## SYNOPSIS
-Get the list of groups that are included in a mobile app management policy.
+Azure AD groups under the scope of the mobility management application if appliesTo is selected
 
 ## SYNTAX
 
@@ -19,7 +19,7 @@ Get-MgPolicyMobileAppManagementPolicyIncludedGroup -MobilityManagementPolicyId <
 ```
 
 ## DESCRIPTION
-Get the list of groups that are included in a mobile app management policy.
+Azure AD groups under the scope of the mobility management application if appliesTo is selected
 
 ## EXAMPLES
 

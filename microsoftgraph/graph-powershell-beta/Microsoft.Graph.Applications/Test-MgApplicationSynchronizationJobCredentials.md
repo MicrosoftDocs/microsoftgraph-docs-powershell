@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/test-mgapplicationsynchronizationjobcredentials
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgApplicationSynchronizationJobCredentials
 
 ## SYNOPSIS
-Validate that the credentials are valid in the tenant.
+Invoke action validateCredentials
 
 ## SYNTAX
 
@@ -43,7 +43,7 @@ Test-MgApplicationSynchronizationJobCredentials -InputObject <IApplicationsIdent
 ```
 
 ## DESCRIPTION
-Validate that the credentials are valid in the tenant.
+Invoke action validateCredentials
 
 ## EXAMPLES
 
@@ -252,7 +252,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphValidatecredentialsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationIdentifier <String>]`: 
   - `[Credentials <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
@@ -261,11 +261,11 @@ BODYPARAMETER `<IPathsAjp903ApplicationsApplicationIdSynchronizationJobsSynchron
   - `[TemplateId <String>]`: 
   - `[UseSavedCredentials <Boolean?>]`: 
 
-CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair\[]>: .
+CREDENTIALS <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>: .
   - `[Key <String>]`: synchronizationSecret
   - `[Value <String>]`: The value of the secret.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

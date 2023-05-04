@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasecustodianhold
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Add-MgSecurityCaseEdiscoveryCaseCustodianHold
 
 ## SYNOPSIS
-Start the process of applying hold on eDiscovery custodians.
-After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
-The location provides a URL that will return an eDiscoveryHoldOperation object.
+Invoke action applyHold
 
 ## SYNTAX
 
@@ -53,9 +51,7 @@ Add-MgSecurityCaseEdiscoveryCaseCustodianHold -InputObject <ISecurityIdentity> [
 ```
 
 ## DESCRIPTION
-Start the process of applying hold on eDiscovery custodians.
-After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
-The location provides a URL that will return an eDiscoveryHoldOperation object.
+Invoke action applyHold
 
 ## EXAMPLES
 
@@ -236,11 +232,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2560XySecurityCasesEdiscoverycasesEdiscoverycaseIdCustodiansMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitepagecanvalayoutverticalsection
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSitePageCanvaLayoutVerticalSection
 
 ## SYNOPSIS
-Read the properties and relationships of a verticalSection object.
+Vertical section on the SharePoint page.
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Get-MgSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a verticalSection object.
+Vertical section on the SharePoint page.
 
 ## EXAMPLES
 
@@ -125,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -143,6 +143,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/invoke-mgestimatesecuritycaseediscoverycasesearchstatistics
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics
 
 ## SYNOPSIS
-Run an estimate of the number of emails and documents in the eDiscovery search.
-To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
+Invoke action estimateStatistics
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -InputObject <ISecur
 ```
 
 ## DESCRIPTION
-Run an estimate of the number of emails and documents in the eDiscovery search.
-To learn more about searches in eDiscovery, see Collect data for a case in eDiscovery (Premium).
+Invoke action estimateStatistics
 
 ## EXAMPLES
 
@@ -152,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

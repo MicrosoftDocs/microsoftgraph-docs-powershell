@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/restore-mgidentitygovernancelifecycleworkflow
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Restore-MgIdentityGovernanceLifecycleWorkflow
 
 ## SYNOPSIS
-Restore a workflow that has been deleted.
-You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
+Invoke action restore
 
 ## SYNTAX
 
@@ -25,8 +24,7 @@ Restore-MgIdentityGovernanceLifecycleWorkflow -InputObject <IIdentityGovernanceI
 ```
 
 ## DESCRIPTION
-Restore a workflow that has been deleted.
-You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
+Invoke action restore
 
 ## EXAMPLES
 
@@ -112,7 +110,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

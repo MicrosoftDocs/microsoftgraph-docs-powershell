@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/initialize-mgcomplianceediscoverycasecustodian
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Initialize-MgComplianceEdiscoveryCaseCustodian
 
 ## SYNOPSIS
-Activate a custodian that has been released from a case to make them part of the case again.
-For details, see Manage custodians in an Advanced eDiscovery case.
+Invoke action activate
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Initialize-MgComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 ```
 
 ## DESCRIPTION
-Activate a custodian that has been released from a case to make them part of the case again.
-For details, see Manage custodians in an Advanced eDiscovery case.
+Invoke action activate
 
 ## EXAMPLES
 
@@ -152,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

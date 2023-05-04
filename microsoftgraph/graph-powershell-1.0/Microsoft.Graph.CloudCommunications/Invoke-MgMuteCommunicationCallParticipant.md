@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgmutecommunicationcallparticipant
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Invoke-MgMuteCommunicationCallParticipant
 
 ## SYNOPSIS
-Mute a specific participant in the call.
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more information about how to handle mute operations, see muteParticipantOperation.
+Invoke action mute
 
 ## SYNTAX
 
@@ -41,9 +39,7 @@ Invoke-MgMuteCommunicationCallParticipant -InputObject <ICloudCommunicationsIden
 ```
 
 ## DESCRIPTION
-Mute a specific participant in the call.
-This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
-For more information about how to handle mute operations, see muteParticipantOperation.
+Invoke action mute
 
 ## EXAMPLES
 
@@ -203,11 +199,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsTobgxoCommunicationsCallsCallIdParticipantsParticipantIdMicrosoftGraphMutePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientContext <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call

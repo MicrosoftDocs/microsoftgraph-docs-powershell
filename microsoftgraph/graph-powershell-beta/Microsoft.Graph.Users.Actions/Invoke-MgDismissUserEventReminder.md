@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgdismissusereventreminder
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgDismissUserEventReminder
 
 ## SYNOPSIS
-Dismiss a reminder that has been triggered for an event in a user calendar.
+Invoke action dismissReminder
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Invoke-MgDismissUserEventReminder -InputObject <IUsersActionsIdentity> [-PassThr
 ```
 
 ## DESCRIPTION
-Dismiss a reminder that has been triggered for an event in a user calendar.
+Invoke action dismissReminder
 
 ## EXAMPLES
 
@@ -151,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

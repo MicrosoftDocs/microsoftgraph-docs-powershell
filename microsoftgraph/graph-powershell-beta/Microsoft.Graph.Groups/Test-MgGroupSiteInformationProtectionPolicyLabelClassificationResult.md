@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupsiteinformationprotectionpolicylabelclassificationresult
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Test-MgGroupSiteInformationProtectionPolicyLabelClassificationResult
 
 ## SYNOPSIS
-Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
-This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
-To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
-The API returns an informationProtectionAction that contains one of more of the following:
+Invoke action evaluateClassificationResults
 
 ## SYNTAX
 
@@ -44,10 +41,7 @@ Test-MgGroupSiteInformationProtectionPolicyLabelClassificationResult -InputObjec
 ```
 
 ## DESCRIPTION
-Using classification results, compute the information protection label that should be applied and return the set of actions that must be taken to correctly label the information.
-This API is useful when a label should be set automatically based on classification of the file contents, rather than labeled directly by a user or service.
-To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
-The API returns an informationProtectionAction that contains one of more of the following:
+Invoke action evaluateClassificationResults
 
 ## EXAMPLES
 
@@ -212,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateclassificationresultsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClassificationResults <IMicrosoftGraphClassificationResult[]>]`: 
     - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
@@ -227,12 +221,12 @@ BODYPARAMETER `<IPaths1X07Bu3GroupsGroupIdSitesSiteIdInformationprotectionPolicy
       - `[Value <String>]`: Value for this key-value pair
     - `[State <String>]`: contentState
 
-CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult\[]>: .
+CLASSIFICATIONRESULTS <IMicrosoftGraphClassificationResult[]>: .
   - `[ConfidenceLevel <Int32?>]`: The confidence level, 0 to 100, of the result.
   - `[Count <Int32?>]`: The number of instances of the specific information type in the input.
   - `[SensitiveTypeId <String>]`: The GUID of the discovered sensitive information type.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -241,7 +235,7 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -258,6 +252,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

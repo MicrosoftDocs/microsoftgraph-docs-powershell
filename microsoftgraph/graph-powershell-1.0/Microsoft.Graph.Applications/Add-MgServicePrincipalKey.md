@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/add-mgserviceprincipalkey
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Add-MgServicePrincipalKey
 
 ## SYNOPSIS
-Adds a key credential to a servicePrincipal.
-This method along with removeKey can be used by a servicePrincipal to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
-Update servicePrincipal can be used to perform an update instead.
+Invoke action addKey
 
 ## SYNTAX
 
@@ -45,11 +41,7 @@ Add-MgServicePrincipalKey -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Adds a key credential to a servicePrincipal.
-This method along with removeKey can be used by a servicePrincipal to automate rolling its expiring keys.
-As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
-Update servicePrincipal can be used to perform an update instead.
+Invoke action addKey
 
 ## EXAMPLES
 
@@ -252,7 +244,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAddkeyPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyCredential <IMicrosoftGraphKeyCredential>]`: keyCredential
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -275,7 +267,7 @@ BODYPARAMETER `<IPathsN3Fx9GServiceprincipalsServiceprincipalIdMicrosoftGraphAdd
     - `[StartDateTime <DateTime?>]`: The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
   - `[Proof <String>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -305,7 +297,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-KEYCREDENTIAL `<IMicrosoftGraphKeyCredential>`: keyCredential
+KEYCREDENTIAL <IMicrosoftGraphKeyCredential>: keyCredential
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CustomKeyIdentifier <Byte[]>]`: A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate.
   - `[DisplayName <String>]`: Friendly name for the key. Optional.
@@ -316,7 +308,7 @@ KEYCREDENTIAL `<IMicrosoftGraphKeyCredential>`: keyCredential
   - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
   - `[Usage <String>]`: A string that describes the purpose for which the key can be used; for example, Verify.
 
-PASSWORDCREDENTIAL `<IMicrosoftGraphPasswordCredential>`: passwordCredential
+PASSWORDCREDENTIAL <IMicrosoftGraphPasswordCredential>: passwordCredential
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CustomKeyIdentifier <Byte[]>]`: Do not use.
   - `[DisplayName <String>]`: Friendly name for the password. Optional.

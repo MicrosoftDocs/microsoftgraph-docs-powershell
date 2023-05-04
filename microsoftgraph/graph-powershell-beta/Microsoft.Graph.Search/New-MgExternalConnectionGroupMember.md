@@ -1,15 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroupmember
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgExternalConnectionGroupMember
 
 ## SYNOPSIS
-Create a new externalGroupMember object.
+Create new navigation property to members for external
 
 ## SYNTAX
 
@@ -38,7 +37,7 @@ New-MgExternalConnectionGroupMember -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new externalGroupMember object.
+Create new navigation property to members for external
 
 ## EXAMPLES
 
@@ -241,12 +240,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsIdentity>`: identity
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsIdentity>: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Type <String>]`: identityType
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+INPUTOBJECT <ISearchIdentity>: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation

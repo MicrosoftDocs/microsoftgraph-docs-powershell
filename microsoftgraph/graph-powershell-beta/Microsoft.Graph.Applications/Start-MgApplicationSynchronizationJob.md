@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/start-mgapplicationsynchronizationjob
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Start-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
-Start an existing synchronization job.
-If the job is in a paused state, it will continue processing changes from the point where it was paused.
-If the job is in quarantine, the quarantine status will be cleared.
-Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
-Use the start job only when the job is currently paused or in quarantine.
+Invoke action start
 
 ## SYNTAX
 
@@ -29,11 +25,7 @@ Start-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-Pas
 ```
 
 ## DESCRIPTION
-Start an existing synchronization job.
-If the job is in a paused state, it will continue processing changes from the point where it was paused.
-If the job is in quarantine, the quarantine status will be cleared.
-Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
-Use the start job only when the job is currently paused or in quarantine.
+Invoke action start
 
 ## EXAMPLES
 
@@ -149,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

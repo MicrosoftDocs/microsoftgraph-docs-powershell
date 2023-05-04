@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgaccessreviewinstancereviewer
@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgAccessReviewInstanceReviewer
 
 ## SYNOPSIS
-In the Azure AD access reviews feature, update an existing accessReview object to add another user as a reviewer.
-This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.
-This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
+Create new navigation property to reviewers for accessReviews
 
 ## SYNTAX
 
@@ -41,9 +39,7 @@ New-MgAccessReviewInstanceReviewer -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-In the Azure AD access reviews feature, update an existing accessReview object to add another user as a reviewer.
-This operation is only permitted for an access review that is not yet completed, and only for an access review where the reviewers are explicitly specified.
-This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
+Create new navigation property to reviewers for accessReviews
 
 ## EXAMPLES
 
@@ -237,14 +233,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessReviewReviewer>`: accessReviewReviewer
+BODYPARAMETER <IMicrosoftGraphAccessReviewReviewer>: accessReviewReviewer
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
   - `[DisplayName <String>]`: Name of reviewer.
   - `[UserPrincipalName <String>]`: User principal name of the reviewer.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

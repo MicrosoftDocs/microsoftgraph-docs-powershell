@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgextractusersecurityinformationprotectionsensitivitylabelcontentlabel
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
 
 ## SYNOPSIS
-Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
-The contentInfo input is resolved to informationProtectionContentLabel.
+Invoke action extractContentLabel
 
 ## SYNTAX
 
@@ -43,8 +42,7 @@ Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel
 ```
 
 ## DESCRIPTION
-Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
-The contentInfo input is resolved to informationProtectionContentLabel.
+Invoke action extractContentLabel
 
 ## EXAMPLES
 
@@ -224,7 +222,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityExtractcontentlabelPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphSecurityContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -235,7 +233,7 @@ BODYPARAMETER `<IPaths12WcorzUsersUserIdSecurityInformationprotectionSensitivity
       - `[Value <String>]`: Value for this key-value pair.
     - `[State <String>]`: contentState
 
-CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
+CONTENTINFO <IMicrosoftGraphSecurityContentInfo>: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentFormat <String>]`: The format of the content to be labeled. Possible values are: file, email.
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -244,7 +242,7 @@ CONTENTINFO `<IMicrosoftGraphSecurityContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair.
   - `[State <String>]`: contentState
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

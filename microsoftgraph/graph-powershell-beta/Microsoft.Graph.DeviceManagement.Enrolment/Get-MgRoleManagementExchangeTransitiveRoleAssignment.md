@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/get-mgrolemanagementexchangetransitiveroleassignment
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgRoleManagementExchangeTransitiveRoleAssignment
 
 ## SYNOPSIS
-Get transitiveRoleAssignments from roleManagement
+Resource to grant access to users or groups that are transitive.
 
 ## SYNTAX
 
@@ -32,7 +32,7 @@ Get-MgRoleManagementExchangeTransitiveRoleAssignment -InputObject <IDeviceManage
 ```
 
 ## DESCRIPTION
-Get transitiveRoleAssignments from roleManagement
+Resource to grant access to users or groups that are transitive.
 
 ## EXAMPLES
 
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementEnrolmentIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementEnrolmentIdentity>: Identity Parameter
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
   - `[AppScopeId <String>]`: The unique identifier of appScope

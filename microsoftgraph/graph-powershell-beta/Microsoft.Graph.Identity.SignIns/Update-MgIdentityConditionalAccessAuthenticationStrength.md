@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationstrength
@@ -24,7 +24,7 @@ Update-MgIdentityConditionalAccessAuthenticationStrength [-AdditionalProperties 
 ### Update
 ```
 Update-MgIdentityConditionalAccessAuthenticationStrength
- -BodyParameter <IMicrosoftGraphAuthenticationStrengthRoot> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphAuthenticationStrengthRoot1> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -86,7 +86,7 @@ authenticationStrengthRoot
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationStrengthRoot
+Type: IMicrosoftGraphAuthenticationStrengthRoot1
 Parameter Sets: Update
 Aliases:
 
@@ -195,7 +195,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot1
 ## OUTPUTS
 
 ### System.Boolean
@@ -208,12 +208,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTHENTICATIONMETHODMODES <IMicrosoftGraphAuthenticationMethodModeDetail\[]>: Names and descriptions of all valid authentication method modes in the system.
+AUTHENTICATIONMETHODMODES <IMicrosoftGraphAuthenticationMethodModeDetail[]>: Names and descriptions of all valid authentication method modes in the system.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationMethod <String>]`: baseAuthenticationMethod
   - `[DisplayName <String>]`: The display name of this mode
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStrengthRoot
+BODYPARAMETER <IMicrosoftGraphAuthenticationStrengthRoot1>: authenticationStrengthRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AuthenticationCombinations <String[]>]`: A collection of all valid authentication method combinations in the system.
@@ -235,7 +235,7 @@ BODYPARAMETER `<IMicrosoftGraphAuthenticationStrengthRoot>`: authenticationStren
     - `[PolicyType <String>]`: authenticationStrengthPolicyType
     - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
-POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy\[]>: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
+POLICIES <IMicrosoftGraphAuthenticationStrengthPolicy[]>: A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedCombinations <String[]>]`: A collection of authentication method modes that are required be used to satify this authentication strength.
   - `[CombinationConfigurations <IMicrosoftGraphAuthenticationCombinationConfiguration[]>]`: Settings that may be used to require specific types or instances of an authentication method to be used when authenticating with a specified combination of authentication methods.

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Reports-help.xml
 Module Name: Microsoft.Graph.Reports
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/confirm-mgauditlogsignincompromised
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Confirm-MgAuditLogSignInCompromised
 
 ## SYNOPSIS
-Allow admins to mark an event in the Azure AD sign in logs as risky.
-Events marked as risky by an admin are immediately flagged as high risk in Azure AD Identity Protection, overriding previous risk states.
-Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky.
-For details about investigating Identity Protection risks, see How to investigate risk.
+Invoke action confirmCompromised
 
 ## SYNTAX
 
@@ -29,10 +26,7 @@ Confirm-MgAuditLogSignInCompromised
 ```
 
 ## DESCRIPTION
-Allow admins to mark an event in the Azure AD sign in logs as risky.
-Events marked as risky by an admin are immediately flagged as high risk in Azure AD Identity Protection, overriding previous risk states.
-Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky.
-For details about investigating Identity Protection risks, see How to investigate risk.
+Invoke action confirmCompromised
 
 ## EXAMPLES
 
@@ -164,7 +158,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsKfhb9KAuditlogsSigninsMicrosoftGraphConfirmcompromisedPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RequestIds <String[]>]`: 
 

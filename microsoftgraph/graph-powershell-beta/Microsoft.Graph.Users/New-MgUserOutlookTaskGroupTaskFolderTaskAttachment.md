@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguseroutlooktaskgrouptaskfoldertaskattachment
@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgUserOutlookTaskGroupTaskFolderTaskAttachment
 
 ## SYNOPSIS
-Use this API to add an attachment to an outlookTask.
-The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
+Create new navigation property to attachments for users
 
 ## SYNTAX
 
@@ -42,8 +41,7 @@ New-MgUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to add an attachment to an outlookTask.
-The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
+Create new navigation property to attachments for users
 
 ## EXAMPLES
 
@@ -298,7 +296,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+BODYPARAMETER <IMicrosoftGraphAttachment>: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
@@ -307,7 +305,7 @@ BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
   - `[Name <String>]`: The attachment's file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession

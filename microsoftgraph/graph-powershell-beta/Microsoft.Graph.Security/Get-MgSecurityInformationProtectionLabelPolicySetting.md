@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecurityinformationprotectionlabelpolicysetting
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgSecurityInformationProtectionLabelPolicySetting
 
 ## SYNOPSIS
-Read the properties and relationships of an informationProtectionPolicySetting object.
-The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 ## SYNTAX
 
@@ -19,8 +18,7 @@ Get-MgSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an informationProtectionPolicySetting object.
-The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
+Read the Microsoft Purview Information Protection policy settings for the user or organization.
 
 ## EXAMPLES
 

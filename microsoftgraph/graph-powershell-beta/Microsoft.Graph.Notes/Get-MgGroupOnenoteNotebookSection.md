@@ -1,15 +1,16 @@
----
+﻿---
 external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenotenotebooksection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgGroupOnenoteNotebookSection
 
 ## SYNOPSIS
-Retrieve a list of section objects from the specified notebook.
+The sections in the notebook.
+Read-only.
+Nullable.
 
 ## SYNTAX
 
@@ -20,7 +21,9 @@ Get-MgGroupOnenoteNotebookSection -GroupId <String> -NotebookId <String> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve a list of section objects from the specified notebook.
+The sections in the notebook.
+Read-only.
+Nullable.
 
 ## EXAMPLES
 

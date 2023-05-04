@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitmemberbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgDirectoryAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
-Use this API to add a member (user, group, or device) to an administrative unit.
-Currently it's only possible to add one member at a time to an administrative unit.
+Create new navigation property ref to members for directory
 
 ## SYNTAX
 
@@ -39,8 +37,7 @@ New-MgDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Use this API to add a member (user, group, or device) to an administrative unit.
-Currently it's only possible to add one member at a time to an administrative unit.
+Create new navigation property ref to members for directory
 
 ## EXAMPLES
 
@@ -200,11 +197,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IReferenceCreate>`: .
+BODYPARAMETER <IReferenceCreate>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[OdataId <String>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityDirectoryManagementIdentity>: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet

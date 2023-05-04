@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgadministrativeunituserownedobject
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgAdministrativeUnitUserOwnedObject
 
 ## SYNOPSIS
-Retrieve a list of recently deleted application and group objects owned by the specified user.
-This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+Invoke action getUserOwnedObjects
 
 ## SYNTAX
 
@@ -27,8 +26,7 @@ Get-MgAdministrativeUnitUserOwnedObject
 ```
 
 ## DESCRIPTION
-Retrieve a list of recently deleted application and group objects owned by the specified user.
-This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
+Invoke action getUserOwnedObjects
 
 ## EXAMPLES
 
@@ -144,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZu9Si3AdministrativeunitsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZu9Si3AdministrativeunitsMicrosoftGraphGetuserownedobjectsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: 
   - `[UserId <String>]`: 

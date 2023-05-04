@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/export-mgcomplianceediscoverycasereviewset
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Export-MgComplianceEdiscoveryCaseReviewSet
 
 ## SYNOPSIS
-Initiate an export from a **reviewSet**.
-For details, see Export documents from a review set in Advanced eDiscovery.
+Invoke action export
 
 ## SYNTAX
 
@@ -44,8 +43,7 @@ Export-MgComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity>
 ```
 
 ## DESCRIPTION
-Initiate an export from a **reviewSet**.
-For details, see Export documents from a review set in Advanced eDiscovery.
+Invoke action export
 
 ## EXAMPLES
 
@@ -298,7 +296,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryExportPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureBlobContainer <String>]`: 
   - `[AzureBlobToken <String>]`: 
@@ -307,7 +305,7 @@ BODYPARAMETER `<IPaths2D0MecComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
   - `[ExportStructure <String>]`: exportFileStructure
   - `[OutputName <String>]`: 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian

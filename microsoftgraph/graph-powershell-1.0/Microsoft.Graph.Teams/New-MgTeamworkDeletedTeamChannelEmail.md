@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelemail
@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgTeamworkDeletedTeamChannelEmail
 
 ## SYNOPSIS
-Provision an email address for a channel.
-Microsoft Teams doesn't automatically provision an email address for a **channel** by default.
-To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
-To remove the email address of a **channel**, use the removeEmail method.
+Invoke action provisionEmail
 
 ## SYNTAX
 
@@ -27,10 +24,7 @@ New-MgTeamworkDeletedTeamChannelEmail -InputObject <ITeamsIdentity> [-WhatIf] [-
 ```
 
 ## DESCRIPTION
-Provision an email address for a channel.
-Microsoft Teams doesn't automatically provision an email address for a **channel** by default.
-To have Teams provision an email address, you can call **provisionEmail**, or through the Teams user interface, select **Get email address**, which triggers Teams to generate an email address if it has not already provisioned one.
-To remove the email address of a **channel**, use the removeEmail method.
+Invoke action provisionEmail
 
 ## EXAMPLES
 
@@ -131,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

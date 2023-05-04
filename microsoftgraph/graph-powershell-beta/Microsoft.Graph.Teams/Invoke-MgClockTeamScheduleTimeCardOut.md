@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardout
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgClockTeamScheduleTimeCardOut
 
 ## SYNOPSIS
-Clock out to end an open timeCard.
+Invoke action clockOut
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Clock out to end an open timeCard.
+Invoke action clockOut
 
 ## EXAMPLES
 
@@ -219,7 +219,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGraphClockoutPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
@@ -227,7 +227,7 @@ BODYPARAMETER `<IPaths1Hehk7XTeamsTeamIdScheduleTimecardsTimecardIdMicrosoftGrap
     - `[Content <String>]`: The content of the item.
     - `[ContentType <String>]`: bodyType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -266,7 +266,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+NOTES <IMicrosoftGraphItemBody>: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType

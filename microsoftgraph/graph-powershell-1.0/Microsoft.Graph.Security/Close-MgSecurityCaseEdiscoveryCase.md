@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/close-mgsecuritycaseediscoverycase
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Close-MgSecurityCaseEdiscoveryCase
 
 ## SYNOPSIS
-Close an eDiscovery case.
-For details, see Close a case.
+Invoke action close
 
 ## SYNTAX
 
@@ -26,8 +25,7 @@ Close-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-PassThru] 
 ```
 
 ## DESCRIPTION
-Close an eDiscovery case.
-For details, see Close a case.
+Invoke action close
 
 ## EXAMPLES
 
@@ -137,7 +135,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+INPUTOBJECT <ISecurityIdentity>: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator

@@ -1,17 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgAppCatalogTeamApp
 
 ## SYNOPSIS
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a **distributionMethod** property value of `organization`.
-The **requiresReview** property allows any user to submit an app for review by an administrator.
-Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+Create new navigation property to teamsApps for appCatalogs
 
 ## SYNTAX
 
@@ -28,9 +25,7 @@ New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp1> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a **distributionMethod** property value of `organization`.
-The **requiresReview** property allows any user to submit an app for review by an administrator.
-Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+Create new navigation property to teamsApps for appCatalogs
 
 ## EXAMPLES
 
@@ -202,7 +197,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition1\[]>: The details for each version of the app.
+APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition1[]>: The details for each version of the app.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
   - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
@@ -242,7 +237,7 @@ APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition1\[]>: The details for each ver
   - `[TeamsAppId <String>]`: The ID from the Teams app manifest.
   - `[Version <String>]`: The version number of the application.
 
-BODYPARAMETER `<IMicrosoftGraphTeamsApp1>`: teamsApp
+BODYPARAMETER <IMicrosoftGraphTeamsApp1>: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.

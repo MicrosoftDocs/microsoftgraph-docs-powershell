@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Security-help.xml
 Module Name: Microsoft.Graph.Security
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/submit-mgsecuritytiindicator
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Submit-MgSecurityTiIndicator
 
 ## SYNOPSIS
-Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+Invoke action submitTiIndicators
 
 ## SYNTAX
 
@@ -26,7 +26,7 @@ Submit-MgSecurityTiIndicator
 ```
 
 ## DESCRIPTION
-Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
+Invoke action submitTiIndicators
 
 ## EXAMPLES
 
@@ -181,7 +181,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicatorsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <IMicrosoftGraphTiIndicator[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -244,7 +244,7 @@ BODYPARAMETER `<IPaths18Nbj75SecurityTiindicatorsMicrosoftGraphSubmittiindicator
     - `[Url <String>]`: 
     - `[UserAgent <String>]`: 
 
-VALUE <IMicrosoftGraphTiIndicator\[]>: .
+VALUE <IMicrosoftGraphTiIndicator[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Action <String>]`: tiAction
   - `[ActivityGroupNames <String[]>]`: The cyber threat intelligence name(s) for the parties responsible for the malicious activity covered by the threat indicator.

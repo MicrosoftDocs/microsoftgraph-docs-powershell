@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mgusermailtip
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgUserMailTip
 
 ## SYNOPSIS
-Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
-The requested MailTips are returned in a mailTips collection.
+Invoke action getMailTips
 
 ## SYNTAX
 
@@ -41,9 +39,7 @@ Get-MgUserMailTip -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Get the MailTips of one or more recipients as available to the signed-in user.
-Note that by making a `POST` call to the `getMailTips` action, you can request specific types of MailTips to \nbe returned for more than one recipient at one time.
-The requested MailTips are returned in a mailTips collection.
+Invoke action getMailTips
 
 ## EXAMPLES
 
@@ -208,12 +204,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IComponentsM2Vn8QRequestbodiesGetmailtipsrequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EmailAddresses <String[]>]`: 
   - `[MailTipsOptions <String>]`: mailTipsType
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

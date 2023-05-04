@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgdismissriskyuser
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Invoke-MgDismissRiskyUser
 
 ## SYNOPSIS
-Dismiss the risk of one or more riskyUser objects.
-This action sets the targeted user's risk level to none.
-The maximum count of users to dismiss in one call is 60.
+Invoke action dismiss
 
 ## SYNTAX
 
@@ -28,9 +26,7 @@ Invoke-MgDismissRiskyUser
 ```
 
 ## DESCRIPTION
-Dismiss the risk of one or more riskyUser objects.
-This action sets the targeted user's risk level to none.
-The maximum count of users to dismiss in one call is 60.
+Invoke action dismiss
 
 ## EXAMPLES
 
@@ -161,7 +157,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsZip9X6IdentityprotectionRiskyusersMicrosoftGraphDismissPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UserIds <String[]>]`: 
 

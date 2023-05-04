@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/complete-mgteammigration
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Complete-MgTeamMigration
 
 ## SYNOPSIS
-Complete the message migration process by removing `migration mode` from a team.
-`Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
-You can add members to the team after the request returns a successful response.
+Invoke action completeMigration
 
 ## SYNTAX
 
@@ -26,10 +23,7 @@ Complete-MgTeamMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Complete the message migration process by removing `migration mode` from a team.
-`Migration mode` is a special state where certain operations are barred, like message POST and membership operations during the data migration process.
-After a **completeMigration** request is made, you cannot import additional messages into the team.
-You can add members to the team after the request returns a successful response.
+Invoke action completeMigration
 
 ## EXAMPLES
 
@@ -139,7 +133,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

@@ -1,62 +1,278 @@
 ---
 external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/set-mgofficeclientconfigurationuserpreferencepayload
+online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtwindowmanagedappprotection
 schema: 2.0.0
 ---
 
-# Set-MgOfficeClientConfigurationUserPreferencePayload
+# Update-MgDeviceAppMgtWindowManagedAppProtection
 
 ## SYNOPSIS
-Update media content for the navigation property clientConfigurations in officeConfiguration
+Update the navigation property windowsManagedAppProtections in deviceAppManagement
 
 ## SYNTAX
 
-### Set (Default)
+### UpdateExpanded (Default)
 ```
-Set-MgOfficeClientConfigurationUserPreferencePayload -OfficeClientConfigurationId <String>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceAppMgtWindowManagedAppProtection -WindowsManagedAppProtectionId <String>
+ [-AdditionalProperties <Hashtable>] [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
+ [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
+ [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
+ [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>]
+ [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment1[]>] [-CreatedDateTime <DateTime>]
+ [-DeployedAppCount <Int32>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAssigned]
+ [-LastModifiedDateTime <DateTime>] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
+ [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>] [-MaximumWipeOSVersion <String>]
+ [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
+ [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>] [-MinimumWarningOSVersion <String>]
+ [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>] [-MinimumWipeSdkVersion <String>]
+ [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
+ [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PrintBlocked]
+ [-RoleScopeTagIds <String[]>] [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SetViaIdentity
+### Update
 ```
-Set-MgOfficeClientConfigurationUserPreferencePayload -InputObject <IDevicesCorporateManagementIdentity>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgDeviceAppMgtWindowManagedAppProtection -WindowsManagedAppProtectionId <String>
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgDeviceAppMgtWindowManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-AllowedInboundDataTransferSources <WindowsManagedAppDataTransferLevel>]
+ [-AllowedOutboundClipboardSharingLevel <WindowsManagedAppClipboardSharingLevel>]
+ [-AllowedOutboundDataTransferDestinations <WindowsManagedAppDataTransferLevel>]
+ [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
+ [-Apps <IMicrosoftGraphManagedMobileApp[]>]
+ [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment1[]>] [-CreatedDateTime <DateTime>]
+ [-DeployedAppCount <Int32>] [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsAssigned]
+ [-LastModifiedDateTime <DateTime>] [-MaximumAllowedDeviceThreatLevel <ManagedAppDeviceThreatLevel>]
+ [-MaximumRequiredOSVersion <String>] [-MaximumWarningOSVersion <String>] [-MaximumWipeOSVersion <String>]
+ [-MinimumRequiredAppVersion <String>] [-MinimumRequiredOSVersion <String>]
+ [-MinimumRequiredSdkVersion <String>] [-MinimumWarningAppVersion <String>] [-MinimumWarningOSVersion <String>]
+ [-MinimumWipeAppVersion <String>] [-MinimumWipeOSVersion <String>] [-MinimumWipeSdkVersion <String>]
+ [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
+ [-PeriodOfflineBeforeAccessCheck <TimeSpan>] [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PrintBlocked]
+ [-RoleScopeTagIds <String[]>] [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceAppMgtWindowManagedAppProtection -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsManagedAppProtection> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update media content for the navigation property clientConfigurations in officeConfiguration
+Update the navigation property windowsManagedAppProtections in deviceAppManagement
 
 ## EXAMPLES
 
+### Example 1
+```powershell
+PS C:\> {{ Add example code here }}
+```
+
+{{ Add example description here }}
+
 ## PARAMETERS
 
-### -BodyParameter
-.
+### -AdditionalProperties
+Additional Parameters
 
 ```yaml
-Type: Stream
-Parameter Sets: (All)
+Type: Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedInboundDataTransferSources
+Data can be transferred from/to these classes of apps
+
+```yaml
+Type: WindowsManagedAppDataTransferLevel
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedOutboundClipboardSharingLevel
+Represents the level to which the device's clipboard may be shared between apps
+
+```yaml
+Type: WindowsManagedAppClipboardSharingLevel
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AllowedOutboundDataTransferDestinations
+Data can be transferred from/to these classes of apps
+
+```yaml
+Type: WindowsManagedAppDataTransferLevel
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppActionIfUnableToAuthenticateUser
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: ManagedAppRemediationAction
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Apps
+List of apps to which the policy is deployed.
+To construct, please use Get-Help -Online and see NOTES section for APPS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphManagedMobileApp[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Assignments
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTargetedManagedAppPolicyAssignment1[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+Policy used to configure detailed management settings targeted to specific security groups and for a specified set of apps on a Windows device
+To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWindowsManagedAppProtection
+Parameter Sets: Update, UpdateViaIdentity
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -InFile
-The path to the file to upload.
-This should include a path and file name.
-If you omit the path, the current location will be used.
+### -CreatedDateTime
+The date and time the policy was created.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeployedAppCount
+Indicates the total number of applications for which the current policy is deployed.
+
+```yaml
+Type: Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: 0
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Description
+The policy's description.
 
 ```yaml
 Type: String
-Parameter Sets: (All)
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DisplayName
+Policy display name.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+The unique idenfier for an entity.
+Read-only.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -69,7 +285,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCorporateManagementIdentity
-Parameter Sets: SetViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -79,15 +295,238 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OfficeClientConfigurationId
-key: id of officeClientConfiguration
+### -IsAssigned
+When TRUE, indicates that the policy is deployed to some inclusion groups.
+When FALSE, indicates that the policy is not deployed to any inclusion groups.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastModifiedDateTime
+Last time the policy was modified.
+
+```yaml
+Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MaximumAllowedDeviceThreatLevel
+The maxium threat level allowed for an app to be compliant.
+
+```yaml
+Type: ManagedAppDeviceThreatLevel
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MaximumRequiredOSVersion
+Versions bigger than the specified version will block the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
 
 ```yaml
 Type: String
-Parameter Sets: Set
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MaximumWarningOSVersion
+Versions bigger than the specified version will result in warning message on the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MaximumWipeOSVersion
+Versions bigger than the specified version will wipe the managed app and the associated company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumRequiredAppVersion
+Versions less than the specified version will block the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumRequiredOSVersion
+Versions less than the specified version will block the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumRequiredSdkVersion
+Versions less than the specified version will block the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumWarningAppVersion
+Versions less than the specified version will result in warning message on the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumWarningOSVersion
+Versions less than the specified version will result in warning message on the managed app from accessing company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumWipeAppVersion
+Versions less than the specified version will wipe the managed app and the associated company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumWipeOSVersion
+Versions less than the specified version will wipe the managed app and the associated company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MinimumWipeSdkVersion
+Versions less than the specified version will wipe the managed app and the associated company data.
+For example: '8.1.0' or '13.1.1'.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MobileThreatDefenseRemediationAction
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: ManagedAppRemediationAction
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -103,6 +542,102 @@ Parameter Sets: (All)
 Aliases:
 
 Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PeriodOfflineBeforeAccessCheck
+The period after which access is checked when the device is not connected to the internet.
+For example, PT5M indicates that the interval is 5 minutes in duration.
+A timespan value of PT0S indicates that access will be blocked immediately when the device is not connected to the internet.
+
+```yaml
+Type: TimeSpan
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PeriodOfflineBeforeWipeIsEnforced
+The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
+For example, P5D indicates that the interval is 5 days in duration.
+A timespan value of PT0S indicates that managed data will never be wiped when the device is not connected to the internet.
+
+```yaml
+Type: TimeSpan
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PrintBlocked
+When TRUE, indicates that printing is blocked from managed apps.
+When FALSE, indicates that printing is allowed from managed apps.
+Default value is FALSE.
+
+```yaml
+Type: SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: False
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -RoleScopeTagIds
+List of Scope Tags for this Entity instance.
+
+```yaml
+Type: String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Version
+Version of the entity.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WindowsManagedAppProtectionId
+The unique identifier of windowsManagedAppProtection
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, Update
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -146,84 +681,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### System.IO.Stream
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection
 ## OUTPUTS
 
 ### System.Boolean
 ## NOTES
-
-ALIASES
-
-COMPLEX PARAMETER PROPERTIES
-
-To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
-
-
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
-  - `[AndroidManagedAppProtectionId <String>]`: key: id of androidManagedAppProtection
-  - `[AppLogCollectionRequestId <String>]`: key: id of appLogCollectionRequest
-  - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: key: id of assignmentFilterEvaluationStatusDetails
-  - `[BundleId <String>]`: Usage: bundleId={bundleId}
-  - `[Count <Int64?>]`: Usage: count={count}
-  - `[DefaultManagedAppProtectionId <String>]`: key: id of defaultManagedAppProtection
-  - `[DeviceAppManagementTaskId <String>]`: key: id of deviceAppManagementTask
-  - `[DeviceCompliancePolicyStateId <String>]`: key: id of deviceCompliancePolicyState
-  - `[DeviceConfigurationStateId <String>]`: key: id of deviceConfigurationState
-  - `[DeviceEnrollmentConfigurationId <String>]`: key: id of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Usage: deviceId={deviceId}
-  - `[DeviceInstallStateId <String>]`: key: id of deviceInstallState
-  - `[DeviceLogCollectionResponseId <String>]`: key: id of deviceLogCollectionResponse
-  - `[DeviceManagementTroubleshootingEventId <String>]`: key: id of deviceManagementTroubleshootingEvent
-  - `[EnrollmentConfigurationAssignmentId <String>]`: key: id of enrollmentConfigurationAssignment
-  - `[EnterpriseCodeSigningCertificateId <String>]`: key: id of enterpriseCodeSigningCertificate
-  - `[IosLobAppProvisioningConfigurationAssignmentId <String>]`: key: id of iosLobAppProvisioningConfigurationAssignment
-  - `[IosLobAppProvisioningConfigurationId <String>]`: key: id of iosLobAppProvisioningConfiguration
-  - `[IosManagedAppProtectionId <String>]`: key: id of iosManagedAppProtection
-  - `[ManagedAppOperationId <String>]`: key: id of managedAppOperation
-  - `[ManagedAppPolicyId <String>]`: key: id of managedAppPolicy
-  - `[ManagedAppRegistrationId <String>]`: key: id of managedAppRegistration
-  - `[ManagedAppStatusId <String>]`: key: id of managedAppStatus
-  - `[ManagedDeviceId <String>]`: key: id of managedDevice
-  - `[ManagedDeviceMobileAppConfigurationAssignmentId <String>]`: key: id of managedDeviceMobileAppConfigurationAssignment
-  - `[ManagedDeviceMobileAppConfigurationDeviceStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationDeviceStatus
-  - `[ManagedDeviceMobileAppConfigurationId <String>]`: key: id of managedDeviceMobileAppConfiguration
-  - `[ManagedDeviceMobileAppConfigurationStateId <String>]`: key: id of managedDeviceMobileAppConfigurationState
-  - `[ManagedDeviceMobileAppConfigurationUserStatusId <String>]`: key: id of managedDeviceMobileAppConfigurationUserStatus
-  - `[ManagedEBookAssignmentId <String>]`: key: id of managedEBookAssignment
-  - `[ManagedEBookCategoryId <String>]`: key: id of managedEBookCategory
-  - `[ManagedEBookId <String>]`: key: id of managedEBook
-  - `[ManagedMobileAppId <String>]`: key: id of managedMobileApp
-  - `[MdmWindowsInformationProtectionPolicyId <String>]`: key: id of mdmWindowsInformationProtectionPolicy
-  - `[MobileAppAssignmentId <String>]`: key: id of mobileAppAssignment
-  - `[MobileAppCategoryId <String>]`: key: id of mobileAppCategory
-  - `[MobileAppId <String>]`: key: id of mobileApp
-  - `[MobileAppInstallStatusId <String>]`: key: id of mobileAppInstallStatus
-  - `[MobileAppIntentAndStateId <String>]`: key: id of mobileAppIntentAndState
-  - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: key: id of mobileAppProvisioningConfigGroupAssignment
-  - `[MobileAppRelationshipId <String>]`: key: id of mobileAppRelationship
-  - `[MobileAppTroubleshootingEventId <String>]`: key: id of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: key: id of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: key: id of officeClientConfiguration
-  - `[PolicySetAssignmentId <String>]`: key: id of policySetAssignment
-  - `[PolicySetId <String>]`: key: id of policySet
-  - `[PolicySetItemId <String>]`: key: id of policySetItem
-  - `[SecurityBaselineSettingStateId <String>]`: key: id of securityBaselineSettingState
-  - `[SecurityBaselineStateId <String>]`: key: id of securityBaselineState
-  - `[SideLoadingKeyId <String>]`: key: id of sideLoadingKey
-  - `[Status <String>]`: Usage: status={status}
-  - `[TargetedManagedAppConfigurationId <String>]`: key: id of targetedManagedAppConfiguration
-  - `[TargetedManagedAppPolicyAssignmentId <String>]`: key: id of targetedManagedAppPolicyAssignment
-  - `[UserAppInstallStatusId <String>]`: key: id of userAppInstallStatus
-  - `[UserId <String>]`: key: id of user
-  - `[UserInstallStateSummaryId <String>]`: key: id of userInstallStateSummary
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName={userPrincipalName}
-  - `[VppTokenId <String>]`: key: id of vppToken
-  - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyAssignment
-  - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
-  - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: key: id of windowsDefenderApplicationControlSupplementalPolicy
-  - `[WindowsDeviceMalwareStateId <String>]`: key: id of windowsDeviceMalwareState
-  - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: key: id of windowsInformationProtectionDeviceRegistration
-  - `[WindowsInformationProtectionPolicyId <String>]`: key: id of windowsInformationProtectionPolicy
-  - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
+Please use Get-Help -Online.
 
 ## RELATED LINKS
+
+[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtwindowmanagedappprotection](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmgtwindowmanagedappprotection)
+

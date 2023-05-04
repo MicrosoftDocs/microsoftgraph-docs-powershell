@@ -1,6 +1,6 @@
----
+﻿---
 Module Name: Microsoft.Graph.Devices.CorporateManagement
-Module Guid: 6e9cc2a6-9d98-4491-a790-5ae7a4a07198
+Module Guid: e49af5e0-9b04-442b-8ee1-6c9d57c35387
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,21 +11,6 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Devices.CorporateManagement Cmdlets
-### [Get-MgOfficeClientConfiguration](Get-MgOfficeClientConfiguration.md)
-List of office Client configuration.
-
-### [Get-MgOfficeClientConfigurationAssignment](Get-MgOfficeClientConfigurationAssignment.md)
-The list of group assignments for the policy.
-
-### [Get-MgOfficeClientConfigurationPolicyPayload](Get-MgOfficeClientConfigurationPolicyPayload.md)
-Policy settings JSON string in binary format, these values cannot be changed by the user.
-
-### [Get-MgOfficeClientConfigurationUserPreferencePayload](Get-MgOfficeClientConfigurationUserPreferencePayload.md)
-Preference settings JSON string in binary format, these values can be overridden by the user.
-
-### [Get-MgOfficeConfiguration](Get-MgOfficeConfiguration.md)
-Get officeConfiguration
-
 ### [Get-MgUserDeviceEnrollmentConfiguration](Get-MgUserDeviceEnrollmentConfiguration.md)
 Get enrollment configurations targeted to the user
 
@@ -112,12 +97,6 @@ Invoke action hasPayloadLinks
 
 ### [Invoke-MgHasDeviceAppMgtTargetedManagedAppConfigurationPayloadLink](Invoke-MgHasDeviceAppMgtTargetedManagedAppConfigurationPayloadLink.md)
 Invoke action hasPayloadLinks
-
-### [Invoke-MgLobDeviceAppMgtGetMobileApp](Invoke-MgLobDeviceAppMgtGetMobileApp.md)
-Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
-
-### [Invoke-MgLobDeviceAppMgtListMobileApp](Invoke-MgLobDeviceAppMgtListMobileApp.md)
-Get the items of type microsoft.graph.managedMobileLobApp in the microsoft.graph.mobileApp collection
 
 ### [Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp](Invoke-MgTargetDeviceAppMgtManagedAppPolicyApp.md)
 Invoke action targetApps
@@ -301,12 +280,6 @@ Invoke action targetApps
 
 ### [Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp](Invoke-MgTargetDeviceAppMgtTargetedManagedAppConfigurationApp.md)
 Invoke action targetApps
-
-### [New-MgOfficeClientConfiguration](New-MgOfficeClientConfiguration.md)
-Create new navigation property to clientConfigurations for officeConfiguration
-
-### [New-MgOfficeClientConfigurationAssignment](New-MgOfficeClientConfigurationAssignment.md)
-Create new navigation property to assignments for officeConfiguration
 
 ### [New-MgUserDeviceEnrollmentConfiguration](New-MgUserDeviceEnrollmentConfiguration.md)
 Create new navigation property to deviceEnrollmentConfigurations for users
@@ -548,12 +521,6 @@ Create new navigation property to appLogCollectionRequests for users
 ### [New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Create new navigation property to appLogCollectionRequests for users
 
-### [Remove-MgOfficeClientConfiguration](Remove-MgOfficeClientConfiguration.md)
-Delete navigation property clientConfigurations for officeConfiguration
-
-### [Remove-MgOfficeClientConfigurationAssignment](Remove-MgOfficeClientConfigurationAssignment.md)
-Delete navigation property assignments for officeConfiguration
-
 ### [Remove-MgUserDeviceEnrollmentConfiguration](Remove-MgUserDeviceEnrollmentConfiguration.md)
 Delete navigation property deviceEnrollmentConfigurations for users
 
@@ -604,6 +571,9 @@ Delete navigation property mobileAppIntentAndStates for users
 
 ### [Remove-MgUserMobileAppTroubleshootingEvent](Remove-MgUserMobileAppTroubleshootingEvent.md)
 Delete navigation property mobileAppTroubleshootingEvents for users
+
+### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
+Delete navigation property appLogCollectionRequests for users
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Delete navigation property appLogCollectionRequests for users
@@ -688,255 +658,6 @@ The collection property of AppLogUploadRequest.
 
 ### [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 The collection property of AppLogUploadRequest.
-
-### [Set-MgOfficeClientConfiguration](Set-MgOfficeClientConfiguration.md)
-Invoke action assign
-
-### [Set-MgOfficeClientConfigurationPolicyPayload](Set-MgOfficeClientConfigurationPolicyPayload.md)
-Policy settings JSON string in binary format, these values cannot be changed by the user.
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Preference settings JSON string in binary format, these values can be overridden by the user.
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Set-MgOfficeClientConfigurationUserPreferencePayload](Set-MgOfficeClientConfigurationUserPreferencePayload.md)
-Update media content for the navigation property clientConfigurations in officeConfiguration
-
-### [Update-MgOfficeClientConfiguration](Update-MgOfficeClientConfiguration.md)
-Update the navigation property clientConfigurations in officeConfiguration
-
-### [Update-MgOfficeClientConfigurationAssignment](Update-MgOfficeClientConfigurationAssignment.md)
-Update the navigation property assignments in officeConfiguration
-
-### [Update-MgOfficeClientConfigurationPriority](Update-MgOfficeClientConfigurationPriority.md)
-Invoke action updatePriorities
-
-### [Update-MgOfficeConfiguration](Update-MgOfficeConfiguration.md)
-Update officeConfiguration
 
 ### [Update-MgUserDeviceEnrollmentConfiguration](Update-MgUserDeviceEnrollmentConfiguration.md)
 Update the navigation property deviceEnrollmentConfigurations in users

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementvirtualendpointreportdailyaggregatedremoteconnectionreport
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
 
 ## SYNOPSIS
-Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
+Invoke action getDailyAggregatedRemoteConnectionReports
 
 ## SYNTAX
 
@@ -28,7 +28,7 @@ Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport
 ```
 
 ## DESCRIPTION
-Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
+Invoke action getDailyAggregatedRemoteConnectionReports
 
 ## EXAMPLES
 
@@ -249,7 +249,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths11L0XtbDevicemanagementVirtualendpointReportsMicrosoftGraphGetdailyaggregatedremoteconnectionreportsPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Filter <String>]`: 
   - `[GroupBy <String[]>]`: 

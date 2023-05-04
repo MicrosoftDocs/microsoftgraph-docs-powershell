@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/restart-mgteamworkdevice
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Restart-MgTeamworkDevice
 
 ## SYNOPSIS
-Restart the specified Microsoft Teams-enabled device asynchronously.
-A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
+Invoke action restart
 
 ## SYNTAX
 
@@ -24,8 +23,7 @@ Restart-MgTeamworkDevice -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Restart the specified Microsoft Teams-enabled device asynchronously.
-A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
+Invoke action restart
 
 ## EXAMPLES
 
@@ -135,7 +133,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/start-mgeducationsynchronizationprofile
@@ -8,11 +8,7 @@ schema: 2.0.0
 # Start-MgEducationSynchronizationProfile
 
 ## SYNOPSIS
-Verify the files uploaded to a specific school data synchronization profile in the tenant.
-If the verification is successful, synchronization will start on the profile.
-Otherwise, the response will contain errors and warnings.
-If the response contains errors, the synchronization will not start.
-If the response contains only warnings, synchronization will start.
+Invoke action start
 
 ## SYNTAX
 
@@ -29,11 +25,7 @@ Start-MgEducationSynchronizationProfile -InputObject <IEducationIdentity> [-What
 ```
 
 ## DESCRIPTION
-Verify the files uploaded to a specific school data synchronization profile in the tenant.
-If the verification is successful, synchronization will start on the profile.
-Otherwise, the response will contain errors and warnings.
-If the response contains errors, the synchronization will not start.
-If the response contains only warnings, synchronization will start.
+Invoke action start
 
 ## EXAMPLES
 
@@ -128,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgarchiveteam
@@ -8,12 +8,7 @@ schema: 2.0.0
 # Invoke-MgArchiveTeam
 
 ## SYNOPSIS
-Archive the specified team.
-\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
-Archiving is an async operation.
-A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
-To archive a team, the team and group must have an owner.
-To restore a team from its archived state, use the API to unarchive.
+Invoke action archive
 
 ## SYNTAX
 
@@ -44,12 +39,7 @@ Invoke-MgArchiveTeam -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Archive the specified team.
-\nWhen a team is archived, users can no longer send or like messages on any channel in the team, edit the team's name, description, or other settings, or in general make most changes to the team.\nMembership changes to the team continue to be allowed.
-Archiving is an async operation.
-A team is archived once the async operation completes successfully, which may occur subsequent to a response from this API.
-To archive a team, the team and group must have an owner.
-To restore a team from its archived state, use the API to unarchive.
+Invoke action archive
 
 ## EXAMPLES
 
@@ -206,11 +196,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsBezc4TeamsTeamIdMicrosoftGraphArchivePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ShouldSetSpoSiteReadOnlyForMembers <Boolean?>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+INPUTOBJECT <ITeamsIdentity>: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat

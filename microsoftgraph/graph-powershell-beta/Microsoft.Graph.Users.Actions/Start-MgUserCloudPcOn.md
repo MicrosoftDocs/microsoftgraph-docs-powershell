@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/start-mgusercloudpcon
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Start-MgUserCloudPcOn
 
 ## SYNOPSIS
-Power on a Windows 365 Frontline Cloud PC.
-This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
-After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
-Only IT admin users can perform this action.
+Invoke action powerOn
 
 ## SYNTAX
 
@@ -28,10 +25,7 @@ Start-MgUserCloudPcOn -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
 ```
 
 ## DESCRIPTION
-Power on a Windows 365 Frontline Cloud PC.
-This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
-After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
-Only IT admin users can perform this action.
+Invoke action powerOn
 
 ## EXAMPLES
 
@@ -147,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

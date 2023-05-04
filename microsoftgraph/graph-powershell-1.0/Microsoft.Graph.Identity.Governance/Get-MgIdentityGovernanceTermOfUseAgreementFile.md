@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancetermofuseagreementfile
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgIdentityGovernanceTermOfUseAgreementFile
 
 ## SYNOPSIS
-Retrieve the details of the default file for an agreement, including the language and version information.
-The file information is specified through the agreementFile object.
+Default PDF linked to this agreement.
 
 ## SYNTAX
 
@@ -27,8 +25,7 @@ Get-MgIdentityGovernanceTermOfUseAgreementFile -InputObject <IIdentityGovernance
 ```
 
 ## DESCRIPTION
-Retrieve the details of the default file for an agreement, including the language and version information.
-The file information is specified through the agreementFile object.
+Default PDF linked to this agreement.
 
 ## EXAMPLES
 
@@ -122,7 +119,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

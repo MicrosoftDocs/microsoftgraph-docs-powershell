@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementvirtualendpointcrosscloudgovernmentorganizationmapping
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 
 ## SYNOPSIS
-Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
+Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.
 
 ## SYNTAX
 
@@ -18,7 +18,7 @@ Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping [-E
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
+Cloud PC organization mapping between public and US Government Community Cloud (GCC) organizations.
 
 ## EXAMPLES
 

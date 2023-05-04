@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/reset-mguserauthenticationmethodpassword
@@ -8,12 +8,7 @@ schema: 2.0.0
 # Reset-MgUserAuthenticationMethodPassword
 
 ## SYNOPSIS
-Reset a user's password, represented by a password authentication method object.
-This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.
-This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback.
-The admin can either provide a new password or have the system generate one.
-The user is prompted to change their password on their next sign in.
-This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
+Invoke action resetPassword
 
 ## SYNTAX
 
@@ -44,12 +39,7 @@ Reset-MgUserAuthenticationMethodPassword -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Reset a user's password, represented by a password authentication method object.
-This can only be done by an administrator with appropriate permissions and cannot be performed on a user's own account.
-This flow writes the new password to Azure Active Directory and pushes it to on-premises Active Directory if configured using password writeback.
-The admin can either provide a new password or have the system generate one.
-The user is prompted to change their password on their next sign in.
-This reset is a long-running operation and will return a **Location** header with a link where the caller can periodically check for the status of the reset operation.
+Invoke action resetPassword
 
 ## EXAMPLES
 
@@ -197,11 +187,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1KjcdupUsersUserIdAuthenticationMethodsAuthenticationmethodIdMicrosoftGraphResetpasswordPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NewPassword <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstancedownloaduri
@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 
 ## SYNOPSIS
-Generates a URI for an accessReviewHistoryInstance object the **status** for which is `done`.
-Each URI can be used to retrieve the instance's review history data.
-Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
+Invoke action generateDownloadUri
 
 ## SYNTAX
 
@@ -28,9 +26,7 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
 ```
 
 ## DESCRIPTION
-Generates a URI for an accessReviewHistoryInstance object the **status** for which is `done`.
-Each URI can be used to retrieve the instance's review history data.
-Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
+Invoke action generateDownloadUri
 
 ## EXAMPLES
 
@@ -140,7 +136,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

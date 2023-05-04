@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/add-mgserviceprincipaltokensigningcertificate
@@ -8,14 +8,7 @@ schema: 2.0.0
 # Add-MgServicePrincipalTokenSigningCertificate
 
 ## SYNOPSIS
-Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with **usage** set to `Sign`.\n    + A public key object with **usage** set to `Verify`.\n+ The passwordCredentials object.
-All the objects have the same value of **customKeyIdentifier**.
-The **passwordCredential** is used to open the PFX file (private key).
-It and the associated private key object have the same value of **keyId**.
-Once set during creation through the **displayName** property, the subject of the certificate cannot be updated.
-The **startDateTime** is set to the same time the certificate is created using the action.
-The **endDateTime** can be up to three years after the certificate is created.
+Invoke action addTokenSigningCertificate
 
 ## SYNTAX
 
@@ -47,14 +40,7 @@ Add-MgServicePrincipalTokenSigningCertificate -InputObject <IApplicationsIdentit
 ```
 
 ## DESCRIPTION
-Creates a self-signed signing certificate and returns a selfSignedCertificate object, which is the public part of the generated certificate.
-The self-signed signing certificate is composed of the following objects which are added to the servicePrincipal: \n+ The keyCredentials object with the following objects:\n    + A private key object with **usage** set to `Sign`.\n    + A public key object with **usage** set to `Verify`.\n+ The passwordCredentials object.
-All the objects have the same value of **customKeyIdentifier**.
-The **passwordCredential** is used to open the PFX file (private key).
-It and the associated private key object have the same value of **keyId**.
-Once set during creation through the **displayName** property, the subject of the certificate cannot be updated.
-The **startDateTime** is set to the same time the certificate is created using the action.
-The **endDateTime** can be up to three years after the certificate is created.
+Invoke action addTokenSigningCertificate
 
 ## EXAMPLES
 
@@ -215,12 +201,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsEyijssServiceprincipalsServiceprincipalIdMicrosoftGraphAddtokensigningcertificatePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EndDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

@@ -1,16 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharedriveitem
 schema: 2.0.0
-ms.prod: files
 ---
 
 # Get-MgShareDriveItem
 
 ## SYNOPSIS
-Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
-To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
+Used to access the underlying driveItem
 
 ## SYNTAX
 
@@ -27,8 +25,7 @@ Get-MgShareDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
-To use a sharing URL with this API, your app needs to transform the URL into a sharing token.
+Used to access the underlying driveItem
 
 ## EXAMPLES
 
@@ -131,7 +128,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

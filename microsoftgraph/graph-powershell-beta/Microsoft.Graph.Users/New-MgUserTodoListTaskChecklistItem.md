@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mgusertodolisttaskchecklistitem
@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserTodoListTaskChecklistItem
 
 ## SYNOPSIS
-Create a new checklistItem object as a subtask in a bigger todoTask.
+Create new navigation property to checklistItems for users
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ New-MgUserTodoListTaskChecklistItem -InputObject <IUsersIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Create a new checklistItem object as a subtask in a bigger todoTask.
+Create new navigation property to checklistItems for users
 
 ## EXAMPLES
 
@@ -289,7 +289,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
+BODYPARAMETER <IMicrosoftGraphChecklistItem>: checklistItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[CheckedDateTime <DateTime?>]`: The date and time when the checklistItem was finished.
@@ -297,7 +297,7 @@ BODYPARAMETER `<IMicrosoftGraphChecklistItem>`: checklistItem
   - `[DisplayName <String>]`: Field indicating the title of checklistItem.
   - `[IsChecked <Boolean?>]`: State indicating whether the item is checked off or not.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersIdentity>: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession

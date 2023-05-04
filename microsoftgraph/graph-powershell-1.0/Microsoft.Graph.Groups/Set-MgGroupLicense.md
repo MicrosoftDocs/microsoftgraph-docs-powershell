@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggrouplicense
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Set-MgGroupLicense
 
 ## SYNOPSIS
-Add or remove licenses on the group.
-Licenses assigned to the group will be assigned to all users in the group.
-To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
-To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+Invoke action assignLicense
 
 ## SYNTAX
 
@@ -42,10 +39,7 @@ Set-MgGroupLicense -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Add or remove licenses on the group.
-Licenses assigned to the group will be assigned to all users in the group.
-To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
-To get the subscriptions available in the directory, perform a GET subscribedSkus request.
+Invoke action assignLicense
 
 ## EXAMPLES
 
@@ -239,18 +233,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDLICENSES <IMicrosoftGraphAssignedLicense\[]>: .
+ADDLICENSES <IMicrosoftGraphAssignedLicense[]>: .
   - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
   - `[SkuId <String>]`: The unique identifier for the SKU.
 
-BODYPARAMETER `<IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths6Fg5LiGroupsGroupIdMicrosoftGraphAssignlicensePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AddLicenses <IMicrosoftGraphAssignedLicense[]>]`: 
     - `[DisabledPlans <String[]>]`: A collection of the unique identifiers for plans that have been disabled.
     - `[SkuId <String>]`: The unique identifier for the SKU.
   - `[RemoveLicenses <String[]>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+INPUTOBJECT <IGroupsIdentity>: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -267,6 +261,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

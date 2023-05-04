@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/send-mgidentitygovernanceaccessreviewdefinitioninstancereminder
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder
 
 ## SYNOPSIS
-Send a reminder to the reviewers of an active accessReviewInstance.
+Invoke action sendReminder
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -InputObject <II
 ```
 
 ## DESCRIPTION
-Send a reminder to the reviewers of an active accessReviewInstance.
+Invoke action sendReminder
 
 ## EXAMPLES
 
@@ -150,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

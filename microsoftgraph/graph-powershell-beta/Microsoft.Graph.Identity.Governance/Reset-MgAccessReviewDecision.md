@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/reset-mgaccessreviewdecision
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Reset-MgAccessReviewDecision
 
 ## SYNOPSIS
-In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.
-The target object can be either a one-time access review, or an instance of a recurring access review.
-Previous decisions are no longer recorded, but reviewers can continue to update decisions.
+Invoke action resetDecisions
 
 ## SYNTAX
 
@@ -26,9 +24,7 @@ Reset-MgAccessReviewDecision -InputObject <IIdentityGovernanceIdentity> [-PassTh
 ```
 
 ## DESCRIPTION
-In the Azure AD access reviews feature, reset the decisions of a currently active accessReview.
-The target object can be either a one-time access review, or an instance of a recurring access review.
-Previous decisions are no longer recorded, but reviewers can continue to update decisions.
+Invoke action resetDecisions
 
 ## EXAMPLES
 
@@ -138,7 +134,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

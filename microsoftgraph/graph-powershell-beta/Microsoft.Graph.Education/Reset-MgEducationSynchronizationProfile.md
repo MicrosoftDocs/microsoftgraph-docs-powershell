@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/reset-mgeducationsynchronizationprofile
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Reset-MgEducationSynchronizationProfile
 
 ## SYNOPSIS
-Reset the sync of a specific school data synchronization profile in the tenant.
+Invoke action reset
 
 ## SYNTAX
 
@@ -25,7 +25,7 @@ Reset-MgEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Pass
 ```
 
 ## DESCRIPTION
-Reset the sync of a specific school data synchronization profile in the tenant.
+Invoke action reset
 
 ## EXAMPLES
 
@@ -135,7 +135,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory

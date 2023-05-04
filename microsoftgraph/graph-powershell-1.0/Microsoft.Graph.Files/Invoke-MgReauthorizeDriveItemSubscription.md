@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/invoke-mgreauthorizedriveitemsubscription
@@ -12,13 +12,13 @@ Invoke action reauthorize
 
 ## SYNTAX
 
-### Reauthorize1 (Default)
+### Reauthorize (Default)
 ```
 Invoke-MgReauthorizeDriveItemSubscription -DriveId <String> -DriveItemId <String> -SubscriptionId <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReauthorizeViaIdentity1
+### ReauthorizeViaIdentity
 ```
 Invoke-MgReauthorizeDriveItemSubscription -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: ReauthorizeViaIdentity1
+Parameter Sets: ReauthorizeViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ The unique identifier of subscription
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType

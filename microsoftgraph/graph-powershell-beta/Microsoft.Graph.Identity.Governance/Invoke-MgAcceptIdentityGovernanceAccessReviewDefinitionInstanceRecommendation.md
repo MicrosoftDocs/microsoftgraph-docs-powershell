@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgacceptidentitygovernanceaccessreviewdefinitioninstancerecommendation
@@ -8,9 +8,7 @@ schema: 2.0.0
 # Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
 
 ## SYNOPSIS
-Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
-Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
-If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
+Invoke action acceptRecommendations
 
 ## SYNTAX
 
@@ -27,9 +25,7 @@ Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation
 ```
 
 ## DESCRIPTION
-Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem objects that have not been reviewed for an accessReviewInstance object for which the calling user is a reviewer.
-Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
-If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
+Invoke action acceptRecommendations
 
 ## EXAMPLES
 
@@ -156,7 +152,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

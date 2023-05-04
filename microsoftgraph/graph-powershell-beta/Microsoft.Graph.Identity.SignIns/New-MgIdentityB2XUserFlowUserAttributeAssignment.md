@@ -1,15 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflowuserattributeassignment
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityB2XUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
-Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
+Create new navigation property to userAttributeAssignments for identity
 
 ## SYNTAX
 
@@ -44,7 +43,7 @@ New-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsI
 ```
 
 ## DESCRIPTION
-Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
+Create new navigation property to userAttributeAssignments for identity
 
 ## EXAMPLES
 
@@ -294,7 +293,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttributeAssignment>`: identityUserFlowAttributeAssignment
+BODYPARAMETER <IMicrosoftGraphIdentityUserFlowAttributeAssignment>: identityUserFlowAttributeAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
@@ -313,7 +312,7 @@ BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttributeAssignment>`: identityUs
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -350,6 +349,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -387,7 +387,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttribute
+USERATTRIBUTE <IMicrosoftGraphIdentityUserFlowAttribute>: identityUserFlowAttribute
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
@@ -395,7 +395,7 @@ USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttr
   - `[DisplayName <String>]`: The display name of the user flow attribute.
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
-USERATTRIBUTEVALUES <IMicrosoftGraphUserAttributeValuesItem\[]>: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
+USERATTRIBUTEVALUES <IMicrosoftGraphUserAttributeValuesItem[]>: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
   - `[IsDefault <Boolean?>]`: Determines whether the value is set as the default.
   - `[Name <String>]`: The display name of the property displayed to the user in the user flow.
   - `[Value <String>]`: The value that is set when this item is selected.

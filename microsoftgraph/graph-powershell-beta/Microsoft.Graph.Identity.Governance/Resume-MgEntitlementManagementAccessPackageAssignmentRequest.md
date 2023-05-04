@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/resume-mgentitlementmanagementaccesspackageassignmentrequest
@@ -8,8 +8,7 @@ schema: 2.0.0
 # Resume-MgEntitlementManagementAccessPackageAssignmentRequest
 
 ## SYNOPSIS
-In Azure AD entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
-It is performed on an accessPackageAssignmentRequest object whose **requestStatus** is in a `WaitingForCallback` state.
+Invoke action resume
 
 ## SYNTAX
 
@@ -42,8 +41,7 @@ Resume-MgEntitlementManagementAccessPackageAssignmentRequest -InputObject <IIden
 ```
 
 ## DESCRIPTION
-In Azure AD entitlement management, when an access package policy has been enabled to call out a custom extension and the request processing is waiting for the callback from the customer, the customer can initiate a resume action.
-It is performed on an accessPackageAssignmentRequest object whose **requestStatus** is in a `WaitingForCallback` state.
+Invoke action resume
 
 ## EXAMPLES
 
@@ -221,14 +219,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsMdeg1MIdentitygovernanceEntitlementmanagementAccesspackageassignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsMdeg1MIdentitygovernanceEntitlementmanagementAccesspackageassignmentrequestsAccesspackageassignmentrequestIdMicrosoftGraphResumePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Data <IMicrosoftGraphCustomExtensionData>]`: customExtensionData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <String>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

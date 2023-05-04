@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgfilterentitlementmanagementaccesspackageassignmentapprovalbycurrentuser
@@ -12,14 +12,14 @@ Invoke function filterByCurrentUser
 
 ## SYNTAX
 
-### Filter1 (Default)
+### Filter (Default)
 ```
 Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser -On <String> [-Count]
  [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
 
-### FilterViaIdentity1
+### FilterViaIdentity
 ```
 Invoke-MgFilterEntitlementManagementAccessPackageAssignmentApprovalByCurrentUser
  -InputObject <IIdentityGovernanceIdentity> [-Count] [-Filter <String>] [-Property <String[]>]
@@ -69,7 +69,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: FilterViaIdentity1
+Parameter Sets: FilterViaIdentity
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ Usage: on='{on}'
 
 ```yaml
 Type: String
-Parameter Sets: Filter1
+Parameter Sets: Filter
 Aliases:
 
 Required: True
@@ -187,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

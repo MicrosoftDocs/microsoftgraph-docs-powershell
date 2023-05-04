@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mglogcommunicationcallteleconferencedevicequality
@@ -8,13 +8,7 @@ schema: 2.0.0
 # Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 
 ## SYNOPSIS
-Log video teleconferencing device quality data.
-The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
-Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
-One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.
-The other media leg is between the CVI bot and the VTC device.
-The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
-This method is only for the CVI partners to provide their media quality data.
+Invoke action logTeleconferenceDeviceQuality
 
 ## SYNTAX
 
@@ -32,13 +26,7 @@ Invoke-MgLogCommunicationCallTeleconferenceDeviceQuality
 ```
 
 ## DESCRIPTION
-Log video teleconferencing device quality data.
-The Cloud Video Interop (CVI) bot represents video teleconferencing (VTC) devices and acts as a back-to-back agent for a VTC device in a conference call.
-Because a CVI bot is in the middle of the VTC and Microsoft Teams infrastructure as a VTC proxy, it has two media legs.
-One media leg is between the CVI bot and Teams infrastructure, such as Teams conference server or a Teams client.
-The other media leg is between the CVI bot and the VTC device.
-The third-party partners own the VTC media leg and the Teams infrastructure cannot access the quality data of the third-party call leg.
-This method is only for the CVI partners to provide their media quality data.
+Invoke action logTeleconferenceDeviceQuality
 
 ## EXAMPLES
 
@@ -248,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferencedevicequalityPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Quality <IMicrosoftGraphTeleconferenceDeviceQuality>]`: teleconferenceDeviceQuality
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -284,7 +272,7 @@ BODYPARAMETER `<IPaths1JbdsmaCommunicationsCallsMicrosoftGraphLogteleconferenced
       - `[RemotePort <Int32?>]`: The remote media port.
     - `[ParticipantId <String>]`: A unique identifier for a specific participant in a conference. The CVI partner needs to copy over Call.MyParticipantId to this property.
 
-QUALITY `<IMicrosoftGraphTeleconferenceDeviceQuality>`: teleconferenceDeviceQuality
+QUALITY <IMicrosoftGraphTeleconferenceDeviceQuality>: teleconferenceDeviceQuality
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CallChainId <String>]`: A unique identifier for all  the participant calls in a conference or a unique identifier for two participant calls in P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
   - `[CloudServiceDeploymentEnvironment <String>]`: A geo-region where the service is deployed, such as ProdNoam.

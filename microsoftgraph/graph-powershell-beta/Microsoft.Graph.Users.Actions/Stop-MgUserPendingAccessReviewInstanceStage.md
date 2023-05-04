@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/stop-mguserpendingaccessreviewinstancestage
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Stop-MgUserPendingAccessReviewInstanceStage
 
 ## SYNOPSIS
-Stop an access review stage that is `inProgress`.
-After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
-If there are subsequent stages that depend on the completed stage, the next stage will be created.
-The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
+Invoke action stop
 
 ## SYNTAX
 
@@ -28,10 +25,7 @@ Stop-MgUserPendingAccessReviewInstanceStage -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Stop an access review stage that is `inProgress`.
-After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
-If there are subsequent stages that depend on the completed stage, the next stage will be created.
-The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
+Invoke action stop
 
 ## EXAMPLES
 
@@ -162,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

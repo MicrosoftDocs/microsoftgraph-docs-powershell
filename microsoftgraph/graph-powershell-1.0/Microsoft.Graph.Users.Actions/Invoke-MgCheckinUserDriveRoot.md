@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgcheckinuserdriveroot
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgCheckinUserDriveRoot
 
 ## SYNOPSIS
-Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+Invoke action checkin
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgCheckinUserDriveRoot -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Check in a checked out **driveItem** resource, which makes the version of the document available to others.
+Invoke action checkin
 
 ## EXAMPLES
 
@@ -232,12 +232,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths15OhbdrUsersUserIdDrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPaths15OhbdrUsersUserIdDrivesDriveIdRootMicrosoftGraphCheckinPostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CheckInAs <String>]`: 
   - `[Comment <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest

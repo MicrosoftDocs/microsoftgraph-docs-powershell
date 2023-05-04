@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/submit-mgeducationclassassignmentsubmission
@@ -8,12 +8,7 @@ schema: 2.0.0
 # Submit-MgEducationClassAssignmentSubmission
 
 ## SYNOPSIS
-Indicate that a student is done with the work and is ready to hand in the assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `working` to `submitted`.
-During the submit process, all the resources are copied to the **submittedResources** bucket.
-The teacher will be looking at the submitted resources list for grading.
-A teacher can also submit a student's assignment on their behalf.
+Invoke action submit
 
 ## SYNTAX
 
@@ -30,12 +25,7 @@ Submit-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-
 ```
 
 ## DESCRIPTION
-Indicate that a student is done with the work and is ready to hand in the assignment.
-Only teachers, students, and applications with application permissions can perform this operation.
-This method changes the status of the submission from `working` to `submitted`.
-During the submit process, all the resources are copied to the **submittedResources** bucket.
-The teacher will be looking at the submitted resources list for grading.
-A teacher can also submit a student's assignment on their behalf.
+Invoke action submit
 
 ## EXAMPLES
 
@@ -160,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory

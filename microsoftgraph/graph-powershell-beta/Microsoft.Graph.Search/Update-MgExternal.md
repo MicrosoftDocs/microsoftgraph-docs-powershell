@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternal
@@ -159,7 +159,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
+BODYPARAMETER <IMicrosoftGraphExternalConnectorsExternal1>: external
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Connections <IMicrosoftGraphExternalConnectorsExternalConnection[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -247,6 +247,9 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
         - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable. Only properties of type string or stringCollection can be searchable. Non-searchable properties are not added to the search index. Optional.
         - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl, containerName, containerUrl. Note that you must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: iconUrl, containerName, containerUrl.
         - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
+        - `[RankingHint <IMicrosoftGraphExternalConnectorsRankingHint>]`: rankingHint
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ImportanceScore <String>]`: importanceScore
         - `[Type <String>]`: propertyType
     - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -329,7 +332,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsExternal1>`: external
     - `[SourceSystems <IMicrosoftGraphIndustryDataSourceSystemDefinition[]>]`: Set of source definitions that represents real-world external systems.
     - `[Years <IMicrosoftGraphIndustryDataYearTimePeriodDefinition[]>]`: Set of years represented in the system.
 
-CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
+CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[ActivitySettings <IMicrosoftGraphExternalConnectorsActivitySettings>]`: activitySettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -415,13 +418,16 @@ CONNECTIONS <IMicrosoftGraphExternalConnectorsExternalConnection\[]>: .
       - `[IsSearchable <Boolean?>]`: Specifies if the property is searchable. Only properties of type string or stringCollection can be searchable. Non-searchable properties are not added to the search index. Optional.
       - `[Labels <String[]>]`: Specifies one or more well-known tags added against a property. Labels help Microsoft Search understand the semantics of the data in the connection. Adding appropriate labels would result in an enhanced search experience (e.g. better relevance). Optional.The possible values are: title, url, createdBy, lastModifiedBy, authors, createdDateTime, lastModifiedDateTime, fileName, fileExtension, unknownFutureValue, iconUrl, containerName, containerUrl. Note that you must use the Prefer: include-unknown-enum-members request header to get the following values in this evolvable enum: iconUrl, containerName, containerUrl.
       - `[Name <String>]`: The name of the property. Maximum 32 characters. Only alphanumeric characters allowed. For example, the property name may not contain control characters, whitespace, or any of the following: :, ;, ,, (, ), [, ], {, }, %, $, +, !, *, =, &, ?, @, #, /, ~, ', ', <, >, `, ^.  Required.
+      - `[RankingHint <IMicrosoftGraphExternalConnectorsRankingHint>]`: rankingHint
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ImportanceScore <String>]`: importanceScore
       - `[Type <String>]`: propertyType
   - `[SearchSettings <IMicrosoftGraphExternalConnectorsSearchSettings>]`: searchSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[SearchResultTemplates <IMicrosoftGraphExternalConnectorsDisplayTemplate[]>]`: Enables the developer to define the appearance of the content and configure conditions that dictate when the template should be displayed. Maximum of 2 search result templates per connection.
   - `[State <String>]`: connectionState
 
-INDUSTRYDATA `<IMicrosoftGraphIndustryDataRoot>`: industryDataRoot
+INDUSTRYDATA <IMicrosoftGraphIndustryDataRoot>: industryDataRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DataConnectors <IMicrosoftGraphIndustryDataConnector[]>]`: Set of connectors for importing data from source systems.

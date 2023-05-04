@@ -1,15 +1,14 @@
----
+﻿---
 external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationSchoolAdministrativeUnit
 
 ## SYNOPSIS
-Get a list of **administrativeUnits** associated with an educationSchool object.
+The underlying administrativeUnit for this school.
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get a list of **administrativeUnits** associated with an educationSchool object.
+The underlying administrativeUnit for this school.
 
 ## EXAMPLES
 
@@ -111,7 +110,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+INPUTOBJECT <IEducationIdentity>: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory

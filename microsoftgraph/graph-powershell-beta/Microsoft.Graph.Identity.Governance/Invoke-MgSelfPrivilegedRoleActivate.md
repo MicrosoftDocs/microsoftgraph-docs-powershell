@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/invoke-mgselfprivilegedroleactivate
@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgSelfPrivilegedRoleActivate
 
 ## SYNOPSIS
-Activate the role that is assigned to the requester.
+Invoke action selfActivate
 
 ## SYNTAX
 
@@ -41,7 +41,7 @@ Invoke-MgSelfPrivilegedRoleActivate -InputObject <IIdentityGovernanceIdentity>
 ```
 
 ## DESCRIPTION
-Activate the role that is assigned to the requester.
+Invoke action selfActivate
 
 ## EXAMPLES
 
@@ -234,14 +234,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFneytmPrivilegedrolesPrivilegedroleIdMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>`: .
+BODYPARAMETER <IPathsFneytmPrivilegedrolesPrivilegedroleIdMicrosoftGraphSelfactivatePostRequestbodyContentApplicationJsonSchema>: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Duration <String>]`: 
   - `[Reason <String>]`: 
   - `[TicketNumber <String>]`: 
   - `[TicketSystem <String>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+INPUTOBJECT <IIdentityGovernanceIdentity>: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest

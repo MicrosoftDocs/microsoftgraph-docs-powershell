@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpcgraceperiod
@@ -8,10 +8,7 @@ schema: 2.0.0
 # Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod
 
 ## SYNOPSIS
-End the grace period for a specific Cloud PC.
-The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
-It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
-Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
+Invoke action endGracePeriod
 
 ## SYNTAX
 
@@ -28,10 +25,7 @@ Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod -InputObject <IDeviceMa
 ```
 
 ## DESCRIPTION
-End the grace period for a specific Cloud PC.
-The grace period is triggered when the Cloud PC license is removed or the provisioning policy is unassigned.
-It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
-Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
+Invoke action endGracePeriod
 
 ## EXAMPLES
 
@@ -141,7 +135,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -185,7 +179,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
