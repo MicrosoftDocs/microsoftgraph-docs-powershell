@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementvirtualendpointprovisioningpolicy
@@ -211,7 +211,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>: .
+ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AssignedUsers <IMicrosoftGraphUser[]>]`: 
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -812,7 +812,7 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>: .
         - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
       - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+        - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
         - `[PhoneType <String>]`: authenticationPhoneType
         - `[SmsSignInState <String>]`: authenticationMethodSignInState
       - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -1103,7 +1103,7 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>: .
         - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
         - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
         - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+          - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
           - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
           - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4883,7 +4883,7 @@ ASSIGNMENTS <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>: .
   - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER <IPaths1Bzvde4DevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1Bzvde4DevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Assignments <IMicrosoftGraphCloudPcProvisioningPolicyAssignment[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -5486,7 +5486,7 @@ BODYPARAMETER <IPaths1Bzvde4DevicemanagementVirtualendpointProvisioningpoliciesC
           - `[DisplayName <String>]`: The display name of the mobile device as given by the user.
         - `[PhoneMethods <IMicrosoftGraphPhoneAuthenticationMethod[]>]`: Represents the phone registered to a user for authentication.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+<country code> <number>x<extension>', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+          - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
           - `[PhoneType <String>]`: authenticationPhoneType
           - `[SmsSignInState <String>]`: authenticationMethodSignInState
         - `[SignInPreferences <IMicrosoftGraphSignInPreferences>]`: signInPreferences
@@ -5777,7 +5777,7 @@ BODYPARAMETER <IPaths1Bzvde4DevicemanagementVirtualendpointProvisioningpoliciesC
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9557,7 +9557,7 @@ BODYPARAMETER <IPaths1Bzvde4DevicemanagementVirtualendpointProvisioningpoliciesC
     - `[Target <IMicrosoftGraphCloudPcManagementAssignmentTarget>]`: cloudPcManagementAssignmentTarget
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT <IDeviceManagementActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile

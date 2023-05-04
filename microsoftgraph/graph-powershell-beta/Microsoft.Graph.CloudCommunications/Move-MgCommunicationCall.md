@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/move-mgcommunicationcall
@@ -335,7 +335,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1>: .
+BODYPARAMETER `<IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRequestbodyContentApplicationJsonSchema1>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TransferTarget <IMicrosoftGraphInvitationParticipantInfo1>]`: invitationParticipantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -363,7 +363,7 @@ BODYPARAMETER <IPaths4Zbm7LCommunicationsCallsCallIdMicrosoftGraphTransferPostRe
     - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
     - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
+INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -381,7 +381,7 @@ INPUTOBJECT <ICloudCommunicationsIdentity>: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-TRANSFEREE <IMicrosoftGraphParticipantInfo1>: participantInfo
+TRANSFEREE `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -399,7 +399,7 @@ TRANSFEREE <IMicrosoftGraphParticipantInfo1>: participantInfo
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-TRANSFERTARGET <IMicrosoftGraphInvitationParticipantInfo1>: invitationParticipantInfo
+TRANSFERTARGET `<IMicrosoftGraphInvitationParticipantInfo1>`: invitationParticipantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndpointType <String>]`: endpointType
   - `[Hidden <Boolean?>]`: Optional. Whether to hide the participant from the roster.

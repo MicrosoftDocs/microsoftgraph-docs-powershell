@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mguploadtrustframeworkkeysetsecret
@@ -233,14 +233,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsDmvqaiTrustframeworkKeysetsTrustframeworkkeysetIdMicrosoftGraphUploadsecretPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Exp <Int64?>]`: 
   - `[K <String>]`: 
   - `[Nbf <Int64?>]`: 
   - `[Use <String>]`: 
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration

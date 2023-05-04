@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
@@ -245,7 +245,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>: Conceptual container for user and group directory objects.
+ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit\[]>: Conceptual container for user and group directory objects.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
@@ -265,12 +265,12 @@ ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>: Conceptual container 
       - `[Id <String>]`: Unique identifier for the identity.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership. If not set (value is null), the default behavior is public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-ATTRIBUTESETS <IMicrosoftGraphAttributeSet[]>: .
+ATTRIBUTESETS <IMicrosoftGraphAttributeSet\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Description <String>]`: 
   - `[MaxAttributesPerSet <Int32?>]`: 
 
-BODYPARAMETER <IMicrosoftGraphDirectory1>: directory
+BODYPARAMETER `<IMicrosoftGraphDirectory1>`: directory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]`: Conceptual container for user and group directory objects.
@@ -343,7 +343,7 @@ BODYPARAMETER <IMicrosoftGraphDirectory1>: directory
       - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
       - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
-CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition[]>: .
+CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -357,15 +357,15 @@ CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefini
   - `[Type <String>]`: 
   - `[UsePreDefinedValuesOnly <Boolean?>]`: 
 
-DELETEDITEMS <IMicrosoftGraphDirectoryObject[]>: Recently deleted items. Read-only. Nullable.
+DELETEDITEMS <IMicrosoftGraphDirectoryObject\[]>: Recently deleted items. Read-only. Nullable.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase[]>: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase\[]>: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
-ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization[]>: A container for on-premises directory synchronization functionalities that are available for the organization.
+ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization\[]>: A container for on-premises directory synchronization functionalities that are available for the organization.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.

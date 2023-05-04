@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgforwarduserevent
@@ -241,7 +241,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
@@ -250,7 +250,7 @@ BODYPARAMETER <IPathsPg3HzyUsersUserIdEventsEventIdMicrosoftGraphForwardPostRequ
       - `[Address <String>]`: The email address of the person or entity.
       - `[Name <String>]`: The display name of the person or entity.
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -293,7 +293,7 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-TORECIPIENTS <IMicrosoftGraphRecipient[]>: .
+TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Address <String>]`: The email address of the person or entity.

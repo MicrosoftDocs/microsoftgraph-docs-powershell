@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession
@@ -188,7 +188,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -201,7 +201,7 @@ BODYPARAMETER <IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateupl
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
     - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -227,7 +227,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ITEM <IMicrosoftGraphDriveItemUploadableProperties>: driveItemUploadableProperties
+ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
   - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.

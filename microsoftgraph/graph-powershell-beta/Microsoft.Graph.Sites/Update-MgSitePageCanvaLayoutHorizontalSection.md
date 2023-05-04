@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitepagecanvalayouthorizontalsection
@@ -265,7 +265,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphHorizontalSection>: horizontalSection
+BODYPARAMETER `<IMicrosoftGraphHorizontalSection>`: horizontalSection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Columns <IMicrosoftGraphHorizontalSectionColumn[]>]`: The set of vertical columns in this section.
@@ -276,13 +276,13 @@ BODYPARAMETER <IMicrosoftGraphHorizontalSection>: horizontalSection
   - `[Emphasis <String>]`: sectionEmphasisType
   - `[Layout <String>]`: horizontalSectionLayoutType
 
-COLUMNS <IMicrosoftGraphHorizontalSectionColumn[]>: The set of vertical columns in this section.
+COLUMNS <IMicrosoftGraphHorizontalSectionColumn\[]>: The set of vertical columns in this section.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Webparts <IMicrosoftGraphWebPart[]>]`: The collection of WebParts in this column.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Width <Int32?>]`: Width of the column. A horizontal section is divided into 12 grids. A column should have a value of 1-12 to represent its range spans. For example, there can be two columns both have a width of 6 in a section.
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition

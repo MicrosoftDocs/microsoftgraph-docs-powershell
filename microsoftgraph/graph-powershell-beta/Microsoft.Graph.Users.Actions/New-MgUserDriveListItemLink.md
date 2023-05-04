@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguserdrivelistitemlink
@@ -297,7 +297,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPathsA00Hz4UsersUserIdDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPathsA00Hz4UsersUserIdDrivesDriveIdListItemsListitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Password <String>]`: 
@@ -310,7 +310,7 @@ BODYPARAMETER <IPathsA00Hz4UsersUserIdDrivesDriveIdListItemsListitemIdMicrosoftG
   - `[SendNotification <Boolean?>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
+INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -353,7 +353,7 @@ INPUTOBJECT <IUsersActionsIdentity>: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient[]>: .
+RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.

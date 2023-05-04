@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/update-mgsitepagecanvalayout
@@ -235,7 +235,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphCanvasLayout>: canvasLayout
+BODYPARAMETER `<IMicrosoftGraphCanvasLayout>`: canvasLayout
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[HorizontalSections <IMicrosoftGraphHorizontalSection[]>]`: Collection of horizontal sections on the SharePoint page.
@@ -253,7 +253,7 @@ BODYPARAMETER <IMicrosoftGraphCanvasLayout>: canvasLayout
     - `[Emphasis <String>]`: sectionEmphasisType
     - `[Webparts <IMicrosoftGraphWebPart[]>]`: The set of web parts in this section.
 
-HORIZONTALSECTIONS <IMicrosoftGraphHorizontalSection[]>: Collection of horizontal sections on the SharePoint page.
+HORIZONTALSECTIONS <IMicrosoftGraphHorizontalSection\[]>: Collection of horizontal sections on the SharePoint page.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Columns <IMicrosoftGraphHorizontalSectionColumn[]>]`: The set of vertical columns in this section.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -263,7 +263,7 @@ HORIZONTALSECTIONS <IMicrosoftGraphHorizontalSection[]>: Collection of horizonta
   - `[Emphasis <String>]`: sectionEmphasisType
   - `[Layout <String>]`: horizontalSectionLayoutType
 
-INPUTOBJECT <ISitesIdentity>: Identity Parameter
+INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -311,7 +311,7 @@ INPUTOBJECT <ISitesIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-VERTICALSECTION <IMicrosoftGraphVerticalSection>: verticalSection
+VERTICALSECTION `<IMicrosoftGraphVerticalSection>`: verticalSection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Emphasis <String>]`: sectionEmphasisType

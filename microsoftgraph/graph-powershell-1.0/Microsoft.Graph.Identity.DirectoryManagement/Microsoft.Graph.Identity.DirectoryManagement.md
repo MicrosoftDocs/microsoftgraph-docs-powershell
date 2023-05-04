@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 0c60a61d-230a-4202-9c6a-d26d0704c712
 Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Compliance-help.xml
 Module Name: Microsoft.Graph.Compliance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/add-mgcomplianceediscoverycasereviewsettoreviewset
@@ -237,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetIdMicrosoftGraphEdiscoveryAddtoreviewsetPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdditionalDataOptions <String>]`: additionalDataOptions
   - `[SourceCollection <IMicrosoftGraphEdiscoverySourceCollection>]`: sourceCollection
@@ -332,7 +332,7 @@ BODYPARAMETER <IPaths1N6Pr05ComplianceEdiscoveryCasesCaseIdReviewsetsReviewsetId
       - `[ApplyHoldToSource <Boolean?>]`: Indicates if hold is applied to non-custodial data source (such as mailbox or site).
       - `[DataSource <IMicrosoftGraphEdiscoveryDataSource>]`: dataSource
 
-INPUTOBJECT <IComplianceIdentity>: Identity Parameter
+INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -348,7 +348,7 @@ INPUTOBJECT <IComplianceIdentity>: Identity Parameter
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
-SOURCECOLLECTION <IMicrosoftGraphEdiscoverySourceCollection>: sourceCollection
+SOURCECOLLECTION `<IMicrosoftGraphEdiscoverySourceCollection>`: sourceCollection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AddToReviewSetOperation <IMicrosoftGraphEdiscoveryAddToReviewSetOperation>]`: addToReviewSetOperation

@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/restart-mgserviceprincipalsynchronizationjob
@@ -219,17 +219,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>: .
+BODYPARAMETER `<IPaths7MrbavServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdMicrosoftGraphRestartPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Criteria <IMicrosoftGraphSynchronizationJobRestartCriteria>]`: synchronizationJobRestartCriteria
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResetScope <String>]`: synchronizationJobRestartScope
 
-CRITERIA <IMicrosoftGraphSynchronizationJobRestartCriteria>: synchronizationJobRestartCriteria
+CRITERIA `<IMicrosoftGraphSynchronizationJobRestartCriteria>`: synchronizationJobRestartCriteria
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ResetScope <String>]`: synchronizationJobRestartScope
 
-INPUTOBJECT <IApplicationsIdentity>: Identity Parameter
+INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

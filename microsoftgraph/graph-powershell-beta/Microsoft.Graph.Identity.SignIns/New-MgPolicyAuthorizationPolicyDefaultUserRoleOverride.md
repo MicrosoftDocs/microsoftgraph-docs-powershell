@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthorizationpolicydefaultuserroleoverride
@@ -204,7 +204,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER <IMicrosoftGraphDefaultUserRoleOverride>: defaultUserRoleOverride
+BODYPARAMETER `<IMicrosoftGraphDefaultUserRoleOverride>`: defaultUserRoleOverride
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[IsDefault <Boolean?>]`: 
@@ -213,7 +213,7 @@ BODYPARAMETER <IMicrosoftGraphDefaultUserRoleOverride>: defaultUserRoleOverride
     - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
     - `[ExcludedResourceActions <String[]>]`: 
 
-INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
+INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -288,7 +288,7 @@ INPUTOBJECT <IIdentitySignInsIdentity>: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission[]>: .
+ROLEPERMISSIONS <IMicrosoftGraphUnifiedRolePermission\[]>: .
   - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
   - `[Condition <String>]`: Optional constraints that must be met for the permission to be effective. Not supported for custom roles.
   - `[ExcludedResourceActions <String[]>]`: 

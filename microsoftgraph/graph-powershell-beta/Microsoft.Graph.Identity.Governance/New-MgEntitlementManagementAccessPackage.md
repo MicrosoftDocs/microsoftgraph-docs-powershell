@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackage
@@ -403,7 +403,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCESSPACKAGEASSIGNMENTPOLICIES <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>: Read-only. Nullable. Supports $expand.
+ACCESSPACKAGEASSIGNMENTPOLICIES <IMicrosoftGraphAccessPackageAssignmentPolicy1\[]>: Read-only. Nullable. Supports $expand.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackage <IMicrosoftGraphAccessPackage>]`: accessPackage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1474,7 +1474,7 @@ ACCESSPACKAGEASSIGNMENTPOLICIES <IMicrosoftGraphAccessPackageAssignmentPolicy1[]
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5249,7 +5249,7 @@ ACCESSPACKAGEASSIGNMENTPOLICIES <IMicrosoftGraphAccessPackageAssignmentPolicy1[]
       - `[CredentialType <String>]`: The type of credential issued, for example, BusinessCardCredential.
       - `[Issuers <String[]>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
 
-ACCESSPACKAGECATALOG <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalog
+ACCESSPACKAGECATALOG `<IMicrosoftGraphAccessPackageCatalog1>`: accessPackageCatalog
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageCustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]`: The attributes of a logic app, which can be called at various stages of an access package request and assignment cycle.
@@ -6375,7 +6375,7 @@ ACCESSPACKAGECATALOG <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalo
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10095,7 +10095,7 @@ ACCESSPACKAGECATALOG <IMicrosoftGraphAccessPackageCatalog1>: accessPackageCatalo
   - `[ModifiedBy <String>]`: The UPN of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-ACCESSPACKAGERESOURCEROLESCOPES <IMicrosoftGraphAccessPackageResourceRoleScope[]>: .
+ACCESSPACKAGERESOURCEROLESCOPES <IMicrosoftGraphAccessPackageResourceRoleScope\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -10158,7 +10158,7 @@ ACCESSPACKAGERESOURCEROLESCOPES <IMicrosoftGraphAccessPackageResourceRoleScope[]
   - `[ModifiedBy <String>]`: 
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
-ACCESSPACKAGESINCOMPATIBLEWITH <IMicrosoftGraphAccessPackage[]>: The access packages that are incompatible with this package. Read-only.
+ACCESSPACKAGESINCOMPATIBLEWITH <IMicrosoftGraphAccessPackage\[]>: The access packages that are incompatible with this package. Read-only.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -11293,7 +11293,7 @@ ACCESSPACKAGESINCOMPATIBLEWITH <IMicrosoftGraphAccessPackage[]>: The access pack
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -15003,7 +15003,7 @@ ACCESSPACKAGESINCOMPATIBLEWITH <IMicrosoftGraphAccessPackage[]>: The access pack
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-BODYPARAMETER <IMicrosoftGraphAccessPackage>: accessPackage
+BODYPARAMETER `<IMicrosoftGraphAccessPackage>`: accessPackage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
@@ -16139,7 +16139,7 @@ BODYPARAMETER <IMicrosoftGraphAccessPackage>: accessPackage
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19849,7 +19849,7 @@ BODYPARAMETER <IMicrosoftGraphAccessPackage>: accessPackage
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-INCOMPATIBLEACCESSPACKAGES <IMicrosoftGraphAccessPackage[]>: The access packages whose assigned users are ineligible to be assigned this access package.
+INCOMPATIBLEACCESSPACKAGES <IMicrosoftGraphAccessPackage\[]>: The access packages whose assigned users are ineligible to be assigned this access package.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AccessPackageAssignmentPolicies <IMicrosoftGraphAccessPackageAssignmentPolicy1[]>]`: Read-only. Nullable. Supports $expand.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -20984,7 +20984,7 @@ INCOMPATIBLEACCESSPACKAGES <IMicrosoftGraphAccessPackage[]>: The access packages
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24694,7 +24694,7 @@ INCOMPATIBLEACCESSPACKAGES <IMicrosoftGraphAccessPackage[]>: The access packages
   - `[ModifiedBy <String>]`: The userPrincipalName of the user who last modified this resource. Read-only.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
 
-INCOMPATIBLEGROUPS <IMicrosoftGraphGroup[]>: The groups whose members are ineligible to be assigned this access package.
+INCOMPATIBLEGROUPS <IMicrosoftGraphGroup\[]>: The groups whose members are ineligible to be assigned this access package.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
@@ -25655,7 +25655,7 @@ INCOMPATIBLEGROUPS <IMicrosoftGraphGroup[]>: The groups whose members are inelig
           - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
           - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
           - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+            - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
             - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
             - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.

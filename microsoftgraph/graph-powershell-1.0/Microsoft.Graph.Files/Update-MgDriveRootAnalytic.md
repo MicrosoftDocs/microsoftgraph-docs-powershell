@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgdriverootanalytic
@@ -238,7 +238,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALLTIME <IMicrosoftGraphItemActivityStat>: itemActivityStat
+ALLTIME `<IMicrosoftGraphItemActivityStat>`: itemActivityStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -672,7 +672,7 @@ ALLTIME <IMicrosoftGraphItemActivityStat>: itemActivityStat
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2830,7 +2830,7 @@ ALLTIME <IMicrosoftGraphItemActivityStat>: itemActivityStat
   - `[Move <IMicrosoftGraphItemActionStat>]`: itemActionStat
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
-BODYPARAMETER <IMicrosoftGraphItemAnalytics>: itemAnalytics
+BODYPARAMETER `<IMicrosoftGraphItemAnalytics>`: itemAnalytics
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AllTime <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
@@ -3267,7 +3267,7 @@ BODYPARAMETER <IMicrosoftGraphItemAnalytics>: itemAnalytics
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5422,7 +5422,7 @@ BODYPARAMETER <IMicrosoftGraphItemAnalytics>: itemAnalytics
   - `[ItemActivityStats <IMicrosoftGraphItemActivityStat[]>]`: 
   - `[LastSevenDays <IMicrosoftGraphItemActivityStat>]`: itemActivityStat
 
-INPUTOBJECT <IFilesIdentity>: Identity Parameter
+INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -5448,7 +5448,7 @@ INPUTOBJECT <IFilesIdentity>: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ITEMACTIVITYSTATS <IMicrosoftGraphItemActivityStat[]>: .
+ITEMACTIVITYSTATS <IMicrosoftGraphItemActivityStat\[]>: .
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5881,7 +5881,7 @@ ITEMACTIVITYSTATS <IMicrosoftGraphItemActivityStat[]>: .
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8039,7 +8039,7 @@ ITEMACTIVITYSTATS <IMicrosoftGraphItemActivityStat[]>: .
   - `[Move <IMicrosoftGraphItemActionStat>]`: itemActionStat
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
-LASTSEVENDAYS <IMicrosoftGraphItemActivityStat>: itemActivityStat
+LASTSEVENDAYS `<IMicrosoftGraphItemActivityStat>`: itemActivityStat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Access <IMicrosoftGraphItemActionStat>]`: itemActionStat
@@ -8473,7 +8473,7 @@ LASTSEVENDAYS <IMicrosoftGraphItemActivityStat>: itemActivityStat
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
