@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationmethodpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyAuthenticationMethodPolicy
 
 ## SYNOPSIS
-Update the properties of an authenticationMethodsPolicy object.
+Update the navigation property authenticationMethodsPolicy in policies
 
 ## SYNTAX
 
@@ -30,7 +29,7 @@ Update-MgPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAuthent
 ```
 
 ## DESCRIPTION
-Update the properties of an authenticationMethodsPolicy object.
+Update the navigation property authenticationMethodsPolicy in policies
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancetermofuseagreement
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceTermOfUseAgreement
 
 ## SYNOPSIS
-Create a new agreement object.
+Create new navigation property to agreements for identityGovernance
 
 ## SYNTAX
 
@@ -29,7 +28,7 @@ New-MgIdentityGovernanceTermOfUseAgreement -BodyParameter <IMicrosoftGraphAgreem
 ```
 
 ## DESCRIPTION
-Create a new agreement object.
+Create new navigation property to agreements for identityGovernance
 
 ## EXAMPLES
 

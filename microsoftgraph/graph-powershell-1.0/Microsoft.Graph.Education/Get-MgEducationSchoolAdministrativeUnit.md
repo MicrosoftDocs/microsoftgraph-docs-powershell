@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschooladministrativeunit
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationSchoolAdministrativeUnit
 
 ## SYNOPSIS
-Get a list of **administrativeUnits** associated with an educationSchool object.
+The underlying administrativeUnit for this school.
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ Get-MgEducationSchoolAdministrativeUnit -InputObject <IEducationIdentity> [-Expa
 ```
 
 ## DESCRIPTION
-Get a list of **administrativeUnits** associated with an educationSchool object.
+The underlying administrativeUnit for this school.
 
 ## EXAMPLES
 

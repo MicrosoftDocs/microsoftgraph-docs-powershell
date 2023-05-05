@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchatinstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgUserChatInstalledApp
 
 ## SYNOPSIS
-Install a teamsApp to the specified chat.
+Create new navigation property to installedApps for users
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Install a teamsApp to the specified chat.
+Create new navigation property to installedApps for users
 
 ## EXAMPLES
 

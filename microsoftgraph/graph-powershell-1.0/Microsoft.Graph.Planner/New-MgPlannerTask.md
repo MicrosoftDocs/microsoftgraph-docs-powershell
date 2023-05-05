@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannertask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerTask
 
 ## SYNOPSIS
-Create a new **plannerTask**.
+Create new navigation property to tasks for planner
 
 ## SYNTAX
 
@@ -35,7 +34,7 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Create a new **plannerTask**.
+Create new navigation property to tasks for planner
 
 ## EXAMPLES
 

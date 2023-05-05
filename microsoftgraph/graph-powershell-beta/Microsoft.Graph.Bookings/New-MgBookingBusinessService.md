@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessservice
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBookingBusinessService
 
 ## SYNOPSIS
-Create a new bookingService for the specified bookingBusiness.
+Create new navigation property to services for bookingBusinesses
 
 ## SYNTAX
 
@@ -52,7 +51,7 @@ New-MgBookingBusinessService -InputObject <IBookingsIdentity> -BodyParameter <IM
 ```
 
 ## DESCRIPTION
-Create a new bookingService for the specified bookingBusiness.
+Create new navigation property to services for bookingBusinesses
 
 ## EXAMPLES
 

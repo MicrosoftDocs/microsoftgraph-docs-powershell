@@ -3,16 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationuserassignmentsubmissionoutcome
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationUserAssignmentSubmissionOutcome
 
 ## SYNOPSIS
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or is not in that folder, the `POST` request will fail.
+Create new navigation property to outcomes for education
 
 ## SYNTAX
 
@@ -45,10 +41,7 @@ New-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Create a new feedback resource for a submission.
-Only a teacher can perform this operation.
-To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
-If the file doesn't exist or is not in that folder, the `POST` request will fail.
+Create new navigation property to outcomes for education
 
 ## EXAMPLES
 

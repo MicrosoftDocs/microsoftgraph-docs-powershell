@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
-Create a new activityBasedTimeoutPolicy object.
+Create new navigation property to activityBasedTimeoutPolicies for policies
 
 ## SYNTAX
 
@@ -27,7 +26,7 @@ New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Create a new activityBasedTimeoutPolicy object.
+Create new navigation property to activityBasedTimeoutPolicies for policies
 
 ## EXAMPLES
 

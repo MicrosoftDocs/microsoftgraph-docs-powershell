@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamscheduleswapshiftchangerequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleSwapShiftChangeRequest
 
 ## SYNOPSIS
-Get swapShiftsChangeRequests from teams
+The swap requests for shifts in the schedule.
 
 ## SYNTAX
 
@@ -33,7 +32,7 @@ Get-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get swapShiftsChangeRequests from teams
+The swap requests for shifts in the schedule.
 
 ## EXAMPLES
 

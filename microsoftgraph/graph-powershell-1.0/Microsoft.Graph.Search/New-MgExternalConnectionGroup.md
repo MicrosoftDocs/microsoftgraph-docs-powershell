@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgexternalconnectiongroup
 schema: 2.0.0
-ms.prod: search
 ---
 
 # New-MgExternalConnectionGroup
 
 ## SYNOPSIS
-Create a new externalGroup object.
+Create new navigation property to groups for external
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Create a new externalGroup object.
+Create new navigation property to groups for external
 
 ## EXAMPLES
 

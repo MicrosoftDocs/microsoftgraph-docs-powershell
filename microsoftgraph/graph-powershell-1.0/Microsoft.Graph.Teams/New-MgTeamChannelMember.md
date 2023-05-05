@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamchannelmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamChannelMember
 
 ## SYNOPSIS
-Add a conversationMember to a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Create new navigation property to members for teams
 
 ## SYNTAX
 
@@ -41,8 +39,7 @@ New-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Add a conversationMember to a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Create new navigation property to members for teams
 
 ## EXAMPLES
 

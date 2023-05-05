@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgentitlementmanagementsetting
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgEntitlementManagementSetting
 
 ## SYNOPSIS
-Update an existing entitlementManagementSettings object to change one or more of its properties.
+Update the navigation property settings in identityGovernance
 
 ## SYNTAX
 
@@ -27,7 +26,7 @@ Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlement
 ```
 
 ## DESCRIPTION
-Update an existing entitlementManagementSettings object to change one or more of its properties.
+Update the navigation property settings in identityGovernance
 
 ## EXAMPLES
 

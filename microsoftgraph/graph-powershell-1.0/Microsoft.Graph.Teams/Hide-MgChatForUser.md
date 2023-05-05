@@ -8,30 +8,30 @@ schema: 2.0.0
 # Hide-MgChatForUser
 
 ## SYNOPSIS
-Hide a chat for a user.
+Invoke action hideForUser
 
 ## SYNTAX
 
-### HideExpanded (Default)
+### HideExpanded1 (Default)
 ```
 Hide-MgChatForUser -ChatId <String> [-AdditionalProperties <Hashtable>]
  [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Hide
+### Hide1
 ```
 Hide-MgChatForUser -ChatId <String>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### HideViaIdentityExpanded
+### HideViaIdentityExpanded1
 ```
 Hide-MgChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### HideViaIdentity
+### HideViaIdentity1
 ```
 Hide-MgChatForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1>
@@ -39,7 +39,7 @@ Hide-MgChatForUser -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Hide a chat for a user.
+Invoke action hideForUser
 
 ## EXAMPLES
 
@@ -68,7 +68,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: HideExpanded, HideViaIdentityExpanded
+Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Hide, HideViaIdentity
+Parameter Sets: Hide1, HideViaIdentity1
 Aliases:
 
 Required: True
@@ -99,7 +99,7 @@ The unique identifier of chat
 
 ```yaml
 Type: String
-Parameter Sets: HideExpanded, Hide
+Parameter Sets: HideExpanded1, Hide1
 Aliases:
 
 Required: True
@@ -115,7 +115,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: HideViaIdentityExpanded, HideViaIdentity
+Parameter Sets: HideViaIdentityExpanded1, HideViaIdentity1
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ To construct, please use Get-Help -Online and see NOTES section for USER propert
 
 ```yaml
 Type: IMicrosoftGraphTeamworkUserIdentity
-Parameter Sets: HideExpanded, HideViaIdentityExpanded
+Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
 Aliases:
 
 Required: False

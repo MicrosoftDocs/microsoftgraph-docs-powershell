@@ -21,7 +21,7 @@ Update-MgPrintService -PrintServiceId <String> [-AdditionalProperties <Hashtable
 
 ### Update
 ```
-Update-MgPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintService> [-PassThru]
+Update-MgPrintService -PrintServiceId <String> -BodyParameter <IMicrosoftGraphPrintService1> [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -34,7 +34,7 @@ Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProp
 
 ### UpdateViaIdentity
 ```
-Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintService>
+Update-MgPrintService -InputObject <IDevicesCloudPrintIdentity> -BodyParameter <IMicrosoftGraphPrintService1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -65,7 +65,7 @@ printService
 To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrintService
+Type: IMicrosoftGraphPrintService1
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -193,7 +193,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintService1
 ## OUTPUTS
 
 ### System.Boolean
@@ -206,7 +206,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrintService>`: printService
+BODYPARAMETER `<IMicrosoftGraphPrintService1>`: printService
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint1[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.

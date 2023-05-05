@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeuser
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationMeUser
 
 ## SYNOPSIS
-Retrieve the simple directory **user** that corresponds to this **educationUser**.
+The directory user that corresponds to this user.
 
 ## SYNTAX
 
@@ -18,7 +17,7 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 ```
 
 ## DESCRIPTION
-Retrieve the simple directory **user** that corresponds to this **educationUser**.
+The directory user that corresponds to this user.
 
 ## EXAMPLES
 

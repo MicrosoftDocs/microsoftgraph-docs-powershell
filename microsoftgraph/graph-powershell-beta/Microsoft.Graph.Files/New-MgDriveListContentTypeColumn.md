@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgDriveListContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
+Create new navigation property to columns for drives
 
 ## SYNTAX
 
@@ -58,7 +57,7 @@ New-MgDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ```
 
 ## DESCRIPTION
-Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
+Create new navigation property to columns for drives
 
 ## EXAMPLES
 

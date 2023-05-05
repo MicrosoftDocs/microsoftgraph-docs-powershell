@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteaminstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamInstalledApp
 
 ## SYNOPSIS
-Install an app to the specified team.
+Create new navigation property to installedApps for teams
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ```
 
 ## DESCRIPTION
-Install an app to the specified team.
+Create new navigation property to installedApps for teams
 
 ## EXAMPLES
 

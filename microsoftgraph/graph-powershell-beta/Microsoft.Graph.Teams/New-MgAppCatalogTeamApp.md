@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgAppCatalogTeamApp
 
 ## SYNOPSIS
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a **distributionMethod** property value of `organization`.
-The **requiresReview** property allows any user to submit an app for review by an administrator.
-Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+Create new navigation property to teamsApps for appCatalogs
 
 ## SYNTAX
 
@@ -28,9 +25,7 @@ New-MgAppCatalogTeamApp -BodyParameter <IMicrosoftGraphTeamsApp1> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Publish an app to the Microsoft Teams app catalog.\nSpecifically, this API publishes the app to your organization's catalog (the tenant app catalog);\nthe created resource will have a **distributionMethod** property value of `organization`.
-The **requiresReview** property allows any user to submit an app for review by an administrator.
-Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
+Create new navigation property to teamsApps for appCatalogs
 
 ## EXAMPLES
 

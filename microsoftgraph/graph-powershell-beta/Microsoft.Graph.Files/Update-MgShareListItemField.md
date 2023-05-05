@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgsharelistitemfield
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgShareListItemField
 
 ## SYNOPSIS
-Update the properties on a **[listItem][]**.
+Update the navigation property fields in shares
 
 ## SYNTAX
 
@@ -62,7 +61,7 @@ Update-MgShareListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ```
 
 ## DESCRIPTION
-Update the properties on a **[listItem][]**.
+Update the navigation property fields in shares
 
 ## EXAMPLES
 

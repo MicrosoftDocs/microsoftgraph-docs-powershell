@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgdrivelistitemfield
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Update-MgDriveListItemField
 
 ## SYNOPSIS
-Update the properties on a **[listItem][]**.
+Update the navigation property fields in drives
 
 ## SYNTAX
 
@@ -38,7 +37,7 @@ Update-MgDriveListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashta
 ```
 
 ## DESCRIPTION
-Update the properties on a **[listItem][]**.
+Update the navigation property fields in drives
 
 ## EXAMPLES
 

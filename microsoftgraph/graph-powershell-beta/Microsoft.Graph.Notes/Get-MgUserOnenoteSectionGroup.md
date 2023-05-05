@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mguseronenotesectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteSectionGroup

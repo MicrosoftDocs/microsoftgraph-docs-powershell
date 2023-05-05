@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/new-mgcommunicationcall
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # New-MgCommunicationCall
 
 ## SYNOPSIS
-Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+Create new navigation property to calls for communications
 
 ## SYNTAX
 
@@ -36,8 +34,7 @@ New-MgCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm
 ```
 
 ## DESCRIPTION
-Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
-You will need to register the calling bot and go through the list of permissions needed as mentioned below.
+Create new navigation property to calls for communications
 
 ## EXAMPLES
 

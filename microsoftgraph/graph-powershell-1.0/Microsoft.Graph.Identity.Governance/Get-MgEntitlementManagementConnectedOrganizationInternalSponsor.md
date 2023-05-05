@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementconnectedorganizationinternalsponsor
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementConnectedOrganizationInternalSponsor
 
 ## SYNOPSIS
-Retrieve a list of a connectedOrganization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get internalSponsors from identityGovernance
 
 ## SYNTAX
 
@@ -21,8 +19,7 @@ Get-MgEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOrgani
 ```
 
 ## DESCRIPTION
-Retrieve a list of a connectedOrganization's internal sponsors.
-The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
+Get internalSponsors from identityGovernance
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteTermStoreGroupSetChild
 
 ## SYNOPSIS
-Create a new term object.
+Create new navigation property to children for groups
 
 ## SYNTAX
 
@@ -111,7 +111,7 @@ New-MgGroupSiteTermStoreGroupSetChild -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Create a new term object.
+Create new navigation property to children for groups
 
 ## EXAMPLES
 
@@ -557,6 +557,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

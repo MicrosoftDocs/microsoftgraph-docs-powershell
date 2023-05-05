@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgappcatalogteamappdefinition
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgAppCatalogTeamAppDefinition
 
 ## SYNOPSIS
-Update an app previously published to the Microsoft Teams app catalog.
-To update an app, the **distributionMethod** property for the app must be set to `organization`.
-This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
+Create new navigation property to appDefinitions for appCatalogs
 
 ## SYNTAX
 
@@ -50,9 +47,7 @@ New-MgAppCatalogTeamAppDefinition -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Update an app previously published to the Microsoft Teams app catalog.
-To update an app, the **distributionMethod** property for the app must be set to `organization`.
-This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
+Create new navigation property to appDefinitions for appCatalogs
 
 ## EXAMPLES
 

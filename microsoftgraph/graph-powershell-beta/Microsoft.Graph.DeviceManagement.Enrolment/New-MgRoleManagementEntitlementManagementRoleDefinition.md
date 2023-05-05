@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroledefinition
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgRoleManagementEntitlementManagementRoleDefinition
 
 ## SYNOPSIS
-Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+Create new navigation property to roleDefinitions for roleManagement
 
 ## SYNTAX
 
@@ -31,9 +28,7 @@ New-MgRoleManagementEntitlementManagementRoleDefinition -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleDefinition object for an RBAC provider.
-This feature requires an Azure AD Premium P1 or P2 license.
-The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+Create new navigation property to roleDefinitions for roleManagement
 
 ## EXAMPLES
 

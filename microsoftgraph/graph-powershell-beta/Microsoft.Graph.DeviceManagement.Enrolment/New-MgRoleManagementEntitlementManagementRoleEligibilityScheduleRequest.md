@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagemententitlementmanagementroleeligibilityschedulerequest
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 
 ## SYNOPSIS
-Create a new unifiedRoleEligibilityScheduleRequest object.
-This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
 ## SYNTAX
 
@@ -36,8 +34,7 @@ New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleEligibilityScheduleRequest object.
-This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+Create new navigation property to roleEligibilityScheduleRequests for roleManagement
 
 ## EXAMPLES
 

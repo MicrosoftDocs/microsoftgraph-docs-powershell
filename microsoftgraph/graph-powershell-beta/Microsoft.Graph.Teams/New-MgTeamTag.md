@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamtag
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamTag
 
 ## SYNOPSIS
-Create a standard tag for members in the team.
+Create new navigation property to tags for teams
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 ```
 
 ## DESCRIPTION
-Create a standard tag for members in the team.
+Create new navigation property to tags for teams
 
 ## EXAMPLES
 

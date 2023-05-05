@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mguserpresence
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgUserPresence
 
 ## SYNOPSIS
-Get a user's presence information.
+Get presence from users
 
 ## SYNTAX
 
@@ -25,7 +24,7 @@ Get-MgUserPresence -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get a user's presence information.
+Get presence from users
 
 ## EXAMPLES
 

@@ -12,13 +12,13 @@ Invoke action reauthorize
 
 ## SYNTAX
 
-### Reauthorize1 (Default)
+### Reauthorize (Default)
 ```
 Invoke-MgReauthorizeDriveItemSubscription -DriveId <String> -DriveItemId <String> -SubscriptionId <String>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### ReauthorizeViaIdentity1
+### ReauthorizeViaIdentity
 ```
 Invoke-MgReauthorizeDriveItemSubscription -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
@@ -36,7 +36,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ The unique identifier of driveItem
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: ReauthorizeViaIdentity1
+Parameter Sets: ReauthorizeViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ The unique identifier of subscription
 
 ```yaml
 Type: String
-Parameter Sets: Reauthorize1
+Parameter Sets: Reauthorize
 Aliases:
 
 Required: True

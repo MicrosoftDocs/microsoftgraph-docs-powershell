@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupDriveListColumn
 
 ## SYNOPSIS
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for groups
 
 ## SYNTAX
 
@@ -57,7 +57,7 @@ New-MgGroupDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for groups
 
 ## EXAMPLES
 

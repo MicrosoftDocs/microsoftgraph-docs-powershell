@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceAccessReviewDefinition
 
 ## SYNOPSIS
-Create a new accessReviewScheduleDefinition object.
+Create new navigation property to definitions for identityGovernance
 
 ## SYNTAX
 
@@ -34,7 +33,7 @@ New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAc
 ```
 
 ## DESCRIPTION
-Create a new accessReviewScheduleDefinition object.
+Create new navigation property to definitions for identityGovernance
 
 ## EXAMPLES
 

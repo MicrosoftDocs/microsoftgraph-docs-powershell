@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfoldercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserContactFolderContact
 
 ## SYNOPSIS
-Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
+Create new navigation property to contacts for users
 
 ## SYNTAX
 
@@ -64,7 +63,7 @@ New-MgUserContactFolderContact -InputObject <IPersonalContactsIdentity>
 ```
 
 ## DESCRIPTION
-Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
+Create new navigation property to contacts for users
 
 ## EXAMPLES
 

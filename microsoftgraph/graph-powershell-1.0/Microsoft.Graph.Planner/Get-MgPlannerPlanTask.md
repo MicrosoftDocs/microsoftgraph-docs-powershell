@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerplantask
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerPlanTask
 
 ## SYNOPSIS
-Retrieve a list of plannerTask objects associated with a plannerPlan object.
+Read-only.
+Nullable.
+Collection of tasks in the plan.
 
 ## SYNTAX
 
@@ -20,7 +21,9 @@ Get-MgPlannerPlanTask -PlannerPlanId <String> [-ExpandProperty <String[]>] [-Fil
 ```
 
 ## DESCRIPTION
-Retrieve a list of plannerTask objects associated with a plannerPlan object.
+Read-only.
+Nullable.
+Collection of tasks in the plan.
 
 ## EXAMPLES
 

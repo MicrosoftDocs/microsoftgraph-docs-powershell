@@ -491,7 +491,6 @@ BODYPARAMETER `<IMicrosoftGraphDepOnboardingSetting>`: The depOnboardingSetting 
     - `[PrimaryAccountFullName <String>]`: Indicates what the full name for the primary account is
     - `[PrimaryAccountUserName <String>]`: Indicates what the account name for the primary account is
     - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
-    - `[RequestRequiresNetworkTether <Boolean?>]`: Indicates if the device is network-tethered to run the command
     - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
     - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -633,7 +632,6 @@ DEFAULTMACOSENROLLMENTPROFILE `<IMicrosoftGraphDepMacOSEnrollmentProfile>`: The 
   - `[PrimaryAccountFullName <String>]`: Indicates what the full name for the primary account is
   - `[PrimaryAccountUserName <String>]`: Indicates what the account name for the primary account is
   - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
-  - `[RequestRequiresNetworkTether <Boolean?>]`: Indicates if the device is network-tethered to run the command
   - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
   - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled

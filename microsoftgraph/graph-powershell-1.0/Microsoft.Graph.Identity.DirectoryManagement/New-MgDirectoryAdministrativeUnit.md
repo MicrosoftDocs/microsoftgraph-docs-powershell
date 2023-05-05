@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunit
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgDirectoryAdministrativeUnit
 
 ## SYNOPSIS
-Use this API to create a new administrativeUnit.
+Create new navigation property to administrativeUnits for directory
 
 ## SYNTAX
 
@@ -28,7 +27,7 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 ```
 
 ## DESCRIPTION
-Use this API to create a new administrativeUnit.
+Create new navigation property to administrativeUnits for directory
 
 ## EXAMPLES
 

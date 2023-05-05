@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduleschedulinggroup
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Create a new schedulingGroup.
+Create new navigation property to schedulingGroups for teams
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> -BodyParameter <
 ```
 
 ## DESCRIPTION
-Create a new schedulingGroup.
+Create new navigation property to schedulingGroups for teams
 
 ## EXAMPLES
 

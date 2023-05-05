@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationmerubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationMeRubric
 
 ## SYNOPSIS
-Create a new educationRubric object.
+Create new navigation property to rubrics for education
 
 ## SYNTAX
 
@@ -28,7 +27,7 @@ New-MgEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf
 ```
 
 ## DESCRIPTION
-Create a new educationRubric object.
+Create new navigation property to rubrics for education
 
 ## EXAMPLES
 

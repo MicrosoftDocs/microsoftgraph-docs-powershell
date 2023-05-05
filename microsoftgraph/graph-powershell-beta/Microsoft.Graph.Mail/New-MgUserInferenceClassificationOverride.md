@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mguserinferenceclassificationoverride
 schema: 2.0.0
-ms.prod: mail
 ---
 
 # New-MgUserInferenceClassificationOverride
 
 ## SYNOPSIS
-Create a focused Inbox override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classified\nas specified in the override.
+Create new navigation property to overrides for users
 
 ## SYNTAX
 
@@ -41,8 +39,7 @@ New-MgUserInferenceClassificationOverride -InputObject <IMailIdentity>
 ```
 
 ## DESCRIPTION
-Create a focused Inbox override for a sender identified by an SMTP address.
-Future messages from that SMTP address will be consistently classified\nas specified in the override.
+Create new navigation property to overrides for users
 
 ## EXAMPLES
 

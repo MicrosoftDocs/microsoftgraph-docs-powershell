@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgClockTeamScheduleTimeCardIn
 
 ## SYNOPSIS
-Clock in to start a timeCard.
+Invoke action clockIn
 
 ## SYNTAX
 
@@ -40,7 +40,7 @@ Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Clock in to start a timeCard.
+Invoke action clockIn
 
 ## EXAMPLES
 

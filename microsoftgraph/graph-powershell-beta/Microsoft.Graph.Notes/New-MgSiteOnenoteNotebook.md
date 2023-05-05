@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgSiteOnenoteNotebook
 
 ## SYNOPSIS
-Create a new OneNote notebook.
+Create new navigation property to notebooks for sites
 
 ## SYNTAX
 
@@ -46,7 +45,7 @@ New-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a new OneNote notebook.
+Create new navigation property to notebooks for sites
 
 ## EXAMPLES
 

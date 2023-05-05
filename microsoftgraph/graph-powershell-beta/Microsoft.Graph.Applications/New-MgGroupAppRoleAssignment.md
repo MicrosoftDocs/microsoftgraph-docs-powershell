@@ -3,16 +3,12 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mggroupapproleassignment
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgGroupAppRoleAssignment
 
 ## SYNOPSIS
-Use this API to assign an app role to a security group.
-All direct members of the group will be considered assigned.
-Security groups with dynamic memberships are supported.
-To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
+Create new navigation property to appRoleAssignments for groups
 
 ## SYNTAX
 
@@ -45,10 +41,7 @@ New-MgGroupAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to assign an app role to a security group.
-All direct members of the group will be considered assigned.
-Security groups with dynamic memberships are supported.
-To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
+Create new navigation property to appRoleAssignments for groups
 
 ## EXAMPLES
 

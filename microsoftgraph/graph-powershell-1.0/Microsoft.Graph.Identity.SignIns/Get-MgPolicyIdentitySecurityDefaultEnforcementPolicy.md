@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
-Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+The policy that represents the security defaults that protect against common attacks.
 
 ## SYNTAX
 
@@ -19,7 +18,7 @@ Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <String[]>
 ```
 
 ## DESCRIPTION
-Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
+The policy that represents the security defaults that protect against common attacks.
 
 ## EXAMPLES
 

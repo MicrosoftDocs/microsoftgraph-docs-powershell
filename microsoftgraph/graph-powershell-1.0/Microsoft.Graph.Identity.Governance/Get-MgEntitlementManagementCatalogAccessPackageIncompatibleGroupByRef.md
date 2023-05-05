@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementcatalogaccesspackageincompatiblegroupbyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef
 
 ## SYNOPSIS
-Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
+The groups whose members are ineligible to be assigned this access package.
 
 ## SYNTAX
 
@@ -20,7 +19,7 @@ Get-MgEntitlementManagementCatalogAccessPackageIncompatibleGroupByRef -AccessPac
 ```
 
 ## DESCRIPTION
-Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
+The groups whose members are ineligible to be assigned this access package.
 
 ## EXAMPLES
 

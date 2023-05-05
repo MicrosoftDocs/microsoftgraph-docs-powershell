@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgdriveroot
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # Get-MgDriveRoot
 
 ## SYNOPSIS
-Retrieve the metadata for a driveItem in a drive by file system path or ID.
+The root folder of the drive.
+Read-only.
 
 ## SYNTAX
 
@@ -25,7 +25,8 @@ Get-MgDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ```
 
 ## DESCRIPTION
-Retrieve the metadata for a driveItem in a drive by file system path or ID.
+The root folder of the drive.
+Read-only.
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of an adminConsentRequestPolicy object.
+The policy by which consent requests are created and managed for the entire tenant.
 
 ## SYNTAX
 
@@ -18,7 +17,7 @@ Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <S
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an adminConsentRequestPolicy object.
+The policy by which consent requests are created and managed for the entire tenant.
 
 ## EXAMPLES
 

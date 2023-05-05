@@ -3,13 +3,13 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationschoolclass
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationSchoolClass
 
 ## SYNOPSIS
-Retrieve a list of classes owned by a school.
+Classes taught at the school.
+Nullable.
 
 ## SYNTAX
 
@@ -20,7 +20,8 @@ Get-MgEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Retrieve a list of classes owned by a school.
+Classes taught at the school.
+Nullable.
 
 ## EXAMPLES
 

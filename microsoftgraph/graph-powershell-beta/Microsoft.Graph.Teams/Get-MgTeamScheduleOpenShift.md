@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamscheduleopenshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleOpenShift
 
 ## SYNOPSIS
-Get openShifts from teams
+The set of open shifts in a scheduling group in the schedule.
 
 ## SYNTAX
 
@@ -33,7 +32,7 @@ Get-MgTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-Get openShifts from teams
+The set of open shifts in a scheduling group in the schedule.
 
 ## EXAMPLES
 

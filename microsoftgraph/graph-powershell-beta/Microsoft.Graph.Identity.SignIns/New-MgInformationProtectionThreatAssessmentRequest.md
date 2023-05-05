@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mginformationprotectionthreatassessmentrequest
 schema: 2.0.0
-ms.prod: security
 ---
 
 # New-MgInformationProtectionThreatAssessmentRequest
 
 ## SYNOPSIS
-Create a new threat assessment request.
-A threat assessment request can be one of the following types:
+Create new navigation property to threatAssessmentRequests for informationProtection
 
 ## SYNTAX
 
@@ -30,8 +28,7 @@ New-MgInformationProtectionThreatAssessmentRequest -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a new threat assessment request.
-A threat assessment request can be one of the following types:
+Create new navigation property to threatAssessmentRequests for informationProtection
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinition
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgIdentityGovernanceAccessReviewHistoryDefinition
 
 ## SYNOPSIS
-Create a new accessReviewHistoryDefinition object.
+Create new navigation property to historyDefinitions for identityGovernance
 
 ## SYNTAX
 
@@ -30,7 +29,7 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition
 ```
 
 ## DESCRIPTION
-Create a new accessReviewHistoryDefinition object.
+Create new navigation property to historyDefinitions for identityGovernance
 
 ## EXAMPLES
 

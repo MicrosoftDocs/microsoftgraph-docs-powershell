@@ -8,7 +8,7 @@ schema: 2.0.0
 # Invoke-MgClockTeamScheduleTimeCardOut
 
 ## SYNOPSIS
-Clock out to end an open timeCard.
+Invoke action clockOut
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Invoke-MgClockTeamScheduleTimeCardOut -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Clock out to end an open timeCard.
+Invoke action clockOut
 
 ## EXAMPLES
 

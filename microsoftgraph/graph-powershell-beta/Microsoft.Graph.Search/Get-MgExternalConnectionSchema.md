@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Search-help.xml
 Module Name: Microsoft.Graph.Search
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternalconnectionschema
 schema: 2.0.0
-ms.prod: search
 ---
 
 # Get-MgExternalConnectionSchema
 
 ## SYNOPSIS
-Retrieve the properties of a schema for an externalConnection.
+Get schema from external
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a schema for an externalConnection.
+Get schema from external
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgsharelistcontenttypecolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgShareListContentTypeColumn
 
 ## SYNOPSIS
-Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for shares
 
 ## SYNTAX
 
@@ -59,7 +58,7 @@ New-MgShareListContentTypeColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for shares
 
 ## EXAMPLES
 

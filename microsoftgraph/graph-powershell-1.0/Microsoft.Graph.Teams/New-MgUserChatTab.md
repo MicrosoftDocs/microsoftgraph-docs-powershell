@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchattab
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgUserChatTab
 
 ## SYNOPSIS
-Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+Create new navigation property to tabs for users
 
 ## SYNTAX
 
@@ -41,8 +39,7 @@ New-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 ```
 
 ## DESCRIPTION
-Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+Create new navigation property to tabs for users
 
 ## EXAMPLES
 

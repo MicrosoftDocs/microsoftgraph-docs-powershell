@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mggroupplannerplandetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgGroupPlannerPlanDetail
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a **plannerPlanDetails** object.
+Read-only.
+Nullable.
+Additional details about the plan.
 
 ## SYNTAX
 
@@ -26,7 +27,9 @@ Get-MgGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandProperty <S
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a **plannerPlanDetails** object.
+Read-only.
+Nullable.
+Additional details about the plan.
 
 ## EXAMPLES
 

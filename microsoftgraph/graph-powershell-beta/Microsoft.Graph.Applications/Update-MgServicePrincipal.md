@@ -879,9 +879,8 @@ Accept wildcard characters: False
 ```
 
 ### -PreferredTokenSigningKeyThumbprint
-Reserved for internal use only.
-Do not write or otherwise rely on this property.
-May be removed in future versions.
+This property can be used on SAML applications (apps that have preferredSingleSignOnMode set to saml) to control which certificate is used to sign the SAML responses.
+For applications that are not SAML, do not write or otherwise rely on this property.
 
 ```yaml
 Type: String
@@ -1225,10 +1224,10 @@ APPMANAGEMENTPOLICIES <IMicrosoftGraphAppManagementPolicy1\[]>: The appManagemen
   - `[DisplayName <String>]`: Display name for this policy. Required.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Collection of applications and service principals to which the policy is applied.
+  - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Collection of application and service principals to which a policy is applied.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[IsEnabled <Boolean?>]`: 
+  - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
   - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
@@ -1289,10 +1288,10 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipal1>`: servicePrincipal
     - `[DisplayName <String>]`: Display name for this policy. Required.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Collection of applications and service principals to which the policy is applied.
+    - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Collection of application and service principals to which a policy is applied.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-    - `[IsEnabled <Boolean?>]`: 
+    - `[IsEnabled <Boolean?>]`: Denotes whether the policy is enabled.
     - `[Restrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
@@ -1426,7 +1425,7 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipal1>`: servicePrincipal
       - `[Type <String>]`: Type of the credential. The values can be text, password.
   - `[PreferredSingleSignOnMode <String>]`: Specifies the single sign-on mode configured for this application. Azure AD uses the preferred single sign-on mode to launch the application from Microsoft 365 or the Azure AD My Apps. The supported values are password, saml, notSupported, and oidc.
   - `[PreferredTokenSigningKeyEndDateTime <DateTime?>]`: Specifies the expiration date of the keyCredential used for token signing, marked by preferredTokenSigningKeyThumbprint.
-  - `[PreferredTokenSigningKeyThumbprint <String>]`: Reserved for internal use only. Do not write or otherwise rely on this property. May be removed in future versions.
+  - `[PreferredTokenSigningKeyThumbprint <String>]`: This property can be used on SAML applications (apps that have preferredSingleSignOnMode set to saml) to control which certificate is used to sign the SAML responses. For applications that are not SAML, do not write or otherwise rely on this property.
   - `[PublishedPermissionScopes <IMicrosoftGraphPermissionScope[]>]`: The delegated permissions exposed by the application. For more information see the oauth2PermissionScopes property on the application entity's api property. Not nullable. Note: This property is named oauth2PermissionScopes in v1.0.
     - `[AdminConsentDescription <String>]`: A description of the delegated permissions, intended to be read by an administrator granting the permission on behalf of all users. This text appears in tenant-wide admin consent experiences.
     - `[AdminConsentDisplayName <String>]`: The permission's title, intended to be read by an administrator granting the permission on behalf of all users.
@@ -1490,7 +1489,13 @@ BODYPARAMETER `<IMicrosoftGraphServicePrincipal1>`: servicePrincipal
           - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
           - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
         - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+          - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IncludedContainers <String[]>]`: 
           - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
+          - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IncludedGroups <String[]>]`: 
           - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
           - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
           - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.
@@ -1824,7 +1829,13 @@ SYNCHRONIZATION `<IMicrosoftGraphSynchronization>`: synchronization
         - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
         - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
       - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
+        - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IncludedContainers <String[]>]`: 
         - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
+        - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IncludedGroups <String[]>]`: 
         - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
         - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
         - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.

@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.PersonalContacts-help.xml
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontactfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserContactFolder
 
 ## SYNOPSIS
-Create a new contactFolder under the user's default contacts folder.
-You can also create a new contactfolder as a child of any specified contact folder.
+Create new navigation property to contactFolders for users
 
 ## SYNTAX
 
@@ -47,8 +45,7 @@ New-MgUserContactFolder -InputObject <IPersonalContactsIdentity> -BodyParameter 
 ```
 
 ## DESCRIPTION
-Create a new contactFolder under the user's default contacts folder.
-You can also create a new contactfolder as a child of any specified contact folder.
+Create new navigation property to contactFolders for users
 
 ## EXAMPLES
 
