@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgchatmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgChatMember
 
 ## SYNOPSIS
-Add a conversationMember to a chat.
+Create new navigation property to members for chats
 
 ## SYNTAX
 
@@ -39,7 +38,7 @@ New-MgChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ```
 
 ## DESCRIPTION
-Add a conversationMember to a chat.
+Create new navigation property to members for chats
 
 ## EXAMPLES
 

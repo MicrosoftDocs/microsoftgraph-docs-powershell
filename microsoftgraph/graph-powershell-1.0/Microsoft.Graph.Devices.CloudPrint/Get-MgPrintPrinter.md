@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprinter
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintPrinter
@@ -20,12 +19,12 @@ Get-MgPrintPrinter [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter 
  [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgPrintPrinter -PrinterId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -132,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IDevicesCloudPrintIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -162,7 +161,7 @@ The unique identifier of printer
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -255,7 +254,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter
 ## NOTES
 
 ALIASES

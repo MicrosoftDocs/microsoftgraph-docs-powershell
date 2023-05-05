@@ -19,13 +19,13 @@ Get-MgGroupSiteColumn -GroupId <String> [-SiteId <String>] [-ExpandProperty <Str
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgGroupSiteColumn -ColumnDefinitionId <String> -GroupId <String> [-SiteId <String>]
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
@@ -58,7 +58,7 @@ The unique identifier of columnDefinition
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -119,7 +119,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -135,7 +135,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -195,7 +195,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: List, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: False
@@ -286,6 +286,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

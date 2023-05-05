@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintshareallowedgroup
 schema: 2.0.0
-ms.prod: cloud-printing
 ---
 
 # Get-MgPrintShareAllowedGroup
 
 ## SYNOPSIS
-Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
+The groups whose users have access to print using the printer.
 
 ## SYNTAX
 
@@ -20,7 +19,7 @@ Get-MgPrintShareAllowedGroup -PrinterShareId <String> [-ExpandProperty <String[]
 ```
 
 ## DESCRIPTION
-Retrieve a list of groups that have been granted access to submit print jobs to the associated printerShare.
+The groups whose users have access to print using the printer.
 
 ## EXAMPLES
 
@@ -208,7 +207,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroup1
 ## NOTES
 
 ALIASES

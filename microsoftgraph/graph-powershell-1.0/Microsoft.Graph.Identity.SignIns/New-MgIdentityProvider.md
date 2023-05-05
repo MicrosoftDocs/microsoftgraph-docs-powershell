@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityprovider
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityProvider
 
 ## SYNOPSIS
-Create an identity provider object that is of the type specified in the request body.
-Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
-In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+Create new navigation property to identityProviders for identity
 
 ## SYNTAX
 
@@ -28,9 +25,7 @@ New-MgIdentityProvider -BodyParameter <IMicrosoftGraphIdentityProviderBase> [-Wh
 ```
 
 ## DESCRIPTION
-Create an identity provider object that is of the type specified in the request body.
-Among the types of providers derived from identityProviderBase, you can currently create a socialIdentityProvider resource in Azure AD.
-In Azure AD B2C, this operation can currently create a socialIdentityProvider, or an appleManagedIdentityProvider resource.
+Create new navigation property to identityProviders for identity
 
 ## EXAMPLES
 

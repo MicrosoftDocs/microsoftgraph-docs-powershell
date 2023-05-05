@@ -3,17 +3,12 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversationthread
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgGroupConversationThread
 
 ## SYNOPSIS
-Create a new thread in the specified conversation.
-A thread and post are created as specified.
-Use reply thread to further post \nto that thread.
-Or, if you get the post ID, you can also reply to that post in that thread.
-Note: You can also start a new conversation by first creating a thread.
+Create new navigation property to threads for groups
 
 ## SYNTAX
 
@@ -48,11 +43,7 @@ New-MgGroupConversationThread -InputObject <IGroupsIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Create a new thread in the specified conversation.
-A thread and post are created as specified.
-Use reply thread to further post \nto that thread.
-Or, if you get the post ID, you can also reply to that post in that thread.
-Note: You can also start a new conversation by first creating a thread.
+Create new navigation property to threads for groups
 
 ## EXAMPLES
 
@@ -440,6 +431,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

@@ -3,37 +3,36 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamscheduleopenshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamScheduleOpenShift
 
 ## SYNOPSIS
-Get openShifts from groups
+The set of open shifts in a scheduling group in the schedule.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgGroupTeamScheduleOpenShift -GroupId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
  [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
 Get-MgGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get openShifts from groups
+The set of open shifts in a scheduling group in the schedule.
 
 ## EXAMPLES
 
@@ -55,7 +54,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -71,7 +70,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -101,7 +100,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -116,7 +115,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get1
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -132,7 +131,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -147,7 +146,7 @@ The unique identifier of openShift
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -162,7 +161,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -192,7 +191,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -207,7 +206,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -222,7 +221,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -237,7 +236,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False

@@ -12,25 +12,25 @@ Create new navigation property to columnLinks for drives
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDriveListContentTypeColumnLink -ContentTypeId <String> -DriveId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Name <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgDriveListContentTypeColumnLink -ContentTypeId <String> -DriveId <String>
  -BodyParameter <IMicrosoftGraphColumnLink> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-Name <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgDriveListContentTypeColumnLink -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphColumnLink>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -48,7 +48,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -64,7 +64,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphColumnLink
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -79,7 +79,7 @@ The unique identifier of contentType
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -94,7 +94,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -110,7 +110,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -126,7 +126,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -141,7 +141,7 @@ The name of the column in this content type.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False

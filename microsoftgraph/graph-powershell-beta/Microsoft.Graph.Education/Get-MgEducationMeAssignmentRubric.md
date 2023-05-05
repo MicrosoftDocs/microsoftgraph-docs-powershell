@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentrubric
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationMeAssignmentRubric
 
 ## SYNOPSIS
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
+When set, the grading rubric attached to this assignment.
 
 ## SYNTAX
 
@@ -27,8 +25,7 @@ Get-MgEducationMeAssignmentRubric -InputObject <IEducationIdentity> [-ExpandProp
 ```
 
 ## DESCRIPTION
-Get the educationRubric object attached to an educationAssignment, if one exists.
-Only teachers, students, and applications with application permissions can perform this operation.
+When set, the grading rubric attached to this assignment.
 
 ## EXAMPLES
 

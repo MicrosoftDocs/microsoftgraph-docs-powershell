@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertaskdetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerTaskDetail
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a **plannerTaskDetails** object.
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## SYNTAX
 
@@ -26,7 +27,9 @@ Get-MgPlannerTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a **plannerTaskDetails** object.
+Read-only.
+Nullable.
+Additional details about the task.
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyappmanagementpolicyapplyto
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyAppManagementPolicyApplyTo
 
 ## SYNOPSIS
-Get appliesTo from policies
+Collection of applications and service principals to which the policy is applied.
 
 ## SYNTAX
 
@@ -33,7 +32,7 @@ Get-MgPolicyAppManagementPolicyApplyTo -InputObject <IIdentitySignInsIdentity> [
 ```
 
 ## DESCRIPTION
-Get appliesTo from policies
+Collection of applications and service principals to which the policy is applied.
 
 ## EXAMPLES
 
@@ -291,6 +290,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy

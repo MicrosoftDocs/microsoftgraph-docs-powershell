@@ -12,13 +12,13 @@ Delete ref of navigation property incompatibleGroups for identityGovernance
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String> -GroupId <String>
  [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <IIdentityGovernanceIdentity>
  [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +45,7 @@ The unique identifier of accessPackage
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -60,7 +60,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -106,7 +106,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True

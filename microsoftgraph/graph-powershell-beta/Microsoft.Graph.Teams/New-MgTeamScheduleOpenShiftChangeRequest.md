@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduleopenshiftchangerequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleOpenShiftChangeRequest
 
 ## SYNOPSIS
-Create instance of an openShiftChangeRequest object.
+Create new navigation property to openShiftChangeRequests for teams
 
 ## SYNTAX
 
@@ -42,7 +41,7 @@ New-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create instance of an openShiftChangeRequest object.
+Create new navigation property to openShiftChangeRequests for teams
 
 ## EXAMPLES
 

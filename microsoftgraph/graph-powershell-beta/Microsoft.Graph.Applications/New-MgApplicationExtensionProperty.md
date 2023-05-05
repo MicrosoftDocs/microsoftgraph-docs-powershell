@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
 # New-MgApplicationExtensionProperty
 
 ## SYNOPSIS
-Create a new directory extension definition, represented by an extensionProperty object.
+Create new navigation property to extensionProperties for applications
 
 ## SYNTAX
 
@@ -42,7 +41,7 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new directory extension definition, represented by an extensionProperty object.
+Create new navigation property to extensionProperties for applications
 
 ## EXAMPLES
 

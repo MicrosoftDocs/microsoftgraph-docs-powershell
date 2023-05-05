@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationflowpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
-Update the Boolean **selfServiceSignUp** property of an authenticationFlowsPolicy object.
-The properties **id**, **type**, and **description** cannot be modified.
+Update the navigation property authenticationFlowsPolicy in policies
 
 ## SYNTAX
 
@@ -29,8 +27,7 @@ Update-MgPolicyAuthenticationFlowPolicy -BodyParameter <IMicrosoftGraphAuthentic
 ```
 
 ## DESCRIPTION
-Update the Boolean **selfServiceSignUp** property of an authenticationFlowsPolicy object.
-The properties **id**, **type**, and **description** cannot be modified.
+Update the navigation property authenticationFlowsPolicy in policies
 
 ## EXAMPLES
 

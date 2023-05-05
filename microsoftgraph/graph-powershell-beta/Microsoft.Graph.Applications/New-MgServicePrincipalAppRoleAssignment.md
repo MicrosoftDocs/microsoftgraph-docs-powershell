@@ -3,16 +3,12 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalapproleassignment
 schema: 2.0.0
-ms.prod: applications
 ---
 
 # New-MgServicePrincipalAppRoleAssignment
 
 ## SYNOPSIS
-Assign an app role to a client service principal.
-App roles that are assigned to service principals are also known as application permissions.
-Application permissions can be granted directly with app role assignments, or through a consent experience.
-To grant an app role assignment to a client service principal, you need three identifiers:
+Create new navigation property to appRoleAssignments for servicePrincipals
 
 ## SYNTAX
 
@@ -45,10 +41,7 @@ New-MgServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Assign an app role to a client service principal.
-App roles that are assigned to service principals are also known as application permissions.
-Application permissions can be granted directly with app role assignments, or through a consent experience.
-To grant an app role assignment to a client service principal, you need three identifiers:
+Create new navigation property to appRoleAssignments for servicePrincipals
 
 ## EXAMPLES
 

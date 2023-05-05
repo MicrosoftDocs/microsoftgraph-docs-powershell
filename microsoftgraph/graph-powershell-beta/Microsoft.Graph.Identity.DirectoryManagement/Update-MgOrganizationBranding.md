@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationbranding
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgOrganizationBranding
 
 ## SYNOPSIS
-Update the properties of the default branding object specified by the organizationalBranding resource.
+Update the navigation property branding in organization
 
 ## SYNTAX
 
@@ -65,7 +64,7 @@ Update-MgOrganizationBranding -InputObject <IIdentityDirectoryManagementIdentity
 ```
 
 ## DESCRIPTION
-Update the properties of the default branding object specified by the organizationalBranding resource.
+Update the navigation property branding in organization
 
 ## EXAMPLES
 

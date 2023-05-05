@@ -77,7 +77,7 @@ Accept wildcard characters: False
 ```
 
 ### -DirectoryObjectId
-key: id of directoryObject
+The unique identifier of directoryObject
 
 ```yaml
 Type: String
@@ -177,6 +177,6 @@ BODYPARAMETER `<IPaths1B1K3OoDirectoryobjectsDirectoryobjectIdMicrosoftGraphChec
   - `[Ids <String[]>]`: 
 
 INPUTOBJECT `<IDirectoryObjectsIdentity>`: Identity Parameter
-  - `[DirectoryObjectId <String>]`: key: id of directoryObject
+  - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS

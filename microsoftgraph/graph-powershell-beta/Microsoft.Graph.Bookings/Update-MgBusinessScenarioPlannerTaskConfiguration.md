@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBusinessScenarioPlannerTaskConfiguration
 
 ## SYNOPSIS
-Update the properties of a plannerTaskConfiguration object.
+Update the navigation property taskConfiguration in solutions
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Update-MgBusinessScenarioPlannerTaskConfiguration -InputObject <IBookingsIdentit
 ```
 
 ## DESCRIPTION
-Update the properties of a plannerTaskConfiguration object.
+Update the navigation property taskConfiguration in solutions
 
 ## EXAMPLES
 

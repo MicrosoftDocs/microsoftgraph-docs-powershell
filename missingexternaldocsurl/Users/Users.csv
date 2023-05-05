@@ -1,3 +1,15 @@
 Graph profile, Command, UriPath
 v1.0, Get-MgUserExtension, /users/{user-id}/extensions
 v1.0-beta, Get-MgUserExtension, /users/{user-id}/extensions
+v1.0, Get-MgUserCreatedObject, /users/{user-id}/createdObjects
+v1.0, Get-MgUserDirectReport, /users/{user-id}/directReports
+v1.0, Get-MgUserLicenseDetail, /users/{user-id}/licenseDetails
+v1.0, Get-MgUserManager, /users/{user-id}/manager
+v1.0, Get-MgUserManagerByRef, /users/{user-id}/manager/$ref
+v1.0, Get-MgUserMemberOf, /users/{user-id}/memberOf
+v1.0-beta, Get-MgUserCreatedObject, /users/{user-id}/createdObjects
+v1.0-beta, Get-MgUserDirectReport, /users/{user-id}/directReports
+v1.0-beta, Get-MgUserLicenseDetail, /users/{user-id}/licenseDetails
+v1.0-beta, Get-MgUserManager, /users/{user-id}/manager
+v1.0-beta, Get-MgUserManagerByRef, /users/{user-id}/manager/$ref
+v1.0-beta, Get-MgUserMemberOf, /users/{user-id}/memberOf

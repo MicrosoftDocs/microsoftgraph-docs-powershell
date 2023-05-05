@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleswapshiftchangerequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamScheduleSwapShiftChangeRequest
 
 ## SYNOPSIS
-Create an instance of a swapShiftsChangeRequest object.
+Create new navigation property to swapShiftsChangeRequests for groups
 
 ## SYNTAX
 
@@ -44,7 +43,7 @@ New-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create an instance of a swapShiftsChangeRequest object.
+Create new navigation property to swapShiftsChangeRequests for groups
 
 ## EXAMPLES
 

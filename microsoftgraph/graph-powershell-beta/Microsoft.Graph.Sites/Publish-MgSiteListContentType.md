@@ -8,24 +8,24 @@ schema: 2.0.0
 # Publish-MgSiteListContentType
 
 ## SYNOPSIS
-Publishes a [contentType][] present in a content type hub site.
+Invoke action publish
 
 ## SYNTAX
 
-### Publish (Default)
+### Publish1 (Default)
 ```
 Publish-MgSiteListContentType -ContentTypeId <String> -ListId <String> -SiteId <String> [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### PublishViaIdentity1
 ```
 Publish-MgSiteListContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Publishes a [contentType][] present in a content type hub site.
+Invoke action publish
 
 ## EXAMPLES
 
@@ -47,7 +47,7 @@ The unique identifier of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -63,7 +63,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: PublishViaIdentity
+Parameter Sets: PublishViaIdentity1
 Aliases:
 
 Required: True
@@ -78,7 +78,7 @@ The unique identifier of list
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: Publish
+Parameter Sets: Publish1
 Aliases:
 
 Required: True
@@ -185,6 +185,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

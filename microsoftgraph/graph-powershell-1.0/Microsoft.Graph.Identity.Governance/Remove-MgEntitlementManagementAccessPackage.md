@@ -12,13 +12,13 @@ Delete navigation property accessPackages for identityGovernance
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgEntitlementManagementAccessPackage -AccessPackageId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>]
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -45,7 +45,7 @@ The unique identifier of accessPackage
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -76,7 +76,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

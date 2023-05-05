@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Create a new conditionalAccessPolicy.
+Create new navigation property to policies for identity
 
 ## SYNTAX
 
@@ -18,9 +17,9 @@ Create a new conditionalAccessPolicy.
 New-MgIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphConditionalAccessConditionSet1>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls1>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>]
- [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls1>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -30,7 +29,7 @@ New-MgIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditional
 ```
 
 ## DESCRIPTION
-Create a new conditionalAccessPolicy.
+Create new navigation property to policies for identity
 
 ## EXAMPLES
 
@@ -229,7 +228,7 @@ conditionalAccessGrantControls
 To construct, please use Get-Help -Online and see NOTES section for GRANTCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessGrantControls1
+Type: IMicrosoftGraphConditionalAccessGrantControls
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -414,7 +413,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Readonly.
   - `[Description <String>]`: Not used.
   - `[DisplayName <String>]`: Specifies a display name for the conditionalAccessPolicy object.
-  - `[GrantControls <IMicrosoftGraphConditionalAccessGrantControls1>]`: conditionalAccessGrantControls
+  - `[GrantControls <IMicrosoftGraphConditionalAccessGrantControls>]`: conditionalAccessGrantControls
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -430,7 +429,7 @@ BODYPARAMETER `<IMicrosoftGraphConditionalAccessPolicy1>`: conditionalAccessPoli
       - `[PolicyType <String>]`: authenticationStrengthPolicyType
       - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
     - `[BuiltInControls <String[]>]`: List of values of built-in controls required by the policy. Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
-    - `[CustomAuthenticationFactors <String[]>]`: List of custom controls IDs required by the policy. To learn more about custom control, see Custom controls (preview).
+    - `[CustomAuthenticationFactors <String[]>]`: List of custom controls IDs required by the policy. For more information, see Custom controls.
     - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
     - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Readonly.
@@ -519,7 +518,7 @@ CONDITIONS `<IMicrosoftGraphConditionalAccessConditionSet1>`: conditionalAccessC
     - `[IncludeRoles <String[]>]`: Role IDs in scope of policy unless explicitly excluded.
     - `[IncludeUsers <String[]>]`: User IDs in scope of policy unless explicitly excluded, None, All, or GuestsOrExternalUsers.
 
-GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls1>`: conditionalAccessGrantControls
+GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls>`: conditionalAccessGrantControls
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthPolicy>]`: authenticationStrengthPolicy
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -535,7 +534,7 @@ GRANTCONTROLS `<IMicrosoftGraphConditionalAccessGrantControls1>`: conditionalAcc
     - `[PolicyType <String>]`: authenticationStrengthPolicyType
     - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
   - `[BuiltInControls <String[]>]`: List of values of built-in controls required by the policy. Possible values: block, mfa, compliantDevice, domainJoinedDevice, approvedApplication, compliantApplication, passwordChange, unknownFutureValue.
-  - `[CustomAuthenticationFactors <String[]>]`: List of custom controls IDs required by the policy. To learn more about custom control, see Custom controls (preview).
+  - `[CustomAuthenticationFactors <String[]>]`: List of custom controls IDs required by the policy. For more information, see Custom controls.
   - `[Operator <String>]`: Defines the relationship of the grant controls. Possible values: AND, OR.
   - `[TermsOfUse <String[]>]`: List of terms of use IDs required by the policy.
 

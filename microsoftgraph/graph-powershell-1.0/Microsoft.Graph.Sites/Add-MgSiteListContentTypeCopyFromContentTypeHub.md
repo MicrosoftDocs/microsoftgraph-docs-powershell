@@ -8,33 +8,30 @@ schema: 2.0.0
 # Add-MgSiteListContentTypeCopyFromContentTypeHub
 
 ## SYNOPSIS
-Add or sync a copy of a published content type from the content type hub to a target site or a list.
-This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
-The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+Invoke action addCopyFromContentTypeHub
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
 Add-MgSiteListContentTypeCopyFromContentTypeHub -ListId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
 Add-MgSiteListContentTypeCopyFromContentTypeHub -ListId <String> -SiteId <String>
  -BodyParameter <IPathsYc53NgSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentityExpanded
 ```
 Add-MgSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AddViaIdentity1
+### AddViaIdentity
 ```
 Add-MgSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentity>
  -BodyParameter <IPathsYc53NgSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
@@ -42,10 +39,7 @@ Add-MgSiteListContentTypeCopyFromContentTypeHub -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Add or sync a copy of a published content type from the content type hub to a target site or a list.
-This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
-The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+Invoke action addCopyFromContentTypeHub
 
 ## EXAMPLES
 
@@ -92,7 +86,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -108,7 +102,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPathsYc53NgSitesSiteIdListsListIdContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -123,7 +117,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -139,7 +133,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
 Aliases:
 
 Required: True
@@ -154,7 +148,7 @@ The unique identifier of list
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -169,7 +163,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: AddExpanded1, Add1
+Parameter Sets: AddExpanded, Add
 Aliases:
 
 Required: True
@@ -251,6 +245,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

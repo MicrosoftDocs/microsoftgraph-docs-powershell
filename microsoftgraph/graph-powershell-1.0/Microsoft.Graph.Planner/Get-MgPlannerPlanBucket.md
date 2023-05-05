@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannerplanbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerPlanBucket
 
 ## SYNOPSIS
-Retrieve a list of plannerBucket objects contained by a plannerPlan object.
+Read-only.
+Nullable.
+Collection of buckets in the plan.
 
 ## SYNTAX
 
@@ -20,7 +21,9 @@ Get-MgPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-F
 ```
 
 ## DESCRIPTION
-Retrieve a list of plannerBucket objects contained by a plannerPlan object.
+Read-only.
+Nullable.
+Collection of buckets in the plan.
 
 ## EXAMPLES
 

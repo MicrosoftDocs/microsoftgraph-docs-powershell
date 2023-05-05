@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Get-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Read the properties and relationships of a crossTenantAccessPolicy object.
+The custom rules that define an access scenario when interacting with external Azure AD tenants.
 
 ## SYNTAX
 
@@ -18,7 +17,7 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a crossTenantAccessPolicy object.
+The custom rules that define an access scenario when interacting with external Azure AD tenants.
 
 ## EXAMPLES
 

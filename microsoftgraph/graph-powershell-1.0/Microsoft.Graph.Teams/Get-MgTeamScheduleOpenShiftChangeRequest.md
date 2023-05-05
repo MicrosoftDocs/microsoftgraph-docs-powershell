@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamscheduleopenshiftchangerequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleOpenShiftChangeRequest
 
 ## SYNOPSIS
-Get openShiftChangeRequests from teams
+The open shift requests in the schedule.
 
 ## SYNTAX
 
@@ -33,7 +32,7 @@ Get-MgTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get openShiftChangeRequests from teams
+The open shift requests in the schedule.
 
 ## EXAMPLES
 

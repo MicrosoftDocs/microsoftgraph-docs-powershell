@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAssignmentPolicy
 
 ## SYNOPSIS
-Read-only.
-Supports $filter (eq) on the id property and $expand query parameters.
+Access package assignment policies govern which subjects can request or be assigned an access package via an access package assignment.
 
 ## SYNTAX
 
@@ -23,14 +21,14 @@ Get-MgEntitlementManagementAssignmentPolicy [-ExpandProperty <String[]>] [-Prope
 
 ### Get
 ```
-Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
@@ -46,8 +44,7 @@ Get-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 ```
 
 ## DESCRIPTION
-Read-only.
-Supports $filter (eq) on the id property and $expand query parameters.
+Access package assignment policies govern which subjects can request or be assigned an access package via an access package assignment.
 
 ## EXAMPLES
 
@@ -76,7 +73,7 @@ The unique identifier of accessPackageAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -91,7 +88,7 @@ The unique identifier of accessPackageAssignmentPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Get1
+Parameter Sets: Get
 Aliases:
 
 Required: True

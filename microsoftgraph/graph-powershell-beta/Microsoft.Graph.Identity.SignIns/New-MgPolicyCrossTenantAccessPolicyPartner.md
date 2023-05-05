@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicycrosstenantaccesspolicypartner
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
-Create a new partner configuration in a cross-tenant access policy.
+Create new navigation property to partners for policies
 
 ## SYNTAX
 
@@ -35,7 +34,7 @@ New-MgPolicyCrossTenantAccessPolicyPartner
 ```
 
 ## DESCRIPTION
-Create a new partner configuration in a cross-tenant access policy.
+Create new navigation property to partners for policies
 
 ## EXAMPLES
 

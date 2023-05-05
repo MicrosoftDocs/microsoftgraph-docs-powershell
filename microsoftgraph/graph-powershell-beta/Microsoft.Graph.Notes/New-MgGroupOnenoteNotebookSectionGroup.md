@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebooksectiongroup
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteNotebookSectionGroup
 
 ## SYNOPSIS
-Create a new section group in the specified notebook.
+Create new navigation property to sectionGroups for groups
 
 ## SYNTAX
 
@@ -48,7 +47,7 @@ New-MgGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 ```
 
 ## DESCRIPTION
-Create a new section group in the specified notebook.
+Create new navigation property to sectionGroups for groups
 
 ## EXAMPLES
 

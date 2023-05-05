@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduletimeoffreason
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamScheduleTimeOffReason
 
 ## SYNOPSIS
-Create a new timeOffReason.
+Create new navigation property to timeOffReasons for groups
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgGroupTeamScheduleTimeOffReason -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new timeOffReason.
+Create new navigation property to timeOffReasons for groups
 
 ## EXAMPLES
 

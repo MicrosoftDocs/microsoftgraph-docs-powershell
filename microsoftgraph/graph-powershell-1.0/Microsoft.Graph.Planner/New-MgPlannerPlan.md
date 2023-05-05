@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerplan
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerPlan
 
 ## SYNOPSIS
-Use this API to create a new **plannerPlan**.
+Create new navigation property to plans for planner
 
 ## SYNTAX
 
@@ -27,7 +26,7 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confir
 ```
 
 ## DESCRIPTION
-Use this API to create a new **plannerPlan**.
+Create new navigation property to plans for planner
 
 ## EXAMPLES
 

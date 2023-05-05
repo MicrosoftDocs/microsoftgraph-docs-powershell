@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamprimarychannel
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamPrimaryChannel
 
 ## SYNOPSIS
-Get the default channel, **General**, of a team.
+The general channel for the team.
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ Get-MgTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 ```
 
 ## DESCRIPTION
-Get the default channel, **General**, of a team.
+The general channel for the team.
 
 ## EXAMPLES
 

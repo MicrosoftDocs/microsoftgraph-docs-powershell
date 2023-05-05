@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamscheduletimeoffrequest
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgTeamScheduleTimeOffRequest
 
 ## SYNOPSIS
-Get timeOffRequests from teams
+The time off requests in the schedule.
 
 ## SYNTAX
 
@@ -32,7 +31,7 @@ Get-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <Strin
 ```
 
 ## DESCRIPTION
-Get timeOffRequests from teams
+The time off requests in the schedule.
 
 ## EXAMPLES
 

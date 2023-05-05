@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/get-mgusermailfolder
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # Get-MgUserMailFolder
@@ -17,21 +16,21 @@ Nullable.
 
 ### List (Default)
 ```
-Get-MgUserMailFolder -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgUserMailFolder -UserId <String> [-ExpandProperty <String[]>] [-IncludeHiddenFolders <String>]
+ [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgUserMailFolder -MailFolderId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-IncludeHiddenFolders <String>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMailFolder -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserMailFolder -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-IncludeHiddenFolders <String>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -125,6 +124,21 @@ Filter items by property values
 ```yaml
 Type: String
 Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeHiddenFolders
+Include Hidden Folders
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False

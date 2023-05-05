@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyCrossTenantAccessPolicy
 
 ## SYNOPSIS
-Update the properties of a cross-tenant access policy.
+Update the navigation property crossTenantAccessPolicy in policies
 
 ## SYNTAX
 
@@ -29,7 +28,7 @@ Update-MgPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossTenan
 ```
 
 ## DESCRIPTION
-Update the properties of a cross-tenant access policy.
+Update the navigation property crossTenantAccessPolicy in policies
 
 ## EXAMPLES
 

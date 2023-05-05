@@ -324,8 +324,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
   - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: The unique identifier of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: The unique identifier of officeClientConfiguration
   - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
   - `[PolicySetId <String>]`: The unique identifier of policySet
@@ -359,7 +357,5 @@ MOBILEAPPLIST <IMicrosoftGraphMobileAppIntentAndStateDetail\[]>: The list of pay
     - `[MaximumOperatingSystemVersion <String>]`: Maximum OS version
     - `[MinimumOperatingSystemVersion <String>]`: Minimum OS version
     - `[Type <DeviceType?>]`: Device type.
-
-## RELATED LINKS
 
 ## RELATED LINKS

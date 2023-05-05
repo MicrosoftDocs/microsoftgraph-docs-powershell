@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitepermission
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
 # New-MgSitePermission
 
 ## SYNOPSIS
-Create a new permission object on a site.
+Create new navigation property to permissions for sites
 
 ## SYNTAX
 
@@ -49,7 +48,7 @@ New-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 ```
 
 ## DESCRIPTION
-Create a new permission object on a site.
+Create new navigation property to permissions for sites
 
 ## EXAMPLES
 
@@ -533,6 +532,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

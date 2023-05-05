@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdeviceregisteredowner
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # Get-MgDeviceRegisteredOwner
@@ -11,7 +10,6 @@ ms.prod: directory-management
 ## SYNOPSIS
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.
@@ -27,7 +25,6 @@ Get-MgDeviceRegisteredOwner -DeviceId <String> [-ExpandProperty <String[]>] [-Fi
 ## DESCRIPTION
 The user that cloud joined the device or registered their personal device.
 The registered owner is set at the time of registration.
-Currently, there can be only one owner.
 Read-only.
 Nullable.
 Supports $expand.

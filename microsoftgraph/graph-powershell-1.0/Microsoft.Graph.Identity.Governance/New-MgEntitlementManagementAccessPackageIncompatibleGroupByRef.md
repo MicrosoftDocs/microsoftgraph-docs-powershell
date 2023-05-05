@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageincompatiblegroupbyref
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef
@@ -13,25 +12,25 @@ Create new navigation property ref to incompatibleGroups for identityGovernance
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String>
  [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
 New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId <String>
  -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
 New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <IIdentityGovernanceIdentity>
  [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
 New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -60,7 +59,7 @@ The unique identifier of accessPackage
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, Create1
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -75,7 +74,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -91,7 +90,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IReferenceCreate
-Parameter Sets: Create1, CreateViaIdentity1
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -107,7 +106,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -122,7 +121,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False

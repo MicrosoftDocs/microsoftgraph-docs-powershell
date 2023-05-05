@@ -85,3 +85,6 @@ v1.0-beta, Update-MgUserProfilePublication, /users/{user-id}/profile/publication
 v1.0-beta, Update-MgUserProfileSkill, /users/{user-id}/profile/skills/{skillProficiency-id}
 v1.0-beta, Update-MgUserProfileWebAccount, /users/{user-id}/profile/webAccounts/{webAccount-id}
 v1.0-beta, Update-MgUserProfileWebsite, /users/{user-id}/profile/websites/{personWebsite-id}
+v1.0, Get-MgUserPerson, /users/{user-id}/people
+v1.0, Get-MgUserUsedInsight, /users/{user-id}/insights/used
+v1.0-beta, Get-MgUserPerson, /users/{user-id}/people

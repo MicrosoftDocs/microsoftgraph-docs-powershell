@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mgsiteonenotenotebooksection
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgSiteOnenoteNotebookSection
 
 ## SYNOPSIS
-Create a new section in the specified notebook.
+Create new navigation property to sections for sites
 
 ## SYNTAX
 
@@ -46,7 +45,7 @@ New-MgSiteOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 ```
 
 ## DESCRIPTION
-Create a new section in the specified notebook.
+Create new navigation property to sections for sites
 
 ## EXAMPLES
 

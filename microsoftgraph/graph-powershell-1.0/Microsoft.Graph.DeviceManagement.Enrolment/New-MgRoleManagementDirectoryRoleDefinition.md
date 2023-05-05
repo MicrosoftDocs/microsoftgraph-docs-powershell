@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementdirectoryroledefinition
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgRoleManagementDirectoryRoleDefinition
 
 ## SYNOPSIS
-Create a new custom unifiedRoleDefinition object.
-This feature requires an Azure AD Premium P1 or P2 license.
+Create new navigation property to roleDefinitions for roleManagement
 
 ## SYNTAX
 
@@ -30,8 +28,7 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 ```
 
 ## DESCRIPTION
-Create a new custom unifiedRoleDefinition object.
-This feature requires an Azure AD Premium P1 or P2 license.
+Create new navigation property to roleDefinitions for roleManagement
 
 ## EXAMPLES
 

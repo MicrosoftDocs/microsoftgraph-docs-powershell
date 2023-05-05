@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/new-mgplannerbucket
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # New-MgPlannerBucket
 
 ## SYNOPSIS
-Create a new plannerBucket object.
+Create new navigation property to buckets for planner
 
 ## SYNTAX
 
@@ -25,7 +24,7 @@ New-MgPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] [-Co
 ```
 
 ## DESCRIPTION
-Create a new plannerBucket object.
+Create new navigation property to buckets for planner
 
 ## EXAMPLES
 

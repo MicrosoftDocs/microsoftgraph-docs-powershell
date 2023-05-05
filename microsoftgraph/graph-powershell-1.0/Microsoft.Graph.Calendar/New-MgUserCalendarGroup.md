@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusercalendargroup
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserCalendarGroup
 
 ## SYNOPSIS
-Use this API to create a new CalendarGroup.
+Create new navigation property to calendarGroups for users
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgUserCalendarGroup -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Use this API to create a new CalendarGroup.
+Create new navigation property to calendarGroups for users
 
 ## EXAMPLES
 

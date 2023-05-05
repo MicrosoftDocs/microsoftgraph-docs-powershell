@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinesscustomquestion
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBookingBusinessCustomQuestion
 
 ## SYNOPSIS
-Create a new bookingCustomQuestion object.
+Create new navigation property to customQuestions for solutions
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new bookingCustomQuestion object.
+Create new navigation property to customQuestions for solutions
 
 ## EXAMPLES
 

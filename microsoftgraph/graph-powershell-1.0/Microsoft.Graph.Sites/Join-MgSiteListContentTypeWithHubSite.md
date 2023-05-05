@@ -8,31 +8,31 @@ schema: 2.0.0
 # Join-MgSiteListContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
+Invoke action associateWithHubSites
 
 ## SYNTAX
 
-### AssociateExpanded1 (Default)
+### AssociateExpanded (Default)
 ```
 Join-MgSiteListContentTypeWithHubSite -ContentTypeId <String> -ListId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Associate1
+### Associate
 ```
 Join-MgSiteListContentTypeWithHubSite -ContentTypeId <String> -ListId <String> -SiteId <String>
  -BodyParameter <IPaths18Qezy8SitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssociateViaIdentityExpanded1
+### AssociateViaIdentityExpanded
 ```
 Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>]
  [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### AssociateViaIdentity1
+### AssociateViaIdentity
 ```
 Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
  -BodyParameter <IPaths18Qezy8SitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
@@ -40,7 +40,7 @@ Join-MgSiteListContentTypeWithHubSite -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
+Invoke action associateWithHubSites
 
 ## EXAMPLES
 
@@ -51,7 +51,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,7 +67,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IPaths18Qezy8SitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Associate1, AssociateViaIdentity1
+Parameter Sets: Associate, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ The unique identifier of contentType
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: String[]
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -113,7 +113,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: AssociateViaIdentityExpanded1, AssociateViaIdentity1
+Parameter Sets: AssociateViaIdentityExpanded, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -128,7 +128,7 @@ The unique identifier of list
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -158,7 +158,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -173,7 +173,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Parameter Sets: AssociateExpanded, Associate
 Aliases:
 
 Required: True
@@ -256,6 +256,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

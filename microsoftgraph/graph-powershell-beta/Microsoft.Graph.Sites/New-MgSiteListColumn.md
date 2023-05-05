@@ -3,17 +3,16 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgSiteListColumn
 
 ## SYNOPSIS
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for sites
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgSiteListColumn -ListId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-Boolean <Hashtable>] [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
@@ -29,13 +28,13 @@ New-MgSiteListColumn -ListId <String> -SiteId <String> [-AdditionalProperties <H
  [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgSiteListColumn -ListId <String> -SiteId <String> -BodyParameter <IMicrosoftGraphColumnDefinition1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgSiteListColumn -InputObject <ISitesIdentity> [-AdditionalProperties <Hashtable>] [-Boolean <Hashtable>]
  [-Calculated <IMicrosoftGraphCalculatedColumn>] [-Choice <IMicrosoftGraphChoiceColumn>]
@@ -51,14 +50,14 @@ New-MgSiteListColumn -InputObject <ISitesIdentity> [-AdditionalProperties <Hasht
  [-Validation <IMicrosoftGraphColumnValidation>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGraphColumnDefinition1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for sites
 
 ## EXAMPLES
 
@@ -91,7 +90,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -107,7 +106,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition1
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -122,7 +121,7 @@ booleanColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -138,7 +137,7 @@ To construct, please use Get-Help -Online and see NOTES section for CALCULATED p
 
 ```yaml
 Type: IMicrosoftGraphCalculatedColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -154,7 +153,7 @@ To construct, please use Get-Help -Online and see NOTES section for CHOICE prope
 
 ```yaml
 Type: IMicrosoftGraphChoiceColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -170,7 +169,7 @@ Helps organize related columns.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -185,7 +184,7 @@ contentApprovalStatusColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -201,7 +200,7 @@ To construct, please use Get-Help -Online and see NOTES section for CURRENCY pro
 
 ```yaml
 Type: IMicrosoftGraphCurrencyColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -217,7 +216,7 @@ To construct, please use Get-Help -Online and see NOTES section for DATETIME pro
 
 ```yaml
 Type: IMicrosoftGraphDateTimeColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -233,7 +232,7 @@ To construct, please use Get-Help -Online and see NOTES section for DEFAULTVALUE
 
 ```yaml
 Type: IMicrosoftGraphDefaultColumnValue
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -248,7 +247,7 @@ The user-facing description of the column.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -263,7 +262,7 @@ The user-facing name of the column.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -278,7 +277,7 @@ If true, no two list items may have the same value for this column.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -293,7 +292,7 @@ geolocationColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -308,7 +307,7 @@ Specifies whether the column is displayed in the user interface.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -324,7 +323,7 @@ To construct, please use Get-Help -Online and see NOTES section for HYPERLINKORP
 
 ```yaml
 Type: IMicrosoftGraphHyperlinkOrPictureColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -340,7 +339,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -355,7 +354,7 @@ Specifies whether the column values can used for sorting and searching.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -371,7 +370,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -386,7 +385,7 @@ Indicates whether this column can be deleted.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -402,7 +401,7 @@ Read-only.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -417,7 +416,7 @@ Specifies whether the column can be changed.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -432,7 +431,7 @@ The unique identifier of list
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -448,7 +447,7 @@ To construct, please use Get-Help -Online and see NOTES section for LOOKUP prope
 
 ```yaml
 Type: IMicrosoftGraphLookupColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -464,7 +463,7 @@ For the user-facing name, see displayName.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -480,7 +479,7 @@ To construct, please use Get-Help -Online and see NOTES section for NUMBER prope
 
 ```yaml
 Type: IMicrosoftGraphNumberColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -496,7 +495,7 @@ To construct, please use Get-Help -Online and see NOTES section for PERSONORGROU
 
 ```yaml
 Type: IMicrosoftGraphPersonOrGroupColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -511,7 +510,7 @@ If true, changes to this column will be propagated to lists that implement the c
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -526,7 +525,7 @@ Specifies whether the column values can be modified.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -541,7 +540,7 @@ Specifies whether the column value isn't optional.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -556,7 +555,7 @@ The unique identifier of site
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -572,7 +571,7 @@ To construct, please use Get-Help -Online and see NOTES section for SOURCECOLUMN
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition1
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -588,7 +587,7 @@ To construct, please use Get-Help -Online and see NOTES section for SOURCECONTEN
 
 ```yaml
 Type: IMicrosoftGraphContentTypeInfo
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -604,7 +603,7 @@ To construct, please use Get-Help -Online and see NOTES section for TERM propert
 
 ```yaml
 Type: IMicrosoftGraphTermColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -620,7 +619,7 @@ To construct, please use Get-Help -Online and see NOTES section for TEXT propert
 
 ```yaml
 Type: IMicrosoftGraphTextColumn
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -635,7 +634,7 @@ thumbnailColumn
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -650,7 +649,7 @@ columnTypes
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -666,7 +665,7 @@ To construct, please use Get-Help -Online and see NOTES section for VALIDATION p
 
 ```yaml
 Type: IMicrosoftGraphColumnValidation
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -909,6 +908,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

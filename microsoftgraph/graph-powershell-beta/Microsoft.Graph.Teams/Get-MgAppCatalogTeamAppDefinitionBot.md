@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgappcatalogteamappdefinitionbot
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgAppCatalogTeamAppDefinitionBot
 
 ## SYNOPSIS
-Get the bot associated with a specific definition of the  TeamsApp.
+The details of the bot specified in the Teams app manifest.
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ Get-MgAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandPrope
 ```
 
 ## DESCRIPTION
-Get the bot associated with a specific definition of the  TeamsApp.
+The details of the bot specified in the Teams app manifest.
 
 ## EXAMPLES
 

@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/get-mgeducationmeassignmentresource
 schema: 2.0.0
-ms.prod: education
 ---
 
 # Get-MgEducationMeAssignmentResource
@@ -15,7 +14,7 @@ Nullable.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
 Get-MgEducationMeAssignmentResource -EducationAssignmentId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
@@ -59,7 +58,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -75,7 +74,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -90,7 +89,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: List1, Get
+Parameter Sets: List, Get
 Aliases:
 
 Required: True
@@ -135,7 +134,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -166,7 +165,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -196,7 +195,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -211,7 +210,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -226,7 +225,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -241,7 +240,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List1
+Parameter Sets: List
 Aliases:
 
 Required: False

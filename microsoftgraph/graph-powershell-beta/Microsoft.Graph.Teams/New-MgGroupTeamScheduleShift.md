@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamScheduleShift
 
 ## SYNOPSIS
-Create a new shift instance in a schedule.
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+Create new navigation property to shifts for groups
 
 ## SYNTAX
 
@@ -43,8 +41,7 @@ New-MgGroupTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new shift instance in a schedule.
-The duration of a shift cannot be less than 1 minute or longer than 24 hours.
+Create new navigation property to shifts for groups
 
 ## EXAMPLES
 

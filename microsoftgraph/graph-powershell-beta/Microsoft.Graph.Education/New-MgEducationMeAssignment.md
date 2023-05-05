@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationmeassignment
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationMeAssignment
@@ -395,7 +394,7 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-educationAssignmentStatus
+.
 
 ```yaml
 Type: String
@@ -536,7 +535,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignment>`: educationAssignment
       - `[DisplayName <String>]`: The name of this rubric quality.
       - `[QualityId <String>]`: The ID of this resource.
       - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
-  - `[Status <String>]`: educationAssignmentStatus
+  - `[Status <String>]`: 
   - `[Submissions <IMicrosoftGraphEducationSubmission[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 

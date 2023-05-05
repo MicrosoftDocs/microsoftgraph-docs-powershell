@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
 # Get-MgCommunicationOnlineMeeting
 
 ## SYNOPSIS
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Invoke action createOrGet
 
 ## SYNTAX
 
@@ -48,8 +46,7 @@ Get-MgCommunicationOnlineMeeting
 ```
 
 ## DESCRIPTION
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Invoke action createOrGet
 
 ## EXAMPLES
 

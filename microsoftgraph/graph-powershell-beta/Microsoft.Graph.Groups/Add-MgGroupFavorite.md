@@ -8,8 +8,7 @@ schema: 2.0.0
 # Add-MgGroupFavorite
 
 ## SYNOPSIS
-Add the group to the list of the current user's favorite groups.
-Supported for Microsoft 365 groups only.
+Invoke action addFavorite
 
 ## SYNTAX
 
@@ -24,8 +23,7 @@ Add-MgGroupFavorite -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confi
 ```
 
 ## DESCRIPTION
-Add the group to the list of the current user's favorite groups.
-Supported for Microsoft 365 groups only.
+Invoke action addFavorite
 
 ## EXAMPLES
 
@@ -152,6 +150,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

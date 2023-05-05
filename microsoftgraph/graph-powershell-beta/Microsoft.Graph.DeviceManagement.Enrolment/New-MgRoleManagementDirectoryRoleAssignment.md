@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.DeviceManagement.Enrolment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrolment
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.enrolment/new-mgrolemanagementdirectoryroleassignment
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgRoleManagementDirectoryRoleAssignment
 
 ## SYNOPSIS
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## SYNTAX
 
@@ -30,7 +29,7 @@ New-MgRoleManagementDirectoryRoleAssignment -BodyParameter <IMicrosoftGraphUnifi
 ```
 
 ## DESCRIPTION
-Create a new unifiedRoleAssignment object.
+Create new navigation property to roleAssignments for roleManagement
 
 ## EXAMPLES
 

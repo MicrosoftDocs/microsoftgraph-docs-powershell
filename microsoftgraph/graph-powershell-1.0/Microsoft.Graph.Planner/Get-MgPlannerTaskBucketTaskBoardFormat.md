@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertaskbuckettaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerTaskBucketTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## SYNTAX
 
@@ -26,7 +27,9 @@ Get-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by bucket.
 
 ## EXAMPLES
 

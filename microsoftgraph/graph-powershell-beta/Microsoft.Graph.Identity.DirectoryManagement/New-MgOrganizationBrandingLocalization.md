@@ -3,17 +3,12 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgorganizationbrandinglocalization
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgOrganizationBrandingLocalization
 
 ## SYNOPSIS
-Create a new organizationalBrandingLocalization object.
-This creates a localized branding and at the same time, the default branding if it doesn't exist.
-The default branding is created only once.
-It's loaded when a localized branding isn't configured for the user's browser language.
-To retrieve the default branding, see Get branding.
+Create new navigation property to localizations for organization
 
 ## SYNTAX
 
@@ -65,11 +60,7 @@ New-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManagemen
 ```
 
 ## DESCRIPTION
-Create a new organizationalBrandingLocalization object.
-This creates a localized branding and at the same time, the default branding if it doesn't exist.
-The default branding is created only once.
-It's loaded when a localized branding isn't configured for the user's browser language.
-To retrieve the default branding, see Get branding.
+Create new navigation property to localizations for organization
 
 ## EXAMPLES
 

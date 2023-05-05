@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicytokenissuancepolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyTokenIssuancePolicy
 
 ## SYNOPSIS
-Create a new tokenIssuancePolicy object.
+Create new navigation property to tokenIssuancePolicies for policies
 
 ## SYNTAX
 
@@ -27,7 +26,7 @@ New-MgPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] 
 ```
 
 ## DESCRIPTION
-Create a new tokenIssuancePolicy object.
+Create new navigation property to tokenIssuancePolicies for policies
 
 ## EXAMPLES
 

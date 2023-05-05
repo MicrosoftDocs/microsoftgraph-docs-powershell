@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationclassassignmentcategory
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationClassAssignmentCategory
 
 ## SYNOPSIS
-Creates a new educationCategory on an educationClass.
-Only teachers can perform this operation.
+Create new navigation property to assignmentCategories for education
 
 ## SYNTAX
 
@@ -64,8 +62,7 @@ New-MgEducationClassAssignmentCategory -InputObject <IEducationIdentity>
 ```
 
 ## DESCRIPTION
-Creates a new educationCategory on an educationClass.
-Only teachers can perform this operation.
+Create new navigation property to assignmentCategories for education
 
 ## EXAMPLES
 

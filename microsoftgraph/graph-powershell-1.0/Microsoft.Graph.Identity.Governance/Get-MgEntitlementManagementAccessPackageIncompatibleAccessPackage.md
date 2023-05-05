@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackageincompatibleaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage
 
 ## SYNOPSIS
-Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
+The access packages whose assigned users are ineligible to be assigned this access package.
 
 ## SYNTAX
 
@@ -20,7 +19,7 @@ Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackage
 ```
 
 ## DESCRIPTION
-Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
+The access packages whose assigned users are ineligible to be assigned this access package.
 
 ## EXAMPLES
 

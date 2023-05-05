@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgPolicyPermissionGrantPolicy
 
 ## SYNOPSIS
-Creates a permissionGrantPolicy.
-A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
-After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
+Create new navigation property to permissionGrantPolicies for policies
 
 ## SYNTAX
 
@@ -30,9 +27,7 @@ New-MgPolicyPermissionGrantPolicy -BodyParameter <IMicrosoftGraphPermissionGrant
 ```
 
 ## DESCRIPTION
-Creates a permissionGrantPolicy.
-A permission grant policy is used to describe the conditions under which permissions can be granted (for example, during application consent).
-After creating the permission grant policy, you can add include condition sets to add matching rules, and add exclude condition sets to add exclusion rules.
+Create new navigation property to permissionGrantPolicies for policies
 
 ## EXAMPLES
 

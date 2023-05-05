@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdrivelistcontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgDriveListContentType
@@ -13,7 +12,7 @@ Create new navigation property to contentTypes for drives
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgDriveListContentType -DriveId <String> [-AdditionalProperties <Hashtable>]
  [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType1>]
@@ -26,13 +25,13 @@ New-MgDriveListContentType -DriveId <String> [-AdditionalProperties <Hashtable>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgDriveListContentType -DriveId <String> -BodyParameter <IMicrosoftGraphContentType1> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgDriveListContentType -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-AssociatedHubsUrls <String[]>] [-Base <IMicrosoftGraphContentType1>]
@@ -45,7 +44,7 @@ New-MgDriveListContentType -InputObject <IFilesIdentity> [-AdditionalProperties 
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphContentType1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -74,7 +73,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -91,7 +90,7 @@ Enforcing a content type means that the content type will be applied to the list
 
 ```yaml
 Type: String[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -107,7 +106,7 @@ To construct, please use Get-Help -Online and see NOTES section for BASE propert
 
 ```yaml
 Type: IMicrosoftGraphContentType1
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -123,7 +122,7 @@ To construct, please use Get-Help -Online and see NOTES section for BASETYPES pr
 
 ```yaml
 Type: IMicrosoftGraphContentType1[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -139,7 +138,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphContentType1
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -155,7 +154,7 @@ To construct, please use Get-Help -Online and see NOTES section for COLUMNLINKS 
 
 ```yaml
 Type: IMicrosoftGraphColumnLink[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -171,7 +170,7 @@ To construct, please use Get-Help -Online and see NOTES section for COLUMNPOSITI
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition1[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -187,7 +186,7 @@ To construct, please use Get-Help -Online and see NOTES section for COLUMNS prop
 
 ```yaml
 Type: IMicrosoftGraphColumnDefinition1[]
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -202,7 +201,7 @@ The descriptive text for the item.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -218,7 +217,7 @@ To construct, please use Get-Help -Online and see NOTES section for DOCUMENTSET 
 
 ```yaml
 Type: IMicrosoftGraphDocumentSet1
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -234,7 +233,7 @@ To construct, please use Get-Help -Online and see NOTES section for DOCUMENTTEMP
 
 ```yaml
 Type: IMicrosoftGraphDocumentSetContent
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -249,7 +248,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -265,7 +264,7 @@ Helps organize related content types.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -280,7 +279,7 @@ Indicates whether the content type is hidden in the list's 'New' menu.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -296,7 +295,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -312,7 +311,7 @@ To construct, please use Get-Help -Online and see NOTES section for INHERITEDFRO
 
 ```yaml
 Type: IMicrosoftGraphItemReference
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -328,7 +327,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -343,7 +342,7 @@ Specifies if a content type is a built-in content type.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -358,7 +357,7 @@ The name of the content type.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -374,7 +373,7 @@ To construct, please use Get-Help -Online and see NOTES section for ORDER proper
 
 ```yaml
 Type: IMicrosoftGraphContentTypeOrder
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -389,7 +388,7 @@ The unique identifier of the content type.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -404,7 +403,7 @@ If true, any changes made to the content type will be pushed to inherited conten
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -419,7 +418,7 @@ If true, the content type cannot be modified unless this value is first set to f
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -435,7 +434,7 @@ Only site collection administrators can seal or unseal content types.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False

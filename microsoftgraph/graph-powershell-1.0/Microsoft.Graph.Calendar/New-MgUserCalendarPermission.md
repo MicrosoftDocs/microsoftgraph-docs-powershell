@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusercalendarpermission
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserCalendarPermission
 
 ## SYNOPSIS
-Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+Create new navigation property to calendarPermissions for users
 
 ## SYNTAX
 
@@ -66,7 +65,7 @@ New-MgUserCalendarPermission -InputObject <ICalendarIdentity>
 ```
 
 ## DESCRIPTION
-Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
+Create new navigation property to calendarPermissions for users
 
 ## EXAMPLES
 

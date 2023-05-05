@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamscheduleopenshift
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamScheduleOpenShift
@@ -13,7 +12,7 @@ Create new navigation property to openShifts for groups
 
 ## SYNTAX
 
-### CreateExpanded (Default)
+### CreateExpanded1 (Default)
 ```
 New-MgGroupTeamScheduleOpenShift -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
@@ -21,13 +20,13 @@ New-MgGroupTeamScheduleOpenShift -GroupId <String> [-AdditionalProperties <Hasht
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Create
+### Create1
 ```
 New-MgGroupTeamScheduleOpenShift -GroupId <String> -BodyParameter <IMicrosoftGraphOpenShift1> [-WhatIf]
  [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded
+### CreateViaIdentityExpanded1
 ```
 New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
@@ -35,7 +34,7 @@ New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalPrope
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity
+### CreateViaIdentity1
 ```
 New-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift1>
  [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -64,7 +63,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -80,7 +79,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphOpenShift1
-Parameter Sets: Create, CreateViaIdentity
+Parameter Sets: Create1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -96,7 +95,7 @@ To construct, please use Get-Help -Online and see NOTES section for CREATEDBY pr
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -112,7 +111,7 @@ To construct, please use Get-Help -Online and see NOTES section for DRAFTOPENSHI
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -127,7 +126,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, Create
+Parameter Sets: CreateExpanded1, Create1
 Aliases:
 
 Required: True
@@ -143,7 +142,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -159,7 +158,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
 Aliases:
 
 Required: True
@@ -174,7 +173,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -190,7 +189,7 @@ To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIED
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -205,7 +204,7 @@ ID for the scheduling group that the open shift belongs to.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -221,7 +220,7 @@ To construct, please use Get-Help -Online and see NOTES section for SHAREDOPENSH
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
 Aliases:
 
 Required: False

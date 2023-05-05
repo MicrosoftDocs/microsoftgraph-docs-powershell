@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mgsitecontenttype
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgSiteContentType
 
 ## SYNOPSIS
-Create a new [contentType][] in a [site][].
+Create new navigation property to contentTypes for sites
 
 ## SYNTAX
 
@@ -51,7 +50,7 @@ New-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create a new [contentType][] in a [site][].
+Create new navigation property to contentTypes for sites
 
 ## EXAMPLES
 
@@ -1526,6 +1525,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

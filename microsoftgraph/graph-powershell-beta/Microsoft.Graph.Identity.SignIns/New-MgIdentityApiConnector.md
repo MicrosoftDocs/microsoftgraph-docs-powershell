@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityapiconnector
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityApiConnector
 
 ## SYNOPSIS
-Create a new identityApiConnector object.
+Create new navigation property to apiConnectors for identity
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ New-MgIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> 
 ```
 
 ## DESCRIPTION
-Create a new identityApiConnector object.
+Create new navigation property to apiConnectors for identity
 
 ## EXAMPLES
 

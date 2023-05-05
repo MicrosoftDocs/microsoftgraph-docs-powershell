@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamscheduletimeoff
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamScheduleTimeOff
 
 ## SYNOPSIS
-Create a new timeOff instance in a schedule.
+Create new navigation property to timesOff for teams
 
 ## SYNTAX
 
@@ -42,7 +41,7 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ```
 
 ## DESCRIPTION
-Create a new timeOff instance in a schedule.
+Create new navigation property to timesOff for teams
 
 ## EXAMPLES
 

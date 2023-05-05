@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mggroupevent
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgGroupEvent
 
 ## SYNOPSIS
-Use this API to create a new event.
+Create new navigation property to events for groups
 
 ## SYNTAX
 
@@ -70,7 +69,7 @@ New-MgGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGrap
 ```
 
 ## DESCRIPTION
-Use this API to create a new event.
+Create new navigation property to events for groups
 
 ## EXAMPLES
 

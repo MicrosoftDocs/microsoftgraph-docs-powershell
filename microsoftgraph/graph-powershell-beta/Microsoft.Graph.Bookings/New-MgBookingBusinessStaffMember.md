@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Bookings-help.xml
 Module Name: Microsoft.Graph.Bookings
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/new-mgbookingbusinessstaffmember
 schema: 2.0.0
-ms.prod: bookings
 ---
 
 # New-MgBookingBusinessStaffMember
 
 ## SYNOPSIS
-Create a new staff member in the specified bookingBusiness.
+Create new navigation property to staffMembers for bookingBusinesses
 
 ## SYNTAX
 
@@ -44,7 +43,7 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Create a new staff member in the specified bookingBusiness.
+Create new navigation property to staffMembers for bookingBusinesses
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkworkforceintegration
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamworkWorkforceIntegration
 
 ## SYNOPSIS
-Create a new workforceIntegration object.
+Create new navigation property to workforceIntegrations for teamwork
 
 ## SYNTAX
 
@@ -29,7 +28,7 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 ```
 
 ## DESCRIPTION
-Create a new workforceIntegration object.
+Create new navigation property to workforceIntegrations for teamwork
 
 ## EXAMPLES
 

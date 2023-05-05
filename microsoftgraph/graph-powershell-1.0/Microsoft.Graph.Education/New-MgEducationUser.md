@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Education-help.xml
 Module Name: Microsoft.Graph.Education
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationuser
 schema: 2.0.0
-ms.prod: education
 ---
 
 # New-MgEducationUser
 
 ## SYNOPSIS
-Create a new educationUser object.
+Create new navigation property to users for education
 
 ## SYNTAX
 
@@ -39,7 +38,7 @@ New-MgEducationUser -BodyParameter <IMicrosoftGraphEducationUser1> [-WhatIf] [-C
 ```
 
 ## DESCRIPTION
-Create a new educationUser object.
+Create new navigation property to users for education
 
 ## EXAMPLES
 
@@ -905,7 +904,7 @@ ASSIGNMENTS <IMicrosoftGraphEducationAssignment1\[]>: Assignments belonging to t
       - `[DisplayName <String>]`: The name of this rubric quality.
       - `[QualityId <String>]`: The ID of this resource.
       - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
-  - `[Status <String>]`: educationAssignmentStatus
+  - `[Status <String>]`: 
   - `[Submissions <IMicrosoftGraphEducationSubmission1[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
@@ -996,7 +995,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
         - `[DisplayName <String>]`: The name of this rubric quality.
         - `[QualityId <String>]`: The ID of this resource.
         - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
-    - `[Status <String>]`: educationAssignmentStatus
+    - `[Status <String>]`: 
     - `[Submissions <IMicrosoftGraphEducationSubmission1[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
@@ -1055,7 +1054,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
+      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -1330,7 +1329,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
             - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
             - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
             - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-          - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
+          - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
           - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate directly-assigned and inherited licenses. Use the licenseAssignmentStates property to identify the directly-assigned and inherited licenses.  Not nullable. Returned only on $select. Supports $filter (eq, not, /$count eq 0, /$count ne 0).
           - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable. Returned only on $select. Supports $filter (eq and not).
           - `[Authentication <IMicrosoftGraphAuthentication>]`: authentication
@@ -1378,7 +1377,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
                 - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
                 - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
                 - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-                - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+                - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
                 - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
                 - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
                 - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
@@ -1522,6 +1521,18 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
                     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
                     - `[Id <String>]`: Unique identifier for the identity.
                     - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
+              - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+                - `[Actions <String>]`: chatMessageActions
+                - `[ModifiedDateTime <DateTime?>]`: 
+                - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                  - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+                  - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[Application <IMicrosoftGraphIdentity>]`: identity
+                    - `[Device <IMicrosoftGraphIdentity>]`: identity
+                    - `[User <IMicrosoftGraphIdentity>]`: identity
               - `[MessageType <String>]`: chatMessageType
               - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1535,13 +1546,6 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
                 - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
                 - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
               - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-                - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-                - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Application <IMicrosoftGraphIdentity>]`: identity
-                  - `[Device <IMicrosoftGraphIdentity>]`: identity
-                  - `[User <IMicrosoftGraphIdentity>]`: identity
               - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
               - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
               - `[Subject <String>]`: The subject of the chat message, in plaintext.
@@ -1951,7 +1955,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
                       - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
                       - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-                      - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+                      - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
                       - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
                     - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -2720,7 +2724,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
                 - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
                 - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
               - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-              - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
+              - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: The open shift requests in the schedule.
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
                 - `[ManagerActionMessage <String>]`: 
                 - `[SenderMessage <String>]`: 
@@ -2728,7 +2732,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[OpenShiftId <String>]`: ID for the open shift.
-              - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
+              - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: The set of open shifts in a scheduling group in the schedule.
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
@@ -2966,7 +2970,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationUser1>`: educationUser
             - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
             - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
           - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Returned only on $select. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-          - `[MailboxSettings <IMicrosoftGraphMailboxSettings>]`: mailboxSettings
+          - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
             - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -3781,7 +3785,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
         - `[DisplayName <String>]`: The name of this rubric quality.
         - `[QualityId <String>]`: The ID of this resource.
         - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
-    - `[Status <String>]`: educationAssignmentStatus
+    - `[Status <String>]`: 
     - `[Submissions <IMicrosoftGraphEducationSubmission1[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
@@ -3824,7 +3828,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
+    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -4101,7 +4105,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
           - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
           - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
           - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
+        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
         - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate directly-assigned and inherited licenses. Use the licenseAssignmentStates property to identify the directly-assigned and inherited licenses.  Not nullable. Returned only on $select. Supports $filter (eq, not, /$count eq 0, /$count ne 0).
         - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable. Returned only on $select. Supports $filter (eq and not).
           - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -4153,7 +4157,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
               - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
               - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
               - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-              - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+              - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
               - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
               - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
               - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
@@ -4297,6 +4301,18 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
                   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
                   - `[Id <String>]`: Unique identifier for the identity.
                   - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
+            - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+              - `[Actions <String>]`: chatMessageActions
+              - `[ModifiedDateTime <DateTime?>]`: 
+              - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+                - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Application <IMicrosoftGraphIdentity>]`: identity
+                  - `[Device <IMicrosoftGraphIdentity>]`: identity
+                  - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[MessageType <String>]`: chatMessageType
             - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -4310,13 +4326,6 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
               - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
               - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
             - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-              - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-              - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-                - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Application <IMicrosoftGraphIdentity>]`: identity
-                - `[Device <IMicrosoftGraphIdentity>]`: identity
-                - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
             - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
             - `[Subject <String>]`: The subject of the chat message, in plaintext.
@@ -4726,7 +4735,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
                     - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
                     - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                     - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-                    - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+                    - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
                     - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                     - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
                   - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -5495,7 +5504,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
               - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
               - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
             - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-            - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
+            - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: The open shift requests in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
               - `[ManagerActionMessage <String>]`: 
               - `[SenderMessage <String>]`: 
@@ -5503,7 +5512,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[OpenShiftId <String>]`: ID for the open shift.
-            - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
+            - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: The set of open shifts in a scheduling group in the schedule.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
@@ -5741,7 +5750,7 @@ CLASSES <IMicrosoftGraphEducationClass1\[]>: Classes to which the user belongs. 
           - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
           - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
         - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Returned only on $select. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-        - `[MailboxSettings <IMicrosoftGraphMailboxSettings>]`: mailboxSettings
+        - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
           - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -6671,7 +6680,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
           - `[DisplayName <String>]`: The name of this rubric quality.
           - `[QualityId <String>]`: The ID of this resource.
           - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
-      - `[Status <String>]`: educationAssignmentStatus
+      - `[Status <String>]`: 
       - `[Submissions <IMicrosoftGraphEducationSubmission1[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
@@ -6712,7 +6721,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
       - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
+      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
         - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -6982,7 +6991,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
             - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
             - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
             - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-          - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
+          - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
           - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate directly-assigned and inherited licenses. Use the licenseAssignmentStates property to identify the directly-assigned and inherited licenses.  Not nullable. Returned only on $select. Supports $filter (eq, not, /$count eq 0, /$count ne 0).
           - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable. Returned only on $select. Supports $filter (eq and not).
             - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -7034,7 +7043,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
                 - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
                 - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
                 - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-                - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+                - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
                 - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
                 - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
                 - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
@@ -7178,6 +7187,18 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
                     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
                     - `[Id <String>]`: Unique identifier for the identity.
                     - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
+              - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+                - `[Actions <String>]`: chatMessageActions
+                - `[ModifiedDateTime <DateTime?>]`: 
+                - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                  - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+                  - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[Application <IMicrosoftGraphIdentity>]`: identity
+                    - `[Device <IMicrosoftGraphIdentity>]`: identity
+                    - `[User <IMicrosoftGraphIdentity>]`: identity
               - `[MessageType <String>]`: chatMessageType
               - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -7191,13 +7212,6 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
                 - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
                 - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
               - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-                - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-                - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Application <IMicrosoftGraphIdentity>]`: identity
-                  - `[Device <IMicrosoftGraphIdentity>]`: identity
-                  - `[User <IMicrosoftGraphIdentity>]`: identity
               - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
               - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
               - `[Subject <String>]`: The subject of the chat message, in plaintext.
@@ -7607,7 +7621,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
                       - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
                       - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                       - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-                      - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+                      - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
                       - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                       - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
                     - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -8376,7 +8390,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
                 - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
                 - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
               - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-              - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
+              - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: The open shift requests in the schedule.
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
                 - `[ManagerActionMessage <String>]`: 
                 - `[SenderMessage <String>]`: 
@@ -8384,7 +8398,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[OpenShiftId <String>]`: ID for the open shift.
-              - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
+              - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: The set of open shifts in a scheduling group in the schedule.
                 - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
                 - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
@@ -8622,7 +8636,7 @@ SCHOOLS <IMicrosoftGraphEducationSchool1\[]>: Schools to which the user belongs.
             - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
             - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
           - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Returned only on $select. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-          - `[MailboxSettings <IMicrosoftGraphMailboxSettings>]`: mailboxSettings
+          - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
             - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -9432,7 +9446,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
         - `[DisplayName <String>]`: The name of this rubric quality.
         - `[QualityId <String>]`: The ID of this resource.
         - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
-    - `[Status <String>]`: educationAssignmentStatus
+    - `[Status <String>]`: 
     - `[Submissions <IMicrosoftGraphEducationSubmission1[]>]`: Once published, there is a submission object for each student representing their work and grade.  Read-only. Nullable.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Outcomes <IMicrosoftGraphEducationOutcome[]>]`: 
@@ -9475,7 +9489,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
+    - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -9752,7 +9766,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
           - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
           - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
           - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
+        - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
         - `[AssignedLicenses <IMicrosoftGraphAssignedLicense[]>]`: The licenses that are assigned to the user, including inherited (group-based) licenses. This property doesn't differentiate directly-assigned and inherited licenses. Use the licenseAssignmentStates property to identify the directly-assigned and inherited licenses.  Not nullable. Returned only on $select. Supports $filter (eq, not, /$count eq 0, /$count ne 0).
         - `[AssignedPlans <IMicrosoftGraphAssignedPlan[]>]`: The plans that are assigned to the user. Read-only. Not nullable. Returned only on $select. Supports $filter (eq and not).
           - `[AssignedDateTime <DateTime?>]`: The date and time at which the plan was assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -9804,7 +9818,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
               - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
               - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
               - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-              - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+              - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
               - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
               - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
               - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
@@ -9948,6 +9962,18 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
                   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
                   - `[Id <String>]`: Unique identifier for the identity.
                   - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
+            - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+              - `[Actions <String>]`: chatMessageActions
+              - `[ModifiedDateTime <DateTime?>]`: 
+              - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+                - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+                - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Application <IMicrosoftGraphIdentity>]`: identity
+                  - `[Device <IMicrosoftGraphIdentity>]`: identity
+                  - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[MessageType <String>]`: chatMessageType
             - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9961,13 +9987,6 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
               - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
               - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
             - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-              - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-              - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-              - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-                - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Application <IMicrosoftGraphIdentity>]`: identity
-                - `[Device <IMicrosoftGraphIdentity>]`: identity
-                - `[User <IMicrosoftGraphIdentity>]`: identity
             - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
             - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
             - `[Subject <String>]`: The subject of the chat message, in plaintext.
@@ -10377,7 +10396,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
                     - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
                     - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
                     - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-                    - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+                    - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
                     - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
                     - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
                   - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -11146,7 +11165,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
               - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
               - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
             - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-            - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
+            - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: The open shift requests in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
               - `[ManagerActionMessage <String>]`: 
               - `[SenderMessage <String>]`: 
@@ -11154,7 +11173,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[OpenShiftId <String>]`: ID for the open shift.
-            - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
+            - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: The set of open shifts in a scheduling group in the schedule.
               - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
@@ -11392,7 +11411,7 @@ TAUGHTCLASSES <IMicrosoftGraphEducationClass1\[]>: Classes for which the user is
           - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
           - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
         - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Returned only on $select. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-        - `[MailboxSettings <IMicrosoftGraphMailboxSettings>]`: mailboxSettings
+        - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
           - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
@@ -12206,7 +12225,7 @@ USER `<IMicrosoftGraphUser1>`: user
     - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
     - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
     - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
-  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
+  - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a user has been granted for an application. Supports $expand.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AppRoleId <String>]`: The identifier (id) for the app role which is assigned to the principal. This app role must be exposed in the appRoles property on the resource application's service principal (resourceId). If the resource application has not declared any app roles, a default app role ID of 00000000-0000-0000-0000-000000000000 can be specified to signal that the principal is assigned to the resource app without any specific app roles. Required on create.
@@ -12272,7 +12291,7 @@ USER `<IMicrosoftGraphUser1>`: user
         - `[OperatingSystemVersion <String>]`: The version of the operating system on the device. Required. Supports $filter (eq, ne, not, ge, le, startsWith, and eq on null values).
         - `[PhysicalIds <String[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le, startsWith,/$count eq 0, /$count ne 0).
         - `[ProfileType <String>]`: The profile type of the device. Possible values: RegisteredDevice (default), SecureVM, Printer, Shared, IoT.
-        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Currently, there can be only one owner. Read-only. Nullable. Supports $expand.
+        - `[RegisteredOwners <IMicrosoftGraphDirectoryObject[]>]`: The user that cloud joined the device or registered their personal device. The registered owner is set at the time of registration. Read-only. Nullable. Supports $expand.
         - `[RegisteredUsers <IMicrosoftGraphDirectoryObject[]>]`: Collection of registered users of the device. For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration. Read-only. Nullable. Supports $expand.
         - `[SystemLabels <String[]>]`: List of labels applied to the device by the system. Supports $filter (/$count eq 0, /$count ne 0).
         - `[TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]`: Groups and administrative units that the device is a member of. This operation is transitive. Supports $expand.
@@ -12576,6 +12595,18 @@ USER `<IMicrosoftGraphUser1>`: user
             - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
             - `[Id <String>]`: Unique identifier for the identity.
             - `[ConversationIdentityType <String>]`: teamworkConversationIdentityType
+      - `[MessageHistory <IMicrosoftGraphChatMessageHistoryItem[]>]`: 
+        - `[Actions <String>]`: chatMessageActions
+        - `[ModifiedDateTime <DateTime?>]`: 
+        - `[Reaction <IMicrosoftGraphChatMessageReaction>]`: chatMessageReaction
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+          - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
+          - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Application <IMicrosoftGraphIdentity>]`: identity
+            - `[Device <IMicrosoftGraphIdentity>]`: identity
+            - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[MessageType <String>]`: chatMessageType
       - `[PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]`: chatMessagePolicyViolation
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -12589,13 +12620,6 @@ USER `<IMicrosoftGraphUser1>`: user
         - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
         - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
       - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-        - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-        - `[ReactionType <String>]`: Supported values are like, angry, sad, laugh, heart, surprised.
-        - `[User <IMicrosoftGraphChatMessageReactionIdentitySet>]`: chatMessageReactionIdentitySet
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Application <IMicrosoftGraphIdentity>]`: identity
-          - `[Device <IMicrosoftGraphIdentity>]`: identity
-          - `[User <IMicrosoftGraphIdentity>]`: identity
       - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
       - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
       - `[Subject <String>]`: The subject of the chat message, in plaintext.
@@ -13003,7 +13027,7 @@ USER `<IMicrosoftGraphUser1>`: user
         - `[LatestSupportedTlsVersion <String>]`: Optional. Specifies the latest version of Transport Layer Security (TLS) that the notification endpoint, specified by notificationUrl, supports. The possible values are: v1_0, v1_1, v1_2, v1_3. For subscribers whose notification endpoint supports a version lower than the currently recommended version (TLS 1.2), specifying this property by a set timeline allows them to temporarily use their deprecated version of TLS before completing their upgrade to TLS 1.2. For these subscribers, not setting this property per the timeline would result in subscription operations failing. For subscribers whose notification endpoint already supports TLS 1.2, setting this property is optional. In such cases, Microsoft Graph defaults the property to v1_2.
         - `[LifecycleNotificationUrl <String>]`: Optional. The URL of the endpoint that receives lifecycle notifications, including subscriptionRemoved, reauthorizationRequired, and missed notifications. This URL must make use of the HTTPS protocol.
         - `[NotificationQueryOptions <String>]`: Optional. OData query options for specifying value for the targeting resource. Clients receive notifications when resource reaches the state matching the query options provided here. With this new property in the subscription creation payload along with all existing properties, Webhooks will deliver notifications whenever a resource reaches the desired state mentioned in the notificationQueryOptions property. For example, when the print job is completed or when a print job resource isFetchable property value becomes true etc.  Supported only for Universal Print Service. For more information, see Subscribe to change notifications from cloud printing APIs using Microsoft Graph.
-        - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol.
+        - `[NotificationUrl <String>]`: Required. The URL of the endpoint that will receive the change notifications. This URL must make use of the HTTPS protocol. Any query string parameter included in the notificationUrl property will be included in the HTTP POST request when Microsoft Graph sends the change notifications.
         - `[NotificationUrlAppId <String>]`: Optional. The app ID that the subscription service can use to generate the validation token. This allows the client to validate the authenticity of the notification received.
         - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
       - `[Thumbnails <IMicrosoftGraphThumbnailSet[]>]`: Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][]. Read-only. Nullable.
@@ -13758,7 +13782,7 @@ USER `<IMicrosoftGraphUser1>`: user
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AcceptedSenders <IMicrosoftGraphDirectoryObject[]>]`: The list of users or groups that are allowed to create post's or calendar events in this group. If this list is non-empty then only users or groups listed here are allowed to post.
       - `[AllowExternalSenders <Boolean?>]`: Indicates if people external to the organization can send messages to the group. Default value is false. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
-      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment1[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
+      - `[AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]`: Represents the app roles a group has been granted for an application. Supports $expand.
       - `[AssignedLabels <IMicrosoftGraphAssignedLabel[]>]`: The list of sensitivity label pairs (label ID, label name) associated with a Microsoft 365 group. Returned only on $select.
         - `[DisplayName <String>]`: The display name of the label. Read-only.
         - `[LabelId <String>]`: The unique identifier of the label.
@@ -14034,7 +14058,7 @@ USER `<IMicrosoftGraphUser1>`: user
         - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
         - `[SenderShiftId <String>]`: User ID of the sender of the offer shift request.
       - `[OfferShiftRequestsEnabled <Boolean?>]`: Indicates whether offer shift requests are enabled for the schedule.
-      - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: 
+      - `[OpenShiftChangeRequests <IMicrosoftGraphOpenShiftChangeRequest[]>]`: The open shift requests in the schedule.
         - `[AssignedTo <String>]`: scheduleChangeRequestActor
         - `[ManagerActionMessage <String>]`: 
         - `[SenderMessage <String>]`: 
@@ -14042,7 +14066,7 @@ USER `<IMicrosoftGraphUser1>`: user
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[OpenShiftId <String>]`: ID for the open shift.
-      - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: 
+      - `[OpenShifts <IMicrosoftGraphOpenShift[]>]`: The set of open shifts in a scheduling group in the schedule.
         - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[DraftOpenShift <IMicrosoftGraphOpenShiftItem>]`: openShiftItem
@@ -14280,7 +14304,7 @@ USER `<IMicrosoftGraphUser1>`: user
     - `[TotalItemCount <Int32?>]`: The number of items in the mailFolder.
     - `[UnreadItemCount <Int32?>]`: The number of items in the mailFolder marked as unread.
   - `[MailNickname <String>]`: The mail alias for the user. This property must be specified when a user is created. Maximum length is 64 characters. Returned only on $select. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
-  - `[MailboxSettings <IMicrosoftGraphMailboxSettings>]`: mailboxSettings
+  - `[MailboxSettings <IMicrosoftGraphMailboxSettings1>]`: mailboxSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
     - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting

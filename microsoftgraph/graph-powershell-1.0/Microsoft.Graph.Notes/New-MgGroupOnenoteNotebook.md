@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Notes-help.xml
 Module Name: Microsoft.Graph.Notes
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/new-mggrouponenotenotebook
 schema: 2.0.0
-ms.prod: onenote
 ---
 
 # New-MgGroupOnenoteNotebook
 
 ## SYNOPSIS
-Create a new OneNote notebook.
+Create new navigation property to notebooks for groups
 
 ## SYNTAX
 
@@ -46,7 +45,7 @@ New-MgGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicros
 ```
 
 ## DESCRIPTION
-Create a new OneNote notebook.
+Create new navigation property to notebooks for groups
 
 ## EXAMPLES
 

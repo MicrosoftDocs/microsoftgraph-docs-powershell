@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mguserapproleassignment
 schema: 2.0.0
-ms.prod: users
 ---
 
 # New-MgUserAppRoleAssignment
 
 ## SYNOPSIS
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers:
+Create new navigation property to appRoleAssignments for users
 
 ## SYNTAX
 
@@ -43,8 +41,7 @@ New-MgUserAppRoleAssignment -InputObject <IApplicationsIdentity>
 ```
 
 ## DESCRIPTION
-Use this API to assign an app role to a user.
-To grant an app role assignment to a user, you need three identifiers:
+Create new navigation property to appRoleAssignments for users
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicydefault
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyCrossTenantAccessPolicyDefault
 
 ## SYNOPSIS
-Update the default configuration of a cross-tenant access policy.
+Update the navigation property default in policies
 
 ## SYNTAX
 
@@ -34,7 +33,7 @@ Update-MgPolicyCrossTenantAccessPolicyDefault
 ```
 
 ## DESCRIPTION
-Update the default configuration of a cross-tenant access policy.
+Update the navigation property default in policies
 
 ## EXAMPLES
 

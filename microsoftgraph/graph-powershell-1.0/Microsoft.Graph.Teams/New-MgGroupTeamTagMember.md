@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamtagmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgGroupTeamTagMember
 
 ## SYNOPSIS
-Create a new teamworkTagMember object in a team.
+Create new navigation property to members for groups
 
 ## SYNTAX
 
@@ -40,7 +39,7 @@ New-MgGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create a new teamworkTagMember object in a team.
+Create new navigation property to members for groups
 
 ## EXAMPLES
 

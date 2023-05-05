@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgagreementfile
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgAgreementFile
 
 ## SYNOPSIS
-Retrieve the details of the default file for an agreement, including the language and version information.
-The file information is specified through the agreementFile object.
+Default PDF linked to this agreement.
 
 ## SYNTAX
 
@@ -27,8 +25,7 @@ Get-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Retrieve the details of the default file for an agreement, including the language and version information.
-The file information is specified through the agreementFile object.
+Default PDF linked to this agreement.
 
 ## EXAMPLES
 

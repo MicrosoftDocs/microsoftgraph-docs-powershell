@@ -8,28 +8,24 @@ schema: 2.0.0
 # Set-MgEducationMeAssignmentUpFeedbackResourceFolder
 
 ## SYNOPSIS
-Create a SharePoint folder to upload feedback files for a given educationSubmission.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the feedback resources folder of a submission.
+Invoke action setUpFeedbackResourcesFolder
 
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
 Set-MgEducationMeAssignmentUpFeedbackResourceFolder -EducationAssignmentId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
 Set-MgEducationMeAssignmentUpFeedbackResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a SharePoint folder to upload feedback files for a given educationSubmission.
-Only teachers can perform this operation.
-The teacher determines the resources to upload in the feedback resources folder of a submission.
+Invoke action setUpFeedbackResourcesFolder
 
 ## EXAMPLES
 
@@ -40,7 +36,7 @@ The unique identifier of educationAssignment
 
 ```yaml
 Type: String
-Parameter Sets: Set1
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -56,7 +52,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IEducationIdentity
-Parameter Sets: SetViaIdentity1
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True

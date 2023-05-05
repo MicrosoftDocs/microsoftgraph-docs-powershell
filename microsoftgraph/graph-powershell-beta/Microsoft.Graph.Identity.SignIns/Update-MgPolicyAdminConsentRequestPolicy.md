@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyadminconsentrequestpolicy
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Update-MgPolicyAdminConsentRequestPolicy
 
 ## SYNOPSIS
-Update the properties of an adminConsentRequestPolicy object.
+Update the navigation property adminConsentRequestPolicy in policies
 
 ## SYNTAX
 
@@ -28,7 +27,7 @@ Update-MgPolicyAdminConsentRequestPolicy -BodyParameter <IMicrosoftGraphAdminCon
 ```
 
 ## DESCRIPTION
-Update the properties of an adminConsentRequestPolicy object.
+Update the navigation property adminConsentRequestPolicy in policies
 
 ## EXAMPLES
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Join-MgSiteContentTypeWithHubSite
 
 ## SYNOPSIS
-Associate a [content type][contentType] with a list of hub sites.
+Invoke action associateWithHubSites
 
 ## SYNTAX
 
@@ -39,7 +39,7 @@ Join-MgSiteContentTypeWithHubSite -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Associate a [content type][contentType] with a list of hub sites.
+Invoke action associateWithHubSites
 
 ## EXAMPLES
 
@@ -255,6 +255,7 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
   - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem

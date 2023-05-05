@@ -3,16 +3,12 @@ external help file: Microsoft.Graph.Groups-help.xml
 Module Name: Microsoft.Graph.Groups
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupconversation
 schema: 2.0.0
-ms.prod: groups
 ---
 
 # New-MgGroupConversation
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to conversations for groups
 
 ## SYNTAX
 
@@ -44,10 +40,7 @@ New-MgGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosof
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Create new navigation property to conversations for groups
 
 ## EXAMPLES
 
@@ -432,6 +425,7 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
+  - `[GroupSettingId <String>]`: The unique identifier of groupSetting
   - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
   - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}

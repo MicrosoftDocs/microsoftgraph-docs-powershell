@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityb2xuserflow
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityB2XUserFlow
 
 ## SYNOPSIS
-Create a new b2xIdentityUserFlow object.
+Create new navigation property to b2xUserFlows for identity
 
 ## SYNTAX
 
@@ -31,7 +30,7 @@ New-MgIdentityB2XUserFlow -BodyParameter <IMicrosoftGraphB2XIdentityUserFlow> [-
 ```
 
 ## DESCRIPTION
-Create a new b2xIdentityUserFlow object.
+Create new navigation property to b2xUserFlows for identity
 
 ## EXAMPLES
 

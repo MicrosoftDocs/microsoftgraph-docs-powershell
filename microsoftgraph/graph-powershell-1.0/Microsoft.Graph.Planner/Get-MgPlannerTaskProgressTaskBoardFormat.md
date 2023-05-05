@@ -3,13 +3,14 @@ external help file: Microsoft.Graph.Planner-help.xml
 Module Name: Microsoft.Graph.Planner
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertaskprogresstaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
 # Get-MgPlannerTaskProgressTaskBoardFormat
 
 ## SYNOPSIS
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## SYNTAX
 
@@ -26,7 +27,9 @@ Get-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
+Read-only.
+Nullable.
+Used to render the task correctly in the task board view when grouped by progress.
 
 ## EXAMPLES
 

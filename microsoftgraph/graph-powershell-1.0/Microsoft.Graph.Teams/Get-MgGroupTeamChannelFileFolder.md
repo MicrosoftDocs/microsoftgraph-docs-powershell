@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mggroupteamchannelfilefolder
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # Get-MgGroupTeamChannelFileFolder
 
 ## SYNOPSIS
-Get the metadata for the location where the files of a channel are stored.
+Metadata for the location where the channel's files are stored.
 
 ## SYNTAX
 
@@ -26,7 +25,7 @@ Get-MgGroupTeamChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandProperty 
 ```
 
 ## DESCRIPTION
-Get the metadata for the location where the files of a channel are stored.
+Metadata for the location where the channel's files are stored.
 
 ## EXAMPLES
 

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicydefaultappmanagementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # Update-MgPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
-Update the properties of a tenantAppManagementPolicy object.
+Update the navigation property defaultAppManagementPolicy in policies
 
 ## SYNTAX
 
@@ -29,7 +28,7 @@ Update-MgPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantA
 ```
 
 ## DESCRIPTION
-Update the properties of a tenantAppManagementPolicy object.
+Update the navigation property defaultAppManagementPolicy in policies
 
 ## EXAMPLES
 

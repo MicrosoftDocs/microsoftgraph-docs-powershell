@@ -3,15 +3,12 @@ external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfoldermessageattachment
 schema: 2.0.0
-ms.prod: outlook
 ---
 
 # New-MgUserMailFolderMessageAttachment
 
 ## SYNOPSIS
-Use this API to add an attachment to a message.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
-You can add an attachment to an existing message by posting to its attachments collection, or to a new \nmessage that is being drafted, or created and sent on the fly.
+Create new navigation property to attachments for users
 
 ## SYNTAX
 
@@ -42,9 +39,7 @@ New-MgUserMailFolderMessageAttachment -InputObject <IMailIdentity> -BodyParamete
 ```
 
 ## DESCRIPTION
-Use this API to add an attachment to a message.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
-You can add an attachment to an existing message by posting to its attachments collection, or to a new \nmessage that is being drafted, or created and sent on the fly.
+Create new navigation property to attachments for users
 
 ## EXAMPLES
 

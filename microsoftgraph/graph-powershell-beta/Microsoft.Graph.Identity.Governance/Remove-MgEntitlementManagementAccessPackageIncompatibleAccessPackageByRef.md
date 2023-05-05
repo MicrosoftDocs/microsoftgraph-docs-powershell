@@ -12,14 +12,14 @@ Delete ref of navigation property incompatibleAccessPackages for identityGoverna
 
 ## SYNTAX
 
-### Delete (Default)
+### Delete1 (Default)
 ```
 Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId <String>
  -AccessPackageId1 <String> [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity
+### DeleteViaIdentity1
 ```
 Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
  -InputObject <IIdentityGovernanceIdentity> [-Id <String>] [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
@@ -47,7 +47,7 @@ The unique identifier of accessPackage
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -62,7 +62,7 @@ The unique identifier of accessPackage
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
 Aliases:
 
 Required: True
@@ -108,7 +108,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1
 Aliases:
 
 Required: True

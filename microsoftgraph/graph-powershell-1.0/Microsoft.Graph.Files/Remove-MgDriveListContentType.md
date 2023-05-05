@@ -12,13 +12,13 @@ Delete navigation property contentTypes for drives
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
 Remove-MgDriveListContentType -ContentTypeId <String> -DriveId <String> [-IfMatch <String>] [-PassThru]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
 Remove-MgDriveListContentType -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ The unique identifier of contentType
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -51,7 +51,7 @@ The unique identifier of drive
 
 ```yaml
 Type: String
-Parameter Sets: Delete1
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -82,7 +82,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IFilesIdentity
-Parameter Sets: DeleteViaIdentity1
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True

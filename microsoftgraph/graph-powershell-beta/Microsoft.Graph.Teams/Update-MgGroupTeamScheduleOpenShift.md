@@ -12,7 +12,7 @@ Update the navigation property openShifts in groups
 
 ## SYNTAX
 
-### UpdateExpanded (Default)
+### UpdateExpanded1 (Default)
 ```
 Update-MgGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
@@ -20,13 +20,13 @@ Update-MgGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String> [-Ad
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### Update
+### Update1
 ```
 Update-MgGroupTeamScheduleOpenShift -GroupId <String> -OpenShiftId <String>
  -BodyParameter <IMicrosoftGraphOpenShift1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateViaIdentityExpanded1
 ```
 Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftOpenShift <IMicrosoftGraphOpenShiftItem>] [-Id <String>]
@@ -34,7 +34,7 @@ Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-AdditionalPr
  [-SharedOpenShift <IMicrosoftGraphOpenShiftItem>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity
+### UpdateViaIdentity1
 ```
 Update-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphOpenShift1>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
@@ -52,7 +52,7 @@ Additional Parameters
 
 ```yaml
 Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -68,7 +68,7 @@ To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETE
 
 ```yaml
 Type: IMicrosoftGraphOpenShift1
-Parameter Sets: Update, UpdateViaIdentity
+Parameter Sets: Update1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ To construct, please use Get-Help -Online and see NOTES section for CREATEDBY pr
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -100,7 +100,7 @@ To construct, please use Get-Help -Online and see NOTES section for DRAFTOPENSHI
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -115,7 +115,7 @@ The unique identifier of group
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -131,7 +131,7 @@ Read-only.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -147,7 +147,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -178,7 +178,7 @@ To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIED
 
 ```yaml
 Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -193,7 +193,7 @@ The unique identifier of openShift
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, Update
+Parameter Sets: UpdateExpanded1, Update1
 Aliases:
 
 Required: True
@@ -223,7 +223,7 @@ ID for the scheduling group that the open shift belongs to.
 
 ```yaml
 Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -239,7 +239,7 @@ To construct, please use Get-Help -Online and see NOTES section for SHAREDOPENSH
 
 ```yaml
 Type: IMicrosoftGraphOpenShiftItem
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False

@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgidentityuserflowattribute
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
 # New-MgIdentityUserFlowAttribute
 
 ## SYNOPSIS
-Create a new identityUserFlowAttribute object.
+Create new navigation property to userFlowAttributes for identity
 
 ## SYNTAX
 
@@ -27,7 +26,7 @@ New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowA
 ```
 
 ## DESCRIPTION
-Create a new identityUserFlowAttribute object.
+Create new navigation property to userFlowAttributes for identity
 
 ## EXAMPLES
 

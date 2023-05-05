@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteammember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
 # New-MgTeamMember
 
 ## SYNOPSIS
-Add a new conversation member to a team.
+Create new navigation property to members for teams
 
 ## SYNTAX
 
@@ -39,7 +38,7 @@ New-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 ```
 
 ## DESCRIPTION
-Add a new conversation member to a team.
+Create new navigation property to members for teams
 
 ## EXAMPLES
 

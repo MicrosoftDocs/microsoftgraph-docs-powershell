@@ -3,14 +3,12 @@ external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryadministrativeunitscopedrolemember
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
 # New-MgDirectoryAdministrativeUnitScopedRoleMember
 
 ## SYNOPSIS
-Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
-For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
+Create new navigation property to scopedRoleMembers for directory
 
 ## SYNTAX
 
@@ -41,8 +39,7 @@ New-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 ```
 
 ## DESCRIPTION
-Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
-For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
+Create new navigation property to scopedRoleMembers for directory
 
 ## EXAMPLES
 

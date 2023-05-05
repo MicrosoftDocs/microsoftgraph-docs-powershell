@@ -3,13 +3,12 @@ external help file: Microsoft.Graph.Files-help.xml
 Module Name: Microsoft.Graph.Files
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgsharelistcolumn
 schema: 2.0.0
-ms.prod: sites-and-lists
 ---
 
 # New-MgShareListColumn
 
 ## SYNOPSIS
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for shares
 
 ## SYNTAX
 
@@ -58,7 +57,7 @@ New-MgShareListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGr
 ```
 
 ## DESCRIPTION
-Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
+Create new navigation property to columns for shares
 
 ## EXAMPLES
 

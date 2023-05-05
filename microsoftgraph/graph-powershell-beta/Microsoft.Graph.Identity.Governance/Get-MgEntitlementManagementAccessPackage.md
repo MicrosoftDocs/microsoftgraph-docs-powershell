@@ -3,7 +3,6 @@ external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackage
 schema: 2.0.0
-ms.prod: governance
 ---
 
 # Get-MgEntitlementManagementAccessPackage
@@ -19,19 +18,19 @@ Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property
  [-All] [<CommonParameters>]
 ```
 
-### Get
+### Get1
 ```
 Get-MgEntitlementManagementAccessPackage -AccessPackageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### List
+### List1
 ```
 Get-MgEntitlementManagementAccessPackage [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
@@ -139,7 +138,7 @@ The unique identifier of accessPackage
 
 ```yaml
 Type: String
-Parameter Sets: Get
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -154,7 +153,7 @@ List all pages.
 
 ```yaml
 Type: SwitchParameter
-Parameter Sets: ListAll, List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
+Parameter Sets: ListAll, List1, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases:
 
 Required: False
@@ -185,7 +184,7 @@ By default, this variable will be set in the global scope.
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases: CV
 
 Required: False
@@ -245,7 +244,7 @@ Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -261,7 +260,7 @@ To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT 
 
 ```yaml
 Type: IIdentityGovernanceIdentity
-Parameter Sets: GetViaIdentity
+Parameter Sets: GetViaIdentity1
 Aliases:
 
 Required: True
@@ -276,7 +275,7 @@ Sets the page size of results.
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -306,7 +305,7 @@ Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
@@ -321,7 +320,7 @@ Order items by property values
 
 ```yaml
 Type: String[]
-Parameter Sets: ListAll, List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
+Parameter Sets: ListAll, List1, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases: OrderBy
 
 Required: False
@@ -336,7 +335,7 @@ Show only the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
+Parameter Sets: List1, ListByDisplayNameContains, ListByDisplayNameEq, ListByCatalogId
 Aliases: Limit
 
 Required: False
@@ -351,7 +350,7 @@ Skip the first n items
 
 ```yaml
 Type: Int32
-Parameter Sets: List
+Parameter Sets: List1
 Aliases:
 
 Required: False
