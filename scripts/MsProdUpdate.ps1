@@ -6,7 +6,7 @@ Param(
     [hashtable]$BetaCommandGetVariantList= @{},
     [hashtable]$V1CommandListVariantList= @{},
     [hashtable]$BetaCommandListVariantList= @{},
-    [string] $ModuleMappingConfigPath = ("..\..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
+    [string] $ModuleMappingConfigPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
     [string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
     [string] $SDKOpenApiPath = ("..\..\msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph"),
@@ -78,12 +78,15 @@ function Get-Files {
         [string] $ModulePrefix = "Microsoft.Graph",
         [Hashtable] $OpenApiContent 
     )
-    $ModuleManifestFile = (Join-Path $SDKDocsPath "\$Module\$Module\Microsoft.Graph.$Module.psd1")
-    $ModuleManifestFileContent = Get-Content -Path $ModuleManifestFile
     $ProfileGraph = "v1.0"
+    $ModuleManifestFile = Join-Path $SDKDocsPath $Module "v1.0" "Microsoft.Graph.$Module.psd1"
     if ($GraphProfile -eq "v1.0-beta") {
         $ProfileGraph = "beta"
+        $ModuleManifestFile = Join-Path $SDKDocsPath $Module "beta" "Microsoft.Graph.Beta.$Module.psd1"
     }
+    
+    $ModuleManifestFileContent = Get-Content -Path $ModuleManifestFile
+
     $NonAllowedCommand = $GraphProfilePath.Split("\")
     try {
         if (Test-Path $GraphProfilePath) {
@@ -96,7 +99,6 @@ function Get-Files {
                 if ($Command -ne $NonAllowedCommand[$NonAllowedCommand.Count - 1]) {
                     #Check for cmdlet existence from the module manifest file
                     if ($ModuleManifestFileContent | Select-String -pattern $Command) {
-                        if ($ModuleManifestFileContent | Select-String -pattern $Command) {
                             $UriPath = $null
                             if($GraphProfile -eq "v1.0-beta"){
                                 $UriPath = $BetaCommandGetVariantList[$Command]
@@ -110,7 +112,7 @@ function Get-Files {
                             }
                         }
                        
-                    }
+                    
                     #Start-Sleep -Seconds 10
                 }
             }
@@ -305,17 +307,17 @@ function WebScrapping {
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
     Out-File $File
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_" + $date
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}
-else {
-    Write-Host "Branch already exists"
-    git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_update_help_files_" + $date
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }
+# else {
+#     Write-Host "Branch already exists"
+#     git checkout $proposedBranch
+# }
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
 }
@@ -355,7 +357,7 @@ foreach($Data in $DeserializedContent)
         }   
     }
 }
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
