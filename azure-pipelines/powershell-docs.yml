@@ -23,7 +23,7 @@ resources:
      type: github
      endpoint: microsoftgraph
      name: microsoftgraph/msgraph-sdk-powershell
-     ref: WeeklyGeneration/20230509038
+     ref: v2/generation
 
    - repository: microsoft-graph-docs
      type: github
@@ -61,13 +61,13 @@ jobs:
   #     pwsh: true
   #     filePath: microsoftgraph-docs-powershell\microsoftgraph\UpdateHelp.ps1
 
-  - task: PowerShell@2
-    displayName: 'Escape disallowed html tags'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
+  # - task: PowerShell@2
+  #   displayName: 'Escape disallowed html tags'
+  #   continueOnError: false
+  #   inputs:
+  #     targetType: 'filePath'
+  #     pwsh: true
+  #     filePath: microsoftgraph-docs-powershell\microsoftgraph\EscapeDisallowedHtmlTags.ps1
 
   - task: PowerShell@2
     displayName: 'Update metadata header'

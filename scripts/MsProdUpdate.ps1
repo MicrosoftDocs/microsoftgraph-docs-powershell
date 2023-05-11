@@ -11,8 +11,8 @@ Param(
     [string] $SDKOpenApiPath = ("..\msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph"),
     [string] $GraphDocsPath = ("..\microsoft-graph-docs"),
-    [string] $MissingMsProdHeaderPath = ("..\microsoftgraph-docs-powershell\missingexternaldocsurl"),
-    $MetaDataJsonFile = (Join-Path $PSScriptRoot "..\msgraph-sdk-powershell\src\Authentication\Authentication\custom\common\MgCommandMetadata.json")
+    [string] $MissingMsProdHeaderPath = ("..\microsoftgraph-docs-powershell\missingexternaldocsurl")
+    #$MetaDataJsonFile = (Join-Path $PSScriptRoot "..\msgraph-sdk-powershell\src\Authentication\Authentication\custom\common\MgCommandMetadata.json")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -343,6 +343,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
+$MetaDataJsonFile = Join-Path $SDKDocsPath "Authentication" "Authentication" "custom" "common" "MgCommandMetadata.json"
 $JsonContent = Get-Content -Path $MetaDataJsonFile
 $DeserializedContent = $JsonContent | ConvertFrom-Json
 foreach($Data in $DeserializedContent)
@@ -367,8 +368,8 @@ foreach($Data in $DeserializedContent)
         }   
     }
 }
-# Set-Location ..\microsoftgraph-docs-powershell
-Set-Location microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
