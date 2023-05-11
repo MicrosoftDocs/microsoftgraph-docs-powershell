@@ -6,13 +6,13 @@ Param(
     [hashtable]$BetaCommandGetVariantList= @{},
     [hashtable]$V1CommandListVariantList= @{},
     [hashtable]$BetaCommandListVariantList= @{},
-    [string] $ModuleMappingConfigPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
-    [string] $SDKOpenApiPath = ("..\..\msgraph-sdk-powershell"),
-    [string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph"),
-    [string] $GraphDocsPath = ("..\..\microsoft-graph-docs"),
-    [string] $MissingMsProdHeaderPath = ("..\..\microsoftgraph-docs-powershell\missingexternaldocsurl"),
-    $MetaDataJsonFile = (Join-Path $PSScriptRoot "..\..\msgraph-sdk-powershell\src\Authentication\Authentication\custom\common\MgCommandMetadata.json")
+    [string] $ModuleMappingConfigPath = ("..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
+    [string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
+    [string] $SDKOpenApiPath = ("..\msgraph-sdk-powershell"),
+    [string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph"),
+    [string] $GraphDocsPath = ("..\microsoft-graph-docs"),
+    [string] $MissingMsProdHeaderPath = ("..\microsoftgraph-docs-powershell\missingexternaldocsurl"),
+    $MetaDataJsonFile = (Join-Path $PSScriptRoot "..\msgraph-sdk-powershell\src\Authentication\Authentication\custom\common\MgCommandMetadata.json")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -34,10 +34,10 @@ function Start-Generator {
         }
         Get-FilesByProfile -GraphProfile $GraphProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Updated metadata parameters" 
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updated metadata parameters" 
 }
 function Get-FilesByProfile {
     Param(
@@ -50,7 +50,6 @@ function Get-FilesByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-
 
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
@@ -318,17 +317,17 @@ function WebScrapping {
     Foreach-Object { $_ -replace 'schema: 2.0.0', $MetaDataText }  | 
     Out-File $File
 }
-# Set-Location microsoftgraph-docs-powershell
-# $date = Get-Date -Format "dd-MM-yyyy"
-# $proposedBranch = "weekly_update_help_files_" + $date
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }
-# else {
-#     Write-Host "Branch already exists"
-#     git checkout $proposedBranch
-# }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_" + $date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}
+else {
+    Write-Host "Branch already exists"
+    git checkout $proposedBranch
+}
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
 }
@@ -368,7 +367,7 @@ foreach($Data in $DeserializedContent)
         }   
     }
 }
-#Set-Location ..\microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
