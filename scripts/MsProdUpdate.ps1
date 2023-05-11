@@ -167,7 +167,10 @@ function Get-ExternalDocs-Url {
                             }else{
                                 $UriPath2 = $V1CommandListVariantList[$Command]
                             } 
-                            $ExternalDocUrl = $Path[$UriPath2].get.externalDocs.url  
+                            if(-not([string]::IsNullOrEmpty($UriPath2))){
+                                $ExternalDocUrl = $Path[$UriPath2].get.externalDocs.url
+                            }
+                              
                         }
                     }
                 }
@@ -179,8 +182,10 @@ function Get-ExternalDocs-Url {
                             $UriPath3 = $BetaCommandListVariantList[$Command]
                         }else{
                             $UriPath3 = $V1CommandListVariantList[$Command]
-                        } 
-                        $ExternalDocUrl = $Path[$UriPath3].post.externalDocs.url  
+                        }
+                        if(-not([string]::IsNullOrEmpty($UriPath3))){ 
+                            $ExternalDocUrl = $Path[$UriPath3].post.externalDocs.url
+                        }  
                     } 
                 }
             
@@ -193,7 +198,9 @@ function Get-ExternalDocs-Url {
                         }else{
                             $UriPath4 = $V1CommandListVariantList[$Command]
                         } 
-                        $ExternalDocUrl = $Path[$UriPath4].patch.externalDocs.url  
+                        if(-not([string]::IsNullOrEmpty($UriPath4))){ 
+                            $ExternalDocUrl = $Path[$UriPath4].post.externalDocs.url
+                        }  
                     } 
                 }
             
@@ -206,7 +213,9 @@ function Get-ExternalDocs-Url {
                         }else{
                             $UriPath5 = $V1CommandListVariantList[$Command]
                         } 
-                        $ExternalDocUrl = $Path[$UriPath5].delete.externalDocs.url  
+                        if(-not([string]::IsNullOrEmpty($UriPath5))){ 
+                            $ExternalDocUrl = $Path[$UriPath5].post.externalDocs.url
+                        }  
                     } 
                 }
 
@@ -219,7 +228,9 @@ function Get-ExternalDocs-Url {
                         }else{
                             $UriPath6 = $V1CommandListVariantList[$Command]
                         } 
-                        $ExternalDocUrl = $Path[$UriPath6].put.externalDocs.url  
+                        if(-not([string]::IsNullOrEmpty($UriPath6))){ 
+                            $ExternalDocUrl = $Path[$UriPath6].post.externalDocs.url
+                        }  
                     } 
                 }
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
