@@ -9,14 +9,8 @@ steps:
     pwsh: true
     script: |
           echo "Updating to the latest sdk version"
-          try {
-              # Try to update the module first.
-              Update-Module -Name Microsoft.Graph -Scope CurrentUser -AcceptLicense -Force -ErrorAction Stop
-          } catch {
-              # If the module is not installed, install it.
-              Install-Module Microsoft.Graph -Repository PSGallery -Scope CurrentUser -AcceptLicense -Force -AllowClobber
-          }
-
+          # If the module is not installed, install it.
+          Install-Module Microsoft.Graph -Repository PSGallery -Scope CurrentUser -AcceptLicense -Force -AllowClobber
           Import-Module Microsoft.Graph -Global -Force
 
 - template: checkout.yml
