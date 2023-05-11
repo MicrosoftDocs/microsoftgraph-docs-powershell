@@ -2,13 +2,13 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
-	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
+    [string] $ModuleMappingConfigPath = ("..\microsoftgraph\config\ModulesMapping.jsonc"),
+	[string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
+	[string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    $graphMapping.Add("v1.0", "v1.0")
+    #$graphMapping.Add("v1.0", "v1.0")
     $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
@@ -23,7 +23,7 @@ function Start-Copy {
     $GraphMapping.Keys | ForEach-Object {
         $graphProfile = $_
 		$profilePath = "graph-powershell-1.0"
-		if($graphProfile -eq "v1.0-beta"){
+		if($graphProfile -eq "beta"){
 			$profilePath = "graph-powershell-beta"
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
@@ -40,11 +40,10 @@ function Get-FilesByProfile{
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-		$docs = Join-Path $SDKDocsPath $ModuleName $ModuleName "docs" $GraphProfile
-        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
+		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "docs"
+        Copy-Files -DocPath $docs -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
     }
 
 }
@@ -61,14 +60,33 @@ function Copy-Files{
 		[ValidateNotNullOrEmpty()]
         [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
+    #Write-Host "Here there " $GraphProfile
 	$moduleImportName = "$ModulePrefix.$ModuleName"
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
-	 $source = Join-Path $DocPath "\*"
+
+	 #$source = Join-Path $DocPath "\*"
+
+     if($GraphProfile -eq "beta"){
+        #Delete everything in that folder
+        $FoldertoBeCleared= Join-Path $destination "\*"
+        Remove-Item $FoldertoBeCleared -Recurse -Force
+        #copy that file and mv to another file name
+        Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
+            $OldFileName = [System.IO.Path]::GetFileName($_)
+            $OldDestination = Join-Path $destination $OldFileName
+            $NewDestination = Join-Path $destination $OldFileName.Replace("-MgBeta", "-Mg")
+            Write-Host $NewDestination
+            Copy-Item $_  -Destination $destination
+            Move-Item $OldDestination -Destination $NewDestination
+
+        }
+        #Write-Host $source " = " $destination
+     }
 	
-	if ((Test-Path $DocPath)) {
-		 Write-Host -ForegroundColor DarkYellow "Copying markdown files to " $destination
-		Copy-Item $source -Destination $destination
-	}
+	# if ((Test-Path $DocPath)) {
+	# 	 Write-Host -ForegroundColor DarkYellow "Copying markdown files to " $destination
+	# 	Copy-Item $source -Destination $destination
+	# }
       
 }
 
