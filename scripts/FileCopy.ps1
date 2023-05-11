@@ -9,7 +9,7 @@ Param(
 function Get-GraphMapping {
     $graphMapping = @{}
     $graphMapping.Add("v1.0", "v1.0")
-    $graphMapping.Add("v1.0-beta", "v1.0-beta")
+    $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
 
@@ -31,7 +31,7 @@ function Start-Copy {
 }
 function Get-FilesByProfile{
  Param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
@@ -50,7 +50,7 @@ function Get-FilesByProfile{
 }
 function Copy-Files{
     param(
-        [ValidateSet("v1.0-beta", "v1.0")]
+        [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
         [ValidateNotNullOrEmpty()]
         [string] $GraphProfilePath = "graph-powershell-1.0",
@@ -59,7 +59,7 @@ function Copy-Files{
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
 		[ValidateNotNullOrEmpty()]
-        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\Users\docs\v1.0"
+        [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
 	$moduleImportName = "$ModulePrefix.$ModuleName"
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
@@ -74,16 +74,16 @@ function Copy-Files{
 
 
 
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_update_help_files_"+$date
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#      git checkout $proposedBranch
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -92,7 +92,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
