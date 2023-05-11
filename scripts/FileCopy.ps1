@@ -65,6 +65,9 @@ function Copy-Files{
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
 
 	 $source = Join-Path $DocPath "\*"
+     if (-not(Test-Path $destination)) {
+        New-Item -Path $destination -ItemType Directory
+     }
      if ((Test-Path $DocPath)) {
      if($GraphProfile -eq "beta"){
         Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
@@ -94,7 +97,7 @@ function Copy-Files{
 
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_update_help_files_"+$date
+$proposedBranch = "weekly_v2_update"+$date
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
@@ -110,7 +113,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
