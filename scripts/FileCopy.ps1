@@ -2,13 +2,13 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\microsoftgraph\config\ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
-	[string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph")
+    [string] $ModuleMappingConfigPath = ("..\msgraph-sdk-powershell\config\ModulesMapping.jsonc"),
+	[string] $SDKDocsPath = ("..\msgraph-sdk-powershell\src"),
+	[string] $WorkLoadDocsPath = ("..\microsoftgraph-docs-powershell\microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    #$graphMapping.Add("v1.0", "v1.0")
+    $graphMapping.Add("v1.0", "v1.0")
     $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
@@ -64,9 +64,10 @@ function Copy-Files{
 	$moduleImportName = "$ModulePrefix.$ModuleName"
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $moduleImportName
 
-	 #$source = Join-Path $DocPath "\*"
-
+	 $source = Join-Path $DocPath "\*"
+     if ((Test-Path $DocPath)) {
      if($GraphProfile -eq "beta"){
+        Write-Host -ForegroundColor DarkYellow "Copying beta markdown files to " $destination
         #Delete everything in that folder
         $FoldertoBeCleared= Join-Path $destination "\*"
         Remove-Item $FoldertoBeCleared -Recurse -Force
@@ -81,27 +82,26 @@ function Copy-Files{
 
         }
         #Write-Host $source " = " $destination
+     }else{
+	   Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
+	   Copy-Item $source -Destination $destination
+	 }
      }
-	
-	# if ((Test-Path $DocPath)) {
-	# 	 Write-Host -ForegroundColor DarkYellow "Copying markdown files to " $destination
-	# 	Copy-Item $source -Destination $destination
-	# }
       
 }
 
 
 
-# Set-Location microsoftgraph-docs-powershell
-# $date = Get-Date -Format "dd-MM-yyyy"
-# $proposedBranch = "weekly_update_help_files_"+$date
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }else{
-# 	Write-Host "Branch already exists"
-#      git checkout $proposedBranch
-# }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_update_help_files_"+$date
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -110,7 +110,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-#Set-Location ..\microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
