@@ -367,7 +367,8 @@ foreach($Data in $DeserializedContent)
         }   
     }
 }
-Set-Location ..\microsoftgraph-docs-powershell
+# Set-Location ..\microsoftgraph-docs-powershell
+Set-Location microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Generator -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
