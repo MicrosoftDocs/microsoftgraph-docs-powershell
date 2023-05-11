@@ -248,7 +248,7 @@ try{
 }	
 return "NA"	
 }
-Set-Location microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_v2_update"+$date
 $exists = git branch -l $proposedBranch
