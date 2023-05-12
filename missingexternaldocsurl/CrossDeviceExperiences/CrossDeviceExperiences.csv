@@ -21,3 +21,5 @@ v1.0-beta, Remove-MgUserDevice, /users/{user-id}/devices/{device-id}
 v1.0-beta, Update-MgUserActivity, /users/{user-id}/activities/{userActivity-id}
 v1.0-beta, Update-MgUserActivityHistoryItem, /users/{user-id}/activities/{userActivity-id}/historyItems/{activityHistoryItem-id}
 v1.0-beta, Update-MgUserDevice, /users/{user-id}/devices/{device-id}
+v1.0, Get-MgUserActivityCount, /users/{user-id}/activities/$count
+v1.0, Get-MgUserActivityHistoryItemCount, /users/{user-id}/activities/{userActivity-id}/historyItems/$count

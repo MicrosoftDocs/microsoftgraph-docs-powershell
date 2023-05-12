@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/update-mggroupsetting
 schema: 2.0.0
+ms.prod: groups
 ---
 
 # Update-MgGroupSetting

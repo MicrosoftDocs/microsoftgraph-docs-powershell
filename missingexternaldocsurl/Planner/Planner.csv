@@ -35,3 +35,8 @@ v1.0-beta, Update-MgPlannerRoster, /planner/rosters/{plannerRoster-id}
 v1.0-beta, Update-MgPlannerRosterMember, /planner/rosters/{plannerRoster-id}/members/{plannerRosterMember-id}
 v1.0-beta, Update-MgPlannerTask, /planner/tasks/{plannerTask-id}
 v1.0-beta, Update-MgUserPlanner, /users/{user-id}/planner
+v1.0, Get-MgGroupPlannerPlan, /groups/{group-id}/planner/plans/{plannerPlan-id}
+v1.0, Get-MgGroupPlannerPlanCount, /groups/{group-id}/planner/plans/$count
+v1.0, Get-MgPlannerBucketCount, /planner/buckets/$count
+v1.0, Get-MgPlannerPlanCount, /planner/plans/$count
+v1.0, Get-MgPlannerTaskCount, /planner/tasks/$count

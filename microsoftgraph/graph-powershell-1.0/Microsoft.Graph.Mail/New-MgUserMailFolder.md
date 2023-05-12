@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Mail
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/new-mgusermailfolder
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # New-MgUserMailFolder

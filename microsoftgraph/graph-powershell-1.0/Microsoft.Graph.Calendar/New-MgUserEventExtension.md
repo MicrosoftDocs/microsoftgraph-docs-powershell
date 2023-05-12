@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/new-mgusereventextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # New-MgUserEventExtension

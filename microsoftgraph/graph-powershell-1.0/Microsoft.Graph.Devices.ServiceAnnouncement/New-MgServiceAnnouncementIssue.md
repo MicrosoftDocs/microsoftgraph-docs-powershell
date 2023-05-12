@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.serviceannouncement/new-mgserviceannouncementissue
 schema: 2.0.0
+ms.prod: service-communications
 ---
 
 # New-MgServiceAnnouncementIssue

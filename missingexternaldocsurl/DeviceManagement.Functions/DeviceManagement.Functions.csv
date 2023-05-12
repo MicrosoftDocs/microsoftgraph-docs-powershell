@@ -55,3 +55,7 @@ v1.0-beta, Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerform
 v1.0-beta, Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance, /deviceManagement/userExperienceAnalyticsResourcePerformance/summarizeDeviceResourcePerformance(summarizeBy='{summarizeBy}')
 v1.0, Get-MgDeviceManagementAuditEventAuditActivityType, /deviceManagement/auditEvents/getAuditActivityTypes(category='{category}')
 v1.0, Get-MgDeviceManagementEffectivePermission, /deviceManagement/getEffectivePermissions(scope='{scope}')
+v1.0, Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery, /deviceManagement/verifyWindowsEnrollmentAutoDiscovery(domainName='{domainName}')
+v1.0, Get-MgDeviceManagementAuditEventAuditActivityType, /deviceManagement/auditEvents/getAuditActivityTypes(category='{category}')
+v1.0, Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue, /deviceManagement/deviceConfigurations/{deviceConfiguration-id}/getOmaSettingPlainTextValue(secretReferenceValueId='{secretReferenceValueId}')
+v1.0, Get-MgDeviceManagementEffectivePermission, /deviceManagement/getEffectivePermissions(scope='{scope}')

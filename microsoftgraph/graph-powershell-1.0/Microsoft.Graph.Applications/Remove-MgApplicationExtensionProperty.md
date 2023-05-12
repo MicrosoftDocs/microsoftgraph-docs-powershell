@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/remove-mgapplicationextensionproperty
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Remove-MgApplicationExtensionProperty

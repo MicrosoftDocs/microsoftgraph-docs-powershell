@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/new-mggroupdrivelistcolumn
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgGroupDriveListColumn

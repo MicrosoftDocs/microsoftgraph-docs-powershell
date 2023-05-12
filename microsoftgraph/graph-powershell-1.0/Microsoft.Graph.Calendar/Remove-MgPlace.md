@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgplace
 schema: 2.0.0
+ms.prod: calendar
 ---
 
 # Remove-MgPlace

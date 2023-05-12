@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/set-mgusertodolisttaskattachmentcontent
 schema: 2.0.0
+ms.prod: outlook
 ---
 
 # Set-MgUserTodoListTaskAttachmentContent

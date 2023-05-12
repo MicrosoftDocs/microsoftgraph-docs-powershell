@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Files
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mguserdriveroot
 schema: 2.0.0
+ms.prod: sharepoint
 ---
 
 # Remove-MgUserDriveRoot

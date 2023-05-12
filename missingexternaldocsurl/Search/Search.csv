@@ -56,3 +56,8 @@ v1.0-beta, Update-MgSearchAcronym, /search/acronyms/{acronym-id}
 v1.0-beta, Update-MgSearchBookmark, /search/bookmarks/{bookmark-id}
 v1.0-beta, Update-MgSearchEntity, /search
 v1.0-beta, Update-MgSearchQna, /search/qnas/{qna-id}
+v1.0, Get-MgExternalConnectionCount, /external/connections/$count
+v1.0, Get-MgExternalConnectionGroupCount, /external/connections/{externalConnection-id}/groups/$count
+v1.0, Get-MgExternalConnectionGroupMemberCount, /external/connections/{externalConnection-id}/groups/{externalGroup-id}/members/$count
+v1.0, Get-MgExternalConnectionItemCount, /external/connections/{externalConnection-id}/items/$count
+v1.0, Get-MgExternalConnectionOperationCount, /external/connections/{externalConnection-id}/operations/$count

@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.cloudprint/update-mgprintservice
 schema: 2.0.0
+ms.prod: cloud-printing
 ---
 
 # Update-MgPrintService

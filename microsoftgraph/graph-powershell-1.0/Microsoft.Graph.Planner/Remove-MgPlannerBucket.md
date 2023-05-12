@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/remove-mgplannerbucket
 schema: 2.0.0
+ms.prod: planner
 ---
 
 # Remove-MgPlannerBucket

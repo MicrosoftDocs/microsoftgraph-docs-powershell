@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/new-mgserviceprincipal
 schema: 2.0.0
+ms.prod: applications
 ---
 
 # New-MgServicePrincipal

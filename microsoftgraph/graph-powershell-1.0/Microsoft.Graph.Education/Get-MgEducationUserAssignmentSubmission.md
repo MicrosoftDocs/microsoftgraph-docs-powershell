@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.education/get-mgeducationuserassignmentsubmission
 schema: 2.0.0
+ms.prod: education
 ---
 
 # Get-MgEducationUserAssignmentSubmission

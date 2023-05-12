@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.SchemaExtensions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.schemaextensions/update-mgschemaextension
 schema: 2.0.0
+ms.prod: extensions
 ---
 
 # Update-MgSchemaExtension

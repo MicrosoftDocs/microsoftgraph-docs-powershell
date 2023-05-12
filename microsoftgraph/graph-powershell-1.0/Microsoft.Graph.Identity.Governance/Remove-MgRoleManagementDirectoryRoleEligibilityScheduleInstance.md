@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/remove-mgrolemanagementdirectoryroleeligibilityscheduleinstance
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Remove-MgRoleManagementDirectoryRoleEligibilityScheduleInstance

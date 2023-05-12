@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/new-mgbookingcurrency
 schema: 2.0.0
+ms.prod: bookings
 ---
 
 # New-MgBookingCurrency

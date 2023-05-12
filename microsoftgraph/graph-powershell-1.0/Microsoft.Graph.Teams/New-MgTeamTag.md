@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/new-mgteamtag
 schema: 2.0.0
+ms.prod: microsoft-teams
 ---
 
 # New-MgTeamTag

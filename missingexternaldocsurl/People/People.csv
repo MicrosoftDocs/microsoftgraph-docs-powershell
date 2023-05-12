@@ -85,3 +85,11 @@ v1.0-beta, Update-MgUserProfilePublication, /users/{user-id}/profile/publication
 v1.0-beta, Update-MgUserProfileSkill, /users/{user-id}/profile/skills/{skillProficiency-id}
 v1.0-beta, Update-MgUserProfileWebAccount, /users/{user-id}/profile/webAccounts/{webAccount-id}
 v1.0-beta, Update-MgUserProfileWebsite, /users/{user-id}/profile/websites/{personWebsite-id}
+v1.0, Get-MgUserPerson, /users/{user-id}/people/{person-id}
+v1.0, Get-MgUserPersonCount, /users/{user-id}/people/$count
+v1.0, Get-MgUserSharedCountInsight, /users/{user-id}/insights/shared/$count
+v1.0, Get-MgUserSharedInsight, /users/{user-id}/insights/shared/{sharedInsight-id}
+v1.0, Get-MgUserTrendingCountInsight, /users/{user-id}/insights/trending/$count
+v1.0, Get-MgUserTrendingInsight, /users/{user-id}/insights/trending/{trending-id}
+v1.0, Get-MgUserUsedCountInsight, /users/{user-id}/insights/used/$count
+v1.0, Get-MgUserUsedInsight, /users/{user-id}/insights/used/{usedInsight-id}

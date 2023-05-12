@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyrolemanagementpolicyassignment
 schema: 2.0.0
+ms.prod: governance
 ---
 
 # Remove-MgPolicyRoleManagementPolicyAssignment

@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mguseronenotenotebook
 schema: 2.0.0
+ms.prod: onenote
 ---
 
 # Get-MgUserOnenoteNotebook

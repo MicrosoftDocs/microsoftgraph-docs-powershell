@@ -39,3 +39,9 @@ v1.0-beta, Update-MgServiceAnnouncementHealthOverviewIssue, /admin/serviceAnnoun
 v1.0-beta, Update-MgServiceAnnouncementIssue, /admin/serviceAnnouncement/issues/{serviceHealthIssue-id}
 v1.0-beta, Update-MgServiceAnnouncementMessage, /admin/serviceAnnouncement/messages/{serviceUpdateMessage-id}
 v1.0-beta, Update-MgServiceAnnouncementMessageAttachment, /admin/serviceAnnouncement/messages/{serviceUpdateMessage-id}/attachments/{serviceAnnouncementAttachment-id}
+v1.0, Get-MgServiceAnnouncementHealthOverviewCount, /admin/serviceAnnouncement/healthOverviews/$count
+v1.0, Get-MgServiceAnnouncementHealthOverviewIssue, /admin/serviceAnnouncement/healthOverviews/{serviceHealth-id}/issues/{serviceHealthIssue-id}
+v1.0, Get-MgServiceAnnouncementHealthOverviewIssueCount, /admin/serviceAnnouncement/healthOverviews/{serviceHealth-id}/issues/$count
+v1.0, Get-MgServiceAnnouncementIssueCount, /admin/serviceAnnouncement/issues/$count
+v1.0, Get-MgServiceAnnouncementMessageAttachmentCount, /admin/serviceAnnouncement/messages/{serviceUpdateMessage-id}/attachments/$count
+v1.0, Get-MgServiceAnnouncementMessageCount, /admin/serviceAnnouncement/messages/$count

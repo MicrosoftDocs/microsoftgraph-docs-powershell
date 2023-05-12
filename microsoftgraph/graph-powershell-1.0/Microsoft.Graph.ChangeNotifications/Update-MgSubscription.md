@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.ChangeNotifications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.changenotifications/update-mgsubscription
 schema: 2.0.0
+ms.prod: change-notifications
 ---
 
 # Update-MgSubscription

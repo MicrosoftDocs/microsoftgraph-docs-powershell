@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.search/get-mgexternalconnectionitem
 schema: 2.0.0
+ms.prod: search
 ---
 
 # Get-MgExternalConnectionItem

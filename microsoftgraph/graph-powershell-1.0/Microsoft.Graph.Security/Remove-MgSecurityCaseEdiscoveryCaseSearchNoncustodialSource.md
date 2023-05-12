@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/remove-mgsecuritycaseediscoverycasesearchnoncustodialsource
 schema: 2.0.0
+ms.prod: ediscovery
 ---
 
 # Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource

@@ -3,6 +3,7 @@ external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/new-mgsitelistitemdocumentsetversion
 schema: 2.0.0
+ms.prod: sites-and-lists
 ---
 
 # New-MgSiteListItemDocumentSetVersion
