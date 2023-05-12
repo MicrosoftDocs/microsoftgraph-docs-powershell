@@ -87,7 +87,7 @@ function Update-GraphModuleHelp {
     $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$moduleImportName"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
-    Import-Module $moduleImportName -Force -Global
+    Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
 }
 
