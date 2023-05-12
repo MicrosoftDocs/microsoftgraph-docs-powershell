@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/set-mgeducationclassassignmentsubmissionupresourcefolder
+external help file:
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/set-mgbetaeducationclassassignmentsubmissionupresourcefolder
 schema: 2.0.0
 ---
 
-# Set-MgEducationClassAssignmentSubmissionUpResourceFolder
+# Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder
 
 ## SYNOPSIS
 Trigger the creation of the SharePoint resource folder where all file-based resources (Word, Excel, and so on) should be uploaded for a given submission.
@@ -15,16 +15,16 @@ Only a student in the class can determine what files to upload in a given submis
 
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationAssignmentId <String>
- -EducationClassId <String> -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -EducationAssignmentId <String>
+ -EducationClassId <String> -EducationSubmissionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -InputObject <IEducationIdentity> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,38 +35,35 @@ Only a student in the class can determine what files to upload in a given submis
 
 ## EXAMPLES
 
-### Example 1: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 $params = @{
 }
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
 
-This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 $params = @{
 }
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
 
-This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Education
+Import-Module Microsoft.Graph.Beta.Education
 $params = @{
 }
-Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
 
-This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -74,8 +71,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: Set1
+Type: System.String
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -89,8 +86,8 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: Set1
+Type: System.String
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -104,8 +101,8 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
-Parameter Sets: Set1
+Type: System.String
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -117,11 +114,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: SetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
@@ -135,7 +132,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -151,7 +148,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -167,10 +164,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -180,11 +179,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -195,3 +195,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

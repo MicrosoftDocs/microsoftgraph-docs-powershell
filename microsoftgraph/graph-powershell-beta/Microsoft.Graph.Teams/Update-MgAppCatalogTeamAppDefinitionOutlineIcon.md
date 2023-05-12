@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinitionoutlineicon
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitionoutlineicon
 schema: 2.0.0
 ---
 
-# Update-MgAppCatalogTeamAppDefinitionOutlineIcon
+# Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon
 
 ## SYNOPSIS
 Update the navigation property outlineIcon in appCatalogs
@@ -14,28 +14,28 @@ Update the navigation property outlineIcon in appCatalogs
 
 ### UpdateExpanded (Default)
 ```
-Update-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppDefinitionId <String> -TeamsAppId <String>
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppDefinitionId <String> -TeamsAppId <String>
  [-AdditionalProperties <Hashtable>] [-HostedContent <IMicrosoftGraphTeamworkHostedContent>] [-Id <String>]
- [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppDefinitionId <String> -TeamsAppId <String>
- -BodyParameter <IMicrosoftGraphTeamsAppIcon> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-HostedContent <IMicrosoftGraphTeamworkHostedContent>] [-Id <String>]
- [-WebUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppDefinitionId <String> -TeamsAppId <String>
+ -BodyParameter <IMicrosoftGraphTeamsAppIcon> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamsAppIcon> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTeamsAppIcon> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity>
+ [-AdditionalProperties <Hashtable>] [-HostedContent <IMicrosoftGraphTeamworkHostedContent>] [-Id <String>]
+ [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Update the navigation property outlineIcon in appCatalogs
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsAppIcon
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppIcon
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -78,10 +92,10 @@ Accept wildcard characters: False
 
 ### -HostedContent
 teamworkHostedContent
-To construct, please use Get-Help -Online and see NOTES section for HOSTEDCONTENT properties and create a hash table.
+To construct, see NOTES section for HOSTEDCONTENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkHostedContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -93,11 +107,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,11 +124,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -124,27 +138,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -TeamsAppDefinitionId
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -158,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -173,7 +172,7 @@ Accept wildcard characters: False
 The web URL that can be used for downloading the image.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,11 +219,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppIcon
+
 ## NOTES
 
 ALIASES
@@ -234,23 +236,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
+`BODYPARAMETER <IMicrosoftGraphTeamsAppIcon>`: teamsAppIcon
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
   - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
 
-HOSTEDCONTENT `<IMicrosoftGraphTeamworkHostedContent>`: teamworkHostedContent
+`HOSTEDCONTENT <IMicrosoftGraphTeamworkHostedContent>`: teamworkHostedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-  - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+  - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -290,3 +292,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

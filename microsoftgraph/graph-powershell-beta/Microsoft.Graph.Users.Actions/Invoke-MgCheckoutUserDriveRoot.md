@@ -1,26 +1,26 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgcheckoutuserdriveroot
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacheckoutuserdriveroot
 schema: 2.0.0
 ---
 
-# Invoke-MgCheckoutUserDriveRoot
+# Invoke-MgBetaCheckoutUserDriveRoot
 
 ## SYNOPSIS
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## SYNTAX
 
-### Checkout1 (Default)
+### Checkout (Default)
 ```
-Invoke-MgCheckoutUserDriveRoot -DriveId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaCheckoutUserDriveRoot -DriveId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CheckoutViaIdentity1
+### CheckoutViaIdentity
 ```
-Invoke-MgCheckoutUserDriveRoot -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaCheckoutUserDriveRoot -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -29,16 +29,12 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Invoke-MgCheckoutUserDriveRoot Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
 
 ## PARAMETERS
 
@@ -46,8 +42,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: Checkout1
+Type: System.String
+Parameter Sets: Checkout
 Aliases:
 
 Required: True
@@ -59,11 +55,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CheckoutViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CheckoutViaIdentity
 Aliases:
 
 Required: True
@@ -77,7 +73,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -92,8 +88,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Checkout1
+Type: System.String
+Parameter Sets: Checkout
 Aliases:
 
 Required: True
@@ -107,7 +103,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -123,7 +119,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,10 +135,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -152,7 +150,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -186,7 +184,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -196,3 +193,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

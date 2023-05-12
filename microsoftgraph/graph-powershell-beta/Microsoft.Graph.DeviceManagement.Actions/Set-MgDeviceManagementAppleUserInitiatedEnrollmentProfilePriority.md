@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementappleuserinitiatedenrollmentprofilepriority
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementappleuserinitiatedenrollmentprofilepriority
 schema: 2.0.0
 ---
 
-# Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
+# Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
 
 ## SYNOPSIS
 Invoke action setPriority
@@ -14,32 +14,32 @@ Invoke action setPriority
 
 ### SetExpanded (Default)
 ```
-Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
+Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
  -AppleUserInitiatedEnrollmentProfileId <String> [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
+Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
  -AppleUserInitiatedEnrollmentProfileId <String>
  -BodyParameter <IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
+Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-Priority <Int32>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Invoke action setPriority
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -68,8 +82,8 @@ Accept wildcard characters: False
 The unique identifier of appleUserInitiatedEnrollmentProfile
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -81,10 +95,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -97,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -130,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,11 +191,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -191,11 +208,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsW7QdckDevicemanagementAppleuserinitiatedenrollmentprofilesAppleuserinitiatedenrollmentprofileIdMicrosoftGraphSetpriorityPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Priority <Int32?>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -239,7 +256,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -250,3 +266,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mgusersettingregionalandlanguagesetting
+external help file:
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingregionalandlanguagesetting
 schema: 2.0.0
 ---
 
-# Get-MgUserSettingRegionalAndLanguageSetting
+# Get-MgBetaUserSettingRegionalAndLanguageSetting
 
 ## SYNOPSIS
 Get the properties of a regionalAndLanguageSettings object.
@@ -14,13 +14,13 @@ Get the properties of a regionalAndLanguageSettings object.
 
 ### Get (Default)
 ```
-Get-MgUserSettingRegionalAndLanguageSetting -UserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaUserSettingRegionalAndLanguageSetting -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -29,15 +29,14 @@ Get the properties of a regionalAndLanguageSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserSettingRegionalAndLanguageSetting Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
-Get-MgUserSettingRegionalAndLanguageSetting -UserId $userId
+Get-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserSettingRegionalAndLanguageSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -45,7 +44,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -58,10 +57,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -76,7 +75,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -91,7 +90,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -107,10 +106,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegionalAndLanguageSettings
+
 ## NOTES
 
 ALIASES
@@ -120,7 +121,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -129,7 +130,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -137,9 +137,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/reset-mgsecuritycaseediscoverycasesettingtodefault
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/reset-mgbetasecuritycaseediscoverycasesettingtodefault
 schema: 2.0.0
 ---
 
-# Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault
+# Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault
 
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
@@ -14,14 +14,14 @@ Reset a caseSettings object to the default values.
 
 ### Reset (Default)
 ```
-Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId <String> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,23 +29,21 @@ Reset a caseSettings object to the default values.
 
 ## EXAMPLES
 
-### Example 1: Using the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
+Import-Module Microsoft.Graph.Beta.Security
+Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
 ```
 
-This example shows how to use the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
+Import-Module Microsoft.Graph.Beta.Security
+Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
 ```
 
-This example shows how to use the Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -53,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reset
 Aliases:
 
@@ -66,10 +64,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: ResetViaIdentity
 Aliases:
 
@@ -84,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -99,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,10 +129,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -144,7 +144,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -203,3 +203,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

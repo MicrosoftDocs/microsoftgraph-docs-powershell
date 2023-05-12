@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancerolemanagementalertoperation
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertoperation
 schema: 2.0.0
 ---
 
-# New-MgIdentityGovernanceRoleManagementAlertOperation
+# New-MgBetaIdentityGovernanceRoleManagementAlertOperation
 
 ## SYNOPSIS
 Create new navigation property to operations for identityGovernance
@@ -14,15 +14,15 @@ Create new navigation property to operations for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceRoleManagementAlertOperation [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityGovernanceRoleManagementAlertOperation [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-LastActionDateTime <DateTime>] [-ResourceLocation <String>]
- [-Status <String>] [-StatusDetail <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <String>] [-StatusDetail <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityGovernanceRoleManagementAlertOperation -BodyParameter <IMicrosoftGraphLongRunningOperation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityGovernanceRoleManagementAlertOperation -BodyParameter <IMicrosoftGraphLongRunningOperation>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,13 +30,27 @@ Create new navigation property to operations for identityGovernance
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -49,10 +63,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 longRunningOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLongRunningOperation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +83,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,11 +95,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +116,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +131,7 @@ Accept wildcard characters: False
 URI of the resource that the operation is performed on.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +146,7 @@ Accept wildcard characters: False
 longRunningOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 Details about the status of the operation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,10 +208,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+
 ## NOTES
 
 ALIASES
@@ -207,9 +223,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+`BODYPARAMETER <IMicrosoftGraphLongRunningOperation>`: longRunningOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
@@ -217,3 +233,4 @@ BODYPARAMETER `<IMicrosoftGraphLongRunningOperation>`: longRunningOperation
   - `[StatusDetail <String>]`: Details about the status of the operation.
 
 ## RELATED LINKS
+

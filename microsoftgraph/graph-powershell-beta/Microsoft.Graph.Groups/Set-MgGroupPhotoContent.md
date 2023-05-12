@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/set-mggroupphotocontent
+external help file:
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/set-mgbetagroupphotocontent
 schema: 2.0.0
 ---
 
-# Set-MgGroupPhotoContent
+# Set-MgBetaGroupPhotoContent
 
 ## SYNOPSIS
 Update media content for the navigation property photo in groups
@@ -14,26 +14,26 @@ Update media content for the navigation property photo in groups
 
 ### Set (Default)
 ```
-Set-MgGroupPhotoContent -GroupId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -GroupId <String> -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set1
 ```
-Set-MgGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> [-BodyParameter <Stream>] -InFile <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -GroupId <String> -ProfilePhotoId <String> -InFile <String> [-Data <Stream>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgGroupPhotoContent -InputObject <IGroupsIdentity> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -InFile <String> [-Data <Stream>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentity1
+```
+Set-MgBetaGroupPhotoContent -InputObject <IGroupsIdentity> -InFile <String> [-Data <Stream>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,13 +41,27 @@ Update media content for the navigation property photo in groups
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -62,7 +76,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set, Set1
 Aliases:
 
@@ -79,7 +93,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -92,11 +106,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: SetViaIdentity1, SetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentity1
 Aliases:
 
 Required: True
@@ -110,7 +124,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -125,7 +139,7 @@ Accept wildcard characters: False
 The unique identifier of profilePhoto
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set1
 Aliases:
 
@@ -140,7 +154,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +170,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -172,11 +186,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -186,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -208,11 +225,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -225,7 +240,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -236,3 +250,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

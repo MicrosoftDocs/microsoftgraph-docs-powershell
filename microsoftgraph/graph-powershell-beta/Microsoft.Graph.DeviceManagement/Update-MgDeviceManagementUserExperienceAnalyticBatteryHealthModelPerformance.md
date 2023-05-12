@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbatteryhealthmodelperformance
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthmodelperformance
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+# Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsBatteryHealthModelPerformance in deviceManagement
@@ -14,43 +14,57 @@ Update the navigation property userExperienceAnalyticsBatteryHealthModelPerforma
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
  -UserExperienceAnalyticsBatteryHealthModelPerformanceId <String> [-ActiveDevices <Int32>]
  [-AdditionalProperties <Hashtable>] [-AverageBatteryAgeInDays <Int32>]
  [-AverageEstimatedRuntimeInMinutes <Int32>] [-AverageMaxCapacityPercentage <Int32>] [-Id <String>]
- [-Manufacturer <String>] [-Model <String>] [-ModelBatteryHealthScore <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Manufacturer <String>] [-Model <String>] [-ModelBatteryHealthScore <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
  -UserExperienceAnalyticsBatteryHealthModelPerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
- -InputObject <IDeviceManagementIdentity> [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
- [-AverageBatteryAgeInDays <Int32>] [-AverageEstimatedRuntimeInMinutes <Int32>]
- [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelBatteryHealthScore <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
+ -InputObject <IDeviceManagementIdentity> [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
+ [-AverageBatteryAgeInDays <Int32>] [-AverageEstimatedRuntimeInMinutes <Int32>]
+ [-AverageMaxCapacityPercentage <Int32>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
+ [-ModelBatteryHealthScore <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthModelPerformance in deviceManagement
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -59,7 +73,7 @@ Number of active devices for that model.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +88,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +105,7 @@ Unit in days.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +122,7 @@ Unit in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,11 +136,11 @@ Accept wildcard characters: False
 ### -AverageMaxCapacityPercentage
 The mean of the maximum capacity for all devices of a given model.
 Maximum capacity measures the full charge vs.
-design capacity for a device's batteries..
+design capacity for a device’s batteries..
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,10 +153,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -154,11 +168,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,11 +185,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -189,7 +203,7 @@ Accept wildcard characters: False
 Name of the device manufacturer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +218,7 @@ Accept wildcard characters: False
 The model name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,28 +230,13 @@ Accept wildcard characters: False
 ```
 
 ### -ModelBatteryHealthScore
-A weighted average of a model's maximum capacity score and runtime estimate score.
+A weighted average of a model’s maximum capacity score and runtime estimate score.
 Values range from 0-100.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -251,8 +250,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsBatteryHealthModelPerformance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -266,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -282,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -298,11 +297,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance
+
 ## NOTES
 
 ALIASES
@@ -312,18 +314,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>`: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthModelPerformance>`: The user experience analytics battery health model performance entity contains battery related information for all unique device models in their organization.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveDevices <Int32?>]`: Number of active devices for that model. Valid values -2147483648 to 2147483647
   - `[AverageBatteryAgeInDays <Int32?>]`: The mean of the battery age for all devices of a given model in a tenant. Unit in days. Valid values -2147483648 to 2147483647
   - `[AverageEstimatedRuntimeInMinutes <Int32?>]`: The mean of the estimated runtimes on full charge for all devices of a given model. Unit in minutes. Valid values -2147483648 to 2147483647
-  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices of a given model. Maximum capacity measures the full charge vs. design capacity for a device's batteries.. Valid values -2147483648 to 2147483647
+  - `[AverageMaxCapacityPercentage <Int32?>]`: The mean of the maximum capacity for all devices of a given model. Maximum capacity measures the full charge vs. design capacity for a device’s batteries.. Valid values -2147483648 to 2147483647
   - `[Manufacturer <String>]`: Name of the device manufacturer.
   - `[Model <String>]`: The model name of the device.
-  - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model's maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
+  - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model’s maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -455,7 +457,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicydeviceregistrationpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydeviceregistrationpolicy
 schema: 2.0.0
 ---
 
-# Get-MgPolicyDeviceRegistrationPolicy
+# Get-MgBetaPolicyDeviceRegistrationPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of a deviceRegistrationPolicy object.
@@ -14,7 +14,8 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 ## SYNTAX
 
 ```
-Get-MgPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyDeviceRegistrationPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -23,14 +24,13 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyDeviceRegistrationPolicy Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyDeviceRegistrationPolicy
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyDeviceRegistrationPolicy
 ```
 
-This example shows how to use the Get-MgPolicyDeviceRegistrationPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -38,7 +38,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -53,7 +53,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -71,9 +71,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceRegistrationPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mgsigninformationprotectiondigest
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetasigninformationprotectiondigest
 schema: 2.0.0
 ---
 
-# Invoke-MgSignInformationProtectionDigest
+# Invoke-MgBetaSignInformationProtectionDigest
 
 ## SYNOPSIS
 Invoke action signDigest
@@ -14,15 +14,15 @@ Invoke action signDigest
 
 ### SignExpanded (Default)
 ```
-Invoke-MgSignInformationProtectionDigest [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSignInformationProtectionDigest [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Sign
 ```
-Invoke-MgSignInformationProtectionDigest
- -BodyParameter <IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSignInformationProtectionDigest
+ -Body <IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,13 +30,27 @@ Invoke action signDigest
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SignExpanded
 Aliases:
 
@@ -47,12 +61,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Sign
 Aliases:
 
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SignExpanded
 Aliases:
 
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,10 +128,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSigningResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
+
 ## NOTES
 
 ALIASES
@@ -127,8 +143,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPathsHk0601InformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Digest <Byte[]>]`: 
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencearticleindicator
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatintelligencearticleindicator
 schema: 2.0.0
 ---
 
-# New-MgSecurityThreatIntelligenceArticleIndicator
+# New-MgBetaSecurityThreatIntelligenceArticleIndicator
 
 ## SYNOPSIS
 Create new navigation property to articleIndicators for security
@@ -14,13 +14,13 @@ Create new navigation property to articleIndicators for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatIntelligenceArticleIndicator [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>]
- [-Id <String>] [-Source <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatIntelligenceArticleIndicator [-AdditionalProperties <Hashtable>]
+ [-Artifact <Hashtable>] [-Id <String>] [-Source <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgBetaSecurityThreatIntelligenceArticleIndicator -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -29,13 +29,27 @@ Create new navigation property to articleIndicators for security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 artifact
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 articleIndicator
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create
 Aliases:
 
@@ -77,11 +91,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 indicatorSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -144,11 +158,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityArticleIndicator
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

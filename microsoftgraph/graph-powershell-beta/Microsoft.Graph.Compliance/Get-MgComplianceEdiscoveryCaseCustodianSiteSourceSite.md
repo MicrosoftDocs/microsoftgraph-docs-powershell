@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasecustodiansitesourcesite
+external help file:
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodiansitesourcesite
 schema: 2.0.0
 ---
 
-# Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSite
+# Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite
 
 ## SYNOPSIS
 The SharePoint site associated with the siteSource.
@@ -14,13 +14,13 @@ The SharePoint site associated with the siteSource.
 
 ### Get (Default)
 ```
-Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSite -CaseId <String> -CustodianId <String>
+Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite -CaseId <String> -CustodianId <String>
  -SiteSourceId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgComplianceEdiscoveryCaseCustodianSiteSourceSite -InputObject <IComplianceIdentity>
+Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSourceSite -InputObject <IComplianceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -29,13 +29,27 @@ The SharePoint site associated with the siteSource.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -CaseId
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of custodian
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -78,10 +92,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 The unique identifier of siteSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -127,10 +141,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSite
+
 ## NOTES
 
 ALIASES
@@ -140,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -157,3 +173,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

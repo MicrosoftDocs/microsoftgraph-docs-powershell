@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudiencemember
+external help file:
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/add-mgbetawindowsupdatesdeploymentaudiencemember
 schema: 2.0.0
 ---
 
-# Add-MgWindowsUpdatesDeploymentAudienceMember
+# Add-MgBetaWindowsUpdatesDeploymentAudienceMember
 
 ## SYNOPSIS
 Add members to an updatableAssetGroup.
@@ -17,30 +17,30 @@ You can also use the method addMembersById to add members.
 
 ### AddExpanded (Default)
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
+Add-MgBetaWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
  [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Add
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
+Add-MgBetaWindowsUpdatesDeploymentAudienceMember -DeploymentId <String> -UpdatableAssetId <String>
  -BodyParameter <IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentityExpanded
-```
-Add-MgWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AddViaIdentity
 ```
-Add-MgWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
+Add-MgBetaWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,12 +51,19 @@ You can also use the method addMembersById to add members.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add example code here }}
+{{ Add code here }}
 ```
 
-{{ Add example description here }}
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -64,7 +71,7 @@ PS C:\> {{ Add example code here }}
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -77,10 +84,10 @@ Accept wildcard characters: False
 
 ### -Assets
 .
-To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
+To construct, see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
 Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
@@ -93,10 +100,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Add, AddViaIdentity
 Aliases:
 
@@ -111,8 +118,8 @@ Accept wildcard characters: False
 The unique identifier of deployment
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -124,11 +131,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
-Parameter Sets: AddViaIdentityExpanded, AddViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -142,13 +149,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -157,8 +164,8 @@ Accept wildcard characters: False
 The unique identifier of updatableAsset
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded, Add
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -172,7 +179,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +195,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,15 +211,40 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Add-MgBetaWuDeploymentAudienceMember
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+
+`BODYPARAMETER <IPathsWx3DylAdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesAddmembersPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudiencemember](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/add-mgwindowsupdatesdeploymentaudiencemember)
 

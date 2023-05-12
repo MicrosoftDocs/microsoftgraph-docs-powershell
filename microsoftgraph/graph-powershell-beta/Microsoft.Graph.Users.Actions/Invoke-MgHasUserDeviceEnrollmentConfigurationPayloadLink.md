@@ -1,41 +1,41 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mghasuserdeviceenrollmentconfigurationpayloadlink
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetahasuserdeviceenrollmentconfigurationpayloadlink
 schema: 2.0.0
 ---
 
-# Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink
+# Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink
 
 ## SYNOPSIS
 Invoke action hasPayloadLinks
 
 ## SYNTAX
 
-### HasExpanded (Default)
+### LinkExpanded (Default)
 ```
-Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String> [-AdditionalProperties <Hashtable>]
- [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Has
+### Link
 ```
-Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
+Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -UserId <String>
+ -Body <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### LinkViaIdentity
+```
+Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### HasViaIdentityExpanded
+### LinkViaIdentityExpanded
 ```
-Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### HasViaIdentity
-```
-Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaHasUserDeviceEnrollmentConfigurationPayloadLink -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-PayloadIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,28 @@ Invoke action hasPayloadLinks
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: HasExpanded, HasViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: LinkExpanded, LinkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -60,13 +74,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Has, HasViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Link
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: LinkViaIdentity
 Aliases:
 
 Required: True
@@ -78,11 +108,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: HasViaIdentityExpanded, HasViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: LinkViaIdentity, LinkViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -96,8 +126,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: HasExpanded, HasViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: LinkExpanded, LinkViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -111,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: HasExpanded, Has
+Type: System.String
+Parameter Sets: Link, LinkExpanded
 Aliases:
 
 Required: True
@@ -126,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -158,11 +188,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
+
 ## NOTES
 
 ALIASES
@@ -172,11 +205,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PayloadIds <String[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPaths1R7K6PzUsersUserIdDeviceenrollmentconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PayloadIds <String[]>]`: 
+
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -210,7 +247,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -220,3 +256,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

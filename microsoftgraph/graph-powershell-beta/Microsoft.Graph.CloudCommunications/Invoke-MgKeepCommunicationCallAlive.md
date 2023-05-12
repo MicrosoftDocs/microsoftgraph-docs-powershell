@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/invoke-mgkeepcommunicationcallalive
+external help file:
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive
 schema: 2.0.0
 ---
 
-# Invoke-MgKeepCommunicationCallAlive
+# Invoke-MgBetaKeepCommunicationCallAlive
 
 ## SYNOPSIS
 Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.
@@ -18,15 +18,15 @@ The resources related to the call should be cleaned up on the application side.
 
 ## SYNTAX
 
-### Keep1 (Default)
+### Keep (Default)
 ```
-Invoke-MgKeepCommunicationCallAlive -CallId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaKeepCommunicationCallAlive -CallId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### KeepViaIdentity1
+### KeepViaIdentity
 ```
-Invoke-MgKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,14 +40,13 @@ The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgKeepCommunicationCallAlive Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Invoke-MgKeepCommunicationCallAlive -CallId $callId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
 ```
 
-This example shows how to use the Invoke-MgKeepCommunicationCallAlive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -55,8 +54,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: Keep1
+Type: System.String
+Parameter Sets: Keep
 Aliases:
 
 Required: True
@@ -68,11 +67,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: KeepViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: KeepViaIdentity
 Aliases:
 
 Required: True
@@ -86,7 +85,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -101,7 +100,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -117,7 +116,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,10 +132,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -146,7 +147,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -156,6 +157,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -165,3 +167,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,41 +1,41 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmanageddevicecategory
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmanageddevicecategory
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementManagedDeviceCategory
+# Update-MgBetaDeviceManagementManagedDeviceCategory
 
 ## SYNOPSIS
 Update the navigation property deviceCategory in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementManagedDeviceCategory -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-RoleScopeTagIds <String[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgDeviceManagementManagedDeviceCategory -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphDeviceCategory1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementManagedDeviceCategory -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-RoleScopeTagIds <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Update
 ```
-Update-MgDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCategory1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementManagedDeviceCategory -ManagedDeviceId <String>
+ -BodyParameter <IMicrosoftGraphDeviceCategory> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceCategory> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementManagedDeviceCategory -InputObject <IDeviceManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
+ [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,28 @@ Update the navigation property deviceCategory in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,11 +79,11 @@ Device categories provides a way to organize your devices.
 Using device categories, company administrators can define their own categories that make sense to their company.
 These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment.
 You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -83,8 +97,8 @@ Accept wildcard characters: False
 Optional description for the device category.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,8 +112,8 @@ Accept wildcard characters: False
 Display name for the device category.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,12 +124,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -127,11 +141,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -145,26 +159,11 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -175,8 +174,8 @@ Accept wildcard characters: False
 Optional role scope tags for the device category.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -190,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +221,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory1
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
+
 ## NOTES
 
 ALIASES
@@ -236,14 +238,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCategory1>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+`BODYPARAMETER <IMicrosoftGraphDeviceCategory>`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Optional description for the device category.
   - `[DisplayName <String>]`: Display name for the device category.
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -375,7 +377,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/set-mgusermanageddevicecloudpcreviewstatus
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetausermanageddevicecloudpcreviewstatus
 schema: 2.0.0
 ---
 
-# Set-MgUserManagedDeviceCloudPcReviewStatus
+# Set-MgBetaUserManagedDeviceCloudPcReviewStatus
 
 ## SYNOPSIS
 Set the review status of a specific Cloud PC device.
@@ -16,30 +16,30 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 
 ### SetExpanded (Default)
 ```
-Set-MgUserManagedDeviceCloudPcReviewStatus -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaUserManagedDeviceCloudPcReviewStatus -ManagedDeviceId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgUserManagedDeviceCloudPcReviewStatus -ManagedDeviceId <String> -UserId <String>
+Set-MgBetaUserManagedDeviceCloudPcReviewStatus -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
+Set-MgBetaUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaUserManagedDeviceCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ After the review is completed, use this API again to set the Cloud PC back to a 
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -68,10 +82,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -84,11 +98,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -102,8 +116,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -117,7 +131,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -130,10 +144,10 @@ Accept wildcard characters: False
 
 ### -ReviewStatus
 cloudPcReviewStatus
-To construct, please use Get-Help -Online and see NOTES section for REVIEWSTATUS properties and create a hash table.
+To construct, see NOTES section for REVIEWSTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcReviewStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcReviewStatus
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -148,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -163,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -179,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,11 +209,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -209,7 +226,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphSetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>]`: cloudPcReviewStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -223,7 +240,7 @@ BODYPARAMETER `<IPathsZtjp9IUsersUserIdManageddevicesManageddeviceIdMicrosoftGra
     - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
     - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -257,7 +274,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -266,7 +282,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-REVIEWSTATUS `<IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
+`REVIEWSTATUS <IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
   - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
@@ -279,3 +295,4 @@ REVIEWSTATUS `<IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
   - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
+

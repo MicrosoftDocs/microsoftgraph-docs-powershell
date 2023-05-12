@@ -1,59 +1,70 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamchannelsharedwithteam
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamchannelsharedwithteam
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgTeamChannelSharedWithTeam
+# Get-MgBetaTeamChannelSharedWithTeam
 
 ## SYNOPSIS
-A collection of teams with which a channel is shared.
+Get a team that has been shared with a specified channel.
+This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgTeamChannelSharedWithTeam -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaTeamChannelSharedWithTeam -ChannelId <String> -TeamId <String> [-ExpandProperty <String[]>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaTeamChannelSharedWithTeam -ChannelId <String> -SharedWithChannelTeamInfoId <String> -TeamId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgTeamChannelSharedWithTeam -ChannelId <String> -SharedWithChannelTeamInfoId <String> -TeamId <String>
+Get-MgBetaTeamChannelSharedWithTeam -ChannelId <String> -SharedWithChannelTeamInfoId <String> -TeamId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity1
 ```
-Get-MgTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaTeamChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of teams with which a channel is shared.
+Get a team that has been shared with a specified channel.
+This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamChannelSharedWithTeam Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
 ```
 
-This example shows how to use the Get-MgTeamChannelSharedWithTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Get-MgTeamChannelSharedWithTeam Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
 ```
 
-This example shows how to use the Get-MgTeamChannelSharedWithTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -61,8 +72,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -76,8 +87,8 @@ Accept wildcard characters: False
 The unique identifier of channel
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, Get1, List
 Aliases:
 
 Required: True
@@ -92,8 +103,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -107,7 +118,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -122,8 +133,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -135,11 +146,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -153,8 +164,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -168,7 +179,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -183,8 +194,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -198,11 +209,26 @@ Accept wildcard characters: False
 The unique identifier of sharedWithChannelTeamInfo
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -213,8 +239,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
+Type: System.String[]
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -228,8 +254,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, Get1, List
 Aliases:
 
 Required: True
@@ -243,24 +269,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
 
 Required: False
 Position: Named
@@ -274,10 +285,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedWithChannelTeamInfo
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeam
+
 ## NOTES
 
 ALIASES
@@ -287,7 +302,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -327,3 +342,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

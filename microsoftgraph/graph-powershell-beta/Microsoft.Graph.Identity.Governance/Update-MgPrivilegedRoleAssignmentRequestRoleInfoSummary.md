@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedroleassignmentrequestroleinfosummary
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedroleassignmentrequestroleinfosummary
 schema: 2.0.0
 ---
 
-# Update-MgPrivilegedRoleAssignmentRequestRoleInfoSummary
+# Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary
 
 ## SYNOPSIS
 Update the navigation property summary in privilegedRoleAssignmentRequests
@@ -14,28 +14,28 @@ Update the navigation property summary in privilegedRoleAssignmentRequests
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPrivilegedRoleAssignmentRequestRoleInfoSummary -PrivilegedRoleAssignmentRequestId <String>
+Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -PrivilegedRoleAssignmentRequestId <String>
  [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>] [-Id <String>] [-ManagedCount <Int32>]
- [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPrivilegedRoleAssignmentRequestRoleInfoSummary -PrivilegedRoleAssignmentRequestId <String>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>] [-Id <String>] [-ManagedCount <Int32>]
- [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -PrivilegedRoleAssignmentRequestId <String>
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphPrivilegedRoleSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdentityGovernanceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ElevatedCount <Int32>] [-Id <String>] [-ManagedCount <Int32>]
+ [-MfaEnabled] [-Status <String>] [-UsersCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Update the navigation property summary in privilegedRoleAssignmentRequests
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedRoleSummary
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -77,10 +91,10 @@ Accept wildcard characters: False
 ```
 
 ### -ElevatedCount
-The number of users that have the role assigned and the role is activated.
+.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -92,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -124,10 +138,10 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedCount
-The number of users that have the role assigned but the role is deactivated.
+.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -139,27 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### -MfaEnabled
-true if the role activation requires MFA.
-false if the role activation doesn't require MFA.
+.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -173,8 +171,8 @@ Accept wildcard characters: False
 The unique identifier of privilegedRoleAssignmentRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -188,7 +186,7 @@ Accept wildcard characters: False
 roleSummaryStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,10 +198,10 @@ Accept wildcard characters: False
 ```
 
 ### -UsersCount
-The number of users that are assigned with the role.
+.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +216,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +232,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,11 +248,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleSummary
+
 ## NOTES
 
 ALIASES
@@ -264,16 +265,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
+`BODYPARAMETER <IMicrosoftGraphPrivilegedRoleSummary>`: privilegedRoleSummary
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
-  - `[ManagedCount <Int32?>]`: The number of users that have the role assigned but the role is deactivated.
-  - `[MfaEnabled <Boolean?>]`: true if the role activation requires MFA. false if the role activation doesn't require MFA.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[ElevatedCount <Int32?>]`: 
+  - `[ManagedCount <Int32?>]`: 
+  - `[MfaEnabled <Boolean?>]`: 
   - `[Status <String>]`: roleSummaryStatus
-  - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
+  - `[UsersCount <Int32?>]`: 
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -281,8 +282,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -307,7 +306,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -345,12 +343,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -363,3 +373,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementuserexperienceanalyticoverview
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementuserexperienceanalyticoverview
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementUserExperienceAnalyticOverview
+# Get-MgBetaDeviceManagementUserExperienceAnalyticOverview
 
 ## SYNOPSIS
 User experience analytics overview
@@ -13,7 +13,7 @@ User experience analytics overview
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementUserExperienceAnalyticOverview [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDeviceManagementUserExperienceAnalyticOverview [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,13 +22,27 @@ User experience analytics overview
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsOverview
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsOverview
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

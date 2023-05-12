@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityfilesecurityprofile
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityfilesecurityprofile
 schema: 2.0.0
 ---
 
-# New-MgSecurityFileSecurityProfile
+# New-MgBetaSecurityFileSecurityProfile
 
 ## SYNOPSIS
 Create new navigation property to fileSecurityProfiles for security
@@ -14,18 +14,18 @@ Create new navigation property to fileSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityFileSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
+New-MgBetaSecurityFileSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
  [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CertificateThumbprint <String>]
  [-Extensions <String[]>] [-FileType <String>] [-FirstSeenDateTime <DateTime>]
  [-Hashes <IMicrosoftGraphFileHash[]>] [-Id <String>] [-LastSeenDateTime <DateTime>]
  [-MalwareStates <IMicrosoftGraphMalwareState[]>] [-Names <String[]>] [-RiskScore <String>] [-Size <Int64>]
  [-Tags <String[]>] [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurityProfile> [-WhatIf] [-Confirm]
+New-MgBetaSecurityFileSecurityProfile -BodyParameter <IMicrosoftGraphFileSecurityProfile> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,13 +34,27 @@ Create new navigation property to fileSecurityProfiles for security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,10 +112,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 fileSecurityProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFileSecurityProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFileSecurityProfile
 Parameter Sets: Create
 Aliases:
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +145,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +160,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,10 +188,10 @@ Accept wildcard characters: False
 
 ### -Hashes
 .
-To construct, please use Get-Help -Online and see NOTES section for HASHES properties and create a hash table.
+To construct, see NOTES section for HASHES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFileHash[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFileHash[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,11 +203,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,10 +235,10 @@ Accept wildcard characters: False
 
 ### -MalwareStates
 .
-To construct, please use Get-Help -Online and see NOTES section for MALWARESTATES properties and create a hash table.
+To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMalwareState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMalwareState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +253,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +268,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +283,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -284,7 +298,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,10 +311,10 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,10 +327,10 @@ Accept wildcard characters: False
 
 ### -VulnerabilityStates
 .
-To construct, please use Get-Help -Online and see NOTES section for VULNERABILITYSTATES properties and create a hash table.
+To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVulnerabilityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVulnerabilityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +345,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -347,7 +361,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -363,10 +377,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFileSecurityProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFileSecurityProfile
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFileSecurityProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFileSecurityProfile
+
 ## NOTES
 
 ALIASES
@@ -376,9 +392,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
+`BODYPARAMETER <IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivityGroupNames <String[]>]`: 
   - `[AzureSubscriptionId <String>]`: 
   - `[AzureTenantId <String>]`: 
@@ -411,27 +427,28 @@ BODYPARAMETER `<IMicrosoftGraphFileSecurityProfile>`: fileSecurityProfile
     - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
     - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-HASHES <IMicrosoftGraphFileHash\[]>: .
+`HASHES <IMicrosoftGraphFileHash[]>`: .
   - `[HashType <String>]`: fileHashType
   - `[HashValue <String>]`: Value of the file hash.
 
-MALWARESTATES <IMicrosoftGraphMalwareState\[]>: .
+`MALWARESTATES <IMicrosoftGraphMalwareState[]>`: .
   - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
   - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
   - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
   - `[Severity <String>]`: Provider-determined severity of this malware.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
   - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState\[]>: .
+`VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>`: .
   - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
   - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
+

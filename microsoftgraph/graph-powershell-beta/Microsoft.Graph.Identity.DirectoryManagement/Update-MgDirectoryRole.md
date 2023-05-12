@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryrole
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryrole
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Update-MgDirectoryRole
+# Update-MgBetaDirectoryRole
 
 ## SYNOPSIS
 Update entity in directoryRoles
@@ -15,30 +14,31 @@ Update entity in directoryRoles
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDirectoryRole -DirectoryRoleId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaDirectoryRole -DirectoryRoleId <String> [-AdditionalProperties <Hashtable>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
  [-Members <IMicrosoftGraphDirectoryObject[]>] [-RoleTemplateId <String>]
- [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectoryRole -DirectoryRoleId <String> -BodyParameter <IMicrosoftGraphDirectoryRole> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-DeletedDateTime <DateTime>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-Members <IMicrosoftGraphDirectoryObject[]>] [-RoleTemplateId <String>]
- [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectoryRole -DirectoryRoleId <String> -BodyParameter <IMicrosoftGraphDirectoryRole> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphDirectoryRole> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDirectoryRole> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-RoleTemplateId <String>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,16 +46,12 @@ Update entity in directoryRoles
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryRole -DirectoryRoleId $directoryRoleId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Update-MgDirectoryRole Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryRole -DirectoryRoleId $directoryRoleId
 
 ## PARAMETERS
 
@@ -63,7 +59,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,10 +72,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directoryRole
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryRole
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,7 +91,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +108,7 @@ Read-only.
 Supports $filter (eq), $search, $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,8 +123,8 @@ Accept wildcard characters: False
 The unique identifier of directoryRole
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -144,7 +140,7 @@ Read-only.
 Supports $filter (eq), $search, $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,11 +152,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,11 +169,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -193,26 +189,11 @@ HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
+To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -229,7 +210,7 @@ After the directory role has been activated, the property is read only.
 Supports $filter (eq), $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,10 +225,10 @@ Accept wildcard characters: False
 Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SCOPEDMEMBERS properties and create a hash table.
+To construct, see NOTES section for SCOPEDMEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScopedRoleMembership[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +243,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -278,7 +259,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -294,11 +275,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
+
 ## NOTES
 
 ALIASES
@@ -308,18 +292,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
+`BODYPARAMETER <IMicrosoftGraphDirectoryRole>`: directoryRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: The description for the directory role. Read-only. Supports $filter (eq), $search, $select.
   - `[DisplayName <String>]`: The display name for the directory role. Read-only. Supports $filter (eq), $search, $select.
   - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[RoleTemplateId <String>]`: The id of the directoryRoleTemplate that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. Supports $filter (eq), $select.
   - `[ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
     - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
@@ -327,7 +311,7 @@ BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
       - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -363,12 +347,12 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-MEMBERS <IMicrosoftGraphDirectoryObject\[]>: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MEMBERS <IMicrosoftGraphDirectoryObject[]>`: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership[]>`: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
   - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
@@ -377,3 +361,4 @@ SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Members of this director
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+

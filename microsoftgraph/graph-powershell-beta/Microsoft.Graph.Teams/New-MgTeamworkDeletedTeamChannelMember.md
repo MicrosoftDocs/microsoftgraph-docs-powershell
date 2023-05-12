@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgteamworkdeletedteamchannelmember
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamworkdeletedteamchannelmember
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgTeamworkDeletedTeamChannelMember
+# New-MgBetaTeamworkDeletedTeamChannelMember
 
 ## SYNOPSIS
 Add a conversationMember to a channel.
@@ -14,30 +13,30 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
+New-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Roles <String[]>]
- [-VisibleHistoryStartDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VisibleHistoryStartDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
- -BodyParameter <IMicrosoftGraphConversationMember> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded1
-```
-New-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaTeamworkDeletedTeamChannelMember -ChannelId <String> -DeletedTeamId <String>
+ -BodyParameter <IMicrosoftGraphConversationMember> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentity
 ```
-New-MgTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphConversationMember> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphConversationMember> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaTeamworkDeletedTeamChannelMember -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-Roles <String[]>] [-VisibleHistoryStartDateTime <DateTime>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,14 +45,28 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -65,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 conversationMember
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember
-Parameter Sets: Create1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -83,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of channel
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -98,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of deletedTeam
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -113,8 +126,8 @@ Accept wildcard characters: False
 The display name of the user.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -125,12 +138,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -142,11 +155,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -163,8 +176,8 @@ Similarly, if the member is a guest, the roles property contains guest as one of
 A basic member should not have any values specified in the roles property.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -179,8 +192,8 @@ The timestamp denoting how far back a conversation's history is shared with the 
 This property is settable only for members of a chat.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -194,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -210,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -226,11 +239,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConversationMember
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember
+
 ## NOTES
 
 ALIASES
@@ -240,14 +256,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphConversationMember>`: conversationMember
+`BODYPARAMETER <IMicrosoftGraphConversationMember>`: conversationMember
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the user.
   - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -287,3 +303,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernancelifecycleworkflowsetting
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernancelifecycleworkflowsetting
 schema: 2.0.0
 ---
 
-# Get-MgIdentityGovernanceLifecycleWorkflowSetting
+# Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting
 
 ## SYNOPSIS
 Read the properties and relationships of a lifecycleManagementSettings object.
@@ -13,7 +13,7 @@ Read the properties and relationships of a lifecycleManagementSettings object.
 ## SYNTAX
 
 ```
-Get-MgIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,14 +22,13 @@ Read the properties and relationships of a lifecycleManagementSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-Get-MgIdentityGovernanceLifecycleWorkflowSetting
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting
 ```
 
-This example shows how to use the Get-MgIdentityGovernanceLifecycleWorkflowSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -37,7 +36,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -52,7 +51,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,9 +69,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityGovernanceLifecycleManagementSettings
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

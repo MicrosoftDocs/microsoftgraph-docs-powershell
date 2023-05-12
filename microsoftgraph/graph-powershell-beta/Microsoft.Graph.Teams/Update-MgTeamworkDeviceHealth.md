@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdevicehealth
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdevicehealth
 schema: 2.0.0
 ---
 
-# Update-MgTeamworkDeviceHealth
+# Update-MgBetaTeamworkDeviceHealth
 
 ## SYNOPSIS
 Update the navigation property health in teamwork
@@ -14,38 +14,38 @@ Update the navigation property health in teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamworkDeviceHealth -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-Connection <IMicrosoftGraphTeamworkConnection>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-HardwareHealth <IMicrosoftGraphTeamworkHardwareHealth>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LoginStatus <IMicrosoftGraphTeamworkLoginStatus>]
  [-PeripheralsHealth <IMicrosoftGraphTeamworkPeripheralsHealth>]
- [-SoftwareUpdateHealth <IMicrosoftGraphTeamworkSoftwareUpdateHealth>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SoftwareUpdateHealth <IMicrosoftGraphTeamworkSoftwareUpdateHealth>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamworkDeviceHealth -TeamworkDeviceId <String> -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTeamworkDeviceHealth -TeamworkDeviceId <String>
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaTeamworkDeviceHealth -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-Connection <IMicrosoftGraphTeamworkConnection>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-HardwareHealth <IMicrosoftGraphTeamworkHardwareHealth>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-LoginStatus <IMicrosoftGraphTeamworkLoginStatus>]
  [-PeripheralsHealth <IMicrosoftGraphTeamworkPeripheralsHealth>]
- [-SoftwareUpdateHealth <IMicrosoftGraphTeamworkSoftwareUpdateHealth>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SoftwareUpdateHealth <IMicrosoftGraphTeamworkSoftwareUpdateHealth>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgTeamworkDeviceHealth -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceHealth> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,13 +53,27 @@ Update the navigation property health in teamwork
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,10 +86,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamworkDeviceHealth
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceHealth
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -88,10 +102,10 @@ Accept wildcard characters: False
 
 ### -Connection
 teamworkConnection
-To construct, please use Get-Help -Online and see NOTES section for CONNECTION properties and create a hash table.
+To construct, see NOTES section for CONNECTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkConnection
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkConnection
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,10 +118,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +136,7 @@ Accept wildcard characters: False
 The UTC date and time when the device health document was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,10 +149,10 @@ Accept wildcard characters: False
 
 ### -HardwareHealth
 teamworkHardwareHealth
-To construct, please use Get-Help -Online and see NOTES section for HARDWAREHEALTH properties and create a hash table.
+To construct, see NOTES section for HARDWAREHEALTH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkHardwareHealth
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHardwareHealth
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,11 +164,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,11 +181,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -183,10 +197,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +215,7 @@ Accept wildcard characters: False
 The UTC date and time when the device health detail was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,26 +228,11 @@ Accept wildcard characters: False
 
 ### -LoginStatus
 teamworkLoginStatus
-To construct, please use Get-Help -Online and see NOTES section for LOGINSTATUS properties and create a hash table.
+To construct, see NOTES section for LOGINSTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkLoginStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkLoginStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -245,10 +244,10 @@ Accept wildcard characters: False
 
 ### -PeripheralsHealth
 teamworkPeripheralsHealth
-To construct, please use Get-Help -Online and see NOTES section for PERIPHERALSHEALTH properties and create a hash table.
+To construct, see NOTES section for PERIPHERALSHEALTH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkPeripheralsHealth
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkPeripheralsHealth
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,10 +260,10 @@ Accept wildcard characters: False
 
 ### -SoftwareUpdateHealth
 teamworkSoftwareUpdateHealth
-To construct, please use Get-Help -Online and see NOTES section for SOFTWAREUPDATEHEALTH properties and create a hash table.
+To construct, see NOTES section for SOFTWAREUPDATEHEALTH properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkSoftwareUpdateHealth
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkSoftwareUpdateHealth
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,8 +278,8 @@ Accept wildcard characters: False
 The unique identifier of teamworkDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -294,7 +293,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -310,7 +309,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -326,11 +325,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceHealth
+
 ## NOTES
 
 ALIASES
@@ -340,9 +342,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
+`BODYPARAMETER <IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Connection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ConnectionStatus <String>]`: teamworkConnectionStatus
@@ -364,7 +366,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
       - `[IsOptional <Boolean?>]`: True if the peripheral is optional. Used for health computation.
       - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: Display name for the peripheral.
         - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
         - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -397,12 +399,12 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceHealth>`: teamworkDeviceHealth
     - `[PartnerAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
     - `[TeamsClientSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
 
-CONNECTION `<IMicrosoftGraphTeamworkConnection>`: teamworkConnection
+`CONNECTION <IMicrosoftGraphTeamworkConnection>`: teamworkConnection
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConnectionStatus <String>]`: teamworkConnectionStatus
   - `[LastModifiedDateTime <DateTime?>]`: Time at which the state was last changed. For example, indicates connected since when the state is connected and disconnected since when the state is disconnected.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -411,7 +413,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-HARDWAREHEALTH `<IMicrosoftGraphTeamworkHardwareHealth>`: teamworkHardwareHealth
+`HARDWAREHEALTH <IMicrosoftGraphTeamworkHardwareHealth>`: teamworkHardwareHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ComputeHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -422,13 +424,13 @@ HARDWAREHEALTH `<IMicrosoftGraphTeamworkHardwareHealth>`: teamworkHardwareHealth
     - `[IsOptional <Boolean?>]`: True if the peripheral is optional. Used for health computation.
     - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: Display name for the peripheral.
       - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
   - `[HdmiIngestHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -467,7 +469,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -476,7 +478,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-LOGINSTATUS `<IMicrosoftGraphTeamworkLoginStatus>`: teamworkLoginStatus
+`LOGINSTATUS <IMicrosoftGraphTeamworkLoginStatus>`: teamworkLoginStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExchangeConnection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -485,7 +487,7 @@ LOGINSTATUS `<IMicrosoftGraphTeamworkLoginStatus>`: teamworkLoginStatus
   - `[SkypeConnection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
   - `[TeamsConnection <IMicrosoftGraphTeamworkConnection>]`: teamworkConnection
 
-PERIPHERALSHEALTH `<IMicrosoftGraphTeamworkPeripheralsHealth>`: teamworkPeripheralsHealth
+`PERIPHERALSHEALTH <IMicrosoftGraphTeamworkPeripheralsHealth>`: teamworkPeripheralsHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CommunicationSpeakerHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -496,7 +498,7 @@ PERIPHERALSHEALTH `<IMicrosoftGraphTeamworkPeripheralsHealth>`: teamworkPeripher
     - `[IsOptional <Boolean?>]`: True if the peripheral is optional. Used for health computation.
     - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: Display name for the peripheral.
       - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -506,7 +508,7 @@ PERIPHERALSHEALTH `<IMicrosoftGraphTeamworkPeripheralsHealth>`: teamworkPeripher
   - `[RoomCameraHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
   - `[SpeakerHealth <IMicrosoftGraphTeamworkPeripheralHealth>]`: teamworkPeripheralHealth
 
-SOFTWAREUPDATEHEALTH `<IMicrosoftGraphTeamworkSoftwareUpdateHealth>`: teamworkSoftwareUpdateHealth
+`SOFTWAREUPDATEHEALTH <IMicrosoftGraphTeamworkSoftwareUpdateHealth>`: teamworkSoftwareUpdateHealth
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminAgentSoftwareUpdateStatus <IMicrosoftGraphTeamworkSoftwareUpdateStatus>]`: teamworkSoftwareUpdateStatus
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -521,4 +523,3 @@ SOFTWAREUPDATEHEALTH `<IMicrosoftGraphTeamworkSoftwareUpdateHealth>`: teamworkSo
 
 ## RELATED LINKS
 
-## RELATED LINKS

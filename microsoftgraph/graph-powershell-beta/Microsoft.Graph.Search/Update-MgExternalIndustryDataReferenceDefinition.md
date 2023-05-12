@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalindustrydatareferencedefinition
+external help file:
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatareferencedefinition
 schema: 2.0.0
 ---
 
-# Update-MgExternalIndustryDataReferenceDefinition
+# Update-MgBetaExternalIndustryDataReferenceDefinition
 
 ## SYNOPSIS
 Update the navigation property referenceDefinitions in external
@@ -14,30 +14,28 @@ Update the navigation property referenceDefinitions in external
 
 ### UpdateExpanded (Default)
 ```
-Update-MgExternalIndustryDataReferenceDefinition -ReferenceDefinitionId <String>
+Update-MgBetaExternalIndustryDataReferenceDefinition -ReferenceDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>]
- [-SortIndex <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SortIndex <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternalIndustryDataReferenceDefinition -ReferenceDefinitionId <String>
- -BodyParameter <IMicrosoftGraphIndustryDataReferenceDefinition> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
- [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>]
- [-SortIndex <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaExternalIndustryDataReferenceDefinition -ReferenceDefinitionId <String>
+ -BodyParameter <IMicrosoftGraphIndustryDataReferenceDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphIndustryDataReferenceDefinition> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphIndustryDataReferenceDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaExternalIndustryDataReferenceDefinition -InputObject <ISearchIdentity>
+ [-AdditionalProperties <Hashtable>] [-Code <String>] [-Id <String>] [-IsDisabled] [-ReferenceType <String>]
+ [-SortIndex <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +43,27 @@ Update the navigation property referenceDefinitions in external
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 referenceDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataReferenceDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataReferenceDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +94,7 @@ Accept wildcard characters: False
 The code value for the definition that must be unique within the referenceType.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,23 +141,8 @@ Accept wildcard characters: False
 Indicates whether the definition has been disabled.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -159,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of referenceDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -174,7 +171,7 @@ Accept wildcard characters: False
 The categorical type for a collection of enumerated values.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +186,7 @@ Accept wildcard characters: False
 The ordering index to present the definitions within a type consistently in user interfaces.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +201,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +217,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,11 +233,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataReferenceDefinition
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataReferenceDefinition
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataReferenceDefinition
+
 ## NOTES
 
 ALIASES
@@ -250,15 +250,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefinition
+`BODYPARAMETER <IMicrosoftGraphIndustryDataReferenceDefinition>`: referenceDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
   - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
   - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
   - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
@@ -279,3 +279,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+

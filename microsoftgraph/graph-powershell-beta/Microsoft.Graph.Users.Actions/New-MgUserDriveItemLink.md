@@ -1,55 +1,69 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/new-mguserdriveitemlink
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetauserdriveitemlink
 schema: 2.0.0
 ---
 
-# New-MgUserDriveItemLink
+# New-MgBetaUserDriveItemLink
 
 ## SYNOPSIS
 You can use **createLink** action to share a driveItem via a sharing link.
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgUserDriveItemLink -DriveId <String> -DriveItemId <String> -UserId <String>
+New-MgBetaUserDriveItemLink -DriveId <String> -DriveItemId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
- [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SendNotification] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgUserDriveItemLink -DriveId <String> -DriveItemId <String> -UserId <String>
+New-MgBetaUserDriveItemLink -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentity
 ```
-New-MgUserDriveItemLink -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserDriveItemLink -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserDriveItemLink -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-Message <String>] [-Password <String>]
  [-Recipients <IMicrosoftGraphDriveRecipient[]>] [-RetainInheritedPermissions] [-Scope <String>]
- [-SendNotification] [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserDriveItemLink -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SendNotification] [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 You can use **createLink** action to share a driveItem via a sharing link.
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -57,8 +71,8 @@ DriveItem resources inherit sharing permissions from their ancestors.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,11 +84,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -88,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -103,8 +117,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -118,8 +132,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -131,11 +145,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -149,8 +163,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -164,8 +178,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,11 +191,11 @@ Accept wildcard characters: False
 
 ### -Recipients
 .
-To construct, please use Get-Help -Online and see NOTES section for RECIPIENTS properties and create a hash table.
+To construct, see NOTES section for RECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveRecipient[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -195,8 +209,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -210,8 +224,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,8 +239,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -240,8 +254,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -255,8 +269,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -270,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -302,11 +316,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -316,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreatelinkPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ExpirationDateTime <DateTime?>]`: 
   - `[Message <String>]`: 
@@ -330,7 +347,7 @@ BODYPARAMETER `<IPathsQt4Ae8UsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGra
   - `[SendNotification <Boolean?>]`: 
   - `[Type <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -364,7 +381,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -373,9 +389,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-RECIPIENTS <IMicrosoftGraphDriveRecipient\[]>: .
+`RECIPIENTS <IMicrosoftGraphDriveRecipient[]>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+

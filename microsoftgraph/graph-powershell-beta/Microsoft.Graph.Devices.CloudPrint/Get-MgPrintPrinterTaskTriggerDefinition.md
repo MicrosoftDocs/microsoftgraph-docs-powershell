@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintertasktriggerdefinition
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintertasktriggerdefinition
 schema: 2.0.0
 ---
 
-# Get-MgPrintPrinterTaskTriggerDefinition
+# Get-MgBetaPrintPrinterTaskTriggerDefinition
 
 ## SYNOPSIS
 An abstract definition that will be used to create a printTask when triggered by a print event.
@@ -13,16 +13,16 @@ Read-only.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgPrintPrinterTaskTriggerDefinition -PrintTaskTriggerId <String> -PrinterId <String>
+Get-MgBetaPrintPrinterTaskTriggerDefinition -PrinterId <String> -PrintTaskTriggerId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPrintPrinterTaskTriggerDefinition -InputObject <IDevicesCloudPrintIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,13 +31,27 @@ Read-only.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -50,11 +64,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -68,8 +82,8 @@ Accept wildcard characters: False
 The unique identifier of printer
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -83,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of printTaskTrigger
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -98,7 +112,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -114,10 +128,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrintTaskDefinition
+
 ## NOTES
 
 ALIASES
@@ -127,9 +143,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -141,3 +159,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

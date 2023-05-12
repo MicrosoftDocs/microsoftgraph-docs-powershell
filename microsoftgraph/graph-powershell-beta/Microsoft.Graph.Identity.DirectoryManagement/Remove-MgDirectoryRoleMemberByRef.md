@@ -1,42 +1,47 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/remove-mgdirectoryrolememberbyref
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/remove-mgbetadirectoryrolememberbyref
 schema: 2.0.0
 ---
 
-# Remove-MgDirectoryRoleMemberByRef
+# Remove-MgBetaDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Delete ref of navigation property members for directoryRoles
+Remove a member from a directoryRole.
+You can use both the object ID and template ID of the **directoryRole** with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
+For details, see Role template IDs.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgDirectoryRoleMemberByRef -DirectoryObjectId <String> -DirectoryRoleId <String> [-Id <String>]
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaDirectoryRoleMemberByRef -DirectoryObjectId <String> -DirectoryRoleId <String> [-Id <String>]
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> [-Id <String>]
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> [-Id <String>]
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete ref of navigation property members for directoryRoles
+Remove a member from a directoryRole.
+You can use both the object ID and template ID of the **directoryRole** with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
+For details, see Role template IDs.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgDirectoryRoleMemberByRef Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Remove-MgDirectoryRoleMemberByRef -DirectoryRoleId $directoryRoleId -DirectoryObjectId $directoryObjectId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Remove-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId $directoryRoleId -DirectoryObjectId $directoryObjectId
 ```
 
-This example shows how to use the Remove-MgDirectoryRoleMemberByRef Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -44,7 +49,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of directoryObject
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -59,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of directoryRole
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -74,7 +79,7 @@ Accept wildcard characters: False
 Delete Uri
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -89,7 +94,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -102,10 +107,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -120,7 +125,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -135,7 +140,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -151,7 +156,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -167,10 +172,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -180,7 +187,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -217,3 +224,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

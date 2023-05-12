@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementvirtualendpointreportexportjob
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointreportexportjob
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementVirtualEndpointReportExportJob
+# Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
 
 ## SYNOPSIS
 Update the navigation property exportJobs in deviceManagement
@@ -14,30 +14,32 @@ Update the navigation property exportJobs in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId <String>
+Update-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId <String>
  [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>]
  [-ExportUrl <String>] [-Filter <String>] [-Format <String>] [-Id <String>] [-Property <String[]>]
- [-ReportName <String>] [-RequestDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReportName <String>] [-RequestDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId <String>
- -BodyParameter <IMicrosoftGraphCloudPcExportJob> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementVirtualEndpointReportExportJob -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>]
- [-ExportUrl <String>] [-Filter <String>] [-Format <String>] [-Id <String>] [-Property <String[]>]
- [-ReportName <String>] [-RequestDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementVirtualEndpointReportExportJob -CloudPcExportJobId <String>
+ -BodyParameter <IMicrosoftGraphCloudPcExportJob> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementVirtualEndpointReportExportJob -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcExportJob> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
+ -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphCloudPcExportJob>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementVirtualEndpointReportExportJob
+ -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
+ [-ExpirationDateTime <DateTime>] [-ExportJobStatus <String>] [-ExportUrl <String>] [-Filter <String>]
+ [-Format <String>] [-Id <String>] [-Property <String[]>] [-ReportName <String>] [-RequestDateTime <DateTime>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +47,27 @@ Update the navigation property exportJobs in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -64,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 cloudPcExportJob
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcExportJob
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPcExportJob
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +113,7 @@ Accept wildcard characters: False
 The date and time when the export job expires.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ Accept wildcard characters: False
 cloudPcExportJobStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +144,7 @@ The storage account URL of the exported report.
 It can be used to download the file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ Accept wildcard characters: False
 The filter applied on the report.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 The format of the exported report.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,11 +203,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -201,26 +217,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Property
 The selected columns of the report.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases: Select
 
@@ -235,7 +236,7 @@ Accept wildcard characters: False
 cloudPcReportName
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +251,7 @@ Accept wildcard characters: False
 The date and time when the export job was requested.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -297,11 +298,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcExportJob
+
 ## NOTES
 
 ALIASES
@@ -311,9 +315,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
+`BODYPARAMETER <IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: The date and time when the export job expires.
   - `[ExportJobStatus <String>]`: cloudPcExportJobStatus
   - `[ExportUrl <String>]`: The storage account URL of the exported report. It can be used to download the file.
@@ -323,7 +327,7 @@ BODYPARAMETER `<IMicrosoftGraphCloudPcExportJob>`: cloudPcExportJob
   - `[RequestDateTime <DateTime?>]`: The date and time when the export job was requested.
   - `[Select <String[]>]`: The selected columns of the report.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -381,3 +385,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyauthenticationstrengthpolicycombinationconfiguration
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyauthenticationstrengthpolicycombinationconfiguration
 schema: 2.0.0
 ---
 
-# New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration
+# New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration
 
 ## SYNOPSIS
 Create a new authenticationCombinationConfiguration object.
@@ -15,29 +15,29 @@ In use, only fido2combinationConfigurations may be created, and these may only b
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm]
+New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId <String>
- -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-AppliesToCombinations <String[]>] [-Id <String>] [-WhatIf] [-Confirm]
+New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -AuthenticationStrengthPolicyId <String>
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-WhatIf] [-Confirm]
+New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphAuthenticationCombinationConfiguration> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppliesToCombinations <String[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -47,13 +47,27 @@ In use, only fido2combinationConfigurations may be created, and these may only b
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +84,7 @@ Must be an allowedCombinations object that's defined for the authenticationStren
 The only possible value for fido2combinationConfigurations is 'fido2'.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,8 +99,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationStrengthPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -98,10 +112,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 authenticationCombinationConfiguration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationCombinationConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -113,11 +127,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,11 +144,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -148,7 +162,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -164,7 +178,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -180,11 +194,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationCombinationConfiguration
+
 ## NOTES
 
 ALIASES
@@ -194,12 +211,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationCombinationConfiguration>`: authenticationCombinationConfiguration
+`BODYPARAMETER <IMicrosoftGraphAuthenticationCombinationConfiguration>`: authenticationCombinationConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppliesToCombinations <String[]>]`: Which authentication method combinations this configuration applies to. Must be an allowedCombinations object that's defined for the authenticationStrengthPolicy. The only possible value for fido2combinationConfigurations is 'fido2'.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -236,6 +253,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -274,3 +292,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

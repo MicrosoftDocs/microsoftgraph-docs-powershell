@@ -1,47 +1,47 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgriskyuserhistory
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuserhistory
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgRiskyUserHistory
+# Get-MgBetaRiskyUserHistory
 
 ## SYNOPSIS
-Get history from identityProtection
+Get a riskyUserHistoryItem object of a riskyUser.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgRiskyUserHistory -RiskyUserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaRiskyUserHistory -RiskyUserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaRiskyUserHistory -RiskyUserHistoryItemId <String> -RiskyUserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get history from identityProtection
+Get a riskyUserHistoryItem object of a riskyUser.
 
 ## EXAMPLES
 
-### Example 1: List history of a specific user
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Connect-MgGraph -Scopes "IdentityRiskyUser.Read.All"
-Select-MgProfile beta
-Get-MgRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05 | Format-Table RiskDetail, RiskLastUpdatedDateTime, RiskState, UserDisplayName
+Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
+Select-MgBetaProfile beta
+Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05 | Format-Table RiskDetail, RiskLastUpdatedDateTime, RiskState, UserDisplayName
+```
 
 RiskDetail                         RiskLastUpdatedDateTime RiskState            UserDisplayName
 ----------                         ----------------------- ---------            ---------------
@@ -50,15 +50,13 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM   confirmedCompromised 
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM   dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    atRisk               Jason Mayer
-```
 
-The command return all the user risk history
-
-### Example 2: List history of a specific user with detailed risk detection
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Connect-MgGraph -Scopes "IdentityRiskyUser.Read.All"
-Select-MgProfile beta
-Get-MgRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05| Format-Table RiskDetail, RiskLastUpdatedDateTime, @{N="RiskDetection";E={($_). Activity.RiskEventTypes}}, RiskState, UserDisplayName
+Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
+Select-MgBetaProfile beta
+Get-MgBetaRiskyUserHistory -RiskyUserId 375844b0-2026-4265-b9f1-ee1708491e05| Format-Table RiskDetail, RiskLastUpdatedDateTime, @{N="RiskDetection";E={($_). Activity.RiskEventTypes}}, RiskState, UserDisplayName
+```
 
 RiskDetail                         RiskLastUpdatedDateTime RiskDetection       RiskState            UserDisplayName
 ----------                         ----------------------- -------------       ---------            ---------------
@@ -67,9 +65,6 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM                       c
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM                       dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    anomalousToken      atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    anonymizedIPAddress atRisk               Jason Mayer
-```
-
-The command return all the user risk history and expand the property of Activity
 
 ## PARAMETERS
 
@@ -77,7 +72,7 @@ The command return all the user risk history and expand the property of Activity
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -93,7 +88,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -108,7 +103,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -123,7 +118,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -136,10 +131,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -154,7 +149,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -169,7 +164,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -184,7 +179,7 @@ Accept wildcard characters: False
 The unique identifier of riskyUserHistoryItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -199,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of riskyUser
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -214,7 +209,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -229,7 +239,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -244,24 +254,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -275,10 +270,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUserHistoryItem
+
 ## NOTES
 
 ALIASES
@@ -288,7 +285,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -325,6 +322,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -363,3 +361,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

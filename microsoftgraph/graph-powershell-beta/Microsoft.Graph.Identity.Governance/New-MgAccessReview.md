@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgaccessreview
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaaccessreview
 schema: 2.0.0
 ---
 
-# New-MgAccessReview
+# New-MgBetaAccessReview
 
 ## SYNOPSIS
 In the Azure AD access reviews feature, create a new accessReview object.
@@ -16,18 +16,18 @@ After making this request, the caller should create a programControl, to link th
 
 ### CreateExpanded (Default)
 ```
-New-MgAccessReview [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
+New-MgBetaAccessReview [-AdditionalProperties <Hashtable>] [-BusinessFlowTemplateId <String>]
  [-CreatedBy <IMicrosoftGraphUserIdentity>] [-Decisions <IMicrosoftGraphAccessReviewDecision[]>]
  [-Description <String>] [-DisplayName <String>] [-EndDateTime <DateTime>] [-Id <String>]
  [-Instances <IMicrosoftGraphAccessReview[]>] [-MyDecisions <IMicrosoftGraphAccessReviewDecision[]>]
- [-ReviewedEntity <IMicrosoftGraphIdentity>] [-ReviewerType <String>]
- [-Reviewers <IMicrosoftGraphAccessReviewReviewer[]>] [-Settings <IMicrosoftGraphAccessReviewSettings>]
- [-StartDateTime <DateTime>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ReviewedEntity <IMicrosoftGraphIdentity>] [-Reviewers <IMicrosoftGraphAccessReviewReviewer[]>]
+ [-ReviewerType <String>] [-Settings <IMicrosoftGraphAccessReviewSettings>] [-StartDateTime <DateTime>]
+ [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgAccessReview -BodyParameter <IMicrosoftGraphAccessReview> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaAccessReview -BodyParameter <IMicrosoftGraphAccessReview> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,9 +37,9 @@ After making this request, the caller should create a programControl, to link th
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgAccessReview Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	DisplayName = "TestReview"
 	StartDateTime = [System.DateTime]::Parse("2017-02-10T00:35:53.214Z")
@@ -77,11 +77,10 @@ $params = @{
 		}
 	}
 }
-New-MgAccessReview -BodyParameter $params
+New-MgBetaAccessReview -BodyParameter $params
 ```
 
-This example shows how to use the New-MgAccessReview Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -89,7 +88,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,10 +101,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessReview
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReview
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReview
 Parameter Sets: Create
 Aliases:
 
@@ -122,7 +121,7 @@ Required on create.
 This value is case sensitive.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,10 +134,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 userIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,10 +150,10 @@ Accept wildcard characters: False
 
 ### -Decisions
 The collection of decisions for this access review.
-To construct, please use Get-Help -Online and see NOTES section for DECISIONS properties and create a hash table.
+To construct, see NOTES section for DECISIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewDecision[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -169,7 +168,7 @@ Accept wildcard characters: False
 The description provided by the access review creator, to show to the reviewers.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +184,7 @@ The access review name.
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -202,7 +201,7 @@ This must be at least one day later than the start date.
 Required on create.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,11 +213,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,10 +230,10 @@ Accept wildcard characters: False
 
 ### -Instances
 The collection of access reviews instances past, present and future, if this object is a recurring access review.
-To construct, please use Get-Help -Online and see NOTES section for INSTANCES properties and create a hash table.
+To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReview[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReview[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -247,10 +246,10 @@ Accept wildcard characters: False
 
 ### -MyDecisions
 The collection of decisions for the caller, if the caller is a reviewer.
-To construct, please use Get-Help -Online and see NOTES section for MYDECISIONS properties and create a hash table.
+To construct, see NOTES section for MYDECISIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewDecision[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewDecision[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -263,10 +262,10 @@ Accept wildcard characters: False
 
 ### -ReviewedEntity
 identity
-To construct, please use Get-Help -Online and see NOTES section for REVIEWEDENTITY properties and create a hash table.
+To construct, see NOTES section for REVIEWEDENTITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -279,10 +278,10 @@ Accept wildcard characters: False
 
 ### -Reviewers
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
-To construct, please use Get-Help -Online and see NOTES section for REVIEWERS properties and create a hash table.
+To construct, see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewer[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewReviewer[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -298,7 +297,7 @@ The relationship type of reviewer to the target object, one of self, delegated o
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -311,10 +310,10 @@ Accept wildcard characters: False
 
 ### -Settings
 accessReviewSettings
-To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +330,7 @@ This could be a date in the future.
 Required on create.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +346,7 @@ This read-only field specifies the status of an accessReview.
 The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +361,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -378,7 +377,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -394,10 +393,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReview
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReview
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReview
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReview
+
 ## NOTES
 
 ALIASES
@@ -407,9 +408,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
+`BODYPARAMETER <IMicrosoftGraphAccessReview>`: accessReview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier. Required on create.  This value is case sensitive.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -418,7 +419,7 @@ BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision[]>]`: The collection of decisions for this access review.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
     - `[AccessReviewId <String>]`: The feature-generated id of the access review.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -439,10 +440,10 @@ BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
     - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of self, delegated or entityOwners. Required on create.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
     - `[DisplayName <String>]`: Name of reviewer.
-    - `[UserPrincipalName <String>]`: User principal name of the reviewer.
+    - `[UserPrincipalName <String>]`: User principal name of the user.
   - `[Settings <IMicrosoftGraphAccessReviewSettings>]`: accessReviewSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
@@ -464,15 +465,15 @@ BODYPARAMETER `<IMicrosoftGraphAccessReview>`: accessReview
   - `[StartDateTime <DateTime?>]`: The DateTime when the review is scheduled to be start.  This could be a date in the future.  Required on create.
   - `[Status <String>]`: This read-only field specifies the status of an accessReview. The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
 
-CREATEDBY `<IMicrosoftGraphUserIdentity>`: userIdentity
+`CREATEDBY <IMicrosoftGraphUserIdentity>`: userIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
-DECISIONS <IMicrosoftGraphAccessReviewDecision\[]>: The collection of decisions for this access review.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DECISIONS <IMicrosoftGraphAccessReviewDecision[]>`: The collection of decisions for this access review.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
   - `[AccessReviewId <String>]`: The feature-generated id of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -488,8 +489,8 @@ DECISIONS <IMicrosoftGraphAccessReviewDecision\[]>: The collection of decisions 
   - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
   - `[ReviewedDateTime <DateTime?>]`: 
 
-INSTANCES <IMicrosoftGraphAccessReview\[]>: The collection of access reviews instances past, present and future, if this object is a recurring access review.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`INSTANCES <IMicrosoftGraphAccessReview[]>`: The collection of access reviews instances past, present and future, if this object is a recurring access review.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[BusinessFlowTemplateId <String>]`: The business flow template identifier. Required on create.  This value is case sensitive.
   - `[CreatedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -498,7 +499,7 @@ INSTANCES <IMicrosoftGraphAccessReview\[]>: The collection of access reviews ins
     - `[IPAddress <String>]`: Indicates the client IP address used by user performing the activity (audit log only).
     - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
   - `[Decisions <IMicrosoftGraphAccessReviewDecision[]>]`: The collection of decisions for this access review.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
     - `[AccessReviewId <String>]`: The feature-generated id of the access review.
     - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -519,10 +520,10 @@ INSTANCES <IMicrosoftGraphAccessReview\[]>: The collection of access reviews ins
     - `[Id <String>]`: Unique identifier for the identity.
   - `[ReviewerType <String>]`: The relationship type of reviewer to the target object, one of self, delegated or entityOwners. Required on create.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewer[]>]`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
     - `[DisplayName <String>]`: Name of reviewer.
-    - `[UserPrincipalName <String>]`: User principal name of the reviewer.
+    - `[UserPrincipalName <String>]`: User principal name of the user.
   - `[Settings <IMicrosoftGraphAccessReviewSettings>]`: accessReviewSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
@@ -544,8 +545,8 @@ INSTANCES <IMicrosoftGraphAccessReview\[]>: The collection of access reviews ins
   - `[StartDateTime <DateTime?>]`: The DateTime when the review is scheduled to be start.  This could be a date in the future.  Required on create.
   - `[Status <String>]`: This read-only field specifies the status of an accessReview. The typical states include Initializing, NotStarted, Starting,InProgress, Completing, Completed, AutoReviewing, and AutoReviewed.
 
-MYDECISIONS <IMicrosoftGraphAccessReviewDecision\[]>: The collection of decisions for the caller, if the caller is a reviewer.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MYDECISIONS <IMicrosoftGraphAccessReviewDecision[]>`: The collection of decisions for the caller, if the caller is a reviewer.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessRecommendation <String>]`: The feature- generated recommendation shown to the reviewer, one of Approve, Deny or NotAvailable.
   - `[AccessReviewId <String>]`: The feature-generated id of the access review.
   - `[AppliedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
@@ -561,18 +562,18 @@ MYDECISIONS <IMicrosoftGraphAccessReviewDecision\[]>: The collection of decision
   - `[ReviewedBy <IMicrosoftGraphUserIdentity>]`: userIdentity
   - `[ReviewedDateTime <DateTime?>]`: 
 
-REVIEWEDENTITY `<IMicrosoftGraphIdentity>`: identity
+`REVIEWEDENTITY <IMicrosoftGraphIdentity>`: identity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
 
-REVIEWERS <IMicrosoftGraphAccessReviewReviewer\[]>: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`REVIEWERS <IMicrosoftGraphAccessReviewReviewer[]>`: The collection of reviewers for an access review, if access review reviewerType is of type delegated.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The date when the reviewer was added for the access review.
   - `[DisplayName <String>]`: Name of reviewer.
-  - `[UserPrincipalName <String>]`: User principal name of the reviewer.
+  - `[UserPrincipalName <String>]`: User principal name of the user.
 
-SETTINGS `<IMicrosoftGraphAccessReviewSettings>`: accessReviewSettings
+`SETTINGS <IMicrosoftGraphAccessReviewSettings>`: accessReviewSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccessRecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled.
   - `[ActivityDurationInDays <Int32?>]`: The number of days of user activities to show to reviewers.
@@ -593,4 +594,3 @@ SETTINGS `<IMicrosoftGraphAccessReviewSettings>`: accessReviewSettings
 
 ## RELATED LINKS
 
-## RELATED LINKS

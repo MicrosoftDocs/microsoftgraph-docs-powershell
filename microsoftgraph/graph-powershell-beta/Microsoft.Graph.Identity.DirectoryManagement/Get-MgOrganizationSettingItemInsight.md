@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationsettingiteminsight
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingiteminsight
 schema: 2.0.0
 ---
 
-# Get-MgOrganizationSettingItemInsight
+# Get-MgBetaOrganizationSettingItemInsight
 
 ## SYNOPSIS
 Get the properties of an insightsSettings object for displaying or returning item insights in an organization.
@@ -15,13 +15,13 @@ To learn how to customize the privacy of item insights in an organization, see C
 
 ### Get (Default)
 ```
-Get-MgOrganizationSettingItemInsight -OrganizationId <String> [-ExpandProperty <String[]>]
+Get-MgBetaOrganizationSettingItemInsight -OrganizationId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
+Get-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -31,14 +31,13 @@ To learn how to customize the privacy of item insights in an organization, see C
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgOrganizationSettingItemInsight Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-Get-MgOrganizationSettingItemInsight -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+Get-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId
 ```
 
-This example shows how to use the Get-MgOrganizationSettingItemInsight Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -46,7 +45,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -59,10 +58,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -77,7 +76,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -92,7 +91,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -108,10 +107,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInsightsSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
+
 ## NOTES
 
 ALIASES
@@ -121,7 +122,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -158,3 +159,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,44 +1,43 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskassignedtotaskboardformat
+external help file:
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskassignedtotaskboardformat
 schema: 2.0.0
-ms.prod: planner
 ---
 
-# Update-MgPlannerTaskAssignedToTaskBoardFormat
+# Update-MgBetaPlannerTaskAssignedToTaskBoardFormat
 
 ## SYNOPSIS
 Update the navigation property assignedToTaskBoardFormat in planner
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId <String> -IfMatch <String>
+Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId <String> -IfMatch <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHintsByAssignee <Hashtable>]
- [-UnassignedOrderHint <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UnassignedOrderHint <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId <String> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -IfMatch <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHintsByAssignee <Hashtable>]
- [-UnassignedOrderHint <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded
 ```
-Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -IfMatch <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-OrderHintsByAssignee <Hashtable>]
+ [-UnassignedOrderHint <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,19 +45,18 @@ Update the navigation property assignedToTaskBoardFormat in planner
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
 	OrderHintsByAssignee = @{
 		"Aaa27244-1db4-476a-a5cb-004607466324" = "8566473P 957764Jk!"
 	}
 }
-Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params
+Update-MgBetaPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -66,8 +64,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -79,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerAssignedToTaskBoardTaskFormat
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -94,12 +92,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -113,7 +111,7 @@ Accept wildcard characters: False
 ETag value.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -126,11 +124,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,23 +142,8 @@ Accept wildcard characters: False
 plannerOrderHintsByAssignee
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -174,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of plannerTask
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -190,8 +173,8 @@ Hint value used to order the task on the AssignedTo view of the Task Board when 
 The format is defined as outlined here.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -205,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -221,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,11 +220,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+
 ## NOTES
 
 ALIASES
@@ -251,14 +237,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>`: plannerAssignedToTaskBoardTaskFormat
+`BODYPARAMETER <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
@@ -269,3 +255,4 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

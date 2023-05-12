@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementgrouppolicydefinitionpresentationdefinition
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementgrouppolicydefinitionpresentationdefinition
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition
+# Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentationDefinition
 
 ## SYNOPSIS
 The group policy definition associated with the presentation.
@@ -14,13 +14,13 @@ The group policy definition associated with the presentation.
 
 ### Get (Default)
 ```
-Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition -GroupPolicyDefinitionId <String>
+Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentationDefinition -GroupPolicyDefinitionId <String>
  -GroupPolicyPresentationId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementGroupPolicyDefinitionPresentationDefinition
+Get-MgBetaDeviceManagementGroupPolicyDefinitionPresentationDefinition
  -InputObject <IDeviceManagementAdministrationIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
@@ -30,13 +30,27 @@ The group policy definition associated with the presentation.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyPresentation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -79,10 +93,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,10 +127,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## NOTES
 
 ALIASES
@@ -126,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -184,3 +200,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+

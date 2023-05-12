@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementcomanagementeligibledevice
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementcomanagementeligibledevice
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementComanagementEligibleDevice
+# Update-MgBetaDeviceManagementComanagementEligibleDevice
 
 ## SYNOPSIS
 Update the navigation property comanagementEligibleDevices in deviceManagement
@@ -14,40 +14,38 @@ Update the navigation property comanagementEligibleDevices in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
+Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
  [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
  [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
  [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
- [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
- [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>]
+ [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>] [-UserId <String>]
+ [-UserName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
- -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
- [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
- [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
- [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
- [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>] [-Status <ComanagementEligibleType>]
- [-Upn <String>] [-UserEmail <String>] [-UserId <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementComanagementEligibleDevice -ComanagementEligibleDeviceId <String>
+ -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphComanagementEligibleDevice> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceManagementAdministrationIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientRegistrationStatus <DeviceRegistrationState>]
+ [-DeviceName <String>] [-DeviceType <DeviceType>] [-EntitySource <Int32>] [-Id <String>]
+ [-ManagementAgents <ManagementAgentType>] [-ManagementState <ManagementState>] [-Manufacturer <String>]
+ [-MdmStatus <String>] [-Model <String>] [-OSDescription <String>] [-OSVersion <String>]
+ [-OwnerType <OwnerType>] [-ReferenceId <String>] [-SerialNumber <String>]
+ [-Status <ComanagementEligibleType>] [-Upn <String>] [-UserEmail <String>] [-UserId <String>]
+ [-UserName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,13 +53,27 @@ Update the navigation property comanagementEligibleDevices in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,10 +86,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Co-Management eligibility state
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComanagementEligibleDevice
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -92,7 +104,7 @@ Accept wildcard characters: False
 Device registration status.
 
 ```yaml
-Type: DeviceRegistrationState
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceRegistrationState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,8 +119,8 @@ Accept wildcard characters: False
 The unique identifier of comanagementEligibleDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -122,7 +134,7 @@ Accept wildcard characters: False
 DeviceName
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +149,7 @@ Accept wildcard characters: False
 Device type.
 
 ```yaml
-Type: DeviceType
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +164,7 @@ Accept wildcard characters: False
 EntitySource
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,11 +176,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,11 +193,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -199,7 +211,7 @@ Accept wildcard characters: False
 Management agent type.
 
 ```yaml
-Type: ManagementAgentType
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagementAgentType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +226,7 @@ Accept wildcard characters: False
 Management state of device in Microsoft Intune.
 
 ```yaml
-Type: ManagementState
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagementState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +241,7 @@ Accept wildcard characters: False
 Manufacturer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +256,7 @@ Accept wildcard characters: False
 MDMStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +271,7 @@ Accept wildcard characters: False
 Model
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +286,7 @@ Accept wildcard characters: False
 OSDescription
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +301,7 @@ Accept wildcard characters: False
 OSVersion
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,23 +316,8 @@ Accept wildcard characters: False
 Owner type of device.
 
 ```yaml
-Type: OwnerType
+Type: Microsoft.Graph.Beta.PowerShell.Support.OwnerType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -334,7 +331,7 @@ Accept wildcard characters: False
 ReferenceId
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -349,7 +346,7 @@ Accept wildcard characters: False
 SerialNumber
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -364,7 +361,7 @@ Accept wildcard characters: False
 comanagementEligibleType
 
 ```yaml
-Type: ComanagementEligibleType
+Type: Microsoft.Graph.Beta.PowerShell.Support.ComanagementEligibleType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -379,7 +376,7 @@ Accept wildcard characters: False
 UPN
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +391,7 @@ Accept wildcard characters: False
 UserEmail
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -409,7 +406,7 @@ Accept wildcard characters: False
 UserId
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -424,7 +421,7 @@ Accept wildcard characters: False
 UserName
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -439,7 +436,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -455,7 +452,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -471,11 +468,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComanagementEligibleDevice
+
 ## NOTES
 
 ALIASES
@@ -485,9 +485,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Management eligibility state
+`BODYPARAMETER <IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Management eligibility state
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientRegistrationStatus <DeviceRegistrationState?>]`: Device registration status.
   - `[DeviceName <String>]`: DeviceName
   - `[DeviceType <DeviceType?>]`: Device type.
@@ -508,7 +508,7 @@ BODYPARAMETER `<IMicrosoftGraphComanagementEligibleDevice>`: Device Co-Managemen
   - `[UserId <String>]`: UserId
   - `[UserName <String>]`: UserName
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -566,3 +566,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+

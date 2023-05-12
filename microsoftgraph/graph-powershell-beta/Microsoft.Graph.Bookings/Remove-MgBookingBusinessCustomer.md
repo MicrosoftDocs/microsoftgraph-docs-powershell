@@ -1,42 +1,41 @@
 ---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/remove-mgbookingbusinesscustomer
+external help file:
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/remove-mgbetabookingbusinesscustomer
 schema: 2.0.0
 ---
 
-# Remove-MgBookingBusinessCustomer
+# Remove-MgBetaBookingBusinessCustomer
 
 ## SYNOPSIS
-Delete navigation property customers for bookingBusinesses
+Delete the specified bookingCustomer object.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaBookingBusinessCustomer -BookingBusinessId <String> -BookingCustomerId <String>
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property customers for bookingBusinesses
+Delete the specified bookingCustomer object.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgBookingBusinessCustomer Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Remove-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId
+Import-Module Microsoft.Graph.Beta.Bookings
+Remove-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId
 ```
 
-This example shows how to use the Remove-MgBookingBusinessCustomer Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -44,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of bookingBusiness
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -59,7 +58,7 @@ Accept wildcard characters: False
 The unique identifier of bookingCustomer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -74,7 +73,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -87,10 +86,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -105,7 +104,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -120,7 +119,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -136,7 +135,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -152,10 +151,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -165,18 +166,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+

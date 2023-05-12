@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/enable-mgdevicemanagementlegacypcmanagement
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementlegacypcmanagement
 schema: 2.0.0
 ---
 
-# Enable-MgDeviceManagementLegacyPcManagement
+# Enable-MgBetaDeviceManagementLegacyPcManagement
 
 ## SYNOPSIS
 Invoke action enableLegacyPcManagement
@@ -13,7 +13,7 @@ Invoke action enableLegacyPcManagement
 ## SYNTAX
 
 ```
-Enable-MgDeviceManagementLegacyPcManagement [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Enable-MgBetaDeviceManagementLegacyPcManagement [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,13 +21,27 @@ Invoke action enableLegacyPcManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -PassThru
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -42,7 +56,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -58,7 +72,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -77,8 +91,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

@@ -1,34 +1,35 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityalertv2
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalertv2
 schema: 2.0.0
 ---
 
-# New-MgSecurityAlertV2
+# New-MgBetaSecurityAlertV2
 
 ## SYNOPSIS
 Create new navigation property to alerts_v2 for security
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgSecurityAlertV2 [-ActorDisplayName <String>] [-AdditionalProperties <Hashtable>] [-AlertWebUrl <String>]
- [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
+New-MgBetaSecurityAlertV2 [-ActorDisplayName <String>] [-AdditionalProperties <Hashtable>]
+ [-AlertWebUrl <String>] [-AssignedTo <String>] [-Category <String>] [-Classification <String>]
  [-Comments <IMicrosoftGraphSecurityAlertComment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DetectionSource <String>] [-DetectorId <String>] [-Determination <String>]
- [-Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
+ [-Evidence <IMicrosoftGraphSecurityAlertEvidence[]>] [-FirstActivityDateTime <DateTime>] [-Id <String>]
  [-IncidentId <String>] [-IncidentWebUrl <String>] [-LastActivityDateTime <DateTime>]
  [-LastUpdateDateTime <DateTime>] [-MitreTechniques <String[]>] [-ProviderAlertId <String>]
  [-RecommendedActions <String>] [-ResolvedDateTime <DateTime>] [-ServiceSource <String>] [-Severity <String>]
  [-Status <String>] [-SystemTags <String[]>] [-TenantId <String>] [-ThreatDisplayName <String>]
- [-ThreatFamilyName <String>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ThreatFamilyName <String>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityAlertV2 -BodyParameter <IMicrosoftGraphSecurityAlert> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,14 +37,28 @@ Create new navigation property to alerts_v2 for security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ActorDisplayName
 The adversary or activity group that is associated with this alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -57,8 +72,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -72,8 +87,8 @@ Accept wildcard characters: False
 URL for the alert page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -87,8 +102,8 @@ Accept wildcard characters: False
 Owner of the alert, or null if no owner is assigned.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -100,11 +115,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 alert
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlert1
-Parameter Sets: Create1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -119,8 +134,8 @@ The attack kill-chain category that the alert belongs to.
 Aligned with the MITRE ATT&CK framework.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -134,8 +149,8 @@ Accept wildcard characters: False
 alertClassification
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -147,11 +162,11 @@ Accept wildcard characters: False
 
 ### -Comments
 Array of comments created by the Security Operations (SecOps) team during the alert management process.
-To construct, please use Get-Help -Online and see NOTES section for COMMENTS properties and create a hash table.
+To construct, see NOTES section for COMMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlertComment[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertComment[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -165,8 +180,8 @@ Accept wildcard characters: False
 Time when Microsoft 365 Defender created the alert.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -180,8 +195,8 @@ Accept wildcard characters: False
 String value describing each alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -195,8 +210,8 @@ Accept wildcard characters: False
 detectionSource
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -210,8 +225,8 @@ Accept wildcard characters: False
 The ID of the detector that triggered the alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -225,8 +240,8 @@ Accept wildcard characters: False
 alertDetermination
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -238,11 +253,11 @@ Accept wildcard characters: False
 
 ### -Evidence
 Collection of evidence related to the alert.
-To construct, please use Get-Help -Online and see NOTES section for EVIDENCE properties and create a hash table.
+To construct, see NOTES section for EVIDENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAlertEvidence1[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlertEvidence[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -256,8 +271,8 @@ Accept wildcard characters: False
 The earliest activity associated with the alert.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -268,12 +283,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -287,8 +302,8 @@ Accept wildcard characters: False
 Unique identifier to represent the incident this alert resource is associated with.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -302,8 +317,8 @@ Accept wildcard characters: False
 URL for the incident page in the Microsoft 365 Defender portal.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -317,8 +332,8 @@ Accept wildcard characters: False
 The oldest activity associated with the alert.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -332,8 +347,8 @@ Accept wildcard characters: False
 Time when the alert was last updated at Microsoft 365 Defender.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -347,8 +362,8 @@ Accept wildcard characters: False
 The attack techniques, as aligned with the MITRE ATT&CK framework.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -362,8 +377,8 @@ Accept wildcard characters: False
 The ID of the alert as it appears in the security provider product that generated the alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -377,8 +392,8 @@ Accept wildcard characters: False
 Recommended response and remediation actions to take in the event this alert was generated.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -392,8 +407,8 @@ Accept wildcard characters: False
 Time when the alert was resolved.
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -407,8 +422,8 @@ Accept wildcard characters: False
 serviceSource
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -422,8 +437,8 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -437,8 +452,8 @@ Accept wildcard characters: False
 alertStatus
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -452,8 +467,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -467,8 +482,8 @@ Accept wildcard characters: False
 The Azure Active Directory tenant the alert was created in.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -482,8 +497,8 @@ Accept wildcard characters: False
 The threat associated with this alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -497,8 +512,8 @@ Accept wildcard characters: False
 Threat family associated with this alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -512,8 +527,8 @@ Accept wildcard characters: False
 Brief identifying string value describing the alert.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -527,7 +542,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -543,7 +558,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -559,10 +574,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityAlert1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAlert
+
 ## NOTES
 
 ALIASES
@@ -572,9 +589,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityAlert1>`: alert
+`BODYPARAMETER <IMicrosoftGraphSecurityAlert>`: alert
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActorDisplayName <String>]`: The adversary or activity group that is associated with this alert.
   - `[AlertWebUrl <String>]`: URL for the alert page in the Microsoft 365 Defender portal.
   - `[AssignedTo <String>]`: Owner of the alert, or null if no owner is assigned.
@@ -589,7 +606,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityAlert1>`: alert
   - `[DetectionSource <String>]`: detectionSource
   - `[DetectorId <String>]`: The ID of the detector that triggered the alert.
   - `[Determination <String>]`: alertDetermination
-  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence1[]>]`: Collection of evidence related to the alert.
+  - `[Evidence <IMicrosoftGraphSecurityAlertEvidence[]>]`: Collection of evidence related to the alert.
     - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
     - `[RemediationStatus <String>]`: evidenceRemediationStatus
     - `[RemediationStatusDetails <String>]`: Details about the remediation status.
@@ -614,12 +631,12 @@ BODYPARAMETER `<IMicrosoftGraphSecurityAlert1>`: alert
   - `[ThreatFamilyName <String>]`: Threat family associated with this alert.
   - `[Title <String>]`: Brief identifying string value describing the alert.
 
-COMMENTS <IMicrosoftGraphSecurityAlertComment\[]>: Array of comments created by the Security Operations (SecOps) team during the alert management process.
+`COMMENTS <IMicrosoftGraphSecurityAlertComment[]>`: Array of comments created by the Security Operations (SecOps) team during the alert management process.
   - `[Comment <String>]`: The comment text.
   - `[CreatedByDisplayName <String>]`: The person or app name that submitted the comment.
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
-EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1\[]>: Collection of evidence related to the alert.
+`EVIDENCE <IMicrosoftGraphSecurityAlertEvidence[]>`: Collection of evidence related to the alert.
   - `[CreatedDateTime <DateTime?>]`: The time the evidence was created and added to the alert.
   - `[RemediationStatus <String>]`: evidenceRemediationStatus
   - `[RemediationStatusDetails <String>]`: Details about the remediation status.
@@ -628,3 +645,4 @@ EVIDENCE <IMicrosoftGraphSecurityAlertEvidence1\[]>: Collection of evidence rela
   - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
+

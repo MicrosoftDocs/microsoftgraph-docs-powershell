@@ -1,27 +1,27 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowuserattributeassignmentuserattribute
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowuserattributeassignmentuserattribute
 schema: 2.0.0
 ---
 
-# Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute
+# Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute
 
 ## SYNOPSIS
 The user attribute that you want to add to your user flow.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute -B2XIdentityUserFlowId <String>
+Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute -B2XIdentityUserFlowId <String>
  -IdentityUserFlowAttributeAssignmentId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgIdentityB2XUserFlowUserAttributeAssignmentUserAttribute -InputObject <IIdentitySignInsIdentity>
+Get-MgBetaIdentityB2XUserFlowUserAttributeAssignmentUserAttribute -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -30,14 +30,28 @@ The user attribute that you want to add to your user flow.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -66,8 +80,8 @@ Accept wildcard characters: False
 The unique identifier of identityUserFlowAttributeAssignment
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -79,11 +93,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,10 +127,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+
 ## NOTES
 
 ALIASES
@@ -126,7 +142,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -163,6 +179,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -201,3 +218,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

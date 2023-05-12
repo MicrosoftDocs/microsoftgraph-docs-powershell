@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgchatpinnedmessage
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetachatpinnedmessage
 schema: 2.0.0
 ---
 
-# Update-MgChatPinnedMessage
+# Update-MgBetaChatPinnedMessage
 
 ## SYNOPSIS
 Update the navigation property pinnedMessages in chats
@@ -14,27 +14,27 @@ Update the navigation property pinnedMessages in chats
 
 ### UpdateExpanded (Default)
 ```
-Update-MgChatPinnedMessage -ChatId <String> -PinnedChatMessageInfoId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Message <IMicrosoftGraphChatMessage1>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaChatPinnedMessage -ChatId <String> -PinnedChatMessageInfoId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Message <IMicrosoftGraphChatMessage>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgChatPinnedMessage -ChatId <String> -PinnedChatMessageInfoId <String>
- -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Message <IMicrosoftGraphChatMessage1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaChatPinnedMessage -ChatId <String> -PinnedChatMessageInfoId <String>
+ -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgChatPinnedMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphPinnedChatMessageInfo> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaChatPinnedMessage -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Message <IMicrosoftGraphChatMessage>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,13 +42,27 @@ Update the navigation property pinnedMessages in chats
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -61,10 +75,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 pinnedChatMessageInfo
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPinnedChatMessageInfo1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -79,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -91,11 +105,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -108,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -124,26 +138,11 @@ Accept wildcard characters: False
 
 ### -Message
 chatMessage
-To construct, please use Get-Help -Online and see NOTES section for MESSAGE properties and create a hash table.
+To construct, see NOTES section for MESSAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -157,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of pinnedChatMessageInfo
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -172,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,11 +203,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo
+
 ## NOTES
 
 ALIASES
@@ -218,12 +220,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo1>`: pinnedChatMessageInfo
+`BODYPARAMETER <IMicrosoftGraphPinnedChatMessageInfo>`: pinnedChatMessageInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Message <IMicrosoftGraphChatMessage1>]`: chatMessage
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Message <IMicrosoftGraphChatMessage>]`: chatMessage
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
       - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
       - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
@@ -256,16 +258,16 @@ BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo1>`: pinnedChatMessageInfo
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
       - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-      - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Importance <String>]`: 
+      - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Importance <String>]`: chatMessageImportance
     - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
     - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
     - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-    - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
+    - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
       - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
       - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-      - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
+      - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[Device <IMicrosoftGraphIdentity>]`: identity
@@ -305,13 +307,13 @@ BODYPARAMETER `<IMicrosoftGraphPinnedChatMessageInfo1>`: pinnedChatMessageInfo
       - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
       - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
     - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-    - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
+    - `[Replies <IMicrosoftGraphChatMessage[]>]`: Replies for a specified message. Supports $expand for channel messages.
     - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
     - `[Subject <String>]`: The subject of the chat message, in plaintext.
     - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
     - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -350,9 +352,9 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
+`MESSAGE <IMicrosoftGraphChatMessage>`: chatMessage
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Attachments <IMicrosoftGraphChatMessageAttachment[]>]`: References to attached objects like files, tabs, meetings etc.
     - `[Content <String>]`: The content of the attachment. If the attachment is a rich card, set the property to the rich card object. This property and contentUrl are mutually exclusive.
     - `[ContentType <String>]`: The media type of the content attachment. It can have the following values: reference: Attachment is a link to another file. Populate the contentURL with the link to the object.Any contentTypes supported by the Bot Framework's Attachment objectapplication/vnd.microsoft.card.codesnippet: A code snippet. application/vnd.microsoft.card.announcement: An announcement header.
@@ -385,16 +387,16 @@ MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[HostedContents <IMicrosoftGraphChatMessageHostedContent[]>]`: Content in a message hosted by Microsoft Teams - for example, images or code snippets.
     - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-    - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Importance <String>]`: 
+    - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Importance <String>]`: chatMessageImportance
   - `[LastEditedDateTime <DateTime?>]`: Read only. Timestamp when edits to the chat message were made. Triggers an 'Edited' flag in the Teams UI. If no edits are made the value is null.
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
-  - `[Mentions <IMicrosoftGraphChatMessageMention1[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
+  - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
     - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
-    - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet1>]`: chatMessageMentionedIdentitySet
+    - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[Device <IMicrosoftGraphIdentity>]`: identity
@@ -434,7 +436,7 @@ MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
     - `[UserAction <String>]`: chatMessagePolicyViolationUserActionTypes
     - `[VerdictDetails <String>]`: chatMessagePolicyViolationVerdictDetailsTypes
   - `[Reactions <IMicrosoftGraphChatMessageReaction[]>]`: Reactions for this chat message (for example, Like).
-  - `[Replies <IMicrosoftGraphChatMessage1[]>]`: Replies for a specified message. Supports $expand for channel messages.
+  - `[Replies <IMicrosoftGraphChatMessage[]>]`: Replies for a specified message. Supports $expand for channel messages.
   - `[ReplyToId <String>]`: Read-only. ID of the parent chat message or root chat message of the thread. (Only applies to chat messages in channels, not chats.)
   - `[Subject <String>]`: The subject of the chat message, in plaintext.
   - `[Summary <String>]`: Summary text of the chat message that could be used for push notifications and summary views or fall back views. Only applies to channel chat messages, not chat messages in a chat.
@@ -442,4 +444,3 @@ MESSAGE `<IMicrosoftGraphChatMessage1>`: chatMessage
 
 ## RELATED LINKS
 
-## RELATED LINKS

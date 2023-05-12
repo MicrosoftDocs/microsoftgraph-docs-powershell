@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/send-mguserteamworkactivitynotification
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/send-mgbetauserteamworkactivitynotification
 schema: 2.0.0
 ---
 
-# Send-MgUserTeamworkActivityNotification
+# Send-MgBetaUserTeamworkActivityNotification
 
 ## SYNOPSIS
 Send an activity feed notification to a user.
@@ -15,32 +15,32 @@ For more details about sending notifications and the requirements for doing so, 
 
 ### SendExpanded (Default)
 ```
-Send-MgUserTeamworkActivityNotification -UserId <String> [-ActivityType <String>]
+Send-MgBetaUserTeamworkActivityNotification -UserId <String> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
  [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Send
 ```
-Send-MgUserTeamworkActivityNotification -UserId <String>
+Send-MgBetaUserTeamworkActivityNotification -UserId <String>
  -BodyParameter <IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SendViaIdentityExpanded
-```
-Send-MgUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity> [-ActivityType <String>]
- [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
- [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SendViaIdentity
 ```
-Send-MgUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity>
+Send-MgBetaUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SendViaIdentityExpanded
+```
+Send-MgBetaUserTeamworkActivityNotification -InputObject <IUsersActionsIdentity> [-ActivityType <String>]
+ [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
+ [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,9 +49,9 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### Example 1: Using the Send-MgUserTeamworkActivityNotification Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Topic = @{
 		Source = "text"
@@ -69,15 +69,14 @@ $params = @{
 		}
 	)
 }
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Send-MgUserTeamworkActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Topic = @{
 		Source = "text"
@@ -95,15 +94,14 @@ $params = @{
 		}
 	)
 }
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Using the Send-MgUserTeamworkActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
@@ -120,11 +118,10 @@ $params = @{
 		}
 	)
 }
-Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
+Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -132,7 +129,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -147,7 +144,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -160,10 +157,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Send, SendViaIdentity
 Aliases:
 
@@ -178,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -191,11 +188,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: SendViaIdentityExpanded, SendViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: SendViaIdentity, SendViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -209,7 +206,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -222,10 +219,10 @@ Accept wildcard characters: False
 
 ### -PreviewText
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for PREVIEWTEXT properties and create a hash table.
+To construct, see NOTES section for PREVIEWTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -238,10 +235,10 @@ Accept wildcard characters: False
 
 ### -TemplateParameters
 .
-To construct, please use Get-Help -Online and see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
+To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -254,10 +251,10 @@ Accept wildcard characters: False
 
 ### -Topic
 teamworkActivityTopic
-To construct, please use Get-Help -Online and see NOTES section for TOPIC properties and create a hash table.
+To construct, see NOTES section for TOPIC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkActivityTopic
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkActivityTopic
 Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
@@ -272,8 +269,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: SendExpanded, Send
+Type: System.String
+Parameter Sets: Send, SendExpanded
 Aliases:
 
 Required: True
@@ -287,7 +284,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -303,7 +300,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -319,11 +316,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -333,7 +333,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityType <String>]`: 
   - `[ChainId <Int64?>]`: 
@@ -350,7 +350,7 @@ BODYPARAMETER `<IPaths18Aow54UsersUserIdTeamworkMicrosoftGraphSendactivitynotifi
     - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
     - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -384,7 +384,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -393,19 +392,20 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+`PREVIEWTEXT <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair\[]>: .
+`TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>`: .
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+`TOPIC <IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <String>]`: teamworkActivityTopicSource
   - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
+

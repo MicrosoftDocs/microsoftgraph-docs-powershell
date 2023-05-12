@@ -1,28 +1,28 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/remove-mgteamworkdeletedteamchannelmessagehostedcontent
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/remove-mgbetateamworkdeletedteamchannelmessagehostedcontent
 schema: 2.0.0
 ---
 
-# Remove-MgTeamworkDeletedTeamChannelMessageHostedContent
+# Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent
 
 ## SYNOPSIS
 Delete navigation property hostedContents for teamwork
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String>
+Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -ChannelId <String>
  -ChatMessageHostedContentId <String> -ChatMessageId <String> -DeletedTeamId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaTeamworkDeletedTeamChannelMessageHostedContent -InputObject <ITeamsIdentity> [-IfMatch <String>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +30,28 @@ Delete navigation property hostedContents for teamwork
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ChannelId
 The unique identifier of channel
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -51,8 +65,8 @@ Accept wildcard characters: False
 The unique identifier of chatMessageHostedContent
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -66,8 +80,8 @@ Accept wildcard characters: False
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -81,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of deletedTeam
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -127,7 +141,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,10 +188,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -187,7 +203,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -227,3 +243,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

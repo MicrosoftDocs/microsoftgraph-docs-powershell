@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgclockteamscheduletimecardin
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetaclockteamscheduletimecardin
 schema: 2.0.0
 ---
 
-# Invoke-MgClockTeamScheduleTimeCardIn
+# Invoke-MgBetaClockTeamScheduleTimeCardIn
 
 ## SYNOPSIS
 Clock in to start a timeCard.
@@ -14,29 +14,30 @@ Clock in to start a timeCard.
 
 ### ClockExpanded (Default)
 ```
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId <String> [-AdditionalProperties <Hashtable>] [-AtApprovedLocation]
- [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId <String> [-AdditionalProperties <Hashtable>]
+ [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Clock
 ```
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId <String>
+Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId <String>
  -BodyParameter <IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ClockViaIdentityExpanded
-```
-Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ClockViaIdentity
 ```
-Invoke-MgClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
+Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ClockViaIdentityExpanded
+```
+Invoke-MgBetaClockTeamScheduleTimeCardIn -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AtApprovedLocation] [-Notes <IMicrosoftGraphItemBody>] [-OnBehalfOfUserId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,9 +45,9 @@ Clock in to start a timeCard.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgClockTeamScheduleTimeCardIn Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	AtAprovedLocation = $true
 	Notes = @{
@@ -54,11 +55,10 @@ $params = @{
 		Content = "clock in notes"
 	}
 }
-Invoke-MgClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
+Invoke-MgBetaClockTeamScheduleTimeCardIn -TeamId $teamId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgClockTeamScheduleTimeCardIn Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -94,10 +94,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Clock, ClockViaIdentity
 Aliases:
 
@@ -110,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: ClockViaIdentityExpanded, ClockViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: ClockViaIdentity, ClockViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,10 +126,10 @@ Accept wildcard characters: False
 
 ### -Notes
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
+To construct, see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -144,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ClockExpanded, ClockViaIdentityExpanded
 Aliases:
 
@@ -159,8 +159,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: ClockExpanded, Clock
+Type: System.String
+Parameter Sets: Clock, ClockExpanded
 Aliases:
 
 Required: True
@@ -174,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,11 +206,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeCard
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeCard
+
 ## NOTES
 
 ALIASES
@@ -220,7 +223,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AtApprovedLocation <Boolean?>]`: 
   - `[Notes <IMicrosoftGraphItemBody>]`: itemBody
@@ -229,7 +232,7 @@ BODYPARAMETER `<IPaths1CnzyehTeamsTeamIdScheduleTimecardsMicrosoftGraphClockinPo
     - `[ContentType <String>]`: bodyType
   - `[OnBehalfOfUserId <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -268,9 +271,10 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+`NOTES <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+

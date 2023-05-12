@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/start-mgsecuritycaseediscoverycasereviewsetquery
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/start-mgbetasecuritycaseediscoverycasereviewsetquery
 schema: 2.0.0
 ---
 
-# Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery
+# Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
 Invoke function run
@@ -14,16 +14,17 @@ Invoke function run
 
 ### Run (Default)
 ```
-Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
- -EdiscoveryReviewSetQueryId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId <String>
+ -EdiscoveryReviewSetId <String> -EdiscoveryReviewSetQueryId <String> [-Count] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### RunViaIdentity
 ```
-Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> [-Count] [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [<CommonParameters>]
+Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> [-Count]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +32,13 @@ Invoke function run
 
 ## EXAMPLES
 
-### Example 1: Using the Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId
+Import-Module Microsoft.Graph.Beta.Security
+Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId
 ```
 
-This example shows how to use the Start-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -46,7 +46,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -61,7 +61,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Run
 Aliases:
 
@@ -76,7 +76,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryReviewSet
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Run
 Aliases:
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryReviewSetQuery
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Run
 Aliases:
 
@@ -106,7 +106,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -119,10 +119,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: RunViaIdentity
 Aliases:
 
@@ -137,7 +137,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -152,7 +152,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -167,7 +182,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -182,24 +197,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -213,10 +213,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryFile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryFile
+
 ## NOTES
 
 ALIASES
@@ -226,7 +228,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -285,3 +287,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

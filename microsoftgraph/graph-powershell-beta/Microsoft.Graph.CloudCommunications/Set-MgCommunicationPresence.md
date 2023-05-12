@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/set-mgcommunicationpresence
+external help file:
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/set-mgbetacommunicationpresence
 schema: 2.0.0
 ---
 
-# Set-MgCommunicationPresence
+# Set-MgBetaCommunicationPresence
 
 ## SYNOPSIS
 Set the availability and activity status in a presence session of an application for a user.
@@ -14,30 +14,30 @@ Set the availability and activity status in a presence session of an application
 
 ### SetExpanded (Default)
 ```
-Set-MgCommunicationPresence -PresenceId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-SessionId <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaCommunicationPresence -PresenceId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
+ [-Availability <String>] [-ExpirationDuration <TimeSpan>] [-SessionId <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgCommunicationPresence -PresenceId <String>
+Set-MgBetaCommunicationPresence -PresenceId <String>
  -BodyParameter <IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>]
- [-SessionId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
+Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
+ [-AdditionalProperties <Hashtable>] [-Availability <String>] [-ExpirationDuration <TimeSpan>]
+ [-SessionId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Set the availability and activity status in a presence session of an application
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Activity
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -94,10 +108,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -112,7 +126,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -125,11 +139,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of presence
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -173,7 +187,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -188,7 +202,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +218,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,11 +234,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -234,14 +251,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsTm7IsmCommunicationsPresencesPresenceIdMicrosoftGraphSetpresencePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Activity <String>]`: 
   - `[Availability <String>]`: 
   - `[ExpirationDuration <TimeSpan?>]`: 
   - `[SessionId <String>]`: 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -251,6 +268,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -260,3 +278,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

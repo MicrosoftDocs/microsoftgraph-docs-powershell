@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mgsitelistitemanalytic
+external help file:
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemanalytic
 schema: 2.0.0
 ---
 
-# Get-MgSiteListItemAnalytic
+# Get-MgBetaSiteListItemAnalytic
 
 ## SYNOPSIS
 Analytics about the view activities that took place on this item.
@@ -14,14 +14,14 @@ Analytics about the view activities that took place on this item.
 
 ### Get (Default)
 ```
-Get-MgSiteListItemAnalytic -ListId <String> -ListItemId <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSiteListItemAnalytic -ListId <String> -ListItemId <String> -SiteId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSiteListItemAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaSiteListItemAnalytic -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,13 +29,27 @@ Analytics about the view activities that took place on this item.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -48,10 +62,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -127,10 +141,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemAnalytics
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAnalytics
+
 ## NOTES
 
 ALIASES
@@ -140,7 +156,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -158,17 +174,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -177,7 +199,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -188,3 +209,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyserviceprincipalcreationpolicyinclude
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyserviceprincipalcreationpolicyinclude
 schema: 2.0.0
 ---
 
-# Update-MgPolicyServicePrincipalCreationPolicyInclude
+# Update-MgBetaPolicyServicePrincipalCreationPolicyInclude
 
 ## SYNOPSIS
 Update the navigation property includes in policies
@@ -14,34 +14,34 @@ Update the navigation property includes in policies
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyServicePrincipalCreationPolicyInclude -ServicePrincipalCreationConditionSetId <String>
+Update-MgBetaPolicyServicePrincipalCreationPolicyInclude -ServicePrincipalCreationConditionSetId <String>
  -ServicePrincipalCreationPolicyId <String> [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>]
- [-ApplicationPublisherIds <String[]>] [-ApplicationTenantIds <String[]>]
- [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly] [-Id <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ApplicationPublisherIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly]
+ [-ApplicationTenantIds <String[]>] [-CertifiedApplicationsOnly] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyServicePrincipalCreationPolicyInclude -ServicePrincipalCreationConditionSetId <String>
+Update-MgBetaPolicyServicePrincipalCreationPolicyInclude -ServicePrincipalCreationConditionSetId <String>
  -ServicePrincipalCreationPolicyId <String>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPolicyServicePrincipalCreationPolicyInclude -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPolicyServicePrincipalCreationPolicyInclude -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaPolicyServicePrincipalCreationPolicyInclude -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicationIds <String[]>] [-ApplicationPublisherIds <String[]>]
- [-ApplicationTenantIds <String[]>] [-ApplicationsFromVerifiedPublisherOnly] [-CertifiedApplicationsOnly]
- [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyServicePrincipalCreationPolicyInclude -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphServicePrincipalCreationConditionSet> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ApplicationsFromVerifiedPublisherOnly] [-ApplicationTenantIds <String[]>] [-CertifiedApplicationsOnly]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update the navigation property includes in policies
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,10 +142,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 servicePrincipalCreationConditionSet
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServicePrincipalCreationConditionSet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -146,7 +160,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,11 +172,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,11 +189,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -189,27 +203,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ServicePrincipalCreationConditionSetId
 The unique identifier of servicePrincipalCreationConditionSet
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -223,8 +222,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipalCreationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -238,7 +237,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +253,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,11 +269,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePrincipalCreationConditionSet
+
 ## NOTES
 
 ALIASES
@@ -284,16 +286,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphServicePrincipalCreationConditionSet>`: servicePrincipalCreationConditionSet
+`BODYPARAMETER <IMicrosoftGraphServicePrincipalCreationConditionSet>`: servicePrincipalCreationConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicationIds <String[]>]`: 
   - `[ApplicationPublisherIds <String[]>]`: 
   - `[ApplicationTenantIds <String[]>]`: 
   - `[ApplicationsFromVerifiedPublisherOnly <Boolean?>]`: 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -330,6 +332,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -368,3 +371,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

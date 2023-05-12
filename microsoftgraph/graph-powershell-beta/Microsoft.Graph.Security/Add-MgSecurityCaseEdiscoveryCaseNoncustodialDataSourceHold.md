@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/add-mgsecuritycaseediscoverycasenoncustodialdatasourcehold
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/add-mgbetasecuritycaseediscoverycasenoncustodialdatasourcehold
 schema: 2.0.0
 ---
 
-# Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
+# Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold
 
 ## SYNOPSIS
 Start the process of applying hold on eDiscovery non-custodial data sources.
@@ -16,40 +16,40 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ### ApplyExpanded (Default)
 ```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Apply1
-```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
- -BodyParameter <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Apply
 ```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
- -EdiscoveryNoncustodialDataSourceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
+ -EdiscoveryNoncustodialDataSourceId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ApplyViaIdentityExpanded
+### Apply1
 ```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ApplyViaIdentity1
-```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId <String>
  -BodyParameter <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ApplyViaIdentity1
+```
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
+ -BodyParameter <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ApplyViaIdentityExpanded
+```
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,23 +59,21 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
 
-### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+Import-Module Microsoft.Graph.Beta.Security
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
 ```
 
-This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
+Import-Module Microsoft.Graph.Beta.Security
+Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
 ```
 
-This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -83,7 +81,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -96,10 +94,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Apply1, ApplyViaIdentity1
 Aliases:
 
@@ -114,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply1, Apply
+Type: System.String
+Parameter Sets: Apply, Apply1, ApplyExpanded
 Aliases:
 
 Required: True
@@ -129,7 +127,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryNoncustodialDataSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Apply
 Aliases:
 
@@ -144,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -157,11 +155,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity1, ApplyViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: ApplyViaIdentity, ApplyViaIdentity1, ApplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -175,7 +173,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -190,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +220,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -236,11 +237,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsUr2Sc1SecurityCasesEdiscoverycasesEdiscoverycaseIdNoncustodialdatasourcesMicrosoftGraphSecurityApplyholdPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -299,3 +300,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

@@ -1,21 +1,20 @@
 ---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
-Module Name: Microsoft.Graph.PersonalContacts
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.personalcontacts/new-mgusercontact
+external help file:
+Module Name: Microsoft.Graph.Beta.PersonalContacts
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/new-mgbetausercontact
 schema: 2.0.0
-ms.prod: outlook
 ---
 
-# New-MgUserContact
+# New-MgBetaUserContact
 
 ## SYNOPSIS
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgUserContact -UserId <String> [-AdditionalProperties <Hashtable>] [-AssistantName <String>]
+New-MgBetaUserContact -UserId <String> [-AdditionalProperties <Hashtable>] [-AssistantName <String>]
  [-Birthday <DateTime>] [-Categories <String[]>] [-ChangeKey <String>] [-Children <String[]>]
  [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>] [-DisplayName <String>]
  [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>] [-Extensions <IMicrosoftGraphExtension[]>]
@@ -25,42 +24,43 @@ New-MgUserContact -UserId <String> [-AdditionalProperties <Hashtable>] [-Assista
  [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-NickName <String>]
  [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
  [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>] [-Profession <String>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
- [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-WhatIf] [-Confirm]
+ [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgUserContact -UserId <String> -BodyParameter <IMicrosoftGraphContact1> [-WhatIf] [-Confirm]
+New-MgBetaUserContact -UserId <String> -BodyParameter <IMicrosoftGraphContact> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentity
 ```
-New-MgUserContact -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserContact -InputObject <IPersonalContactsIdentity> [-AdditionalProperties <Hashtable>]
  [-AssistantName <String>] [-Birthday <DateTime>] [-Categories <String[]>] [-ChangeKey <String>]
  [-Children <String[]>] [-CompanyName <String>] [-CreatedDateTime <DateTime>] [-Department <String>]
  [-DisplayName <String>] [-EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]
  [-Extensions <IMicrosoftGraphExtension[]>] [-FileAs <String>] [-Flag <IMicrosoftGraphFollowupFlag>]
  [-Gender <String>] [-Generation <String>] [-GivenName <String>] [-Id <String>] [-ImAddresses <String[]>]
- [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>] [-Manager <String>]
- [-MiddleName <String>] [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
- [-NickName <String>] [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
+ [-Initials <String>] [-IsFavorite] [-JobTitle <String>] [-LastModifiedDateTime <DateTime>]
+ [-Manager <String>] [-MiddleName <String>]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-NickName <String>]
+ [-OfficeLocation <String>] [-ParentFolderId <String>] [-PersonalNotes <String>]
  [-Phones <IMicrosoftGraphPhone[]>] [-Photo <IMicrosoftGraphProfilePhoto>]
- [-PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>] [-Profession <String>]
+ [-PostalAddresses <IMicrosoftGraphPhysicalAddress[]>] [-Profession <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-SpouseName <String>]
  [-Surname <String>] [-Title <String>] [-Websites <IMicrosoftGraphWebsite[]>] [-WeddingAnniversary <DateTime>]
- [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-WhatIf] [-Confirm]
+ [-YomiCompanyName <String>] [-YomiGivenName <String>] [-YomiSurname <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity1
-```
-New-MgUserContact -InputObject <IPersonalContactsIdentity> -BodyParameter <IMicrosoftGraphContact1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,9 +68,9 @@ Add a contact to the root Contacts folder or to the contacts endpoint of another
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserContact Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.PersonalContacts
+Import-Module Microsoft.Graph.Beta.PersonalContacts
 $params = @{
 	GivenName = "Pavel"
 	Surname = "Bansky"
@@ -95,11 +95,10 @@ $params = @{
 	)
 }
 # A UPN can also be used as -UserId.
-New-MgUserContact -UserId $userId -BodyParameter $params
+New-MgBetaUserContact -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserContact Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -107,8 +106,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -122,8 +121,8 @@ Accept wildcard characters: False
 The name of the contact's assistant.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -139,8 +138,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -152,11 +151,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 contact
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact1
-Parameter Sets: Create1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -167,11 +166,11 @@ Accept wildcard characters: False
 ```
 
 ### -Categories
-The categories associated with the item
+.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -182,14 +181,11 @@ Accept wildcard characters: False
 ```
 
 ### -ChangeKey
-Identifies the version of the item.
-Every time the item is changed, changeKey changes as well.
-This allows Exchange to apply changes to the correct version of the object.
-Read-only.
+.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -203,8 +199,8 @@ Accept wildcard characters: False
 The names of the contact's children.
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -218,8 +214,8 @@ Accept wildcard characters: False
 The name of the contact's company.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -234,8 +230,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -249,8 +245,8 @@ Accept wildcard characters: False
 The contact's department.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -267,8 +263,8 @@ Note that later updates to other properties may cause an automatically generated
 To preserve a pre-existing value, always include it as displayName in an update operation.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -280,11 +276,11 @@ Accept wildcard characters: False
 
 ### -EmailAddresses
 The contact's email addresses.
-To construct, please use Get-Help -Online and see NOTES section for EMAILADDRESSES properties and create a hash table.
+To construct, see NOTES section for EMAILADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTypedEmailAddress[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTypedEmailAddress[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -297,11 +293,11 @@ Accept wildcard characters: False
 ### -Extensions
 The collection of open extensions defined for the contact.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for EXTENSIONS properties and create a hash table.
+To construct, see NOTES section for EXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtension[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtension[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -315,8 +311,8 @@ Accept wildcard characters: False
 The name the contact is filed under.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -328,11 +324,11 @@ Accept wildcard characters: False
 
 ### -Flag
 followupFlag
-To construct, please use Get-Help -Online and see NOTES section for FLAG properties and create a hash table.
+To construct, see NOTES section for FLAG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFollowupFlag
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFollowupFlag
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -346,8 +342,8 @@ Accept wildcard characters: False
 The contact's gender.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -361,8 +357,8 @@ Accept wildcard characters: False
 The contact's generation.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -376,8 +372,8 @@ Accept wildcard characters: False
 The contact's given name.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -388,12 +384,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -407,8 +403,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -422,8 +418,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -435,11 +431,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -453,8 +449,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -468,8 +464,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -484,8 +480,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -499,8 +495,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -514,8 +510,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -529,11 +525,11 @@ Accept wildcard characters: False
 The collection of multi-value extended properties defined for the contact.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -547,8 +543,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -562,8 +558,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -577,8 +573,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -592,8 +588,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -605,11 +601,11 @@ Accept wildcard characters: False
 
 ### -Phones
 .
-To construct, please use Get-Help -Online and see NOTES section for PHONES properties and create a hash table.
+To construct, see NOTES section for PHONES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhone[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhone[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -621,11 +617,11 @@ Accept wildcard characters: False
 
 ### -Photo
 profilePhoto
-To construct, please use Get-Help -Online and see NOTES section for PHOTO properties and create a hash table.
+To construct, see NOTES section for PHOTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfilePhoto
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfilePhoto
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -637,11 +633,11 @@ Accept wildcard characters: False
 
 ### -PostalAddresses
 .
-To construct, please use Get-Help -Online and see NOTES section for POSTALADDRESSES properties and create a hash table.
+To construct, see NOTES section for POSTALADDRESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress1[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhysicalAddress[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -655,8 +651,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -670,11 +666,11 @@ Accept wildcard characters: False
 The collection of single-value extended properties defined for the contact.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
+To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -688,8 +684,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -703,8 +699,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -718,8 +714,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -733,8 +729,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -746,11 +742,11 @@ Accept wildcard characters: False
 
 ### -Websites
 .
-To construct, please use Get-Help -Online and see NOTES section for WEBSITES properties and create a hash table.
+To construct, see NOTES section for WEBSITES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWebsite[]
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWebsite[]
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -764,8 +760,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -779,8 +775,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -794,8 +790,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -809,8 +805,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -824,7 +820,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -840,7 +836,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -856,11 +852,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1
-### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPersonalContactsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContact
+
 ## NOTES
 
 ALIASES
@@ -870,13 +869,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
+`BODYPARAMETER <IMicrosoftGraphContact>`: contact
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
+  - `[Categories <String[]>]`: 
+  - `[ChangeKey <String>]`: 
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssistantName <String>]`: The name of the contact's assistant.
   - `[Birthday <DateTime?>]`: The contact's birthday. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Children <String[]>]`: The names of the contact's children.
@@ -884,12 +883,12 @@ BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
   - `[Department <String>]`: The contact's department.
   - `[DisplayName <String>]`: The contact's display name. You can specify the display name in a create or update operation. Note that later updates to other properties may cause an automatically generated value to overwrite the displayName value you have specified. To preserve a pre-existing value, always include it as displayName in an update operation.
   - `[EmailAddresses <IMicrosoftGraphTypedEmailAddress[]>]`: The contact's email addresses.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
     - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
     - `[Type <String>]`: emailType
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the contact. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FileAs <String>]`: The name the contact is filed under.
   - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -910,7 +909,7 @@ BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
   - `[Manager <String>]`: 
   - `[MiddleName <String>]`: 
   - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String[]>]`: A collection of property values.
   - `[NickName <String>]`: 
   - `[OfficeLocation <String>]`: 
@@ -921,10 +920,10 @@ BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
     - `[Type <String>]`: phoneType
   - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Height <Int32?>]`: The height of the photo. Read-only.
     - `[Width <Int32?>]`: The width of the photo. Read-only.
-  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress1[]>]`: 
+  - `[PostalAddresses <IMicrosoftGraphPhysicalAddress[]>]`: 
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
     - `[PostOfficeBox <String>]`: The post office box number.
@@ -934,7 +933,7 @@ BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
     - `[Type <String>]`: physicalAddressType
   - `[Profession <String>]`: 
   - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Value <String>]`: A property value.
   - `[SpouseName <String>]`: 
   - `[Surname <String>]`: 
@@ -948,16 +947,16 @@ BODYPARAMETER `<IMicrosoftGraphContact1>`: contact
   - `[YomiGivenName <String>]`: 
   - `[YomiSurname <String>]`: 
 
-EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress\[]>: The contact's email addresses.
-  - `[Address <String>]`: The email address of the person or entity.
-  - `[Name <String>]`: The display name of the person or entity.
+`EMAILADDRESSES <IMicrosoftGraphTypedEmailAddress[]>`: The contact's email addresses.
+  - `[Address <String>]`: The email address of an entity instance.
+  - `[Name <String>]`: The display name of an entity instance.
   - `[OtherLabel <String>]`: To specify a custom type of email address, set type to other, and assign otherLabel to a custom string. For example, you may use a specific email address for your volunteer activities. Set type to other, and set otherLabel to a custom string such as Volunteer work.
   - `[Type <String>]`: emailType
 
-EXTENSIONS <IMicrosoftGraphExtension\[]>: The collection of open extensions defined for the contact. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`EXTENSIONS <IMicrosoftGraphExtension[]>`: The collection of open extensions defined for the contact. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
+`FLAG <IMicrosoftGraphFollowupFlag>`: followupFlag
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -967,30 +966,28 @@ FLAG `<IMicrosoftGraphFollowupFlag>`: followupFlag
   - `[FlagStatus <String>]`: followupFlagStatus
   - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-INPUTOBJECT `<IPersonalContactsIdentity>`: Identity Parameter
+`INPUTOBJECT <IPersonalContactsIdentity>`: Identity Parameter
   - `[ContactFolderId <String>]`: The unique identifier of contactFolder
   - `[ContactFolderId1 <String>]`: The unique identifier of contactFolder
   - `[ContactId <String>]`: The unique identifier of contact
   - `[ExtensionId <String>]`: The unique identifier of extension
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
-MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty\[]>: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MULTIVALUEEXTENDEDPROPERTIES <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>`: The collection of multi-value extended properties defined for the contact. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Value <String[]>]`: A collection of property values.
 
-PHONES <IMicrosoftGraphPhone\[]>: .
+`PHONES <IMicrosoftGraphPhone[]>`: .
   - `[Number <String>]`: The phone number.
   - `[Type <String>]`: phoneType
 
-PHOTO `<IMicrosoftGraphProfilePhoto>`: profilePhoto
+`PHOTO <IMicrosoftGraphProfilePhoto>`: profilePhoto
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Height <Int32?>]`: The height of the photo. Read-only.
   - `[Width <Int32?>]`: The width of the photo. Read-only.
 
-POSTALADDRESSES <IMicrosoftGraphPhysicalAddress1\[]>: .
+`POSTALADDRESSES <IMicrosoftGraphPhysicalAddress[]>`: .
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
   - `[PostOfficeBox <String>]`: The post office box number.
@@ -999,13 +996,14 @@ POSTALADDRESSES <IMicrosoftGraphPhysicalAddress1\[]>: .
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty\[]>: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SINGLEVALUEEXTENDEDPROPERTIES <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>`: The collection of single-value extended properties defined for the contact. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Value <String>]`: A property value.
 
-WEBSITES <IMicrosoftGraphWebsite\[]>: .
+`WEBSITES <IMicrosoftGraphWebsite[]>`: .
   - `[Address <String>]`: The URL of the website.
   - `[DisplayName <String>]`: The display name of the web site.
   - `[Type <String>]`: websiteType
 
 ## RELATED LINKS
+

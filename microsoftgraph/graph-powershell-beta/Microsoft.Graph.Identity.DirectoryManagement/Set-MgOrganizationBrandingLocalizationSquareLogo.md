@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/set-mgorganizationbrandinglocalizationsquarelogo
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/set-mgbetaorganizationbrandinglocalizationsquarelogo
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Set-MgOrganizationBrandingLocalizationSquareLogo
+# Set-MgBetaOrganizationBrandingLocalizationSquareLogo
 
 ## SYNOPSIS
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
@@ -17,15 +16,15 @@ We recommend using a transparent image with no padding around the logo.
 
 ### Set (Default)
 ```
-Set-MgOrganizationBrandingLocalizationSquareLogo -OrganizationId <String>
- -OrganizationalBrandingLocalizationId <String> [-BodyParameter <Stream>] -InFile <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaOrganizationBrandingLocalizationSquareLogo -OrganizationalBrandingLocalizationId <String>
+ -OrganizationId <String> -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgOrganizationBrandingLocalizationSquareLogo -InputObject <IIdentityDirectoryManagementIdentity>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaOrganizationBrandingLocalizationSquareLogo -InputObject <IIdentityDirectoryManagementIdentity>
+ -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,24 +34,20 @@ We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgOrganizationBrandingLocalization -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Set-MgOrganizationBrandingLocalizationSquareLogo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId
 
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -69,7 +64,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -82,10 +77,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -100,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of organizationalBrandingLocalization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -115,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -130,7 +125,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -145,7 +140,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +156,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,11 +172,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -191,7 +189,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -228,3 +226,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

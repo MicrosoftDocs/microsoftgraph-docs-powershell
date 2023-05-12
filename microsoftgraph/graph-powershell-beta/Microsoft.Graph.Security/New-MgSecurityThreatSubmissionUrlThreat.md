@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritythreatsubmissionurlthreat
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritythreatsubmissionurlthreat
 schema: 2.0.0
 ---
 
-# New-MgSecurityThreatSubmissionUrlThreat
+# New-MgBetaSecurityThreatSubmissionUrlThreat
 
 ## SYNOPSIS
 Create a new urlThreatSubmission object.
@@ -14,18 +14,18 @@ Create a new urlThreatSubmission object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityThreatSubmissionUrlThreat [-AdditionalProperties <Hashtable>]
+New-MgBetaSecurityThreatSubmissionUrlThreat [-AdditionalProperties <Hashtable>]
  [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>] [-Category <String>] [-ClientSource <String>]
  [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-Result <IMicrosoftGraphSecuritySubmissionResult>]
- [-Source <String>] [-Status <String>] [-TenantId <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [-Source <String>] [-Status <String>] [-TenantId <String>] [-WebUrl <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecurityUrlThreatSubmission>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,19 +33,18 @@ Create a new urlThreatSubmission object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSecurityThreatSubmissionUrlThreat Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	"@odata.type" = "#microsoft.graph.urlThreatSubmission"
 	Category = "phishing"
 	WebUrl = "http://phishing.contoso.com"
 }
-New-MgSecurityThreatSubmissionUrlThreat -BodyParameter $params
+New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter $params
 ```
 
-This example shows how to use the New-MgSecurityThreatSubmissionUrlThreat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -53,7 +52,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,10 +65,10 @@ Accept wildcard characters: False
 
 ### -AdminReview
 submissionAdminReview
-To construct, please use Get-Help -Online and see NOTES section for ADMINREVIEW properties and create a hash table.
+To construct, see NOTES section for ADMINREVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubmissionAdminReview
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionAdminReview
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,10 +81,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 urlThreatSubmission
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityUrlThreatSubmission
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission
 Parameter Sets: Create
 Aliases:
 
@@ -100,7 +99,7 @@ Accept wildcard characters: False
 submissionCategory
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +114,7 @@ Accept wildcard characters: False
 submissionClientSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +129,7 @@ Accept wildcard characters: False
 submissionContentType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,10 +142,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 submissionUserIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubmissionUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +161,7 @@ Specifies when the threat submission was created.
 Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,11 +173,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,10 +190,10 @@ Accept wildcard characters: False
 
 ### -Result
 submissionResult
-To construct, please use Get-Help -Online and see NOTES section for RESULT properties and create a hash table.
+To construct, see NOTES section for RESULT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubmissionResult
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionResult
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +208,7 @@ Accept wildcard characters: False
 submissionSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +223,7 @@ Accept wildcard characters: False
 longRunningOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +240,7 @@ Not required when created using a POST operation.
 It is extracted from the token of the post API call.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +255,7 @@ Accept wildcard characters: False
 Denotes the webUrl that needs to be submitted.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +270,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -287,7 +286,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -303,10 +302,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityUrlThreatSubmission
+
 ## NOTES
 
 ALIASES
@@ -316,13 +317,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+`ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
   - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
   - `[ReviewResult <String>]`: submissionResultCategory
 
-BODYPARAMETER `<IMicrosoftGraphSecurityUrlThreatSubmission>`: urlThreatSubmission
+`BODYPARAMETER <IMicrosoftGraphSecurityUrlThreatSubmission>`: urlThreatSubmission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -350,16 +351,16 @@ BODYPARAMETER `<IMicrosoftGraphSecurityUrlThreatSubmission>`: urlThreatSubmissio
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[WebUrl <String>]`: Denotes the webUrl that needs to be submitted.
 
-CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+`CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
 
-RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+`RESULT <IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category <String>]`: submissionResultCategory
   - `[Detail <String>]`: submissionResultDetail
@@ -370,3 +371,4 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
 ## RELATED LINKS
+

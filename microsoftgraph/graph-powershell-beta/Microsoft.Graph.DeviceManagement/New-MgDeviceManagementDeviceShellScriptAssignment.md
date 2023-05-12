@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdeviceshellscriptassignment
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdeviceshellscriptassignment
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementDeviceShellScriptAssignment
+# New-MgBetaDeviceManagementDeviceShellScriptAssignment
 
 ## SYNOPSIS
 Create new navigation property to assignments for deviceManagement
@@ -14,28 +14,28 @@ Create new navigation property to assignments for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDeviceShellScriptAssignment -DeviceShellScriptId <String>
+New-MgBetaDeviceManagementDeviceShellScriptAssignment -DeviceShellScriptId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementDeviceShellScriptAssignment -DeviceShellScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementScriptAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceManagementDeviceShellScriptAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementDeviceShellScriptAssignment -DeviceShellScriptId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementScriptAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementDeviceShellScriptAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementScriptAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementDeviceShellScriptAssignment -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementScriptAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDeviceManagementDeviceShellScriptAssignment -InputObject <IDeviceManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Create new navigation property to assignments for deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Contains properties used to assign a device management script to a group.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementScriptAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -80,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of deviceShellScript
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -92,11 +106,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -125,10 +139,10 @@ Accept wildcard characters: False
 
 ### -Target
 Base type for assignment targets.
-To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
+To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentTarget
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,11 +189,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptAssignment
+
 ## NOTES
 
 ALIASES
@@ -189,15 +206,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementScriptAssignment>`: Contains properties used to assign a device management script to a group.
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementScriptAssignment>`: Contains properties used to assign a device management script to a group.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -329,12 +346,13 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>`: Base type for assignment targets.
+`TARGET <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for assignment targets.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,49 +1,65 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamscheduleschedulinggroup
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamscheduleschedulinggroup
 schema: 2.0.0
 ---
 
-# Update-MgTeamScheduleSchedulingGroup
+# Update-MgBetaTeamScheduleSchedulingGroup
 
 ## SYNOPSIS
-Update the navigation property schedulingGroups in teams
+Replace an existing schedulingGroup.
+If the specified schedulingGroup doesn't exist, this method returns `404 Not found`.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgTeamScheduleSchedulingGroup -SchedulingGroupId <String> -TeamId <String>
+Update-MgBetaTeamScheduleSchedulingGroup -SchedulingGroupId <String> -TeamId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>]
- [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgTeamScheduleSchedulingGroup -SchedulingGroupId <String> -TeamId <String>
- -BodyParameter <IMicrosoftGraphSchedulingGroup1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### Update
 ```
-Update-MgTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphSchedulingGroup1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTeamScheduleSchedulingGroup -SchedulingGroupId <String> -TeamId <String>
+ -BodyParameter <IMicrosoftGraphSchedulingGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphSchedulingGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-Id <String>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property schedulingGroups in teams
+Replace an existing schedulingGroup.
+If the specified schedulingGroup doesn't exist, this method returns `404 Not found`.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,8 +67,8 @@ Update the navigation property schedulingGroups in teams
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -64,11 +80,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 schedulingGroup
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchedulingGroup1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedulingGroup
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -80,11 +96,11 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -99,8 +115,8 @@ The display name for the schedulingGroup.
 Required.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -111,12 +127,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -128,11 +144,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,26 +160,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,8 +178,8 @@ Accept wildcard characters: False
 The unique identifier of schedulingGroup
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -192,8 +193,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -208,8 +209,8 @@ The list of user IDs that are a member of the schedulingGroup.
 Required.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -223,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -239,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -255,11 +256,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedulingGroup1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedulingGroup
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedulingGroup
+
 ## NOTES
 
 ALIASES
@@ -269,7 +273,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSchedulingGroup1>`: schedulingGroup
+`BODYPARAMETER <IMicrosoftGraphSchedulingGroup>`: schedulingGroup
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -280,11 +284,11 @@ BODYPARAMETER `<IMicrosoftGraphSchedulingGroup1>`: schedulingGroup
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name for the schedulingGroup. Required.
   - `[UserIds <String[]>]`: The list of user IDs that are a member of the schedulingGroup. Required.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -293,7 +297,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -332,7 +336,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -342,3 +346,4 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+

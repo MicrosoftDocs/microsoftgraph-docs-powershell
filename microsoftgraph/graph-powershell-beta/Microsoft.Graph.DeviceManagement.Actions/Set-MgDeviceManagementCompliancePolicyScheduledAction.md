@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementcompliancepolicyscheduledaction
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementcompliancepolicyscheduledaction
 schema: 2.0.0
 ---
 
-# Set-MgDeviceManagementCompliancePolicyScheduledAction
+# Set-MgBetaDeviceManagementCompliancePolicyScheduledAction
 
 ## SYNOPSIS
 Invoke action setScheduledActions
@@ -14,32 +14,32 @@ Invoke action setScheduledActions
 
 ### SetExpanded (Default)
 ```
-Set-MgDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
+Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>]
- [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-WhatIf] [-Confirm]
+ [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
+Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -DeviceManagementCompliancePolicyId <String>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentityExpanded
-```
-Set-MgDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>]
- [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
+Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>]
+ [-ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Invoke action setScheduledActions
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -84,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementCompliancePolicy
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded, Set
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -97,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,10 +127,10 @@ Accept wildcard characters: False
 
 ### -ScheduledActions
 .
-To construct, please use Get-Help -Online and see NOTES section for SCHEDULEDACTIONS properties and create a hash table.
+To construct, see NOTES section for SCHEDULEDACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -131,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -163,11 +177,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule
+
 ## NOTES
 
 ALIASES
@@ -177,19 +194,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths13I2FdeDevicemanagementCompliancepoliciesDevicemanagementcompliancepolicyIdMicrosoftGraphSetscheduledactionsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ScheduledActions <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
     - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ActionType <DeviceManagementComplianceActionType?>]`: Scheduled Action Type Enum
       - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
       - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
       - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -233,7 +250,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -243,14 +259,15 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
-SCHEDULEDACTIONS <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SCHEDULEDACTIONS <IMicrosoftGraphDeviceManagementComplianceScheduledActionForRule[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to.
   - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceManagementComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. This collection can contain a maximum of 100 elements.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActionType <DeviceManagementComplianceActionType?>]`: Scheduled Action Type Enum
     - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to. This collection can contain a maximum of 100 elements.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
 ## RELATED LINKS
+

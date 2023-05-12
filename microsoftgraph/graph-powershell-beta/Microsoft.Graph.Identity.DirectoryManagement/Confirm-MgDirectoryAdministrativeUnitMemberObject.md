@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgdirectoryadministrativeunitmemberobject
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetadirectoryadministrativeunitmemberobject
 schema: 2.0.0
 ---
 
-# Confirm-MgDirectoryAdministrativeUnitMemberObject
+# Confirm-MgBetaDirectoryAdministrativeUnitMemberObject
 
 ## SYNOPSIS
 Invoke action checkMemberObjects
@@ -14,28 +14,28 @@ Invoke action checkMemberObjects
 
 ### CheckExpanded (Default)
 ```
-Confirm-MgDirectoryAdministrativeUnitMemberObject -AdministrativeUnitId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -AdministrativeUnitId <String>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Check
 ```
-Confirm-MgDirectoryAdministrativeUnitMemberObject -AdministrativeUnitId <String>
+Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -AdministrativeUnitId <String>
  -BodyParameter <IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentityExpanded
-```
-Confirm-MgDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
-Confirm-MgDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
+Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Invoke action checkMemberObjects
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -64,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of administrativeUnit
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -77,10 +91,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
@@ -95,7 +109,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -108,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,7 +140,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +156,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -158,11 +172,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -172,11 +189,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Ah7G7LDirectoryAdministrativeunitsAdministrativeunitIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -213,3 +230,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

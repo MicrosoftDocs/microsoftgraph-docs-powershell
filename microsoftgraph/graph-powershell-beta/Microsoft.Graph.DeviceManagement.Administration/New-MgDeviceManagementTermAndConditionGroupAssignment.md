@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementtermandconditiongroupassignment
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementtermandconditiongroupassignment
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementTermAndConditionGroupAssignment
+# New-MgBetaDeviceManagementTermAndConditionGroupAssignment
 
 ## SYNOPSIS
 Create new navigation property to groupAssignments for deviceManagement
@@ -14,28 +14,30 @@ Create new navigation property to groupAssignments for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementTermAndConditionGroupAssignment -TermsAndConditionsId <String>
+New-MgBetaDeviceManagementTermAndConditionGroupAssignment -TermsAndConditionsId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>]
- [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementTermAndConditionGroupAssignment -TermsAndConditionsId <String>
- -BodyParameter <IMicrosoftGraphTermsAndConditionsGroupAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceManagementTermAndConditionGroupAssignment -InputObject <IDeviceManagementAdministrationIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>]
- [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementTermAndConditionGroupAssignment -TermsAndConditionsId <String>
+ -BodyParameter <IMicrosoftGraphTermsAndConditionsGroupAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceManagementTermAndConditionGroupAssignment -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphTermsAndConditionsGroupAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementTermAndConditionGroupAssignment
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphTermsAndConditionsGroupAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDeviceManagementTermAndConditionGroupAssignment
+ -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-TargetGroupId <String>] [-TermsAndConditions <IMicrosoftGraphTermsAndConditions>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +45,27 @@ Create new navigation property to groupAssignments for deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -63,10 +79,10 @@ Accept wildcard characters: False
 ### -BodyParameter
 A termsAndConditionsGroupAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group.
 Users in the group will be required to accept the terms in order to have devices enrolled into Intune.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditionsGroupAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermsAndConditionsGroupAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -78,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -95,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,7 +129,7 @@ Accept wildcard characters: False
 Unique identifier of a group that the T&C policy is assigned to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,12 +142,12 @@ Accept wildcard characters: False
 
 ### -TermsAndConditions
 A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy.
-T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
+T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance.
 They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
-To construct, please use Get-Help -Online and see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
+To construct, see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTermsAndConditions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermsAndConditions
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of termsAndConditions
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -161,7 +177,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +193,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,11 +209,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsGroupAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermsAndConditionsGroupAssignment
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditionsGroupAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermsAndConditionsGroupAssignment
+
 ## NOTES
 
 ALIASES
@@ -207,24 +226,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTermsAndConditionsGroupAssignment>`: A termsAndConditionsGroupAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune.
+`BODYPARAMETER <IMicrosoftGraphTermsAndConditionsGroupAssignment>`: A termsAndConditionsGroupAssignment entity represents the assignment of a given Terms and Conditions (T&C) policy to a given group. Users in the group will be required to accept the terms in order to have devices enrolled into Intune.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[TargetGroupId <String>]`: Unique identifier of a group that the T&C policy is assigned to.
-  - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+  - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
     - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]`: The list of acceptance statuses for this T&C policy.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
       - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-      - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+      - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
       - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
       - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
-    - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment1[]>]`: The list of assignments for this T&C policy.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
         - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
@@ -239,7 +258,7 @@ BODYPARAMETER `<IMicrosoftGraphTermsAndConditionsGroupAssignment>`: A termsAndCo
     - `[Title <String>]`: Administrator-supplied title of the terms and conditions. This is shown to the user on prompts to accept the T&C policy.
     - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -296,20 +315,20 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-TERMSANDCONDITIONS `<IMicrosoftGraphTermsAndConditions>`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+`TERMSANDCONDITIONS <IMicrosoftGraphTermsAndConditions>`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AcceptanceStatement <String>]`: Administrator-supplied explanation of the terms and conditions, typically describing what it means to accept the terms and conditions set out in the T&C policy. This is shown to the user on prompts to accept the T&C policy.
   - `[AcceptanceStatuses <IMicrosoftGraphTermsAndConditionsAcceptanceStatus[]>]`: The list of acceptance statuses for this T&C policy.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
     - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
     - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
     - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
-  - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment1[]>]`: The list of assignments for this T&C policy.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+  - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
@@ -318,9 +337,9 @@ TERMSANDCONDITIONS `<IMicrosoftGraphTermsAndConditions>`: A termsAndConditions e
   - `[Description <String>]`: Administrator-supplied description of the T&C policy.
   - `[DisplayName <String>]`: Administrator-supplied name for the T&C policy.
   - `[GroupAssignments <IMicrosoftGraphTermsAndConditionsGroupAssignment[]>]`: The list of group assignments for this T&C policy.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[TargetGroupId <String>]`: Unique identifier of a group that the T&C policy is assigned to.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
   - `[LastModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[ModifiedDateTime <DateTime?>]`: DateTime the object was last modified.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
@@ -329,4 +348,3 @@ TERMSANDCONDITIONS `<IMicrosoftGraphTermsAndConditions>`: A termsAndConditions e
 
 ## RELATED LINKS
 
-## RELATED LINKS

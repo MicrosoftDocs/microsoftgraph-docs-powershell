@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceprivilegedaccess
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceprivilegedaccess
 schema: 2.0.0
 ---
 
-# Get-MgIdentityGovernancePrivilegedAccess
+# Get-MgBetaIdentityGovernancePrivilegedAccess
 
 ## SYNOPSIS
 Get privilegedAccess from identityGovernance
@@ -13,7 +13,7 @@ Get privilegedAccess from identityGovernance
 ## SYNTAX
 
 ```
-Get-MgIdentityGovernancePrivilegedAccess [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaIdentityGovernancePrivilegedAccess [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,13 +22,27 @@ Get privilegedAccess from identityGovernance
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccessRoot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccessRoot
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

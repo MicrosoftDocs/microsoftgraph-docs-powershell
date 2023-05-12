@@ -1,71 +1,71 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgsharelistitemversion
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharelistitemversion
 schema: 2.0.0
 ---
 
-# Update-MgShareListItemVersion
+# Update-MgBetaShareListItemVersion
 
 ## SYNOPSIS
 Update the navigation property versions in shares
 
 ## SYNTAX
 
-### UpdateExpanded3 (Default)
+### UpdateExpanded1 (Default)
 ```
-Update-MgShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String>
+Update-MgBetaShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String>
  [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateExpanded2
+### Update
 ```
-Update-MgShareListItemVersion -ListItemId <String> -ListItemVersionId <String> -SharedDriveItemId <String>
+Update-MgBetaShareListItemVersion -ListItemId <String> -ListItemVersionId <String> -SharedDriveItemId <String>
+ -BodyParameter <IMicrosoftGraphListItemVersion> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String>
+ -BodyParameter <IMicrosoftGraphListItemVersion> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateExpanded
+```
+Update-MgBetaShareListItemVersion -ListItemId <String> -ListItemVersionId <String> -SharedDriveItemId <String>
  [-AdditionalProperties <Hashtable>] [-Fields <Hashtable>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Publication <IMicrosoftGraphPublicationFacet>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Publication <IMicrosoftGraphPublicationFacet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update2
+### UpdateViaIdentity
 ```
-Update-MgShareListItemVersion -ListItemId <String> -ListItemVersionId <String> -SharedDriveItemId <String>
- -BodyParameter <IMicrosoftGraphListItemVersion> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update3
-```
-Update-MgShareListItemVersion -ListItemVersionId <String> -SharedDriveItemId <String>
- -BodyParameter <IMicrosoftGraphListItemVersion> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaShareListItemVersion -InputObject <IFilesIdentity>
+ -BodyParameter <IMicrosoftGraphListItemVersion> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded3
+### UpdateViaIdentity1
 ```
-Update-MgShareListItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaShareListItemVersion -InputObject <IFilesIdentity>
+ -BodyParameter <IMicrosoftGraphListItemVersion> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Fields <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded2
+### UpdateViaIdentityExpanded1
 ```
-Update-MgShareListItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaShareListItemVersion -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-Fields <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity3
-```
-Update-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphListItemVersion>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity2
-```
-Update-MgShareListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphListItemVersion>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Publication <IMicrosoftGraphPublicationFacet>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -73,14 +73,28 @@ Update the navigation property versions in shares
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -92,11 +106,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 listItemVersion
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphListItemVersion
-Parameter Sets: Update2, Update3, UpdateViaIdentity3, UpdateViaIdentity2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItemVersion
+Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -110,8 +124,8 @@ Accept wildcard characters: False
 fieldValueSet
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -122,12 +136,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -139,11 +153,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2, UpdateViaIdentity3, UpdateViaIdentity2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -155,11 +169,11 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -174,8 +188,8 @@ Date and time the version was last modified.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -189,8 +203,8 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded2, Update2
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -204,8 +218,8 @@ Accept wildcard characters: False
 The unique identifier of listItemVersion
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, Update2, Update3
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -215,28 +229,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Publication
 publicationFacet
-To construct, please use Get-Help -Online and see NOTES section for PUBLICATION properties and create a hash table.
+To construct, see NOTES section for PUBLICATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPublicationFacet
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, UpdateViaIdentityExpanded3, UpdateViaIdentityExpanded2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublicationFacet
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -250,8 +249,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded3, UpdateExpanded2, Update2, Update3
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -265,7 +264,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +280,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -297,11 +296,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphListItemVersion
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItemVersion
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphListItemVersion
+
 ## NOTES
 
 ALIASES
@@ -311,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
+`BODYPARAMETER <IMicrosoftGraphListItemVersion>`: listItemVersion
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -326,12 +328,12 @@ BODYPARAMETER `<IMicrosoftGraphListItemVersion>`: listItemVersion
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
     - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Fields <IMicrosoftGraphFieldValueSet>]`: fieldValueSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -357,7 +359,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -366,9 +368,10 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PUBLICATION `<IMicrosoftGraphPublicationFacet>`: publicationFacet
+`PUBLICATION <IMicrosoftGraphPublicationFacet>`: publicationFacet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Level <String>]`: The state of publication for this document. Either published or checkout. Read-only.
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+

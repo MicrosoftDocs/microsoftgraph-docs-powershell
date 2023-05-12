@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectory
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectory
 schema: 2.0.0
 ---
 
-# Update-MgDirectory
+# Update-MgBetaDirectory
 
 ## SYNOPSIS
 Update directory
@@ -14,25 +14,23 @@ Update directory
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDirectory [-AdditionalProperties <Hashtable>]
- [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit1[]>] [-AttributeSets <IMicrosoftGraphAttributeSet[]>]
+Update-MgBetaDirectory [-AdditionalProperties <Hashtable>]
+ [-AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>] [-AttributeSets <IMicrosoftGraphAttributeSet[]>]
  [-CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]
  [-DeletedItems <IMicrosoftGraphDirectoryObject[]>]
  [-FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy[]>]
  [-FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>] [-Id <String>]
  [-ImpactedResources <IMicrosoftGraphImpactedResource[]>]
  [-InboundSharedUserProfiles <IMicrosoftGraphInboundSharedUserProfile[]>]
- [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization1[]>]
+ [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
  [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
- [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectory -BodyParameter <IMicrosoftGraphDirectory> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDirectory -BodyParameter <IMicrosoftGraphDirectory> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,13 +38,27 @@ Update directory
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -59,10 +71,10 @@ Accept wildcard characters: False
 
 ### -AdministrativeUnits
 Conceptual container for user and group directory objects.
-To construct, please use Get-Help -Online and see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
+To construct, see NOTES section for ADMINISTRATIVEUNITS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAdministrativeUnit1[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAdministrativeUnit[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -75,10 +87,10 @@ Accept wildcard characters: False
 
 ### -AttributeSets
 Group of related custom security attribute definitions.
-To construct, please use Get-Help -Online and see NOTES section for ATTRIBUTESETS properties and create a hash table.
+To construct, see NOTES section for ATTRIBUTESETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeSet[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeSet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -91,10 +103,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directory
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
 Parameter Sets: Update
 Aliases:
 
@@ -107,10 +119,10 @@ Accept wildcard characters: False
 
 ### -CustomSecurityAttributeDefinitions
 Schema of a custom security attributes (key-value pairs).
-To construct, please use Get-Help -Online and see NOTES section for CUSTOMSECURITYATTRIBUTEDEFINITIONS properties and create a hash table.
+To construct, see NOTES section for CUSTOMSECURITYATTRIBUTEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomSecurityAttributeDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomSecurityAttributeDefinition[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -122,13 +134,11 @@ Accept wildcard characters: False
 ```
 
 ### -DeletedItems
-Recently deleted items.
-Read-only.
-Nullable.
-To construct, please use Get-Help -Online and see NOTES section for DELETEDITEMS properties and create a hash table.
+.
+To construct, see NOTES section for DELETEDITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -141,10 +151,10 @@ Accept wildcard characters: False
 
 ### -FeatureRolloutPolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
+To construct, see NOTES section for FEATUREROLLOUTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFeatureRolloutPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -157,10 +167,10 @@ Accept wildcard characters: False
 
 ### -FederationConfigurations
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
-To construct, please use Get-Help -Online and see NOTES section for FEDERATIONCONFIGURATIONS properties and create a hash table.
+To construct, see NOTES section for FEDERATIONCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityProviderBase[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityProviderBase[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -172,11 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -189,10 +199,10 @@ Accept wildcard characters: False
 
 ### -ImpactedResources
 .
-To construct, please use Get-Help -Online and see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
+To construct, see NOTES section for IMPACTEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImpactedResource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -206,10 +216,10 @@ Accept wildcard characters: False
 ### -InboundSharedUserProfiles
 A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for INBOUNDSHAREDUSERPROFILES properties and create a hash table.
+To construct, see NOTES section for INBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInboundSharedUserProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundSharedUserProfile[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -222,10 +232,10 @@ Accept wildcard characters: False
 
 ### -OnPremisesSynchronization
 A container for on-premises directory synchronization functionalities that are available for the organization.
-To construct, please use Get-Help -Online and see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
+To construct, see NOTES section for ONPREMISESSYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesDirectorySynchronization1[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesDirectorySynchronization[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -238,26 +248,11 @@ Accept wildcard characters: False
 
 ### -OutboundSharedUserProfiles
 .
-To construct, please use Get-Help -Online and see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and create a hash table.
+To construct, see NOTES section for OUTBOUNDSHAREDUSERPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutboundSharedUserProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutboundSharedUserProfile[]
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -269,10 +264,10 @@ Accept wildcard characters: False
 
 ### -Recommendations
 List of recommended improvements to improve tenant posture.
-To construct, please use Get-Help -Online and see NOTES section for RECOMMENDATIONS properties and create a hash table.
+To construct, see NOTES section for RECOMMENDATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecommendation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -285,10 +280,10 @@ Accept wildcard characters: False
 
 ### -SharedEmailDomains
 .
-To construct, please use Get-Help -Online and see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
+To construct, see NOTES section for SHAREDEMAILDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharedEmailDomain[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedEmailDomain[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -303,7 +298,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -319,7 +314,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -335,10 +330,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectory
+
 ## NOTES
 
 ALIASES
@@ -348,19 +345,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit1\[]>: Conceptual container for user and group directory objects.
+`ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit[]>`: Conceptual container for user and group directory objects.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
   - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[IsMemberManagementRestricted <Boolean?>]`: 
   - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this administrative unit.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
     - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
@@ -369,27 +366,27 @@ ADMINISTRATIVEUNITS <IMicrosoftGraphAdministrativeUnit1\[]>: Conceptual containe
       - `[Id <String>]`: Unique identifier for the identity.
   - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, the default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
 
-ATTRIBUTESETS <IMicrosoftGraphAttributeSet\[]>: Group of related custom security attribute definitions.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ATTRIBUTESETS <IMicrosoftGraphAttributeSet[]>`: Group of related custom security attribute definitions.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later.
   - `[MaxAttributesPerSet <Int32?>]`: Maximum number of custom security attributes that can be defined in this attribute set. Default value is null. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.
 
-BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
+`BODYPARAMETER <IMicrosoftGraphDirectory>`: directory
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AdministrativeUnits <IMicrosoftGraphAdministrativeUnit1[]>]`: Conceptual container for user and group directory objects.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[AdministrativeUnits <IMicrosoftGraphAdministrativeUnit[]>]`: Conceptual container for user and group directory objects.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: An optional description for the administrative unit. Supports $filter (eq, ne, in, startsWith), $search.
     - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[IsMemberManagementRestricted <Boolean?>]`: 
     - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[ScopedRoleMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Scoped-role members of this administrative unit.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
       - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
       - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
@@ -398,13 +395,13 @@ BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
         - `[Id <String>]`: Unique identifier for the identity.
     - `[Visibility <String>]`: Controls whether the administrative unit and its members are hidden or public. Can be set to HiddenMembership or Public. If not set, the default behavior is Public. When set to HiddenMembership, only members of the administrative unit can list other members of the administrative unit.
   - `[AttributeSets <IMicrosoftGraphAttributeSet[]>]`: Group of related custom security attribute definitions.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later.
     - `[MaxAttributesPerSet <Int32?>]`: Maximum number of custom security attributes that can be defined in this attribute set. Default value is null. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.
   - `[CustomSecurityAttributeDefinitions <IMicrosoftGraphCustomSecurityAttributeDefinition[]>]`: Schema of a custom security attributes (key-value pairs).
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query. For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
     - `[AttributeSet <String>]`: Name of the attribute set. Case insensitive.
     - `[Description <String>]`: Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Can be changed later.
@@ -414,9 +411,9 @@ BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
     - `[Status <String>]`: Specifies whether the custom security attribute is active or deactivated. Acceptable values are Available and Deprecated. Can be changed later.
     - `[Type <String>]`: Data type for the custom security attribute values. Supported types are Boolean, Integer, and String. Cannot be changed later.
     - `[UsePreDefinedValuesOnly <Boolean?>]`: Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true. If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
-  - `[DeletedItems <IMicrosoftGraphDirectoryObject[]>]`: Recently deleted items. Read-only. Nullable.
+  - `[DeletedItems <IMicrosoftGraphDirectoryObject[]>]`: 
   - `[FeatureRolloutPolicies <IMicrosoftGraphFeatureRolloutPolicy[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
     - `[Description <String>]`: A description for this feature rollout policy.
     - `[DisplayName <String>]`: The display name for this  feature rollout policy.
@@ -424,14 +421,14 @@ BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
     - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
     - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
   - `[FederationConfigurations <IMicrosoftGraphIdentityProviderBase[]>]`: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the identity provider.
   - `[ImpactedResources <IMicrosoftGraphImpactedResource[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
     - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-      - `[Key <String>]`: Key for the key-value pair.
-      - `[Value <String>]`: Value for the key-value pair.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+      - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
     - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
     - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
     - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -449,9 +446,9 @@ BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
     - `[HomeTenantId <String>]`: The home tenant id of the external user. Read-only.
     - `[UserId <String>]`: The object id of the external user. Read-only.
     - `[UserPrincipalName <String>]`: The user principal name (UPN) of the external user. Read-only.
-  - `[OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization1[]>]`: A container for on-premises directory synchronization functionalities that are available for the organization.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1>]`: onPremisesDirectorySynchronizationConfiguration
+  - `[OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]`: A container for on-premises directory synchronization functionalities that are available for the organization.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AccidentalDeletionPrevention <IMicrosoftGraphOnPremisesAccidentalDeletionPrevention>]`: onPremisesAccidentalDeletionPrevention
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -511,15 +508,15 @@ BODYPARAMETER `<IMicrosoftGraphDirectory>`: directory
     - `[RecommendationType <String>]`: recommendationType
     - `[RemediationImpact <String>]`: Description of the impact on users of the remediation. Only applies to recommendations with category set to identitySecureScore.
     - `[Status <String>]`: recommendationStatus
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ProvisioningStatus <String>]`: 
 
-CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition\[]>: Schema of a custom security attributes (key-value pairs).
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefinition[]>`: Schema of a custom security attributes (key-value pairs).
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedValues <IMicrosoftGraphAllowedValue[]>]`: Values that are predefined for this custom security attribute.This navigation property is not returned by default and must be specified in an $expand query. For example, /directory/customSecurityAttributeDefinitions?$expand=allowedValues.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
   - `[AttributeSet <String>]`: Name of the attribute set. Case insensitive.
   - `[Description <String>]`: Description of the custom security attribute. Can be up to 128 characters long and include Unicode characters. Can be changed later.
@@ -530,14 +527,14 @@ CUSTOMSECURITYATTRIBUTEDEFINITIONS <IMicrosoftGraphCustomSecurityAttributeDefini
   - `[Type <String>]`: Data type for the custom security attribute values. Supported types are Boolean, Integer, and String. Cannot be changed later.
   - `[UsePreDefinedValuesOnly <Boolean?>]`: Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true. If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
-DELETEDITEMS <IMicrosoftGraphDirectoryObject\[]>: Recently deleted items. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DELETEDITEMS <IMicrosoftGraphDirectoryObject[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-FEATUREROLLOUTPOLICIES <IMicrosoftGraphFeatureRolloutPolicy\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`FEATUREROLLOUTPOLICIES <IMicrosoftGraphFeatureRolloutPolicy[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Description <String>]`: A description for this feature rollout policy.
   - `[DisplayName <String>]`: The display name for this  feature rollout policy.
@@ -545,16 +542,16 @@ FEATUREROLLOUTPOLICIES <IMicrosoftGraphFeatureRolloutPolicy\[]>: .
   - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
   - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
 
-FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase\[]>: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`FEDERATIONCONFIGURATIONS <IMicrosoftGraphIdentityProviderBase[]>`: Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identity provider.
 
-IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-    - `[Key <String>]`: Key for the key-value pair.
-    - `[Value <String>]`: Value for the key-value pair.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+    - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
   - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
   - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
   - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -568,15 +565,15 @@ IMPACTEDRESOURCES <IMicrosoftGraphImpactedResource\[]>: .
   - `[Status <String>]`: recommendationStatus
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
-INBOUNDSHAREDUSERPROFILES <IMicrosoftGraphInboundSharedUserProfile\[]>: A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.
+`INBOUNDSHAREDUSERPROFILES <IMicrosoftGraphInboundSharedUserProfile[]>`: A collection of external Azure AD users whose profile data has been shared with the Azure AD tenant. Nullable.
   - `[DisplayName <String>]`: The name displayed in the address book for teh user at the time when the sharing record was created. Read-only.
   - `[HomeTenantId <String>]`: The home tenant id of the external user. Read-only.
   - `[UserId <String>]`: The object id of the external user. Read-only.
   - `[UserPrincipalName <String>]`: The user principal name (UPN) of the external user. Read-only.
 
-ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization1\[]>: A container for on-premises directory synchronization functionalities that are available for the organization.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration1>]`: onPremisesDirectorySynchronizationConfiguration
+`ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization[]>`: A container for on-premises directory synchronization functionalities that are available for the organization.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Configuration <IMicrosoftGraphOnPremisesDirectorySynchronizationConfiguration>]`: onPremisesDirectorySynchronizationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AccidentalDeletionPrevention <IMicrosoftGraphOnPremisesAccidentalDeletionPrevention>]`: onPremisesAccidentalDeletionPrevention
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -606,12 +603,12 @@ ONPREMISESSYNCHRONIZATION <IMicrosoftGraphOnPremisesDirectorySynchronization1\[]
     - `[UserForcePasswordChangeOnLogonEnabled <Boolean?>]`: Used to indicate that feature to force password change for a user on logon is enabled while synchronizing on-premise credentials.
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
-OUTBOUNDSHAREDUSERPROFILES <IMicrosoftGraphOutboundSharedUserProfile\[]>: .
+`OUTBOUNDSHAREDUSERPROFILES <IMicrosoftGraphOutboundSharedUserProfile[]>`: .
   - `[Tenants <IMicrosoftGraphTenantReference[]>]`: The collection of external Azure AD tenants that the user has shared profile data with. Read-only.
     - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
   - `[UserId <String>]`: The object id of the external user. Read-only.
 
-RECOMMENDATIONS <IMicrosoftGraphRecommendation\[]>: List of recommended improvements to improve tenant posture.
+`RECOMMENDATIONS <IMicrosoftGraphRecommendation[]>`: List of recommended improvements to improve tenant posture.
   - `[ActionSteps <IMicrosoftGraphActionStep[]>]`: List of actions to take to complete a recommendation.
     - `[ActionUrl <IMicrosoftGraphActionUrl>]`: actionUrl
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -628,11 +625,11 @@ RECOMMENDATIONS <IMicrosoftGraphRecommendation\[]>: List of recommended improvem
   - `[ImpactStartDateTime <DateTime?>]`: The future date and time when a recommendation should be completed.
   - `[ImpactType <String>]`: Indicates the scope of impact of a recommendation. Tenant level indicates that the recommendation impacts the whole tenant. Other possible values include users, applications.
   - `[ImpactedResources <IMicrosoftGraphImpactedResource[]>]`: The list of directory objects associated with the recommendation.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
     - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-      - `[Key <String>]`: Key for the key-value pair.
-      - `[Value <String>]`: Value for the key-value pair.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+      - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
     - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
     - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
     - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -655,12 +652,11 @@ RECOMMENDATIONS <IMicrosoftGraphRecommendation\[]>: List of recommended improvem
   - `[RecommendationType <String>]`: recommendationType
   - `[RemediationImpact <String>]`: Description of the impact on users of the remediation. Only applies to recommendations with category set to identitySecureScore.
   - `[Status <String>]`: recommendationStatus
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-SHAREDEMAILDOMAINS <IMicrosoftGraphSharedEmailDomain\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SHAREDEMAILDOMAINS <IMicrosoftGraphSharedEmailDomain[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ProvisioningStatus <String>]`: 
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,58 +1,60 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrolememberbyref
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrolememberbyref
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# New-MgDirectoryRoleMemberByRef
+# New-MgBetaDirectoryRoleMemberByRef
 
 ## SYNOPSIS
-Create new navigation property ref to members for directoryRoles
+Create a new directory role member.
+You can use both the object ID and template ID of the **directoryRole** with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
+For details, see Role template IDs.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryRoleMemberByRef -DirectoryRoleId <String> [-AdditionalProperties <Hashtable>]
- [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId <String> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryRoleMemberByRef -DirectoryRoleId <String> -BodyParameter <IReferenceCreate> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-OdataId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId <String> -BodyParameter <IReferenceCreate> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IReferenceCreate> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDirectoryRoleMemberByRef -InputObject <IIdentityDirectoryManagementIdentity> -OdataId <String>
+ [-AdditionalProperties <Hashtable>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property ref to members for directoryRoles
+Create a new directory role member.
+You can use both the object ID and template ID of the **directoryRole** with this API.
+The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
+For details, see Role template IDs.
 
 ## EXAMPLES
 
-### Example 1: Add a member to a diretory role
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 $DirObject = @{
   "@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/3d939dc2-d0a0-4d4d-b3f4-6bb75ce6ff6e"
   }
-
-New-MgDirectoryRoleMemberByRef -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948' -BodyParameter $DirObject
 ```
 
-The first command sets the value for the directory object variable $DirObject.
-The second command assigns the defined directory object the directory role defined by the DirectoryRoleId
+New-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948' -BodyParameter $DirObject
 
 ## PARAMETERS
 
@@ -60,7 +62,7 @@ The second command assigns the defined directory object the directory role defin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -73,10 +75,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IReferenceCreate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReferenceCreate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -91,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of directoryRole
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -104,11 +106,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -119,14 +121,15 @@ Accept wildcard characters: False
 ```
 
 ### -OdataId
-.
+The entity reference URL of the resource.
+For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -137,7 +140,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -152,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -168,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -184,11 +187,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IReferenceCreate
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IReferenceCreate
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -198,11 +204,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IReferenceCreate>`: .
+`BODYPARAMETER <IReferenceCreate>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[OdataId <String>]`: 
+  - `OdataId <String>`: The entity reference URL of the resource. For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -239,3 +245,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileskill
+external help file:
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileskill
 schema: 2.0.0
 ---
 
-# New-MgUserProfileSkill
+# New-MgBetaUserProfileSkill
 
 ## SYNOPSIS
 Use this API to create a new skillProficiency object in a user's profile.
@@ -14,34 +14,35 @@ Use this API to create a new skillProficiency object in a user's profile.
 
 ### CreateExpanded (Default)
 ```
-New-MgUserProfileSkill -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
+New-MgBetaUserProfileSkill -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
  [-Categories <String[]>] [-CollaborationTags <String[]>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
  [-LastModifiedDateTime <DateTime>] [-Proficiency <String>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-ThumbnailUrl <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ThumbnailUrl <String>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserProfileSkill -UserId <String> -BodyParameter <IMicrosoftGraphSkillProficiency> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserProfileSkill -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowedAudiences <String>] [-Categories <String[]>] [-CollaborationTags <String[]>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-Proficiency <String>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-ThumbnailUrl <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileSkill -UserId <String> -BodyParameter <IMicrosoftGraphSkillProficiency> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphSkillProficiency>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphSkillProficiency>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+ [-AllowedAudiences <String>] [-Categories <String[]>] [-CollaborationTags <String[]>]
+ [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-DisplayName <String>]
+ [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Proficiency <String>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-ThumbnailUrl <String>] [-WebUrl <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,9 +50,9 @@ Use this API to create a new skillProficiency object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserProfileSkill Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Categories = @(
 		"Professional"
@@ -64,11 +65,10 @@ $params = @{
 	)
 }
 # A UPN can also be used as -UserId.
-New-MgUserProfileSkill -UserId $userId -BodyParameter $params
+New-MgBetaUserProfileSkill -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserProfileSkill Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -76,7 +76,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +91,7 @@ Accept wildcard characters: False
 allowedAudiences
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -104,10 +104,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 skillProficiency
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSkillProficiency
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSkillProficiency
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -122,7 +122,7 @@ Accept wildcard characters: False
 Contains categories a user has associated with the skill (for example, personal, professional, hobby).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +138,7 @@ Contains experience scenario tags a user has associated with the interest.
 Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wantsToImprove.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -151,10 +151,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -169,7 +169,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +184,7 @@ Accept wildcard characters: False
 Contains a friendly name for the skill.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -196,11 +196,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -213,10 +213,10 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceData
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -229,11 +229,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -247,7 +247,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -260,10 +260,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +278,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +293,7 @@ Accept wildcard characters: False
 skillProficiencyLevel
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -306,10 +306,10 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonDataSources
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonDataSources
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +324,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -339,8 +339,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -354,7 +354,7 @@ Accept wildcard characters: False
 Contains a link to an information source about the skill.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -369,7 +369,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -385,7 +385,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -401,11 +401,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkillProficiency
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSkillProficiency
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSkillProficiency
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSkillProficiency
+
 ## NOTES
 
 ALIASES
@@ -415,7 +418,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSkillProficiency>`: skillProficiency
+`BODYPARAMETER <IMicrosoftGraphSkillProficiency>`: skillProficiency
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -437,7 +440,7 @@ BODYPARAMETER `<IMicrosoftGraphSkillProficiency>`: skillProficiency
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Categories <String[]>]`: Contains categories a user has associated with the skill (for example, personal, professional, hobby).
   - `[CollaborationTags <String[]>]`: Contains experience scenario tags a user has associated with the interest. Allowed values in the collection are: askMeAbout, ableToMentor, wantsToLearn, wantsToImprove.
   - `[DisplayName <String>]`: Contains a friendly name for the skill.
@@ -445,7 +448,7 @@ BODYPARAMETER `<IMicrosoftGraphSkillProficiency>`: skillProficiency
   - `[ThumbnailUrl <String>]`: 
   - `[WebUrl <String>]`: Contains a link to an information source about the skill.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -454,12 +457,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -477,16 +480,13 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -495,8 +495,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+

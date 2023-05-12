@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatsubmissionemailthreat
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatsubmissionemailthreat
 schema: 2.0.0
 ---
 
-# Update-MgSecurityThreatSubmissionEmailThreat
+# Update-MgBetaSecurityThreatSubmissionEmailThreat
 
 ## SYNOPSIS
 Update the navigation property emailThreats in security
@@ -14,44 +14,42 @@ Update the navigation property emailThreats in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <String>
+Update-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <String>
  [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
  [-AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>] [-Category <String>]
  [-ClientSource <String>] [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InternetMessageId <String>] [-OriginalCategory <String>]
  [-ReceivedDateTime <DateTime>] [-RecipientEmailAddress <String>]
- [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Sender <String>] [-SenderIP <String>] [-Source <String>]
- [-Status <String>] [-Subject <String>]
+ [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Sender <String>] [-SenderIP <String>]
+ [-Source <String>] [-Status <String>] [-Subject <String>]
  [-TenantAllowOrBlockListAction <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>] [-TenantId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <String>
- -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityThreatSubmissionEmailThreat -EmailThreatSubmissionId <String>
+ -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]
  [-AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>] [-Category <String>]
  [-ClientSource <String>] [-ContentType <String>] [-CreatedBy <IMicrosoftGraphSecuritySubmissionUserIdentity>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-InternetMessageId <String>] [-OriginalCategory <String>]
  [-ReceivedDateTime <DateTime>] [-RecipientEmailAddress <String>]
- [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Sender <String>] [-SenderIP <String>] [-Source <String>]
- [-Status <String>] [-Subject <String>]
+ [-Result <IMicrosoftGraphSecuritySubmissionResult>] [-Sender <String>] [-SenderIP <String>]
+ [-Source <String>] [-Status <String>] [-Subject <String>]
  [-TenantAllowOrBlockListAction <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>] [-TenantId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityThreatSubmissionEmailThreat -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityEmailThreatSubmission> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,13 +57,27 @@ Update the navigation property emailThreats in security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,10 +90,10 @@ Accept wildcard characters: False
 
 ### -AdminReview
 submissionAdminReview
-To construct, please use Get-Help -Online and see NOTES section for ADMINREVIEW properties and create a hash table.
+To construct, see NOTES section for ADMINREVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubmissionAdminReview
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionAdminReview
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,10 +106,10 @@ Accept wildcard characters: False
 
 ### -AttackSimulationInfo
 attackSimulationInfo
-To construct, please use Get-Help -Online and see NOTES section for ATTACKSIMULATIONINFO properties and create a hash table.
+To construct, see NOTES section for ATTACKSIMULATIONINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityAttackSimulationInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAttackSimulationInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,10 +122,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 emailThreatSubmission
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEmailThreatSubmission
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -128,7 +140,7 @@ Accept wildcard characters: False
 submissionCategory
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +155,7 @@ Accept wildcard characters: False
 submissionClientSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,7 +170,7 @@ Accept wildcard characters: False
 submissionContentType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,10 +183,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 submissionUserIdentity
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubmissionUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionUserIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +202,7 @@ Specifies when the threat submission was created.
 Supports $filter = createdDateTime ge 2022-01-01T00:00:00Z and createdDateTime lt 2022-01-02T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,8 +217,8 @@ Accept wildcard characters: False
 The unique identifier of emailThreatSubmission
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -217,11 +229,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,11 +246,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -253,7 +265,7 @@ Specifies the internet message id of the email being submitted.
 This information is present in the email header.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -268,23 +280,8 @@ Accept wildcard characters: False
 submissionCategory
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -298,7 +295,7 @@ Accept wildcard characters: False
 Specifies the date and time stamp when the email was received.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -313,7 +310,7 @@ Accept wildcard characters: False
 Specifies the email address (in smtp format) of the recipient who received the email.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,10 +323,10 @@ Accept wildcard characters: False
 
 ### -Result
 submissionResult
-To construct, please use Get-Help -Online and see NOTES section for RESULT properties and create a hash table.
+To construct, see NOTES section for RESULT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecuritySubmissionResult
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecuritySubmissionResult
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -344,7 +341,7 @@ Accept wildcard characters: False
 Specifies the email address of the sender.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -359,7 +356,7 @@ Accept wildcard characters: False
 Specifies the IP address of the sender.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -374,7 +371,7 @@ Accept wildcard characters: False
 submissionSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -389,7 +386,7 @@ Accept wildcard characters: False
 longRunningOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -404,7 +401,7 @@ Accept wildcard characters: False
 Specifies the subject of the email .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -417,10 +414,10 @@ Accept wildcard characters: False
 
 ### -TenantAllowOrBlockListAction
 tenantAllowOrBlockListAction
-To construct, please use Get-Help -Online and see NOTES section for TENANTALLOWORBLOCKLISTACTION properties and create a hash table.
+To construct, see NOTES section for TENANTALLOWORBLOCKLISTACTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityTenantAllowOrBlockListAction
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTenantAllowOrBlockListAction
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -437,7 +434,7 @@ Not required when created using a POST operation.
 It is extracted from the token of the post API call.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -452,7 +449,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -468,7 +465,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -484,11 +481,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEmailThreatSubmission
+
 ## NOTES
 
 ALIASES
@@ -498,20 +498,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADMINREVIEW `<IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
+`ADMINREVIEW <IMicrosoftGraphSecuritySubmissionAdminReview>`: submissionAdminReview
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReviewBy <String>]`: Specifies who reviewed the email. The identification is an email ID or other identity strings.
   - `[ReviewDateTime <DateTime?>]`: Specifies the date time when the review occurred.
   - `[ReviewResult <String>]`: submissionResultCategory
 
-ATTACKSIMULATIONINFO `<IMicrosoftGraphSecurityAttackSimulationInfo>`: attackSimulationInfo
+`ATTACKSIMULATIONINFO <IMicrosoftGraphSecurityAttackSimulationInfo>`: attackSimulationInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
   - `[AttackSimDurationTime <TimeSpan?>]`: The duration (in time) for the attack simulation.
   - `[AttackSimId <String>]`: The activity ID for the attack simulation.
   - `[AttackSimUserId <String>]`: The unique identifier for the user who got the attack simulation email.
 
-BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmission
+`BODYPARAMETER <IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminReview <IMicrosoftGraphSecuritySubmissionAdminReview>]`: submissionAdminReview
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -539,7 +539,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmi
   - `[Source <String>]`: submissionSource
   - `[Status <String>]`: longRunningOperationStatus
   - `[TenantId <String>]`: Indicates the tenant id of the submitter. Not required when created using a POST operation. It is extracted from the token of the post API call.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AttackSimulationInfo <IMicrosoftGraphSecurityAttackSimulationInfo>]`: attackSimulationInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AttackSimDateTime <DateTime?>]`: The date and time of the attack simulation.
@@ -565,13 +565,13 @@ BODYPARAMETER `<IMicrosoftGraphSecurityEmailThreatSubmission>`: emailThreatSubmi
       - `[Status <String>]`: longRunningOperationStatus
       - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
-CREATEDBY `<IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
+`CREATEDBY <IMicrosoftGraphSecuritySubmissionUserIdentity>`: submissionUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
   - `[Email <String>]`: The email of user who is making the submission when logged in (delegated token case).
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -629,7 +629,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
+`RESULT <IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Category <String>]`: submissionResultCategory
   - `[Detail <String>]`: submissionResultDetail
@@ -639,7 +639,7 @@ RESULT `<IMicrosoftGraphSecuritySubmissionResult>`: submissionResult
   - `[DetectedUrls <String[]>]`: Specifes the URLs detected by Microsoft in the submitted email.
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
-TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListAction>`: tenantAllowOrBlockListAction
+`TENANTALLOWORBLOCKLISTACTION <IMicrosoftGraphSecurityTenantAllowOrBlockListAction>`: tenantAllowOrBlockListAction
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Action <String>]`: tenantAllowBlockListAction
   - `[ExpirationDateTime <DateTime?>]`: Specifies when the tenant allow-block-list expires in date time.
@@ -653,4 +653,3 @@ TENANTALLOWORBLOCKLISTACTION `<IMicrosoftGraphSecurityTenantAllowOrBlockListActi
 
 ## RELATED LINKS
 
-## RELATED LINKS

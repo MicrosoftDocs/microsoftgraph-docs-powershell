@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicyauthenticationstrengthpolicyallowedcombination
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicyauthenticationstrengthpolicyallowedcombination
 schema: 2.0.0
 ---
 
-# Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination
+# Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination
 
 ## SYNOPSIS
 Update the allowedCombinations property of an authenticationStrengthPolicy object.
@@ -15,30 +15,30 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId <String>
- [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>] [-WhatIf] [-Confirm]
+Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId <String>
+Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -AuthenticationStrengthPolicyId <String>
  -BodyParameter <IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPolicyAuthenticationStrengthPolicyAllowedCombination -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPolicyAuthenticationStrengthPolicyAllowedCombination -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AllowedCombinations <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ To update other properties of an authenticationStrengthPolicy object, use the Up
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationStrengthPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -96,10 +110,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -112,11 +126,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -146,7 +160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,11 +176,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUpdateAllowedCombinationsResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUpdateAllowedCombinationsResult
+
 ## NOTES
 
 ALIASES
@@ -176,11 +193,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Uurx0PoliciesAuthenticationstrengthpoliciesAuthenticationstrengthpolicyIdMicrosoftGraphUpdateallowedcombinationsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedCombinations <String[]>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -217,6 +234,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -255,3 +273,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

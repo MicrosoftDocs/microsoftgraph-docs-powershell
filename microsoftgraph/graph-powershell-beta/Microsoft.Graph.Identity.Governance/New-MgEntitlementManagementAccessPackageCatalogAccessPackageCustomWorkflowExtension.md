@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackagecatalogaccesspackagecustomworkflowextension
 schema: 2.0.0
 ---
 
-# New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
+# New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
 Create new navigation property to accessPackageCustomWorkflowExtensions for identityGovernance
@@ -14,36 +14,36 @@ Create new navigation property to accessPackageCustomWorkflowExtensions for iden
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
+New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
  -AccessPackageCatalogId <String> [-AdditionalProperties <Hashtable>]
  [-AuthenticationConfiguration <Hashtable>]
  [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
- [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
- -AccessPackageCatalogId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>]
- [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
- [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
+ -AccessPackageCatalogId <String> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
- -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
+ -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomCalloutExtension> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-AuthenticationConfiguration <Hashtable>]
+ [-ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>] [-Description <String>]
+ [-DisplayName <String>] [-EndpointConfiguration <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,14 +51,28 @@ Create new navigation property to accessPackageCustomWorkflowExtensions for iden
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -72,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +101,7 @@ Accept wildcard characters: False
 customExtensionAuthenticationConfiguration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,10 +114,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 customCalloutExtension
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomCalloutExtension
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -116,10 +130,10 @@ Accept wildcard characters: False
 
 ### -ClientConfiguration
 customExtensionClientConfiguration
-To construct, please use Get-Help -Online and see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for CLIENTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomExtensionClientConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionClientConfiguration
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +148,7 @@ Accept wildcard characters: False
 Description for the customCalloutExtension object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +163,7 @@ Accept wildcard characters: False
 Display name for the customCalloutExtension object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -164,7 +178,7 @@ Accept wildcard characters: False
 customExtensionEndpointConfiguration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,11 +190,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -193,11 +207,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -211,7 +225,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -227,7 +241,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -243,11 +257,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
+
 ## NOTES
 
 ALIASES
@@ -257,9 +274,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtension
+`BODYPARAMETER <IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtension
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
@@ -270,11 +287,11 @@ BODYPARAMETER `<IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtension
   - `[EndpointConfiguration <IMicrosoftGraphCustomExtensionEndpointConfiguration>]`: customExtensionEndpointConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-CLIENTCONFIGURATION `<IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
+`CLIENTCONFIGURATION <IMicrosoftGraphCustomExtensionClientConfiguration>`: customExtensionClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TimeoutInMilliseconds <Int32?>]`: The max duration in milliseconds that Azure AD will wait for a response from the logic app before it shuts down the connection. The valid range is between 200 and 2000 milliseconds. Default duration is 1000.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -282,8 +299,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -308,7 +323,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -346,12 +360,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -364,3 +390,4 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

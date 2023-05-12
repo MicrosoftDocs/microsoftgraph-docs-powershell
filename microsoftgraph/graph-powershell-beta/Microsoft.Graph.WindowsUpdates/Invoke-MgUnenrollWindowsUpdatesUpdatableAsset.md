@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatesupdatableasset
+external help file:
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/invoke-mgbetaunenrollwindowsupdatesupdatableasset
 schema: 2.0.0
 ---
 
-# Invoke-MgUnenrollWindowsUpdatesUpdatableAsset
+# Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
 Invoke action unenrollAssets
@@ -14,16 +14,16 @@ Invoke action unenrollAssets
 
 ### UnenrollExpanded (Default)
 ```
-Invoke-MgUnenrollWindowsUpdatesUpdatableAsset [-AdditionalProperties <Hashtable>]
- [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-UpdateCategory <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset [-AdditionalProperties <Hashtable>]
+ [-Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>] [-UpdateCategory <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Unenroll
 ```
-Invoke-MgUnenrollWindowsUpdatesUpdatableAsset
- -BodyParameter <IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset
+ -Body <IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,9 +31,9 @@ Invoke action unenrollAssets
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
 	UpdateCategory = "String"
 	Assets = @(
@@ -43,8 +43,10 @@ $params = @{
 		}
 	)
 }
-Invoke-MgUnenrollWindowsUpdatesUpdatableAsset -BodyParameter $params
+Invoke-MgBetaUnenrollWindowsUpdatesUpdatableAsset -BodyParameter $params
 ```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +54,7 @@ Invoke-MgUnenrollWindowsUpdatesUpdatableAsset -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UnenrollExpanded
 Aliases:
 
@@ -65,10 +67,10 @@ Accept wildcard characters: False
 
 ### -Assets
 .
-To construct, please use Get-Help -Online and see NOTES section for ASSETS properties and create a hash table.
+To construct, see NOTES section for ASSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatableAsset[]
 Parameter Sets: UnenrollExpanded
 Aliases:
 
@@ -79,12 +81,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Unenroll
 Aliases:
 
@@ -99,13 +101,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -114,7 +116,7 @@ Accept wildcard characters: False
 updateCategory
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UnenrollExpanded
 Aliases:
 
@@ -129,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,14 +163,31 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Invoke-MgBetaUnenrollWuUpdatableAsset
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`ASSETS <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+
+`BODY <IPathsP6Z74XAdminWindowsUpdatesUpdatableassetsMicrosoftGraphWindowsupdatesUnenrollassetsPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Assets <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[UpdateCategory <String>]`: updateCategory
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/invoke-mgunenrollwindowsupdatesupdatableasset)
 

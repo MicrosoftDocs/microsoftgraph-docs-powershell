@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbusinessscenarioplannerplan
+external help file:
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabusinessscenarioplannerplan
 schema: 2.0.0
 ---
 
-# Get-MgBusinessScenarioPlannerPlan
+# Get-MgBetaBusinessScenarioPlannerPlan
 
 ## SYNOPSIS
 Get information about the plannerPlan mapped to a given target.
@@ -15,28 +15,28 @@ If a **plannerPlan** doesn't exist for the specified target at the time of the r
 
 ### GetExpanded (Default)
 ```
-Get-MgBusinessScenarioPlannerPlan -BusinessScenarioId <String> [-AdditionalProperties <Hashtable>]
- [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId <String> [-AdditionalProperties <Hashtable>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBusinessScenarioPlannerPlan -BusinessScenarioId <String>
+Get-MgBetaBusinessScenarioPlannerPlan -BusinessScenarioId <String>
  -BodyParameter <IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity>
+Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ If a **plannerPlan** doesn't exist for the specified target at the time of the r
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -82,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenario
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -95,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,10 +125,10 @@ Accept wildcard characters: False
 
 ### -Target
 businessScenarioTaskTargetBase
-To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
+To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBusinessScenarioTaskTargetBase
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioTaskTargetBase
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -129,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -161,11 +175,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanReference
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanReference
+
 ## NOTES
 
 ALIASES
@@ -175,28 +192,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Tvx8HxSolutionsBusinessscenariosBusinessscenarioIdPlannerMicrosoftGraphGetplanPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Target <IMicrosoftGraphBusinessScenarioTaskTargetBase>]`: businessScenarioTaskTargetBase
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-TARGET `<IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTargetBase
+`TARGET <IMicrosoftGraphBusinessScenarioTaskTargetBase>`: businessScenarioTaskTargetBase
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
+

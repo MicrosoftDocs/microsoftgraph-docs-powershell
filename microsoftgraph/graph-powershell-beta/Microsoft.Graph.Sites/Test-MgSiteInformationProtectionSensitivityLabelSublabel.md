@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/test-mgsiteinformationprotectionsensitivitylabelsublabel
+external help file:
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectionsensitivitylabelsublabel
 schema: 2.0.0
 ---
 
-# Test-MgSiteInformationProtectionSensitivityLabelSublabel
+# Test-MgBetaSiteInformationProtectionSensitivityLabelSublabel
 
 ## SYNOPSIS
 Invoke action evaluate
@@ -14,32 +14,32 @@ Invoke action evaluate
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgSiteInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -SiteId <String>
+Test-MgBetaSiteInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgSiteInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -SiteId <String>
+Test-MgBetaSiteInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -SiteId <String>
  -BodyParameter <IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### EvaluateViaIdentityExpanded
-```
-Test-MgSiteInformationProtectionSensitivityLabelSublabel -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
-Test-MgSiteInformationProtectionSensitivityLabelSublabel -InputObject <ISitesIdentity>
+Test-MgBetaSiteInformationProtectionSensitivityLabelSublabel -InputObject <ISitesIdentity>
  -BodyParameter <IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### EvaluateViaIdentityExpanded
+```
+Test-MgBetaSiteInformationProtectionSensitivityLabelSublabel -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Invoke action evaluate
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -82,10 +96,10 @@ Accept wildcard characters: False
 
 ### -CurrentLabel
 currentLabel
-To construct, please use Get-Help -Online and see NOTES section for CURRENTLABEL properties and create a hash table.
+To construct, see NOTES section for CURRENTLABEL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrentLabel
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCurrentLabel
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -98,10 +112,10 @@ Accept wildcard characters: False
 
 ### -DiscoveredSensitiveTypes
 .
-To construct, please use Get-Help -Online and see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
+To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDiscoveredSensitiveType[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDiscoveredSensitiveType[]
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of sensitivityLabel
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -147,8 +161,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -162,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,11 +208,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvaluateLabelJobResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateLabelJobResponse
+
 ## NOTES
 
 ALIASES
@@ -208,7 +225,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -222,12 +239,12 @@ BODYPARAMETER `<IPaths19H6MbjSitesSiteIdInformationprotectionSensitivitylabelsSe
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 
 
-CURRENTLABEL `<IMicrosoftGraphCurrentLabel>`: currentLabel
+`CURRENTLABEL <IMicrosoftGraphCurrentLabel>`: currentLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationMode <String>]`: applicationMode
   - `[Id <String>]`: 
 
-DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType\[]>: .
+`DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>`: .
   - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute[]>]`: 
     - `[Confidence <Int32?>]`: 
     - `[Count <Int32?>]`: 
@@ -235,7 +252,7 @@ DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType\[]>: .
   - `[Count <Int32?>]`: 
   - `[Id <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -253,17 +270,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -272,7 +295,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -283,3 +305,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

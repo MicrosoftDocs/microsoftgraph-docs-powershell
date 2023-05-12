@@ -1,45 +1,43 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/update-mgeducationclassassignmentresource
+external help file:
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentresource
 schema: 2.0.0
 ---
 
-# Update-MgEducationClassAssignmentResource
+# Update-MgBetaEducationClassAssignmentResource
 
 ## SYNOPSIS
 Update the navigation property resources in education
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgEducationClassAssignmentResource -EducationAssignmentId <String>
+Update-MgBetaEducationClassAssignmentResource -EducationAssignmentId <String>
  -EducationAssignmentResourceId <String> -EducationClassId <String> [-AdditionalProperties <Hashtable>]
- [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgEducationClassAssignmentResource -EducationAssignmentId <String>
+Update-MgBetaEducationClassAssignmentResource -EducationAssignmentId <String>
  -EducationAssignmentResourceId <String> -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgEducationClassAssignmentResource -InputObject <IEducationIdentity> [-AdditionalProperties <Hashtable>]
- [-DistributeForStudentWork] [-Id <String>] [-Resource <IMicrosoftGraphEducationResource>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaEducationClassAssignmentResource -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded
 ```
-Update-MgEducationClassAssignmentResource -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentResource> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaEducationClassAssignmentResource -InputObject <IEducationIdentity>
+ [-AdditionalProperties <Hashtable>] [-DistributeForStudentWork] [-Id <String>]
+ [-Resource <IMicrosoftGraphEducationResource>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +45,28 @@ Update the navigation property resources in education
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationAssignmentResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignmentResource
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -85,8 +97,8 @@ Indicates whether this resource should be copied to each student submission for 
 Required
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -100,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -115,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of educationAssignmentResource
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -130,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -142,12 +154,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -159,11 +171,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -173,28 +185,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Resource
 educationResource
-To construct, please use Get-Help -Online and see NOTES section for RESOURCE properties and create a hash table.
+To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationResource
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationResource
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -208,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,11 +237,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentResource
+
 ## NOTES
 
 ALIASES
@@ -254,9 +254,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
+`BODYPARAMETER <IMicrosoftGraphEducationAssignmentResource>`: educationAssignmentResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DistributeForStudentWork <Boolean?>]`: Indicates whether this resource should be copied to each student submission for modification and submission. Required
   - `[Resource <IMicrosoftGraphEducationResource>]`: educationResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -271,11 +271,12 @@ BODYPARAMETER `<IMicrosoftGraphEducationAssignmentResource>`: educationAssignmen
     - `[DisplayName <String>]`: Display name of resource.
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -285,7 +286,7 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationSynchronizationProfileId <String>]`: The unique identifier of educationSynchronizationProfile
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
-RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
+`RESOURCE <IMicrosoftGraphEducationResource>`: educationResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -299,3 +300,4 @@ RESOURCE `<IMicrosoftGraphEducationResource>`: educationResource
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+

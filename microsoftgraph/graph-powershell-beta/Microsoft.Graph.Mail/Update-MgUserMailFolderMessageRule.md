@@ -1,54 +1,55 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/update-mgusermailfoldermessagerule
+external help file:
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/update-mgbetausermailfoldermessagerule
 schema: 2.0.0
 ---
 
-# Update-MgUserMailFolderMessageRule
+# Update-MgBetaUserMailFolderMessageRule
 
 ## SYNOPSIS
-Update the navigation property messageRules in users
+Change writable properties on a messageRule object and save the changes.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
+Update-MgBetaUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
  [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
  [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
- [-Sequence <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sequence <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMessageRule> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
-```
-Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-Actions <IMicrosoftGraphMessageRuleActions>]
- [-AdditionalProperties <Hashtable>] [-Conditions <IMicrosoftGraphMessageRulePredicates>]
- [-DisplayName <String>] [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>]
- [-IsEnabled] [-IsReadOnly] [-Sequence <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphMessageRule> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgUserMailFolderMessageRule -InputObject <IMailIdentity> -BodyParameter <IMicrosoftGraphMessageRule>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity>
+ -BodyParameter <IMicrosoftGraphMessageRule> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity>
+ [-Actions <IMicrosoftGraphMessageRuleActions>] [-AdditionalProperties <Hashtable>]
+ [-Conditions <IMicrosoftGraphMessageRulePredicates>] [-DisplayName <String>]
+ [-Exceptions <IMicrosoftGraphMessageRulePredicates>] [-HasError] [-Id <String>] [-IsEnabled] [-IsReadOnly]
+ [-Sequence <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property messageRules in users
+Change writable properties on a messageRule object and save the changes.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserMailFolderMessageRule Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Mail
+Import-Module Microsoft.Graph.Beta.Mail
 $params = @{
 	DisplayName = "Important from partner"
 	Actions = @{
@@ -56,21 +57,20 @@ $params = @{
 	}
 }
 # A UPN can also be used as -UserId.
-Update-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
+Update-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgUserMailFolderMessageRule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
 ### -Actions
 messageRuleActions
-To construct, please use Get-Help -Online and see NOTES section for ACTIONS properties and create a hash table.
+To construct, see NOTES section for ACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRuleActions
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRuleActions
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -84,8 +84,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -97,11 +97,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 messageRule
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRule
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -113,11 +113,11 @@ Accept wildcard characters: False
 
 ### -Conditions
 messageRulePredicates
-To construct, please use Get-Help -Online and see NOTES section for CONDITIONS properties and create a hash table.
+To construct, see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRulePredicates
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRulePredicates
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -131,8 +131,8 @@ Accept wildcard characters: False
 The display name of the rule.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -144,11 +144,11 @@ Accept wildcard characters: False
 
 ### -Exceptions
 messageRulePredicates
-To construct, please use Get-Help -Online and see NOTES section for EXCEPTIONS properties and create a hash table.
+To construct, see NOTES section for EXCEPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageRulePredicates
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRulePredicates
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -163,8 +163,8 @@ Indicates whether the rule is in an error condition.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -175,12 +175,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -192,11 +192,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -210,8 +210,8 @@ Accept wildcard characters: False
 Indicates whether the rule is enabled to be applied to messages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,8 +225,8 @@ Accept wildcard characters: False
 Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -240,8 +240,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -255,26 +255,11 @@ Accept wildcard characters: False
 The unique identifier of messageRule
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -285,8 +270,8 @@ Accept wildcard characters: False
 Indicates the order in which the rule is executed, among other rules.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -300,8 +285,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -315,7 +300,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -331,7 +316,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -347,11 +332,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessageRule
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
+
 ## NOTES
 
 ALIASES
@@ -361,7 +349,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
+`ACTIONS <IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
   - `[CopyToFolder <String>]`: The ID of a folder that a message is to be copied to.
@@ -369,19 +357,19 @@ ACTIONS `<IMicrosoftGraphMessageRuleActions>`: messageRuleActions
   - `[ForwardAsAttachmentTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded as an attachment.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
   - `[ForwardTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded.
   - `[MarkAsRead <Boolean?>]`: Indicates whether a message should be marked as read.
   - `[MarkImportance <String>]`: importance
   - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
   - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-  - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
+  - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
   - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
 
-BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
+`BODYPARAMETER <IMicrosoftGraphMessageRule>`: messageRule
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Actions <IMicrosoftGraphMessageRuleActions>]`: messageRuleActions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AssignCategories <String[]>]`: A list of categories to be assigned to a message.
@@ -390,14 +378,14 @@ BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
     - `[ForwardAsAttachmentTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded as an attachment.
       - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of the person or entity.
-        - `[Name <String>]`: The display name of the person or entity.
+        - `[Address <String>]`: The email address of an entity instance.
+        - `[Name <String>]`: The display name of an entity instance.
     - `[ForwardTo <IMicrosoftGraphRecipient[]>]`: The email addresses of the recipients to which a message should be forwarded.
     - `[MarkAsRead <Boolean?>]`: Indicates whether a message should be marked as read.
     - `[MarkImportance <String>]`: importance
     - `[MoveToFolder <String>]`: The ID of the folder that a message will be moved to.
     - `[PermanentDelete <Boolean?>]`: Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-    - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email addresses to which a message should be redirected.
+    - `[RedirectTo <IMicrosoftGraphRecipient[]>]`: The email address to which a message should be redirected.
     - `[StopProcessingRules <Boolean?>]`: Indicates whether subsequent rules should be evaluated.
   - `[Conditions <IMicrosoftGraphMessageRulePredicates>]`: messageRulePredicates
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -441,7 +429,7 @@ BODYPARAMETER `<IMicrosoftGraphMessageRule>`: messageRule
   - `[IsReadOnly <Boolean?>]`: Indicates if the rule is read-only and cannot be modified or deleted by the rules REST API.
   - `[Sequence <Int32?>]`: Indicates the order in which the rule is executed, among other rules.
 
-CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+`CONDITIONS <IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -449,8 +437,8 @@ CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
   - `[FromAddresses <IMicrosoftGraphRecipient[]>]`: Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
   - `[HasAttachments <Boolean?>]`: Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
   - `[HeaderContains <String[]>]`: Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply.
   - `[Importance <String>]`: importance
@@ -481,7 +469,7 @@ CONDITIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
+`EXCEPTIONS <IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BodyContains <String[]>]`: Represents the strings that should appear in the body of an incoming message in order for the condition or exception to apply.
   - `[BodyOrSubjectContains <String[]>]`: Represents the strings that should appear in the body or subject of an incoming message in order for the condition or exception to apply.
@@ -489,8 +477,8 @@ EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
   - `[FromAddresses <IMicrosoftGraphRecipient[]>]`: Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
   - `[HasAttachments <Boolean?>]`: Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
   - `[HeaderContains <String[]>]`: Represents the strings that appear in the headers of an incoming message in order for the condition or exception to apply.
   - `[Importance <String>]`: importance
@@ -521,7 +509,7 @@ EXCEPTIONS `<IMicrosoftGraphMessageRulePredicates>`: messageRulePredicates
     - `[MaximumSize <Int32?>]`: The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
     - `[MinimumSize <Int32?>]`: The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -530,11 +518,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 
-## RELATED LINKS

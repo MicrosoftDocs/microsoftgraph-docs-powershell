@@ -1,42 +1,42 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/join-mgsharelistcontenttypewithhubsite
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/join-mgbetasharelistcontenttypewithhubsite
 schema: 2.0.0
 ---
 
-# Join-MgShareListContentTypeWithHubSite
+# Join-MgBetaShareListContentTypeWithHubSite
 
 ## SYNOPSIS
 Associate a [content type][contentType] with a list of hub sites.
 
 ## SYNTAX
 
-### AssociateExpanded1 (Default)
+### AssociateExpanded (Default)
 ```
-Join-MgShareListContentTypeWithHubSite -ContentTypeId <String> -SharedDriveItemId <String>
+Join-MgBetaShareListContentTypeWithHubSite -ContentTypeId <String> -SharedDriveItemId <String>
  [-AdditionalProperties <Hashtable>] [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Associate1
+### Associate
 ```
-Join-MgShareListContentTypeWithHubSite -ContentTypeId <String> -SharedDriveItemId <String>
+Join-MgBetaShareListContentTypeWithHubSite -ContentTypeId <String> -SharedDriveItemId <String>
  -BodyParameter <IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AssociateViaIdentityExpanded1
+### AssociateViaIdentity
 ```
-Join-MgShareListContentTypeWithHubSite -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssociateViaIdentity1
-```
-Join-MgShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
+Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity>
  -BodyParameter <IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssociateViaIdentityExpanded
+```
+Join-MgBetaShareListContentTypeWithHubSite -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-HubSiteUrls <String[]>] [-PropagateToExistingLists] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,28 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Associate1, AssociateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Associate, AssociateViaIdentity
 Aliases:
 
 Required: True
@@ -81,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of contentType
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Type: System.String
+Parameter Sets: Associate, AssociateExpanded
 Aliases:
 
 Required: True
@@ -96,8 +110,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: AssociateViaIdentityExpanded1, AssociateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: AssociateViaIdentity, AssociateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,7 +141,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,8 +156,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: AssociateExpanded1, AssociateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: AssociateExpanded, AssociateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -157,8 +171,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: AssociateExpanded1, Associate1
+Type: System.String
+Parameter Sets: Associate, AssociateExpanded
 Aliases:
 
 Required: True
@@ -172,7 +186,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +202,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,11 +218,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -218,12 +235,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths8Cnul4SharesShareddriveitemIdListContenttypesContenttypeIdMicrosoftGraphAssociatewithhubsitesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[HubSiteUrls <String[]>]`: 
   - `[PropagateToExistingLists <Boolean?>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -250,3 +267,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

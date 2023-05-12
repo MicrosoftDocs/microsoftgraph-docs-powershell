@@ -1,51 +1,51 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mgsharepermission
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetasharepermission
 schema: 2.0.0
 ---
 
-# Update-MgSharePermission
+# Update-MgBetaSharePermission
 
 ## SYNOPSIS
 Update the navigation property permission in shares
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgSharePermission -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSharePermission -SharedDriveItemId <String> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
  [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
- [-Link <IMicrosoftGraphSharingLink1>] [-Roles <String[]>] [-ShareId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgSharePermission -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphPermission1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSharePermission -SharedDriveItemId <String> -BodyParameter <IMicrosoftGraphPermission> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgSharePermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphPermission>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSharePermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
  [-ExpirationDateTime <DateTime>] [-GrantedTo <IMicrosoftGraphIdentitySet>]
  [-GrantedToIdentities <IMicrosoftGraphIdentitySet[]>]
  [-GrantedToIdentitiesV2 <IMicrosoftGraphSharePointIdentitySet[]>]
  [-GrantedToV2 <IMicrosoftGraphSharePointIdentitySet>] [-HasPassword] [-Id <String>]
  [-InheritedFrom <IMicrosoftGraphItemReference>] [-Invitation <IMicrosoftGraphSharingInvitation>]
- [-Link <IMicrosoftGraphSharingLink1>] [-Roles <String[]>] [-ShareId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Link <IMicrosoftGraphSharingLink>] [-Roles <String[]>] [-ShareId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgSharePermission -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftGraphPermission1> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,14 +53,28 @@ Update the navigation property permission in shares
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -72,11 +86,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 permission
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermission1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -92,8 +106,8 @@ DateTime.MinValue indicates there is no expiration set for this permission.
 Optional.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -105,11 +119,11 @@ Accept wildcard characters: False
 
 ### -GrantedTo
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for GRANTEDTO properties and create a hash table.
+To construct, see NOTES section for GRANTEDTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -121,11 +135,11 @@ Accept wildcard characters: False
 
 ### -GrantedToIdentities
 .
-To construct, please use Get-Help -Online and see NOTES section for GRANTEDTOIDENTITIES properties and create a hash table.
+To construct, see NOTES section for GRANTEDTOIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -138,11 +152,11 @@ Accept wildcard characters: False
 ### -GrantedToIdentitiesV2
 For link type permissions, the details of the users to whom permission was granted.
 Read-only.
-To construct, please use Get-Help -Online and see NOTES section for GRANTEDTOIDENTITIESV2 properties and create a hash table.
+To construct, see NOTES section for GRANTEDTOIDENTITIESV2 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharePointIdentitySet[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointIdentitySet[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -154,11 +168,11 @@ Accept wildcard characters: False
 
 ### -GrantedToV2
 sharePointIdentitySet
-To construct, please use Get-Help -Online and see NOTES section for GRANTEDTOV2 properties and create a hash table.
+To construct, see NOTES section for GRANTEDTOV2 properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharePointIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharePointIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -176,8 +190,8 @@ Read-only.
 For OneDrive Personal only.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -188,12 +202,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -205,11 +219,11 @@ Accept wildcard characters: False
 
 ### -InheritedFrom
 itemReference
-To construct, please use Get-Help -Online and see NOTES section for INHERITEDFROM properties and create a hash table.
+To construct, see NOTES section for INHERITEDFROM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemReference
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -221,11 +235,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -237,11 +251,11 @@ Accept wildcard characters: False
 
 ### -Invitation
 sharingInvitation
-To construct, please use Get-Help -Online and see NOTES section for INVITATION properties and create a hash table.
+To construct, see NOTES section for INVITATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingInvitation
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingInvitation
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -253,26 +267,11 @@ Accept wildcard characters: False
 
 ### -Link
 sharingLink
-To construct, please use Get-Help -Online and see NOTES section for LINK properties and create a hash table.
+To construct, see NOTES section for LINK properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingLink1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingLink
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -288,8 +287,8 @@ See below for the full list of roles.
 Read-only.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -303,8 +302,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -319,8 +318,8 @@ A unique token that can be used to access this shared item via the [shares API][
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -334,7 +333,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -350,7 +349,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -366,11 +365,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -380,9 +382,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPermission1>`: permission
+`BODYPARAMETER <IMicrosoftGraphPermission>`: permission
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ExpirationDateTime <DateTime?>]`: A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue indicates there is no expiration set for this permission. Optional.
   - `[GrantedTo <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -409,7 +411,7 @@ BODYPARAMETER `<IMicrosoftGraphPermission1>`: permission
   - `[InheritedFrom <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
-    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
     - `[Name <String>]`: The name of the item being referenced. Read-only.
     - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
@@ -430,7 +432,7 @@ BODYPARAMETER `<IMicrosoftGraphPermission1>`: permission
     - `[InvitedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RedeemedBy <String>]`: 
     - `[SignInRequired <Boolean?>]`: If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
-  - `[Link <IMicrosoftGraphSharingLink1>]`: sharingLink
+  - `[Link <IMicrosoftGraphSharingLink>]`: sharingLink
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[ConfiguratorUrl <String>]`: 
@@ -442,7 +444,7 @@ BODYPARAMETER `<IMicrosoftGraphPermission1>`: permission
   - `[Roles <String[]>]`: The type of permission, for example, read. See below for the full list of roles. Read-only.
   - `[ShareId <String>]`: A unique token that can be used to access this shared item via the [shares API][]. Read-only.
 
-GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
+`GRANTEDTO <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -451,7 +453,7 @@ GRANTEDTO `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet\[]>: .
+`GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet[]>`: .
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -459,7 +461,7 @@ GRANTEDTOIDENTITIES <IMicrosoftGraphIdentitySet\[]>: .
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet\[]>: For link type permissions, the details of the users to whom permission was granted. Read-only.
+`GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet[]>`: For link type permissions, the details of the users to whom permission was granted. Read-only.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
@@ -474,7 +476,7 @@ GRANTEDTOIDENTITIESV2 <IMicrosoftGraphSharePointIdentitySet\[]>: For link type p
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
-GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
+`GRANTEDTOV2 <IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -490,10 +492,10 @@ GRANTEDTOV2 `<IMicrosoftGraphSharePointIdentitySet>`: sharePointIdentitySet
     - `[LoginName <String>]`: The sign in name of the SharePoint identity.
   - `[SiteUser <IMicrosoftGraphSharePointIdentity>]`: sharePointIdentity
 
-INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
+`INHERITEDFROM <IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
-  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
   - `[Name <String>]`: The name of the item being referenced. Read-only.
   - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
@@ -509,7 +511,7 @@ INHERITEDFROM `<IMicrosoftGraphItemReference>`: itemReference
     - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -535,7 +537,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-INVITATION `<IMicrosoftGraphSharingInvitation>`: sharingInvitation
+`INVITATION <IMicrosoftGraphSharingInvitation>`: sharingInvitation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Email <String>]`: The email address provided for the recipient of the sharing invitation. Read-only.
   - `[InvitedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -549,7 +551,7 @@ INVITATION `<IMicrosoftGraphSharingInvitation>`: sharingInvitation
   - `[RedeemedBy <String>]`: 
   - `[SignInRequired <Boolean?>]`: If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
 
-LINK `<IMicrosoftGraphSharingLink1>`: sharingLink
+`LINK <IMicrosoftGraphSharingLink>`: sharingLink
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -564,4 +566,3 @@ LINK `<IMicrosoftGraphSharingLink1>`: sharingLink
 
 ## RELATED LINKS
 
-## RELATED LINKS

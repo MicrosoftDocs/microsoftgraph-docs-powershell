@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/update-mggrouponenotepagecontent
+external help file:
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouponenotepagecontent
 schema: 2.0.0
 ---
 
-# Update-MgGroupOnenotePageContent
+# Update-MgBetaGroupOnenotePageContent
 
 ## SYNOPSIS
 Invoke action onenotePatchContent
@@ -14,30 +14,30 @@ Invoke action onenotePatchContent
 
 ### PatchExpanded (Default)
 ```
-Update-MgGroupOnenotePageContent -GroupId <String> -OnenotePageId <String> [-AdditionalProperties <Hashtable>]
- [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaGroupOnenotePageContent -GroupId <String> -OnenotePageId <String>
+ [-AdditionalProperties <Hashtable>] [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Patch
 ```
-Update-MgGroupOnenotePageContent -GroupId <String> -OnenotePageId <String>
+Update-MgBetaGroupOnenotePageContent -GroupId <String> -OnenotePageId <String>
  -BodyParameter <IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### PatchViaIdentityExpanded
-```
-Update-MgGroupOnenotePageContent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### PatchViaIdentity
 ```
-Update-MgGroupOnenotePageContent -InputObject <IGroupsIdentity>
+Update-MgBetaGroupOnenotePageContent -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### PatchViaIdentityExpanded
+```
+Update-MgBetaGroupOnenotePageContent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Commands <IMicrosoftGraphOnenotePatchContentCommand[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Invoke action onenotePatchContent
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Patch, PatchViaIdentity
 Aliases:
 
@@ -80,10 +94,10 @@ Accept wildcard characters: False
 
 ### -Commands
 .
-To construct, please use Get-Help -Online and see NOTES section for COMMANDS properties and create a hash table.
+To construct, see NOTES section for COMMANDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnenotePatchContentCommand[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenotePatchContentCommand[]
 Parameter Sets: PatchExpanded, PatchViaIdentityExpanded
 Aliases:
 
@@ -98,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: PatchExpanded, Patch
+Type: System.String
+Parameter Sets: Patch, PatchExpanded
 Aliases:
 
 Required: True
@@ -111,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: PatchViaIdentityExpanded, PatchViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: PatchViaIdentity, PatchViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of onenotePage
 
 ```yaml
-Type: String
-Parameter Sets: PatchExpanded, Patch
+Type: System.String
+Parameter Sets: Patch, PatchExpanded
 Aliases:
 
 Required: True
@@ -144,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -159,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,11 +205,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -205,21 +222,21 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths96Tlp1GroupsGroupIdOnenotePagesOnenotepageIdMicrosoftGraphOnenotepatchcontentPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Commands <IMicrosoftGraphOnenotePatchContentCommand[]>]`: 
     - `[Action <String>]`: onenotePatchActionType
     - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
     - `[Position <String>]`: onenotePatchInsertPosition
-    - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+    - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
 
-COMMANDS <IMicrosoftGraphOnenotePatchContentCommand\[]>: .
+`COMMANDS <IMicrosoftGraphOnenotePatchContentCommand[]>`: .
   - `[Action <String>]`: onenotePatchActionType
   - `[Content <String>]`: A string of well-formed HTML to add to the page, and any image or file binary data. If the content contains binary data, the request must be sent using the multipart/form-data content type with a 'Commands' part.
   - `[Position <String>]`: onenotePatchInsertPosition
-  - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated `<id>` of the element, or the body or title keyword.
+  - `[Target <String>]`: The element to update. Must be the #`<data-id>` or the generated {id} of the element, or the body or title keyword.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -241,11 +258,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -258,7 +273,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -269,3 +283,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

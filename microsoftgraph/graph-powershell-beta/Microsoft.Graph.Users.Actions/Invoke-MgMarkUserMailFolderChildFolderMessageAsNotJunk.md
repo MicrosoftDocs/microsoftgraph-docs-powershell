@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgmarkusermailfolderchildfoldermessageasnotjunk
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetamarkusermailfolderchildfoldermessageasnotjunk
 schema: 2.0.0
 ---
 
-# Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk
+# Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk
 
 ## SYNOPSIS
 Invoke action markAsNotJunk
@@ -14,30 +14,30 @@ Invoke action markAsNotJunk
 
 ### MarkExpanded (Default)
 ```
-Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String> -MailFolderId1 <String>
- -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-MoveToInbox] [-WhatIf] [-Confirm]
+Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String> -MailFolderId1 <String>
+ -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-MoveToInbox] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Mark
 ```
-Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String> -MailFolderId1 <String>
+Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String>
  -BodyParameter <IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MarkViaIdentityExpanded
-```
-Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-MoveToInbox] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
-Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MarkViaIdentityExpanded
+```
+Invoke-MgBetaMarkUserMailFolderChildFolderMessageAsNotJunk -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-MoveToInbox] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Invoke action markAsNotJunk
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Mark, MarkViaIdentity
 Aliases:
 
@@ -80,11 +94,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: MarkViaIdentityExpanded, MarkViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: MarkViaIdentity, MarkViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -98,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: MarkExpanded, Mark
+Type: System.String
+Parameter Sets: Mark, MarkExpanded
 Aliases:
 
 Required: True
@@ -113,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: MarkExpanded, Mark
+Type: System.String
+Parameter Sets: Mark, MarkExpanded
 Aliases:
 
 Required: True
@@ -128,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
-Parameter Sets: MarkExpanded, Mark
+Type: System.String
+Parameter Sets: Mark, MarkExpanded
 Aliases:
 
 Required: True
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
@@ -158,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: MarkExpanded, Mark
+Type: System.String
+Parameter Sets: Mark, MarkExpanded
 Aliases:
 
 Required: True
@@ -173,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,11 +219,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
+
 ## NOTES
 
 ALIASES
@@ -219,11 +236,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsB8Bsb2UsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMarkasnotjunkPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[MoveToInbox <Boolean?>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -257,7 +274,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -267,3 +283,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernancerolemanagementalertdefinition
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaidentitygovernancerolemanagementalertdefinition
 schema: 2.0.0
 ---
 
-# New-MgIdentityGovernanceRoleManagementAlertDefinition
+# New-MgBetaIdentityGovernanceRoleManagementAlertDefinition
 
 ## SYNOPSIS
 Create new navigation property to alertDefinitions for identityGovernance
@@ -14,16 +14,17 @@ Create new navigation property to alertDefinitions for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgIdentityGovernanceRoleManagementAlertDefinition [-AdditionalProperties <Hashtable>]
+New-MgBetaIdentityGovernanceRoleManagementAlertDefinition [-AdditionalProperties <Hashtable>]
  [-Description <String>] [-DisplayName <String>] [-HowToPrevent <String>] [-Id <String>] [-IsConfigurable]
  [-IsRemediatable] [-MitigationSteps <String>] [-ScopeId <String>] [-ScopeType <String>]
- [-SecurityImpact <String>] [-SeverityLevel <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SecurityImpact <String>] [-SeverityLevel <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgIdentityGovernanceRoleManagementAlertDefinition
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityGovernanceRoleManagementAlertDefinition
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementAlertDefinition> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,13 +32,27 @@ Create new navigation property to alertDefinitions for identityGovernance
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,10 +65,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 unifiedRoleManagementAlertDefinition
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -110,11 +125,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +174,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +189,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +204,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +219,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +234,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +249,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -250,7 +265,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -266,10 +281,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementAlertDefinition
+
 ## NOTES
 
 ALIASES
@@ -279,9 +296,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
+`BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: 
   - `[DisplayName <String>]`: 
   - `[HowToPrevent <String>]`: 
@@ -294,3 +311,4 @@ BODYPARAMETER `<IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRo
   - `[SeverityLevel <String>]`: alertSeverity
 
 ## RELATED LINKS
+

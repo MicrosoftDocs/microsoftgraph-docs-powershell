@@ -1,33 +1,65 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/stop-mgdevicemanagementvirtualendpointcloudpc
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/stop-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ---
 
-# Stop-MgDeviceManagementVirtualEndpointCloudPc
+# Stop-MgBetaDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
-Invoke action stop
+Power off a Windows 365 Frontline Cloud PC.
+This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
+After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
+Only IT admin users can perform this action.
 
 ## SYNTAX
 
-### Stop (Default)
+### PowerOff (Default)
 ```
-Stop-MgDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-PassThru] [-WhatIf] [-Confirm]
+Stop-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### PowerOffViaIdentity
+```
+Stop-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Stop
+```
+Stop-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
-Stop-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Stop-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action stop
+Power off a Windows 365 Frontline Cloud PC.
+This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
+After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
+Only IT admin users can perform this action.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,8 +67,8 @@ Invoke action stop
 The unique identifier of cloudPC
 
 ```yaml
-Type: String
-Parameter Sets: Stop
+Type: System.String
+Parameter Sets: PowerOff, Stop
 Aliases:
 
 Required: True
@@ -48,11 +80,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: StopViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: PowerOffViaIdentity, StopViaIdentity
 Aliases:
 
 Required: True
@@ -66,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -97,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -113,10 +145,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -126,7 +160,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -170,7 +204,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -181,3 +214,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

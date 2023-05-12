@@ -1,60 +1,56 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/get-mgcomplianceediscoverycasecustodianusersource
+external help file:
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/get-mgbetacomplianceediscoverycasecustodianusersource
 schema: 2.0.0
 ---
 
-# Get-MgComplianceEdiscoveryCaseCustodianUserSource
+# Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource
 
 ## SYNOPSIS
-Data source entity for a the custodian.
-This is the container for a custodian's mailbox and OneDrive for Business site.
+Read the properties and relationships of a userSource object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
+ [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String> -UserSourceId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId <String> -CustodianId <String>
+ -UserSourceId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -InputObject <IComplianceIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Data source entity for a the custodian.
-This is the container for a custodian's mailbox and OneDrive for Business site.
+Read the properties and relationships of a userSource object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId
 ```
 
-This example shows how to use the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Get-MgComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
+Import-Module Microsoft.Graph.Beta.Compliance
+Get-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -UserSourceId $userSourceId
 ```
 
-This example shows how to use the Get-MgComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -62,7 +58,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -77,8 +73,8 @@ Accept wildcard characters: False
 The unique identifier of case
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -93,7 +89,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -108,8 +104,8 @@ Accept wildcard characters: False
 The unique identifier of custodian
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -123,7 +119,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -138,7 +134,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -151,10 +147,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -169,7 +165,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -184,7 +180,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -199,7 +195,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -214,7 +225,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -229,7 +240,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
 
@@ -244,26 +255,11 @@ Accept wildcard characters: False
 The unique identifier of userSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -275,10 +271,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+
 ## NOTES
 
 ALIASES
@@ -288,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -305,3 +303,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

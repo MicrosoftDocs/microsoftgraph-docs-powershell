@@ -1,29 +1,29 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeletedteamchannelmessagereplydelta
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeletedteamchannelmessagereplydelta
 schema: 2.0.0
 ---
 
-# Get-MgTeamworkDeletedTeamChannelMessageReplyDelta
+# Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta
 
 ## SYNOPSIS
 Invoke function delta
 
 ## SYNTAX
 
-### Delta1 (Default)
+### Delta (Default)
 ```
-Get-MgTeamworkDeletedTeamChannelMessageReplyDelta -ChannelId <String> -ChatMessageId <String>
+Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta -ChannelId <String> -ChatMessageId <String>
  -DeletedTeamId <String> [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
-### DeltaViaIdentity1
+### DeltaViaIdentity
 ```
-Get-MgTeamworkDeletedTeamChannelMessageReplyDelta -InputObject <ITeamsIdentity> [-Filter <String>]
- [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count]
- [<CommonParameters>]
+Get-MgBetaTeamworkDeletedTeamChannelMessageReplyDelta -InputObject <ITeamsIdentity> [-Count]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +31,28 @@ Invoke function delta
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: Delta1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: Delta
 Aliases:
 
 Required: False
@@ -52,8 +66,8 @@ Accept wildcard characters: False
 The unique identifier of channel
 
 ```yaml
-Type: String
-Parameter Sets: Delta1
+Type: System.String
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -67,8 +81,8 @@ Accept wildcard characters: False
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
-Parameter Sets: Delta1
+Type: System.String
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -82,8 +96,8 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: DeltaViaIdentity1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: False
@@ -98,8 +112,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: Delta1
+Type: System.String
+Parameter Sets: Delta
 Aliases: CV
 
 Required: False
@@ -113,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of deletedTeam
 
 ```yaml
-Type: String
-Parameter Sets: Delta1
+Type: System.String
+Parameter Sets: Delta
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -141,11 +155,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: DeltaViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: DeltaViaIdentity
 Aliases:
 
 Required: True
@@ -159,8 +173,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: Delta1
+Type: System.Int32
+Parameter Sets: Delta
 Aliases:
 
 Required: False
@@ -174,7 +188,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -189,7 +203,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -204,7 +233,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -219,24 +248,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -250,10 +264,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessage1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
+
 ## NOTES
 
 ALIASES
@@ -263,7 +279,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -303,3 +319,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

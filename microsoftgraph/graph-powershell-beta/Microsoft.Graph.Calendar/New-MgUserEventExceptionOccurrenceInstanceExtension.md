@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/new-mgusereventexceptionoccurrenceinstanceextension
+external help file:
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/new-mgbetausereventexceptionoccurrenceinstanceextension
 schema: 2.0.0
 ---
 
-# New-MgUserEventExceptionOccurrenceInstanceExtension
+# New-MgBetaUserEventExceptionOccurrenceInstanceExtension
 
 ## SYNOPSIS
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
@@ -17,26 +17,27 @@ The table in the Permissions section lists the resources that support open exten
 
 ### CreateExpanded (Default)
 ```
-New-MgUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String> -EventId2 <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String>
+ -EventId2 <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String> -EventId2 <String>
- -UserId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserEventExceptionOccurrenceInstanceExtension -EventId <String> -EventId1 <String>
+ -EventId2 <String> -UserId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity> -BodyParameter <Hashtable>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserEventExceptionOccurrenceInstanceExtension -InputObject <ICalendarIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +48,27 @@ The table in the Permissions section lists the resources that support open exten
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +83,7 @@ Accept wildcard characters: False
 extension
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -83,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -98,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -113,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -125,11 +140,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,11 +157,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -175,7 +190,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +206,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,11 +222,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -221,7 +239,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -231,9 +249,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

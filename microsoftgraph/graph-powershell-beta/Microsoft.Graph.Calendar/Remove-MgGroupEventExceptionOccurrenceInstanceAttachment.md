@@ -1,34 +1,48 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/remove-mggroupeventexceptionoccurrenceinstanceattachment
+external help file:
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/remove-mgbetagroupeventexceptionoccurrenceinstanceattachment
 schema: 2.0.0
 ---
 
-# Remove-MgGroupEventExceptionOccurrenceInstanceAttachment
+# Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment
 
 ## SYNOPSIS
-Delete navigation property attachments for groups
+Delete an attachment from a user calendar event, message, Outlook task, or post.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgGroupEventExceptionOccurrenceInstanceAttachment -AttachmentId <String> -EventId <String>
- -EventId1 <String> -EventId2 <String> -GroupId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -AttachmentId <String> -EventId <String>
+ -EventId1 <String> -EventId2 <String> -GroupId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICalendarIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaGroupEventExceptionOccurrenceInstanceAttachment -InputObject <ICalendarIdentity>
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property attachments for groups
+Delete an attachment from a user calendar event, message, Outlook task, or post.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +50,7 @@ Delete navigation property attachments for groups
 The unique identifier of attachment
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -111,7 +125,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -124,10 +138,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -142,7 +156,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -157,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -173,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +203,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -202,7 +218,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -212,9 +228,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgtranslateuserexchangeid
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetatranslateuserexchangeid
 schema: 2.0.0
 ---
 
-# Invoke-MgTranslateUserExchangeId
+# Invoke-MgBetaTranslateUserExchangeId
 
 ## SYNOPSIS
 Translate identifiers of Outlook-related resources between formats.
@@ -14,29 +14,30 @@ Translate identifiers of Outlook-related resources between formats.
 
 ### TranslateExpanded (Default)
 ```
-Invoke-MgTranslateUserExchangeId -UserId <String> [-AdditionalProperties <Hashtable>] [-InputIds <String[]>]
- [-SourceIdType <String>] [-TargetIdType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaTranslateUserExchangeId -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-InputIds <String[]>] [-SourceIdType <String>] [-TargetIdType <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Translate
 ```
-Invoke-MgTranslateUserExchangeId -UserId <String>
+Invoke-MgBetaTranslateUserExchangeId -UserId <String>
  -BodyParameter <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### TranslateViaIdentityExpanded
-```
-Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-InputIds <String[]>] [-SourceIdType <String>] [-TargetIdType <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### TranslateViaIdentity
 ```
-Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### TranslateViaIdentityExpanded
+```
+Invoke-MgBetaTranslateUserExchangeId -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-InputIds <String[]>] [-SourceIdType <String>] [-TargetIdType <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,9 +45,9 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgTranslateUserExchangeId Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	InputIds = @(
 		"{rest-formatted-id-1}"
@@ -56,11 +57,10 @@ $params = @{
 	TargetIdType = "restImmutableEntryId"
 }
 # A UPN can also be used as -UserId.
-Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
+Invoke-MgBetaTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -68,7 +68,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -81,10 +81,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
 Parameter Sets: Translate, TranslateViaIdentity
 Aliases:
 
@@ -99,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -112,11 +112,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: TranslateViaIdentityExpanded, TranslateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: TranslateViaIdentity, TranslateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +130,7 @@ Accept wildcard characters: False
 exchangeIdFormat
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +145,7 @@ Accept wildcard characters: False
 exchangeIdFormat
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: TranslateExpanded, TranslateViaIdentityExpanded
 Aliases:
 
@@ -160,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: TranslateExpanded, Translate
+Type: System.String
+Parameter Sets: Translate, TranslateExpanded
 Aliases:
 
 Required: True
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,11 +207,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConvertIdResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConvertIdResult
+
 ## NOTES
 
 ALIASES
@@ -221,13 +224,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IComponents1L8Ofp3RequestbodiesTranslateexchangeidsrequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InputIds <String[]>]`: 
   - `[SourceIdType <String>]`: exchangeIdFormat
   - `[TargetIdType <String>]`: exchangeIdFormat
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -261,7 +264,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -271,3 +273,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

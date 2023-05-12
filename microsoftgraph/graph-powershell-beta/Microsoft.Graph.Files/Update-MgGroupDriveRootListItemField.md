@@ -1,39 +1,39 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/update-mggroupdriverootlistitemfield
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/update-mgbetagroupdriverootlistitemfield
 schema: 2.0.0
 ---
 
-# Update-MgGroupDriveRootListItemField
+# Update-MgBetaGroupDriveRootListItemField
 
 ## SYNOPSIS
 Update the properties on a **[listItem][]**.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgGroupDriveRootListItemField -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgGroupDriveRootListItemField -DriveId <String> -GroupId <String> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupDriveRootListItemField -DriveId <String> -GroupId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update
 ```
-Update-MgGroupDriveRootListItemField -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupDriveRootListItemField -DriveId <String> -GroupId <String> -BodyParameter <Hashtable>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgGroupDriveRootListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupDriveRootListItemField -InputObject <IFilesIdentity> -BodyParameter <Hashtable> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaGroupDriveRootListItemField -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -41,14 +41,28 @@ Update the properties on a **[listItem][]**.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,8 +76,8 @@ Accept wildcard characters: False
 fieldValueSet
 
 ```yaml
-Type: Hashtable
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: System.Collections.Hashtable
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -77,8 +91,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -92,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -104,12 +118,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -121,11 +135,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -135,26 +149,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -170,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -186,11 +185,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### System.Boolean
+### System.String
+
 ## NOTES
 
 ALIASES
@@ -200,7 +202,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -227,3 +229,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,43 +1,42 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertaskdetail
+external help file:
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertaskdetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
-# Update-MgPlannerTaskDetail
+# Update-MgBetaPlannerTaskDetail
 
 ## SYNOPSIS
 Update the navigation property details in planner
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String> [-AdditionalProperties <Hashtable>]
  [-Checklist <Hashtable>] [-Description <String>] [-Id <String>] [-Notes <IMicrosoftGraphItemBody>]
- [-PreviewType <String>] [-References <Hashtable>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PreviewType <String>] [-References <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskDetails1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPlannerTaskDetail -PlannerTaskId <String> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
+Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerTaskDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
  [-AdditionalProperties <Hashtable>] [-Checklist <Hashtable>] [-Description <String>] [-Id <String>]
- [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>] [-References <Hashtable>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTaskDetails1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Notes <IMicrosoftGraphItemBody>] [-PreviewType <String>] [-References <Hashtable>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,9 +44,9 @@ Update the navigation property details in planner
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPlannerTaskDetail Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
 	PreviewType = "noPreview"
 	References = @{
@@ -76,11 +75,10 @@ $params = @{
 		"A93c93c5-10a6-4167-9551-8bafa09967a7" = $null
 	}
 }
-Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params
+Update-MgBetaPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPlannerTaskDetail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -88,8 +86,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -101,11 +99,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerTaskDetails
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskDetails1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -119,8 +117,8 @@ Accept wildcard characters: False
 plannerChecklistItems
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -134,8 +132,8 @@ Accept wildcard characters: False
 Description of the task.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -146,12 +144,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -165,7 +163,7 @@ Accept wildcard characters: False
 ETag value.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -178,11 +176,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -194,26 +192,11 @@ Accept wildcard characters: False
 
 ### -Notes
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for NOTES properties and create a hash table.
+To construct, see NOTES section for NOTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -227,8 +210,8 @@ Accept wildcard characters: False
 The unique identifier of plannerTask
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -242,8 +225,8 @@ Accept wildcard characters: False
 plannerPreviewType
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -257,8 +240,8 @@ Accept wildcard characters: False
 plannerExternalReferences
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -272,7 +255,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +271,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -304,11 +287,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails1
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+
 ## NOTES
 
 ALIASES
@@ -318,9 +304,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails1>`: plannerTaskDetails
+`BODYPARAMETER <IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description of the task.
@@ -332,7 +318,7 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTaskDetails1>`: plannerTaskDetails
   - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
@@ -342,9 +328,10 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-NOTES `<IMicrosoftGraphItemBody>`: itemBody
+`NOTES <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+

@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.CloudCommunications
-Module Guid: e4b40999-3c1f-4d1d-87aa-9d800112875b
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications
+Module Guid: f529782d-a4a3-4673-910c-e8bbc08ac97f
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -24,22 +24,41 @@ For details about presences sessions, see presence: setPresence.
 Clear the preferred availability and activity status for a user.
 
 ### [Get-MgCommunicationCall](Get-MgCommunicationCall.md)
-Get calls from communications
+Retrieve the properties and relationships of a call object.
 
 ### [Get-MgCommunicationCallAudioRoutingGroup](Get-MgCommunicationCallAudioRoutingGroup.md)
 Get audioRoutingGroups from communications
 
+### [Get-MgCommunicationCallAudioRoutingGroupCount](Get-MgCommunicationCallAudioRoutingGroupCount.md)
+Get the number of the resource
+
 ### [Get-MgCommunicationCallContentSharingSession](Get-MgCommunicationCallContentSharingSession.md)
-Get contentSharingSessions from communications
+Retrieve the properties of a contentSharingSession object in a call.
+
+### [Get-MgCommunicationCallContentSharingSessionCount](Get-MgCommunicationCallContentSharingSessionCount.md)
+Get the number of the resource
+
+### [Get-MgCommunicationCallCount](Get-MgCommunicationCallCount.md)
+Get the number of the resource
 
 ### [Get-MgCommunicationCallOperation](Get-MgCommunicationCallOperation.md)
-Get operations from communications
+Get the status of an operation that adds the large gallery view to a call.
+
+### [Get-MgCommunicationCallOperationCount](Get-MgCommunicationCallOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgCommunicationCallParticipant](Get-MgCommunicationCallParticipant.md)
-Get participants from communications
+Retrieve the properties and relationships of a **participant** object.
+
+### [Get-MgCommunicationCallParticipantCount](Get-MgCommunicationCallParticipantCount.md)
+Get the number of the resource
 
 ### [Get-MgCommunicationCallRecord](Get-MgCommunicationCallRecord.md)
-Get callRecords from communications
+Retrieve the properties and relationships of a callRecord object.
+There are two ways to get the **id** of a **callRecord**:
+
+### [Get-MgCommunicationCallRecordCount](Get-MgCommunicationCallRecordCount.md)
+Get the number of the resource
 
 ### [Get-MgCommunicationCallRecordSession](Get-MgCommunicationCallRecordSession.md)
 List of sessions involved in the call.
@@ -47,41 +66,70 @@ Peer-to-peer calls typically only have one session, whereas group calls typicall
 Read-only.
 Nullable.
 
+### [Get-MgCommunicationCallRecordSessionCount](Get-MgCommunicationCallRecordSessionCount.md)
+Get the number of the resource
+
+### [Get-MgCommunicationCallRecordSessionSegmentCount](Get-MgCommunicationCallRecordSessionSegmentCount.md)
+Get the number of the resource
+
 ### [Get-MgCommunicationOnlineMeeting](Get-MgCommunicationOnlineMeeting.md)
 Get onlineMeetings from communications
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReport](Get-MgCommunicationOnlineMeetingAttendanceReport.md)
-The attendance reports of an online meeting.
-Read-only.
+Get the meetingAttendanceReport for an onlineMeeting.
+Each time an online meeting ends, an attendance report will be generated for that session.
 
 ### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord.md)
 List of attendance records of an attendance report.
 Read-only.
 
+### [Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecordCount.md)
+Get the number of the resource
+
+### [Get-MgCommunicationOnlineMeetingAttendanceReportCount](Get-MgCommunicationOnlineMeetingAttendanceReportCount.md)
+Get the number of the resource
+
 ### [Get-MgCommunicationOnlineMeetingAttendeeReport](Get-MgCommunicationOnlineMeetingAttendeeReport.md)
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
 
+### [Get-MgCommunicationOnlineMeetingCount](Get-MgCommunicationOnlineMeetingCount.md)
+Get the number of the resource
+
 ### [Get-MgCommunicationPresence](Get-MgCommunicationPresence.md)
-Get presences from communications
+Get a user's presence information.
 
 ### [Get-MgCommunicationPresenceByUserId](Get-MgCommunicationPresenceByUserId.md)
 Get the presence information for multiple users.
 
+### [Get-MgCommunicationPresenceCount](Get-MgCommunicationPresenceCount.md)
+Get the number of the resource
+
 ### [Get-MgUserOnlineMeeting](Get-MgUserOnlineMeeting.md)
-Get onlineMeetings from users
+Retrieve the properties and relationships of an onlineMeeting object.
+For example, you can: Teams live event attendee report is an online meeting artifact.
+For details, see Online meeting artifacts and permissions.
 
 ### [Get-MgUserOnlineMeetingAttendanceReport](Get-MgUserOnlineMeetingAttendanceReport.md)
-The attendance reports of an online meeting.
-Read-only.
+Get the meetingAttendanceReport for an onlineMeeting.
+Each time an online meeting ends, an attendance report will be generated for that session.
 
 ### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 List of attendance records of an attendance report.
 Read-only.
 
+### [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount](Get-MgUserOnlineMeetingAttendanceReportAttendanceRecordCount.md)
+Get the number of the resource
+
+### [Get-MgUserOnlineMeetingAttendanceReportCount](Get-MgUserOnlineMeetingAttendanceReportCount.md)
+Get the number of the resource
+
 ### [Get-MgUserOnlineMeetingAttendeeReport](Get-MgUserOnlineMeetingAttendeeReport.md)
 The content stream of the attendee report of a Microsoft Teams live event.
 Read-only.
+
+### [Get-MgUserOnlineMeetingCount](Get-MgUserOnlineMeetingCount.md)
+Get the number of the resource
 
 ### [Get-MgUserPresence](Get-MgUserPresence.md)
 Get a user's presence information.
@@ -94,11 +142,15 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ### [Invoke-MgCreateOrGetCommunicationOnlineMeeting](Invoke-MgCreateOrGetCommunicationOnlineMeeting.md)
-Create new navigation property to onlineMeetings for communications
+Create an onlineMeeting object with a custom specified external ID.
+If the external ID already exists, this API will return the onlineMeeting object with that external ID.
 
 ### [Invoke-MgInviteCommunicationCallParticipant](Invoke-MgInviteCommunicationCallParticipant.md)
-Invite participants to the active call.
-For more information about how to handle operations, see commsOperation.
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ### [Invoke-MgKeepCommunicationCallAlive](Invoke-MgKeepCommunicationCallAlive.md)
 Make a request to this API every 15 to 45 minutes to ensure that an ongoing call remains active.
@@ -188,8 +240,7 @@ Create new navigation property to participants for communications
 Create new navigation property to sessions for communications
 
 ### [New-MgCommunicationOnlineMeeting](New-MgCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Create new navigation property to onlineMeetings for communications
 
 ### [New-MgCommunicationOnlineMeetingAttendanceReport](New-MgCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -210,7 +261,8 @@ Create new navigation property to attendanceReports for users
 Create new navigation property to attendanceRecords for users
 
 ### [Remove-MgCommunicationCall](Remove-MgCommunicationCall.md)
-Delete navigation property calls for communications
+Delete or hang up an active call.
+For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 ### [Remove-MgCommunicationCallAudioRoutingGroup](Remove-MgCommunicationCallAudioRoutingGroup.md)
 Delete navigation property audioRoutingGroups for communications
@@ -222,7 +274,11 @@ Delete navigation property contentSharingSessions for communications
 Delete navigation property operations for communications
 
 ### [Remove-MgCommunicationCallParticipant](Remove-MgCommunicationCallParticipant.md)
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ### [Remove-MgCommunicationCallRecordSession](Remove-MgCommunicationCallRecordSession.md)
 Delete navigation property sessions for communications
@@ -240,7 +296,7 @@ Delete navigation property attendanceRecords for communications
 Delete navigation property presences for communications
 
 ### [Remove-MgUserOnlineMeeting](Remove-MgUserOnlineMeeting.md)
-Delete navigation property onlineMeetings for users
+Delete an onlineMeeting object.
 
 ### [Remove-MgUserOnlineMeetingAttendanceReport](Remove-MgUserOnlineMeetingAttendanceReport.md)
 Delete navigation property attendanceReports for users
@@ -318,7 +374,8 @@ Update the navigation property attendanceRecords in communications
 Update the navigation property presences in communications
 
 ### [Update-MgUserOnlineMeeting](Update-MgUserOnlineMeeting.md)
-Update the navigation property onlineMeetings in users
+Update the properties of the specified onlineMeeting object.
+Please see Request body section for the list of properties that support updating.
 
 ### [Update-MgUserOnlineMeetingAttendanceReport](Update-MgUserOnlineMeetingAttendanceReport.md)
 Update the navigation property attendanceReports in users

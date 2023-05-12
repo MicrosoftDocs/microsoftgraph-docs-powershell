@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementandroidforworksetting
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementandroidforworksetting
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementAndroidForWorkSetting
+# Update-MgBetaDeviceManagementAndroidForWorkSetting
 
 ## SYNOPSIS
 Update the navigation property androidForWorkSettings in deviceManagement
@@ -14,17 +14,16 @@ Update the navigation property androidForWorkSettings in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementAndroidForWorkSetting [-AdditionalProperties <Hashtable>] [-BindStatus <String>]
+Update-MgBetaDeviceManagementAndroidForWorkSetting [-AdditionalProperties <Hashtable>] [-BindStatus <String>]
  [-DeviceOwnerManagementEnabled] [-EnrollmentTarget <String>] [-Id <String>] [-LastAppSyncDateTime <DateTime>]
  [-LastAppSyncStatus <String>] [-LastModifiedDateTime <DateTime>] [-OwnerOrganizationName <String>]
- [-OwnerUserPrincipalName <String>] [-TargetGroupIds <String[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OwnerUserPrincipalName <String>] [-TargetGroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementAndroidForWorkSetting -BodyParameter <IMicrosoftGraphAndroidForWorkSettings>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementAndroidForWorkSetting -BodyParameter <IMicrosoftGraphAndroidForWorkSettings>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +31,27 @@ Update the navigation property androidForWorkSettings in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 Bind status of the tenant with the Google EMM API
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -66,10 +79,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Settings for Android For Work.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidForWorkSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkSettings
 Parameter Sets: Update
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 Android for Work device management targeting type for the account
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -111,11 +124,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Last completion time for app sync
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Sync status of the tenant with the Google EMM API
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -160,7 +173,7 @@ Accept wildcard characters: False
 Last modification time for Android for Work settings
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -175,7 +188,7 @@ Accept wildcard characters: False
 Organization name used when onboarding Android for Work
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -190,23 +203,8 @@ Accept wildcard characters: False
 Owner UPN that created the enterprise
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -220,7 +218,7 @@ Accept wildcard characters: False
 Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -235,7 +233,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -251,7 +249,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -267,10 +265,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAndroidForWorkSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkSettings
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkSettings
+
 ## NOTES
 
 ALIASES
@@ -280,9 +280,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAndroidForWorkSettings>`: Settings for Android For Work.
+`BODYPARAMETER <IMicrosoftGraphAndroidForWorkSettings>`: Settings for Android For Work.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[BindStatus <String>]`: Bind status of the tenant with the Google EMM API
   - `[DeviceOwnerManagementEnabled <Boolean?>]`: Indicates if this account is flighting for Android Device Owner Management with CloudDPC.
   - `[EnrollmentTarget <String>]`: Android for Work device management targeting type for the account
@@ -294,3 +294,4 @@ BODYPARAMETER `<IMicrosoftGraphAndroidForWorkSettings>`: Settings for Android Fo
   - `[TargetGroupIds <String[]>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
 ## RELATED LINKS
+

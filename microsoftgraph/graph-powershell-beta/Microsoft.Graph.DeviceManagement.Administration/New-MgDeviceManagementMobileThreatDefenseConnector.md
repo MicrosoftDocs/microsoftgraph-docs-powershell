@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementmobilethreatdefenseconnector
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementmobilethreatdefenseconnector
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementMobileThreatDefenseConnector
+# New-MgBetaDeviceManagementMobileThreatDefenseConnector
 
 ## SYNOPSIS
 Create new navigation property to mobileThreatDefenseConnectors for deviceManagement
@@ -14,7 +14,7 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hashtable>]
  [-AllowPartnerToCollectIosApplicationMetadata] [-AllowPartnerToCollectIosPersonalApplicationMetadata]
  [-AndroidDeviceBlockedOnMissingPartnerData] [-AndroidEnabled] [-AndroidMobileApplicationManagementEnabled]
  [-Id <String>] [-IosDeviceBlockedOnMissingPartnerData] [-IosEnabled] [-IosMobileApplicationManagementEnabled]
@@ -22,13 +22,13 @@ New-MgDeviceManagementMobileThreatDefenseConnector [-AdditionalProperties <Hasht
  [-MicrosoftDefenderForEndpointAttachEnabled] [-PartnerState <MobileThreatPartnerTenantState>]
  [-PartnerUnresponsivenessThresholdInDays <Int32>] [-PartnerUnsupportedOSVersionBlocked]
  [-WindowsDeviceBlockedOnMissingPartnerData] [-WindowsEnabled] [-WindowsMobileApplicationManagementEnabled]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementMobileThreatDefenseConnector -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementMobileThreatDefenseConnector
+ -BodyParameter <IMicrosoftGraphMobileThreatDefenseConnector> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,13 +36,27 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -59,7 +73,7 @@ When FALSE, indicates the Mobile Threat Defense partner may not collect metadata
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -76,7 +90,7 @@ When FALSE, indicates the Mobile Threat Defense partner may not collect metadata
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +105,7 @@ Accept wildcard characters: False
 For Android, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +120,7 @@ Accept wildcard characters: False
 For Android, set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +138,7 @@ Only one partner per platform may be enabled for Mobile Application Management (
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,10 +151,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to Mobile Threat Defense partner.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileThreatDefenseConnector
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
 Parameter Sets: Create
 Aliases:
 
@@ -152,11 +166,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +185,7 @@ Accept wildcard characters: False
 For IOS, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +200,7 @@ Accept wildcard characters: False
 For IOS, get or set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -204,7 +218,7 @@ Only one partner per platform may be enabled for Mobile Application Management (
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +233,7 @@ Accept wildcard characters: False
 DateTime of last Heartbeat recieved from the Mobile Threat Defense partner
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +248,7 @@ Accept wildcard characters: False
 For Mac, get or set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +263,7 @@ Accept wildcard characters: False
 For Mac, get or set whether data from the Mobile Threat Defense partner should be used during compliance evaluations
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +280,7 @@ When FALSE, inidicates that configuration profile management via Microsoft Defen
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -281,7 +295,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: MobileThreatPartnerTenantState
+Type: Microsoft.Graph.Beta.PowerShell.Support.MobileThreatPartnerTenantState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -296,7 +310,7 @@ Accept wildcard characters: False
 Get or Set days the per tenant tolerance to unresponsiveness for this partner integration
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -311,7 +325,7 @@ Accept wildcard characters: False
 Get or set whether to block devices on the enabled platforms that do not meet the minimum version requirements of the Mobile Threat Defense partner
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -328,7 +342,7 @@ When FALSE, inidicates that Intune may make a device compliant without receiving
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -345,7 +359,7 @@ When FALSE, inidicates that data from the Mobile Threat Defense partner should n
 Default value is FALSE.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +376,7 @@ When FALSE, Intune will not use device risk details sent over this connector dur
 Existing devices that are not compliant due to risk levels obtained from this connector will also become compliant.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -377,7 +391,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -393,7 +407,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -409,10 +423,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector
+
 ## NOTES
 
 ALIASES
@@ -422,9 +438,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector>`: Entity which represents a connection to Mobile Threat Defense partner.
+`BODYPARAMETER <IMicrosoftGraphMobileThreatDefenseConnector>`: Entity which represents a connection to Mobile Threat Defense partner.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowPartnerToCollectIosApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about installed applications from Intune for IOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about installed applications from Intune for IOS devices. Default value is FALSE.
   - `[AllowPartnerToCollectIosPersonalApplicationMetadata <Boolean?>]`: When TRUE, indicates the Mobile Threat Defense partner may collect metadata about personally installed applications from Intune for IOS devices. When FALSE, indicates the Mobile Threat Defense partner may not collect metadata about personally installed applications from Intune for IOS devices. Default value is FALSE.
   - `[AndroidDeviceBlockedOnMissingPartnerData <Boolean?>]`: For Android, set whether Intune must receive data from the Mobile Threat Defense partner prior to marking a device compliant
@@ -445,3 +461,4 @@ BODYPARAMETER `<IMicrosoftGraphMobileThreatDefenseConnector>`: Entity which repr
   - `[WindowsMobileApplicationManagementEnabled <Boolean?>]`: When TRUE, app protection policies using the Device Threat Level rule will evaluate devices including data from this connector for Windows. When FALSE, Intune will not use device risk details sent over this connector during app protection policies calculation for policies with a Device Threat Level configured. Existing devices that are not compliant due to risk levels obtained from this connector will also become compliant.
 
 ## RELATED LINKS
+

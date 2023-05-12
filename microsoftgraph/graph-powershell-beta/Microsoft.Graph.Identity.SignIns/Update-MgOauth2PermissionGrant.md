@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgoauth2permissiongrant
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaoauth2permissiongrant
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Update-MgOauth2PermissionGrant
+# Update-MgBetaOauth2PermissionGrant
 
 ## SYNOPSIS
 Update the properties of oAuth2PermissionGrant object, representing a delegated permission grant.
@@ -16,30 +15,28 @@ An **oAuth2PermissionGrant** can be updated to change which delegated permission
 
 ### UpdateExpanded (Default)
 ```
-Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId <String> [-AdditionalProperties <Hashtable>]
  [-ClientId <String>] [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId <String>
- -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-ClientId <String>] [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId <String>
+ -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaOauth2PermissionGrant -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ClientId <String>] [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,17 +45,16 @@ An **oAuth2PermissionGrant** can be updated to change which delegated permission
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgOauth2PermissionGrant Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Scope = "User.ReadBasic.All Group.ReadWrite.All"
 }
-Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId -BodyParameter $params
+Update-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgOauth2PermissionGrant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -66,7 +62,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,10 +75,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 oAuth2PermissionGrant
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -99,7 +95,7 @@ Required.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +116,7 @@ Required.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +132,7 @@ Currently, the end time value is ignored, but a value is required when creating 
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -148,11 +144,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -165,11 +161,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -183,26 +179,11 @@ Accept wildcard characters: False
 The unique identifier of oAuth2PermissionGrant
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -216,7 +197,7 @@ Required when consentType is Principal.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +214,7 @@ This identifies the API which the client is authorized to attempt to call on beh
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +232,7 @@ Each claim value should match the value field of one of the delegated permission
 Must not exceed 3850 characters in length.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +248,7 @@ Currently, the start time value is ignored, but a value is required when creatin
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -282,7 +263,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -298,7 +279,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -314,11 +295,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
+
 ## NOTES
 
 ALIASES
@@ -328,9 +312,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphOAuth2PermissionGrant1>`: oAuth2PermissionGrant
+`BODYPARAMETER <IMicrosoftGraphOAuth2PermissionGrant>`: oAuth2PermissionGrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientId <String>]`: The id of the client service principal for the application which is authorized to act on behalf of a signed-in user when accessing an API. Required. Supports $filter (eq only).
   - `[ConsentType <String>]`: Indicates whether authorization is granted for the client application to impersonate all users or only a specific user. AllPrincipals indicates authorization to impersonate all users. Principal indicates authorization to impersonate a specific user. Consent on behalf of all users can be granted by an administrator. Non-admin users may be authorized to consent on behalf of themselves in some cases, for some delegated permissions. Required. Supports $filter (eq only).
   - `[ExpiryTime <DateTime?>]`: Currently, the end time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
@@ -339,7 +323,7 @@ BODYPARAMETER `<IMicrosoftGraphOAuth2PermissionGrant1>`: oAuth2PermissionGrant
   - `[Scope <String>]`: A space-separated list of the claim values for delegated permissions which should be included in access tokens for the resource application (the API). For example, openid User.Read GroupMember.Read.All. Each claim value should match the value field of one of the delegated permissions defined by the API, listed in the publishedPermissionScopes property of the resource service principal. Must not exceed 3850 characters in length.
   - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -376,6 +360,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -414,3 +399,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

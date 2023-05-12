@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgorganizationsettingiteminsight
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingiteminsight
 schema: 2.0.0
 ---
 
-# Update-MgOrganizationSettingItemInsight
+# Update-MgBetaOrganizationSettingItemInsight
 
 ## SYNOPSIS
 Update the privacy settings to display or return the specified type of insights in an organization.
@@ -16,28 +16,28 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 
 ### UpdateExpanded (Default)
 ```
-Update-MgOrganizationSettingItemInsight -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledInOrganization] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaOrganizationSettingItemInsight -OrganizationId <String> [-AdditionalProperties <Hashtable>]
+ [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledInOrganization] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgOrganizationSettingItemInsight -OrganizationId <String>
- -BodyParameter <IMicrosoftGraphInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledInOrganization]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaOrganizationSettingItemInsight -OrganizationId <String>
+ -BodyParameter <IMicrosoftGraphInsightsSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphInsightsSettings> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphInsightsSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaOrganizationSettingItemInsight -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledInOrganization]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,17 +47,16 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgOrganizationSettingItemInsight Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	DisabledForGroup = "edbfe4fb-ec70-4300-928f-dbb2ae86c981"
 }
-Update-MgOrganizationSettingItemInsight -OrganizationId $organizationId -BodyParameter $params
+Update-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgOrganizationSettingItemInsight Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -65,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,10 +77,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 insightsSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInsightsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -98,7 +97,7 @@ Default is empty.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,11 +126,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -147,7 +146,7 @@ Default is true.
 Optional.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,26 +161,11 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -192,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,11 +208,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInsightsSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
+
 ## NOTES
 
 ALIASES
@@ -238,13 +225,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInsightsSettings>`: insightsSettings
+`BODYPARAMETER <IMicrosoftGraphInsightsSettings>`: insightsSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisabledForGroup <String>]`: The ID of an Azure Active Directory group, of which the specified type of insights are disabled for its members. Default is empty. Optional.
   - `[IsEnabledInOrganization <Boolean?>]`: true if the specified type of insights are enabled for the organization; false if the specified type of insights are disabled for all users without exceptions. Default is true. Optional.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -281,3 +268,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

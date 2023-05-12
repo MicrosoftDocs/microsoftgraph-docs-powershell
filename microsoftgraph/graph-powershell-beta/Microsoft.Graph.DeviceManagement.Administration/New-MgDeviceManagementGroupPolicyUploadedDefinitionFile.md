@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementgrouppolicyuploadeddefinitionfile
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicyuploadeddefinitionfile
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementGroupPolicyUploadedDefinitionFile
+# New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile
 
 ## SYNOPSIS
 Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceManagement
@@ -14,20 +14,20 @@ Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceM
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementGroupPolicyUploadedDefinitionFile [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile [-AdditionalProperties <Hashtable>]
  [-ContentInputFile <String>] [-DefaultLanguageCode <String>]
  [-Definitions <IMicrosoftGraphGroupPolicyDefinition[]>] [-Description <String>] [-DisplayName <String>]
  [-FileName <String>] [-GroupPolicyOperations <IMicrosoftGraphGroupPolicyOperation[]>]
  [-GroupPolicyUploadedLanguageFiles <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>] [-Id <String>]
  [-LanguageCodes <String[]>] [-LastModifiedDateTime <DateTime>] [-PolicyType <GroupPolicyType>]
  [-Revision <String>] [-Status <GroupPolicyUploadedDefinitionFileStatus>] [-TargetNamespace <String>]
- [-TargetPrefix <String>] [-UploadDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TargetPrefix <String>] [-UploadDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementGroupPolicyUploadedDefinitionFile
- -BodyParameter <IMicrosoftGraphGroupPolicyUploadedDefinitionFile> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFile
+ -BodyParameter <IMicrosoftGraphGroupPolicyUploadedDefinitionFile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,13 +35,27 @@ Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceM
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,10 +70,10 @@ Accept wildcard characters: False
 The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyUploadedDefinitionFile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
 Parameter Sets: Create
 Aliases:
 
@@ -74,7 +88,7 @@ Accept wildcard characters: False
 Input File for Content (The contents of the uploaded ADMX file.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +103,7 @@ Accept wildcard characters: False
 The default language of the uploaded ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,10 +116,10 @@ Accept wildcard characters: False
 
 ### -Definitions
 The group policy definitions associated with the file.
-To construct, please use Get-Help -Online and see NOTES section for DEFINITIONS properties and create a hash table.
+To construct, see NOTES section for DEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +135,7 @@ The localized description of the policy settings in the ADMX file.
 The default value is empty.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -136,7 +150,7 @@ Accept wildcard characters: False
 The localized friendly name of the ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +166,7 @@ The file name of the ADMX file without the path.
 For example: edge.admx
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,10 +179,10 @@ Accept wildcard characters: False
 
 ### -GroupPolicyOperations
 The list of operations on the uploaded ADMX file.
-To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYOPERATIONS properties and create a hash table.
+To construct, see NOTES section for GROUPPOLICYOPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyOperation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,10 +195,10 @@ Accept wildcard characters: False
 
 ### -GroupPolicyUploadedLanguageFiles
 The list of ADML files associated with the uploaded ADMX file.
-To construct, please use Get-Help -Online and see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
+To construct, see NOTES section for GROUPPOLICYUPLOADEDLANGUAGEFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedLanguageFile[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,11 +210,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -215,7 +229,7 @@ Accept wildcard characters: False
 The supported language codes for the ADMX file.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -230,7 +244,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -245,7 +259,7 @@ Accept wildcard characters: False
 Type of Group Policy File or Definition.
 
 ```yaml
-Type: GroupPolicyType
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicyType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -260,7 +274,7 @@ Accept wildcard characters: False
 The revision version associated with the file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -275,7 +289,7 @@ Accept wildcard characters: False
 Type of Group Policy uploaded definition file status.
 
 ```yaml
-Type: GroupPolicyUploadedDefinitionFileStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicyUploadedDefinitionFileStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +304,7 @@ Accept wildcard characters: False
 Specifies the URI used to identify the namespace within the ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +319,7 @@ Accept wildcard characters: False
 Specifies the logical name that refers to the namespace within the ADMX file.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -320,7 +334,7 @@ Accept wildcard characters: False
 The uploaded time of the uploaded ADMX file.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -335,7 +349,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -351,7 +365,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -367,10 +381,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyUploadedDefinitionFile
+
 ## NOTES
 
 ALIASES
@@ -380,17 +396,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
+`BODYPARAMETER <IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file uploaded by Administrator. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
       - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
         - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
         - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -420,7 +436,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity r
     - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
     - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
       - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
       - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -436,11 +452,11 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity r
   - `[Revision <String>]`: The revision version associated with the file.
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: The contents of the uploaded ADMX file.
   - `[DefaultLanguageCode <String>]`: The default language of the uploaded ADMX file.
   - `[GroupPolicyOperations <IMicrosoftGraphGroupPolicyOperation[]>]`: The list of operations on the uploaded ADMX file.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
     - `[OperationStatus <GroupPolicyOperationStatus?>]`: Type of Group Policy operation status.
     - `[OperationType <GroupPolicyOperationType?>]`: Type of Group Policy operation.
@@ -454,15 +470,15 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyUploadedDefinitionFile>`: The entity r
   - `[Status <GroupPolicyUploadedDefinitionFileStatus?>]`: Type of Group Policy uploaded definition file status.
   - `[UploadDateTime <DateTime?>]`: The uploaded time of the uploaded ADMX file.
 
-DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition\[]>: The group policy definitions associated with the file.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition[]>`: The group policy definitions associated with the file.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
     - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
       - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
       - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -492,7 +508,7 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition\[]>: The group policy definiti
   - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
   - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
   - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -500,14 +516,14 @@ DEFINITIONS <IMicrosoftGraphGroupPolicyDefinition\[]>: The group policy definiti
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-GROUPPOLICYOPERATIONS <IMicrosoftGraphGroupPolicyOperation\[]>: The list of operations on the uploaded ADMX file.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`GROUPPOLICYOPERATIONS <IMicrosoftGraphGroupPolicyOperation[]>`: The list of operations on the uploaded ADMX file.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[OperationStatus <GroupPolicyOperationStatus?>]`: Type of Group Policy operation status.
   - `[OperationType <GroupPolicyOperationType?>]`: Type of Group Policy operation.
   - `[StatusDetails <String>]`: The group policy operation status detail.
 
-GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile\[]>: The list of ADML files associated with the uploaded ADMX file.
+`GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile[]>`: The list of ADML files associated with the uploaded ADMX file.
   - `[Content <Byte[]>]`: The contents of the uploaded ADML file.
   - `[FileName <String>]`: The file name of the uploaded ADML file.
   - `[Id <String>]`: Key of the entity.
@@ -516,4 +532,3 @@ GROUPPOLICYUPLOADEDLANGUAGEFILES <IMicrosoftGraphGroupPolicyUploadedLanguageFile
 
 ## RELATED LINKS
 
-## RELATED LINKS

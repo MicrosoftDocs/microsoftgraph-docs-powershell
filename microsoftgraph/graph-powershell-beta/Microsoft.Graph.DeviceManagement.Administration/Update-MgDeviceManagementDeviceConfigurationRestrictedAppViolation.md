@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementdeviceconfigurationrestrictedappviolation
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementdeviceconfigurationrestrictedappviolation
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
+# Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
 
 ## SYNOPSIS
 Update the navigation property deviceConfigurationRestrictedAppsViolations in deviceManagement
@@ -14,34 +14,34 @@ Update the navigation property deviceConfigurationRestrictedAppsViolations in de
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation -RestrictedAppsViolationId <String>
+Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation -RestrictedAppsViolationId <String>
  [-AdditionalProperties <Hashtable>] [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>]
  [-DeviceName <String>] [-Id <String>] [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
  [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
- [-UserId <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserId <String>] [-UserName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation -RestrictedAppsViolationId <String>
- -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
- [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
- [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
- [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
- [-UserId <String>] [-UserName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation -RestrictedAppsViolationId <String>
+ -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementDeviceConfigurationRestrictedAppViolation
- -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphRestrictedAppsViolation>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphRestrictedAppsViolation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementDeviceConfigurationRestrictedAppViolation
+ -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
+ [-DeviceConfigurationId <String>] [-DeviceConfigurationName <String>] [-DeviceName <String>] [-Id <String>]
+ [-ManagedDeviceId <String>] [-PlatformType <PolicyPlatformType>]
+ [-RestrictedApps <IMicrosoftGraphManagedDeviceReportedApp[]>] [-RestrictedAppsState <RestrictedAppsState>]
+ [-UserId <String>] [-UserName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update the navigation property deviceConfigurationRestrictedAppsViolations in de
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,10 +82,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Violation of restricted apps configuration profile per device per user
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRestrictedAppsViolation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +100,7 @@ Accept wildcard characters: False
 Device configuration profile unique identifier, must be Guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +115,7 @@ Accept wildcard characters: False
 Device configuration profile name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 Device name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,11 +159,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -163,23 +177,8 @@ Accept wildcard characters: False
 Managed device unique identifier, must be Guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -193,7 +192,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.Beta.PowerShell.Support.PolicyPlatformType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,10 +205,10 @@ Accept wildcard characters: False
 
 ### -RestrictedApps
 List of violated restricted apps
-To construct, please use Get-Help -Online and see NOTES section for RESTRICTEDAPPS properties and create a hash table.
+To construct, see NOTES section for RESTRICTEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceReportedApp[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceReportedApp[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +223,7 @@ Accept wildcard characters: False
 Restricted apps state
 
 ```yaml
-Type: RestrictedAppsState
+Type: Microsoft.Graph.Beta.PowerShell.Support.RestrictedAppsState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,8 +238,8 @@ Accept wildcard characters: False
 The unique identifier of restrictedAppsViolation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -254,7 +253,7 @@ Accept wildcard characters: False
 User unique identifier, must be Guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +268,7 @@ Accept wildcard characters: False
 User name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +283,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -300,7 +299,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -316,11 +315,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRestrictedAppsViolation
+
 ## NOTES
 
 ALIASES
@@ -330,9 +332,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
+`BODYPARAMETER <IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricted apps configuration profile per device per user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceConfigurationId <String>]`: Device configuration profile unique identifier, must be Guid
   - `[DeviceConfigurationName <String>]`: Device configuration profile name
   - `[DeviceName <String>]`: Device name
@@ -344,7 +346,7 @@ BODYPARAMETER `<IMicrosoftGraphRestrictedAppsViolation>`: Violation of restricte
   - `[UserId <String>]`: User unique identifier, must be Guid
   - `[UserName <String>]`: User name
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -401,7 +403,8 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp\[]>: List of violated restricted apps
+`RESTRICTEDAPPS <IMicrosoftGraphManagedDeviceReportedApp[]>`: List of violated restricted apps
   - `[AppId <String>]`: The application or bundle identifier of the application
 
 ## RELATED LINKS
+

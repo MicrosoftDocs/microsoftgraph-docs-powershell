@@ -1,42 +1,42 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/copy-mguserdriveitem
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/copy-mgbetauserdriveitem
 schema: 2.0.0
 ---
 
-# Copy-MgUserDriveItem
+# Copy-MgBetaUserDriveItem
 
 ## SYNOPSIS
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## SYNTAX
 
-### CopyExpanded1 (Default)
+### CopyExpanded (Default)
 ```
-Copy-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
+Copy-MgBetaUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Copy1
+### Copy
 ```
-Copy-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
+Copy-MgBetaUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CopyViaIdentityExpanded1
+### CopyViaIdentity
 ```
-Copy-MgUserDriveItem -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>] [-Name <String>]
- [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentity1
-```
-Copy-MgUserDriveItem -InputObject <IUsersActionsIdentity>
+Copy-MgBetaUserDriveItem -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded
+```
+Copy-MgBetaUserDriveItem -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,28 @@ Asynchronously creates a copy of an [driveItem][item-resource] (including any ch
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -63,11 +77,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Copy1, CopyViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
 Required: True
@@ -81,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, Copy1
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -96,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, Copy1
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CopyViaIdentityExpanded1, CopyViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -127,8 +141,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -140,11 +154,11 @@ Accept wildcard characters: False
 
 ### -ParentReference
 itemReference
-To construct, please use Get-Help -Online and see NOTES section for PARENTREFERENCE properties and create a hash table.
+To construct, see NOTES section for PARENTREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
-Parameter Sets: CopyExpanded1, CopyViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemReference
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -158,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded1, Copy1
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -173,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,11 +219,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -219,13 +236,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphCopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Name <String>]`: 
   - `[ParentReference <IMicrosoftGraphItemReference>]`: itemReference
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
-    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
     - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
     - `[Name <String>]`: The name of the item being referenced. Read-only.
     - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
@@ -241,7 +258,7 @@ BODYPARAMETER `<IPaths8Bxd2FUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGra
       - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
     - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -275,7 +292,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -284,10 +300,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
+`PARENTREFERENCE <IMicrosoftGraphItemReference>`: itemReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
-  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][]. See [drive][] resource for values.
+  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
   - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
   - `[Name <String>]`: The name of the item being referenced. Read-only.
   - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
@@ -304,3 +320,4 @@ PARENTREFERENCE `<IMicrosoftGraphItemReference>`: itemReference
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
+

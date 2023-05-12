@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicetimelineevent
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicetimelineevent
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
+# New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
@@ -14,15 +14,15 @@ Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent [-AdditionalProperties <Hashtable>]
  [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventDetails <String>] [-EventLevel <DeviceEventLevel>]
- [-EventName <String>] [-EventSource <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-EventName <String>] [-EventSource <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -31,13 +31,27 @@ Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,10 +64,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device event entity contains NRT device event details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 The id of the device where the event occurred.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +97,7 @@ Accept wildcard characters: False
 The time the event occured.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +112,7 @@ Accept wildcard characters: False
 The details provided by the event, format depends on event type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +128,7 @@ Indicates device event level.
 Possible values are: None, Verbose, Information, Warning, Error, Critical
 
 ```yaml
-Type: DeviceEventLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceEventLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +144,7 @@ The name of the event.
 Examples include: BootEvent, LogonEvent, AppCrashEvent, AppHangEvent.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +160,7 @@ The source of the event.
 Examples include: Intune, Sccm.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,11 +172,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -177,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -193,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,10 +223,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent
+
 ## NOTES
 
 ALIASES
@@ -222,9 +238,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The user experience analytics device event entity contains NRT device event details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The user experience analytics device event entity contains NRT device event details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceId <String>]`: The id of the device where the event occurred.
   - `[EventDateTime <DateTime?>]`: The time the event occured.
   - `[EventDetails <String>]`: The details provided by the event, format depends on event type.
@@ -233,3 +249,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceTimelineEvent>`: The
   - `[EventSource <String>]`: The source of the event. Examples include: Intune, Sccm.
 
 ## RELATED LINKS
+

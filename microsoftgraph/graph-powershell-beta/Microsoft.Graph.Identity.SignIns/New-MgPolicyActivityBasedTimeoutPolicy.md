@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicyactivitybasedtimeoutpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicyactivitybasedtimeoutpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgPolicyActivityBasedTimeoutPolicy
+# New-MgBetaPolicyActivityBasedTimeoutPolicy
 
 ## SYNOPSIS
 Create a new activityBasedTimeoutPolicy object.
@@ -15,15 +14,16 @@ Create a new activityBasedTimeoutPolicy object.
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyActivityBasedTimeoutPolicy [-AdditionalProperties <Hashtable>]
+New-MgBetaPolicyActivityBasedTimeoutPolicy [-AdditionalProperties <Hashtable>]
  [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Definition <String[]>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsOrganizationDefault] [-WhatIf] [-Confirm]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsOrganizationDefault] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,9 +31,9 @@ Create a new activityBasedTimeoutPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgPolicyActivityBasedTimeoutPolicy Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Definition = @(
 		"definition-value"
@@ -41,11 +41,10 @@ $params = @{
 	DisplayName = "displayName-value"
 	IsOrganizationDefault = $true
 }
-New-MgPolicyActivityBasedTimeoutPolicy -BodyParameter $params
+New-MgBetaPolicyActivityBasedTimeoutPolicy -BodyParameter $params
 ```
 
-This example shows how to use the New-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -53,7 +52,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,10 +65,10 @@ Accept wildcard characters: False
 
 ### -AppliesTo
 .
-To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
+To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +83,7 @@ Accept wildcard characters: False
 activityBasedTimeoutPolicy
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create
 Aliases:
 
@@ -101,7 +100,7 @@ The syntax for the definition differs for each derived policy type.
 Required.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +116,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +132,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +148,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,11 +160,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +181,7 @@ There can be many policies for the same policy type, but only one can be activat
 Optional, default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,9 +229,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphActivityBasedTimeoutPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphActivityBasedTimeoutPolicy
+
 ## NOTES
 
 ALIASES
@@ -242,8 +243,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`APPLIESTO <IMicrosoftGraphDirectoryObject[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/update-mgdirectoryfeaturerolloutpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectoryfeaturerolloutpolicy
 schema: 2.0.0
 ---
 
-# Update-MgDirectoryFeatureRolloutPolicy
+# Update-MgBetaDirectoryFeatureRolloutPolicy
 
 ## SYNOPSIS
 Update the navigation property featureRolloutPolicies in directory
@@ -14,30 +14,30 @@ Update the navigation property featureRolloutPolicies in directory
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDirectoryFeatureRolloutPolicy -FeatureRolloutPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Description <String>] [-DisplayName <String>]
- [-Feature <String>] [-Id <String>] [-IsAppliedToOrganization] [-IsEnabled] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDirectoryFeatureRolloutPolicy -FeatureRolloutPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Description <String>]
+ [-DisplayName <String>] [-Feature <String>] [-Id <String>] [-IsAppliedToOrganization] [-IsEnabled] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDirectoryFeatureRolloutPolicy -FeatureRolloutPolicyId <String>
- -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Description <String>]
- [-DisplayName <String>] [-Feature <String>] [-Id <String>] [-IsAppliedToOrganization] [-IsEnabled] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectoryFeatureRolloutPolicy -FeatureRolloutPolicyId <String>
+ -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphFeatureRolloutPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppliesTo <IMicrosoftGraphDirectoryObject[]>] [-Description <String>]
+ [-DisplayName <String>] [-Feature <String>] [-Id <String>] [-IsAppliedToOrganization] [-IsEnabled] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Update the navigation property featureRolloutPolicies in directory
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,10 +79,10 @@ Accept wildcard characters: False
 ### -AppliesTo
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
-To construct, please use Get-Help -Online and see NOTES section for APPLIESTO properties and create a hash table.
+To construct, see NOTES section for APPLIESTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,10 +95,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 featureRolloutPolicy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFeatureRolloutPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 A description for this feature rollout policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +128,7 @@ Accept wildcard characters: False
 The display name for this feature rollout policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +143,7 @@ Accept wildcard characters: False
 stagedFeatureName
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of featureRolloutPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -156,11 +170,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,11 +187,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -191,7 +205,7 @@ Accept wildcard characters: False
 Indicates whether this feature rollout policy should be applied to the entire organization.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,23 +220,8 @@ Accept wildcard characters: False
 Indicates whether the feature rollout is enabled.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -236,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -268,11 +267,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFeatureRolloutPolicy
+
 ## NOTES
 
 ALIASES
@@ -282,15 +284,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-APPLIESTO <IMicrosoftGraphDirectoryObject\[]>: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`APPLIESTO <IMicrosoftGraphDirectoryObject[]>`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
+`BODYPARAMETER <IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: Nullable. Specifies a list of directoryObjects that feature is enabled for.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[Description <String>]`: A description for this feature rollout policy.
   - `[DisplayName <String>]`: The display name for this  feature rollout policy.
@@ -298,7 +300,7 @@ BODYPARAMETER `<IMicrosoftGraphFeatureRolloutPolicy>`: featureRolloutPolicy
   - `[IsAppliedToOrganization <Boolean?>]`: Indicates whether this feature rollout policy should be applied to the entire organization.
   - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -335,3 +337,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

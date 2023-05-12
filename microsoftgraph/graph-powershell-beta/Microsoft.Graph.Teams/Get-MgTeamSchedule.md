@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamschedule
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamschedule
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgTeamSchedule
+# Get-MgBetaTeamSchedule
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a schedule object.
@@ -17,14 +16,15 @@ Clients can also inspect the configuration of the schedule.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgTeamSchedule -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaTeamSchedule -TeamId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaTeamSchedule -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -37,14 +37,13 @@ Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamSchedule Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamSchedule -TeamId $teamId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamSchedule -TeamId $teamId
 ```
 
-This example shows how to use the Get-MgTeamSchedule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -52,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -65,11 +64,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +82,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -98,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -114,10 +113,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedule
+
 ## NOTES
 
 ALIASES
@@ -127,7 +128,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -167,3 +168,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

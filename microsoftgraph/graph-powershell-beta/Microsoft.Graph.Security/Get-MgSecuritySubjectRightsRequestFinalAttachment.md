@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritysubjectrightsrequestfinalattachment
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritysubjectrightsrequestfinalattachment
 schema: 2.0.0
 ---
 
-# Get-MgSecuritySubjectRightsRequestFinalAttachment
+# Get-MgBetaSecuritySubjectRightsRequestFinalAttachment
 
 ## SYNOPSIS
 Invoke function getFinalAttachment
@@ -14,13 +14,13 @@ Invoke function getFinalAttachment
 
 ### Get (Default)
 ```
-Get-MgSecuritySubjectRightsRequestFinalAttachment -SubjectRightsRequestId <String> -OutFile <String>
+Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -SubjectRightsRequestId <String> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIdentity> -OutFile <String>
+Get-MgBetaSecuritySubjectRightsRequestFinalAttachment -InputObject <ISecurityIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
@@ -29,14 +29,28 @@ Invoke function getFinalAttachment
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of subjectRightsRequest
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -97,10 +111,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -110,7 +126,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -169,3 +185,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

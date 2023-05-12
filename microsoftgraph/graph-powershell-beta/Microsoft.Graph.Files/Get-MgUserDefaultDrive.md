@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mguserdefaultdrive
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetauserdefaultdrive
 schema: 2.0.0
 ---
 
-# Get-MgUserDefaultDrive
+# Get-MgBetaUserDefaultDrive
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a Drive resource.
@@ -13,15 +13,15 @@ A Drive is the top-level container for a file system, such as OneDrive or ShareP
 
 ## SYNTAX
 
-### Get2 (Default)
+### Get (Default)
 ```
-Get-MgUserDefaultDrive -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserDefaultDrive -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
-Get-MgUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserDefaultDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -31,24 +31,22 @@ A Drive is the top-level container for a file system, such as OneDrive or ShareP
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserDefaultDrive Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
-Get-MgUserDefaultDrive -UserId $userId
+Import-Module Microsoft.Graph.Beta.Files
+Get-MgBetaUserDefaultDrive -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Get-MgUserDefaultDrive Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
 # A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
+Get-MgBetaUserDefaultDrive -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserDefaultDrive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -56,7 +54,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -69,11 +67,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: GetViaIdentity2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -87,7 +85,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -102,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get2
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -118,10 +116,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDrive1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDrive
+
 ## NOTES
 
 ALIASES
@@ -131,7 +131,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -158,3 +158,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

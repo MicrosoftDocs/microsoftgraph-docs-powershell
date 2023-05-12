@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/export-mgdirectoryinboundshareduserprofilepersonaldata
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/export-mgbetadirectoryinboundshareduserprofilepersonaldata
 schema: 2.0.0
 ---
 
-# Export-MgDirectoryInboundSharedUserProfilePersonalData
+# Export-MgBetaDirectoryInboundSharedUserProfilePersonalData
 
 ## SYNOPSIS
 Create a request to export the personal data for an inboundSharedUserProfile.
@@ -14,30 +14,30 @@ Create a request to export the personal data for an inboundSharedUserProfile.
 
 ### ExportExpanded (Default)
 ```
-Export-MgDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId <String>
- [-AdditionalProperties <Hashtable>] [-StorageLocation <String>] [-PassThru] [-WhatIf] [-Confirm]
+Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId <String>
+ [-AdditionalProperties <Hashtable>] [-StorageLocation <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Export
 ```
-Export-MgDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId <String>
+Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InboundSharedUserProfileUserId <String>
  -BodyParameter <IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ExportViaIdentityExpanded
-```
-Export-MgDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-StorageLocation <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExportViaIdentity
 ```
-Export-MgDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdentityDirectoryManagementIdentity>
+Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ExportViaIdentityExpanded
+```
+Export-MgBetaDirectoryInboundSharedUserProfilePersonalData -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-StorageLocation <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Create a request to export the personal data for an inboundSharedUserProfile.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Export, ExportViaIdentity
 Aliases:
 
@@ -82,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of inboundSharedUserProfile
 
 ```yaml
-Type: String
-Parameter Sets: ExportExpanded, Export
+Type: System.String
+Parameter Sets: Export, ExportExpanded
 Aliases:
 
 Required: True
@@ -95,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: ExportViaIdentityExpanded, ExportViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: ExportViaIdentity, ExportViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,11 +189,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -189,11 +206,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths192Hj9ZDirectoryInboundshareduserprofilesInboundshareduserprofileUseridMicrosoftGraphExportpersonaldataPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[StorageLocation <String>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -230,3 +247,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

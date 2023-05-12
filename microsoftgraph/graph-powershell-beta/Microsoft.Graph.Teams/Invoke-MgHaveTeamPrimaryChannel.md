@@ -1,26 +1,26 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mghaveteamprimarychannel
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetahaveteamprimarychannel
 schema: 2.0.0
 ---
 
-# Invoke-MgHaveTeamPrimaryChannel
+# Invoke-MgBetaHaveTeamPrimaryChannel
 
 ## SYNOPSIS
 Invoke function doesUserHaveAccess
 
 ## SYNTAX
 
-### Have1 (Default)
+### Have (Default)
 ```
-Invoke-MgHaveTeamPrimaryChannel -TeamId <String> [-TenantId <String>] [-UserId <String>]
+Invoke-MgBetaHaveTeamPrimaryChannel -TeamId <String> [-TenantId <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [<CommonParameters>]
 ```
 
-### HaveViaIdentity1
+### HaveViaIdentity
 ```
-Invoke-MgHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-UserId <String>]
+Invoke-MgBetaHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <String>] [-UserId <String>]
  [-UserPrincipalName <String>] [<CommonParameters>]
 ```
 
@@ -29,15 +29,29 @@ Invoke function doesUserHaveAccess
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: HaveViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: HaveViaIdentity
 Aliases:
 
 Required: True
@@ -51,8 +65,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: Have1
+Type: System.String
+Parameter Sets: Have
 Aliases:
 
 Required: True
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 Usage: tenantId='@tenantId'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 Usage: userId='@userId'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +110,7 @@ Accept wildcard characters: False
 Usage: userPrincipalName='@userPrincipalName'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -112,10 +126,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -125,7 +141,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -165,3 +181,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

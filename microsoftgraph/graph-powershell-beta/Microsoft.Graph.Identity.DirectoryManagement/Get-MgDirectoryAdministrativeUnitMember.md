@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgdirectoryadministrativeunitmember
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryadministrativeunitmember
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# Get-MgDirectoryAdministrativeUnitMember
+# Get-MgBetaDirectoryAdministrativeUnitMember
 
 ## SYNOPSIS
 Users and groups that are members of this administrative unit.
@@ -15,9 +14,10 @@ Supports $expand.
 ## SYNTAX
 
 ```
-Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandProperty <String[]>]
- [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-ConsistencyLevel <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaDirectoryAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandProperty <String[]>]
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-ConsistencyLevel <String>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -26,27 +26,19 @@ Supports $expand.
 
 ## EXAMPLES
 
-### Example 1: List member objects
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgDirectoryAdministrativeUnitMember Cmdlet.
+Get-MgBetaDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List member references
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgDirectoryAdministrativeUnitMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
 
 ## PARAMETERS
 
@@ -54,7 +46,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of administrativeUnit
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -69,7 +61,7 @@ Accept wildcard characters: False
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -85,7 +77,7 @@ Indicates the requested consistency level.
 Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -101,7 +93,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases: CV
 
@@ -116,7 +108,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -131,7 +123,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -146,7 +138,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -161,7 +153,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -176,7 +168,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -191,7 +198,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -206,24 +213,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -239,9 +231,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

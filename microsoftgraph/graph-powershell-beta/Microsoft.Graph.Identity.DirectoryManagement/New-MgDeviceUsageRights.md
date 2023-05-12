@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdeviceusagerights
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadeviceusagerights
 schema: 2.0.0
 ---
 
-# New-MgDeviceUsageRights
+# New-MgBetaDeviceUsageRights
 
 ## SYNOPSIS
 Create new navigation property to usageRights for devices
@@ -14,27 +14,27 @@ Create new navigation property to usageRights for devices
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceUsageRights -DeviceId <String> [-AdditionalProperties <Hashtable>] [-CatalogId <String>]
- [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceUsageRights -DeviceId <String> [-AdditionalProperties <Hashtable>] [-CatalogId <String>]
+ [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceUsageRights -DeviceId <String> -BodyParameter <IMicrosoftGraphUsageRight> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>] [-State <String>] [-WhatIf] [-Confirm]
+New-MgBetaDeviceUsageRights -DeviceId <String> -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphUsageRight> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,13 +42,27 @@ Create new navigation property to usageRights for devices
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -61,10 +75,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 usageRight
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUsageRight
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageRight
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -79,7 +93,7 @@ Accept wildcard characters: False
 Product id corresponding to the usage right.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,8 +108,8 @@ Accept wildcard characters: False
 The unique identifier of device
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -106,11 +120,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -123,11 +137,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 Identifier of the service corresponding to the usage right.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +170,7 @@ Accept wildcard characters: False
 usageRightState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,11 +217,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageRight
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageRight
+
 ## NOTES
 
 ALIASES
@@ -217,14 +234,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUsageRight>`: usageRight
+`BODYPARAMETER <IMicrosoftGraphUsageRight>`: usageRight
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CatalogId <String>]`: Product id corresponding to the usage right.
   - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
   - `[State <String>]`: usageRightState
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -261,3 +278,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

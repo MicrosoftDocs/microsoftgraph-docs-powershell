@@ -1,17 +1,18 @@
 ---
-external help file: Microsoft.Graph.Notes-help.xml
+external help file:
 Module Name: Microsoft.Graph.Notes
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.notes/get-mggrouponenoteoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.notes/get-mggrouponenoteoperation
 schema: 2.0.0
 ---
 
 # Get-MgGroupOnenoteOperation
 
 ## SYNOPSIS
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get the status of a long-running OneNote operation.
+This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
+  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
+If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
+If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
 ## SYNTAX
 
@@ -28,12 +29,27 @@ Get-MgGroupOnenoteOperation -InputObject <INotesIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-The status of OneNote operations.
-Getting an operations collection is not supported, but you can get the status of long-running operations if the Operation-Location header is returned in the response.
-Read-only.
-Nullable.
+Get the status of a long-running OneNote operation.
+This applies to operations that return the **Operation-Location** header in the response, such as `CopyNotebook`, `CopyToNotebook`, `CopyToSectionGroup`, `and CopyToSection`.
+  You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
+If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
+If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -41,7 +57,7 @@ Nullable.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -56,7 +72,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -69,10 +85,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: Microsoft.Graph.PowerShell.Models.INotesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -87,7 +103,7 @@ Accept wildcard characters: False
 The unique identifier of onenoteOperation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -102,7 +118,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -119,9 +135,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.INotesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+
 ## NOTES
 
 ALIASES
@@ -131,7 +149,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<INotesIdentity>`: Identity Parameter
+`INPUTOBJECT <INotesIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
@@ -143,3 +161,4 @@ INPUTOBJECT `<INotesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

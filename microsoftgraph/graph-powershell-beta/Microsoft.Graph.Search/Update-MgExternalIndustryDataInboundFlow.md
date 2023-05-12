@@ -1,51 +1,64 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalindustrydatainboundflow
+external help file:
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalindustrydatainboundflow
 schema: 2.0.0
 ---
 
-# Update-MgExternalIndustryDataInboundFlow
+# Update-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Update the navigation property inboundFlows in external
+Update the properties of an inboundFileFlow object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgExternalIndustryDataInboundFlow -InboundFlowId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String> [-AdditionalProperties <Hashtable>]
  [-DataConnector <IMicrosoftGraphIndustryDataConnector>] [-DataDomain <String>] [-DisplayName <String>]
  [-EffectiveDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
- [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgExternalIndustryDataInboundFlow -InboundFlowId <String>
- -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-DataConnector <IMicrosoftGraphIndustryDataConnector>] [-DataDomain <String>] [-DisplayName <String>]
- [-EffectiveDateTime <DateTime>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
- [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaExternalIndustryDataInboundFlow -InboundFlowId <String>
+ -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphIndustryDataInboundFlow> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity>
+ [-AdditionalProperties <Hashtable>] [-DataConnector <IMicrosoftGraphIndustryDataConnector>]
+ [-DataDomain <String>] [-DisplayName <String>] [-EffectiveDateTime <DateTime>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-ReadinessStatus <String>]
+ [-Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property inboundFlows in external
+Update the properties of an inboundFileFlow object.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -53,7 +66,7 @@ Update the navigation property inboundFlows in external
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +79,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 inboundFlow
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataInboundFlow
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataInboundFlow
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,10 +95,10 @@ Accept wildcard characters: False
 
 ### -DataConnector
 industryDataConnector
-To construct, please use Get-Help -Online and see NOTES section for DATACONNECTOR properties and create a hash table.
+To construct, see NOTES section for DATACONNECTOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataConnector
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataConnector
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 inboundDomain
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ The name of the activity.
 Maximum supported length is 100 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -133,7 +146,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +163,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of inboundFlow
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -194,11 +207,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -208,26 +221,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ReadinessStatus
 readinessStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,10 +238,10 @@ Accept wildcard characters: False
 
 ### -Year
 yearTimePeriodDefinition
-To construct, please use Get-Help -Online and see NOTES section for YEAR properties and create a hash table.
+To construct, see NOTES section for YEAR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataYearTimePeriodDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataYearTimePeriodDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -258,7 +256,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -274,7 +272,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -290,11 +288,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIndustryDataInboundFlow
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataInboundFlow
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataInboundFlow
+
 ## NOTES
 
 ALIASES
@@ -304,18 +305,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
+`BODYPARAMETER <IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The name of the activity. Maximum supported length is 100 characters.
   - `[ReadinessStatus <String>]`: readinessStatus
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DataConnector <IMicrosoftGraphIndustryDataConnector>]`: industryDataConnector
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The name of the data connector. Maximum supported length is 100 characters.
     - `[SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>]`: sourceSystemDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The name of the source system. Maximum supported length is 100 characters.
       - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>]`: A collection of user matching settings by roleGroup.
         - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
@@ -323,7 +324,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
           - `[Code <String>]`: The code of the desired referenceDefinition entry.
           - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
             - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
             - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -331,7 +332,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
         - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
         - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[DisplayName <String>]`: The name of the role group.
           - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
             - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -346,7 +347,7 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
   - `[ExpirationDateTime <DateTime?>]`: The end of the time window when the flow is allowed to run. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Year <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>]`: yearTimePeriodDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The name of the year. Maximum supported length is 100 characters.
     - `[EndDate <DateTime?>]`: The last day of the year using ISO 8601 format for date.
     - `[StartDate <DateTime?>]`: The first day of the year using ISO 8601 format for date.
@@ -355,13 +356,13 @@ BODYPARAMETER `<IMicrosoftGraphIndustryDataInboundFlow>`: inboundFlow
       - `[Code <String>]`: The code of the desired referenceDefinition entry.
       - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
 
-DATACONNECTOR `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
+`DATACONNECTOR <IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the data connector. Maximum supported length is 100 characters.
   - `[SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>]`: sourceSystemDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The name of the source system. Maximum supported length is 100 characters.
     - `[UserMatchingSettings <IMicrosoftGraphIndustryDataUserMatchingSetting[]>]`: A collection of user matching settings by roleGroup.
       - `[MatchTarget <IMicrosoftGraphIndustryDataUserMatchTargetReferenceValue>]`: userMatchTargetReferenceValue
@@ -369,7 +370,7 @@ DATACONNECTOR `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
         - `[Code <String>]`: The code of the desired referenceDefinition entry.
         - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
           - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
           - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -377,7 +378,7 @@ DATACONNECTOR `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
       - `[PriorityOrder <Int32?>]`: The priority order to apply when a user has multiple RefRole codes assigned.
       - `[RoleGroup <IMicrosoftGraphIndustryDataRoleGroup>]`: roleGroup
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The name of the role group.
         - `[Roles <IMicrosoftGraphIndustryDataRoleReferenceValue[]>]`: The set of roles included in the role group.
           - `[Code <String>]`: The code of the desired referenceDefinition entry.
@@ -388,7 +389,7 @@ DATACONNECTOR `<IMicrosoftGraphIndustryDataConnector>`: industryDataConnector
         - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
     - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
@@ -408,9 +409,9 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[SourceSystemDefinitionId <String>]`: The unique identifier of sourceSystemDefinition
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
-YEAR `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
+`YEAR <IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the year. Maximum supported length is 100 characters.
   - `[EndDate <DateTime?>]`: The last day of the year using ISO 8601 format for date.
   - `[StartDate <DateTime?>]`: The first day of the year using ISO 8601 format for date.
@@ -419,7 +420,7 @@ YEAR `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefi
     - `[Code <String>]`: The code of the desired referenceDefinition entry.
     - `[Value <IMicrosoftGraphIndustryDataReferenceDefinition>]`: referenceDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: The code value for the definition that must be unique within the referenceType.
       - `[IsDisabled <Boolean?>]`: Indicates whether the definition has been disabled.
       - `[ReferenceType <String>]`: The categorical type for a collection of enumerated values.
@@ -427,4 +428,3 @@ YEAR `<IMicrosoftGraphIndustryDataYearTimePeriodDefinition>`: yearTimePeriodDefi
 
 ## RELATED LINKS
 
-## RELATED LINKS

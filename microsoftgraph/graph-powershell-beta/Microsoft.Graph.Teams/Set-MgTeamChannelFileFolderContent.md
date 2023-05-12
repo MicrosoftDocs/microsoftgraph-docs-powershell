@@ -1,28 +1,27 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/set-mgteamchannelfilefoldercontent
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamchannelfilefoldercontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Set-MgTeamChannelFileFolderContent
+# Set-MgBetaTeamChannelFileFolderContent
 
 ## SYNOPSIS
 The content stream, if the item represents a file.
 
 ## SYNTAX
 
-### Set1 (Default)
+### Set (Default)
 ```
-Set-MgTeamChannelFileFolderContent -ChannelId <String> -TeamId <String> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaTeamChannelFileFolderContent -ChannelId <String> -TeamId <String> -InFile <String> [-Data <Stream>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### SetViaIdentity1
+### SetViaIdentity
 ```
-Set-MgTeamChannelFileFolderContent -InputObject <ITeamsIdentity> [-BodyParameter <Stream>] -InFile <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaTeamChannelFileFolderContent -InputObject <ITeamsIdentity> -InFile <String> [-Data <Stream>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,24 +29,35 @@ The content stream, if the item represents a file.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Set-MgTeamChannelFileFolderContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
 
 ## PARAMETERS
 
-### -BodyParameter
+### -ChannelId
+The unique identifier of channel
+
+```yaml
+Type: System.String
+Parameter Sets: Set
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Data
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -58,28 +68,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ChannelId
-The unique identifier of channel
-
-```yaml
-Type: String
-Parameter Sets: Set1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -InFile
 The path to the file to upload.
 This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -92,11 +87,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: SetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: SetViaIdentity
 Aliases:
 
 Required: True
@@ -106,27 +101,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -TeamId
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: Set1
+Type: System.String
+Parameter Sets: Set
 Aliases:
 
 Required: True
@@ -140,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -172,11 +152,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -186,7 +169,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -226,3 +209,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

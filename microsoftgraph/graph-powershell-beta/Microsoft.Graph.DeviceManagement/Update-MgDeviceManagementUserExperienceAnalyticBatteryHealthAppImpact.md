@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticbatteryhealthappimpact
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticbatteryhealthappimpact
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
+# Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in deviceManagement
@@ -14,40 +14,55 @@ Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in 
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
  -UserExperienceAnalyticsBatteryHealthAppImpactId <String> [-ActiveDevices <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>]
- [-BatteryUsagePercentage <Double>] [-Id <String>] [-IsForegroundApp] [-PassThru] [-WhatIf] [-Confirm]
+ [-BatteryUsagePercentage <Double>] [-Id <String>] [-IsForegroundApp] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
  -UserExperienceAnalyticsBatteryHealthAppImpactId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact -InputObject <IDeviceManagementIdentity>
- [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-AppName <String>]
- [-AppPublisher <String>] [-BatteryUsagePercentage <Double>] [-Id <String>] [-IsForegroundApp] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact
+ -InputObject <IDeviceManagementIdentity> [-ActiveDevices <Int32>] [-AdditionalProperties <Hashtable>]
+ [-AppDisplayName <String>] [-AppName <String>] [-AppPublisher <String>] [-BatteryUsagePercentage <Double>]
+ [-Id <String>] [-IsForegroundApp] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsBatteryHealthAppImpact in deviceManagement
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +71,7 @@ Number of active devices for using that app over a 14-day period.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +102,7 @@ User friendly display name for the app.
 Eg: Outlook
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +118,7 @@ App name.
 Eg: oltk.exe
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -119,7 +134,7 @@ App publisher.
 Eg: Microsoft Corporation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +151,7 @@ Unit in percentage.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,10 +164,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics battery health app impact entity contains battery usage related information at an app level for the tenant.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -164,11 +179,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,11 +196,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -199,23 +214,8 @@ Accept wildcard characters: False
 true if the user had active interaction with the app.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -229,8 +229,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsBatteryHealthAppImpact
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -244,7 +244,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -260,7 +260,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -276,11 +276,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact
+
 ## NOTES
 
 ALIASES
@@ -290,9 +293,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact>`: The user experience analytics battery health app impact entity contains battery usage related information at an app level for the tenant.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact>`: The user experience analytics battery health app impact entity contains battery usage related information at an app level for the tenant.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveDevices <Int32?>]`: Number of active devices for using that app over a 14-day period. Valid values -2147483648 to 2147483647
   - `[AppDisplayName <String>]`: User friendly display name for the app. Eg: Outlook
   - `[AppName <String>]`: App name. Eg: oltk.exe
@@ -300,7 +303,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsBatteryHealthAppImpact>`: 
   - `[BatteryUsagePercentage <Double?>]`: The percent of total battery power used by this application when the device was not plugged into AC power, over 14 days computed across all devices in the tenant. Unit in percentage. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[IsForegroundApp <Boolean?>]`: true if the user had active interaction with the app.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -432,7 +435,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 
-## RELATED LINKS

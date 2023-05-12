@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
 ---
 
@@ -12,7 +12,7 @@ Create new navigation property to complianceManagementPartners for deviceManagem
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
 New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashtable>]
  [-AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-AndroidOnboarded]
@@ -20,13 +20,13 @@ New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashta
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,14 +34,28 @@ Create new navigation property to complianceManagementPartners for deviceManagem
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -53,11 +67,11 @@ Accept wildcard characters: False
 
 ### -AndroidEnrollmentAssignments
 User groups which enroll Android devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -71,8 +85,8 @@ Accept wildcard characters: False
 Partner onboarded for Android devices.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -84,11 +98,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Compliance management partner for all platforms
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner1
-Parameter Sets: Create1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
+Parameter Sets: Create
 Aliases:
 
 Required: True
@@ -102,8 +116,8 @@ Accept wildcard characters: False
 Partner display name
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -118,8 +132,8 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -131,11 +145,11 @@ Accept wildcard characters: False
 
 ### -IosEnrollmentAssignments
 User groups which enroll ios devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -149,8 +163,8 @@ Accept wildcard characters: False
 Partner onboarded for ios devices.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -164,8 +178,8 @@ Accept wildcard characters: False
 Timestamp of last heartbeat after admin onboarded to the compliance management partner
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -177,11 +191,11 @@ Accept wildcard characters: False
 
 ### -MacOSEnrollmentAssignments
 User groups which enroll Mac devices through partner.
-To construct, please use Get-Help -Online and see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment[]
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -195,8 +209,8 @@ Accept wildcard characters: False
 Partner onboarded for Mac devices.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -210,8 +224,8 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: DeviceManagementPartnerTenantState
-Parameter Sets: CreateExpanded1
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementPartnerTenantState
+Parameter Sets: CreateExpanded
 Aliases:
 
 Required: False
@@ -225,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -241,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -257,10 +271,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
+
 ## NOTES
 
 ALIASES
@@ -270,11 +286,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment\[]>: User groups which enroll Android devices through partner.
+`ANDROIDENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>`: User groups which enroll Android devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner1>`: Compliance management partner for all platforms
+`BODYPARAMETER <IMicrosoftGraphComplianceManagementPartner>`: Compliance management partner for all platforms
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AndroidEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>]`: User groups which enroll Android devices through partner.
@@ -289,12 +305,13 @@ BODYPARAMETER `<IMicrosoftGraphComplianceManagementPartner1>`: Compliance manage
   - `[MacOSOnboarded <Boolean?>]`: Partner onboarded for Mac devices.
   - `[PartnerState <DeviceManagementPartnerTenantState?>]`: Partner state of this tenant.
 
-IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment\[]>: User groups which enroll ios devices through partner.
+`IOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>`: User groups which enroll ios devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment\[]>: User groups which enroll Mac devices through partner.
+`MACOSENROLLMENTASSIGNMENTS <IMicrosoftGraphComplianceManagementPartnerAssignment[]>`: User groups which enroll Mac devices through partner.
   - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
+

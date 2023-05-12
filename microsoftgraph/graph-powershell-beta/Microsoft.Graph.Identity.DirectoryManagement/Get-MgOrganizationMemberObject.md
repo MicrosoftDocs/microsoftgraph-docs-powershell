@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationmemberobject
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationmemberobject
 schema: 2.0.0
 ---
 
-# Get-MgOrganizationMemberObject
+# Get-MgBetaOrganizationMemberObject
 
 ## SYNOPSIS
 Invoke action getMemberObjects
@@ -14,28 +14,28 @@ Invoke action getMemberObjects
 
 ### GetExpanded (Default)
 ```
-Get-MgOrganizationMemberObject -OrganizationId <String> [-AdditionalProperties <Hashtable>]
- [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaOrganizationMemberObject -OrganizationId <String> [-AdditionalProperties <Hashtable>]
+ [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgOrganizationMemberObject -OrganizationId <String>
+Get-MgBetaOrganizationMemberObject -OrganizationId <String>
  -BodyParameter <IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgOrganizationMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOrganizationMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
+Get-MgBetaOrganizationMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaOrganizationMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,20 +43,16 @@ Invoke action getMemberObjects
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	SecurityEnabledOnly = $true
 }
 
-Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-```
-
-This example shows how to use the Get-MgOrganizationMemberObject Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -64,7 +60,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -77,10 +73,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -93,11 +89,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,8 +107,8 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -126,7 +122,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -141,7 +137,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +153,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -173,11 +169,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -187,11 +186,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Hzls82OrganizationIdMicrosoftGraphGetmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SecurityEnabledOnly <Boolean?>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -228,3 +227,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

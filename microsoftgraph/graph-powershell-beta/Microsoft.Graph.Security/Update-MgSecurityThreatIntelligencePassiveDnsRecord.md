@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencepassivednsrecord
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligencepassivednsrecord
 schema: 2.0.0
 ---
 
-# Update-MgSecurityThreatIntelligencePassiveDnsRecord
+# Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord
 
 ## SYNOPSIS
 Update the navigation property passiveDnsRecords in security
@@ -14,32 +14,30 @@ Update the navigation property passiveDnsRecords in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
+Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
  [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-CollectedDateTime <DateTime>]
  [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
- [-ParentHost <IMicrosoftGraphSecurityHost>] [-RecordType <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-ParentHost <IMicrosoftGraphSecurityHost>] [-RecordType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
- -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-CollectedDateTime <DateTime>]
- [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
- [-ParentHost <IMicrosoftGraphSecurityHost>] [-RecordType <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord -PassiveDnsRecordId <String>
+ -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityPassiveDnsRecord> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-CollectedDateTime <DateTime>]
+ [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>]
+ [-ParentHost <IMicrosoftGraphSecurityHost>] [-RecordType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +45,27 @@ Update the navigation property passiveDnsRecords in security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +80,7 @@ Accept wildcard characters: False
 artifact
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,10 +93,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 passiveDnsRecord
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,7 +113,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +130,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,11 +159,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,7 +179,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,10 +192,10 @@ Accept wildcard characters: False
 
 ### -ParentHost
 host
-To construct, please use Get-Help -Online and see NOTES section for PARENTHOST properties and create a hash table.
+To construct, see NOTES section for PARENTHOST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityHost
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,26 +210,11 @@ Accept wildcard characters: False
 The unique identifier of passiveDnsRecord
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -228,7 +225,7 @@ Accept wildcard characters: False
 The DNS record type for this passiveDnsRecord entry.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +240,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -259,7 +256,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,11 +272,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord
+
 ## NOTES
 
 ALIASES
@@ -289,20 +289,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityPassiveDnsRecord>`: passiveDnsRecord
+`BODYPARAMETER <IMicrosoftGraphSecurityPassiveDnsRecord>`: passiveDnsRecord
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CollectedDateTime <DateTime?>]`: The date and time that this passiveDnsRecord entry was collected by Microsoft. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[FirstSeenDateTime <DateTime?>]`: The date and time when this passiveDnsRecord entry was first seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastSeenDateTime <DateTime?>]`: The date and time when this passiveDnsRecord entry was most recently seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[ParentHost <IMicrosoftGraphSecurityHost>]`: host
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Components <IMicrosoftGraphSecurityHostComponent[]>]`: The hostComponents that are associated with this host.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
@@ -310,7 +310,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityPassiveDnsRecord>`: passiveDnsRecord
       - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
       - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
     - `[Cookies <IMicrosoftGraphSecurityHostCookie[]>]`: The hostCookies that are associated with this host.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Domain <String>]`: The URI for which the cookie is valid.
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
@@ -322,7 +322,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityPassiveDnsRecord>`: passiveDnsRecord
     - `[PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>]`: Reverse passive DNS retrieval about this host.
     - `[Reputation <IMicrosoftGraphSecurityHostReputation>]`: hostReputation
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Classification <String>]`: hostReputationClassification
       - `[Rules <IMicrosoftGraphSecurityHostReputationRule[]>]`: A collection of rules that have been used to calculate the classification and score.
         - `[Description <String>]`: The description of the rule that gives more context.
@@ -331,7 +331,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityPassiveDnsRecord>`: passiveDnsRecord
         - `[Severity <String>]`: hostReputationRuleSeverity
       - `[Score <Int32?>]`: The calculated score (0-100) of the requested host. A higher value indicates that this host is more likely to be suspicious or malicious.
     - `[Trackers <IMicrosoftGraphSecurityHostTracker[]>]`: The hostTrackers that are associated with this host.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Host <IMicrosoftGraphSecurityHost>]`: host
       - `[Kind <String>]`: The kind of hostTracker that was detected. For example, GoogleAnalyticsID or JarmHash.
@@ -339,7 +339,7 @@ BODYPARAMETER `<IMicrosoftGraphSecurityPassiveDnsRecord>`: passiveDnsRecord
       - `[Value <String>]`: The identification value for the hostTracker.
   - `[RecordType <String>]`: The DNS record type for this passiveDnsRecord entry.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -397,11 +397,11 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-PARENTHOST `<IMicrosoftGraphSecurityHost>`: host
+`PARENTHOST <IMicrosoftGraphSecurityHost>`: host
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Components <IMicrosoftGraphSecurityHostComponent[]>]`: The hostComponents that are associated with this host.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Category <String>]`: The type of component that was detected (for example, Operating System, Framework, Remote Access, or Server).
     - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this web component was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
@@ -409,7 +409,7 @@ PARENTHOST `<IMicrosoftGraphSecurityHost>`: host
     - `[Name <String>]`: A name running on the artifact, for example, Microsoft IIS.
     - `[Version <String>]`: The component version running on the artifact, for example, v8.5. This should not be assumed to be strictly numerical.
   - `[Cookies <IMicrosoftGraphSecurityHostCookie[]>]`: The hostCookies that are associated with this host.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Domain <String>]`: The URI for which the cookie is valid.
     - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostCookie was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
@@ -418,10 +418,10 @@ PARENTHOST `<IMicrosoftGraphSecurityHost>`: host
   - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[LastSeenDateTime <DateTime?>]`: The most recent date and time when this host was observed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[PassiveDns <IMicrosoftGraphSecurityPassiveDnsRecord[]>]`: Passive DNS retrieval about this host.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CollectedDateTime <DateTime?>]`: The date and time that this passiveDnsRecord entry was collected by Microsoft. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[FirstSeenDateTime <DateTime?>]`: The date and time when this passiveDnsRecord entry was first seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[LastSeenDateTime <DateTime?>]`: The date and time when this passiveDnsRecord entry was most recently seen. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -430,7 +430,7 @@ PARENTHOST `<IMicrosoftGraphSecurityHost>`: host
   - `[PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>]`: Reverse passive DNS retrieval about this host.
   - `[Reputation <IMicrosoftGraphSecurityHostReputation>]`: hostReputation
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Classification <String>]`: hostReputationClassification
     - `[Rules <IMicrosoftGraphSecurityHostReputationRule[]>]`: A collection of rules that have been used to calculate the classification and score.
       - `[Description <String>]`: The description of the rule that gives more context.
@@ -439,7 +439,7 @@ PARENTHOST `<IMicrosoftGraphSecurityHost>`: host
       - `[Severity <String>]`: hostReputationRuleSeverity
     - `[Score <Int32?>]`: The calculated score (0-100) of the requested host. A higher value indicates that this host is more likely to be suspicious or malicious.
   - `[Trackers <IMicrosoftGraphSecurityHostTracker[]>]`: The hostTrackers that are associated with this host.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[FirstSeenDateTime <DateTime?>]`: The first date and time when this hostTracker was observed by Microsoft Defender Threat Intelligence. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Host <IMicrosoftGraphSecurityHost>]`: host
     - `[Kind <String>]`: The kind of hostTracker that was detected. For example, GoogleAnalyticsID or JarmHash.
@@ -448,4 +448,3 @@ PARENTHOST `<IMicrosoftGraphSecurityHost>`: host
 
 ## RELATED LINKS
 
-## RELATED LINKS

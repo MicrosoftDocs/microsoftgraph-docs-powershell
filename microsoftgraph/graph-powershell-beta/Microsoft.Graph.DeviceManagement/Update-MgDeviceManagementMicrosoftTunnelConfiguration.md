@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmicrosofttunnelconfiguration
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmicrosofttunnelconfiguration
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementMicrosoftTunnelConfiguration
+# Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration
 
 ## SYNOPSIS
 Update the navigation property microsoftTunnelConfigurations in deviceManagement
@@ -14,37 +14,35 @@ Update the navigation property microsoftTunnelConfigurations in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementMicrosoftTunnelConfiguration -MicrosoftTunnelConfigurationId <String>
+Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -MicrosoftTunnelConfigurationId <String>
  [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
  [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
  [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
  [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
- [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementMicrosoftTunnelConfiguration -MicrosoftTunnelConfigurationId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
- [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
- [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
- [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
- [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -MicrosoftTunnelConfigurationId <String>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementMicrosoftTunnelConfiguration -InputObject <IDeviceManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]
+ [-DefaultDomainSuffix <String>] [-Description <String>] [-DisableUdpConnections] [-DisplayName <String>]
+ [-DnsServers <String[]>] [-Id <String>] [-LastUpdateDateTime <DateTime>] [-ListenPort <Int32>]
+ [-Network <String>] [-RoleScopeTagIds <String[]>] [-RouteExcludes <String[]>] [-RouteIncludes <String[]>]
+ [-RoutesExclude <String[]>] [-RoutesInclude <String[]>] [-SplitDns <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -53,13 +51,27 @@ Update the navigation property microsoftTunnelConfigurations in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,10 +84,10 @@ Accept wildcard characters: False
 
 ### -AdvancedSettings
 Additional settings that may be applied to the server
-To construct, please use Get-Help -Online and see NOTES section for ADVANCEDSETTINGS properties and create a hash table.
+To construct, see NOTES section for ADVANCEDSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -88,10 +100,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that represents a collection of Microsoft Tunnel settings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -106,7 +118,7 @@ Accept wildcard characters: False
 The Default Domain appendix that will be used by the clients
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +133,7 @@ Accept wildcard characters: False
 The configuration's description (optional)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +148,7 @@ Accept wildcard characters: False
 When DisableUdpConnections is set, the clients and VPN server will not use DTLS connections to transfer data.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +164,7 @@ The display name for the server configuration.
 This property is required when a server is created.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,7 +179,7 @@ Accept wildcard characters: False
 The DNS servers that will be used by the clients
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,11 +191,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,11 +208,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -214,7 +226,7 @@ Accept wildcard characters: False
 When the configuration was last updated
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +241,7 @@ Accept wildcard characters: False
 The port that both TCP and UPD will listen over on the server
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,8 +256,8 @@ Accept wildcard characters: False
 The unique identifier of microsoftTunnelConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -259,23 +271,8 @@ Accept wildcard characters: False
 The subnet that will be used to allocate virtual address for the clients
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -289,7 +286,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +301,7 @@ Accept wildcard characters: False
 Subsets of the routes that will not be routed by the server
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +316,7 @@ Accept wildcard characters: False
 The routes that will be routed by the server
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -335,7 +332,7 @@ Subsets of the routes that will not be routed by the server.
 This property is going to be deprecated with the option of using the new property, 'RouteExcludes'.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -351,7 +348,7 @@ The routes that will be routed by the server.
 This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -366,7 +363,7 @@ Accept wildcard characters: False
 The domains that will be resolved using the provided dns servers
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -381,7 +378,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -397,7 +394,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -413,11 +410,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelConfiguration
+
 ## NOTES
 
 ALIASES
@@ -427,13 +427,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADVANCEDSETTINGS <IMicrosoftGraphKeyValuePair\[]>: Additional settings that may be applied to the server
+`ADVANCEDSETTINGS <IMicrosoftGraphKeyValuePair[]>`: Additional settings that may be applied to the server
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that represents a collection of Microsoft Tunnel settings
+`BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that represents a collection of Microsoft Tunnel settings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdvancedSettings <IMicrosoftGraphKeyValuePair[]>]`: Additional settings that may be applied to the server
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair
@@ -452,7 +452,7 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelConfiguration>`: Entity that repre
   - `[RoutesInclude <String[]>]`: The routes that will be routed by the server. This property is going to be deprecated with the option of using the new property, 'RouteIncludes'.
   - `[SplitDns <String[]>]`: The domains that will be resolved using the provided dns servers
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -584,7 +584,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 
-## RELATED LINKS

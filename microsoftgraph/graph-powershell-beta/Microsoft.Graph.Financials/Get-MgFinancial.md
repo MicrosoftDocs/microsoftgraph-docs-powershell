@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
-Module Name: Microsoft.Graph.Financials
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancial
+external help file:
+Module Name: Microsoft.Graph.Beta.Financials
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancial
 schema: 2.0.0
 ---
 
-# Get-MgFinancial
+# Get-MgBetaFinancial
 
 ## SYNOPSIS
 Get financials
@@ -13,7 +13,7 @@ Get financials
 ## SYNTAX
 
 ```
-Get-MgFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaFinancial [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,13 +21,27 @@ Get financials
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -42,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -60,9 +74,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

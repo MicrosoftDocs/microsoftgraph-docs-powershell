@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserpassword
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserpassword
 schema: 2.0.0
 ---
 
-# Test-MgUserPassword
+# Test-MgBetaUserPassword
 
 ## SYNOPSIS
 Check a user's password against the organization's password validation policy and report whether the password is valid.
@@ -15,15 +15,15 @@ Use this action to provide real-time feedback on password strength while the use
 
 ### ValidateExpanded (Default)
 ```
-Test-MgUserPassword [-AdditionalProperties <Hashtable>] [-Password <String>] [-WhatIf] [-Confirm]
+Test-MgBetaUserPassword [-AdditionalProperties <Hashtable>] [-Password <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgUserPassword
+Test-MgBetaUserPassword
  -BodyParameter <IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,17 +32,16 @@ Use this action to provide real-time feedback on password strength while the use
 
 ## EXAMPLES
 
-### Example 1: Using the Test-MgUserPassword Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Password = "1234567890"
 }
-Test-MgUserPassword -BodyParameter $params
+Test-MgBetaUserPassword -BodyParameter $params
 ```
 
-This example shows how to use the Test-MgUserPassword Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -50,7 +49,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -63,10 +62,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -81,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -96,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -128,10 +127,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordValidationInformation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPasswordValidationInformation
+
 ## NOTES
 
 ALIASES
@@ -141,8 +142,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths14Hev5OUsersMicrosoftGraphValidatepasswordPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Password <String>]`: 
 
 ## RELATED LINKS
+

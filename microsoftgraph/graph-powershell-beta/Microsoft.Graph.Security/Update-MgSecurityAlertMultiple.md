@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityalertmultiple
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityalertmultiple
 schema: 2.0.0
 ---
 
-# Update-MgSecurityAlertMultiple
+# Update-MgBetaSecurityAlertMultiple
 
 ## SYNOPSIS
 Update multiple alerts in one request instead of multiple requests.
@@ -14,15 +14,15 @@ Update multiple alerts in one request instead of multiple requests.
 
 ### UpdateExpanded1 (Default)
 ```
-Update-MgSecurityAlertMultiple [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphAlert[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityAlertMultiple [-AdditionalProperties <Hashtable>] [-Value <IMicrosoftGraphAlert[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update1
 ```
-Update-MgSecurityAlertMultiple
+Update-MgBetaSecurityAlertMultiple
  -BodyParameter <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,9 +30,9 @@ Update multiple alerts in one request instead of multiple requests.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgSecurityAlertMultiple Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
 		@{
@@ -58,11 +58,10 @@ $params = @{
 		}
 	)
 }
-Update-MgSecurityAlertMultiple -BodyParameter $params
+Update-MgBetaSecurityAlertMultiple -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgSecurityAlertMultiple Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -70,7 +69,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -83,10 +82,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Update1
 Aliases:
 
@@ -99,10 +98,10 @@ Accept wildcard characters: False
 
 ### -Value
 .
-To construct, please use Get-Help -Online and see NOTES section for VALUE properties and create a hash table.
+To construct, see NOTES section for VALUE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlert[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -117,7 +116,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -133,7 +132,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -149,10 +148,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
+
 ## NOTES
 
 ALIASES
@@ -162,10 +163,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <IMicrosoftGraphAlert[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
     - `[AlertDetections <IMicrosoftGraphAlertDetection[]>]`: 
       - `[DetectionType <String>]`: 
@@ -195,14 +196,14 @@ BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequest
       - `[Name <String>]`: File name (without path).
       - `[Path <String>]`: Full file path of the file/imageFile.
       - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.
-    - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: 
-      - `[AppId <String>]`: 
-      - `[AssignedTo <String>]`: 
-      - `[Comments <String[]>]`: 
+    - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
+      - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application.
+      - `[AssignedTo <String>]`: UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN).
+      - `[Comments <String[]>]`: Comment entered by signed-in user.
       - `[Feedback <String>]`: alertFeedback
       - `[Status <String>]`: alertStatus
-      - `[UpdatedDateTime <DateTime?>]`: 
-      - `[User <String>]`: 
+      - `[UpdatedDateTime <DateTime?>]`: Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+      - `[User <String>]`: UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode).
     - `[HostStates <IMicrosoftGraphHostSecurityState[]>]`: Security-related stateful information generated by the provider about the host(s) related to this alert.
       - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
       - `[IsAzureAdJoined <Boolean?>]`: 
@@ -236,7 +237,7 @@ BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequest
       - `[MessageSubject <String>]`: 
       - `[NetworkMessageId <String>]`: 
     - `[NetworkConnections <IMicrosoftGraphNetworkConnection[]>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-      - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
+      - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
       - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
       - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
       - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
@@ -326,8 +327,8 @@ BODYPARAMETER `<IPaths1Ehzqn7SecurityAlertsMicrosoftGraphUpdatealertsPostRequest
       - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
       - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-VALUE <IMicrosoftGraphAlert\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`VALUE <IMicrosoftGraphAlert[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
   - `[AlertDetections <IMicrosoftGraphAlertDetection[]>]`: 
     - `[DetectionType <String>]`: 
@@ -357,14 +358,14 @@ VALUE <IMicrosoftGraphAlert\[]>: .
     - `[Name <String>]`: File name (without path).
     - `[Path <String>]`: Full file path of the file/imageFile.
     - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.
-  - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: 
-    - `[AppId <String>]`: 
-    - `[AssignedTo <String>]`: 
-    - `[Comments <String[]>]`: 
+  - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
+    - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application.
+    - `[AssignedTo <String>]`: UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN).
+    - `[Comments <String[]>]`: Comment entered by signed-in user.
     - `[Feedback <String>]`: alertFeedback
     - `[Status <String>]`: alertStatus
-    - `[UpdatedDateTime <DateTime?>]`: 
-    - `[User <String>]`: 
+    - `[UpdatedDateTime <DateTime?>]`: Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[User <String>]`: UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode).
   - `[HostStates <IMicrosoftGraphHostSecurityState[]>]`: Security-related stateful information generated by the provider about the host(s) related to this alert.
     - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
     - `[IsAzureAdJoined <Boolean?>]`: 
@@ -398,7 +399,7 @@ VALUE <IMicrosoftGraphAlert\[]>: .
     - `[MessageSubject <String>]`: 
     - `[NetworkMessageId <String>]`: 
   - `[NetworkConnections <IMicrosoftGraphNetworkConnection[]>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
+    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
     - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
     - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
     - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
@@ -490,4 +491,3 @@ VALUE <IMicrosoftGraphAlert\[]>: .
 
 ## RELATED LINKS
 
-## RELATED LINKS

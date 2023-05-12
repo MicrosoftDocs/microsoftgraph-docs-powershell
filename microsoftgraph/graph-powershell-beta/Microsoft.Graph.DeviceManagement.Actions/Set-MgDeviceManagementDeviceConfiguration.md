@@ -1,45 +1,45 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/set-mgdevicemanagementdeviceconfiguration
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/set-mgbetadevicemanagementdeviceconfiguration
 schema: 2.0.0
 ---
 
-# Set-MgDeviceManagementDeviceConfiguration
+# Set-MgBetaDeviceManagementDeviceConfiguration
 
 ## SYNOPSIS
 Invoke action assign
 
 ## SYNTAX
 
-### AssignExpanded1 (Default)
+### AssignExpanded (Default)
 ```
-Set-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId <String> [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]
- [-DeviceConfigurationGroupAssignments <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Set-MgBetaDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]
+ [-DeviceConfigurationGroupAssignments <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Assign1
+### Assign
 ```
-Set-MgDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
+Set-MgBetaDeviceManagementDeviceConfiguration -DeviceConfigurationId <String>
  -BodyParameter <IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AssignViaIdentityExpanded1
+### AssignViaIdentity
 ```
-Set-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]
- [-DeviceConfigurationGroupAssignments <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentity1
-```
-Set-MgDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementActionsIdentity>
+Set-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentityExpanded
+```
+Set-MgBetaDeviceManagementDeviceConfiguration -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]
+ [-DeviceConfigurationGroupAssignments <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,28 @@ Invoke action assign
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -66,11 +80,11 @@ Accept wildcard characters: False
 
 ### -Assignments
 .
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationAssignment1[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment[]
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -82,11 +96,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Assign1, AssignViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
 Required: True
@@ -98,11 +112,11 @@ Accept wildcard characters: False
 
 ### -DeviceConfigurationGroupAssignments
 .
-To construct, please use Get-Help -Online and see NOTES section for DEVICECONFIGURATIONGROUPASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for DEVICECONFIGURATIONGROUPASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationGroupAssignment[]
-Parameter Sets: AssignExpanded1, AssignViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationGroupAssignment[]
+Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -116,8 +130,8 @@ Accept wildcard characters: False
 The unique identifier of deviceConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded1, Assign1
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -129,11 +143,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded1, AssignViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,11 +193,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationAssignment
+
 ## NOTES
 
 ALIASES
@@ -193,31 +210,31 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment1\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ASSIGNMENTS <IMicrosoftGraphDeviceConfigurationAssignment[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Intent <DeviceConfigAssignmentIntent?>]`: The administrator intent for the assignment of the profile.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurationIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Intent <DeviceConfigAssignmentIntent?>]`: The administrator intent for the assignment of the profile.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
   - `[DeviceConfigurationGroupAssignments <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]`: Device Configuration.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: The list of assignments for the device configuration profile.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
       - `[CreatedDateTime <DateTime?>]`: DateTime the object was created.
       - `[Description <String>]`: Admin provided description of the Device Configuration.
       - `[DeviceManagementApplicabilityRuleDeviceMode <IMicrosoftGraphDeviceManagementApplicabilityRuleDeviceMode>]`: deviceManagementApplicabilityRuleDeviceMode
@@ -237,7 +254,7 @@ BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurat
         - `[Name <String>]`: Name for object.
         - `[RuleType <DeviceManagementApplicabilityRuleType?>]`: Supported Applicability rule types for Device Configuration
       - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
         - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
         - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
@@ -249,7 +266,7 @@ BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurat
         - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
       - `[DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]`: deviceConfigurationDeviceOverview
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
         - `[ConflictCount <Int32?>]`: Number of devices in conflict
         - `[ErrorCount <Int32?>]`: Number of error devices
@@ -260,7 +277,7 @@ BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurat
         - `[PendingCount <Int32?>]`: Number of pending devices
         - `[SuccessCount <Int32?>]`: Number of succeeded devices
       - `[DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>]`: Device configuration installation status by device.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
         - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
         - `[DeviceModel <String>]`: The device model that is being reported
@@ -275,7 +292,7 @@ BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurat
       - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
       - `[UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]`: deviceConfigurationUserOverview
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
         - `[ConflictCount <Int32?>]`: Number of users in conflict
         - `[ErrorCount <Int32?>]`: Number of error Users
@@ -285,7 +302,7 @@ BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurat
         - `[PendingCount <Int32?>]`: Number of pending Users
         - `[SuccessCount <Int32?>]`: Number of succeeded Users
       - `[UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>]`: Device configuration installation status by user.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DevicesCount <Int32?>]`: Devices count for that user.
         - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
         - `[Status <String>]`: complianceStatus
@@ -295,16 +312,16 @@ BODYPARAMETER `<IPathsKq4LptDevicemanagementDeviceconfigurationsDeviceconfigurat
     - `[ExcludeGroup <Boolean?>]`: Indicates if this group is should be excluded. Defaults that the group should be included
     - `[TargetGroupId <String>]`: The Id of the AAD group we are targeting the device configuration to.
 
-DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssignment\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssignment[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceConfiguration <IMicrosoftGraphDeviceConfiguration>]`: Device Configuration.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment1[]>]`: The list of assignments for the device configuration profile.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphDeviceConfigurationAssignment[]>]`: The list of assignments for the device configuration profile.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Intent <DeviceConfigAssignmentIntent?>]`: The administrator intent for the assignment of the profile.
       - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
         - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
@@ -327,7 +344,7 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
       - `[Name <String>]`: Name for object.
       - `[RuleType <DeviceManagementApplicabilityRuleType?>]`: Supported Applicability rule types for Device Configuration
     - `[DeviceSettingStateSummaries <IMicrosoftGraphSettingStateDeviceSummary[]>]`: Device Configuration Setting State Device Summary
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CompliantDeviceCount <Int32?>]`: Device Compliant count for the setting
       - `[ConflictDeviceCount <Int32?>]`: Device conflict error count for the setting
       - `[ErrorDeviceCount <Int32?>]`: Device error count for the setting
@@ -339,7 +356,7 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
       - `[UnknownDeviceCount <Int32?>]`: Device Unkown count for the setting
     - `[DeviceStatusOverview <IMicrosoftGraphDeviceConfigurationDeviceOverview>]`: deviceConfigurationDeviceOverview
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
       - `[ConflictCount <Int32?>]`: Number of devices in conflict
       - `[ErrorCount <Int32?>]`: Number of error devices
@@ -350,7 +367,7 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
       - `[PendingCount <Int32?>]`: Number of pending devices
       - `[SuccessCount <Int32?>]`: Number of succeeded devices
     - `[DeviceStatuses <IMicrosoftGraphDeviceConfigurationDeviceStatus[]>]`: Device configuration installation status by device.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
       - `[DeviceDisplayName <String>]`: Device name of the DevicePolicyStatus.
       - `[DeviceModel <String>]`: The device model that is being reported
@@ -365,7 +382,7 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
     - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
     - `[UserStatusOverview <IMicrosoftGraphDeviceConfigurationUserOverview>]`: deviceConfigurationUserOverview
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ConfigurationVersion <Int32?>]`: Version of the policy for that overview
       - `[ConflictCount <Int32?>]`: Number of users in conflict
       - `[ErrorCount <Int32?>]`: Number of error Users
@@ -375,7 +392,7 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
       - `[PendingCount <Int32?>]`: Number of pending Users
       - `[SuccessCount <Int32?>]`: Number of succeeded Users
     - `[UserStatuses <IMicrosoftGraphDeviceConfigurationUserStatus[]>]`: Device configuration installation status by user.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DevicesCount <Int32?>]`: Devices count for that user.
       - `[LastReportedDateTime <DateTime?>]`: Last modified date time of the policy report.
       - `[Status <String>]`: complianceStatus
@@ -385,7 +402,7 @@ DEVICECONFIGURATIONGROUPASSIGNMENTS <IMicrosoftGraphDeviceConfigurationGroupAssi
   - `[ExcludeGroup <Boolean?>]`: Indicates if this group is should be excluded. Defaults that the group should be included
   - `[TargetGroupId <String>]`: The Id of the AAD group we are targeting the device configuration to.
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -429,7 +446,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -441,4 +457,3 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/new-mggroupsiteinformationprotectionsensitivitylabel
+external help file:
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetagroupsiteinformationprotectionsensitivitylabel
 schema: 2.0.0
 ---
 
-# New-MgGroupSiteInformationProtectionSensitivityLabel
+# New-MgBetaGroupSiteInformationProtectionSensitivityLabel
 
 ## SYNOPSIS
 Create new navigation property to sensitivityLabels for groups
@@ -14,34 +14,36 @@ Create new navigation property to sensitivityLabels for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupSiteInformationProtectionSensitivityLabel -GroupId <String> -SiteId <String>
+New-MgBetaGroupSiteInformationProtectionSensitivityLabel -GroupId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-ApplicationMode <String>]
  [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>] [-AutoLabeling <IMicrosoftGraphAutoLabeling>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEndpointProtectionEnabled]
  [-LabelActions <IMicrosoftGraphLabelActionBase[]>] [-Name <String>] [-Priority <Int32>]
- [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupSiteInformationProtectionSensitivityLabel -GroupId <String> -SiteId <String>
- -BodyParameter <IMicrosoftGraphSensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-ApplicationMode <String>]
- [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>] [-AutoLabeling <IMicrosoftGraphAutoLabeling>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEndpointProtectionEnabled]
- [-LabelActions <IMicrosoftGraphLabelActionBase[]>] [-Name <String>] [-Priority <Int32>]
- [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupSiteInformationProtectionSensitivityLabel -GroupId <String> -SiteId <String>
+ -BodyParameter <IMicrosoftGraphSensitivityLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphSensitivityLabel> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphSensitivityLabel> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupSiteInformationProtectionSensitivityLabel -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-ApplicableTo <String>] [-ApplicationMode <String>]
+ [-AssignedPolicies <IMicrosoftGraphLabelPolicy[]>] [-AutoLabeling <IMicrosoftGraphAutoLabeling>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsDefault] [-IsEndpointProtectionEnabled]
+ [-LabelActions <IMicrosoftGraphLabelActionBase[]>] [-Name <String>] [-Priority <Int32>]
+ [-Sublabels <IMicrosoftGraphSensitivityLabel[]>] [-ToolTip <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +51,27 @@ Create new navigation property to sensitivityLabels for groups
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +86,7 @@ Accept wildcard characters: False
 sensitivityLabelTarget
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +101,7 @@ Accept wildcard characters: False
 applicationMode
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,10 +114,10 @@ Accept wildcard characters: False
 
 ### -AssignedPolicies
 .
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDPOLICIES properties and create a hash table.
+To construct, see NOTES section for ASSIGNEDPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLabelPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLabelPolicy[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,10 +130,10 @@ Accept wildcard characters: False
 
 ### -AutoLabeling
 autoLabeling
-To construct, please use Get-Help -Online and see NOTES section for AUTOLABELING properties and create a hash table.
+To construct, see NOTES section for AUTOLABELING properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAutoLabeling
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAutoLabeling
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,10 +146,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 sensitivityLabel
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -148,7 +164,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +179,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -190,11 +206,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,11 +223,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -225,7 +241,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +256,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -253,10 +269,10 @@ Accept wildcard characters: False
 
 ### -LabelActions
 .
-To construct, please use Get-Help -Online and see NOTES section for LABELACTIONS properties and create a hash table.
+To construct, see NOTES section for LABELACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLabelActionBase[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLabelActionBase[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -271,7 +287,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -286,7 +302,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -301,8 +317,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -314,10 +330,10 @@ Accept wildcard characters: False
 
 ### -Sublabels
 .
-To construct, please use Get-Help -Online and see NOTES section for SUBLABELS properties and create a hash table.
+To construct, see NOTES section for SUBLABELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSensitivityLabel[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -332,7 +348,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -347,7 +363,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -363,7 +379,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -379,11 +395,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabel
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSensitivityLabel
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabel
+
 ## NOTES
 
 ALIASES
@@ -393,18 +412,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy\[]>: .
+`ASSIGNEDPOLICIES <IMicrosoftGraphLabelPolicy[]>`: .
   - `[Id <String>]`: 
   - `[Name <String>]`: 
 
-AUTOLABELING `<IMicrosoftGraphAutoLabeling>`: autoLabeling
+`AUTOLABELING <IMicrosoftGraphAutoLabeling>`: autoLabeling
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Message <String>]`: 
   - `[SensitiveTypeIds <String[]>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
+`BODYPARAMETER <IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
   - `[AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]`: 
@@ -425,7 +444,7 @@ BODYPARAMETER `<IMicrosoftGraphSensitivityLabel>`: sensitivityLabel
   - `[Sublabels <IMicrosoftGraphSensitivityLabel[]>]`: 
   - `[ToolTip <String>]`: 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -443,17 +462,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -462,7 +487,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -472,11 +496,11 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-LABELACTIONS <IMicrosoftGraphLabelActionBase\[]>: .
+`LABELACTIONS <IMicrosoftGraphLabelActionBase[]>`: .
   - `[Name <String>]`: 
 
-SUBLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SUBLABELS <IMicrosoftGraphSensitivityLabel[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApplicableTo <String>]`: sensitivityLabelTarget
   - `[ApplicationMode <String>]`: applicationMode
   - `[AssignedPolicies <IMicrosoftGraphLabelPolicy[]>]`: 
@@ -498,3 +522,4 @@ SUBLABELS <IMicrosoftGraphSensitivityLabel\[]>: .
   - `[ToolTip <String>]`: 
 
 ## RELATED LINKS
+

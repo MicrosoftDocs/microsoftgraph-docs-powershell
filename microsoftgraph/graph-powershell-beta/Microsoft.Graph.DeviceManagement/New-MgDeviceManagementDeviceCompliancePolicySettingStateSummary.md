@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementdevicecompliancepolicysettingstatesummary
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecompliancepolicysettingstatesummary
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
+# New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary
 
 ## SYNOPSIS
 Create new navigation property to deviceCompliancePolicySettingStateSummaries for deviceManagement
@@ -14,18 +14,18 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary [-AdditionalProperties <Hashtable>]
  [-CompliantDeviceCount <Int32>] [-ConflictDeviceCount <Int32>]
- [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState1[]>] [-ErrorDeviceCount <Int32>]
+ [-DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>] [-ErrorDeviceCount <Int32>]
  [-Id <String>] [-NonCompliantDeviceCount <Int32>] [-NotApplicableDeviceCount <Int32>]
  [-PlatformType <PolicyPlatformType>] [-RemediatedDeviceCount <Int32>] [-Setting <String>]
- [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SettingName <String>] [-UnknownDeviceCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementDeviceCompliancePolicySettingStateSummary
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,13 +34,27 @@ Create new navigation property to deviceCompliancePolicySettingStateSummaries fo
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,10 +67,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Compilance Policy Setting State summary across the account.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +85,7 @@ Accept wildcard characters: False
 Number of compliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +100,7 @@ Accept wildcard characters: False
 Number of conflict devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,10 +113,10 @@ Accept wildcard characters: False
 
 ### -DeviceComplianceSettingStates
 Not yet documented
-To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
+To construct, see NOTES section for DEVICECOMPLIANCESETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceSettingState1[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceSettingState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +131,7 @@ Accept wildcard characters: False
 Number of error devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,11 +143,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +162,7 @@ Accept wildcard characters: False
 Number of NonCompliant devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +177,7 @@ Accept wildcard characters: False
 Number of not applicable devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +192,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.Beta.PowerShell.Support.PolicyPlatformType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +207,7 @@ Accept wildcard characters: False
 Number of remediated devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +222,7 @@ Accept wildcard characters: False
 The setting class name and property name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +237,7 @@ Accept wildcard characters: False
 Name of the setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +252,7 @@ Accept wildcard characters: False
 Number of unknown devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -285,10 +299,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary
+
 ## NOTES
 
 ALIASES
@@ -298,13 +314,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>`: Device Compilance Policy Setting State summary across the account.
+`BODYPARAMETER <IMicrosoftGraphDeviceCompliancePolicySettingStateSummary>`: Device Compilance Policy Setting State summary across the account.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompliantDeviceCount <Int32?>]`: Number of compliant devices
   - `[ConflictDeviceCount <Int32?>]`: Number of conflict devices
-  - `[DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState1[]>]`: Not yet documented
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[DeviceComplianceSettingStates <IMicrosoftGraphDeviceComplianceSettingState[]>]`: Not yet documented
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
     - `[DeviceId <String>]`: The Device Id that is being reported
     - `[DeviceModel <String>]`: The device model that is being reported
@@ -326,8 +342,8 @@ BODYPARAMETER `<IMicrosoftGraphDeviceCompliancePolicySettingStateSummary1>`: Dev
   - `[SettingName <String>]`: Name of the setting.
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
-DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState1\[]>: Not yet documented
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState[]>`: Not yet documented
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ComplianceGracePeriodExpirationDateTime <DateTime?>]`: The DateTime when device compliance grace period expires
   - `[DeviceId <String>]`: The Device Id that is being reported
   - `[DeviceModel <String>]`: The device model that is being reported
@@ -342,3 +358,4 @@ DEVICECOMPLIANCESETTINGSTATES <IMicrosoftGraphDeviceComplianceSettingState1\[]>:
   - `[UserPrincipalName <String>]`: The User PrincipalName that is being reported
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeploymentaudiencememberbyid
+external help file:
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesdeploymentaudiencememberbyid
 schema: 2.0.0
 ---
 
-# Remove-MgWindowsUpdatesDeploymentAudienceMemberById
+# Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById
 
 ## SYNOPSIS
 Remove members of the same type from an updatableAssetGroup.
@@ -15,30 +15,30 @@ You can also use the method removeMembers to remove members.
 
 ### RemoveExpanded (Default)
 ```
-Remove-MgWindowsUpdatesDeploymentAudienceMemberById -DeploymentId <String> -UpdatableAssetId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById -DeploymentId <String> -UpdatableAssetId <String>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Remove
 ```
-Remove-MgWindowsUpdatesDeploymentAudienceMemberById -DeploymentId <String> -UpdatableAssetId <String>
+Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById -DeploymentId <String> -UpdatableAssetId <String>
  -BodyParameter <IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RemoveViaIdentityExpanded
-```
-Remove-MgWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RemoveViaIdentity
 ```
-Remove-MgWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
  -BodyParameter <IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RemoveViaIdentityExpanded
+```
+Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-MemberEntityType <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,12 +47,19 @@ You can also use the method removeMembers to remove members.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add example code here }}
+{{ Add code here }}
 ```
 
-{{ Add example description here }}
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -60,7 +67,7 @@ PS C:\> {{ Add example code here }}
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -73,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Remove, RemoveViaIdentity
 Aliases:
 
@@ -91,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of deployment
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: System.String
+Parameter Sets: Remove, RemoveExpanded
 Aliases:
 
 Required: True
@@ -106,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -119,11 +126,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
-Parameter Sets: RemoveViaIdentityExpanded, RemoveViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+Parameter Sets: RemoveViaIdentity, RemoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -137,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RemoveExpanded, RemoveViaIdentityExpanded
 Aliases:
 
@@ -152,13 +159,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -167,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of updatableAsset
 
 ```yaml
-Type: String
-Parameter Sets: RemoveExpanded, Remove
+Type: System.String
+Parameter Sets: Remove, RemoveExpanded
 Aliases:
 
 Required: True
@@ -182,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -198,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -214,15 +221,37 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Remove-MgBetaWuDeploymentAudienceMemberGraphBPreId
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`BODYPARAMETER <IPaths1Xlrv16AdminWindowsUpdatesDeploymentsDeploymentIdAudienceMembersUpdatableassetIdMicrosoftGraphWindowsupdatesRemovemembersbyidPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Ids <String[]>]`: 
+  - `[MemberEntityType <String>]`: 
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeploymentaudiencememberbyid](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesdeploymentaudiencememberbyid)
 

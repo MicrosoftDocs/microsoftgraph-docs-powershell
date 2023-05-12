@@ -1,70 +1,69 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/update-mguserprofilename
+external help file:
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/update-mgbetauserprofilename
 schema: 2.0.0
 ---
 
-# Update-MgUserProfileName
+# Update-MgBetaUserProfileName
 
 ## SYNOPSIS
-Update the navigation property names in users
+Update the properties of a personName object in a user's profile.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserProfileName -PersonNameId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserProfileName -PersonNameId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-First <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-Initials <String>] [-IsSearchable] [-LanguageTag <String>] [-Last <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Maiden <String>]
  [-Middle <String>] [-Nickname <String>] [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserProfileName -PersonNameId <String> -UserId <String> -BodyParameter <IMicrosoftGraphPersonName>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserProfileName -PersonNameId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphPersonName> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPersonName>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserProfileName -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaUserProfileName -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-First <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-Initials <String>] [-IsSearchable] [-LanguageTag <String>] [-Last <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Maiden <String>]
  [-Middle <String>] [-Nickname <String>] [-Pronunciation <IMicrosoftGraphPersonNamePronounciation>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphPersonName> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Suffix <String>] [-Title <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property names in users
+Update the properties of a personName object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgUserProfileName Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Nickname = "Kesha"
 }
 # A UPN can also be used as -UserId.
-Update-MgUserProfileName -UserId $userId -PersonNameId $personNameId -BodyParameter $params
+Update-MgBetaUserProfileName -UserId $userId -PersonNameId $personNameId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgUserProfileName Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -72,7 +71,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +86,7 @@ Accept wildcard characters: False
 allowedAudiences
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,10 +99,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 personName
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonName
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonName
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -116,10 +115,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +133,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,7 +148,22 @@ Accept wildcard characters: False
 Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -First
+First name of the user.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,11 +175,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,10 +192,10 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceData
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +210,7 @@ Accept wildcard characters: False
 Initials of the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,11 +223,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -227,7 +241,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +256,7 @@ Accept wildcard characters: False
 Contains the name for the language (en-US, no-NB, en-AU) following IETF BCP47 format.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +271,7 @@ Accept wildcard characters: False
 Last name of the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,10 +284,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +302,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +317,7 @@ Accept wildcard characters: False
 Maiden name of the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -318,7 +332,7 @@ Accept wildcard characters: False
 Middle name of the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -333,23 +347,8 @@ Accept wildcard characters: False
 Nickname of the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -363,8 +362,8 @@ Accept wildcard characters: False
 The unique identifier of personName
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -376,10 +375,10 @@ Accept wildcard characters: False
 
 ### -Pronunciation
 personNamePronounciation
-To construct, please use Get-Help -Online and see NOTES section for PRONUNCIATION properties and create a hash table.
+To construct, see NOTES section for PRONUNCIATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonNamePronounciation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonNamePronounciation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -392,10 +391,10 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonDataSources
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonDataSources
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -410,7 +409,7 @@ Accept wildcard characters: False
 Designators used after the users name (eg: PhD.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -425,7 +424,7 @@ Accept wildcard characters: False
 Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -440,8 +439,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -455,7 +454,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -471,24 +470,9 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -First
-First name of the user.
-
-```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
 
 Required: False
 Position: Named
@@ -502,11 +486,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPersonName
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonName
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonName
+
 ## NOTES
 
 ALIASES
@@ -516,7 +503,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPersonName>`: personName
+`BODYPARAMETER <IMicrosoftGraphPersonName>`: personName
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -538,7 +525,7 @@ BODYPARAMETER `<IMicrosoftGraphPersonName>`: personName
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: Provides an ordered rendering of firstName and lastName depending on the locale of the user or their device.
   - `[First <String>]`: First name of the user.
   - `[Initials <String>]`: Initials of the user.
@@ -557,7 +544,7 @@ BODYPARAMETER `<IMicrosoftGraphPersonName>`: personName
   - `[Suffix <String>]`: Designators used after the users name (eg: PhD.)
   - `[Title <String>]`: Honorifics used to prefix a users name (eg: Dr, Sir, Madam, Mrs.)
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -566,12 +553,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -589,16 +576,13 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -607,7 +591,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PRONUNCIATION `<IMicrosoftGraphPersonNamePronounciation>`: personNamePronounciation
+`PRONUNCIATION <IMicrosoftGraphPersonNamePronounciation>`: personNamePronounciation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[First <String>]`: 
@@ -615,8 +599,9 @@ PRONUNCIATION `<IMicrosoftGraphPersonNamePronounciation>`: personNamePronounciat
   - `[Maiden <String>]`: 
   - `[Middle <String>]`: 
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+

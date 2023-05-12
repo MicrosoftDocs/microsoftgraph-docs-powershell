@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/confirm-mgauditlogsigninsafe
+external help file:
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/confirm-mgbetaauditlogsigninsafe
 schema: 2.0.0
 ---
 
-# Confirm-MgAuditLogSignInSafe
+# Confirm-MgBetaAuditLogSignInSafe
 
 ## SYNOPSIS
 Allow admins to mark an event in Azure AD sign in logs as safe.
@@ -16,15 +16,15 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ### ConfirmExpanded (Default)
 ```
-Confirm-MgAuditLogSignInSafe [-AdditionalProperties <Hashtable>] [-RequestIds <String[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Confirm-MgBetaAuditLogSignInSafe [-AdditionalProperties <Hashtable>] [-RequestIds <String[]>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Confirm
 ```
-Confirm-MgAuditLogSignInSafe
+Confirm-MgBetaAuditLogSignInSafe
  -BodyParameter <IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,9 +34,9 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ## EXAMPLES
 
-### Example 1: Using the Confirm-MgAuditLogSignInSafe Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Reports
+Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
 	RequestIds = @(
 		"5a0c76d2-cb57-4ece-9bc1-c323178f116a"
@@ -44,11 +44,10 @@ $params = @{
 		"05020696-4eb8-45a3-918f-8f8bb7ad6015"
 	)
 }
-Confirm-MgAuditLogSignInSafe -BodyParameter $params
+Confirm-MgBetaAuditLogSignInSafe -BodyParameter $params
 ```
 
-This example shows how to use the Confirm-MgAuditLogSignInSafe Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -56,7 +55,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ConfirmExpanded
 Aliases:
 
@@ -69,10 +68,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Confirm
 Aliases:
 
@@ -87,7 +86,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -102,7 +101,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: ConfirmExpanded
 Aliases:
 
@@ -117,7 +116,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -133,7 +132,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -149,10 +148,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -162,8 +163,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Yhfzi3AuditlogsSigninsMicrosoftGraphConfirmsafePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RequestIds <String[]>]`: 
 
 ## RELATED LINKS
+

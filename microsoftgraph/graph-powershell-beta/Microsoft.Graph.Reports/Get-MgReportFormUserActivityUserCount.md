@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportformuseractivityusercount
+external help file:
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportformuseractivityusercount
 schema: 2.0.0
 ---
 
-# Get-MgReportFormUserActivityUserCount
+# Get-MgBetaReportFormUserActivityUserCount
 
 ## SYNOPSIS
 Invoke function getFormsUserActivityUserCounts
@@ -14,12 +14,12 @@ Invoke function getFormsUserActivityUserCounts
 
 ### Get (Default)
 ```
-Get-MgReportFormUserActivityUserCount -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
+Get-MgBetaReportFormUserActivityUserCount -Period <String> -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgReportFormUserActivityUserCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
+Get-MgBetaReportFormUserActivityUserCount -InputObject <IReportsIdentity> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
@@ -28,14 +28,28 @@ Invoke function getFormsUserActivityUserCounts
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 Usage: period='{period}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -96,10 +110,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -109,7 +125,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
@@ -137,3 +153,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+

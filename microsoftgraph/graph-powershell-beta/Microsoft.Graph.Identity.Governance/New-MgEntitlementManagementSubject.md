@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementsubject
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementsubject
 schema: 2.0.0
 ---
 
-# New-MgEntitlementManagementSubject
+# New-MgBetaEntitlementManagementSubject
 
 ## SYNOPSIS
 Create new navigation property to subjects for identityGovernance
@@ -14,17 +14,17 @@ Create new navigation property to subjects for identityGovernance
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementSubject [-AdditionalProperties <Hashtable>] [-AltSecId <String>]
- [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>] [-ConnectedOrganizationId <String>]
+New-MgBetaEntitlementManagementSubject [-AdditionalProperties <Hashtable>] [-AltSecId <String>]
+ [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization>] [-ConnectedOrganizationId <String>]
  [-DisplayName <String>] [-Email <String>] [-Id <String>] [-ObjectId <String>]
  [-OnPremisesSecurityIdentifier <String>] [-PrincipalName <String>] [-SubjectLifecycle <String>]
- [-Type <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Type <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject1> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaEntitlementManagementSubject -BodyParameter <IMicrosoftGraphAccessPackageSubject> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +32,27 @@ Create new navigation property to subjects for identityGovernance
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +67,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 accessPackageSubject
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageSubject1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
 Parameter Sets: Create
 Aliases:
 
@@ -82,10 +96,10 @@ Accept wildcard characters: False
 
 ### -ConnectedOrganization
 connectedOrganization
-To construct, please use Get-Help -Online and see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
+To construct, see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +114,7 @@ Accept wildcard characters: False
 The identifier of the connected organization of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 The display name of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +144,7 @@ Accept wildcard characters: False
 The email address of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -142,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +176,7 @@ The object identifier of the subject.
 null if the subject is not yet a user in the tenant.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,10 +188,10 @@ Accept wildcard characters: False
 ```
 
 ### -OnPremisesSecurityIdentifier
-A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +206,7 @@ Accept wildcard characters: False
 The principal name, if known, of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +221,7 @@ Accept wildcard characters: False
 accessPackageSubjectLifecycle
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +236,7 @@ Accept wildcard characters: False
 The resource type of the subject.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,10 +283,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageSubject1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageSubject
+
 ## NOTES
 
 ALIASES
@@ -282,19 +298,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
+`BODYPARAMETER <IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AltSecId <String>]`: 
-  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization1>]`: connectedOrganization
+  - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
     - `[Description <String>]`: The description of the connected organization.
     - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
     - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
     - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
     - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
@@ -305,20 +321,20 @@ BODYPARAMETER `<IMicrosoftGraphAccessPackageSubject1>`: accessPackageSubject
   - `[DisplayName <String>]`: The display name of the subject.
   - `[Email <String>]`: The email address of the subject.
   - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
-  - `[OnPremisesSecurityIdentifier <String>]`: A string representation of the principal's security identifier, if known, or null if the subject does not have a security identifier.
+  - `[OnPremisesSecurityIdentifier <String>]`: 
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
   - `[Type <String>]`: The resource type of the subject.
 
-CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization1>`: connectedOrganization
+`CONNECTEDORGANIZATION <IMicrosoftGraphConnectedOrganization>`: connectedOrganization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <String>]`: UPN of the user who created this resource. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
   - `[Description <String>]`: The description of the connected organization.
   - `[DisplayName <String>]`: The display name of the connected organization. Supports $filter (eq).
   - `[ExternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[IdentitySources <IMicrosoftGraphIdentitySource[]>]`: The identity sources in this connected organization, one of azureActiveDirectoryTenant, crossCloudAzureActiveDirectoryTenant, domainIdentitySource or externalDomainFederation. Read-only. Nullable. Supports $select and $filter(eq). To filter by the derived types, you must declare the resource using its full OData cast, for example, $filter=identitySources/any(is:is/microsoft.graph.azureActiveDirectoryTenant/tenantId eq 'bcfdfff4-cbc3-43f2-9000-ba7b7515054f').
   - `[InternalSponsors <IMicrosoftGraphDirectoryObject[]>]`: 
@@ -327,3 +343,4 @@ CONNECTEDORGANIZATION `<IMicrosoftGraphConnectedOrganization1>`: connectedOrgani
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
+

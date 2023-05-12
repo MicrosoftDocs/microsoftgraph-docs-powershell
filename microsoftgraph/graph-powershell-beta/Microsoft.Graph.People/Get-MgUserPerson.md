@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/get-mguserperson
+external help file:
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/get-mgbetauserperson
 schema: 2.0.0
-ms.prod: insights
 ---
 
-# Get-MgUserPerson
+# Get-MgBetaUserPerson
 
 ## SYNOPSIS
 Read-only.
@@ -16,20 +15,21 @@ A person is an aggregation of information from across mail, contacts and social 
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgUserPerson -UserId <String> [-Property <String[]>] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgUserPerson -PersonId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPerson -UserId <String> [-Filter <String>] [-Property <String[]>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
+ [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### Get
 ```
-Get-MgUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserPerson -PersonId <String> -UserId <String> [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaUserPerson -InputObject <IPeopleIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,15 +40,14 @@ A person is an aggregation of information from across mail, contacts and social 
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserPerson Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
-Get-MgUserPerson -UserId $userId
+Get-MgBetaUserPerson -UserId $userId
 ```
 
-This example shows how to use the Get-MgUserPerson Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -56,8 +55,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -72,8 +71,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -87,8 +86,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -100,11 +99,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -118,8 +117,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -133,8 +132,8 @@ Accept wildcard characters: False
 The unique identifier of person
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -148,7 +147,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -163,8 +162,23 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -178,8 +192,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
+Type: System.String[]
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -193,8 +207,8 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -208,26 +222,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -239,10 +238,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPerson
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPerson
+
 ## NOTES
 
 ALIASES
@@ -252,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -270,13 +271,11 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+

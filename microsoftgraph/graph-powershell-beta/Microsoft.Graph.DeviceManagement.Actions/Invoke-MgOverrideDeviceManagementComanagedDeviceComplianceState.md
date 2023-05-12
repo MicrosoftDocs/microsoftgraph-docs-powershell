@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgoverridedevicemanagementcomanageddevicecompliancestate
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaoverridedevicemanagementcomanageddevicecompliancestate
 schema: 2.0.0
 ---
 
-# Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState
+# Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState
 
 ## SYNOPSIS
 Invoke action overrideComplianceState
@@ -14,30 +14,32 @@ Invoke action overrideComplianceState
 
 ### OverrideExpanded (Default)
 ```
-Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState -ManagedDeviceId <String>
+Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState -ManagedDeviceId <String>
  [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
- [-RemediationUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RemediationUrl <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Override
 ```
-Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState -ManagedDeviceId <String>
+Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState -ManagedDeviceId <String>
  -BodyParameter <IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### OverrideViaIdentityExpanded
-```
-Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
- [-RemediationUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### OverrideViaIdentity
 ```
-Invoke-MgOverrideDeviceManagementComanagedDeviceComplianceState -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState
+ -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### OverrideViaIdentityExpanded
+```
+Invoke-MgBetaOverrideDeviceManagementComanagedDeviceComplianceState
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ComplianceState <AdministratorConfiguredDeviceComplianceState>] [-RemediationUrl <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +47,27 @@ Invoke action overrideComplianceState
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 
@@ -64,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Override, OverrideViaIdentity
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 Administrator configured device compliance state Enum
 
 ```yaml
-Type: AdministratorConfiguredDeviceComplianceState
+Type: Microsoft.Graph.Beta.PowerShell.Support.AdministratorConfiguredDeviceComplianceState
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 
@@ -95,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: OverrideViaIdentityExpanded, OverrideViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: OverrideViaIdentity, OverrideViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,8 +129,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: OverrideExpanded, Override
+Type: System.String
+Parameter Sets: Override, OverrideExpanded
 Aliases:
 
 Required: True
@@ -128,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,11 +206,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -204,12 +223,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1PcnbojDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ComplianceState <AdministratorConfiguredDeviceComplianceState?>]`: Administrator configured device compliance state Enum
   - `[RemediationUrl <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -253,7 +272,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -264,3 +282,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

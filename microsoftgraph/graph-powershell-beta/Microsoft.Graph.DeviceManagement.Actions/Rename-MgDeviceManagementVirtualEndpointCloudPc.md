@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/rename-mgdevicemanagementvirtualendpointcloudpc
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/rename-mgbetadevicemanagementvirtualendpointcloudpc
 schema: 2.0.0
 ---
 
-# Rename-MgDeviceManagementVirtualEndpointCloudPc
+# Rename-MgBetaDeviceManagementVirtualEndpointCloudPc
 
 ## SYNOPSIS
 Rename a specific Cloud PC.
@@ -15,29 +15,29 @@ Use this API to update the **displayName** for the Cloud PC entity.
 
 ### RenameExpanded (Default)
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPcId <String> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Rename
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPcId <String>
  -BodyParameter <IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RenameViaIdentityExpanded
-```
-Rename-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RenameViaIdentity
 ```
-Rename-MgDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RenameViaIdentityExpanded
+```
+Rename-MgBetaDeviceManagementVirtualEndpointCloudPc -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,13 +46,27 @@ Use this API to update the **displayName** for the Cloud PC entity.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RenameExpanded, RenameViaIdentityExpanded
 Aliases:
 
@@ -65,10 +79,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Rename, RenameViaIdentity
 Aliases:
 
@@ -83,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPC
 
 ```yaml
-Type: String
-Parameter Sets: RenameExpanded, Rename
+Type: System.String
+Parameter Sets: Rename, RenameExpanded
 Aliases:
 
 Required: True
@@ -98,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RenameExpanded, RenameViaIdentityExpanded
 Aliases:
 
@@ -111,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: RenameViaIdentityExpanded, RenameViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: RenameViaIdentity, RenameViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +143,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -144,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -160,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,11 +190,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -190,11 +207,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsTb6XizDevicemanagementVirtualendpointCloudpcsCloudpcIdMicrosoftGraphRenamePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -238,7 +255,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -249,3 +265,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

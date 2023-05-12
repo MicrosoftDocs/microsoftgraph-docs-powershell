@@ -1,66 +1,62 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/get-mgcommunicationonlinemeeting
+external help file:
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/get-mgbetacommunicationonlinemeeting
 schema: 2.0.0
-ms.prod: cloud-communications
 ---
 
-# Get-MgCommunicationOnlineMeeting
+# Get-MgBetaCommunicationOnlineMeeting
 
 ## SYNOPSIS
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Get onlineMeetings from communications
 
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
-Get-MgCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>] [-ChatInfo <IMicrosoftGraphChatInfo>]
- [-EndDateTime <DateTime>] [-ExternalId <String>] [-Participants <IMicrosoftGraphMeetingParticipants1>]
- [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Get3
-```
-Get-MgCommunicationOnlineMeeting -OnlineMeetingId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### List1
-```
-Get-MgCommunicationOnlineMeeting [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-EndDateTime <DateTime>] [-ExternalId <String>] [-Participants <IMicrosoftGraphMeetingParticipants>]
+ [-StartDateTime <DateTime>] [-Subject <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgCommunicationOnlineMeeting
- -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaCommunicationOnlineMeeting -OnlineMeetingId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Get1
+```
+Get-MgBetaCommunicationOnlineMeeting
+ -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentity
+```
+Get-MgBetaCommunicationOnlineMeeting -InputObject <ICloudCommunicationsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgBetaCommunicationOnlineMeeting [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Get onlineMeetings from communications
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgCommunicationOnlineMeeting Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
 ```
 
-This example shows how to use the Get-MgCommunicationOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -68,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -83,8 +79,8 @@ Accept wildcard characters: False
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -96,11 +92,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1
-Parameter Sets: Get
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Get1
 Aliases:
 
 Required: True
@@ -112,10 +108,10 @@ Accept wildcard characters: False
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatInfo
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -131,8 +127,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -146,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -161,8 +157,8 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
-Parameter Sets: Get3, GetViaIdentity1, List1
+Type: System.String[]
+Parameter Sets: Get, GetViaIdentity, List
 Aliases: Expand
 
 Required: False
@@ -176,7 +172,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -191,8 +187,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -204,11 +200,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -222,8 +218,8 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
-Parameter Sets: Get3
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -237,8 +233,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -250,10 +246,10 @@ Accept wildcard characters: False
 
 ### -Participants
 meetingParticipants
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingParticipants1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingParticipants
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -268,8 +264,8 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
-Parameter Sets: Get3, GetViaIdentity1, List1
+Type: System.String[]
+Parameter Sets: Get, GetViaIdentity, List
 Aliases: Select
 
 Required: False
@@ -283,8 +279,23 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -298,8 +309,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
+Type: System.String[]
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -313,7 +324,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -328,7 +339,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -343,8 +354,8 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -358,7 +369,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -374,24 +385,9 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
 
 Required: False
 Position: Named
@@ -405,11 +401,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+
 ## NOTES
 
 ALIASES
@@ -419,16 +418,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[EndDateTime <DateTime?>]`: 
   - `[ExternalId <String>]`: 
-  - `[Participants <IMicrosoftGraphMeetingParticipants1>]`: meetingParticipants
+  - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
       - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -447,13 +446,13 @@ BODYPARAMETER `<IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorg
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -463,6 +462,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -471,7 +471,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS `<IMicrosoftGraphMeetingParticipants1>`: meetingParticipants
+`PARTICIPANTS <IMicrosoftGraphMeetingParticipants>`: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -489,3 +489,4 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants1>`: meetingParticipants
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
 
 ## RELATED LINKS
+

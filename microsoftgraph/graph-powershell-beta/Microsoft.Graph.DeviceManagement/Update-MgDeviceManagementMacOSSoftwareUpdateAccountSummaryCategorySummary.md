@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementmacossoftwareupdateaccountsummarycategorysummary
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummary
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
+# Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
 
 ## SYNOPSIS
 Update the navigation property categorySummaries in deviceManagement
@@ -14,38 +14,37 @@ Update the navigation property categorySummaries in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
+Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
  [-AdditionalProperties <Hashtable>] [-DeviceId <String>] [-DisplayName <String>] [-FailedUpdateCount <Int32>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-SuccessfulUpdateCount <Int32>] [-TotalUpdateCount <Int32>]
  [-UpdateCategory <MacOSSoftwareUpdateCategory>]
- [-UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>] [-UserId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>] [-UserId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
+Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
- [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
- [-SuccessfulUpdateCount <Int32>] [-TotalUpdateCount <Int32>] [-UpdateCategory <MacOSSoftwareUpdateCategory>]
- [-UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>] [-UserId <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
+Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
  -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary
+ -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DeviceId <String>]
+ [-DisplayName <String>] [-FailedUpdateCount <Int32>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
+ [-SuccessfulUpdateCount <Int32>] [-TotalUpdateCount <Int32>] [-UpdateCategory <MacOSSoftwareUpdateCategory>]
+ [-UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>] [-UserId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,13 +52,27 @@ Update the navigation property categorySummaries in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,10 +85,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 MacOS software update category summary report for a device and user
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMacOSSoftwareUpdateCategorySummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateCategorySummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +103,7 @@ Accept wildcard characters: False
 The device ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -105,7 +118,7 @@ Accept wildcard characters: False
 The name of the report
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ Accept wildcard characters: False
 Number of failed updates on the device
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,11 +145,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,11 +162,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,7 +180,7 @@ Accept wildcard characters: False
 Last date time the report for this device was updated.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +195,8 @@ Accept wildcard characters: False
 The unique identifier of macOSSoftwareUpdateAccountSummary
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -197,26 +210,11 @@ Accept wildcard characters: False
 The unique identifier of macOSSoftwareUpdateCategorySummary
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -227,7 +225,7 @@ Accept wildcard characters: False
 Number of successful updates on the device
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +240,7 @@ Accept wildcard characters: False
 Number of total updates on the device
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +255,7 @@ Accept wildcard characters: False
 MacOS Software Update Category
 
 ```yaml
-Type: MacOSSoftwareUpdateCategory
+Type: Microsoft.Graph.Beta.PowerShell.Support.MacOSSoftwareUpdateCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -270,10 +268,10 @@ Accept wildcard characters: False
 
 ### -UpdateStateSummaries
 Summary of the update states.
-To construct, please use Get-Help -Online and see NOTES section for UPDATESTATESUMMARIES properties and create a hash table.
+To construct, see NOTES section for UPDATESTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -288,7 +286,7 @@ Accept wildcard characters: False
 The user ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +301,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -319,7 +317,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -335,11 +333,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateCategorySummary
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateCategorySummary
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateCategorySummary
+
 ## NOTES
 
 ALIASES
@@ -349,9 +350,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary>`: MacOS software update category summary report for a device and user
+`BODYPARAMETER <IMicrosoftGraphMacOSSoftwareUpdateCategorySummary>`: MacOS software update category summary report for a device and user
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeviceId <String>]`: The device ID.
   - `[DisplayName <String>]`: The name of the report
   - `[FailedUpdateCount <Int32?>]`: Number of failed updates on the device
@@ -360,7 +361,7 @@ BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary>`: MacOS softw
   - `[TotalUpdateCount <Int32?>]`: Number of total updates on the device
   - `[UpdateCategory <MacOSSoftwareUpdateCategory?>]`: MacOS Software Update Category
   - `[UpdateStateSummaries <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>]`: Summary of the update states.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: Human readable name of the software update
     - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
     - `[ProductKey <String>]`: Product key of the software update.
@@ -369,7 +370,7 @@ BODYPARAMETER `<IMicrosoftGraphMacOSSoftwareUpdateCategorySummary>`: MacOS softw
     - `[UpdateVersion <String>]`: Version of the software update
   - `[UserId <String>]`: The user ID.
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -501,9 +502,11 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-UPDATESTATESUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateStateSummary\[]>: Summary of the update states.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`UPDATESTATESUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateStateSummary[]>`: Summary of the update states.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: Human readable name of the software update
   - `[LastUpdatedDateTime <DateTime?>]`: Last date time the report for this device and product key was updated.
   - `[ProductKey <String>]`: Product key of the software update.
@@ -513,4 +516,3 @@ UPDATESTATESUMMARIES <IMicrosoftGraphMacOSSoftwareUpdateStateSummary\[]>: Summar
 
 ## RELATED LINKS
 
-## RELATED LINKS

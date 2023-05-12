@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mguserdeviceenrollmentconfigurationassignment
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetauserdeviceenrollmentconfigurationassignment
 schema: 2.0.0
 ---
 
-# New-MgUserDeviceEnrollmentConfigurationAssignment
+# New-MgBetaUserDeviceEnrollmentConfigurationAssignment
 
 ## SYNOPSIS
 Create new navigation property to assignments for users
@@ -14,30 +14,31 @@ Create new navigation property to assignments for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Source <DeviceAndAppManagementAssignmentSource>]
- [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId <String>
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-Source <DeviceAndAppManagementAssignmentSource>] [-SourceId <String>]
+ [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphEnrollmentConfigurationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Source <DeviceAndAppManagementAssignmentSource>]
- [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>] [-WhatIf] [-Confirm]
+New-MgBetaUserDeviceEnrollmentConfigurationAssignment -DeviceEnrollmentConfigurationId <String>
+ -UserId <String> -BodyParameter <IMicrosoftGraphEnrollmentConfigurationAssignment> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphEnrollmentConfigurationAssignment> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphEnrollmentConfigurationAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserDeviceEnrollmentConfigurationAssignment -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Source <DeviceAndAppManagementAssignmentSource>]
+ [-SourceId <String>] [-Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +46,27 @@ Create new navigation property to assignments for users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -64,10 +79,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Enrollment Configuration Assignment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentConfigurationAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of deviceEnrollmentConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -94,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,11 +126,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +144,7 @@ Accept wildcard characters: False
 Represents source of assignment.
 
 ```yaml
-Type: DeviceAndAppManagementAssignmentSource
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceAndAppManagementAssignmentSource
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +159,7 @@ Accept wildcard characters: False
 Identifier for resource used for deployment to a group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -157,10 +172,10 @@ Accept wildcard characters: False
 
 ### -Target
 Base type for assignment targets.
-To construct, please use Get-Help -Online and see NOTES section for TARGET properties and create a hash table.
+To construct, see NOTES section for TARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementAssignmentTarget
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +190,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -190,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +237,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentConfigurationAssignment
+
 ## NOTES
 
 ALIASES
@@ -236,17 +254,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEnrollmentConfigurationAssignment>`: Enrollment Configuration Assignment
+`BODYPARAMETER <IMicrosoftGraphEnrollmentConfigurationAssignment>`: Enrollment Configuration Assignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: Identifier for resource used for deployment to a group
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -261,6 +279,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
   - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
   - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
   - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
   - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
@@ -291,8 +311,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
   - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: The unique identifier of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: The unique identifier of officeClientConfiguration
   - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
   - `[PolicySetId <String>]`: The unique identifier of policySet
@@ -311,14 +329,16 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
   - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-TARGET `<IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>`: Base type for assignment targets.
+`TARGET <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>`: Base type for assignment targets.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
+

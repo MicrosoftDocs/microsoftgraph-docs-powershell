@@ -1,43 +1,43 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/set-mgidentityb2xuserflowuserattributeassignmentorder
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/set-mgbetaidentityb2xuserflowuserattributeassignmentorder
 schema: 2.0.0
 ---
 
-# Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder
+# Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder
 
 ## SYNOPSIS
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 ## SYNTAX
 
-### SetExpanded1 (Default)
+### SetExpanded (Default)
 ```
-Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2XIdentityUserFlowId <String>
+Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -B2XIdentityUserFlowId <String>
  [-AdditionalProperties <Hashtable>] [-NewAssignmentOrder <IMicrosoftGraphAssignmentOrder>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Set1
+### Set
 ```
-Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2XIdentityUserFlowId <String>
+Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -B2XIdentityUserFlowId <String>
  -BodyParameter <IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### SetViaIdentityExpanded1
+### SetViaIdentity
 ```
-Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySignInsIdentity>
+Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SetViaIdentityExpanded
+```
+Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-NewAssignmentOrder <IMicrosoftGraphAssignmentOrder>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SetViaIdentity1
-```
-Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,9 +45,10 @@ Set the order of identityUserFlowAttributeAssignments being collected within a u
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	NewAssignmentOrder = @{
@@ -58,12 +59,7 @@ $params = @{
 	}
 }
 
-Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
-```
-
-This example shows how to use the Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -71,8 +67,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,8 +82,8 @@ Accept wildcard characters: False
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: String
-Parameter Sets: SetExpanded1, Set1
+Type: System.String
+Parameter Sets: Set, SetExpanded
 Aliases:
 
 Required: True
@@ -99,11 +95,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Set1, SetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Set, SetViaIdentity
 Aliases:
 
 Required: True
@@ -115,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: SetViaIdentityExpanded1, SetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,11 +127,11 @@ Accept wildcard characters: False
 
 ### -NewAssignmentOrder
 assignmentOrder
-To construct, please use Get-Help -Online and see NOTES section for NEWASSIGNMENTORDER properties and create a hash table.
+To construct, see NOTES section for NEWASSIGNMENTORDER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAssignmentOrder
-Parameter Sets: SetExpanded1, SetViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAssignmentOrder
+Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -164,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -196,11 +192,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -210,13 +209,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsOg5H01IdentityB2XuserflowsB2XidentityuserflowIdUserattributeassignmentsMicrosoftGraphSetorderPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NewAssignmentOrder <IMicrosoftGraphAssignmentOrder>]`: assignmentOrder
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Order <String[]>]`: A list of identityUserFlowAttribute object identifiers that determine the order in which attributes should be collected within a user flow.
+    - `[Order <String[]>]`: A list of identityUserFlowAttribute IDs provided to determine the order in which attributes should be collected within a user flow.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -253,6 +252,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -290,8 +290,9 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-NEWASSIGNMENTORDER `<IMicrosoftGraphAssignmentOrder>`: assignmentOrder
+`NEWASSIGNMENTORDER <IMicrosoftGraphAssignmentOrder>`: assignmentOrder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Order <String[]>]`: A list of identityUserFlowAttribute object identifiers that determine the order in which attributes should be collected within a user flow.
+  - `[Order <String[]>]`: A list of identityUserFlowAttribute IDs provided to determine the order in which attributes should be collected within a user flow.
 
 ## RELATED LINKS
+

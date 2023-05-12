@@ -1,53 +1,67 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/add-mgsharelistcontenttypecopyfromcontenttypehub
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetasharelistcontenttypecopyfromcontenttypehub
 schema: 2.0.0
 ---
 
-# Add-MgShareListContentTypeCopyFromContentTypeHub
+# Add-MgBetaShareListContentTypeCopyFromContentTypeHub
 
 ## SYNOPSIS
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
-Add-MgShareListContentTypeCopyFromContentTypeHub -SharedDriveItemId <String>
- [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaShareListContentTypeCopyFromContentTypeHub -SharedDriveItemId <String>
+ [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
-Add-MgShareListContentTypeCopyFromContentTypeHub -SharedDriveItemId <String>
+Add-MgBetaShareListContentTypeCopyFromContentTypeHub -SharedDriveItemId <String>
  -BodyParameter <IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentity
 ```
-Add-MgShareListContentTypeCopyFromContentTypeHub -InputObject <IFilesIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentity1
-```
-Add-MgShareListContentTypeCopyFromContentTypeHub -InputObject <IFilesIdentity>
+Add-MgBetaShareListContentTypeCopyFromContentTypeHub -InputObject <IFilesIdentity>
  -BodyParameter <IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaShareListContentTypeCopyFromContentTypeHub -InputObject <IFilesIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentTypeId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -55,8 +69,8 @@ For more information, see getCompatibleHubContentTypes and the blog post Syntex 
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,11 +82,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -86,8 +100,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Type: System.String
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -99,11 +113,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -117,8 +131,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, Add1
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -132,7 +146,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +162,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,11 +178,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -178,11 +195,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsJlb25XSharesShareddriveitemIdListContenttypesMicrosoftGraphAddcopyfromcontenttypehubPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentTypeId <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -209,3 +226,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

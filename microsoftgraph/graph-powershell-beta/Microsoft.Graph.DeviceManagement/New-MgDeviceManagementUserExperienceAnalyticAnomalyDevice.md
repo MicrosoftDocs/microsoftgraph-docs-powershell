@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticanomalydevice
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticanomalydevice
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice
+# New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAnomalyDevice for deviceManagement
@@ -14,17 +14,18 @@ Create new navigation property to userExperienceAnalyticsAnomalyDevice for devic
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice [-AdditionalProperties <Hashtable>]
  [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
  [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-DeviceId <String>] [-DeviceManufacturer <String>]
  [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +33,27 @@ Create new navigation property to userExperienceAnalyticsAnomalyDevice for devic
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +68,7 @@ Accept wildcard characters: False
 The unique identifier of the anomaly.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +83,7 @@ Accept wildcard characters: False
 Indicates the first occurance date and time for the anomaly on the device.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -83,7 +98,7 @@ Accept wildcard characters: False
 Indicates the latest occurance date and time for the anomaly on the device.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,10 +111,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics anomaly entity contains device details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
 Parameter Sets: Create
 Aliases:
 
@@ -114,7 +129,7 @@ Accept wildcard characters: False
 The unique identifier of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +144,7 @@ Accept wildcard characters: False
 The manufacturer name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +159,7 @@ Accept wildcard characters: False
 The model name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +174,7 @@ Accept wildcard characters: False
 The name of the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +205,7 @@ Accept wildcard characters: False
 The name of the OS installed on the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -205,7 +220,7 @@ Accept wildcard characters: False
 The OS version installed on the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -220,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -252,10 +267,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice
+
 ## NOTES
 
 ALIASES
@@ -265,9 +282,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice>`: The user experience analytics anomaly entity contains device details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice>`: The user experience analytics anomaly entity contains device details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AnomalyId <String>]`: The unique identifier of the anomaly.
   - `[AnomalyOnDeviceFirstOccurrenceDateTime <DateTime?>]`: Indicates the first occurance date and time for the anomaly on the device.
   - `[AnomalyOnDeviceLatestOccurrenceDateTime <DateTime?>]`: Indicates the latest occurance date and time for the anomaly on the device.
@@ -279,3 +296,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAnomalyDevice>`: The user 
   - `[OSVersion <String>]`: The OS version installed on the device.
 
 ## RELATED LINKS
+

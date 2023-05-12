@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/submit-mgeducationclassassignmentsubmission
+external help file:
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/submit-mgbetaeducationclassassignmentsubmission
 schema: 2.0.0
 ---
 
-# Submit-MgEducationClassAssignmentSubmission
+# Submit-MgBetaEducationClassAssignmentSubmission
 
 ## SYNOPSIS
 Indicate that a student is done with the work and is ready to hand in the assignment.
@@ -17,15 +17,15 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## SYNTAX
 
-### Submit1 (Default)
+### Submit (Default)
 ```
-Submit-MgEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
- -EducationSubmissionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Submit-MgBetaEducationClassAssignmentSubmission -EducationAssignmentId <String> -EducationClassId <String>
+ -EducationSubmissionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### SubmitViaIdentity1
+### SubmitViaIdentity
 ```
-Submit-MgEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Submit-MgBetaEducationClassAssignmentSubmission -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,14 +39,13 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### Example 1: Using the Submit-MgEducationClassAssignmentSubmission Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Education
-Submit-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+Import-Module Microsoft.Graph.Beta.Education
+Submit-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
 
-This example shows how to use the Submit-MgEducationClassAssignmentSubmission Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -54,8 +53,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: Submit1
+Type: System.String
+Parameter Sets: Submit
 Aliases:
 
 Required: True
@@ -69,8 +68,8 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: Submit1
+Type: System.String
+Parameter Sets: Submit
 Aliases:
 
 Required: True
@@ -84,8 +83,8 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
-Parameter Sets: Submit1
+Type: System.String
+Parameter Sets: Submit
 Aliases:
 
 Required: True
@@ -97,11 +96,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: SubmitViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: SubmitViaIdentity
 Aliases:
 
 Required: True
@@ -115,7 +114,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -131,7 +130,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,10 +146,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSubmission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSubmission
+
 ## NOTES
 
 ALIASES
@@ -160,11 +161,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -175,3 +177,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

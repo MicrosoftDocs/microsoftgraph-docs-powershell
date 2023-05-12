@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/new-mguseroutlooktaskattachment
+external help file:
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktaskattachment
 schema: 2.0.0
 ---
 
-# New-MgUserOutlookTaskAttachment
+# New-MgBetaUserOutlookTaskAttachment
 
 ## SYNOPSIS
 Use this API to add an attachment to an outlookTask.
@@ -15,28 +15,28 @@ The attachment can be a file (of fileAttachment type) or Outlook item (itemAttac
 
 ### CreateExpanded (Default)
 ```
-New-MgUserOutlookTaskAttachment -OutlookTaskId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskAttachment -OutlookTaskId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserOutlookTaskAttachment -OutlookTaskId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserOutlookTaskAttachment -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
- [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskAttachment -OutlookTaskId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphAttachment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserOutlookTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphAttachment>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserOutlookTaskAttachment -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphAttachment>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserOutlookTaskAttachment -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>]
+ [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,24 +45,23 @@ The attachment can be a file (of fileAttachment type) or Outlook item (itemAttac
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserOutlookTaskAttachment Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	"@odata.type" = "#microsoft.graph.fileAttachment"
 	Name = "menu.txt"
 	ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
 }
 # A UPN can also be used as -UserId.
-New-MgUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
+New-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserOutlookTaskAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the New-MgUserOutlookTaskAttachment Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
 $params = @{
 	"@odata.type" = "#microsoft.graph.itemAttachment"
 	Name = "Holiday event"
@@ -72,11 +71,10 @@ $params = @{
 	}
 }
 # A UPN can also be used as -UserId.
-New-MgUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
+New-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserOutlookTaskAttachment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -84,7 +82,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -97,10 +95,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 attachment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -115,7 +113,7 @@ Accept wildcard characters: False
 The MIME type.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,11 +125,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,11 +142,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -162,7 +160,7 @@ Accept wildcard characters: False
 true if the attachment is an inline attachment; otherwise, false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +176,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,10 +188,11 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The attachment's file name.
+The display name of the attachment.
+This does not need to be the actual file name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -208,8 +207,8 @@ Accept wildcard characters: False
 The unique identifier of outlookTask
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -223,7 +222,7 @@ Accept wildcard characters: False
 The length of the attachment in bytes.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -238,8 +237,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -253,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -285,11 +284,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+
 ## NOTES
 
 ALIASES
@@ -299,16 +301,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+`BODYPARAMETER <IMicrosoftGraphAttachment>`: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
+  - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -317,7 +319,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -325,9 +326,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,71 +1,71 @@
 ---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/update-mgbookingbusinessappointment
+external help file:
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabookingbusinessappointment
 schema: 2.0.0
 ---
 
-# Update-MgBookingBusinessAppointment
+# Update-MgBetaBookingBusinessAppointment
 
 ## SYNOPSIS
-Update the navigation property appointments in bookingBusinesses
+Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
+Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  [-AdditionalInformation <String>] [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>]
- [-CustomerEmailAddress <String>] [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation1>]
- [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail]
- [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
- [-Reminders <IMicrosoftGraphBookingReminder1[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
- [-ServiceLocation <IMicrosoftGraphLocation1>] [-ServiceName <String>] [-ServiceNotes <String>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Start <IMicrosoftGraphDateTimeZone>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CustomerEmailAddress <String>] [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>]
+ [-CustomerName <String>] [-CustomerNotes <String>] [-CustomerPhone <String>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-CustomerTimeZone <String>]
+ [-End <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-InvoiceAmount <Double>]
+ [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>] [-InvoiceStatus <String>]
+ [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
+ [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
+ [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
+ [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- -BodyParameter <IMicrosoftGraphBookingAppointment1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
+Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBookingAppointment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalInformation <String>]
  [-AdditionalProperties <Hashtable>] [-AnonymousJoinWebUrl <String>] [-CustomerEmailAddress <String>]
- [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation1>] [-CustomerName <String>]
- [-CustomerNotes <String>] [-CustomerPhone <String>] [-CustomerTimeZone <String>]
- [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-End <IMicrosoftGraphDateTimeZone>]
- [-Id <String>] [-InvoiceAmount <Double>] [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>]
- [-InvoiceStatus <String>] [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>]
- [-MaximumAttendeesCount <Int32>] [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail]
- [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>] [-Price <Double>] [-PriceType <BookingPriceType>]
- [-Reminders <IMicrosoftGraphBookingReminder1[]>] [-SelfServiceAppointmentId <String>] [-ServiceId <String>]
- [-ServiceLocation <IMicrosoftGraphLocation1>] [-ServiceName <String>] [-ServiceNotes <String>]
- [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>] [-Start <IMicrosoftGraphDateTimeZone>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBookingAppointment1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CustomerId <String>] [-CustomerLocation <IMicrosoftGraphLocation>] [-CustomerName <String>]
+ [-CustomerNotes <String>] [-CustomerPhone <String>]
+ [-Customers <IMicrosoftGraphBookingCustomerInformationBase[]>] [-CustomerTimeZone <String>]
+ [-End <IMicrosoftGraphDateTimeZone>] [-Id <String>] [-InvoiceAmount <Double>]
+ [-InvoiceDate <IMicrosoftGraphDateTimeZone>] [-InvoiceId <String>] [-InvoiceStatus <String>]
+ [-InvoiceUrl <String>] [-IsLocationOnline] [-JoinWebUrl <String>] [-MaximumAttendeesCount <Int32>]
+ [-OnlineMeetingUrl <String>] [-OptOutOfCustomerEmail] [-PostBuffer <TimeSpan>] [-PreBuffer <TimeSpan>]
+ [-Price <Double>] [-PriceType <BookingPriceType>] [-Reminders <IMicrosoftGraphBookingReminder[]>]
+ [-SelfServiceAppointmentId <String>] [-ServiceId <String>] [-ServiceLocation <IMicrosoftGraphLocation>]
+ [-ServiceName <String>] [-ServiceNotes <String>] [-SmsNotificationsEnabled] [-StaffMemberIds <String[]>]
+ [-Start <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property appointments in bookingBusinesses
+Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgBookingBusinessAppointment Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Bookings
+Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingAppointment"
 	End = @{
@@ -84,11 +84,10 @@ $params = @{
 		TimeZone = "UTC"
 	}
 }
-Update-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
+Update-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -96,8 +95,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional information that is sent to the customer when an appointment is confirmed.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -111,8 +110,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -126,8 +125,8 @@ Accept wildcard characters: False
 The URL of the meeting to join anonymously.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -139,11 +138,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Represents a booked appointment of a service by a customer in a business.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingAppointment1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -157,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of bookingAppointment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -172,8 +171,8 @@ Accept wildcard characters: False
 The unique identifier of bookingBusiness
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -187,8 +186,8 @@ Accept wildcard characters: False
 The SMTP address of the bookingCustomer who is booking the appointment.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -204,8 +203,8 @@ If no ID is specified when an appointment is created, then a new bookingCustomer
 Once set, you should consider the customerId immutable.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -217,11 +216,11 @@ Accept wildcard characters: False
 
 ### -CustomerLocation
 location
-To construct, please use Get-Help -Online and see NOTES section for CUSTOMERLOCATION properties and create a hash table.
+To construct, see NOTES section for CUSTOMERLOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocation
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -235,8 +234,8 @@ Accept wildcard characters: False
 The customer's name.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -253,8 +252,8 @@ You can set this property only when initially creating an appointment with a new
 After that point, the value is computed from the customer represented by customerId.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -268,8 +267,8 @@ Accept wildcard characters: False
 The customer's phone number.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -285,8 +284,8 @@ An appointment will contain a list of customer information and each unit will in
 Optional.
 
 ```yaml
-Type: IMicrosoftGraphBookingCustomerInformationBase[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingCustomerInformationBase[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -301,8 +300,8 @@ The time zone of the customer.
 For a list of possible values, see dateTimeTimeZone.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -314,11 +313,11 @@ Accept wildcard characters: False
 
 ### -End
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for END properties and create a hash table.
+To construct, see NOTES section for END properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -329,12 +328,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -346,11 +345,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -364,8 +363,8 @@ Accept wildcard characters: False
 The billed amount on the invoice.
 
 ```yaml
-Type: Double
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Double
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -377,11 +376,11 @@ Accept wildcard characters: False
 
 ### -InvoiceDate
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for INVOICEDATE properties and create a hash table.
+To construct, see NOTES section for INVOICEDATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -395,8 +394,8 @@ Accept wildcard characters: False
 The ID of the invoice.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -410,8 +409,8 @@ Accept wildcard characters: False
 bookingInvoiceStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -425,8 +424,8 @@ Accept wildcard characters: False
 The URL of the invoice in Microsoft Bookings.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -441,8 +440,8 @@ True indicates that the appointment will be held online.
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -456,8 +455,8 @@ Accept wildcard characters: False
 The URL of the online meeting for the appointment.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -473,8 +472,8 @@ If maximumAttendeesCount of the service is greater than 1, pass valid customer I
 To create a customer, use the Create bookingCustomer operation.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -488,8 +487,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -503,23 +502,8 @@ Accept wildcard characters: False
 True indicates that the bookingCustomer for this appointment does not wish to receive a confirmation for this appointment.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -534,8 +518,8 @@ The amount of time to reserve after the appointment ends, for cleaning up, as an
 The value is expressed in ISO8601 format.
 
 ```yaml
-Type: TimeSpan
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.TimeSpan
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -550,8 +534,8 @@ The amount of time to reserve before the appointment begins, for preparation, as
 The value is expressed in ISO8601 format.
 
 ```yaml
-Type: TimeSpan
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.TimeSpan
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -565,8 +549,8 @@ Accept wildcard characters: False
 The regular price for an appointment for the specified bookingService.
 
 ```yaml
-Type: Double
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Double
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -580,8 +564,8 @@ Accept wildcard characters: False
 Represents the type of pricing of a booking service.
 
 ```yaml
-Type: BookingPriceType
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Support.BookingPriceType
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -594,11 +578,11 @@ Accept wildcard characters: False
 ### -Reminders
 The collection of customer reminders sent for this appointment.
 The value of this property is available only when reading this bookingAppointment by its ID.
-To construct, please use Get-Help -Online and see NOTES section for REMINDERS properties and create a hash table.
+To construct, see NOTES section for REMINDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBookingReminder1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingReminder[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -612,8 +596,8 @@ Accept wildcard characters: False
 An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -627,8 +611,8 @@ Accept wildcard characters: False
 The ID of the bookingService associated with this appointment.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -640,11 +624,11 @@ Accept wildcard characters: False
 
 ### -ServiceLocation
 location
-To construct, please use Get-Help -Online and see NOTES section for SERVICELOCATION properties and create a hash table.
+To construct, see NOTES section for SERVICELOCATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLocation1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocation
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -659,8 +643,8 @@ The name of the bookingService associated with this appointment.This property is
 If not specified, it is computed from the service associated with the appointment by the serviceId property.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -675,8 +659,8 @@ Notes from a bookingStaffMember.
 The value of this property is available only when reading this bookingAppointment by its ID.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -691,8 +675,8 @@ True indicates SMS notifications will be sent to the customers for the appointme
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -706,8 +690,8 @@ Accept wildcard characters: False
 The ID of each bookingStaffMember who is scheduled in this appointment.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -719,11 +703,11 @@ Accept wildcard characters: False
 
 ### -Start
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for START properties and create a hash table.
+To construct, see NOTES section for START properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -737,7 +721,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -753,7 +737,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -769,11 +753,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingAppointment1
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingAppointment
+
 ## NOTES
 
 ALIASES
@@ -783,16 +770,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphBookingAppointment1>`: Represents a booked appointment of a service by a customer in a business.
+`BODYPARAMETER <IMicrosoftGraphBookingAppointment>`: Represents a booked appointment of a service by a customer in a business.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdditionalInformation <String>]`: Additional information that is sent to the customer when an appointment is confirmed.
   - `[AnonymousJoinWebUrl <String>]`: The URL of the meeting to join anonymously.
   - `[CustomerEmailAddress <String>]`: The SMTP address of the bookingCustomer who is booking the appointment.
   - `[CustomerId <String>]`: The ID of the bookingCustomer for this appointment. If no ID is specified when an appointment is created, then a new bookingCustomer object is created. Once set, you should consider the customerId immutable.
-  - `[CustomerLocation <IMicrosoftGraphLocation1>]`: location
+  - `[CustomerLocation <IMicrosoftGraphLocation>]`: location
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+    - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -821,8 +808,8 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment1>`: Represents a booked appoin
   - `[Customers <IMicrosoftGraphBookingCustomerInformationBase[]>]`: A collection of the customer properties for an appointment. An appointment will contain a list of customer information and each unit will indicate the properties of a customer who is part of that appointment. Optional.
   - `[End <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
   - `[InvoiceAmount <Double?>]`: The billed amount on the invoice.
   - `[InvoiceDate <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
   - `[InvoiceId <String>]`: The ID of the invoice.
@@ -837,22 +824,22 @@ BODYPARAMETER `<IMicrosoftGraphBookingAppointment1>`: Represents a booked appoin
   - `[PreBuffer <TimeSpan?>]`: The amount of time to reserve before the appointment begins, for preparation, as an example. The value is expressed in ISO8601 format.
   - `[Price <Double?>]`: The regular price for an appointment for the specified bookingService.
   - `[PriceType <BookingPriceType?>]`: Represents the type of pricing of a booking service.
-  - `[Reminders <IMicrosoftGraphBookingReminder1[]>]`: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
+  - `[Reminders <IMicrosoftGraphBookingReminder[]>]`: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
     - `[Message <String>]`: The message in the reminder.
     - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
-    - `[Recipients <String>]`: 
+    - `[Recipients <String>]`: bookingReminderRecipients
   - `[SelfServiceAppointmentId <String>]`: An additional tracking ID for the appointment, if the appointment has been created directly by the customer on the scheduling page, as opposed to by a staff member on the behalf of the customer.
   - `[ServiceId <String>]`: The ID of the bookingService associated with this appointment.
-  - `[ServiceLocation <IMicrosoftGraphLocation1>]`: location
+  - `[ServiceLocation <IMicrosoftGraphLocation>]`: location
   - `[ServiceName <String>]`: The name of the bookingService associated with this appointment.This property is optional when creating a new appointment. If not specified, it is computed from the service associated with the appointment by the serviceId property.
   - `[ServiceNotes <String>]`: Notes from a bookingStaffMember. The value of this property is available only when reading this bookingAppointment by its ID.
   - `[SmsNotificationsEnabled <Boolean?>]`: True indicates SMS notifications will be sent to the customers for the appointment. Default value is false.
   - `[StaffMemberIds <String[]>]`: The ID of each bookingStaffMember who is scheduled in this appointment.
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-CUSTOMERLOCATION `<IMicrosoftGraphLocation1>`: location
+`CUSTOMERLOCATION <IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -875,38 +862,36 @@ CUSTOMERLOCATION `<IMicrosoftGraphLocation1>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-END `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`END <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
-INVOICEDATE `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`INVOICEDATE <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
-REMINDERS <IMicrosoftGraphBookingReminder1\[]>: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
+`REMINDERS <IMicrosoftGraphBookingReminder[]>`: The collection of customer reminders sent for this appointment. The value of this property is available only when reading this bookingAppointment by its ID.
   - `[Message <String>]`: The message in the reminder.
   - `[Offset <TimeSpan?>]`: The amount of time before the start of an appointment that the reminder should be sent. It's denoted in ISO 8601 format.
-  - `[Recipients <String>]`: 
+  - `[Recipients <String>]`: bookingReminderRecipients
 
-SERVICELOCATION `<IMicrosoftGraphLocation1>`: location
+`SERVICELOCATION <IMicrosoftGraphLocation>`: location
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -929,11 +914,10 @@ SERVICELOCATION `<IMicrosoftGraphLocation1>`: location
   - `[UniqueId <String>]`: For internal use only.
   - `[UniqueIdType <String>]`: locationUniqueIdType
 
-START `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`START <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
 
-## RELATED LINKS

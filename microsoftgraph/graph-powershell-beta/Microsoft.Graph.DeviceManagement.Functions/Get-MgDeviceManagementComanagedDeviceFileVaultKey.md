@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementcomanageddevicefilevaultkey
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementcomanageddevicefilevaultkey
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementComanagedDeviceFileVaultKey
+# Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey
 
 ## SYNOPSIS
 Invoke function getFileVaultKey
@@ -14,12 +14,12 @@ Invoke function getFileVaultKey
 
 ### Get (Default)
 ```
-Get-MgDeviceManagementComanagedDeviceFileVaultKey -ManagedDeviceId <String> [<CommonParameters>]
+Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey -ManagedDeviceId <String> [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementComanagedDeviceFileVaultKey -InputObject <IDeviceManagementFunctionsIdentity>
+Get-MgBetaDeviceManagementComanagedDeviceFileVaultKey -InputObject <IDeviceManagementFunctionsIdentity>
  [<CommonParameters>]
 ```
 
@@ -28,14 +28,28 @@ Invoke function getFileVaultKey
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -66,10 +80,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -79,10 +95,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcId1 <String>]`: Usage: cloudPcId='{cloudPcId}'
   - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
@@ -104,7 +119,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Scope <String>]`: Usage: scope='{scope}'
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
   - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
   - `[TemplateId <String>]`: Usage: templateId='{templateId}'
@@ -112,3 +126,4 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+

@@ -1,46 +1,46 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgscheduledevicemanagementdevicecompliancepolicyactionforrule
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetascheduledevicemanagementdevicecompliancepolicyactionforrule
 schema: 2.0.0
 ---
 
-# Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
+# Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule
 
 ## SYNOPSIS
 Invoke action scheduleActionsForRules
 
 ## SYNTAX
 
-### ScheduleExpanded1 (Default)
+### ScheduleExpanded (Default)
 ```
-Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule -DeviceCompliancePolicyId <String>
+Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule -DeviceCompliancePolicyId <String>
  [-AdditionalProperties <Hashtable>]
- [-DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Schedule1
+### Schedule
 ```
-Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule -DeviceCompliancePolicyId <String>
+Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule -DeviceCompliancePolicyId <String>
  -BodyParameter <IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ScheduleViaIdentityExpanded1
+### ScheduleViaIdentity
 ```
-Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ScheduleViaIdentity1
-```
-Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule
+Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ScheduleViaIdentityExpanded
+```
+Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,14 +48,28 @@ Invoke action scheduleActionsForRules
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: ScheduleExpanded1, ScheduleViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: ScheduleExpanded, ScheduleViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -67,11 +81,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Schedule1, ScheduleViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Schedule, ScheduleViaIdentity
 Aliases:
 
 Required: True
@@ -85,8 +99,8 @@ Accept wildcard characters: False
 The unique identifier of deviceCompliancePolicy
 
 ```yaml
-Type: String
-Parameter Sets: ScheduleExpanded1, Schedule1
+Type: System.String
+Parameter Sets: Schedule, ScheduleExpanded
 Aliases:
 
 Required: True
@@ -98,11 +112,11 @@ Accept wildcard characters: False
 
 ### -DeviceComplianceScheduledActionForRules
 .
-To construct, please use Get-Help -Online and see NOTES section for DEVICECOMPLIANCESCHEDULEDACTIONFORRULES properties and create a hash table.
+To construct, see NOTES section for DEVICECOMPLIANCESCHEDULEDACTIONFORRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]
-Parameter Sets: ScheduleExpanded1, ScheduleViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceScheduledActionForRule[]
+Parameter Sets: ScheduleExpanded, ScheduleViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: ScheduleViaIdentityExpanded1, ScheduleViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: ScheduleViaIdentity, ScheduleViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,7 +146,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,11 +193,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -193,29 +210,29 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsY039HhDevicemanagementDevicecompliancepoliciesDevicecompliancepolicyIdMicrosoftGraphScheduleactionsforrulesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule1[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[DeviceComplianceScheduledActionForRules <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
-    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ActionType <DeviceComplianceActionType?>]`: Scheduled Action Type Enum
       - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
       - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
       - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-DEVICECOMPLIANCESCHEDULEDACTIONFORRULES <IMicrosoftGraphDeviceComplianceScheduledActionForRule1\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`DEVICECOMPLIANCESCHEDULEDACTIONFORRULES <IMicrosoftGraphDeviceComplianceScheduledActionForRule[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RuleName <String>]`: Name of the rule which this scheduled action applies to. Currently scheduled actions are created per policy instead of per rule, thus RuleName is always set to default value PasswordRequired.
-  - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem1[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[ScheduledActionConfigurations <IMicrosoftGraphDeviceComplianceActionItem[]>]`: The list of scheduled action configurations for this compliance policy. Compliance policy must have one and only one block scheduled action.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ActionType <DeviceComplianceActionType?>]`: Scheduled Action Type Enum
     - `[GracePeriodHours <Int32?>]`: Number of hours to wait till the action will be enforced. Valid values 0 to 8760
     - `[NotificationMessageCcList <String[]>]`: A list of group IDs to speicify who to CC this notification message to.
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -259,7 +276,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -270,3 +286,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

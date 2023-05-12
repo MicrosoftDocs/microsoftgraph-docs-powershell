@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mggroupteamprimarychannelmessagehostedcontent
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamprimarychannelmessagehostedcontent
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgGroupTeamPrimaryChannelMessageHostedContent
+# New-MgBetaGroupTeamPrimaryChannelMessageHostedContent
 
 ## SYNOPSIS
 Create new navigation property to hostedContents for groups
@@ -15,28 +14,28 @@ Create new navigation property to hostedContents for groups
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupTeamPrimaryChannelMessageHostedContent -ChatMessageId <String> -GroupId <String>
+New-MgBetaGroupTeamPrimaryChannelMessageHostedContent -ChatMessageId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupTeamPrimaryChannelMessageHostedContent -ChatMessageId <String> -GroupId <String>
- -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamPrimaryChannelMessageHostedContent -ChatMessageId <String> -GroupId <String>
+ -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -BodyParameter <Hashtable>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity> -BodyParameter <Hashtable>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupTeamPrimaryChannelMessageHostedContent -InputObject <ITeamsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,38 +43,26 @@ Create new navigation property to hostedContents for groups
 
 ## EXAMPLES
 
-### Example 1: List hosted content for a channel message
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+Get-MgBetaTeamChannelMessageHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List hosted content for reply to a channel message
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
+Get-MgBetaTeamChannelMessageReplyHostedContent -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: List hosted content for message in a chat
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the New-MgGroupTeamPrimaryChannelMessageHostedContent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId
 
 ## PARAMETERS
 
@@ -83,7 +70,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +85,7 @@ Accept wildcard characters: False
 chatMessageHostedContent
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -113,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -129,7 +116,7 @@ Input File for ContentBytes (Write only.
 Bytes for the hosted content (such as images).)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,11 +129,10 @@ Accept wildcard characters: False
 
 ### -ContentType
 Write only.
-Content type.
-sicj as image/png, image/jpg.
+Content type, such as image/png, image/jpg.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +147,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -173,11 +159,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,11 +176,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -208,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,11 +226,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent
+
 ## NOTES
 
 ALIASES
@@ -254,7 +243,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -294,3 +283,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

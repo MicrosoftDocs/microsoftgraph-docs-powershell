@@ -1,49 +1,47 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityb2xuserflowuserattributeassignment
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityb2xuserflowuserattributeassignment
 schema: 2.0.0
 ---
 
-# Update-MgIdentityB2XUserFlowUserAttributeAssignment
+# Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment
 
 ## SYNOPSIS
 Update the navigation property userAttributeAssignments in identity
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
+Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
  -IdentityUserFlowAttributeAssignmentId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-IsOptional] [-RequiresVerification]
  [-UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]
- [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
+Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2XIdentityUserFlowId <String>
  -IdentityUserFlowAttributeAssignmentId <String>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-IsOptional]
  [-RequiresVerification] [-UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]
- [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphIdentityUserFlowAttributeAssignment> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>] [-UserInputType <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,14 +49,28 @@ Update the navigation property userAttributeAssignments in identity
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -72,8 +84,8 @@ Accept wildcard characters: False
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -85,11 +97,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 identityUserFlowAttributeAssignment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityUserFlowAttributeAssignment
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -103,8 +115,8 @@ Accept wildcard characters: False
 The display name of the identityUserFlowAttribute within a user flow.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,12 +127,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -134,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of identityUserFlowAttributeAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -147,11 +159,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,23 +179,8 @@ true means the user doesn't have to provide a value.
 false means the user cannot complete sign-up without providing a value.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -198,8 +195,8 @@ Determines whether the identityUserFlowAttribute requires verification.
 This is only used for verifying the user's phone number or email address.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -211,11 +208,11 @@ Accept wildcard characters: False
 
 ### -UserAttribute
 identityUserFlowAttribute
-To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUTE properties and create a hash table.
+To construct, see NOTES section for USERATTRIBUTE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityUserFlowAttribute
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttribute
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -228,11 +225,11 @@ Accept wildcard characters: False
 ### -UserAttributeValues
 The input options for the user flow attribute.
 Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
-To construct, please use Get-Help -Online and see NOTES section for USERATTRIBUTEVALUES properties and create a hash table.
+To construct, see NOTES section for USERATTRIBUTEVALUES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserAttributeValuesItem[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserAttributeValuesItem[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -246,8 +243,8 @@ Accept wildcard characters: False
 identityUserFlowAttributeInputType
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -261,7 +258,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -277,7 +274,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -293,11 +290,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityUserFlowAttributeAssignment
+
 ## NOTES
 
 ALIASES
@@ -307,26 +307,26 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphIdentityUserFlowAttributeAssignment>`: identityUserFlowAttributeAssignment
+`BODYPARAMETER <IMicrosoftGraphIdentityUserFlowAttributeAssignment>`: identityUserFlowAttributeAssignment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the identityUserFlowAttribute within a user flow.
   - `[IsOptional <Boolean?>]`: Determines whether the identityUserFlowAttribute is optional. true means the user doesn't have to provide a value. false means the user cannot complete sign-up without providing a value.
   - `[RequiresVerification <Boolean?>]`: Determines whether the identityUserFlowAttribute requires verification. This is only used for verifying the user's phone number or email address.
   - `[UserAttribute <IMicrosoftGraphIdentityUserFlowAttribute>]`: identityUserFlowAttribute
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DataType <String>]`: identityUserFlowAttributeDataType
     - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
     - `[DisplayName <String>]`: The display name of the user flow attribute.
     - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
   - `[UserAttributeValues <IMicrosoftGraphUserAttributeValuesItem[]>]`: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
-    - `[IsDefault <Boolean?>]`: Determines whether the value is set as the default.
-    - `[Name <String>]`: The display name of the property displayed to the user in the user flow.
+    - `[IsDefault <Boolean?>]`: Used to set the value as the default.
+    - `[Name <String>]`: The display name of the property displayed to the end user in the user flow.
     - `[Value <String>]`: The value that is set when this item is selected.
   - `[UserInputType <String>]`: identityUserFlowAttributeInputType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -363,6 +363,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -400,19 +401,18 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-USERATTRIBUTE `<IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttribute
+`USERATTRIBUTE <IMicrosoftGraphIdentityUserFlowAttribute>`: identityUserFlowAttribute
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DataType <String>]`: identityUserFlowAttributeDataType
   - `[Description <String>]`: The description of the user flow attribute that's shown to the user at the time of sign-up.
   - `[DisplayName <String>]`: The display name of the user flow attribute.
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
-USERATTRIBUTEVALUES <IMicrosoftGraphUserAttributeValuesItem\[]>: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
-  - `[IsDefault <Boolean?>]`: Determines whether the value is set as the default.
-  - `[Name <String>]`: The display name of the property displayed to the user in the user flow.
+`USERATTRIBUTEVALUES <IMicrosoftGraphUserAttributeValuesItem[]>`: The input options for the user flow attribute. Only applicable when the userInputType is radioSingleSelect, dropdownSingleSelect, or checkboxMultiSelect.
+  - `[IsDefault <Boolean?>]`: Used to set the value as the default.
+  - `[Name <String>]`: The display name of the property displayed to the end user in the user flow.
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
 
-## RELATED LINKS

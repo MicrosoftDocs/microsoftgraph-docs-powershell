@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsettermrelation
+external help file:
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitetermstoregroupsettermrelation
 schema: 2.0.0
 ---
 
-# Get-MgGroupSiteTermStoreGroupSetTermRelation
+# Get-MgBetaGroupSiteTermStoreGroupSetTermRelation
 
 ## SYNOPSIS
 To indicate which terms are related to the current term as either pinned or reused.
@@ -14,22 +14,22 @@ To indicate which terms are related to the current term as either pinned or reus
 
 ### List (Default)
 ```
-Get-MgGroupSiteTermStoreGroupSetTermRelation -GroupId <String> -GroupId1 <String> -SetId <String>
- -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaGroupSiteTermStoreGroupSetTermRelation -GroupId <String> -GroupId1 <String> -SetId <String>
+ -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgGroupSiteTermStoreGroupSetTermRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
+Get-MgBetaGroupSiteTermStoreGroupSetTermRelation -GroupId <String> -GroupId1 <String> -RelationId <String>
  -SetId <String> -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaGroupSiteTermStoreGroupSetTermRelation -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -38,13 +38,27 @@ To indicate which terms are related to the current term as either pinned or reus
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -60,7 +74,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -75,7 +89,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -90,7 +104,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -105,8 +119,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -120,8 +134,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -133,10 +147,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -151,7 +165,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -166,7 +180,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -181,7 +195,7 @@ Accept wildcard characters: False
 The unique identifier of relation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -196,7 +210,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -211,8 +225,8 @@ Accept wildcard characters: False
 The unique identifier of set
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -226,11 +240,26 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -241,7 +270,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -256,8 +285,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: String
-Parameter Sets: List, Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -271,24 +300,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -302,10 +316,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreRelation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermStoreRelation
+
 ## NOTES
 
 ALIASES
@@ -315,7 +331,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -333,17 +349,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -352,7 +374,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -363,3 +384,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

@@ -1,42 +1,50 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgpolicycrosstenantaccesspolicypartner
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicycrosstenantaccesspolicypartner
 schema: 2.0.0
 ---
 
-# Update-MgPolicyCrossTenantAccessPolicyPartner
+# Update-MgBetaPolicyCrossTenantAccessPolicyPartner
 
 ## SYNOPSIS
-Update the navigation property partners in policies
+Update the properties of a partner-specific configuration.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId <String>
- [-AdditionalProperties <Hashtable>]
+Update-MgBetaPolicyCrossTenantAccessPolicyPartner
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <String> [-AdditionalProperties <Hashtable>]
  [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BCollaborationOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
- [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider] [-TenantId <String>]
- [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider]
+ [-TenantId <String>] [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId <String>
- -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaPolicyCrossTenantAccessPolicyPartner
+ -CrossTenantAccessPolicyConfigurationPartnerTenantId <String>
+ -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentity>
+Update-MgBetaPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>]
  [-AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]
  [-B2BCollaborationInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
@@ -44,26 +52,19 @@ Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIden
  [-B2BDirectConnectInbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-B2BDirectConnectOutbound <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>]
  [-IdentitySynchronization <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>]
- [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider] [-TenantId <String>]
- [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-InboundTrust <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>] [-IsServiceProvider]
+ [-TenantId <String>] [-TenantRestrictions <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property partners in policies
+Update the properties of a partner-specific configuration.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	InboundTrust = @{
 		IsMfaAccepted = $true
@@ -71,11 +72,10 @@ $params = @{
 		IsHybridAzureADJoinedDeviceAccepted = $true
 	}
 }
-Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
+Update-MgBetaPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -83,7 +83,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,10 +96,10 @@ Accept wildcard characters: False
 
 ### -AutomaticUserConsentSettings
 inboundOutboundPolicyConfiguration
-To construct, please use Get-Help -Online and see NOTES section for AUTOMATICUSERCONSENTSETTINGS properties and create a hash table.
+To construct, see NOTES section for AUTOMATICUSERCONSENTSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInboundOutboundPolicyConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInboundOutboundPolicyConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,10 +112,10 @@ Accept wildcard characters: False
 
 ### -B2BCollaborationInbound
 crossTenantAccessPolicyB2BSetting
-To construct, please use Get-Help -Online and see NOTES section for B2BCOLLABORATIONINBOUND properties and create a hash table.
+To construct, see NOTES section for B2BCOLLABORATIONINBOUND properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,10 +128,10 @@ Accept wildcard characters: False
 
 ### -B2BCollaborationOutbound
 crossTenantAccessPolicyB2BSetting
-To construct, please use Get-Help -Online and see NOTES section for B2BCOLLABORATIONOUTBOUND properties and create a hash table.
+To construct, see NOTES section for B2BCOLLABORATIONOUTBOUND properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,10 +144,10 @@ Accept wildcard characters: False
 
 ### -B2BDirectConnectInbound
 crossTenantAccessPolicyB2BSetting
-To construct, please use Get-Help -Online and see NOTES section for B2BDIRECTCONNECTINBOUND properties and create a hash table.
+To construct, see NOTES section for B2BDIRECTCONNECTINBOUND properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,10 +160,10 @@ Accept wildcard characters: False
 
 ### -B2BDirectConnectOutbound
 crossTenantAccessPolicyB2BSetting
-To construct, please use Get-Help -Online and see NOTES section for B2BDIRECTCONNECTOUTBOUND properties and create a hash table.
+To construct, see NOTES section for B2BDIRECTCONNECTOUTBOUND properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyB2BSetting
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,10 +176,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 crossTenantAccessPolicyConfigurationPartner
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -194,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of crossTenantAccessPolicyConfigurationPartner
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -207,10 +207,10 @@ Accept wildcard characters: False
 
 ### -IdentitySynchronization
 crossTenantIdentitySyncPolicyPartner
-To construct, please use Get-Help -Online and see NOTES section for IDENTITYSYNCHRONIZATION properties and create a hash table.
+To construct, see NOTES section for IDENTITYSYNCHRONIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,10 +223,10 @@ Accept wildcard characters: False
 
 ### -InboundTrust
 crossTenantAccessPolicyInboundTrust
-To construct, please use Get-Help -Online and see NOTES section for INBOUNDTRUST properties and create a hash table.
+To construct, see NOTES section for INBOUNDTRUST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyInboundTrust
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyInboundTrust
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,11 +239,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -257,23 +257,8 @@ Accept wildcard characters: False
 Identifies whether the partner-specific configuration is a Cloud Service Provider for your organization.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -289,7 +274,7 @@ Read-only.
 Key.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -302,10 +287,10 @@ Accept wildcard characters: False
 
 ### -TenantRestrictions
 crossTenantAccessPolicyTenantRestrictions
-To construct, please use Get-Help -Online and see NOTES section for TENANTRESTRICTIONS properties and create a hash table.
+To construct, see NOTES section for TENANTRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -320,7 +305,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -336,7 +321,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -352,11 +337,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner
+
 ## NOTES
 
 ALIASES
@@ -366,12 +354,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-AUTOMATICUSERCONSENTSETTINGS `<IMicrosoftGraphInboundOutboundPolicyConfiguration>`: inboundOutboundPolicyConfiguration
+`AUTOMATICUSERCONSENTSETTINGS <IMicrosoftGraphInboundOutboundPolicyConfiguration>`: inboundOutboundPolicyConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[InboundAllowed <Boolean?>]`: Defines whether external users coming inbound are allowed.
   - `[OutboundAllowed <Boolean?>]`: Defines whether internal users are allowed to go outbound.
 
-B2BCOLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+`B2BCOLLABORATIONINBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -381,7 +369,7 @@ B2BCOLLABORATIONINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: cr
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BCOLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+`B2BCOLLABORATIONOUTBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -391,7 +379,7 @@ B2BCOLLABORATIONOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: c
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BDIRECTCONNECTINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+`B2BDIRECTCONNECTINBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -401,7 +389,7 @@ B2BDIRECTCONNECTINBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: cr
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
+`B2BDIRECTCONNECTOUTBOUND <IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: crossTenantAccessPolicyB2BSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -411,7 +399,7 @@ B2BDIRECTCONNECTOUTBOUND `<IMicrosoftGraphCrossTenantAccessPolicyB2BSetting>`: c
       - `[TargetType <String>]`: crossTenantAccessPolicyTargetType
   - `[UsersAndGroups <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
 
-BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1>`: crossTenantAccessPolicyConfigurationPartner
+`BODYPARAMETER <IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner>`: crossTenantAccessPolicyConfigurationPartner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AutomaticUserConsentSettings <IMicrosoftGraphInboundOutboundPolicyConfiguration>]`: inboundOutboundPolicyConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -452,7 +440,7 @@ BODYPARAMETER `<IMicrosoftGraphCrossTenantAccessPolicyConfigurationPartner1>`: c
       - `[Mode <String>]`: crossTenantAccessPolicyTargetConfigurationAccessType
       - `[Rule <String>]`: 
 
-IDENTITYSYNCHRONIZATION `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`: crossTenantIdentitySyncPolicyPartner
+`IDENTITYSYNCHRONIZATION <IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`: crossTenantIdentitySyncPolicyPartner
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: Display name for the cross-tenant user synchronization policy. Use the name of the partner Azure AD tenant to easily identify the policy. Optional.
   - `[TenantId <String>]`: Tenant identifier for the partner Azure AD organization. Read-only.
@@ -460,13 +448,13 @@ IDENTITYSYNCHRONIZATION `<IMicrosoftGraphCrossTenantIdentitySyncPolicyPartner>`:
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IsSyncAllowed <Boolean?>]`: Defines whether user objects should be synchronized from the partner tenant. If set to false, any current user synchronization from the source tenant to the target tenant will stop. There is no impact on existing users that have already been synchronized.
 
-INBOUNDTRUST `<IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
+`INBOUNDTRUST <IMicrosoftGraphCrossTenantAccessPolicyInboundTrust>`: crossTenantAccessPolicyInboundTrust
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsCompliantDeviceAccepted <Boolean?>]`: Specifies whether compliant devices from external Azure AD organizations are trusted.
   - `[IsHybridAzureAdJoinedDeviceAccepted <Boolean?>]`: Specifies whether hybrid Azure AD joined devices from external Azure AD organizations are trusted.
   - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -503,6 +491,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -540,7 +529,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
-TENANTRESTRICTIONS `<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`: crossTenantAccessPolicyTenantRestrictions
+`TENANTRESTRICTIONS <IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`: crossTenantAccessPolicyTenantRestrictions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Applications <IMicrosoftGraphCrossTenantAccessPolicyTargetConfiguration>]`: crossTenantAccessPolicyTargetConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -556,4 +545,3 @@ TENANTRESTRICTIONS `<IMicrosoftGraphCrossTenantAccessPolicyTenantRestrictions>`:
 
 ## RELATED LINKS
 
-## RELATED LINKS

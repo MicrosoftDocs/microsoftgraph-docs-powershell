@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/restore-mgdevicemanagementcomanageddevicecloudpc
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/restore-mgbetadevicemanagementcomanageddevicecloudpc
 schema: 2.0.0
 ---
 
-# Restore-MgDeviceManagementComanagedDeviceCloudPc
+# Restore-MgBetaDeviceManagementComanagedDeviceCloudPc
 
 ## SYNOPSIS
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
@@ -14,29 +14,30 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
 ### RestoreExpanded (Default)
 ```
-Restore-MgDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String> [-AdditionalProperties <Hashtable>]
- [-CloudPcSnapshotId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String>
+ [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Restore
 ```
-Restore-MgDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String>
+Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -ManagedDeviceId <String>
  -BodyParameter <IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RestoreViaIdentityExpanded
-```
-Restore-MgDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
+Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RestoreViaIdentityExpanded
+```
+Restore-MgBetaDeviceManagementComanagedDeviceCloudPc -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-CloudPcSnapshotId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +45,27 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -63,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Restore, RestoreViaIdentity
 Aliases:
 
@@ -81,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -94,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: RestoreViaIdentityExpanded, RestoreViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: RestoreViaIdentity, RestoreViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -112,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded, Restore
+Type: System.String
+Parameter Sets: Restore, RestoreExpanded
 Aliases:
 
 Required: True
@@ -127,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -142,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,11 +189,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -188,11 +206,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsFdxkkcDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphRestorecloudpcPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CloudPcSnapshotId <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -236,7 +254,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -247,3 +264,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

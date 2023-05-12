@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/remove-mgidentitygovernanceprivilegedaccessgroup
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaidentitygovernanceprivilegedaccessgroup
 schema: 2.0.0
 ---
 
-# Remove-MgIdentityGovernancePrivilegedAccessGroup
+# Remove-MgBetaIdentityGovernancePrivilegedAccessGroup
 
 ## SYNOPSIS
 Delete navigation property group for identityGovernance
@@ -13,7 +13,7 @@ Delete navigation property group for identityGovernance
 ## SYNTAX
 
 ```
-Remove-MgIdentityGovernancePrivilegedAccessGroup [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaIdentityGovernancePrivilegedAccessGroup [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -22,13 +22,27 @@ Delete navigation property group for identityGovernance
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -58,7 +72,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -74,7 +88,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -93,8 +107,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

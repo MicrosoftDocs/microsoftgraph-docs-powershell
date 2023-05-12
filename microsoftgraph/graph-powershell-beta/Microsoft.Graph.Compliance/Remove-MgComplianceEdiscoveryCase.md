@@ -1,42 +1,41 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/remove-mgcomplianceediscoverycase
+external help file:
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/remove-mgbetacomplianceediscoverycase
 schema: 2.0.0
 ---
 
-# Remove-MgComplianceEdiscoveryCase
+# Remove-MgBetaComplianceEdiscoveryCase
 
 ## SYNOPSIS
-Delete navigation property cases for compliance
+Delete a case object.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgComplianceEdiscoveryCase -CaseId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaComplianceEdiscoveryCase -CaseId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaComplianceEdiscoveryCase -InputObject <IComplianceIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property cases for compliance
+Delete a case object.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgComplianceEdiscoveryCase Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Remove-MgComplianceEdiscoveryCase -CaseId $caseId
+Import-Module Microsoft.Graph.Beta.Compliance
+Remove-MgBetaComplianceEdiscoveryCase -CaseId $caseId
 ```
 
-This example shows how to use the Remove-MgComplianceEdiscoveryCase Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -44,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -59,7 +58,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -72,10 +71,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -90,7 +89,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -105,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -121,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -137,10 +136,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -150,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -167,3 +168,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

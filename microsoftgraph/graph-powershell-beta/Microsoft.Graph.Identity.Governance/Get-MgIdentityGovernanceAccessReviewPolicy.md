@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgidentitygovernanceaccessreviewpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaidentitygovernanceaccessreviewpolicy
 schema: 2.0.0
 ---
 
-# Get-MgIdentityGovernanceAccessReviewPolicy
+# Get-MgBetaIdentityGovernanceAccessReviewPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewPolicy object.
@@ -13,7 +13,7 @@ Read the properties and relationships of an accessReviewPolicy object.
 ## SYNTAX
 
 ```
-Get-MgIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaIdentityGovernanceAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,14 +22,13 @@ Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgIdentityGovernanceAccessReviewPolicy Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-Get-MgIdentityGovernanceAccessReviewPolicy
+Import-Module Microsoft.Graph.Beta.Identity.Governance
+Get-MgBetaIdentityGovernanceAccessReviewPolicy
 ```
 
-This example shows how to use the Get-MgIdentityGovernanceAccessReviewPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -37,7 +36,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -52,7 +51,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,9 +69,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

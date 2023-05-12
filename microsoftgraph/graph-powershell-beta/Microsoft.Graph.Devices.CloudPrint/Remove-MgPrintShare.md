@@ -1,42 +1,45 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/remove-mgprintshare
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/remove-mgbetaprintshare
 schema: 2.0.0
 ---
 
-# Remove-MgPrintShare
+# Remove-MgBetaPrintShare
 
 ## SYNOPSIS
-Delete navigation property shares for print
+Delete a printer share (unshare the associated printer).
+This action cannot be undone.
+If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and reinstall it.
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgPrintShare -PrinterShareId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaPrintShare -PrinterShareId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgPrintShare -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaPrintShare -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property shares for print
+Delete a printer share (unshare the associated printer).
+This action cannot be undone.
+If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and reinstall it.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgPrintShare Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Devices.CloudPrint
-Remove-MgPrintShare -PrinterShareId $printerShareId
+Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
+Remove-MgBetaPrintShare -PrinterShareId $printerShareId
 ```
 
-This example shows how to use the Remove-MgPrintShare Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -44,7 +47,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -57,11 +60,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -75,7 +78,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -90,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -105,7 +108,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -121,7 +124,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -137,10 +140,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -150,9 +155,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -164,3 +171,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

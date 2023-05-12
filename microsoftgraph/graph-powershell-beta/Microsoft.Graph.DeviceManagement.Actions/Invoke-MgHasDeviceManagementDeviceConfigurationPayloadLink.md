@@ -1,28 +1,28 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mghasdevicemanagementdeviceconfigurationpayloadlink
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetahasdevicemanagementdeviceconfigurationpayloadlink
 schema: 2.0.0
 ---
 
-# Invoke-MgHasDeviceManagementDeviceConfigurationPayloadLink
+# Invoke-MgBetaHasDeviceManagementDeviceConfigurationPayloadLink
 
 ## SYNOPSIS
 Invoke action hasPayloadLinks
 
 ## SYNTAX
 
-### HasExpanded (Default)
+### LinkExpanded (Default)
 ```
-Invoke-MgHasDeviceManagementDeviceConfigurationPayloadLink [-AdditionalProperties <Hashtable>]
- [-PayloadIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaHasDeviceManagementDeviceConfigurationPayloadLink [-AdditionalProperties <Hashtable>]
+ [-PayloadIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Has
+### Link
 ```
-Invoke-MgHasDeviceManagementDeviceConfigurationPayloadLink
- -BodyParameter <IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaHasDeviceManagementDeviceConfigurationPayloadLink
+ -Body <IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +30,28 @@ Invoke action hasPayloadLinks
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: HasExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: LinkExpanded
 Aliases:
 
 Required: False
@@ -47,13 +61,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Has
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Link
 Aliases:
 
 Required: True
@@ -67,8 +81,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: HasExpanded
+Type: System.String[]
+Parameter Sets: LinkExpanded
 Aliases:
 
 Required: False
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,10 +128,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHasPayloadLinkResultItem
+
 ## NOTES
 
 ALIASES
@@ -127,8 +143,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths8V3WrfDevicemanagementDeviceconfigurationsMicrosoftGraphHaspayloadlinksPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[PayloadIds <String[]>]`: 
 
 ## RELATED LINKS
+

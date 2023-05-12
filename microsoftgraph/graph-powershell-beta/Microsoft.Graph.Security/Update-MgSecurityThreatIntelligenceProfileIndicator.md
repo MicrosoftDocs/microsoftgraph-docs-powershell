@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligenceprofileindicator
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritythreatintelligenceprofileindicator
 schema: 2.0.0
 ---
 
-# Update-MgSecurityThreatIntelligenceProfileIndicator
+# Update-MgBetaSecurityThreatIntelligenceProfileIndicator
 
 ## SYNOPSIS
 Update the navigation property intelligenceProfileIndicators in security
@@ -14,30 +14,30 @@ Update the navigation property intelligenceProfileIndicators in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
+Update-MgBetaSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
  [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Source <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastSeenDateTime <DateTime>] [-Source <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
- -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaSecurityThreatIntelligenceProfileIndicator -IntelligenceProfileIndicatorId <String>
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
+Update-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-Artifact <Hashtable>] [-FirstSeenDateTime <DateTime>] [-Id <String>]
- [-LastSeenDateTime <DateTime>] [-Source <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityIntelligenceProfileIndicator> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-LastSeenDateTime <DateTime>] [-Source <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Update the navigation property intelligenceProfileIndicators in security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 artifact
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,10 +93,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 intelligenceProfileIndicator
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileIndicator
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,11 +123,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,11 +140,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of intelligenceProfileIndicator
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -159,23 +173,8 @@ Accept wildcard characters: False
 Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -189,7 +188,7 @@ Accept wildcard characters: False
 indicatorSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -236,11 +235,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityIntelligenceProfileIndicator
+
 ## NOTES
 
 ALIASES
@@ -250,17 +252,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityIntelligenceProfileIndicator>`: intelligenceProfileIndicator
+`BODYPARAMETER <IMicrosoftGraphSecurityIntelligenceProfileIndicator>`: intelligenceProfileIndicator
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Artifact <IMicrosoftGraphSecurityArtifact>]`: artifact
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Source <String>]`: indicatorSource
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -319,3 +321,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

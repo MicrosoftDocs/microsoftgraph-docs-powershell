@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/copy-mgteam
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/copy-mgbetateam
 schema: 2.0.0
 ---
 
-# Copy-MgTeam
+# Copy-MgBetaTeam
 
 ## SYNOPSIS
 Create a copy of a team.
@@ -16,32 +16,32 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 
 ## SYNTAX
 
-### CloneExpanded1 (Default)
+### CloneExpanded (Default)
 ```
-Copy-MgTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
+Copy-MgBetaTeam -TeamId <String> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Clone1
+### Clone
 ```
-Copy-MgTeam -TeamId <String>
+Copy-MgBetaTeam -TeamId <String>
  -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CloneViaIdentityExpanded1
+### CloneViaIdentity
 ```
-Copy-MgTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
+Copy-MgBetaTeam -InputObject <ITeamsIdentity>
+ -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CloneViaIdentityExpanded
+```
+Copy-MgBetaTeam -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-Classification <String>]
  [-Description <String>] [-DisplayName <String>] [-MailNickname <String>] [-PartsToClone <String>]
- [-Visibility <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CloneViaIdentity1
-```
-Copy-MgTeam -InputObject <ITeamsIdentity>
- -BodyParameter <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,9 +53,9 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 
 ## EXAMPLES
 
-### Example 1: Using the Copy-MgTeam Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	DisplayName = "Library Assist"
 	Description = "Self help community for library"
@@ -63,11 +63,10 @@ $params = @{
 	PartsToClone = "apps,tabs,settings,channels,members"
 	Visibility = "public"
 }
-Copy-MgTeam -TeamId $teamId -BodyParameter $params
+Copy-MgBetaTeam -TeamId $teamId -BodyParameter $params
 ```
 
-This example shows how to use the Copy-MgTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -75,8 +74,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -88,11 +87,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Clone1, CloneViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Clone, CloneViaIdentity
 Aliases:
 
 Required: True
@@ -106,8 +105,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -121,8 +120,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -136,8 +135,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -149,11 +148,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CloneViaIdentityExpanded1, CloneViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CloneViaIdentity, CloneViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -167,8 +166,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -182,8 +181,8 @@ Accept wildcard characters: False
 clonableTeamParts
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -197,7 +196,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -212,8 +211,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, Clone1
+Type: System.String
+Parameter Sets: Clone, CloneExpanded
 Aliases:
 
 Required: True
@@ -227,8 +226,8 @@ Accept wildcard characters: False
 teamVisibilityType
 
 ```yaml
-Type: String
-Parameter Sets: CloneExpanded1, CloneViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CloneExpanded, CloneViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -242,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -274,11 +273,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -288,7 +290,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Classification <String>]`: 
   - `[Description <String>]`: 
@@ -297,7 +299,7 @@ BODYPARAMETER `<IPaths1Izic0UTeamsTeamIdMicrosoftGraphClonePostRequestbodyConten
   - `[PartsToClone <String>]`: clonableTeamParts
   - `[Visibility <String>]`: teamVisibilityType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -337,3 +339,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

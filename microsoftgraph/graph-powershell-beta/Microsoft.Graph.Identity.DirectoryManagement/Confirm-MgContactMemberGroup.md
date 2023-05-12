@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontactmembergroup
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetacontactmembergroup
 schema: 2.0.0
 ---
 
-# Confirm-MgContactMemberGroup
+# Confirm-MgBetaContactMemberGroup
 
 ## SYNOPSIS
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -16,30 +16,30 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ## SYNTAX
 
-### CheckExpanded1 (Default)
+### CheckExpanded (Default)
 ```
-Confirm-MgContactMemberGroup -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaContactMemberGroup -OrgContactId <String> [-AdditionalProperties <Hashtable>]
+ [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Check1
+### Check
 ```
-Confirm-MgContactMemberGroup -OrgContactId <String>
+Confirm-MgBetaContactMemberGroup -OrgContactId <String>
  -BodyParameter <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CheckViaIdentityExpanded1
+### CheckViaIdentity
 ```
-Confirm-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentity1
-```
-Confirm-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+Confirm-MgBetaContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgBetaContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,9 +51,10 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ## EXAMPLES
 
-### Example 1: Check group memberships for a directory object
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
 $params = @{
 	GroupIds = @(
@@ -65,16 +66,12 @@ $params = @{
 	)
 }
 
-Confirm-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-```
+Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
-This example shows how to use the Confirm-MgContactMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Check group memberships for the signed-in user
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	GroupIds = @(
@@ -84,12 +81,7 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Confirm-MgUserMemberGroup -UserId $userId -BodyParameter $params
-```
-
-This example shows how to use the Confirm-MgContactMemberGroup Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -97,8 +89,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,11 +102,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Check1, CheckViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
 Required: True
@@ -128,8 +120,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -141,11 +133,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CheckViaIdentityExpanded1, CheckViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -159,8 +151,8 @@ Accept wildcard characters: False
 The unique identifier of orgContact
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded1, Check1
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -174,7 +166,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +182,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,11 +198,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -220,11 +215,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths175Njh2ContactsOrgcontactIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[GroupIds <String[]>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -261,3 +256,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicydirectoryroleaccessreviewpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydirectoryroleaccessreviewpolicy
 schema: 2.0.0
 ---
 
-# Get-MgPolicyDirectoryRoleAccessReviewPolicy
+# Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy
 
 ## SYNOPSIS
 Get directoryRoleAccessReviewPolicy from policies
@@ -13,7 +13,7 @@ Get directoryRoleAccessReviewPolicy from policies
 ## SYNTAX
 
 ```
-Get-MgPolicyDirectoryRoleAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,13 +22,27 @@ Get directoryRoleAccessReviewPolicy from policies
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRoleAccessReviewPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRoleAccessReviewPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

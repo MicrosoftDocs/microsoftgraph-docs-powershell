@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/import-mgdevicemanagementtemplatemigratabletooffice365deviceconfigurationpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplatemigratabletooffice365deviceconfigurationpolicy
 schema: 2.0.0
 ---
 
-# Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
+# Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
 
 ## SYNOPSIS
 Invoke action importOffice365DeviceConfigurationPolicies
@@ -14,14 +14,14 @@ Invoke action importOffice365DeviceConfigurationPolicies
 
 ### Import (Default)
 ```
-Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
- -DeviceManagementTemplateId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
+ -DeviceManagementTemplateId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
 ```
-Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
- -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
+ -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,13 +29,27 @@ Invoke action importOffice365DeviceConfigurationPolicies
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -DeviceManagementTemplateId
 The unique identifier of deviceManagementTemplate
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Import
 Aliases:
 
@@ -48,10 +62,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: ImportViaIdentity
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -98,10 +112,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+
 ## NOTES
 
 ALIASES
@@ -111,7 +127,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -155,7 +171,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -166,3 +181,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

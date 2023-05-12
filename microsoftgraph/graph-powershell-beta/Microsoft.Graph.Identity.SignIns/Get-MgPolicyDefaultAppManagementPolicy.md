@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicydefaultappmanagementpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicydefaultappmanagementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgPolicyDefaultAppManagementPolicy
+# Get-MgBetaPolicyDefaultAppManagementPolicy
 
 ## SYNOPSIS
 Read the properties of a tenantAppManagementPolicy object.
@@ -14,7 +13,8 @@ Read the properties of a tenantAppManagementPolicy object.
 ## SYNTAX
 
 ```
-Get-MgPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +22,13 @@ Read the properties of a tenantAppManagementPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyDefaultAppManagementPolicy Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyDefaultAppManagementPolicy
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyDefaultAppManagementPolicy
 ```
 
-This example shows how to use the Get-MgPolicyDefaultAppManagementPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -37,7 +36,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -52,7 +51,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,9 +69,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

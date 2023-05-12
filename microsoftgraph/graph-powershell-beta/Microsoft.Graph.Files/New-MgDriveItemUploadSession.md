@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/new-mgdriveitemuploadsession
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/new-mgbetadriveitemuploadsession
 schema: 2.0.0
 ---
 
-# New-MgDriveItemUploadSession
+# New-MgBetaDriveItemUploadSession
 
 ## SYNOPSIS
 Create an upload session to allow your app to upload files up to the maximum file size.
@@ -16,28 +16,28 @@ To upload a file using an upload session:
 
 ### CreateExpanded (Default)
 ```
-New-MgDriveItemUploadSession -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDriveItemUploadSession -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDriveItemUploadSession -DriveId <String> -DriveItemId <String>
+New-MgBetaDriveItemUploadSession -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDriveItemUploadSession -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDriveItemUploadSession -InputObject <IFilesIdentity>
+New-MgBetaDriveItemUploadSession -InputObject <IFilesIdentity>
  -BodyParameter <IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDriveItemUploadSession -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ To upload a file using an upload session:
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -99,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -112,11 +126,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,10 +142,10 @@ Accept wildcard characters: False
 
 ### -Item
 driveItemUploadableProperties
-To construct, please use Get-Help -Online and see NOTES section for ITEM properties and create a hash table.
+To construct, see NOTES section for ITEM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveItemUploadableProperties
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveItemUploadableProperties
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,11 +192,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUploadSession
+
 ## NOTES
 
 ALIASES
@@ -192,7 +209,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -205,7 +222,7 @@ BODYPARAMETER `<IPaths12Egp4EDrivesDriveIdItemsDriveitemIdMicrosoftGraphCreateup
       - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
     - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -231,7 +248,7 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[Token <String>]`: Usage: token='{token}'
   - `[UserId <String>]`: The unique identifier of user
 
-ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
+`ITEM <IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
   - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
@@ -243,3 +260,4 @@ ITEM `<IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProper
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+

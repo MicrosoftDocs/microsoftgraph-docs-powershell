@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
-Module Name: Microsoft.Graph.Sites
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.sites/test-mgsiteinformationprotectionpolicylabelremoval
+external help file:
+Module Name: Microsoft.Graph.Beta.Sites
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasiteinformationprotectionpolicylabelremoval
 schema: 2.0.0
 ---
 
-# Test-MgSiteInformationProtectionPolicyLabelRemoval
+# Test-MgBetaSiteInformationProtectionPolicyLabelRemoval
 
 ## SYNOPSIS
 Indicate to the consuming application what actions it should take to remove the label information.
@@ -15,30 +15,30 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgSiteInformationProtectionPolicyLabelRemoval -SiteId <String> [-AdditionalProperties <Hashtable>]
+Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -SiteId <String> [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphContentInfo>] [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgSiteInformationProtectionPolicyLabelRemoval -SiteId <String>
+Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -SiteId <String>
  -BodyParameter <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### EvaluateViaIdentityExpanded
-```
-Test-MgSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
-Test-MgSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
+Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
  -BodyParameter <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### EvaluateViaIdentityExpanded
+```
+Test-MgBetaSiteInformationProtectionPolicyLabelRemoval -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
+ [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -82,10 +96,10 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -98,10 +112,10 @@ Accept wildcard characters: False
 
 ### -DowngradeJustification
 downgradeJustification
-To construct, please use Get-Help -Online and see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
+To construct, see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDowngradeJustification
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDowngradeJustification
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,11 +193,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
+
 ## NOTES
 
 ALIASES
@@ -193,7 +210,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -208,7 +225,7 @@ BODYPARAMETER `<IPaths1O5NuwnSitesSiteIdInformationprotectionPolicyLabelsMicroso
     - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
     - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -217,12 +234,12 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-DOWNGRADEJUSTIFICATION `<IMicrosoftGraphDowngradeJustification>`: downgradeJustification
+`DOWNGRADEJUSTIFICATION <IMicrosoftGraphDowngradeJustification>`: downgradeJustification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
   - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
+`INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
   - `[BitlockerRecoveryKeyId <String>]`: The unique identifier of bitlockerRecoveryKey
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
@@ -240,17 +257,23 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
   - `[Interval <String>]`: Usage: interval='{interval}'
+  - `[ItemActivityId <String>]`: The unique identifier of itemActivity
+  - `[ItemActivityOldId <String>]`: The unique identifier of itemActivityOLD
+  - `[ItemActivityStatId <String>]`: The unique identifier of itemActivityStat
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[NotebookId <String>]`: The unique identifier of notebook
+  - `[OnenoteOperationId <String>]`: The unique identifier of onenoteOperation
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnenoteResourceId <String>]`: The unique identifier of onenoteResource
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
   - `[Path <String>]`: Usage: path='{path}'
   - `[PermissionId <String>]`: The unique identifier of permission
   - `[RelationId <String>]`: The unique identifier of relation
   - `[RichLongRunningOperationId <String>]`: The unique identifier of richLongRunningOperation
+  - `[SectionGroupId <String>]`: The unique identifier of sectionGroup
+  - `[SectionGroupId1 <String>]`: The unique identifier of sectionGroup
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SensitivityLabelId1 <String>]`: The unique identifier of sensitivityLabel
   - `[SetId <String>]`: The unique identifier of set
@@ -259,7 +282,6 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[SiteId1 <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
-  - `[StoreId <String>]`: The unique identifier of store
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[TermId <String>]`: The unique identifier of term
   - `[TermId1 <String>]`: The unique identifier of term
@@ -270,3 +292,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

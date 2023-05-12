@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingbannerlogo
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationbrandingbannerlogo
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgOrganizationBrandingBannerLogo
+# Get-MgBetaOrganizationBrandingBannerLogo
 
 ## SYNOPSIS
 A banner version of your company logo that appears on the sign-in page.
@@ -17,13 +16,13 @@ We recommend using a transparent image with no padding around the logo.
 
 ### Get (Default)
 ```
-Get-MgOrganizationBrandingBannerLogo -OrganizationId <String> -OutFile <String> [-PassThru]
+Get-MgBetaOrganizationBrandingBannerLogo -OrganizationId <String> -OutFile <String> [-PassThru]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgOrganizationBrandingBannerLogo -InputObject <IIdentityDirectoryManagementIdentity> -OutFile <String>
+Get-MgBetaOrganizationBrandingBannerLogo -InputObject <IIdentityDirectoryManagementIdentity> -OutFile <String>
  [-PassThru] [<CommonParameters>]
 ```
 
@@ -34,58 +33,42 @@ We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgOrganizationBranding -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgOrganizationBrandingBannerLogo Cmdlet.
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgOrganizationBranding -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgOrganizationBrandingBannerLogo Cmdlet.
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgOrganizationBranding -OrganizationId $organizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgOrganizationBrandingBannerLogo Cmdlet.
+Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-
-Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 ```
 
-This example shows how to use the Get-MgOrganizationBrandingBannerLogo Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -100,7 +83,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -115,7 +98,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -130,7 +113,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -146,10 +129,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -159,7 +144,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -196,3 +181,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

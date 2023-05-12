@@ -1,39 +1,38 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/get-mgsharelistitemfield
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/get-mgbetasharelistitemfield
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
-# Get-MgShareListItemField
+# Get-MgBetaShareListItemField
 
 ## SYNOPSIS
 The values of the columns set on this list item.
 
 ## SYNTAX
 
-### Get3 (Default)
+### Get1 (Default)
 ```
-Get-MgShareListItemField -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaShareListItemField -SharedDriveItemId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
-Get-MgShareListItemField -ListItemId <String> -SharedDriveItemId <String> [-ExpandProperty <String[]>]
+Get-MgBetaShareListItemField -ListItemId <String> -SharedDriveItemId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### GetViaIdentity
 ```
-Get-MgShareListItemField -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaShareListItemField -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity1
 ```
-Get-MgShareListItemField -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaShareListItemField -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -42,21 +41,17 @@ The values of the columns set on this list item.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	Color = "Fuchsia"
 	Quantity = 
 }
 
-Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-```
-
-This example shows how to use the Get-MgShareListItemField Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -64,7 +59,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -77,11 +72,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -95,8 +90,8 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: String
-Parameter Sets: Get2
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -110,7 +105,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -125,8 +120,8 @@ Accept wildcard characters: False
 The unique identifier of sharedDriveItem
 
 ```yaml
-Type: String
-Parameter Sets: Get3, Get2
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -141,10 +136,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -154,7 +151,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -181,3 +178,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

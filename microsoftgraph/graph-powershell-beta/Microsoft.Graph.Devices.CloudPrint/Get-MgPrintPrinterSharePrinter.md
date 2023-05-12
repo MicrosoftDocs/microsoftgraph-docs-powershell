@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Devices.CloudPrint-help.xml
-Module Name: Microsoft.Graph.Devices.CloudPrint
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.cloudprint/get-mgprintprintershareprinter
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintershareprinter
 schema: 2.0.0
 ---
 
-# Get-MgPrintPrinterSharePrinter
+# Get-MgBetaPrintPrinterSharePrinter
 
 ## SYNOPSIS
 The printer that this printer share is related to.
@@ -14,13 +14,13 @@ The printer that this printer share is related to.
 
 ### Get (Default)
 ```
-Get-MgPrintPrinterSharePrinter -PrinterShareId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaPrintPrinterSharePrinter -PrinterShareId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgPrintPrinterSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaPrintPrinterSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -29,13 +29,27 @@ The printer that this printer share is related to.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -48,10 +62,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of printerShare
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -81,7 +95,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -97,10 +111,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCloudPrintIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrinter
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrinter
+
 ## NOTES
 
 ALIASES
@@ -110,9 +126,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PrintConnectorId <String>]`: The unique identifier of printConnector
+  - `[PrintDocumentId <String>]`: The unique identifier of printDocument
+  - `[PrintJobId <String>]`: The unique identifier of printJob
   - `[PrintOperationId <String>]`: The unique identifier of printOperation
   - `[PrintServiceEndpointId <String>]`: The unique identifier of printServiceEndpoint
   - `[PrintServiceId <String>]`: The unique identifier of printService
@@ -124,3 +142,4 @@ INPUTOBJECT `<IDevicesCloudPrintIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

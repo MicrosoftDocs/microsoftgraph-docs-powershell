@@ -1,50 +1,46 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityconditionalaccesspolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgIdentityConditionalAccessPolicy
+# Get-MgBetaIdentityConditionalAccessPolicy
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified Conditional Access policies.
+Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgIdentityConditionalAccessPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaIdentityConditionalAccessPolicy [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String> [-ExpandProperty <String[]>]
+Get-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaIdentityConditionalAccessPolicy -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified Conditional Access policies.
+Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Get a list of all conditional access policies in Azure AD.
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Connect-MgGraph -Scopes 'Policy.Read.All'
-Get-MgIdentityConditionalAccessPolicy |Format-List
+Connect-MgBetaGraph -Scopes 'Policy.Read.All'
+Get-MgBetaIdentityConditionalAccessPolicy |Format-List
+```
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
 CreatedDateTime      : 1/13/2022 6:35:35 AM
@@ -67,15 +63,13 @@ ModifiedDateTime     : 7/29/2022 9:08:39 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {}
-```
 
-This example retrieves all the conditional access policies in Azure AD.
-
-### Example 2: Get a conditional access policy by Id
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Connect-MgGraph -Scopes 'Policy.Read.All'
-Get-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
+Connect-MgBetaGraph -Scopes 'Policy.Read.All'
+Get-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 
   Format-List
+```
 
 Conditions           : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessConditionSet
 CreatedDateTime      : 1/13/2022 6:35:35 AM
@@ -87,9 +81,6 @@ ModifiedDateTime     : 7/29/2022 9:08:10 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
-```
-
-This command retrieves the conditional access by Id.
 
 ## PARAMETERS
 
@@ -97,7 +88,7 @@ This command retrieves the conditional access by Id.
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -112,7 +103,7 @@ Accept wildcard characters: False
 The unique identifier of conditionalAccessPolicy
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -128,7 +119,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -143,7 +134,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -158,7 +149,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -171,10 +162,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -189,7 +180,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -204,7 +195,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -219,7 +210,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -234,7 +240,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -249,24 +255,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -280,10 +271,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+
 ## NOTES
 
 ALIASES
@@ -293,7 +286,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -330,6 +323,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -368,3 +362,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

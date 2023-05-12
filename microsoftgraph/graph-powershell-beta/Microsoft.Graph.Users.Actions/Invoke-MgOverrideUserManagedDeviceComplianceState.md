@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgoverrideusermanageddevicecompliancestate
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaoverrideusermanageddevicecompliancestate
 schema: 2.0.0
 ---
 
-# Invoke-MgOverrideUserManagedDeviceComplianceState
+# Invoke-MgBetaOverrideUserManagedDeviceComplianceState
 
 ## SYNOPSIS
 Invoke action overrideComplianceState
@@ -14,30 +14,30 @@ Invoke action overrideComplianceState
 
 ### OverrideExpanded (Default)
 ```
-Invoke-MgOverrideUserManagedDeviceComplianceState -ManagedDeviceId <String> -UserId <String>
+Invoke-MgBetaOverrideUserManagedDeviceComplianceState -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
- [-RemediationUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RemediationUrl <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Override
 ```
-Invoke-MgOverrideUserManagedDeviceComplianceState -ManagedDeviceId <String> -UserId <String>
+Invoke-MgBetaOverrideUserManagedDeviceComplianceState -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### OverrideViaIdentityExpanded
-```
-Invoke-MgOverrideUserManagedDeviceComplianceState -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
- [-RemediationUrl <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### OverrideViaIdentity
 ```
-Invoke-MgOverrideUserManagedDeviceComplianceState -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaOverrideUserManagedDeviceComplianceState -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### OverrideViaIdentityExpanded
+```
+Invoke-MgBetaOverrideUserManagedDeviceComplianceState -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ComplianceState <AdministratorConfiguredDeviceComplianceState>]
+ [-RemediationUrl <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Invoke action overrideComplianceState
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Override, OverrideViaIdentity
 Aliases:
 
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 Administrator configured device compliance state Enum
 
 ```yaml
-Type: AdministratorConfiguredDeviceComplianceState
+Type: Microsoft.Graph.Beta.PowerShell.Support.AdministratorConfiguredDeviceComplianceState
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 
@@ -95,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: OverrideViaIdentityExpanded, OverrideViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: OverrideViaIdentity, OverrideViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: OverrideExpanded, Override
+Type: System.String
+Parameter Sets: Override, OverrideExpanded
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: OverrideExpanded, OverrideViaIdentityExpanded
 Aliases:
 
@@ -158,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: OverrideExpanded, Override
+Type: System.String
+Parameter Sets: Override, OverrideExpanded
 Aliases:
 
 Required: True
@@ -173,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,11 +219,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,12 +236,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths11FbqvhUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphOverridecompliancestatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ComplianceState <AdministratorConfiguredDeviceComplianceState?>]`: Administrator configured device compliance state Enum
   - `[RemediationUrl <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -258,7 +275,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -268,3 +284,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

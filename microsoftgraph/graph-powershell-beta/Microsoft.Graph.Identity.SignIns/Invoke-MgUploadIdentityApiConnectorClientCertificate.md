@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/invoke-mguploadidentityapiconnectorclientcertificate
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetauploadidentityapiconnectorclientcertificate
 schema: 2.0.0
 ---
 
-# Invoke-MgUploadIdentityApiConnectorClientCertificate
+# Invoke-MgBetaUploadIdentityApiConnectorClientCertificate
 
 ## SYNOPSIS
 Upload a PKCS 12 format key (.pfx) to an API connector's authentication configuration.
@@ -16,30 +16,30 @@ This method returns an apiConnector.
 
 ### UploadExpanded (Default)
 ```
-Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <String>
- [-AdditionalProperties <Hashtable>] [-Password <String>] [-Pkcs12Value <String>] [-WhatIf] [-Confirm]
+Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <String>
+ [-AdditionalProperties <Hashtable>] [-Password <String>] [-Pkcs12Value <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Upload
 ```
-Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <String>
+Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId <String>
  -BodyParameter <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UploadViaIdentityExpanded
-```
-Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Password <String>] [-Pkcs12Value <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UploadViaIdentity
 ```
-Invoke-MgUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySignInsIdentity>
+Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySignInsIdentity>
  -BodyParameter <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UploadViaIdentityExpanded
+```
+Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Password <String>] [-Pkcs12Value <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,18 +49,17 @@ This method returns an apiConnector.
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
 	Password = "<password>"
 }
-Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
+Invoke-MgBetaUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -68,7 +67,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -81,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Upload, UploadViaIdentity
 Aliases:
 
@@ -99,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of identityApiConnector
 
 ```yaml
-Type: String
-Parameter Sets: UploadExpanded, Upload
+Type: System.String
+Parameter Sets: Upload, UploadExpanded
 Aliases:
 
 Required: True
@@ -112,11 +111,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UploadViaIdentityExpanded, UploadViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UploadViaIdentity, UploadViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -145,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UploadExpanded, UploadViaIdentityExpanded
 Aliases:
 
@@ -160,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,11 +191,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
+
 ## NOTES
 
 ALIASES
@@ -206,12 +208,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Yvv9YeIdentityApiconnectorsIdentityapiconnectorIdMicrosoftGraphUploadclientcertificatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Password <String>]`: 
   - `[Pkcs12Value <String>]`: 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -248,6 +250,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -286,3 +289,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

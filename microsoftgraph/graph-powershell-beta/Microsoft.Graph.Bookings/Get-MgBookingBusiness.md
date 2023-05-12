@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Bookings-help.xml
-Module Name: Microsoft.Graph.Bookings
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.bookings/get-mgbookingbusiness
+external help file:
+Module Name: Microsoft.Graph.Beta.Bookings
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/get-mgbetabookingbusiness
 schema: 2.0.0
-ms.prod: bookings
 ---
 
-# Get-MgBookingBusiness
+# Get-MgBetaBookingBusiness
 
 ## SYNOPSIS
 Get the properties and relationships of a bookingBusiness object.
@@ -15,20 +14,20 @@ Get the properties and relationships of a bookingBusiness object.
 
 ### List (Default)
 ```
-Get-MgBookingBusiness [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgBetaBookingBusiness [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgBookingBusiness -BookingBusinessId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaBookingBusiness -BookingBusinessId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBookingBusiness -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaBookingBusiness -InputObject <IBookingsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -37,32 +36,29 @@ Get the properties and relationships of a bookingBusiness object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgBookingBusiness Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusiness -BookingBusinessId $bookingBusinessId
+Import-Module Microsoft.Graph.Beta.Bookings
+Get-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
 
-This example shows how to use the Get-MgBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Get-MgBookingBusiness Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusiness
+Import-Module Microsoft.Graph.Beta.Bookings
+Get-MgBetaBookingBusiness
 ```
 
-This example shows how to use the Get-MgBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Using the Get-MgBookingBusiness Cmdlet
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Bookings
-Get-MgBookingBusiness -Query "Adventure"
+Import-Module Microsoft.Graph.Beta.Bookings
+Get-MgBetaBookingBusiness -Query "Adventure"
 ```
 
-This example shows how to use the Get-MgBookingBusiness Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -70,7 +66,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -85,7 +81,7 @@ Accept wildcard characters: False
 The unique identifier of bookingBusiness
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -101,7 +97,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -116,7 +112,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -131,7 +127,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -144,10 +140,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -162,7 +158,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -177,7 +173,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -192,7 +188,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -207,7 +218,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -222,24 +233,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -253,10 +249,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBookingBusiness
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBookingBusiness
+
 ## NOTES
 
 ALIASES
@@ -266,18 +264,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IBookingsIdentity>`: Identity Parameter
+`INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
   - `[BookingAppointmentId <String>]`: The unique identifier of bookingAppointment
   - `[BookingBusinessId <String>]`: The unique identifier of bookingBusiness
   - `[BookingCurrencyId <String>]`: The unique identifier of bookingCurrency
   - `[BookingCustomQuestionId <String>]`: The unique identifier of bookingCustomQuestion
-  - `[BookingCustomerBaseId <String>]`: The unique identifier of bookingCustomerBase
   - `[BookingCustomerId <String>]`: The unique identifier of bookingCustomer
   - `[BookingServiceId <String>]`: The unique identifier of bookingService
-  - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
   - `[BookingStaffMemberId <String>]`: The unique identifier of bookingStaffMember
   - `[BusinessScenarioId <String>]`: The unique identifier of businessScenario
   - `[BusinessScenarioTaskId <String>]`: The unique identifier of businessScenarioTask
   - `[PlannerPlanConfigurationLocalizationId <String>]`: The unique identifier of plannerPlanConfigurationLocalization
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mginitiateusermanageddeviceondemandproactiveremediation
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainitiateusermanageddeviceondemandproactiveremediation
 schema: 2.0.0
 ---
 
-# Invoke-MgInitiateUserManagedDeviceOnDemandProactiveRemediation
+# Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation
 
 ## SYNOPSIS
 Perform On Demand Proactive Remediation
@@ -14,30 +14,30 @@ Perform On Demand Proactive Remediation
 
 ### InitiateExpanded (Default)
 ```
-Invoke-MgInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Initiate
 ```
-Invoke-MgInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### InitiateViaIdentityExpanded
-```
-Invoke-MgInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String> -UserId <String>
+ -Body <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InitiateViaIdentity
 ```
-Invoke-MgInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### InitiateViaIdentityExpanded
+```
+Invoke-MgBetaInitiateUserManagedDeviceOnDemandProactiveRemediation -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Perform On Demand Proactive Remediation
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: InitiateExpanded, InitiateViaIdentityExpanded
 Aliases:
 
@@ -62,13 +76,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Initiate, InitiateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Initiate
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: InitiateViaIdentity
 Aliases:
 
 Required: True
@@ -80,11 +110,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: InitiateViaIdentityExpanded, InitiateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: InitiateViaIdentity, InitiateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -98,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: InitiateExpanded, Initiate
+Type: System.String
+Parameter Sets: Initiate, InitiateExpanded
 Aliases:
 
 Required: True
@@ -113,7 +143,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,7 +158,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InitiateExpanded, InitiateViaIdentityExpanded
 Aliases:
 
@@ -143,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: InitiateExpanded, Initiate
+Type: System.String
+Parameter Sets: Initiate, InitiateExpanded
 Aliases:
 
 Required: True
@@ -158,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,11 +220,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -204,11 +237,15 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ScriptPolicyId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPathsMkc34FUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ScriptPolicyId <String>]`: 
+
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -242,7 +279,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -252,3 +288,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

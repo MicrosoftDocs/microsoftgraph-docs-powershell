@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryrole
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryrole
 schema: 2.0.0
-ms.prod: directory-management
 ---
 
-# New-MgDirectoryRole
+# New-MgBetaDirectoryRole
 
 ## SYNOPSIS
 Activate a directory role.
@@ -18,15 +17,16 @@ To access and assign members to other directory roles, you must first activate i
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryRole [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
- [-RoleTemplateId <String>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-WhatIf] [-Confirm]
+New-MgBetaDirectoryRole [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-Members <IMicrosoftGraphDirectoryObject[]>]
+ [-RoleTemplateId <String>] [-ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryRole -BodyParameter <IMicrosoftGraphDirectoryRole> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryRole -BodyParameter <IMicrosoftGraphDirectoryRole> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,17 +37,16 @@ To access and assign members to other directory roles, you must first activate i
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgDirectoryRole Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
 	RoleTemplateId = "fe930be7-5e62-47db-91af-98c3a49a38b1"
 }
-New-MgDirectoryRole -BodyParameter $params
+New-MgBetaDirectoryRole -BodyParameter $params
 ```
 
-This example shows how to use the New-MgDirectoryRole Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -55,7 +54,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,10 +67,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 directoryRole
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryRole
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
 Parameter Sets: Create
 Aliases:
 
@@ -87,7 +86,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +103,7 @@ Read-only.
 Supports $filter (eq), $search, $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +120,7 @@ Read-only.
 Supports $filter (eq), $search, $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,11 +132,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,10 +153,10 @@ HTTP Methods: GET, POST, DELETE.
 Read-only.
 Nullable.
 Supports $expand.
-To construct, please use Get-Help -Online and see NOTES section for MEMBERS properties and create a hash table.
+To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +174,7 @@ After the directory role has been activated, the property is read only.
 Supports $filter (eq), $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,10 +189,10 @@ Accept wildcard characters: False
 Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
-To construct, please use Get-Help -Online and see NOTES section for SCOPEDMEMBERS properties and create a hash table.
+To construct, see NOTES section for SCOPEDMEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphScopedRoleMembership[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScopedRoleMembership[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -224,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,10 +239,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryRole
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
+
 ## NOTES
 
 ALIASES
@@ -253,18 +254,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
+`BODYPARAMETER <IMicrosoftGraphDirectoryRole>`: directoryRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: The description for the directory role. Read-only. Supports $filter (eq), $search, $select.
   - `[DisplayName <String>]`: The display name for the directory role. Read-only. Supports $filter (eq), $search, $select.
   - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
   - `[RoleTemplateId <String>]`: The id of the directoryRoleTemplate that this role is based on. The property must be specified when activating a directory role in a tenant with a POST operation. After the directory role has been activated, the property is read only. Supports $filter (eq), $select.
   - `[ScopedMembers <IMicrosoftGraphScopedRoleMembership[]>]`: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
     - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
     - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
@@ -272,12 +273,12 @@ BODYPARAMETER `<IMicrosoftGraphDirectoryRole>`: directoryRole
       - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
       - `[Id <String>]`: Unique identifier for the identity.
 
-MEMBERS <IMicrosoftGraphDirectoryObject\[]>: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`MEMBERS <IMicrosoftGraphDirectoryObject[]>`: Users that are members of this directory role. HTTP Methods: GET, POST, DELETE. Read-only. Nullable. Supports $expand.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
-SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership[]>`: Members of this directory role that are scoped to administrative units. Read-only. Nullable.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdministrativeUnitId <String>]`: Unique identifier for the administrative unit that the directory role is scoped to
   - `[RoleId <String>]`: Unique identifier for the directory role that the member is in.
   - `[RoleMemberInfo <IMicrosoftGraphIdentity>]`: identity
@@ -286,3 +287,4 @@ SCOPEDMEMBERS <IMicrosoftGraphScopedRoleMembership\[]>: Members of this director
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+

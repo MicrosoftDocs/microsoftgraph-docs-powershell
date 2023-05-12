@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgplaydevicemanagementmanageddevicelostmodesound
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaplaydevicemanagementmanageddevicelostmodesound
 schema: 2.0.0
 ---
 
-# Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound
+# Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound
 
 ## SYNOPSIS
 Play lost mode sound
@@ -14,30 +14,30 @@ Play lost mode sound
 
 ### PlayExpanded (Default)
 ```
-Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound -ManagedDeviceId <String>
+ [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Play
 ```
-Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound -ManagedDeviceId <String>
+Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound -ManagedDeviceId <String>
  -BodyParameter <IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### PlayViaIdentityExpanded
-```
-Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### PlayViaIdentity
 ```
-Invoke-MgPlayDeviceManagementManagedDeviceLostModeSound -InputObject <IDeviceManagementActionsIdentity>
+Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### PlayViaIdentityExpanded
+```
+Invoke-MgBetaPlayDeviceManagementManagedDeviceLostModeSound -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DurationInMinutes <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Play lost mode sound
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Play, PlayViaIdentity
 Aliases:
 
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -95,11 +109,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: PlayViaIdentity, PlayViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: PlayExpanded, Play
+Type: System.String
+Parameter Sets: Play, PlayExpanded
 Aliases:
 
 Required: True
@@ -128,7 +142,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,11 +189,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementActionsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -189,11 +206,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsS7My8KDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphPlaylostmodesoundPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DurationInMinutes <String>]`: 
 
-INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord
   - `[AndroidDeviceOwnerEnrollmentProfileId <String>]`: The unique identifier of androidDeviceOwnerEnrollmentProfile
   - `[AndroidForWorkEnrollmentProfileId <String>]`: The unique identifier of androidForWorkEnrollmentProfile
@@ -237,7 +254,6 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[MicrosoftTunnelSiteId <String>]`: The unique identifier of microsoftTunnelSite
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
   - `[NotificationMessageTemplateId <String>]`: The unique identifier of notificationMessageTemplate
-  - `[OemWarrantyInformationOnboardingId <String>]`: The unique identifier of oemWarrantyInformationOnboarding
   - `[RemoteAssistancePartnerId <String>]`: The unique identifier of remoteAssistancePartner
   - `[RoleScopeTagId <String>]`: The unique identifier of roleScopeTag
   - `[WindowsAutopilotDeploymentProfileId <String>]`: The unique identifier of windowsAutopilotDeploymentProfile
@@ -248,3 +264,4 @@ INPUTOBJECT `<IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+

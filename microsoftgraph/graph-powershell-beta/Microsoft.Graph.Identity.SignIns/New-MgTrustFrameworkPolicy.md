@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgtrustframeworkpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetatrustframeworkpolicy
 schema: 2.0.0
 ---
 
-# New-MgTrustFrameworkPolicy
+# New-MgBetaTrustFrameworkPolicy
 
 ## SYNOPSIS
 Create new navigation property to policies for trustFramework
@@ -14,13 +14,13 @@ Create new navigation property to policies for trustFramework
 
 ### CreateExpanded (Default)
 ```
-New-MgTrustFrameworkPolicy [-AdditionalProperties <Hashtable>] [-Id <String>] [-WhatIf] [-Confirm]
+New-MgBetaTrustFrameworkPolicy [-AdditionalProperties <Hashtable>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgTrustFrameworkPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaTrustFrameworkPolicy -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -28,13 +28,27 @@ Create new navigation property to policies for trustFramework
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -49,7 +63,7 @@ Accept wildcard characters: False
 trustFrameworkPolicy
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create
 Aliases:
 
@@ -61,11 +75,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -96,7 +110,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -113,11 +127,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

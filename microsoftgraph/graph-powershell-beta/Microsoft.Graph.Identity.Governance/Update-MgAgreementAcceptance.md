@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgagreementacceptance
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaagreementacceptance
 schema: 2.0.0
 ---
 
-# Update-MgAgreementAcceptance
+# Update-MgBetaAgreementAcceptance
 
 ## SYNOPSIS
 Update the navigation property acceptances in agreements
@@ -14,34 +14,34 @@ Update the navigation property acceptances in agreements
 
 ### UpdateExpanded (Default)
 ```
-Update-MgAgreementAcceptance -AgreementAcceptanceId <String> -AgreementId <String>
+Update-MgBetaAgreementAcceptance -AgreementAcceptanceId <String> -AgreementId <String>
  [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>] [-AgreementId1 <String>]
  [-DeviceDisplayName <String>] [-DeviceId <String>] [-DeviceOSType <String>] [-DeviceOSVersion <String>]
  [-ExpirationDateTime <DateTime>] [-Id <String>] [-RecordedDateTime <DateTime>] [-State <String>]
- [-UserDisplayName <String>] [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserDisplayName <String>] [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAgreementAcceptance -AgreementAcceptanceId <String> -AgreementId <String>
- -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgAgreementAcceptance [-AgreementId <String>] -InputObject <IIdentityGovernanceIdentity>
- [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>] [-DeviceDisplayName <String>]
- [-DeviceId <String>] [-DeviceOSType <String>] [-DeviceOSVersion <String>] [-ExpirationDateTime <DateTime>]
- [-Id <String>] [-RecordedDateTime <DateTime>] [-State <String>] [-UserDisplayName <String>]
- [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaAgreementAcceptance -AgreementAcceptanceId <String> -AgreementId <String>
+ -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAgreementAcceptance -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAgreementAcceptance> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-AgreementId <String>]
+ [-AdditionalProperties <Hashtable>] [-AgreementFileId <String>] [-DeviceDisplayName <String>]
+ [-DeviceId <String>] [-DeviceOSType <String>] [-DeviceOSVersion <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-RecordedDateTime <DateTime>] [-State <String>] [-UserDisplayName <String>]
+ [-UserEmail <String>] [-UserId <String>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update the navigation property acceptances in agreements
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,8 +84,8 @@ Accept wildcard characters: False
 The unique identifier of agreementAcceptance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -82,10 +96,10 @@ Accept wildcard characters: False
 ```
 
 ### -AgreementFileId
-The identifier of the agreement file accepted by the user.
+ID of the agreement file accepted by the user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of agreement
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,23 +125,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-```yaml
-Type: String
-Parameter Sets: UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -AgreementId1
-The identifier of the agreement.
+ID of the agreement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -140,10 +142,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 agreementAcceptance
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAgreementAcceptance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -158,7 +160,7 @@ Accept wildcard characters: False
 The display name of the device used for accepting the agreement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +176,7 @@ The unique identifier of the device used for accepting the agreement.
 Supports $filter (eq) and eq for null values.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,10 +188,10 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSType
-The operating system used to accept the agreement.
+The operating system used for accepting the agreement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,10 +203,10 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceOSVersion
-The operating system version of the device used to accept the agreement.
+The operating system version of the device used for accepting the agreement.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +224,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, ge, le) and eq for null values.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -234,11 +236,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,11 +253,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -265,27 +267,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecordedDateTime
 The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+Supports $filter (eq) and eq for null values.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +288,7 @@ Accept wildcard characters: False
 agreementAcceptanceState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -315,7 +303,7 @@ Accept wildcard characters: False
 Display name of the user when the acceptance was recorded.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -330,7 +318,7 @@ Accept wildcard characters: False
 Email of the user when the acceptance was recorded.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -342,11 +330,11 @@ Accept wildcard characters: False
 ```
 
 ### -UserId
-The identifier of the user who accepted the agreement.
+ID of the user who accepted the agreement.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -361,7 +349,7 @@ Accept wildcard characters: False
 UPN of the user when the acceptance was recorded.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -376,7 +364,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -392,7 +380,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -408,11 +396,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAgreementAcceptance
+
 ## NOTES
 
 ALIASES
@@ -422,24 +413,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
+`BODYPARAMETER <IMicrosoftGraphAgreementAcceptance>`: agreementAcceptance
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AgreementFileId <String>]`: The identifier of the agreement file accepted by the user.
-  - `[AgreementId <String>]`: The identifier of the agreement.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[AgreementFileId <String>]`: ID of the agreement file accepted by the user.
+  - `[AgreementId <String>]`: ID of the agreement.
   - `[DeviceDisplayName <String>]`: The display name of the device used for accepting the agreement.
   - `[DeviceId <String>]`: The unique identifier of the device used for accepting the agreement. Supports $filter (eq) and eq for null values.
-  - `[DeviceOSType <String>]`: The operating system used to accept the agreement.
-  - `[DeviceOSVersion <String>]`: The operating system version of the device used to accept the agreement.
+  - `[DeviceOSType <String>]`: The operating system used for accepting the agreement.
+  - `[DeviceOSVersion <String>]`: The operating system version of the device used for accepting the agreement.
   - `[ExpirationDateTime <DateTime?>]`: The expiration date time of the acceptance. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq, ge, le) and eq for null values.
-  - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[RecordedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Supports $filter (eq) and eq for null values.
   - `[State <String>]`: agreementAcceptanceState
   - `[UserDisplayName <String>]`: Display name of the user when the acceptance was recorded.
   - `[UserEmail <String>]`: Email of the user when the acceptance was recorded.
-  - `[UserId <String>]`: The identifier of the user who accepted the agreement. Supports $filter (eq).
+  - `[UserId <String>]`: ID of the user who accepted the agreement. Supports $filter (eq).
   - `[UserPrincipalName <String>]`: UPN of the user when the acceptance was recorded.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -447,8 +438,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -473,7 +462,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -511,12 +499,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -530,4 +530,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

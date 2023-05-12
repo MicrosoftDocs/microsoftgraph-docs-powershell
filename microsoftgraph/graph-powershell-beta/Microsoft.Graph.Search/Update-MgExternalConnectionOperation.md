@@ -1,42 +1,42 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgexternalconnectionoperation
+external help file:
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetaexternalconnectionoperation
 schema: 2.0.0
 ---
 
-# Update-MgExternalConnectionOperation
+# Update-MgBetaExternalConnectionOperation
 
 ## SYNOPSIS
 Update the navigation property operations in external
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgExternalConnectionOperation -ConnectionOperationId <String> -ExternalConnectionId <String>
+Update-MgBetaExternalConnectionOperation -ConnectionOperationId <String> -ExternalConnectionId <String>
  [-AdditionalProperties <Hashtable>] [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgExternalConnectionOperation -ConnectionOperationId <String> -ExternalConnectionId <String>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaExternalConnectionOperation -ConnectionOperationId <String> -ExternalConnectionId <String>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
- [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity>
+ -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded
 ```
-Update-MgExternalConnectionOperation -InputObject <ISearchIdentity>
- -BodyParameter <IMicrosoftGraphExternalConnectorsConnectionOperation> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity> [-AdditionalProperties <Hashtable>]
+ [-Error <IMicrosoftGraphPublicError>] [-Id <String>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -45,14 +45,28 @@ Update the navigation property operations in external
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -64,11 +78,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 connectionOperation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExternalConnectorsConnectionOperation
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -82,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of connectionOperation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -95,11 +109,11 @@ Accept wildcard characters: False
 
 ### -Error
 publicError
-To construct, please use Get-Help -Online and see NOTES section for ERROR properties and create a hash table.
+To construct, see NOTES section for ERROR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPublicError
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublicError
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -113,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of externalConnection
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -125,12 +139,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -142,11 +156,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -156,27 +170,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Status
 connectionOperationStatus
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -190,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +221,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
-### Microsoft.Graph.PowerShell.Models.ISearchIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionOperation
+
 ## NOTES
 
 ALIASES
@@ -236,9 +238,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExternalConnectorsConnectionOperation>`: connectionOperation
+`BODYPARAMETER <IMicrosoftGraphExternalConnectorsConnectionOperation>`: connectionOperation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Error <IMicrosoftGraphPublicError>]`: publicError
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Code <String>]`: Represents the error code.
@@ -256,7 +258,7 @@ BODYPARAMETER `<IMicrosoftGraphExternalConnectorsConnectionOperation>`: connecti
     - `[Target <String>]`: The target of the error.
   - `[Status <String>]`: connectionOperationStatus
 
-ERROR `<IMicrosoftGraphPublicError>`: publicError
+`ERROR <IMicrosoftGraphPublicError>`: publicError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Code <String>]`: Represents the error code.
   - `[Details <IMicrosoftGraphPublicErrorDetail[]>]`: Details of the error.
@@ -272,7 +274,7 @@ ERROR `<IMicrosoftGraphPublicError>`: publicError
   - `[Message <String>]`: A non-localized message for the developer.
   - `[Target <String>]`: The target of the error.
 
-INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
+`INPUTOBJECT <ISearchIdentity>`: Identity Parameter
   - `[AcronymId <String>]`: The unique identifier of acronym
   - `[BookmarkId <String>]`: The unique identifier of bookmark
   - `[ConnectionOperationId <String>]`: The unique identifier of connectionOperation
@@ -293,3 +295,4 @@ INPUTOBJECT `<ISearchIdentity>`: Identity Parameter
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+

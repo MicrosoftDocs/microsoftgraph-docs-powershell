@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mgchatinstalledapp
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachatinstalledapp
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# New-MgChatInstalledApp
+# New-MgBetaChatInstalledApp
 
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
@@ -15,30 +14,30 @@ Install a teamsApp to the specified chat.
 
 ### CreateExpanded (Default)
 ```
-New-MgChatInstalledApp -ChatId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaChatInstalledApp -ChatId <String> [-AdditionalProperties <Hashtable>]
  [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgChatInstalledApp -ChatId <String> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
- [-TeamsApp <IMicrosoftGraphTeamsApp1>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaChatInstalledApp -ChatId <String> -BodyParameter <IMicrosoftGraphTeamsAppInstallation> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamsAppInstallation>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-Id <String>]
+ [-TeamsApp <IMicrosoftGraphTeamsApp>] [-TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,17 +45,16 @@ Install a teamsApp to the specified chat.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgChatInstalledApp Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	"TeamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/12345678-9abc-def0-123456789a"
 }
-New-MgChatInstalledApp -ChatId $chatId -BodyParameter $params
+New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgChatInstalledApp Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -64,7 +62,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,10 +75,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsAppInstallation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppInstallation1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -95,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -108,10 +106,10 @@ Accept wildcard characters: False
 
 ### -ConsentedPermissionSet
 teamsAppPermissionSet
-To construct, please use Get-Help -Online and see NOTES section for CONSENTEDPERMISSIONSET properties and create a hash table.
+To construct, see NOTES section for CONSENTEDPERMISSIONSET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppPermissionSet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppPermissionSet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -123,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -140,11 +138,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -156,10 +154,10 @@ Accept wildcard characters: False
 
 ### -TeamsApp
 teamsApp
-To construct, please use Get-Help -Online and see NOTES section for TEAMSAPP properties and create a hash table.
+To construct, see NOTES section for TEAMSAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsApp1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsApp
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -172,10 +170,10 @@ Accept wildcard characters: False
 
 ### -TeamsAppDefinition
 teamsAppDefinition
-To construct, please use Get-Help -Online and see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
+To construct, see NOTES section for TEAMSAPPDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppDefinition1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppDefinition
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +220,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation
+
 ## NOTES
 
 ALIASES
@@ -236,19 +237,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation1>`: teamsAppInstallation
+`BODYPARAMETER <IMicrosoftGraphTeamsAppInstallation>`: teamsAppInstallation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
       - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
       - `[PermissionValue <String>]`: The name of the resource-specific permission.
-  - `[TeamsApp <IMicrosoftGraphTeamsApp1>]`: teamsApp
+  - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
       - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -256,15 +257,15 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation1>`: teamsAppInstallation
       - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
       - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-          - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+          - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
         - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
       - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -274,7 +275,7 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation1>`: teamsAppInstallation
           - `[Id <String>]`: Unique identifier for the identity.
         - `[Device <IMicrosoftGraphIdentity>]`: identity
         - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Description <String>]`: Verbose description of the application.
+      - `[Description <String>]`: 
       - `[DisplayName <String>]`: The name of the app provided by the app developer.
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
@@ -285,15 +286,15 @@ BODYPARAMETER `<IMicrosoftGraphTeamsAppInstallation1>`: teamsAppInstallation
     - `[DisplayName <String>]`: The name of the catalog app provided by the app developer in the Microsoft Teams zip app package.
     - `[DistributionMethod <String>]`: teamsAppDistributionMethod
     - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
-  - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition1>]`: teamsAppDefinition
+  - `[TeamsAppDefinition <IMicrosoftGraphTeamsAppDefinition>]`: teamsAppDefinition
 
-CONSENTEDPERMISSIONSET `<IMicrosoftGraphTeamsAppPermissionSet>`: teamsAppPermissionSet
+`CONSENTEDPERMISSIONSET <IMicrosoftGraphTeamsAppPermissionSet>`: teamsAppPermissionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
     - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
     - `[PermissionValue <String>]`: The name of the resource-specific permission.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -332,11 +333,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
+`TEAMSAPP <IMicrosoftGraphTeamsApp>`: teamsApp
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition1[]>]`: The details for each version of the app.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
     - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -348,15 +349,15 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
     - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
     - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-        - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+        - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
       - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -366,7 +367,7 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
         - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Description <String>]`: Verbose description of the application.
+    - `[Description <String>]`: 
     - `[DisplayName <String>]`: The name of the app provided by the app developer.
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
@@ -378,9 +379,9 @@ TEAMSAPP `<IMicrosoftGraphTeamsApp1>`: teamsApp
   - `[DistributionMethod <String>]`: teamsAppDistributionMethod
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
-TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition1>`: teamsAppDefinition
+`TEAMSAPPDEFINITION <IMicrosoftGraphTeamsAppDefinition>`: teamsAppDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedInstallationScopes <String>]`: teamsAppInstallationScopes
   - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -392,15 +393,15 @@ TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition1>`: teamsAppDefinition
   - `[AzureAdAppId <String>]`: The WebApplicationInfo.Id from the Teams app manifest.
   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ColorIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[HostedContent <IMicrosoftGraphTeamworkHostedContent>]`: teamworkHostedContent
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-      - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+      - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
     - `[WebUrl <String>]`: The web URL that can be used for downloading the image.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -410,7 +411,7 @@ TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition1>`: teamsAppDefinition
       - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
-  - `[Description <String>]`: Verbose description of the application.
+  - `[Description <String>]`: 
   - `[DisplayName <String>]`: The name of the app provided by the app developer.
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[OutlineIcon <IMicrosoftGraphTeamsAppIcon>]`: teamsAppIcon
@@ -421,4 +422,3 @@ TEAMSAPPDEFINITION `<IMicrosoftGraphTeamsAppDefinition1>`: teamsAppDefinition
 
 ## RELATED LINKS
 
-## RELATED LINKS

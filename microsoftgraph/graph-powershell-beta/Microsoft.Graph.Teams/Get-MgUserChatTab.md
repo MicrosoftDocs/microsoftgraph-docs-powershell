@@ -1,65 +1,54 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mguserchattab
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserchattab
 schema: 2.0.0
-ms.prod: microsoft-teams
 ---
 
-# Get-MgUserChatTab
+# Get-MgBetaUserChatTab
 
 ## SYNOPSIS
-A collection of all the tabs in the chat.
-Nullable.
+Retrieve the properties and relationships of the specified tab in a chat.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgUserChatTab -ChatId <String> -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaUserChatTab -ChatId <String> -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgUserChatTab -ChatId <String> -TeamsTabId <String> -UserId <String> [-ExpandProperty <String[]>]
+Get-MgBetaUserChatTab -ChatId <String> -TeamsTabId <String> -UserId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-A collection of all the tabs in the chat.
-Nullable.
+Retrieve the properties and relationships of the specified tab in a chat.
 
 ## EXAMPLES
 
-### Example 1: List all the tabs in the chat along with associated Teams app
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp"
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgUserChatTab Cmdlet.
+Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp"
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: List all the tabs belonging to a specific app in a chat
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-
-Get-MgChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
+Import-Module Microsoft.Graph.Beta.Teams
 ```
 
-This example shows how to use the Get-MgUserChatTab Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaChatTab -ChatId $chatId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.web'"
 
 ## PARAMETERS
 
@@ -67,8 +56,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -82,8 +71,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -98,8 +87,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -113,7 +102,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -128,8 +117,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -141,11 +130,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -159,8 +148,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -174,7 +163,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -189,8 +178,23 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -204,8 +208,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
+Type: System.String[]
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -219,8 +223,8 @@ Accept wildcard characters: False
 The unique identifier of teamsTab
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -234,8 +238,8 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -249,26 +253,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -280,10 +269,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsTab1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsTab
+
 ## NOTES
 
 ALIASES
@@ -293,7 +284,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -333,3 +324,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

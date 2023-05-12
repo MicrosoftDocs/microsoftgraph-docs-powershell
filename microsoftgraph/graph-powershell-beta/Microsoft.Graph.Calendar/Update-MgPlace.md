@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/update-mgplace
+external help file:
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/update-mgbetaplace
 schema: 2.0.0
-ms.prod: calendar
 ---
 
-# Update-MgPlace
+# Update-MgBetaPlace
 
 ## SYNOPSIS
 Update the properties of place object, which can be a room, workspace, or roomList.
@@ -16,30 +15,30 @@ You can identify the **room**, **workspace**, or **roomList** by specifying the 
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPlace -PlaceId <String> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress1>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPlace -PlaceId <String> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaPlace -PlaceId <String> -BodyParameter <IMicrosoftGraphPlace> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgPlace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
- [-Address <IMicrosoftGraphPhysicalAddress1>] [-DisplayName <String>]
- [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPlace -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoftGraphPlace> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaPlace -InputObject <ICalendarIdentity> [-AdditionalProperties <Hashtable>]
+ [-Address <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
+ [-GeoCoordinates <IMicrosoftGraphOutlookGeoCoordinates>] [-Id <String>] [-Phone <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,9 +47,9 @@ You can identify the **room**, **workspace**, or **roomList** by specifying the 
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPlace Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 $params = @{
 	"@odata.type" = "microsoft.graph.room"
 	Nickname = "Conf Room"
@@ -59,15 +58,14 @@ $params = @{
 	Capacity = 
 	IsWheelChairAccessible = $false
 }
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
+Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPlace Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Update-MgPlace Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 $params = @{
 	"@odata.type" = "microsoft.graph.roomList"
 	DisplayName = "Building 1"
@@ -87,15 +85,14 @@ $params = @{
 		AltitudeAccuracy = $null
 	}
 }
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
+Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPlace Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Using the Update-MgPlace Cmdlet
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Calendar
+Import-Module Microsoft.Graph.Beta.Calendar
 $params = @{
 	"@odata.type" = "microsoft.graph.workspace"
 	Nickname = "Conf Room"
@@ -104,11 +101,10 @@ $params = @{
 	Capacity = 
 	IsWheelChairAccessible = $false
 }
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
+Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPlace Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -116,7 +112,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,10 +125,10 @@ Accept wildcard characters: False
 
 ### -Address
 physicalAddress
-To construct, please use Get-Help -Online and see NOTES section for ADDRESS properties and create a hash table.
+To construct, see NOTES section for ADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhysicalAddress
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,10 +141,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 place
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlace
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -163,7 +159,7 @@ Accept wildcard characters: False
 The name associated with the place.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,10 +172,10 @@ Accept wildcard characters: False
 
 ### -GeoCoordinates
 outlookGeoCoordinates
-To construct, please use Get-Help -Online and see NOTES section for GEOCOORDINATES properties and create a hash table.
+To construct, see NOTES section for GEOCOORDINATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutlookGeoCoordinates
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookGeoCoordinates
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,11 +187,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,11 +204,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -222,26 +218,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Phone
 The phone number of the place.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,8 +237,8 @@ Accept wildcard characters: False
 The unique identifier of place
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -271,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -287,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -303,11 +284,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlace
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlace
+
 ## NOTES
 
 ALIASES
@@ -317,7 +301,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
+`ADDRESS <IMicrosoftGraphPhysicalAddress>`: physicalAddress
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[City <String>]`: The city.
   - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -327,10 +311,10 @@ ADDRESS `<IMicrosoftGraphPhysicalAddress1>`: physicalAddress
   - `[Street <String>]`: The street.
   - `[Type <String>]`: physicalAddressType
 
-BODYPARAMETER `<IMicrosoftGraphPlace>`: place
+`BODYPARAMETER <IMicrosoftGraphPlace>`: place
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Address <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Address <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -349,7 +333,7 @@ BODYPARAMETER `<IMicrosoftGraphPlace>`: place
     - `[Longitude <Double?>]`: The longitude of the location.
   - `[Phone <String>]`: The phone number of the place.
 
-GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
+`GEOCOORDINATES <IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Accuracy <Double?>]`: The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude and longitude are accurate to within 50 meters.
   - `[Altitude <Double?>]`: The altitude of the location.
@@ -357,7 +341,7 @@ GEOCOORDINATES `<IMicrosoftGraphOutlookGeoCoordinates>`: outlookGeoCoordinates
   - `[Latitude <Double?>]`: The latitude of the location.
   - `[Longitude <Double?>]`: The longitude of the location.
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -367,9 +351,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementdevicehealthscriptremediationsummary
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementdevicehealthscriptremediationsummary
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementDeviceHealthScriptRemediationSummary
+# Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary
 
 ## SYNOPSIS
 Invoke function getRemediationSummary
@@ -13,13 +13,27 @@ Invoke function getRemediationSummary
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementDeviceHealthScriptRemediationSummary [<CommonParameters>]
+Get-MgBetaDeviceManagementDeviceHealthScriptRemediationSummary [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke function getRemediationSummary
 
 ## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -30,9 +44,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRemediationSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRemediationSummary
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

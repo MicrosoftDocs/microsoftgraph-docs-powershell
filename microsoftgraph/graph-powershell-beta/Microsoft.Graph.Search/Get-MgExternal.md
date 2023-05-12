@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/get-mgexternal
+external help file:
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternal
 schema: 2.0.0
 ---
 
-# Get-MgExternal
+# Get-MgBetaExternal
 
 ## SYNOPSIS
 Get external
@@ -13,7 +13,7 @@ Get external
 ## SYNTAX
 
 ```
-Get-MgExternal [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaExternal [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,13 +21,27 @@ Get external
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -42,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -60,9 +74,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsExternal
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

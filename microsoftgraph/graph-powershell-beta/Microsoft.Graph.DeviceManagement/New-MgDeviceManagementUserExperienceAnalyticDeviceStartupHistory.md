@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticdevicestartuphistory
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticdevicestartuphistory
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+# New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDeviceStartupHistory for deviceManagement
@@ -14,20 +14,20 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupHistory fo
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory [-AdditionalProperties <Hashtable>]
  [-CoreBootTimeInMS <Int32>] [-CoreLoginTimeInMS <Int32>] [-DeviceId <String>]
  [-FeatureUpdateBootTimeInMS <Int32>] [-GroupPolicyBootTimeInMS <Int32>] [-GroupPolicyLoginTimeInMS <Int32>]
  [-Id <String>] [-IsFeatureUpdate] [-IsFirstLogin] [-OperatingSystemVersion <String>]
  [-ResponsiveDesktopTimeInMS <Int32>]
  [-RestartCategory <UserExperienceAnalyticsOperatingSystemRestartCategory>] [-RestartFaultBucket <String>]
- [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>] [-TotalLoginTimeInMS <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RestartStopCode <String>] [-StartTime <DateTime>] [-TotalBootTimeInMS <Int32>]
+ [-TotalLoginTimeInMS <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticDeviceStartupHistory
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupHistory
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,13 +36,27 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupHistory fo
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,10 +69,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics device startup history entity contains device boot performance history details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
 Parameter Sets: Create
 Aliases:
 
@@ -73,7 +87,7 @@ Accept wildcard characters: False
 The user experience analytics device core boot time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +102,7 @@ Accept wildcard characters: False
 The user experience analytics device core login time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -103,7 +117,7 @@ Accept wildcard characters: False
 The user experience analytics device id.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +132,7 @@ Accept wildcard characters: False
 The user experience analytics device feature update time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +147,7 @@ Accept wildcard characters: False
 The User experience analytics Device group policy boot time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +162,7 @@ Accept wildcard characters: False
 The User experience analytics Device group policy login time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +193,7 @@ Accept wildcard characters: False
 The user experience analytics device boot record is a feature update.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +208,7 @@ Accept wildcard characters: False
 The user experience analytics device first login.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +223,7 @@ Accept wildcard characters: False
 The user experience analytics device boot record's operating system version.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +238,7 @@ Accept wildcard characters: False
 The user experience analytics responsive desktop time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +253,7 @@ Accept wildcard characters: False
 Operating System restart category
 
 ```yaml
-Type: UserExperienceAnalyticsOperatingSystemRestartCategory
+Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsOperatingSystemRestartCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +269,7 @@ OS restart fault bucket.
 The fault bucket is used to find additional information about a system crash.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +285,7 @@ OS restart stop code.
 This shows the bug check code which can be used to look up the blue screen reason.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +300,7 @@ Accept wildcard characters: False
 The user experience analytics device boot start time.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +315,7 @@ Accept wildcard characters: False
 The user experience analytics device total boot time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -316,7 +330,7 @@ Accept wildcard characters: False
 The user experience analytics device total login time in milliseconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -331,7 +345,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -347,7 +361,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -363,10 +377,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory
+
 ## NOTES
 
 ALIASES
@@ -376,9 +392,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>`: The user experience analytics device startup history entity contains device boot performance history details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>`: The user experience analytics device startup history entity contains device boot performance history details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CoreBootTimeInMS <Int32?>]`: The user experience analytics device core boot time in milliseconds.
   - `[CoreLoginTimeInMS <Int32?>]`: The user experience analytics device core login time in milliseconds.
   - `[DeviceId <String>]`: The user experience analytics device id.
@@ -397,3 +413,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory>`: Th
   - `[TotalLoginTimeInMS <Int32?>]`: The user experience analytics device total login time in milliseconds.
 
 ## RELATED LINKS
+

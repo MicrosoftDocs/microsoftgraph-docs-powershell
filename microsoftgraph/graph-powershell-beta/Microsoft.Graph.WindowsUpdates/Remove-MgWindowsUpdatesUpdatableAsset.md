@@ -1,51 +1,59 @@
 ---
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset
+external help file:
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/remove-mgbetawindowsupdatesupdatableasset
 schema: 2.0.0
 ---
 
-# Remove-MgWindowsUpdatesUpdatableAsset
+# Remove-MgBetaWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Delete navigation property updatableAssets for admin
+Delete an azureADDevice object.
+When an Azure AD device is deleted, it is unregistered from the deployment service and automatically unenrolled from management by the service for all update categories, as well as removed from every deploymentAudience and updatableAssetGroup.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId <String> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-IfMatch <String>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property updatableAssets for admin
+Delete an azureADDevice object.
+When an Azure AD device is deleted, it is unregistered from the deployment service and automatically unenrolled from management by the service for all update categories, as well as removed from every deploymentAudience and updatableAssetGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
-```
-
-### EXAMPLE 2
-```
-Import-Module Microsoft.Graph.WindowsUpdates
-Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
+Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
 
-### EXAMPLE 3
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
+Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-Import-Module Microsoft.Graph.WindowsUpdates
-Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
+
+
+
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.WindowsUpdates
+Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
+
+
 
 ## PARAMETERS
 
@@ -53,7 +61,7 @@ Remove-MgWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -66,10 +74,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -84,13 +92,13 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -99,7 +107,7 @@ Accept wildcard characters: False
 The unique identifier of updatableAsset
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -114,7 +122,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +138,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,14 +154,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Remove-MgBetaWuUpdatableAsset
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/remove-mgwindowsupdatesupdatableasset)
 

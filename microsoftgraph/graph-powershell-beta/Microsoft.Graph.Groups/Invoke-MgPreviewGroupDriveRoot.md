@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgpreviewgroupdriveroot
+external help file:
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgroupdriveroot
 schema: 2.0.0
 ---
 
-# Invoke-MgPreviewGroupDriveRoot
+# Invoke-MgBetaPreviewGroupDriveRoot
 
 ## SYNOPSIS
 Invoke action preview
@@ -14,29 +14,30 @@ Invoke action preview
 
 ### PreviewExpanded (Default)
 ```
-Invoke-MgPreviewGroupDriveRoot -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-WhatIf] [-Confirm]
+Invoke-MgBetaPreviewGroupDriveRoot -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Preview
 ```
-Invoke-MgPreviewGroupDriveRoot -DriveId <String> -GroupId <String>
- -BodyParameter <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### PreviewViaIdentityExpanded
-```
-Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>] [-AllowEdit]
- [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaPreviewGroupDriveRoot -DriveId <String> -GroupId <String>
+ -BodyParameter <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
-Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity>
- -BodyParameter <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaPreviewGroupDriveRoot -InputObject <IGroupsIdentity>
+ -BodyParameter <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### PreviewViaIdentityExpanded
+```
+Invoke-MgBetaPreviewGroupDriveRoot -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +45,27 @@ Invoke action preview
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -65,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -78,10 +93,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Preview, PreviewViaIdentity
 Aliases:
 
@@ -96,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -111,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: PreviewExpanded, Preview
+Type: System.String
+Parameter Sets: Preview, PreviewExpanded
 Aliases:
 
 Required: True
@@ -126,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: PreviewExpanded, Preview
+Type: System.String
+Parameter Sets: Preview, PreviewExpanded
 Aliases:
 
 Required: True
@@ -139,11 +154,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: PreviewViaIdentityExpanded, PreviewViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: PreviewViaIdentity, PreviewViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -157,7 +172,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -172,7 +187,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -187,7 +202,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -202,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -218,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -234,11 +249,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
+
 ## NOTES
 
 ALIASES
@@ -248,7 +266,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema1>`: .
+`BODYPARAMETER <IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowEdit <Boolean?>]`: 
   - `[Chromeless <Boolean?>]`: 
@@ -256,7 +274,7 @@ BODYPARAMETER `<IPathsTu9U98GroupsGroupIdDrivesDriveIdRootMicrosoftGraphPreviewP
   - `[Viewer <String>]`: 
   - `[Zoom <Double?>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -278,11 +296,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -295,7 +311,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -306,3 +321,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

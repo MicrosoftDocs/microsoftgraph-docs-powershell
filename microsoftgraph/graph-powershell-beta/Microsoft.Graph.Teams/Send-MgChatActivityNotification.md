@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/send-mgchatactivitynotification
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/send-mgbetachatactivitynotification
 schema: 2.0.0
 ---
 
-# Send-MgChatActivityNotification
+# Send-MgBetaChatActivityNotification
 
 ## SYNOPSIS
 Send an activity feed notification in scope of a chat.
@@ -13,34 +13,34 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## SYNTAX
 
-### SendExpanded1 (Default)
+### SendExpanded (Default)
 ```
-Send-MgChatActivityNotification -ChatId <String> [-ActivityType <String>] [-AdditionalProperties <Hashtable>]
- [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>] [-Recipient <Hashtable>]
- [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>] [-Topic <IMicrosoftGraphTeamworkActivityTopic>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Send1
-```
-Send-MgChatActivityNotification -ChatId <String>
- -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### SendViaIdentityExpanded1
-```
-Send-MgChatActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
+Send-MgBetaChatActivityNotification -ChatId <String> [-ActivityType <String>]
  [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
  [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
- [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### SendViaIdentity1
+### Send
 ```
-Send-MgChatActivityNotification -InputObject <ITeamsIdentity>
+Send-MgBetaChatActivityNotification -ChatId <String>
  -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SendViaIdentity
+```
+Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity>
+ -BodyParameter <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### SendViaIdentityExpanded
+```
+Send-MgBetaChatActivityNotification -InputObject <ITeamsIdentity> [-ActivityType <String>]
+ [-AdditionalProperties <Hashtable>] [-ChainId <Int64>] [-PreviewText <IMicrosoftGraphItemBody>]
+ [-Recipient <Hashtable>] [-TemplateParameters <IMicrosoftGraphKeyValuePair[]>]
+ [-Topic <IMicrosoftGraphTeamworkActivityTopic>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,9 +49,9 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### Example 1: Using the Send-MgChatActivityNotification Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
@@ -72,15 +72,14 @@ $params = @{
 		}
 	)
 }
-Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgChatActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Send-MgChatActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
@@ -101,15 +100,14 @@ $params = @{
 		}
 	)
 }
-Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgChatActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Using the Send-MgChatActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	Topic = @{
 		Source = "text"
@@ -131,15 +129,14 @@ $params = @{
 		}
 	)
 }
-Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgChatActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 4: Using the Send-MgChatActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
@@ -160,15 +157,14 @@ $params = @{
 		}
 	)
 }
-Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgChatActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 5: Using the Send-MgChatActivityNotification Cmdlet
+
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	Topic = @{
 		Source = "entityUrl"
@@ -189,11 +185,10 @@ $params = @{
 		}
 	)
 }
-Send-MgChatActivityNotification -ChatId $chatId -BodyParameter $params
+Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the Send-MgChatActivityNotification Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -201,8 +196,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 .
 
 ```yaml
-Type: String
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: System.String
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -216,8 +211,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -229,11 +224,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Send1, SendViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Send, SendViaIdentity
 Aliases:
 
 Required: True
@@ -247,8 +242,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int64
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: System.Int64
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -262,8 +257,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: SendExpanded1, Send1
+Type: System.String
+Parameter Sets: Send, SendExpanded
 Aliases:
 
 Required: True
@@ -275,11 +270,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: SendViaIdentityExpanded1, SendViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: SendViaIdentity, SendViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -293,7 +288,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -306,11 +301,11 @@ Accept wildcard characters: False
 
 ### -PreviewText
 itemBody
-To construct, please use Get-Help -Online and see NOTES section for PREVIEWTEXT properties and create a hash table.
+To construct, see NOTES section for PREVIEWTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -324,8 +319,8 @@ Accept wildcard characters: False
 teamworkNotificationRecipient
 
 ```yaml
-Type: Hashtable
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -337,11 +332,11 @@ Accept wildcard characters: False
 
 ### -TemplateParameters
 .
-To construct, please use Get-Help -Online and see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
+To construct, see NOTES section for TEMPLATEPARAMETERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -353,11 +348,11 @@ Accept wildcard characters: False
 
 ### -Topic
 teamworkActivityTopic
-To construct, please use Get-Help -Online and see NOTES section for TOPIC properties and create a hash table.
+To construct, see NOTES section for TOPIC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkActivityTopic
-Parameter Sets: SendExpanded1, SendViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkActivityTopic
+Parameter Sets: SendExpanded, SendViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -371,7 +366,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -387,7 +382,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -403,11 +398,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -417,7 +415,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ActivityType <String>]`: 
   - `[ChainId <Int64?>]`: 
@@ -436,7 +434,7 @@ BODYPARAMETER `<IPaths1BjzoobChatsChatIdMicrosoftGraphSendactivitynotificationPo
     - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
     - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -475,19 +473,20 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-PREVIEWTEXT `<IMicrosoftGraphItemBody>`: itemBody
+`PREVIEWTEXT <IMicrosoftGraphItemBody>`: itemBody
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Content <String>]`: The content of the item.
   - `[ContentType <String>]`: bodyType
 
-TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair\[]>: .
+`TEMPLATEPARAMETERS <IMicrosoftGraphKeyValuePair[]>`: .
   - `[Name <String>]`: Name for this key-value pair
   - `[Value <String>]`: Value for this key-value pair
 
-TOPIC `<IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
+`TOPIC <IMicrosoftGraphTeamworkActivityTopic>`: teamworkActivityTopic
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Source <String>]`: teamworkActivityTopicSource
   - `[Value <String>]`: The topic value. If the value of the source property is entityUrl, this must be a Microsoft Graph URL. If the vaule is text, this must be a plain text value.
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
+

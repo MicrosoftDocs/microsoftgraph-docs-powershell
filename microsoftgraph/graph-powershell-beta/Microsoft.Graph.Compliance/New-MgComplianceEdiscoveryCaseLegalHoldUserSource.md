@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/new-mgcomplianceediscoverycaselegalholdusersource
+external help file:
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/new-mgbetacomplianceediscoverycaselegalholdusersource
 schema: 2.0.0
 ---
 
-# New-MgComplianceEdiscoveryCaseLegalHoldUserSource
+# New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource
 
 ## SYNOPSIS
 Adds a userSource to a legalHold object.
@@ -14,30 +14,30 @@ Adds a userSource to a legalHold object.
 
 ### CreateExpanded (Default)
 ```
-New-MgComplianceEdiscoveryCaseLegalHoldUserSource -CaseId <String> -LegalHoldId <String>
+New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId <String> -LegalHoldId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
- [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SiteWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgComplianceEdiscoveryCaseLegalHoldUserSource -CaseId <String> -LegalHoldId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
- [-SiteWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId <String> -LegalHoldId <String>
+ -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceIdentity>
+ -BodyParameter <IMicrosoftGraphEdiscoveryUserSource> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-Email <String>] [-HoldStatus <String>] [-Id <String>] [-IncludedSources <String>]
+ [-SiteWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,18 +45,17 @@ Adds a userSource to a legalHold object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Compliance
+Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
 	Email = "adelev@contoso.com"
 	IncludedSources = "mailbox"
 }
-New-MgComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
+New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -64,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 userSource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryUserSource
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -95,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of case
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -108,10 +107,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +125,7 @@ Accept wildcard characters: False
 The date and time the dataSource was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +141,7 @@ The display name of the dataSource.
 This will be the name of the SharePoint site.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +156,7 @@ Accept wildcard characters: False
 Email address of the user's mailbox.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +171,7 @@ Accept wildcard characters: False
 dataSourceHoldStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +187,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +202,7 @@ Accept wildcard characters: False
 sourceType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -216,11 +215,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -234,8 +233,8 @@ Accept wildcard characters: False
 The unique identifier of legalHold
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -250,7 +249,7 @@ The URL of the user's OneDrive for Business site.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -265,7 +264,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -281,7 +280,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -297,11 +296,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryUserSource
+
 ## NOTES
 
 ALIASES
@@ -311,7 +313,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryUserSource>`: userSource
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryUserSource>`: userSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -329,7 +331,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryUserSource>`: userSource
   - `[IncludedSources <String>]`: sourceType
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -338,7 +340,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -355,3 +357,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

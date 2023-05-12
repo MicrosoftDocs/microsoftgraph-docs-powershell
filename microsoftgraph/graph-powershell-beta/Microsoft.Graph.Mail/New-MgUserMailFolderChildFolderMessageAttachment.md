@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Mail-help.xml
-Module Name: Microsoft.Graph.Mail
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.mail/new-mgusermailfolderchildfoldermessageattachment
+external help file:
+Module Name: Microsoft.Graph.Beta.Mail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/new-mgbetausermailfolderchildfoldermessageattachment
 schema: 2.0.0
 ---
 
-# New-MgUserMailFolderChildFolderMessageAttachment
+# New-MgBetaUserMailFolderChildFolderMessageAttachment
 
 ## SYNOPSIS
 Use this API to add an attachment to a message.
@@ -14,32 +14,32 @@ You can add an attachment to an existing message by posting to its attachments c
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgUserMailFolderChildFolderMessageAttachment -MailFolderId <String> -MailFolderId1 <String>
+New-MgBetaUserMailFolderChildFolderMessageAttachment -MailFolderId <String> -MailFolderId1 <String>
  -MessageId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>]
- [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IsInline] [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Create1
+### Create
 ```
-New-MgUserMailFolderChildFolderMessageAttachment -MailFolderId <String> -MailFolderId1 <String>
- -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm]
+New-MgBetaUserMailFolderChildFolderMessageAttachment -MailFolderId <String> -MailFolderId1 <String>
+ -MessageId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachment> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentity
 ```
-New-MgUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
- [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity>
+ -BodyParameter <IMicrosoftGraphAttachment> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### CreateViaIdentityExpanded
 ```
-New-MgUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity>
- -BodyParameter <IMicrosoftGraphAttachment> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Id <String>] [-IsInline]
+ [-LastModifiedDateTime <DateTime>] [-Name <String>] [-Size <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +49,28 @@ You can add an attachment to an existing message by posting to its attachments c
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,11 +82,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 attachment
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment
-Parameter Sets: Create1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -86,8 +100,8 @@ Accept wildcard characters: False
 The MIME type.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -98,12 +112,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,11 +129,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
-Parameter Sets: CreateViaIdentityExpanded1, CreateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -133,8 +147,8 @@ Accept wildcard characters: False
 true if the attachment is an inline attachment; otherwise, false.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -149,8 +163,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -164,8 +178,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -179,8 +193,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -194,8 +208,8 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -206,11 +220,12 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-The attachment's file name.
+The display name of the attachment.
+This does not need to be the actual file name.
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -224,8 +239,8 @@ Accept wildcard characters: False
 The length of the attachment in bytes.
 
 ```yaml
-Type: Int32
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -239,8 +254,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded1, Create1
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -254,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,11 +301,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMailIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment
+
 ## NOTES
 
 ALIASES
@@ -300,16 +318,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachment>`: attachment
+`BODYPARAMETER <IMicrosoftGraphAttachment>`: attachment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentType <String>]`: The MIME type.
   - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
   - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Name <String>]`: The attachment's file name.
+  - `[Name <String>]`: The display name of the attachment. This does not need to be the actual file name.
   - `[Size <Int32?>]`: The length of the attachment in bytes.
 
-INPUTOBJECT `<IMailIdentity>`: Identity Parameter
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
@@ -318,9 +336,8 @@ INPUTOBJECT `<IMailIdentity>`: Identity Parameter
   - `[MentionId <String>]`: The unique identifier of mention
   - `[MessageId <String>]`: The unique identifier of message
   - `[MessageRuleId <String>]`: The unique identifier of messageRule
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserConfigurationId <String>]`: The unique identifier of userConfiguration
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

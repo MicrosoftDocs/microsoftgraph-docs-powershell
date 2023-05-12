@@ -1,27 +1,27 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/update-mgsearchentity
+external help file:
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/update-mgbetasearchentity
 schema: 2.0.0
 ---
 
-# Update-MgSearchEntity
+# Update-MgBetaSearchEntity
 
 ## SYNOPSIS
 Update search
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
- [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSearchEntity [-Acronyms <IMicrosoftGraphSearchAcronym[]>] [-AdditionalProperties <Hashtable>]
+ [-Bookmarks <IMicrosoftGraphSearchBookmark[]>] [-Id <String>] [-Qnas <IMicrosoftGraphSearchQna[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaSearchEntity -BodyParameter <IMicrosoftGraphSearchEntity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -30,15 +30,29 @@ Update search
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Acronyms
 Administrative answer in Microsoft Search results to define common acronyms in a organization.
-To construct, please use Get-Help -Online and see NOTES section for ACRONYMS properties and create a hash table.
+To construct, see NOTES section for ACRONYMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAcronym[]
-Parameter Sets: UpdateExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -52,8 +66,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -65,11 +79,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 searchEntity
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchEntity
-Parameter Sets: Update1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchEntity
+Parameter Sets: Update
 Aliases:
 
 Required: True
@@ -81,11 +95,11 @@ Accept wildcard characters: False
 
 ### -Bookmarks
 Administrative answer in Microsoft Search results for common search queries in an organization.
-To construct, please use Get-Help -Online and see NOTES section for BOOKMARKS properties and create a hash table.
+To construct, see NOTES section for BOOKMARKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchBookmark[]
-Parameter Sets: UpdateExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchBookmark[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -96,27 +110,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -128,11 +127,11 @@ Accept wildcard characters: False
 
 ### -Qnas
 Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
-To construct, please use Get-Help -Online and see NOTES section for QNAS properties and create a hash table.
+To construct, see NOTES section for QNAS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchQna[]
-Parameter Sets: UpdateExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchQna[]
+Parameter Sets: UpdateExpanded
 Aliases:
 
 Required: False
@@ -146,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,10 +177,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchEntity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchEntity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchEntity
+
 ## NOTES
 
 ALIASES
@@ -191,7 +192,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft Search results to define common acronyms in a organization.
+`ACRONYMS <IMicrosoftGraphSearchAcronym[]>`: Administrative answer in Microsoft Search results to define common acronyms in a organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -204,13 +205,13 @@ ACRONYMS <IMicrosoftGraphSearchAcronym\[]>: Administrative answer in Microsoft S
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
+`BODYPARAMETER <IMicrosoftGraphSearchEntity>`: searchEntity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Acronyms <IMicrosoftGraphSearchAcronym[]>]`: Administrative answer in Microsoft Search results to define common acronyms in a organization.
     - `[Description <String>]`: Search answer description shown on search results page.
     - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -224,7 +225,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
       - `[User <IMicrosoftGraphSearchIdentity>]`: identity
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
     - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[StandsFor <String>]`: What the acronym stands for.
     - `[State <String>]`: answerState
   - `[Bookmarks <IMicrosoftGraphSearchBookmark[]>]`: Administrative answer in Microsoft Search results for common search queries in an organization.
@@ -233,7 +234,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
     - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
     - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
     - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
@@ -260,7 +261,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
     - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
     - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
     - `[GroupIds <String[]>]`: List of security groups able to view this qna.
@@ -271,7 +272,7 @@ BODYPARAMETER `<IMicrosoftGraphSearchEntity>`: searchEntity
     - `[State <String>]`: answerState
     - `[TargetedVariations <IMicrosoftGraphSearchAnswerVariant[]>]`: Variations of a qna for different countries or devices. Use when you need to show different content to users based on their device, country/region, or both. The date and group settings will apply to all variations.
 
-BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft Search results for common search queries in an organization.
+`BOOKMARKS <IMicrosoftGraphSearchBookmark[]>`: Administrative answer in Microsoft Search results for common search queries in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -284,7 +285,7 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the bookmark will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the bookmark will start to appear as a search result. Set as null for always available.
   - `[Categories <String[]>]`: Categories commonly used to describe this bookmark. For example, IT and HR.
@@ -306,7 +307,7 @@ BOOKMARKS <IMicrosoftGraphSearchBookmark\[]>: Administrative answer in Microsoft
     - `[Platform <DevicePlatformType?>]`: Supported platform types.
     - `[WebUrl <String>]`: Answer variation URL link. When users click this answer variation in search results, they will go to this URL.
 
-QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
+`QNAS <IMicrosoftGraphSearchQna[]>`: Administrative answer in Microsoft Search results which provide answers for specific search keywords in an organization.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
   - `[LastModifiedBy <IMicrosoftGraphSearchIdentitySet>]`: identitySet
@@ -319,7 +320,7 @@ QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search re
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AvailabilityEndDateTime <DateTime?>]`: Timestamp of when the qna will stop to appear as a search result. Set as null for always available.
   - `[AvailabilityStartDateTime <DateTime?>]`: Timestamp of when the qna will start to appear as a search result. Set as null for always available.
   - `[GroupIds <String[]>]`: List of security groups able to view this qna.
@@ -341,4 +342,3 @@ QNAS <IMicrosoftGraphSearchQna\[]>: Administrative answer in Microsoft Search re
 
 ## RELATED LINKS
 
-## RELATED LINKS

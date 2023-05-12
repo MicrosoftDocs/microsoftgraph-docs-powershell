@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgappcatalogteamappdefinitionoutlineiconhostedcontent
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetaappcatalogteamappdefinitionoutlineiconhostedcontent
 schema: 2.0.0
 ---
 
-# Update-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent
+# Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent
 
 ## SYNOPSIS
 Update the navigation property hostedContent in appCatalogs
@@ -14,29 +14,29 @@ Update the navigation property hostedContent in appCatalogs
 
 ### UpdateExpanded (Default)
 ```
-Update-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
  -TeamsAppId <String> [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>]
- [-ContentType <String>] [-Id <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ContentType <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
- -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -TeamsAppDefinitionId <String>
+ -TeamsAppId <String> -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTeamworkHostedContent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITeamsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentBytesInputFile <String>] [-ContentType <String>] [-Id <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +44,27 @@ Update the navigation property hostedContent in appCatalogs
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -63,10 +77,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamworkHostedContent
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkHostedContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -82,7 +96,7 @@ Input File for ContentBytes (Write only.
 Bytes for the hosted content (such as images).)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,11 +109,10 @@ Accept wildcard characters: False
 
 ### -ContentType
 Write only.
-Content type.
-sicj as image/png, image/jpg.
+Content type, such as image/png, image/jpg.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -111,11 +124,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,11 +141,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -142,27 +155,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -TeamsAppDefinitionId
 The unique identifier of teamsAppDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -176,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of teamsApp
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -191,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,11 +221,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHostedContent
+
 ## NOTES
 
 ALIASES
@@ -237,13 +238,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkHostedContent>`: teamworkHostedContent
+`BODYPARAMETER <IMicrosoftGraphTeamworkHostedContent>`: teamworkHostedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ContentBytes <Byte[]>]`: Write only. Bytes for the hosted content (such as images).
-  - `[ContentType <String>]`: Write only. Content type. sicj as image/png, image/jpg.
+  - `[ContentType <String>]`: Write only. Content type, such as image/png, image/jpg.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -283,3 +284,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/invoke-mgbulkdevicemanagementmanageddevicesetcloudpcreviewstatus
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetabulkdevicemanagementmanageddevicesetcloudpcreviewstatus
 schema: 2.0.0
 ---
 
-# Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
+# Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
 
 ## SYNOPSIS
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
@@ -14,16 +14,16 @@ Set the review status of multiple Cloud PC devices with a single request that in
 
 ### BulkExpanded (Default)
 ```
-Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-WhatIf] [-Confirm]
+Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus [-AdditionalProperties <Hashtable>]
+ [-ManagedDeviceIds <String[]>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Bulk
 ```
-Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
+Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus
  -BodyParameter <IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,9 +31,9 @@ Set the review status of multiple Cloud PC devices with a single request that in
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.DeviceManagement.Actions
+Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
 	ManagedDeviceIds = @(
 		"30d0e128-de93-41dc-89ec-33d84bb662a0"
@@ -45,11 +45,10 @@ $params = @{
 		AzureStorageAccountId = "/subscriptions/f68bd846-16ad-4b51-a7c6-c84944a3367c/resourceGroups/Review/providers/Microsoft.Storage/storageAccounts/snapshotsUnderReview"
 	}
 }
-Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus -BodyParameter $params
+Invoke-MgBetaBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgBulkDeviceManagementManagedDeviceSetCloudPcReviewStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -57,7 +56,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BulkExpanded
 Aliases:
 
@@ -70,10 +69,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Bulk
 Aliases:
 
@@ -88,7 +87,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: BulkExpanded
 Aliases:
 
@@ -101,10 +100,10 @@ Accept wildcard characters: False
 
 ### -ReviewStatus
 cloudPcReviewStatus
-To construct, please use Get-Help -Online and see NOTES section for REVIEWSTATUS properties and create a hash table.
+To construct, see NOTES section for REVIEWSTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcReviewStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcReviewStatus
 Parameter Sets: BulkExpanded
 Aliases:
 
@@ -119,7 +118,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -135,7 +134,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -151,10 +150,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
+
 ## NOTES
 
 ALIASES
@@ -164,7 +165,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ManagedDeviceIds <String[]>]`: 
   - `[ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>]`: cloudPcReviewStatus
@@ -179,7 +180,7 @@ BODYPARAMETER `<IPaths19Pmn9HDevicemanagementManageddevicesMicrosoftGraphBulkset
     - `[SubscriptionName <String>]`: The name of the Azure subscription in which the Cloud PC snapshot is being saved.
     - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
-REVIEWSTATUS `<IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
+`REVIEWSTATUS <IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AzureStorageAccountId <String>]`: The resource ID of the Azure Storage account in which the Cloud PC snapshot is being saved.
   - `[AzureStorageAccountName <String>]`: The name of the Azure Storage account in which the Cloud PC snapshot is being saved.
@@ -192,3 +193,4 @@ REVIEWSTATUS `<IMicrosoftGraphCloudPcReviewStatus>`: cloudPcReviewStatus
   - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
+

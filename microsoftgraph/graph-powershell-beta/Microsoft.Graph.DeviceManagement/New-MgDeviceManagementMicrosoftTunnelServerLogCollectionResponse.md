@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementmicrosofttunnelserverlogcollectionresponse
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmicrosofttunnelserverlogcollectionresponse
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
+# New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
 
 ## SYNOPSIS
 Create new navigation property to microsoftTunnelServerLogCollectionResponses for deviceManagement
@@ -14,16 +14,16 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-AdditionalProperties <Hashtable>]
+New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse [-AdditionalProperties <Hashtable>]
  [-EndDateTime <DateTime>] [-ExpiryDateTime <DateTime>] [-Id <String>] [-RequestDateTime <DateTime>]
  [-ServerId <String>] [-SizeInBytes <Int64>] [-StartDateTime <DateTime>]
- [-Status <MicrosoftTunnelLogCollectionStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Status <MicrosoftTunnelLogCollectionStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse
- -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponse
+ -BodyParameter <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,13 +32,27 @@ Create new navigation property to microsoftTunnelServerLogCollectionResponses fo
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,10 +65,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity that stores the server log collection status.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 The end time of the logs collected
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 The time when the log collection is expired
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,11 +110,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 The time when the log collection was requested
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +144,7 @@ Accept wildcard characters: False
 ID of the server the log collection is requested upon
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +159,7 @@ Accept wildcard characters: False
 The size of the logs in bytes
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +174,7 @@ Accept wildcard characters: False
 The start time of the logs collected
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +189,7 @@ Accept wildcard characters: False
 Enum type that represent the status of log collection
 
 ```yaml
-Type: MicrosoftTunnelLogCollectionStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.MicrosoftTunnelLogCollectionStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,10 +236,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse
+
 ## NOTES
 
 ALIASES
@@ -235,9 +251,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Entity that stores the server log collection status.
+`BODYPARAMETER <IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Entity that stores the server log collection status.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EndDateTime <DateTime?>]`: The end time of the logs collected
   - `[ExpiryDateTime <DateTime?>]`: The time when the log collection is expired
   - `[RequestDateTime <DateTime?>]`: The time when the log collection was requested
@@ -247,3 +263,4 @@ BODYPARAMETER `<IMicrosoftGraphMicrosoftTunnelServerLogCollectionResponse>`: Ent
   - `[Status <MicrosoftTunnelLogCollectionStatus?>]`: Enum type that represent the status of log collection
 
 ## RELATED LINKS
+

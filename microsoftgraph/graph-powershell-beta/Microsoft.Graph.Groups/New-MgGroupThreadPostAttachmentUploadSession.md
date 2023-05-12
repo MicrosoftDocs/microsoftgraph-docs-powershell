@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/new-mggroupthreadpostattachmentuploadsession
+external help file:
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupthreadpostattachmentuploadsession
 schema: 2.0.0
 ---
 
-# New-MgGroupThreadPostAttachmentUploadSession
+# New-MgBetaGroupThreadPostAttachmentUploadSession
 
 ## SYNOPSIS
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
@@ -21,29 +21,31 @@ The following are the steps to attach a file to an Outlook item using an upload 
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupThreadPostAttachmentUploadSession -ConversationThreadId <String> -GroupId <String> -PostId <String>
- [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaGroupThreadPostAttachmentUploadSession -ConversationThreadId <String> -GroupId <String>
+ -PostId <String> [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgGroupThreadPostAttachmentUploadSession -ConversationThreadId <String> -GroupId <String> -PostId <String>
+New-MgBetaGroupThreadPostAttachmentUploadSession -ConversationThreadId <String> -GroupId <String>
+ -PostId <String>
  -BodyParameter <IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupThreadPostAttachmentUploadSession -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupThreadPostAttachmentUploadSession -InputObject <IGroupsIdentity>
+New-MgBetaGroupThreadPostAttachmentUploadSession -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupThreadPostAttachmentUploadSession -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AttachmentItem <IMicrosoftGraphAttachmentItem>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,13 +60,27 @@ The following are the steps to attach a file to an Outlook item using an upload 
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,10 +93,10 @@ Accept wildcard characters: False
 
 ### -AttachmentItem
 attachmentItem
-To construct, please use Get-Help -Online and see NOTES section for ATTACHMENTITEM properties and create a hash table.
+To construct, see NOTES section for ATTACHMENTITEM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachmentItem
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentItem
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -93,10 +109,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -111,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of conversationThread
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -126,8 +142,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -139,11 +155,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -157,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of post
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -172,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,11 +220,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUploadSession
+
 ## NOTES
 
 ALIASES
@@ -218,7 +237,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
+`ATTACHMENTITEM <IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentType <String>]`: attachmentType
   - `[ContentId <String>]`: The CID or Content-Id of the attachment for referencing in case of in-line attachments using <img src='cid:contentId'> tag in HTML messages. Optional.
@@ -227,7 +246,7 @@ ATTACHMENTITEM `<IMicrosoftGraphAttachmentItem>`: attachmentItem
   - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
   - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-BODYPARAMETER `<IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdAttachmentsMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttachmentItem <IMicrosoftGraphAttachmentItem>]`: attachmentItem
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -238,7 +257,7 @@ BODYPARAMETER `<IPaths81LtxxGroupsGroupIdThreadsConversationthreadIdPostsPostIdA
     - `[Name <String>]`: The display name of the attachment. This can be a descriptive string and does not have to be the actual file name. Required.
     - `[Size <Int64?>]`: The length of the attachment in bytes. Required.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -260,11 +279,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -277,7 +294,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -288,3 +304,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

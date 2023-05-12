@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Search-help.xml
-Module Name: Microsoft.Graph.Search
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.search/new-mgsearchacronym
+external help file:
+Module Name: Microsoft.Graph.Beta.Search
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetasearchacronym
 schema: 2.0.0
 ---
 
-# New-MgSearchAcronym
+# New-MgBetaSearchAcronym
 
 ## SYNOPSIS
 Create a new acronym object.
@@ -14,14 +14,15 @@ Create a new acronym object.
 
 ### CreateExpanded (Default)
 ```
-New-MgSearchAcronym [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
+New-MgBetaSearchAcronym [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphSearchIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-StandsFor <String>] [-State <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StandsFor <String>] [-State <String>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSearchAcronym -BodyParameter <IMicrosoftGraphSearchAcronym> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,9 +30,9 @@ Create a new acronym object.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgSearchAcronym Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Search
+Import-Module Microsoft.Graph.Beta.Search
 $params = @{
 	DisplayName = "DNN"
 	StandsFor = "Deep Neural Network"
@@ -39,11 +40,10 @@ $params = @{
 	WebUrl = "http://microsoft.com/deep-neural-network"
 	State = "draft"
 }
-New-MgSearchAcronym -BodyParameter $params
+New-MgBetaSearchAcronym -BodyParameter $params
 ```
 
-This example shows how to use the New-MgSearchAcronym Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -51,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,10 +64,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 acronym
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchAcronym
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +82,7 @@ Accept wildcard characters: False
 Search answer description shown on search results page.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Search answer name displayed in search results.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,11 +109,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -126,10 +126,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSearchIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +145,7 @@ Timestamp of when the search answer is created or edited.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +160,7 @@ Accept wildcard characters: False
 What the acronym stands for.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ Accept wildcard characters: False
 answerState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Search answer URL link.
 When users click this search answer in search results, they will go to this URL.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -238,10 +238,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSearchAcronym
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSearchAcronym
+
 ## NOTES
 
 ALIASES
@@ -251,7 +253,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
+`BODYPARAMETER <IMicrosoftGraphSearchAcronym>`: acronym
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Search answer description shown on search results page.
   - `[DisplayName <String>]`: Search answer name displayed in search results.
@@ -265,11 +267,11 @@ BODYPARAMETER `<IMicrosoftGraphSearchAcronym>`: acronym
     - `[User <IMicrosoftGraphSearchIdentity>]`: identity
   - `[LastModifiedDateTime <DateTime?>]`: Timestamp of when the search answer is created or edited. Read-only.
   - `[WebUrl <String>]`: Search answer URL link. When users click this search answer in search results, they will go to this URL.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[StandsFor <String>]`: What the acronym stands for.
   - `[State <String>]`: answerState
 
-LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphSearchIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -279,3 +281,4 @@ LASTMODIFIEDBY `<IMicrosoftGraphSearchIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
+

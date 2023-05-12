@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mgpolicypermissiongrantpolicyinclude
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetapolicypermissiongrantpolicyinclude
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgPolicyPermissionGrantPolicyInclude
+# New-MgBetaPolicyPermissionGrantPolicyInclude
 
 ## SYNOPSIS
 Add conditions under which a permission grant event is *included* in a permission grant policy.
@@ -16,34 +15,34 @@ You do this by adding a permissionGrantConditionSet to the **includes** collecti
 
 ### CreateExpanded (Default)
 ```
-New-MgPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
- [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
- [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
- [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-WhatIf] [-Confirm]
+New-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
+ [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationsFromVerifiedPublisherOnly]
+ [-ClientApplicationTenantIds <String[]>] [-Id <String>] [-PermissionClassification <String>]
+ [-Permissions <String[]>] [-PermissionType <String>] [-ResourceApplication <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId <String>
- -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet1> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
- [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationTenantIds <String[]>]
- [-ClientApplicationsFromVerifiedPublisherOnly] [-Id <String>] [-PermissionClassification <String>]
- [-PermissionType <String>] [-Permissions <String[]>] [-ResourceApplication <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId <String>
+ -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPermissionGrantConditionSet> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaPolicyPermissionGrantPolicyInclude -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-CertifiedClientApplicationsOnly] [-ClientApplicationIds <String[]>]
+ [-ClientApplicationPublisherIds <String[]>] [-ClientApplicationsFromVerifiedPublisherOnly]
+ [-ClientApplicationTenantIds <String[]>] [-Id <String>] [-PermissionClassification <String>]
+ [-Permissions <String[]>] [-PermissionType <String>] [-ResourceApplication <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,10 +51,11 @@ You do this by adding a permissionGrantConditionSet to the **includes** collecti
 
 ## EXAMPLES
 
-### Example 1: Create a permission grant policy include
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
-New-MgPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000"  | fl
+Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+New-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000"  | fl
+```
 
 ClientApplicationIds                        : {all}
 ClientApplicationPublisherIds               : {all}
@@ -67,9 +67,6 @@ PermissionType                              : application
 Permissions                                 : {00000000-0000-0000-0000-000000000000}
 ResourceApplication                         : 00000000-0000-0000-0000-000000000000
 AdditionalProperties                        : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('testtenant-sampleapp-permissions')/includes/$entity]}
-```
-
-This command creates a new permission grant policy include configuration for the specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
@@ -77,7 +74,7 @@ This command creates a new permission grant policy include configuration for the
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -90,10 +87,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 permissionGrantConditionSet
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionGrantConditionSet1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -110,7 +107,7 @@ Set to false to match on any other client app.
 Default is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +123,7 @@ A list of appId values for the client applications to match with, or a list with
 Default is the single value all.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +139,7 @@ A list of Microsoft Partner Network (MPN) IDs for verified publishers of the cli
 Default is the single value all.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +156,7 @@ Set to false to match on any client app, even if it does not have a verified pub
 Default is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +172,7 @@ A list of Azure Active Directory tenant IDs in which the client application is r
 Default is the single value all.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -187,11 +184,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,11 +201,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -223,7 +220,7 @@ The permission classification for the permission being granted, or all to match 
 Default is all.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -238,8 +235,8 @@ Accept wildcard characters: False
 The unique identifier of permissionGrantPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -257,7 +254,7 @@ The id of resource-specific application permissions can be found in the resource
 Default is the single value all.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +269,7 @@ Accept wildcard characters: False
 permissionType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +286,7 @@ the API) for which a permission is being granted, or any to match with any resou
 Default is any.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +301,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -320,7 +317,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -336,11 +333,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet1
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermissionGrantConditionSet
+
 ## NOTES
 
 ALIASES
@@ -350,9 +350,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPermissionGrantConditionSet1>`: permissionGrantConditionSet
+`BODYPARAMETER <IMicrosoftGraphPermissionGrantConditionSet>`: permissionGrantConditionSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CertifiedClientApplicationsOnly <Boolean?>]`: Set to true to only match on client applications that are Microsoft 365 certified. Set to false to match on any other client app. Default is false.
   - `[ClientApplicationIds <String[]>]`: A list of appId values for the client applications to match with, or a list with the single value all to match any client application. Default is the single value all.
   - `[ClientApplicationPublisherIds <String[]>]`: A list of Microsoft Partner Network (MPN) IDs for verified publishers of the client application, or a list with the single value all to match with client apps from any publisher. Default is the single value all.
@@ -363,7 +363,7 @@ BODYPARAMETER `<IMicrosoftGraphPermissionGrantConditionSet1>`: permissionGrantCo
   - `[Permissions <String[]>]`: The list of id values for the specific permissions to match with, or a list with the single value all to match with any permission. The id of delegated permissions can be found in the publishedPermissionScopes property of the API's **servicePrincipal** object. The id of application permissions can be found in the appRoles property of the API's **servicePrincipal** object. The id of resource-specific application permissions can be found in the resourceSpecificApplicationPermissions property of the API's **servicePrincipal** object. Default is the single value all.
   - `[ResourceApplication <String>]`: The appId of the resource application (e.g. the API) for which a permission is being granted, or any to match with any resource application or API. Default is any.
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -400,6 +400,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -438,3 +439,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

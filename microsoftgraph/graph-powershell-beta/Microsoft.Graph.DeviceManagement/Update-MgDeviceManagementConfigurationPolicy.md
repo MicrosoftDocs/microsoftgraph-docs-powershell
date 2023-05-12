@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicy
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementConfigurationPolicy
+# Update-MgBetaDeviceManagementConfigurationPolicy
 
 ## SYNOPSIS
 Update the navigation property configurationPolicies in deviceManagement
@@ -14,7 +14,7 @@ Update the navigation property configurationPolicies in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
+Update-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
  [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CreationSource <String>] [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
@@ -22,20 +22,25 @@ Update-MgDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolic
  [-PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>] [-RoleScopeTagIds <String[]>]
  [-SettingCount <Int32>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
- [-TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicy> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementConfigurationPolicy -DeviceManagementConfigurationPolicyId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>] [-CreatedDateTime <DateTime>]
  [-CreationSource <String>] [-Description <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
@@ -43,15 +48,8 @@ Update-MgDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIden
  [-PriorityMetaData <IMicrosoftGraphDeviceManagementPriorityMetaData>] [-RoleScopeTagIds <String[]>]
  [-SettingCount <Int32>] [-Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]
  [-Technologies <DeviceManagementConfigurationTechnologies>]
- [-TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementConfigurationPolicy -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationPolicy> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TemplateReference <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -59,13 +57,27 @@ Update the navigation property configurationPolicies in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -78,10 +90,10 @@ Accept wildcard characters: False
 
 ### -Assignments
 Policy assignments
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,10 +106,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Management Configuration Policy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicy
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -112,7 +124,7 @@ Accept wildcard characters: False
 Policy creation date and time
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +139,7 @@ Accept wildcard characters: False
 Policy creation source
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,7 +154,7 @@ Accept wildcard characters: False
 Policy description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,8 +169,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementConfigurationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -169,11 +181,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,11 +198,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -204,7 +216,7 @@ Accept wildcard characters: False
 Policy last modification date and time
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,23 +231,8 @@ Accept wildcard characters: False
 Policy name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -249,7 +246,7 @@ Accept wildcard characters: False
 Supported platform types.
 
 ```yaml
-Type: DeviceManagementConfigurationPlatforms
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationPlatforms
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,10 +259,10 @@ Accept wildcard characters: False
 
 ### -PriorityMetaData
 Priority metadata of the policy.
-To construct, please use Get-Help -Online and see NOTES section for PRIORITYMETADATA properties and create a hash table.
+To construct, see NOTES section for PRIORITYMETADATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementPriorityMetaData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementPriorityMetaData
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +277,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -295,7 +292,7 @@ Accept wildcard characters: False
 Number of settings
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -308,10 +305,10 @@ Accept wildcard characters: False
 
 ### -Settings
 Policy settings
-To construct, please use Get-Help -Online and see NOTES section for SETTINGS properties and create a hash table.
+To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSetting[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +323,7 @@ Accept wildcard characters: False
 Describes which technology this setting can be deployed with
 
 ```yaml
-Type: DeviceManagementConfigurationTechnologies
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationTechnologies
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -339,10 +336,10 @@ Accept wildcard characters: False
 
 ### -TemplateReference
 Policy template reference information
-To construct, please use Get-Help -Online and see NOTES section for TEMPLATEREFERENCE properties and create a hash table.
+To construct, see NOTES section for TEMPLATEREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -357,7 +354,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -373,7 +370,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -389,11 +386,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicy
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationPolicy
+
 ## NOTES
 
 ALIASES
@@ -403,23 +403,23 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment\[]>: Policy assignments
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ASSIGNMENTS <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>`: Policy assignments
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
   - `[SourceId <String>]`: The identifier of the source of the assignment.
-  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+  - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Management Configuration Policy
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Management Configuration Policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Assignments <IMicrosoftGraphDeviceManagementConfigurationPolicyAssignment[]>]`: Policy assignments
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
     - `[SourceId <String>]`: The identifier of the source of the assignment.
-    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget1>]`: Base type for assignment targets.
+    - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
@@ -435,9 +435,9 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Man
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[SettingCount <Int32?>]`: Number of settings
   - `[Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]`: Policy settings
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
       - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -477,7 +477,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationPolicy>`: Device Man
     - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
     - `[TemplateId <String>]`: Template id
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -609,15 +609,17 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-PRIORITYMETADATA `<IMicrosoftGraphDeviceManagementPriorityMetaData>`: Priority metadata of the policy.
+`PRIORITYMETADATA <IMicrosoftGraphDeviceManagementPriorityMetaData>`: Priority metadata of the policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Priority <Int32?>]`: Priority of the policy. Valid values 1 to 500
 
-SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settings
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting[]>`: Policy settings
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
     - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -652,11 +654,10 @@ SETTINGS <IMicrosoftGraphDeviceManagementConfigurationSetting\[]>: Policy settin
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
-TEMPLATEREFERENCE `<IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>`: Policy template reference information
+`TEMPLATEREFERENCE <IMicrosoftGraphDeviceManagementConfigurationPolicyTemplateReference>`: Policy template reference information
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TemplateFamily <DeviceManagementConfigurationTemplateFamily?>]`: Describes the TemplateFamily for the Template entity
   - `[TemplateId <String>]`: Template id
 
 ## RELATED LINKS
 
-## RELATED LINKS

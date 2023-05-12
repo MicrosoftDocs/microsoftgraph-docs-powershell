@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgidentityb2xuserflowlanguagedefaultpage
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetaidentityb2xuserflowlanguagedefaultpage
 schema: 2.0.0
 ---
 
-# Get-MgIdentityB2XUserFlowLanguageDefaultPage
+# Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage
 
 ## SYNOPSIS
 Collection of pages with the default content to display in a user flow for a specified language.
@@ -13,24 +13,24 @@ This collection does not allow any kind of modification.
 
 ## SYNTAX
 
-### List1 (Default)
+### List (Default)
 ```
-Get-MgIdentityB2XUserFlowLanguageDefaultPage -B2XIdentityUserFlowId <String>
- -UserFlowLanguageConfigurationId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage -B2XIdentityUserFlowId <String>
+ -UserFlowLanguageConfigurationId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
-### Get1
+### Get
 ```
-Get-MgIdentityB2XUserFlowLanguageDefaultPage -B2XIdentityUserFlowId <String>
+Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage -B2XIdentityUserFlowId <String>
  -UserFlowLanguageConfigurationId <String> -UserFlowLanguagePageId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdentity>
+Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -40,14 +40,28 @@ This collection does not allow any kind of modification.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -61,8 +75,8 @@ Accept wildcard characters: False
 The unique identifier of b2xIdentityUserFlow
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -77,8 +91,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases: CV
 
 Required: False
@@ -92,7 +106,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -107,8 +121,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -120,11 +134,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -138,8 +152,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -153,7 +167,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -168,8 +182,23 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -183,8 +212,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1
+Type: System.String[]
+Parameter Sets: List
 Aliases: OrderBy
 
 Required: False
@@ -198,8 +227,8 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List1
+Type: System.Int32
+Parameter Sets: List
 Aliases: Limit
 
 Required: False
@@ -213,8 +242,8 @@ Accept wildcard characters: False
 The unique identifier of userFlowLanguageConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -228,26 +257,11 @@ Accept wildcard characters: False
 The unique identifier of userFlowLanguagePage
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -259,11 +273,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserFlowLanguagePage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserFlowLanguagePage
+
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -273,7 +290,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -310,6 +327,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -348,3 +366,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

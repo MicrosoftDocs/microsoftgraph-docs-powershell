@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgcreateorgetuseronlinemeeting
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetacreateorgetuseronlinemeeting
 schema: 2.0.0
 ---
 
-# Invoke-MgCreateOrGetUserOnlineMeeting
+# Invoke-MgBetaCreateOrGetUserOnlineMeeting
 
 ## SYNOPSIS
 Create an onlineMeeting object with a custom specified external ID.
@@ -15,32 +15,32 @@ If the external ID already exists, this API will return the onlineMeeting object
 
 ### CreateExpanded (Default)
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>]
+Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -UserId <String>
+Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId <String>
  -BodyParameter <IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-Invoke-MgCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity>
+Invoke-MgBetaCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+Invoke-MgBetaCreateOrGetUserOnlineMeeting -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>]
+ [-ExternalId <String>] [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>]
+ [-Subject <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,9 +49,9 @@ If the external ID already exists, this API will return the onlineMeeting object
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
 	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
@@ -72,15 +72,14 @@ $params = @{
 	}
 }
 # A UPN can also be used as -UserId.
-Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	ChatInfo = @{
 		ThreadId = "19:7ebda77322dd4505ac4dedb5b67df076@thread.tacv2"
@@ -103,11 +102,10 @@ $params = @{
 	Subject = "Create a meeting with customId provided"
 }
 # A UPN can also be used as -UserId.
-Invoke-MgCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -115,7 +113,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -128,10 +126,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -144,10 +142,10 @@ Accept wildcard characters: False
 
 ### -ChatInfo
 chatInfo
-To construct, please use Get-Help -Online and see NOTES section for CHATINFO properties and create a hash table.
+To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +160,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,11 +188,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -206,10 +204,10 @@ Accept wildcard characters: False
 
 ### -Participants
 meetingParticipants
-To construct, please use Get-Help -Online and see NOTES section for PARTICIPANTS properties and create a hash table.
+To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingParticipants
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingParticipants
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +237,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -254,8 +252,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -269,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -285,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,11 +299,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
+
 ## NOTES
 
 ALIASES
@@ -315,11 +316,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
     - `[ReplyChainMessageId <String>]`: The ID of the reply message.
     - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
   - `[EndDateTime <DateTime?>]`: 
@@ -343,13 +344,13 @@ BODYPARAMETER `<IPaths1H47062UsersUserIdOnlinemeetingsMicrosoftGraphCreateorgetP
   - `[StartDateTime <DateTime?>]`: 
   - `[Subject <String>]`: 
 
-CHATINFO `<IMicrosoftGraphChatInfo>`: chatInfo
+`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier of a message in a Microsoft Teams channel.
+  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
   - `[ReplyChainMessageId <String>]`: The ID of the reply message.
   - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -383,7 +384,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -392,7 +392,7 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
+`PARTICIPANTS <IMicrosoftGraphMeetingParticipants>`: meetingParticipants
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
     - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -410,3 +410,4 @@ PARTICIPANTS `<IMicrosoftGraphMeetingParticipants>`: meetingParticipants
   - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportsecurity
+external help file:
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurity
 schema: 2.0.0
 ---
 
-# Get-MgReportSecurity
+# Get-MgBetaReportSecurity
 
 ## SYNOPSIS
 Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
@@ -13,7 +13,7 @@ Provides the ability to launch a realistic simulated phishing attack that organi
 ## SYNTAX
 
 ```
-Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,13 +21,27 @@ Provides the ability to launch a realistic simulated phishing attack that organi
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -42,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,8 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

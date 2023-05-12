@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicycompliancechangeupdatepolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/get-mgbetawindowsupdatespolicycompliancechangeupdatepolicy
 schema: 2.0.0
 ---
 
-# Get-MgWindowsUpdatesPolicyComplianceChangeUpdatePolicy
+# Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy
 
 ## SYNOPSIS
 The policy this compliance change is a member of.
@@ -14,13 +14,13 @@ The policy this compliance change is a member of.
 
 ### Get (Default)
 ```
-Get-MgWindowsUpdatesPolicyComplianceChangeUpdatePolicy -ComplianceChangeId <String> -UpdatePolicyId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy -ComplianceChangeId <String>
+ -UpdatePolicyId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgWindowsUpdatesPolicyComplianceChangeUpdatePolicy -InputObject <IWindowsUpdatesIdentity>
+Get-MgBetaWindowsUpdatesPolicyComplianceChangeUpdatePolicy -InputObject <IWindowsUpdatesIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -29,12 +29,19 @@ The policy this compliance change is a member of.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add example code here }}
+{{ Add code here }}
 ```
 
-{{ Add example description here }}
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -42,7 +49,7 @@ PS C:\> {{ Add example code here }}
 The unique identifier of complianceChange
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -57,7 +64,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -70,10 +77,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -88,7 +95,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -103,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of updatePolicy
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -119,14 +126,30 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatePolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatePolicy
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+Get-MgBetaWuPolicyComplianceChangeUpdatePolicy
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicycompliancechangeupdatepolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/get-mgwindowsupdatespolicycompliancechangeupdatepolicy)
 

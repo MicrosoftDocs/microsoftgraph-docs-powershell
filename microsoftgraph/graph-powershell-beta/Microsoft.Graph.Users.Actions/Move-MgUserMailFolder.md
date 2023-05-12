@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/move-mgusermailfolder
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolder
 schema: 2.0.0
 ---
 
-# Move-MgUserMailFolder
+# Move-MgBetaUserMailFolder
 
 ## SYNOPSIS
 Move a mailfolder and its contents to another mailfolder.
@@ -14,28 +14,28 @@ Move a mailfolder and its contents to another mailfolder.
 
 ### MoveExpanded (Default)
 ```
-Move-MgUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-DestinationId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Move
 ```
-Move-MgUserMailFolder -MailFolderId <String> -UserId <String>
+Move-MgBetaUserMailFolder -MailFolderId <String> -UserId <String>
  -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MoveViaIdentityExpanded
-```
-Move-MgUserMailFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
-Move-MgUserMailFolder -InputObject <IUsersActionsIdentity>
+Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MoveViaIdentityExpanded
+```
+Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-DestinationId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,18 +43,17 @@ Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
 
-### Example 1: Using the Move-MgUserMailFolder Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	DestinationId = "destinationId-value"
 }
 # A UPN can also be used as -UserId.
-Move-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+Move-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
 
-This example shows how to use the Move-MgUserMailFolder Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -62,7 +61,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -75,10 +74,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Move, MoveViaIdentity
 Aliases:
 
@@ -93,7 +92,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -106,11 +105,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: MoveViaIdentity, MoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -124,8 +123,8 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: MoveExpanded, Move
+Type: System.String
+Parameter Sets: Move, MoveExpanded
 Aliases:
 
 Required: True
@@ -139,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: MoveExpanded, Move
+Type: System.String
+Parameter Sets: Move, MoveExpanded
 Aliases:
 
 Required: True
@@ -154,7 +153,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -170,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -186,11 +185,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailFolder
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailFolder
+
 ## NOTES
 
 ALIASES
@@ -200,11 +202,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationId <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -238,7 +240,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -248,3 +249,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdirectoryimpactedresource
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryimpactedresource
 schema: 2.0.0
 ---
 
-# New-MgDirectoryImpactedResource
+# New-MgBetaDirectoryImpactedResource
 
 ## SYNOPSIS
 Create new navigation property to impactedResources for directory
@@ -14,16 +14,17 @@ Create new navigation property to impactedResources for directory
 
 ### CreateExpanded (Default)
 ```
-New-MgDirectoryImpactedResource [-AddedDateTime <DateTime>] [-AdditionalDetails <IMicrosoftGraphKeyValue[]>]
- [-AdditionalProperties <Hashtable>] [-ApiUrl <String>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <String>] [-LastModifiedDateTime <String>] [-Owner <String>] [-PortalUrl <String>]
- [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>] [-RecommendationId <String>] [-ResourceType <String>]
- [-Status <String>] [-SubjectId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDirectoryImpactedResource [-AddedDateTime <DateTime>]
+ [-AdditionalDetails <IMicrosoftGraphKeyValue[]>] [-AdditionalProperties <Hashtable>] [-ApiUrl <String>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedBy <String>] [-LastModifiedDateTime <String>]
+ [-Owner <String>] [-PortalUrl <String>] [-PostponeUntilDateTime <DateTime>] [-Rank <Int32>]
+ [-RecommendationId <String>] [-ResourceType <String>] [-Status <String>] [-SubjectId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResource> [-WhatIf] [-Confirm]
+New-MgBetaDirectoryImpactedResource -BodyParameter <IMicrosoftGraphImpactedResource> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,13 +33,27 @@ Create new navigation property to impactedResources for directory
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AddedDateTime
 The date and time when the impactedResource object was initially associated with the recommendation.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,10 +66,10 @@ Accept wildcard characters: False
 
 ### -AdditionalDetails
 Additional information unique to the impactedResource to help contextualize the recommendation.
-To construct, please use Get-Help -Online and see NOTES section for ADDITIONALDETAILS properties and create a hash table.
+To construct, see NOTES section for ADDITIONALDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValue[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValue[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +84,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +99,7 @@ Accept wildcard characters: False
 The URL link to the corresponding Azure AD resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,10 +112,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 impactedResource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImpactedResource
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
 Parameter Sets: Create
 Aliases:
 
@@ -115,7 +130,7 @@ Accept wildcard characters: False
 Friendly name of the Azure AD resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,11 +142,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +161,7 @@ Accept wildcard characters: False
 Name of the user or service that last updated the status.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +176,7 @@ Accept wildcard characters: False
 The date and time when the status was last updated.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +191,7 @@ Accept wildcard characters: False
 The user responsible for maintaining the resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +206,7 @@ Accept wildcard characters: False
 The URL link to the corresponding Azure AD portal page of the resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +221,7 @@ Accept wildcard characters: False
 The future date and time when the status of a postponed impactedResource will be active again.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +237,7 @@ Indicates the importance of the resource.
 A resource with a rank equal to 1 is of the highest importance.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +252,7 @@ Accept wildcard characters: False
 The unique identifier of the recommendation that the resource is associated with.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +268,7 @@ Indicates the type of Azure AD resource.
 Examples include user, application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +283,7 @@ Accept wildcard characters: False
 recommendationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -284,7 +299,7 @@ The related unique identifier, depending on the resourceType.
 For example, this property is set to the applicationId if the resourceType is an application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -299,7 +314,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +330,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -331,10 +346,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImpactedResource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImpactedResource
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImpactedResource
+
 ## NOTES
 
 ALIASES
@@ -344,17 +361,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ADDITIONALDETAILS <IMicrosoftGraphKeyValue\[]>: Additional information unique to the impactedResource to help contextualize the recommendation.
-  - `[Key <String>]`: Key for the key-value pair.
-  - `[Value <String>]`: Value for the key-value pair.
+`ADDITIONALDETAILS <IMicrosoftGraphKeyValue[]>`: Additional information unique to the impactedResource to help contextualize the recommendation.
+  - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+  - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
 
-BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
+`BODYPARAMETER <IMicrosoftGraphImpactedResource>`: impactedResource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-    - `[Key <String>]`: Key for the key-value pair.
-    - `[Value <String>]`: Value for the key-value pair.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+    - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
   - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
   - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
   - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -369,3 +386,4 @@ BODYPARAMETER `<IMicrosoftGraphImpactedResource>`: impactedResource
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
 ## RELATED LINKS
+

@@ -1,47 +1,49 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcallparticipant
+external help file:
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationcallparticipant
 schema: 2.0.0
 ---
 
-# Update-MgCommunicationCallParticipant
+# Update-MgBetaCommunicationCallParticipant
 
 ## SYNOPSIS
 Update the navigation property participants in communications
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo1>]
- [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream1[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>]
- [-RemovedState <IMicrosoftGraphRemovedState>] [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]
- [-RosterSequenceNumber <Int64>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String>
- -BodyParameter <IMicrosoftGraphParticipant1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationCallParticipant -CallId <String> -ParticipantId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>]
+ [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>]
+ [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
+ [-RemovedState <IMicrosoftGraphRemovedState>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update
 ```
-Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo1>]
- [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream1[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo1>]
- [-RemovedState <IMicrosoftGraphRemovedState>] [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]
- [-RosterSequenceNumber <Int64>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationCallParticipant -CallId <String> -ParticipantId <String>
+ -BodyParameter <IMicrosoftGraphParticipant> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentity
 ```
-Update-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphParticipant1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphParticipant> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>]
+ [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>]
+ [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
+ [-RemovedState <IMicrosoftGraphRemovedState>]
+ [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +51,28 @@ Update the navigation property participants in communications
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -68,11 +84,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 participant
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipant
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -86,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -98,12 +114,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,11 +131,11 @@ Accept wildcard characters: False
 
 ### -Info
 participantInfo
-To construct, please use Get-Help -Online and see NOTES section for INFO properties and create a hash table.
+To construct, see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipantInfo
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -131,11 +147,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -149,8 +165,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -164,8 +180,8 @@ Accept wildcard characters: False
 true if the participant is in lobby.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -179,8 +195,8 @@ Accept wildcard characters: False
 true if the participant is muted (client or server muted).
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -192,11 +208,11 @@ Accept wildcard characters: False
 
 ### -MediaStreams
 The list of media streams.
-To construct, please use Get-Help -Online and see NOTES section for MEDIASTREAMS properties and create a hash table.
+To construct, see NOTES section for MEDIASTREAMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMediaStream1[]
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMediaStream[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -210,8 +226,8 @@ Accept wildcard characters: False
 A blob of data provided by the participant in the roster.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,8 +241,8 @@ Accept wildcard characters: False
 The unique identifier of participant
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -236,28 +252,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -RecordingInfo
 recordingInfo
-To construct, please use Get-Help -Online and see NOTES section for RECORDINGINFO properties and create a hash table.
+To construct, see NOTES section for RECORDINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecordingInfo1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecordingInfo
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -269,11 +270,11 @@ Accept wildcard characters: False
 
 ### -RemovedState
 removedState
-To construct, please use Get-Help -Online and see NOTES section for REMOVEDSTATE properties and create a hash table.
+To construct, see NOTES section for REMOVEDSTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemovedState
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemovedState
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -285,11 +286,11 @@ Accept wildcard characters: False
 
 ### -RestrictedExperience
 onlineMeetingRestricted
-To construct, please use Get-Help -Online and see NOTES section for RESTRICTEDEXPERIENCE properties and create a hash table.
+To construct, see NOTES section for RESTRICTEDEXPERIENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnlineMeetingRestricted
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeetingRestricted
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -300,11 +301,11 @@ Accept wildcard characters: False
 ```
 
 ### -RosterSequenceNumber
-.
+Indicates the roster sequence number the participant was last updated in.
 
 ```yaml
-Type: Int64
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int64
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -318,7 +319,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -334,7 +335,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -350,11 +351,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParticipant1
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipant
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipant
+
 ## NOTES
 
 ALIASES
@@ -364,10 +368,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
+`BODYPARAMETER <IMicrosoftGraphParticipant>`: participant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Info <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Info <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
     - `[EndpointType <String>]`: endpointType
@@ -387,28 +391,28 @@ BODYPARAMETER `<IMicrosoftGraphParticipant1>`: participant
   - `[IsIdentityAnonymized <Boolean?>]`: 
   - `[IsInLobby <Boolean?>]`: true if the participant is in lobby.
   - `[IsMuted <Boolean?>]`: true if the participant is muted (client or server muted).
-  - `[MediaStreams <IMicrosoftGraphMediaStream1[]>]`: The list of media streams.
+  - `[MediaStreams <IMicrosoftGraphMediaStream[]>]`: The list of media streams.
     - `[Direction <String>]`: mediaDirection
     - `[Label <String>]`: The media stream label.
-    - `[MediaType <String>]`: 
+    - `[MediaType <String>]`: modality
     - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
     - `[SourceId <String>]`: The source ID.
   - `[Metadata <String>]`: A blob of data provided by the participant in the roster.
-  - `[RecordingInfo <IMicrosoftGraphRecordingInfo1>]`: recordingInfo
+  - `[RecordingInfo <IMicrosoftGraphRecordingInfo>]`: recordingInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+    - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[RecordingStatus <String>]`: recordingStatus
   - `[RemovedState <IMicrosoftGraphRemovedState>]`: removedState
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Reason <String>]`: 
+    - `[Reason <String>]`: The removal reason for the participant resource.
   - `[RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]`: onlineMeetingRestricted
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
     - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
-  - `[RosterSequenceNumber <Int64?>]`: 
+  - `[RosterSequenceNumber <Int64?>]`: Indicates the roster sequence number the participant was last updated in.
 
-INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
+`INFO <IMicrosoftGraphParticipantInfo>`: participantInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
   - `[EndpointType <String>]`: endpointType
@@ -426,7 +430,7 @@ INFO `<IMicrosoftGraphParticipantInfo1>`: participantInfo
   - `[PlatformId <String>]`: The client platform ID of the participant. Read-only.
   - `[Region <String>]`: The home region of the participant. This can be a country, a continent, or a larger geographic region. This does not change based on the participant's current physical location, unlike countryCode. Read-only.
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -436,6 +440,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -444,16 +449,16 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-MEDIASTREAMS <IMicrosoftGraphMediaStream1\[]>: The list of media streams.
+`MEDIASTREAMS <IMicrosoftGraphMediaStream[]>`: The list of media streams.
   - `[Direction <String>]`: mediaDirection
   - `[Label <String>]`: The media stream label.
-  - `[MediaType <String>]`: 
+  - `[MediaType <String>]`: modality
   - `[ServerMuted <Boolean?>]`: Indicates whether the media is muted by the server.
   - `[SourceId <String>]`: The source ID.
 
-RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
+`RECORDINGINFO <IMicrosoftGraphRecordingInfo>`: recordingInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[InitiatedBy <IMicrosoftGraphParticipantInfo1>]`: participantInfo
+  - `[InitiatedBy <IMicrosoftGraphParticipantInfo>]`: participantInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[CountryCode <String>]`: The ISO 3166-1 Alpha-2 country code of the participant's best estimated physical location at the start of the call. Read-only.
     - `[EndpointType <String>]`: endpointType
@@ -473,13 +478,14 @@ RECORDINGINFO `<IMicrosoftGraphRecordingInfo1>`: recordingInfo
   - `[Initiator <IMicrosoftGraphIdentitySet>]`: identitySet
   - `[RecordingStatus <String>]`: recordingStatus
 
-REMOVEDSTATE `<IMicrosoftGraphRemovedState>`: removedState
+`REMOVEDSTATE <IMicrosoftGraphRemovedState>`: removedState
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Reason <String>]`: 
+  - `[Reason <String>]`: The removal reason for the participant resource.
 
-RESTRICTEDEXPERIENCE `<IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
+`RESTRICTEDEXPERIENCE <IMicrosoftGraphOnlineMeetingRestricted>`: onlineMeetingRestricted
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentSharingDisabled <String>]`: onlineMeetingContentSharingDisabledReason
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
+

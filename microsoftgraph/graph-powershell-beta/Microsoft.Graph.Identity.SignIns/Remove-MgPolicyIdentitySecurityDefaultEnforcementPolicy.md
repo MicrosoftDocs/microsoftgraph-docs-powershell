@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/remove-mgpolicyidentitysecuritydefaultenforcementpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetapolicyidentitysecuritydefaultenforcementpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy
+# Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ## SYNOPSIS
 Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
@@ -14,8 +13,8 @@ Delete navigation property identitySecurityDefaultsEnforcementPolicy for policie
 ## SYNTAX
 
 ```
-Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -23,20 +22,16 @@ Delete navigation property identitySecurityDefaultsEnforcementPolicy for policie
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 $params = @{
 	IsEnabled = $false
 }
 
-Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
-```
-
-This example shows how to use the Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
 
 ## PARAMETERS
 
@@ -44,7 +39,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -59,7 +54,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -74,7 +69,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -90,7 +85,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -109,8 +104,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

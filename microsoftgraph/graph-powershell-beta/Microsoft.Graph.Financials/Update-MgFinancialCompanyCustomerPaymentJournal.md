@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
-Module Name: Microsoft.Graph.Financials
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/update-mgfinancialcompanycustomerpaymentjournal
+external help file:
+Module Name: Microsoft.Graph.Beta.Financials
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanycustomerpaymentjournal
 schema: 2.0.0
 ---
 
-# Update-MgFinancialCompanyCustomerPaymentJournal
+# Update-MgBetaFinancialCompanyCustomerPaymentJournal
 
 ## SYNOPSIS
 Update the navigation property customerPaymentJournals in financials
@@ -14,32 +14,32 @@ Update the navigation property customerPaymentJournals in financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgFinancialCompanyCustomerPaymentJournal -CompanyId <String> -CustomerPaymentJournalId <String>
+Update-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String> -CustomerPaymentJournalId <String>
  [-Account <IMicrosoftGraphAccount>] [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>]
  [-BalancingAccountNumber <String>] [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgFinancialCompanyCustomerPaymentJournal -CompanyId <String> -CustomerPaymentJournalId <String>
- -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
- [-Account <IMicrosoftGraphAccount>] [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>]
- [-BalancingAccountNumber <String>] [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String> -CustomerPaymentJournalId <String>
+ -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
+ [-Account <IMicrosoftGraphAccount>] [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>]
+ [-BalancingAccountNumber <String>] [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,28 @@ Update the navigation property customerPaymentJournals in financials
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Account
 account
-To construct, please use Get-Help -Online and see NOTES section for ACCOUNT properties and create a hash table.
+To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccount
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,10 +126,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 customerPaymentJournal
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPaymentJournal
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -130,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### -CompanyId
-key: id of company
+The unique identifier of company
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -157,11 +171,11 @@ Accept wildcard characters: False
 ```
 
 ### -CustomerPaymentJournalId
-key: id of customerPaymentJournal
+The unique identifier of customerPaymentJournal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -173,10 +187,10 @@ Accept wildcard characters: False
 
 ### -CustomerPayments
 .
-To construct, please use Get-Help -Online and see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
+To construct, see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPayment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPayment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +205,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +221,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,11 +234,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -238,23 +252,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -268,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,11 +299,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+
 ## NOTES
 
 ALIASES
@@ -314,7 +316,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ACCOUNT `<IMicrosoftGraphAccount>`: account
+`ACCOUNT <IMicrosoftGraphAccount>`: account
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Blocked <Boolean?>]`: 
@@ -324,7 +326,7 @@ ACCOUNT `<IMicrosoftGraphAccount>`: account
   - `[Number <String>]`: 
   - `[SubCategory <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
+`BODYPARAMETER <IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
@@ -422,7 +424,7 @@ BODYPARAMETER `<IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
   - `[DisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
-CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment\[]>: .
+`CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Amount <Decimal?>]`: 
   - `[AppliesToInvoiceId <String>]`: 
@@ -503,44 +505,43 @@ CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment\[]>: .
   - `[LineNumber <Int32?>]`: 
   - `[PostingDate <DateTime?>]`: 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: key: id of account
-  - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
-  - `[CompanyId <String>]`: key: id of company
-  - `[CompanyInformationId <String>]`: key: id of companyInformation
-  - `[CountryRegionId <String>]`: key: id of countryRegion
-  - `[CurrencyId <String>]`: key: id of currency
-  - `[CustomerId <String>]`: key: id of customer
-  - `[CustomerPaymentId <String>]`: key: id of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: key: id of customerPaymentJournal
-  - `[DimensionId <String>]`: key: id of dimension
-  - `[DimensionValueId <String>]`: key: id of dimensionValue
-  - `[EmployeeId <String>]`: key: id of employee
-  - `[GeneralLedgerEntryId <String>]`: key: id of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: key: id of itemCategory
-  - `[ItemId <String>]`: key: id of item
-  - `[JournalId <String>]`: key: id of journal
-  - `[JournalLineId <String>]`: key: id of journalLine
-  - `[PaymentMethodId <String>]`: key: id of paymentMethod
-  - `[PaymentTermId <String>]`: key: id of paymentTerm
-  - `[PictureId <String>]`: key: id of picture
-  - `[PurchaseInvoiceId <String>]`: key: id of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: key: id of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: key: id of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: key: id of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: key: id of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: key: id of salesInvoiceLine
-  - `[SalesOrderId <String>]`: key: id of salesOrder
-  - `[SalesOrderLineId <String>]`: key: id of salesOrderLine
-  - `[SalesQuoteId <String>]`: key: id of salesQuote
-  - `[SalesQuoteLineId <String>]`: key: id of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: key: id of shipmentMethod
-  - `[TaxAreaId <String>]`: key: id of taxArea
-  - `[TaxGroupId <String>]`: key: id of taxGroup
-  - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
-  - `[VendorId <String>]`: key: id of vendor
+`INPUTOBJECT <IFinancialsIdentity>`: Identity Parameter
+  - `[AccountId <String>]`: The unique identifier of account
+  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
+  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
+  - `[CompanyId <String>]`: The unique identifier of company
+  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
+  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
+  - `[CurrencyId <String>]`: The unique identifier of currency
+  - `[CustomerId <String>]`: The unique identifier of customer
+  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
+  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
+  - `[DimensionId <String>]`: The unique identifier of dimension
+  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
+  - `[EmployeeId <String>]`: The unique identifier of employee
+  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
+  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
+  - `[ItemId <String>]`: The unique identifier of item
+  - `[JournalId <String>]`: The unique identifier of journal
+  - `[JournalLineId <String>]`: The unique identifier of journalLine
+  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
+  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
+  - `[PictureId <String>]`: The unique identifier of picture
+  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
+  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
+  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
+  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
+  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
+  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
+  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
+  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
+  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
+  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
+  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
+  - `[TaxAreaId <String>]`: The unique identifier of taxArea
+  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
+  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
+  - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
 
-## RELATED LINKS

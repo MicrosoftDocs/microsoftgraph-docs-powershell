@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecurityhostsecurityprofile
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityhostsecurityprofile
 schema: 2.0.0
 ---
 
-# Update-MgSecurityHostSecurityProfile
+# Update-MgBetaSecurityHostSecurityProfile
 
 ## SYNOPSIS
 Update the navigation property hostSecurityProfiles in security
@@ -14,38 +14,36 @@ Update the navigation property hostSecurityProfiles in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityHostSecurityProfile -HostSecurityProfileId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String> [-AdditionalProperties <Hashtable>]
  [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
  [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
  [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
  [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
  [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityHostSecurityProfile -HostSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityHostSecurityProfile -HostSecurityProfileId <String>
+ -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaSecurityHostSecurityProfile -InputObject <ISecurityIdentity> [-AdditionalProperties <Hashtable>]
  [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-FirstSeenDateTime <DateTime>] [-Fqdn <String>]
  [-Id <String>] [-IsAzureAdJoined] [-IsAzureAdRegistered] [-IsHybridAzureDomainJoined]
  [-LastSeenDateTime <DateTime>] [-LogonUsers <IMicrosoftGraphLogonUser[]>] [-NetBiosName <String>]
  [-NetworkInterfaces <IMicrosoftGraphNetworkInterface[]>] [-OS <String>] [-OSVersion <String>]
  [-ParentHost <String>] [-RelatedHostIds <String[]>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityHostSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphHostSecurityProfile> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,13 +51,27 @@ Update the navigation property hostSecurityProfiles in security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +86,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +101,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,10 +114,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 hostSecurityProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHostSecurityProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -120,7 +132,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +147,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of hostSecurityProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -162,11 +174,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,11 +191,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -197,7 +209,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +224,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +239,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +254,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -255,10 +267,10 @@ Accept wildcard characters: False
 
 ### -LogonUsers
 .
-To construct, please use Get-Help -Online and see NOTES section for LOGONUSERS properties and create a hash table.
+To construct, see NOTES section for LOGONUSERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLogonUser[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLogonUser[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +285,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -286,10 +298,10 @@ Accept wildcard characters: False
 
 ### -NetworkInterfaces
 .
-To construct, please use Get-Help -Online and see NOTES section for NETWORKINTERFACES properties and create a hash table.
+To construct, see NOTES section for NETWORKINTERFACES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNetworkInterface[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkInterface[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +316,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +331,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -334,23 +346,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -364,7 +361,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -379,7 +376,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +391,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -407,10 +404,10 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -425,7 +422,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -441,7 +438,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -457,11 +454,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
+
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityProfile
+
 ## NOTES
 
 ALIASES
@@ -471,9 +471,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
+`BODYPARAMETER <IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AzureSubscriptionId <String>]`: 
   - `[AzureTenantId <String>]`: 
   - `[FirstSeenDateTime <DateTime?>]`: 
@@ -510,7 +510,7 @@ BODYPARAMETER `<IMicrosoftGraphHostSecurityProfile>`: hostSecurityProfile
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -568,7 +568,7 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
-LOGONUSERS <IMicrosoftGraphLogonUser\[]>: .
+`LOGONUSERS <IMicrosoftGraphLogonUser[]>`: .
   - `[AccountDomain <String>]`: Domain of user account used to logon.
   - `[AccountName <String>]`: Account name of user account used to logon.
   - `[AccountType <String>]`: userAccountSecurityType
@@ -577,14 +577,14 @@ LOGONUSERS <IMicrosoftGraphLogonUser\[]>: .
   - `[LogonId <String>]`: User logon ID.
   - `[LogonTypes <String[]>]`: Collection of the logon types observed for the logged on user from when first to last seen. Possible values are: unknown, interactive, remoteInteractive, network, batch, service.
 
-NETWORKINTERFACES <IMicrosoftGraphNetworkInterface\[]>: .
+`NETWORKINTERFACES <IMicrosoftGraphNetworkInterface[]>`: .
   - `[Description <String>]`: Description of the NIC (e.g. Ethernet adapter, Wireless LAN adapter Local Area Connection, and so on).
   - `[IPV4Address <String>]`: Last IPv4 address associated with this NIC.
   - `[IPV6Address <String>]`: Last Public (aka global) IPv6 address associated with this NIC.
   - `[LocalIPV6Address <String>]`: Last local (link-local or site-local) IPv6 address associated with this NIC.
   - `[MacAddress <String>]`: MAC address of the NIC on this host.
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
@@ -593,4 +593,3 @@ VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorIn
 
 ## RELATED LINKS
 
-## RELATED LINKS

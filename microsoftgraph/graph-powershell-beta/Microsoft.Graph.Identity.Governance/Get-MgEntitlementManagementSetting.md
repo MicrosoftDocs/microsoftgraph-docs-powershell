@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementsetting
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementsetting
 schema: 2.0.0
-ms.prod: governance
 ---
 
-# Get-MgEntitlementManagementSetting
+# Get-MgBetaEntitlementManagementSetting
 
 ## SYNOPSIS
 Retrieve the properties of an entitlementManagementSettings object.
@@ -14,7 +13,8 @@ Retrieve the properties of an entitlementManagementSettings object.
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,17 +22,15 @@ Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 
-### Example 1: Get the identity governance settings
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgEntitlementManagementSetting
+Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgBetaEntitlementManagementSetting
+```
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
-```
-
-This example returns the identity governance settings.
 
 ## PARAMETERS
 
@@ -40,7 +38,7 @@ This example returns the identity governance settings.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -55,7 +53,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -73,9 +71,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntitlementManagementSettings
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/revoke-mgdriveitempermissiongrant
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/revoke-mgbetadriveitempermissiongrant
 schema: 2.0.0
 ---
 
-# Revoke-MgDriveItemPermissionGrant
+# Revoke-MgBetaDriveItemPermissionGrant
 
 ## SYNOPSIS
 Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by removing the specified [recipient][] from the link.
@@ -14,29 +14,29 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 
 ### RevokeExpanded (Default)
 ```
-Revoke-MgDriveItemPermissionGrant -DriveId <String> -DriveItemId <String> -PermissionId <String>
- [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm]
+Revoke-MgBetaDriveItemPermissionGrant -DriveId <String> -DriveItemId <String> -PermissionId <String>
+ [-AdditionalProperties <Hashtable>] [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Revoke
 ```
-Revoke-MgDriveItemPermissionGrant -DriveId <String> -DriveItemId <String> -PermissionId <String>
+Revoke-MgBetaDriveItemPermissionGrant -DriveId <String> -DriveItemId <String> -PermissionId <String>
  -BodyParameter <IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RevokeViaIdentityExpanded
-```
-Revoke-MgDriveItemPermissionGrant -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
-Revoke-MgDriveItemPermissionGrant -InputObject <IFilesIdentity>
+Revoke-MgBetaDriveItemPermissionGrant -InputObject <IFilesIdentity>
  -BodyParameter <IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RevokeViaIdentityExpanded
+```
+Revoke-MgBetaDriveItemPermissionGrant -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-Grantees <IMicrosoftGraphDriveRecipient[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +44,27 @@ Revoke access to a [listItem][] or [driveItem][] granted via a sharing link by r
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -63,10 +77,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Revoke, RevokeViaIdentity
 Aliases:
 
@@ -81,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: RevokeExpanded, Revoke
+Type: System.String
+Parameter Sets: Revoke, RevokeExpanded
 Aliases:
 
 Required: True
@@ -96,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: RevokeExpanded, Revoke
+Type: System.String
+Parameter Sets: Revoke, RevokeExpanded
 Aliases:
 
 Required: True
@@ -109,10 +123,10 @@ Accept wildcard characters: False
 
 ### -Grantees
 .
-To construct, please use Get-Help -Online and see NOTES section for GRANTEES properties and create a hash table.
+To construct, see NOTES section for GRANTEES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDriveRecipient[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDriveRecipient[]
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -125,11 +139,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: RevokeViaIdentityExpanded, RevokeViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: RevokeViaIdentity, RevokeViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of permission
 
 ```yaml
-Type: String
-Parameter Sets: RevokeExpanded, Revoke
+Type: System.String
+Parameter Sets: Revoke, RevokeExpanded
 Aliases:
 
 Required: True
@@ -158,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -190,11 +204,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermission1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPermission
+
 ## NOTES
 
 ALIASES
@@ -204,19 +221,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Cd4L6HDrivesDriveIdItemsDriveitemIdPermissionsPermissionIdMicrosoftGraphRevokegrantsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Grantees <IMicrosoftGraphDriveRecipient[]>]`: 
     - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
     - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
     - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-GRANTEES <IMicrosoftGraphDriveRecipient\[]>: .
+`GRANTEES <IMicrosoftGraphDriveRecipient[]>`: .
   - `[Alias <String>]`: The alias of the domain object, for cases where an email address is unavailable (e.g. security groups).
   - `[Email <String>]`: The email address for the recipient, if the recipient has an associated email address.
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -243,3 +260,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

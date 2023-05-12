@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkteamappsetting
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkteamappsetting
 schema: 2.0.0
 ---
 
-# Update-MgTeamworkTeamAppSetting
+# Update-MgBetaTeamworkTeamAppSetting
 
 ## SYNOPSIS
 Update the properties of a teamsAppSettings object.
@@ -14,14 +14,14 @@ Update the properties of a teamsAppSettings object.
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-AllowUserRequestsForAppAccess]
- [-Id <String>] [-IsChatResourceSpecificConsentEnabled] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaTeamworkTeamAppSetting [-AdditionalProperties <Hashtable>] [-AllowUserRequestsForAppAccess]
+ [-Id <String>] [-IsChatResourceSpecificConsentEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSettings> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,32 +29,17 @@ Update the properties of a teamsAppSettings object.
 
 ## EXAMPLES
 
-### Example 1: Enable installation of apps that require resource-specific consent in chats/meetings
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	"@odata.type" = "#microsoft.graph.teamsAppSettings"
 	IsChatResourceSpecificConsentEnabled = "true"
 }
-Update-MgTeamworkTeamAppSetting -BodyParameter $params
+Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgTeamworkTeamAppSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Allow Teams users to request admins for access to certain Teams Apps
-```powershell
-Import-Module Microsoft.Graph.Teams
-$params = @{
-	"@odata.type" = "#microsoft.graph.teamsAppSettings"
-	AllowUserRequestsForAppAccess = "true"
-}
-
-Update-MgTeamworkTeamAppSetting -BodyParameter $params
-```
-
-This example shows how to use the Update-MgTeamworkTeamAppSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -62,7 +47,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -74,10 +59,10 @@ Accept wildcard characters: False
 ```
 
 ### -AllowUserRequestsForAppAccess
-Indicates whether Teams users are allowed to request admins access to certain Teams apps.
+Indicates whether users are allowed to request access to the unavailable Teams apps.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -90,10 +75,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamsAppSettings
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
 Parameter Sets: Update
 Aliases:
 
@@ -105,11 +90,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -126,23 +111,8 @@ If true, Teams apps that are allowed in the tenant and require resource-specific
 If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -156,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -188,10 +158,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppSettings
+
 ## NOTES
 
 ALIASES
@@ -201,10 +173,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
+`BODYPARAMETER <IMicrosoftGraphTeamsAppSettings>`: teamsAppSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether Teams users are allowed to request admins access to certain Teams apps.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[AllowUserRequestsForAppAccess <Boolean?>]`: Indicates whether users are allowed to request access to the unavailable Teams apps.
   - `[IsChatResourceSpecificConsentEnabled <Boolean?>]`: Indicates whether resource-specific consent for chats/meetings has been enabled for the tenant. If true, Teams apps that are allowed in the tenant and require resource-specific permissions can be installed inside chats and meetings. If false, the installation of any Teams app that requires resource-specific permissions in a chat or a meeting will be blocked.
 
 ## RELATED LINKS
+

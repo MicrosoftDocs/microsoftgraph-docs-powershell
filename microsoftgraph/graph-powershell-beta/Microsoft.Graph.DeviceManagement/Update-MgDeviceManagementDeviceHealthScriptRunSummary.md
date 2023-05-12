@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementdevicehealthscriptrunsummary
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdevicehealthscriptrunsummary
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementDeviceHealthScriptRunSummary
+# Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary
 
 ## SYNOPSIS
 Update the navigation property runSummary in deviceManagement
@@ -14,39 +14,37 @@ Update the navigation property runSummary in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
+Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
  [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
- [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>]
- [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
+ [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>]
+ [-Id <String>] [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
  [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
  [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
- [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
- [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>] [-Id <String>]
- [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
- [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
- [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
- [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -DeviceHealthScriptId <String>
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceHealthScriptRunSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-DetectionScriptErrorDeviceCount <Int32>]
+ [-DetectionScriptNotApplicableDeviceCount <Int32>] [-DetectionScriptPendingDeviceCount <Int32>]
+ [-Id <String>] [-IssueDetectedDeviceCount <Int32>] [-IssueRemediatedCumulativeDeviceCount <Int32>]
+ [-IssueRemediatedDeviceCount <Int32>] [-IssueReoccurredDeviceCount <Int32>]
+ [-LastScriptRunDateTime <DateTime>] [-NoIssueDetectedDeviceCount <Int32>]
+ [-RemediationScriptErrorDeviceCount <Int32>] [-RemediationSkippedDeviceCount <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -55,13 +53,27 @@ Update the navigation property runSummary in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,10 +86,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Contains properties for the run summary of a device management script.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceHealthScriptRunSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -92,7 +104,7 @@ Accept wildcard characters: False
 Number of devices on which the detection script execution encountered an error and did not complete
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +119,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script was not applicable
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +134,7 @@ Accept wildcard characters: False
 Number of devices which have not yet run the latest version of the device health script
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,8 +149,8 @@ Accept wildcard characters: False
 The unique identifier of deviceHealthScript
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -149,11 +161,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,11 +178,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -184,7 +196,7 @@ Accept wildcard characters: False
 Number of devices for which the detection script found an issue
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +211,7 @@ Accept wildcard characters: False
 Number of devices that were remediated over the last 30 days
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -214,7 +226,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script was able to resolve the detected issue
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +241,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script executed successfully but failed to resolve the detected issue
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +256,7 @@ Accept wildcard characters: False
 Last run time for the script across all devices
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,23 +271,8 @@ Accept wildcard characters: False
 Number of devices for which the detection script did not find an issue and the device is healthy
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -289,7 +286,7 @@ Accept wildcard characters: False
 Number of devices for which the remediation script execution encountered an error and did not complete
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +301,7 @@ Accept wildcard characters: False
 Number of devices for which remediation was skipped
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +316,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -335,7 +332,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -351,11 +348,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceHealthScriptRunSummary
+
 ## NOTES
 
 ALIASES
@@ -365,9 +365,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptRunSummary>`: Contains properties for the run summary of a device management script.
+`BODYPARAMETER <IMicrosoftGraphDeviceHealthScriptRunSummary>`: Contains properties for the run summary of a device management script.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DetectionScriptErrorDeviceCount <Int32?>]`: Number of devices on which the detection script execution encountered an error and did not complete
   - `[DetectionScriptNotApplicableDeviceCount <Int32?>]`: Number of devices for which the detection script was not applicable
   - `[DetectionScriptPendingDeviceCount <Int32?>]`: Number of devices which have not yet run the latest version of the device health script
@@ -380,7 +380,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceHealthScriptRunSummary>`: Contains properti
   - `[RemediationScriptErrorDeviceCount <Int32?>]`: Number of devices for which the remediation script execution encountered an error and did not complete
   - `[RemediationSkippedDeviceCount <Int32?>]`: Number of devices for which remediation was skipped
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -512,7 +512,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 
-## RELATED LINKS

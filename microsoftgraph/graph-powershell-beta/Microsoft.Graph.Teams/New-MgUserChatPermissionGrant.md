@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/new-mguserchatpermissiongrant
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetauserchatpermissiongrant
 schema: 2.0.0
 ---
 
-# New-MgUserChatPermissionGrant
+# New-MgBetaUserChatPermissionGrant
 
 ## SYNOPSIS
 Create new navigation property to permissionGrants for users
@@ -14,30 +14,30 @@ Create new navigation property to permissionGrants for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserChatPermissionGrant -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserChatPermissionGrant -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
- [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm]
+ [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserChatPermissionGrant -ChatId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserChatPermissionGrant -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
- [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserChatPermissionGrant -ChatId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserChatPermissionGrant -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserChatPermissionGrant -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphResourceSpecificPermissionGrant> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserChatPermissionGrant -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ClientAppId <String>] [-ClientId <String>] [-DeletedDateTime <DateTime>] [-Id <String>]
+ [-Permission <String>] [-PermissionType <String>] [-ResourceAppId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Create new navigation property to permissionGrants for users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 resourceSpecificPermissionGrant
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermissionGrant
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -98,7 +112,7 @@ ID of the service principal of the Azure AD app that has been granted access.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +128,7 @@ ID of the Azure AD app that has been granted access.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +144,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -142,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,11 +173,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -178,7 +192,7 @@ The name of the resource-specific permission.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -195,7 +209,7 @@ Possible values are: Application, Delegated.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +225,7 @@ ID of the Azure AD app that is hosting the resource.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,8 +240,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -241,7 +255,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -257,7 +271,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -273,11 +287,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+
 ## NOTES
 
 ALIASES
@@ -287,17 +304,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecificPermissionGrant
+`BODYPARAMETER <IMicrosoftGraphResourceSpecificPermissionGrant>`: resourceSpecificPermissionGrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ClientAppId <String>]`: ID of the service principal of the Azure AD app that has been granted access. Read-only.
   - `[ClientId <String>]`: ID of the Azure AD app that has been granted access. Read-only.
   - `[Permission <String>]`: The name of the resource-specific permission. Read-only.
   - `[PermissionType <String>]`: The type of permission. Possible values are: Application, Delegated. Read-only.
   - `[ResourceAppId <String>]`: ID of the Azure AD app that is hosting the resource. Read-only.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -337,3 +354,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

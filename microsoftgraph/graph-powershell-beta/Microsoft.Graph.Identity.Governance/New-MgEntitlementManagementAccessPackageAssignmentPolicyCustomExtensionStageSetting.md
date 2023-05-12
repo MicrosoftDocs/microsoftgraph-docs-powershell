@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementaccesspackageassignmentpolicycustomextensionstagesetting
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageassignmentpolicycustomextensionstagesetting
 schema: 2.0.0
 ---
 
-# New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
+# New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
 
 ## SYNOPSIS
 Create new navigation property to customExtensionStageSettings for identityGovernance
@@ -14,32 +14,32 @@ Create new navigation property to customExtensionStageSettings for identityGover
 
 ### CreateExpanded (Default)
 ```
-New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
  -AccessPackageAssignmentPolicyId <String> [-AdditionalProperties <Hashtable>]
- [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
  -AccessPackageAssignmentPolicyId <String> -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
  -InputObject <IIdentityGovernanceIdentity> -BodyParameter <IMicrosoftGraphCustomExtensionStageSetting>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-CustomExtension <IMicrosoftGraphCustomCalloutExtension>] [-Id <String>] [-Stage <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,14 +47,28 @@ Create new navigation property to customExtensionStageSettings for identityGover
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
 The unique identifier of accessPackageAssignmentPolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -81,10 +95,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 customExtensionStageSetting
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomExtensionStageSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -97,10 +111,10 @@ Accept wildcard characters: False
 
 ### -CustomExtension
 customCalloutExtension
-To construct, please use Get-Help -Online and see NOTES section for CUSTOMEXTENSION properties and create a hash table.
+To construct, see NOTES section for CUSTOMEXTENSION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomCalloutExtension
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomCalloutExtension
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,11 +143,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 accessPackageCustomExtensionStage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,11 +208,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting
+
 ## NOTES
 
 ALIASES
@@ -208,12 +225,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphCustomExtensionStageSetting>`: customExtensionStageSetting
+`BODYPARAMETER <IMicrosoftGraphCustomExtensionStageSetting>`: customExtensionStageSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CustomExtension <IMicrosoftGraphCustomCalloutExtension>]`: customCalloutExtension
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
@@ -225,9 +242,9 @@ BODYPARAMETER `<IMicrosoftGraphCustomExtensionStageSetting>`: customExtensionSta
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Stage <String>]`: accessPackageCustomExtensionStage
 
-CUSTOMEXTENSION `<IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtension
+`CUSTOMEXTENSION <IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtension
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AuthenticationConfiguration <IMicrosoftGraphCustomExtensionAuthenticationConfiguration>]`: customExtensionAuthenticationConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ClientConfiguration <IMicrosoftGraphCustomExtensionClientConfiguration>]`: customExtensionClientConfiguration
@@ -238,7 +255,7 @@ CUSTOMEXTENSION `<IMicrosoftGraphCustomCalloutExtension>`: customCalloutExtensio
   - `[EndpointConfiguration <IMicrosoftGraphCustomExtensionEndpointConfiguration>]`: customExtensionEndpointConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -246,8 +263,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -272,7 +287,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -310,12 +324,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -329,4 +355,3 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-## RELATED LINKS

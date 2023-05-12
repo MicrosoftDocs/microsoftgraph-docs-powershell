@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/update-mgsecuritytriggertype
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype
 schema: 2.0.0
 ---
 
-# Update-MgSecurityTriggerType
+# Update-MgBetaSecurityTriggerType
 
 ## SYNOPSIS
 Update the navigation property triggerTypes in security
@@ -14,15 +14,15 @@ Update the navigation property triggerTypes in security
 
 ### UpdateExpanded (Default)
 ```
-Update-MgSecurityTriggerType [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-PassThru] [-WhatIf] [-Confirm]
+Update-MgBetaSecurityTriggerType [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,13 +30,27 @@ Update the navigation property triggerTypes in security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -49,10 +63,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 triggerTypesRoot
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityTriggerTypesRoot
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
 Parameter Sets: Update
 Aliases:
 
@@ -64,27 +78,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -96,10 +95,10 @@ Accept wildcard characters: False
 
 ### -RetentionEventTypes
 .
-To construct, please use Get-Help -Online and see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
+To construct, see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEventType[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,10 +145,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
+
 ## NOTES
 
 ALIASES
@@ -159,11 +160,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
+`BODYPARAMETER <IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -178,8 +179,8 @@ BODYPARAMETER `<IMicrosoftGraphSecurityTriggerTypesRoot>`: triggerTypesRoot
     - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
-RETENTIONEVENTTYPES <IMicrosoftGraphSecurityRetentionEventType\[]>: .
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`RETENTIONEVENTTYPES <IMicrosoftGraphSecurityRetentionEventType[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -195,3 +196,4 @@ RETENTIONEVENTTYPES <IMicrosoftGraphSecurityRetentionEventType\[]>: .
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+

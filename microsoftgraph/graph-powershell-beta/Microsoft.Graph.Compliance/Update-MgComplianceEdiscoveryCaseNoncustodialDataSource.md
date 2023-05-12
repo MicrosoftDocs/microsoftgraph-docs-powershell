@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/update-mgcomplianceediscoverycasenoncustodialdatasource
+external help file:
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/update-mgbetacomplianceediscoverycasenoncustodialdatasource
 schema: 2.0.0
 ---
 
-# Update-MgComplianceEdiscoveryCaseNoncustodialDataSource
+# Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource
 
 ## SYNOPSIS
 Update the navigation property noncustodialDataSources in compliance
@@ -14,34 +14,33 @@ Update the navigation property noncustodialDataSources in compliance
 
 ### UpdateExpanded (Default)
 ```
-Update-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> -NoncustodialDataSourceId <String>
- [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource] [-CreatedDateTime <DateTime>]
- [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
- [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String>
+ -NoncustodialDataSourceId <String> [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource]
+ [-CreatedDateTime <DateTime>] [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>]
+ [-HoldStatus <String>] [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+ [-ReleasedDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String> -NoncustodialDataSourceId <String>
- -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
- [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource] [-CreatedDateTime <DateTime>]
- [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
- [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
- [-ReleasedDateTime <DateTime>] [-Status <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId <String>
+ -NoncustodialDataSourceId <String> -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
- -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
+ -BodyParameter <IMicrosoftGraphEdiscoveryNoncustodialDataSource> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -InputObject <IComplianceIdentity>
+ [-AdditionalProperties <Hashtable>] [-ApplyHoldToSource] [-CreatedDateTime <DateTime>]
+ [-DataSource <IMicrosoftGraphEdiscoveryDataSource>] [-DisplayName <String>] [-HoldStatus <String>]
+ [-Id <String>] [-LastIndexOperation <Hashtable>] [-LastModifiedDateTime <DateTime>]
+ [-ReleasedDateTime <DateTime>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +48,27 @@ Update the navigation property noncustodialDataSources in compliance
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 Indicates if hold is applied to non-custodial data source (such as mailbox or site).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,10 +96,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 noncustodialDataSource
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryNoncustodialDataSource
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of case
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 Created date and time of the dataSourceContainer entity.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,10 +142,10 @@ Accept wildcard characters: False
 
 ### -DataSource
 dataSource
-To construct, please use Get-Help -Online and see NOTES section for DATASOURCE properties and create a hash table.
+To construct, see NOTES section for DATASOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdiscoveryDataSource
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryDataSource
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ Accept wildcard characters: False
 Display name of the dataSourceContainer entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +175,7 @@ Accept wildcard characters: False
 dataSourceHoldStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,11 +204,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -209,7 +222,7 @@ Accept wildcard characters: False
 caseIndexOperation
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +237,7 @@ Accept wildcard characters: False
 Last modified date and time of the dataSourceContainer.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,26 +252,11 @@ Accept wildcard characters: False
 The unique identifier of noncustodialDataSource
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -269,7 +267,7 @@ Accept wildcard characters: False
 Date and time that the dataSourceContainer was released from the case.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,7 +282,7 @@ Accept wildcard characters: False
 dataSourceContainerStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +297,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +313,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -331,11 +329,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEdiscoveryNoncustodialDataSource
+
 ## NOTES
 
 ALIASES
@@ -345,7 +346,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialDataSource
+`BODYPARAMETER <IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialDataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreatedDateTime <DateTime?>]`: Created date and time of the dataSourceContainer entity.
   - `[DisplayName <String>]`: Display name of the dataSourceContainer entity.
@@ -384,7 +385,7 @@ BODYPARAMETER `<IMicrosoftGraphEdiscoveryNoncustodialDataSource>`: noncustodialD
     - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
     - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-DATASOURCE `<IMicrosoftGraphEdiscoveryDataSource>`: dataSource
+`DATASOURCE <IMicrosoftGraphEdiscoveryDataSource>`: dataSource
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -399,7 +400,7 @@ DATASOURCE `<IMicrosoftGraphEdiscoveryDataSource>`: dataSource
   - `[DisplayName <String>]`: The display name of the dataSource. This will be the name of the SharePoint site.
   - `[HoldStatus <String>]`: dataSourceHoldStatus
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -416,3 +417,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

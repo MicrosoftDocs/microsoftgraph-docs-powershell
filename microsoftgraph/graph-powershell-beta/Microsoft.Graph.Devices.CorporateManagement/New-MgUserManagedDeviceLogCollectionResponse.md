@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgusermanageddevicelogcollectionresponse
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetausermanageddevicelogcollectionresponse
 schema: 2.0.0
 ---
 
-# New-MgUserManagedDeviceLogCollectionResponse
+# New-MgBetaUserManagedDeviceLogCollectionResponse
 
 ## SYNOPSIS
 Create new navigation property to logCollectionRequests for users
@@ -14,32 +14,32 @@ Create new navigation property to logCollectionRequests for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserManagedDeviceLogCollectionResponse -ManagedDeviceId <String> -UserId <String>
+New-MgBetaUserManagedDeviceLogCollectionResponse -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>] [-ErrorCode <Int64>]
  [-ExpirationDateTimeUtc <DateTime>] [-Id <String>] [-InitiatedByUserPrincipalName <String>]
  [-ManagedDeviceId1 <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserManagedDeviceLogCollectionResponse [-ManagedDeviceId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-EnrolledByUser <String>] [-ErrorCode <Int64>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
- [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
- [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserManagedDeviceLogCollectionResponse -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserManagedDeviceLogCollectionResponse -ManagedDeviceId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceLogCollectionResponse> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorporateManagementIdentity>
+ [-ManagedDeviceId <String>] [-AdditionalProperties <Hashtable>] [-EnrolledByUser <String>]
+ [-ErrorCode <Int64>] [-ExpirationDateTimeUtc <DateTime>] [-Id <String>]
+ [-InitiatedByUserPrincipalName <String>] [-ReceivedDateTimeUtc <DateTime>] [-RequestedDateTimeUtc <DateTime>]
+ [-Size <Double>] [-SizeInKb <Double>] [-Status <AppLogUploadState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Create new navigation property to logCollectionRequests for users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Windows Log Collection request entity.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceLogCollectionResponse
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 The User Principal Name (UPN) of the user that enrolled the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +114,7 @@ The error code, if any.
 Valid values -9.22337203685478E+18 to 9.22337203685478E+18
 
 ```yaml
-Type: Int64
+Type: System.Int64
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 The DateTime of the expiration of the logs.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,11 +141,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +160,7 @@ Accept wildcard characters: False
 The UPN for who initiated the request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,11 +173,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,23 +191,11 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CreateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -204,7 +206,7 @@ Accept wildcard characters: False
 Indicates Intune device unique identifier.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +221,7 @@ Accept wildcard characters: False
 The DateTime the request was received.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -234,7 +236,7 @@ Accept wildcard characters: False
 The DateTime of the request.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +252,7 @@ The size of the logs.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +268,7 @@ The size of the logs in KB.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +283,7 @@ Accept wildcard characters: False
 AppLogUploadStatus
 
 ```yaml
-Type: AppLogUploadState
+Type: Microsoft.Graph.Beta.PowerShell.Support.AppLogUploadState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -296,8 +298,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -311,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -327,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -343,11 +345,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
+
 ## NOTES
 
 ALIASES
@@ -357,9 +362,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceLogCollectionResponse>`: Windows Log Collection request entity.
+`BODYPARAMETER <IMicrosoftGraphDeviceLogCollectionResponse>`: Windows Log Collection request entity.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EnrolledByUser <String>]`: The User Principal Name (UPN) of the user that enrolled the device.
   - `[ErrorCode <Int64?>]`: The error code, if any. Valid values -9.22337203685478E+18 to 9.22337203685478E+18
   - `[ExpirationDateTimeUtc <DateTime?>]`: The DateTime of the expiration of the logs.
@@ -371,7 +376,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceLogCollectionResponse>`: Windows Log Collec
   - `[SizeInKb <Double?>]`: The size of the logs in KB. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -386,6 +391,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
   - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
   - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
   - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
   - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
@@ -416,8 +423,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
   - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: The unique identifier of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: The unique identifier of officeClientConfiguration
   - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
   - `[PolicySetId <String>]`: The unique identifier of policySet
@@ -436,9 +441,11 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
   - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/new-mgdevicemanagementuserexperienceanalyticapphealthapplicationperformance
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticapphealthapplicationperformance
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
+# New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
@@ -14,17 +14,17 @@ Create new navigation property to userExperienceAnalyticsAppHealthApplicationPer
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance [-ActiveDeviceCount <Int32>]
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance [-ActiveDeviceCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppCrashCount <Int32>] [-AppDisplayName <String>]
  [-AppHangCount <Int32>] [-AppHealthScore <Double>] [-AppHealthStatus <String>] [-AppName <String>]
  [-AppPublisher <String>] [-AppUsageDuration <Int32>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -33,6 +33,20 @@ Create new navigation property to userExperienceAnalyticsAppHealthApplicationPer
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ActiveDeviceCount
@@ -40,7 +54,7 @@ The number of devices where the app has been active.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +69,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +85,7 @@ The number of crashes for the app.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +100,7 @@ Accept wildcard characters: False
 The friendly name of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +116,7 @@ The number of hangs for the app.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +132,7 @@ The health score of the app.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +147,7 @@ Accept wildcard characters: False
 The overall health status of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +162,7 @@ Accept wildcard characters: False
 The name of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +177,7 @@ Accept wildcard characters: False
 The publisher of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -179,7 +193,7 @@ The total usage time of the application in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,10 +206,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics application performance entity contains app performance details.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
 Parameter Sets: Create
 Aliases:
 
@@ -207,11 +221,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +241,7 @@ The mean time to failure for the app in minutes.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +256,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -258,7 +272,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -274,10 +288,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance
+
 ## NOTES
 
 ALIASES
@@ -287,9 +303,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance>`: The user experience analytics application performance entity contains app performance details.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance>`: The user experience analytics application performance entity contains app performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveDeviceCount <Int32?>]`: The number of devices where the app has been active. Valid values -2147483648 to 2147483647
   - `[AppCrashCount <Int32?>]`: The number of crashes for the app. Valid values -2147483648 to 2147483647
   - `[AppDisplayName <String>]`: The friendly name of the application.
@@ -302,3 +318,4 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerfor
   - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the app in minutes. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
+

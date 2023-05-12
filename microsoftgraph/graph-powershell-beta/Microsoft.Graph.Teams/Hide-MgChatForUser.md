@@ -1,41 +1,41 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/hide-mgchatforuser
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/hide-mgbetachatforuser
 schema: 2.0.0
 ---
 
-# Hide-MgChatForUser
+# Hide-MgBetaChatForUser
 
 ## SYNOPSIS
 Hide a chat for a user.
 
 ## SYNTAX
 
-### HideExpanded1 (Default)
+### HideExpanded (Default)
 ```
-Hide-MgChatForUser -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Hide-MgBetaChatForUser -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Hide1
+### Hide
 ```
-Hide-MgChatForUser -ChatId <String>
+Hide-MgBetaChatForUser -ChatId <String>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### HideViaIdentityExpanded1
+### HideViaIdentity
 ```
-Hide-MgChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity1>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### HideViaIdentity1
-```
-Hide-MgChatForUser -InputObject <ITeamsIdentity>
+Hide-MgBetaChatForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### HideViaIdentityExpanded
+```
+Hide-MgBetaChatForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,20 +43,19 @@ Hide a chat for a user.
 
 ## EXAMPLES
 
-### Example 1: Using the Hide-MgChatForUser Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	User = @{
 		Id = "d864e79f-a516-4d0f-9fee-0eeb4d61fdc2"
 	}
 	TenantId = "2a690434-97d9-4eed-83a6-f5f13600199a"
 }
-Hide-MgChatForUser -ChatId $chatId -BodyParameter $params
+Hide-MgBetaChatForUser -ChatId $chatId -BodyParameter $params
 ```
 
-This example shows how to use the Hide-MgChatForUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -64,8 +63,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: HideExpanded, HideViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -77,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Hide1, HideViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Hide, HideViaIdentity
 Aliases:
 
 Required: True
@@ -95,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: HideExpanded1, Hide1
+Type: System.String
+Parameter Sets: Hide, HideExpanded
 Aliases:
 
 Required: True
@@ -108,11 +107,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: HideViaIdentityExpanded1, HideViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: HideViaIdentity, HideViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,7 +125,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -141,8 +140,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
+Type: System.String
+Parameter Sets: HideExpanded, HideViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -154,11 +153,11 @@ Accept wildcard characters: False
 
 ### -User
 teamworkUserIdentity
-To construct, please use Get-Help -Online and see NOTES section for USER properties and create a hash table.
+To construct, see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity1
-Parameter Sets: HideExpanded1, HideViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkUserIdentity
+Parameter Sets: HideExpanded, HideViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -172,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -204,11 +203,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -218,16 +220,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1D9TndwChatsChatIdMicrosoftGraphHideforuserPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[TenantId <String>]`: 
-  - `[User <IMicrosoftGraphTeamworkUserIdentity1>]`: teamworkUserIdentity
+  - `[User <IMicrosoftGraphTeamworkUserIdentity>]`: teamworkUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
     - `[Id <String>]`: Unique identifier for the identity.
-    - `[UserIdentityType <String>]`: 
+    - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -266,10 +268,11 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-USER `<IMicrosoftGraphTeamworkUserIdentity1>`: teamworkUserIdentity
+`USER <IMicrosoftGraphTeamworkUserIdentity>`: teamworkUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
   - `[Id <String>]`: Unique identifier for the identity.
-  - `[UserIdentityType <String>]`: 
+  - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycasesetting
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycasesetting
 schema: 2.0.0
 ---
 
-# Get-MgSecurityCaseEdiscoveryCaseSetting
+# Get-MgBetaSecurityCaseEdiscoveryCaseSetting
 
 ## SYNOPSIS
 Read the properties and relationships of an ediscoveryCaseSettings object.
@@ -14,13 +14,13 @@ Read the properties and relationships of an ediscoveryCaseSettings object.
 
 ### Get (Default)
 ```
-Get-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -29,14 +29,13 @@ Read the properties and relationships of an ediscoveryCaseSettings object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSecurityCaseEdiscoveryCaseSetting Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId
+Import-Module Microsoft.Graph.Beta.Security
+Get-MgBetaSecurityCaseEdiscoveryCaseSetting -EdiscoveryCaseId $ediscoveryCaseId
 ```
 
-This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -44,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -59,7 +58,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -72,10 +71,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -90,7 +89,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -106,10 +105,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCaseSettings
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryCaseSettings
+
 ## NOTES
 
 ALIASES
@@ -119,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -178,3 +179,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

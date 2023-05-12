@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/get-mgdevicemanagementapplepushnotificationcertificate
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/get-mgbetadevicemanagementapplepushnotificationcertificate
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementApplePushNotificationCertificate
+# Get-MgBetaDeviceManagementApplePushNotificationCertificate
 
 ## SYNOPSIS
 Apple push notification certificate.
@@ -13,7 +13,7 @@ Apple push notification certificate.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
@@ -22,13 +22,27 @@ Apple push notification certificate.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

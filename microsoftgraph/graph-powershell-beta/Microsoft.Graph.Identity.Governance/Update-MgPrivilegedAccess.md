@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/update-mgprivilegedaccess
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/update-mgbetaprivilegedaccess
 schema: 2.0.0
 ---
 
-# Update-MgPrivilegedAccess
+# Update-MgBetaPrivilegedAccess
 
 ## SYNOPSIS
 Update entity in privilegedAccess
@@ -14,34 +14,34 @@ Update entity in privilegedAccess
 
 ### UpdateExpanded (Default)
 ```
-Update-MgPrivilegedAccess -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaPrivilegedAccess -PrivilegedAccessId <String> [-AdditionalProperties <Hashtable>]
  [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphGovernanceResource[]>]
  [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
  [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
- [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgPrivilegedAccess -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphPrivilegedAccess>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphGovernanceResource[]>]
- [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
- [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
- [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
- [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedAccess -PrivilegedAccessId <String> -BodyParameter <IMicrosoftGraphPrivilegedAccess>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgPrivilegedAccess -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphPrivilegedAccess> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPrivilegedAccess -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-Resources <IMicrosoftGraphGovernanceResource[]>]
+ [-RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]
+ [-RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]
+ [-RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]
+ [-RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update entity in privilegedAccess
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,10 +82,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedAccess
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedAccess
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +100,7 @@ Accept wildcard characters: False
 The display name of the provider managed by PIM.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,11 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,11 +129,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,27 +143,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -PrivilegedAccessId
 The unique identifier of privilegedAccess
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -161,10 +160,10 @@ Accept wildcard characters: False
 
 ### -Resources
 A collection of resources for the provider.
-To construct, please use Get-Help -Online and see NOTES section for RESOURCES properties and create a hash table.
+To construct, see NOTES section for RESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceResource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,10 +176,10 @@ Accept wildcard characters: False
 
 ### -RoleAssignmentRequests
 A collection of role assignment requests for the provider.
-To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
+To construct, see NOTES section for ROLEASSIGNMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleAssignmentRequest[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignmentRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,10 +192,10 @@ Accept wildcard characters: False
 
 ### -RoleAssignments
 A collection of role assignments for the provider.
-To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,10 +208,10 @@ Accept wildcard characters: False
 
 ### -RoleDefinitions
 A collection of role defintions for the provider.
-To construct, please use Get-Help -Online and see NOTES section for ROLEDEFINITIONS properties and create a hash table.
+To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,10 +224,10 @@ Accept wildcard characters: False
 
 ### -RoleSettings
 A collection of role settings for the provider.
-To construct, please use Get-Help -Online and see NOTES section for ROLESETTINGS properties and create a hash table.
+To construct, see NOTES section for ROLESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceRoleSetting[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceRoleSetting[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +242,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -259,7 +258,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -275,11 +274,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedAccess
+
 ## NOTES
 
 ALIASES
@@ -289,19 +291,19 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
+`BODYPARAMETER <IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the provider managed by PIM.
   - `[Resources <IMicrosoftGraphGovernanceResource[]>]`: A collection of resources for the provider.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the resource.
     - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
     - `[Parent <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[RegisteredDateTime <DateTime?>]`: Represents the date time when the resource is registered in PIM.
     - `[RegisteredRoot <String>]`: The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.
     - `[RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]`: The collection of role assignment requests for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
       - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
@@ -310,14 +312,14 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
       - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the role definition.
         - `[ExternalId <String>]`: The external id of the role definition.
         - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
         - `[ResourceId <String>]`: Required. The id of the resource associated with the role definition.
         - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
             - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
             - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
@@ -343,12 +345,12 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
-          - `[Key <String>]`: Key for the key-value pair.
-          - `[Value <String>]`: Value for the key-value pair.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
         - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the subject.
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
@@ -356,7 +358,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
       - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
       - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
       - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[ExternalId <String>]`: The external ID the resource that is used to identify the role assignment in the provider.
@@ -380,7 +382,7 @@ BODYPARAMETER `<IMicrosoftGraphPrivilegedAccess>`: privilegedAccess
   - `[RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]`: A collection of role defintions for the provider.
   - `[RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>]`: A collection of role settings for the provider.
 
-INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageAssignmentId <String>]`: The unique identifier of accessPackageAssignment
   - `[AccessPackageAssignmentPolicyId <String>]`: The unique identifier of accessPackageAssignmentPolicy
   - `[AccessPackageAssignmentRequestId <String>]`: The unique identifier of accessPackageAssignmentRequest
@@ -388,8 +390,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AccessPackageCatalogId <String>]`: The unique identifier of accessPackageCatalog
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
-  - `[AccessPackageId2 <String>]`: Usage: accessPackageId='{accessPackageId}'
-  - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
   - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
   - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
   - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
@@ -414,7 +414,6 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[AgreementId <String>]`: The unique identifier of agreement
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[ApprovalId <String>]`: The unique identifier of approval
-  - `[ApprovalStageId <String>]`: The unique identifier of approvalStage
   - `[ApprovalStepId <String>]`: The unique identifier of approvalStep
   - `[BusinessFlowTemplateId <String>]`: The unique identifier of businessFlowTemplate
   - `[ConnectedOrganizationId <String>]`: The unique identifier of connectedOrganization
@@ -452,12 +451,24 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[ProgramControlId1 <String>]`: The unique identifier of programControl
   - `[ProgramControlTypeId <String>]`: The unique identifier of programControlType
   - `[ProgramId <String>]`: The unique identifier of program
+  - `[RbacApplicationId <String>]`: The unique identifier of rbacApplication
   - `[RunId <String>]`: The unique identifier of run
   - `[StartDateTime <DateTime?>]`: Usage: startDateTime={startDateTime}
   - `[TaskDefinitionId <String>]`: The unique identifier of taskDefinition
   - `[TaskId <String>]`: The unique identifier of task
   - `[TaskProcessingResultId <String>]`: The unique identifier of taskProcessingResult
   - `[TaskReportId <String>]`: The unique identifier of taskReport
+  - `[UnifiedRbacResourceActionId <String>]`: The unique identifier of unifiedRbacResourceAction
+  - `[UnifiedRbacResourceNamespaceId <String>]`: The unique identifier of unifiedRbacResourceNamespace
+  - `[UnifiedRoleAssignmentId <String>]`: The unique identifier of unifiedRoleAssignment
+  - `[UnifiedRoleAssignmentScheduleId <String>]`: The unique identifier of unifiedRoleAssignmentSchedule
+  - `[UnifiedRoleAssignmentScheduleInstanceId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleInstance
+  - `[UnifiedRoleAssignmentScheduleRequestId <String>]`: The unique identifier of unifiedRoleAssignmentScheduleRequest
+  - `[UnifiedRoleDefinitionId <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleDefinitionId1 <String>]`: The unique identifier of unifiedRoleDefinition
+  - `[UnifiedRoleEligibilityScheduleId <String>]`: The unique identifier of unifiedRoleEligibilitySchedule
+  - `[UnifiedRoleEligibilityScheduleInstanceId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleInstance
+  - `[UnifiedRoleEligibilityScheduleRequestId <String>]`: The unique identifier of unifiedRoleEligibilityScheduleRequest
   - `[UnifiedRoleManagementAlertConfigurationId <String>]`: The unique identifier of unifiedRoleManagementAlertConfiguration
   - `[UnifiedRoleManagementAlertDefinitionId <String>]`: The unique identifier of unifiedRoleManagementAlertDefinition
   - `[UnifiedRoleManagementAlertId <String>]`: The unique identifier of unifiedRoleManagementAlert
@@ -469,15 +480,15 @@ INPUTOBJECT `<IIdentityGovernanceIdentity>`: Identity Parameter
   - `[WorkflowTemplateId <String>]`: The unique identifier of workflowTemplate
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
-RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for the provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`RESOURCES <IMicrosoftGraphGovernanceResource[]>`: A collection of resources for the provider.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the resource.
   - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
   - `[Parent <IMicrosoftGraphGovernanceResource>]`: governanceResource
   - `[RegisteredDateTime <DateTime?>]`: Represents the date time when the resource is registered in PIM.
   - `[RegisteredRoot <String>]`: The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.
   - `[RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]`: The collection of role assignment requests for the resource.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
     - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
     - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
@@ -486,14 +497,14 @@ RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for 
     - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
     - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The display name of the role definition.
       - `[ExternalId <String>]`: The external id of the role definition.
       - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
       - `[ResourceId <String>]`: Required. The id of the resource associated with the role definition.
       - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
           - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
           - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
@@ -519,12 +530,12 @@ RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
       - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
-        - `[Key <String>]`: Key for the key-value pair.
-        - `[Value <String>]`: Value for the key-value pair.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+        - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
       - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
     - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: The display name of the subject.
       - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
       - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
@@ -532,7 +543,7 @@ RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for 
     - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
     - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
   - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
     - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[ExternalId <String>]`: The external ID the resource that is used to identify the role assignment in the provider.
@@ -552,15 +563,15 @@ RESOURCES <IMicrosoftGraphGovernanceResource\[]>: A collection of resources for 
   - `[Status <String>]`: The status of a given resource. For example, it could represent whether the resource is locked or not (values: Active/Locked). Note: This property may be extended in the future to support more scenarios.
   - `[Type <String>]`: Required. Resource type. For example, for Azure resources, the type could be 'Subscription', 'ResourceGroup', 'Microsoft.Sql/server', etc.
 
-ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A collection of role assignment requests for the provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>`: A collection of role assignment requests for the provider.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
   - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
   - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
   - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the resource.
     - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
     - `[Parent <IMicrosoftGraphGovernanceResource>]`: governanceResource
@@ -568,7 +579,7 @@ ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A co
     - `[RegisteredRoot <String>]`: The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.
     - `[RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]`: The collection of role assignment requests for the resource.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
       - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[ExternalId <String>]`: The external ID the resource that is used to identify the role assignment in the provider.
@@ -579,14 +590,14 @@ ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A co
       - `[ResourceId <String>]`: Required. The ID of the resource which the role assignment is associated with.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the role definition.
         - `[ExternalId <String>]`: The external id of the role definition.
         - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
         - `[ResourceId <String>]`: Required. The id of the resource associated with the role definition.
         - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
             - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
             - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
@@ -606,7 +617,7 @@ ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A co
       - `[Status <String>]`: 
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the subject.
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
@@ -629,15 +640,15 @@ ROLEASSIGNMENTREQUESTS <IMicrosoftGraphGovernanceRoleAssignmentRequest\[]>: A co
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
     - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
-      - `[Key <String>]`: Key for the key-value pair.
-      - `[Value <String>]`: Value for the key-value pair.
+      - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+      - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
     - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
   - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
   - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
   - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
 
-ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of role assignments for the provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment[]>`: A collection of role assignments for the provider.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
   - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[ExternalId <String>]`: The external ID the resource that is used to identify the role assignment in the provider.
@@ -646,14 +657,14 @@ ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of ro
   - `[MemberType <String>]`: The type of member. The value can be: Inherited (if the role assignment is inherited from a parent resource scope), Group (if the role assignment is not inherited, but comes from the membership of a group assignment), or User (if the role assignment is neither inherited nor from a group assignment).
   - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the resource.
     - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
     - `[Parent <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[RegisteredDateTime <DateTime?>]`: Represents the date time when the resource is registered in PIM.
     - `[RegisteredRoot <String>]`: The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.
     - `[RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]`: The collection of role assignment requests for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
       - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
@@ -662,14 +673,14 @@ ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of ro
       - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the role definition.
         - `[ExternalId <String>]`: The external id of the role definition.
         - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
         - `[ResourceId <String>]`: Required. The id of the resource associated with the role definition.
         - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
             - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
             - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
@@ -695,12 +706,12 @@ ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of ro
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
-          - `[Key <String>]`: Key for the key-value pair.
-          - `[Value <String>]`: Value for the key-value pair.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
         - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the subject.
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
@@ -720,20 +731,20 @@ ROLEASSIGNMENTS <IMicrosoftGraphGovernanceRoleAssignment\[]>: A collection of ro
   - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
   - `[SubjectId <String>]`: Required. The ID of the subject which the role assignment is associated with.
 
-ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of role defintions for the provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition[]>`: A collection of role defintions for the provider.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the role definition.
   - `[ExternalId <String>]`: The external id of the role definition.
   - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the resource.
     - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
     - `[Parent <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[RegisteredDateTime <DateTime?>]`: Represents the date time when the resource is registered in PIM.
     - `[RegisteredRoot <String>]`: The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.
     - `[RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]`: The collection of role assignment requests for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
       - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
@@ -752,12 +763,12 @@ ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of ro
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
-          - `[Key <String>]`: Key for the key-value pair.
-          - `[Value <String>]`: Value for the key-value pair.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
         - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the subject.
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
@@ -765,7 +776,7 @@ ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of ro
       - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
       - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
       - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[ExternalId <String>]`: The external ID the resource that is used to identify the role assignment in the provider.
@@ -782,7 +793,7 @@ ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of ro
       - `[SubjectId <String>]`: Required. The ID of the subject which the role assignment is associated with.
     - `[RoleDefinitions <IMicrosoftGraphGovernanceRoleDefinition[]>]`: The collection of role defintions for the resource.
     - `[RoleSettings <IMicrosoftGraphGovernanceRoleSetting[]>]`: The collection of role settings for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
         - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
         - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
@@ -802,8 +813,8 @@ ROLEDEFINITIONS <IMicrosoftGraphGovernanceRoleDefinition\[]>: A collection of ro
   - `[RoleSetting <IMicrosoftGraphGovernanceRoleSetting>]`: governanceRoleSetting
   - `[TemplateId <String>]`: 
 
-ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role settings for the provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting[]>`: A collection of role settings for the provider.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AdminEligibleSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when an administrator tries to add an eligible role assignment.
     - `[RuleIdentifier <String>]`: The id of the rule. For example, ExpirationRule and MfaRule.
     - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
@@ -813,14 +824,14 @@ ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role set
   - `[LastUpdatedDateTime <DateTime?>]`: Read-only. The time when the role setting was last updated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the resource.
     - `[ExternalId <String>]`: The external id of the resource, representing its original id in the external system. For example, a subscription resource's external id can be '/subscriptions/c14ae696-5e0c-4e5d-88cc-bef6637737ac'.
     - `[Parent <IMicrosoftGraphGovernanceResource>]`: governanceResource
     - `[RegisteredDateTime <DateTime?>]`: Represents the date time when the resource is registered in PIM.
     - `[RegisteredRoot <String>]`: The externalId of the resource's root scope that is registered in PIM. The root scope can be the parent, grandparent, or higher ancestor resources.
     - `[RoleAssignmentRequests <IMicrosoftGraphGovernanceRoleAssignmentRequest[]>]`: The collection of role assignment requests for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: Required. The state of the assignment. The possible values are: Eligible (for eligible assignment),  Active (if it is directly assigned), Active (by administrators, or activated on an eligible assignment by the users).
       - `[LinkedEligibleRoleAssignmentId <String>]`: If this is a request for role activation, it represents the id of the eligible assignment being referred; Otherwise, the value is null.
       - `[Reason <String>]`: A message provided by users and administrators when create the request about why it is needed.
@@ -829,7 +840,7 @@ ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role set
       - `[ResourceId <String>]`: Required. The unique identifier of the Azure resource that is associated with the role assignment request. Azure resources can include subscriptions, resource groups, virtual machines, and SQL databases.
       - `[RoleDefinition <IMicrosoftGraphGovernanceRoleDefinition>]`: governanceRoleDefinition
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the role definition.
         - `[ExternalId <String>]`: The external id of the role definition.
         - `[Resource <IMicrosoftGraphGovernanceResource>]`: governanceResource
@@ -847,12 +858,12 @@ ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role set
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Status <String>]`: The status of the role assignment request. The value can be InProgress or Closed.
         - `[StatusDetails <IMicrosoftGraphKeyValue[]>]`: The details of the status of the role assignment request. It represents the evaluation results of different rules.
-          - `[Key <String>]`: Key for the key-value pair.
-          - `[Value <String>]`: Value for the key-value pair.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
+          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
         - `[SubStatus <String>]`: The sub status of the role assignment request. The values can be Accepted, PendingEvaluation, Granted, Denied, PendingProvisioning, Provisioned, PendingRevocation, Revoked, Canceled, Failed, PendingApprovalProvisioning, PendingApproval, FailedAsResourceIsLocked, PendingAdminDecision, AdminApproved, AdminDenied, TimedOut, and ProvisioningStarted.
       - `[Subject <IMicrosoftGraphGovernanceSubject>]`: governanceSubject
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[DisplayName <String>]`: The display name of the subject.
         - `[Email <String>]`: The email address of the user subject. If the subject is in other types, it is empty.
         - `[PrincipalName <String>]`: The principal name of the user subject. If the subject is in other types, it is empty.
@@ -860,7 +871,7 @@ ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role set
       - `[SubjectId <String>]`: Required. The unique identifier of the principal or subject that the role assignment request is associated with. Principals can be users, groups, or service principals.
       - `[Type <String>]`: Required. Representing the type of the operation on the role assignment. The possible values are: AdminAdd , UserAdd , AdminUpdate , AdminRemove , UserRemove , UserExtend , AdminExtend , UserRenew , AdminRenew.
     - `[RoleAssignments <IMicrosoftGraphGovernanceRoleAssignment[]>]`: The collection of role assignments for the resource.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment or Active if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
       - `[EndDateTime <DateTime?>]`: For a non-permanent role assignment, this is the time when the role assignment will be expired. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[ExternalId <String>]`: The external ID the resource that is used to identify the role assignment in the provider.
@@ -887,4 +898,3 @@ ROLESETTINGS <IMicrosoftGraphGovernanceRoleSetting\[]>: A collection of role set
 
 ## RELATED LINKS
 
-## RELATED LINKS

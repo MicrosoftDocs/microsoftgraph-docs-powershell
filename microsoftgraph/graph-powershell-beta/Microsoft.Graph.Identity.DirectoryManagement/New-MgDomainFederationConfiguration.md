@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/new-mgdomainfederationconfiguration
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadomainfederationconfiguration
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgDomainFederationConfiguration
+# New-MgBetaDomainFederationConfiguration
 
 ## SYNOPSIS
 Create a new internalDomainFederation object.
@@ -15,37 +14,37 @@ Create a new internalDomainFederation object.
 
 ### CreateExpanded (Default)
 ```
-New-MgDomainFederationConfiguration -DomainId <String> [-ActiveSignInUri <String>]
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>] [-Id <String>]
- [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
+New-MgBetaDomainFederationConfiguration -DomainId <String> [-ActiveSignInUri <String>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-FederatedIdpMfaBehavior <String>]
+ [-Id <String>] [-IsSignedAuthenticationRequestRequired] [-IssuerUri <String>] [-MetadataExchangeUri <String>]
  [-NextSigningCertificate <String>] [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>]
- [-PromptLoginBehavior <String>] [-SignOutUri <String>] [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PromptLoginBehavior <String>] [-SigningCertificate <String>]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-SignOutUri <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDomainFederationConfiguration -DomainId <String> -BodyParameter <IMicrosoftGraphInternalDomainFederation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
- [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
- [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
- [-SignOutUri <String>] [-SigningCertificate <String>]
- [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaDomainFederationConfiguration -DomainId <String>
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphInternalDomainFederation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManagementIdentity>
+ [-ActiveSignInUri <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-FederatedIdpMfaBehavior <String>] [-Id <String>] [-IsSignedAuthenticationRequestRequired]
+ [-IssuerUri <String>] [-MetadataExchangeUri <String>] [-NextSigningCertificate <String>]
+ [-PassiveSignInUri <String>] [-PreferredAuthenticationProtocol <String>] [-PromptLoginBehavior <String>]
+ [-SigningCertificate <String>]
+ [-SigningCertificateUpdateStatus <IMicrosoftGraphSigningCertificateUpdateStatus>] [-SignOutUri <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,9 +52,10 @@ Create a new internalDomainFederation object.
 
 ## EXAMPLES
 
-### Example 1: Configure federation settings for a federated domain
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-New-MgDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List 
+New-MgBetaDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List
+```
 
 ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
 DisplayName                           : Contoso 
@@ -72,9 +72,6 @@ SignOutUri                            : https://sts.deverett.info/adfs/ls/
 SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
 SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
 AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#domains('contoso.com')/federationConfiguration/$entity]}
-```
-
-This examples creates new federation settings for the specified domain.
 
 ## PARAMETERS
 
@@ -83,7 +80,7 @@ URL of the endpoint used by active clients when authenticating with federated do
 Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +95,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,10 +108,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 internalDomainFederation
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternalDomainFederation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -129,7 +126,7 @@ Accept wildcard characters: False
 The display name of the identity provider.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of domain
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -159,7 +156,7 @@ Accept wildcard characters: False
 federatedIdpMfaBehavior
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,11 +168,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -188,11 +185,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -207,7 +204,7 @@ If true, when SAML authentication requests are sent to the federated SAML IdP, A
 If false (default), the SAML authentication requests sent to the federated IdP are not signed.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +219,7 @@ Accept wildcard characters: False
 Issuer URI of the federation server.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +234,7 @@ Accept wildcard characters: False
 URI of the metadata exchange endpoint used for authentication from rich client applications.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -255,7 +252,7 @@ Needs to be compatible with the X509Certificate2 class.
 Much like the signingCertificate, the nextSigningCertificate property is used if a rollover is required outside of the auto-rollover update, a new federation service is being set up, or if the new token signing certificate is not present in the federation properties after the federation service certificate has been updated.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -270,7 +267,7 @@ Accept wildcard characters: False
 URI that web-based clients are directed to when signing in to Azure Active Directory (Azure AD) services.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +282,7 @@ Accept wildcard characters: False
 authenticationProtocol
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -300,7 +297,7 @@ Accept wildcard characters: False
 promptLoginBehavior
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +316,7 @@ Azure AD updates certificates via an autorollover process in which it attempts t
 If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -332,10 +329,10 @@ Accept wildcard characters: False
 
 ### -SigningCertificateUpdateStatus
 signingCertificateUpdateStatus
-To construct, please use Get-Help -Online and see NOTES section for SIGNINGCERTIFICATEUPDATESTATUS properties and create a hash table.
+To construct, see NOTES section for SIGNINGCERTIFICATEUPDATESTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSigningCertificateUpdateStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningCertificateUpdateStatus
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -351,7 +348,7 @@ URI that clients are redirected to when they sign out of Azure AD services.
 Corresponds to the LogOffUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -366,7 +363,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -382,7 +379,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -398,11 +395,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInternalDomainFederation
+
 ## NOTES
 
 ALIASES
@@ -412,7 +412,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
+`BODYPARAMETER <IMicrosoftGraphInternalDomainFederation>`: internalDomainFederation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IssuerUri <String>]`: Issuer URI of the federation server.
   - `[MetadataExchangeUri <String>]`: URI of the metadata exchange endpoint used for authentication from rich client applications.
@@ -420,7 +420,7 @@ BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederat
   - `[PreferredAuthenticationProtocol <String>]`: authenticationProtocol
   - `[SigningCertificate <String>]`: Current certificate used to sign tokens passed to the Microsoft identity platform. The certificate is formatted as a Base64 encoded string of the public portion of the federated IdP's token signing certificate and must be compatible with the X509Certificate2 class.   This property is used in the following scenarios:  if a rollover is required outside of the autorollover update a new federation service is being set up  if the new token signing certificate isn't present in the federation properties after the federation service certificate has been updated.   Azure AD updates certificates via an autorollover process in which it attempts to retrieve a new certificate from the federation service metadata, 30 days before expiry of the current certificate. If a new certificate isn't available, Azure AD monitors the metadata daily and will update the federation settings for the domain when a new certificate is available.
   - `[DisplayName <String>]`: The display name of the identity provider.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveSignInUri <String>]`: URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD). Corresponds to the ActiveLogOnUri property of the Set-MsolDomainFederationSettings MSOnline v1 PowerShell cmdlet.
   - `[FederatedIdpMfaBehavior <String>]`: federatedIdpMfaBehavior
   - `[IsSignedAuthenticationRequestRequired <Boolean?>]`: If true, when SAML authentication requests are sent to the federated SAML IdP, Azure AD will sign those requests using the OrgID signing key. If false (default), the SAML authentication requests sent to the federated IdP are not signed.
@@ -432,7 +432,7 @@ BODYPARAMETER `<IMicrosoftGraphInternalDomainFederation>`: internalDomainFederat
     - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
     - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -468,9 +468,10 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-SIGNINGCERTIFICATEUPDATESTATUS `<IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
+`SIGNINGCERTIFICATEUPDATESTATUS <IMicrosoftGraphSigningCertificateUpdateStatus>`: signingCertificateUpdateStatus
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CertificateUpdateResult <String>]`: Status of the last certificate update. Read-only. For a list of statuses, see certificateUpdateResult status.
   - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
 ## RELATED LINKS
+

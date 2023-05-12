@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/invoke-mgparseapplicationsynchronizationjobschemaexpression
+external help file:
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseapplicationsynchronizationjobschemaexpression
 schema: 2.0.0
 ---
 
-# Invoke-MgParseApplicationSynchronizationJobSchemaExpression
+# Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression
 
 ## SYNOPSIS
 Parse a given string expression into an attributeMappingSource object.
@@ -15,33 +15,33 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 
 ### ParseExpanded (Default)
 ```
-Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
+Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Parse
 ```
-Invoke-MgParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
+Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression -ApplicationId <String>
  -SynchronizationJobId <String>
  -BodyParameter <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ParseViaIdentityExpanded
-```
-Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Expression <String>]
- [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ParseViaIdentity
 ```
-Invoke-MgParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
+Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
  -BodyParameter <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ParseViaIdentityExpanded
+```
+Invoke-MgBetaParseApplicationSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Expression <String>]
+ [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,13 +50,27 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -71,8 +85,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -84,10 +98,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Parse, ParseViaIdentity
 Aliases:
 
@@ -102,7 +116,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -115,11 +129,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: ParseViaIdentityExpanded, ParseViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: ParseViaIdentity, ParseViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -133,8 +147,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -146,10 +160,10 @@ Accept wildcard characters: False
 
 ### -TargetAttributeDefinition
 attributeDefinition
-To construct, please use Get-Help -Online and see NOTES section for TARGETATTRIBUTEDEFINITION properties and create a hash table.
+To construct, see NOTES section for TARGETATTRIBUTEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeDefinition
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -162,10 +176,10 @@ Accept wildcard characters: False
 
 ### -TestInputObject
 expressionInputObject
-To construct, please use Get-Help -Online and see NOTES section for TESTINPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for TESTINPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExpressionInputObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExpressionInputObject
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -180,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -196,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -212,11 +226,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
+
 ## NOTES
 
 ALIASES
@@ -226,7 +243,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Expression <String>]`: 
   - `[TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]`: attributeDefinition
@@ -260,7 +277,7 @@ BODYPARAMETER `<IPaths14L6Pq1ApplicationsApplicationIdSynchronizationJobsSynchro
     - `[Properties <IMicrosoftGraphStringKeyObjectValuePair[]>]`: Property values of the test object.
       - `[Key <String>]`: Key.
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -290,7 +307,7 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-TARGETATTRIBUTEDEFINITION `<IMicrosoftGraphAttributeDefinition>`: attributeDefinition
+`TARGETATTRIBUTEDEFINITION <IMicrosoftGraphAttributeDefinition>`: attributeDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
   - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
@@ -311,7 +328,7 @@ TARGETATTRIBUTEDEFINITION `<IMicrosoftGraphAttributeDefinition>`: attributeDefin
   - `[Required <Boolean?>]`: true if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.
   - `[Type <String>]`: attributeType
 
-TESTINPUTOBJECT `<IMicrosoftGraphExpressionInputObject>`: expressionInputObject
+`TESTINPUTOBJECT <IMicrosoftGraphExpressionInputObject>`: expressionInputObject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definition <IMicrosoftGraphObjectDefinition>]`: objectDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -342,4 +359,3 @@ TESTINPUTOBJECT `<IMicrosoftGraphExpressionInputObject>`: expressionInputObject
 
 ## RELATED LINKS
 
-## RELATED LINKS

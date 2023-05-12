@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdeviceconfigurationdevicestatesummary
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdeviceconfigurationdevicestatesummary
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary
+# Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary
 
 ## SYNOPSIS
 The device configuration device state summary for this account.
@@ -13,8 +13,8 @@ The device configuration device state summary for this account.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,13 +22,27 @@ The device configuration device state summary for this account.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

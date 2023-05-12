@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/clear-mgchatmessagereaction
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/clear-mgbetachatmessagereaction
 schema: 2.0.0
 ---
 
-# Clear-MgChatMessageReaction
+# Clear-MgBetaChatMessageReaction
 
 ## SYNOPSIS
 Invoke action unsetReaction
@@ -14,28 +14,28 @@ Invoke action unsetReaction
 
 ### UnsetExpanded (Default)
 ```
-Clear-MgChatMessageReaction -ChatId <String> -ChatMessageId <String> [-AdditionalProperties <Hashtable>]
- [-ReactionType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Clear-MgBetaChatMessageReaction -ChatId <String> -ChatMessageId <String> [-AdditionalProperties <Hashtable>]
+ [-ReactionType <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Unset
 ```
-Clear-MgChatMessageReaction -ChatId <String> -ChatMessageId <String>
+Clear-MgBetaChatMessageReaction -ChatId <String> -ChatMessageId <String>
  -BodyParameter <IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UnsetViaIdentityExpanded
-```
-Clear-MgChatMessageReaction -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-ReactionType <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UnsetViaIdentity
 ```
-Clear-MgChatMessageReaction -InputObject <ITeamsIdentity>
+Clear-MgBetaChatMessageReaction -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UnsetViaIdentityExpanded
+```
+Clear-MgBetaChatMessageReaction -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ReactionType <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Invoke action unsetReaction
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UnsetExpanded, UnsetViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Unset, UnsetViaIdentity
 Aliases:
 
@@ -80,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: UnsetExpanded, Unset
+Type: System.String
+Parameter Sets: Unset, UnsetExpanded
 Aliases:
 
 Required: True
@@ -95,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
-Parameter Sets: UnsetExpanded, Unset
+Type: System.String
+Parameter Sets: Unset, UnsetExpanded
 Aliases:
 
 Required: True
@@ -108,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UnsetViaIdentityExpanded, UnsetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UnsetViaIdentity, UnsetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,7 +140,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UnsetExpanded, UnsetViaIdentityExpanded
 Aliases:
 
@@ -156,7 +170,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +186,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -188,11 +202,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -202,11 +219,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsGenfe3ChatsChatIdMessagesChatmessageIdMicrosoftGraphUnsetreactionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ReactionType <String>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -246,3 +263,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

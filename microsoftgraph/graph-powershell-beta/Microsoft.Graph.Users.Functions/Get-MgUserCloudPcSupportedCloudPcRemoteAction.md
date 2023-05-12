@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
-Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/get-mgusercloudpcsupportedcloudpcremoteaction
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpcsupportedcloudpcremoteaction
 schema: 2.0.0
 ---
 
-# Get-MgUserCloudPcSupportedCloudPcRemoteAction
+# Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction
 
 ## SYNOPSIS
 Invoke function getSupportedCloudPcRemoteActions
@@ -14,13 +14,13 @@ Invoke function getSupportedCloudPcRemoteActions
 
 ### Get (Default)
 ```
-Get-MgUserCloudPcSupportedCloudPcRemoteAction -CloudPcId <String> -UserId <String> [-Count] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction -CloudPcId <String> -UserId <String> [-Count]
+ [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserCloudPcSupportedCloudPcRemoteAction -InputObject <IUsersFunctionsIdentity> [-Count]
+Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction -InputObject <IUsersFunctionsIdentity> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -29,13 +29,27 @@ Invoke function getSupportedCloudPcRemoteActions
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -CloudPcId
 The unique identifier of cloudPC
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -50,7 +64,7 @@ Accept wildcard characters: False
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -78,10 +92,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -96,7 +110,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -111,7 +140,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
 
@@ -126,26 +155,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -157,10 +171,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionCapability
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionCapability
+
 ## NOTES
 
 ALIASES
@@ -170,7 +186,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -182,8 +198,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: The unique identifier of event
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -194,15 +209,14 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
@@ -212,3 +226,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

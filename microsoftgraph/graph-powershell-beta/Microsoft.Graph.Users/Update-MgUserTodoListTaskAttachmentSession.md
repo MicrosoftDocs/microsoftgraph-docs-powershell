@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/update-mgusertodolisttaskattachmentsession
+external help file:
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausertodolisttaskattachmentsession
 schema: 2.0.0
 ---
 
-# Update-MgUserTodoListTaskAttachmentSession
+# Update-MgBetaUserTodoListTaskAttachmentSession
 
 ## SYNOPSIS
 Update the navigation property attachmentSessions in users
@@ -14,30 +14,30 @@ Update the navigation property attachmentSessions in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
+Update-MgBetaUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
  -TodoTaskListId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
- -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>] [-Id <String>] [-NextExpectedRanges <String[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserTodoListTaskAttachmentSession -AttachmentSessionId <String> -TodoTaskId <String>
+ -TodoTaskListId <String> -UserId <String> -BodyParameter <IMicrosoftGraphAttachmentSession> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphAttachmentSession> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphAttachmentSession> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-ExpirationDateTime <DateTime>]
+ [-Id <String>] [-NextExpectedRanges <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Update the navigation property attachmentSessions in users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,8 +80,8 @@ Accept wildcard characters: False
 The unique identifier of attachmentSession
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -79,10 +93,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 attachmentSession
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachmentSession
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentSession
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 Input File for Content (The content streams that are uploaded.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +127,7 @@ The date and time in UTC when the upload session will expire.
 The complete file must be uploaded before this expiration time is reached.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,11 +139,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -142,11 +156,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,23 +174,8 @@ Accept wildcard characters: False
 Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -190,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of todoTask
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -205,8 +204,8 @@ Accept wildcard characters: False
 The unique identifier of todoTaskList
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -220,8 +219,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -235,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -251,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -267,11 +266,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachmentSession
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentSession
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachmentSession
+
 ## NOTES
 
 ALIASES
@@ -281,14 +283,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAttachmentSession>`: attachmentSession
+`BODYPARAMETER <IMicrosoftGraphAttachmentSession>`: attachmentSession
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Content <Byte[]>]`: The content streams that are uploaded.
   - `[ExpirationDateTime <DateTime?>]`: The date and time in UTC when the upload session will expire. The complete file must be uploaded before this expiration time is reached.
   - `[NextExpectedRanges <String[]>]`: Indicates a single value {start} that represents the location in the file where the next upload should begin.
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -297,7 +299,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -305,9 +306,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

@@ -1,40 +1,40 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/new-mgprivilegedapproval
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedapproval
 schema: 2.0.0
 ---
 
-# New-MgPrivilegedApproval
+# New-MgBetaPrivilegedApproval
 
 ## SYNOPSIS
-Use this API to create a new privilegedApproval.
+Add new entity to privilegedApproval
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgPrivilegedApproval [-AdditionalProperties <Hashtable>] [-ApprovalDuration <TimeSpan>]
+New-MgBetaPrivilegedApproval [-AdditionalProperties <Hashtable>] [-ApprovalDuration <TimeSpan>]
  [-ApprovalState <String>] [-ApprovalType <String>] [-ApproverReason <String>] [-EndDateTime <DateTime>]
  [-Id <String>] [-Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>] [-RequestorReason <String>]
  [-RoleId <String>] [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-StartDateTime <DateTime>] [-UserId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgPrivilegedApproval -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-WhatIf] [-Confirm]
+New-MgBetaPrivilegedApproval -BodyParameter <IMicrosoftGraphPrivilegedApproval> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Use this API to create a new privilegedApproval.
+Add new entity to privilegedApproval
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgPrivilegedApproval Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.Governance
+Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
 	UserId = "userId-value"
 	RoleId = "roleId-value"
@@ -42,11 +42,10 @@ $params = @{
 	ApprovalState = "approvalState-value"
 	ApprovalDuration = "datetime-value"
 }
-New-MgPrivilegedApproval -BodyParameter $params
+New-MgBetaPrivilegedApproval -BodyParameter $params
 ```
 
-This example shows how to use the New-MgPrivilegedApproval Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -54,7 +53,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +68,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +83,7 @@ Accept wildcard characters: False
 approvalState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,10 +126,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 privilegedApproval
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedApproval
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
 Parameter Sets: Create
 Aliases:
 
@@ -142,11 +141,10 @@ Accept wildcard characters: False
 ```
 
 ### -EndDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,10 +173,10 @@ Accept wildcard characters: False
 
 ### -Request
 privilegedRoleAssignmentRequest
-To construct, please use Get-Help -Online and see NOTES section for REQUEST properties and create a hash table.
+To construct, see NOTES section for REQUEST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleAssignmentRequest
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +191,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +206,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,10 +219,10 @@ Accept wildcard characters: False
 
 ### -RoleInfo
 privilegedRole
-To construct, please use Get-Help -Online and see NOTES section for ROLEINFO properties and create a hash table.
+To construct, see NOTES section for ROLEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRole
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRole
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -236,11 +234,10 @@ Accept wildcard characters: False
 ```
 
 ### -StartDateTime
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +252,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -270,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -286,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -302,10 +299,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedApproval
+
 ## NOTES
 
 ALIASES
@@ -315,159 +314,158 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPrivilegedApproval>`: privilegedApproval
+`BODYPARAMETER <IMicrosoftGraphPrivilegedApproval>`: privilegedApproval
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ApprovalDuration <TimeSpan?>]`: 
   - `[ApprovalState <String>]`: approvalState
   - `[ApprovalType <String>]`: 
   - `[ApproverReason <String>]`: 
-  - `[EndDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[EndDateTime <DateTime?>]`: 
   - `[Request <IMicrosoftGraphPrivilegedRoleAssignmentRequest>]`: privilegedRoleAssignmentRequest
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment Active - if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-    - `[Duration <String>]`: The duration of a role assignment.
-    - `[Reason <String>]`: The reason for the role assignment.
-    - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[RoleId <String>]`: The id of the role.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[AssignmentState <String>]`: 
+    - `[Duration <String>]`: 
+    - `[Reason <String>]`: 
+    - `[RequestedDateTime <DateTime?>]`: 
+    - `[RoleId <String>]`: 
     - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: The assignments for this role. Read-only. Nullable.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[ExpirationDateTime <DateTime?>]`: The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
-        - `[IsElevated <Boolean?>]`: true if the role assignment is activated. false if the role assignment is deactivated.
-        - `[ResultMessage <String>]`: Result message set by the service.
-        - `[RoleId <String>]`: Role identifier. In GUID string format.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ExpirationDateTime <DateTime?>]`: 
+        - `[IsElevated <Boolean?>]`: 
+        - `[ResultMessage <String>]`: 
+        - `[RoleId <String>]`: 
         - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
-        - `[UserId <String>]`: User identifier. In GUID string format.
-      - `[Name <String>]`: Role name.
+        - `[UserId <String>]`: 
+      - `[Name <String>]`: 
       - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
-        - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
-        - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
-        - `[IsMfaOnElevationConfigurable <Boolean?>]`: true if mfaOnElevation is configurable. false if mfaOnElevation is not configurable.
-        - `[LastGlobalAdmin <Boolean?>]`: Internal used only.
-        - `[MaxElavationDuration <TimeSpan?>]`: Maximal duration for the activated role.
-        - `[MfaOnElevation <Boolean?>]`: true if MFA is required to activate the role. false if MFA is not required to activate the role.
-        - `[MinElevationDuration <TimeSpan?>]`: Minimal duration for the activated role.
-        - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
-        - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ApprovalOnElevation <Boolean?>]`: 
+        - `[ApproverIds <String[]>]`: 
+        - `[ElevationDuration <TimeSpan?>]`: 
+        - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+        - `[LastGlobalAdmin <Boolean?>]`: 
+        - `[MaxElavationDuration <TimeSpan?>]`: 
+        - `[MfaOnElevation <Boolean?>]`: 
+        - `[MinElevationDuration <TimeSpan?>]`: 
+        - `[NotificationToUserOnElevation <Boolean?>]`: 
+        - `[TicketingInfoOnElevation <Boolean?>]`: 
       - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-        - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
-        - `[ManagedCount <Int32?>]`: The number of users that have the role assigned but the role is deactivated.
-        - `[MfaEnabled <Boolean?>]`: true if the role activation requires MFA. false if the role activation doesn't require MFA.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[ElevatedCount <Int32?>]`: 
+        - `[ManagedCount <Int32?>]`: 
+        - `[MfaEnabled <Boolean?>]`: 
         - `[Status <String>]`: roleSummaryStatus
-        - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
+        - `[UsersCount <Int32?>]`: 
     - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
       - `[EndDateTime <DateTime?>]`: The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Note: if the value is null, it indicates a permanent assignment.
       - `[StartDateTime <DateTime?>]`: The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
       - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
-    - `[Status <String>]`: Read-only.The status of the role assignment request. The value can be NotStarted,Completed,RequestedApproval,Scheduled,Approved,ApprovalDenied,ApprovalAborted,Cancelling,Cancelled,Revoked,RequestExpired.
-    - `[TicketNumber <String>]`: The ticketNumber for the role assignment.
-    - `[TicketSystem <String>]`: The ticketSystem for the role assignment.
-    - `[Type <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators add users to roles;UserAdd: Users add role assignments.
-    - `[UserId <String>]`: The id of the user.
+    - `[Status <String>]`: 
+    - `[TicketNumber <String>]`: 
+    - `[TicketSystem <String>]`: 
+    - `[Type <String>]`: 
+    - `[UserId <String>]`: 
   - `[RequestorReason <String>]`: 
   - `[RoleId <String>]`: 
   - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
-  - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[StartDateTime <DateTime?>]`: 
   - `[UserId <String>]`: 
 
-REQUEST `<IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
+`REQUEST <IMicrosoftGraphPrivilegedRoleAssignmentRequest>`: privilegedRoleAssignmentRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[AssignmentState <String>]`: The state of the assignment. The value can be Eligible for eligible assignment Active - if it is directly assigned Active by administrators, or activated on an eligible assignment by the users.
-  - `[Duration <String>]`: The duration of a role assignment.
-  - `[Reason <String>]`: The reason for the role assignment.
-  - `[RequestedDateTime <DateTime?>]`: Read-only. The request create time. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[RoleId <String>]`: The id of the role.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[AssignmentState <String>]`: 
+  - `[Duration <String>]`: 
+  - `[Reason <String>]`: 
+  - `[RequestedDateTime <DateTime?>]`: 
+  - `[RoleId <String>]`: 
   - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: The assignments for this role. Read-only. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ExpirationDateTime <DateTime?>]`: The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
-      - `[IsElevated <Boolean?>]`: true if the role assignment is activated. false if the role assignment is deactivated.
-      - `[ResultMessage <String>]`: Result message set by the service.
-      - `[RoleId <String>]`: Role identifier. In GUID string format.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ExpirationDateTime <DateTime?>]`: 
+      - `[IsElevated <Boolean?>]`: 
+      - `[ResultMessage <String>]`: 
+      - `[RoleId <String>]`: 
       - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
-      - `[UserId <String>]`: User identifier. In GUID string format.
-    - `[Name <String>]`: Role name.
+      - `[UserId <String>]`: 
+    - `[Name <String>]`: 
     - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
-      - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
-      - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
-      - `[IsMfaOnElevationConfigurable <Boolean?>]`: true if mfaOnElevation is configurable. false if mfaOnElevation is not configurable.
-      - `[LastGlobalAdmin <Boolean?>]`: Internal used only.
-      - `[MaxElavationDuration <TimeSpan?>]`: Maximal duration for the activated role.
-      - `[MfaOnElevation <Boolean?>]`: true if MFA is required to activate the role. false if MFA is not required to activate the role.
-      - `[MinElevationDuration <TimeSpan?>]`: Minimal duration for the activated role.
-      - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
-      - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ApprovalOnElevation <Boolean?>]`: 
+      - `[ApproverIds <String[]>]`: 
+      - `[ElevationDuration <TimeSpan?>]`: 
+      - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+      - `[LastGlobalAdmin <Boolean?>]`: 
+      - `[MaxElavationDuration <TimeSpan?>]`: 
+      - `[MfaOnElevation <Boolean?>]`: 
+      - `[MinElevationDuration <TimeSpan?>]`: 
+      - `[NotificationToUserOnElevation <Boolean?>]`: 
+      - `[TicketingInfoOnElevation <Boolean?>]`: 
     - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
-      - `[ManagedCount <Int32?>]`: The number of users that have the role assigned but the role is deactivated.
-      - `[MfaEnabled <Boolean?>]`: true if the role activation requires MFA. false if the role activation doesn't require MFA.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ElevatedCount <Int32?>]`: 
+      - `[ManagedCount <Int32?>]`: 
+      - `[MfaEnabled <Boolean?>]`: 
       - `[Status <String>]`: roleSummaryStatus
-      - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
+      - `[UsersCount <Int32?>]`: 
   - `[Schedule <IMicrosoftGraphGovernanceSchedule>]`: governanceSchedule
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Duration <TimeSpan?>]`: The duration of a role assignment. It is in format of a TimeSpan.
     - `[EndDateTime <DateTime?>]`: The end time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Note: if the value is null, it indicates a permanent assignment.
     - `[StartDateTime <DateTime?>]`: The start time of the role assignment. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
     - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
-  - `[Status <String>]`: Read-only.The status of the role assignment request. The value can be NotStarted,Completed,RequestedApproval,Scheduled,Approved,ApprovalDenied,ApprovalAborted,Cancelling,Cancelled,Revoked,RequestExpired.
-  - `[TicketNumber <String>]`: The ticketNumber for the role assignment.
-  - `[TicketSystem <String>]`: The ticketSystem for the role assignment.
-  - `[Type <String>]`: Representing the type of the operation on the role assignment. The value can be AdminAdd: Administrators add users to roles;UserAdd: Users add role assignments.
-  - `[UserId <String>]`: The id of the user.
+  - `[Status <String>]`: 
+  - `[TicketNumber <String>]`: 
+  - `[TicketSystem <String>]`: 
+  - `[Type <String>]`: 
+  - `[UserId <String>]`: 
 
-ROLEINFO `<IMicrosoftGraphPrivilegedRole>`: privilegedRole
+`ROLEINFO <IMicrosoftGraphPrivilegedRole>`: privilegedRole
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: The assignments for this role. Read-only. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ExpirationDateTime <DateTime?>]`: The UTC DateTime when the temporary privileged role assignment will be expired. For permanent role assignment, the value is null.
-    - `[IsElevated <Boolean?>]`: true if the role assignment is activated. false if the role assignment is deactivated.
-    - `[ResultMessage <String>]`: Result message set by the service.
-    - `[RoleId <String>]`: Role identifier. In GUID string format.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Assignments <IMicrosoftGraphPrivilegedRoleAssignment[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ExpirationDateTime <DateTime?>]`: 
+    - `[IsElevated <Boolean?>]`: 
+    - `[ResultMessage <String>]`: 
+    - `[RoleId <String>]`: 
     - `[RoleInfo <IMicrosoftGraphPrivilegedRole>]`: privilegedRole
-    - `[UserId <String>]`: User identifier. In GUID string format.
-  - `[Name <String>]`: Role name.
+    - `[UserId <String>]`: 
+  - `[Name <String>]`: 
   - `[Settings <IMicrosoftGraphPrivilegedRoleSettings>]`: privilegedRoleSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ApprovalOnElevation <Boolean?>]`: true if the approval is required when activate the role. false if the approval is not required when activate the role.
-    - `[ApproverIds <String[]>]`: List of Approval ids, if approval is required for activation.
-    - `[ElevationDuration <TimeSpan?>]`: The duration when the role is activated.
-    - `[IsMfaOnElevationConfigurable <Boolean?>]`: true if mfaOnElevation is configurable. false if mfaOnElevation is not configurable.
-    - `[LastGlobalAdmin <Boolean?>]`: Internal used only.
-    - `[MaxElavationDuration <TimeSpan?>]`: Maximal duration for the activated role.
-    - `[MfaOnElevation <Boolean?>]`: true if MFA is required to activate the role. false if MFA is not required to activate the role.
-    - `[MinElevationDuration <TimeSpan?>]`: Minimal duration for the activated role.
-    - `[NotificationToUserOnElevation <Boolean?>]`: true if send notification to the end user when the role is activated. false if do not send notification when the role is activated.
-    - `[TicketingInfoOnElevation <Boolean?>]`: true if the ticketing information is required when activate the role. false if the ticketing information is not required when activate the role.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ApprovalOnElevation <Boolean?>]`: 
+    - `[ApproverIds <String[]>]`: 
+    - `[ElevationDuration <TimeSpan?>]`: 
+    - `[IsMfaOnElevationConfigurable <Boolean?>]`: 
+    - `[LastGlobalAdmin <Boolean?>]`: 
+    - `[MaxElavationDuration <TimeSpan?>]`: 
+    - `[MfaOnElevation <Boolean?>]`: 
+    - `[MinElevationDuration <TimeSpan?>]`: 
+    - `[NotificationToUserOnElevation <Boolean?>]`: 
+    - `[TicketingInfoOnElevation <Boolean?>]`: 
   - `[Summary <IMicrosoftGraphPrivilegedRoleSummary>]`: privilegedRoleSummary
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ElevatedCount <Int32?>]`: The number of users that have the role assigned and the role is activated.
-    - `[ManagedCount <Int32?>]`: The number of users that have the role assigned but the role is deactivated.
-    - `[MfaEnabled <Boolean?>]`: true if the role activation requires MFA. false if the role activation doesn't require MFA.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ElevatedCount <Int32?>]`: 
+    - `[ManagedCount <Int32?>]`: 
+    - `[MfaEnabled <Boolean?>]`: 
     - `[Status <String>]`: roleSummaryStatus
-    - `[UsersCount <Int32?>]`: The number of users that are assigned with the role.
+    - `[UsersCount <Int32?>]`: 
 
 ## RELATED LINKS
 
-## RELATED LINKS

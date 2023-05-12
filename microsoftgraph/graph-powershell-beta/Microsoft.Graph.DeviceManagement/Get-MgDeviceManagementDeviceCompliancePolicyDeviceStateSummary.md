@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/get-mgdevicemanagementdevicecompliancepolicydevicestatesummary
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementdevicecompliancepolicydevicestatesummary
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary
+# Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary
 
 ## SYNOPSIS
 The device compliance state summary for this account.
@@ -13,7 +13,7 @@ The device compliance state summary for this account.
 ## SYNTAX
 
 ```
-Get-MgDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty <String[]>]
+Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStateSummary [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -22,13 +22,27 @@ The device compliance state summary for this account.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +57,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -61,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

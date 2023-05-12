@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mgteamworkdeviceconfiguration
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamworkdeviceconfiguration
 schema: 2.0.0
 ---
 
-# Update-MgTeamworkDeviceConfiguration
+# Update-MgBetaTeamworkDeviceConfiguration
 
 ## SYNOPSIS
 Update the navigation property configuration in teamwork
@@ -14,7 +14,7 @@ Update the navigation property configuration in teamwork
 
 ### UpdateExpanded (Default)
 ```
-Update-MgTeamworkDeviceConfiguration -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
+Update-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId <String> [-AdditionalProperties <Hashtable>]
  [-CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]
  [-HardwareConfiguration <IMicrosoftGraphTeamworkHardwareConfiguration>] [-Id <String>]
@@ -23,20 +23,25 @@ Update-MgTeamworkDeviceConfiguration -TeamworkDeviceId <String> [-AdditionalProp
  [-SoftwareVersions <IMicrosoftGraphTeamworkDeviceSoftwareVersions>]
  [-SpeakerConfiguration <IMicrosoftGraphTeamworkSpeakerConfiguration>]
  [-SystemConfiguration <IMicrosoftGraphTeamworkSystemConfiguration>]
- [-TeamsClientConfiguration <IMicrosoftGraphTeamworkTeamsClientConfiguration>] [-PassThru] [-WhatIf] [-Confirm]
+ [-TeamsClientConfiguration <IMicrosoftGraphTeamworkTeamsClientConfiguration>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamworkDeviceConfiguration -TeamworkDeviceId <String>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaTeamworkDeviceConfiguration -TeamworkDeviceId <String>
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+Update-MgBetaTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-DisplayConfiguration <IMicrosoftGraphTeamworkDisplayConfiguration>]
  [-HardwareConfiguration <IMicrosoftGraphTeamworkHardwareConfiguration>] [-Id <String>]
@@ -45,14 +50,7 @@ Update-MgTeamworkDeviceConfiguration -InputObject <ITeamsIdentity> [-AdditionalP
  [-SoftwareVersions <IMicrosoftGraphTeamworkDeviceSoftwareVersions>]
  [-SpeakerConfiguration <IMicrosoftGraphTeamworkSpeakerConfiguration>]
  [-SystemConfiguration <IMicrosoftGraphTeamworkSystemConfiguration>]
- [-TeamsClientConfiguration <IMicrosoftGraphTeamworkTeamsClientConfiguration>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgTeamworkDeviceConfiguration -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphTeamworkDeviceConfiguration> [-PassThru] [-WhatIf] [-Confirm]
+ [-TeamsClientConfiguration <IMicrosoftGraphTeamworkTeamsClientConfiguration>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -61,13 +59,27 @@ Update the navigation property configuration in teamwork
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,10 +92,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 teamworkDeviceConfiguration
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -96,10 +108,10 @@ Accept wildcard characters: False
 
 ### -CameraConfiguration
 teamworkCameraConfiguration
-To construct, please use Get-Help -Online and see NOTES section for CAMERACONFIGURATION properties and create a hash table.
+To construct, see NOTES section for CAMERACONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkCameraConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkCameraConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,10 +124,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +142,7 @@ Accept wildcard characters: False
 The UTC date and time when the device configuration document was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,10 +155,10 @@ Accept wildcard characters: False
 
 ### -DisplayConfiguration
 teamworkDisplayConfiguration
-To construct, please use Get-Help -Online and see NOTES section for DISPLAYCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for DISPLAYCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDisplayConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDisplayConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,10 +171,10 @@ Accept wildcard characters: False
 
 ### -HardwareConfiguration
 teamworkHardwareConfiguration
-To construct, please use Get-Help -Online and see NOTES section for HARDWARECONFIGURATION properties and create a hash table.
+To construct, see NOTES section for HARDWARECONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkHardwareConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkHardwareConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,11 +186,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,11 +203,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -207,10 +219,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +237,7 @@ Accept wildcard characters: False
 The UTC date and time when the device configuration was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,26 +250,11 @@ Accept wildcard characters: False
 
 ### -MicrophoneConfiguration
 teamworkMicrophoneConfiguration
-To construct, please use Get-Help -Online and see NOTES section for MICROPHONECONFIGURATION properties and create a hash table.
+To construct, see NOTES section for MICROPHONECONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkMicrophoneConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkMicrophoneConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -269,10 +266,10 @@ Accept wildcard characters: False
 
 ### -SoftwareVersions
 teamworkDeviceSoftwareVersions
-To construct, please use Get-Help -Online and see NOTES section for SOFTWAREVERSIONS properties and create a hash table.
+To construct, see NOTES section for SOFTWAREVERSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkDeviceSoftwareVersions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceSoftwareVersions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,10 +282,10 @@ Accept wildcard characters: False
 
 ### -SpeakerConfiguration
 teamworkSpeakerConfiguration
-To construct, please use Get-Help -Online and see NOTES section for SPEAKERCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for SPEAKERCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkSpeakerConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkSpeakerConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -301,10 +298,10 @@ Accept wildcard characters: False
 
 ### -SystemConfiguration
 teamworkSystemConfiguration
-To construct, please use Get-Help -Online and see NOTES section for SYSTEMCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for SYSTEMCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkSystemConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkSystemConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -317,10 +314,10 @@ Accept wildcard characters: False
 
 ### -TeamsClientConfiguration
 teamworkTeamsClientConfiguration
-To construct, please use Get-Help -Online and see NOTES section for TEAMSCLIENTCONFIGURATION properties and create a hash table.
+To construct, see NOTES section for TEAMSCLIENTCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkTeamsClientConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkTeamsClientConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -335,8 +332,8 @@ Accept wildcard characters: False
 The unique identifier of teamworkDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -350,7 +347,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -366,7 +363,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -382,11 +379,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceConfiguration
+
 ## NOTES
 
 ALIASES
@@ -396,13 +396,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
+`BODYPARAMETER <IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CameraConfiguration <IMicrosoftGraphTeamworkCameraConfiguration>]`: teamworkCameraConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Cameras <IMicrosoftGraphTeamworkPeripheral[]>]`: 
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: Display name for the peripheral.
       - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -510,10 +510,10 @@ BODYPARAMETER `<IMicrosoftGraphTeamworkDeviceConfiguration>`: teamworkDeviceConf
       - `[IsHideMeetingNamesEnabled <Boolean?>]`: True if hiding meeting names is enabled.
       - `[IsSendLogsAndFeedbackEnabled <Boolean?>]`: True if sending logs and feedback is enabled.
 
-CAMERACONFIGURATION `<IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCameraConfiguration
+`CAMERACONFIGURATION <IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCameraConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Cameras <IMicrosoftGraphTeamworkPeripheral[]>]`: 
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: Display name for the peripheral.
     - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
     - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -524,7 +524,7 @@ CAMERACONFIGURATION `<IMicrosoftGraphTeamworkCameraConfiguration>`: teamworkCame
     - `[IsContentEnhancementEnabled <Boolean?>]`: True if the content enhancement is enabled.
   - `[DefaultContentCamera <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -533,13 +533,13 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-DISPLAYCONFIGURATION `<IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDisplayConfiguration
+`DISPLAYCONFIGURATION <IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDisplayConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfiguredDisplays <IMicrosoftGraphTeamworkConfiguredPeripheral[]>]`: The list of configured displays. Applicable only for Microsoft Teams Rooms devices.
     - `[IsOptional <Boolean?>]`: True if the current peripheral is optional. If set to false, this property is also used as part of the calculation of the health state for the device.
     - `[Peripheral <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DisplayName <String>]`: Display name for the peripheral.
       - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
       - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -554,18 +554,18 @@ DISPLAYCONFIGURATION `<IMicrosoftGraphTeamworkDisplayConfiguration>`: teamworkDi
   - `[IsContentDuplicationAllowed <Boolean?>]`: True if content duplication is allowed. Applicable only for Teams Rooms devices.
   - `[IsDualDisplayModeEnabled <Boolean?>]`: True if dual display mode is enabled. If isDualDisplayModeEnabled is true, then the content will be displayed on both front of room screens instead of just the one screen, when it is shared via the HDMI ingest module on the Microsoft Teams Rooms device. Applicable only for Teams Rooms devices.
 
-HARDWARECONFIGURATION `<IMicrosoftGraphTeamworkHardwareConfiguration>`: teamworkHardwareConfiguration
+`HARDWARECONFIGURATION <IMicrosoftGraphTeamworkHardwareConfiguration>`: teamworkHardwareConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Compute <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: Display name for the peripheral.
     - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
     - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
   - `[HdmiIngest <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
   - `[ProcessorModel <String>]`: The CPU model on the device.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -604,7 +604,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -613,18 +613,18 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-MICROPHONECONFIGURATION `<IMicrosoftGraphTeamworkMicrophoneConfiguration>`: teamworkMicrophoneConfiguration
+`MICROPHONECONFIGURATION <IMicrosoftGraphTeamworkMicrophoneConfiguration>`: teamworkMicrophoneConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DefaultMicrophone <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: Display name for the peripheral.
     - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
     - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
   - `[IsMicrophoneOptional <Boolean?>]`: True if the configured microphone is optional. False if the microphone is not optional and the health state of the device should be computed.
   - `[Microphones <IMicrosoftGraphTeamworkPeripheral[]>]`: 
 
-SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDeviceSoftwareVersions
+`SOFTWAREVERSIONS <IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDeviceSoftwareVersions
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AdminAgentSoftwareVersion <String>]`: The software version for the admin agent running on the device.
   - `[FirmwareSoftwareVersion <String>]`: The software version for the firmware running on the device.
@@ -632,11 +632,11 @@ SOFTWAREVERSIONS `<IMicrosoftGraphTeamworkDeviceSoftwareVersions>`: teamworkDevi
   - `[PartnerAgentSoftwareVersion <String>]`: The software version for the partner agent running on the device.
   - `[TeamsClientSoftwareVersion <String>]`: The software version for the Teams client running on the device.
 
-SPEAKERCONFIGURATION `<IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSpeakerConfiguration
+`SPEAKERCONFIGURATION <IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSpeakerConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DefaultCommunicationSpeaker <IMicrosoftGraphTeamworkPeripheral>]`: teamworkPeripheral
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: Display name for the peripheral.
     - `[ProductId <String>]`: The product ID of the device. Each product from a vendor has its own ID.
     - `[VendorId <String>]`: The unique identifier for the vendor of the device. Each vendor has a unique ID.
@@ -645,7 +645,7 @@ SPEAKERCONFIGURATION `<IMicrosoftGraphTeamworkSpeakerConfiguration>`: teamworkSp
   - `[IsSpeakerOptional <Boolean?>]`: True if the configured speaker is optional. Used to compute the health state if the speaker is not optional.
   - `[Speakers <IMicrosoftGraphTeamworkPeripheral[]>]`: 
 
-SYSTEMCONFIGURATION `<IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSystemConfiguration
+`SYSTEMCONFIGURATION <IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSystemConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DateTimeConfiguration <IMicrosoftGraphTeamworkDateTimeConfiguration>]`: teamworkDateTimeConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -676,7 +676,7 @@ SYSTEMCONFIGURATION `<IMicrosoftGraphTeamworkSystemConfiguration>`: teamworkSyst
     - `[SecondaryDns <String>]`: A secondary DNS is used when the primary DNS is not available.
     - `[SubnetMask <String>]`: A subnet mask is a number that distinguishes the network address and the host address within an IP address.
 
-TEAMSCLIENTCONFIGURATION `<IMicrosoftGraphTeamworkTeamsClientConfiguration>`: teamworkTeamsClientConfiguration
+`TEAMSCLIENTCONFIGURATION <IMicrosoftGraphTeamworkTeamsClientConfiguration>`: teamworkTeamsClientConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AccountConfiguration <IMicrosoftGraphTeamworkAccountConfiguration>]`: teamworkAccountConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -696,4 +696,3 @@ TEAMSCLIENTCONFIGURATION `<IMicrosoftGraphTeamworkTeamsClientConfiguration>`: te
 
 ## RELATED LINKS
 
-## RELATED LINKS

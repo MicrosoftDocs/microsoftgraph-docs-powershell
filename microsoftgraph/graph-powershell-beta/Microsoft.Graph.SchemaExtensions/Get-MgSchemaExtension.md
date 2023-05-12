@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.SchemaExtensions-help.xml
-Module Name: Microsoft.Graph.SchemaExtensions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.schemaextensions/get-mgschemaextension
+external help file:
+Module Name: Microsoft.Graph.Beta.SchemaExtensions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.schemaextensions/get-mgbetaschemaextension
 schema: 2.0.0
-ms.prod: extensions
 ---
 
-# Get-MgSchemaExtension
+# Get-MgBetaSchemaExtension
 
 ## SYNOPSIS
 Get the properties of the specified schemaExtension definition.
@@ -15,20 +14,20 @@ Get the properties of the specified schemaExtension definition.
 
 ### List (Default)
 ```
-Get-MgSchemaExtension [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgBetaSchemaExtension [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgSchemaExtension -SchemaExtensionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaSchemaExtension -SchemaExtensionId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty <String[]>]
+Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -37,23 +36,21 @@ Get the properties of the specified schemaExtension definition.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgSchemaExtension Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.SchemaExtensions
-Get-MgSchemaExtension -SchemaExtensionId $schemaExtensionId
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
+Get-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
 ```
 
-This example shows how to use the Get-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Get-MgSchemaExtension Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.SchemaExtensions
-Get-MgSchemaExtension -Filter "id eq 'graphlearn_test'"
+Import-Module Microsoft.Graph.Beta.SchemaExtensions
+Get-MgBetaSchemaExtension -Filter "id eq 'graphlearn_test'"
 ```
 
-This example shows how to use the Get-MgSchemaExtension Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -61,7 +58,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -77,7 +74,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -92,7 +89,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -107,7 +104,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -120,10 +117,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISchemaExtensionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -138,7 +135,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -153,7 +150,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -165,10 +162,10 @@ Accept wildcard characters: False
 ```
 
 ### -SchemaExtensionId
-key: id of schemaExtension
+The unique identifier of schemaExtension
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -183,7 +180,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -198,7 +210,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -213,24 +225,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -244,10 +241,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISchemaExtensionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISchemaExtensionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchemaExtension
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchemaExtension
+
 ## NOTES
 
 ALIASES
@@ -257,7 +256,8 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISchemaExtensionsIdentity>`: Identity Parameter
-  - `[SchemaExtensionId <String>]`: key: id of schemaExtension
+`INPUTOBJECT <ISchemaExtensionsIdentity>`: Identity Parameter
+  - `[SchemaExtensionId <String>]`: The unique identifier of schemaExtension
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/invoke-mggraphreportauthenticationmethod
+external help file:
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/invoke-mgbetagraphreportauthenticationmethod
 schema: 2.0.0
 ---
 
-# Invoke-MgGraphReportAuthenticationMethod
+# Invoke-MgBetaGraphReportAuthenticationMethod
 
 ## SYNOPSIS
 Invoke function usersRegisteredByFeature
@@ -14,29 +14,29 @@ Invoke function usersRegisteredByFeature
 
 ### Graph (Default)
 ```
-Invoke-MgGraphReportAuthenticationMethod [<CommonParameters>]
-```
-
-### Graph3
-```
-Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
- [<CommonParameters>]
+Invoke-MgBetaGraphReportAuthenticationMethod [<CommonParameters>]
 ```
 
 ### Graph1
 ```
-Invoke-MgGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
+Invoke-MgBetaGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
  [<CommonParameters>]
 ```
 
-### GraphViaIdentity1
+### Graph3
 ```
-Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
+Invoke-MgBetaGraphReportAuthenticationMethod -IncludedUserRoles <String> -IncludedUserTypes <String>
+ [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
 ```
-Invoke-MgGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
+Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
+```
+
+### GraphViaIdentity1
+```
+Invoke-MgBetaGraphReportAuthenticationMethod -InputObject <IReportsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,28 @@ Invoke function usersRegisteredByFeature
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -IncludedUserRoles
 Usage: includedUserRoles='{includedUserRoles}'
 
 ```yaml
-Type: String
-Parameter Sets: Graph3, Graph1
+Type: System.String
+Parameter Sets: Graph1, Graph3
 Aliases:
 
 Required: True
@@ -65,8 +79,8 @@ Accept wildcard characters: False
 Usage: includedUserTypes='{includedUserTypes}'
 
 ```yaml
-Type: String
-Parameter Sets: Graph3, Graph1
+Type: System.String
+Parameter Sets: Graph1, Graph3
 Aliases:
 
 Required: True
@@ -78,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GraphViaIdentity1, GraphViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+Parameter Sets: GraphViaIdentity, GraphViaIdentity1
 Aliases:
 
 Required: True
@@ -97,11 +111,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationFeatureSummary
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationMethodSummary
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserRegistrationFeatureSummary
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserRegistrationMethodSummary
+
 ## NOTES
 
 ALIASES
@@ -111,7 +128,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
@@ -139,3 +156,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+

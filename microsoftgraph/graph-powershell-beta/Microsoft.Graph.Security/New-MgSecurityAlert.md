@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecurityalert
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityalert
 schema: 2.0.0
-ms.prod: security
 ---
 
-# New-MgSecurityAlert
+# New-MgBetaSecurityAlert
 
 ## SYNOPSIS
 Create new navigation property to alerts for security
@@ -15,7 +14,7 @@ Create new navigation property to alerts for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
+New-MgBetaSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashtable>]
  [-AlertDetections <IMicrosoftGraphAlertDetection[]>] [-AssignedTo <String>] [-AzureSubscriptionId <String>]
  [-AzureTenantId <String>] [-Category <String>] [-ClosedDateTime <DateTime>]
  [-CloudAppStates <IMicrosoftGraphCloudAppSecurityState[]>] [-Comments <String[]>] [-Confidence <Int32>]
@@ -33,12 +32,12 @@ New-MgSecurityAlert [-ActivityGroupName <String>] [-AdditionalProperties <Hashta
  [-UriClickSecurityStates <IMicrosoftGraphUriClickSecurityState[]>]
  [-UserStates <IMicrosoftGraphUserSecurityState[]>]
  [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>]
- [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VulnerabilityStates <IMicrosoftGraphVulnerabilityState[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,16 +45,12 @@ Create new navigation property to alerts for security
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
-
-Get-MgSecurityAlert
+Import-Module Microsoft.Graph.Beta.Security
 ```
 
-This example shows how to use the New-MgSecurityAlert Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaSecurityAlert
 
 ## PARAMETERS
 
@@ -63,7 +58,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Name or alias of the activity group (attacker) this alert is attributed to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -78,7 +73,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,10 +86,10 @@ Accept wildcard characters: False
 
 ### -AlertDetections
 .
-To construct, please use Get-Help -Online and see NOTES section for ALERTDETECTIONS properties and create a hash table.
+To construct, see NOTES section for ALERTDETECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlertDetection[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlertDetection[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,7 +104,7 @@ Accept wildcard characters: False
 Name of the analyst the alert is assigned to for triage, investigation, or remediation (supports update).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +119,7 @@ Accept wildcard characters: False
 Azure subscription ID, present if this alert is related to an Azure resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +135,7 @@ Azure Active Directory tenant ID.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -153,10 +148,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 alert
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlert
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
 Parameter Sets: Create
 Aliases:
 
@@ -171,7 +166,7 @@ Accept wildcard characters: False
 Category of the alert (for example, credentialTheft, ransomware, etc.).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +183,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z (supports update).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -201,10 +196,10 @@ Accept wildcard characters: False
 
 ### -CloudAppStates
 Security-related stateful information generated by the provider about the cloud application/s related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for CLOUDAPPSTATES properties and create a hash table.
+To construct, see NOTES section for CLOUDAPPSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudAppSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudAppSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -219,7 +214,7 @@ Accept wildcard characters: False
 Customer-provided comments on alert (for customer alert management) (supports update).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -234,7 +229,7 @@ Accept wildcard characters: False
 Confidence of the detection logic (percentage between 1-100).
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -252,7 +247,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -267,7 +262,7 @@ Accept wildcard characters: False
 Alert description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -282,7 +277,7 @@ Accept wildcard characters: False
 Set of alerts related to this alert entity (each alert is pushed to the SIEM as a separate record).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -300,7 +295,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -315,7 +310,7 @@ Accept wildcard characters: False
 alertFeedback
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -328,10 +323,10 @@ Accept wildcard characters: False
 
 ### -FileStates
 Security-related stateful information generated by the provider about the file(s) related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for FILESTATES properties and create a hash table.
+To construct, see NOTES section for FILESTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFileSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFileSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -343,11 +338,11 @@ Accept wildcard characters: False
 ```
 
 ### -HistoryStates
-.
-To construct, please use Get-Help -Online and see NOTES section for HISTORYSTATES properties and create a hash table.
+A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
+To construct, see NOTES section for HISTORYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlertHistoryState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlertHistoryState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -360,10 +355,10 @@ Accept wildcard characters: False
 
 ### -HostStates
 Security-related stateful information generated by the provider about the host(s) related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for HOSTSTATES properties and create a hash table.
+To construct, see NOTES section for HOSTSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHostSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHostSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -375,11 +370,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -394,7 +389,7 @@ Accept wildcard characters: False
 IDs of incidents related to current alert.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -407,10 +402,10 @@ Accept wildcard characters: False
 
 ### -InvestigationSecurityStates
 .
-To construct, please use Get-Help -Online and see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
+To construct, see NOTES section for INVESTIGATIONSECURITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvestigationSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInvestigationSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -425,7 +420,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -442,7 +437,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -455,10 +450,10 @@ Accept wildcard characters: False
 
 ### -MalwareStates
 Threat Intelligence pertaining to malware related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for MALWARESTATES properties and create a hash table.
+To construct, see NOTES section for MALWARESTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMalwareState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMalwareState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -471,10 +466,10 @@ Accept wildcard characters: False
 
 ### -MessageSecurityStates
 .
-To construct, please use Get-Help -Online and see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
+To construct, see NOTES section for MESSAGESECURITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMessageSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -487,10 +482,10 @@ Accept wildcard characters: False
 
 ### -NetworkConnections
 Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for NETWORKCONNECTIONS properties and create a hash table.
+To construct, see NOTES section for NETWORKCONNECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphNetworkConnection[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNetworkConnection[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -503,10 +498,10 @@ Accept wildcard characters: False
 
 ### -Processes
 Security-related stateful information generated by the provider about the process or processes related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for PROCESSES properties and create a hash table.
+To construct, see NOTES section for PROCESSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProcess[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProcess[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -521,7 +516,7 @@ Accept wildcard characters: False
 Vendor/provider recommended action(s) to take as a result of the alert (for example, isolate machine, enforce2FA, reimage host).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -534,10 +529,10 @@ Accept wildcard characters: False
 
 ### -RegistryKeyStates
 Security-related stateful information generated by the provider about the registry keys related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for REGISTRYKEYSTATES properties and create a hash table.
+To construct, see NOTES section for REGISTRYKEYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRegistryKeyState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRegistryKeyState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -551,10 +546,10 @@ Accept wildcard characters: False
 ### -SecurityResources
 Resources related to current alert.
 For example, for some alerts this can have the Azure Resource value.
-To construct, please use Get-Help -Online and see NOTES section for SECURITYRESOURCES properties and create a hash table.
+To construct, see NOTES section for SECURITYRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityResource[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityResource[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -569,7 +564,7 @@ Accept wildcard characters: False
 alertSeverity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -584,7 +579,7 @@ Accept wildcard characters: False
 Hyperlinks (URIs) to the source material related to the alert, for example, provider's user interface for alerts or log search, etc.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -599,7 +594,7 @@ Accept wildcard characters: False
 alertStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -614,7 +609,7 @@ Accept wildcard characters: False
 User-definable labels that can be applied to an alert and can serve as filter conditions (for example 'HVA', 'SAW', etc.) (supports update).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -630,7 +625,7 @@ Alert title.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -645,10 +640,10 @@ Accept wildcard characters: False
 Security-related information about the specific properties that triggered the alert (properties appearing in the alert).
 Alerts might contain information about multiple users, hosts, files, ip addresses.
 This field indicates which properties triggered the alert generation.
-To construct, please use Get-Help -Online and see NOTES section for TRIGGERS properties and create a hash table.
+To construct, see NOTES section for TRIGGERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAlertTrigger[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlertTrigger[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -661,10 +656,10 @@ Accept wildcard characters: False
 
 ### -UriClickSecurityStates
 .
-To construct, please use Get-Help -Online and see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
+To construct, see NOTES section for URICLICKSECURITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUriClickSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUriClickSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -677,10 +672,10 @@ Accept wildcard characters: False
 
 ### -UserStates
 Security-related stateful information generated by the provider about the user accounts related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for USERSTATES properties and create a hash table.
+To construct, see NOTES section for USERSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserSecurityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -693,10 +688,10 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -709,10 +704,10 @@ Accept wildcard characters: False
 
 ### -VulnerabilityStates
 Threat intelligence pertaining to one or more vulnerabilities related to this alert.
-To construct, please use Get-Help -Online and see NOTES section for VULNERABILITYSTATES properties and create a hash table.
+To construct, see NOTES section for VULNERABILITYSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVulnerabilityState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVulnerabilityState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -727,7 +722,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -743,7 +738,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -759,10 +754,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAlert
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAlert
+
 ## NOTES
 
 ALIASES
@@ -772,14 +769,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ALERTDETECTIONS <IMicrosoftGraphAlertDetection\[]>: .
+`ALERTDETECTIONS <IMicrosoftGraphAlertDetection[]>`: .
   - `[DetectionType <String>]`: 
   - `[Method <String>]`: 
   - `[Name <String>]`: 
 
-BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
+`BODYPARAMETER <IMicrosoftGraphAlert>`: alert
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivityGroupName <String>]`: Name or alias of the activity group (attacker) this alert is attributed to.
   - `[AlertDetections <IMicrosoftGraphAlertDetection[]>]`: 
     - `[DetectionType <String>]`: 
@@ -809,14 +806,14 @@ BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
     - `[Name <String>]`: File name (without path).
     - `[Path <String>]`: Full file path of the file/imageFile.
     - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.
-  - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: 
-    - `[AppId <String>]`: 
-    - `[AssignedTo <String>]`: 
-    - `[Comments <String[]>]`: 
+  - `[HistoryStates <IMicrosoftGraphAlertHistoryState[]>]`: A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
+    - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application.
+    - `[AssignedTo <String>]`: UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN).
+    - `[Comments <String[]>]`: Comment entered by signed-in user.
     - `[Feedback <String>]`: alertFeedback
     - `[Status <String>]`: alertStatus
-    - `[UpdatedDateTime <DateTime?>]`: 
-    - `[User <String>]`: 
+    - `[UpdatedDateTime <DateTime?>]`: Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+    - `[User <String>]`: UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode).
   - `[HostStates <IMicrosoftGraphHostSecurityState[]>]`: Security-related stateful information generated by the provider about the host(s) related to this alert.
     - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
     - `[IsAzureAdJoined <Boolean?>]`: 
@@ -850,7 +847,7 @@ BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
     - `[MessageSubject <String>]`: 
     - `[NetworkMessageId <String>]`: 
   - `[NetworkConnections <IMicrosoftGraphNetworkConnection[]>]`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
+    - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
     - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
     - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
     - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
@@ -940,12 +937,12 @@ BODYPARAMETER `<IMicrosoftGraphAlert>`: alert
     - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
     - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
-CLOUDAPPSTATES <IMicrosoftGraphCloudAppSecurityState\[]>: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
+`CLOUDAPPSTATES <IMicrosoftGraphCloudAppSecurityState[]>`: Security-related stateful information generated by the provider about the cloud application/s related to this alert.
   - `[DestinationServiceIP <String>]`: Destination IP Address of the connection to the cloud application/service.
   - `[DestinationServiceName <String>]`: Cloud application/service name (for example 'Salesforce', 'DropBox', etc.).
   - `[RiskScore <String>]`: Provider-generated/calculated risk score of the Cloud Application/Service. Recommended value range of 0-1, which equates to a percentage.
 
-FILESTATES <IMicrosoftGraphFileSecurityState\[]>: Security-related stateful information generated by the provider about the file(s) related to this alert.
+`FILESTATES <IMicrosoftGraphFileSecurityState[]>`: Security-related stateful information generated by the provider about the file(s) related to this alert.
   - `[FileHash <IMicrosoftGraphFileHash>]`: fileHash
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[HashType <String>]`: fileHashType
@@ -954,16 +951,16 @@ FILESTATES <IMicrosoftGraphFileSecurityState\[]>: Security-related stateful info
   - `[Path <String>]`: Full file path of the file/imageFile.
   - `[RiskScore <String>]`: Provider generated/calculated risk score of the alert file. Recommended value range of 0-1, which equates to a percentage.
 
-HISTORYSTATES <IMicrosoftGraphAlertHistoryState\[]>: .
-  - `[AppId <String>]`: 
-  - `[AssignedTo <String>]`: 
-  - `[Comments <String[]>]`: 
+`HISTORYSTATES <IMicrosoftGraphAlertHistoryState[]>`: A collection of alertHistoryStates comprising an audit log of all updates made to an alert.
+  - `[AppId <String>]`: The Application ID of the calling application that submitted an update (PATCH) to the alert. The appId should be extracted from the auth token and not entered manually by the calling application.
+  - `[AssignedTo <String>]`: UPN of user the alert was assigned to (note: alert.assignedTo only stores the last value/UPN).
+  - `[Comments <String[]>]`: Comment entered by signed-in user.
   - `[Feedback <String>]`: alertFeedback
   - `[Status <String>]`: alertStatus
-  - `[UpdatedDateTime <DateTime?>]`: 
-  - `[User <String>]`: 
+  - `[UpdatedDateTime <DateTime?>]`: Date and time of the alert update. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
+  - `[User <String>]`: UPN of the signed-in user that updated the alert (taken from the bearer token - if in user/delegated auth mode).
 
-HOSTSTATES <IMicrosoftGraphHostSecurityState\[]>: Security-related stateful information generated by the provider about the host(s) related to this alert.
+`HOSTSTATES <IMicrosoftGraphHostSecurityState[]>`: Security-related stateful information generated by the provider about the host(s) related to this alert.
   - `[Fqdn <String>]`: Host FQDN (Fully Qualified Domain Name) (for example, machine.company.com).
   - `[IsAzureAdJoined <Boolean?>]`: 
   - `[IsAzureAdRegistered <Boolean?>]`: 
@@ -974,18 +971,18 @@ HOSTSTATES <IMicrosoftGraphHostSecurityState\[]>: Security-related stateful info
   - `[PublicIPAddress <String>]`: Publicly routable IPv4 or IPv6 address (see RFC 1918) at time of the alert.
   - `[RiskScore <String>]`: Provider-generated/calculated risk score of the host.  Recommended value range of 0-1, which equates to a percentage.
 
-INVESTIGATIONSECURITYSTATES <IMicrosoftGraphInvestigationSecurityState\[]>: .
+`INVESTIGATIONSECURITYSTATES <IMicrosoftGraphInvestigationSecurityState[]>`: .
   - `[Name <String>]`: 
   - `[Status <String>]`: 
 
-MALWARESTATES <IMicrosoftGraphMalwareState\[]>: Threat Intelligence pertaining to malware related to this alert.
+`MALWARESTATES <IMicrosoftGraphMalwareState[]>`: Threat Intelligence pertaining to malware related to this alert.
   - `[Category <String>]`: Provider-generated malware category (for example, trojan, ransomware, etc.).
   - `[Family <String>]`: Provider-generated malware family (for example, 'wannacry', 'notpetya', etc.).
   - `[Name <String>]`: Provider-generated malware variant name (for example, Trojan:Win32/Powessere.H).
   - `[Severity <String>]`: Provider-determined severity of this malware.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected file (malware/vulnerability) was running at the time of detection or was detected at rest on the disk.
 
-MESSAGESECURITYSTATES <IMicrosoftGraphMessageSecurityState\[]>: .
+`MESSAGESECURITYSTATES <IMicrosoftGraphMessageSecurityState[]>`: .
   - `[ConnectingIP <String>]`: 
   - `[DeliveryAction <String>]`: 
   - `[DeliveryLocation <String>]`: 
@@ -996,8 +993,8 @@ MESSAGESECURITYSTATES <IMicrosoftGraphMessageSecurityState\[]>: .
   - `[MessageSubject <String>]`: 
   - `[NetworkMessageId <String>]`: 
 
-NETWORKCONNECTIONS <IMicrosoftGraphNetworkConnection\[]>: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
-  - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook or SMTP).
+`NETWORKCONNECTIONS <IMicrosoftGraphNetworkConnection[]>`: Security-related stateful information generated by the provider about the network connection(s) related to this alert.
+  - `[ApplicationName <String>]`: Name of the application managing the network connection (for example, Facebook, SMTP, etc.).
   - `[DestinationAddress <String>]`: Destination IP address (of the network connection).
   - `[DestinationDomain <String>]`: Destination domain portion of the destination URL. (for example 'www.contoso.com').
   - `[DestinationLocation <String>]`: Location (by IP address mapping) associated with the destination of a network connection.
@@ -1018,7 +1015,7 @@ NETWORKCONNECTIONS <IMicrosoftGraphNetworkConnection\[]>: Security-related state
   - `[Status <String>]`: connectionStatus
   - `[UrlParameters <String>]`: Parameters (suffix) of the destination URL.
 
-PROCESSES <IMicrosoftGraphProcess\[]>: Security-related stateful information generated by the provider about the process or processes related to this alert.
+`PROCESSES <IMicrosoftGraphProcess[]>`: Security-related stateful information generated by the provider about the process or processes related to this alert.
   - `[AccountName <String>]`: User account identifier (user account context the process ran under) for example, AccountName, SID, and so on.
   - `[CommandLine <String>]`: The full process invocation commandline including all parameters.
   - `[CreatedDateTime <DateTime?>]`: Time at which the process was started. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
@@ -1035,7 +1032,7 @@ PROCESSES <IMicrosoftGraphProcess\[]>: Security-related stateful information gen
   - `[Path <String>]`: Full path, including filename.
   - `[ProcessId <Int32?>]`: The Process ID (PID) of the process.
 
-REGISTRYKEYSTATES <IMicrosoftGraphRegistryKeyState\[]>: Security-related stateful information generated by the provider about the registry keys related to this alert.
+`REGISTRYKEYSTATES <IMicrosoftGraphRegistryKeyState[]>`: Security-related stateful information generated by the provider about the registry keys related to this alert.
   - `[Hive <String>]`: registryHive
   - `[Key <String>]`: Current (i.e. changed) registry key (excludes HIVE).
   - `[OldKey <String>]`: Previous (i.e. before changed) registry key (excludes HIVE).
@@ -1047,16 +1044,16 @@ REGISTRYKEYSTATES <IMicrosoftGraphRegistryKeyState\[]>: Security-related statefu
   - `[ValueName <String>]`: Current (i.e. changed) registry key value name
   - `[ValueType <String>]`: registryValueType
 
-SECURITYRESOURCES <IMicrosoftGraphSecurityResource\[]>: Resources related to current alert. For example, for some alerts this can have the Azure Resource value.
+`SECURITYRESOURCES <IMicrosoftGraphSecurityResource[]>`: Resources related to current alert. For example, for some alerts this can have the Azure Resource value.
   - `[Resource <String>]`: Name of the resource that is related to current alert. Required.
   - `[ResourceType <String>]`: securityResourceType
 
-TRIGGERS <IMicrosoftGraphAlertTrigger\[]>: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
+`TRIGGERS <IMicrosoftGraphAlertTrigger[]>`: Security-related information about the specific properties that triggered the alert (properties appearing in the alert). Alerts might contain information about multiple users, hosts, files, ip addresses. This field indicates which properties triggered the alert generation.
   - `[Name <String>]`: Name of the property serving as a detection trigger.
   - `[Type <String>]`: Type of the property in the key:value pair for interpretation. For example, String, Boolean etc.
   - `[Value <String>]`: Value of the property serving as a detection trigger.
 
-URICLICKSECURITYSTATES <IMicrosoftGraphUriClickSecurityState\[]>: .
+`URICLICKSECURITYSTATES <IMicrosoftGraphUriClickSecurityState[]>`: .
   - `[ClickAction <String>]`: 
   - `[ClickDateTime <DateTime?>]`: 
   - `[Id <String>]`: 
@@ -1064,7 +1061,7 @@ URICLICKSECURITYSTATES <IMicrosoftGraphUriClickSecurityState\[]>: .
   - `[UriDomain <String>]`: 
   - `[Verdict <String>]`: 
 
-USERSTATES <IMicrosoftGraphUserSecurityState\[]>: Security-related stateful information generated by the provider about the user accounts related to this alert.
+`USERSTATES <IMicrosoftGraphUserSecurityState[]>`: Security-related stateful information generated by the provider about the user accounts related to this alert.
   - `[AadUserId <String>]`: AAD User object identifier (GUID) - represents the physical/multi-account user entity.
   - `[AccountName <String>]`: Account name of user account (without Active Directory domain or DNS domain) - (also called mailNickName).
   - `[DomainName <String>]`: NetBIOS/Active Directory domain of user account (that is, domain/account format).
@@ -1080,18 +1077,17 @@ USERSTATES <IMicrosoftGraphUserSecurityState\[]>: Security-related stateful info
   - `[UserAccountType <String>]`: userAccountSecurityType
   - `[UserPrincipalName <String>]`: User sign-in name - internet format: (user account name)@(user account DNS domain name).
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
   - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState\[]>: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
+`VULNERABILITYSTATES <IMicrosoftGraphVulnerabilityState[]>`: Threat intelligence pertaining to one or more vulnerabilities related to this alert.
   - `[Cve <String>]`: Common Vulnerabilities and Exposures (CVE) for the vulnerability.
   - `[Severity <String>]`: Base Common Vulnerability Scoring System (CVSS) severity score for this vulnerability.
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
 
-## RELATED LINKS

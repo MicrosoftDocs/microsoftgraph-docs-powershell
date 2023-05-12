@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/start-mgeducationsynchronizationprofile
+external help file:
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile
 schema: 2.0.0
 ---
 
-# Start-MgEducationSynchronizationProfile
+# Start-MgBetaEducationSynchronizationProfile
 
 ## SYNOPSIS
 Verify the files uploaded to a specific school data synchronization profile in the tenant.
@@ -18,13 +18,13 @@ If the response contains only warnings, synchronization will start.
 
 ### Start (Default)
 ```
-Start-MgEducationSynchronizationProfile -EducationSynchronizationProfileId <String> [-WhatIf] [-Confirm]
+Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
-Start-MgEducationSynchronizationProfile -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Start-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,14 +37,13 @@ If the response contains only warnings, synchronization will start.
 
 ## EXAMPLES
 
-### Example 1: Using the Start-MgEducationSynchronizationProfile Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Education
-Start-MgEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
+Import-Module Microsoft.Graph.Beta.Education
+Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
 
-This example shows how to use the Start-MgEducationSynchronizationProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -52,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Start
 Aliases:
 
@@ -65,10 +64,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: StartViaIdentity
 Aliases:
 
@@ -83,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -115,10 +114,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationFileSynchronizationVerificationMessage
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationFileSynchronizationVerificationMessage
+
 ## NOTES
 
 ALIASES
@@ -128,11 +129,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -143,3 +145,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DirectoryObjects-help.xml
-Module Name: Microsoft.Graph.DirectoryObjects
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.directoryobjects/test-mgdirectoryobjectproperty
+external help file:
+Module Name: Microsoft.Graph.Beta.DirectoryObjects
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.directoryobjects/test-mgbetadirectoryobjectproperty
 schema: 2.0.0
 ---
 
-# Test-MgDirectoryObjectProperty
+# Test-MgBetaDirectoryObjectProperty
 
 ## SYNOPSIS
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -22,16 +22,16 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ### ValidateExpanded (Default)
 ```
-Test-MgDirectoryObjectProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-WhatIf] [-Confirm]
+Test-MgBetaDirectoryObjectProperty [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-EntityType <String>] [-MailNickname <String>] [-OnBehalfOfUserId <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgDirectoryObjectProperty
+Test-MgBetaDirectoryObjectProperty
  -BodyParameter <IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,20 +47,19 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
-### Example 1: Using the Test-MgDirectoryObjectProperty Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
 $params = @{
 	EntityType = "Group"
 	DisplayName = "Myprefix_test_mysuffix"
 	MailNickname = "Myprefix_test_mysuffix"
 	OnBehalfOfUserId = "onBehalfOfUserId-value"
 }
-Test-MgDirectoryObjectProperty -BodyParameter $params
+Test-MgBetaDirectoryObjectProperty -BodyParameter $params
 ```
 
-This example shows how to use the Test-MgDirectoryObjectProperty Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -68,7 +67,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -81,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -99,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -129,7 +128,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -144,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -159,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -174,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +205,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,7 +220,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DisplayName <String>]`: 
   - `[EntityType <String>]`: 
@@ -227,3 +228,4 @@ BODYPARAMETER `<IPaths1Re7RfDirectoryobjectsMicrosoftGraphValidatepropertiesPost
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
+

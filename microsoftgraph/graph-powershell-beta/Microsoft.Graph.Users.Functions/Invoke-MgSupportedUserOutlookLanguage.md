@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Functions-help.xml
-Module Name: Microsoft.Graph.Users.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.functions/invoke-mgsupporteduseroutlooklanguage
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/invoke-mgbetasupporteduseroutlooklanguage
 schema: 2.0.0
 ---
 
-# Invoke-MgSupportedUserOutlookLanguage
+# Invoke-MgBetaSupportedUserOutlookLanguage
 
 ## SYNOPSIS
 Get the list of locales and languages that are supported for the user, as configured on the user's mailbox server.
@@ -14,15 +14,15 @@ You can subsequently get the preferred language by \ngetting the user's mailbox 
 
 ## SYNTAX
 
-### Supported1 (Default)
+### Supported (Default)
 ```
-Invoke-MgSupportedUserOutlookLanguage -UserId <String> [-Count] [-Filter <String>] [-Search <String>]
+Invoke-MgBetaSupportedUserOutlookLanguage -UserId <String> [-Count] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### SupportedViaIdentity1
+### SupportedViaIdentity
 ```
-Invoke-MgSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+Invoke-MgBetaSupportedUserOutlookLanguage -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -33,15 +33,14 @@ You can subsequently get the preferred language by \ngetting the user's mailbox 
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgSupportedUserOutlookLanguage Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Functions
+Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
-Invoke-MgSupportedUserOutlookLanguage -UserId $userId
+Invoke-MgBetaSupportedUserOutlookLanguage -UserId $userId
 ```
 
-This example shows how to use the Invoke-MgSupportedUserOutlookLanguage Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -49,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +63,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -77,11 +76,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
-Parameter Sets: SupportedViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+Parameter Sets: SupportedViaIdentity
 Aliases:
 
 Required: True
@@ -95,7 +94,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -110,7 +124,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
 
@@ -125,26 +139,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Supported1
+Type: System.String
+Parameter Sets: Supported
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -156,10 +155,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLocaleInfo
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLocaleInfo
+
 ## NOTES
 
 ALIASES
@@ -169,7 +170,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersFunctionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AppConsentRequestId <String>]`: The unique identifier of appConsentRequest
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -181,8 +182,7 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
-  - `[EndDateTime <String>]`: Usage: EndDateTime='{EndDateTime}'
-  - `[EndDateTime1 <String>]`: Usage: endDateTime='{endDateTime}'
+  - `[EndDateTime <String>]`: Usage: endDateTime='{endDateTime}'
   - `[EventId <String>]`: The unique identifier of event
   - `[GroupId <String>]`: Usage: groupId='{groupId}'
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
@@ -193,15 +193,14 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[ManagedDeviceId <String>]`: The unique identifier of managedDevice
   - `[On <String>]`: Usage: on='{on}'
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerPlanId <String>]`: The unique identifier of plannerPlan
   - `[Q <String>]`: Usage: q='{q}'
   - `[RoomList <String>]`: Usage: RoomList='{RoomList}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[Skip <Int32?>]`: Usage: skip={skip}
-  - `[StartDateTime <String>]`: Usage: StartDateTime='{StartDateTime}'
-  - `[StartDateTime1 <String>]`: Usage: startDateTime='{startDateTime}'
+  - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[TimeZoneStandard <String>]`: Usage: TimeZoneStandard='{TimeZoneStandard}'
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[Token <String>]`: Usage: token='{token}'
@@ -211,3 +210,4 @@ INPUTOBJECT `<IUsersFunctionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

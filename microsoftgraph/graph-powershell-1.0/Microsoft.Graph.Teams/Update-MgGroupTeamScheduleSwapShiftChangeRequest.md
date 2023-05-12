@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleswapshiftchangerequest
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mggroupteamscheduleswapshiftchangerequest
 schema: 2.0.0
 ---
 
@@ -18,14 +18,20 @@ Update-MgGroupTeamScheduleSwapShiftChangeRequest -GroupId <String> -SwapShiftsCh
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
- [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgGroupTeamScheduleSwapShiftChangeRequest -GroupId <String> -SwapShiftsChangeRequestId <String>
- -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,14 +40,8 @@ Update-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
  [-AdditionalProperties <Hashtable>] [-AssignedTo <String>] [-Id <String>]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-ManagerActionMessage <String>]
  [-RecipientActionMessage <String>] [-RecipientShiftId <String>] [-RecipientUserId <String>]
- [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-SenderMessage <String>] [-SenderShiftId <String>] [-State <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphSwapShiftsChangeRequest> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +49,27 @@ Update the navigation property swapShiftsChangeRequests in groups
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 scheduleChangeRequestActor
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -83,10 +97,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 swapShiftsChangeRequest
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSwapShiftsChangeRequest
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSwapShiftsChangeRequest
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -101,8 +115,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -117,7 +131,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,11 +144,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -146,10 +160,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -164,23 +178,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -194,7 +193,7 @@ Accept wildcard characters: False
 Custom message sent by recipient of the offer shift request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,7 +208,7 @@ Accept wildcard characters: False
 ShiftId for the recipient user with whom the request is to swap.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +223,7 @@ Accept wildcard characters: False
 User ID of the recipient of the offer shift request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,7 +238,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +253,7 @@ Accept wildcard characters: False
 User ID of the sender of the offer shift request.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +268,7 @@ Accept wildcard characters: False
 scheduleChangeState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -284,8 +283,8 @@ Accept wildcard characters: False
 The unique identifier of swapShiftsChangeRequest
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -299,7 +298,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +314,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -332,10 +331,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSwapShiftsChangeRequest
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSwapShiftsChangeRequest
+
 ## NOTES
 
 ALIASES
@@ -345,7 +347,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeRequest
+`BODYPARAMETER <IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeRequest
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RecipientActionMessage <String>]`: Custom message sent by recipient of the offer shift request.
   - `[RecipientUserId <String>]`: User ID of the recipient of the offer shift request.
@@ -365,7 +367,7 @@ BODYPARAMETER `<IMicrosoftGraphSwapShiftsChangeRequest>`: swapShiftsChangeReques
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[RecipientShiftId <String>]`: ShiftId for the recipient user with whom the request is to swap.
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -379,24 +381,18 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[OpenShiftChangeRequestId <String>]`: The unique identifier of openShiftChangeRequest
   - `[OpenShiftId <String>]`: The unique identifier of openShift
   - `[PinnedChatMessageInfoId <String>]`: The unique identifier of pinnedChatMessageInfo
-  - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SchedulingGroupId <String>]`: The unique identifier of schedulingGroup
   - `[SharedWithChannelTeamInfoId <String>]`: The unique identifier of sharedWithChannelTeamInfo
   - `[ShiftId <String>]`: The unique identifier of shift
   - `[SwapShiftsChangeRequestId <String>]`: The unique identifier of swapShiftsChangeRequest
   - `[TeamId <String>]`: The unique identifier of team
-  - `[TeamTemplateDefinitionId <String>]`: The unique identifier of teamTemplateDefinition
-  - `[TeamTemplateId <String>]`: The unique identifier of teamTemplate
   - `[TeamsAppDefinitionId <String>]`: The unique identifier of teamsAppDefinition
   - `[TeamsAppId <String>]`: The unique identifier of teamsApp
   - `[TeamsAppInstallationId <String>]`: The unique identifier of teamsAppInstallation
   - `[TeamsAsyncOperationId <String>]`: The unique identifier of teamsAsyncOperation
   - `[TeamsTabId <String>]`: The unique identifier of teamsTab
-  - `[TeamworkDeviceId <String>]`: The unique identifier of teamworkDevice
-  - `[TeamworkDeviceOperationId <String>]`: The unique identifier of teamworkDeviceOperation
   - `[TeamworkTagId <String>]`: The unique identifier of teamworkTag
   - `[TeamworkTagMemberId <String>]`: The unique identifier of teamworkTagMember
-  - `[TimeCardId <String>]`: The unique identifier of timeCard
   - `[TimeOffId <String>]`: The unique identifier of timeOff
   - `[TimeOffReasonId <String>]`: The unique identifier of timeOffReason
   - `[TimeOffRequestId <String>]`: The unique identifier of timeOffRequest
@@ -404,7 +400,7 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[UserScopeTeamsAppInstallationId <String>]`: The unique identifier of userScopeTeamsAppInstallation
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -414,3 +410,4 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+

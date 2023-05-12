@@ -1,41 +1,41 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
-Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.directorymanagement/confirm-mgcontactmemberobject
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/confirm-mgbetacontactmemberobject
 schema: 2.0.0
 ---
 
-# Confirm-MgContactMemberObject
+# Confirm-MgBetaContactMemberObject
 
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
 ## SYNTAX
 
-### CheckExpanded1 (Default)
+### CheckExpanded (Default)
 ```
-Confirm-MgContactMemberObject -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaContactMemberObject -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Check1
+### Check
 ```
-Confirm-MgContactMemberObject -OrgContactId <String>
+Confirm-MgBetaContactMemberObject -OrgContactId <String>
  -BodyParameter <IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### CheckViaIdentityExpanded1
+### CheckViaIdentity
 ```
-Confirm-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentity1
-```
-Confirm-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
+Confirm-MgBetaContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
  -BodyParameter <IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgBetaContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,28 @@ Invoke action checkMemberObjects
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Check1, CheckViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
 Required: True
@@ -80,8 +94,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: CheckExpanded1, CheckViaIdentityExpanded1
+Type: System.String[]
+Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -93,11 +107,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: CheckViaIdentityExpanded1, CheckViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -111,8 +125,8 @@ Accept wildcard characters: False
 The unique identifier of orgContact
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded1, Check1
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -126,7 +140,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +156,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -158,11 +172,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -172,11 +189,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths8Ke2VbContactsOrgcontactIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Ids <String[]>]`: 
 
-INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
@@ -213,3 +230,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

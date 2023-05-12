@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/new-mgreportauthenticationmethoduserregistrationdetail
+external help file:
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/new-mgbetareportauthenticationmethoduserregistrationdetail
 schema: 2.0.0
 ---
 
-# New-MgReportAuthenticationMethodUserRegistrationDetail
+# New-MgBetaReportAuthenticationMethodUserRegistrationDetail
 
 ## SYNOPSIS
 Create new navigation property to userRegistrationDetails for reports
@@ -14,17 +14,17 @@ Create new navigation property to userRegistrationDetails for reports
 
 ### CreateExpanded (Default)
 ```
-New-MgReportAuthenticationMethodUserRegistrationDetail [-AdditionalProperties <Hashtable>]
+New-MgBetaReportAuthenticationMethodUserRegistrationDetail [-AdditionalProperties <Hashtable>]
  [-DefaultMfaMethod <String>] [-Id <String>] [-IsAdmin] [-IsMfaCapable] [-IsMfaRegistered]
- [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered] [-MethodsRegistered <String[]>]
- [-UserDisplayName <String>] [-UserPrincipalName <String>] [-UserType <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-IsPasswordlessCapable] [-IsSsprCapable] [-IsSsprEnabled] [-IsSsprRegistered]
+ [-LastUpdatedDateTime <DateTime>] [-MethodsRegistered <String[]>] [-UserDisplayName <String>]
+ [-UserPrincipalName <String>] [-UserType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgReportAuthenticationMethodUserRegistrationDetail -BodyParameter <IMicrosoftGraphUserRegistrationDetails>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaReportAuthenticationMethodUserRegistrationDetail
+ -BodyParameter <IMicrosoftGraphUserRegistrationDetails> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,13 +32,27 @@ Create new navigation property to userRegistrationDetails for reports
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,10 +65,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 userRegistrationDetails
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserRegistrationDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 defaultMfaMethodType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,11 +95,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +115,7 @@ Whether the user has an admin role in the tenant.
 This value can be used to check the authentication methods that privileged accounts are registered for and capable of.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +132,7 @@ The method must be allowed by the authentication methods policy.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +149,7 @@ The method may not necessarily be allowed by the authentication methods policy.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -151,7 +165,7 @@ Whether the user has registered a passwordless strong authentication method (inc
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +181,7 @@ Whether the user has registered the required number of authentication methods fo
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +198,7 @@ The user may not necessarily have registered the required number of authenticati
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -201,7 +215,22 @@ The user may not necessarily be allowed to perform self-service password reset b
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LastUpdatedDateTime
+.
+
+```yaml
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -217,7 +246,7 @@ Collection of authentication methods registered, such as mobilePhone, email, fid
 Supports $filter (any with eq).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -233,7 +262,7 @@ The user display name, such as Adele Vance.
 Supports $filter (eq, startsWith) and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -249,7 +278,7 @@ The user principal name, such as AdeleV@contoso.com.
 Supports $filter (eq, startsWith) and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -264,7 +293,7 @@ Accept wildcard characters: False
 signInUserType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -279,7 +308,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -295,7 +324,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -311,10 +340,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserRegistrationDetails
+
 ## NOTES
 
 ALIASES
@@ -324,9 +355,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserRegistrationDetails>`: userRegistrationDetails
+`BODYPARAMETER <IMicrosoftGraphUserRegistrationDetails>`: userRegistrationDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DefaultMfaMethod <String>]`: defaultMfaMethodType
   - `[IsAdmin <Boolean?>]`: Whether the user has an admin role in the tenant. This value can be used to check the authentication methods that privileged accounts are registered for and capable of.
   - `[IsMfaCapable <Boolean?>]`: Whether the user has registered a strong authentication method for multi-factor authentication. The method must be allowed by the authentication methods policy. Supports $filter (eq).
@@ -335,9 +366,11 @@ BODYPARAMETER `<IMicrosoftGraphUserRegistrationDetails>`: userRegistrationDetail
   - `[IsSsprCapable <Boolean?>]`: Whether the user has registered the required number of authentication methods for self-service password reset and the user is allowed to perform self-service password reset by policy. Supports $filter (eq).
   - `[IsSsprEnabled <Boolean?>]`: Whether the user is allowed to perform self-service password reset by policy. The user may not necessarily have registered the required number of authentication methods for self-service password reset. Supports $filter (eq).
   - `[IsSsprRegistered <Boolean?>]`: Whether the user has registered the required number of authentication methods for self-service password reset. The user may not necessarily be allowed to perform self-service password reset by policy. Supports $filter (eq).
+  - `[LastUpdatedDateTime <DateTime?>]`: 
   - `[MethodsRegistered <String[]>]`: Collection of authentication methods registered, such as mobilePhone, email, fido2. Supports $filter (any with eq).
   - `[UserDisplayName <String>]`: The user display name, such as Adele Vance. Supports $filter (eq, startsWith) and $orderBy.
   - `[UserPrincipalName <String>]`: The user principal name, such as AdeleV@contoso.com. Supports $filter (eq, startsWith) and $orderBy.
   - `[UserType <String>]`: signInUserType
 
 ## RELATED LINKS
+

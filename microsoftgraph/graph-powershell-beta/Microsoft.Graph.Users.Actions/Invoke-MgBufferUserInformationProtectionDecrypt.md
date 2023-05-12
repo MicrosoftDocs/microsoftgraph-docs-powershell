@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/invoke-mgbufferuserinformationprotectiondecrypt
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabufferuserinformationprotectiondecrypt
 schema: 2.0.0
 ---
 
-# Invoke-MgBufferUserInformationProtectionDecrypt
+# Invoke-MgBetaBufferUserInformationProtectionDecrypt
 
 ## SYNOPSIS
 Invoke action decryptBuffer
@@ -14,30 +14,30 @@ Invoke action decryptBuffer
 
 ### BufferExpanded (Default)
 ```
-Invoke-MgBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
+Invoke-MgBetaBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
  [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
- [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PublishingLicenseInputFile <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Buffer
 ```
-Invoke-MgBufferUserInformationProtectionDecrypt -UserId <String> -OutFile <String>
- -BodyParameter <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BufferViaIdentityExpanded
-```
-Invoke-MgBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
- [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
- [-PublishingLicenseInputFile <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaBufferUserInformationProtectionDecrypt -UserId <String>
+ -Body <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
+ -OutFile <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BufferViaIdentity
 ```
-Invoke-MgBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
+Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -OutFile <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BufferViaIdentityExpanded
+```
+Invoke-MgBetaBufferUserInformationProtectionDecrypt -InputObject <IUsersActionsIdentity> -OutFile <String>
+ [-AdditionalProperties <Hashtable>] [-EncryptedBufferInputFile <String>]
+ [-PublishingLicenseInputFile <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Invoke action decryptBuffer
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -62,13 +76,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Buffer, BufferViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Buffer
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: BufferViaIdentity
 Aliases:
 
 Required: True
@@ -82,7 +112,7 @@ Accept wildcard characters: False
 Input File for EncryptedBuffer (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -95,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: BufferViaIdentityExpanded, BufferViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: BufferViaIdentity, BufferViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -113,7 +143,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -128,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +173,7 @@ Accept wildcard characters: False
 Input File for PublishingLicense (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -158,8 +188,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: BufferExpanded, Buffer
+Type: System.String
+Parameter Sets: Buffer, BufferExpanded
 Aliases:
 
 Required: True
@@ -173,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,11 +235,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -219,12 +252,17 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EncryptedBuffer <Byte[]>]`: 
   - `[PublishingLicense <Byte[]>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`BODYPARAMETER <IPathsIn2YzzUsersUserIdInformationprotectionMicrosoftGraphDecryptbufferPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[EncryptedBuffer <Byte[]>]`: 
+  - `[PublishingLicense <Byte[]>]`: 
+
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -258,7 +296,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -268,3 +305,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

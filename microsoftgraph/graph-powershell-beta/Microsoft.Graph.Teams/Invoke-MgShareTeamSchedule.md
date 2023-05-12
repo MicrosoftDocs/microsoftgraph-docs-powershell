@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/invoke-mgshareteamschedule
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetashareteamschedule
 schema: 2.0.0
 ---
 
-# Invoke-MgShareTeamSchedule
+# Invoke-MgBetaShareTeamSchedule
 
 ## SYNOPSIS
 Share a schedule time range with schedule members.\nMake the collections of shift, openshift and timeOff items in the specified time range of the schedule viewable by the specified team members, including employees and managers.\nEach shift, openshift and timeOff instance in a schedule supports a draft version and a shared version of the item.
@@ -15,31 +15,31 @@ The **notifyTeam** parameter further specifies which employees can view the item
 
 ## SYNTAX
 
-### ShareExpanded1 (Default)
+### ShareExpanded (Default)
 ```
-Invoke-MgShareTeamSchedule -TeamId <String> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
- [-NotifyTeam] [-StartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaShareTeamSchedule -TeamId <String> [-AdditionalProperties <Hashtable>] [-EndDateTime <DateTime>]
+ [-NotifyTeam] [-StartDateTime <DateTime>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Share1
+### Share
 ```
-Invoke-MgShareTeamSchedule -TeamId <String>
+Invoke-MgBetaShareTeamSchedule -TeamId <String>
  -BodyParameter <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### ShareViaIdentityExpanded1
+### ShareViaIdentity
 ```
-Invoke-MgShareTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-EndDateTime <DateTime>] [-NotifyTeam] [-StartDateTime <DateTime>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaShareTeamSchedule -InputObject <ITeamsIdentity>
+ -BodyParameter <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ShareViaIdentityExpanded
+```
+Invoke-MgBetaShareTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-EndDateTime <DateTime>] [-NotifyTeam] [-StartDateTime <DateTime>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### ShareViaIdentity1
-```
-Invoke-MgShareTeamSchedule -InputObject <ITeamsIdentity>
- -BodyParameter <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,19 +50,18 @@ The **notifyTeam** parameter further specifies which employees can view the item
 
 ## EXAMPLES
 
-### Example 1: Using the Invoke-MgShareTeamSchedule Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
+Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
 	NotifyTeam = $true
 	StartDateTime = [System.DateTime]::Parse("2018-10-08T00:00:00.000Z")
 	EndDateTime = [System.DateTime]::Parse("2018-10-15T00:00:00.000Z")
 }
-Invoke-MgShareTeamSchedule -TeamId $teamId -BodyParameter $params
+Invoke-MgBetaShareTeamSchedule -TeamId $teamId -BodyParameter $params
 ```
 
-This example shows how to use the Invoke-MgShareTeamSchedule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -70,8 +69,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: ShareExpanded1, ShareViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -83,11 +82,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Share1, ShareViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Share, ShareViaIdentity
 Aliases:
 
 Required: True
@@ -101,8 +100,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: ShareExpanded1, ShareViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -114,11 +113,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: ShareViaIdentityExpanded1, ShareViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: ShareViaIdentity, ShareViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +131,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: ShareExpanded1, ShareViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -147,7 +146,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -162,8 +161,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: ShareExpanded1, ShareViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: ShareExpanded, ShareViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,8 +176,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: ShareExpanded1, Share1
+Type: System.String
+Parameter Sets: Share, ShareExpanded
 Aliases:
 
 Required: True
@@ -192,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,11 +223,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -238,13 +240,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsCo6ShtTeamsTeamIdScheduleMicrosoftGraphSharePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[EndDateTime <DateTime?>]`: 
   - `[NotifyTeam <Boolean?>]`: 
   - `[StartDateTime <DateTime?>]`: 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -284,3 +286,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

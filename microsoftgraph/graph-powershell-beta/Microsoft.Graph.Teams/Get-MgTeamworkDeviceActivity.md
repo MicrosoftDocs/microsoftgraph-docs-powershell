@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
-Module Name: Microsoft.Graph.Teams
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.teams/get-mgteamworkdeviceactivity
+external help file:
+Module Name: Microsoft.Graph.Beta.Teams
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamworkdeviceactivity
 schema: 2.0.0
 ---
 
-# Get-MgTeamworkDeviceActivity
+# Get-MgBetaTeamworkDeviceActivity
 
 ## SYNOPSIS
 Get the activity status of a Microsoft Teams-enabled device.
@@ -14,14 +14,14 @@ Get the activity status of a Microsoft Teams-enabled device.
 
 ### Get (Default)
 ```
-Get-MgTeamworkDeviceActivity -TeamworkDeviceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaTeamworkDeviceActivity -TeamworkDeviceId <String> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,14 +29,13 @@ Get the activity status of a Microsoft Teams-enabled device.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgTeamworkDeviceActivity Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-Get-MgTeamworkDeviceActivity -TeamworkDeviceId $teamworkDeviceId
+Import-Module Microsoft.Graph.Beta.Teams
+Get-MgBetaTeamworkDeviceActivity -TeamworkDeviceId $teamworkDeviceId
 ```
 
-This example shows how to use the Get-MgTeamworkDeviceActivity Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -44,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -57,10 +56,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -75,7 +74,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -90,7 +89,7 @@ Accept wildcard characters: False
 The unique identifier of teamworkDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -106,10 +105,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTeamworkDeviceActivity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkDeviceActivity
+
 ## NOTES
 
 ALIASES
@@ -119,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
+`INPUTOBJECT <ITeamsIdentity>`: Identity Parameter
   - `[AssociatedTeamInfoId <String>]`: The unique identifier of associatedTeamInfo
   - `[ChannelId <String>]`: The unique identifier of channel
   - `[ChatId <String>]`: The unique identifier of chat
@@ -159,3 +160,4 @@ INPUTOBJECT `<ITeamsIdentity>`: Identity Parameter
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+

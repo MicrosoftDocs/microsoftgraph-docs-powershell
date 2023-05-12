@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserinformationprotectionpolicylabelremoval
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectionpolicylabelremoval
 schema: 2.0.0
 ---
 
-# Test-MgUserInformationProtectionPolicyLabelRemoval
+# Test-MgBetaUserInformationProtectionPolicyLabelRemoval
 
 ## SYNOPSIS
 Indicate to the consuming application what actions it should take to remove the label information.
@@ -15,30 +15,30 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgUserInformationProtectionPolicyLabelRemoval -UserId <String> [-AdditionalProperties <Hashtable>]
+Test-MgBetaUserInformationProtectionPolicyLabelRemoval -UserId <String> [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphContentInfo>] [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgUserInformationProtectionPolicyLabelRemoval -UserId <String>
+Test-MgBetaUserInformationProtectionPolicyLabelRemoval -UserId <String>
  -BodyParameter <IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### EvaluateViaIdentityExpanded
-```
-Test-MgUserInformationProtectionPolicyLabelRemoval -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
-Test-MgUserInformationProtectionPolicyLabelRemoval -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserInformationProtectionPolicyLabelRemoval -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### EvaluateViaIdentityExpanded
+```
+Test-MgBetaUserInformationProtectionPolicyLabelRemoval -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
+ [-DowngradeJustification <IMicrosoftGraphDowngradeJustification>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -82,10 +96,10 @@ Accept wildcard characters: False
 
 ### -ContentInfo
 contentInfo
-To construct, please use Get-Help -Online and see NOTES section for CONTENTINFO properties and create a hash table.
+To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -98,10 +112,10 @@ Accept wildcard characters: False
 
 ### -DowngradeJustification
 downgradeJustification
-To construct, please use Get-Help -Online and see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
+To construct, see NOTES section for DOWNGRADEJUSTIFICATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDowngradeJustification
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDowngradeJustification
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -147,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -163,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,11 +193,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
+
 ## NOTES
 
 ALIASES
@@ -193,7 +210,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateremovalPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentInfo <IMicrosoftGraphContentInfo>]`: contentInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -208,7 +225,7 @@ BODYPARAMETER `<IPaths853H88UsersUserIdInformationprotectionPolicyLabelsMicrosof
     - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
     - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
+`CONTENTINFO <IMicrosoftGraphContentInfo>`: contentInfo
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Format <String>]`: contentFormat
   - `[Identifier <String>]`: Identifier used for Azure Information Protection Analytics.
@@ -217,12 +234,12 @@ CONTENTINFO `<IMicrosoftGraphContentInfo>`: contentInfo
     - `[Value <String>]`: Value for this key-value pair
   - `[State <String>]`: contentState
 
-DOWNGRADEJUSTIFICATION `<IMicrosoftGraphDowngradeJustification>`: downgradeJustification
+`DOWNGRADEJUSTIFICATION <IMicrosoftGraphDowngradeJustification>`: downgradeJustification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[IsDowngradeJustified <Boolean?>]`: Indicates whether the downgrade is or is not justified.
   - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -256,7 +273,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -266,3 +282,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

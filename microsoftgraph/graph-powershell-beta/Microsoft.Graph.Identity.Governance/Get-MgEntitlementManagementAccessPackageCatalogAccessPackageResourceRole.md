@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
-Module Name: Microsoft.Graph.Identity.Governance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/get-mgentitlementmanagementaccesspackagecatalogaccesspackageresourcerole
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.Governance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/get-mgbetaentitlementmanagementaccesspackagecatalogaccesspackageresourcerole
 schema: 2.0.0
 ---
 
-# Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole
+# Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole
 
 ## SYNOPSIS
 Retrieve a list of accessPackageResourceRole objects of an accessPackageResource in an accessPackageCatalog.
@@ -15,9 +15,9 @@ This list of roles can then be used by the caller to select a role, which is nee
 ## SYNTAX
 
 ```
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId <String>
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId <String>
  [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -27,30 +27,26 @@ This list of roles can then be used by the caller to select a role, which is nee
 
 ## EXAMPLES
 
-### Example 1: Get catalog resource roles
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8'"
+Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8'"
+```
 
 Id                                   Description DisplayName OriginId                                    OriginSystem
 --                                   ----------- ----------- --------                                    ------------
 00000000-0000-0000-0000-000000000000             Owner       Owner_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad  AadGroup
 00000000-0000-0000-0000-000000000000             Member      Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad AadGroup
-```
 
-This example gets the resource roles for the specified catalog id and filtering the results for the specified access package resource id.
-
-### Example 2: Extend the -Filter to get the resource roles with the display name 'Member'
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Connect-MgGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8' and DisplayName eq 'Member'"
+Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
+Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceRole -AccessPackageCatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -Filter "originSystem eq 'AadGroup' and accessPackageResource/id eq '36d8d18f-b081-4867-acf5-4a8b893761e8' and DisplayName eq 'Member'"
+```
 
 Id                                   Description DisplayName OriginId                                    OriginSystem
 --                                   ----------- ----------- --------                                    ------------
 00000000-0000-0000-0000-000000000000             Member      Member_b5cd9d19-91c0-4622-93e2-537ad8a0b3ad AadGroup
-```
-
-This example extends the filter in example 1 to return access roles whose display name is 'Member'.
 
 ## PARAMETERS
 
@@ -58,7 +54,7 @@ This example extends the filter in example 1 to return access roles whose displa
 The unique identifier of accessPackageCatalog
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -73,7 +69,7 @@ Accept wildcard characters: False
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -89,7 +85,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases: CV
 
@@ -104,7 +100,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -119,7 +115,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -134,7 +130,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -149,7 +145,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -164,7 +160,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -179,7 +190,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: OrderBy
 
@@ -194,24 +205,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -227,9 +223,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

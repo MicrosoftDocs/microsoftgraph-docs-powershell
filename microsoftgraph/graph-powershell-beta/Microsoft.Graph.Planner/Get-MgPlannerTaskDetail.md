@@ -1,28 +1,27 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplannertaskdetail
+external help file:
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplannertaskdetail
 schema: 2.0.0
-ms.prod: planner
 ---
 
-# Get-MgPlannerTaskDetail
+# Get-MgBetaPlannerTaskDetail
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a **plannerTaskDetails** object.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgPlannerTaskDetail -PlannerTaskId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaPlannerTaskDetail -PlannerTaskId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgPlannerTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaPlannerTaskDetail -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,14 +29,13 @@ Retrieve the properties and relationships of a **plannerTaskDetails** object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPlannerTaskDetail Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Planner
-Get-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId
+Import-Module Microsoft.Graph.Beta.Planner
+Get-MgBetaPlannerTaskDetail -PlannerTaskId $plannerTaskId
 ```
 
-This example shows how to use the Get-MgPlannerTaskDetail Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -45,7 +43,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -58,11 +56,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -76,8 +74,8 @@ Accept wildcard characters: False
 The unique identifier of plannerTask
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -107,10 +105,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+
 ## NOTES
 
 ALIASES
@@ -120,7 +120,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
@@ -131,3 +131,4 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

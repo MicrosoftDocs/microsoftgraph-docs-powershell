@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/test-mggroupdriverootpermission
+external help file:
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdriverootpermission
 schema: 2.0.0
 ---
 
-# Test-MgGroupDriveRootPermission
+# Test-MgBetaGroupDriveRootPermission
 
 ## SYNOPSIS
 Invoke action validatePermission
@@ -14,28 +14,28 @@ Invoke action validatePermission
 
 ### ValidateExpanded (Default)
 ```
-Test-MgGroupDriveRootPermission -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaGroupDriveRootPermission -DriveId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgGroupDriveRootPermission -DriveId <String> -GroupId <String>
+Test-MgBetaGroupDriveRootPermission -DriveId <String> -GroupId <String>
  -BodyParameter <IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ValidateViaIdentityExpanded
-```
-Test-MgGroupDriveRootPermission -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
-Test-MgGroupDriveRootPermission -InputObject <IGroupsIdentity>
+Test-MgBetaGroupDriveRootPermission -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ValidateViaIdentityExpanded
+```
+Test-MgBetaGroupDriveRootPermission -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Invoke action validatePermission
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -95,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: ValidateExpanded, Validate
+Type: System.String
+Parameter Sets: Validate, ValidateExpanded
 Aliases:
 
 Required: True
@@ -110,8 +124,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: ValidateExpanded, Validate
+Type: System.String
+Parameter Sets: Validate, ValidateExpanded
 Aliases:
 
 Required: True
@@ -123,11 +137,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: ValidateViaIdentity, ValidateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,7 +170,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,11 +217,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -217,12 +234,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Hi1AeeGroupsGroupIdDrivesDriveIdRootMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChallengeToken <String>]`: 
   - `[Password <String>]`: 
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -244,11 +261,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -261,7 +276,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -272,3 +286,4 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+

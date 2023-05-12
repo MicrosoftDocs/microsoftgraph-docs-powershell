@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/test-mgdriveitempermission
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/test-mgbetadriveitempermission
 schema: 2.0.0
 ---
 
-# Test-MgDriveItemPermission
+# Test-MgBetaDriveItemPermission
 
 ## SYNOPSIS
 Invoke action validatePermission
@@ -14,28 +14,28 @@ Invoke action validatePermission
 
 ### ValidateExpanded (Default)
 ```
-Test-MgDriveItemPermission -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
- [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Test-MgBetaDriveItemPermission -DriveId <String> -DriveItemId <String> [-AdditionalProperties <Hashtable>]
+ [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate
 ```
-Test-MgDriveItemPermission -DriveId <String> -DriveItemId <String>
+Test-MgBetaDriveItemPermission -DriveId <String> -DriveItemId <String>
  -BodyParameter <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ValidateViaIdentityExpanded
-```
-Test-MgDriveItemPermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ValidateViaIdentity
 ```
-Test-MgDriveItemPermission -InputObject <IFilesIdentity>
+Test-MgBetaDriveItemPermission -InputObject <IFilesIdentity>
  -BodyParameter <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ValidateViaIdentityExpanded
+```
+Test-MgBetaDriveItemPermission -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-ChallengeToken <String>] [-Password <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Invoke action validatePermission
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate, ValidateViaIdentity
 Aliases:
 
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -95,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: ValidateExpanded, Validate
+Type: System.String
+Parameter Sets: Validate, ValidateExpanded
 Aliases:
 
 Required: True
@@ -110,8 +124,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: ValidateExpanded, Validate
+Type: System.String
+Parameter Sets: Validate, ValidateExpanded
 Aliases:
 
 Required: True
@@ -123,11 +137,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: ValidateViaIdentityExpanded, ValidateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: ValidateViaIdentity, ValidateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +155,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,7 +170,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ValidateExpanded, ValidateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +185,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -187,7 +201,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,11 +217,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -217,12 +234,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsJjps9NDrivesDriveIdItemsDriveitemIdMicrosoftGraphValidatepermissionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ChallengeToken <String>]`: 
   - `[Password <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -249,3 +266,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

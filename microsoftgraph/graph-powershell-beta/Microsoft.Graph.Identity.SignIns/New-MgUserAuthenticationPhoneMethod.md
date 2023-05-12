@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserauthenticationphonemethod
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# New-MgUserAuthenticationPhoneMethod
+# New-MgBetaUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
 Add a new phone authentication method.
@@ -20,28 +19,28 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` n
 
 ### CreateExpanded (Default)
 ```
-New-MgUserAuthenticationPhoneMethod -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-PhoneNumber <String>] [-PhoneType <String>] [-SmsSignInState <String>] [-WhatIf] [-Confirm]
+New-MgBetaUserAuthenticationPhoneMethod -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-PhoneNumber <String>] [-PhoneType <String>] [-SmsSignInState <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserAuthenticationPhoneMethod -UserId <String> -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>] [-SmsSignInState <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaUserAuthenticationPhoneMethod -UserId <String>
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>]
+ [-SmsSignInState <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,19 +53,18 @@ Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` n
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserAuthenticationPhoneMethod Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	PhoneNumber = "+1 2065555555"
 	PhoneType = "mobile"
 }
 # A UPN can also be used as -UserId.
-New-MgUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
+New-MgBetaUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserAuthenticationPhoneMethod Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -74,7 +72,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -87,10 +85,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 phoneAuthenticationMethod
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhoneAuthenticationMethod
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -102,11 +100,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -119,11 +117,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -135,12 +133,12 @@ Accept wildcard characters: False
 
 ### -PhoneNumber
 The phone number to text or call for authentication.
-Phone numbers use the format +{country code} {number}x{extension}, with extension optional.
+Phone numbers use the format '+\<country code\> \<number\>x\<extension\>', with extension optional.
 For example, +1 5555551234 or +1 5555551234x123 are valid.
-Numbers are rejected when creating or updating if they do not match the required format.
+Numbers are rejected when creating/updating if they do not match the required format.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 authenticationPhoneType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -170,7 +168,7 @@ Accept wildcard characters: False
 authenticationMethodSignInState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -185,8 +183,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -200,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -216,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -232,11 +230,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
+
 ## NOTES
 
 ALIASES
@@ -246,14 +247,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
+`BODYPARAMETER <IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format +{country code} {number}x{extension}, with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating or updating if they do not match the required format.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
   - `[PhoneType <String>]`: authenticationPhoneType
   - `[SmsSignInState <String>]`: authenticationMethodSignInState
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -290,6 +291,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -328,3 +330,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

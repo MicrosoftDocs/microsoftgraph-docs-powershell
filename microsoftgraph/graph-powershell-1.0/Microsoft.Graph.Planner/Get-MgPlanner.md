@@ -1,7 +1,7 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplanner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplanner
 schema: 2.0.0
 ---
 
@@ -21,14 +21,13 @@ Get planner
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPlanner Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlanner
 ```
 
-This example shows how to use the Get-MgPlanner Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -36,7 +35,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -51,7 +50,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -69,9 +68,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner1
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

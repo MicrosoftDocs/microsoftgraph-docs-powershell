@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/get-mgplanner
+external help file:
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetaplanner
 schema: 2.0.0
 ---
 
-# Get-MgPlanner
+# Get-MgBetaPlanner
 
 ## SYNOPSIS
 Get planner
@@ -13,7 +13,7 @@ Get planner
 ## SYNTAX
 
 ```
-Get-MgPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPlanner [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -21,13 +21,27 @@ Get planner
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -42,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -60,9 +74,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlanner
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlanner
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

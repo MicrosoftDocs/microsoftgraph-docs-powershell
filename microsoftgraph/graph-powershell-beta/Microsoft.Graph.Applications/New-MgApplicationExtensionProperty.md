@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
-Module Name: Microsoft.Graph.Applications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgapplicationextensionproperty
+external help file:
+Module Name: Microsoft.Graph.Beta.Applications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaapplicationextensionproperty
 schema: 2.0.0
-ms.prod: extensions
 ---
 
-# New-MgApplicationExtensionProperty
+# New-MgBetaApplicationExtensionProperty
 
 ## SYNOPSIS
 Create a new directory extension definition, represented by an extensionProperty object.
@@ -15,30 +14,30 @@ Create a new directory extension definition, represented by an extensionProperty
 
 ### CreateExpanded (Default)
 ```
-New-MgApplicationExtensionProperty -ApplicationId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaApplicationExtensionProperty -ApplicationId <String> [-AdditionalProperties <Hashtable>]
  [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
- [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-WhatIf] [-Confirm]
+ [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgApplicationExtensionProperty -ApplicationId <String> -BodyParameter <IMicrosoftGraphExtensionProperty1>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-AdditionalProperties <Hashtable>]
- [-AppDisplayName <String>] [-DataType <String>] [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued]
- [-IsSyncedFromOnPremises] [-Name <String>] [-TargetObjects <String[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaApplicationExtensionProperty -ApplicationId <String>
+ -BodyParameter <IMicrosoftGraphExtensionProperty> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphExtensionProperty1> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphExtensionProperty> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppDisplayName <String>] [-DataType <String>]
+ [-DeletedDateTime <DateTime>] [-Id <String>] [-IsMultiValued] [-IsSyncedFromOnPremises] [-Name <String>]
+ [-TargetObjects <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,9 +45,9 @@ Create a new directory extension definition, represented by an extensionProperty
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgApplicationExtensionProperty Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Applications
+Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	Name = "jobGroup"
 	DataType = "String"
@@ -56,11 +55,10 @@ $params = @{
 		"User"
 	)
 }
-New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
+New-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -68,7 +66,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +82,7 @@ Display name of the application object on which this extension property is defin
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -112,10 +110,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 extensionProperty
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExtensionProperty1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtensionProperty
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -134,7 +132,7 @@ Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format
 Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +148,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -162,11 +160,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -179,11 +177,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -197,7 +195,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +211,7 @@ Indicates if this extension property was synced from on-premises active director
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -230,7 +228,7 @@ Not nullable.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -247,7 +245,7 @@ Not nullable.
 UserGroupAdministrativeUnitApplicationDeviceOrganization
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +260,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -278,7 +276,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -294,11 +292,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty1
+### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtensionProperty
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExtensionProperty1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExtensionProperty
+
 ## NOTES
 
 ALIASES
@@ -308,10 +309,10 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphExtensionProperty1>`: extensionProperty
+`BODYPARAMETER <IMicrosoftGraphExtensionProperty>`: extensionProperty
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AppDisplayName <String>]`: Display name of the application object on which this extension property is defined. Read-only.
   - `[DataType <String>]`: Specifies the data type of the value the extension property can hold. Following values are supported. Not nullable. Binary - 256 bytes maximumBooleanDateTime - Must be specified in ISO 8601 format. Will be stored in UTC.Integer - 32-bit value.LargeInteger - 64-bit value.String - 256 characters maximum
   - `[IsMultiValued <Boolean?>]`: 
@@ -319,7 +320,7 @@ BODYPARAMETER `<IMicrosoftGraphExtensionProperty1>`: extensionProperty
   - `[Name <String>]`: Name of the extension property. Not nullable. Supports $filter (eq).
   - `[TargetObjects <String[]>]`: Following values are supported. Not nullable. UserGroupAdministrativeUnitApplicationDeviceOrganization
 
-INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -350,3 +351,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

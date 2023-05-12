@@ -1,61 +1,61 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
-Module Name: Microsoft.Graph.Planner
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.planner/update-mgplannertask
+external help file:
+Module Name: Microsoft.Graph.Beta.Planner
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/update-mgbetaplannertask
 schema: 2.0.0
 ---
 
-# Update-MgPlannerTask
+# Update-MgBetaPlannerTask
 
 ## SYNOPSIS
 Update the navigation property tasks in planner
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ActiveChecklistItemCount <Int32>]
+Update-MgBetaPlannerTask -PlannerTaskId <String> -IfMatch <String> [-ActiveChecklistItemCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
- [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>]
+ [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
- [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>] [-ChecklistItemCount <Int32>]
+ [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
  [-CompletedBy <IMicrosoftGraphIdentitySet>] [-CompletedDateTime <DateTime>] [-ConversationThreadId <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails1>]
+ [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
- [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgPlannerTask -PlannerTaskId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerTask1>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaPlannerTask -PlannerTaskId <String> -IfMatch <String> -BodyParameter <IMicrosoftGraphPlannerTask>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-ActiveChecklistItemCount <Int32>]
+Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
+ -BodyParameter <IMicrosoftGraphPlannerTask> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String> [-ActiveChecklistItemCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-AppliedCategories <Hashtable>]
- [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>]
+ [-AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]
  [-AssigneePriority <String>] [-Assignments <Hashtable>] [-BucketId <String>]
- [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>] [-ChecklistItemCount <Int32>]
+ [-BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>] [-ChecklistItemCount <Int32>]
  [-CompletedBy <IMicrosoftGraphIdentitySet>] [-CompletedDateTime <DateTime>] [-ConversationThreadId <String>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
- [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails1>]
+ [-CreationSource <IMicrosoftGraphPlannerTaskCreation>] [-Details <IMicrosoftGraphPlannerTaskDetails>]
  [-DueDateTime <DateTime>] [-HasDescription] [-Id <String>] [-OrderHint <String>] [-PercentComplete <Int32>]
  [-PlanId <String>] [-PreviewType <String>] [-Priority <Int32>]
- [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>]
+ [-ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]
  [-Recurrence <IMicrosoftGraphPlannerTaskRecurrence>] [-ReferenceCount <Int32>] [-StartDateTime <DateTime>]
- [-Title <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
- -BodyParameter <IMicrosoftGraphPlannerTask1> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,9 +63,9 @@ Update the navigation property tasks in planner
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgPlannerTask Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Planner
+Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
 	Assignments = @{
 		"Fbab97d0-4932-4511-b675-204639209557" = @{
@@ -78,11 +78,10 @@ $params = @{
 		Category4 = $false
 	}
 }
-Update-MgPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params
+Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgPlannerTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -90,8 +89,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Number of checklist items with value set to false, representing incomplete items.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -105,8 +104,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -120,8 +119,8 @@ Accept wildcard characters: False
 plannerAppliedCategories
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -133,11 +132,11 @@ Accept wildcard characters: False
 
 ### -AssignedToTaskBoardFormat
 plannerAssignedToTaskBoardTaskFormat
-To construct, please use Get-Help -Online and see NOTES section for ASSIGNEDTOTASKBOARDFORMAT properties and create a hash table.
+To construct, see NOTES section for ASSIGNEDTOTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -152,8 +151,8 @@ Hint used to order items of this type in a list view.
 The format is defined as outlined here.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -167,8 +166,8 @@ Accept wildcard characters: False
 plannerAssignments
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -180,11 +179,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 plannerTask
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask1
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -201,8 +200,8 @@ It is 28 characters long and case-sensitive.
 Format validation is done on the service.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -214,11 +213,11 @@ Accept wildcard characters: False
 
 ### -BucketTaskBoardFormat
 plannerBucketTaskBoardTaskFormat
-To construct, please use Get-Help -Online and see NOTES section for BUCKETTASKBOARDFORMAT properties and create a hash table.
+To construct, see NOTES section for BUCKETTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucketTaskBoardTaskFormat
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -232,8 +231,8 @@ Accept wildcard characters: False
 Number of checklist items that are present on the task.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -245,11 +244,11 @@ Accept wildcard characters: False
 
 ### -CompletedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for COMPLETEDBY properties and create a hash table.
+To construct, see NOTES section for COMPLETEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -266,8 +265,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -282,8 +281,8 @@ Thread ID of the conversation on the task.
 This is the ID of the conversation thread object created in the group.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -295,11 +294,11 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -316,8 +315,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -329,11 +328,11 @@ Accept wildcard characters: False
 
 ### -CreationSource
 plannerTaskCreation
-To construct, please use Get-Help -Online and see NOTES section for CREATIONSOURCE properties and create a hash table.
+To construct, see NOTES section for CREATIONSOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskCreation
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskCreation
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -345,11 +344,11 @@ Accept wildcard characters: False
 
 ### -Details
 plannerTaskDetails
-To construct, please use Get-Help -Online and see NOTES section for DETAILS properties and create a hash table.
+To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskDetails1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskDetails
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -365,8 +364,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -381,8 +380,8 @@ Read-only.
 Value is true if the details object of the task has a non-empty description and false otherwise.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -393,12 +392,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -412,7 +411,7 @@ Accept wildcard characters: False
 ETag value.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -425,11 +424,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -444,23 +443,8 @@ Hint used to order items of this type in a list view.
 The format is defined as outlined here.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -475,8 +459,8 @@ Percentage of task completion.
 When set to 100, the task is considered completed.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -490,8 +474,8 @@ Accept wildcard characters: False
 Plan ID to which the task belongs.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -505,8 +489,8 @@ Accept wildcard characters: False
 The unique identifier of plannerTask
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -520,8 +504,8 @@ Accept wildcard characters: False
 plannerPreviewType
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -538,8 +522,8 @@ Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'impo
 Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -551,11 +535,11 @@ Accept wildcard characters: False
 
 ### -ProgressTaskBoardFormat
 plannerProgressTaskBoardTaskFormat
-To construct, please use Get-Help -Online and see NOTES section for PROGRESSTASKBOARDFORMAT properties and create a hash table.
+To construct, see NOTES section for PROGRESSTASKBOARDFORMAT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerProgressTaskBoardTaskFormat
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -567,11 +551,11 @@ Accept wildcard characters: False
 
 ### -Recurrence
 plannerTaskRecurrence
-To construct, please use Get-Help -Online and see NOTES section for RECURRENCE properties and create a hash table.
+To construct, see NOTES section for RECURRENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskRecurrence
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskRecurrence
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -585,8 +569,8 @@ Accept wildcard characters: False
 Number of external references that exist on the task.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -602,8 +586,8 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -617,8 +601,8 @@ Accept wildcard characters: False
 Title of the task.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -632,7 +616,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -648,7 +632,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -664,11 +648,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerTask1
-### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask
+
 ## NOTES
 
 ALIASES
@@ -678,22 +665,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-ASSIGNEDTOTASKBOARDFORMAT `<IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>`: plannerAssignedToTaskBoardTaskFormat
+`ASSIGNEDTOTASKBOARDFORMAT <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>`: plannerAssignedToTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
 
-BODYPARAMETER `<IMicrosoftGraphPlannerTask1>`: plannerTask
+`BODYPARAMETER <IMicrosoftGraphPlannerTask>`: plannerTask
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActiveChecklistItemCount <Int32?>]`: Number of checklist items with value set to false, representing incomplete items.
   - `[AppliedCategories <IMicrosoftGraphPlannerAppliedCategories>]`: plannerAppliedCategories
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat1>]`: plannerAssignedToTaskBoardTaskFormat
+  - `[AssignedToTaskBoardFormat <IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat>]`: plannerAssignedToTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[OrderHintsByAssignee <IMicrosoftGraphPlannerOrderHintsByAssignee>]`: plannerOrderHintsByAssignee
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[UnassignedOrderHint <String>]`: Hint value used to order the task on the AssignedTo view of the Task Board when the task is not assigned to anyone, or if the orderHintsByAssignee dictionary does not provide an order hint for the user the task is assigned to. The format is defined as outlined here.
@@ -701,9 +688,9 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTask1>`: plannerTask
   - `[Assignments <IMicrosoftGraphPlannerAssignments>]`: plannerAssignments
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[BucketId <String>]`: Bucket ID to which the task belongs. The bucket needs to be in the plan that the task is in. It is 28 characters long and case-sensitive. Format validation is done on the service.
-  - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>]`: plannerBucketTaskBoardTaskFormat
+  - `[BucketTaskBoardFormat <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>]`: plannerBucketTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board. For details about the supported format, see Using order hints in Planner.
   - `[ChecklistItemCount <Int32?>]`: Number of checklist items that are present on the task.
   - `[CompletedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -730,9 +717,9 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTask1>`: plannerTask
       - `[PublishedToPlanId <String>]`: The identifier of the plannerPlan this task was originally placed in. Read-only.
       - `[PublishingTeamId <String>]`: The identifier of the team that initiated the publication process. Read-only.
       - `[PublishingTeamName <String>]`: The display name of the team that initiated the publication process. This display name is for reference only, and might not represent the most up-to-date name of the team. Read-only.
-  - `[Details <IMicrosoftGraphPlannerTaskDetails1>]`: plannerTaskDetails
+  - `[Details <IMicrosoftGraphPlannerTaskDetails>]`: plannerTaskDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Description of the task.
@@ -750,9 +737,9 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTask1>`: plannerTask
   - `[PlanId <String>]`: Plan ID to which the task belongs.
   - `[PreviewType <String>]`: plannerPreviewType
   - `[Priority <Int32?>]`: Priority of the task. Valid range of values is between 0 and 10 (inclusive), with increasing value being lower priority (0 has the highest priority and 10 has the lowest priority).  Currently, Planner interprets values 0 and 1 as 'urgent', 2 and 3 and 4 as 'important', 5, 6, and 7 as 'medium', and 8, 9, and 10 as 'low'.  Currently, Planner sets the value 1 for 'urgent', 3 for 'important', 5 for 'medium', and 9 for 'low'.
-  - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>]`: plannerProgressTaskBoardTaskFormat
+  - `[ProgressTaskBoardFormat <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>]`: plannerProgressTaskBoardTaskFormat
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
   - `[Recurrence <IMicrosoftGraphPlannerTaskRecurrence>]`: plannerTaskRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -778,12 +765,12 @@ BODYPARAMETER `<IMicrosoftGraphPlannerTask1>`: plannerTask
   - `[StartDateTime <DateTime?>]`: Date and time at which the task starts. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
   - `[Title <String>]`: Title of the task.
 
-BUCKETTASKBOARDFORMAT `<IMicrosoftGraphPlannerBucketTaskBoardTaskFormat1>`: plannerBucketTaskBoardTaskFormat
+`BUCKETTASKBOARDFORMAT <IMicrosoftGraphPlannerBucketTaskBoardTaskFormat>`: plannerBucketTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint used to order tasks in the bucket view of the task board. For details about the supported format, see Using order hints in Planner.
 
-COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`COMPLETEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -792,7 +779,7 @@ COMPLETEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -801,7 +788,7 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-CREATIONSOURCE `<IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
+`CREATIONSOURCE <IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CreationSourceKind <String>]`: plannerCreationSourceKind
   - `[TeamsPublicationInfo <IMicrosoftGraphPlannerTeamsPublicationInfo>]`: plannerTeamsPublicationInfo
@@ -814,9 +801,9 @@ CREATIONSOURCE `<IMicrosoftGraphPlannerTaskCreation>`: plannerTaskCreation
     - `[PublishingTeamId <String>]`: The identifier of the team that initiated the publication process. Read-only.
     - `[PublishingTeamName <String>]`: The display name of the team that initiated the publication process. This display name is for reference only, and might not represent the most up-to-date name of the team. Read-only.
 
-DETAILS `<IMicrosoftGraphPlannerTaskDetails1>`: plannerTaskDetails
+`DETAILS <IMicrosoftGraphPlannerTaskDetails>`: plannerTaskDetails
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Checklist <IMicrosoftGraphPlannerChecklistItems>]`: plannerChecklistItems
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Description of the task.
@@ -828,7 +815,7 @@ DETAILS `<IMicrosoftGraphPlannerTaskDetails1>`: plannerTaskDetails
   - `[References <IMicrosoftGraphPlannerExternalReferences>]`: plannerExternalReferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
-INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
+`INPUTOBJECT <IPlannerIdentity>`: Identity Parameter
   - `[GroupId <String>]`: The unique identifier of group
   - `[PlannerBucketId <String>]`: The unique identifier of plannerBucket
   - `[PlannerDeltaId <String>]`: The unique identifier of plannerDelta
@@ -838,12 +825,12 @@ INPUTOBJECT `<IPlannerIdentity>`: Identity Parameter
   - `[PlannerTaskId <String>]`: The unique identifier of plannerTask
   - `[UserId <String>]`: The unique identifier of user
 
-PROGRESSTASKBOARDFORMAT `<IMicrosoftGraphPlannerProgressTaskBoardTaskFormat1>`: plannerProgressTaskBoardTaskFormat
+`PROGRESSTASKBOARDFORMAT <IMicrosoftGraphPlannerProgressTaskBoardTaskFormat>`: plannerProgressTaskBoardTaskFormat
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
 
-RECURRENCE `<IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
+`RECURRENCE <IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[NextInSeriesTaskId <String>]`: The taskId of the next task in this series. This value is assigned at the time the next task in the series is created, and is null prior to that time.
   - `[OccurrenceId <Int32?>]`: The 1-based index of this task within the recurrence series. The first task in a series has the value 1, the next task in the series has the value 2, and so on.
@@ -866,4 +853,3 @@ RECURRENCE `<IMicrosoftGraphPlannerTaskRecurrence>`: plannerTaskRecurrence
 
 ## RELATED LINKS
 
-## RELATED LINKS

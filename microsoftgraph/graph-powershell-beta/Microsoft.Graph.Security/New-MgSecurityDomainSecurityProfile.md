@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/new-mgsecuritydomainsecurityprofile
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritydomainsecurityprofile
 schema: 2.0.0
 ---
 
-# New-MgSecurityDomainSecurityProfile
+# New-MgBetaSecurityDomainSecurityProfile
 
 ## SYNOPSIS
 Create new navigation property to domainSecurityProfiles for security
@@ -14,18 +14,18 @@ Create new navigation property to domainSecurityProfiles for security
 
 ### CreateExpanded (Default)
 ```
-New-MgSecurityDomainSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
+New-MgBetaSecurityDomainSecurityProfile [-ActivityGroupNames <String[]>] [-AdditionalProperties <Hashtable>]
  [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CountHits <Int32>] [-CountInOrg <Int32>]
  [-DomainCategories <IMicrosoftGraphReputationCategory[]>] [-DomainRegisteredDateTime <DateTime>]
  [-FirstSeenDateTime <DateTime>] [-Id <String>] [-LastSeenDateTime <DateTime>] [-Name <String>]
  [-Registrant <IMicrosoftGraphDomainRegistrant>] [-RiskScore <String>] [-Tags <String[]>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaSecurityDomainSecurityProfile -BodyParameter <IMicrosoftGraphDomainSecurityProfile> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +33,27 @@ Create new navigation property to domainSecurityProfiles for security
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ActivityGroupNames
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +68,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,10 +111,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 domainSecurityProfile
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainSecurityProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
 Parameter Sets: Create
 Aliases:
 
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +144,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,10 +157,10 @@ Accept wildcard characters: False
 
 ### -DomainCategories
 .
-To construct, please use Get-Help -Online and see NOTES section for DOMAINCATEGORIES properties and create a hash table.
+To construct, see NOTES section for DOMAINCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphReputationCategory[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphReputationCategory[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +190,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,11 +202,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +221,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +236,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -235,10 +249,10 @@ Accept wildcard characters: False
 
 ### -Registrant
 domainRegistrant
-To construct, please use Get-Help -Online and see NOTES section for REGISTRANT properties and create a hash table.
+To construct, see NOTES section for REGISTRANT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDomainRegistrant
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainRegistrant
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +267,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -268,7 +282,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -281,10 +295,10 @@ Accept wildcard characters: False
 
 ### -VendorInformation
 securityVendorInformation
-To construct, please use Get-Help -Online and see NOTES section for VENDORINFORMATION properties and create a hash table.
+To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -299,7 +313,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -315,7 +329,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -331,10 +345,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDomainSecurityProfile
+
 ## NOTES
 
 ALIASES
@@ -344,9 +360,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
+`BODYPARAMETER <IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ActivityGroupNames <String[]>]`: 
   - `[AzureSubscriptionId <String>]`: 
   - `[AzureTenantId <String>]`: 
@@ -375,19 +391,19 @@ BODYPARAMETER `<IMicrosoftGraphDomainSecurityProfile>`: domainSecurityProfile
     - `[SubProvider <String>]`: Specific subprovider (under aggregating provider); for example, WindowsDefenderATP.SmartScreen.
     - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
-DOMAINCATEGORIES <IMicrosoftGraphReputationCategory\[]>: .
+`DOMAINCATEGORIES <IMicrosoftGraphReputationCategory[]>`: .
   - `[Description <String>]`: 
   - `[Name <String>]`: 
   - `[Vendor <String>]`: 
 
-REGISTRANT `<IMicrosoftGraphDomainRegistrant>`: domainRegistrant
+`REGISTRANT <IMicrosoftGraphDomainRegistrant>`: domainRegistrant
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CountryOrRegionCode <String>]`: 
   - `[Organization <String>]`: 
   - `[Url <String>]`: 
   - `[Vendor <String>]`: 
 
-VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
+`VENDORINFORMATION <IMicrosoftGraphSecurityVendorInformation>`: securityVendorInformation
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Provider <String>]`: Specific provider (product/service - not vendor company); for example, WindowsDefenderATP.
   - `[ProviderVersion <String>]`: Version of the provider or subprovider, if it exists, that generated the alert. Required
@@ -395,3 +411,4 @@ VENDORINFORMATION `<IMicrosoftGraphSecurityVendorInformation>`: securityVendorIn
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+

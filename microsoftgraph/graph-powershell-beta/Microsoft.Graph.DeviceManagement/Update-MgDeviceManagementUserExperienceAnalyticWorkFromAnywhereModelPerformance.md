@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementuserexperienceanalyticworkfromanywheremodelperformance
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremodelperformance
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
+# Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
 
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsWorkFromAnywhereModelPerformance in deviceManagement
@@ -14,38 +14,38 @@ Update the navigation property userExperienceAnalyticsWorkFromAnywhereModelPerfo
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
+Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
  -UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId <String> [-AdditionalProperties <Hashtable>]
  [-CloudIdentityScore <Double>] [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelDeviceCount <Int32>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-Model <String>] [-ModelDeviceCount <Int32>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
+Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
  -UserExperienceAnalyticsWorkFromAnywhereModelPerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
- -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CloudIdentityScore <Double>]
- [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
- [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>] [-Model <String>]
- [-ModelDeviceCount <Int32>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
+Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
  -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance
+ -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-CloudIdentityScore <Double>]
+ [-CloudManagementScore <Double>] [-CloudProvisioningScore <Double>]
+ [-HealthStatus <UserExperienceAnalyticsHealthState>] [-Id <String>] [-Manufacturer <String>]
+ [-Model <String>] [-ModelDeviceCount <Int32>] [-WindowsScore <Double>] [-WorkFromAnywhereScore <Double>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,13 +53,27 @@ Update the navigation property userExperienceAnalyticsWorkFromAnywhereModelPerfo
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,10 +86,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The user experience analytics work from anywhere model performance.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,7 +105,7 @@ The user experience work from anywhere's cloud identity score for the model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +121,7 @@ The user experience work from anywhere's cloud management score for the model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +137,7 @@ The user experience work from anywhere's cloud provisioning score for the model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,7 +152,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: UserExperienceAnalyticsHealthState
+Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,11 +164,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -167,11 +181,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -185,7 +199,7 @@ Accept wildcard characters: False
 The user experience work from anywhere's manufacturer name of the devices.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +214,7 @@ Accept wildcard characters: False
 The user experience work from anywhere's model name of the devices.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,23 +230,8 @@ The user experience work from anywhere's devices count for the model.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -246,8 +245,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsWorkFromAnywhereModelPerformance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -262,7 +261,7 @@ The user experience work from anywhere windows score for the model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +277,7 @@ The user experience work from anywhere overall score for the model.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +292,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -309,7 +308,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -325,11 +324,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance
+
 ## NOTES
 
 ALIASES
@@ -339,9 +341,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance>`: The user experience analytics work from anywhere model performance.
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance>`: The user experience analytics work from anywhere model performance.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CloudIdentityScore <Double?>]`: The user experience work from anywhere's cloud identity score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[CloudManagementScore <Double?>]`: The user experience work from anywhere's cloud management score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[CloudProvisioningScore <Double?>]`: The user experience work from anywhere's cloud provisioning score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
@@ -352,7 +354,7 @@ BODYPARAMETER `<IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerfo
   - `[WindowsScore <Double?>]`: The user experience work from anywhere windows score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[WorkFromAnywhereScore <Double?>]`: The user experience work from anywhere overall score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -484,7 +486,8 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 
-## RELATED LINKS

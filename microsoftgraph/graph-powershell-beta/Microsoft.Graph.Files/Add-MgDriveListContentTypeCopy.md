@@ -1,41 +1,41 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/add-mgdrivelistcontenttypecopy
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/add-mgbetadrivelistcontenttypecopy
 schema: 2.0.0
 ---
 
-# Add-MgDriveListContentTypeCopy
+# Add-MgBetaDriveListContentTypeCopy
 
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
-Add-MgDriveListContentTypeCopy -DriveId <String> [-AdditionalProperties <Hashtable>] [-ContentType <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaDriveListContentTypeCopy -DriveId <String> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
-Add-MgDriveListContentTypeCopy -DriveId <String>
+Add-MgBetaDriveListContentTypeCopy -DriveId <String>
  -BodyParameter <IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentity
 ```
-Add-MgDriveListContentTypeCopy -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentity1
-```
-Add-MgDriveListContentTypeCopy -InputObject <IFilesIdentity>
+Add-MgBetaDriveListContentTypeCopy -InputObject <IFilesIdentity>
  -BodyParameter <IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaDriveListContentTypeCopy -InputObject <IFilesIdentity> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,14 +43,28 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -62,11 +76,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -80,8 +94,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Type: System.String
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -95,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, Add1
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -108,11 +122,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,7 +140,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -142,7 +156,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -158,11 +172,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
-### Microsoft.Graph.PowerShell.Models.IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -172,11 +189,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsMy40GxDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <String>]`: 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -203,3 +220,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

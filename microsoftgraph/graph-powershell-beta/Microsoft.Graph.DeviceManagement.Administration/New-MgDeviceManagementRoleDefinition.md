@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementroledefinition
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroledefinition
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementRoleDefinition
+# New-MgBetaDeviceManagementRoleDefinition
 
 ## SYNOPSIS
 Create new navigation property to roleDefinitions for deviceManagement
@@ -14,16 +14,16 @@ Create new navigation property to roleDefinitions for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementRoleDefinition [-AdditionalProperties <Hashtable>] [-Description <String>]
+New-MgBetaDeviceManagementRoleDefinition [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-IsBuiltIn] [-IsBuiltInRoleDefinition]
- [-Permissions <IMicrosoftGraphRolePermission1[]>] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
- [-RolePermissions <IMicrosoftGraphRolePermission1[]>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm]
+ [-Permissions <IMicrosoftGraphRolePermission[]>] [-RoleAssignments <IMicrosoftGraphRoleAssignment[]>]
+ [-RolePermissions <IMicrosoftGraphRolePermission[]>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition1> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementRoleDefinition -BodyParameter <IMicrosoftGraphRoleDefinition> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,13 +32,27 @@ Create new navigation property to roleDefinitions for deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,10 +71,10 @@ There are two types of roles, built-in and custom.
 Built-in roles cannot be modified.
 Both built-in roles and custom roles must have assignments to be enforced.
 Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleDefinition1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -75,7 +89,7 @@ Accept wildcard characters: False
 Description of the Role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -90,7 +104,7 @@ Accept wildcard characters: False
 Display Name of the Role definition.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,11 +116,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -122,7 +136,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -138,7 +152,7 @@ Type of Role.
 Set to True if it is built-in, or set to False if it is a custom role definition.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,10 +166,10 @@ Accept wildcard characters: False
 ### -Permissions
 List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-To construct, please use Get-Help -Online and see NOTES section for PERMISSIONS properties and create a hash table.
+To construct, see NOTES section for PERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRolePermission1[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRolePermission[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -168,10 +182,10 @@ Accept wildcard characters: False
 
 ### -RoleAssignments
 List of Role assignments for this role definition.
-To construct, please use Get-Help -Online and see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
+To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,10 +199,10 @@ Accept wildcard characters: False
 ### -RolePermissions
 List of Role Permissions this role is allowed to perform.
 These must match the actionName that is defined as part of the rolePermission.
-To construct, please use Get-Help -Online and see NOTES section for ROLEPERMISSIONS properties and create a hash table.
+To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRolePermission1[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRolePermission[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +217,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +232,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +248,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -250,10 +264,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
+
 ## NOTES
 
 ALIASES
@@ -263,62 +279,63 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRoleDefinition1>`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
+`BODYPARAMETER <IMicrosoftGraphRoleDefinition>`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Description of the Role definition.
   - `[DisplayName <String>]`: Display Name of the Role definition.
   - `[IsBuiltIn <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
   - `[IsBuiltInRoleDefinition <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-  - `[Permissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+  - `[Permissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
     - `[Actions <String[]>]`: Allowed Actions - Deprecated
     - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
       - `[AllowedResourceActions <String[]>]`: Allowed Actions
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
   - `[RoleAssignments <IMicrosoftGraphRoleAssignment[]>]`: List of Role assignments for this role definition.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: Description of the Role Assignment.
     - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
     - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-    - `[RoleDefinition <IMicrosoftGraphRoleDefinition1>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
+    - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
     - `[ScopeMembers <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
     - `[ScopeType <RoleAssignmentScopeType?>]`: Specifies the type of scope for a Role Assignment.
-  - `[RolePermissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+  - `[RolePermissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
 
-PERMISSIONS <IMicrosoftGraphRolePermission1\[]>: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+`PERMISSIONS <IMicrosoftGraphRolePermission[]>`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[Actions <String[]>]`: Allowed Actions - Deprecated
   - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
     - `[AllowedResourceActions <String[]>]`: Allowed Actions
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
-ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment\[]>: List of Role assignments for this role definition.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`ROLEASSIGNMENTS <IMicrosoftGraphRoleAssignment[]>`: List of Role assignments for this role definition.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Description of the Role Assignment.
   - `[DisplayName <String>]`: The display or friendly name of the role Assignment.
   - `[ResourceScopes <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
-  - `[RoleDefinition <IMicrosoftGraphRoleDefinition1>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
+  - `[RoleDefinition <IMicrosoftGraphRoleDefinition>]`: The Role Definition resource. The role definition is the foundation of role based access in Intune. The role combines an Intune resource such as a Mobile App and associated role permissions such as Create or Read for the resource. There are two types of roles, built-in and custom. Built-in roles cannot be modified. Both built-in roles and custom roles must have assignments to be enforced. Create custom roles if you want to define a role that allows any of the available resources and role permissions to be combined into a single role.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Description <String>]`: Description of the Role definition.
     - `[DisplayName <String>]`: Display Name of the Role definition.
     - `[IsBuiltIn <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
     - `[IsBuiltInRoleDefinition <Boolean?>]`: Type of Role. Set to True if it is built-in, or set to False if it is a custom role definition.
-    - `[Permissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+    - `[Permissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
       - `[Actions <String[]>]`: Allowed Actions - Deprecated
       - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
         - `[AllowedResourceActions <String[]>]`: Allowed Actions
         - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
     - `[RoleAssignments <IMicrosoftGraphRoleAssignment[]>]`: List of Role assignments for this role definition.
-    - `[RolePermissions <IMicrosoftGraphRolePermission1[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+    - `[RolePermissions <IMicrosoftGraphRolePermission[]>]`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
     - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
   - `[ScopeMembers <String[]>]`: List of ids of role scope member security groups.  These are IDs from Azure Active Directory.
   - `[ScopeType <RoleAssignmentScopeType?>]`: Specifies the type of scope for a Role Assignment.
 
-ROLEPERMISSIONS <IMicrosoftGraphRolePermission1\[]>: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
+`ROLEPERMISSIONS <IMicrosoftGraphRolePermission[]>`: List of Role Permissions this role is allowed to perform. These must match the actionName that is defined as part of the rolePermission.
   - `[Actions <String[]>]`: Allowed Actions - Deprecated
   - `[ResourceActions <IMicrosoftGraphResourceAction[]>]`: Resource Actions each containing a set of allowed and not allowed permissions.
     - `[AllowedResourceActions <String[]>]`: Allowed Actions
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
+

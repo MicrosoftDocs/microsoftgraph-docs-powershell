@@ -1,48 +1,46 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementexchangeconnector
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementexchangeconnector
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementExchangeConnector
+# Update-MgBetaDeviceManagementExchangeConnector
 
 ## SYNOPSIS
 Update the navigation property exchangeConnectors in deviceManagement
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId <String>
+Update-MgBetaDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId <String>
  [-AdditionalProperties <Hashtable>] [-ConnectorServerName <String>] [-ExchangeAlias <String>]
  [-ExchangeConnectorType <DeviceManagementExchangeConnectorType>] [-ExchangeOrganization <String>]
  [-Id <String>] [-LastSyncDateTime <DateTime>] [-PrimarySmtpAddress <String>] [-ServerName <String>]
- [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaDeviceManagementExchangeConnector -DeviceManagementExchangeConnectorId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministrationIdentity>
+Update-MgBetaDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-ConnectorServerName <String>] [-ExchangeAlias <String>]
  [-ExchangeConnectorType <DeviceManagementExchangeConnectorType>] [-ExchangeOrganization <String>]
  [-Id <String>] [-LastSyncDateTime <DateTime>] [-PrimarySmtpAddress <String>] [-ServerName <String>]
- [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgDeviceManagementExchangeConnector -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementExchangeConnector> [-PassThru] [-WhatIf] [-Confirm]
+ [-Status <DeviceManagementExchangeConnectorStatus>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -51,14 +49,28 @@ Update the navigation property exchangeConnectors in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -70,11 +82,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Entity which represents a connection to an Exchange environment.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementExchangeConnector
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -88,8 +100,8 @@ Accept wildcard characters: False
 The name of the server hosting the Exchange Connector.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -103,8 +115,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementExchangeConnector
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -118,8 +130,8 @@ Accept wildcard characters: False
 An alias assigned to the Exchange server
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -133,8 +145,8 @@ Accept wildcard characters: False
 The type of Exchange Connector.
 
 ```yaml
-Type: DeviceManagementExchangeConnectorType
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementExchangeConnectorType
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -148,8 +160,8 @@ Accept wildcard characters: False
 Exchange Organization to the Exchange server
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -160,12 +172,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,11 +189,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -195,23 +207,8 @@ Accept wildcard characters: False
 Last sync time for the Exchange Connector
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -225,8 +222,8 @@ Accept wildcard characters: False
 Email address used to configure the Service To Service Exchange Connector.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -240,8 +237,8 @@ Accept wildcard characters: False
 The name of the Exchange server.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -255,8 +252,8 @@ Accept wildcard characters: False
 The current status of the Exchange Connector.
 
 ```yaml
-Type: DeviceManagementExchangeConnectorStatus
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementExchangeConnectorStatus
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -270,8 +267,8 @@ Accept wildcard characters: False
 The version of the ExchangeConnectorAgent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -285,7 +282,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +298,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -317,11 +314,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector
+
 ## NOTES
 
 ALIASES
@@ -331,9 +331,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementExchangeConnector>`: Entity which represents a connection to an Exchange environment.
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementExchangeConnector>`: Entity which represents a connection to an Exchange environment.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ConnectorServerName <String>]`: The name of the server hosting the Exchange Connector.
   - `[ExchangeAlias <String>]`: An alias assigned to the Exchange server
   - `[ExchangeConnectorType <DeviceManagementExchangeConnectorType?>]`: The type of Exchange Connector.
@@ -344,7 +344,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementExchangeConnector>`: Entity which
   - `[Status <DeviceManagementExchangeConnectorStatus?>]`: The current status of the Exchange Connector.
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -402,3 +402,4 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+

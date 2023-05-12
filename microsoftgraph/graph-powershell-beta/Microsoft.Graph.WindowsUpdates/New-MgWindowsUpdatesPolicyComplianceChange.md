@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.WindowsUpdates-help.xml
-Module Name: Microsoft.Graph.WindowsUpdates
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicycompliancechange
+external help file:
+Module Name: Microsoft.Graph.Beta.WindowsUpdates
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.windowsupdates/new-mgbetawindowsupdatespolicycompliancechange
 schema: 2.0.0
 ---
 
-# New-MgWindowsUpdatesPolicyComplianceChange
+# New-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
 Create a new contentApproval object.
@@ -14,29 +14,29 @@ Create a new contentApproval object.
 
 ### CreateExpanded (Default)
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked] [-RevokedDateTime <DateTime>]
- [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked]
- [-RevokedDateTime <DateTime>] [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaWindowsUpdatesPolicyComplianceChange -UpdatePolicyId <String>
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
- -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsUpdatesComplianceChange> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIdentity>
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsRevoked]
+ [-RevokedDateTime <DateTime>] [-UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,12 +44,19 @@ Create a new contentApproval object.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-PS C:\> {{ Add example code here }}
+{{ Add code here }}
 ```
 
-{{ Add example description here }}
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -57,7 +64,7 @@ PS C:\> {{ Add example code here }}
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,10 +77,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 complianceChange
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesComplianceChange
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -88,7 +95,7 @@ Accept wildcard characters: False
 The date and time when a compliance change was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +111,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -117,11 +124,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IWindowsUpdatesIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -136,13 +143,13 @@ True indicates that a compliance change is revoked, preventing further applicati
 Revoking a compliance change is a final action.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -151,7 +158,7 @@ Accept wildcard characters: False
 The date and time when the compliance change was revoked.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -164,10 +171,10 @@ Accept wildcard characters: False
 
 ### -UpdatePolicy
 updatePolicy
-To construct, please use Get-Help -Online and see NOTES section for UPDATEPOLICY properties and create a hash table.
+To construct, see NOTES section for UPDATEPOLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsUpdatesUpdatePolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesUpdatePolicy
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -182,8 +189,8 @@ Accept wildcard characters: False
 The unique identifier of updatePolicy
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -197,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,15 +236,149 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
-### Microsoft.Graph.PowerShell.Models.IWindowsUpdatesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
+
+### Microsoft.Graph.Beta.PowerShell.Models.IWindowsUpdatesIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsUpdatesComplianceChange
+
 ## NOTES
-Please use Get-Help -Online.
+
+ALIASES
+
+New-MgBetaWuPolicyComplianceChange
+
+COMPLEX PARAMETER PROPERTIES
+
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
+
+
+`BODYPARAMETER <IMicrosoftGraphWindowsUpdatesComplianceChange>`: complianceChange
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when a compliance change was created.
+  - `[IsRevoked <Boolean?>]`: True indicates that a compliance change is revoked, preventing further application. Revoking a compliance change is a final action.
+  - `[RevokedDateTime <DateTime?>]`: The date and time when the compliance change was revoked.
+  - `[UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>]`: updatePolicy
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>]`: deploymentAudience
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent[]>]`: Content eligible to deploy to devices in the audience. Not nullable. Read-only.
+        - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
+          - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy using the service. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+          - `[DisplayName <String>]`: The display name of the content. Read-only.
+          - `[ReleaseDateTime <DateTime?>]`: The release date for the content. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[MatchedDevices <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch[]>]`: Collection of devices and recommendations for applicable catalog content.
+          - `[DeviceId <String>]`: 
+          - `[RecommendedBy <String[]>]`: Collection of vendors who recommend the content.
+      - `[Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: Specifies the assets to exclude from the audience.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: Specifies the assets to include in the audience.
+    - `[ComplianceChangeRules <IMicrosoftGraphWindowsUpdatesComplianceChangeRule[]>]`: Rules for governing the automatic creation of compliance changes.
+      - `[CreatedDateTime <DateTime?>]`: The date and time when the rule was created.
+      - `[LastEvaluatedDateTime <DateTime?>]`: The date and time when the rule was last evaluated.
+      - `[LastModifiedDateTime <DateTime?>]`: The date and time when the rule was last modified.
+    - `[ComplianceChanges <IMicrosoftGraphWindowsUpdatesComplianceChange[]>]`: Compliance changes like content approvals which result in the automatic creation of deployments using the audience and deploymentSettings of the policy.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the update policy was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[DeploymentSettings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]`: deploymentSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ContentApplicability <IMicrosoftGraphWindowsUpdatesContentApplicabilitySettings>]`: contentApplicabilitySettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[OfferWhileRecommendedBy <String[]>]`: Offer if the update is recommended by a vendor in the list, otherwise withhold the offer.
+        - `[Safeguard <IMicrosoftGraphWindowsUpdatesSafeguardSettings>]`: safeguardSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DisabledSafeguardProfiles <IMicrosoftGraphWindowsUpdatesSafeguardProfile[]>]`: List of safeguards to ignore per device.
+            - `[Category <String>]`: safeguardCategory
+      - `[Expedite <IMicrosoftGraphWindowsUpdatesExpediteSettings>]`: expediteSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[IsExpedited <Boolean?>]`: True indicates that the deployment of the content is expedited.
+      - `[Monitoring <IMicrosoftGraphWindowsUpdatesMonitoringSettings>]`: monitoringSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[MonitoringRules <IMicrosoftGraphWindowsUpdatesMonitoringRule[]>]`: Specifies the rules through which monitoring signals can trigger actions on the deployment. Rules are combined using 'or'.
+          - `[Action <String>]`: monitoringAction
+          - `[Signal <String>]`: monitoringSignal
+          - `[Threshold <Int32?>]`: The threshold for a signal at which to trigger action. An integer from 1 to 100 (inclusive).
+      - `[Schedule <IMicrosoftGraphWindowsUpdatesScheduleSettings>]`: scheduleSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[GradualRollout <IMicrosoftGraphWindowsUpdatesGradualRolloutSettings>]`: gradualRolloutSettings
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[DurationBetweenOffers <TimeSpan?>]`: The duration between each set of devices being offered the update. The value is represented in ISO 8601 format for duration. Default value is P1D (1 day).
+        - `[StartDateTime <DateTime?>]`: The date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+      - `[UserExperience <IMicrosoftGraphWindowsUpdatesUserExperienceSettings>]`: userExperienceSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DaysUntilForcedReboot <Int32?>]`: Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.
+
+`INPUTOBJECT <IWindowsUpdatesIdentity>`: Identity Parameter
+  - `[CatalogEntryId <String>]`: The unique identifier of catalogEntry
+  - `[ComplianceChangeId <String>]`: The unique identifier of complianceChange
+  - `[DeploymentId <String>]`: The unique identifier of deployment
+  - `[ResourceConnectionId <String>]`: The unique identifier of resourceConnection
+  - `[UpdatableAssetId <String>]`: The unique identifier of updatableAsset
+  - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
+
+`UPDATEPOLICY <IMicrosoftGraphWindowsUpdatesUpdatePolicy>`: updatePolicy
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Audience <IMicrosoftGraphWindowsUpdatesDeploymentAudience>]`: deploymentAudience
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[ApplicableContent <IMicrosoftGraphWindowsUpdatesApplicableContent[]>]`: Content eligible to deploy to devices in the audience. Not nullable. Read-only.
+      - `[CatalogEntry <IMicrosoftGraphWindowsUpdatesCatalogEntry>]`: catalogEntry
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[DeployableUntilDateTime <DateTime?>]`: The date on which the content is no longer available to deploy using the service. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[DisplayName <String>]`: The display name of the content. Read-only.
+        - `[ReleaseDateTime <DateTime?>]`: The release date for the content. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[MatchedDevices <IMicrosoftGraphWindowsUpdatesApplicableContentDeviceMatch[]>]`: Collection of devices and recommendations for applicable catalog content.
+        - `[DeviceId <String>]`: 
+        - `[RecommendedBy <String[]>]`: Collection of vendors who recommend the content.
+    - `[Exclusions <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: Specifies the assets to exclude from the audience.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Members <IMicrosoftGraphWindowsUpdatesUpdatableAsset[]>]`: Specifies the assets to include in the audience.
+  - `[ComplianceChangeRules <IMicrosoftGraphWindowsUpdatesComplianceChangeRule[]>]`: Rules for governing the automatic creation of compliance changes.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when the rule was created.
+    - `[LastEvaluatedDateTime <DateTime?>]`: The date and time when the rule was last evaluated.
+    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the rule was last modified.
+  - `[ComplianceChanges <IMicrosoftGraphWindowsUpdatesComplianceChange[]>]`: Compliance changes like content approvals which result in the automatic creation of deployments using the audience and deploymentSettings of the policy.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: The date and time when a compliance change was created.
+    - `[IsRevoked <Boolean?>]`: True indicates that a compliance change is revoked, preventing further application. Revoking a compliance change is a final action.
+    - `[RevokedDateTime <DateTime?>]`: The date and time when the compliance change was revoked.
+    - `[UpdatePolicy <IMicrosoftGraphWindowsUpdatesUpdatePolicy>]`: updatePolicy
+  - `[CreatedDateTime <DateTime?>]`: The date and time when the update policy was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[DeploymentSettings <IMicrosoftGraphWindowsUpdatesDeploymentSettings>]`: deploymentSettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ContentApplicability <IMicrosoftGraphWindowsUpdatesContentApplicabilitySettings>]`: contentApplicabilitySettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[OfferWhileRecommendedBy <String[]>]`: Offer if the update is recommended by a vendor in the list, otherwise withhold the offer.
+      - `[Safeguard <IMicrosoftGraphWindowsUpdatesSafeguardSettings>]`: safeguardSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisabledSafeguardProfiles <IMicrosoftGraphWindowsUpdatesSafeguardProfile[]>]`: List of safeguards to ignore per device.
+          - `[Category <String>]`: safeguardCategory
+    - `[Expedite <IMicrosoftGraphWindowsUpdatesExpediteSettings>]`: expediteSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[IsExpedited <Boolean?>]`: True indicates that the deployment of the content is expedited.
+    - `[Monitoring <IMicrosoftGraphWindowsUpdatesMonitoringSettings>]`: monitoringSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[MonitoringRules <IMicrosoftGraphWindowsUpdatesMonitoringRule[]>]`: Specifies the rules through which monitoring signals can trigger actions on the deployment. Rules are combined using 'or'.
+        - `[Action <String>]`: monitoringAction
+        - `[Signal <String>]`: monitoringSignal
+        - `[Threshold <Int32?>]`: The threshold for a signal at which to trigger action. An integer from 1 to 100 (inclusive).
+    - `[Schedule <IMicrosoftGraphWindowsUpdatesScheduleSettings>]`: scheduleSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[GradualRollout <IMicrosoftGraphWindowsUpdatesGradualRolloutSettings>]`: gradualRolloutSettings
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DurationBetweenOffers <TimeSpan?>]`: The duration between each set of devices being offered the update. The value is represented in ISO 8601 format for duration. Default value is P1D (1 day).
+      - `[StartDateTime <DateTime?>]`: The date on which devices in the deployment start receiving the update. When not set, the deployment starts as soon as devices are assigned. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[UserExperience <IMicrosoftGraphWindowsUpdatesUserExperienceSettings>]`: userExperienceSettings
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DaysUntilForcedReboot <Int32?>]`: Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.
 
 ## RELATED LINKS
-
-[https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicycompliancechange](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.windowsupdates/new-mgwindowsupdatespolicycompliancechange)
 

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofilepublication
+external help file:
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofilepublication
 schema: 2.0.0
 ---
 
-# New-MgUserProfilePublication
+# New-MgBetaUserProfilePublication
 
 ## SYNOPSIS
 Create a new itemPublication object in a user's profile.
@@ -14,34 +14,34 @@ Create a new itemPublication object in a user's profile.
 
 ### CreateExpanded (Default)
 ```
-New-MgUserProfilePublication -UserId <String> [-AdditionalProperties <Hashtable>] [-AllowedAudiences <String>]
- [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>] [-IsSearchable]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-PublishedDate <DateTime>]
- [-Publisher <String>] [-Source <IMicrosoftGraphPersonDataSources>] [-ThumbnailUrl <String>] [-WebUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Create
-```
-New-MgUserProfilePublication -UserId <String> -BodyParameter <IMicrosoftGraphItemPublication> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserProfilePublication -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserProfilePublication -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-PublishedDate <DateTime>] [-Publisher <String>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-ThumbnailUrl <String>] [-WebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ThumbnailUrl <String>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Create
+```
+New-MgBetaUserProfilePublication -UserId <String> -BodyParameter <IMicrosoftGraphItemPublication> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserProfilePublication -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemPublication>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfilePublication -InputObject <IPeopleIdentity>
+ -BodyParameter <IMicrosoftGraphItemPublication> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserProfilePublication -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+ [-AllowedAudiences <String>] [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
+ [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
+ [-PublishedDate <DateTime>] [-Publisher <String>] [-Source <IMicrosoftGraphPersonDataSources>]
+ [-ThumbnailUrl <String>] [-WebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,9 +49,9 @@ Create a new itemPublication object in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserProfilePublication Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	Description = "One persons journey to the top of the branding management field."
 	DisplayName = "Got Brands? The story of Innocenty Popov and his journey to the top."
@@ -61,11 +61,10 @@ $params = @{
 	WebUrl = "https://www.iabm.io"
 }
 # A UPN can also be used as -UserId.
-New-MgUserProfilePublication -UserId $userId -BodyParameter $params
+New-MgBetaUserProfilePublication -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserProfilePublication Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -73,7 +72,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -88,7 +87,7 @@ Accept wildcard characters: False
 allowedAudiences
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -101,10 +100,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 itemPublication
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemPublication
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPublication
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -117,10 +116,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +134,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +149,7 @@ Accept wildcard characters: False
 Description of the publication.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -165,7 +164,7 @@ Accept wildcard characters: False
 Title of the publication.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -177,11 +176,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,10 +193,10 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceData
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,11 +209,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -228,7 +227,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -241,10 +240,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +258,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +273,7 @@ Accept wildcard characters: False
 The date that the publication was published.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +288,7 @@ Accept wildcard characters: False
 Publication or publisher for the publication.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -302,10 +301,10 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonDataSources
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonDataSources
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -320,7 +319,7 @@ Accept wildcard characters: False
 URL referencing a thumbnail of the publication.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -335,8 +334,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -350,7 +349,7 @@ Accept wildcard characters: False
 URL referencing the publication.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -365,7 +364,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -381,7 +380,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -397,11 +396,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPublication
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPublication
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemPublication
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPublication
+
 ## NOTES
 
 ALIASES
@@ -411,7 +413,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphItemPublication>`: itemPublication
+`BODYPARAMETER <IMicrosoftGraphItemPublication>`: itemPublication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -433,7 +435,7 @@ BODYPARAMETER `<IMicrosoftGraphItemPublication>`: itemPublication
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Description <String>]`: Description of the publication.
   - `[DisplayName <String>]`: Title of the publication.
   - `[PublishedDate <DateTime?>]`: The date that the publication was published.
@@ -441,7 +443,7 @@ BODYPARAMETER `<IMicrosoftGraphItemPublication>`: itemPublication
   - `[ThumbnailUrl <String>]`: URL referencing a thumbnail of the publication.
   - `[WebUrl <String>]`: URL referencing the publication.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -450,12 +452,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -473,16 +475,13 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -491,8 +490,9 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+

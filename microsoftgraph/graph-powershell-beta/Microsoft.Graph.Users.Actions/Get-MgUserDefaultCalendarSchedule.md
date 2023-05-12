@@ -1,43 +1,43 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/get-mguserdefaultcalendarschedule
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserdefaultcalendarschedule
 schema: 2.0.0
 ---
 
-# Get-MgUserDefaultCalendarSchedule
+# Get-MgBetaUserDefaultCalendarSchedule
 
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## SYNTAX
 
-### GetExpanded2 (Default)
+### GetExpanded (Default)
 ```
-Get-MgUserDefaultCalendarSchedule -UserId <String> [-AdditionalProperties <Hashtable>]
+Get-MgBetaUserDefaultCalendarSchedule -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
- [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartTime <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Get2
+### Get
 ```
-Get-MgUserDefaultCalendarSchedule -UserId <String>
+Get-MgBetaUserDefaultCalendarSchedule -UserId <String>
  -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### GetViaIdentityExpanded2
+### GetViaIdentity
 ```
-Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+Get-MgBetaUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
  [-AvailabilityViewInterval <Int32>] [-EndTime <IMicrosoftGraphDateTimeZone>] [-Schedules <String[]>]
- [-StartTime <IMicrosoftGraphDateTimeZone>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentity2
-```
-Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartTime <IMicrosoftGraphDateTimeZone>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,9 +45,9 @@ Get the free/busy availability information for a collection of users, distributi
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgUserDefaultCalendarSchedule Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
 	Schedules = @(
 		"adelev@contoso.onmicrosoft.com"
@@ -64,11 +64,10 @@ $params = @{
 	AvailabilityViewInterval = 60
 }
 # A UPN can also be used as -UserId.
-Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
+Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the Get-MgUserDefaultCalendarSchedule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -76,8 +75,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
+Type: System.Collections.Hashtable
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -91,8 +90,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
-Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
+Type: System.Int32
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -104,11 +103,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get2, GetViaIdentity2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Get, GetViaIdentity
 Aliases:
 
 Required: True
@@ -120,11 +119,11 @@ Accept wildcard characters: False
 
 ### -EndTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for ENDTIME properties and create a hash table.
+To construct, see NOTES section for ENDTIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -136,11 +135,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: GetViaIdentityExpanded2, GetViaIdentity2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -154,8 +153,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
-Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
+Type: System.String[]
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -167,11 +166,11 @@ Accept wildcard characters: False
 
 ### -StartTime
 dateTimeTimeZone
-To construct, please use Get-Help -Online and see NOTES section for STARTTIME properties and create a hash table.
+To construct, see NOTES section for STARTTIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
-Parameter Sets: GetExpanded2, GetViaIdentityExpanded2
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
+Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -185,8 +184,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded2, Get2
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -200,7 +199,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -216,7 +215,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -232,11 +231,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphScheduleInformation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphScheduleInformation
+
 ## NOTES
 
 ALIASES
@@ -246,22 +248,22 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsQe3PsvUsersUserIdCalendarMicrosoftGraphGetschedulePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AvailabilityViewInterval <Int32?>]`: 
   - `[EndTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
   - `[Schedules <String[]>]`: 
   - `[StartTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
-ENDTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`ENDTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -295,7 +297,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -304,9 +305,10 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-STARTTIME `<IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
+`STARTTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
+  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
-Module Name: Microsoft.Graph.Devices.CorporateManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgusermanageddeviceconfigurationstate
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddeviceconfigurationstate
 schema: 2.0.0
 ---
 
-# Update-MgUserManagedDeviceConfigurationState
+# Update-MgBetaUserManagedDeviceConfigurationState
 
 ## SYNOPSIS
 Update the navigation property deviceConfigurationStates in users
@@ -14,34 +14,33 @@ Update the navigation property deviceConfigurationStates in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserManagedDeviceConfigurationState -DeviceConfigurationStateId <String> -ManagedDeviceId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>] [-State <String>] [-UserId1 <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserManagedDeviceConfigurationState -DeviceConfigurationStateId <String>
+ -ManagedDeviceId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+ [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>] [-UserId1 <String>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserManagedDeviceConfigurationState -DeviceConfigurationStateId <String> -ManagedDeviceId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationState1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgUserManagedDeviceConfigurationState [-UserId <String>]
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
- [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>] [-State <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserManagedDeviceConfigurationState -DeviceConfigurationStateId <String>
+ -ManagedDeviceId <String> -UserId <String> -BodyParameter <IMicrosoftGraphDeviceConfigurationState>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationState1> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationState> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserManagedDeviceConfigurationState -InputObject <IDevicesCorporateManagementIdentity>
+ [-UserId <String>] [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
+ [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
+ [-SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>] [-State <String>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,13 +48,27 @@ Update the navigation property deviceConfigurationStates in users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,10 +81,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Device Configuration State for a given device.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationState1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,8 +99,8 @@ Accept wildcard characters: False
 The unique identifier of deviceConfigurationState
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 The name of the policy for this policyBase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,11 +126,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,11 +143,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -148,26 +161,11 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -178,7 +176,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.Beta.PowerShell.Support.PolicyPlatformType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +191,7 @@ Accept wildcard characters: False
 Count of how many setting a policy holds
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,10 +204,10 @@ Accept wildcard characters: False
 
 ### -SettingStates
 .
-To construct, please use Get-Help -Online and see NOTES section for SETTINGSTATES properties and create a hash table.
+To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationSettingState1[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationSettingState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +222,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,23 +237,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -266,7 +252,7 @@ Accept wildcard characters: False
 User unique identifier, must be Guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -281,7 +267,7 @@ Accept wildcard characters: False
 User Principal Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +282,7 @@ Accept wildcard characters: False
 The version of the policy
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +297,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -327,7 +313,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -343,11 +329,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState1
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationState
+
 ## NOTES
 
 ALIASES
@@ -357,13 +346,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationState1>`: Device Configuration State for a given device.
+`BODYPARAMETER <IMicrosoftGraphDeviceConfigurationState>`: Device Configuration State for a given device.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the policy for this policyBase
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
   - `[SettingCount <Int32?>]`: Count of how many setting a policy holds
-  - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState1[]>]`: 
+  - `[SettingStates <IMicrosoftGraphDeviceConfigurationSettingState[]>]`: 
     - `[CurrentValue <String>]`: Current value of setting on device
     - `[ErrorCode <Int64?>]`: Error code for the setting
     - `[ErrorDescription <String>]`: Error description
@@ -385,7 +374,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceConfigurationState1>`: Device Configuration
   - `[UserPrincipalName <String>]`: User Principal Name
   - `[Version <Int32?>]`: The version of the policy
 
-INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
@@ -400,6 +389,8 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
   - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
+  - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
+  - `[DeviceManagementConfigurationSettingId <String>]`: The unique identifier of deviceManagementConfigurationSetting
   - `[DeviceManagementTroubleshootingEventId <String>]`: The unique identifier of deviceManagementTroubleshootingEvent
   - `[EnrollmentConfigurationAssignmentId <String>]`: The unique identifier of enrollmentConfigurationAssignment
   - `[EnterpriseCodeSigningCertificateId <String>]`: The unique identifier of enterpriseCodeSigningCertificate
@@ -430,8 +421,6 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
   - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
   - `[MobileAppTroubleshootingEventId <String>]`: The unique identifier of mobileAppTroubleshootingEvent
-  - `[OfficeClientConfigurationAssignmentId <String>]`: The unique identifier of officeClientConfigurationAssignment
-  - `[OfficeClientConfigurationId <String>]`: The unique identifier of officeClientConfiguration
   - `[PolicyId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[PolicySetAssignmentId <String>]`: The unique identifier of policySetAssignment
   - `[PolicySetId <String>]`: The unique identifier of policySet
@@ -450,12 +439,13 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
   - `[WindowsDefenderApplicationControlSupplementalPolicyId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
   - `[WindowsDeviceMalwareStateId <String>]`: The unique identifier of windowsDeviceMalwareState
+  - `[WindowsInformationProtectionAppLockerFileId <String>]`: The unique identifier of windowsInformationProtectionAppLockerFile
   - `[WindowsInformationProtectionDeviceRegistrationId <String>]`: The unique identifier of windowsInformationProtectionDeviceRegistration
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
-SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState1\[]>: .
+`SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState[]>`: .
   - `[CurrentValue <String>]`: Current value of setting on device
   - `[ErrorCode <Int64?>]`: Error code for the setting
   - `[ErrorDescription <String>]`: Error description
@@ -474,3 +464,4 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState1\[]>: .
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
+

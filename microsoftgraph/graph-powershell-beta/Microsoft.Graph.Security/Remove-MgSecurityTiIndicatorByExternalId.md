@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/remove-mgsecuritytiindicatorbyexternalid
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/remove-mgbetasecuritytiindicatorbyexternalid
 schema: 2.0.0
 ---
 
-# Remove-MgSecurityTiIndicatorByExternalId
+# Remove-MgBetaSecurityTiIndicatorByExternalId
 
 ## SYNOPSIS
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
@@ -14,15 +14,15 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 
 ### DeleteExpanded (Default)
 ```
-Remove-MgSecurityTiIndicatorByExternalId [-AdditionalProperties <Hashtable>] [-Value <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaSecurityTiIndicatorByExternalId [-AdditionalProperties <Hashtable>] [-Value <String[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Delete
 ```
-Remove-MgSecurityTiIndicatorByExternalId
+Remove-MgBetaSecurityTiIndicatorByExternalId
  -BodyParameter <IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,20 +30,19 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgSecurityTiIndicatorByExternalId Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Security
+Import-Module Microsoft.Graph.Beta.Security
 $params = @{
 	Value = @(
 		"externalId-value1"
 		"externalId-value2"
 	)
 }
-Remove-MgSecurityTiIndicatorByExternalId -BodyParameter $params
+Remove-MgBetaSecurityTiIndicatorByExternalId -BodyParameter $params
 ```
 
-This example shows how to use the Remove-MgSecurityTiIndicatorByExternalId Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -51,7 +50,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: DeleteExpanded
 Aliases:
 
@@ -64,10 +63,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Delete
 Aliases:
 
@@ -82,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: DeleteExpanded
 Aliases:
 
@@ -97,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,10 +128,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResultInfo
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResultInfo
+
 ## NOTES
 
 ALIASES
@@ -142,8 +143,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Jddi17SecurityTiindicatorsMicrosoftGraphDeletetiindicatorsbyexternalidPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Value <String[]>]`: 
 
 ## RELATED LINKS
+

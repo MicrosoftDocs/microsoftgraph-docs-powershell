@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Calendar-help.xml
-Module Name: Microsoft.Graph.Calendar
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.calendar/get-mggroupeventinstanceexceptionoccurrencecalendar
+external help file:
+Module Name: Microsoft.Graph.Beta.Calendar
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetagroupeventinstanceexceptionoccurrencecalendar
 schema: 2.0.0
 ---
 
-# Get-MgGroupEventInstanceExceptionOccurrenceCalendar
+# Get-MgBetaGroupEventInstanceExceptionOccurrenceCalendar
 
 ## SYNOPSIS
 The calendar that contains the event.
@@ -16,14 +16,14 @@ Read-only.
 
 ### Get (Default)
 ```
-Get-MgGroupEventInstanceExceptionOccurrenceCalendar -EventId <String> -EventId1 <String> -EventId2 <String>
- -GroupId <String> [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaGroupEventInstanceExceptionOccurrenceCalendar -EventId <String> -EventId1 <String>
+ -EventId2 <String> -GroupId <String> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgGroupEventInstanceExceptionOccurrenceCalendar -InputObject <ICalendarIdentity> [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaGroupEventInstanceExceptionOccurrenceCalendar -InputObject <ICalendarIdentity>
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +33,27 @@ Read-only.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -EventId
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -54,7 +68,7 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -97,10 +111,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICalendarIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -115,7 +129,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -131,10 +145,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICalendarIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCalendar1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCalendar
+
 ## NOTES
 
 ALIASES
@@ -144,7 +160,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -154,9 +170,8 @@ INPUTOBJECT `<ICalendarIdentity>`: Identity Parameter
   - `[EventId2 <String>]`: The unique identifier of event
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[PlaceId <String>]`: The unique identifier of place
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

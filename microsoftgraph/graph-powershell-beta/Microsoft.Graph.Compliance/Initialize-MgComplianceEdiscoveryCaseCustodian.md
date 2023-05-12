@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Compliance-help.xml
-Module Name: Microsoft.Graph.Compliance
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.compliance/initialize-mgcomplianceediscoverycasecustodian
+external help file:
+Module Name: Microsoft.Graph.Beta.Compliance
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/initialize-mgbetacomplianceediscoverycasecustodian
 schema: 2.0.0
 ---
 
-# Initialize-MgComplianceEdiscoveryCaseCustodian
+# Initialize-MgBetaComplianceEdiscoveryCaseCustodian
 
 ## SYNOPSIS
 Activate a custodian that has been released from a case to make them part of the case again.
@@ -15,14 +15,14 @@ For details, see Manage custodians in an Advanced eDiscovery case.
 
 ### Activate (Default)
 ```
-Initialize-MgComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
-Initialize-MgComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Initialize-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +31,13 @@ For details, see Manage custodians in an Advanced eDiscovery case.
 
 ## EXAMPLES
 
-### Example 1: Using the Initialize-MgComplianceEdiscoveryCaseCustodian Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Compliance
-Initialize-MgComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
+Import-Module Microsoft.Graph.Beta.Compliance
+Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
 ```
 
-This example shows how to use the Initialize-MgComplianceEdiscoveryCaseCustodian Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -46,7 +45,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -61,7 +60,7 @@ Accept wildcard characters: False
 The unique identifier of custodian
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -74,10 +73,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: ActivateViaIdentity
 Aliases:
 
@@ -92,7 +91,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -107,7 +106,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -123,7 +122,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,10 +138,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IComplianceIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -152,7 +153,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
+`INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -169,3 +170,4 @@ INPUTOBJECT `<IComplianceIdentity>`: Identity Parameter
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+

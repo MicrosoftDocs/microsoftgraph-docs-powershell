@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Education-help.xml
-Module Name: Microsoft.Graph.Education
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.education/new-mgeducationsynchronizationprofileerror
+external help file:
+Module Name: Microsoft.Graph.Beta.Education
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationsynchronizationprofileerror
 schema: 2.0.0
 ---
 
-# New-MgEducationSynchronizationProfileError
+# New-MgBetaEducationSynchronizationProfileError
 
 ## SYNOPSIS
 Create new navigation property to errors for education
@@ -14,30 +14,30 @@ Create new navigation property to errors for education
 
 ### CreateExpanded (Default)
 ```
-New-MgEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
+New-MgBetaEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
  [-AdditionalProperties <Hashtable>] [-EntryType <String>] [-ErrorCode <String>] [-ErrorMessage <String>]
  [-Id <String>] [-JoiningValue <String>] [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
- [-AdditionalProperties <Hashtable>] [-EntryType <String>] [-ErrorCode <String>] [-ErrorMessage <String>]
- [-Id <String>] [-JoiningValue <String>] [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationSynchronizationProfileError -EducationSynchronizationProfileId <String>
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgEducationSynchronizationProfileError -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationSynchronizationError> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdentity>
+ [-AdditionalProperties <Hashtable>] [-EntryType <String>] [-ErrorCode <String>] [-ErrorMessage <String>]
+ [-Id <String>] [-JoiningValue <String>] [-RecordedDateTime <DateTime>] [-ReportableIdentifier <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,13 +45,27 @@ Create new navigation property to errors for education
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -64,10 +78,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationSynchronizationError
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationSynchronizationError
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 Represents the sync entity (school, section, student, teacher).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +126,7 @@ Accept wildcard characters: False
 Represents the error code for this error.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +141,7 @@ Accept wildcard characters: False
 Contains a description of the error.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -139,11 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,11 +170,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -174,7 +188,7 @@ Accept wildcard characters: False
 The unique identifier for the entry.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +203,7 @@ Accept wildcard characters: False
 The time of occurrence of this error.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +218,7 @@ Accept wildcard characters: False
 The identifier of this error entry.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +233,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -235,7 +249,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,11 +265,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IEducationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationError
+
 ## NOTES
 
 ALIASES
@@ -265,9 +282,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationError>`: educationSynchronizationError
+`BODYPARAMETER <IMicrosoftGraphEducationSynchronizationError>`: educationSynchronizationError
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[EntryType <String>]`: Represents the sync entity (school, section, student, teacher).
   - `[ErrorCode <String>]`: Represents the error code for this error.
   - `[ErrorMessage <String>]`: Contains a description of the error.
@@ -275,11 +292,12 @@ BODYPARAMETER `<IMicrosoftGraphEducationSynchronizationError>`: educationSynchro
   - `[RecordedDateTime <DateTime?>]`: The time of occurrence of this error.
   - `[ReportableIdentifier <String>]`: The identifier of this error entry.
 
-INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
+`INPUTOBJECT <IEducationIdentity>`: Identity Parameter
   - `[EducationAssignmentId <String>]`: The unique identifier of educationAssignment
   - `[EducationAssignmentResourceId <String>]`: The unique identifier of educationAssignmentResource
   - `[EducationCategoryId <String>]`: The unique identifier of educationCategory
   - `[EducationClassId <String>]`: The unique identifier of educationClass
+  - `[EducationGradingCategoryId <String>]`: The unique identifier of educationGradingCategory
   - `[EducationOutcomeId <String>]`: The unique identifier of educationOutcome
   - `[EducationRubricId <String>]`: The unique identifier of educationRubric
   - `[EducationSchoolId <String>]`: The unique identifier of educationSchool
@@ -290,3 +308,4 @@ INPUTOBJECT `<IEducationIdentity>`: Identity Parameter
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
-Module Name: Microsoft.Graph.Security
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.security/get-mgsecuritycaseediscoverycaselegalholdsitesourcesite
+external help file:
+Module Name: Microsoft.Graph.Beta.Security
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritycaseediscoverycaselegalholdsitesourcesite
 schema: 2.0.0
 ---
 
-# Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite
+# Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite
 
 ## SYNOPSIS
 The SharePoint site associated with the siteSource.
@@ -14,14 +14,14 @@ The SharePoint site associated with the siteSource.
 
 ### Get (Default)
 ```
-Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite -EdiscoveryCaseId <String>
+Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite -EdiscoveryCaseId <String>
  -EdiscoveryHoldPolicyId <String> -SiteSourceId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite -InputObject <ISecurityIdentity>
+Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite -InputObject <ISecurityIdentity>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -30,13 +30,27 @@ The SharePoint site associated with the siteSource.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -51,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryHoldPolicy
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -66,7 +80,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -79,10 +93,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -97,7 +111,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -112,7 +126,7 @@ Accept wildcard characters: False
 The unique identifier of siteSource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -128,10 +142,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSite
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSite
+
 ## NOTES
 
 ALIASES
@@ -141,7 +157,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
+`INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
   - `[ArticleId <String>]`: The unique identifier of article
   - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
@@ -200,3 +216,4 @@ INPUTOBJECT `<ISecurityIdentity>`: Identity Parameter
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

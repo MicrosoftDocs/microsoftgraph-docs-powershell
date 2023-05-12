@@ -1,41 +1,41 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/add-mguserdrivelistcontenttypecopy
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/add-mgbetauserdrivelistcontenttypecopy
 schema: 2.0.0
 ---
 
-# Add-MgUserDriveListContentTypeCopy
+# Add-MgBetaUserDriveListContentTypeCopy
 
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## SYNTAX
 
-### AddExpanded1 (Default)
+### AddExpanded (Default)
 ```
-Add-MgUserDriveListContentTypeCopy -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaUserDriveListContentTypeCopy -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Add1
+### Add
 ```
-Add-MgUserDriveListContentTypeCopy -DriveId <String> -UserId <String>
+Add-MgBetaUserDriveListContentTypeCopy -DriveId <String> -UserId <String>
  -BodyParameter <IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### AddViaIdentityExpanded1
+### AddViaIdentity
 ```
-Add-MgUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-ContentType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AddViaIdentity1
-```
-Add-MgUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
+Add-MgBetaUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AddViaIdentityExpanded
+```
+Add-MgBetaUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,20 +43,16 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Sites
+Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 
-Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
-```
-
-This example shows how to use the Add-MgUserDriveListContentTypeCopy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Add-MgBetaSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -64,8 +60,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -77,11 +73,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Add1, AddViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Add, AddViaIdentity
 Aliases:
 
 Required: True
@@ -95,8 +91,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, AddViaIdentityExpanded1
+Type: System.String
+Parameter Sets: AddExpanded, AddViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -110,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, Add1
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -123,11 +119,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: AddViaIdentityExpanded1, AddViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: AddViaIdentity, AddViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,8 +137,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: AddExpanded1, Add1
+Type: System.String
+Parameter Sets: Add, AddExpanded
 Aliases:
 
 Required: True
@@ -156,7 +152,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +168,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -188,11 +184,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContentType
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentType
+
 ## NOTES
 
 ALIASES
@@ -202,11 +201,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths2SzxsiUsersUserIdDrivesDriveIdListContenttypesMicrosoftGraphAddcopyPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -240,7 +239,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -250,3 +248,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

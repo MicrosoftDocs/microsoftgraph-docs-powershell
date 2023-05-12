@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Devices.ServiceAnnouncement-help.xml
-Module Name: Microsoft.Graph.Devices.ServiceAnnouncement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.serviceannouncement/set-mgserviceannouncementmessageattachmentarchive
+external help file:
+Module Name: Microsoft.Graph.Beta.Devices.ServiceAnnouncement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.serviceannouncement/set-mgbetaserviceannouncementmessageattachmentarchive
 schema: 2.0.0
-ms.prod: service-communications
 ---
 
-# Set-MgServiceAnnouncementMessageAttachmentArchive
+# Set-MgBetaServiceAnnouncementMessageAttachmentArchive
 
 ## SYNOPSIS
 The zip file of all attachments for a message.
@@ -15,14 +14,14 @@ The zip file of all attachments for a message.
 
 ### Set (Default)
 ```
-Set-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> [-BodyParameter <Stream>]
- -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId <String> -InFile <String>
+ [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
- [-BodyParameter <Stream>] -InFile <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceAnnouncementIdentity>
+ -InFile <String> [-Data <Stream>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,24 +29,20 @@ The zip file of all attachments for a message.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-
-Get-MgServiceAnnouncementMessage
+Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 ```
 
-This example shows how to use the Set-MgServiceAnnouncementMessageAttachmentArchive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaServiceAnnouncementMessage
 
 ## PARAMETERS
 
-### -BodyParameter
+### -Data
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -64,7 +59,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -77,10 +72,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesServiceAnnouncementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -95,7 +90,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -110,7 +105,7 @@ Accept wildcard characters: False
 The unique identifier of serviceUpdateMessage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -125,7 +120,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -141,7 +136,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -157,11 +152,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDevicesServiceAnnouncementIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -171,10 +169,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDevicesServiceAnnouncementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDevicesServiceAnnouncementIdentity>`: Identity Parameter
   - `[ServiceAnnouncementAttachmentId <String>]`: The unique identifier of serviceAnnouncementAttachment
   - `[ServiceHealthId <String>]`: The unique identifier of serviceHealth
   - `[ServiceHealthIssueId <String>]`: The unique identifier of serviceHealthIssue
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
+

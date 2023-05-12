@@ -1,57 +1,58 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
-Module Name: Microsoft.Graph.Groups
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.groups/invoke-mgforwardgroupevent
+external help file:
+Module Name: Microsoft.Graph.Beta.Groups
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaforwardgroupevent
 schema: 2.0.0
 ---
 
-# Invoke-MgForwardGroupEvent
+# Invoke-MgBetaForwardGroupEvent
 
 ## SYNOPSIS
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## SYNTAX
 
 ### ForwardExpanded (Default)
 ```
-Invoke-MgForwardGroupEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaForwardGroupEvent -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Forward
 ```
-Invoke-MgForwardGroupEvent -EventId <String> -GroupId <String>
+Invoke-MgBetaForwardGroupEvent -EventId <String> -GroupId <String>
  -BodyParameter <IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ForwardViaIdentityExpanded
-```
-Invoke-MgForwardGroupEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ForwardViaIdentity
 ```
-Invoke-MgForwardGroupEvent -InputObject <IGroupsIdentity>
+Invoke-MgBetaForwardGroupEvent -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ForwardViaIdentityExpanded
+```
+Invoke-MgBetaForwardGroupEvent -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Comment <String>] [-ToRecipients <IMicrosoftGraphRecipient[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
-If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This action allows the organizer or attendee of a meeting event to forward the nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	ToRecipients = @(
@@ -66,12 +67,7 @@ $params = @{
 }
 
 # A UPN can also be used as -UserId.
-Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
-
-This example shows how to use the Invoke-MgForwardGroupEvent Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -79,7 +75,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -92,10 +88,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Forward, ForwardViaIdentity
 Aliases:
 
@@ -110,7 +106,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -125,8 +121,8 @@ Accept wildcard characters: False
 The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: ForwardExpanded, Forward
+Type: System.String
+Parameter Sets: Forward, ForwardExpanded
 Aliases:
 
 Required: True
@@ -140,8 +136,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: ForwardExpanded, Forward
+Type: System.String
+Parameter Sets: Forward, ForwardExpanded
 Aliases:
 
 Required: True
@@ -153,11 +149,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ForwardViaIdentityExpanded, ForwardViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: ForwardViaIdentity, ForwardViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -171,7 +167,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -184,10 +180,10 @@ Accept wildcard characters: False
 
 ### -ToRecipients
 .
-To construct, please use Get-Help -Online and see NOTES section for TORECIPIENTS properties and create a hash table.
+To construct, see NOTES section for TORECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRecipient[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecipient[]
 Parameter Sets: ForwardExpanded, ForwardViaIdentityExpanded
 Aliases:
 
@@ -202,7 +198,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -218,7 +214,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -234,11 +230,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.PowerShell.Models.IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -248,16 +247,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1K4KnkbGroupsGroupIdEventsEventIdMicrosoftGraphForwardPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Comment <String>]`: 
   - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
     - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
+      - `[Address <String>]`: The email address of an entity instance.
+      - `[Name <String>]`: The display name of an entity instance.
 
-INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
+`INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[ContentTypeId <String>]`: The unique identifier of contentType
   - `[ConversationId <String>]`: The unique identifier of conversation
@@ -279,11 +278,9 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
-  - `[ListId1 <String>]`: Usage: listId='{listId}'
   - `[ListItemId <String>]`: The unique identifier of listItem
   - `[ListItemVersionId <String>]`: The unique identifier of listItemVersion
   - `[MentionId <String>]`: The unique identifier of mention
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotebookId <String>]`: The unique identifier of notebook
   - `[OnenotePageId <String>]`: The unique identifier of onenotePage
   - `[OnenoteSectionId <String>]`: The unique identifier of onenoteSection
@@ -296,7 +293,6 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[Q <String>]`: Usage: q='{q}'
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[SiteId <String>]`: The unique identifier of site
   - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
@@ -306,10 +302,11 @@ INPUTOBJECT `<IGroupsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-TORECIPIENTS <IMicrosoftGraphRecipient\[]>: .
+`TORECIPIENTS <IMicrosoftGraphRecipient[]>`: .
   - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Address <String>]`: The email address of the person or entity.
-    - `[Name <String>]`: The display name of the person or entity.
+    - `[Address <String>]`: The email address of an entity instance.
+    - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+

@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Financials-help.xml
-Module Name: Microsoft.Graph.Financials
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.financials/get-mgfinancialcompany
+external help file:
+Module Name: Microsoft.Graph.Beta.Financials
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompany
 schema: 2.0.0
 ---
 
-# Get-MgFinancialCompany
+# Get-MgBetaFinancialCompany
 
 ## SYNOPSIS
 Get companies from financials
@@ -14,21 +14,21 @@ Get companies from financials
 
 ### List (Default)
 ```
-Get-MgFinancialCompany [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
+Get-MgBetaFinancialCompany [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgFinancialCompany -CompanyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgBetaFinancialCompany -CompanyId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
  [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgFinancialCompany -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaFinancialCompany -InputObject <IFinancialsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,13 +36,27 @@ Get companies from financials
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -All
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -54,10 +68,10 @@ Accept wildcard characters: False
 ```
 
 ### -CompanyId
-key: id of company
+The unique identifier of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -73,7 +87,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -88,7 +102,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -103,7 +117,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -116,10 +130,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -134,7 +148,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -149,7 +163,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -164,7 +178,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -179,7 +208,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -194,24 +223,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -225,10 +239,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFinancialsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCompany
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany
+
 ## NOTES
 
 ALIASES
@@ -238,42 +254,43 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFinancialsIdentity>`: Identity Parameter
-  - `[AccountId <String>]`: key: id of account
-  - `[AgedAccountsPayableId <String>]`: key: id of agedAccountsPayable
-  - `[AgedAccountsReceivableId <String>]`: key: id of agedAccountsReceivable
-  - `[CompanyId <String>]`: key: id of company
-  - `[CompanyInformationId <String>]`: key: id of companyInformation
-  - `[CountryRegionId <String>]`: key: id of countryRegion
-  - `[CurrencyId <String>]`: key: id of currency
-  - `[CustomerId <String>]`: key: id of customer
-  - `[CustomerPaymentId <String>]`: key: id of customerPayment
-  - `[CustomerPaymentJournalId <String>]`: key: id of customerPaymentJournal
-  - `[DimensionId <String>]`: key: id of dimension
-  - `[DimensionValueId <String>]`: key: id of dimensionValue
-  - `[EmployeeId <String>]`: key: id of employee
-  - `[GeneralLedgerEntryId <String>]`: key: id of generalLedgerEntry
-  - `[ItemCategoryId <String>]`: key: id of itemCategory
-  - `[ItemId <String>]`: key: id of item
-  - `[JournalId <String>]`: key: id of journal
-  - `[JournalLineId <String>]`: key: id of journalLine
-  - `[PaymentMethodId <String>]`: key: id of paymentMethod
-  - `[PaymentTermId <String>]`: key: id of paymentTerm
-  - `[PictureId <String>]`: key: id of picture
-  - `[PurchaseInvoiceId <String>]`: key: id of purchaseInvoice
-  - `[PurchaseInvoiceLineId <String>]`: key: id of purchaseInvoiceLine
-  - `[SalesCreditMemoId <String>]`: key: id of salesCreditMemo
-  - `[SalesCreditMemoLineId <String>]`: key: id of salesCreditMemoLine
-  - `[SalesInvoiceId <String>]`: key: id of salesInvoice
-  - `[SalesInvoiceLineId <String>]`: key: id of salesInvoiceLine
-  - `[SalesOrderId <String>]`: key: id of salesOrder
-  - `[SalesOrderLineId <String>]`: key: id of salesOrderLine
-  - `[SalesQuoteId <String>]`: key: id of salesQuote
-  - `[SalesQuoteLineId <String>]`: key: id of salesQuoteLine
-  - `[ShipmentMethodId <String>]`: key: id of shipmentMethod
-  - `[TaxAreaId <String>]`: key: id of taxArea
-  - `[TaxGroupId <String>]`: key: id of taxGroup
-  - `[UnitOfMeasureId <String>]`: key: id of unitOfMeasure
-  - `[VendorId <String>]`: key: id of vendor
+`INPUTOBJECT <IFinancialsIdentity>`: Identity Parameter
+  - `[AccountId <String>]`: The unique identifier of account
+  - `[AgedAccountsPayableId <String>]`: The unique identifier of agedAccountsPayable
+  - `[AgedAccountsReceivableId <String>]`: The unique identifier of agedAccountsReceivable
+  - `[CompanyId <String>]`: The unique identifier of company
+  - `[CompanyInformationId <String>]`: The unique identifier of companyInformation
+  - `[CountryRegionId <String>]`: The unique identifier of countryRegion
+  - `[CurrencyId <String>]`: The unique identifier of currency
+  - `[CustomerId <String>]`: The unique identifier of customer
+  - `[CustomerPaymentId <String>]`: The unique identifier of customerPayment
+  - `[CustomerPaymentJournalId <String>]`: The unique identifier of customerPaymentJournal
+  - `[DimensionId <String>]`: The unique identifier of dimension
+  - `[DimensionValueId <String>]`: The unique identifier of dimensionValue
+  - `[EmployeeId <String>]`: The unique identifier of employee
+  - `[GeneralLedgerEntryId <String>]`: The unique identifier of generalLedgerEntry
+  - `[ItemCategoryId <String>]`: The unique identifier of itemCategory
+  - `[ItemId <String>]`: The unique identifier of item
+  - `[JournalId <String>]`: The unique identifier of journal
+  - `[JournalLineId <String>]`: The unique identifier of journalLine
+  - `[PaymentMethodId <String>]`: The unique identifier of paymentMethod
+  - `[PaymentTermId <String>]`: The unique identifier of paymentTerm
+  - `[PictureId <String>]`: The unique identifier of picture
+  - `[PurchaseInvoiceId <String>]`: The unique identifier of purchaseInvoice
+  - `[PurchaseInvoiceLineId <String>]`: The unique identifier of purchaseInvoiceLine
+  - `[SalesCreditMemoId <String>]`: The unique identifier of salesCreditMemo
+  - `[SalesCreditMemoLineId <String>]`: The unique identifier of salesCreditMemoLine
+  - `[SalesInvoiceId <String>]`: The unique identifier of salesInvoice
+  - `[SalesInvoiceLineId <String>]`: The unique identifier of salesInvoiceLine
+  - `[SalesOrderId <String>]`: The unique identifier of salesOrder
+  - `[SalesOrderLineId <String>]`: The unique identifier of salesOrderLine
+  - `[SalesQuoteId <String>]`: The unique identifier of salesQuote
+  - `[SalesQuoteLineId <String>]`: The unique identifier of salesQuoteLine
+  - `[ShipmentMethodId <String>]`: The unique identifier of shipmentMethod
+  - `[TaxAreaId <String>]`: The unique identifier of taxArea
+  - `[TaxGroupId <String>]`: The unique identifier of taxGroup
+  - `[UnitOfMeasureId <String>]`: The unique identifier of unitOfMeasure
+  - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+

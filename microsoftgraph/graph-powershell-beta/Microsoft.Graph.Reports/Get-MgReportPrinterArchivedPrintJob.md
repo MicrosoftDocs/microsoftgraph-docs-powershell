@@ -1,26 +1,26 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
-Module Name: Microsoft.Graph.Reports
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.reports/get-mgreportprinterarchivedprintjob
+external help file:
+Module Name: Microsoft.Graph.Beta.Reports
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportprinterarchivedprintjob
 schema: 2.0.0
 ---
 
-# Get-MgReportPrinterArchivedPrintJob
+# Get-MgBetaReportPrinterArchivedPrintJob
 
 ## SYNOPSIS
 Invoke function getPrinterArchivedPrintJobs
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgReportPrinterArchivedPrintJob -EndDateTime <DateTime> -PrinterId <String> -StartDateTime <DateTime>
+Get-MgBetaReportPrinterArchivedPrintJob -EndDateTime <DateTime> -PrinterId <String> -StartDateTime <DateTime>
  [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filter <String>]
+Get-MgBetaReportPrinterArchivedPrintJob -InputObject <IReportsIdentity> [-Count] [-Filter <String>]
  [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -29,13 +29,27 @@ Invoke function getPrinterArchivedPrintJobs
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Count
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -50,8 +64,8 @@ Accept wildcard characters: False
 Usage: endDateTime={endDateTime}
 
 ```yaml
-Type: DateTime
-Parameter Sets: Get1
+Type: System.DateTime
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -65,7 +79,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -78,11 +92,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -96,8 +110,8 @@ Accept wildcard characters: False
 Usage: printerId='{printerId}'
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -111,7 +125,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -126,8 +155,8 @@ Accept wildcard characters: False
 Usage: startDateTime={startDateTime}
 
 ```yaml
-Type: DateTime
-Parameter Sets: Get1
+Type: System.DateTime
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -141,24 +170,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -172,10 +186,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphArchivedPrintJob1
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphArchivedPrintJob
+
 ## NOTES
 
 ALIASES
@@ -185,7 +201,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
+`INPUTOBJECT <IReportsIdentity>`: Identity Parameter
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
   - `[Date <DateTime?>]`: Usage: date={date}
@@ -213,3 +229,4 @@ INPUTOBJECT `<IReportsIdentity>`: Identity Parameter
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+

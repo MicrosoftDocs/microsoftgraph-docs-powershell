@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Functions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Functions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.functions/get-mgdevicemanagementeffectivepermission
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementeffectivepermission
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementEffectivePermission
+# Get-MgBetaDeviceManagementEffectivePermission
 
 ## SYNOPSIS
 Invoke function getEffectivePermissions
@@ -14,19 +14,19 @@ Invoke function getEffectivePermissions
 
 ### Get (Default)
 ```
-Get-MgDeviceManagementEffectivePermission [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
+Get-MgBetaDeviceManagementEffectivePermission [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
  [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### Get1
 ```
-Get-MgDeviceManagementEffectivePermission -Scope <String> [-Count] [-Filter <String>] [-Search <String>]
+Get-MgBetaDeviceManagementEffectivePermission -Scope <String> [-Count] [-Filter <String>] [-Search <String>]
  [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity> [-Count]
+Get-MgBetaDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctionsIdentity> [-Count]
  [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Top <Int32>] [<CommonParameters>]
 ```
 
@@ -35,13 +35,27 @@ Invoke function getEffectivePermissions
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -Count
 Include count of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -56,7 +70,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -69,10 +83,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -87,7 +101,7 @@ Accept wildcard characters: False
 Usage: scope='{scope}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -102,7 +116,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: (All)
 Aliases:
 
@@ -117,24 +146,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: (All)
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: (All)
-Aliases:
 
 Required: False
 Position: Named
@@ -148,11 +162,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementFunctionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRolePermission
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRolePermission
+
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -162,10 +179,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Category <String>]`: Usage: category='{category}'
   - `[CloudPcId <String>]`: The unique identifier of cloudPC
-  - `[CloudPcId1 <String>]`: Usage: cloudPcId='{cloudPcId}'
   - `[DepOnboardingSettingId <String>]`: The unique identifier of depOnboardingSetting
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
   - `[DeviceConfigurationId <String>]`: The unique identifier of deviceConfiguration
@@ -187,7 +203,6 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Scope <String>]`: Usage: scope='{scope}'
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
-  - `[SessionKey <String>]`: Usage: sessionKey='{sessionKey}'
   - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
   - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
   - `[TemplateId <String>]`: Usage: templateId='{templateId}'
@@ -195,3 +210,4 @@ INPUTOBJECT `<IDeviceManagementFunctionsIdentity>`: Identity Parameter
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+

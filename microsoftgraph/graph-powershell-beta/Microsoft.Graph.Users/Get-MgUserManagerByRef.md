@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
-Module Name: Microsoft.Graph.Users
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users/get-mgusermanagerbyref
+external help file:
+Module Name: Microsoft.Graph.Beta.Users
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausermanagerbyref
 schema: 2.0.0
-ms.prod: users
 ---
 
-# Get-MgUserManagerByRef
+# Get-MgBetaUserManagerByRef
 
 ## SYNOPSIS
 Returns the user or organizational contact assigned as the user's manager.
@@ -14,14 +13,14 @@ Optionally, you can expand the manager's chain up to the root node.
 
 ## SYNTAX
 
-### Get1 (Default)
+### Get (Default)
 ```
-Get-MgUserManagerByRef -UserId <String> [<CommonParameters>]
+Get-MgBetaUserManagerByRef -UserId <String> [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
-Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
+Get-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,38 +29,30 @@ Optionally, you can expand the manager's chain up to the root node.
 
 ## EXAMPLES
 
-### Example 1: Get manager
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users
-
-Get-MgUserManager -UserId $userId
+Import-Module Microsoft.Graph.Beta.Users
 ```
 
-This example shows how to use the Get-MgUserManagerByRef Cmdlet.
+Get-MgBetaUserManager -UserId $userId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Get manager chain up to the root level
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Users
+Import-Module Microsoft.Graph.Beta.Users
+```
 
 # A UPN can also be used as -UserId.
-Get-MgUser -UserId $userId -ExpandProperty "manager(`$levels=max;`$select=id,displayName)" -Property "id,displayName" -CountVariable CountVar -ConsistencyLevel eventual
-```
-
-This example shows how to use the Get-MgUserManagerByRef Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaUser -UserId $userId -ExpandProperty "manager(`$levels=max;`$select=id,displayName)" -Property "id,displayName" -CountVariable CountVar -ConsistencyLevel eventual
 
 ## PARAMETERS
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: GetViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -75,8 +66,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get1
+Type: System.String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -91,10 +82,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -104,7 +97,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
   - `[AttachmentId <String>]`: The unique identifier of attachment
   - `[AttachmentSessionId <String>]`: The unique identifier of attachmentSession
@@ -113,7 +106,6 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[LicenseDetailsId <String>]`: The unique identifier of licenseDetails
   - `[LinkedResourceId <String>]`: The unique identifier of linkedResource
-  - `[MultiValueLegacyExtendedPropertyId <String>]`: The unique identifier of multiValueLegacyExtendedProperty
   - `[NotificationId <String>]`: The unique identifier of notification
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[OutlookCategoryId <String>]`: The unique identifier of outlookCategory
@@ -121,9 +113,9 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
-  - `[SingleValueLegacyExtendedPropertyId <String>]`: The unique identifier of singleValueLegacyExtendedProperty
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

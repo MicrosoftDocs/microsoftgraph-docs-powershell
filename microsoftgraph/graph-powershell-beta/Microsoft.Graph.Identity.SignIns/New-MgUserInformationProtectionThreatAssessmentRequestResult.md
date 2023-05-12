@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/new-mguserinformationprotectionthreatassessmentrequestresult
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserinformationprotectionthreatassessmentrequestresult
 schema: 2.0.0
 ---
 
-# New-MgUserInformationProtectionThreatAssessmentRequestResult
+# New-MgBetaUserInformationProtectionThreatAssessmentRequestResult
 
 ## SYNOPSIS
 Create new navigation property to results for users
@@ -14,29 +14,29 @@ Create new navigation property to results for users
 
 ### CreateExpanded (Default)
 ```
-New-MgUserInformationProtectionThreatAssessmentRequestResult -ThreatAssessmentRequestId <String>
+New-MgBetaUserInformationProtectionThreatAssessmentRequestResult -ThreatAssessmentRequestId <String>
  -UserId <String> [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-Message <String>] [-ResultType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Message <String>] [-ResultType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserInformationProtectionThreatAssessmentRequestResult -ThreatAssessmentRequestId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-WhatIf] [-Confirm]
+New-MgBetaUserInformationProtectionThreatAssessmentRequestResult -ThreatAssessmentRequestId <String>
+ -UserId <String> -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgUserInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Message <String>]
- [-ResultType <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgUserInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphThreatAssessmentResult> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserInformationProtectionThreatAssessmentRequestResult -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-Message <String>]
+ [-ResultType <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,13 +44,27 @@ Create new navigation property to results for users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -63,10 +77,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 threatAssessmentResult
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphThreatAssessmentResult
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +96,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -94,11 +108,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -111,11 +125,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +143,7 @@ Accept wildcard characters: False
 The result message for each threat assessment.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +158,7 @@ Accept wildcard characters: False
 threatAssessmentResultType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of threatAssessmentRequest
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -174,8 +188,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -189,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,11 +235,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphThreatAssessmentResult
+
 ## NOTES
 
 ALIASES
@@ -235,14 +252,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphThreatAssessmentResult>`: threatAssessmentResult
+`BODYPARAMETER <IMicrosoftGraphThreatAssessmentResult>`: threatAssessmentResult
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Message <String>]`: The result message for each threat assessment.
   - `[ResultType <String>]`: threatAssessmentResultType
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -279,6 +296,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -317,3 +335,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

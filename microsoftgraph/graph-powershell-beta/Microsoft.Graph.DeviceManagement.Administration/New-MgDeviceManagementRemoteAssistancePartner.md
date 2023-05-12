@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementremoteassistancepartner
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementremoteassistancepartner
 schema: 2.0.0
 ---
 
-# New-MgDeviceManagementRemoteAssistancePartner
+# New-MgBetaDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
 Create new navigation property to remoteAssistancePartners for deviceManagement
@@ -14,16 +14,16 @@ Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ### CreateExpanded (Default)
 ```
-New-MgDeviceManagementRemoteAssistancePartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
+New-MgBetaDeviceManagementRemoteAssistancePartner [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-LastConnectionDateTime <DateTime>] [-OnboardingRequestExpiryDateTime <DateTime>]
- [-OnboardingStatus <RemoteAssistanceOnboardingStatus>] [-OnboardingUrl <String>] [-WhatIf] [-Confirm]
+ [-OnboardingStatus <RemoteAssistanceOnboardingStatus>] [-OnboardingUrl <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRemoteAssistancePartner>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,13 +31,27 @@ Create new navigation property to remoteAssistancePartners for deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,10 +64,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRemoteAssistancePartner
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
 Parameter Sets: Create
 Aliases:
 
@@ -68,7 +82,7 @@ Accept wildcard characters: False
 Display name of the partner.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -80,11 +94,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 Timestamp of the last request sent to Intune by the TEM partner.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +128,7 @@ Accept wildcard characters: False
 When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +143,7 @@ Accept wildcard characters: False
 The current TeamViewer connector status
 
 ```yaml
-Type: RemoteAssistanceOnboardingStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.RemoteAssistanceOnboardingStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +158,7 @@ Accept wildcard characters: False
 URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +173,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +189,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +205,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner
+
 ## NOTES
 
 ALIASES
@@ -204,9 +220,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphRemoteAssistancePartner>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
+`BODYPARAMETER <IMicrosoftGraphRemoteAssistancePartner>`: RemoteAssistPartner resources represent the metadata and status of a given Remote Assistance partner service.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: Display name of the partner.
   - `[LastConnectionDateTime <DateTime?>]`: Timestamp of the last request sent to Intune by the TEM partner.
   - `[OnboardingRequestExpiryDateTime <DateTime?>]`: When the OnboardingStatus is Onboarding, This is the date time when the onboarding request expires.
@@ -214,3 +230,4 @@ BODYPARAMETER `<IMicrosoftGraphRemoteAssistancePartner>`: RemoteAssistPartner re
   - `[OnboardingUrl <String>]`: URL of the partner's onboarding portal, where an administrator can configure their Remote Assistance service.
 
 ## RELATED LINKS
+

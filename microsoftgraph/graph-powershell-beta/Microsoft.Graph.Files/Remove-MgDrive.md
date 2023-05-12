@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
-Module Name: Microsoft.Graph.Files
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.files/remove-mgdrive
+external help file:
+Module Name: Microsoft.Graph.Beta.Files
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.files/remove-mgbetadrive
 schema: 2.0.0
-ms.prod: sharepoint
 ---
 
-# Remove-MgDrive
+# Remove-MgBetaDrive
 
 ## SYNOPSIS
 Delete entity from drives
@@ -15,12 +14,12 @@ Delete entity from drives
 
 ### Delete (Default)
 ```
-Remove-MgDrive -DriveId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaDrive -DriveId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -29,61 +28,41 @@ Delete entity from drives
 
 ## EXAMPLES
 
-### Example 1: Code snippet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
+Import-Module Microsoft.Graph.Beta.Files
+```
 
 # A UPN can also be used as -UserId.
-Get-MgUserDefaultDrive -UserId $userId
-```
+Get-MgBetaUserDefaultDrive -UserId $userId
 
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Get-MgUserDefaultDrive -UserId $userId
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Remove-MgDrive Cmdlet.
+Get-MgBetaUserDefaultDrive -UserId $userId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Get-MgGroupDefaultDrive -GroupId $groupId
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Remove-MgDrive Cmdlet.
+Get-MgBetaGroupDefaultDrive -GroupId $groupId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Sites
-
-Get-MgSiteDefaultDrive -SiteId $siteId
+Import-Module Microsoft.Graph.Beta.Sites
 ```
 
-This example shows how to use the Remove-MgDrive Cmdlet.
+Get-MgBetaSiteDefaultDrive -SiteId $siteId
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Code snippet
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Files
-
-Get-MgDrive -DriveId $driveId
+Import-Module Microsoft.Graph.Beta.Files
 ```
 
-This example shows how to use the Remove-MgDrive Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+Get-MgBetaDrive -DriveId $driveId
 
 ## PARAMETERS
 
@@ -91,7 +70,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -106,7 +85,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -119,10 +98,10 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -137,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -152,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -168,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -184,10 +163,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -197,7 +178,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
+`INPUTOBJECT <IFilesIdentity>`: Identity Parameter
   - `[ColumnDefinitionId <String>]`: The unique identifier of columnDefinition
   - `[ColumnLinkId <String>]`: The unique identifier of columnLink
   - `[ContentTypeId <String>]`: The unique identifier of contentType
@@ -224,3 +205,4 @@ INPUTOBJECT `<IFilesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

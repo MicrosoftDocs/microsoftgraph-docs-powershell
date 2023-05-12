@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: ce6af724-1d3c-40d1-a8ca-89a9a485c66a
-Download Help Link: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users
+Module Guid: 12bee043-af70-4a45-b870-32ff3761b904
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -14,10 +14,19 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
 Retrieve the properties and relationships of user object.
 
+### [Get-MgUserCount](Get-MgUserCount.md)
+Get the number of the resource
+
 ### [Get-MgUserCreatedObject](Get-MgUserCreatedObject.md)
 Directory objects that were created by the user.
 Read-only.
 Nullable.
+
+### [Get-MgUserCreatedObjectAsServicePrincipal](Get-MgUserCreatedObjectAsServicePrincipal.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Get-MgUserCreatedObjectCount](Get-MgUserCreatedObjectCount.md)
+Get the number of the resource
 
 ### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
 The users and contacts that report to the user.
@@ -25,15 +34,78 @@ The users and contacts that report to the user.
 Nullable.
 Supports $expand.
 
+### [Get-MgUserDirectReportAsOrgContact](Get-MgUserDirectReportAsOrgContact.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
+
+### [Get-MgUserDirectReportAsUser](Get-MgUserDirectReportAsUser.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
+
+### [Get-MgUserDirectReportCount](Get-MgUserDirectReportCount.md)
+Get the number of the resource
+
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
 The collection of open extensions defined for the user.
 Read-only.
 Supports $expand.
 Nullable.
 
+### [Get-MgUserExtensionCount](Get-MgUserExtensionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserLicenseDetail](Get-MgUserLicenseDetail.md)
 A collection of this user's license details.
 Read-only.
+
+### [Get-MgUserLicenseDetailCount](Get-MgUserLicenseDetailCount.md)
+Get the number of the resource
+
+### [Get-MgUserListCreatedObjectCountAsServicePrincipal](Get-MgUserListCreatedObjectCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgUserListDirectReportCountAsOrgContact](Get-MgUserListDirectReportCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgUserListDirectReportCountAsUser](Get-MgUserListDirectReportCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgUserListMemberOfCountAsAdministrativeUnit](Get-MgUserListMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgUserListMemberOfCountAsGroup](Get-MgUserListMemberOfCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgUserListOwnedDeviceCountAsAppRoleAssignment](Get-MgUserListOwnedDeviceCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgUserListOwnedDeviceCountAsDevice](Get-MgUserListOwnedDeviceCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgUserListOwnedDeviceCountAsEndpoint](Get-MgUserListOwnedDeviceCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgUserListOwnedObjectCountAsApplication](Get-MgUserListOwnedObjectCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgUserListOwnedObjectCountAsGroup](Get-MgUserListOwnedObjectCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgUserListOwnedObjectCountAsServicePrincipal](Get-MgUserListOwnedObjectCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgUserListRegisteredDeviceCountAsAppRoleAssignment](Get-MgUserListRegisteredDeviceCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgUserListRegisteredDeviceCountAsDevice](Get-MgUserListRegisteredDeviceCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgUserListRegisteredDeviceCountAsEndpoint](Get-MgUserListRegisteredDeviceCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgUserListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgUserListTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgUserListTransitiveMemberOfCountAsGroup](Get-MgUserListTransitiveMemberOfCountAsGroup.md)
+Get the number of the resource
 
 ### [Get-MgUserManager](Get-MgUserManager.md)
 Returns the user or organizational contact assigned as the user's manager.
@@ -49,17 +121,26 @@ Read-only.
 Nullable.
 Supports $expand.
 
-### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
+### [Get-MgUserMemberOfAsAdministrativeUnit](Get-MgUserMemberOfAsAdministrativeUnit.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+
+### [Get-MgUserMemberOfAsGroup](Get-MgUserMemberOfAsGroup.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgUserMemberOfCount](Get-MgUserMemberOfCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
 Get oauth2PermissionGrants from users
 
+### [Get-MgUserOauth2PermissionGrantCount](Get-MgUserOauth2PermissionGrantCount.md)
+Get the number of the resource
+
 ### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
-A list of categories defined for the user.
+Get the properties and relationships of the specified outlookCategory object.
+
+### [Get-MgUserOutlookMasterCategoryCount](Get-MgUserOutlookMasterCategoryCount.md)
+Get the number of the resource
 
 ### [Get-MgUserOwnedDevice](Get-MgUserOwnedDevice.md)
 Devices that are owned by the user.
@@ -67,11 +148,35 @@ Read-only.
 Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
+### [Get-MgUserOwnedDeviceAsAppRoleAssignment](Get-MgUserOwnedDeviceAsAppRoleAssignment.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
+
+### [Get-MgUserOwnedDeviceAsDevice](Get-MgUserOwnedDeviceAsDevice.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+### [Get-MgUserOwnedDeviceAsEndpoint](Get-MgUserOwnedDeviceAsEndpoint.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+
+### [Get-MgUserOwnedDeviceCount](Get-MgUserOwnedDeviceCount.md)
+Get the number of the resource
+
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
 Directory objects that are owned by the user.
 Read-only.
 Nullable.
 Supports $expand.
+
+### [Get-MgUserOwnedObjectAsApplication](Get-MgUserOwnedObjectAsApplication.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
+
+### [Get-MgUserOwnedObjectAsGroup](Get-MgUserOwnedObjectAsGroup.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgUserOwnedObjectAsServicePrincipal](Get-MgUserOwnedObjectAsServicePrincipal.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
+
+### [Get-MgUserOwnedObjectCount](Get-MgUserOwnedObjectCount.md)
+Get the number of the resource
 
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
 The user's profile photo.
@@ -80,11 +185,26 @@ Read-only.
 ### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
 Get media content for the navigation property photo from users
 
+### [Get-MgUserPhotoCount](Get-MgUserPhotoCount.md)
+Get the number of the resource
+
 ### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
 Devices that are registered for the user.
 Read-only.
 Nullable.
 Supports $expand.
+
+### [Get-MgUserRegisteredDeviceAsAppRoleAssignment](Get-MgUserRegisteredDeviceAsAppRoleAssignment.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
+
+### [Get-MgUserRegisteredDeviceAsDevice](Get-MgUserRegisteredDeviceAsDevice.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
+### [Get-MgUserRegisteredDeviceAsEndpoint](Get-MgUserRegisteredDeviceAsEndpoint.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
+
+### [Get-MgUserRegisteredDeviceCount](Get-MgUserRegisteredDeviceCount.md)
+Get the number of the resource
 
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
 Get settings from users
@@ -93,22 +213,29 @@ Get settings from users
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ### [Get-MgUserTodoList](Get-MgUserTodoList.md)
-The task lists in the users mailbox.
+Read the properties and relationships of a todoTaskList object.
+
+### [Get-MgUserTodoListCount](Get-MgUserTodoListCount.md)
+Get the number of the resource
 
 ### [Get-MgUserTodoListExtension](Get-MgUserTodoListExtension.md)
 The collection of open extensions defined for the task list.
 Nullable.
 
+### [Get-MgUserTodoListExtensionCount](Get-MgUserTodoListExtensionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserTodoListTask](Get-MgUserTodoListTask.md)
-The tasks in this task list.
-Read-only.
-Nullable.
+Read the properties and relationships of a todoTask object.
 
 ### [Get-MgUserTodoListTaskAttachment](Get-MgUserTodoListTaskAttachment.md)
-A collection of file attachments for the task.
+Read the properties and relationships of a taskFileAttachment object.
 
 ### [Get-MgUserTodoListTaskAttachmentContent](Get-MgUserTodoListTaskAttachmentContent.md)
 Get media content for the navigation property attachments from users
+
+### [Get-MgUserTodoListTaskAttachmentCount](Get-MgUserTodoListTaskAttachmentCount.md)
+Get the number of the resource
 
 ### [Get-MgUserTodoListTaskAttachmentSession](Get-MgUserTodoListTaskAttachmentSession.md)
 Get attachmentSessions from users
@@ -116,118 +243,43 @@ Get attachmentSessions from users
 ### [Get-MgUserTodoListTaskAttachmentSessionContent](Get-MgUserTodoListTaskAttachmentSessionContent.md)
 The content streams that are uploaded.
 
+### [Get-MgUserTodoListTaskAttachmentSessionCount](Get-MgUserTodoListTaskAttachmentSessionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserTodoListTaskChecklistItem](Get-MgUserTodoListTaskChecklistItem.md)
-A collection of checklistItems linked to a task.
+Read the properties and relationships of a checklistItem object.
+
+### [Get-MgUserTodoListTaskChecklistItemCount](Get-MgUserTodoListTaskChecklistItemCount.md)
+Get the number of the resource
+
+### [Get-MgUserTodoListTaskCount](Get-MgUserTodoListTaskCount.md)
+Get the number of the resource
 
 ### [Get-MgUserTodoListTaskExtension](Get-MgUserTodoListTaskExtension.md)
 The collection of open extensions defined for the task.
 Nullable.
 
+### [Get-MgUserTodoListTaskExtensionCount](Get-MgUserTodoListTaskExtensionCount.md)
+Get the number of the resource
+
 ### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
+Read the properties and relationships of a linkedResource object.
+
+### [Get-MgUserTodoListTaskLinkedResourceCount](Get-MgUserTodoListTaskLinkedResourceCount.md)
+Get the number of the resource
 
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
 The groups, including nested groups, and directory roles that a user is a member of.
 Nullable.
 
-### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
-### [Group-MgUserGetMemberOfAs](Group-MgUserGetMemberOfAs.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Group-MgUserGetOwnedObjectAs](Group-MgUserGetOwnedObjectAs.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Group-MgUserGetTransitiveMemberOfAs](Group-MgUserGetTransitiveMemberOfAs.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
-
-### [Group-MgUserListMemberOfAs](Group-MgUserListMemberOfAs.md)
-Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
-
-### [Group-MgUserListOwnedObjectAs](Group-MgUserListOwnedObjectAs.md)
-Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
-
-### [Group-MgUserListTransitiveMemberOfAs](Group-MgUserListTransitiveMemberOfAs.md)
-Get the items of type microsoft.graph.group in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserGetDirectReportUser](Invoke-MgAsUserGetDirectReportUser.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
-
-### [Invoke-MgAsUserGetMemberOfAdministrativeUnit](Invoke-MgAsUserGetMemberOfAdministrativeUnit.md)
+### [Get-MgUserTransitiveMemberOfAsAdministrativeUnit](Get-MgUserTransitiveMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
-### [Invoke-MgAsUserGetOwnedDevice](Invoke-MgAsUserGetOwnedDevice.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+### [Get-MgUserTransitiveMemberOfAsGroup](Get-MgUserTransitiveMemberOfAsGroup.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-### [Invoke-MgAsUserGetOwnedDeviceAppRoleAssignment](Invoke-MgAsUserGetOwnedDeviceAppRoleAssignment.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
-
-### [Invoke-MgAsUserGetOwnedDeviceEndpoint](Invoke-MgAsUserGetOwnedDeviceEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
-
-### [Invoke-MgAsUserGetOwnedObjectApplication](Invoke-MgAsUserGetOwnedObjectApplication.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
-
-### [Invoke-MgAsUserGetRegisteredDevice](Invoke-MgAsUserGetRegisteredDevice.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
-
-### [Invoke-MgAsUserGetRegisteredDeviceAppRoleAssignment](Invoke-MgAsUserGetRegisteredDeviceAppRoleAssignment.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
-
-### [Invoke-MgAsUserGetRegisteredDeviceEndpoint](Invoke-MgAsUserGetRegisteredDeviceEndpoint.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
-
-### [Invoke-MgAsUserGetTransitiveMemberOfAdministrativeUnit](Invoke-MgAsUserGetTransitiveMemberOfAdministrativeUnit.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
-
-### [Invoke-MgAsUserListDirectReportUser](Invoke-MgAsUserListDirectReportUser.md)
-Get the items of type microsoft.graph.user in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListMemberOfAdministrativeUnit](Invoke-MgAsUserListMemberOfAdministrativeUnit.md)
-Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListOwnedDevice](Invoke-MgAsUserListOwnedDevice.md)
-Get the items of type microsoft.graph.device in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListOwnedDeviceAppRoleAssignment](Invoke-MgAsUserListOwnedDeviceAppRoleAssignment.md)
-Get the items of type microsoft.graph.appRoleAssignment in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListOwnedDeviceEndpoint](Invoke-MgAsUserListOwnedDeviceEndpoint.md)
-Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListOwnedObjectApplication](Invoke-MgAsUserListOwnedObjectApplication.md)
-Get the items of type microsoft.graph.application in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListRegisteredDevice](Invoke-MgAsUserListRegisteredDevice.md)
-Get the items of type microsoft.graph.device in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListRegisteredDeviceAppRoleAssignment](Invoke-MgAsUserListRegisteredDeviceAppRoleAssignment.md)
-Get the items of type microsoft.graph.appRoleAssignment in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListRegisteredDeviceEndpoint](Invoke-MgAsUserListRegisteredDeviceEndpoint.md)
-Get the items of type microsoft.graph.endpoint in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgAsUserListTransitiveMemberOfAdministrativeUnit](Invoke-MgAsUserListTransitiveMemberOfAdministrativeUnit.md)
-Get the items of type microsoft.graph.administrativeUnit in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgContactUserGetDirectReportAsOrg](Invoke-MgContactUserGetDirectReportAsOrg.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgContact
-
-### [Invoke-MgContactUserListDirectReportAsOrg](Invoke-MgContactUserListDirectReportAsOrg.md)
-Get the items of type microsoft.graph.orgContact in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgServiceUserGetCreatedObject](Invoke-MgServiceUserGetCreatedObject.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-### [Invoke-MgServiceUserGetOwnedObject](Invoke-MgServiceUserGetOwnedObject.md)
-Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
-
-### [Invoke-MgServiceUserListCreatedObject](Invoke-MgServiceUserListCreatedObject.md)
-Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
-
-### [Invoke-MgServiceUserListOwnedObject](Invoke-MgServiceUserListOwnedObject.md)
-Get the items of type microsoft.graph.servicePrincipal in the microsoft.graph.directoryObject collection
+### [Get-MgUserTransitiveMemberOfCount](Get-MgUserTransitiveMemberOfCount.md)
+Get the number of the resource
 
 ### [New-MgUser](New-MgUser.md)
 Create a new user.\nThe request body contains the user to create.
@@ -236,11 +288,6 @@ You can optionally specify any other writable properties.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create an outlookCategory object in the user's master list of categories.
@@ -270,9 +317,6 @@ Create a linkedResource object to associate a specified task with an item in a p
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
 You can also create a **linkedResource** object while creating a task.
 
-### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
@@ -285,11 +329,14 @@ Delete navigation property extensions for users
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
 Delete navigation property licenseDetails for users
 
+### [Remove-MgUserManager](Remove-MgUserManager.md)
+Remove a user's manager.
+
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
-Delete ref of navigation property manager for users
+Remove a user's manager.
 
 ### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
-Delete navigation property masterCategories for users
+Delete the specified outlookCategory object.
 
 ### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
 Delete navigation property photo for users
@@ -301,31 +348,31 @@ Delete navigation property settings for users
 Delete navigation property shiftPreferences for users
 
 ### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
-Delete navigation property lists for users
+Deletes a todoTaskList object.
 
 ### [Remove-MgUserTodoListExtension](Remove-MgUserTodoListExtension.md)
 Delete navigation property extensions for users
 
 ### [Remove-MgUserTodoListTask](Remove-MgUserTodoListTask.md)
-Delete navigation property tasks for users
+Deletes a todoTask object.
 
 ### [Remove-MgUserTodoListTaskAttachment](Remove-MgUserTodoListTaskAttachment.md)
-Delete navigation property attachments for users
+Delete a taskFileAttachment object from a todoTask resource.
 
 ### [Remove-MgUserTodoListTaskAttachmentSession](Remove-MgUserTodoListTaskAttachmentSession.md)
 Delete navigation property attachmentSessions for users
 
 ### [Remove-MgUserTodoListTaskChecklistItem](Remove-MgUserTodoListTaskChecklistItem.md)
-Delete navigation property checklistItems for users
+Delete a checklistItem object.
 
 ### [Remove-MgUserTodoListTaskExtension](Remove-MgUserTodoListTaskExtension.md)
 Delete navigation property extensions for users
 
 ### [Remove-MgUserTodoListTaskLinkedResource](Remove-MgUserTodoListTaskLinkedResource.md)
-Delete navigation property linkedResources for users
+Deletes a linkedResource object.
 
 ### [Set-MgUserManagerByRef](Set-MgUserManagerByRef.md)
-Update the ref of navigation property manager in users
+Assign a user's manager.
 
 ### [Set-MgUserPhotoContent](Set-MgUserPhotoContent.md)
 Update media content for the navigation property photo in users
@@ -348,7 +395,8 @@ Update the navigation property extensions in users
 Update the navigation property licenseDetails in users
 
 ### [Update-MgUserOutlookMasterCategory](Update-MgUserOutlookMasterCategory.md)
-Update the navigation property masterCategories in users
+Update the writable property, **color**, of the specified outlookCategory object.
+You cannot modify the **displayName** property \nonce you have created the category.
 
 ### [Update-MgUserPhoto](Update-MgUserPhoto.md)
 Update the navigation property photo in users
@@ -360,23 +408,23 @@ Update the navigation property settings in users
 Update the properties and relationships of a shiftPreferences object.
 
 ### [Update-MgUserTodoList](Update-MgUserTodoList.md)
-Update the navigation property lists in users
+Update the properties of a todoTaskList object.
 
 ### [Update-MgUserTodoListExtension](Update-MgUserTodoListExtension.md)
 Update the navigation property extensions in users
 
 ### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
-Update the navigation property tasks in users
+Update the properties of a todoTask object.
 
 ### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users
 
 ### [Update-MgUserTodoListTaskChecklistItem](Update-MgUserTodoListTaskChecklistItem.md)
-Update the navigation property checklistItems in users
+Update the properties of a checklistItem object.
 
 ### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
 Update the navigation property extensions in users
 
 ### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
-Update the navigation property linkedResources in users
+Update the properties of a linkedResource object.
 

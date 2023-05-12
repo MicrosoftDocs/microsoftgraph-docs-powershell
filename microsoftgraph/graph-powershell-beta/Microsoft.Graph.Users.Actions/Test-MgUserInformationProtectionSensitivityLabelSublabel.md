@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
-Module Name: Microsoft.Graph.Users.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.users.actions/test-mguserinformationprotectionsensitivitylabelsublabel
+external help file:
+Module Name: Microsoft.Graph.Beta.Users.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/test-mgbetauserinformationprotectionsensitivitylabelsublabel
 schema: 2.0.0
 ---
 
-# Test-MgUserInformationProtectionSensitivityLabelSublabel
+# Test-MgBetaUserInformationProtectionSensitivityLabelSublabel
 
 ## SYNOPSIS
 Invoke action evaluate
@@ -14,32 +14,32 @@ Invoke action evaluate
 
 ### EvaluateExpanded (Default)
 ```
-Test-MgUserInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -UserId <String>
+Test-MgBetaUserInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
-Test-MgUserInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -UserId <String>
+Test-MgBetaUserInformationProtectionSensitivityLabelSublabel -SensitivityLabelId <String> -UserId <String>
  -BodyParameter <IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### EvaluateViaIdentityExpanded
-```
-Test-MgUserInformationProtectionSensitivityLabelSublabel -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
- [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
-Test-MgUserInformationProtectionSensitivityLabelSublabel -InputObject <IUsersActionsIdentity>
+Test-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### EvaluateViaIdentityExpanded
+```
+Test-MgBetaUserInformationProtectionSensitivityLabelSublabel -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-CurrentLabel <IMicrosoftGraphCurrentLabel>]
+ [-DiscoveredSensitiveTypes <IMicrosoftGraphDiscoveredSensitiveType[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,13 +47,27 @@ Invoke action evaluate
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -66,10 +80,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -82,10 +96,10 @@ Accept wildcard characters: False
 
 ### -CurrentLabel
 currentLabel
-To construct, please use Get-Help -Online and see NOTES section for CURRENTLABEL properties and create a hash table.
+To construct, see NOTES section for CURRENTLABEL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrentLabel
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCurrentLabel
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -98,10 +112,10 @@ Accept wildcard characters: False
 
 ### -DiscoveredSensitiveTypes
 .
-To construct, please use Get-Help -Online and see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
+To construct, see NOTES section for DISCOVEREDSENSITIVETYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDiscoveredSensitiveType[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDiscoveredSensitiveType[]
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of sensitivityLabel
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -147,8 +161,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -162,7 +176,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +192,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,11 +208,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
-### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEvaluateLabelJobResponse
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateLabelJobResponse
+
 ## NOTES
 
 ALIASES
@@ -208,7 +225,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSensitivitylabelIdSublabelsMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[CurrentLabel <IMicrosoftGraphCurrentLabel>]`: currentLabel
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -222,12 +239,12 @@ BODYPARAMETER `<IPathsCjmw4JUsersUserIdInformationprotectionSensitivitylabelsSen
     - `[Count <Int32?>]`: 
     - `[Id <String>]`: 
 
-CURRENTLABEL `<IMicrosoftGraphCurrentLabel>`: currentLabel
+`CURRENTLABEL <IMicrosoftGraphCurrentLabel>`: currentLabel
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ApplicationMode <String>]`: applicationMode
   - `[Id <String>]`: 
 
-DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType\[]>: .
+`DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType[]>`: .
   - `[ClassificationAttributes <IMicrosoftGraphClassificationAttribute[]>]`: 
     - `[Confidence <Int32?>]`: 
     - `[Count <Int32?>]`: 
@@ -235,7 +252,7 @@ DISCOVEREDSENSITIVETYPES <IMicrosoftGraphDiscoveredSensitiveType\[]>: .
   - `[Count <Int32?>]`: 
   - `[Id <String>]`: 
 
-INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
+`INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AccessReviewInstanceId <String>]`: The unique identifier of accessReviewInstance
   - `[AccessReviewStageId <String>]`: The unique identifier of accessReviewStage
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
@@ -269,7 +286,6 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[PermissionId <String>]`: The unique identifier of permission
-  - `[PhoneAuthenticationMethodId <String>]`: The unique identifier of phoneAuthenticationMethod
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SubscriptionId <String>]`: The unique identifier of subscription
@@ -279,3 +295,4 @@ INPUTOBJECT `<IUsersActionsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

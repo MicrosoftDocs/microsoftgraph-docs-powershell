@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Actions-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Actions
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.actions/get-mgdevicemanagementdeviceconfigurationtargeteduseranddevice
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementdeviceconfigurationtargeteduseranddevice
 schema: 2.0.0
 ---
 
-# Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice
+# Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice
 
 ## SYNOPSIS
 Invoke action getTargetedUsersAndDevices
@@ -14,15 +14,15 @@ Invoke action getTargetedUsersAndDevices
 
 ### GetExpanded (Default)
 ```
-Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice [-AdditionalProperties <Hashtable>]
- [-DeviceConfigurationIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice [-AdditionalProperties <Hashtable>]
+ [-DeviceConfigurationIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
-Get-MgDeviceManagementDeviceConfigurationTargetedUserAndDevice
+Get-MgBetaDeviceManagementDeviceConfigurationTargetedUserAndDevice
  -BodyParameter <IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,13 +30,27 @@ Invoke action getTargetedUsersAndDevices
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -49,10 +63,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 .
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded
 Aliases:
 
@@ -82,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -98,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,10 +128,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationTargetedUserAndDevice
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationTargetedUserAndDevice
+
 ## NOTES
 
 ALIASES
@@ -127,8 +143,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1G57514DevicemanagementDeviceconfigurationsMicrosoftGraphGettargetedusersanddevicesPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DeviceConfigurationIds <String[]>]`: 
 
 ## RELATED LINKS
+

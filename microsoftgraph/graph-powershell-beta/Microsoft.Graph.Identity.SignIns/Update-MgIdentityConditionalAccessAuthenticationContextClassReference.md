@@ -1,63 +1,61 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/update-mgidentityconditionalaccessauthenticationcontextclassreference
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationcontextclassreference
 schema: 2.0.0
 ---
 
-# Update-MgIdentityConditionalAccessAuthenticationContextClassReference
+# Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Update the navigation property authenticationContextClassReferences in identity
+Update the properties of an authenticationContextClassReference object.
 
 ## SYNTAX
 
-### UpdateExpanded1 (Default)
+### UpdateExpanded (Default)
 ```
-Update-MgIdentityConditionalAccessAuthenticationContextClassReference
+Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
  -AuthenticationContextClassReferenceId <String> [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### Update
 ```
-Update-MgIdentityConditionalAccessAuthenticationContextClassReference
+Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
  -AuthenticationContextClassReferenceId <String>
- -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
-Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-IsAvailable] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
+ -InputObject <IIdentitySignInsIdentity> -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded
 ```
-Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphAuthenticationContextClassReference> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
+ -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>] [-Description <String>]
+ [-DisplayName <String>] [-Id <String>] [-IsAvailable] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationContextClassReferences in identity
+Update the properties of an authenticationContextClassReference object.
 
 ## EXAMPLES
 
-### Example 1: Using the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
 	Value = @(
 	)
 }
-Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
+Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
 ```
 
-This example shows how to use the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -65,8 +63,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -80,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of authenticationContextClassReference
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -93,11 +91,11 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 authenticationContextClassReference
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationContextClassReference
-Parameter Sets: Update1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -109,12 +107,12 @@ Accept wildcard characters: False
 
 ### -Description
 A short explanation of the policies that are enforced by authenticationContextClassReference.
-This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences.
-For example, a selection UX.
+This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences.
+For example, selection UX.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -125,13 +123,12 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-The display name is the friendly name of the authenticationContextClassReference object.
-This value should be used to identify the authentication context class reference when building user-facing admin experiences.
+A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences.
 For example, a selection UX.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -142,12 +139,12 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -159,11 +156,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -175,29 +172,13 @@ Accept wildcard characters: False
 
 ### -IsAvailable
 Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps.
-When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources.
-It will be shown and available for Conditional Access policy authoring.
-The default value is false.
+When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values.
+It will still be shown in the Conditionall Access policy authoring experience.
 Supports $filter (eq).
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateViaIdentityExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -211,7 +192,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -227,7 +208,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -243,11 +224,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
+
 ## NOTES
 
 ALIASES
@@ -257,14 +241,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphAuthenticationContextClassReference>`: authenticationContextClassReference
+`BODYPARAMETER <IMicrosoftGraphAuthenticationContextClassReference>`: authenticationContextClassReference
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
-  - `[DisplayName <String>]`: The display name is the friendly name of the authenticationContextClassReference object. This value should be used to identify the authentication context class reference when building user-facing admin experiences. For example, a selection UX.
-  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in authentication context selection UX, or used to protect app resources. It will be shown and available for Conditional Access policy authoring. The default value is false.  Supports $filter (eq).
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Description <String>]`: A short explanation of the policies that are enforced by authenticationContextClassReference. This value should be used to provide secondary text to describe the authentication context class reference when building user facing admin experiences. For example, selection UX.
+  - `[DisplayName <String>]`: A friendly name that identifies the authenticationContextClassReference object when building user-facing admin experiences. For example, a selection UX.
+  - `[IsAvailable <Boolean?>]`: Indicates whether the authenticationContextClassReference has been published by the security admin and is ready for use by apps. When it is set to false, it should not be shown in selection UX used to tag resources with authentication context class values. It will still be shown in the Conditionall Access policy authoring experience.  Supports $filter (eq).
 
-INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
+`INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
@@ -301,6 +285,7 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[IdentityUserFlowAttributeId <String>]`: The unique identifier of identityUserFlowAttribute
   - `[IdentityUserFlowId <String>]`: The unique identifier of identityUserFlow
   - `[InformationProtectionLabelId <String>]`: The unique identifier of informationProtectionLabel
+  - `[InvitationId <String>]`: The unique identifier of invitation
   - `[LongRunningOperationId <String>]`: The unique identifier of longRunningOperation
   - `[MicrosoftAuthenticatorAuthenticationMethodId <String>]`: The unique identifier of microsoftAuthenticatorAuthenticationMethod
   - `[MobilityManagementPolicyId <String>]`: The unique identifier of mobilityManagementPolicy
@@ -339,3 +324,4 @@ INPUTOBJECT `<IIdentitySignInsIdentity>`: Identity Parameter
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

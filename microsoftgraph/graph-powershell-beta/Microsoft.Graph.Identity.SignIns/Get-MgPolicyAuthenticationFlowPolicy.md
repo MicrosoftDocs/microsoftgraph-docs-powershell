@@ -1,12 +1,11 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
-Module Name: Microsoft.Graph.Identity.SignIns
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.signins/get-mgpolicyauthenticationflowpolicy
+external help file:
+Module Name: Microsoft.Graph.Beta.Identity.SignIns
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyauthenticationflowpolicy
 schema: 2.0.0
-ms.prod: identity-and-sign-in
 ---
 
-# Get-MgPolicyAuthenticationFlowPolicy
+# Get-MgBetaPolicyAuthenticationFlowPolicy
 
 ## SYNOPSIS
 Read the properties and relationships of an authenticationFlowsPolicy object.
@@ -14,7 +13,8 @@ Read the properties and relationships of an authenticationFlowsPolicy object.
 ## SYNTAX
 
 ```
-Get-MgPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,14 +22,13 @@ Read the properties and relationships of an authenticationFlowsPolicy object.
 
 ## EXAMPLES
 
-### Example 1: Using the Get-MgPolicyAuthenticationFlowPolicy Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-Get-MgPolicyAuthenticationFlowPolicy
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Get-MgBetaPolicyAuthenticationFlowPolicy
 ```
 
-This example shows how to use the Get-MgPolicyAuthenticationFlowPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -37,7 +36,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -52,7 +51,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -70,9 +69,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationFlowsPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

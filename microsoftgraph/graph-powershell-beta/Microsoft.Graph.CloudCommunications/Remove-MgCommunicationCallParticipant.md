@@ -1,60 +1,65 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
-Module Name: Microsoft.Graph.CloudCommunications
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.cloudcommunications/remove-mgcommunicationcallparticipant
+external help file:
+Module Name: Microsoft.Graph.Beta.CloudCommunications
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/remove-mgbetacommunicationcallparticipant
 schema: 2.0.0
 ---
 
-# Remove-MgCommunicationCallParticipant
+# Remove-MgBetaCommunicationCallParticipant
 
 ## SYNOPSIS
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## SYNTAX
 
-### Delete1 (Default)
+### Delete (Default)
 ```
-Remove-MgCommunicationCallParticipant -CallId <String> -ParticipantId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaCommunicationCallParticipant -CallId <String> -ParticipantId <String> [-IfMatch <String>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity1
+### DeleteViaIdentity
 ```
-Remove-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity> [-IfMatch <String>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete navigation property participants for communications
+Delete a specific participant in a call.
+In some situations, it is appropriate for an application to remove a participant from an active call.
+This action can be done before or after the participant answers the call.
+When an active caller is removed, they are immediately dropped from the call with no pre- or post-removal notification.
+When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
 
-### Example 1: Using the Remove-MgCommunicationCallParticipant Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 ```
 
-This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Using the Remove-MgCommunicationCallParticipant Cmdlet
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 ```
 
-This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Using the Remove-MgCommunicationCallParticipant Cmdlet
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.CloudCommunications
-Remove-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+Remove-MgBetaCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 ```
 
-This example shows how to use the Remove-MgCommunicationCallParticipant Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -62,8 +67,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -77,7 +82,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -90,11 +95,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: DeleteViaIdentity1
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -108,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of participant
 
 ```yaml
-Type: String
-Parameter Sets: Delete1
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
@@ -123,7 +128,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -138,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -154,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -170,10 +175,12 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -183,7 +190,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
   - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
   - `[CallId <String>]`: The unique identifier of call
@@ -193,6 +200,7 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
   - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
   - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
   - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
   - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
   - `[ParticipantId <String>]`: The unique identifier of participant
@@ -202,3 +210,4 @@ INPUTOBJECT `<ICloudCommunicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

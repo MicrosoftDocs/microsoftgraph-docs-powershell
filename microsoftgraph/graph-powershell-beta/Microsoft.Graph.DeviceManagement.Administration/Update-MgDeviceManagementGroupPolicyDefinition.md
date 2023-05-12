@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
-Module Name: Microsoft.Graph.DeviceManagement.Administration
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement.administration/update-mgdevicemanagementgrouppolicydefinition
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinition
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementGroupPolicyDefinition
+# Update-MgBetaDeviceManagementGroupPolicyDefinition
 
 ## SYNOPSIS
 Update the navigation property groupPolicyDefinitions in deviceManagement
@@ -14,7 +14,7 @@ Update the navigation property groupPolicyDefinitions in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementGroupPolicyDefinition -GroupPolicyDefinitionId <String>
+Update-MgBetaDeviceManagementGroupPolicyDefinition -GroupPolicyDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>]
  [-ClassType <GroupPolicyDefinitionClassType>] [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-DisplayName <String>] [-ExplainText <String>] [-GroupPolicyCategoryId <String>] [-HasRelatedDefinitions]
@@ -22,18 +22,24 @@ Update-MgDeviceManagementGroupPolicyDefinition -GroupPolicyDefinitionId <String>
  [-MinUserCspVersion <String>] [-NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]
  [-PolicyType <GroupPolicyType>] [-Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]
  [-PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>] [-SupportedOn <String>]
- [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementGroupPolicyDefinition -GroupPolicyDefinitionId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementGroupPolicyDefinition -GroupPolicyDefinitionId <String>
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementAdministrationIdentity>
+Update-MgBetaDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Category <IMicrosoftGraphGroupPolicyCategory>] [-CategoryPath <String>]
  [-ClassType <GroupPolicyDefinitionClassType>] [-DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]
  [-DisplayName <String>] [-ExplainText <String>] [-GroupPolicyCategoryId <String>] [-HasRelatedDefinitions]
@@ -41,13 +47,7 @@ Update-MgDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementAd
  [-MinUserCspVersion <String>] [-NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]
  [-PolicyType <GroupPolicyType>] [-Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]
  [-PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>] [-SupportedOn <String>]
- [-Version <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementGroupPolicyDefinition -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,13 +55,27 @@ Update the navigation property groupPolicyDefinitions in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,10 +88,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 The entity describes all of the information about a single group policy.
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,10 +104,10 @@ Accept wildcard characters: False
 
 ### -Category
 The category entity stores the category of a group policy definition
-To construct, please use Get-Help -Online and see NOTES section for CATEGORY properties and create a hash table.
+To construct, see NOTES section for CATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +122,7 @@ Accept wildcard characters: False
 The localized full category path for the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +137,7 @@ Accept wildcard characters: False
 Group Policy Definition Class Type.
 
 ```yaml
-Type: GroupPolicyDefinitionClassType
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicyDefinitionClassType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,10 +152,10 @@ Accept wildcard characters: False
 The entity represents an ADMX (Administrative Template) XML file.
 The ADMX file contains a collection of group policy definitions and their locations by category path.
 The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
-To construct, please use Get-Help -Online and see NOTES section for DEFINITIONFILE properties and create a hash table.
+To construct, see NOTES section for DEFINITIONFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionFile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +170,7 @@ Accept wildcard characters: False
 The localized policy name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +186,7 @@ The localized explanation or help text associated with the policy.
 The default value is empty.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +201,7 @@ Accept wildcard characters: False
 The category id of the parent category
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -202,8 +216,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -217,7 +231,7 @@ Accept wildcard characters: False
 Signifies whether or not there are related definitions to this definition
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,11 +243,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,11 +260,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -264,7 +278,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,7 +293,7 @@ Accept wildcard characters: False
 Minimum required CSP version for device configuration in this definition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -294,7 +308,7 @@ Accept wildcard characters: False
 Minimum required CSP version for user configuration in this definition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -307,26 +321,11 @@ Accept wildcard characters: False
 
 ### -NextVersionDefinition
 The entity describes all of the information about a single group policy.
-To construct, please use Get-Help -Online and see NOTES section for NEXTVERSIONDEFINITION properties and create a hash table.
+To construct, see NOTES section for NEXTVERSIONDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -340,7 +339,7 @@ Accept wildcard characters: False
 Type of Group Policy File or Definition.
 
 ```yaml
-Type: GroupPolicyType
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicyType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -353,10 +352,10 @@ Accept wildcard characters: False
 
 ### -Presentations
 The group policy presentations associated with the definition.
-To construct, please use Get-Help -Online and see NOTES section for PRESENTATIONS properties and create a hash table.
+To construct, see NOTES section for PRESENTATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyPresentation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -369,10 +368,10 @@ Accept wildcard characters: False
 
 ### -PreviousVersionDefinition
 The entity describes all of the information about a single group policy.
-To construct, please use Get-Help -Online and see NOTES section for PREVIOUSVERSIONDEFINITION properties and create a hash table.
+To construct, see NOTES section for PREVIOUSVERSIONDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -387,7 +386,7 @@ Accept wildcard characters: False
 Localized string used to specify what operating system or application version is affected by the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -402,7 +401,7 @@ Accept wildcard characters: False
 Setting definition version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -417,7 +416,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -433,7 +432,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -449,11 +448,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementAdministrationIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## NOTES
 
 ALIASES
@@ -463,16 +465,16 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+`BODYPARAMETER <IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
     - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
       - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
       - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -502,7 +504,7 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all
   - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
   - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
   - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -510,15 +512,15 @@ BODYPARAMETER `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-CATEGORY `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
+`CATEGORY <IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the category of a group policy definition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
   - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
       - `[CategoryPath <String>]`: The localized full category path for the policy.
       - `[ClassType <GroupPolicyDefinitionClassType?>]`: Group Policy Definition Class Type.
@@ -533,7 +535,7 @@ CATEGORY `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the 
       - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
       - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
       - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
         - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
         - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -556,14 +558,14 @@ CATEGORY `<IMicrosoftGraphGroupPolicyCategory>`: The category entity stores the 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
-DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
+`DEFINITIONFILE <IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
       - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
       - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The immediate GroupPolicyDefinition children of the category
@@ -585,7 +587,7 @@ DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represen
     - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
     - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
       - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
       - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -602,7 +604,7 @@ DEFINITIONFILE `<IMicrosoftGraphGroupPolicyDefinitionFile>`: The entity represen
   - `[TargetNamespace <String>]`: Specifies the URI used to identify the namespace within the ADMX file.
   - `[TargetPrefix <String>]`: Specifies the logical name that refers to the namespace within the ADMX file.
 
-INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
@@ -659,16 +661,16 @@ INPUTOBJECT `<IDeviceManagementAdministrationIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
-NEXTVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+`NEXTVERSIONDEFINITION <IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
     - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
       - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
       - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -698,7 +700,7 @@ NEXTVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity descr
   - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
   - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
   - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -706,18 +708,18 @@ NEXTVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity descr
   - `[SupportedOn <String>]`: Localized string used to specify what operating system or application version is affected by the policy.
   - `[Version <String>]`: Setting definition version
 
-PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation\[]>: The group policy presentations associated with the definition.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation[]>`: The group policy presentations associated with the definition.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
       - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
         - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
         - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -753,16 +755,16 @@ PRESENTATIONS <IMicrosoftGraphGroupPolicyPresentation\[]>: The group policy pres
   - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
-PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
+`PREVIOUSVERSIONDEFINITION <IMicrosoftGraphGroupPolicyDefinition>`: The entity describes all of the information about a single group policy.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Category <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Children <IMicrosoftGraphGroupPolicyCategory[]>]`: The children categories
     - `[DefinitionFile <IMicrosoftGraphGroupPolicyDefinitionFile>]`: The entity represents an ADMX (Administrative Template) XML file. The ADMX file contains a collection of group policy definitions and their locations by category path. The group policy definition file also contains the languages supported as determined by the language dependent ADML (Administrative Template) language files.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Definitions <IMicrosoftGraphGroupPolicyDefinition[]>]`: The group policy definitions associated with the file.
       - `[Description <String>]`: The localized description of the policy settings in the ADMX file. The default value is empty.
       - `[DisplayName <String>]`: The localized friendly name of the ADMX file.
@@ -792,7 +794,7 @@ PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity d
   - `[NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
   - `[PolicyType <GroupPolicyType?>]`: Type of Group Policy File or Definition.
   - `[Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]`: The group policy presentations associated with the definition.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Definition <IMicrosoftGraphGroupPolicyDefinition>]`: The entity describes all of the information about a single group policy.
     - `[Label <String>]`: Localized text label for any presentation entity. The default value is empty.
     - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
@@ -802,4 +804,3 @@ PREVIOUSVERSIONDEFINITION `<IMicrosoftGraphGroupPolicyDefinition>`: The entity d
 
 ## RELATED LINKS
 
-## RELATED LINKS

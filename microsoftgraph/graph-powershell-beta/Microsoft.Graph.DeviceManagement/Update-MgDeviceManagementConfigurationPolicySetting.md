@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
-Module Name: Microsoft.Graph.DeviceManagement
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagementconfigurationpolicysetting
+external help file:
+Module Name: Microsoft.Graph.Beta.DeviceManagement
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementconfigurationpolicysetting
 schema: 2.0.0
 ---
 
-# Update-MgDeviceManagementConfigurationPolicySetting
+# Update-MgBetaDeviceManagementConfigurationPolicySetting
 
 ## SYNOPSIS
 Update the navigation property settings in deviceManagement
@@ -14,34 +14,34 @@ Update the navigation property settings in deviceManagement
 
 ### UpdateExpanded (Default)
 ```
-Update-MgDeviceManagementConfigurationPolicySetting -DeviceManagementConfigurationPolicyId <String>
+Update-MgBetaDeviceManagementConfigurationPolicySetting -DeviceManagementConfigurationPolicyId <String>
  -DeviceManagementConfigurationSettingId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagementConfigurationPolicySetting -DeviceManagementConfigurationPolicyId <String>
+Update-MgBetaDeviceManagementConfigurationPolicySetting -DeviceManagementConfigurationPolicyId <String>
  -DeviceManagementConfigurationSettingId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-PassThru] [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementConfigurationPolicySetting -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgDeviceManagementConfigurationPolicySetting -InputObject <IDeviceManagementIdentity>
+Update-MgBetaDeviceManagementConfigurationPolicySetting -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceManagementConfigurationPolicySetting -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-PassThru] [-WhatIf] [-Confirm]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -50,13 +50,27 @@ Update the navigation property settings in deviceManagement
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,10 +83,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 Setting instance within policy
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -87,8 +101,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementConfigurationPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -102,8 +116,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementConfigurationSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -114,11 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,11 +145,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -145,28 +159,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -SettingDefinitions
 List of related Setting Definitions.
 This property is read-only.
-To construct, please use Get-Help -Online and see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
+To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,10 +178,10 @@ Accept wildcard characters: False
 
 ### -SettingInstance
 Setting instance within policy
-To construct, please use Get-Help -Online and see NOTES section for SETTINGINSTANCE properties and create a hash table.
+To construct, see NOTES section for SETTINGINSTANCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingInstance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingInstance
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,7 +196,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +212,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -229,11 +228,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IDeviceManagementIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+
 ## NOTES
 
 ALIASES
@@ -243,11 +245,11 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSetting>`: Setting instance within policy
+`BODYPARAMETER <IMicrosoftGraphDeviceManagementConfigurationSetting>`: Setting instance within policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
     - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -282,7 +284,7 @@ BODYPARAMETER `<IMicrosoftGraphDeviceManagementConfigurationSetting>`: Setting i
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
-INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
+`INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
@@ -414,9 +416,11 @@ INPUTOBJECT `<IDeviceManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
+  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
+  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
-SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition\[]>: List of related Setting Definitions. This property is read-only.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+`SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>`: List of related Setting Definitions. This property is read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccessTypes <String>]`: deviceManagementConfigurationSettingAccessTypes
   - `[Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>]`: deviceManagementConfigurationSettingApplicability
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -445,7 +449,7 @@ SETTINGDEFINITIONS <IMicrosoftGraphDeviceManagementConfigurationSettingDefinitio
   - `[Version <String>]`: Item Version
   - `[Visibility <DeviceManagementConfigurationSettingVisibility?>]`: Supported setting types
 
-SETTINGINSTANCE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`: Setting instance within policy
+`SETTINGINSTANCE <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`: Setting instance within policy
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[SettingDefinitionId <String>]`: Setting Definition Id
   - `[SettingInstanceTemplateReference <IMicrosoftGraphDeviceManagementConfigurationSettingInstanceTemplateReference>]`: Setting instance template reference information
@@ -454,4 +458,3 @@ SETTINGINSTANCE `<IMicrosoftGraphDeviceManagementConfigurationSettingInstance>`:
 
 ## RELATED LINKS
 
-## RELATED LINKS

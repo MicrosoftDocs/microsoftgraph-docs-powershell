@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.CrossDeviceExperiences-help.xml
-Module Name: Microsoft.Graph.CrossDeviceExperiences
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.crossdeviceexperiences/update-mguserdeviceusagerights
+external help file:
+Module Name: Microsoft.Graph.Beta.CrossDeviceExperiences
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.crossdeviceexperiences/update-mgbetauserdeviceusagerights
 schema: 2.0.0
 ---
 
-# Update-MgUserDeviceUsageRights
+# Update-MgBetaUserDeviceUsageRights
 
 ## SYNOPSIS
 Update the navigation property usageRights in users
@@ -14,28 +14,28 @@ Update the navigation property usageRights in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserDeviceUsageRights -DeviceId <String> -UsageRightId <String> -UserId <String>
+Update-MgBetaUserDeviceUsageRights -DeviceId <String> -UsageRightId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>]
- [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserDeviceUsageRights -DeviceId <String> -UsageRightId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphUsageRight> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
- [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>]
- [-State <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserDeviceUsageRights -DeviceId <String> -UsageRightId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
- -BodyParameter <IMicrosoftGraphUsageRight> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
+ -BodyParameter <IMicrosoftGraphUsageRight> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
+ [-AdditionalProperties <Hashtable>] [-CatalogId <String>] [-Id <String>] [-ServiceIdentifier <String>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -43,13 +43,27 @@ Update the navigation property usageRights in users
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -62,10 +76,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 usageRight
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUsageRight
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageRight
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -80,7 +94,7 @@ Accept wildcard characters: False
 Product id corresponding to the usage right.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,8 +109,8 @@ Accept wildcard characters: False
 The unique identifier of device
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -107,11 +121,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,11 +138,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICrossDeviceExperiencesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -138,26 +152,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -ServiceIdentifier
 Identifier of the service corresponding to the usage right.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,7 +171,7 @@ Accept wildcard characters: False
 usageRightState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,8 +186,8 @@ Accept wildcard characters: False
 The unique identifier of usageRight
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -202,8 +201,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -217,7 +216,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -233,7 +232,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -249,11 +248,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.ICrossDeviceExperiencesIdentity
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUsageRight
+### Microsoft.Graph.Beta.PowerShell.Models.ICrossDeviceExperiencesIdentity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageRight
+
 ## OUTPUTS
 
-### System.Boolean
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUsageRight
+
 ## NOTES
 
 ALIASES
@@ -263,14 +265,14 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphUsageRight>`: usageRight
+`BODYPARAMETER <IMicrosoftGraphUsageRight>`: usageRight
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CatalogId <String>]`: Product id corresponding to the usage right.
   - `[ServiceIdentifier <String>]`: Identifier of the service corresponding to the usage right.
   - `[State <String>]`: usageRightState
 
-INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
+`INPUTOBJECT <ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[ActivityHistoryItemId <String>]`: The unique identifier of activityHistoryItem
   - `[CommandId <String>]`: The unique identifier of command
   - `[DeviceId <String>]`: The unique identifier of device
@@ -281,3 +283,4 @@ INPUTOBJECT `<ICrossDeviceExperiencesIdentity>`: Identity Parameter
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

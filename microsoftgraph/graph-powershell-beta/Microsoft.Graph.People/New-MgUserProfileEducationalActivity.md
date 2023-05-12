@@ -1,11 +1,11 @@
 ---
-external help file: Microsoft.Graph.People-help.xml
-Module Name: Microsoft.Graph.People
-online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.people/new-mguserprofileeducationalactivity
+external help file:
+Module Name: Microsoft.Graph.Beta.People
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileeducationalactivity
 schema: 2.0.0
 ---
 
-# New-MgUserProfileEducationalActivity
+# New-MgBetaUserProfileEducationalActivity
 
 ## SYNOPSIS
 Create a new educationalActivity in a user's profile.
@@ -14,36 +14,36 @@ Create a new educationalActivity in a user's profile.
 
 ### CreateExpanded (Default)
 ```
-New-MgUserProfileEducationalActivity -UserId <String> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserProfileEducationalActivity -UserId <String> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CompletionMonthYear <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-EndMonthYear <DateTime>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-Institution <IMicrosoftGraphInstitutionData>] [-IsSearchable]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Program <IMicrosoftGraphEducationalActivityDetail>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-StartMonthYear <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartMonthYear <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgUserProfileEducationalActivity -UserId <String> -BodyParameter <IMicrosoftGraphEducationalActivity>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserProfileEducationalActivity -UserId <String> -BodyParameter <IMicrosoftGraphEducationalActivity>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
+ -BodyParameter <IMicrosoftGraphEducationalActivity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
+New-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedAudiences <String>] [-CompletionMonthYear <DateTime>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-CreatedDateTime <DateTime>] [-EndMonthYear <DateTime>] [-Id <String>]
  [-Inference <IMicrosoftGraphInferenceData>] [-Institution <IMicrosoftGraphInstitutionData>] [-IsSearchable]
  [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
  [-Program <IMicrosoftGraphEducationalActivityDetail>] [-Source <IMicrosoftGraphPersonDataSources>]
- [-StartMonthYear <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgUserProfileEducationalActivity -InputObject <IPeopleIdentity>
- -BodyParameter <IMicrosoftGraphEducationalActivity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-StartMonthYear <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,9 +51,9 @@ Create a new educationalActivity in a user's profile.
 
 ## EXAMPLES
 
-### Example 1: Using the New-MgUserProfileEducationalActivity Cmdlet
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.People
+Import-Module Microsoft.Graph.Beta.People
 $params = @{
 	CompletionMonthYear = "Date"
 	EndMonthYear = "Date"
@@ -85,11 +85,10 @@ $params = @{
 	StartMonthYear = "Date"
 }
 # A UPN can also be used as -UserId.
-New-MgUserProfileEducationalActivity -UserId $userId -BodyParameter $params
+New-MgBetaUserProfileEducationalActivity -UserId $userId -BodyParameter $params
 ```
 
-This example shows how to use the New-MgUserProfileEducationalActivity Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -97,7 +96,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +111,7 @@ Accept wildcard characters: False
 allowedAudiences
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -125,10 +124,10 @@ Accept wildcard characters: False
 
 ### -BodyParameter
 educationalActivity
-To construct, please use Get-Help -Online and see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationalActivity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivity
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -143,7 +142,7 @@ Accept wildcard characters: False
 The month and year the user graduated or completed the activity.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,10 +155,10 @@ Accept wildcard characters: False
 
 ### -CreatedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for CREATEDBY properties and create a hash table.
+To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -174,7 +173,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -189,7 +188,7 @@ Accept wildcard characters: False
 The month and year the user completed the educational activity referenced.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -201,11 +200,11 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique idenfier for an entity.
+The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -218,10 +217,10 @@ Accept wildcard characters: False
 
 ### -Inference
 inferenceData
-To construct, please use Get-Help -Online and see NOTES section for INFERENCE properties and create a hash table.
+To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceData
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -234,11 +233,11 @@ Accept wildcard characters: False
 
 ### -InputObject
 Identity Parameter
-To construct, please use Get-Help -Online and see NOTES section for INPUTOBJECT properties and create a hash table.
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -250,10 +249,10 @@ Accept wildcard characters: False
 
 ### -Institution
 institutionData
-To construct, please use Get-Help -Online and see NOTES section for INSTITUTION properties and create a hash table.
+To construct, see NOTES section for INSTITUTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInstitutionData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInstitutionData
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -268,7 +267,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -281,10 +280,10 @@ Accept wildcard characters: False
 
 ### -LastModifiedBy
 identitySet
-To construct, please use Get-Help -Online and see NOTES section for LASTMODIFIEDBY properties and create a hash table.
+To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -299,7 +298,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -312,10 +311,10 @@ Accept wildcard characters: False
 
 ### -Program
 educationalActivityDetail
-To construct, please use Get-Help -Online and see NOTES section for PROGRAM properties and create a hash table.
+To construct, see NOTES section for PROGRAM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationalActivityDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivityDetail
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -328,10 +327,10 @@ Accept wildcard characters: False
 
 ### -Source
 personDataSources
-To construct, please use Get-Help -Online and see NOTES section for SOURCE properties and create a hash table.
+To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonDataSources
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonDataSources
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -346,7 +345,7 @@ Accept wildcard characters: False
 The month and year the user commenced the activity referenced.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -361,8 +360,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -376,7 +375,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -392,7 +391,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -408,11 +407,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationalActivity
-### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivity
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEducationalActivity
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationalActivity
+
 ## NOTES
 
 ALIASES
@@ -422,7 +424,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
+`BODYPARAMETER <IMicrosoftGraphEducationalActivity>`: educationalActivity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedAudiences <String>]`: allowedAudiences
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -444,14 +446,14 @@ BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
   - `[Source <IMicrosoftGraphPersonDataSources>]`: personDataSources
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String[]>]`: 
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[CompletionMonthYear <DateTime?>]`: The month and year the user graduated or completed the activity.
   - `[EndMonthYear <DateTime?>]`: The month and year the user completed the educational activity referenced.
   - `[Institution <IMicrosoftGraphInstitutionData>]`: institutionData
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Description <String>]`: Short description of the institution the user studied at.
     - `[DisplayName <String>]`: Name of the institution the user studied at.
-    - `[Location <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+    - `[Location <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: The city.
       - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -474,7 +476,7 @@ BODYPARAMETER `<IMicrosoftGraphEducationalActivity>`: educationalActivity
     - `[WebUrl <String>]`: Link to the degree or program page.
   - `[StartMonthYear <DateTime?>]`: The month and year the user commenced the activity referenced.
 
-CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`CREATEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -483,12 +485,12 @@ CREATEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-INFERENCE `<IMicrosoftGraphInferenceData>`: inferenceData
+`INFERENCE <IMicrosoftGraphInferenceData>`: inferenceData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ConfidenceScore <Double?>]`: Confidence score reflecting the accuracy of the data inferred about the user.
   - `[UserHasVerifiedAccuracy <Boolean?>]`: Records if the user has confirmed this inference as being True or False.
 
-INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
+`INPUTOBJECT <IPeopleIdentity>`: Identity Parameter
   - `[ActivityStatisticsId <String>]`: The unique identifier of activityStatistics
   - `[EducationalActivityId <String>]`: The unique identifier of educationalActivity
   - `[ItemAddressId <String>]`: The unique identifier of itemAddress
@@ -506,20 +508,17 @@ INPUTOBJECT `<IPeopleIdentity>`: Identity Parameter
   - `[PersonNameId <String>]`: The unique identifier of personName
   - `[PersonWebsiteId <String>]`: The unique identifier of personWebsite
   - `[ProjectParticipationId <String>]`: The unique identifier of projectParticipation
-  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[SkillProficiencyId <String>]`: The unique identifier of skillProficiency
-  - `[TrendingId <String>]`: The unique identifier of trending
-  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserAccountInformationId <String>]`: The unique identifier of userAccountInformation
   - `[UserId <String>]`: The unique identifier of user
   - `[WebAccountId <String>]`: The unique identifier of webAccount
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
-INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
+`INSTITUTION <IMicrosoftGraphInstitutionData>`: institutionData
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Description <String>]`: Short description of the institution the user studied at.
   - `[DisplayName <String>]`: Name of the institution the user studied at.
-  - `[Location <IMicrosoftGraphPhysicalAddress1>]`: physicalAddress
+  - `[Location <IMicrosoftGraphPhysicalAddress>]`: physicalAddress
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[City <String>]`: The city.
     - `[CountryOrRegion <String>]`: The country or region. It's a free-format string value, for example, 'United States'.
@@ -530,7 +529,7 @@ INSTITUTION `<IMicrosoftGraphInstitutionData>`: institutionData
     - `[Type <String>]`: physicalAddressType
   - `[WebUrl <String>]`: Link to the institution or department homepage.
 
-LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
+`LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -539,7 +538,7 @@ LASTMODIFIEDBY `<IMicrosoftGraphIdentitySet>`: identitySet
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
-PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
+`PROGRAM <IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Abbreviation <String>]`: Shortened name of the degree or program (example: PhD, MBA)
   - `[Activities <String[]>]`: Extracurricular activities undertaken alongside the program.
@@ -551,10 +550,9 @@ PROGRAM `<IMicrosoftGraphEducationalActivityDetail>`: educationalActivityDetail
   - `[Notes <String>]`: Additional notes the user has provided.
   - `[WebUrl <String>]`: Link to the degree or program page.
 
-SOURCE `<IMicrosoftGraphPersonDataSources>`: personDataSources
+`SOURCE <IMicrosoftGraphPersonDataSources>`: personDataSources
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
 
-## RELATED LINKS
